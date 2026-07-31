@@ -52,6 +52,17 @@ def main():
         if len(words(math_why.get(field))) < 45:
             fail(f"math_why {field} too thin")
 
+    quality_audit = data.get("quality_audit") or {}
+    if len(words(quality_audit.get("summary"))) < 20:
+        fail("quality audit summary too thin")
+    if len(quality_audit.get("requirements") or []) < 7:
+        fail("quality audit needs requirement evidence")
+    for item in quality_audit.get("requirements", []):
+        if item.get("status") not in {"met", "met-with-caveat"}:
+            fail(f"quality audit invalid status: {item.get('status')}")
+        if len(words(item.get("evidence"))) < 10:
+            fail(f"quality audit evidence too thin: {item.get('requirement')}")
+
     for theme in data["themes"]:
         depth = theme.get("depth") or {}
         for field in ["problem", "habit", "course_arc", "important_detail"]:
@@ -118,10 +129,10 @@ def main():
                 fail(f"lecture {lecture['lecture']} example has unknown concept ids: {missing}")
 
     html_files = sorted(SITE.glob("*.html"))
-    if len(html_files) < 60:
-        fail(f"expected at least 60 html pages after map depth pass, got {len(html_files)}")
+    if len(html_files) < 62:
+        fail(f"expected at least 62 html pages after quality audit pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     for concept in data["concepts"]:

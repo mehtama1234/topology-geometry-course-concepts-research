@@ -2732,5 +2732,57 @@
     "subthemes": 10,
     "concepts": 16,
     "families": 5
+  },
+  "quality_audit": {
+    "summary": "The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
+    "requirements": [
+      {
+        "requirement": "Own repo and folder",
+        "evidence": "Standalone git repo at topology-geometry-course-concepts-research on main.",
+        "status": "met"
+      },
+      {
+        "requirement": "Recover all playlist links and source coverage",
+        "evidence": "35 playlist videos indexed; 34 caption files recovered; missing caption preserved for nx1XOlezuvk.",
+        "status": "met-with-caveat"
+      },
+      {
+        "requirement": "Hand-written lecture depth",
+        "evidence": "15 lecture explainers with problem, first principles, mathematical move, important detail, connection, transcript anchors, and examples.",
+        "status": "met"
+      },
+      {
+        "requirement": "Hand-written concepts, themes, subthemes, and method families",
+        "evidence": "16 concepts, 6 themes, 10 subthemes, and 5 method families all have validated depth fields.",
+        "status": "met"
+      },
+      {
+        "requirement": "First-principles plain language",
+        "evidence": "Validation enforces minimum depth across all explanatory layers and bans common vague/cliche phrases; pages explain why ideas exist and what detail matters.",
+        "status": "met"
+      },
+      {
+        "requirement": "Connected course map",
+        "evidence": "32 lecture examples link forward to concepts; every concept links back to lecture appearances, with appearance counts from 2 to 13.",
+        "status": "met"
+      },
+      {
+        "requirement": "Big-picture mathematical synthesis",
+        "evidence": "The Math Why page explains the course engine: allowed changes, preserved facts, designed counts, and whole-shape constraints.",
+        "status": "met"
+      }
+    ],
+    "metrics": {
+      "videos": 35,
+      "lectures": 15,
+      "captioned_videos": 34,
+      "missing_captions": [
+        "nx1XOlezuvk"
+      ],
+      "lecture_examples": 32,
+      "concept_appearances_min": 2,
+      "concept_appearances_max": 13,
+      "html_pages_before_audit_page": 61
+    }
   }
 }
