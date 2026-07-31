@@ -9,7 +9,12 @@
     ],
     "first_principles": "Imagine trying to understand a room while every chair is exactly lined up with every table edge. That neatness is a trap: tiny movements destroy it. Generic position means shifting the picture just enough that fragile coincidences are gone. Then crossings happen one at a time, contacts are clean, and the argument sees the structure rather than the accident.",
     "important_detail": "The shift must be small enough that it does not change the real question. It removes accidental equalities, not the object being studied.",
-    "math_principle": "Stable reasoning begins with a case that survives small disturbances."
+    "math_principle": "Stable reasoning begins with a case that survives small disturbances.",
+    "depth": {
+      "why_it_exists": "Generic position exists because special coincidences are too brittle to reason from. If three things meet at exactly one point, or a curve just kisses another curve, a tiny nudge can change the picture. The course wants arguments that survive tiny nudges, so it first moves the picture away from accidental perfection.",
+      "beginner_trap": "The trap is to think ordinary position means ignoring difficult cases. It does not. It means solve the stable case first, then understand exceptional cases as limits or controlled moments where stable pictures change without destroying the question.",
+      "course_role": "This idea is quiet but constant. It is behind clean intersections, pair creation and cancellation, isolated equilibria, and the move from messy physical examples to countable mathematical evidence. It gives the course permission to draw simple pictures without lying about the original problem."
+    }
   },
   {
     "id": "deformation",
@@ -21,7 +26,12 @@
     ],
     "first_principles": "A deformation is a continuous change, like bending a wire or stretching a rubber sheet, where nothing is cut, glued, or teleported. It lets you replace a hard picture by an easier picture while keeping the kind of truth you care about.",
     "important_detail": "The power is in the rulebook. If cutting is forbidden, a knot cannot simply be untied by passing a strand through another strand.",
-    "math_principle": "A controlled change preserves chosen facts and exposes which facts are truly structural."
+    "math_principle": "A controlled change preserves chosen facts and exposes which facts are truly structural.",
+    "depth": {
+      "why_it_exists": "Deformation exists because exact drawings often hide the answer. If stretching a curve does not change the question, then a complicated curve can be replaced by a simpler one. The purpose is not to make a pretty picture; it is to preserve the right fact while throwing away distracting measurement.",
+      "beginner_trap": "The trap is to think any visual simplification is legal. A deformation cannot cut, glue, jump, pass through a forbidden obstacle, or move fixed endpoints past each other. The allowed moves are the proof, and changing those moves changes the claim.",
+      "course_role": "Deformation is the course's main verb. It begins with strips and disk puzzles, then reappears in surface classification, intersection invariance, fixed-point theory, and vector-field index. Each later theorem asks what survives when the picture is moved honestly."
+    }
   },
   {
     "id": "invariant",
@@ -33,7 +43,12 @@
     ],
     "first_principles": "An invariant is something you check before and after an allowed change. If it is the same, it can certify that two pictures may belong to the same world. If it differs, the pictures cannot be connected by the allowed moves.",
     "important_detail": "An invariant does not need to describe everything. It only needs to catch the difference that matters for the question.",
-    "math_principle": "A preserved quantity can turn impossibility into a short argument."
+    "math_principle": "A preserved quantity can turn impossibility into a short argument.",
+    "depth": {
+      "why_it_exists": "An invariant exists to give memory to a changing picture. When a shape bends or a map moves, most visible details change. The invariant is the part chosen carefully enough that it does not change under the allowed motion.",
+      "beginner_trap": "The trap is to expect one invariant to tell the whole story. Most invariants are partial witnesses. They are powerful because a single preserved difference can prove impossibility, even when it cannot classify every possible shape.",
+      "course_role": "The course moves from physical invariants such as one-sidedness to numerical invariants such as intersection number, Euler characteristic, fixed-point counts, and total vector-field index. The recurring question is always which fact has enough memory to survive the allowed change."
+    }
   },
   {
     "id": "topology-vs-geometry",
@@ -44,7 +59,12 @@
     ],
     "first_principles": "Geometry cares about measured shape: distance, angle, area, curvature. Topology cares about connectedness, holes, boundary, and what survives bending. The course needs both because some questions depend on exact bending while others depend only on the routes and obstructions inside the shape.",
     "important_detail": "The distinction is not a wall. Geometry often produces the local measurements, while topology explains why their total has no freedom.",
-    "math_principle": "Choose the level of description that keeps the real constraint and discards the distracting details."
+    "math_principle": "Choose the level of description that keeps the real constraint and discards the distracting details.",
+    "depth": {
+      "why_it_exists": "The distinction exists because not every question needs the same kind of information. Geometry asks how much, how long, how curved, or at what angle. Topology asks how connected, how many holes, which routes are blocked, and what survives bending.",
+      "beginner_trap": "The trap is to treat topology as geometry with measurements removed. In this course, topology is not emptier than geometry; it is a different level of description chosen because it protects the facts that matter.",
+      "course_role": "Tokieda constantly uses both. Drawings and physical objects give geometric intuition, while topological reasoning explains why the outcome survives changes in the drawing. The lectures are strongest when a measured-looking picture is converted into a route, boundary, count, or obstruction."
+    }
   },
   {
     "id": "euler-characteristic",
@@ -56,7 +76,12 @@
     ],
     "first_principles": "Break a surface into corners, edges, and pieces. Count corners, subtract edges, add pieces. The surprising part is that many different breakups give the same final number. That number is a compact way to remember how the surface is put together.",
     "important_detail": "The pieces can be changed, refined, or redrawn, but the alternating count is built so added internal boundaries cancel out.",
-    "math_principle": "A local accounting scheme can produce a global fingerprint of a surface."
+    "math_principle": "A local accounting scheme can produce a global fingerprint of a surface.",
+    "depth": {
+      "why_it_exists": "Euler characteristic exists because surfaces need a count that ignores how they were chopped up. Vertices, edges, and faces individually depend on the chosen decomposition. The alternating count is arranged so artificial internal cuts cancel.",
+      "beginner_trap": "The trap is to memorize the formula without seeing the cancellation. The formula matters because it survives refinement and therefore belongs to the surface, not to one drawing of the surface or one chosen mesh of pieces.",
+      "course_role": "It becomes the bridge from surface bookkeeping to dynamics. In Poincare-Hopf, Euler characteristic is the whole-surface number that local vector-field indices must add up to. That is why a cell count can predict something about motion."
+    }
   },
   {
     "id": "triangulation",
@@ -68,7 +93,12 @@
     ],
     "first_principles": "To reason about a soft surface, cut it mentally into simple patches. Triangles are convenient because they are easy to count and glue, but the deeper move is to replace a slippery continuous object with a finite ledger. Once the surface is made of patches, the argument can ask what happens when patches are split, joined, or redrawn.",
     "important_detail": "The cuts are a tool, not the truth itself. A valid count must survive when the surface is cut in another acceptable way.",
-    "math_principle": "Complicated continuous objects can be studied through finite bookkeeping."
+    "math_principle": "Complicated continuous objects can be studied through finite bookkeeping.",
+    "depth": {
+      "why_it_exists": "Triangulation exists to make a soft surface countable. A smooth surface has infinitely many points, but a triangulated surface has a finite ledger of pieces. That ledger lets the course count without pretending the surface is made of rigid triangles in any physical sense.",
+      "beginner_trap": "The trap is to confuse the chosen triangulation with the surface itself. A different triangulation should give the same meaningful surface facts, or the count was not topological. The pieces are scaffolding for thought, not the object.",
+      "course_role": "Triangulation supports Euler characteristic, surface classification, and the later comparison between cell counts and vector-field behavior. It is the finite bookkeeping device that lets smooth-looking surfaces enter exact arguments without pretending that smoothness has disappeared."
+    }
   },
   {
     "id": "graph-planarity",
@@ -80,7 +110,12 @@
     ],
     "first_principles": "A graph is dots joined by lines. Asking whether it can be drawn on a page without unwanted crossings is really a question about available routes on a surface. The graph may be simple as a list of connections, but the page has limited room, and that room can force crossings no matter how patiently the drawing is rearranged.",
     "important_detail": "Crossings are not just ugly drawings. A crossing may signal that the page lacks enough room for the required connections.",
-    "math_principle": "Connectivity plus surface bookkeeping can forbid a drawing before anyone tries every drawing."
+    "math_principle": "Connectivity plus surface bookkeeping can forbid a drawing before anyone tries every drawing.",
+    "depth": {
+      "why_it_exists": "Planarity exists because connection problems are also space problems. A graph may only say which dots must be joined, but drawing it on a plane adds a constraint: the routes must share a surface without forbidden crossings.",
+      "beginner_trap": "The trap is to think a failed drawing proves impossibility. A bad drawing proves only that the drawer failed. A topological argument proves that every drawing must fail because the surface itself lacks the required room.",
+      "course_role": "Graph thinking trains the reader to separate combinatorial demand from surface room, a separation that later appears in intersections and configuration spaces. It makes route constraints feel concrete before the course moves to manifolds and higher-dimensional examples."
+    }
   },
   {
     "id": "knots-and-links",
@@ -92,7 +127,12 @@
     ],
     "first_principles": "A knot is a closed loop in space. The question is not whether it looks tangled, but whether it can be moved into a simple circle without cutting it or passing it through itself. This turns untangling into a rule-governed problem: the loop may slide and bend freely, but it cannot cheat by breaking the space it lives in.",
     "important_detail": "A flat drawing hides over-under information. The drawing is evidence only when those crossings are recorded.",
-    "math_principle": "A path in space can carry information that survives all legal untangling moves."
+    "math_principle": "A path in space can carry information that survives all legal untangling moves.",
+    "depth": {
+      "why_it_exists": "Knots and links exist in the course because a curve in space can remember how it is embedded. Length, roundness, and exact position can change, yet the loop may still be unable to become a plain circle by legal motion.",
+      "beginner_trap": "The trap is to judge a knot by how tangled the drawing looks. A knot diagram is only meaningful when crossings record which strand passes over and which passes under. Without that record, the drawing has lost the spatial question.",
+      "course_role": "They sharpen the idea of allowed moves. The same discipline later governs deformation of submanifolds, intersection counts, and paths in spaces of possible states. Knots make clear why passing through is not an innocent shortcut."
+    }
   },
   {
     "id": "winding-linking",
@@ -104,7 +144,12 @@
     ],
     "first_principles": "A loop can go around something. If it winds once around a post, pulling the loop tighter or looser does not remove that fact. Linking is the same stubbornness shared by two loops. The useful question is not how long the loop is, but whether its route has trapped a relationship that legal motion cannot remove.",
     "important_detail": "Direction matters. Opposite windings can cancel, so the sign of a turn or crossing is part of the count.",
-    "math_principle": "Going around is a measurable relationship, not merely a visual impression."
+    "math_principle": "Going around is a measurable relationship, not merely a visual impression.",
+    "depth": {
+      "why_it_exists": "Winding and linking exist because going around something can be a stable relationship. A loop around a post can stretch and wiggle, but it cannot stop going around the post unless it crosses the post or breaks.",
+      "beginner_trap": "The trap is to treat winding as a visual impression. The course needs a signed count, because opposite turns can cancel and because the count must survive legal motion instead of depending on one drawing.",
+      "course_role": "This idea connects loops and knots to intersection signs. It is one of the plainest examples of a count that records a relationship rather than a measurement. Later signed counts are more abstract, but they serve the same purpose."
+    }
   },
   {
     "id": "boundary-orientation",
@@ -116,7 +161,12 @@
     ],
     "first_principles": "A boundary is where a surface stops. Orientation is the ability to choose a consistent sense of clockwise or outward across the surface. Some surfaces allow that choice everywhere; some betray it after one trip around.",
     "important_detail": "The trouble often appears only after a full loop. Locally everything can look ordinary while the whole surface refuses a consistent choice.",
-    "math_principle": "A global obstruction can be invisible in every small neighborhood."
+    "math_principle": "A global obstruction can be invisible in every small neighborhood.",
+    "depth": {
+      "why_it_exists": "Boundary and orientation exist because a surface's edge and side-structure control what counts can be made. A boundary changes the bookkeeping. Orientation tells whether signs can be assigned consistently across the whole surface, which determines whether signed counts are even available.",
+      "beginner_trap": "The trap is to check orientation only locally. Every small patch has two sides, but a trip around a Mobius-type surface can return with the side choice reversed. The obstruction is global, not local.",
+      "course_role": "Orientation is required for signed intersection number and for many index arguments. Boundary issues also explain why some fixed-point statements need extra care. The course uses these details whenever a plus or minus sign is supposed to mean something."
+    }
   },
   {
     "id": "gauss-bonnet",
@@ -128,7 +178,12 @@
     ],
     "first_principles": "Curvature tells how a surface bends near a point. Gauss-Bonnet is the deeper message that the total bending over a whole surface is tied to the surface's basic shape. Local bend is not free to add up to anything it likes.",
     "important_detail": "Boundaries and corners contribute too. Ignoring the edge of the surface breaks the accounting.",
-    "math_principle": "Local bending totals can be forced by global topology."
+    "math_principle": "Local bending totals can be forced by global topology.",
+    "depth": {
+      "why_it_exists": "Gauss-Bonnet exists because local bending and whole-shape topology are not separate worlds. A surface can bend in many ways, but the total bending, with boundary terms included when needed, can be tied to the surface's topology.",
+      "beginner_trap": "The trap is to think curvature is only a point-by-point geometric measurement. The course cares about total curvature because totals can be protected by topology. The local measurement matters most when its sum is forced.",
+      "course_role": "It belongs to the local-to-global theme. Even when the course later emphasizes vector fields, the same pattern remains: local contributions add up to a global demand. Gauss-Bonnet is the curvature version of that demand."
+    }
   },
   {
     "id": "vector-field-index",
@@ -140,7 +195,12 @@
     ],
     "first_principles": "Put a little arrow at each point of a surface. Where the arrow pattern breaks down, you get a defect. The index is a signed count of how the arrows turn around that defect. This matters because a surface may allow the defects to move, but it may not allow the total defect count to disappear.",
     "important_detail": "Defects can be moved or split, but their total signed effect can be fixed by the surface.",
-    "math_principle": "Local failures of a field are constrained by the whole space that carries the field."
+    "math_principle": "Local failures of a field are constrained by the whole space that carries the field.",
+    "depth": {
+      "why_it_exists": "Vector-field index exists because solving a differential equation is often too much to ask. The index extracts a small but durable fact from the arrow pattern near an equilibrium: how the arrows turn around the failure point.",
+      "beginner_trap": "The trap is to classify equilibria by appearance alone. The index is a signed turning count, and different-looking local pictures may have the same index while similar-looking pictures may behave differently under deformation.",
+      "course_role": "Index is the dynamics version of signed intersection. It lets Poincare-Hopf connect local equilibria to Euler characteristic. The concept proves that a local arrow defect can carry exactly the kind of signed information the earlier intersection theory taught us to trust."
+    }
   },
   {
     "id": "fixed-points",
@@ -152,7 +212,12 @@
     ],
     "first_principles": "A fixed point is a place that ends up where it started after a motion or rule is applied. Some spaces force at least one fixed point for any rule of a certain kind. The idea is powerful because it proves existence without naming the point: the shape leaves no way for every point to avoid itself.",
     "important_detail": "The claim depends on the shape of the space and the allowed kind of rule. Change either, and the guarantee may vanish.",
-    "math_principle": "The shape of all possible positions can force a solution to exist."
+    "math_principle": "The shape of all possible positions can force a solution to exist.",
+    "depth": {
+      "why_it_exists": "Fixed points exist as a concept because many problems ask whether a rule must leave something unchanged. Instead of finding the point, topology can sometimes prove that the shape of the space prevents all points from escaping themselves.",
+      "beginner_trap": "The trap is to expect a fixed-point theorem to compute the fixed point. These theorems often prove existence only, which is already powerful when exact computation is unavailable or when the rule is known only qualitatively.",
+      "course_role": "Fixed points connect intersection theory to dynamics. The graph of a map meeting the diagonal becomes a reusable form for proving unavoidable states. The idea then reappears when equilibria are treated as unavoidable failures of a vector field."
+    }
   },
   {
     "id": "configuration-space",
@@ -164,7 +229,12 @@
     ],
     "first_principles": "Instead of watching a mechanism directly, list every possible position it can take. That list becomes a new shape. Questions about motion become questions about paths inside that shape. If a path is blocked, split, or forced through a narrow passage, the mechanism inherits that restriction from its space of possibilities.",
     "important_detail": "Forbidden positions are holes or walls in this new shape. They are often the reason a motion is impossible.",
-    "math_principle": "A moving system can be understood by studying the shape of its possible states."
+    "math_principle": "A moving system can be understood by studying the shape of its possible states.",
+    "depth": {
+      "why_it_exists": "Configuration space exists because a moving system may be hard to understand in ordinary physical space. By listing every possible state as a point in a new space, motion becomes a path and constraints become holes or walls.",
+      "beginner_trap": "The trap is to think the configuration space is imaginary decoration. It is a real model of possibilities: if there is no path in that model, the physical motion cannot be performed legally. The abstraction is doing physical work.",
+      "course_role": "This idea gathers the course's method into applications. It lets deformation, obstruction, fixed points, and topology of state spaces speak about mechanisms and motion. It is where the course's pictorial thinking becomes a way to reason about systems that move."
+    }
   },
   {
     "id": "duality",
@@ -176,7 +246,12 @@
     ],
     "first_principles": "Sometimes a problem becomes easier when regions become dots and shared borders become lines, or when a surface is replaced by another bookkeeping picture. The same situation is being viewed through a different ledger. The value is that the second picture may make adjacency, separation, or counting visible when the first picture hides it.",
     "important_detail": "A dual picture is useful only if it preserves the relationships needed by the question.",
-    "math_principle": "Changing representation can reveal the invariant that was hidden in the original drawing."
+    "math_principle": "Changing representation can reveal the invariant that was hidden in the original drawing.",
+    "depth": {
+      "why_it_exists": "Duality exists because the first picture of a problem may hide the useful count. Turning regions into dots or borders into connections can reveal a structure that was present but hard to see in the original drawing.",
+      "beginner_trap": "The trap is to treat the dual picture as a new problem. It is a change of representation, and it is valid only when it preserves the relationships the original question depends on. Otherwise it is just a different drawing.",
+      "course_role": "Duality supports pictorial thinking. It trains the reader to ask whether a different diagram can carry the same reason more clearly. This is central to the course's habit of solving by redrawing without changing the problem."
+    }
   },
   {
     "id": "parity",
@@ -187,6 +262,11 @@
     ],
     "first_principles": "Parity asks whether a count is even or odd. It is a blunt tool, but sometimes blunt is exactly right: many changes create or remove events in pairs, so evenness or oddness cannot change. When the exact number is too fragile, the odd-or-even shadow of the number may be the part that survives.",
     "important_detail": "Parity deliberately forgets most details. That is strength when all allowed changes affect the count by twos.",
-    "math_principle": "A coarse count can be more stable than a detailed measurement."
+    "math_principle": "A coarse count can be more stable than a detailed measurement.",
+    "depth": {
+      "why_it_exists": "Parity exists because sometimes the exact number is too sensitive, but evenness or oddness is stable. If legal changes create or remove events two at a time, the parity cannot change, even while the visible count changes.",
+      "beginner_trap": "The trap is to dismiss parity as crude. Crude is useful when the problem only needs an obstruction, and an odd count can prove that zero is impossible. The coarseness is the reason it survives.",
+      "course_role": "Parity is the simplest surviving-count idea. It prepares the reader for richer signed counts, where cancellation is tracked with more information than odd or even. The course repeatedly upgrades this simple habit into finer bookkeeping."
+    }
   }
 ]

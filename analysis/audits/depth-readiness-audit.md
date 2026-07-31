@@ -1,13 +1,12 @@
 # Depth Readiness Audit
 
-This is a transcript-backed first pass, not a finished robotics-level monograph. It now has the structure needed for that level of treatment:
+This repo now has a transcript-backed depth pass for the lecture and concept layers. It is still not a finished robotics-level monograph across every theme, subtheme, and method family, but the first shallow layer has been replaced where the reader spends the most time:
 
-- course goal in plain everyday language
-- 15 lecture groups from 35 videos
+- 15 hand-authored lecture explainers from 35 videos
+- 16 expanded concept pages with why-it-exists, beginner-trap, and course-role sections
 - 6 course themes
 - 10 subthemes
-- 16 first-principles concepts
 - 5 method families
 - explicit source coverage and missing-caption audit
 
-The next depth pass should expand each lecture into a full narrative with concrete examples from the recovered transcript, then connect each lecture to the concepts and method families without using template language.
+The next depth pass should expand the theme, subtheme, and method-family pages to the same level as the lecture and concept pages, then add more concrete transcript examples inside each lecture page.
