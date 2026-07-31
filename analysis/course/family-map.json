@@ -9,7 +9,14 @@
       "deformation",
       "invariant",
       "topology-vs-geometry"
-    ]
+    ],
+    "depth": {
+      "human_problem": "The human problem is that the original picture is often too tangled to reason about directly. The family asks how to change that picture without changing the answer, so the reader can solve the simpler version with confidence.",
+      "first_principles": "Start by naming the legal moves. Then move the object through those moves until it is easier to inspect. If the protected fact survives every step, the simplified picture speaks for the original picture and not merely for itself.",
+      "how_it_works": "A deformation proof has three parts: the contract of allowed motion, the protected feature, and the simpler endpoint. The proof fails if any one of these is vague. The endpoint is convincing only because the route to it was legal.",
+      "course_examples": "The disk-connection puzzle, surface classification by surgery, intersection invariance, and the treatment of vector-field defects all use this family. In each case, motion is not a side effect; it is the proof method.",
+      "failure_mode": "The common failure is to simplify by a move that the problem does not permit. Cutting a loop, sliding an endpoint, passing through an obstacle, or changing a boundary condition may make the picture easier while solving the wrong problem."
+    }
   },
   {
     "id": "counting-family",
@@ -21,7 +28,14 @@
       "triangulation",
       "winding-linking",
       "parity"
-    ]
+    ],
+    "depth": {
+      "human_problem": "The human problem is that a drawing can change while the underlying obstruction remains. A count gives the reader something stable enough to compare before and after the change, even when the visible picture has been redrawn.",
+      "first_principles": "Do not count everything. Count the feature whose changes cancel under the allowed moves. Sometimes the count is alternating, as in Euler characteristic. Sometimes it is signed, as in intersection number or index, because signs make fake changes disappear.",
+      "how_it_works": "A surviving-count proof identifies which local changes can happen, then shows those changes leave the chosen total alone. Once the total is known in an easy picture, it constrains every legally related picture and can forbid desired outcomes.",
+      "course_examples": "Euler characteristic counts cells with alternating signs. Intersection number counts meetings with plus and minus signs. Poincare-Hopf counts vector-field defects and ties their total to the surface. These are different objects but the same proof instinct.",
+      "failure_mode": "The common failure is to use a count that changes under harmless redrawings. A raw crossing count, for example, can rise or fall when a canceling pair is created, so it is not the protected quantity."
+    }
   },
   {
     "id": "surface-family",
@@ -33,7 +47,14 @@
       "gauss-bonnet",
       "vector-field-index",
       "euler-characteristic"
-    ]
+    ],
+    "depth": {
+      "human_problem": "The human problem is that surfaces look simple nearby but can behave differently as wholes. This family asks how patches, boundaries, holes, and orientation combine into whole-surface facts that local inspection alone misses completely.",
+      "first_principles": "Cut the surface into manageable pieces, understand what happens on each piece, and then glue the bookkeeping back together. The global result is not guessed from one patch; it is forced by how all patches fit.",
+      "how_it_works": "Surface bookkeeping uses decompositions, orientation choices, boundary terms, and cancellation. It is careful about what is local and what is global, because many surface obstructions appear only after a full trip around the object or a full sum over its pieces.",
+      "course_examples": "The Mobius strip reveals global one-sidedness. Surface classification tracks handles and crosscaps. Euler characteristic records whole-surface type. Poincare-Hopf shows that vector fields must obey the surface's total count. The same surface facts keep reappearing in different language.",
+      "failure_mode": "The common failure is to reason locally and assume the whole surface behaves the same way. A Mobius strip defeats that assumption immediately, and later orientation-dependent counts fail without global consistency across the surface."
+    }
   },
   {
     "id": "embedding-family",
@@ -45,7 +66,14 @@
       "knots-and-links",
       "duality",
       "winding-linking"
-    ]
+    ],
+    "depth": {
+      "human_problem": "The human problem is to know whether one object can sit inside another without forbidden collisions. A drawing may suggest an answer, but this family asks for a reason that covers every drawing and every legal attempt.",
+      "first_principles": "Separate the object's required connections from the room supplied by the surrounding surface or space. If every legal placement would force a forbidden meeting, the obstruction belongs to the topology, not to a bad drawing.",
+      "how_it_works": "Embedding arguments track crossings, over-under information, winding, linking, and surface room. They ask whether deformation can remove intersections or whether a count proves that some relation survives every allowed placement in the space under study.",
+      "course_examples": "Path puzzles in a disk, planar graph questions, knots and links, and intersection theory all belong here. The family teaches the reader to distinguish accidental crossings from forced ones by checking what legal motion can remove.",
+      "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the most obvious arrangement."
+    }
   },
   {
     "id": "motion-family",
@@ -57,6 +85,13 @@
       "fixed-points",
       "deformation",
       "shape-as-machine"
-    ]
+    ],
+    "depth": {
+      "human_problem": "The human problem is to understand motion when exact equations or trajectories are unavailable. This family asks what the shape of possible states can force before anything is solved explicitly or computed point by point.",
+      "first_principles": "Represent each possible state as a point in a new space. Motion becomes a path or rule on that space. Fixed points, equilibria, blocked routes, and forced passages become topological questions about that state space.",
+      "how_it_works": "The family translates physical or dynamical behavior into shape: graph of a map versus diagonal, vector field defects, index sums, or paths in a configuration space. Once translated, earlier tools such as deformation and surviving counts apply.",
+      "course_examples": "The center-of-gravity demonstration, Brouwer fixed point theorem, vector fields, equilibria, Poincare-Hopf, and late applications all use this family. The course ends here because it shows topology acting on behavior, not only on static pictures.",
+      "failure_mode": "The common failure is to model the state space carelessly. If the states, boundaries, forbidden positions, or allowed motions are wrong, the topological conclusion may no longer describe the physical system being studied at all."
+    }
   }
 ]

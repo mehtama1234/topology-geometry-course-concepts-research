@@ -59,6 +59,52 @@ THEMES = [
 ]
 
 
+THEME_DEPTH = {
+    "see-by-deforming": {
+        "problem": "This theme answers the course's most basic question: how can a person solve a shape problem without measuring every detail? Tokieda's answer is to move the picture by legal changes until the answer is easier to see. The movement is useful only because it protects the feature being asked about.",
+        "habit": "The habit is to ask, before doing any calculation, which parts of the picture are allowed to move and which facts must remain fixed. Once that rule is clear, deformation becomes a way of reasoning, not a way of decorating the drawing.",
+        "course_arc": "The Mobius strip makes the need for global thinking visible. The disk-connection puzzle turns deformation into a proof method. Surface classification uses deformation to reduce complicated surfaces to standard parts. Intersection number, fixed points, and vector-field index later depend on the same promise: move the object, but keep the protected answer.",
+        "important_detail": "The allowed moves carry the whole proof. If a path slips through another path, or a boundary point is quietly moved, the argument may have solved a different problem. This theme is therefore about disciplined freedom: move as much as possible, but only under rules that preserve the question.",
+        "lectures": [1, 2, 5, 8, 15],
+    },
+    "count-what-survives": {
+        "problem": "Many pictures change too much to trust what the eye sees at one moment. The course therefore looks for a count that survives the legal changes: number of sides, holes, crossings with signs, cells in an alternating sum, or indices of arrow-field defects.",
+        "habit": "The habit is to count only after deciding why the count should survive. A raw number of visible crossings is usually fragile. A signed or alternating count can be stable because fake changes cancel in pairs while the real obstruction remains.",
+        "course_arc": "The early paper examples make survival concrete. Euler characteristic turns a cut-up surface into a stable number. Intersection number shows how signs protect a count under deformation. Poincare-Hopf later uses the same idea when local vector-field indices add to a whole-surface number.",
+        "important_detail": "A useful count is designed. It is not the first count that comes to mind. The mathematical work is in arranging cancellation so that changes in the drawing do not change the evidence the argument depends on, even after many redrawings.",
+        "lectures": [5, 6, 8, 12, 13, 15],
+    },
+    "local-to-global": {
+        "problem": "A surface, loop, or arrow field can look ordinary in every small neighborhood while still being impossible to organize consistently over the whole object. This theme asks how small local facts add up to a whole-shape demand that no single patch reveals.",
+        "habit": "The habit is to distrust purely local inspection. One small patch of a Mobius strip looks like an ordinary strip. One small patch of a sphere can carry a tangent arrow. The question is whether those local choices can be made compatible after traveling around the whole space.",
+        "course_arc": "The theme starts with one-sidedness, grows through orientation and surface classification, and becomes numerical in Euler characteristic and Poincare-Hopf. By the dynamics lectures, local equilibria and their indices are forced to obey a global surface count rather than acting independently.",
+        "important_detail": "Local freedom does not imply global freedom. The obstruction may appear only after all patches are glued together, all signs are summed, or all defects are counted across the complete object, so checking one neighborhood is never enough for proof.",
+        "lectures": [1, 5, 8, 11, 12, 13],
+    },
+    "generic-before-exception": {
+        "problem": "Real drawings often contain accidents: tangencies, triple meetings, perfect alignments, or non-isolated equilibria. These special cases can hide the stable structure. The course needs a way to reason without being trapped by coincidences that vanish under a tiny change.",
+        "habit": "The habit is to gently move the picture into an ordinary position, solve the stable case, and then understand special cases as limits of stable behavior. This is how crossings can be born or die in controlled pairs rather than as mysterious exceptions.",
+        "course_arc": "Generic position is present whenever Tokieda makes intersections clean, counts them with signs, or treats equilibria as isolated defects. It is also present in the physical demonstrations: the point is not the exact accidental drawing, but the behavior that survives a small nudge.",
+        "important_detail": "Moving to an ordinary case is not evasion. It is valid only when the small move does not change the problem's protected feature. Used carelessly, it erases the hard case; used correctly, it reveals the stable mechanism behind it and then explains the exceptional moment.",
+        "lectures": [2, 6, 8, 11, 12],
+    },
+    "pictures-to-proofs": {
+        "problem": "The course uses pictures constantly, but a picture by itself is not proof. This theme asks what makes a drawing mathematical evidence rather than a visual suggestion or a memory aid for something proved elsewhere by words alone in another form.",
+        "habit": "The habit is to make every drawing state its rules. The drawing should show allowed motion, forbidden motion, signs, boundaries, identifications, and the quantity being protected. A good picture removes ambiguity instead of adding charm or hiding the difficult step.",
+        "course_arc": "Paper strips, disk paths, edge identifications, surface surgery, intersection diagrams, graphs of maps, diagonals, and vector fields all serve as proof-bearing pictures. By the final lecture, Tokieda explicitly frames the course as pictorial thinking because the pictures have carried reasons all along.",
+        "important_detail": "A picture becomes a proof only when the reader can tell what cannot change. If the picture hides an over-under crossing, an edge identification, or a boundary condition, it may be persuasive while being mathematically incomplete or even misleading.",
+        "lectures": [1, 2, 3, 4, 8, 9, 15],
+    },
+    "shape-as-machine": {
+        "problem": "The course repeatedly shows that shape can force behavior. A disk can force a fixed point, a sphere can force a vector-field defect, and a space of possible states can block or require a motion before equations are solved.",
+        "habit": "The habit is to treat a shape as a system of constraints. Instead of asking only what the object looks like, ask what routes it allows, what choices it forbids, and what event any continuous rule must encounter while moving through it.",
+        "course_arc": "This begins with physical strips and path puzzles, passes through fixed points as intersections with the diagonal, and reaches dynamical systems where vector fields and equilibria are constrained by topology. Applications late in the course show the same method outside pure surface examples.",
+        "important_detail": "The shape only forces behavior after the modeling choice is made honestly. One must identify the space, the rule or motion on that space, the allowed changes, and the protected count or obstruction before applying a theorem to reality or mechanism.",
+        "lectures": [7, 9, 10, 11, 13, 14],
+    },
+}
+
+
 SUBTHEMES = [
     ("allowed-moves", "Allowed moves", "First decide what changes are legal. Without that rule, no invariant means anything."),
     ("invariant-receipts", "Invariant receipts", "An invariant is a receipt for what survived the trip from one picture to another."),
@@ -71,6 +117,60 @@ SUBTHEMES = [
     ("singular-moments", "Singular moments", "A special accident is often the moment where two ordinary pictures meet."),
     ("models-not-labels", "Models, not labels", "The course's named ideas matter only when they help build a usable mental model."),
 ]
+
+
+SUBTHEME_DEPTH = {
+    "allowed-moves": {
+        "problem": "Allowed moves define the game being played. Before saying two shapes are the same, before simplifying a drawing, and before claiming a count survives, the course must say what changes are legal.",
+        "first_principles": "If a knot can be cut, it can be untied. If paths can pass through each other, a crossing obstruction disappears. If boundary points can slide around, a disk puzzle changes. The mathematics lives in the rule that certain changes are allowed and others are not.",
+        "course_role": "This subtheme appears in deformation, surface surgery, knot and link reasoning, fixed-point arguments, and vector-field cleanup. It is the quiet contract behind nearly every proof and the first thing to check when an argument feels too easy.",
+    },
+    "invariant-receipts": {
+        "problem": "A changing picture needs a receipt for what survived. Without such a receipt, a deformation may feel convincing but leave no evidence that the answer stayed the same through every allowed move.",
+        "first_principles": "An invariant is that receipt. It can be a side count, a hole count, a signed intersection number, or a total index. It is useful because it can be checked before and after legal motion.",
+        "course_role": "This subtheme connects the Mobius strip to Euler characteristic, intersection number, and Poincare-Hopf. The object changes; the receipt proves what did not change and lets one picture speak for another.",
+    },
+    "holes-and-boundaries": {
+        "problem": "Holes and boundaries decide which routes exist and which counts must include edge terms. They are not visual decoration; they change what the surface can support and what motions are possible.",
+        "first_principles": "A boundary is where a surface stops. A hole is missing room or a blocked filling. Both change the way loops, paths, fields, and decompositions behave because they alter the available routes.",
+        "course_role": "This subtheme is central in surface classification, Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become holes or walls in the space of possibilities itself.",
+    },
+    "curves-loops-knots": {
+        "problem": "Curves and loops can carry information about how they sit inside a space. The problem is to distinguish accidental shape from protected route information that survives legal bending and stretching.",
+        "first_principles": "A loop can stretch while still going around a hole. A knot can wiggle while still refusing to become a circle. The exact drawing changes, but the route relation may remain.",
+        "course_role": "This subtheme supports deformation, winding, linking, intersections, and the move from visible curves to abstract paths in spaces of possible states. It keeps route information separate from length or appearance.",
+    },
+    "turning-and-curvature": {
+        "problem": "Turning and curvature measure local change in direction, but the course is interested in totals that cannot be chosen freely by a drawing or arrow field on the whole shape.",
+        "first_principles": "A little bend by itself may be a local geometric fact. When many bends are added over a closed curve, a surface, or an arrow field around a defect, the total can become topological evidence.",
+        "course_role": "This subtheme links Gauss-Bonnet-style thinking to vector-field index. It prepares the reader to see local turning as part of whole-shape bookkeeping rather than isolated measurement at one point.",
+    },
+    "signs-and-cancellation": {
+        "problem": "Many events appear and disappear during a deformation. Counting them all positively gives a fragile number. The course needs a way for fake changes to cancel while forced information remains.",
+        "first_principles": "Signs record direction or orientation. When two opposite events are born together, their signed contributions add to zero. The visible picture changes, but the signed total survives the allowed motion.",
+        "course_role": "This subtheme is central to intersection number and vector-field index. It is also the finer version of parity: not just even or odd, but plus and minus with geometric meaning.",
+    },
+    "surfaces-and-orientation": {
+        "problem": "Surfaces are the main stage of the course, but they are not all alike. Some have boundaries, some have handles, some reverse side after a trip, and some allow consistent signs.",
+        "first_principles": "Orientation asks whether a consistent sense of direction can be carried across the whole surface. Classification asks which handles, crosscaps, and boundaries remain after legal simplification and cutting into standard pieces.",
+        "course_role": "This subtheme supports surface classification, signed intersections, Euler characteristic, and Poincare-Hopf. Without it, later plus-minus bookkeeping has no stable meaning across the whole surface or field being studied.",
+    },
+    "mechanisms-and-locks": {
+        "problem": "Physical systems often look complicated because parts move. The course asks whether the shape of the possible motions explains what is forced or blocked without tracking every detail of the motion.",
+        "first_principles": "A mechanism can be studied by its possible states. If the state space has a hole, wall, disconnected region, or forced passage, the mechanism inherits that constraint in its physical motion.",
+        "course_role": "This subtheme appears in center-of-gravity reasoning, fixed points, configuration spaces, and late applications where topology predicts behavior without solving every physical detail or trajectory explicitly from equations of motion.",
+    },
+    "singular-moments": {
+        "problem": "A special accident can be where the action happens: two intersections are born, two cancel, a tangent contact appears, or a defect ceases to be isolated for a moment during motion.",
+        "first_principles": "A singular moment is not the ordinary case. It is the border between ordinary cases. By understanding how ordinary pictures change as they pass through it, the course controls exceptions instead of fearing them.",
+        "course_role": "This subtheme explains pair creation and cancellation, generic position, and the need to isolate equilibria before assigning index. It turns exceptions into controlled transitions between ordinary pictures during deformation arguments.",
+    },
+    "models-not-labels": {
+        "problem": "Topology and geometry have many names, but names do not teach the course. The real work is building a model that explains what can move, what is counted, and what is forced.",
+        "first_principles": "A term matters only if it helps answer a question. Manifold means local space with gluing rules. Quotient means identified points. Index means signed turning around a defect. Each name should earn its keep.",
+        "course_role": "This subtheme keeps the companion plain. It resists glossary thinking and asks every concept page to explain why the concept exists in the course and what work it performs for the reader.",
+    },
+}
 
 
 CONCEPTS = [
@@ -342,6 +442,45 @@ FAMILIES = [
         "concepts": ["configuration-space", "fixed-points", "deformation", "shape-as-machine"],
     },
 ]
+
+
+FAMILY_DEPTH = {
+    "deformation-family": {
+        "human_problem": "The human problem is that the original picture is often too tangled to reason about directly. The family asks how to change that picture without changing the answer, so the reader can solve the simpler version with confidence.",
+        "first_principles": "Start by naming the legal moves. Then move the object through those moves until it is easier to inspect. If the protected fact survives every step, the simplified picture speaks for the original picture and not merely for itself.",
+        "how_it_works": "A deformation proof has three parts: the contract of allowed motion, the protected feature, and the simpler endpoint. The proof fails if any one of these is vague. The endpoint is convincing only because the route to it was legal.",
+        "course_examples": "The disk-connection puzzle, surface classification by surgery, intersection invariance, and the treatment of vector-field defects all use this family. In each case, motion is not a side effect; it is the proof method.",
+        "failure_mode": "The common failure is to simplify by a move that the problem does not permit. Cutting a loop, sliding an endpoint, passing through an obstacle, or changing a boundary condition may make the picture easier while solving the wrong problem.",
+    },
+    "counting-family": {
+        "human_problem": "The human problem is that a drawing can change while the underlying obstruction remains. A count gives the reader something stable enough to compare before and after the change, even when the visible picture has been redrawn.",
+        "first_principles": "Do not count everything. Count the feature whose changes cancel under the allowed moves. Sometimes the count is alternating, as in Euler characteristic. Sometimes it is signed, as in intersection number or index, because signs make fake changes disappear.",
+        "how_it_works": "A surviving-count proof identifies which local changes can happen, then shows those changes leave the chosen total alone. Once the total is known in an easy picture, it constrains every legally related picture and can forbid desired outcomes.",
+        "course_examples": "Euler characteristic counts cells with alternating signs. Intersection number counts meetings with plus and minus signs. Poincare-Hopf counts vector-field defects and ties their total to the surface. These are different objects but the same proof instinct.",
+        "failure_mode": "The common failure is to use a count that changes under harmless redrawings. A raw crossing count, for example, can rise or fall when a canceling pair is created, so it is not the protected quantity.",
+    },
+    "surface-family": {
+        "human_problem": "The human problem is that surfaces look simple nearby but can behave differently as wholes. This family asks how patches, boundaries, holes, and orientation combine into whole-surface facts that local inspection alone misses completely.",
+        "first_principles": "Cut the surface into manageable pieces, understand what happens on each piece, and then glue the bookkeeping back together. The global result is not guessed from one patch; it is forced by how all patches fit.",
+        "how_it_works": "Surface bookkeeping uses decompositions, orientation choices, boundary terms, and cancellation. It is careful about what is local and what is global, because many surface obstructions appear only after a full trip around the object or a full sum over its pieces.",
+        "course_examples": "The Mobius strip reveals global one-sidedness. Surface classification tracks handles and crosscaps. Euler characteristic records whole-surface type. Poincare-Hopf shows that vector fields must obey the surface's total count. The same surface facts keep reappearing in different language.",
+        "failure_mode": "The common failure is to reason locally and assume the whole surface behaves the same way. A Mobius strip defeats that assumption immediately, and later orientation-dependent counts fail without global consistency across the surface.",
+    },
+    "embedding-family": {
+        "human_problem": "The human problem is to know whether one object can sit inside another without forbidden collisions. A drawing may suggest an answer, but this family asks for a reason that covers every drawing and every legal attempt.",
+        "first_principles": "Separate the object's required connections from the room supplied by the surrounding surface or space. If every legal placement would force a forbidden meeting, the obstruction belongs to the topology, not to a bad drawing.",
+        "how_it_works": "Embedding arguments track crossings, over-under information, winding, linking, and surface room. They ask whether deformation can remove intersections or whether a count proves that some relation survives every allowed placement in the space under study.",
+        "course_examples": "Path puzzles in a disk, planar graph questions, knots and links, and intersection theory all belong here. The family teaches the reader to distinguish accidental crossings from forced ones by checking what legal motion can remove.",
+        "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the most obvious arrangement.",
+    },
+    "motion-family": {
+        "human_problem": "The human problem is to understand motion when exact equations or trajectories are unavailable. This family asks what the shape of possible states can force before anything is solved explicitly or computed point by point.",
+        "first_principles": "Represent each possible state as a point in a new space. Motion becomes a path or rule on that space. Fixed points, equilibria, blocked routes, and forced passages become topological questions about that state space.",
+        "how_it_works": "The family translates physical or dynamical behavior into shape: graph of a map versus diagonal, vector field defects, index sums, or paths in a configuration space. Once translated, earlier tools such as deformation and surviving counts apply.",
+        "course_examples": "The center-of-gravity demonstration, Brouwer fixed point theorem, vector fields, equilibria, Poincare-Hopf, and late applications all use this family. The course ends here because it shows topology acting on behavior, not only on static pictures.",
+        "failure_mode": "The common failure is to model the state space carelessly. If the states, boundaries, forbidden positions, or allowed motions are wrong, the topological conclusion may no longer describe the physical system being studied at all.",
+    },
+}
 
 
 LECTURE_NOTES = {
@@ -656,21 +795,26 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
         body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
-    body = "<h1>Themes</h1><div class='grid two'>" + "".join(card(t["title"], t["plain"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"
+    body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"
     (SITE / "themes.html").write_text(page("Themes", body, "Themes"), encoding="utf-8")
     for t in data["themes"]:
         related = [c for c in data["concepts"] if c["theme"] == t["id"]]
-        body = f"<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['plain'])}</p><div class='panel'><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></div><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['first_principles'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"
+        lecture_links = "".join(f'<a class="pill" href="lecture-{n:02d}.html">Lecture {n:02d}</a>' for n in t["depth"]["lectures"])
+        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("theme", t["id"])).write_text(page(t["title"], body, "Themes"), encoding="utf-8")
 
-    body = "<h1>Subthemes</h1><div class='grid'>" + "".join(card(s["title"], s["plain"], None, "Subtheme") for s in data["subthemes"]) + "</div>"
+    body = "<h1>Subthemes</h1><p class='lead'>Subthemes are the smaller recurring moves inside the larger course habits: the contracts, counts, signs, boundaries, and modeling choices that make the arguments work.</p><div class='grid'>" + "".join(card(s["title"], s["depth"]["problem"], slug_page("subtheme", s["id"]), "Subtheme") for s in data["subthemes"]) + "</div>"
     (SITE / "subthemes.html").write_text(page("Subthemes", body, "Subthemes"), encoding="utf-8")
+    for s in data["subthemes"]:
+        related = [c for c in data["concepts"] if s["id"] in c["subthemes"]]
+        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        (SITE / slug_page("subtheme", s["id"])).write_text(page(s["title"], body, "Subthemes"), encoding="utf-8")
 
-    body = "<h1>Method Families</h1><div class='grid two'>" + "".join(card(f["title"], f["first_principles"], slug_page("family", f["id"]), f["purpose"]) for f in data["families"]) + "</div>"
+    body = "<h1>Method Families</h1><p class='lead'>Method families explain how the course turns pictures into reasons. They are the reusable proof moves beneath the lectures.</p><div class='grid two'>" + "".join(card(f["title"], f["depth"]["human_problem"], slug_page("family", f["id"]), f["purpose"]) for f in data["families"]) + "</div>"
     (SITE / "families.html").write_text(page("Families", body, "Families"), encoding="utf-8")
     for f in data["families"]:
         related = [c for c in data["concepts"] if c["id"] in f["concepts"]]
-        body = f"<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['first_principles'])}</p><div class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p></div><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['first_principles'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"
+        body = f"""<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['depth']['human_problem'])}</p><section class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p><h2>First Principles</h2><p>{esc(f['depth']['first_principles'])}</p><h2>How It Works</h2><p>{esc(f['depth']['how_it_works'])}</p><h2>Course Examples</h2><p>{esc(f['depth']['course_examples'])}</p><h2>Failure Mode</h2><p>{esc(f['depth']['failure_mode'])}</p></section><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("family", f["id"])).write_text(page(f["title"], body, "Families"), encoding="utf-8")
 
     math_why = f"""<h1>The Math Why</h1><p class="lead">{esc(data['math_why']['big_picture'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(data['math_why']['first_principles'])}</p><h2>Important Detail</h2><p>{esc(data['math_why']['important_detail'])}</p><h2>Principle Behind the Mathematics</h2><p>{esc(data['math_why']['principle'])}</p></section>"""
@@ -727,13 +871,24 @@ def main():
             "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed.",
         })
 
-    themes = THEMES
-    subthemes = [{"id": i, "title": t, "plain": p} for i, t, p in SUBTHEMES]
+    themes = []
+    for theme in THEMES:
+        enriched = dict(theme)
+        enriched["depth"] = THEME_DEPTH[theme["id"]]
+        themes.append(enriched)
+    subthemes = []
+    for i, t, p in SUBTHEMES:
+        subthemes.append({"id": i, "title": t, "plain": p, "depth": SUBTHEME_DEPTH[i]})
     concepts = []
     for concept in CONCEPTS:
         enriched = dict(concept)
         enriched["depth"] = CONCEPT_DEPTH[concept["id"]]
         concepts.append(enriched)
+    families = []
+    for family in FAMILIES:
+        enriched = dict(family)
+        enriched["depth"] = FAMILY_DEPTH[family["id"]]
+        families.append(enriched)
     math_why = {
         "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. If exact measurement changes too easily, the course asks for a better handle: a count, a boundary, a hole, a turn, a sign, or a forced route.",
         "first_principles": "Start with an object that is too complicated to inspect directly. Decide which changes leave the real problem unchanged. Move the object until it becomes simpler. Track the feature that did not change. If the simplified object makes the answer clear, the original object inherits that answer.",
@@ -748,7 +903,7 @@ def main():
         "themes": themes,
         "subthemes": subthemes,
         "concepts": concepts,
-        "families": FAMILIES,
+        "families": families,
         "math_why": math_why,
     }
     missing = [v["id"] for v in videos if not v["caption_file"]]
@@ -769,7 +924,7 @@ def main():
     write_json(ANALYSIS / "concept-atlas.json", concepts)
     write_json(ANALYSIS / "theme-map.json", themes)
     write_json(ANALYSIS / "subtheme-map.json", subthemes)
-    write_json(ANALYSIS / "family-map.json", FAMILIES)
+    write_json(ANALYSIS / "family-map.json", families)
     write_json(ANALYSIS / "math-why.json", math_why)
     write_json(ANALYSIS / "course-companion.json", data)
 
@@ -786,16 +941,16 @@ def main():
 """, encoding="utf-8")
     (AUDITS / "depth-readiness-audit.md").write_text(f"""# Depth Readiness Audit
 
-This repo now has a transcript-backed depth pass for the lecture and concept layers. It is still not a finished robotics-level monograph across every theme, subtheme, and method family, but the first shallow layer has been replaced where the reader spends the most time:
+This repo now has a transcript-backed depth pass across the lecture, concept, theme, subtheme, and method-family layers. The first shallow layer has been replaced across the main explanatory surfaces:
 
 - 15 hand-authored lecture explainers from 35 videos
 - 16 expanded concept pages with why-it-exists, beginner-trap, and course-role sections
-- 6 course themes
-- 10 subthemes
-- 5 method families
+- 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
+- 10 expanded subtheme pages with first-principles and course-role sections
+- 5 expanded method-family pages with human-problem, how-it-works, examples, and failure-mode sections
 - explicit source coverage and missing-caption audit
 
-The next depth pass should expand the theme, subtheme, and method-family pages to the same level as the lecture and concept pages, then add more concrete transcript examples inside each lecture page.
+The next depth pass should add more concrete transcript examples inside each lecture page and tighten the lecture-to-concept cross-links so every major idea points to the specific lecture moments where it appears.
 """, encoding="utf-8")
     build_site(data)
     print(json.dumps(data["stats"], indent=2))

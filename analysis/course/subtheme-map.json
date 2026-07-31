@@ -2,51 +2,101 @@
   {
     "id": "allowed-moves",
     "title": "Allowed moves",
-    "plain": "First decide what changes are legal. Without that rule, no invariant means anything."
+    "plain": "First decide what changes are legal. Without that rule, no invariant means anything.",
+    "depth": {
+      "problem": "Allowed moves define the game being played. Before saying two shapes are the same, before simplifying a drawing, and before claiming a count survives, the course must say what changes are legal.",
+      "first_principles": "If a knot can be cut, it can be untied. If paths can pass through each other, a crossing obstruction disappears. If boundary points can slide around, a disk puzzle changes. The mathematics lives in the rule that certain changes are allowed and others are not.",
+      "course_role": "This subtheme appears in deformation, surface surgery, knot and link reasoning, fixed-point arguments, and vector-field cleanup. It is the quiet contract behind nearly every proof and the first thing to check when an argument feels too easy."
+    }
   },
   {
     "id": "invariant-receipts",
     "title": "Invariant receipts",
-    "plain": "An invariant is a receipt for what survived the trip from one picture to another."
+    "plain": "An invariant is a receipt for what survived the trip from one picture to another.",
+    "depth": {
+      "problem": "A changing picture needs a receipt for what survived. Without such a receipt, a deformation may feel convincing but leave no evidence that the answer stayed the same through every allowed move.",
+      "first_principles": "An invariant is that receipt. It can be a side count, a hole count, a signed intersection number, or a total index. It is useful because it can be checked before and after legal motion.",
+      "course_role": "This subtheme connects the Mobius strip to Euler characteristic, intersection number, and Poincare-Hopf. The object changes; the receipt proves what did not change and lets one picture speak for another."
+    }
   },
   {
     "id": "holes-and-boundaries",
     "title": "Holes and boundaries",
-    "plain": "Holes are not empty decoration; they are missing routes, blocked fillings, and accounting terms."
+    "plain": "Holes are not empty decoration; they are missing routes, blocked fillings, and accounting terms.",
+    "depth": {
+      "problem": "Holes and boundaries decide which routes exist and which counts must include edge terms. They are not visual decoration; they change what the surface can support and what motions are possible.",
+      "first_principles": "A boundary is where a surface stops. A hole is missing room or a blocked filling. Both change the way loops, paths, fields, and decompositions behave because they alter the available routes.",
+      "course_role": "This subtheme is central in surface classification, Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become holes or walls in the space of possibilities itself."
+    }
   },
   {
     "id": "curves-loops-knots",
     "title": "Curves, loops, and knots",
-    "plain": "A loop can carry memory of how it sits in space, even when its exact length and shape are forgotten."
+    "plain": "A loop can carry memory of how it sits in space, even when its exact length and shape are forgotten.",
+    "depth": {
+      "problem": "Curves and loops can carry information about how they sit inside a space. The problem is to distinguish accidental shape from protected route information that survives legal bending and stretching.",
+      "first_principles": "A loop can stretch while still going around a hole. A knot can wiggle while still refusing to become a circle. The exact drawing changes, but the route relation may remain.",
+      "course_role": "This subtheme supports deformation, winding, linking, intersections, and the move from visible curves to abstract paths in spaces of possible states. It keeps route information separate from length or appearance."
+    }
   },
   {
     "id": "turning-and-curvature",
     "title": "Turning and curvature",
-    "plain": "Curvature is a way of measuring how direction changes, and totals often matter more than point-by-point values."
+    "plain": "Curvature is a way of measuring how direction changes, and totals often matter more than point-by-point values.",
+    "depth": {
+      "problem": "Turning and curvature measure local change in direction, but the course is interested in totals that cannot be chosen freely by a drawing or arrow field on the whole shape.",
+      "first_principles": "A little bend by itself may be a local geometric fact. When many bends are added over a closed curve, a surface, or an arrow field around a defect, the total can become topological evidence.",
+      "course_role": "This subtheme links Gauss-Bonnet-style thinking to vector-field index. It prepares the reader to see local turning as part of whole-shape bookkeeping rather than isolated measurement at one point."
+    }
   },
   {
     "id": "signs-and-cancellation",
     "title": "Signs and cancellation",
-    "plain": "Opposite contributions can be born or die together while the total stays fixed."
+    "plain": "Opposite contributions can be born or die together while the total stays fixed.",
+    "depth": {
+      "problem": "Many events appear and disappear during a deformation. Counting them all positively gives a fragile number. The course needs a way for fake changes to cancel while forced information remains.",
+      "first_principles": "Signs record direction or orientation. When two opposite events are born together, their signed contributions add to zero. The visible picture changes, but the signed total survives the allowed motion.",
+      "course_role": "This subtheme is central to intersection number and vector-field index. It is also the finer version of parity: not just even or odd, but plus and minus with geometric meaning."
+    }
   },
   {
     "id": "surfaces-and-orientation",
     "title": "Surfaces and orientation",
-    "plain": "A surface may have two sides, one side, a boundary, or no boundary, and those facts govern what can be drawn on it."
+    "plain": "A surface may have two sides, one side, a boundary, or no boundary, and those facts govern what can be drawn on it.",
+    "depth": {
+      "problem": "Surfaces are the main stage of the course, but they are not all alike. Some have boundaries, some have handles, some reverse side after a trip, and some allow consistent signs.",
+      "first_principles": "Orientation asks whether a consistent sense of direction can be carried across the whole surface. Classification asks which handles, crosscaps, and boundaries remain after legal simplification and cutting into standard pieces.",
+      "course_role": "This subtheme supports surface classification, signed intersections, Euler characteristic, and Poincare-Hopf. Without it, later plus-minus bookkeeping has no stable meaning across the whole surface or field being studied."
+    }
   },
   {
     "id": "mechanisms-and-locks",
     "title": "Mechanisms and locks",
-    "plain": "Some physical systems are explained by the routes their parts are allowed to take."
+    "plain": "Some physical systems are explained by the routes their parts are allowed to take.",
+    "depth": {
+      "problem": "Physical systems often look complicated because parts move. The course asks whether the shape of the possible motions explains what is forced or blocked without tracking every detail of the motion.",
+      "first_principles": "A mechanism can be studied by its possible states. If the state space has a hole, wall, disconnected region, or forced passage, the mechanism inherits that constraint in its physical motion.",
+      "course_role": "This subtheme appears in center-of-gravity reasoning, fixed points, configuration spaces, and late applications where topology predicts behavior without solving every physical detail or trajectory explicitly from equations of motion."
+    }
   },
   {
     "id": "singular-moments",
     "title": "Singular moments",
-    "plain": "A special accident is often the moment where two ordinary pictures meet."
+    "plain": "A special accident is often the moment where two ordinary pictures meet.",
+    "depth": {
+      "problem": "A special accident can be where the action happens: two intersections are born, two cancel, a tangent contact appears, or a defect ceases to be isolated for a moment during motion.",
+      "first_principles": "A singular moment is not the ordinary case. It is the border between ordinary cases. By understanding how ordinary pictures change as they pass through it, the course controls exceptions instead of fearing them.",
+      "course_role": "This subtheme explains pair creation and cancellation, generic position, and the need to isolate equilibria before assigning index. It turns exceptions into controlled transitions between ordinary pictures during deformation arguments."
+    }
   },
   {
     "id": "models-not-labels",
     "title": "Models, not labels",
-    "plain": "The course's named ideas matter only when they help build a usable mental model."
+    "plain": "The course's named ideas matter only when they help build a usable mental model.",
+    "depth": {
+      "problem": "Topology and geometry have many names, but names do not teach the course. The real work is building a model that explains what can move, what is counted, and what is forced.",
+      "first_principles": "A term matters only if it helps answer a question. Manifold means local space with gluing rules. Quotient means identified points. Index means signed turning around a defect. Each name should earn its keep.",
+      "course_role": "This subtheme keeps the companion plain. It resists glossary thinking and asks every concept page to explain why the concept exists in the course and what work it performs for the reader."
+    }
   }
 ]

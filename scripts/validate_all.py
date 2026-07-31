@@ -47,6 +47,26 @@ def main():
     if stats["themes"] < 6 or stats["subthemes"] < 10 or stats["families"] < 5:
         fail("theme/subtheme/family coverage too small")
 
+    for theme in data["themes"]:
+        depth = theme.get("depth") or {}
+        for field in ["problem", "habit", "course_arc", "important_detail"]:
+            if len(words(depth.get(field))) < 40:
+                fail(f"theme {theme['id']} depth {field} too thin")
+        if len(depth.get("lectures") or []) < 4:
+            fail(f"theme {theme['id']} needs lecture thread")
+
+    for subtheme in data["subthemes"]:
+        depth = subtheme.get("depth") or {}
+        for field in ["problem", "first_principles", "course_role"]:
+            if len(words(depth.get(field))) < 30:
+                fail(f"subtheme {subtheme['id']} depth {field} too thin")
+
+    for family in data["families"]:
+        depth = family.get("depth") or {}
+        for field in ["human_problem", "first_principles", "how_it_works", "course_examples", "failure_mode"]:
+            if len(words(depth.get(field))) < 35:
+                fail(f"family {family['id']} depth {field} too thin")
+
     for concept in data["concepts"]:
         if len(words(concept["first_principles"])) < 35:
             fail(f"concept first_principles too thin: {concept['id']}")
@@ -72,8 +92,8 @@ def main():
             fail(f"lecture {lecture['lecture']} needs transcript anchors")
 
     html_files = sorted(SITE.glob("*.html"))
-    if len(html_files) < 50:
-        fail(f"expected at least 50 html pages after lecture depth pass, got {len(html_files)}")
+    if len(html_files) < 60:
+        fail(f"expected at least 60 html pages after map depth pass, got {len(html_files)}")
     names = {p.name for p in html_files}
     for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "source-audit.html"]:
         if page not in names:
@@ -87,6 +107,9 @@ def main():
     for theme in data["themes"]:
         if f"theme-{theme['id']}.html" not in names:
             fail(f"missing theme page {theme['id']}")
+    for subtheme in data["subthemes"]:
+        if f"subtheme-{subtheme['id']}.html" not in names:
+            fail(f"missing subtheme page {subtheme['id']}")
     for family in data["families"]:
         if f"family-{family['id']}.html" not in names:
             fail(f"missing family page {family['id']}")
