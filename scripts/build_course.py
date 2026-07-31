@@ -641,6 +641,70 @@ LECTURE_DEPTH = {
 }
 
 
+LECTURE_EXAMPLES = {
+    1: [
+        {"title": "Cutting an ordinary band versus a Mobius band", "text": "The opening paper experiment compares a straight glued band with a one-twist band. Cutting the center line tests whether the surface's global gluing rule changes what the cut produces.", "concepts": ["boundary-orientation", "topology-vs-geometry", "deformation"]},
+        {"title": "One side is a global fact", "text": "Walking around the Mobius strip shows that the local paper never stops looking ordinary, yet the full trip reverses the side. This is the course's first local-to-global lesson.", "concepts": ["boundary-orientation", "generic-position", "invariant"]},
+    ],
+    2: [
+        {"title": "Connecting boundary pairs in a disk", "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing.", "concepts": ["deformation", "graph-planarity", "invariant"]},
+        {"title": "Deformation as proof of impossibility", "text": "The lecture uses legal motion to simplify paths. If the simplified situation still forces a crossing, the original problem could not have had a legal crossing-free solution.", "concepts": ["deformation", "topology-vs-geometry", "generic-position"]},
+    ],
+    3: [
+        {"title": "Products make spaces from independent choices", "text": "The lecture builds cubes and related spaces by taking products of intervals. The plain idea is that two or more choices vary at once, and the resulting state-space has its own shape.", "concepts": ["configuration-space", "topology-vs-geometry", "triangulation"]},
+        {"title": "Quotients turn edge instructions into spaces", "text": "When edges or points are identified, a flat drawing becomes a code for a new space. The same square can describe different worlds depending on the gluing rule.", "concepts": ["duality", "boundary-orientation", "deformation"]},
+    ],
+    4: [
+        {"title": "A square is not the space until its edges are read", "text": "The lecture returns to squares with edge identifications. The useful lesson is that the visible square is a set of instructions for travel, not the final surface itself.", "concepts": ["duality", "boundary-orientation", "topology-vs-geometry"]},
+        {"title": "Reversing an edge changes the global surface", "text": "Changing a gluing direction can turn an ordinary two-sided behavior into a one-sided one. The local patches remain simple, but the whole route structure changes.", "concepts": ["boundary-orientation", "invariant", "deformation"]},
+    ],
+    5: [
+        {"title": "Classification separates surfaces by durable parts", "text": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries matter because they survive the allowed simplifications and therefore describe the surface beyond one drawing.", "concepts": ["euler-characteristic", "boundary-orientation", "triangulation"]},
+        {"title": "Surgery changes a surface by controlled cutting and gluing", "text": "The surface operations are not arbitrary cutting. They are controlled replacements that help reduce surfaces to standard forms while tracking what has changed and what surface information remains protected.", "concepts": ["deformation", "topology-vs-geometry", "invariant"]},
+    ],
+    6: [
+        {"title": "Moving an object inside a manifold", "text": "The lecture asks whether a sub-object can be moved around obstacles inside a larger space. The answer depends on dimension: enough room can turn collision into avoidance.", "concepts": ["generic-position", "deformation", "graph-planarity"]},
+        {"title": "Forced meetings become evidence", "text": "When an intersection cannot be removed by legal motion, it stops being a drawing accident and becomes information about the surrounding space. The lecture prepares the later signed count by separating removable crossings from forced ones.", "concepts": ["invariant", "winding-linking", "parity"]},
+    ],
+    7: [
+        {"title": "The center-of-gravity demonstration", "text": "Sliding two hands inward under an object creates a physical example of a forced state. Continuity makes the balancing event unavoidable because the relevant condition changes steadily rather than jumping past the answer.", "concepts": ["fixed-points", "configuration-space", "deformation"]},
+        {"title": "Existence without a formula", "text": "The lecture turns a hands-on balancing fact into the idea that some special point or event can be forced even when no explicit formula for it is available.", "concepts": ["fixed-points", "invariant", "generic-position"]},
+    ],
+    8: [
+        {"title": "Signed intersection number", "text": "The lecture counts intersections with plus and minus signs. The signs let newly born opposite pairs cancel, so the total remembers more than the visible crossing count.", "concepts": ["winding-linking", "boundary-orientation", "parity"]},
+        {"title": "Pair creation and cancellation", "text": "When a positive and a negative intersection appear together, the picture changes but the signed total does not. This is the cleanest example of designed cancellation.", "concepts": ["generic-position", "invariant", "vector-field-index"]},
+    ],
+    9: [
+        {"title": "The graph of a map meets the diagonal", "text": "The lecture treats a fixed point as an intersection: the graph records where points go, and the diagonal records points that stay where they started.", "concepts": ["fixed-points", "duality", "graph-planarity"]},
+        {"title": "Missing middle caption is kept visible", "text": "The middle video of this lecture has no recovered captions, so the explanation leans on the available surrounding parts and preserves the source gap in the audit.", "concepts": ["invariant", "generic-position", "fixed-points"]},
+    ],
+    10: [
+        {"title": "Brouwer on the closed ball", "text": "The lecture's fixed-point theorem says a continuous self-map of a closed ball must leave some point fixed. The point is forced by the shape, not found by calculation.", "concepts": ["fixed-points", "boundary-orientation", "topology-vs-geometry"]},
+        {"title": "Boundary changes the theorem", "text": "The closed ball includes its boundary, and that boundary is part of why the statement has force. Removing or changing the boundary can change the conclusion.", "concepts": ["boundary-orientation", "configuration-space", "invariant"]},
+    ],
+    11: [
+        {"title": "Vector fields replace solved trajectories", "text": "The lecture starts the dynamics chapter by asking what can be known without solving a differential equation. A vector field gives an arrow pattern whose defects can be studied topologically.", "concepts": ["vector-field-index", "fixed-points", "configuration-space"]},
+        {"title": "Equilibria are arrow-field failures", "text": "An equilibrium is where the arrow vanishes. The index records how nearby arrows turn around that failure, turning local dynamics into signed evidence that can later be added over the whole surface.", "concepts": ["vector-field-index", "gauss-bonnet", "invariant"]},
+    ],
+    12: [
+        {"title": "Adding local indices", "text": "The lecture asks what all local vector-field indices know together. The sum is not arbitrary; it is tied to the surface carrying the field.", "concepts": ["vector-field-index", "euler-characteristic", "boundary-orientation"]},
+        {"title": "Poincare-Hopf as surface bookkeeping", "text": "Local arrow failures add up to Euler characteristic. This converts the earlier cell-counting idea into a statement about possible motion and shows why surface topology controls vector fields.", "concepts": ["euler-characteristic", "gauss-bonnet", "invariant"]},
+    ],
+    13: [
+        {"title": "Using Poincare-Hopf in both directions", "text": "The theorem can predict forced equilibria from topology, or use known equilibria to reveal something about the surface. It is a bridge between shape and motion.", "concepts": ["vector-field-index", "euler-characteristic", "fixed-points"]},
+        {"title": "The hairy-ball idea in plain form", "text": "On a sphere, a continuous tangent arrow pattern cannot avoid defects everywhere. Something must fail because the whole surface does not allow all local choices to agree.", "concepts": ["boundary-orientation", "vector-field-index", "topology-vs-geometry"]},
+    ],
+    14: [
+        {"title": "Applications as honest translations", "text": "The late applications work by translating a physical or rotational situation into a space, a rule, and a protected obstruction. The theorem applies only after that translation is correct.", "concepts": ["configuration-space", "fixed-points", "invariant"]},
+        {"title": "Rotations and dynamics share the same proof engine", "text": "Rotations in space and dynamical examples look different, but both can be read through fixed points, vector fields, indices, or deformation-protected counts once the right space and rule are identified.", "concepts": ["vector-field-index", "configuration-space", "duality"]},
+    ],
+    15: [
+        {"title": "The table of contents becomes one argument", "text": "The final review names the course as pictorial thinking. Paper strips, deformation, manifolds, intersections, fixed points, and vector fields form one chain rather than separate topics.", "concepts": ["deformation", "invariant", "topology-vs-geometry"]},
+        {"title": "Pictures earn their role by carrying constraints", "text": "The course's pictures matter because they show what can move, what cannot move, and what count survives. That is why the final summary ties the visual style to mathematical force.", "concepts": ["duality", "generic-position", "euler-characteristic"]},
+    ],
+}
+
+
 def clean_vtt(path):
     seen = []
     out = []
@@ -722,6 +786,11 @@ def paragraph_block(items):
     return "".join(f"<p>{esc(item)}</p>" for item in items)
 
 
+def concept_pills(concept_ids, concepts):
+    by_id = {c["id"]: c for c in concepts}
+    return "".join(f'<a class="pill" href="{slug_page("concept", cid)}">{esc(by_id[cid]["title"])}</a>' for cid in concept_ids if cid in by_id)
+
+
 def build_site(data):
     (SITE / "assets").mkdir(parents=True, exist_ok=True)
     css = """
@@ -782,6 +851,10 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
 </section>
 <h2>Transcript Anchors</h2>
 <p>{''.join(f'<span class="pill">{esc(a)}</span>' for a in l['deep']['anchors'])}</p>
+<h2>Concrete Course Moments</h2>
+<div class="grid two">
+{''.join(f'<article class="card"><div class="meta">Transcript-grounded example</div><h3>{esc(ex["title"])}</h3><p>{esc(ex["text"])}</p><p>{concept_pills(ex["concepts"], data["concepts"])}</p></article>' for ex in l['deep']['examples'])}
+</div>
 <h2>Video Parts</h2>
 <p>{vids}</p>
 <p class="evidence">Transcript words: {l['transcript_words']}. Missing captions: {', '.join(l['missing_caption_ids']) or 'none'}.</p>
@@ -860,6 +933,8 @@ def main():
         if combined:
             (TEXT / f"lecture-{number:02d}.txt").write_text(combined + "\n", encoding="utf-8")
         missing = [v["id"] for v, text in items if not text]
+        deep = dict(LECTURE_DEPTH[number])
+        deep["examples"] = LECTURE_EXAMPLES[number]
         lectures.append({
             "lecture": number,
             "videos": [v for v, _ in items],
@@ -867,7 +942,7 @@ def main():
             "transcript_words": len(combined.split()),
             "missing_caption_ids": missing,
             "plain_reading": LECTURE_NOTES.get(number, "Lecture reading pending."),
-            "deep": LECTURE_DEPTH[number],
+            "deep": deep,
             "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed.",
         })
 

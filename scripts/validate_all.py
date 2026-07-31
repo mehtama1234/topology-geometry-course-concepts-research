@@ -90,6 +90,18 @@ def main():
                 fail(f"lecture {lecture['lecture']} deep {field} too thin")
         if len(deep.get("anchors") or []) < 4:
             fail(f"lecture {lecture['lecture']} needs transcript anchors")
+        examples = deep.get("examples") or []
+        if len(examples) < 2:
+            fail(f"lecture {lecture['lecture']} needs at least two concrete examples")
+        concept_ids = {c["id"] for c in data["concepts"]}
+        for example in examples:
+            if len(words(example.get("text"))) < 25:
+                fail(f"lecture {lecture['lecture']} example too thin: {example.get('title')}")
+            if len(example.get("concepts") or []) < 3:
+                fail(f"lecture {lecture['lecture']} example needs concept bridges: {example.get('title')}")
+            missing = [cid for cid in example.get("concepts", []) if cid not in concept_ids]
+            if missing:
+                fail(f"lecture {lecture['lecture']} example has unknown concept ids: {missing}")
 
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 60:
