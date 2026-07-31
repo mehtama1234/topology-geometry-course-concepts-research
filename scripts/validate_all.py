@@ -47,6 +47,11 @@ def main():
     if stats["themes"] < 6 or stats["subthemes"] < 10 or stats["families"] < 5:
         fail("theme/subtheme/family coverage too small")
 
+    math_why = data.get("math_why") or {}
+    for field in ["big_picture", "first_principles", "important_detail", "principle", "concepts_matter", "reader_path"]:
+        if len(words(math_why.get(field))) < 45:
+            fail(f"math_why {field} too thin")
+
     for theme in data["themes"]:
         depth = theme.get("depth") or {}
         for field in ["problem", "habit", "course_arc", "important_detail"]:
@@ -78,6 +83,15 @@ def main():
         for field in ["why_it_exists", "beginner_trap", "course_role"]:
             if len(words(depth.get(field))) < 35:
                 fail(f"concept {concept['id']} depth {field} too thin")
+        appearances = concept.get("appearances") or []
+        if len(appearances) < 2:
+            fail(f"concept {concept['id']} needs at least two lecture appearances")
+        lecture_numbers = {lecture["lecture"] for lecture in data["lectures"]}
+        for appearance in appearances:
+            if appearance.get("lecture") not in lecture_numbers:
+                fail(f"concept {concept['id']} appearance references unknown lecture")
+            if len(words(appearance.get("summary"))) < 25:
+                fail(f"concept {concept['id']} appearance summary too thin")
 
     for lecture in data["lectures"]:
         if not lecture["missing_caption_ids"] and lecture["transcript_words"] < 1000:

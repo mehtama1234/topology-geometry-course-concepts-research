@@ -528,6 +528,15 @@
               "generic-position",
               "invariant"
             ]
+          },
+          {
+            "title": "Off-center cuts create linked pieces",
+            "text": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other.",
+            "concepts": [
+              "knots-and-links",
+              "winding-linking",
+              "boundary-orientation"
+            ]
           }
         ]
       },
@@ -1584,6 +1593,15 @@
               "generic-position",
               "euler-characteristic"
             ]
+          },
+          {
+            "title": "The final strip demonstration returns to linking",
+            "text": "The last demonstration cuts glued strips and then glued Mobius strips, producing pieces that have to be untangled and displayed. It returns the course to the idea that a visible tangle can encode a real route constraint.",
+            "concepts": [
+              "knots-and-links",
+              "duality",
+              "topology-vs-geometry"
+            ]
           }
         ]
       },
@@ -1829,7 +1847,44 @@
         "why_it_exists": "Generic position exists because special coincidences are too brittle to reason from. If three things meet at exactly one point, or a curve just kisses another curve, a tiny nudge can change the picture. The course wants arguments that survive tiny nudges, so it first moves the picture away from accidental perfection.",
         "beginner_trap": "The trap is to think ordinary position means ignoring difficult cases. It does not. It means solve the stable case first, then understand exceptional cases as limits or controlled moments where stable pictures change without destroying the question.",
         "course_role": "This idea is quiet but constant. It is behind clean intersections, pair creation and cancellation, isolated equilibria, and the move from messy physical examples to countable mathematical evidence. It gives the course permission to draw simple pictures without lying about the original problem."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 1,
+          "title": "One side is a global fact",
+          "summary": "Walking around the Mobius strip shows that the local paper never stops looking ordinary, yet the full trip reverses the side. This is the course's first local-to-global lesson."
+        },
+        {
+          "lecture": 2,
+          "title": "Deformation as proof of impossibility",
+          "summary": "The lecture uses legal motion to simplify paths. If the simplified situation still forces a crossing, the original problem could not have had a legal crossing-free solution."
+        },
+        {
+          "lecture": 6,
+          "title": "Moving an object inside a manifold",
+          "summary": "The lecture asks whether a sub-object can be moved around obstacles inside a larger space. The answer depends on dimension: enough room can turn collision into avoidance."
+        },
+        {
+          "lecture": 7,
+          "title": "Existence without a formula",
+          "summary": "The lecture turns a hands-on balancing fact into the idea that some special point or event can be forced even when no explicit formula for it is available."
+        },
+        {
+          "lecture": 8,
+          "title": "Pair creation and cancellation",
+          "summary": "When a positive and a negative intersection appear together, the picture changes but the signed total does not. This is the cleanest example of designed cancellation."
+        },
+        {
+          "lecture": 9,
+          "title": "Missing middle caption is kept visible",
+          "summary": "The middle video of this lecture has no recovered captions, so the explanation leans on the available surrounding parts and preserves the source gap in the audit."
+        },
+        {
+          "lecture": 15,
+          "title": "Pictures earn their role by carrying constraints",
+          "summary": "The course's pictures matter because they show what can move, what cannot move, and what count survives. That is why the final summary ties the visual style to mathematical force."
+        }
+      ]
     },
     {
       "id": "deformation",
@@ -1846,7 +1901,54 @@
         "why_it_exists": "Deformation exists because exact drawings often hide the answer. If stretching a curve does not change the question, then a complicated curve can be replaced by a simpler one. The purpose is not to make a pretty picture; it is to preserve the right fact while throwing away distracting measurement.",
         "beginner_trap": "The trap is to think any visual simplification is legal. A deformation cannot cut, glue, jump, pass through a forbidden obstacle, or move fixed endpoints past each other. The allowed moves are the proof, and changing those moves changes the claim.",
         "course_role": "Deformation is the course's main verb. It begins with strips and disk puzzles, then reappears in surface classification, intersection invariance, fixed-point theory, and vector-field index. Each later theorem asks what survives when the picture is moved honestly."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 1,
+          "title": "Cutting an ordinary band versus a Mobius band",
+          "summary": "The opening paper experiment compares a straight glued band with a one-twist band. Cutting the center line tests whether the surface's global gluing rule changes what the cut produces."
+        },
+        {
+          "lecture": 2,
+          "title": "Connecting boundary pairs in a disk",
+          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+        },
+        {
+          "lecture": 2,
+          "title": "Deformation as proof of impossibility",
+          "summary": "The lecture uses legal motion to simplify paths. If the simplified situation still forces a crossing, the original problem could not have had a legal crossing-free solution."
+        },
+        {
+          "lecture": 3,
+          "title": "Quotients turn edge instructions into spaces",
+          "summary": "When edges or points are identified, a flat drawing becomes a code for a new space. The same square can describe different worlds depending on the gluing rule."
+        },
+        {
+          "lecture": 4,
+          "title": "Reversing an edge changes the global surface",
+          "summary": "Changing a gluing direction can turn an ordinary two-sided behavior into a one-sided one. The local patches remain simple, but the whole route structure changes."
+        },
+        {
+          "lecture": 5,
+          "title": "Surgery changes a surface by controlled cutting and gluing",
+          "summary": "The surface operations are not arbitrary cutting. They are controlled replacements that help reduce surfaces to standard forms while tracking what has changed and what surface information remains protected."
+        },
+        {
+          "lecture": 6,
+          "title": "Moving an object inside a manifold",
+          "summary": "The lecture asks whether a sub-object can be moved around obstacles inside a larger space. The answer depends on dimension: enough room can turn collision into avoidance."
+        },
+        {
+          "lecture": 7,
+          "title": "The center-of-gravity demonstration",
+          "summary": "Sliding two hands inward under an object creates a physical example of a forced state. Continuity makes the balancing event unavoidable because the relevant condition changes steadily rather than jumping past the answer."
+        },
+        {
+          "lecture": 15,
+          "title": "The table of contents becomes one argument",
+          "summary": "The final review names the course as pictorial thinking. Paper strips, deformation, manifolds, intersections, fixed points, and vector fields form one chain rather than separate topics."
+        }
+      ]
     },
     {
       "id": "invariant",
@@ -1863,7 +1965,74 @@
         "why_it_exists": "An invariant exists to give memory to a changing picture. When a shape bends or a map moves, most visible details change. The invariant is the part chosen carefully enough that it does not change under the allowed motion.",
         "beginner_trap": "The trap is to expect one invariant to tell the whole story. Most invariants are partial witnesses. They are powerful because a single preserved difference can prove impossibility, even when it cannot classify every possible shape.",
         "course_role": "The course moves from physical invariants such as one-sidedness to numerical invariants such as intersection number, Euler characteristic, fixed-point counts, and total vector-field index. The recurring question is always which fact has enough memory to survive the allowed change."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 1,
+          "title": "One side is a global fact",
+          "summary": "Walking around the Mobius strip shows that the local paper never stops looking ordinary, yet the full trip reverses the side. This is the course's first local-to-global lesson."
+        },
+        {
+          "lecture": 2,
+          "title": "Connecting boundary pairs in a disk",
+          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+        },
+        {
+          "lecture": 4,
+          "title": "Reversing an edge changes the global surface",
+          "summary": "Changing a gluing direction can turn an ordinary two-sided behavior into a one-sided one. The local patches remain simple, but the whole route structure changes."
+        },
+        {
+          "lecture": 5,
+          "title": "Surgery changes a surface by controlled cutting and gluing",
+          "summary": "The surface operations are not arbitrary cutting. They are controlled replacements that help reduce surfaces to standard forms while tracking what has changed and what surface information remains protected."
+        },
+        {
+          "lecture": 6,
+          "title": "Forced meetings become evidence",
+          "summary": "When an intersection cannot be removed by legal motion, it stops being a drawing accident and becomes information about the surrounding space. The lecture prepares the later signed count by separating removable crossings from forced ones."
+        },
+        {
+          "lecture": 7,
+          "title": "Existence without a formula",
+          "summary": "The lecture turns a hands-on balancing fact into the idea that some special point or event can be forced even when no explicit formula for it is available."
+        },
+        {
+          "lecture": 8,
+          "title": "Pair creation and cancellation",
+          "summary": "When a positive and a negative intersection appear together, the picture changes but the signed total does not. This is the cleanest example of designed cancellation."
+        },
+        {
+          "lecture": 9,
+          "title": "Missing middle caption is kept visible",
+          "summary": "The middle video of this lecture has no recovered captions, so the explanation leans on the available surrounding parts and preserves the source gap in the audit."
+        },
+        {
+          "lecture": 10,
+          "title": "Boundary changes the theorem",
+          "summary": "The closed ball includes its boundary, and that boundary is part of why the statement has force. Removing or changing the boundary can change the conclusion."
+        },
+        {
+          "lecture": 11,
+          "title": "Equilibria are arrow-field failures",
+          "summary": "An equilibrium is where the arrow vanishes. The index records how nearby arrows turn around that failure, turning local dynamics into signed evidence that can later be added over the whole surface."
+        },
+        {
+          "lecture": 12,
+          "title": "Poincare-Hopf as surface bookkeeping",
+          "summary": "Local arrow failures add up to Euler characteristic. This converts the earlier cell-counting idea into a statement about possible motion and shows why surface topology controls vector fields."
+        },
+        {
+          "lecture": 14,
+          "title": "Applications as honest translations",
+          "summary": "The late applications work by translating a physical or rotational situation into a space, a rule, and a protected obstruction. The theorem applies only after that translation is correct."
+        },
+        {
+          "lecture": 15,
+          "title": "The table of contents becomes one argument",
+          "summary": "The final review names the course as pictorial thinking. Paper strips, deformation, manifolds, intersections, fixed points, and vector fields form one chain rather than separate topics."
+        }
+      ]
     },
     {
       "id": "topology-vs-geometry",
@@ -1879,7 +2048,54 @@
         "why_it_exists": "The distinction exists because not every question needs the same kind of information. Geometry asks how much, how long, how curved, or at what angle. Topology asks how connected, how many holes, which routes are blocked, and what survives bending.",
         "beginner_trap": "The trap is to treat topology as geometry with measurements removed. In this course, topology is not emptier than geometry; it is a different level of description chosen because it protects the facts that matter.",
         "course_role": "Tokieda constantly uses both. Drawings and physical objects give geometric intuition, while topological reasoning explains why the outcome survives changes in the drawing. The lectures are strongest when a measured-looking picture is converted into a route, boundary, count, or obstruction."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 1,
+          "title": "Cutting an ordinary band versus a Mobius band",
+          "summary": "The opening paper experiment compares a straight glued band with a one-twist band. Cutting the center line tests whether the surface's global gluing rule changes what the cut produces."
+        },
+        {
+          "lecture": 2,
+          "title": "Deformation as proof of impossibility",
+          "summary": "The lecture uses legal motion to simplify paths. If the simplified situation still forces a crossing, the original problem could not have had a legal crossing-free solution."
+        },
+        {
+          "lecture": 3,
+          "title": "Products make spaces from independent choices",
+          "summary": "The lecture builds cubes and related spaces by taking products of intervals. The plain idea is that two or more choices vary at once, and the resulting state-space has its own shape."
+        },
+        {
+          "lecture": 4,
+          "title": "A square is not the space until its edges are read",
+          "summary": "The lecture returns to squares with edge identifications. The useful lesson is that the visible square is a set of instructions for travel, not the final surface itself."
+        },
+        {
+          "lecture": 5,
+          "title": "Surgery changes a surface by controlled cutting and gluing",
+          "summary": "The surface operations are not arbitrary cutting. They are controlled replacements that help reduce surfaces to standard forms while tracking what has changed and what surface information remains protected."
+        },
+        {
+          "lecture": 10,
+          "title": "Brouwer on the closed ball",
+          "summary": "The lecture's fixed-point theorem says a continuous self-map of a closed ball must leave some point fixed. The point is forced by the shape, not found by calculation."
+        },
+        {
+          "lecture": 13,
+          "title": "The hairy-ball idea in plain form",
+          "summary": "On a sphere, a continuous tangent arrow pattern cannot avoid defects everywhere. Something must fail because the whole surface does not allow all local choices to agree."
+        },
+        {
+          "lecture": 15,
+          "title": "The table of contents becomes one argument",
+          "summary": "The final review names the course as pictorial thinking. Paper strips, deformation, manifolds, intersections, fixed points, and vector fields form one chain rather than separate topics."
+        },
+        {
+          "lecture": 15,
+          "title": "The final strip demonstration returns to linking",
+          "summary": "The last demonstration cuts glued strips and then glued Mobius strips, producing pieces that have to be untangled and displayed. It returns the course to the idea that a visible tangle can encode a real route constraint."
+        }
+      ]
     },
     {
       "id": "euler-characteristic",
@@ -1896,7 +2112,34 @@
         "why_it_exists": "Euler characteristic exists because surfaces need a count that ignores how they were chopped up. Vertices, edges, and faces individually depend on the chosen decomposition. The alternating count is arranged so artificial internal cuts cancel.",
         "beginner_trap": "The trap is to memorize the formula without seeing the cancellation. The formula matters because it survives refinement and therefore belongs to the surface, not to one drawing of the surface or one chosen mesh of pieces.",
         "course_role": "It becomes the bridge from surface bookkeeping to dynamics. In Poincare-Hopf, Euler characteristic is the whole-surface number that local vector-field indices must add up to. That is why a cell count can predict something about motion."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 5,
+          "title": "Classification separates surfaces by durable parts",
+          "summary": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries matter because they survive the allowed simplifications and therefore describe the surface beyond one drawing."
+        },
+        {
+          "lecture": 12,
+          "title": "Adding local indices",
+          "summary": "The lecture asks what all local vector-field indices know together. The sum is not arbitrary; it is tied to the surface carrying the field."
+        },
+        {
+          "lecture": 12,
+          "title": "Poincare-Hopf as surface bookkeeping",
+          "summary": "Local arrow failures add up to Euler characteristic. This converts the earlier cell-counting idea into a statement about possible motion and shows why surface topology controls vector fields."
+        },
+        {
+          "lecture": 13,
+          "title": "Using Poincare-Hopf in both directions",
+          "summary": "The theorem can predict forced equilibria from topology, or use known equilibria to reveal something about the surface. It is a bridge between shape and motion."
+        },
+        {
+          "lecture": 15,
+          "title": "Pictures earn their role by carrying constraints",
+          "summary": "The course's pictures matter because they show what can move, what cannot move, and what count survives. That is why the final summary ties the visual style to mathematical force."
+        }
+      ]
     },
     {
       "id": "triangulation",
@@ -1913,7 +2156,19 @@
         "why_it_exists": "Triangulation exists to make a soft surface countable. A smooth surface has infinitely many points, but a triangulated surface has a finite ledger of pieces. That ledger lets the course count without pretending the surface is made of rigid triangles in any physical sense.",
         "beginner_trap": "The trap is to confuse the chosen triangulation with the surface itself. A different triangulation should give the same meaningful surface facts, or the count was not topological. The pieces are scaffolding for thought, not the object.",
         "course_role": "Triangulation supports Euler characteristic, surface classification, and the later comparison between cell counts and vector-field behavior. It is the finite bookkeeping device that lets smooth-looking surfaces enter exact arguments without pretending that smoothness has disappeared."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 3,
+          "title": "Products make spaces from independent choices",
+          "summary": "The lecture builds cubes and related spaces by taking products of intervals. The plain idea is that two or more choices vary at once, and the resulting state-space has its own shape."
+        },
+        {
+          "lecture": 5,
+          "title": "Classification separates surfaces by durable parts",
+          "summary": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries matter because they survive the allowed simplifications and therefore describe the surface beyond one drawing."
+        }
+      ]
     },
     {
       "id": "graph-planarity",
@@ -1930,7 +2185,24 @@
         "why_it_exists": "Planarity exists because connection problems are also space problems. A graph may only say which dots must be joined, but drawing it on a plane adds a constraint: the routes must share a surface without forbidden crossings.",
         "beginner_trap": "The trap is to think a failed drawing proves impossibility. A bad drawing proves only that the drawer failed. A topological argument proves that every drawing must fail because the surface itself lacks the required room.",
         "course_role": "Graph thinking trains the reader to separate combinatorial demand from surface room, a separation that later appears in intersections and configuration spaces. It makes route constraints feel concrete before the course moves to manifolds and higher-dimensional examples."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 2,
+          "title": "Connecting boundary pairs in a disk",
+          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+        },
+        {
+          "lecture": 6,
+          "title": "Moving an object inside a manifold",
+          "summary": "The lecture asks whether a sub-object can be moved around obstacles inside a larger space. The answer depends on dimension: enough room can turn collision into avoidance."
+        },
+        {
+          "lecture": 9,
+          "title": "The graph of a map meets the diagonal",
+          "summary": "The lecture treats a fixed point as an intersection: the graph records where points go, and the diagonal records points that stay where they started."
+        }
+      ]
     },
     {
       "id": "knots-and-links",
@@ -1947,7 +2219,19 @@
         "why_it_exists": "Knots and links exist in the course because a curve in space can remember how it is embedded. Length, roundness, and exact position can change, yet the loop may still be unable to become a plain circle by legal motion.",
         "beginner_trap": "The trap is to judge a knot by how tangled the drawing looks. A knot diagram is only meaningful when crossings record which strand passes over and which passes under. Without that record, the drawing has lost the spatial question.",
         "course_role": "They sharpen the idea of allowed moves. The same discipline later governs deformation of submanifolds, intersection counts, and paths in spaces of possible states. Knots make clear why passing through is not an innocent shortcut."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 1,
+          "title": "Off-center cuts create linked pieces",
+          "summary": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other."
+        },
+        {
+          "lecture": 15,
+          "title": "The final strip demonstration returns to linking",
+          "summary": "The last demonstration cuts glued strips and then glued Mobius strips, producing pieces that have to be untangled and displayed. It returns the course to the idea that a visible tangle can encode a real route constraint."
+        }
+      ]
     },
     {
       "id": "winding-linking",
@@ -1964,7 +2248,24 @@
         "why_it_exists": "Winding and linking exist because going around something can be a stable relationship. A loop around a post can stretch and wiggle, but it cannot stop going around the post unless it crosses the post or breaks.",
         "beginner_trap": "The trap is to treat winding as a visual impression. The course needs a signed count, because opposite turns can cancel and because the count must survive legal motion instead of depending on one drawing.",
         "course_role": "This idea connects loops and knots to intersection signs. It is one of the plainest examples of a count that records a relationship rather than a measurement. Later signed counts are more abstract, but they serve the same purpose."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 1,
+          "title": "Off-center cuts create linked pieces",
+          "summary": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other."
+        },
+        {
+          "lecture": 6,
+          "title": "Forced meetings become evidence",
+          "summary": "When an intersection cannot be removed by legal motion, it stops being a drawing accident and becomes information about the surrounding space. The lecture prepares the later signed count by separating removable crossings from forced ones."
+        },
+        {
+          "lecture": 8,
+          "title": "Signed intersection number",
+          "summary": "The lecture counts intersections with plus and minus signs. The signs let newly born opposite pairs cancel, so the total remembers more than the visible crossing count."
+        }
+      ]
     },
     {
       "id": "boundary-orientation",
@@ -1981,7 +2282,69 @@
         "why_it_exists": "Boundary and orientation exist because a surface's edge and side-structure control what counts can be made. A boundary changes the bookkeeping. Orientation tells whether signs can be assigned consistently across the whole surface, which determines whether signed counts are even available.",
         "beginner_trap": "The trap is to check orientation only locally. Every small patch has two sides, but a trip around a Mobius-type surface can return with the side choice reversed. The obstruction is global, not local.",
         "course_role": "Orientation is required for signed intersection number and for many index arguments. Boundary issues also explain why some fixed-point statements need extra care. The course uses these details whenever a plus or minus sign is supposed to mean something."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 1,
+          "title": "Cutting an ordinary band versus a Mobius band",
+          "summary": "The opening paper experiment compares a straight glued band with a one-twist band. Cutting the center line tests whether the surface's global gluing rule changes what the cut produces."
+        },
+        {
+          "lecture": 1,
+          "title": "One side is a global fact",
+          "summary": "Walking around the Mobius strip shows that the local paper never stops looking ordinary, yet the full trip reverses the side. This is the course's first local-to-global lesson."
+        },
+        {
+          "lecture": 1,
+          "title": "Off-center cuts create linked pieces",
+          "summary": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other."
+        },
+        {
+          "lecture": 3,
+          "title": "Quotients turn edge instructions into spaces",
+          "summary": "When edges or points are identified, a flat drawing becomes a code for a new space. The same square can describe different worlds depending on the gluing rule."
+        },
+        {
+          "lecture": 4,
+          "title": "A square is not the space until its edges are read",
+          "summary": "The lecture returns to squares with edge identifications. The useful lesson is that the visible square is a set of instructions for travel, not the final surface itself."
+        },
+        {
+          "lecture": 4,
+          "title": "Reversing an edge changes the global surface",
+          "summary": "Changing a gluing direction can turn an ordinary two-sided behavior into a one-sided one. The local patches remain simple, but the whole route structure changes."
+        },
+        {
+          "lecture": 5,
+          "title": "Classification separates surfaces by durable parts",
+          "summary": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries matter because they survive the allowed simplifications and therefore describe the surface beyond one drawing."
+        },
+        {
+          "lecture": 8,
+          "title": "Signed intersection number",
+          "summary": "The lecture counts intersections with plus and minus signs. The signs let newly born opposite pairs cancel, so the total remembers more than the visible crossing count."
+        },
+        {
+          "lecture": 10,
+          "title": "Brouwer on the closed ball",
+          "summary": "The lecture's fixed-point theorem says a continuous self-map of a closed ball must leave some point fixed. The point is forced by the shape, not found by calculation."
+        },
+        {
+          "lecture": 10,
+          "title": "Boundary changes the theorem",
+          "summary": "The closed ball includes its boundary, and that boundary is part of why the statement has force. Removing or changing the boundary can change the conclusion."
+        },
+        {
+          "lecture": 12,
+          "title": "Adding local indices",
+          "summary": "The lecture asks what all local vector-field indices know together. The sum is not arbitrary; it is tied to the surface carrying the field."
+        },
+        {
+          "lecture": 13,
+          "title": "The hairy-ball idea in plain form",
+          "summary": "On a sphere, a continuous tangent arrow pattern cannot avoid defects everywhere. Something must fail because the whole surface does not allow all local choices to agree."
+        }
+      ]
     },
     {
       "id": "gauss-bonnet",
@@ -1998,7 +2361,19 @@
         "why_it_exists": "Gauss-Bonnet exists because local bending and whole-shape topology are not separate worlds. A surface can bend in many ways, but the total bending, with boundary terms included when needed, can be tied to the surface's topology.",
         "beginner_trap": "The trap is to think curvature is only a point-by-point geometric measurement. The course cares about total curvature because totals can be protected by topology. The local measurement matters most when its sum is forced.",
         "course_role": "It belongs to the local-to-global theme. Even when the course later emphasizes vector fields, the same pattern remains: local contributions add up to a global demand. Gauss-Bonnet is the curvature version of that demand."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 11,
+          "title": "Equilibria are arrow-field failures",
+          "summary": "An equilibrium is where the arrow vanishes. The index records how nearby arrows turn around that failure, turning local dynamics into signed evidence that can later be added over the whole surface."
+        },
+        {
+          "lecture": 12,
+          "title": "Poincare-Hopf as surface bookkeeping",
+          "summary": "Local arrow failures add up to Euler characteristic. This converts the earlier cell-counting idea into a statement about possible motion and shows why surface topology controls vector fields."
+        }
+      ]
     },
     {
       "id": "vector-field-index",
@@ -2015,7 +2390,44 @@
         "why_it_exists": "Vector-field index exists because solving a differential equation is often too much to ask. The index extracts a small but durable fact from the arrow pattern near an equilibrium: how the arrows turn around the failure point.",
         "beginner_trap": "The trap is to classify equilibria by appearance alone. The index is a signed turning count, and different-looking local pictures may have the same index while similar-looking pictures may behave differently under deformation.",
         "course_role": "Index is the dynamics version of signed intersection. It lets Poincare-Hopf connect local equilibria to Euler characteristic. The concept proves that a local arrow defect can carry exactly the kind of signed information the earlier intersection theory taught us to trust."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 8,
+          "title": "Pair creation and cancellation",
+          "summary": "When a positive and a negative intersection appear together, the picture changes but the signed total does not. This is the cleanest example of designed cancellation."
+        },
+        {
+          "lecture": 11,
+          "title": "Vector fields replace solved trajectories",
+          "summary": "The lecture starts the dynamics chapter by asking what can be known without solving a differential equation. A vector field gives an arrow pattern whose defects can be studied topologically."
+        },
+        {
+          "lecture": 11,
+          "title": "Equilibria are arrow-field failures",
+          "summary": "An equilibrium is where the arrow vanishes. The index records how nearby arrows turn around that failure, turning local dynamics into signed evidence that can later be added over the whole surface."
+        },
+        {
+          "lecture": 12,
+          "title": "Adding local indices",
+          "summary": "The lecture asks what all local vector-field indices know together. The sum is not arbitrary; it is tied to the surface carrying the field."
+        },
+        {
+          "lecture": 13,
+          "title": "Using Poincare-Hopf in both directions",
+          "summary": "The theorem can predict forced equilibria from topology, or use known equilibria to reveal something about the surface. It is a bridge between shape and motion."
+        },
+        {
+          "lecture": 13,
+          "title": "The hairy-ball idea in plain form",
+          "summary": "On a sphere, a continuous tangent arrow pattern cannot avoid defects everywhere. Something must fail because the whole surface does not allow all local choices to agree."
+        },
+        {
+          "lecture": 14,
+          "title": "Rotations and dynamics share the same proof engine",
+          "summary": "Rotations in space and dynamical examples look different, but both can be read through fixed points, vector fields, indices, or deformation-protected counts once the right space and rule are identified."
+        }
+      ]
     },
     {
       "id": "fixed-points",
@@ -2032,7 +2444,49 @@
         "why_it_exists": "Fixed points exist as a concept because many problems ask whether a rule must leave something unchanged. Instead of finding the point, topology can sometimes prove that the shape of the space prevents all points from escaping themselves.",
         "beginner_trap": "The trap is to expect a fixed-point theorem to compute the fixed point. These theorems often prove existence only, which is already powerful when exact computation is unavailable or when the rule is known only qualitatively.",
         "course_role": "Fixed points connect intersection theory to dynamics. The graph of a map meeting the diagonal becomes a reusable form for proving unavoidable states. The idea then reappears when equilibria are treated as unavoidable failures of a vector field."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 7,
+          "title": "The center-of-gravity demonstration",
+          "summary": "Sliding two hands inward under an object creates a physical example of a forced state. Continuity makes the balancing event unavoidable because the relevant condition changes steadily rather than jumping past the answer."
+        },
+        {
+          "lecture": 7,
+          "title": "Existence without a formula",
+          "summary": "The lecture turns a hands-on balancing fact into the idea that some special point or event can be forced even when no explicit formula for it is available."
+        },
+        {
+          "lecture": 9,
+          "title": "The graph of a map meets the diagonal",
+          "summary": "The lecture treats a fixed point as an intersection: the graph records where points go, and the diagonal records points that stay where they started."
+        },
+        {
+          "lecture": 9,
+          "title": "Missing middle caption is kept visible",
+          "summary": "The middle video of this lecture has no recovered captions, so the explanation leans on the available surrounding parts and preserves the source gap in the audit."
+        },
+        {
+          "lecture": 10,
+          "title": "Brouwer on the closed ball",
+          "summary": "The lecture's fixed-point theorem says a continuous self-map of a closed ball must leave some point fixed. The point is forced by the shape, not found by calculation."
+        },
+        {
+          "lecture": 11,
+          "title": "Vector fields replace solved trajectories",
+          "summary": "The lecture starts the dynamics chapter by asking what can be known without solving a differential equation. A vector field gives an arrow pattern whose defects can be studied topologically."
+        },
+        {
+          "lecture": 13,
+          "title": "Using Poincare-Hopf in both directions",
+          "summary": "The theorem can predict forced equilibria from topology, or use known equilibria to reveal something about the surface. It is a bridge between shape and motion."
+        },
+        {
+          "lecture": 14,
+          "title": "Applications as honest translations",
+          "summary": "The late applications work by translating a physical or rotational situation into a space, a rule, and a protected obstruction. The theorem applies only after that translation is correct."
+        }
+      ]
     },
     {
       "id": "configuration-space",
@@ -2049,7 +2503,39 @@
         "why_it_exists": "Configuration space exists because a moving system may be hard to understand in ordinary physical space. By listing every possible state as a point in a new space, motion becomes a path and constraints become holes or walls.",
         "beginner_trap": "The trap is to think the configuration space is imaginary decoration. It is a real model of possibilities: if there is no path in that model, the physical motion cannot be performed legally. The abstraction is doing physical work.",
         "course_role": "This idea gathers the course's method into applications. It lets deformation, obstruction, fixed points, and topology of state spaces speak about mechanisms and motion. It is where the course's pictorial thinking becomes a way to reason about systems that move."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 3,
+          "title": "Products make spaces from independent choices",
+          "summary": "The lecture builds cubes and related spaces by taking products of intervals. The plain idea is that two or more choices vary at once, and the resulting state-space has its own shape."
+        },
+        {
+          "lecture": 7,
+          "title": "The center-of-gravity demonstration",
+          "summary": "Sliding two hands inward under an object creates a physical example of a forced state. Continuity makes the balancing event unavoidable because the relevant condition changes steadily rather than jumping past the answer."
+        },
+        {
+          "lecture": 10,
+          "title": "Boundary changes the theorem",
+          "summary": "The closed ball includes its boundary, and that boundary is part of why the statement has force. Removing or changing the boundary can change the conclusion."
+        },
+        {
+          "lecture": 11,
+          "title": "Vector fields replace solved trajectories",
+          "summary": "The lecture starts the dynamics chapter by asking what can be known without solving a differential equation. A vector field gives an arrow pattern whose defects can be studied topologically."
+        },
+        {
+          "lecture": 14,
+          "title": "Applications as honest translations",
+          "summary": "The late applications work by translating a physical or rotational situation into a space, a rule, and a protected obstruction. The theorem applies only after that translation is correct."
+        },
+        {
+          "lecture": 14,
+          "title": "Rotations and dynamics share the same proof engine",
+          "summary": "Rotations in space and dynamical examples look different, but both can be read through fixed points, vector fields, indices, or deformation-protected counts once the right space and rule are identified."
+        }
+      ]
     },
     {
       "id": "duality",
@@ -2066,7 +2552,39 @@
         "why_it_exists": "Duality exists because the first picture of a problem may hide the useful count. Turning regions into dots or borders into connections can reveal a structure that was present but hard to see in the original drawing.",
         "beginner_trap": "The trap is to treat the dual picture as a new problem. It is a change of representation, and it is valid only when it preserves the relationships the original question depends on. Otherwise it is just a different drawing.",
         "course_role": "Duality supports pictorial thinking. It trains the reader to ask whether a different diagram can carry the same reason more clearly. This is central to the course's habit of solving by redrawing without changing the problem."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 3,
+          "title": "Quotients turn edge instructions into spaces",
+          "summary": "When edges or points are identified, a flat drawing becomes a code for a new space. The same square can describe different worlds depending on the gluing rule."
+        },
+        {
+          "lecture": 4,
+          "title": "A square is not the space until its edges are read",
+          "summary": "The lecture returns to squares with edge identifications. The useful lesson is that the visible square is a set of instructions for travel, not the final surface itself."
+        },
+        {
+          "lecture": 9,
+          "title": "The graph of a map meets the diagonal",
+          "summary": "The lecture treats a fixed point as an intersection: the graph records where points go, and the diagonal records points that stay where they started."
+        },
+        {
+          "lecture": 14,
+          "title": "Rotations and dynamics share the same proof engine",
+          "summary": "Rotations in space and dynamical examples look different, but both can be read through fixed points, vector fields, indices, or deformation-protected counts once the right space and rule are identified."
+        },
+        {
+          "lecture": 15,
+          "title": "Pictures earn their role by carrying constraints",
+          "summary": "The course's pictures matter because they show what can move, what cannot move, and what count survives. That is why the final summary ties the visual style to mathematical force."
+        },
+        {
+          "lecture": 15,
+          "title": "The final strip demonstration returns to linking",
+          "summary": "The last demonstration cuts glued strips and then glued Mobius strips, producing pieces that have to be untangled and displayed. It returns the course to the idea that a visible tangle can encode a real route constraint."
+        }
+      ]
     },
     {
       "id": "parity",
@@ -2082,7 +2600,19 @@
         "why_it_exists": "Parity exists because sometimes the exact number is too sensitive, but evenness or oddness is stable. If legal changes create or remove events two at a time, the parity cannot change, even while the visible count changes.",
         "beginner_trap": "The trap is to dismiss parity as crude. Crude is useful when the problem only needs an obstruction, and an odd count can prove that zero is impossible. The coarseness is the reason it survives.",
         "course_role": "Parity is the simplest surviving-count idea. It prepares the reader for richer signed counts, where cancellation is tracked with more information than odd or even. The course repeatedly upgrades this simple habit into finer bookkeeping."
-      }
+      },
+      "appearances": [
+        {
+          "lecture": 6,
+          "title": "Forced meetings become evidence",
+          "summary": "When an intersection cannot be removed by legal motion, it stops being a drawing accident and becomes information about the surrounding space. The lecture prepares the later signed count by separating removable crossings from forced ones."
+        },
+        {
+          "lecture": 8,
+          "title": "Signed intersection number",
+          "summary": "The lecture counts intersections with plus and minus signs. The signs let newly born opposite pairs cancel, so the total remembers more than the visible crossing count."
+        }
+      ]
     }
   ],
   "families": [
@@ -2183,10 +2713,12 @@
     }
   ],
   "math_why": {
-    "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. If exact measurement changes too easily, the course asks for a better handle: a count, a boundary, a hole, a turn, a sign, or a forced route.",
-    "first_principles": "Start with an object that is too complicated to inspect directly. Decide which changes leave the real problem unchanged. Move the object until it becomes simpler. Track the feature that did not change. If the simplified object makes the answer clear, the original object inherits that answer.",
-    "important_detail": "The allowed changes are the whole contract. A result is only as strong as the promise that the change did not cut, glue, pass through, erase a boundary, reverse a side, or create a forbidden coincidence.",
-    "principle": "Topology and geometry become powerful when local details are organized so that the whole shape has fewer choices than it appears to have."
+    "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. Exact length, exact angle, and exact placement often change too easily. Tokieda's course asks for a better handle: a count, a boundary, a hole, a turn, a sign, a fixed point, or a forced route. The reason these ideas matter is that they let a person prove something when direct measurement or direct solving is the wrong tool.",
+    "first_principles": "Start with an object or motion that is too complicated to inspect directly. Decide which changes leave the real question unchanged. Move the object until the picture becomes simpler. Track the feature that did not change. If the simplified picture makes the answer clear, the original object inherits that answer. This is the common engine behind paper strips, surface classification, intersection number, fixed-point theorems, and vector-field index.",
+    "important_detail": "The allowed changes are the whole contract. A result is only as strong as the promise that the change did not cut, glue, pass through, erase a boundary, reverse a side, or create a forbidden coincidence. This is why the course spends so much time on ordinary position, orientation, boundaries, and signs. Those details are not formal decoration; they are what keep the reasoning honest.",
+    "principle": "Topology and geometry become powerful when local details are organized so that the whole shape has fewer choices than it appears to have. Local patches may look free. Local arrows may look adjustable. Local crossings may look removable. But the whole object can force a side reversal, a nonzero count, a fixed point, or a defect. The mathematical principle is that global structure can turn many small freedoms into one unavoidable conclusion.",
+    "concepts_matter": "The important concepts matter because each one protects a different kind of evidence. Deformation protects the question while the picture moves. Invariants remember what survived. Euler characteristic turns a surface into stable bookkeeping. Intersection number records meetings with signs. Fixed points turn rules into forced self-agreement. Vector-field index turns local arrow failures into a count that the whole surface controls.",
+    "reader_path": "A reader should not learn this course as a vocabulary list. The path is: first see a physical surprise, then ask what kind of fact survived, then name the allowed motion, then build a count or obstruction, then use that obstruction to force an answer. This is why the companion links lectures, concepts, themes, subthemes, and method families in both directions."
   },
   "missing_caption_ids": [
     "nx1XOlezuvk"

@@ -483,6 +483,16 @@ FAMILY_DEPTH = {
 }
 
 
+MATH_WHY = {
+    "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. Exact length, exact angle, and exact placement often change too easily. Tokieda's course asks for a better handle: a count, a boundary, a hole, a turn, a sign, a fixed point, or a forced route. The reason these ideas matter is that they let a person prove something when direct measurement or direct solving is the wrong tool.",
+    "first_principles": "Start with an object or motion that is too complicated to inspect directly. Decide which changes leave the real question unchanged. Move the object until the picture becomes simpler. Track the feature that did not change. If the simplified picture makes the answer clear, the original object inherits that answer. This is the common engine behind paper strips, surface classification, intersection number, fixed-point theorems, and vector-field index.",
+    "important_detail": "The allowed changes are the whole contract. A result is only as strong as the promise that the change did not cut, glue, pass through, erase a boundary, reverse a side, or create a forbidden coincidence. This is why the course spends so much time on ordinary position, orientation, boundaries, and signs. Those details are not formal decoration; they are what keep the reasoning honest.",
+    "principle": "Topology and geometry become powerful when local details are organized so that the whole shape has fewer choices than it appears to have. Local patches may look free. Local arrows may look adjustable. Local crossings may look removable. But the whole object can force a side reversal, a nonzero count, a fixed point, or a defect. The mathematical principle is that global structure can turn many small freedoms into one unavoidable conclusion.",
+    "concepts_matter": "The important concepts matter because each one protects a different kind of evidence. Deformation protects the question while the picture moves. Invariants remember what survived. Euler characteristic turns a surface into stable bookkeeping. Intersection number records meetings with signs. Fixed points turn rules into forced self-agreement. Vector-field index turns local arrow failures into a count that the whole surface controls.",
+    "reader_path": "A reader should not learn this course as a vocabulary list. The path is: first see a physical surprise, then ask what kind of fact survived, then name the allowed motion, then build a count or obstruction, then use that obstruction to force an answer. This is why the companion links lectures, concepts, themes, subthemes, and method families in both directions.",
+}
+
+
 LECTURE_NOTES = {
     1: "Course entrance: the method is to look at an ordinary situation, find what survives change, and use deformation to make the answer visible.",
     2: "The early lectures build comfort with replacing exact drawings by legal moves and with treating diagrams as arguments.",
@@ -645,6 +655,7 @@ LECTURE_EXAMPLES = {
     1: [
         {"title": "Cutting an ordinary band versus a Mobius band", "text": "The opening paper experiment compares a straight glued band with a one-twist band. Cutting the center line tests whether the surface's global gluing rule changes what the cut produces.", "concepts": ["boundary-orientation", "topology-vs-geometry", "deformation"]},
         {"title": "One side is a global fact", "text": "Walking around the Mobius strip shows that the local paper never stops looking ordinary, yet the full trip reverses the side. This is the course's first local-to-global lesson.", "concepts": ["boundary-orientation", "generic-position", "invariant"]},
+        {"title": "Off-center cuts create linked pieces", "text": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other.", "concepts": ["knots-and-links", "winding-linking", "boundary-orientation"]},
     ],
     2: [
         {"title": "Connecting boundary pairs in a disk", "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing.", "concepts": ["deformation", "graph-planarity", "invariant"]},
@@ -701,6 +712,7 @@ LECTURE_EXAMPLES = {
     15: [
         {"title": "The table of contents becomes one argument", "text": "The final review names the course as pictorial thinking. Paper strips, deformation, manifolds, intersections, fixed points, and vector fields form one chain rather than separate topics.", "concepts": ["deformation", "invariant", "topology-vs-geometry"]},
         {"title": "Pictures earn their role by carrying constraints", "text": "The course's pictures matter because they show what can move, what cannot move, and what count survives. That is why the final summary ties the visual style to mathematical force.", "concepts": ["duality", "generic-position", "euler-characteristic"]},
+        {"title": "The final strip demonstration returns to linking", "text": "The last demonstration cuts glued strips and then glued Mobius strips, producing pieces that have to be untangled and displayed. It returns the course to the idea that a visible tangle can encode a real route constraint.", "concepts": ["knots-and-links", "duality", "topology-vs-geometry"]},
     ],
 }
 
@@ -865,7 +877,11 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
     body = "<h1>Concept Atlas</h1><p class='lead'>These are not glossary entries. Each concept is explained as a tool: why it exists, what problem it solves, what detail can break it, and where it reappears in the course.</p><div class='grid'>" + "".join(card(c["title"], c["depth"]["why_it_exists"], slug_page("concept", c["id"]), c["theme"]) for c in data["concepts"]) + "</div>"
     (SITE / "concepts.html").write_text(page("Concepts", body, "Concepts"), encoding="utf-8")
     for c in data["concepts"]:
-        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p>"""
+        moments = "".join(
+            f'<article class="card"><div class="meta">Lecture {a["lecture"]:02d}</div><h3>{esc(a["title"])}</h3><p>{esc(a["summary"])}</p><a class="arrow" href="lecture-{a["lecture"]:02d}.html">Open lecture</a></article>'
+            for a in c["appearances"]
+        )
+        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
     body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"
@@ -890,7 +906,7 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
         body = f"""<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['depth']['human_problem'])}</p><section class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p><h2>First Principles</h2><p>{esc(f['depth']['first_principles'])}</p><h2>How It Works</h2><p>{esc(f['depth']['how_it_works'])}</p><h2>Course Examples</h2><p>{esc(f['depth']['course_examples'])}</p><h2>Failure Mode</h2><p>{esc(f['depth']['failure_mode'])}</p></section><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("family", f["id"])).write_text(page(f["title"], body, "Families"), encoding="utf-8")
 
-    math_why = f"""<h1>The Math Why</h1><p class="lead">{esc(data['math_why']['big_picture'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(data['math_why']['first_principles'])}</p><h2>Important Detail</h2><p>{esc(data['math_why']['important_detail'])}</p><h2>Principle Behind the Mathematics</h2><p>{esc(data['math_why']['principle'])}</p></section>"""
+    math_why = f"""<h1>The Math Why</h1><p class="lead">{esc(data['math_why']['big_picture'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(data['math_why']['first_principles'])}</p><h2>Important Detail</h2><p>{esc(data['math_why']['important_detail'])}</p><h2>Principle Behind the Mathematics</h2><p>{esc(data['math_why']['principle'])}</p><h2>Why These Concepts Matter</h2><p>{esc(data['math_why']['concepts_matter'])}</p><h2>How To Read The Course</h2><p>{esc(data['math_why']['reader_path'])}</p></section>"""
     (SITE / "the-math-why.html").write_text(page("The Math Why", math_why, "The Math Why"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -959,17 +975,24 @@ def main():
         enriched = dict(concept)
         enriched["depth"] = CONCEPT_DEPTH[concept["id"]]
         concepts.append(enriched)
+    concept_appearances = {concept["id"]: [] for concept in concepts}
+    for lecture in lectures:
+        for example in lecture["deep"]["examples"]:
+            for concept_id in example["concepts"]:
+                if concept_id in concept_appearances:
+                    concept_appearances[concept_id].append({
+                        "lecture": lecture["lecture"],
+                        "title": example["title"],
+                        "summary": example["text"],
+                    })
+    for concept in concepts:
+        concept["appearances"] = concept_appearances[concept["id"]]
     families = []
     for family in FAMILIES:
         enriched = dict(family)
         enriched["depth"] = FAMILY_DEPTH[family["id"]]
         families.append(enriched)
-    math_why = {
-        "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. If exact measurement changes too easily, the course asks for a better handle: a count, a boundary, a hole, a turn, a sign, or a forced route.",
-        "first_principles": "Start with an object that is too complicated to inspect directly. Decide which changes leave the real problem unchanged. Move the object until it becomes simpler. Track the feature that did not change. If the simplified object makes the answer clear, the original object inherits that answer.",
-        "important_detail": "The allowed changes are the whole contract. A result is only as strong as the promise that the change did not cut, glue, pass through, erase a boundary, reverse a side, or create a forbidden coincidence.",
-        "principle": "Topology and geometry become powerful when local details are organized so that the whole shape has fewer choices than it appears to have.",
-    }
+    math_why = MATH_WHY
     data = {
         "course_goal": COURSE_GOAL,
         "playlist": {"title": playlist.get("title"), "url": PLAYLIST_URL, "uploader": playlist.get("uploader")},

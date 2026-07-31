@@ -64,6 +64,15 @@
             "generic-position",
             "invariant"
           ]
+        },
+        {
+          "title": "Off-center cuts create linked pieces",
+          "text": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other.",
+          "concepts": [
+            "knots-and-links",
+            "winding-linking",
+            "boundary-orientation"
+          ]
         }
       ]
     },
@@ -1119,6 +1128,15 @@
             "duality",
             "generic-position",
             "euler-characteristic"
+          ]
+        },
+        {
+          "title": "The final strip demonstration returns to linking",
+          "text": "The last demonstration cuts glued strips and then glued Mobius strips, producing pieces that have to be untangled and displayed. It returns the course to the idea that a visible tangle can encode a real route constraint.",
+          "concepts": [
+            "knots-and-links",
+            "duality",
+            "topology-vs-geometry"
           ]
         }
       ]
