@@ -1,0 +1,62 @@
+[
+  {
+    "id": "deformation-family",
+    "title": "Deformation arguments",
+    "purpose": "Replace a difficult object by an easier one while preserving the answer.",
+    "first_principles": "This family begins by deciding what moves are legal. Then it moves the picture until the answer is easier to see. The proof lives in the guarantee that the motion did not change the feature being asked about.",
+    "concepts": [
+      "generic-position",
+      "deformation",
+      "invariant",
+      "topology-vs-geometry"
+    ]
+  },
+  {
+    "id": "counting-family",
+    "title": "Surviving-count arguments",
+    "purpose": "Find a number or sign that legal moves cannot alter.",
+    "first_principles": "This family turns shape into accounting. It counts pieces, holes, crossings, turns, or defects in a way that cancels fake changes and keeps the real obstruction.",
+    "concepts": [
+      "euler-characteristic",
+      "triangulation",
+      "winding-linking",
+      "parity"
+    ]
+  },
+  {
+    "id": "surface-family",
+    "title": "Surface bookkeeping",
+    "purpose": "Connect small patches, boundaries, and holes to whole-surface conclusions.",
+    "first_principles": "This family treats a surface as a connected ledger. Local behavior can be drawn patch by patch, but the patches must agree when glued back together.",
+    "concepts": [
+      "boundary-orientation",
+      "gauss-bonnet",
+      "vector-field-index",
+      "euler-characteristic"
+    ]
+  },
+  {
+    "id": "embedding-family",
+    "title": "Drawing and embedding arguments",
+    "purpose": "Ask whether connections can live on a chosen surface without forbidden crossings.",
+    "first_principles": "This family studies room. A page, sphere, torus, or other surface gives routes and limitations. The answer may be decided before a perfect drawing is found.",
+    "concepts": [
+      "graph-planarity",
+      "knots-and-links",
+      "duality",
+      "winding-linking"
+    ]
+  },
+  {
+    "id": "motion-family",
+    "title": "Motion through possible states",
+    "purpose": "Turn mechanical or physical questions into questions about paths and barriers.",
+    "first_principles": "This family replaces the object in motion with the space of all its possible positions. Holes and walls in that space explain blocked motions, unavoidable coincidences, and forced positions.",
+    "concepts": [
+      "configuration-space",
+      "fixed-points",
+      "deformation",
+      "shape-as-machine"
+    ]
+  }
+]

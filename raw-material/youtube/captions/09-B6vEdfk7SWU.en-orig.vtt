@@ -1,0 +1,4376 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.830 --> 00:00:15.669 align:start position:0%
+ 
+[Music]
+
+00:00:15.669 --> 00:00:15.679 align:start position:0%
+ 
+ 
+
+00:00:15.679 --> 00:00:18.630 align:start position:0%
+ 
+we<00:00:15.839><c> were</c><00:00:16.039><c> discussing</c><00:00:16.800><c> a</c><00:00:17.000><c> variety</c><00:00:17.680><c> of</c>
+
+00:00:18.630 --> 00:00:18.640 align:start position:0%
+we were discussing a variety of
+ 
+
+00:00:18.640 --> 00:00:22.429 align:start position:0%
+we were discussing a variety of
+manifolds<00:00:19.640><c> which</c><00:00:19.840><c> were</c><00:00:20.080><c> made</c><00:00:20.519><c> by</c><00:00:21.439><c> operations</c>
+
+00:00:22.429 --> 00:00:22.439 align:start position:0%
+manifolds which were made by operations
+ 
+
+00:00:22.439 --> 00:00:24.790 align:start position:0%
+manifolds which were made by operations
+product<00:00:23.039><c> quotient</c><00:00:23.680><c> and</c>
+
+00:00:24.790 --> 00:00:24.800 align:start position:0%
+product quotient and
+ 
+
+00:00:24.800 --> 00:00:28.230 align:start position:0%
+product quotient and
+surgery<00:00:25.800><c> starting</c><00:00:26.199><c> from</c><00:00:26.359><c> building</c><00:00:27.240><c> blocks</c>
+
+00:00:28.230 --> 00:00:28.240 align:start position:0%
+surgery starting from building blocks
+ 
+
+00:00:28.240 --> 00:00:30.150 align:start position:0%
+surgery starting from building blocks
+and<00:00:28.599><c> there</c><00:00:28.720><c> is</c><00:00:28.920><c> one</c><00:00:29.080><c> more</c><00:00:29.320><c> example</c><00:00:29.679><c> that</c><00:00:29.800><c> I</c>
+
+00:00:30.150 --> 00:00:30.160 align:start position:0%
+and there is one more example that I
+ 
+
+00:00:30.160 --> 00:00:30.950 align:start position:0%
+and there is one more example that I
+like
+
+00:00:30.950 --> 00:00:30.960 align:start position:0%
+like
+ 
+
+00:00:30.960 --> 00:00:35.549 align:start position:0%
+like
+to<00:00:31.960><c> discuss</c><00:00:32.800><c> which</c><00:00:33.000><c> we'll</c>
+
+00:00:35.549 --> 00:00:35.559 align:start position:0%
+ 
+ 
+
+00:00:35.559 --> 00:00:40.869 align:start position:0%
+ 
+use<00:00:36.559><c> and</c><00:00:36.760><c> that</c><00:00:36.960><c> is</c><00:00:37.640><c> this</c><00:00:38.440><c> funny</c>
+
+00:00:40.869 --> 00:00:40.879 align:start position:0%
+use and that is this funny
+ 
+
+00:00:40.879 --> 00:00:44.389 align:start position:0%
+use and that is this funny
+example<00:00:41.879><c> as</c><00:00:42.079><c> usual</c><00:00:42.440><c> let's</c><00:00:42.680><c> take</c><00:00:42.879><c> a</c><00:00:43.120><c> square</c><00:00:44.079><c> and</c>
+
+00:00:44.389 --> 00:00:44.399 align:start position:0%
+example as usual let's take a square and
+ 
+
+00:00:44.399 --> 00:00:48.110 align:start position:0%
+example as usual let's take a square and
+then<00:00:45.399><c> thinking</c><00:00:45.760><c> of</c><00:00:45.960><c> it</c><00:00:46.120><c> as</c><00:00:46.360><c> a</c><00:00:47.199><c> an</c><00:00:47.399><c> elastic</c>
+
+00:00:48.110 --> 00:00:48.120 align:start position:0%
+then thinking of it as a an elastic
+ 
+
+00:00:48.120 --> 00:00:50.470 align:start position:0%
+then thinking of it as a an elastic
+sheet<00:00:49.120><c> or</c><00:00:49.440><c> piece</c><00:00:49.640><c> of</c>
+
+00:00:50.470 --> 00:00:50.480 align:start position:0%
+sheet or piece of
+ 
+
+00:00:50.480 --> 00:00:53.310 align:start position:0%
+sheet or piece of
+paper<00:00:51.480><c> let's</c><00:00:51.760><c> ask</c><00:00:51.960><c> ourselves</c><00:00:52.840><c> what</c><00:00:53.000><c> happens</c>
+
+00:00:53.310 --> 00:00:53.320 align:start position:0%
+paper let's ask ourselves what happens
+ 
+
+00:00:53.320 --> 00:00:56.549 align:start position:0%
+paper let's ask ourselves what happens
+if<00:00:53.480><c> I</c><00:00:53.680><c> identify</c><00:00:54.640><c> this</c><00:00:54.920><c> Edge</c><00:00:55.640><c> and</c><00:00:55.879><c> this</c><00:00:56.079><c> Edge</c>
+
+00:00:56.549 --> 00:00:56.559 align:start position:0%
+if I identify this Edge and this Edge
+ 
+
+00:00:56.559 --> 00:00:58.029 align:start position:0%
+if I identify this Edge and this Edge
+like<00:00:56.760><c> so</c><00:00:57.120><c> up</c><00:00:57.280><c> and</c>
+
+00:00:58.029 --> 00:00:58.039 align:start position:0%
+like so up and
+ 
+
+00:00:58.039 --> 00:01:01.229 align:start position:0%
+like so up and
+down<00:00:59.039><c> and</c><00:00:59.480><c> this</c><00:00:59.680><c> Edge</c>
+
+00:01:01.229 --> 00:01:01.239 align:start position:0%
+down and this Edge
+ 
+
+00:01:01.239 --> 00:01:03.950 align:start position:0%
+down and this Edge
+and<00:01:01.440><c> this</c><00:01:01.640><c> is</c><00:01:02.199><c> in</c><00:01:02.399><c> the</c><00:01:02.680><c> opposite</c><00:01:03.359><c> direction</c><00:01:03.800><c> as</c>
+
+00:01:03.950 --> 00:01:03.960 align:start position:0%
+and this is in the opposite direction as
+ 
+
+00:01:03.960 --> 00:01:07.350 align:start position:0%
+and this is in the opposite direction as
+well<00:01:04.720><c> I'd</c><00:01:04.879><c> like</c><00:01:05.040><c> to</c><00:01:05.199><c> remind</c><00:01:05.560><c> you</c><00:01:05.880><c> that</c><00:01:06.600><c> if</c><00:01:07.119><c> we</c>
+
+00:01:07.350 --> 00:01:07.360 align:start position:0%
+well I'd like to remind you that if we
+ 
+
+00:01:07.360 --> 00:01:11.030 align:start position:0%
+well I'd like to remind you that if we
+had<00:01:07.720><c> this</c><00:01:08.119><c> same</c><00:01:08.759><c> direction</c><00:01:09.400><c> here</c><00:01:09.560><c> and</c><00:01:10.040><c> here</c>
+
+00:01:11.030 --> 00:01:11.040 align:start position:0%
+had this same direction here and here
+ 
+
+00:01:11.040 --> 00:01:13.990 align:start position:0%
+had this same direction here and here
+you<00:01:11.280><c> get</c><00:01:11.720><c> a</c><00:01:11.880><c> manifold</c><00:01:12.520><c> called</c><00:01:13.040><c> clim</c>
+
+00:01:13.990 --> 00:01:14.000 align:start position:0%
+you get a manifold called clim
+ 
+
+00:01:14.000 --> 00:01:15.630 align:start position:0%
+you get a manifold called clim
+botle
+
+00:01:15.630 --> 00:01:15.640 align:start position:0%
+botle
+ 
+
+00:01:15.640 --> 00:01:18.270 align:start position:0%
+botle
+yeah<00:01:16.640><c> and</c><00:01:16.799><c> if</c><00:01:16.920><c> we</c><00:01:17.159><c> had</c><00:01:17.479><c> the</c><00:01:17.640><c> same</c><00:01:17.880><c> direction</c>
+
+00:01:18.270 --> 00:01:18.280 align:start position:0%
+yeah and if we had the same direction
+ 
+
+00:01:18.280 --> 00:01:19.950 align:start position:0%
+yeah and if we had the same direction
+here<00:01:18.439><c> and</c><00:01:18.680><c> same</c><00:01:18.880><c> direction</c><00:01:19.280><c> here</c><00:01:19.439><c> you</c><00:01:19.560><c> get</c><00:01:19.680><c> the</c>
+
+00:01:19.950 --> 00:01:19.960 align:start position:0%
+here and same direction here you get the
+ 
+
+00:01:19.960 --> 00:01:22.990 align:start position:0%
+here and same direction here you get the
+TOs<00:01:20.960><c> but</c><00:01:21.360><c> now</c><00:01:22.040><c> we</c><00:01:22.200><c> have</c><00:01:22.360><c> the</c><00:01:22.600><c> opposite</c>
+
+00:01:22.990 --> 00:01:23.000 align:start position:0%
+TOs but now we have the opposite
+ 
+
+00:01:23.000 --> 00:01:24.590 align:start position:0%
+TOs but now we have the opposite
+direction<00:01:23.439><c> vertically</c><00:01:23.880><c> and</c><00:01:24.200><c> opposite</c>
+
+00:01:24.590 --> 00:01:24.600 align:start position:0%
+direction vertically and opposite
+ 
+
+00:01:24.600 --> 00:01:27.510 align:start position:0%
+direction vertically and opposite
+direction<00:01:25.439><c> horizontally</c><00:01:26.040><c> also</c><00:01:26.360><c> so</c><00:01:26.600><c> what</c><00:01:27.200><c> is</c>
+
+00:01:27.510 --> 00:01:27.520 align:start position:0%
+direction horizontally also so what is
+ 
+
+00:01:27.520 --> 00:01:30.429 align:start position:0%
+direction horizontally also so what is
+this<00:01:28.360><c> object</c><00:01:29.360><c> now</c>
+
+00:01:30.429 --> 00:01:30.439 align:start position:0%
+this object now
+ 
+
+00:01:30.439 --> 00:01:39.990 align:start position:0%
+this object now
+this<00:01:30.640><c> object</c><00:01:31.000><c> is</c><00:01:31.360><c> difficult</c><00:01:31.479><c> to</c>
+
+00:01:39.990 --> 00:01:40.000 align:start position:0%
+ 
+ 
+
+00:01:40.000 --> 00:01:43.910 align:start position:0%
+ 
+visualize<00:01:41.000><c> so</c><00:01:41.799><c> let</c><00:01:41.960><c> us</c><00:01:42.159><c> try</c><00:01:42.479><c> to</c><00:01:43.280><c> figure</c><00:01:43.600><c> out</c>
+
+00:01:43.910 --> 00:01:43.920 align:start position:0%
+visualize so let us try to figure out
+ 
+
+00:01:43.920 --> 00:01:46.990 align:start position:0%
+visualize so let us try to figure out
+what<00:01:44.159><c> this</c><00:01:44.360><c> looks</c><00:01:44.680><c> like</c><00:01:45.560><c> by</c><00:01:46.119><c> calculating</c><00:01:46.719><c> with</c>
+
+00:01:46.990 --> 00:01:47.000 align:start position:0%
+what this looks like by calculating with
+ 
+
+00:01:47.000 --> 00:02:00.510 align:start position:0%
+what this looks like by calculating with
+pictures
+
+00:02:00.510 --> 00:02:00.520 align:start position:0%
+ 
+ 
+
+00:02:00.520 --> 00:02:01.950 align:start position:0%
+ 
+here<00:02:00.680><c> is</c><00:02:00.880><c> how</c><00:02:01.119><c> we</c><00:02:01.200><c> shall</c>
+
+00:02:01.950 --> 00:02:01.960 align:start position:0%
+here is how we shall
+ 
+
+00:02:01.960 --> 00:02:04.789 align:start position:0%
+here is how we shall
+calculate<00:02:02.960><c> we</c><00:02:03.240><c> start</c><00:02:03.600><c> from</c>
+
+00:02:04.789 --> 00:02:04.799 align:start position:0%
+calculate we start from
+ 
+
+00:02:04.799 --> 00:02:07.630 align:start position:0%
+calculate we start from
+this<00:02:05.799><c> keeping</c><00:02:06.200><c> track</c><00:02:06.600><c> of</c><00:02:06.920><c> how</c><00:02:07.240><c> the</c>
+
+00:02:07.630 --> 00:02:07.640 align:start position:0%
+this keeping track of how the
+ 
+
+00:02:07.640 --> 00:02:09.229 align:start position:0%
+this keeping track of how the
+identifications
+
+00:02:09.229 --> 00:02:09.239 align:start position:0%
+identifications
+ 
+
+00:02:09.239 --> 00:02:11.309 align:start position:0%
+identifications
+go
+
+00:02:11.309 --> 00:02:11.319 align:start position:0%
+go
+ 
+
+00:02:11.319 --> 00:02:13.350 align:start position:0%
+go
+and
+
+00:02:13.350 --> 00:02:13.360 align:start position:0%
+and
+ 
+
+00:02:13.360 --> 00:02:16.750 align:start position:0%
+and
+hi<00:02:14.360><c> I</c><00:02:14.560><c> cut</c><00:02:14.800><c> it</c><00:02:15.239><c> along</c>
+
+00:02:16.750 --> 00:02:16.760 align:start position:0%
+hi I cut it along
+ 
+
+00:02:16.760 --> 00:02:19.309 align:start position:0%
+hi I cut it along
+this<00:02:17.760><c> curve</c><00:02:18.280><c> I</c><00:02:18.400><c> cut</c><00:02:18.599><c> the</c><00:02:18.680><c> whole</c><00:02:18.840><c> thing</c><00:02:19.000><c> along</c>
+
+00:02:19.309 --> 00:02:19.319 align:start position:0%
+this curve I cut the whole thing along
+ 
+
+00:02:19.319 --> 00:02:21.589 align:start position:0%
+this curve I cut the whole thing along
+this<00:02:19.480><c> curve</c><00:02:20.080><c> naturally</c><00:02:20.599><c> after</c><00:02:20.840><c> I</c><00:02:21.000><c> cut</c><00:02:21.200><c> it</c><00:02:21.480><c> at</c>
+
+00:02:21.589 --> 00:02:21.599 align:start position:0%
+this curve naturally after I cut it at
+ 
+
+00:02:21.599 --> 00:02:23.430 align:start position:0%
+this curve naturally after I cut it at
+the<00:02:21.680><c> end</c><00:02:21.840><c> I</c><00:02:21.959><c> have</c><00:02:22.040><c> to</c><00:02:22.160><c> glue</c><00:02:22.640><c> them</c><00:02:22.879><c> back</c>
+
+00:02:23.430 --> 00:02:23.440 align:start position:0%
+the end I have to glue them back
+ 
+
+00:02:23.440 --> 00:02:25.830 align:start position:0%
+the end I have to glue them back
+together<00:02:24.440><c> otherwise</c><00:02:25.080><c> it's</c><00:02:25.280><c> not</c><00:02:25.440><c> going</c><00:02:25.560><c> to</c><00:02:25.680><c> be</c>
+
+00:02:25.830 --> 00:02:25.840 align:start position:0%
+together otherwise it's not going to be
+ 
+
+00:02:25.840 --> 00:02:28.790 align:start position:0%
+together otherwise it's not going to be
+the<00:02:25.959><c> same</c><00:02:26.160><c> thing</c><00:02:26.599><c> but</c><00:02:26.840><c> when</c><00:02:27.000><c> I</c><00:02:27.160><c> cut</c><00:02:27.360><c> it</c><00:02:28.239><c> I</c><00:02:28.440><c> get</c>
+
+00:02:28.790 --> 00:02:28.800 align:start position:0%
+the same thing but when I cut it I get
+ 
+
+00:02:28.800 --> 00:02:33.150 align:start position:0%
+the same thing but when I cut it I get
+two<00:02:29.599><c> p</c><00:02:30.120><c> is</c><00:02:30.840><c> as</c><00:02:30.959><c> a</c>
+
+00:02:33.150 --> 00:02:33.160 align:start position:0%
+two p is as a
+ 
+
+00:02:33.160 --> 00:02:36.670 align:start position:0%
+two p is as a
+result<00:02:34.160><c> wow</c><00:02:34.519><c> that</c><00:02:35.519><c> falling</c><00:02:35.920><c> apart</c><00:02:36.319><c> for</c><00:02:36.480><c> some</c>
+
+00:02:36.670 --> 00:02:36.680 align:start position:0%
+result wow that falling apart for some
+ 
+
+00:02:36.680 --> 00:02:39.750 align:start position:0%
+result wow that falling apart for some
+reason<00:02:37.560><c> this</c><00:02:37.760><c> piece</c><00:02:37.959><c> and</c><00:02:38.160><c> this</c><00:02:38.360><c> piece</c><00:02:39.120><c> yeah</c>
+
+00:02:39.750 --> 00:02:39.760 align:start position:0%
+reason this piece and this piece yeah
+ 
+
+00:02:39.760 --> 00:02:41.990 align:start position:0%
+reason this piece and this piece yeah
+and<00:02:40.280><c> let's</c><00:02:40.599><c> keep</c><00:02:40.879><c> marking</c><00:02:41.480><c> the</c>
+
+00:02:41.990 --> 00:02:42.000 align:start position:0%
+and let's keep marking the
+ 
+
+00:02:42.000 --> 00:02:44.869 align:start position:0%
+and let's keep marking the
+identification<00:02:42.840><c> arrows</c><00:02:43.360><c> like</c><00:02:43.640><c> this</c><00:02:44.599><c> at</c><00:02:44.720><c> the</c>
+
+00:02:44.869 --> 00:02:44.879 align:start position:0%
+identification arrows like this at the
+ 
+
+00:02:44.879 --> 00:02:48.670 align:start position:0%
+identification arrows like this at the
+end<00:02:45.200><c> as</c><00:02:45.360><c> we</c><00:02:45.519><c> say</c><00:02:46.159><c> we</c><00:02:46.319><c> have</c><00:02:46.440><c> to</c><00:02:47.319><c> identify</c><00:02:48.319><c> glue</c>
+
+00:02:48.670 --> 00:02:48.680 align:start position:0%
+end as we say we have to identify glue
+ 
+
+00:02:48.680 --> 00:02:51.509 align:start position:0%
+end as we say we have to identify glue
+back<00:02:49.040><c> together</c><00:02:49.319><c> the</c><00:02:49.519><c> cuts</c><00:02:50.239><c> so</c><00:02:50.599><c> let's</c><00:02:51.280><c> keep</c>
+
+00:02:51.509 --> 00:02:51.519 align:start position:0%
+back together the cuts so let's keep
+ 
+
+00:02:51.519 --> 00:02:54.229 align:start position:0%
+back together the cuts so let's keep
+track<00:02:51.760><c> of</c><00:02:51.920><c> them</c><00:02:52.159><c> by</c><00:02:52.519><c> putting</c><00:02:53.000><c> those</c><00:02:53.200><c> marks</c><00:02:54.120><c> do</c>
+
+00:02:54.229 --> 00:02:54.239 align:start position:0%
+track of them by putting those marks do
+ 
+
+00:02:54.239 --> 00:02:56.070 align:start position:0%
+track of them by putting those marks do
+you<00:02:54.640><c> understand</c><00:02:54.920><c> why</c><00:02:55.319><c> I</c><00:02:55.480><c> put</c><00:02:55.680><c> them</c><00:02:55.840><c> in</c><00:02:55.959><c> the</c>
+
+00:02:56.070 --> 00:02:56.080 align:start position:0%
+you understand why I put them in the
+ 
+
+00:02:56.080 --> 00:02:58.670 align:start position:0%
+you understand why I put them in the
+same<00:02:56.319><c> direction</c><00:02:57.080><c> because</c><00:02:58.080><c> they</c><00:02:58.319><c> must</c><00:02:58.560><c> be</c>
+
+00:02:58.670 --> 00:02:58.680 align:start position:0%
+same direction because they must be
+ 
+
+00:02:58.680 --> 00:03:01.309 align:start position:0%
+same direction because they must be
+glued<00:02:59.080><c> together</c><00:02:59.440><c> not</c><00:02:59.840><c> the</c><00:02:59.920><c> other</c><00:03:00.159><c> era</c><00:03:00.879><c> yeah</c>
+
+00:03:01.309 --> 00:03:01.319 align:start position:0%
+glued together not the other era yeah
+ 
+
+00:03:01.319 --> 00:03:05.750 align:start position:0%
+glued together not the other era yeah
+okay<00:03:02.400><c> now</c><00:03:03.400><c> the</c><00:03:03.720><c> top</c><00:03:04.080><c> piece</c><00:03:04.640><c> is</c><00:03:04.959><c> not</c><00:03:05.560><c> difficult</c>
+
+00:03:05.750 --> 00:03:05.760 align:start position:0%
+okay now the top piece is not difficult
+ 
+
+00:03:05.760 --> 00:03:07.710 align:start position:0%
+okay now the top piece is not difficult
+to<00:03:06.360><c> see</c><00:03:06.799><c> what</c><00:03:06.959><c> it</c>
+
+00:03:07.710 --> 00:03:07.720 align:start position:0%
+to see what it
+ 
+
+00:03:07.720 --> 00:03:11.110 align:start position:0%
+to see what it
+is<00:03:08.720><c> I'll</c><00:03:08.959><c> keep</c><00:03:09.159><c> using</c><00:03:09.760><c> yellow</c><00:03:10.120><c> if</c><00:03:10.239><c> you</c>
+
+00:03:11.110 --> 00:03:11.120 align:start position:0%
+is I'll keep using yellow if you
+ 
+
+00:03:11.120 --> 00:03:14.789 align:start position:0%
+is I'll keep using yellow if you
+like
+
+00:03:14.789 --> 00:03:14.799 align:start position:0%
+ 
+ 
+
+00:03:14.799 --> 00:03:18.470 align:start position:0%
+ 
+oops<00:03:15.799><c> like</c><00:03:16.040><c> that</c><00:03:16.400><c> and</c><00:03:16.599><c> like</c><00:03:16.879><c> that</c><00:03:17.599><c> let's</c><00:03:17.959><c> focus</c>
+
+00:03:18.470 --> 00:03:18.480 align:start position:0%
+oops like that and like that let's focus
+ 
+
+00:03:18.480 --> 00:03:20.309 align:start position:0%
+oops like that and like that let's focus
+on<00:03:18.720><c> the</c><00:03:18.959><c> vertical</c>
+
+00:03:20.309 --> 00:03:20.319 align:start position:0%
+on the vertical
+ 
+
+00:03:20.319 --> 00:03:23.070 align:start position:0%
+on the vertical
+edges<00:03:21.319><c> not</c><00:03:21.519><c> worrying</c><00:03:22.360><c> at</c><00:03:22.480><c> the</c><00:03:22.599><c> moment</c><00:03:22.920><c> about</c>
+
+00:03:23.070 --> 00:03:23.080 align:start position:0%
+edges not worrying at the moment about
+ 
+
+00:03:23.080 --> 00:03:24.710 align:start position:0%
+edges not worrying at the moment about
+the<00:03:23.200><c> horizontal</c><00:03:23.599><c> ones</c><00:03:24.120><c> but</c><00:03:24.280><c> as</c><00:03:24.360><c> far</c><00:03:24.519><c> as</c><00:03:24.599><c> the</c>
+
+00:03:24.710 --> 00:03:24.720 align:start position:0%
+the horizontal ones but as far as the
+ 
+
+00:03:24.720 --> 00:03:26.509 align:start position:0%
+the horizontal ones but as far as the
+vertical<00:03:25.000><c> Edge</c><00:03:25.200><c> is</c><00:03:25.360><c> concerned</c><00:03:26.080><c> you</c><00:03:26.200><c> can</c><00:03:26.319><c> see</c>
+
+00:03:26.509 --> 00:03:26.519 align:start position:0%
+vertical Edge is concerned you can see
+ 
+
+00:03:26.519 --> 00:03:28.990 align:start position:0%
+vertical Edge is concerned you can see
+what<00:03:26.720><c> happens</c><00:03:27.319><c> you</c><00:03:27.440><c> can</c><00:03:27.640><c> take</c><00:03:27.879><c> this</c><00:03:28.400><c> twist</c><00:03:28.840><c> and</c>
+
+00:03:28.990 --> 00:03:29.000 align:start position:0%
+what happens you can take this twist and
+ 
+
+00:03:29.000 --> 00:03:43.750 align:start position:0%
+what happens you can take this twist and
+glue<00:03:29.439><c> it's</c><00:03:29.840><c> the</c><00:03:29.920><c> mov</c>
+
+00:03:43.750 --> 00:03:43.760 align:start position:0%
+ 
+ 
+
+00:03:43.760 --> 00:03:47.229 align:start position:0%
+ 
+stre<00:03:44.760><c> can</c><00:03:44.879><c> you</c><00:03:45.080><c> draw</c><00:03:45.680><c> pictures</c><00:03:46.120><c> as</c><00:03:46.319><c> fast</c><00:03:46.599><c> as</c><00:03:47.080><c> I</c>
+
+00:03:47.229 --> 00:03:47.239 align:start position:0%
+stre can you draw pictures as fast as I
+ 
+
+00:03:47.239 --> 00:03:48.550 align:start position:0%
+stre can you draw pictures as fast as I
+I'm
+
+00:03:48.550 --> 00:03:48.560 align:start position:0%
+I'm
+ 
+
+00:03:48.560 --> 00:03:52.550 align:start position:0%
+I'm
+doing<00:03:49.560><c> difficult</c><00:03:50.319><c> huh</c><00:03:51.319><c> but</c><00:03:51.599><c> that's</c><00:03:51.879><c> how</c><00:03:52.360><c> oh</c>
+
+00:03:52.550 --> 00:03:52.560 align:start position:0%
+doing difficult huh but that's how oh
+ 
+
+00:03:52.560 --> 00:03:55.350 align:start position:0%
+doing difficult huh but that's how oh
+wait<00:03:52.680><c> a</c><00:03:52.840><c> minute</c><00:03:53.159><c> so</c><00:03:53.799><c> having</c><00:03:54.599><c> bragged</c><00:03:55.079><c> about</c>
+
+00:03:55.350 --> 00:03:55.360 align:start position:0%
+wait a minute so having bragged about
+ 
+
+00:03:55.360 --> 00:03:57.750 align:start position:0%
+wait a minute so having bragged about
+this<00:03:55.920><c> I</c><00:03:56.040><c> think</c><00:03:56.439><c> it</c><00:03:56.560><c> should</c><00:03:57.040><c> probably</c><00:03:57.439><c> look</c>
+
+00:03:57.750 --> 00:03:57.760 align:start position:0%
+this I think it should probably look
+ 
+
+00:03:57.760 --> 00:04:00.670 align:start position:0%
+this I think it should probably look
+like<00:03:58.000><c> this</c><00:03:58.760><c> and</c><00:03:59.000><c> then</c><00:03:59.319><c> you</c><00:03:59.439><c> should</c><00:03:59.879><c> look</c><00:04:00.159><c> like</c>
+
+00:04:00.670 --> 00:04:00.680 align:start position:0%
+like this and then you should look like
+ 
+
+00:04:00.680 --> 00:04:04.390 align:start position:0%
+like this and then you should look like
+this<00:04:01.680><c> it</c><00:04:01.799><c> should</c><00:04:02.040><c> look</c><00:04:02.319><c> like</c><00:04:02.680><c> this</c><00:04:03.680><c> and</c><00:04:03.959><c> that</c>
+
+00:04:04.390 --> 00:04:04.400 align:start position:0%
+this it should look like this and that
+ 
+
+00:04:04.400 --> 00:04:06.630 align:start position:0%
+this it should look like this and that
+piece<00:04:05.079><c> came</c><00:04:05.439><c> like</c><00:04:05.680><c> that</c><00:04:06.000><c> and</c><00:04:06.239><c> because</c><00:04:06.480><c> I</c>
+
+00:04:06.630 --> 00:04:06.640 align:start position:0%
+piece came like that and because I
+ 
+
+00:04:06.640 --> 00:04:09.110 align:start position:0%
+piece came like that and because I
+twisted<00:04:07.120><c> upside</c><00:04:07.480><c> down</c><00:04:07.840><c> it</c><00:04:08.000><c> looks</c><00:04:08.280><c> like</c><00:04:08.519><c> that</c>
+
+00:04:09.110 --> 00:04:09.120 align:start position:0%
+twisted upside down it looks like that
+ 
+
+00:04:09.120 --> 00:04:10.069 align:start position:0%
+twisted upside down it looks like that
+and<00:04:09.280><c> then</c>
+
+00:04:10.069 --> 00:04:10.079 align:start position:0%
+and then
+ 
+
+00:04:10.079 --> 00:04:12.910 align:start position:0%
+and then
+this<00:04:11.079><c> comes</c><00:04:11.519><c> in</c><00:04:11.799><c> like</c><00:04:12.040><c> that</c><00:04:12.280><c> this</c><00:04:12.439><c> comes</c><00:04:12.680><c> in</c>
+
+00:04:12.910 --> 00:04:12.920 align:start position:0%
+this comes in like that this comes in
+ 
+
+00:04:12.920 --> 00:04:15.190 align:start position:0%
+this comes in like that this comes in
+like<00:04:13.159><c> that</c><00:04:13.840><c> and</c><00:04:14.000><c> then</c><00:04:14.159><c> this</c><00:04:14.319><c> is</c><00:04:14.519><c> like</c><00:04:14.760><c> this</c><00:04:15.040><c> and</c>
+
+00:04:15.190 --> 00:04:15.200 align:start position:0%
+like that and then this is like this and
+ 
+
+00:04:15.200 --> 00:04:18.349 align:start position:0%
+like that and then this is like this and
+this<00:04:15.319><c> is</c><00:04:15.519><c> like</c><00:04:15.680><c> this</c><00:04:16.479><c> okay</c><00:04:17.000><c> so</c><00:04:17.239><c> if</c><00:04:17.400><c> I</c><00:04:17.759><c> glue</c><00:04:18.079><c> them</c>
+
+00:04:18.349 --> 00:04:18.359 align:start position:0%
+this is like this okay so if I glue them
+ 
+
+00:04:18.359 --> 00:04:21.749 align:start position:0%
+this is like this okay so if I glue them
+together<00:04:19.160><c> identify</c><00:04:19.799><c> the</c><00:04:20.440><c> vertical</c><00:04:20.840><c> strips</c><00:04:21.600><c> I</c>
+
+00:04:21.749 --> 00:04:21.759 align:start position:0%
+together identify the vertical strips I
+ 
+
+00:04:21.759 --> 00:04:24.670 align:start position:0%
+together identify the vertical strips I
+get<00:04:21.919><c> the</c><00:04:22.120><c> standard</c><00:04:22.440><c> movie</c><00:04:23.000><c> strip</c><00:04:24.000><c> so</c><00:04:24.240><c> far</c><00:04:24.440><c> so</c>
+
+00:04:24.670 --> 00:04:24.680 align:start position:0%
+get the standard movie strip so far so
+ 
+
+00:04:24.680 --> 00:04:33.029 align:start position:0%
+get the standard movie strip so far so
+good
+
+00:04:33.029 --> 00:04:33.039 align:start position:0%
+ 
+ 
+
+00:04:33.039 --> 00:04:36.110 align:start position:0%
+ 
+and<00:04:33.199><c> then</c><00:04:33.639><c> you</c><00:04:33.840><c> get</c><00:04:34.160><c> this</c><00:04:34.560><c> in</c><00:04:34.680><c> the</c><00:04:34.960><c> back</c><00:04:35.960><c> you</c>
+
+00:04:36.110 --> 00:04:36.120 align:start position:0%
+and then you get this in the back you
+ 
+
+00:04:36.120 --> 00:04:37.830 align:start position:0%
+and then you get this in the back you
+get<00:04:36.320><c> this</c><00:04:36.479><c> in</c><00:04:36.639><c> front</c><00:04:37.120><c> and</c><00:04:37.240><c> somewhere</c><00:04:37.680><c> in</c><00:04:37.759><c> the</c>
+
+00:04:37.830 --> 00:04:37.840 align:start position:0%
+get this in front and somewhere in the
+ 
+
+00:04:37.840 --> 00:04:40.790 align:start position:0%
+get this in front and somewhere in the
+middle<00:04:38.720><c> um</c><00:04:39.360><c> there's</c><00:04:39.759><c> an</c><00:04:39.919><c> interesting</c><00:04:40.400><c> that</c>
+
+00:04:40.790 --> 00:04:40.800 align:start position:0%
+middle um there's an interesting that
+ 
+
+00:04:40.800 --> 00:04:44.550 align:start position:0%
+middle um there's an interesting that
+thing<00:04:40.960><c> that</c><00:04:41.199><c> happens</c><00:04:41.840><c> um</c><00:04:42.560><c> so</c><00:04:43.000><c> this</c><00:04:43.360><c> is</c><00:04:44.000><c> that</c>
+
+00:04:44.550 --> 00:04:44.560 align:start position:0%
+thing that happens um so this is that
+ 
+
+00:04:44.560 --> 00:04:47.469 align:start position:0%
+thing that happens um so this is that
+but<00:04:44.840><c> this</c><00:04:45.000><c> is</c><00:04:45.600><c> this</c><00:04:46.280><c> so</c><00:04:46.639><c> in</c><00:04:46.759><c> the</c><00:04:46.880><c> middle</c><00:04:47.280><c> those</c>
+
+00:04:47.469 --> 00:04:47.479 align:start position:0%
+but this is this so in the middle those
+ 
+
+00:04:47.479 --> 00:04:48.950 align:start position:0%
+but this is this so in the middle those
+marks<00:04:47.880><c> exchange</c>
+
+00:04:48.950 --> 00:04:48.960 align:start position:0%
+marks exchange
+ 
+
+00:04:48.960 --> 00:04:51.990 align:start position:0%
+marks exchange
+places<00:04:49.960><c> what</c><00:04:50.120><c> about</c><00:04:50.320><c> the</c><00:04:50.520><c> bottom</c><00:04:51.520><c> the</c><00:04:51.639><c> bottom</c>
+
+00:04:51.990 --> 00:04:52.000 align:start position:0%
+places what about the bottom the bottom
+ 
+
+00:04:52.000 --> 00:04:55.350 align:start position:0%
+places what about the bottom the bottom
+piece<00:04:52.479><c> is</c><00:04:52.720><c> also</c><00:04:53.680><c> easy</c><00:04:53.919><c> to</c><00:04:54.120><c> visualize</c><00:04:55.080><c> because</c>
+
+00:04:55.350 --> 00:04:55.360 align:start position:0%
+piece is also easy to visualize because
+ 
+
+00:04:55.360 --> 00:04:56.749 align:start position:0%
+piece is also easy to visualize because
+we're<00:04:55.720><c> doing</c>
+
+00:04:56.749 --> 00:04:56.759 align:start position:0%
+we're doing
+ 
+
+00:04:56.759 --> 00:05:00.430 align:start position:0%
+we're doing
+topology<00:04:57.880><c> this</c><00:04:58.880><c> half</c><00:04:59.160><c> of</c><00:04:59.400><c> this</c>
+
+00:05:00.430 --> 00:05:00.440 align:start position:0%
+topology this half of this
+ 
+
+00:05:00.440 --> 00:05:07.150 align:start position:0%
+topology this half of this
+I<00:05:00.960><c> can</c><00:05:01.960><c> stretch</c><00:05:02.479><c> it</c><00:05:03.479><c> and</c><00:05:03.720><c> make</c><00:05:03.919><c> it</c><00:05:04.080><c> into</c><00:05:04.320><c> a</c><00:05:04.400><c> full</c>
+
+00:05:07.150 --> 00:05:07.160 align:start position:0%
+ 
+ 
+
+00:05:07.160 --> 00:05:09.670 align:start position:0%
+ 
+dis<00:05:08.160><c> so</c><00:05:08.440><c> this</c><00:05:08.639><c> point</c><00:05:08.880><c> and</c><00:05:09.039><c> this</c><00:05:09.199><c> point</c><00:05:09.479><c> those</c>
+
+00:05:09.670 --> 00:05:09.680 align:start position:0%
+dis so this point and this point those
+ 
+
+00:05:09.680 --> 00:05:12.029 align:start position:0%
+dis so this point and this point those
+Corners<00:05:10.160><c> became</c><00:05:10.440><c> those</c><00:05:10.600><c> two</c><00:05:10.880><c> points</c><00:05:11.440><c> but</c><00:05:11.880><c> the</c>
+
+00:05:12.029 --> 00:05:12.039 align:start position:0%
+Corners became those two points but the
+ 
+
+00:05:12.039 --> 00:05:14.070 align:start position:0%
+Corners became those two points but the
+rest<00:05:12.320><c> is</c><00:05:13.039><c> the</c>
+
+00:05:14.070 --> 00:05:14.080 align:start position:0%
+rest is the
+ 
+
+00:05:14.080 --> 00:05:18.110 align:start position:0%
+rest is the
+same<00:05:15.080><c> topologically</c><00:05:15.720><c> the</c><00:05:15.840><c> same</c><00:05:16.039><c> thing</c><00:05:16.520><c> as</c><00:05:17.520><c> the</c>
+
+00:05:18.110 --> 00:05:18.120 align:start position:0%
+same topologically the same thing as the
+ 
+
+00:05:18.120 --> 00:05:19.749 align:start position:0%
+same topologically the same thing as the
+semi
+
+00:05:19.749 --> 00:05:19.759 align:start position:0%
+semi
+ 
+
+00:05:19.759 --> 00:05:23.510 align:start position:0%
+semi
+disk<00:05:20.759><c> so</c><00:05:21.639><c> what</c><00:05:21.840><c> we</c><00:05:22.000><c> are</c><00:05:22.160><c> doing</c><00:05:23.160><c> what</c><00:05:23.280><c> we</c><00:05:23.400><c> have</c>
+
+00:05:23.510 --> 00:05:23.520 align:start position:0%
+disk so what we are doing what we have
+ 
+
+00:05:23.520 --> 00:05:25.670 align:start position:0%
+disk so what we are doing what we have
+to<00:05:23.759><c> do</c><00:05:24.240><c> is</c><00:05:24.400><c> the</c><00:05:24.560><c> following</c>
+
+00:05:25.670 --> 00:05:25.680 align:start position:0%
+to do is the following
+ 
+
+00:05:25.680 --> 00:05:28.749 align:start position:0%
+to do is the following
+operation<00:05:26.680><c> you</c><00:05:26.800><c> see</c><00:05:27.120><c> there's</c><00:05:27.319><c> a</c><00:05:27.560><c> this</c><00:05:27.960><c> disk</c>
+
+00:05:28.749 --> 00:05:28.759 align:start position:0%
+operation you see there's a this disk
+ 
+
+00:05:28.759 --> 00:05:31.150 align:start position:0%
+operation you see there's a this disk
+whose<00:05:29.080><c> boundary</c>
+
+00:05:31.150 --> 00:05:31.160 align:start position:0%
+whose boundary
+ 
+
+00:05:31.160 --> 00:05:34.230 align:start position:0%
+whose boundary
+consists<00:05:31.600><c> of</c><00:05:31.720><c> a</c><00:05:31.919><c> single</c><00:05:32.840><c> Circle</c><00:05:33.840><c> single</c>
+
+00:05:34.230 --> 00:05:34.240 align:start position:0%
+consists of a single Circle single
+ 
+
+00:05:34.240 --> 00:05:37.710 align:start position:0%
+consists of a single Circle single
+Circle<00:05:34.759><c> which</c><00:05:34.880><c> is</c><00:05:35.039><c> marked</c><00:05:35.520><c> by</c><00:05:36.319><c> this</c><00:05:37.160><c> solid</c>
+
+00:05:37.710 --> 00:05:37.720 align:start position:0%
+Circle which is marked by this solid
+ 
+
+00:05:37.720 --> 00:05:41.469 align:start position:0%
+Circle which is marked by this solid
+Arrow<00:05:38.280><c> followed</c><00:05:38.720><c> by</c><00:05:38.919><c> this</c><00:05:39.160><c> sort</c><00:05:39.400><c> of</c><00:05:40.240><c> rounded</c>
+
+00:05:41.469 --> 00:05:41.479 align:start position:0%
+Arrow followed by this sort of rounded
+ 
+
+00:05:41.479 --> 00:05:45.309 align:start position:0%
+Arrow followed by this sort of rounded
+Arrow<00:05:42.479><c> if</c><00:05:42.600><c> you</c><00:05:42.759><c> look</c><00:05:42.960><c> at</c><00:05:43.160><c> the</c><00:05:43.400><c> M</c><00:05:43.960><c> strip</c><00:05:44.800><c> we</c><00:05:44.960><c> know</c>
+
+00:05:45.309 --> 00:05:45.319 align:start position:0%
+Arrow if you look at the M strip we know
+ 
+
+00:05:45.319 --> 00:05:47.189 align:start position:0%
+Arrow if you look at the M strip we know
+that<00:05:45.479><c> it's</c><00:05:45.800><c> boundary</c><00:05:46.199><c> is</c><00:05:46.400><c> also</c><00:05:46.600><c> a</c><00:05:46.759><c> single</c>
+
+00:05:47.189 --> 00:05:47.199 align:start position:0%
+that it's boundary is also a single
+ 
+
+00:05:47.199 --> 00:05:50.390 align:start position:0%
+that it's boundary is also a single
+Circle<00:05:48.199><c> and</c><00:05:48.680><c> if</c><00:05:48.800><c> you</c><00:05:49.000><c> go</c><00:05:49.280><c> along</c><00:05:49.800><c> the</c><00:05:49.960><c> boundary</c>
+
+00:05:50.390 --> 00:05:50.400 align:start position:0%
+Circle and if you go along the boundary
+ 
+
+00:05:50.400 --> 00:05:52.390 align:start position:0%
+Circle and if you go along the boundary
+you<00:05:50.600><c> get</c><00:05:50.880><c> this</c><00:05:51.199><c> solid</c>
+
+00:05:52.390 --> 00:05:52.400 align:start position:0%
+you get this solid
+ 
+
+00:05:52.400 --> 00:05:56.309 align:start position:0%
+you get this solid
+Arrow<00:05:53.400><c> followed</c><00:05:53.960><c> by</c><00:05:54.400><c> the</c><00:05:54.680><c> round</c><00:05:55.199><c> Arrow</c><00:05:56.120><c> so</c>
+
+00:05:56.309 --> 00:05:56.319 align:start position:0%
+Arrow followed by the round Arrow so
+ 
+
+00:05:56.319 --> 00:05:58.550 align:start position:0%
+Arrow followed by the round Arrow so
+it's<00:05:56.560><c> exactly</c><00:05:56.880><c> the</c><00:05:57.000><c> same</c><00:05:57.280><c> boundary</c><00:05:58.280><c> what</c><00:05:58.440><c> we</c>
+
+00:05:58.550 --> 00:05:58.560 align:start position:0%
+it's exactly the same boundary what we
+ 
+
+00:05:58.560 --> 00:06:01.909 align:start position:0%
+it's exactly the same boundary what we
+have<00:05:58.720><c> to</c><00:05:58.840><c> do</c><00:05:59.039><c> then</c><00:05:59.280><c> is</c><00:05:59.400><c> to</c><00:06:00.000><c> glue</c><00:06:00.479><c> this</c><00:06:01.160><c> to</c><00:06:01.680><c> this</c>
+
+00:06:01.909 --> 00:06:01.919 align:start position:0%
+have to do then is to glue this to this
+ 
+
+00:06:01.919 --> 00:06:05.110 align:start position:0%
+have to do then is to glue this to this
+piece<00:06:02.360><c> along</c><00:06:02.880><c> the</c><00:06:03.400><c> boundaries</c><00:06:04.400><c> along</c><00:06:04.800><c> common</c>
+
+00:06:05.110 --> 00:06:05.120 align:start position:0%
+piece along the boundaries along common
+ 
+
+00:06:05.120 --> 00:06:07.870 align:start position:0%
+piece along the boundaries along common
+boundaries
+
+00:06:07.870 --> 00:06:07.880 align:start position:0%
+boundaries
+ 
+
+00:06:07.880 --> 00:06:09.950 align:start position:0%
+boundaries
+thus<00:06:08.880><c> what</c><00:06:09.120><c> we</c>
+
+00:06:09.950 --> 00:06:09.960 align:start position:0%
+thus what we
+ 
+
+00:06:09.960 --> 00:06:13.670 align:start position:0%
+thus what we
+have<00:06:10.960><c> Excuse</c>
+
+00:06:13.670 --> 00:06:13.680 align:start position:0%
+ 
+ 
+
+00:06:13.680 --> 00:06:15.909 align:start position:0%
+ 
+me<00:06:14.680><c> yes</c><00:06:14.919><c> some</c>
+
+00:06:15.909 --> 00:06:15.919 align:start position:0%
+me yes some
+ 
+
+00:06:15.919 --> 00:06:21.390 align:start position:0%
+me yes some
+people<00:06:16.919><c> ah</c><00:06:17.240><c> okay</c><00:06:17.360><c> so</c><00:06:17.520><c> you</c><00:06:17.639><c> dro</c><00:06:18.000><c> the</c><00:06:18.319><c> pen</c>
+
+00:06:21.390 --> 00:06:21.400 align:start position:0%
+ 
+ 
+
+00:06:21.400 --> 00:06:26.710 align:start position:0%
+ 
+okay<00:06:22.759><c> sometimes</c><00:06:23.759><c> I</c><00:06:23.919><c> lecture</c><00:06:24.400><c> so</c><00:06:24.720><c> fast</c><00:06:25.520><c> that</c><00:06:26.520><c> a</c>
+
+00:06:26.710 --> 00:06:26.720 align:start position:0%
+okay sometimes I lecture so fast that a
+ 
+
+00:06:26.720 --> 00:06:30.230 align:start position:0%
+okay sometimes I lecture so fast that a
+student<00:06:27.120><c> said</c><00:06:27.479><c> that</c><00:06:28.160><c> he</c><00:06:28.319><c> dropped</c><00:06:28.639><c> a</c><00:06:28.840><c> pen</c><00:06:29.919><c> bent</c>
+
+00:06:30.230 --> 00:06:30.240 align:start position:0%
+student said that he dropped a pen bent
+ 
+
+00:06:30.240 --> 00:06:32.950 align:start position:0%
+student said that he dropped a pen bent
+over<00:06:30.479><c> to</c><00:06:30.639><c> pick</c><00:06:30.800><c> it</c><00:06:30.960><c> up</c><00:06:31.919><c> and</c><00:06:32.160><c> because</c><00:06:32.400><c> of</c><00:06:32.639><c> this</c>
+
+00:06:32.950 --> 00:06:32.960 align:start position:0%
+over to pick it up and because of this
+ 
+
+00:06:32.960 --> 00:06:37.950 align:start position:0%
+over to pick it up and because of this
+missed<00:06:33.280><c> all</c><00:06:33.440><c> of</c><00:06:33.680><c> complex</c>
+
+00:06:37.950 --> 00:06:37.960 align:start position:0%
+ 
+ 
+
+00:06:37.960 --> 00:06:41.870 align:start position:0%
+ 
+analysis<00:06:38.960><c> so</c><00:06:39.400><c> this</c><00:06:39.560><c> is</c><00:06:39.880><c> the</c><00:06:40.080><c> same</c><00:06:40.560><c> as</c><00:06:41.440><c> the</c>
+
+00:06:41.870 --> 00:06:41.880 align:start position:0%
+analysis so this is the same as the
+ 
+
+00:06:41.880 --> 00:06:48.350 align:start position:0%
+analysis so this is the same as the
+movie
+
+00:06:48.350 --> 00:06:48.360 align:start position:0%
+ 
+ 
+
+00:06:48.360 --> 00:06:52.230 align:start position:0%
+ 
+strip<00:06:49.360><c> and</c><00:06:49.599><c> you</c><00:06:49.800><c> take</c><00:06:50.199><c> a</c><00:06:50.440><c> dis</c><00:06:51.039><c> I'm</c><00:06:51.720><c> drawing</c><00:06:52.120><c> the</c>
+
+00:06:52.230 --> 00:06:52.240 align:start position:0%
+strip and you take a dis I'm drawing the
+ 
+
+00:06:52.240 --> 00:06:55.110 align:start position:0%
+strip and you take a dis I'm drawing the
+disc<00:06:52.520><c> a</c><00:06:52.639><c> bit</c><00:06:52.919><c> sideways</c><00:06:53.560><c> okay</c><00:06:54.280><c> and</c>
+
+00:06:55.110 --> 00:06:55.120 align:start position:0%
+disc a bit sideways okay and
+ 
+
+00:06:55.120 --> 00:07:02.629 align:start position:0%
+disc a bit sideways okay and
+then<00:06:56.120><c> glue</c><00:06:56.479><c> the</c><00:06:56.599><c> boundaries</c><00:06:57.199><c> together</c><00:06:57.919><c> so</c>
+
+00:07:02.629 --> 00:07:02.639 align:start position:0%
+ 
+ 
+
+00:07:02.639 --> 00:07:04.230 align:start position:0%
+ 
+heis
+
+00:07:04.230 --> 00:07:04.240 align:start position:0%
+heis
+ 
+
+00:07:04.240 --> 00:07:07.749 align:start position:0%
+heis
+St<00:07:05.240><c> and</c><00:07:05.479><c> the</c>
+
+00:07:07.749 --> 00:07:07.759 align:start position:0%
+ 
+ 
+
+00:07:07.759 --> 00:07:12.189 align:start position:0%
+ 
+dis<00:07:08.759><c> and</c>
+
+00:07:12.189 --> 00:07:12.199 align:start position:0%
+ 
+ 
+
+00:07:12.199 --> 00:07:15.550 align:start position:0%
+ 
+identify<00:07:13.639><c> them</c>
+
+00:07:15.550 --> 00:07:15.560 align:start position:0%
+identify them
+ 
+
+00:07:15.560 --> 00:07:25.710 align:start position:0%
+identify them
+along<00:07:16.560><c> the</c><00:07:16.759><c> their</c><00:07:16.960><c> boundary</c>
+
+00:07:25.710 --> 00:07:25.720 align:start position:0%
+ 
+ 
+
+00:07:25.720 --> 00:07:28.469 align:start position:0%
+ 
+circles<00:07:26.720><c> that</c><00:07:26.879><c> is</c><00:07:27.080><c> slightly</c><00:07:27.639><c> better</c><00:07:28.080><c> that's</c><00:07:28.360><c> a</c>
+
+00:07:28.469 --> 00:07:28.479 align:start position:0%
+circles that is slightly better that's a
+ 
+
+00:07:28.479 --> 00:07:30.629 align:start position:0%
+circles that is slightly better that's a
+little<00:07:28.720><c> easier</c><00:07:29.039><c> to</c><00:07:29.199><c> visual</c><00:07:29.879><c> than</c><00:07:30.400><c> in</c><00:07:30.520><c> the</c>
+
+00:07:30.629 --> 00:07:30.639 align:start position:0%
+little easier to visual than in the
+ 
+
+00:07:30.639 --> 00:07:32.510 align:start position:0%
+little easier to visual than in the
+beginning<00:07:31.160><c> but</c><00:07:31.360><c> it's</c><00:07:31.599><c> still</c><00:07:32.000><c> quite</c><00:07:32.400><c> difficult</c>
+
+00:07:32.510 --> 00:07:32.520 align:start position:0%
+beginning but it's still quite difficult
+ 
+
+00:07:32.520 --> 00:07:35.029 align:start position:0%
+beginning but it's still quite difficult
+to<00:07:32.639><c> visualize</c><00:07:33.280><c> what</c><00:07:33.479><c> do</c><00:07:33.639><c> we</c><00:07:33.840><c> get</c><00:07:34.080><c> if</c><00:07:34.199><c> I</c><00:07:34.360><c> take</c><00:07:34.520><c> a</c>
+
+00:07:35.029 --> 00:07:35.039 align:start position:0%
+to visualize what do we get if I take a
+ 
+
+00:07:35.039 --> 00:07:37.990 align:start position:0%
+to visualize what do we get if I take a
+dis<00:07:35.879><c> and</c><00:07:36.160><c> along</c><00:07:36.720><c> the</c><00:07:36.960><c> circular</c><00:07:37.360><c> boundary</c><00:07:37.840><c> I</c>
+
+00:07:37.990 --> 00:07:38.000 align:start position:0%
+dis and along the circular boundary I
+ 
+
+00:07:38.000 --> 00:07:40.309 align:start position:0%
+dis and along the circular boundary I
+glue<00:07:38.440><c> the</c><00:07:38.560><c> boundary</c><00:07:38.879><c> of</c><00:07:39.039><c> movies</c><00:07:39.840><c> St</c><00:07:40.199><c> you</c>
+
+00:07:40.309 --> 00:07:40.319 align:start position:0%
+glue the boundary of movies St you
+ 
+
+00:07:40.319 --> 00:07:42.869 align:start position:0%
+glue the boundary of movies St you
+cannot<00:07:40.560><c> do</c><00:07:40.759><c> this</c><00:07:40.879><c> in</c><00:07:41.039><c> 3D</c><00:07:41.520><c> by</c><00:07:41.639><c> the</c><00:07:41.879><c> way</c>
+
+00:07:42.869 --> 00:07:42.879 align:start position:0%
+cannot do this in 3D by the way
+ 
+
+00:07:42.879 --> 00:07:45.710 align:start position:0%
+cannot do this in 3D by the way
+difficult<00:07:43.000><c> to</c><00:07:43.360><c> visualize</c><00:07:44.360><c> but</c><00:07:44.879><c> let's</c><00:07:45.199><c> argue</c>
+
+00:07:45.710 --> 00:07:45.720 align:start position:0%
+difficult to visualize but let's argue
+ 
+
+00:07:45.720 --> 00:07:48.029 align:start position:0%
+difficult to visualize but let's argue
+as<00:07:45.879><c> follows</c><00:07:46.680><c> you</c><00:07:46.840><c> know</c><00:07:47.080><c> this</c><00:07:47.319><c> disc</c><00:07:47.680><c> that</c><00:07:47.840><c> we</c>
+
+00:07:48.029 --> 00:07:48.039 align:start position:0%
+as follows you know this disc that we
+ 
+
+00:07:48.039 --> 00:07:51.550 align:start position:0%
+as follows you know this disc that we
+have<00:07:48.800><c> I</c><00:07:49.039><c> draw</c><00:07:49.240><c> a</c><00:07:49.360><c> Caron</c><00:07:49.639><c> picture</c><00:07:50.280><c> there</c><00:07:51.280><c> now</c>
+
+00:07:51.550 --> 00:07:51.560 align:start position:0%
+have I draw a Caron picture there now
+ 
+
+00:07:51.560 --> 00:07:54.110 align:start position:0%
+have I draw a Caron picture there now
+putting<00:07:51.919><c> horizontally</c><00:07:52.759><c> suppose</c><00:07:53.080><c> that</c><00:07:53.319><c> I</c><00:07:53.840><c> push</c>
+
+00:07:54.110 --> 00:07:54.120 align:start position:0%
+putting horizontally suppose that I push
+ 
+
+00:07:54.120 --> 00:07:57.749 align:start position:0%
+putting horizontally suppose that I push
+up<00:07:54.479><c> the</c><00:07:55.080><c> edge</c><00:07:55.360><c> a</c><00:07:55.520><c> little</c><00:07:55.800><c> bit</c><00:07:56.599><c> and</c><00:07:56.840><c> make</c><00:07:57.039><c> it</c>
+
+00:07:57.749 --> 00:07:57.759 align:start position:0%
+up the edge a little bit and make it
+ 
+
+00:07:57.759 --> 00:08:00.309 align:start position:0%
+up the edge a little bit and make it
+into<00:07:58.080><c> this</c><00:07:58.240><c> shape</c>
+
+00:08:00.309 --> 00:08:00.319 align:start position:0%
+into this shape
+ 
+
+00:08:00.319 --> 00:08:03.189 align:start position:0%
+into this shape
+yeah<00:08:00.960><c> that's</c><00:08:01.159><c> still</c><00:08:01.520><c> topologically</c><00:08:02.120><c> a</c><00:08:02.360><c> dis</c>
+
+00:08:03.189 --> 00:08:03.199 align:start position:0%
+yeah that's still topologically a dis
+ 
+
+00:08:03.199 --> 00:08:05.070 align:start position:0%
+yeah that's still topologically a dis
+it's<00:08:03.360><c> the</c><00:08:03.520><c> same</c><00:08:03.840><c> thing</c><00:08:04.199><c> homeomorphic</c><00:08:04.840><c> to</c><00:08:04.960><c> a</c>
+
+00:08:05.070 --> 00:08:05.080 align:start position:0%
+it's the same thing homeomorphic to a
+ 
+
+00:08:05.080 --> 00:08:07.790 align:start position:0%
+it's the same thing homeomorphic to a
+dis<00:08:05.520><c> you</c><00:08:05.639><c> can</c><00:08:05.800><c> see</c><00:08:06.039><c> that</c><00:08:06.919><c> and</c><00:08:07.080><c> then</c><00:08:07.280><c> just</c><00:08:07.599><c> keep</c>
+
+00:08:07.790 --> 00:08:07.800 align:start position:0%
+dis you can see that and then just keep
+ 
+
+00:08:07.800 --> 00:08:09.670 align:start position:0%
+dis you can see that and then just keep
+stretching
+
+00:08:09.670 --> 00:08:09.680 align:start position:0%
+stretching
+ 
+
+00:08:09.680 --> 00:08:12.749 align:start position:0%
+stretching
+this<00:08:10.680><c> and</c><00:08:10.960><c> eventually</c><00:08:11.560><c> I</c><00:08:11.720><c> get</c><00:08:12.039><c> a</c><00:08:12.199><c> shape</c><00:08:12.520><c> like</c>
+
+00:08:12.749 --> 00:08:12.759 align:start position:0%
+this and eventually I get a shape like
+ 
+
+00:08:12.759 --> 00:08:16.469 align:start position:0%
+this and eventually I get a shape like
+this<00:08:12.960><c> which</c><00:08:13.120><c> is</c><00:08:13.520><c> a</c><00:08:13.960><c> sphere</c><00:08:14.960><c> with</c><00:08:15.199><c> one</c><00:08:15.560><c> hole</c>
+
+00:08:16.469 --> 00:08:16.479 align:start position:0%
+this which is a sphere with one hole
+ 
+
+00:08:16.479 --> 00:08:20.710 align:start position:0%
+this which is a sphere with one hole
+drilled<00:08:17.159><c> out</c><00:08:18.159><c> that</c><00:08:18.759><c> shape</c><00:08:19.759><c> sphere</c><00:08:20.240><c> minus</c><00:08:20.520><c> a</c>
+
+00:08:20.710 --> 00:08:20.720 align:start position:0%
+drilled out that shape sphere minus a
+ 
+
+00:08:20.720 --> 00:08:24.710 align:start position:0%
+drilled out that shape sphere minus a
+disk<00:08:21.080><c> is</c><00:08:21.440><c> still</c><00:08:22.319><c> homeomorphic</c><00:08:22.919><c> to</c><00:08:23.039><c> a</c>
+
+00:08:24.710 --> 00:08:24.720 align:start position:0%
+disk is still homeomorphic to a
+ 
+
+00:08:24.720 --> 00:08:28.830 align:start position:0%
+disk is still homeomorphic to a
+dis<00:08:25.720><c> okay</c><00:08:26.199><c> so</c><00:08:26.759><c> we</c><00:08:26.919><c> can</c><00:08:27.560><c> in</c><00:08:27.759><c> fact</c><00:08:28.199><c> visualize</c>
+
+00:08:28.830 --> 00:08:28.840 align:start position:0%
+dis okay so we can in fact visualize
+ 
+
+00:08:28.840 --> 00:08:31.510 align:start position:0%
+dis okay so we can in fact visualize
+this<00:08:29.560><c> as</c><00:08:29.720><c> follows</c><00:08:30.440><c> instead</c><00:08:30.759><c> of</c><00:08:31.000><c> this</c><00:08:31.319><c> let's</c>
+
+00:08:31.510 --> 00:08:31.520 align:start position:0%
+this as follows instead of this let's
+ 
+
+00:08:31.520 --> 00:08:37.070 align:start position:0%
+this as follows instead of this let's
+take<00:08:31.680><c> a</c><00:08:32.320><c> sphere</c><00:08:33.320><c> with</c><00:08:33.479><c> the</c><00:08:33.599><c> hold</c><00:08:33.880><c> drill</c>
+
+00:08:37.070 --> 00:08:37.080 align:start position:0%
+ 
+ 
+
+00:08:37.080 --> 00:08:39.990 align:start position:0%
+ 
+out
+
+00:08:39.990 --> 00:08:40.000 align:start position:0%
+out
+ 
+
+00:08:40.000 --> 00:08:43.750 align:start position:0%
+out
+now<00:08:41.000><c> the</c><00:08:41.479><c> boundary</c><00:08:42.479><c> that</c><00:08:42.599><c> you</c><00:08:42.760><c> see</c><00:08:43.039><c> is</c><00:08:43.159><c> a</c>
+
+00:08:43.750 --> 00:08:43.760 align:start position:0%
+now the boundary that you see is a
+ 
+
+00:08:43.760 --> 00:08:47.470 align:start position:0%
+now the boundary that you see is a
+circle<00:08:44.760><c> and</c><00:08:45.480><c> you</c><00:08:45.640><c> can</c><00:08:46.000><c> try</c><00:08:46.279><c> to</c><00:08:46.640><c> let's</c><00:08:46.839><c> see</c><00:08:47.120><c> that</c>
+
+00:08:47.470 --> 00:08:47.480 align:start position:0%
+circle and you can try to let's see that
+ 
+
+00:08:47.480 --> 00:08:50.829 align:start position:0%
+circle and you can try to let's see that
+let's<00:08:47.680><c> see</c><00:08:48.040><c> how</c><00:08:48.240><c> we</c><00:08:48.360><c> can</c><00:08:48.760><c> close</c><00:08:49.440><c> this</c><00:08:49.880><c> hole</c><00:08:50.720><c> the</c>
+
+00:08:50.829 --> 00:08:50.839 align:start position:0%
+let's see how we can close this hole the
+ 
+
+00:08:50.839 --> 00:08:52.829 align:start position:0%
+let's see how we can close this hole the
+usual<00:08:51.200><c> way</c><00:08:51.320><c> to</c><00:08:51.399><c> close</c><00:08:51.680><c> this</c><00:08:51.800><c> hole</c><00:08:52.160><c> is</c><00:08:52.320><c> to</c><00:08:52.680><c> take</c>
+
+00:08:52.829 --> 00:08:52.839 align:start position:0%
+usual way to close this hole is to take
+ 
+
+00:08:52.839 --> 00:08:57.269 align:start position:0%
+usual way to close this hole is to take
+a<00:08:53.040><c> disc</c><00:08:53.399><c> and</c><00:08:53.720><c> put</c><00:08:53.920><c> it</c><00:08:54.080><c> on</c><00:08:54.440><c> as</c><00:08:54.560><c> a</c><00:08:55.200><c> lid</c><00:08:56.200><c> that's</c>
+
+00:08:57.269 --> 00:08:57.279 align:start position:0%
+a disc and put it on as a lid that's
+ 
+
+00:08:57.279 --> 00:09:00.030 align:start position:0%
+a disc and put it on as a lid that's
+possible<00:08:58.279><c> partically</c><00:08:59.040><c> because</c><00:08:59.560><c> the</c><00:08:59.680><c> boundary</c>
+
+00:09:00.030 --> 00:09:00.040 align:start position:0%
+possible partically because the boundary
+ 
+
+00:09:00.040 --> 00:09:02.550 align:start position:0%
+possible partically because the boundary
+of<00:09:00.160><c> the</c><00:09:00.320><c> dis</c><00:09:00.560><c> is</c><00:09:00.680><c> a</c><00:09:00.839><c> circle</c><00:09:01.560><c> so</c><00:09:01.760><c> I</c><00:09:01.839><c> can</c><00:09:02.120><c> identify</c>
+
+00:09:02.550 --> 00:09:02.560 align:start position:0%
+of the dis is a circle so I can identify
+ 
+
+00:09:02.560 --> 00:09:04.430 align:start position:0%
+of the dis is a circle so I can identify
+the<00:09:02.720><c> circle</c><00:09:03.079><c> with</c><00:09:03.279><c> this</c><00:09:03.440><c> circle</c><00:09:03.800><c> I</c><00:09:03.880><c> can</c><00:09:04.079><c> glue</c>
+
+00:09:04.430 --> 00:09:04.440 align:start position:0%
+the circle with this circle I can glue
+ 
+
+00:09:04.440 --> 00:09:08.750 align:start position:0%
+the circle with this circle I can glue
+it<00:09:04.720><c> along</c><00:09:05.040><c> the</c><00:09:05.560><c> circle</c><00:09:06.560><c> but</c><00:09:07.240><c> let's</c><00:09:07.720><c> imagine</c><00:09:08.680><c> I</c>
+
+00:09:08.750 --> 00:09:08.760 align:start position:0%
+it along the circle but let's imagine I
+ 
+
+00:09:08.760 --> 00:09:10.949 align:start position:0%
+it along the circle but let's imagine I
+want<00:09:08.959><c> you</c><00:09:09.079><c> to</c><00:09:09.279><c> exercise</c><00:09:09.720><c> your</c><00:09:09.959><c> imagination</c>
+
+00:09:10.949 --> 00:09:10.959 align:start position:0%
+want you to exercise your imagination
+ 
+
+00:09:10.959 --> 00:09:13.870 align:start position:0%
+want you to exercise your imagination
+that<00:09:11.120><c> I</c><00:09:11.279><c> take</c><00:09:11.399><c> a</c><00:09:11.560><c> mov</c>
+
+00:09:13.870 --> 00:09:13.880 align:start position:0%
+that I take a mov
+ 
+
+00:09:13.880 --> 00:09:16.910 align:start position:0%
+that I take a mov
+strip<00:09:14.880><c> and</c><00:09:15.120><c> glue</c><00:09:15.720><c> the</c><00:09:15.959><c> circular</c><00:09:16.440><c> boundary</c><00:09:16.800><c> of</c>
+
+00:09:16.910 --> 00:09:16.920 align:start position:0%
+strip and glue the circular boundary of
+ 
+
+00:09:16.920 --> 00:09:20.269 align:start position:0%
+strip and glue the circular boundary of
+the<00:09:17.040><c> movie</c><00:09:17.399><c> strip</c><00:09:18.120><c> along</c><00:09:18.640><c> this</c><00:09:18.800><c> circular</c>
+
+00:09:20.269 --> 00:09:20.279 align:start position:0%
+the movie strip along this circular
+ 
+
+00:09:20.279 --> 00:09:22.949 align:start position:0%
+the movie strip along this circular
+boundary<00:09:21.279><c> that's</c><00:09:21.560><c> another</c><00:09:21.959><c> way</c><00:09:22.120><c> of</c><00:09:22.440><c> closing</c>
+
+00:09:22.949 --> 00:09:22.959 align:start position:0%
+boundary that's another way of closing
+ 
+
+00:09:22.959 --> 00:09:24.790 align:start position:0%
+boundary that's another way of closing
+this
+
+00:09:24.790 --> 00:09:24.800 align:start position:0%
+this
+ 
+
+00:09:24.800 --> 00:09:28.550 align:start position:0%
+this
+hole<00:09:25.800><c> again</c><00:09:26.160><c> it's</c><00:09:26.399><c> impossible</c><00:09:26.800><c> to</c><00:09:26.920><c> do</c><00:09:27.160><c> in</c><00:09:27.560><c> 3D</c>
+
+00:09:28.550 --> 00:09:28.560 align:start position:0%
+hole again it's impossible to do in 3D
+ 
+
+00:09:28.560 --> 00:09:32.150 align:start position:0%
+hole again it's impossible to do in 3D
+but<00:09:29.399><c> you</c><00:09:29.480><c> can</c><00:09:29.680><c> do</c><00:09:29.920><c> this</c>
+
+00:09:32.150 --> 00:09:32.160 align:start position:0%
+but you can do this
+ 
+
+00:09:32.160 --> 00:09:35.590 align:start position:0%
+but you can do this
+so<00:09:33.160><c> drill</c><00:09:33.519><c> a</c>
+
+00:09:35.590 --> 00:09:35.600 align:start position:0%
+so drill a
+ 
+
+00:09:35.600 --> 00:09:39.910 align:start position:0%
+so drill a
+hole<00:09:36.600><c> on</c><00:09:36.800><c> a</c>
+
+00:09:39.910 --> 00:09:39.920 align:start position:0%
+ 
+ 
+
+00:09:39.920 --> 00:09:46.389 align:start position:0%
+ 
+sphere<00:09:41.079><c> and</c><00:09:42.560><c> put</c><00:09:43.560><c> a</c><00:09:43.880><c> Le</c>
+
+00:09:46.389 --> 00:09:46.399 align:start position:0%
+ 
+ 
+
+00:09:46.399 --> 00:09:54.550 align:start position:0%
+ 
+on<00:09:47.399><c> with</c><00:09:47.680><c> a</c><00:09:47.880><c> M</c>
+
+00:09:54.550 --> 00:09:54.560 align:start position:0%
+ 
+ 
+
+00:09:54.560 --> 00:09:58.910 align:start position:0%
+ 
+stream<00:09:55.560><c> this</c><00:09:55.880><c> is</c><00:09:56.760><c> what</c><00:09:57.040><c> results</c><00:09:57.720><c> if</c><00:09:57.839><c> you</c><00:09:58.040><c> make</c>
+
+00:09:58.910 --> 00:09:58.920 align:start position:0%
+stream this is what results if you make
+ 
+
+00:09:58.920 --> 00:10:01.190 align:start position:0%
+stream this is what results if you make
+those<00:09:59.360><c> identifications</c><00:09:59.920><c> that</c><00:10:00.079><c> we're</c>
+
+00:10:01.190 --> 00:10:01.200 align:start position:0%
+those identifications that we're
+ 
+
+00:10:01.200 --> 00:10:04.829 align:start position:0%
+those identifications that we're
+discussing<00:10:02.200><c> um</c><00:10:03.000><c> in</c><00:10:03.120><c> the</c><00:10:03.480><c> beginning</c><00:10:04.480><c> we</c><00:10:04.600><c> will</c>
+
+00:10:04.829 --> 00:10:04.839 align:start position:0%
+discussing um in the beginning we will
+ 
+
+00:10:04.839 --> 00:10:08.430 align:start position:0%
+discussing um in the beginning we will
+draw<00:10:05.279><c> this</c>
+
+00:10:08.430 --> 00:10:08.440 align:start position:0%
+ 
+ 
+
+00:10:08.440 --> 00:10:13.790 align:start position:0%
+ 
+[Applause]
+
+00:10:13.790 --> 00:10:13.800 align:start position:0%
+[Applause]
+ 
+
+00:10:13.800 --> 00:10:16.389 align:start position:0%
+[Applause]
+result
+
+00:10:16.389 --> 00:10:16.399 align:start position:0%
+result
+ 
+
+00:10:16.399 --> 00:10:19.230 align:start position:0%
+result
+as<00:10:17.399><c> well</c><00:10:17.600><c> there's</c><00:10:17.839><c> no</c><00:10:18.160><c> good</c><00:10:18.360><c> way</c><00:10:18.519><c> to</c><00:10:18.640><c> draw</c><00:10:18.920><c> it</c>
+
+00:10:19.230 --> 00:10:19.240 align:start position:0%
+as well there's no good way to draw it
+ 
+
+00:10:19.240 --> 00:10:22.150 align:start position:0%
+as well there's no good way to draw it
+so<00:10:19.519><c> I</c><00:10:19.600><c> shall</c><00:10:19.880><c> take</c><00:10:20.079><c> a</c><00:10:20.320><c> very</c><00:10:20.839><c> simple</c><00:10:21.720><c> draw</c>
+
+00:10:22.150 --> 00:10:22.160 align:start position:0%
+so I shall take a very simple draw
+ 
+
+00:10:22.160 --> 00:10:24.310 align:start position:0%
+so I shall take a very simple draw
+picture<00:10:22.760><c> I'm</c><00:10:22.880><c> going</c><00:10:23.040><c> to</c><00:10:23.200><c> put</c><00:10:23.480><c> a</c><00:10:23.640><c> circle</c><00:10:24.160><c> and</c>
+
+00:10:24.310 --> 00:10:24.320 align:start position:0%
+picture I'm going to put a circle and
+ 
+
+00:10:24.320 --> 00:10:26.190 align:start position:0%
+picture I'm going to put a circle and
+then<00:10:24.480><c> put</c><00:10:24.680><c> something</c><00:10:25.079><c> like</c>
+
+00:10:26.190 --> 00:10:26.200 align:start position:0%
+then put something like
+ 
+
+00:10:26.200 --> 00:10:31.790 align:start position:0%
+then put something like
+this<00:10:27.200><c> so</c><00:10:27.399><c> whenever</c><00:10:27.720><c> you</c><00:10:27.880><c> see</c><00:10:28.480><c> this</c><00:10:28.680><c> picture</c><00:10:29.519><c> it</c>
+
+00:10:31.790 --> 00:10:31.800 align:start position:0%
+ 
+ 
+
+00:10:31.800 --> 00:10:33.949 align:start position:0%
+ 
+means<00:10:32.800><c> dra</c><00:10:33.120><c> out</c><00:10:33.279><c> a</c>
+
+00:10:33.949 --> 00:10:33.959 align:start position:0%
+means dra out a
+ 
+
+00:10:33.959 --> 00:10:38.269 align:start position:0%
+means dra out a
+hole<00:10:34.959><c> but</c><00:10:35.160><c> put</c><00:10:35.360><c> a</c><00:10:35.480><c> lid</c><00:10:35.800><c> back</c><00:10:36.000><c> on</c><00:10:36.639><c> not</c><00:10:37.120><c> with</c><00:10:38.120><c> the</c>
+
+00:10:38.269 --> 00:10:38.279 align:start position:0%
+hole but put a lid back on not with the
+ 
+
+00:10:38.279 --> 00:10:40.269 align:start position:0%
+hole but put a lid back on not with the
+ordinary<00:10:38.760><c> lead</c><00:10:39.000><c> but</c><00:10:39.160><c> with</c><00:10:39.279><c> a</c><00:10:39.360><c> movie</c><00:10:39.639><c> strip</c>
+
+00:10:40.269 --> 00:10:40.279 align:start position:0%
+ordinary lead but with a movie strip
+ 
+
+00:10:40.279 --> 00:10:42.590 align:start position:0%
+ordinary lead but with a movie strip
+glue<00:10:40.600><c> back</c><00:10:40.760><c> a</c><00:10:40.920><c> movie</c><00:10:41.240><c> strip</c><00:10:41.600><c> on</c><00:10:41.720><c> the</c><00:10:41.880><c> hole</c><00:10:42.279><c> and</c>
+
+00:10:42.590 --> 00:10:42.600 align:start position:0%
+glue back a movie strip on the hole and
+ 
+
+00:10:42.600 --> 00:10:46.870 align:start position:0%
+glue back a movie strip on the hole and
+the<00:10:42.800><c> result</c><00:10:43.120><c> is</c><00:10:43.279><c> drawn</c><00:10:43.639><c> like</c><00:10:44.160><c> this</c><00:10:45.160><c> okay</c><00:10:46.160><c> and</c>
+
+00:10:46.870 --> 00:10:46.880 align:start position:0%
+the result is drawn like this okay and
+ 
+
+00:10:46.880 --> 00:10:53.629 align:start position:0%
+the result is drawn like this okay and
+this<00:10:47.240><c> resulting</c>
+
+00:10:53.629 --> 00:10:53.639 align:start position:0%
+ 
+ 
+
+00:10:53.639 --> 00:10:57.670 align:start position:0%
+ 
+surface<00:10:54.639><c> closed</c><00:10:55.120><c> surface</c><00:10:55.760><c> mind</c><00:10:56.360><c> you</c><00:10:57.360><c> is</c>
+
+00:10:57.670 --> 00:10:57.680 align:start position:0%
+surface closed surface mind you is
+ 
+
+00:10:57.680 --> 00:11:00.430 align:start position:0%
+surface closed surface mind you is
+called
+
+00:11:00.430 --> 00:11:00.440 align:start position:0%
+called
+ 
+
+00:11:00.440 --> 00:11:03.030 align:start position:0%
+called
+the
+
+00:11:03.030 --> 00:11:03.040 align:start position:0%
+the
+ 
+
+00:11:03.040 --> 00:11:07.269 align:start position:0%
+the
+real<00:11:04.040><c> projective</c><00:11:05.160><c> plane</c><00:11:06.160><c> there</c><00:11:06.399><c> was</c><00:11:07.000><c> the</c>
+
+00:11:07.269 --> 00:11:07.279 align:start position:0%
+real projective plane there was the
+ 
+
+00:11:07.279 --> 00:11:09.990 align:start position:0%
+real projective plane there was the
+still<00:11:07.600><c> is</c><00:11:08.120><c> a</c><00:11:08.320><c> beautiful</c><00:11:09.200><c> area</c><00:11:09.480><c> of</c><00:11:09.600><c> geometry</c>
+
+00:11:09.990 --> 00:11:10.000 align:start position:0%
+still is a beautiful area of geometry
+ 
+
+00:11:10.000 --> 00:11:12.829 align:start position:0%
+still is a beautiful area of geometry
+called<00:11:10.240><c> projective</c>
+
+00:11:12.829 --> 00:11:12.839 align:start position:0%
+called projective
+ 
+
+00:11:12.839 --> 00:11:15.790 align:start position:0%
+called projective
+geometry<00:11:13.839><c> which</c><00:11:14.040><c> was</c><00:11:14.279><c> organized</c><00:11:14.760><c> in</c><00:11:14.839><c> the</c><00:11:14.959><c> 19</c>
+
+00:11:15.790 --> 00:11:15.800 align:start position:0%
+geometry which was organized in the 19
+ 
+
+00:11:15.800 --> 00:11:18.190 align:start position:0%
+geometry which was organized in the 19
+century<00:11:16.800><c> and</c><00:11:17.000><c> the</c><00:11:17.160><c> projective</c><00:11:17.639><c> plane</c><00:11:18.000><c> is</c>
+
+00:11:18.190 --> 00:11:18.200 align:start position:0%
+century and the projective plane is
+ 
+
+00:11:18.200 --> 00:11:19.670 align:start position:0%
+century and the projective plane is
+where<00:11:18.320><c> the</c><00:11:18.440><c> projective</c><00:11:18.880><c> geometry</c><00:11:19.320><c> takes</c>
+
+00:11:19.670 --> 00:11:19.680 align:start position:0%
+where the projective geometry takes
+ 
+
+00:11:19.680 --> 00:11:21.590 align:start position:0%
+where the projective geometry takes
+place<00:11:20.480><c> real</c><00:11:20.880><c> because</c><00:11:21.120><c> there's</c><00:11:21.360><c> something</c>
+
+00:11:21.590 --> 00:11:21.600 align:start position:0%
+place real because there's something
+ 
+
+00:11:21.600 --> 00:11:24.350 align:start position:0%
+place real because there's something
+called<00:11:21.880><c> complex</c><00:11:22.360><c> projective</c><00:11:23.079><c> plane</c><00:11:23.959><c> which</c><00:11:24.240><c> I</c>
+
+00:11:24.350 --> 00:11:24.360 align:start position:0%
+called complex projective plane which I
+ 
+
+00:11:24.360 --> 00:11:26.150 align:start position:0%
+called complex projective plane which I
+shall<00:11:24.639><c> not</c><00:11:25.079><c> um</c><00:11:25.279><c> discuss</c><00:11:25.720><c> we</c><00:11:25.839><c> shall</c><00:11:26.000><c> not</c>
+
+00:11:26.150 --> 00:11:26.160 align:start position:0%
+shall not um discuss we shall not
+ 
+
+00:11:26.160 --> 00:11:28.870 align:start position:0%
+shall not um discuss we shall not
+discuss<00:11:26.480><c> in</c><00:11:26.600><c> this</c><00:11:26.760><c> course</c><00:11:27.560><c> and</c><00:11:28.120><c> the</c><00:11:28.440><c> notation</c>
+
+00:11:28.870 --> 00:11:28.880 align:start position:0%
+discuss in this course and the notation
+ 
+
+00:11:28.880 --> 00:11:34.190 align:start position:0%
+discuss in this course and the notation
+for<00:11:29.079><c> this</c><00:11:29.720><c> which</c><00:11:30.079><c> we</c><00:11:30.200><c> shall</c><00:11:30.440><c> use</c><00:11:30.720><c> is</c><00:11:31.720><c> RP</c><00:11:32.839><c> 2</c><00:11:33.839><c> R</c>
+
+00:11:34.190 --> 00:11:34.200 align:start position:0%
+for this which we shall use is RP 2 R
+ 
+
+00:11:34.200 --> 00:11:36.069 align:start position:0%
+for this which we shall use is RP 2 R
+because<00:11:34.440><c> it's</c><00:11:34.680><c> real</c><00:11:35.279><c> P</c><00:11:35.600><c> stands</c><00:11:35.880><c> for</c>
+
+00:11:36.069 --> 00:11:36.079 align:start position:0%
+because it's real P stands for
+ 
+
+00:11:36.079 --> 00:11:37.670 align:start position:0%
+because it's real P stands for
+projective<00:11:36.639><c> and</c><00:11:36.760><c> two</c><00:11:37.040><c> because</c><00:11:37.320><c> it's</c><00:11:37.480><c> two</c>
+
+00:11:37.670 --> 00:11:37.680 align:start position:0%
+projective and two because it's two
+ 
+
+00:11:37.680 --> 00:11:40.670 align:start position:0%
+projective and two because it's two
+dimensional<00:11:38.160><c> it's</c><00:11:38.279><c> a</c><00:11:38.440><c> surface</c>
+
+00:11:40.670 --> 00:11:40.680 align:start position:0%
+dimensional it's a surface
+ 
+
+00:11:40.680 --> 00:11:43.670 align:start position:0%
+dimensional it's a surface
+okay<00:11:41.680><c> difficult</c><00:11:42.079><c> to</c><00:11:42.519><c> visualize</c><00:11:43.160><c> but</c><00:11:43.399><c> that's</c>
+
+00:11:43.670 --> 00:11:43.680 align:start position:0%
+okay difficult to visualize but that's
+ 
+
+00:11:43.680 --> 00:11:46.230 align:start position:0%
+okay difficult to visualize but that's
+what<00:11:43.800><c> it</c><00:11:43.959><c> is</c><00:11:44.360><c> we</c><00:11:44.480><c> shall</c><00:11:45.320><c> use</c><00:11:45.639><c> this</c><00:11:45.800><c> object</c><00:11:46.120><c> a</c>
+
+00:11:46.230 --> 00:11:46.240 align:start position:0%
+what it is we shall use this object a
+ 
+
+00:11:46.240 --> 00:11:48.030 align:start position:0%
+what it is we shall use this object a
+number<00:11:46.440><c> of</c><00:11:46.600><c> times</c><00:11:46.920><c> like</c><00:11:47.480><c> and</c><00:11:47.680><c> we'll</c>
+
+00:11:48.030 --> 00:11:48.040 align:start position:0%
+number of times like and we'll
+ 
+
+00:11:48.040 --> 00:11:53.629 align:start position:0%
+number of times like and we'll
+eventually<00:11:48.639><c> get</c><00:11:48.839><c> used</c><00:11:49.079><c> to</c><00:11:49.680><c> this</c>
+
+00:11:53.629 --> 00:11:53.639 align:start position:0%
+ 
+ 
+
+00:11:53.639 --> 00:11:56.430 align:start position:0%
+ 
+okay<00:11:54.639><c> we</c><00:11:54.800><c> have</c><00:11:55.040><c> discussed</c><00:11:55.480><c> two</c><00:11:55.720><c> operations</c>
+
+00:11:56.430 --> 00:11:56.440 align:start position:0%
+okay we have discussed two operations
+ 
+
+00:11:56.440 --> 00:11:59.829 align:start position:0%
+okay we have discussed two operations
+product<00:11:57.200><c> and</c><00:11:57.959><c> quotient</c><00:11:58.959><c> so</c><00:11:59.320><c> to</c><00:11:59.440><c> speak</c>
+
+00:11:59.829 --> 00:11:59.839 align:start position:0%
+product and quotient so to speak
+ 
+
+00:11:59.839 --> 00:12:02.910 align:start position:0%
+product and quotient so to speak
+multiplication<00:12:00.680><c> and</c><00:12:01.440><c> division</c><00:12:02.200><c> now</c><00:12:02.440><c> we'll</c>
+
+00:12:02.910 --> 00:12:02.920 align:start position:0%
+multiplication and division now we'll
+ 
+
+00:12:02.920 --> 00:12:05.150 align:start position:0%
+multiplication and division now we'll
+discuss<00:12:03.320><c> the</c><00:12:03.519><c> third</c><00:12:04.320><c> and</c><00:12:04.560><c> most</c><00:12:04.800><c> interesting</c>
+
+00:12:05.150 --> 00:12:05.160 align:start position:0%
+discuss the third and most interesting
+ 
+
+00:12:05.160 --> 00:12:07.710 align:start position:0%
+discuss the third and most interesting
+of<00:12:05.320><c> those</c><00:12:05.560><c> operations</c><00:12:06.560><c> which</c><00:12:06.959><c> will</c><00:12:07.279><c> name</c>
+
+00:12:07.710 --> 00:12:07.720 align:start position:0%
+of those operations which will name
+ 
+
+00:12:07.720 --> 00:12:10.990 align:start position:0%
+of those operations which will name
+surgery<00:12:08.720><c> it</c><00:12:08.839><c> is</c><00:12:09.680><c> a</c><00:12:09.880><c> little</c><00:12:10.120><c> like</c><00:12:10.320><c> addition</c><00:12:10.720><c> and</c>
+
+00:12:10.990 --> 00:12:11.000 align:start position:0%
+surgery it is a little like addition and
+ 
+
+00:12:11.000 --> 00:12:13.189 align:start position:0%
+surgery it is a little like addition and
+subtraction<00:12:11.720><c> you</c><00:12:11.959><c> cut</c><00:12:12.320><c> and</c>
+
+00:12:13.189 --> 00:12:13.199 align:start position:0%
+subtraction you cut and
+ 
+
+00:12:13.199 --> 00:12:15.110 align:start position:0%
+subtraction you cut and
+paste<00:12:14.199><c> various</c>
+
+00:12:15.110 --> 00:12:15.120 align:start position:0%
+paste various
+ 
+
+00:12:15.120 --> 00:12:18.870 align:start position:0%
+paste various
+manifolds<00:12:16.120><c> here</c><00:12:16.320><c> is</c><00:12:16.519><c> the</c><00:12:17.160><c> definition</c>
+
+00:12:18.870 --> 00:12:18.880 align:start position:0%
+manifolds here is the definition
+ 
+
+00:12:18.880 --> 00:12:25.509 align:start position:0%
+manifolds here is the definition
+of<00:12:19.880><c> how</c><00:12:20.079><c> to</c><00:12:20.360><c> cut</c><00:12:20.600><c> and</c>
+
+00:12:25.509 --> 00:12:25.519 align:start position:0%
+ 
+ 
+
+00:12:25.519 --> 00:12:31.389 align:start position:0%
+ 
+paste<00:12:26.519><c> let's</c><00:12:26.760><c> say</c><00:12:26.920><c> that</c><00:12:27.079><c> you</c><00:12:27.279><c> have</c><00:12:27.560><c> two</c>
+
+00:12:31.389 --> 00:12:31.399 align:start position:0%
+ 
+ 
+
+00:12:31.399 --> 00:12:34.710 align:start position:0%
+ 
+manifolds<00:12:32.399><c> MF</c><00:12:32.800><c> LD</c><00:12:33.440><c> stands</c><00:12:33.720><c> for</c>
+
+00:12:34.710 --> 00:12:34.720 align:start position:0%
+manifolds MF LD stands for
+ 
+
+00:12:34.720 --> 00:12:41.430 align:start position:0%
+manifolds MF LD stands for
+manifold<00:12:35.800><c> M1</c><00:12:37.199><c> M2</c><00:12:38.199><c> over</c><00:12:38.480><c> the</c><00:12:38.600><c> same</c>
+
+00:12:41.430 --> 00:12:41.440 align:start position:0%
+ 
+ 
+
+00:12:41.440 --> 00:12:44.470 align:start position:0%
+ 
+Dimension<00:12:42.440><c> let's</c><00:12:42.639><c> call</c><00:12:42.839><c> it</c><00:12:43.040><c> small</c>
+
+00:12:44.470 --> 00:12:44.480 align:start position:0%
+Dimension let's call it small
+ 
+
+00:12:44.480 --> 00:12:48.550 align:start position:0%
+Dimension let's call it small
+M<00:12:45.480><c> so</c><00:12:45.959><c> the</c><00:12:46.199><c> picture</c><00:12:46.560><c> that</c><00:12:46.720><c> I</c><00:12:46.880><c> have</c><00:12:47.120><c> in</c><00:12:47.279><c> mind</c>
+
+00:12:48.550 --> 00:12:48.560 align:start position:0%
+M so the picture that I have in mind
+ 
+
+00:12:48.560 --> 00:12:50.790 align:start position:0%
+M so the picture that I have in mind
+is<00:12:49.560><c> so</c><00:12:49.760><c> I</c><00:12:49.839><c> don't</c><00:12:50.000><c> know</c><00:12:50.160><c> what's</c><00:12:50.360><c> happening</c><00:12:50.639><c> to</c>
+
+00:12:50.790 --> 00:12:50.800 align:start position:0%
+is so I don't know what's happening to
+ 
+
+00:12:50.800 --> 00:12:54.310 align:start position:0%
+is so I don't know what's happening to
+this<00:12:50.920><c> manifold</c><00:12:51.760><c> on</c><00:12:51.959><c> this</c><00:12:52.199><c> side</c><00:12:52.680><c> but</c><00:12:53.680><c> here</c><00:12:54.079><c> you</c>
+
+00:12:54.310 --> 00:12:54.320 align:start position:0%
+this manifold on this side but here you
+ 
+
+00:12:54.320 --> 00:13:00.310 align:start position:0%
+this manifold on this side but here you
+get<00:12:54.720><c> a</c><00:12:54.880><c> manifold</c><00:12:55.440><c> like</c><00:12:55.680><c> this</c><00:12:56.320><c> so</c><00:12:56.519><c> that's</c><00:12:56.720><c> M1</c>
+
+00:13:00.310 --> 00:13:00.320 align:start position:0%
+ 
+ 
+
+00:13:00.320 --> 00:13:02.230 align:start position:0%
+ 
+yeah<00:13:00.480><c> it</c><00:13:00.560><c> might</c><00:13:00.760><c> be</c><00:13:00.959><c> very</c>
+
+00:13:02.230 --> 00:13:02.240 align:start position:0%
+yeah it might be very
+ 
+
+00:13:02.240 --> 00:13:06.389 align:start position:0%
+yeah it might be very
+complicated<00:13:03.240><c> and</c><00:13:03.839><c> another</c>
+
+00:13:06.389 --> 00:13:06.399 align:start position:0%
+ 
+ 
+
+00:13:06.399 --> 00:13:09.470 align:start position:0%
+ 
+manifold<00:13:07.399><c> again</c><00:13:07.639><c> I</c><00:13:07.760><c> don't</c><00:13:07.880><c> know</c><00:13:08.480><c> what's</c>
+
+00:13:09.470 --> 00:13:09.480 align:start position:0%
+manifold again I don't know what's
+ 
+
+00:13:09.480 --> 00:13:12.310 align:start position:0%
+manifold again I don't know what's
+what's<00:13:09.720><c> beyond</c><00:13:10.199><c> there</c><00:13:10.600><c> but</c><00:13:10.880><c> that's</c>
+
+00:13:12.310 --> 00:13:12.320 align:start position:0%
+what's beyond there but that's
+ 
+
+00:13:12.320 --> 00:13:14.310 align:start position:0%
+what's beyond there but that's
+M2
+
+00:13:14.310 --> 00:13:14.320 align:start position:0%
+M2
+ 
+
+00:13:14.320 --> 00:13:16.949 align:start position:0%
+M2
+okay<00:13:15.320><c> what</c><00:13:15.480><c> we</c><00:13:15.600><c> shall</c><00:13:15.880><c> do</c><00:13:16.279><c> and</c><00:13:16.480><c> these</c><00:13:16.720><c> both</c>
+
+00:13:16.949 --> 00:13:16.959 align:start position:0%
+okay what we shall do and these both
+ 
+
+00:13:16.959 --> 00:13:19.710 align:start position:0%
+okay what we shall do and these both
+have<00:13:17.079><c> the</c><00:13:17.199><c> same</c><00:13:17.440><c> Dimension</c><00:13:18.160><c> M</c><00:13:19.160><c> what</c><00:13:19.320><c> we</c><00:13:19.440><c> shall</c>
+
+00:13:19.710 --> 00:13:19.720 align:start position:0%
+have the same Dimension M what we shall
+ 
+
+00:13:19.720 --> 00:13:23.710 align:start position:0%
+have the same Dimension M what we shall
+both<00:13:20.480><c> what</c><00:13:20.560><c> we</c><00:13:20.639><c> shall</c><00:13:20.880><c> do</c><00:13:21.240><c> is</c><00:13:21.360><c> to</c><00:13:21.639><c> drill</c><00:13:22.079><c> out</c><00:13:22.680><c> a</c>
+
+00:13:23.710 --> 00:13:23.720 align:start position:0%
+both what we shall do is to drill out a
+ 
+
+00:13:23.720 --> 00:13:26.990 align:start position:0%
+both what we shall do is to drill out a
+hole<00:13:24.720><c> from</c>
+
+00:13:26.990 --> 00:13:27.000 align:start position:0%
+hole from
+ 
+
+00:13:27.000 --> 00:13:30.910 align:start position:0%
+hole from
+here<00:13:28.000><c> remove</c><00:13:28.519><c> this</c><00:13:29.600><c> this</c>
+
+00:13:30.910 --> 00:13:30.920 align:start position:0%
+here remove this this
+ 
+
+00:13:30.920 --> 00:13:34.310 align:start position:0%
+here remove this this
+thing<00:13:31.920><c> when</c><00:13:32.040><c> I</c><00:13:32.160><c> say</c><00:13:32.360><c> a</c><00:13:32.480><c> hole</c><00:13:33.079><c> on</c><00:13:33.240><c> a</c><00:13:33.519><c> Surface</c>
+
+00:13:34.310 --> 00:13:34.320 align:start position:0%
+thing when I say a hole on a Surface
+ 
+
+00:13:34.320 --> 00:13:37.310 align:start position:0%
+thing when I say a hole on a Surface
+Dimension<00:13:34.720><c> two</c><00:13:35.040><c> surface</c><00:13:35.839><c> a</c><00:13:36.000><c> hole</c><00:13:36.560><c> is</c><00:13:36.839><c> a</c><00:13:37.079><c> two</c>
+
+00:13:37.310 --> 00:13:37.320 align:start position:0%
+Dimension two surface a hole is a two
+ 
+
+00:13:37.320 --> 00:13:42.189 align:start position:0%
+Dimension two surface a hole is a two
+dimensional<00:13:38.360><c> ball</c><00:13:39.800><c> disc</c><00:13:40.800><c> on</c><00:13:41.440><c> an</c><00:13:41.839><c> M</c>
+
+00:13:42.189 --> 00:13:42.199 align:start position:0%
+dimensional ball disc on an M
+ 
+
+00:13:42.199 --> 00:13:45.310 align:start position:0%
+dimensional ball disc on an M
+dimensional<00:13:42.959><c> manifold</c><00:13:43.760><c> a</c><00:13:43.920><c> hole</c><00:13:44.600><c> is</c><00:13:44.760><c> an</c><00:13:45.079><c> M</c>
+
+00:13:45.310 --> 00:13:45.320 align:start position:0%
+dimensional manifold a hole is an M
+ 
+
+00:13:45.320 --> 00:13:48.269 align:start position:0%
+dimensional manifold a hole is an M
+dimensional<00:13:46.120><c> Ball</c><00:13:47.120><c> by</c><00:13:47.240><c> the</c><00:13:47.360><c> way</c><00:13:47.880><c> if</c><00:13:48.000><c> you</c><00:13:48.120><c> have</c>
+
+00:13:48.269 --> 00:13:48.279 align:start position:0%
+dimensional Ball by the way if you have
+ 
+
+00:13:48.279 --> 00:13:50.670 align:start position:0%
+dimensional Ball by the way if you have
+a<00:13:48.440><c> onedimensional</c><00:13:49.320><c> curve</c><00:13:50.320><c> that's</c><00:13:50.519><c> one</c>
+
+00:13:50.670 --> 00:13:50.680 align:start position:0%
+a onedimensional curve that's one
+ 
+
+00:13:50.680 --> 00:13:53.189 align:start position:0%
+a onedimensional curve that's one
+dimensional<00:13:51.079><c> manifold</c><00:13:51.759><c> if</c><00:13:51.839><c> you</c><00:13:51.959><c> make</c><00:13:52.120><c> a</c><00:13:52.279><c> hole</c>
+
+00:13:53.189 --> 00:13:53.199 align:start position:0%
+dimensional manifold if you make a hole
+ 
+
+00:13:53.199 --> 00:13:55.269 align:start position:0%
+dimensional manifold if you make a hole
+what<00:13:53.320><c> you</c><00:13:53.480><c> get</c><00:13:53.720><c> you</c><00:13:53.839><c> get</c><00:13:54.000><c> a</c><00:13:54.120><c> one</c><00:13:54.440><c> ball</c><00:13:54.959><c> which</c><00:13:55.079><c> is</c>
+
+00:13:55.269 --> 00:13:55.279 align:start position:0%
+what you get you get a one ball which is
+ 
+
+00:13:55.279 --> 00:13:58.030 align:start position:0%
+what you get you get a one ball which is
+just<00:13:55.399><c> an</c><00:13:55.639><c> interval</c><00:13:56.639><c> okay</c><00:13:56.880><c> so</c><00:13:57.320><c> when</c><00:13:57.519><c> I</c><00:13:57.639><c> say</c><00:13:57.839><c> a</c>
+
+00:13:58.030 --> 00:13:58.040 align:start position:0%
+just an interval okay so when I say a
+ 
+
+00:13:58.040 --> 00:14:00.040 align:start position:0%
+just an interval okay so when I say a
+hole<00:13:58.720><c> I</c><00:13:58.800><c> mean</c>
+
+00:14:00.040 --> 00:14:00.050 align:start position:0%
+hole I mean
+ 
+
+00:14:00.050 --> 00:14:01.430 align:start position:0%
+hole I mean
+[Music]
+
+00:14:01.430 --> 00:14:01.440 align:start position:0%
+[Music]
+ 
+
+00:14:01.440 --> 00:14:05.389 align:start position:0%
+[Music]
+so<00:14:02.440><c> an</c><00:14:02.639><c> UL</c><00:14:03.079><c> so</c><00:14:03.240><c> I'm</c><00:14:03.399><c> going</c><00:14:03.560><c> to</c><00:14:03.759><c> take</c><00:14:04.199><c> away</c><00:14:05.199><c> this</c>
+
+00:14:05.389 --> 00:14:05.399 align:start position:0%
+so an UL so I'm going to take away this
+ 
+
+00:14:05.399 --> 00:14:07.829 align:start position:0%
+so an UL so I'm going to take away this
+kind<00:14:05.560><c> of</c><00:14:05.720><c> thing</c><00:14:06.360><c> and</c><00:14:06.600><c> also</c><00:14:06.959><c> I'm</c><00:14:07.120><c> going</c><00:14:07.279><c> to</c><00:14:07.440><c> make</c>
+
+00:14:07.829 --> 00:14:07.839 align:start position:0%
+kind of thing and also I'm going to make
+ 
+
+00:14:07.839 --> 00:14:16.509 align:start position:0%
+kind of thing and also I'm going to make
+another<00:14:08.160><c> hole</c><00:14:08.440><c> on</c><00:14:08.600><c> the</c><00:14:08.720><c> other</c><00:14:08.920><c> side</c><00:14:09.120><c> as</c>
+
+00:14:16.509 --> 00:14:16.519 align:start position:0%
+ 
+ 
+
+00:14:16.519 --> 00:14:19.310 align:start position:0%
+ 
+well<00:14:17.519><c> so</c><00:14:17.800><c> hands</c><00:14:18.079><c> of</c><00:14:18.320><c> God</c><00:14:18.560><c> are</c><00:14:18.720><c> taking</c><00:14:19.000><c> away</c>
+
+00:14:19.310 --> 00:14:19.320 align:start position:0%
+well so hands of God are taking away
+ 
+
+00:14:19.320 --> 00:14:20.509 align:start position:0%
+well so hands of God are taking away
+these
+
+00:14:20.509 --> 00:14:20.519 align:start position:0%
+these
+ 
+
+00:14:20.519 --> 00:14:25.430 align:start position:0%
+these
+things<00:14:21.519><c> so</c><00:14:22.199><c> this</c><00:14:22.839><c> is</c><00:14:23.839><c> in</c><00:14:24.079><c> the</c><00:14:24.320><c> old</c><00:14:24.680><c> not</c><00:14:25.120><c> in</c><00:14:25.240><c> the</c>
+
+00:14:25.430 --> 00:14:25.440 align:start position:0%
+things so this is in the old not in the
+ 
+
+00:14:25.440 --> 00:14:27.870 align:start position:0%
+things so this is in the old not in the
+familiar<00:14:25.800><c> notation</c><00:14:26.519><c> a</c><00:14:26.720><c> ball</c><00:14:26.920><c> of</c><00:14:27.120><c> Dimension</c><00:14:27.560><c> M</c>
+
+00:14:27.870 --> 00:14:27.880 align:start position:0%
+familiar notation a ball of Dimension M
+ 
+
+00:14:27.880 --> 00:14:30.310 align:start position:0%
+familiar notation a ball of Dimension M
+but<00:14:28.040><c> I'm</c><00:14:28.199><c> going</c><00:14:28.360><c> to</c><00:14:28.480><c> say</c><00:14:28.720><c> that</c><00:14:29.240><c> it's</c><00:14:29.519><c> B1</c>
+
+00:14:30.310 --> 00:14:30.320 align:start position:0%
+but I'm going to say that it's B1
+ 
+
+00:14:30.320 --> 00:14:32.749 align:start position:0%
+but I'm going to say that it's B1
+because<00:14:30.680><c> it</c><00:14:30.839><c> was</c><00:14:31.000><c> taken</c><00:14:31.279><c> away</c><00:14:31.519><c> from</c><00:14:31.759><c> M1</c><00:14:32.560><c> and</c>
+
+00:14:32.749 --> 00:14:32.759 align:start position:0%
+because it was taken away from M1 and
+ 
+
+00:14:32.759 --> 00:14:35.550 align:start position:0%
+because it was taken away from M1 and
+this<00:14:32.880><c> is</c><00:14:33.079><c> B2</c><00:14:34.000><c> because</c><00:14:34.279><c> it</c><00:14:34.440><c> was</c><00:14:34.759><c> taken</c><00:14:35.040><c> away</c>
+
+00:14:35.550 --> 00:14:35.560 align:start position:0%
+this is B2 because it was taken away
+ 
+
+00:14:35.560 --> 00:14:39.910 align:start position:0%
+this is B2 because it was taken away
+from<00:14:36.560><c> M2</c><00:14:37.199><c> so</c><00:14:38.079><c> given</c><00:14:38.440><c> those</c><00:14:38.600><c> two</c><00:14:38.759><c> manifolds</c>
+
+00:14:39.910 --> 00:14:39.920 align:start position:0%
+from M2 so given those two manifolds
+ 
+
+00:14:39.920 --> 00:14:45.910 align:start position:0%
+from M2 so given those two manifolds
+remove<00:14:40.920><c> an</c>
+
+00:14:45.910 --> 00:14:45.920 align:start position:0%
+ 
+ 
+
+00:14:45.920 --> 00:14:49.110 align:start position:0%
+ 
+emble<00:14:46.920><c> from</c><00:14:47.160><c> each</c>
+
+00:14:49.110 --> 00:14:49.120 align:start position:0%
+emble from each
+ 
+
+00:14:49.120 --> 00:14:53.829 align:start position:0%
+emble from each
+manifold<00:14:50.120><c> so</c><00:14:50.360><c> drill</c><00:14:50.680><c> a</c>
+
+00:14:53.829 --> 00:14:53.839 align:start position:0%
+ 
+ 
+
+00:14:53.839 --> 00:15:00.110 align:start position:0%
+ 
+hole<00:14:54.839><c> and</c><00:14:55.519><c> then</c><00:14:56.519><c> I'm</c><00:14:56.720><c> going</c>
+
+00:15:00.110 --> 00:15:00.120 align:start position:0%
+ 
+ 
+
+00:15:00.120 --> 00:15:02.910 align:start position:0%
+ 
+having<00:15:00.440><c> removed</c><00:15:00.920><c> those</c><00:15:01.839><c> how</c><00:15:02.000><c> are</c><00:15:02.320><c> those</c><00:15:02.759><c> what</c>
+
+00:15:02.910 --> 00:15:02.920 align:start position:0%
+having removed those how are those what
+ 
+
+00:15:02.920 --> 00:15:11.069 align:start position:0%
+having removed those how are those what
+do<00:15:03.079><c> those</c><00:15:03.240><c> pictures</c><00:15:03.600><c> look</c>
+
+00:15:11.069 --> 00:15:11.079 align:start position:0%
+ 
+ 
+
+00:15:11.079 --> 00:15:17.790 align:start position:0%
+ 
+like
+
+00:15:17.790 --> 00:15:17.800 align:start position:0%
+ 
+ 
+
+00:15:17.800 --> 00:15:21.590 align:start position:0%
+ 
+M1
+
+00:15:21.590 --> 00:15:21.600 align:start position:0%
+ 
+ 
+
+00:15:21.600 --> 00:15:29.110 align:start position:0%
+ 
+M2<00:15:22.600><c> identify</c>
+
+00:15:29.110 --> 00:15:29.120 align:start position:0%
+ 
+ 
+
+00:15:29.120 --> 00:15:39.829 align:start position:0%
+ 
+the<00:15:29.279><c> boundaries</c><00:15:29.800><c> of</c><00:15:29.959><c> the</c>
+
+00:15:39.829 --> 00:15:39.839 align:start position:0%
+ 
+ 
+
+00:15:39.839 --> 00:15:43.350 align:start position:0%
+ 
+holes<00:15:40.839><c> okay</c><00:15:41.800><c> and</c><00:15:42.120><c> the</c><00:15:42.279><c> resulting</c><00:15:42.759><c> surface</c>
+
+00:15:43.350 --> 00:15:43.360 align:start position:0%
+holes okay and the resulting surface
+ 
+
+00:15:43.360 --> 00:15:49.910 align:start position:0%
+holes okay and the resulting surface
+will<00:15:43.839><c> the</c><00:15:44.040><c> cartoon</c><00:15:44.440><c> picture</c><00:15:44.959><c> look</c><00:15:45.199><c> like</c>
+
+00:15:49.910 --> 00:15:49.920 align:start position:0%
+ 
+ 
+
+00:15:49.920 --> 00:15:53.550 align:start position:0%
+ 
+this<00:15:50.920><c> and</c><00:15:51.120><c> this</c><00:15:51.199><c> is</c><00:15:51.399><c> where</c><00:15:51.639><c> theyve</c><00:15:51.880><c> been</c><00:15:52.040><c> glued</c>
+
+00:15:53.550 --> 00:15:53.560 align:start position:0%
+this and this is where theyve been glued
+ 
+
+00:15:53.560 --> 00:15:56.030 align:start position:0%
+this and this is where theyve been glued
+together<00:15:54.560><c> so</c><00:15:54.839><c> that's</c><00:15:55.360><c> that</c><00:15:55.519><c> was</c><00:15:55.639><c> used</c><00:15:55.839><c> to</c><00:15:55.920><c> be</c>
+
+00:15:56.030 --> 00:15:56.040 align:start position:0%
+together so that's that was used to be
+ 
+
+00:15:56.040 --> 00:16:01.110 align:start position:0%
+together so that's that was used to be
+M1<00:15:56.399><c> that</c><00:15:56.519><c> used</c><00:15:56.680><c> to</c><00:15:56.759><c> be</c><00:15:56.839><c> M2</c>
+
+00:16:01.110 --> 00:16:01.120 align:start position:0%
+ 
+ 
+
+00:16:01.120 --> 00:16:04.949 align:start position:0%
+ 
+yeah<00:16:02.120><c> the</c><00:16:02.720><c> result</c><00:16:03.720><c> in</c><00:16:03.880><c> fact</c><00:16:04.240><c> it's</c><00:16:04.360><c> a</c><00:16:04.519><c> quotient</c>
+
+00:16:04.949 --> 00:16:04.959 align:start position:0%
+yeah the result in fact it's a quotient
+ 
+
+00:16:04.959 --> 00:16:07.269 align:start position:0%
+yeah the result in fact it's a quotient
+space<00:16:05.279><c> under</c><00:16:05.519><c> this</c>
+
+00:16:07.269 --> 00:16:07.279 align:start position:0%
+space under this
+ 
+
+00:16:07.279 --> 00:16:10.269 align:start position:0%
+space under this
+unification<00:16:08.440><c> is</c><00:16:09.440><c> you</c><00:16:09.600><c> know</c><00:16:09.800><c> how</c><00:16:09.920><c> to</c><00:16:10.120><c> write</c>
+
+00:16:10.269 --> 00:16:10.279 align:start position:0%
+unification is you know how to write
+ 
+
+00:16:10.279 --> 00:16:12.030 align:start position:0%
+unification is you know how to write
+this<00:16:10.399><c> kind</c><00:16:10.560><c> of</c><00:16:10.720><c> thing</c><00:16:11.000><c> so</c>
+
+00:16:12.030 --> 00:16:12.040 align:start position:0%
+this kind of thing so
+ 
+
+00:16:12.040 --> 00:16:16.910 align:start position:0%
+this kind of thing so
+M1<00:16:13.040><c> you</c><00:16:13.240><c> take</c><00:16:13.600><c> away</c><00:16:14.600><c> a</c><00:16:14.759><c> ball</c><00:16:15.639><c> so</c><00:16:15.959><c> what</c><00:16:16.399><c> remains</c>
+
+00:16:16.910 --> 00:16:16.920 align:start position:0%
+M1 you take away a ball so what remains
+ 
+
+00:16:16.920 --> 00:16:20.629 align:start position:0%
+M1 you take away a ball so what remains
+this<00:16:17.120><c> thing</c><00:16:17.839><c> looks</c><00:16:18.240><c> like</c><00:16:19.160><c> looks</c><00:16:19.440><c> like</c><00:16:19.680><c> this</c><00:16:19.920><c> in</c>
+
+00:16:20.629 --> 00:16:20.639 align:start position:0%
+this thing looks like looks like this in
+ 
+
+00:16:20.639 --> 00:16:23.230 align:start position:0%
+this thing looks like looks like this in
+fact<00:16:21.639><c> and</c><00:16:21.759><c> then</c><00:16:21.920><c> on</c><00:16:22.040><c> the</c><00:16:22.160><c> other</c><00:16:22.360><c> side</c><00:16:22.560><c> you</c><00:16:22.720><c> have</c>
+
+00:16:23.230 --> 00:16:23.240 align:start position:0%
+fact and then on the other side you have
+ 
+
+00:16:23.240 --> 00:16:27.189 align:start position:0%
+fact and then on the other side you have
+M2<00:16:24.240><c> you</c><00:16:24.399><c> took</c><00:16:24.639><c> away</c><00:16:24.959><c> a</c><00:16:25.079><c> ball</c><00:16:25.360><c> from</c><00:16:26.040><c> that</c><00:16:27.040><c> what</c>
+
+00:16:27.189 --> 00:16:27.199 align:start position:0%
+M2 you took away a ball from that what
+ 
+
+00:16:27.199 --> 00:16:30.110 align:start position:0%
+M2 you took away a ball from that what
+it<00:16:27.360><c> looks</c><00:16:27.600><c> like</c><00:16:27.920><c> is</c><00:16:28.160><c> this</c><00:16:29.240><c> so</c><00:16:29.399><c> you</c><00:16:29.560><c> take</c><00:16:29.839><c> this</c>
+
+00:16:30.110 --> 00:16:30.120 align:start position:0%
+it looks like is this so you take this
+ 
+
+00:16:30.120 --> 00:16:31.910 align:start position:0%
+it looks like is this so you take this
+manifold<00:16:30.680><c> and</c><00:16:30.800><c> then</c><00:16:30.920><c> you</c><00:16:31.040><c> take</c><00:16:31.199><c> the</c><00:16:31.319><c> quotient</c>
+
+00:16:31.910 --> 00:16:31.920 align:start position:0%
+manifold and then you take the quotient
+ 
+
+00:16:31.920 --> 00:16:33.629 align:start position:0%
+manifold and then you take the quotient
+you<00:16:32.160><c> make</c><00:16:32.360><c> the</c><00:16:32.480><c> identification</c><00:16:33.199><c> and</c><00:16:33.360><c> what</c><00:16:33.480><c> is</c>
+
+00:16:33.629 --> 00:16:33.639 align:start position:0%
+you make the identification and what is
+ 
+
+00:16:33.639 --> 00:16:37.030 align:start position:0%
+you make the identification and what is
+the<00:16:33.920><c> identification</c><00:16:34.920><c> I</c><00:16:35.079><c> have</c><00:16:35.240><c> to</c><00:16:36.040><c> identify</c>
+
+00:16:37.030 --> 00:16:37.040 align:start position:0%
+the identification I have to identify
+ 
+
+00:16:37.040 --> 00:16:40.110 align:start position:0%
+the identification I have to identify
+this<00:16:37.480><c> with</c><00:16:38.079><c> this</c><00:16:39.079><c> that's</c><00:16:39.480><c> what</c><00:16:39.639><c> we</c><00:16:39.759><c> mean</c><00:16:39.959><c> by</c>
+
+00:16:40.110 --> 00:16:40.120 align:start position:0%
+this with this that's what we mean by
+ 
+
+00:16:40.120 --> 00:16:42.430 align:start position:0%
+this with this that's what we mean by
+gluing<00:16:40.639><c> these</c><00:16:40.800><c> two</c><00:16:41.000><c> things</c><00:16:41.360><c> together</c><00:16:42.279><c> and</c>
+
+00:16:42.430 --> 00:16:42.440 align:start position:0%
+gluing these two things together and
+ 
+
+00:16:42.440 --> 00:16:44.309 align:start position:0%
+gluing these two things together and
+formally<00:16:43.000><c> what</c><00:16:43.120><c> it</c><00:16:43.240><c> means</c><00:16:43.519><c> is</c><00:16:43.720><c> that</c><00:16:43.880><c> you</c><00:16:44.040><c> take</c>
+
+00:16:44.309 --> 00:16:44.319 align:start position:0%
+formally what it means is that you take
+ 
+
+00:16:44.319 --> 00:16:48.470 align:start position:0%
+formally what it means is that you take
+the<00:16:44.519><c> boundary</c><00:16:45.319><c> of</c><00:16:45.600><c> this</c>
+
+00:16:48.470 --> 00:16:48.480 align:start position:0%
+ 
+ 
+
+00:16:48.480 --> 00:16:52.590 align:start position:0%
+ 
+manifold<00:16:49.480><c> this</c><00:16:49.680><c> boundary</c><00:16:50.440><c> is</c><00:16:50.720><c> precisely</c><00:16:51.600><c> this</c>
+
+00:16:52.590 --> 00:16:52.600 align:start position:0%
+manifold this boundary is precisely this
+ 
+
+00:16:52.600 --> 00:16:54.949 align:start position:0%
+manifold this boundary is precisely this
+and<00:16:52.720><c> then</c><00:16:53.360><c> boundary</c><00:16:54.079><c> of</c>
+
+00:16:54.949 --> 00:16:54.959 align:start position:0%
+and then boundary of
+ 
+
+00:16:54.959 --> 00:16:59.269 align:start position:0%
+and then boundary of
+the<00:16:55.959><c> other</c><00:16:56.399><c> piece</c>
+
+00:16:59.269 --> 00:16:59.279 align:start position:0%
+the other piece
+ 
+
+00:16:59.279 --> 00:17:01.350 align:start position:0%
+the other piece
+this<00:16:59.440><c> is</c><00:16:59.759><c> that</c><00:17:00.160><c> and</c><00:17:00.279><c> then</c><00:17:00.440><c> glue</c><00:17:00.720><c> them</c><00:17:00.959><c> together</c>
+
+00:17:01.350 --> 00:17:01.360 align:start position:0%
+this is that and then glue them together
+ 
+
+00:17:01.360 --> 00:17:03.550 align:start position:0%
+this is that and then glue them together
+so<00:17:01.600><c> you</c><00:17:01.759><c> want</c><00:17:02.000><c> to</c><00:17:02.480><c> identify</c><00:17:03.000><c> those</c><00:17:03.160><c> two</c><00:17:03.319><c> things</c>
+
+00:17:03.550 --> 00:17:03.560 align:start position:0%
+so you want to identify those two things
+ 
+
+00:17:03.560 --> 00:17:06.630 align:start position:0%
+so you want to identify those two things
+so<00:17:03.800><c> this</c><00:17:03.920><c> is</c><00:17:04.480><c> what</c><00:17:04.600><c> it</c><00:17:04.760><c> is</c><00:17:05.400><c> and</c><00:17:05.640><c> this</c><00:17:05.799><c> is</c>
+
+00:17:06.630 --> 00:17:06.640 align:start position:0%
+so this is what it is and this is
+ 
+
+00:17:06.640 --> 00:17:11.630 align:start position:0%
+so this is what it is and this is
+denoted<00:17:07.280><c> Always</c><00:17:07.640><c> by</c><00:17:08.120><c> M1</c><00:17:09.439><c> M2</c><00:17:10.439><c> with</c><00:17:11.199><c> what</c><00:17:11.480><c> in</c>
+
+00:17:11.630 --> 00:17:11.640 align:start position:0%
+denoted Always by M1 M2 with what in
+ 
+
+00:17:11.640 --> 00:17:15.909 align:start position:0%
+denoted Always by M1 M2 with what in
+English<00:17:11.919><c> is</c><00:17:12.039><c> called</c><00:17:12.240><c> a</c><00:17:12.439><c> hash</c><00:17:13.039><c> sign</c><00:17:14.039><c> and</c>
+
+00:17:15.909 --> 00:17:15.919 align:start position:0%
+English is called a hash sign and
+ 
+
+00:17:15.919 --> 00:17:23.230 align:start position:0%
+English is called a hash sign and
+that's<00:17:16.919><c> called</c><00:17:17.880><c> the</c><00:17:18.240><c> connected</c>
+
+00:17:23.230 --> 00:17:23.240 align:start position:0%
+ 
+ 
+
+00:17:23.240 --> 00:17:25.990 align:start position:0%
+ 
+sum<00:17:24.240><c> very</c><00:17:24.480><c> strange</c><00:17:24.839><c> name</c><00:17:25.120><c> connected</c><00:17:25.559><c> some</c>
+
+00:17:25.990 --> 00:17:26.000 align:start position:0%
+sum very strange name connected some
+ 
+
+00:17:26.000 --> 00:17:31.909 align:start position:0%
+sum very strange name connected some
+anyway<00:17:26.520><c> of</c><00:17:26.799><c> M1</c><00:17:27.160><c> and</c><00:17:27.319><c> M2</c>
+
+00:17:31.909 --> 00:17:31.919 align:start position:0%
+ 
+ 
+
+00:17:31.919 --> 00:17:33.909 align:start position:0%
+ 
+I<00:17:32.039><c> have</c><00:17:32.240><c> just</c><00:17:32.480><c> defined</c><00:17:33.200><c> the</c><00:17:33.320><c> operation</c><00:17:33.720><c> of</c>
+
+00:17:33.909 --> 00:17:33.919 align:start position:0%
+I have just defined the operation of
+ 
+
+00:17:33.919 --> 00:17:37.110 align:start position:0%
+I have just defined the operation of
+surgery<00:17:34.520><c> or</c><00:17:34.799><c> connected</c><00:17:35.320><c> some</c><00:17:36.200><c> so</c><00:17:36.520><c> if</c><00:17:36.600><c> you</c><00:17:36.760><c> have</c>
+
+00:17:37.110 --> 00:17:37.120 align:start position:0%
+surgery or connected some so if you have
+ 
+
+00:17:37.120 --> 00:17:38.990 align:start position:0%
+surgery or connected some so if you have
+any<00:17:37.280><c> two</c><00:17:37.440><c> manifolds</c><00:17:38.000><c> of</c><00:17:38.160><c> the</c><00:17:38.280><c> same</c><00:17:38.520><c> Dimension</c>
+
+00:17:38.990 --> 00:17:39.000 align:start position:0%
+any two manifolds of the same Dimension
+ 
+
+00:17:39.000 --> 00:17:41.350 align:start position:0%
+any two manifolds of the same Dimension
+you<00:17:39.120><c> can</c><00:17:39.679><c> take</c><00:17:40.120><c> their</c><00:17:40.440><c> connected</c><00:17:40.919><c> some</c><00:17:41.280><c> you</c>
+
+00:17:41.350 --> 00:17:41.360 align:start position:0%
+you can take their connected some you
+ 
+
+00:17:41.360 --> 00:17:43.830 align:start position:0%
+you can take their connected some you
+can<00:17:41.520><c> glue</c><00:17:41.840><c> them</c><00:17:42.160><c> together</c><00:17:42.880><c> but</c><00:17:43.200><c> how</c><00:17:43.480><c> do</c><00:17:43.679><c> we</c>
+
+00:17:43.830 --> 00:17:43.840 align:start position:0%
+can glue them together but how do we
+ 
+
+00:17:43.840 --> 00:17:46.029 align:start position:0%
+can glue them together but how do we
+mean<00:17:44.320><c> glue</c><00:17:44.600><c> them</c><00:17:44.880><c> together</c><00:17:45.400><c> precisely</c><00:17:45.919><c> we</c>
+
+00:17:46.029 --> 00:17:46.039 align:start position:0%
+mean glue them together precisely we
+ 
+
+00:17:46.039 --> 00:17:48.350 align:start position:0%
+mean glue them together precisely we
+mean<00:17:46.480><c> you</c><00:17:46.640><c> take</c><00:17:46.799><c> a</c><00:17:46.960><c> hole</c><00:17:47.520><c> you</c><00:17:47.760><c> make</c><00:17:47.919><c> a</c><00:17:48.000><c> hole</c><00:17:48.240><c> on</c>
+
+00:17:48.350 --> 00:17:48.360 align:start position:0%
+mean you take a hole you make a hole on
+ 
+
+00:17:48.360 --> 00:17:49.549 align:start position:0%
+mean you take a hole you make a hole on
+one<00:17:48.520><c> side</c><00:17:48.679><c> or</c><00:17:48.799><c> you</c><00:17:48.919><c> make</c><00:17:49.039><c> the</c><00:17:49.160><c> hole</c><00:17:49.360><c> on</c><00:17:49.480><c> the</c>
+
+00:17:49.549 --> 00:17:49.559 align:start position:0%
+one side or you make the hole on the
+ 
+
+00:17:49.559 --> 00:17:51.230 align:start position:0%
+one side or you make the hole on the
+other<00:17:49.760><c> side</c><00:17:50.160><c> and</c><00:17:50.280><c> then</c><00:17:50.480><c> put</c><00:17:50.679><c> the</c><00:17:50.760><c> holes</c>
+
+00:17:51.230 --> 00:17:51.240 align:start position:0%
+other side and then put the holes
+ 
+
+00:17:51.240 --> 00:17:54.230 align:start position:0%
+other side and then put the holes
+together<00:17:51.919><c> and</c><00:17:52.200><c> that's</c><00:17:53.200><c> what</c><00:17:53.400><c> happens</c><00:17:54.000><c> in</c><00:17:54.120><c> the</c>
+
+00:17:54.230 --> 00:17:54.240 align:start position:0%
+together and that's what happens in the
+ 
+
+00:17:54.240 --> 00:17:56.470 align:start position:0%
+together and that's what happens in the
+connected<00:17:54.640><c> sound</c>
+
+00:17:56.470 --> 00:17:56.480 align:start position:0%
+connected sound
+ 
+
+00:17:56.480 --> 00:18:00.070 align:start position:0%
+connected sound
+okay<00:17:57.480><c> okay</c><00:17:58.159><c> let's</c><00:17:58.360><c> see</c><00:17:58.600><c> some</c><00:17:58.919><c> examples</c>
+
+00:18:00.070 --> 00:18:00.080 align:start position:0%
+okay okay let's see some examples
+ 
+
+00:18:00.080 --> 00:18:03.710 align:start position:0%
+okay okay let's see some examples
+of<00:18:01.080><c> connected</c><00:18:01.559><c> Sun</c><00:18:02.320><c> example</c><00:18:02.679><c> 14</c><00:18:03.240><c> oh</c><00:18:03.400><c> the</c><00:18:03.520><c> Sun</c>
+
+00:18:03.710 --> 00:18:03.720 align:start position:0%
+of connected Sun example 14 oh the Sun
+ 
+
+00:18:03.720 --> 00:18:07.310 align:start position:0%
+of connected Sun example 14 oh the Sun
+is<00:18:03.880><c> going</c><00:18:04.120><c> in</c><00:18:04.400><c> that's</c><00:18:05.000><c> bad</c><00:18:06.000><c> okay</c><00:18:06.600><c> question</c>
+
+00:18:07.310 --> 00:18:07.320 align:start position:0%
+is going in that's bad okay question
+ 
+
+00:18:07.320 --> 00:18:09.190 align:start position:0%
+is going in that's bad okay question
+what<00:18:07.480><c> is</c><00:18:07.640><c> the</c><00:18:07.799><c> connected</c><00:18:08.240><c> sum</c><00:18:08.559><c> the</c><00:18:08.720><c> simplest</c>
+
+00:18:09.190 --> 00:18:09.200 align:start position:0%
+what is the connected sum the simplest
+ 
+
+00:18:09.200 --> 00:18:12.870 align:start position:0%
+what is the connected sum the simplest
+case<00:18:09.760><c> of</c><00:18:10.159><c> S1</c><00:18:11.159><c> and</c><00:18:11.440><c> S1</c><00:18:12.200><c> do</c><00:18:12.320><c> you</c><00:18:12.440><c> remember</c><00:18:12.720><c> what</c>
+
+00:18:12.870 --> 00:18:12.880 align:start position:0%
+case of S1 and S1 do you remember what
+ 
+
+00:18:12.880 --> 00:18:15.669 align:start position:0%
+case of S1 and S1 do you remember what
+S1<00:18:13.720><c> is</c>
+
+00:18:15.669 --> 00:18:15.679 align:start position:0%
+S1 is
+ 
+
+00:18:15.679 --> 00:18:19.310 align:start position:0%
+S1 is
+yes<00:18:16.679><c> it's</c><00:18:16.919><c> a</c><00:18:17.440><c> not</c><00:18:17.640><c> a</c><00:18:17.760><c> sphere</c><00:18:18.679><c> one</c><00:18:18.880><c> dimensional</c>
+
+00:18:19.310 --> 00:18:19.320 align:start position:0%
+yes it's a not a sphere one dimensional
+ 
+
+00:18:19.320 --> 00:18:21.870 align:start position:0%
+yes it's a not a sphere one dimensional
+sphere<00:18:19.799><c> but</c><00:18:20.280><c> the</c><00:18:20.480><c> more</c><00:18:20.640><c> common</c><00:18:20.919><c> name</c><00:18:21.120><c> is</c><00:18:21.280><c> a</c>
+
+00:18:21.870 --> 00:18:21.880 align:start position:0%
+sphere but the more common name is a
+ 
+
+00:18:21.880 --> 00:18:24.110 align:start position:0%
+sphere but the more common name is a
+circle<00:18:22.880><c> what</c><00:18:23.000><c> do</c><00:18:23.080><c> you</c><00:18:23.200><c> think</c><00:18:23.559><c> the</c><00:18:23.760><c> connected</c>
+
+00:18:24.110 --> 00:18:24.120 align:start position:0%
+circle what do you think the connected
+ 
+
+00:18:24.120 --> 00:18:30.110 align:start position:0%
+circle what do you think the connected
+sum<00:18:24.320><c> of</c><00:18:24.440><c> S1</c><00:18:24.760><c> and</c><00:18:24.919><c> S1</c><00:18:25.280><c> is</c>
+
+00:18:30.110 --> 00:18:30.120 align:start position:0%
+ 
+ 
+
+00:18:30.120 --> 00:18:32.750 align:start position:0%
+ 
+let's<00:18:30.400><c> play</c><00:18:30.679><c> The</c><00:18:30.840><c> Honest</c><00:18:31.280><c> Game</c><00:18:31.559><c> then</c><00:18:32.159><c> so</c>
+
+00:18:32.750 --> 00:18:32.760 align:start position:0%
+let's play The Honest Game then so
+ 
+
+00:18:32.760 --> 00:18:35.270 align:start position:0%
+let's play The Honest Game then so
+that's<00:18:33.080><c> one</c><00:18:33.320><c> this</c><00:18:33.520><c> one</c><00:18:33.760><c> that's</c><00:18:33.880><c> another</c><00:18:34.200><c> S</c><00:18:34.360><c> one</c>
+
+00:18:35.270 --> 00:18:35.280 align:start position:0%
+that's one this one that's another S one
+ 
+
+00:18:35.280 --> 00:18:36.830 align:start position:0%
+that's one this one that's another S one
+what<00:18:35.400><c> do</c><00:18:35.480><c> we</c><00:18:35.600><c> have</c><00:18:35.720><c> to</c><00:18:35.840><c> do</c><00:18:36.080><c> we</c><00:18:36.200><c> have</c><00:18:36.320><c> to</c><00:18:36.520><c> take</c>
+
+00:18:36.830 --> 00:18:36.840 align:start position:0%
+what do we have to do we have to take
+ 
+
+00:18:36.840 --> 00:18:39.669 align:start position:0%
+what do we have to do we have to take
+away<00:18:37.240><c> a</c><00:18:37.559><c> hole</c><00:18:38.559><c> what</c><00:18:38.679><c> do</c><00:18:38.799><c> we</c><00:18:38.919><c> mean</c><00:18:39.080><c> by</c><00:18:39.280><c> hole</c>
+
+00:18:39.669 --> 00:18:39.679 align:start position:0%
+away a hole what do we mean by hole
+ 
+
+00:18:39.679 --> 00:18:43.350 align:start position:0%
+away a hole what do we mean by hole
+where<00:18:39.880><c> we</c><00:18:40.120><c> make</c><00:18:40.280><c> a</c><00:18:40.640><c> hole</c><00:18:41.640><c> we</c><00:18:41.840><c> take</c><00:18:42.200><c> away</c><00:18:43.200><c> a</c>
+
+00:18:43.350 --> 00:18:43.360 align:start position:0%
+where we make a hole we take away a
+ 
+
+00:18:43.360 --> 00:18:45.430 align:start position:0%
+where we make a hole we take away a
+onedimensional<00:18:43.880><c> ball</c><00:18:44.400><c> which</c><00:18:44.520><c> is</c><00:18:44.600><c> an</c>
+
+00:18:45.430 --> 00:18:45.440 align:start position:0%
+onedimensional ball which is an
+ 
+
+00:18:45.440 --> 00:18:48.789 align:start position:0%
+onedimensional ball which is an
+interval<00:18:46.440><c> yeah</c><00:18:46.840><c> so</c><00:18:47.039><c> we</c><00:18:47.200><c> took</c><00:18:47.400><c> this</c><00:18:47.640><c> away</c><00:18:48.640><c> we</c>
+
+00:18:48.789 --> 00:18:48.799 align:start position:0%
+interval yeah so we took this away we
+ 
+
+00:18:48.799 --> 00:18:50.070 align:start position:0%
+interval yeah so we took this away we
+took<00:18:49.120><c> this</c>
+
+00:18:50.070 --> 00:18:50.080 align:start position:0%
+took this
+ 
+
+00:18:50.080 --> 00:18:54.390 align:start position:0%
+took this
+away<00:18:51.080><c> and</c><00:18:51.240><c> then</c><00:18:51.440><c> now</c><00:18:51.720><c> we</c><00:18:51.840><c> have</c><00:18:51.960><c> to</c>
+
+00:18:54.390 --> 00:18:54.400 align:start position:0%
+ 
+ 
+
+00:18:54.400 --> 00:18:58.149 align:start position:0%
+ 
+identify<00:18:55.400><c> the</c><00:18:55.640><c> boundaries</c><00:18:56.240><c> of</c><00:18:56.840><c> those</c><00:18:57.159><c> holes</c>
+
+00:18:58.149 --> 00:18:58.159 align:start position:0%
+identify the boundaries of those holes
+ 
+
+00:18:58.159 --> 00:19:01.230 align:start position:0%
+identify the boundaries of those holes
+so<00:18:58.440><c> what</c><00:18:58.799><c> you</c><00:18:58.919><c> going</c><00:18:59.080><c> to</c>
+
+00:19:01.230 --> 00:19:01.240 align:start position:0%
+so what you going to
+ 
+
+00:19:01.240 --> 00:19:03.669 align:start position:0%
+so what you going to
+get<00:19:02.240><c> well</c><00:19:02.440><c> you</c><00:19:02.640><c> going</c><00:19:02.760><c> to</c><00:19:02.919><c> get</c><00:19:03.080><c> something</c><00:19:03.400><c> like</c>
+
+00:19:03.669 --> 00:19:03.679 align:start position:0%
+get well you going to get something like
+ 
+
+00:19:03.679 --> 00:19:05.789 align:start position:0%
+get well you going to get something like
+this<00:19:04.679><c> it's</c><00:19:04.840><c> a</c>
+
+00:19:05.789 --> 00:19:05.799 align:start position:0%
+this it's a
+ 
+
+00:19:05.799 --> 00:19:08.789 align:start position:0%
+this it's a
+curve<00:19:06.799><c> but</c><00:19:07.039><c> that's</c><00:19:07.400><c> of</c><00:19:07.520><c> course</c><00:19:07.760><c> homeomorphic</c>
+
+00:19:08.789 --> 00:19:08.799 align:start position:0%
+curve but that's of course homeomorphic
+ 
+
+00:19:08.799 --> 00:19:10.909 align:start position:0%
+curve but that's of course homeomorphic
+to<00:19:09.799><c> to</c>
+
+00:19:10.909 --> 00:19:10.919 align:start position:0%
+to to
+ 
+
+00:19:10.919 --> 00:19:14.710 align:start position:0%
+to to
+this<00:19:11.919><c> so</c><00:19:12.159><c> the</c>
+
+00:19:14.710 --> 00:19:14.720 align:start position:0%
+ 
+ 
+
+00:19:14.720 --> 00:19:17.630 align:start position:0%
+ 
+answer<00:19:15.720><c> is</c><00:19:15.880><c> that</c><00:19:16.080><c> piz</c><00:19:16.799><c> again</c>
+
+00:19:17.630 --> 00:19:17.640 align:start position:0%
+answer is that piz again
+ 
+
+00:19:17.640 --> 00:19:21.830 align:start position:0%
+answer is that piz again
+S1<00:19:18.640><c> so</c><00:19:18.880><c> connected</c><00:19:19.280><c> sum</c><00:19:19.520><c> of</c><00:19:19.640><c> S1</c><00:19:19.960><c> and</c><00:19:20.120><c> S1</c><00:19:20.679><c> is</c><00:19:21.080><c> just</c>
+
+00:19:21.830 --> 00:19:21.840 align:start position:0%
+S1 so connected sum of S1 and S1 is just
+ 
+
+00:19:21.840 --> 00:19:24.110 align:start position:0%
+S1 so connected sum of S1 and S1 is just
+S1<00:19:22.840><c> that's</c><00:19:23.320><c> very</c>
+
+00:19:24.110 --> 00:19:24.120 align:start position:0%
+S1 that's very
+ 
+
+00:19:24.120 --> 00:19:26.430 align:start position:0%
+S1 that's very
+easy
+
+00:19:26.430 --> 00:19:26.440 align:start position:0%
+easy
+ 
+
+00:19:26.440 --> 00:19:29.350 align:start position:0%
+easy
+okay<00:19:27.440><c> this</c><00:19:27.600><c> is</c><00:19:27.880><c> quite</c><00:19:28.360><c> easy</c><00:19:28.919><c> but</c><00:19:29.080><c> it's</c><00:19:29.200><c> a</c>
+
+00:19:29.350 --> 00:19:29.360 align:start position:0%
+okay this is quite easy but it's a
+ 
+
+00:19:29.360 --> 00:19:31.310 align:start position:0%
+okay this is quite easy but it's a
+little<00:19:29.600><c> surprising</c><00:19:30.320><c> we</c><00:19:30.640><c> were</c><00:19:30.919><c> perhaps</c>
+
+00:19:31.310 --> 00:19:31.320 align:start position:0%
+little surprising we were perhaps
+ 
+
+00:19:31.320 --> 00:19:33.149 align:start position:0%
+little surprising we were perhaps
+expecting<00:19:31.840><c> that</c><00:19:31.960><c> we</c><00:19:32.120><c> get</c><00:19:32.320><c> something</c><00:19:32.600><c> new</c><00:19:32.960><c> by</c>
+
+00:19:33.149 --> 00:19:33.159 align:start position:0%
+expecting that we get something new by
+ 
+
+00:19:33.159 --> 00:19:37.470 align:start position:0%
+expecting that we get something new by
+connecting<00:19:33.679><c> some</c><00:19:34.159><c> S1</c><00:19:34.520><c> and</c><00:19:34.640><c> S1</c><00:19:35.440><c> so</c><00:19:35.799><c> in</c><00:19:35.919><c> a</c><00:19:36.159><c> way</c><00:19:37.000><c> S1</c>
+
+00:19:37.470 --> 00:19:37.480 align:start position:0%
+connecting some S1 and S1 so in a way S1
+ 
+
+00:19:37.480 --> 00:19:40.669 align:start position:0%
+connecting some S1 and S1 so in a way S1
+in<00:19:37.600><c> this</c><00:19:37.799><c> case</c><00:19:38.159><c> behaved</c><00:19:38.679><c> like</c>
+
+00:19:40.669 --> 00:19:40.679 align:start position:0%
+in this case behaved like
+ 
+
+00:19:40.679 --> 00:19:45.789 align:start position:0%
+in this case behaved like
+zero<00:19:41.679><c> yeah</c><00:19:41.960><c> 0</c><00:19:42.280><c> +</c><00:19:42.520><c> 0</c><00:19:42.840><c> is</c><00:19:43.320><c> 0</c><00:19:44.320><c> for</c><00:19:44.679><c> no</c><00:19:44.840><c> other</c><00:19:45.080><c> number</c>
+
+00:19:45.789 --> 00:19:45.799 align:start position:0%
+zero yeah 0 + 0 is 0 for no other number
+ 
+
+00:19:45.799 --> 00:19:47.350 align:start position:0%
+zero yeah 0 + 0 is 0 for no other number
+do<00:19:45.960><c> you</c><00:19:46.120><c> have</c><00:19:46.280><c> the</c><00:19:46.520><c> property</c><00:19:46.960><c> that</c><00:19:47.159><c> that</c>
+
+00:19:47.350 --> 00:19:47.360 align:start position:0%
+do you have the property that that
+ 
+
+00:19:47.360 --> 00:19:48.830 align:start position:0%
+do you have the property that that
+number<00:19:47.679><c> plus</c><00:19:47.919><c> that</c><00:19:48.080><c> number</c><00:19:48.320><c> is</c><00:19:48.480><c> the</c><00:19:48.600><c> same</c>
+
+00:19:48.830 --> 00:19:48.840 align:start position:0%
+number plus that number is the same
+ 
+
+00:19:48.840 --> 00:19:53.270 align:start position:0%
+number plus that number is the same
+number<00:19:49.600><c> so</c><00:19:50.480><c> here</c><00:19:50.600><c> is</c><00:19:50.720><c> a</c><00:19:51.880><c> imediate</c><00:19:52.880><c> interesting</c>
+
+00:19:53.270 --> 00:19:53.280 align:start position:0%
+number so here is a imediate interesting
+ 
+
+00:19:53.280 --> 00:19:56.630 align:start position:0%
+number so here is a imediate interesting
+question<00:19:54.000><c> what</c><00:19:54.360><c> plays</c><00:19:54.720><c> the</c><00:19:54.919><c> role</c><00:19:55.280><c> of</c>
+
+00:19:56.630 --> 00:19:56.640 align:start position:0%
+question what plays the role of
+ 
+
+00:19:56.640 --> 00:20:06.270 align:start position:0%
+question what plays the role of
+zero<00:19:57.640><c> for</c><00:19:57.880><c> the</c><00:19:58.000><c> operation</c><00:19:58.360><c> of</c><00:19:58.679><c> connected</c>
+
+00:20:06.270 --> 00:20:06.280 align:start position:0%
+ 
+ 
+
+00:20:06.280 --> 00:20:09.070 align:start position:0%
+ 
+some
+
+00:20:09.070 --> 00:20:09.080 align:start position:0%
+some
+ 
+
+00:20:09.080 --> 00:20:11.149 align:start position:0%
+some
+namely<00:20:10.080><c> what</c>
+
+00:20:11.149 --> 00:20:11.159 align:start position:0%
+namely what
+ 
+
+00:20:11.159 --> 00:20:18.230 align:start position:0%
+namely what
+manifold<00:20:12.159><c> let's</c><00:20:12.400><c> say</c><00:20:13.480><c> Zed</c><00:20:14.480><c> has</c><00:20:14.799><c> the</c>
+
+00:20:18.230 --> 00:20:18.240 align:start position:0%
+ 
+ 
+
+00:20:18.240 --> 00:20:21.750 align:start position:0%
+ 
+property<00:20:19.240><c> that</c><00:20:20.120><c> Z</c><00:20:20.440><c> connected</c><00:20:20.960><c> some</c><00:20:21.320><c> with</c><00:20:21.520><c> some</c>
+
+00:20:21.750 --> 00:20:21.760 align:start position:0%
+property that Z connected some with some
+ 
+
+00:20:21.760 --> 00:20:24.590 align:start position:0%
+property that Z connected some with some
+other<00:20:21.960><c> manifold</c><00:20:22.679><c> is</c><00:20:23.080><c> again</c><00:20:23.320><c> the</c><00:20:23.440><c> same</c>
+
+00:20:24.590 --> 00:20:24.600 align:start position:0%
+other manifold is again the same
+ 
+
+00:20:24.600 --> 00:20:27.430 align:start position:0%
+other manifold is again the same
+manifold<00:20:25.600><c> yeah</c><00:20:25.960><c> we</c><00:20:26.080><c> can</c><00:20:26.240><c> ask</c><00:20:26.480><c> that</c>
+
+00:20:27.430 --> 00:20:27.440 align:start position:0%
+manifold yeah we can ask that
+ 
+
+00:20:27.440 --> 00:20:33.470 align:start position:0%
+manifold yeah we can ask that
+question<00:20:28.440><c> hm</c><00:20:29.120><c> S1</c><00:20:30.120><c> yeah</c><00:20:30.600><c> S1</c><00:20:31.440><c> S1</c><00:20:32.120><c> but</c><00:20:32.280><c> you</c><00:20:32.360><c> see</c><00:20:32.640><c> S1</c>
+
+00:20:33.470 --> 00:20:33.480 align:start position:0%
+question hm S1 yeah S1 S1 but you see S1
+ 
+
+00:20:33.480 --> 00:20:36.630 align:start position:0%
+question hm S1 yeah S1 S1 but you see S1
+is<00:20:33.679><c> used</c><00:20:34.000><c> in</c><00:20:34.120><c> the</c><00:20:34.240><c> connected</c><00:20:34.679><c> sum</c><00:20:35.520><c> in</c><00:20:35.840><c> one</c>
+
+00:20:36.630 --> 00:20:36.640 align:start position:0%
+is used in the connected sum in one
+ 
+
+00:20:36.640 --> 00:20:39.470 align:start position:0%
+is used in the connected sum in one
+dimension<00:20:37.640><c> if</c><00:20:37.760><c> you</c><00:20:37.919><c> are</c><00:20:38.360><c> connecting</c><00:20:38.840><c> some</c><00:20:39.240><c> say</c>
+
+00:20:39.470 --> 00:20:39.480 align:start position:0%
+dimension if you are connecting some say
+ 
+
+00:20:39.480 --> 00:20:42.390 align:start position:0%
+dimension if you are connecting some say
+two<00:20:40.400><c> uh</c><00:20:40.520><c> so</c><00:20:40.960><c> two</c><00:20:41.200><c> dimensional</c><00:20:41.640><c> manif</c><00:20:41.919><c> for</c><00:20:42.280><c> you</c>
+
+00:20:42.390 --> 00:20:42.400 align:start position:0%
+two uh so two dimensional manif for you
+ 
+
+00:20:42.400 --> 00:20:46.710 align:start position:0%
+two uh so two dimensional manif for you
+have<00:20:42.520><c> to</c><00:20:43.440><c> S2</c><00:20:44.200><c> if</c><00:20:44.280><c> you</c><00:20:44.400><c> do</c><00:20:44.559><c> it</c><00:20:44.720><c> in</c><00:20:44.880><c> 3D</c><00:20:45.799><c> S3</c><00:20:46.360><c> and</c><00:20:46.520><c> so</c>
+
+00:20:46.710 --> 00:20:46.720 align:start position:0%
+have to S2 if you do it in 3D S3 and so
+ 
+
+00:20:46.720 --> 00:20:49.870 align:start position:0%
+have to S2 if you do it in 3D S3 and so
+on<00:20:47.120><c> good</c><00:20:47.360><c> you</c><00:20:47.480><c> have</c><00:20:47.600><c> a</c><00:20:47.720><c> very</c><00:20:47.919><c> good</c><00:20:48.440><c> nose</c><00:20:49.440><c> um</c>
+
+00:20:49.870 --> 00:20:49.880 align:start position:0%
+on good you have a very good nose um
+ 
+
+00:20:49.880 --> 00:20:53.110 align:start position:0%
+on good you have a very good nose um
+congratulations<00:20:50.679><c> to</c>
+
+00:20:53.110 --> 00:20:53.120 align:start position:0%
+ 
+ 
+
+00:20:53.120 --> 00:21:03.990 align:start position:0%
+ 
+Egypt<00:20:54.120><c> so</c><00:20:54.679><c> the</c><00:20:54.919><c> ser</c>
+
+00:21:03.990 --> 00:21:04.000 align:start position:0%
+ 
+ 
+
+00:21:04.000 --> 00:21:06.390 align:start position:0%
+ 
+is<00:21:04.200><c> that</c><00:21:04.440><c> indeed</c><00:21:04.960><c> spheres</c><00:21:05.640><c> play</c><00:21:05.880><c> the</c><00:21:06.080><c> role</c><00:21:06.280><c> of</c>
+
+00:21:06.390 --> 00:21:06.400 align:start position:0%
+is that indeed spheres play the role of
+ 
+
+00:21:06.400 --> 00:21:08.710 align:start position:0%
+is that indeed spheres play the role of
+zero<00:21:06.720><c> with</c><00:21:06.919><c> respect</c><00:21:07.120><c> to</c><00:21:07.240><c> the</c><00:21:07.320><c> connected</c>
+
+00:21:08.710 --> 00:21:08.720 align:start position:0%
+zero with respect to the connected
+ 
+
+00:21:08.720 --> 00:21:13.549 align:start position:0%
+zero with respect to the connected
+sum<00:21:09.720><c> so</c><00:21:09.960><c> for</c><00:21:10.799><c> every</c>
+
+00:21:13.549 --> 00:21:13.559 align:start position:0%
+ 
+ 
+
+00:21:13.559 --> 00:21:16.669 align:start position:0%
+ 
+manifold<00:21:14.559><c> M</c><00:21:15.320><c> of</c>
+
+00:21:16.669 --> 00:21:16.679 align:start position:0%
+manifold M of
+ 
+
+00:21:16.679 --> 00:21:20.950 align:start position:0%
+manifold M of
+Dimension<00:21:17.679><c> M</c><00:21:18.600><c> it</c><00:21:18.720><c> is</c><00:21:18.840><c> a</c><00:21:19.000><c> case</c><00:21:19.200><c> that</c><00:21:19.440><c> s</c><00:21:19.960><c> m</c>
+
+00:21:20.950 --> 00:21:20.960 align:start position:0%
+Dimension M it is a case that s m
+ 
+
+00:21:20.960 --> 00:21:26.710 align:start position:0%
+Dimension M it is a case that s m
+connect<00:21:21.360><c> Su</c><00:21:21.679><c> with</c><00:21:21.840><c> m</c><00:21:22.360><c> is</c><00:21:22.720><c> again</c><00:21:23.000><c> equal</c><00:21:23.720><c> to</c>
+
+00:21:26.710 --> 00:21:26.720 align:start position:0%
+ 
+ 
+
+00:21:26.720 --> 00:21:29.710 align:start position:0%
+ 
+M<00:21:27.720><c> and</c><00:21:28.120><c> the</c><00:21:28.760><c> proof</c>
+
+00:21:29.710 --> 00:21:29.720 align:start position:0%
+M and the proof
+ 
+
+00:21:29.720 --> 00:21:33.710 align:start position:0%
+M and the proof
+is<00:21:30.720><c> obvious</c><00:21:31.400><c> but</c><00:21:31.760><c> it's</c><00:21:32.000><c> nice</c><00:21:32.240><c> to</c><00:21:32.520><c> see</c><00:21:33.520><c> how</c>
+
+00:21:33.710 --> 00:21:33.720 align:start position:0%
+is obvious but it's nice to see how
+ 
+
+00:21:33.720 --> 00:21:36.310 align:start position:0%
+is obvious but it's nice to see how
+obvious<00:21:34.080><c> it</c><00:21:34.240><c> is</c><00:21:35.080><c> here's</c><00:21:35.360><c> how</c><00:21:35.520><c> it</c>
+
+00:21:36.310 --> 00:21:36.320 align:start position:0%
+obvious it is here's how it
+ 
+
+00:21:36.320 --> 00:21:38.750 align:start position:0%
+obvious it is here's how it
+goes<00:21:37.320><c> let's</c><00:21:37.520><c> say</c><00:21:37.679><c> that</c><00:21:37.799><c> you</c><00:21:37.960><c> have</c><00:21:38.200><c> this</c>
+
+00:21:38.750 --> 00:21:38.760 align:start position:0%
+goes let's say that you have this
+ 
+
+00:21:38.760 --> 00:21:41.830 align:start position:0%
+goes let's say that you have this
+strange<00:21:39.240><c> M</c><00:21:39.520><c> and</c><00:21:39.640><c> it</c><00:21:39.760><c> can</c><00:21:39.880><c> be</c><00:21:40.000><c> a</c><00:21:40.159><c> complicated</c>
+
+00:21:41.830 --> 00:21:41.840 align:start position:0%
+strange M and it can be a complicated
+ 
+
+00:21:41.840 --> 00:21:45.269 align:start position:0%
+strange M and it can be a complicated
+manifold<00:21:42.840><c> and</c><00:21:43.039><c> you</c><00:21:43.240><c> have</c><00:21:43.760><c> a</c><00:21:44.000><c> sphere</c><00:21:45.000><c> I'm</c><00:21:45.120><c> going</c>
+
+00:21:45.269 --> 00:21:45.279 align:start position:0%
+manifold and you have a sphere I'm going
+ 
+
+00:21:45.279 --> 00:21:49.269 align:start position:0%
+manifold and you have a sphere I'm going
+to<00:21:45.440><c> draw</c><00:21:45.679><c> two</c><00:21:45.880><c> dimensional</c>
+
+00:21:49.269 --> 00:21:49.279 align:start position:0%
+ 
+ 
+
+00:21:49.279 --> 00:21:51.669 align:start position:0%
+ 
+pictures<00:21:50.279><c> what</c><00:21:50.400><c> do</c><00:21:50.559><c> I</c><00:21:50.679><c> do</c><00:21:50.960><c> I</c><00:21:51.080><c> drill</c><00:21:51.360><c> out</c><00:21:51.559><c> the</c>
+
+00:21:51.669 --> 00:21:51.679 align:start position:0%
+pictures what do I do I drill out the
+ 
+
+00:21:51.679 --> 00:21:53.070 align:start position:0%
+pictures what do I do I drill out the
+hole
+
+00:21:53.070 --> 00:21:53.080 align:start position:0%
+hole
+ 
+
+00:21:53.080 --> 00:21:57.190 align:start position:0%
+hole
+here<00:21:54.080><c> and</c><00:21:54.200><c> then</c><00:21:54.320><c> I</c><00:21:54.440><c> drill</c><00:21:54.720><c> out</c><00:21:54.840><c> the</c><00:21:54.960><c> hole</c><00:21:55.679><c> here</c>
+
+00:21:57.190 --> 00:21:57.200 align:start position:0%
+here and then I drill out the hole here
+ 
+
+00:21:57.200 --> 00:22:01.310 align:start position:0%
+here and then I drill out the hole here
+yeah<00:21:58.200><c> and</c><00:21:58.320><c> then</c><00:21:58.720><c> I</c><00:21:59.279><c> glue</c><00:21:59.799><c> those</c><00:22:00.640><c> boundaries</c>
+
+00:22:01.310 --> 00:22:01.320 align:start position:0%
+yeah and then I glue those boundaries
+ 
+
+00:22:01.320 --> 00:22:04.830 align:start position:0%
+yeah and then I glue those boundaries
+together<00:22:02.279><c> and</c><00:22:02.559><c> what</c><00:22:02.720><c> I'm</c><00:22:02.919><c> going</c><00:22:03.039><c> to</c><00:22:03.240><c> get</c><00:22:03.840><c> well</c>
+
+00:22:04.830 --> 00:22:04.840 align:start position:0%
+together and what I'm going to get well
+ 
+
+00:22:04.840 --> 00:22:09.070 align:start position:0%
+together and what I'm going to get well
+I'm<00:22:05.000><c> going</c><00:22:05.159><c> to</c>
+
+00:22:09.070 --> 00:22:09.080 align:start position:0%
+ 
+ 
+
+00:22:09.080 --> 00:22:11.870 align:start position:0%
+ 
+get<00:22:10.080><c> something</c><00:22:10.480><c> like</c>
+
+00:22:11.870 --> 00:22:11.880 align:start position:0%
+get something like
+ 
+
+00:22:11.880 --> 00:22:16.269 align:start position:0%
+get something like
+this<00:22:12.880><c> this</c><00:22:13.039><c> was</c><00:22:13.320><c> m</c><00:22:14.080><c> and</c><00:22:14.240><c> this</c><00:22:14.360><c> was</c><00:22:14.559><c> the</c>
+
+00:22:16.269 --> 00:22:16.279 align:start position:0%
+this this was m and this was the
+ 
+
+00:22:16.279 --> 00:22:20.710 align:start position:0%
+this this was m and this was the
+sphere<00:22:17.279><c> yeah</c><00:22:18.080><c> but</c><00:22:18.440><c> you</c><00:22:18.600><c> see</c><00:22:19.600><c> this</c><00:22:19.760><c> is</c>
+
+00:22:20.710 --> 00:22:20.720 align:start position:0%
+sphere yeah but you see this is
+ 
+
+00:22:20.720 --> 00:22:23.230 align:start position:0%
+sphere yeah but you see this is
+ballooning<00:22:21.240><c> out</c><00:22:21.480><c> but</c><00:22:21.640><c> I</c><00:22:21.720><c> can</c><00:22:21.880><c> shrink</c><00:22:22.279><c> it</c><00:22:23.080><c> and</c>
+
+00:22:23.230 --> 00:22:23.240 align:start position:0%
+ballooning out but I can shrink it and
+ 
+
+00:22:23.240 --> 00:22:25.870 align:start position:0%
+ballooning out but I can shrink it and
+then<00:22:23.400><c> I</c><00:22:23.520><c> can</c><00:22:23.720><c> gently</c><00:22:24.159><c> push</c><00:22:24.320><c> it</c><00:22:24.600><c> down</c><00:22:25.320><c> and</c><00:22:25.640><c> it's</c>
+
+00:22:25.870 --> 00:22:25.880 align:start position:0%
+then I can gently push it down and it's
+ 
+
+00:22:25.880 --> 00:22:29.669 align:start position:0%
+then I can gently push it down and it's
+exactly<00:22:26.279><c> the</c><00:22:26.440><c> same</c><00:22:26.679><c> thing</c><00:22:27.000><c> as</c>
+
+00:22:29.669 --> 00:22:29.679 align:start position:0%
+exactly the same thing as
+ 
+
+00:22:29.679 --> 00:22:32.430 align:start position:0%
+exactly the same thing as
+the<00:22:30.159><c> original</c><00:22:31.159><c> did</c><00:22:31.320><c> somebody</c><00:22:31.640><c> sneeze</c><00:22:32.080><c> in</c><00:22:32.240><c> that</c>
+
+00:22:32.430 --> 00:22:32.440 align:start position:0%
+the original did somebody sneeze in that
+ 
+
+00:22:32.440 --> 00:22:37.310 align:start position:0%
+the original did somebody sneeze in that
+case<00:22:32.880><c> bless</c>
+
+00:22:37.310 --> 00:22:37.320 align:start position:0%
+ 
+ 
+
+00:22:37.320 --> 00:22:41.510 align:start position:0%
+ 
+you<00:22:38.320><c> the</c><00:22:38.720><c> original</c><00:22:39.720><c> and</c><00:22:40.039><c> that's</c><00:22:40.200><c> what</c>
+
+00:22:41.510 --> 00:22:41.520 align:start position:0%
+you the original and that's what
+ 
+
+00:22:41.520 --> 00:22:44.789 align:start position:0%
+you the original and that's what
+true<00:22:42.520><c> if</c><00:22:42.640><c> you're</c><00:22:42.799><c> a</c><00:22:42.919><c> little</c><00:22:43.640><c> nervous</c><00:22:44.360><c> you</c><00:22:44.559><c> can</c>
+
+00:22:44.789 --> 00:22:44.799 align:start position:0%
+true if you're a little nervous you can
+ 
+
+00:22:44.799 --> 00:22:46.830 align:start position:0%
+true if you're a little nervous you can
+also<00:22:45.039><c> argue</c><00:22:45.360><c> as</c><00:22:45.520><c> follows</c><00:22:45.840><c> you</c><00:22:45.960><c> see</c><00:22:46.360><c> here</c><00:22:46.600><c> I</c>
+
+00:22:46.830 --> 00:22:46.840 align:start position:0%
+also argue as follows you see here I
+ 
+
+00:22:46.840 --> 00:22:49.669 align:start position:0%
+also argue as follows you see here I
+removed<00:22:47.360><c> an</c><00:22:47.559><c> M</c><00:22:47.799><c> dimensional</c>
+
+00:22:49.669 --> 00:22:49.679 align:start position:0%
+removed an M dimensional
+ 
+
+00:22:49.679 --> 00:22:52.390 align:start position:0%
+removed an M dimensional
+ball<00:22:50.679><c> I'm</c><00:22:50.919><c> going</c><00:22:51.080><c> to</c><00:22:51.320><c> glue</c>
+
+00:22:52.390 --> 00:22:52.400 align:start position:0%
+ball I'm going to glue
+ 
+
+00:22:52.400 --> 00:22:55.149 align:start position:0%
+ball I'm going to glue
+back<00:22:53.400><c> this</c><00:22:53.679><c> sphere</c><00:22:54.080><c> minus</c><00:22:54.360><c> an</c><00:22:54.520><c> M</c><00:22:54.720><c> dimensional</c>
+
+00:22:55.149 --> 00:22:55.159 align:start position:0%
+back this sphere minus an M dimensional
+ 
+
+00:22:55.159 --> 00:22:57.789 align:start position:0%
+back this sphere minus an M dimensional
+bow<00:22:55.520><c> but</c><00:22:55.760><c> sphere</c><00:22:56.440><c> minus</c><00:22:56.919><c> an</c><00:22:57.120><c> M</c><00:22:57.360><c> dimensional</c>
+
+00:22:57.789 --> 00:22:57.799 align:start position:0%
+bow but sphere minus an M dimensional
+ 
+
+00:22:57.799 --> 00:23:00.430 align:start position:0%
+bow but sphere minus an M dimensional
+hole<00:22:58.240><c> is</c><00:22:58.640><c> in</c><00:22:58.799><c> fact</c><00:22:59.039><c> also</c><00:22:59.320><c> an</c><00:22:59.480><c> M</c><00:22:59.720><c> dimensional</c>
+
+00:23:00.430 --> 00:23:00.440 align:start position:0%
+hole is in fact also an M dimensional
+ 
+
+00:23:00.440 --> 00:23:02.669 align:start position:0%
+hole is in fact also an M dimensional
+hole<00:23:01.440><c> and</c><00:23:01.559><c> you</c><00:23:01.679><c> can</c><00:23:01.799><c> see</c><00:23:01.960><c> it</c><00:23:02.080><c> in</c><00:23:02.200><c> the</c><00:23:02.320><c> following</c>
+
+00:23:02.669 --> 00:23:02.679 align:start position:0%
+hole and you can see it in the following
+ 
+
+00:23:02.679 --> 00:23:05.630 align:start position:0%
+hole and you can see it in the following
+case<00:23:02.919><c> in</c><00:23:03.080><c> 2D</c><00:23:03.960><c> imagine</c><00:23:04.320><c> a</c><00:23:04.480><c> sphere</c><00:23:05.080><c> and</c><00:23:05.279><c> think</c><00:23:05.480><c> of</c>
+
+00:23:05.630 --> 00:23:05.640 align:start position:0%
+case in 2D imagine a sphere and think of
+ 
+
+00:23:05.640 --> 00:23:08.549 align:start position:0%
+case in 2D imagine a sphere and think of
+it<00:23:05.880><c> as</c><00:23:06.080><c> consistent</c><00:23:06.840><c> of</c><00:23:07.200><c> north</c><00:23:08.200><c> northern</c>
+
+00:23:08.549 --> 00:23:08.559 align:start position:0%
+it as consistent of north northern
+ 
+
+00:23:08.559 --> 00:23:10.950 align:start position:0%
+it as consistent of north northern
+hemisphere<00:23:09.000><c> and</c><00:23:09.159><c> southern</c>
+
+00:23:10.950 --> 00:23:10.960 align:start position:0%
+hemisphere and southern
+ 
+
+00:23:10.960 --> 00:23:15.350 align:start position:0%
+hemisphere and southern
+hemisphere<00:23:12.080><c> removing</c><00:23:13.080><c> a</c><00:23:13.320><c> little</c><00:23:13.640><c> bit</c><00:23:14.080><c> of</c><00:23:14.919><c> hole</c>
+
+00:23:15.350 --> 00:23:15.360 align:start position:0%
+hemisphere removing a little bit of hole
+ 
+
+00:23:15.360 --> 00:23:19.390 align:start position:0%
+hemisphere removing a little bit of hole
+from<00:23:15.640><c> the</c><00:23:16.279><c> Arctic</c><00:23:17.159><c> Antarctica</c><00:23:17.880><c> excuse</c><00:23:18.200><c> me</c><00:23:19.159><c> you</c>
+
+00:23:19.390 --> 00:23:19.400 align:start position:0%
+from the Arctic Antarctica excuse me you
+ 
+
+00:23:19.400 --> 00:23:22.029 align:start position:0%
+from the Arctic Antarctica excuse me you
+get<00:23:19.679><c> a</c><00:23:20.240><c> sphere</c><00:23:20.720><c> with</c><00:23:20.840><c> a</c><00:23:20.960><c> hole</c><00:23:21.200><c> at</c><00:23:21.320><c> the</c><00:23:21.440><c> bottom</c>
+
+00:23:22.029 --> 00:23:22.039 align:start position:0%
+get a sphere with a hole at the bottom
+ 
+
+00:23:22.039 --> 00:23:24.430 align:start position:0%
+get a sphere with a hole at the bottom
+but<00:23:22.200><c> that's</c><00:23:22.480><c> the</c><00:23:22.600><c> same</c><00:23:22.880><c> thing</c><00:23:23.159><c> as</c><00:23:23.440><c> if</c><00:23:23.520><c> you</c><00:23:23.720><c> like</c>
+
+00:23:24.430 --> 00:23:24.440 align:start position:0%
+but that's the same thing as if you like
+ 
+
+00:23:24.440 --> 00:23:26.269 align:start position:0%
+but that's the same thing as if you like
+just<00:23:24.720><c> by</c><00:23:25.240><c> making</c><00:23:25.559><c> that</c><00:23:25.679><c> hole</c><00:23:25.919><c> larger</c><00:23:26.159><c> and</c>
+
+00:23:26.269 --> 00:23:26.279 align:start position:0%
+just by making that hole larger and
+ 
+
+00:23:26.279 --> 00:23:29.190 align:start position:0%
+just by making that hole larger and
+larger<00:23:26.880><c> just</c><00:23:27.000><c> the</c><00:23:27.120><c> northern</c><00:23:27.520><c> hemisphere</c>
+
+00:23:29.190 --> 00:23:29.200 align:start position:0%
+larger just the northern hemisphere
+ 
+
+00:23:29.200 --> 00:23:30.830 align:start position:0%
+larger just the northern hemisphere
+which<00:23:29.360><c> is</c><00:23:29.559><c> the</c><00:23:29.679><c> same</c><00:23:29.919><c> thing</c><00:23:30.120><c> as</c><00:23:30.279><c> if</c><00:23:30.400><c> you</c><00:23:30.520><c> flat</c>
+
+00:23:30.830 --> 00:23:30.840 align:start position:0%
+which is the same thing as if you flat
+ 
+
+00:23:30.840 --> 00:23:32.830 align:start position:0%
+which is the same thing as if you flat
+on<00:23:31.000><c> the</c><00:23:31.080><c> Northern</c><00:23:31.400><c> Hemisphere</c><00:23:32.279><c> just</c><00:23:32.520><c> an</c>
+
+00:23:32.830 --> 00:23:32.840 align:start position:0%
+on the Northern Hemisphere just an
+ 
+
+00:23:32.840 --> 00:23:37.390 align:start position:0%
+on the Northern Hemisphere just an
+equatorial<00:23:33.799><c> dis</c><00:23:34.840><c> so</c><00:23:35.840><c> in</c><00:23:36.039><c> fact</c><00:23:36.240><c> what</c><00:23:36.480><c> you</c><00:23:36.559><c> are</c>
+
+00:23:37.390 --> 00:23:37.400 align:start position:0%
+equatorial dis so in fact what you are
+ 
+
+00:23:37.400 --> 00:23:42.149 align:start position:0%
+equatorial dis so in fact what you are
+gluing<00:23:38.400><c> from</c><00:23:38.760><c> left</c><00:23:39.400><c> is</c><00:23:39.679><c> just</c><00:23:39.840><c> a</c><00:23:40.080><c> dis</c><00:23:41.080><c> I</c><00:23:41.279><c> removed</c>
+
+00:23:42.149 --> 00:23:42.159 align:start position:0%
+gluing from left is just a dis I removed
+ 
+
+00:23:42.159 --> 00:23:44.789 align:start position:0%
+gluing from left is just a dis I removed
+a<00:23:42.400><c> dis</c><00:23:42.760><c> I</c><00:23:42.919><c> glued</c><00:23:43.240><c> back</c><00:23:43.440><c> the</c><00:23:43.600><c> dis</c><00:23:44.240><c> the</c><00:23:44.480><c> result</c>
+
+00:23:44.789 --> 00:23:44.799 align:start position:0%
+a dis I glued back the dis the result
+ 
+
+00:23:44.799 --> 00:23:46.669 align:start position:0%
+a dis I glued back the dis the result
+doesn't<00:23:45.080><c> change</c><00:23:45.760><c> so</c><00:23:46.000><c> that's</c><00:23:46.200><c> the</c><00:23:46.360><c> zero</c>
+
+00:23:46.669 --> 00:23:46.679 align:start position:0%
+doesn't change so that's the zero
+ 
+
+00:23:46.679 --> 00:23:48.789 align:start position:0%
+doesn't change so that's the zero
+element<00:23:47.600><c> end</c><00:23:47.799><c> of</c>
+
+00:23:48.789 --> 00:23:48.799 align:start position:0%
+element end of
+ 
+
+00:23:48.799 --> 00:23:50.630 align:start position:0%
+element end of
+proof
+
+00:23:50.630 --> 00:23:50.640 align:start position:0%
+proof
+ 
+
+00:23:50.640 --> 00:23:54.190 align:start position:0%
+proof
+okay<00:23:51.640><c> please</c><00:23:52.360><c> however</c><00:23:52.840><c> be</c><00:23:53.080><c> careful</c><00:23:53.880><c> not</c>
+
+00:23:54.190 --> 00:23:54.200 align:start position:0%
+okay please however be careful not
+ 
+
+00:23:54.200 --> 00:23:57.430 align:start position:0%
+okay please however be careful not
+everything<00:23:54.640><c> is</c><00:23:55.039><c> so</c>
+
+00:23:57.430 --> 00:23:57.440 align:start position:0%
+everything is so
+ 
+
+00:23:57.440 --> 00:24:00.909 align:start position:0%
+everything is so
+trivial<00:23:58.400><c> a</c><00:23:58.520><c> common</c><00:23:58.880><c> mistake</c><00:23:59.880><c> made</c><00:24:00.240><c> by</c><00:24:00.600><c> almost</c>
+
+00:24:00.909 --> 00:24:00.919 align:start position:0%
+trivial a common mistake made by almost
+ 
+
+00:24:00.919 --> 00:24:03.070 align:start position:0%
+trivial a common mistake made by almost
+all
+
+00:24:03.070 --> 00:24:03.080 align:start position:0%
+all
+ 
+
+00:24:03.080 --> 00:24:06.549 align:start position:0%
+all
+beginners<00:24:04.080><c> is</c><00:24:04.400><c> in</c><00:24:05.400><c> what</c><00:24:05.640><c> you</c><00:24:05.760><c> are</c><00:24:05.919><c> removing</c><00:24:06.440><c> in</c>
+
+00:24:06.549 --> 00:24:06.559 align:start position:0%
+beginners is in what you are removing in
+ 
+
+00:24:06.559 --> 00:24:09.149 align:start position:0%
+beginners is in what you are removing in
+order<00:24:06.720><c> to</c><00:24:06.840><c> do</c><00:24:06.960><c> the</c><00:24:07.080><c> connected</c><00:24:07.640><c> sound</c><00:24:08.640><c> you</c><00:24:08.799><c> must</c>
+
+00:24:09.149 --> 00:24:09.159 align:start position:0%
+order to do the connected sound you must
+ 
+
+00:24:09.159 --> 00:24:14.630 align:start position:0%
+order to do the connected sound you must
+remove<00:24:09.840><c> a</c><00:24:10.080><c> single</c><00:24:10.600><c> ball</c><00:24:11.000><c> from</c><00:24:11.279><c> each</c>
+
+00:24:14.630 --> 00:24:14.640 align:start position:0%
+ 
+ 
+
+00:24:14.640 --> 00:24:17.860 align:start position:0%
+ 
+side
+
+00:24:17.860 --> 00:24:17.870 align:start position:0%
+ 
+ 
+
+00:24:17.870 --> 00:24:22.549 align:start position:0%
+ 
+[Applause]
+
+00:24:22.549 --> 00:24:22.559 align:start position:0%
+ 
+ 
+
+00:24:22.559 --> 00:24:26.630 align:start position:0%
+ 
+so<00:24:23.559><c> please</c><00:24:23.840><c> be</c><00:24:24.000><c> careful</c><00:24:24.799><c> that</c><00:24:25.080><c> in</c><00:24:25.320><c> Connected</c>
+
+00:24:26.630 --> 00:24:26.640 align:start position:0%
+so please be careful that in Connected
+ 
+
+00:24:26.640 --> 00:24:31.310 align:start position:0%
+so please be careful that in Connected
+Su<00:24:27.640><c> you</c><00:24:27.880><c> remove</c>
+
+00:24:31.310 --> 00:24:31.320 align:start position:0%
+ 
+ 
+
+00:24:31.320 --> 00:24:35.669 align:start position:0%
+ 
+a<00:24:31.679><c> sing</c><00:24:32.039><c> only</c>
+
+00:24:35.669 --> 00:24:35.679 align:start position:0%
+ 
+ 
+
+00:24:35.679 --> 00:24:38.950 align:start position:0%
+ 
+one
+
+00:24:38.950 --> 00:24:38.960 align:start position:0%
+ 
+ 
+
+00:24:38.960 --> 00:24:43.710 align:start position:0%
+ 
+ball<00:24:39.960><c> from</c><00:24:40.240><c> each</c>
+
+00:24:43.710 --> 00:24:43.720 align:start position:0%
+ 
+ 
+
+00:24:43.720 --> 00:24:47.070 align:start position:0%
+ 
+side<00:24:44.720><c> an</c><00:24:45.120><c> example</c><00:24:46.120><c> to</c><00:24:46.279><c> show</c><00:24:46.520><c> that</c><00:24:46.679><c> it</c><00:24:46.840><c> is</c>
+
+00:24:47.070 --> 00:24:47.080 align:start position:0%
+side an example to show that it is
+ 
+
+00:24:47.080 --> 00:24:50.389 align:start position:0%
+side an example to show that it is
+important<00:24:48.039><c> let's</c><00:24:48.279><c> say</c><00:24:48.520><c> that</c><00:24:48.720><c> you</c><00:24:48.960><c> want</c><00:24:49.399><c> to</c>
+
+00:24:50.389 --> 00:24:50.399 align:start position:0%
+important let's say that you want to
+ 
+
+00:24:50.399 --> 00:24:53.310 align:start position:0%
+important let's say that you want to
+consider<00:24:50.919><c> the</c><00:24:51.159><c> connect</c><00:24:51.559><c> sum</c><00:24:52.200><c> of</c><00:24:52.520><c> a</c>
+
+00:24:53.310 --> 00:24:53.320 align:start position:0%
+consider the connect sum of a
+ 
+
+00:24:53.320 --> 00:24:55.430 align:start position:0%
+consider the connect sum of a
+Taurus<00:24:54.320><c> and</c><00:24:54.559><c> a</c>
+
+00:24:55.430 --> 00:24:55.440 align:start position:0%
+Taurus and a
+ 
+
+00:24:55.440 --> 00:24:59.669 align:start position:0%
+Taurus and a
+sphere<00:24:56.440><c> but</c><00:24:57.159><c> suppose</c><00:24:58.159><c> that</c><00:24:58.520><c> you</c><00:24:58.640><c> are</c><00:24:58.840><c> careless</c>
+
+00:24:59.669 --> 00:24:59.679 align:start position:0%
+sphere but suppose that you are careless
+ 
+
+00:24:59.679 --> 00:25:01.909 align:start position:0%
+sphere but suppose that you are careless
+and<00:24:59.880><c> instead</c><00:25:00.159><c> of</c><00:25:00.360><c> removing</c><00:25:00.840><c> one</c><00:25:01.039><c> hole</c><00:25:01.520><c> and</c><00:25:01.720><c> one</c>
+
+00:25:01.909 --> 00:25:01.919 align:start position:0%
+and instead of removing one hole and one
+ 
+
+00:25:01.919 --> 00:25:05.350 align:start position:0%
+and instead of removing one hole and one
+hole<00:25:02.279><c> here</c><00:25:02.840><c> I</c><00:25:03.000><c> removed</c><00:25:03.720><c> two</c><00:25:03.960><c> holes</c><00:25:04.399><c> here</c><00:25:05.159><c> and</c>
+
+00:25:05.350 --> 00:25:05.360 align:start position:0%
+hole here I removed two holes here and
+ 
+
+00:25:05.360 --> 00:25:06.669 align:start position:0%
+hole here I removed two holes here and
+two<00:25:05.559><c> holes</c>
+
+00:25:06.669 --> 00:25:06.679 align:start position:0%
+two holes
+ 
+
+00:25:06.679 --> 00:25:10.110 align:start position:0%
+two holes
+there<00:25:07.679><c> okay</c><00:25:08.080><c> two</c><00:25:08.320><c> holes</c><00:25:09.039><c> and</c><00:25:09.200><c> then</c><00:25:09.440><c> I</c><00:25:09.640><c> identify</c>
+
+00:25:10.110 --> 00:25:10.120 align:start position:0%
+there okay two holes and then I identify
+ 
+
+00:25:10.120 --> 00:25:12.190 align:start position:0%
+there okay two holes and then I identify
+the<00:25:10.240><c> holes</c><00:25:11.159><c> what</c><00:25:11.279><c> are</c><00:25:11.360><c> you</c><00:25:11.480><c> going</c><00:25:11.600><c> to</c><00:25:11.799><c> get</c><00:25:11.960><c> as</c><00:25:12.080><c> a</c>
+
+00:25:12.190 --> 00:25:12.200 align:start position:0%
+the holes what are you going to get as a
+ 
+
+00:25:12.200 --> 00:25:13.950 align:start position:0%
+the holes what are you going to get as a
+result<00:25:12.559><c> you</c><00:25:12.679><c> can</c><00:25:12.840><c> probably</c><00:25:13.159><c> visualize</c><00:25:13.720><c> this</c>
+
+00:25:13.950 --> 00:25:13.960 align:start position:0%
+result you can probably visualize this
+ 
+
+00:25:13.960 --> 00:25:15.909 align:start position:0%
+result you can probably visualize this
+right<00:25:14.679><c> what</c><00:25:14.799><c> you're</c><00:25:14.919><c> going</c><00:25:15.080><c> to</c><00:25:15.240><c> get</c><00:25:15.520><c> is</c>
+
+00:25:15.909 --> 00:25:15.919 align:start position:0%
+right what you're going to get is
+ 
+
+00:25:15.919 --> 00:25:24.430 align:start position:0%
+right what you're going to get is
+something<00:25:16.320><c> like</c>
+
+00:25:24.430 --> 00:25:24.440 align:start position:0%
+ 
+ 
+
+00:25:24.440 --> 00:25:28.470 align:start position:0%
+ 
+this<00:25:25.440><c> and</c><00:25:25.760><c> that</c><00:25:26.200><c> is</c><00:25:26.720><c> of</c><00:25:26.960><c> course</c><00:25:27.960><c> the</c><00:25:28.120><c> same</c><00:25:28.320><c> same</c>
+
+00:25:28.470 --> 00:25:28.480 align:start position:0%
+this and that is of course the same same
+ 
+
+00:25:28.480 --> 00:25:30.310 align:start position:0%
+this and that is of course the same same
+thing
+
+00:25:30.310 --> 00:25:30.320 align:start position:0%
+thing
+ 
+
+00:25:30.320 --> 00:25:34.630 align:start position:0%
+thing
+as<00:25:31.320><c> a</c><00:25:31.520><c> donut</c><00:25:31.919><c> with</c><00:25:32.080><c> two</c><00:25:32.360><c> holes</c><00:25:33.360><c> you</c><00:25:33.520><c> see</c><00:25:34.039><c> the</c>
+
+00:25:34.630 --> 00:25:34.640 align:start position:0%
+as a donut with two holes you see the
+ 
+
+00:25:34.640 --> 00:25:39.269 align:start position:0%
+as a donut with two holes you see the
+result<00:25:35.640><c> is</c><00:25:35.799><c> not</c><00:25:36.000><c> the</c><00:25:36.120><c> same</c><00:25:36.640><c> thing</c><00:25:37.039><c> as</c><00:25:37.320><c> the</c>
+
+00:25:39.269 --> 00:25:39.279 align:start position:0%
+result is not the same thing as the
+ 
+
+00:25:39.279 --> 00:25:42.190 align:start position:0%
+result is not the same thing as the
+Taurus<00:25:40.279><c> it</c><00:25:40.480><c> changed</c><00:25:41.000><c> although</c><00:25:41.559><c> we</c><00:25:41.679><c> seem</c><00:25:41.880><c> to</c><00:25:42.000><c> be</c>
+
+00:25:42.190 --> 00:25:42.200 align:start position:0%
+Taurus it changed although we seem to be
+ 
+
+00:25:42.200 --> 00:25:44.950 align:start position:0%
+Taurus it changed although we seem to be
+adding<00:25:42.480><c> a</c><00:25:42.679><c> sphere</c><00:25:43.600><c> contrary</c><00:25:44.000><c> to</c><00:25:44.159><c> what</c><00:25:44.480><c> we</c><00:25:44.600><c> said</c>
+
+00:25:44.950 --> 00:25:44.960 align:start position:0%
+adding a sphere contrary to what we said
+ 
+
+00:25:44.960 --> 00:25:47.510 align:start position:0%
+adding a sphere contrary to what we said
+sphere<00:25:45.320><c> does</c><00:25:45.440><c> not</c><00:25:45.640><c> play</c><00:25:45.880><c> the</c><00:25:46.399><c> role</c><00:25:46.640><c> of</c><00:25:46.880><c> zero</c>
+
+00:25:47.510 --> 00:25:47.520 align:start position:0%
+sphere does not play the role of zero
+ 
+
+00:25:47.520 --> 00:25:50.149 align:start position:0%
+sphere does not play the role of zero
+aha<00:25:48.000><c> but</c><00:25:48.240><c> that's</c><00:25:48.559><c> because</c><00:25:49.399><c> we</c><00:25:49.559><c> did</c><00:25:49.720><c> not</c><00:25:49.880><c> do</c><00:25:50.039><c> the</c>
+
+00:25:50.149 --> 00:25:50.159 align:start position:0%
+aha but that's because we did not do the
+ 
+
+00:25:50.159 --> 00:25:53.389 align:start position:0%
+aha but that's because we did not do the
+connected<00:25:50.520><c> sum</c><00:25:51.000><c> connected</c><00:25:51.760><c> sum</c><00:25:52.760><c> takes</c><00:25:53.080><c> only</c>
+
+00:25:53.389 --> 00:25:53.399 align:start position:0%
+connected sum connected sum takes only
+ 
+
+00:25:53.399 --> 00:25:56.070 align:start position:0%
+connected sum connected sum takes only
+one<00:25:53.720><c> hole</c><00:25:54.120><c> away</c><00:25:54.360><c> from</c><00:25:54.640><c> each</c><00:25:55.039><c> and</c><00:25:55.320><c> glue</c><00:25:55.799><c> this</c><00:25:55.919><c> is</c>
+
+00:25:56.070 --> 00:25:56.080 align:start position:0%
+one hole away from each and glue this is
+ 
+
+00:25:56.080 --> 00:26:00.149 align:start position:0%
+one hole away from each and glue this is
+taking<00:25:56.399><c> two</c><00:25:56.799><c> from</c><00:25:57.000><c> each</c><00:25:57.440><c> that's</c><00:25:57.840><c> illegal</c>
+
+00:26:00.149 --> 00:26:00.159 align:start position:0%
+taking two from each that's illegal
+ 
+
+00:26:00.159 --> 00:26:07.590 align:start position:0%
+taking two from each that's illegal
+okay<00:26:00.720><c> so</c><00:26:01.120><c> this</c><00:26:01.279><c> is</c>
+
+00:26:07.590 --> 00:26:07.600 align:start position:0%
+ 
+ 
+
+00:26:07.600 --> 00:26:11.110 align:start position:0%
+ 
+not<00:26:08.600><c> how</c><00:26:08.799><c> you</c>
+
+00:26:11.110 --> 00:26:11.120 align:start position:0%
+not how you
+ 
+
+00:26:11.120 --> 00:26:14.110 align:start position:0%
+not how you
+make<00:26:12.440><c> S2</c>
+
+00:26:14.110 --> 00:26:14.120 align:start position:0%
+make S2
+ 
+
+00:26:14.120 --> 00:26:18.590 align:start position:0%
+make S2
+and<00:26:15.120><c> T2</c><00:26:15.559><c> connected</c><00:26:15.960><c> sum</c><00:26:16.679><c> this</c><00:26:16.840><c> is</c><00:26:17.320><c> not</c><00:26:18.320><c> if</c><00:26:18.440><c> you</c>
+
+00:26:18.590 --> 00:26:18.600 align:start position:0%
+and T2 connected sum this is not if you
+ 
+
+00:26:18.600 --> 00:26:20.990 align:start position:0%
+and T2 connected sum this is not if you
+take<00:26:18.840><c> the</c><00:26:19.000><c> oldest</c><00:26:19.600><c> connected</c><00:26:20.039><c> sum</c><00:26:20.320><c> of</c><00:26:20.480><c> S2</c><00:26:20.840><c> and</c>
+
+00:26:20.990 --> 00:26:21.000 align:start position:0%
+take the oldest connected sum of S2 and
+ 
+
+00:26:21.000 --> 00:26:23.389 align:start position:0%
+take the oldest connected sum of S2 and
+T2<00:26:21.679><c> you</c><00:26:21.799><c> would</c><00:26:22.080><c> get</c>
+
+00:26:23.389 --> 00:26:23.399 align:start position:0%
+T2 you would get
+ 
+
+00:26:23.399 --> 00:26:29.430 align:start position:0%
+T2 you would get
+um<00:26:24.399><c> just</c><00:26:24.600><c> the</c><00:26:24.799><c> t2</c><00:26:25.799><c> in</c><00:26:26.080><c> fact</c>
+
+00:26:29.430 --> 00:26:29.440 align:start position:0%
+ 
+ 
+
+00:26:29.440 --> 00:26:30.990 align:start position:0%
+ 
+this
+
+00:26:30.990 --> 00:26:31.000 align:start position:0%
+this
+ 
+
+00:26:31.000 --> 00:26:34.830 align:start position:0%
+this
+resulting
+
+00:26:34.830 --> 00:26:34.840 align:start position:0%
+ 
+ 
+
+00:26:34.840 --> 00:26:38.430 align:start position:0%
+ 
+surface<00:26:35.840><c> is</c><00:26:36.000><c> the</c><00:26:36.120><c> connected</c><00:26:36.600><c> sum</c><00:26:37.360><c> of</c><00:26:37.600><c> T2</c><00:26:38.159><c> and</c>
+
+00:26:38.430 --> 00:26:38.440 align:start position:0%
+surface is the connected sum of T2 and
+ 
+
+00:26:38.440 --> 00:26:40.870 align:start position:0%
+surface is the connected sum of T2 and
+T2<00:26:39.200><c> you</c><00:26:39.360><c> can</c><00:26:39.559><c> probably</c><00:26:39.840><c> see</c><00:26:40.279><c> right</c><00:26:40.679><c> if</c><00:26:40.760><c> you</c>
+
+00:26:40.870 --> 00:26:40.880 align:start position:0%
+T2 you can probably see right if you
+ 
+
+00:26:40.880 --> 00:26:43.029 align:start position:0%
+T2 you can probably see right if you
+have<00:26:41.000><c> a</c><00:26:41.120><c> taus</c><00:26:41.480><c> on</c><00:26:41.640><c> one</c><00:26:41.760><c> side</c><00:26:42.000><c> taus</c><00:26:42.320><c> on</c><00:26:42.799><c> another</c>
+
+00:26:43.029 --> 00:26:43.039 align:start position:0%
+have a taus on one side taus on another
+ 
+
+00:26:43.039 --> 00:26:44.549 align:start position:0%
+have a taus on one side taus on another
+side<00:26:43.200><c> and</c><00:26:43.320><c> you</c><00:26:43.399><c> do</c><00:26:43.559><c> the</c><00:26:43.720><c> connected</c><00:26:44.080><c> sum</c><00:26:44.440><c> you</c>
+
+00:26:44.549 --> 00:26:44.559 align:start position:0%
+side and you do the connected sum you
+ 
+
+00:26:44.559 --> 00:26:48.630 align:start position:0%
+side and you do the connected sum you
+get<00:26:45.039><c> this</c><00:26:46.039><c> okay</c><00:26:46.279><c> so</c><00:26:46.520><c> it's</c><00:26:46.720><c> not</c><00:26:47.159><c> the</c><00:26:47.320><c> same</c><00:26:47.559><c> thing</c>
+
+00:26:48.630 --> 00:26:48.640 align:start position:0%
+get this okay so it's not the same thing
+ 
+
+00:26:48.640 --> 00:26:51.269 align:start position:0%
+get this okay so it's not the same thing
+however<00:26:49.640><c> this</c><00:26:49.799><c> is</c><00:26:49.919><c> a</c><00:26:50.120><c> good</c><00:26:50.279><c> opportunity</c><00:26:50.919><c> to</c>
+
+00:26:51.269 --> 00:26:51.279 align:start position:0%
+however this is a good opportunity to
+ 
+
+00:26:51.279 --> 00:26:54.110 align:start position:0%
+however this is a good opportunity to
+introduce<00:26:51.760><c> a</c><00:26:51.960><c> whole</c><00:26:52.360><c> set</c><00:26:52.640><c> of</c><00:26:52.880><c> new</c><00:26:53.679><c> a</c><00:26:53.880><c> whole</c>
+
+00:26:54.110 --> 00:26:54.120 align:start position:0%
+introduce a whole set of new a whole
+ 
+
+00:26:54.120 --> 00:26:56.909 align:start position:0%
+introduce a whole set of new a whole
+class<00:26:54.360><c> of</c><00:26:54.559><c> new</c><00:26:55.039><c> manifolds</c><00:26:56.000><c> new</c><00:26:56.200><c> surfaces</c>
+
+00:26:56.909 --> 00:26:56.919 align:start position:0%
+class of new manifolds new surfaces
+ 
+
+00:26:56.919 --> 00:27:02.110 align:start position:0%
+class of new manifolds new surfaces
+definition<00:26:57.360><c> 16</c>
+
+00:27:02.110 --> 00:27:02.120 align:start position:0%
+ 
+ 
+
+00:27:02.120 --> 00:27:04.590 align:start position:0%
+ 
+so<00:27:02.520><c> each</c><00:27:02.799><c> time</c><00:27:03.120><c> we</c><00:27:03.279><c> connect</c><00:27:03.640><c> some</c><00:27:03.960><c> with</c><00:27:04.200><c> a</c><00:27:04.360><c> new</c>
+
+00:27:04.590 --> 00:27:04.600 align:start position:0%
+so each time we connect some with a new
+ 
+
+00:27:04.600 --> 00:27:07.830 align:start position:0%
+so each time we connect some with a new
+copy<00:27:04.919><c> of</c><00:27:05.399><c> T2</c><00:27:06.399><c> you</c><00:27:06.520><c> get</c><00:27:06.720><c> more</c><00:27:06.880><c> and</c><00:27:07.039><c> more</c><00:27:07.399><c> Torah</c>
+
+00:27:07.830 --> 00:27:07.840 align:start position:0%
+copy of T2 you get more and more Torah
+ 
+
+00:27:07.840 --> 00:27:11.269 align:start position:0%
+copy of T2 you get more and more Torah
+you<00:27:08.000><c> get</c><00:27:08.159><c> more</c><00:27:08.279><c> and</c><00:27:08.440><c> more</c><00:27:08.760><c> those</c><00:27:09.440><c> um</c><00:27:10.120><c> HS</c><00:27:11.120><c> you</c>
+
+00:27:11.269 --> 00:27:11.279 align:start position:0%
+you get more and more those um HS you
+ 
+
+00:27:11.279 --> 00:27:13.549 align:start position:0%
+you get more and more those um HS you
+get<00:27:11.440><c> more</c><00:27:11.600><c> and</c><00:27:11.720><c> more</c><00:27:11.919><c> copies</c><00:27:12.200><c> of</c><00:27:12.399><c> Tash</c><00:27:13.240><c> if</c><00:27:13.360><c> you</c>
+
+00:27:13.549 --> 00:27:13.559 align:start position:0%
+get more and more copies of Tash if you
+ 
+
+00:27:13.559 --> 00:27:17.870 align:start position:0%
+get more and more copies of Tash if you
+like<00:27:14.080><c> and</c><00:27:14.960><c> we</c><00:27:15.080><c> shall</c><00:27:15.720><c> give</c><00:27:15.840><c> it</c><00:27:16.000><c> the</c><00:27:16.640><c> name</c><00:27:17.640><c> this</c>
+
+00:27:17.870 --> 00:27:17.880 align:start position:0%
+like and we shall give it the name this
+ 
+
+00:27:17.880 --> 00:27:19.190 align:start position:0%
+like and we shall give it the name this
+Sigma
+
+00:27:19.190 --> 00:27:19.200 align:start position:0%
+Sigma
+ 
+
+00:27:19.200 --> 00:27:25.029 align:start position:0%
+Sigma
+subg<00:27:20.200><c> is</c><00:27:20.440><c> by</c>
+
+00:27:25.029 --> 00:27:25.039 align:start position:0%
+ 
+ 
+
+00:27:25.039 --> 00:27:28.990 align:start position:0%
+ 
+definition<00:27:26.039><c> a</c><00:27:26.279><c> lot</c><00:27:26.520><c> of</c><00:27:26.840><c> multiple</c><00:27:27.840><c> copy</c>
+
+00:27:28.990 --> 00:27:29.000 align:start position:0%
+definition a lot of multiple copy
+ 
+
+00:27:29.000 --> 00:27:34.070 align:start position:0%
+definition a lot of multiple copy
+G<00:27:29.600><c> copies</c><00:27:30.600><c> of</c><00:27:31.679><c> Taurus</c><00:27:32.679><c> connected</c>
+
+00:27:34.070 --> 00:27:34.080 align:start position:0%
+G copies of Taurus connected
+ 
+
+00:27:34.080 --> 00:27:39.510 align:start position:0%
+G copies of Taurus connected
+some<00:27:35.080><c> okay</c><00:27:36.039><c> and</c><00:27:36.360><c> this</c><00:27:37.039><c> thing</c><00:27:38.039><c> is</c><00:27:38.279><c> called</c><00:27:38.880><c> now</c>
+
+00:27:39.510 --> 00:27:39.520 align:start position:0%
+some okay and this thing is called now
+ 
+
+00:27:39.520 --> 00:27:41.789 align:start position:0%
+some okay and this thing is called now
+the<00:27:39.679><c> name</c><00:27:40.000><c> is</c><00:27:40.200><c> not</c>
+
+00:27:41.789 --> 00:27:41.799 align:start position:0%
+the name is not
+ 
+
+00:27:41.799 --> 00:27:44.590 align:start position:0%
+the name is not
+felicitously<00:27:42.880><c> chosen</c><00:27:43.880><c> but</c><00:27:44.159><c> we</c><00:27:44.240><c> should</c><00:27:44.399><c> call</c>
+
+00:27:44.590 --> 00:27:44.600 align:start position:0%
+felicitously chosen but we should call
+ 
+
+00:27:44.600 --> 00:27:48.029 align:start position:0%
+felicitously chosen but we should call
+it<00:27:44.799><c> the</c><00:27:45.000><c> rean</c>
+
+00:27:48.029 --> 00:27:48.039 align:start position:0%
+ 
+ 
+
+00:27:48.039 --> 00:27:51.029 align:start position:0%
+ 
+surface<00:27:49.039><c> because</c><00:27:49.840><c> in</c><00:27:50.000><c> a</c><00:27:50.200><c> certain</c><00:27:50.559><c> context</c><00:27:50.919><c> in</c>
+
+00:27:51.029 --> 00:27:51.039 align:start position:0%
+surface because in a certain context in
+ 
+
+00:27:51.039 --> 00:27:52.990 align:start position:0%
+surface because in a certain context in
+mathematics<00:27:51.559><c> very</c><00:27:51.720><c> important</c><00:27:52.200><c> concept</c>
+
+00:27:52.990 --> 00:27:53.000 align:start position:0%
+mathematics very important concept
+ 
+
+00:27:53.000 --> 00:27:54.990 align:start position:0%
+mathematics very important concept
+context<00:27:53.360><c> of</c><00:27:53.559><c> algebraic</c><00:27:54.000><c> geometry</c><00:27:54.799><c> these</c>
+
+00:27:54.990 --> 00:27:55.000 align:start position:0%
+context of algebraic geometry these
+ 
+
+00:27:55.000 --> 00:27:56.430 align:start position:0%
+context of algebraic geometry these
+things<00:27:55.240><c> are</c><00:27:55.440><c> the</c><00:27:55.559><c> Rema</c>
+
+00:27:56.430 --> 00:27:56.440 align:start position:0%
+things are the Rema
+ 
+
+00:27:56.440 --> 00:28:01.830 align:start position:0%
+things are the Rema
+surfaces<00:27:57.440><c> of</c><00:27:57.760><c> gen</c>
+
+00:28:01.830 --> 00:28:01.840 align:start position:0%
+ 
+ 
+
+00:28:01.840 --> 00:28:05.269 align:start position:0%
+ 
+G<00:28:02.840><c> have</c><00:28:02.960><c> you</c><00:28:03.360><c> ever</c><00:28:03.640><c> heard</c><00:28:04.000><c> the</c><00:28:04.240><c> word</c>
+
+00:28:05.269 --> 00:28:05.279 align:start position:0%
+G have you ever heard the word
+ 
+
+00:28:05.279 --> 00:28:10.190 align:start position:0%
+G have you ever heard the word
+genus<00:28:06.279><c> well</c><00:28:06.919><c> okay</c><00:28:07.880><c> genus</c><00:28:08.880><c> is</c><00:28:09.320><c> a</c><00:28:09.519><c> word</c><00:28:09.679><c> of</c><00:28:09.840><c> Latin</c>
+
+00:28:10.190 --> 00:28:10.200 align:start position:0%
+genus well okay genus is a word of Latin
+ 
+
+00:28:10.200 --> 00:28:14.990 align:start position:0%
+genus well okay genus is a word of Latin
+origin<00:28:10.919><c> the</c><00:28:11.120><c> plural</c><00:28:11.640><c> is</c><00:28:12.200><c> gener</c><00:28:13.200><c> in</c><00:28:13.399><c> French</c>
+
+00:28:14.990 --> 00:28:15.000 align:start position:0%
+origin the plural is gener in French
+ 
+
+00:28:15.000 --> 00:28:18.590 align:start position:0%
+origin the plural is gener in French
+it's<00:28:16.000><c> it</c><00:28:16.120><c> means</c><00:28:16.559><c> kind</c><00:28:16.919><c> or</c><00:28:17.159><c> species</c><00:28:17.960><c> and</c><00:28:18.320><c> that's</c>
+
+00:28:18.590 --> 00:28:18.600 align:start position:0%
+it's it means kind or species and that's
+ 
+
+00:28:18.600 --> 00:28:21.350 align:start position:0%
+it's it means kind or species and that's
+why<00:28:19.120><c> we</c><00:28:19.360><c> use</c><00:28:19.519><c> the</c><00:28:19.640><c> word</c><00:28:19.880><c> genus</c><00:28:20.760><c> just</c><00:28:20.960><c> learn</c><00:28:21.240><c> the</c>
+
+00:28:21.350 --> 00:28:21.360 align:start position:0%
+why we use the word genus just learn the
+ 
+
+00:28:21.360 --> 00:28:24.630 align:start position:0%
+why we use the word genus just learn the
+word<00:28:21.519><c> for</c><00:28:21.679><c> this</c><00:28:21.880><c> occasion</c><00:28:22.720><c> genus</c><00:28:23.120><c> G</c><00:28:23.880><c> and</c><00:28:24.320><c> the</c>
+
+00:28:24.630 --> 00:28:24.640 align:start position:0%
+word for this occasion genus G and the
+ 
+
+00:28:24.640 --> 00:28:27.870 align:start position:0%
+word for this occasion genus G and the
+picture<00:28:25.399><c> is</c><00:28:25.640><c> much</c><00:28:25.840><c> easier</c><00:28:26.120><c> to</c><00:28:26.320><c> do</c><00:28:27.320><c> you</c><00:28:27.519><c> have</c><00:28:27.720><c> a</c>
+
+00:28:27.870 --> 00:28:27.880 align:start position:0%
+picture is much easier to do you have a
+ 
+
+00:28:27.880 --> 00:28:31.110 align:start position:0%
+picture is much easier to do you have a
+c<00:28:28.120><c> copy</c><00:28:28.320><c> of</c><00:28:28.760><c> T2</c><00:28:29.760><c> another</c><00:28:30.080><c> copy</c><00:28:30.320><c> of</c>
+
+00:28:31.110 --> 00:28:31.120 align:start position:0%
+c copy of T2 another copy of
+ 
+
+00:28:31.120 --> 00:28:34.909 align:start position:0%
+c copy of T2 another copy of
+T2<00:28:32.120><c> and</c><00:28:32.240><c> then</c><00:28:32.360><c> you</c><00:28:32.559><c> just</c><00:28:33.039><c> keep</c><00:28:34.039><c> adding</c><00:28:34.600><c> and</c><00:28:34.799><c> the</c>
+
+00:28:34.909 --> 00:28:34.919 align:start position:0%
+T2 and then you just keep adding and the
+ 
+
+00:28:34.919 --> 00:28:37.830 align:start position:0%
+T2 and then you just keep adding and the
+connect<00:28:35.279><c> St</c><00:28:35.679><c> and</c><00:28:36.240><c> copy</c><00:28:36.480><c> of</c><00:28:36.640><c> D2</c><00:28:37.039><c> so</c><00:28:37.399><c> it</c><00:28:37.519><c> looks</c>
+
+00:28:37.830 --> 00:28:37.840 align:start position:0%
+connect St and copy of D2 so it looks
+ 
+
+00:28:37.840 --> 00:28:40.269 align:start position:0%
+connect St and copy of D2 so it looks
+like
+
+00:28:40.269 --> 00:28:40.279 align:start position:0%
+ 
+ 
+
+00:28:40.279 --> 00:28:42.430 align:start position:0%
+ 
+this<00:28:41.279><c> as</c><00:28:41.399><c> a</c><00:28:41.519><c> matter</c><00:28:41.760><c> of</c>
+
+00:28:42.430 --> 00:28:42.440 align:start position:0%
+this as a matter of
+ 
+
+00:28:42.440 --> 00:28:45.710 align:start position:0%
+this as a matter of
+convention<00:28:43.440><c> we</c><00:28:43.559><c> should</c><00:28:43.799><c> like</c><00:28:44.000><c> to</c><00:28:44.360><c> decide</c><00:28:45.360><c> what</c>
+
+00:28:45.710 --> 00:28:45.720 align:start position:0%
+convention we should like to decide what
+ 
+
+00:28:45.720 --> 00:28:47.710 align:start position:0%
+convention we should like to decide what
+Sigma<00:28:46.080><c> of</c><00:28:46.279><c> zero</c><00:28:46.559><c> is</c><00:28:46.840><c> what</c><00:28:47.120><c> happens</c><00:28:47.480><c> if</c><00:28:47.600><c> we</c>
+
+00:28:47.710 --> 00:28:47.720 align:start position:0%
+Sigma of zero is what happens if we
+ 
+
+00:28:47.720 --> 00:28:50.789 align:start position:0%
+Sigma of zero is what happens if we
+don't<00:28:47.960><c> have</c><00:28:48.279><c> any</c><00:28:48.640><c> copy</c><00:28:49.640><c> well</c><00:28:50.080><c> one</c><00:28:50.279><c> school</c><00:28:50.600><c> of</c>
+
+00:28:50.789 --> 00:28:50.799 align:start position:0%
+don't have any copy well one school of
+ 
+
+00:28:50.799 --> 00:28:52.789 align:start position:0%
+don't have any copy well one school of
+thought<00:28:51.120><c> might</c><00:28:51.320><c> say</c><00:28:51.720><c> it's</c><00:28:51.919><c> the</c><00:28:52.080><c> empty</c><00:28:52.440><c> set</c><00:28:52.679><c> we</c>
+
+00:28:52.789 --> 00:28:52.799 align:start position:0%
+thought might say it's the empty set we
+ 
+
+00:28:52.799 --> 00:28:56.230 align:start position:0%
+thought might say it's the empty set we
+have<00:28:52.960><c> nothing</c><00:28:53.640><c> but</c><00:28:53.880><c> it's</c><00:28:54.399><c> more</c><00:28:55.399><c> um</c><00:28:55.679><c> practical</c>
+
+00:28:56.230 --> 00:28:56.240 align:start position:0%
+have nothing but it's more um practical
+ 
+
+00:28:56.240 --> 00:28:59.830 align:start position:0%
+have nothing but it's more um practical
+it<00:28:56.360><c> turns</c><00:28:56.640><c> out</c><00:28:56.880><c> to</c><00:28:58.159><c> decide</c><00:28:58.440><c> that</c><00:28:58.600><c> it</c><00:28:58.760><c> is</c><00:28:58.960><c> S2</c><00:28:59.640><c> two</c>
+
+00:28:59.830 --> 00:28:59.840 align:start position:0%
+it turns out to decide that it is S2 two
+ 
+
+00:28:59.840 --> 00:29:03.669 align:start position:0%
+it turns out to decide that it is S2 two
+dimensional<00:29:00.600><c> sphere</c><00:29:01.600><c> and</c><00:29:02.159><c> also</c>
+
+00:29:03.669 --> 00:29:03.679 align:start position:0%
+dimensional sphere and also
+ 
+
+00:29:03.679 --> 00:29:07.269 align:start position:0%
+dimensional sphere and also
+note<00:29:04.679><c> a</c><00:29:04.840><c> much</c><00:29:05.080><c> more</c><00:29:05.279><c> natural</c><00:29:06.240><c> convention</c><00:29:07.000><c> that</c>
+
+00:29:07.269 --> 00:29:07.279 align:start position:0%
+note a much more natural convention that
+ 
+
+00:29:07.279 --> 00:29:10.950 align:start position:0%
+note a much more natural convention that
+or<00:29:07.480><c> the</c><00:29:07.720><c> result</c><00:29:08.440><c> that</c><00:29:09.440><c> Sigma</c><00:29:09.880><c> 1</c><00:29:10.559><c> if</c><00:29:10.679><c> you</c><00:29:10.799><c> have</c>
+
+00:29:10.950 --> 00:29:10.960 align:start position:0%
+or the result that Sigma 1 if you have
+ 
+
+00:29:10.960 --> 00:29:14.870 align:start position:0%
+or the result that Sigma 1 if you have
+only<00:29:11.200><c> one</c><00:29:11.399><c> copy</c><00:29:11.799><c> it</c><00:29:11.960><c> is</c><00:29:12.240><c> just</c><00:29:12.960><c> equal</c><00:29:13.240><c> to</c><00:29:13.399><c> T2</c>
+
+00:29:14.870 --> 00:29:14.880 align:start position:0%
+only one copy it is just equal to T2
+ 
+
+00:29:14.880 --> 00:29:22.029 align:start position:0%
+only one copy it is just equal to T2
+itself
+
+00:29:22.029 --> 00:29:22.039 align:start position:0%
+ 
+ 
+
+00:29:22.039 --> 00:29:24.830 align:start position:0%
+ 
+okay<00:29:23.039><c> A</c><00:29:23.200><c> little</c><00:29:23.440><c> later</c><00:29:23.840><c> today</c><00:29:24.320><c> or</c><00:29:24.559><c> maybe</c>
+
+00:29:24.830 --> 00:29:24.840 align:start position:0%
+okay A little later today or maybe
+ 
+
+00:29:24.840 --> 00:29:29.269 align:start position:0%
+okay A little later today or maybe
+tomorrow<00:29:25.399><c> it</c><00:29:25.519><c> will</c><00:29:25.720><c> be</c><00:29:26.760><c> useful</c><00:29:27.760><c> to</c>
+
+00:29:29.269 --> 00:29:29.279 align:start position:0%
+tomorrow it will be useful to
+ 
+
+00:29:29.279 --> 00:29:33.230 align:start position:0%
+tomorrow it will be useful to
+have<00:29:30.279><c> an</c><00:29:30.519><c> alternative</c><00:29:31.240><c> picture</c><00:29:31.880><c> of</c><00:29:32.279><c> Sigma</c><00:29:32.679><c> g</c>
+
+00:29:33.230 --> 00:29:33.240 align:start position:0%
+have an alternative picture of Sigma g
+ 
+
+00:29:33.240 --> 00:29:36.669 align:start position:0%
+have an alternative picture of Sigma g
+reman<00:29:33.679><c> surface</c><00:29:33.919><c> of</c><00:29:34.039><c> Gus</c>
+
+00:29:36.669 --> 00:29:36.679 align:start position:0%
+ 
+ 
+
+00:29:36.679 --> 00:29:40.549 align:start position:0%
+ 
+G<00:29:37.679><c> here</c><00:29:37.840><c> is</c><00:29:38.000><c> the</c><00:29:38.159><c> alternative</c>
+
+00:29:40.549 --> 00:29:40.559 align:start position:0%
+G here is the alternative
+ 
+
+00:29:40.559 --> 00:29:42.830 align:start position:0%
+G here is the alternative
+picture<00:29:41.559><c> instead</c><00:29:41.840><c> of</c><00:29:42.000><c> having</c><00:29:42.279><c> all</c><00:29:42.519><c> those</c>
+
+00:29:42.830 --> 00:29:42.840 align:start position:0%
+picture instead of having all those
+ 
+
+00:29:42.840 --> 00:29:45.950 align:start position:0%
+picture instead of having all those
+donuts<00:29:43.840><c> strong</c><00:29:44.320><c> next</c><00:29:44.480><c> to</c><00:29:44.640><c> each</c><00:29:44.760><c> other</c><00:29:45.679><c> we</c><00:29:45.799><c> are</c>
+
+00:29:45.950 --> 00:29:45.960 align:start position:0%
+donuts strong next to each other we are
+ 
+
+00:29:45.960 --> 00:29:46.630 align:start position:0%
+donuts strong next to each other we are
+going
+
+00:29:46.630 --> 00:29:46.640 align:start position:0%
+going
+ 
+
+00:29:46.640 --> 00:29:50.750 align:start position:0%
+going
+to<00:29:47.640><c> imagine</c><00:29:48.200><c> that</c><00:29:48.559><c> we</c><00:29:48.720><c> have</c><00:29:48.840><c> a</c><00:29:49.399><c> big</c><00:29:49.799><c> sphere</c><00:29:50.600><c> in</c>
+
+00:29:50.750 --> 00:29:50.760 align:start position:0%
+to imagine that we have a big sphere in
+ 
+
+00:29:50.760 --> 00:29:52.470 align:start position:0%
+to imagine that we have a big sphere in
+might<00:29:51.039><c> object</c><00:29:51.480><c> that's</c><00:29:51.640><c> not</c><00:29:51.799><c> the</c><00:29:51.919><c> sphere</c><00:29:52.320><c> it</c>
+
+00:29:52.470 --> 00:29:52.480 align:start position:0%
+might object that's not the sphere it
+ 
+
+00:29:52.480 --> 00:29:54.470 align:start position:0%
+might object that's not the sphere it
+looks<00:29:52.760><c> like</c><00:29:52.960><c> an</c><00:29:53.159><c> ellipsoid</c><00:29:53.799><c> but</c><00:29:53.919><c> that's</c><00:29:54.200><c> okay</c>
+
+00:29:54.470 --> 00:29:54.480 align:start position:0%
+looks like an ellipsoid but that's okay
+ 
+
+00:29:54.480 --> 00:29:57.350 align:start position:0%
+looks like an ellipsoid but that's okay
+we<00:29:54.559><c> are</c><00:29:54.720><c> doing</c><00:29:55.200><c> topology</c><00:29:55.760><c> it's</c><00:29:55.880><c> all</c><00:29:56.120><c> soft</c><00:29:57.120><c> and</c>
+
+00:29:57.350 --> 00:29:57.360 align:start position:0%
+we are doing topology it's all soft and
+ 
+
+00:29:57.360 --> 00:30:00.470 align:start position:0%
+we are doing topology it's all soft and
+then<00:29:58.159><c> we</c><00:29:58.279><c> are</c><00:29:58.440><c> going</c><00:29:58.600><c> to</c><00:29:59.159><c> attach</c><00:30:00.159><c> what</c><00:30:00.279><c> the</c>
+
+00:30:00.470 --> 00:30:00.480 align:start position:0%
+then we are going to attach what the
+ 
+
+00:30:00.480 --> 00:30:01.830 align:start position:0%
+then we are going to attach what the
+professionals<00:30:00.960><c> called</c>
+
+00:30:01.830 --> 00:30:01.840 align:start position:0%
+professionals called
+ 
+
+00:30:01.840 --> 00:30:06.430 align:start position:0%
+professionals called
+handles<00:30:03.120><c> now</c><00:30:04.120><c> I</c><00:30:04.360><c> hope</c><00:30:04.679><c> that</c><00:30:04.960><c> you</c><00:30:05.440><c> can</c><00:30:05.880><c> you</c><00:30:06.120><c> seen</c>
+
+00:30:06.430 --> 00:30:06.440 align:start position:0%
+handles now I hope that you can you seen
+ 
+
+00:30:06.440 --> 00:30:09.590 align:start position:0%
+handles now I hope that you can you seen
+the<00:30:06.600><c> picture</c><00:30:06.919><c> that</c><00:30:07.080><c> I'm</c><00:30:07.480><c> seeing</c><00:30:08.480><c> because</c><00:30:09.000><c> this</c>
+
+00:30:09.590 --> 00:30:09.600 align:start position:0%
+the picture that I'm seeing because this
+ 
+
+00:30:09.600 --> 00:30:12.630 align:start position:0%
+the picture that I'm seeing because this
+picture<00:30:10.600><c> a</c><00:30:10.760><c> little</c><00:30:11.200><c> abstract</c><00:30:12.120><c> is</c><00:30:12.320><c> not</c>
+
+00:30:12.630 --> 00:30:12.640 align:start position:0%
+picture a little abstract is not
+ 
+
+00:30:12.640 --> 00:30:21.630 align:start position:0%
+picture a little abstract is not
+completely<00:30:13.039><c> obvious</c><00:30:13.320><c> to</c>
+
+00:30:21.630 --> 00:30:21.640 align:start position:0%
+ 
+ 
+
+00:30:21.640 --> 00:30:24.350 align:start position:0%
+ 
+everyone<00:30:22.640><c> so</c><00:30:23.080><c> this</c><00:30:23.399><c> is</c><00:30:23.600><c> supposed</c><00:30:23.960><c> to</c>
+
+00:30:24.350 --> 00:30:24.360 align:start position:0%
+everyone so this is supposed to
+ 
+
+00:30:24.360 --> 00:30:29.149 align:start position:0%
+everyone so this is supposed to
+represent
+
+00:30:29.149 --> 00:30:29.159 align:start position:0%
+ 
+ 
+
+00:30:29.159 --> 00:30:33.630 align:start position:0%
+ 
+another
+
+00:30:33.630 --> 00:30:33.640 align:start position:0%
+ 
+ 
+
+00:30:33.640 --> 00:30:38.710 align:start position:0%
+ 
+picture<00:30:34.640><c> for</c><00:30:34.960><c> Sigma</c><00:30:36.039><c> G</c><00:30:37.039><c> is</c><00:30:37.240><c> that</c><00:30:37.519><c> you</c><00:30:37.760><c> have</c>
+
+00:30:38.710 --> 00:30:38.720 align:start position:0%
+picture for Sigma G is that you have
+ 
+
+00:30:38.720 --> 00:30:42.990 align:start position:0%
+picture for Sigma G is that you have
+those<00:30:40.200><c> G</c><00:30:41.200><c> what</c><00:30:41.360><c> we</c><00:30:41.519><c> call</c>
+
+00:30:42.990 --> 00:30:43.000 align:start position:0%
+those G what we call
+ 
+
+00:30:43.000 --> 00:30:49.159 align:start position:0%
+those G what we call
+handles<00:30:44.000><c> attached</c><00:30:44.919><c> on</c><00:30:45.919><c> a</c><00:30:46.159><c> sphere</c>
+

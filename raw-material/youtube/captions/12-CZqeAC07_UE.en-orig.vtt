@@ -1,0 +1,4992 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.830 --> 00:00:14.910 align:start position:0%
+ 
+[Music]
+
+00:00:14.910 --> 00:00:14.920 align:start position:0%
+ 
+ 
+
+00:00:14.920 --> 00:00:17.590 align:start position:0%
+ 
+this<00:00:15.320><c> board</c><00:00:15.719><c> is</c><00:00:15.879><c> a</c><00:00:16.119><c> continuation</c><00:00:16.760><c> of</c><00:00:16.920><c> the</c>
+
+00:00:17.590 --> 00:00:17.600 align:start position:0%
+this board is a continuation of the
+ 
+
+00:00:17.600 --> 00:00:20.590 align:start position:0%
+this board is a continuation of the
+statement<00:00:18.600><c> now</c><00:00:19.600><c> there</c><00:00:19.680><c> are</c><00:00:19.880><c> two</c><00:00:20.119><c> cases</c>
+
+00:00:20.590 --> 00:00:20.600 align:start position:0%
+statement now there are two cases
+ 
+
+00:00:20.600 --> 00:00:23.990 align:start position:0%
+statement now there are two cases
+depending<00:00:21.000><c> on</c><00:00:21.359><c> the</c><00:00:21.560><c> sign</c><00:00:21.840><c> of</c><00:00:21.960><c> the</c>
+
+00:00:23.990 --> 00:00:24.000 align:start position:0%
+depending on the sign of the
+ 
+
+00:00:24.000 --> 00:00:28.070 align:start position:0%
+depending on the sign of the
+Overflow<00:00:25.000><c> if</c><00:00:25.240><c> the</c>
+
+00:00:28.070 --> 00:00:28.080 align:start position:0%
+ 
+ 
+
+00:00:28.080 --> 00:00:34.950 align:start position:0%
+ 
+Overflow<00:00:29.080><c> is</c>
+
+00:00:34.950 --> 00:00:34.960 align:start position:0%
+ 
+ 
+
+00:00:34.960 --> 00:00:39.630 align:start position:0%
+ 
+negative<00:00:35.960><c> then</c>
+
+00:00:39.630 --> 00:00:39.640 align:start position:0%
+ 
+ 
+
+00:00:39.640 --> 00:00:41.630 align:start position:0%
+ 
+generically<00:00:40.640><c> generically</c><00:00:41.120><c> means</c><00:00:41.360><c> unless</c>
+
+00:00:41.630 --> 00:00:41.640 align:start position:0%
+generically generically means unless
+ 
+
+00:00:41.640 --> 00:00:43.790 align:start position:0%
+generically generically means unless
+you're<00:00:41.960><c> really</c><00:00:42.280><c> unlucky</c><00:00:42.960><c> unless</c><00:00:43.440><c> you're</c><00:00:43.600><c> in</c>
+
+00:00:43.790 --> 00:00:43.800 align:start position:0%
+you're really unlucky unless you're in
+ 
+
+00:00:43.800 --> 00:00:48.029 align:start position:0%
+you're really unlucky unless you're in
+exceptional<00:00:44.320><c> strange</c><00:00:44.879><c> situation</c><00:00:46.120><c> the</c><00:00:47.120><c> K</c><00:00:47.360><c> and</c>
+
+00:00:48.029 --> 00:00:48.039 align:start position:0%
+exceptional strange situation the K and
+ 
+
+00:00:48.039 --> 00:00:51.470 align:start position:0%
+exceptional strange situation the K and
+L<00:00:49.039><c> don't</c><00:00:49.360><c> intersect</c><00:00:49.879><c> you</c><00:00:50.000><c> can</c><00:00:50.199><c> just</c><00:00:50.719><c> fit</c><00:00:51.120><c> them</c>
+
+00:00:51.470 --> 00:00:51.480 align:start position:0%
+L don't intersect you can just fit them
+ 
+
+00:00:51.480 --> 00:00:55.549 align:start position:0%
+L don't intersect you can just fit them
+without<00:00:51.800><c> any</c>
+
+00:00:55.549 --> 00:00:55.559 align:start position:0%
+ 
+ 
+
+00:00:55.559 --> 00:01:00.430 align:start position:0%
+ 
+overlap<00:00:56.559><c> if</c><00:00:57.120><c> in</c><00:00:57.559><c> contrast</c><00:00:58.559><c> the</c><00:00:58.760><c> Overflow</c><00:01:00.120><c> is</c>
+
+00:01:00.430 --> 00:01:00.440 align:start position:0%
+overlap if in contrast the Overflow is
+ 
+
+00:01:00.440 --> 00:01:02.509 align:start position:0%
+overlap if in contrast the Overflow is
+positive<00:01:00.840><c> or</c>
+
+00:01:02.509 --> 00:01:02.519 align:start position:0%
+positive or
+ 
+
+00:01:02.519 --> 00:01:05.630 align:start position:0%
+positive or
+zero<00:01:03.519><c> those</c><00:01:03.680><c> of</c><00:01:03.840><c> us</c><00:01:04.040><c> who</c><00:01:04.239><c> learned</c><00:01:05.040><c> mathematics</c>
+
+00:01:05.630 --> 00:01:05.640 align:start position:0%
+zero those of us who learned mathematics
+ 
+
+00:01:05.640 --> 00:01:08.870 align:start position:0%
+zero those of us who learned mathematics
+in<00:01:05.840><c> the</c><00:01:06.000><c> English</c><00:01:06.720><c> speaking</c><00:01:07.119><c> world</c><00:01:08.000><c> will</c><00:01:08.280><c> call</c>
+
+00:01:08.870 --> 00:01:08.880 align:start position:0%
+in the English speaking world will call
+ 
+
+00:01:08.880 --> 00:01:11.550 align:start position:0%
+in the English speaking world will call
+this<00:01:09.880><c> positive</c><00:01:10.240><c> or</c><00:01:10.479><c> zero</c><00:01:10.920><c> because</c><00:01:11.159><c> for</c><00:01:11.360><c> us</c>
+
+00:01:11.550 --> 00:01:11.560 align:start position:0%
+this positive or zero because for us
+ 
+
+00:01:11.560 --> 00:01:13.749 align:start position:0%
+this positive or zero because for us
+positive<00:01:11.880><c> means</c><00:01:12.159><c> strictly</c><00:01:12.680><c> positive</c><00:01:13.600><c> those</c>
+
+00:01:13.749 --> 00:01:13.759 align:start position:0%
+positive means strictly positive those
+ 
+
+00:01:13.759 --> 00:01:15.950 align:start position:0%
+positive means strictly positive those
+of<00:01:13.880><c> us</c><00:01:14.040><c> who</c><00:01:14.280><c> don't</c><00:01:15.080><c> mathematics</c><00:01:15.600><c> in</c><00:01:15.759><c> the</c>
+
+00:01:15.950 --> 00:01:15.960 align:start position:0%
+of us who don't mathematics in the
+ 
+
+00:01:15.960 --> 00:01:18.630 align:start position:0%
+of us who don't mathematics in the
+French<00:01:16.280><c> speaking</c><00:01:17.000><c> civilization</c><00:01:18.000><c> we</c><00:01:18.280><c> call</c>
+
+00:01:18.630 --> 00:01:18.640 align:start position:0%
+French speaking civilization we call
+ 
+
+00:01:18.640 --> 00:01:21.910 align:start position:0%
+French speaking civilization we call
+that<00:01:18.920><c> just</c><00:01:19.520><c> positive</c><00:01:20.520><c> and</c><00:01:21.040><c> if</c><00:01:21.240><c> there's</c><00:01:21.479><c> no</c>
+
+00:01:21.910 --> 00:01:21.920 align:start position:0%
+that just positive and if there's no
+ 
+
+00:01:21.920 --> 00:01:24.550 align:start position:0%
+that just positive and if there's no
+equality<00:01:22.520><c> we</c><00:01:22.720><c> say</c><00:01:23.200><c> we</c><00:01:23.360><c> call</c><00:01:23.520><c> that</c><00:01:23.680><c> strictly</c>
+
+00:01:24.550 --> 00:01:24.560 align:start position:0%
+equality we say we call that strictly
+ 
+
+00:01:24.560 --> 00:01:27.550 align:start position:0%
+equality we say we call that strictly
+positive<00:01:25.560><c> I'll</c><00:01:25.840><c> combine</c><00:01:26.320><c> these</c><00:01:26.560><c> terms</c><00:01:27.280><c> so</c><00:01:27.439><c> if</c>
+
+00:01:27.550 --> 00:01:27.560 align:start position:0%
+positive I'll combine these terms so if
+ 
+
+00:01:27.560 --> 00:01:30.109 align:start position:0%
+positive I'll combine these terms so if
+the<00:01:27.759><c> Overflow</c><00:01:28.479><c> is</c>
+
+00:01:30.109 --> 00:01:30.119 align:start position:0%
+the Overflow is
+ 
+
+00:01:30.119 --> 00:01:37.190 align:start position:0%
+the Overflow is
+positive<00:01:30.479><c> of</c><00:01:30.720><c> zero</c><00:01:31.280><c> then</c>
+
+00:01:37.190 --> 00:01:37.200 align:start position:0%
+ 
+ 
+
+00:01:37.200 --> 00:01:40.749 align:start position:0%
+ 
+generically<00:01:38.200><c> the</c><00:01:38.720><c> intersection</c><00:01:39.720><c> is</c><00:01:39.960><c> nonempty</c>
+
+00:01:40.749 --> 00:01:40.759 align:start position:0%
+generically the intersection is nonempty
+ 
+
+00:01:40.759 --> 00:01:43.069 align:start position:0%
+generically the intersection is nonempty
+in<00:01:40.920><c> other</c><00:01:41.079><c> words</c><00:01:41.320><c> there</c><00:01:41.399><c> is</c><00:01:41.479><c> an</c><00:01:42.079><c> intersection</c>
+
+00:01:43.069 --> 00:01:43.079 align:start position:0%
+in other words there is an intersection
+ 
+
+00:01:43.079 --> 00:01:48.870 align:start position:0%
+in other words there is an intersection
+and<00:01:43.960><c> the</c><00:01:44.159><c> dimension</c><00:01:44.640><c> of</c><00:01:44.799><c> that</c><00:01:45.000><c> non-empty</c>
+
+00:01:48.870 --> 00:01:48.880 align:start position:0%
+ 
+ 
+
+00:01:48.880 --> 00:01:52.109 align:start position:0%
+ 
+intersection<00:01:49.880><c> if</c><00:01:50.000><c> you</c><00:01:50.200><c> like</c><00:01:50.719><c> here</c><00:01:51.479><c> the</c><00:01:51.719><c> point</c>
+
+00:01:52.109 --> 00:01:52.119 align:start position:0%
+intersection if you like here the point
+ 
+
+00:01:52.119 --> 00:01:54.270 align:start position:0%
+intersection if you like here the point
+at<00:01:52.320><c> which</c><00:01:52.560><c> two</c><00:01:52.799><c> lines</c><00:01:53.119><c> meet</c><00:01:53.520><c> or</c><00:01:53.759><c> the</c><00:01:53.960><c> line</c>
+
+00:01:54.270 --> 00:01:54.280 align:start position:0%
+at which two lines meet or the line
+ 
+
+00:01:54.280 --> 00:01:57.789 align:start position:0%
+at which two lines meet or the line
+along<00:01:54.560><c> which</c><00:01:54.759><c> two</c><00:01:54.920><c> planes</c><00:01:55.280><c> meet</c><00:01:55.640><c> and</c><00:01:55.799><c> so</c><00:01:56.240><c> on</c><00:01:57.240><c> is</c>
+
+00:01:57.789 --> 00:01:57.799 align:start position:0%
+along which two planes meet and so on is
+ 
+
+00:01:57.799 --> 00:02:04.069 align:start position:0%
+along which two planes meet and so on is
+exactly<00:01:58.200><c> equal</c><00:01:58.439><c> to</c><00:01:58.560><c> the</c><00:01:58.680><c> Overflow</c>
+
+00:02:04.069 --> 00:02:04.079 align:start position:0%
+ 
+ 
+
+00:02:04.079 --> 00:02:06.950 align:start position:0%
+ 
+notice<00:02:04.880><c> that</c><00:02:05.880><c> this</c><00:02:06.079><c> can</c><00:02:06.280><c> happen</c><00:02:06.560><c> the</c><00:02:06.680><c> second</c>
+
+00:02:06.950 --> 00:02:06.960 align:start position:0%
+notice that this can happen the second
+ 
+
+00:02:06.960 --> 00:02:08.350 align:start position:0%
+notice that this can happen the second
+case<00:02:07.119><c> can</c><00:02:07.280><c> happen</c><00:02:07.479><c> when</c><00:02:07.600><c> the</c><00:02:07.719><c> Overflow</c><00:02:08.200><c> is</c>
+
+00:02:08.350 --> 00:02:08.360 align:start position:0%
+case can happen when the Overflow is
+ 
+
+00:02:08.360 --> 00:02:11.110 align:start position:0%
+case can happen when the Overflow is
+zero<00:02:08.800><c> that</c><00:02:08.920><c> means</c><00:02:09.239><c> that</c><00:02:09.840><c> two</c><00:02:10.319><c> sub</c><00:02:10.599><c> manifolds</c>
+
+00:02:11.110 --> 00:02:11.120 align:start position:0%
+zero that means that two sub manifolds
+ 
+
+00:02:11.120 --> 00:02:13.830 align:start position:0%
+zero that means that two sub manifolds
+meet<00:02:11.400><c> in</c><00:02:11.560><c> a</c><00:02:11.840><c> Zero</c><00:02:12.280><c> Dimensional</c><00:02:12.920><c> intersection</c>
+
+00:02:13.830 --> 00:02:13.840 align:start position:0%
+meet in a Zero Dimensional intersection
+ 
+
+00:02:13.840 --> 00:02:16.350 align:start position:0%
+meet in a Zero Dimensional intersection
+but<00:02:14.239><c> Zero</c><00:02:14.560><c> Dimensional</c><00:02:15.080><c> intersection</c><00:02:16.080><c> does</c>
+
+00:02:16.350 --> 00:02:16.360 align:start position:0%
+but Zero Dimensional intersection does
+ 
+
+00:02:16.360 --> 00:02:18.550 align:start position:0%
+but Zero Dimensional intersection does
+not<00:02:16.640><c> mean</c><00:02:17.040><c> no</c><00:02:17.280><c> intersection</c><00:02:18.080><c> it</c><00:02:18.239><c> means</c>
+
+00:02:18.550 --> 00:02:18.560 align:start position:0%
+not mean no intersection it means
+ 
+
+00:02:18.560 --> 00:02:21.830 align:start position:0%
+not mean no intersection it means
+meeting<00:02:18.959><c> in</c><00:02:19.519><c> points</c><00:02:20.519><c> points</c><00:02:20.959><c> have</c><00:02:21.360><c> zero</c>
+
+00:02:21.830 --> 00:02:21.840 align:start position:0%
+meeting in points points have zero
+ 
+
+00:02:21.840 --> 00:02:24.070 align:start position:0%
+meeting in points points have zero
+Dimensions<00:02:22.840><c> yeah</c><00:02:23.000><c> it</c><00:02:23.120><c> does</c><00:02:23.280><c> not</c><00:02:23.440><c> mean</c><00:02:23.920><c> oh</c>
+
+00:02:24.070 --> 00:02:24.080 align:start position:0%
+Dimensions yeah it does not mean oh
+ 
+
+00:02:24.080 --> 00:02:25.550 align:start position:0%
+Dimensions yeah it does not mean oh
+that's<00:02:24.280><c> interesting</c><00:02:24.840><c> something</c><00:02:25.160><c> happened</c>
+
+00:02:25.550 --> 00:02:25.560 align:start position:0%
+that's interesting something happened
+ 
+
+00:02:25.560 --> 00:02:27.589 align:start position:0%
+that's interesting something happened
+there
+
+00:02:27.589 --> 00:02:27.599 align:start position:0%
+there
+ 
+
+00:02:27.599 --> 00:02:31.710 align:start position:0%
+there
+okay<00:02:28.599><c> now</c>
+
+00:02:31.710 --> 00:02:31.720 align:start position:0%
+ 
+ 
+
+00:02:31.720 --> 00:02:35.309 align:start position:0%
+ 
+this
+
+00:02:35.309 --> 00:02:35.319 align:start position:0%
+ 
+ 
+
+00:02:35.319 --> 00:02:44.030 align:start position:0%
+ 
+is<00:02:36.319><c> you</c><00:02:36.480><c> might</c><00:02:36.720><c> say</c><00:02:37.319><c> Elementary</c><00:02:38.160><c> linear</c>
+
+00:02:44.030 --> 00:02:44.040 align:start position:0%
+ 
+ 
+
+00:02:44.040 --> 00:02:48.750 align:start position:0%
+ 
+algebra<00:02:45.040><c> and</c><00:02:45.840><c> that's</c><00:02:46.840><c> it</c><00:02:47.080><c> for</c><00:02:47.239><c> the</c><00:02:47.480><c> proof</c><00:02:48.480><c> well</c>
+
+00:02:48.750 --> 00:02:48.760 align:start position:0%
+algebra and that's it for the proof well
+ 
+
+00:02:48.760 --> 00:02:49.790 align:start position:0%
+algebra and that's it for the proof well
+this<00:02:48.879><c> is</c><00:02:49.000><c> the</c><00:02:49.120><c> kind</c><00:02:49.280><c> of</c><00:02:49.400><c> thing</c><00:02:49.599><c> that</c>
+
+00:02:49.790 --> 00:02:49.800 align:start position:0%
+this is the kind of thing that
+ 
+
+00:02:49.800 --> 00:02:52.589 align:start position:0%
+this is the kind of thing that
+professors<00:02:50.280><c> will</c><00:02:50.480><c> often</c><00:02:50.800><c> do</c><00:02:51.560><c> they</c><00:02:51.720><c> say</c><00:02:52.200><c> oh</c><00:02:52.440><c> you</c>
+
+00:02:52.589 --> 00:02:52.599 align:start position:0%
+professors will often do they say oh you
+ 
+
+00:02:52.599 --> 00:02:54.030 align:start position:0%
+professors will often do they say oh you
+have<00:02:52.720><c> learned</c><00:02:52.959><c> the</c><00:02:53.080><c> linear</c><00:02:53.360><c> algebra</c><00:02:53.760><c> and</c><00:02:53.920><c> you</c>
+
+00:02:54.030 --> 00:02:54.040 align:start position:0%
+have learned the linear algebra and you
+ 
+
+00:02:54.040 --> 00:02:55.830 align:start position:0%
+have learned the linear algebra and you
+know<00:02:54.239><c> everything</c><00:02:54.560><c> about</c><00:02:54.920><c> linear</c><00:02:55.159><c> algebra</c><00:02:55.560><c> and</c>
+
+00:02:55.830 --> 00:02:55.840 align:start position:0%
+know everything about linear algebra and
+ 
+
+00:02:55.840 --> 00:02:57.589 align:start position:0%
+know everything about linear algebra and
+the<00:02:56.000><c> fact</c><00:02:56.200><c> of</c><00:02:56.319><c> the</c><00:02:56.480><c> matter</c><00:02:56.840><c> is</c><00:02:57.120><c> we</c><00:02:57.239><c> learned</c>
+
+00:02:57.589 --> 00:02:57.599 align:start position:0%
+the fact of the matter is we learned
+ 
+
+00:02:57.599 --> 00:02:59.949 align:start position:0%
+the fact of the matter is we learned
+linear<00:02:57.920><c> algebra</c><00:02:58.400><c> a</c><00:02:58.480><c> few</c><00:02:58.760><c> years</c><00:02:59.040><c> ago</c><00:02:59.640><c> and</c><00:02:59.840><c> and</c>
+
+00:02:59.949 --> 00:02:59.959 align:start position:0%
+linear algebra a few years ago and and
+ 
+
+00:02:59.959 --> 00:03:01.710 align:start position:0%
+linear algebra a few years ago and and
+we<00:03:00.080><c> don't</c><00:03:00.319><c> quite</c><00:03:00.599><c> remember</c><00:03:01.080><c> what</c><00:03:01.239><c> was</c><00:03:01.440><c> linear</c>
+
+00:03:01.710 --> 00:03:01.720 align:start position:0%
+we don't quite remember what was linear
+ 
+
+00:03:01.720 --> 00:03:03.750 align:start position:0%
+we don't quite remember what was linear
+algebra<00:03:02.599><c> and</c><00:03:02.800><c> then</c><00:03:03.040><c> they</c><00:03:03.159><c> say</c><00:03:03.440><c> oh</c><00:03:03.599><c> it's</c>
+
+00:03:03.750 --> 00:03:03.760 align:start position:0%
+algebra and then they say oh it's
+ 
+
+00:03:03.760 --> 00:03:06.390 align:start position:0%
+algebra and then they say oh it's
+Elementary<00:03:04.200><c> line</c><00:03:04.400><c> albra</c><00:03:04.879><c> and</c><00:03:05.040><c> then</c><00:03:05.400><c> go</c><00:03:06.200><c> it's</c>
+
+00:03:06.390 --> 00:03:06.400 align:start position:0%
+Elementary line albra and then go it's
+ 
+
+00:03:06.400 --> 00:03:10.630 align:start position:0%
+Elementary line albra and then go it's
+not<00:03:06.720><c> kind</c><00:03:07.480><c> so</c><00:03:07.920><c> I'd</c><00:03:08.120><c> like</c><00:03:08.319><c> to</c><00:03:09.120><c> give</c><00:03:09.319><c> you</c><00:03:09.640><c> a</c>
+
+00:03:10.630 --> 00:03:10.640 align:start position:0%
+not kind so I'd like to give you a
+ 
+
+00:03:10.640 --> 00:03:13.670 align:start position:0%
+not kind so I'd like to give you a
+picture<00:03:11.560><c> in</c><00:03:11.720><c> order</c><00:03:12.080><c> to</c><00:03:13.040><c> understand</c><00:03:13.280><c> this</c><00:03:13.519><c> make</c>
+
+00:03:13.670 --> 00:03:13.680 align:start position:0%
+picture in order to understand this make
+ 
+
+00:03:13.680 --> 00:03:18.270 align:start position:0%
+picture in order to understand this make
+it<00:03:14.200><c> more</c>
+
+00:03:18.270 --> 00:03:18.280 align:start position:0%
+ 
+ 
+
+00:03:18.280 --> 00:03:21.630 align:start position:0%
+ 
+intuitive<00:03:19.280><c> however</c><00:03:19.840><c> the</c><00:03:20.360><c> picture</c><00:03:21.360><c> that</c><00:03:21.560><c> I</c>
+
+00:03:21.630 --> 00:03:21.640 align:start position:0%
+intuitive however the picture that I
+ 
+
+00:03:21.640 --> 00:03:25.030 align:start position:0%
+intuitive however the picture that I
+shall<00:03:21.879><c> draw</c><00:03:22.239><c> is</c><00:03:22.400><c> not</c><00:03:22.599><c> a</c><00:03:22.799><c> picture</c><00:03:23.799><c> but</c><00:03:24.680><c> we</c><00:03:24.799><c> shall</c>
+
+00:03:25.030 --> 00:03:25.040 align:start position:0%
+shall draw is not a picture but we shall
+ 
+
+00:03:25.040 --> 00:03:26.070 align:start position:0%
+shall draw is not a picture but we shall
+call<00:03:25.280><c> it</c><00:03:25.400><c> a</c>
+
+00:03:26.070 --> 00:03:26.080 align:start position:0%
+call it a
+ 
+
+00:03:26.080 --> 00:03:29.030 align:start position:0%
+call it a
+picture<00:03:27.080><c> let's</c><00:03:27.360><c> imagine</c><00:03:27.840><c> that</c><00:03:28.000><c> you</c><00:03:28.239><c> want</c><00:03:28.760><c> to</c>
+
+00:03:29.030 --> 00:03:29.040 align:start position:0%
+picture let's imagine that you want to
+ 
+
+00:03:29.040 --> 00:03:31.710 align:start position:0%
+picture let's imagine that you want to
+put<00:03:29.239><c> the</c><00:03:29.439><c> k</c><00:03:30.159><c> dimensional</c>
+
+00:03:31.710 --> 00:03:31.720 align:start position:0%
+put the k dimensional
+ 
+
+00:03:31.720 --> 00:03:34.030 align:start position:0%
+put the k dimensional
+space
+
+00:03:34.030 --> 00:03:34.040 align:start position:0%
+space
+ 
+
+00:03:34.040 --> 00:03:36.110 align:start position:0%
+space
+Subspace<00:03:35.040><c> how</c><00:03:35.200><c> do</c><00:03:35.280><c> you</c><00:03:35.439><c> represent</c><00:03:35.799><c> the</c><00:03:35.959><c> K</c>
+
+00:03:36.110 --> 00:03:36.120 align:start position:0%
+Subspace how do you represent the K
+ 
+
+00:03:36.120 --> 00:03:37.910 align:start position:0%
+Subspace how do you represent the K
+dimensional<00:03:36.560><c> Subspace</c><00:03:37.200><c> well</c><00:03:37.400><c> how</c><00:03:37.560><c> many</c>
+
+00:03:37.910 --> 00:03:37.920 align:start position:0%
+dimensional Subspace well how many
+ 
+
+00:03:37.920 --> 00:03:40.030 align:start position:0%
+dimensional Subspace well how many
+parameters<00:03:38.640><c> do</c><00:03:38.760><c> you</c><00:03:38.879><c> need</c><00:03:39.200><c> to</c><00:03:39.360><c> represent</c><00:03:39.720><c> a</c><00:03:39.840><c> k</c>
+
+00:03:40.030 --> 00:03:40.040 align:start position:0%
+parameters do you need to represent a k
+ 
+
+00:03:40.040 --> 00:03:42.949 align:start position:0%
+parameters do you need to represent a k
+dimensional<00:03:40.439><c> Subspace</c><00:03:40.920><c> well</c><00:03:41.239><c> K</c><00:03:41.959><c> parameters</c>
+
+00:03:42.949 --> 00:03:42.959 align:start position:0%
+dimensional Subspace well K parameters
+ 
+
+00:03:42.959 --> 00:03:46.910 align:start position:0%
+dimensional Subspace well K parameters
+right<00:03:43.920><c> let's</c><00:03:44.159><c> say</c><00:03:44.360><c> that</c><00:03:44.560><c> you</c><00:03:44.840><c> have</c>
+
+00:03:46.910 --> 00:03:46.920 align:start position:0%
+right let's say that you have
+ 
+
+00:03:46.920 --> 00:03:51.390 align:start position:0%
+right let's say that you have
+a<00:03:47.920><c> an</c><00:03:48.159><c> N</c><00:03:48.439><c> di</c><00:03:49.120><c> the</c><00:03:49.280><c> ambient</c><00:03:49.640><c> Dimension</c><00:03:49.959><c> is</c><00:03:50.120><c> n</c><00:03:51.120><c> so</c>
+
+00:03:51.390 --> 00:03:51.400 align:start position:0%
+a an N di the ambient Dimension is n so
+ 
+
+00:03:51.400 --> 00:03:54.910 align:start position:0%
+a an N di the ambient Dimension is n so
+K<00:03:51.920><c> dimensional</c><00:03:52.920><c> Subspace</c><00:03:53.879><c> looks</c><00:03:54.159><c> like</c>
+
+00:03:54.910 --> 00:03:54.920 align:start position:0%
+K dimensional Subspace looks like
+ 
+
+00:03:54.920 --> 00:03:58.229 align:start position:0%
+K dimensional Subspace looks like
+this<00:03:55.920><c> you</c><00:03:56.120><c> have</c><00:03:56.319><c> some</c><00:03:56.599><c> parameters</c><00:03:57.239><c> K</c><00:03:57.439><c> of</c><00:03:57.640><c> them</c>
+
+00:03:58.229 --> 00:03:58.239 align:start position:0%
+this you have some parameters K of them
+ 
+
+00:03:58.239 --> 00:04:00.509 align:start position:0%
+this you have some parameters K of them
+which<00:03:58.400><c> can</c><00:03:58.599><c> take</c><00:03:58.799><c> arbitrary</c><00:03:59.319><c> values</c><00:04:00.200><c> yeah</c><00:04:00.360><c> you</c>
+
+00:04:00.509 --> 00:04:00.519 align:start position:0%
+which can take arbitrary values yeah you
+ 
+
+00:04:00.519 --> 00:04:03.390 align:start position:0%
+which can take arbitrary values yeah you
+go<00:04:00.760><c> in</c><00:04:01.000><c> K</c><00:04:01.439><c> independent</c><00:04:01.959><c> directions</c><00:04:02.799><c> but</c><00:04:03.000><c> the</c>
+
+00:04:03.390 --> 00:04:03.400 align:start position:0%
+go in K independent directions but the
+ 
+
+00:04:03.400 --> 00:04:05.949 align:start position:0%
+go in K independent directions but the
+remaining<00:04:03.760><c> directions</c><00:04:04.239><c> will</c><00:04:04.439><c> all</c><00:04:04.640><c> be</c>
+
+00:04:05.949 --> 00:04:05.959 align:start position:0%
+remaining directions will all be
+ 
+
+00:04:05.959 --> 00:04:08.670 align:start position:0%
+remaining directions will all be
+zero<00:04:06.959><c> does</c><00:04:07.120><c> that</c><00:04:07.319><c> make</c>
+
+00:04:08.670 --> 00:04:08.680 align:start position:0%
+zero does that make
+ 
+
+00:04:08.680 --> 00:04:12.309 align:start position:0%
+zero does that make
+sense<00:04:09.680><c> think</c><00:04:10.000><c> of</c><00:04:10.200><c> for</c><00:04:10.360><c> example</c>
+
+00:04:12.309 --> 00:04:12.319 align:start position:0%
+sense think of for example
+ 
+
+00:04:12.319 --> 00:04:14.470 align:start position:0%
+sense think of for example
+R3<00:04:13.319><c> let's</c><00:04:13.560><c> say</c><00:04:13.760><c> that</c><00:04:13.920><c> we</c><00:04:14.040><c> want</c><00:04:14.200><c> to</c><00:04:14.319><c> have</c>
+
+00:04:14.470 --> 00:04:14.480 align:start position:0%
+R3 let's say that we want to have
+ 
+
+00:04:14.480 --> 00:04:16.430 align:start position:0%
+R3 let's say that we want to have
+something<00:04:14.840><c> onedimensional</c><00:04:15.360><c> inside</c><00:04:16.320><c> the</c>
+
+00:04:16.430 --> 00:04:16.440 align:start position:0%
+something onedimensional inside the
+ 
+
+00:04:16.440 --> 00:04:19.509 align:start position:0%
+something onedimensional inside the
+ukian<00:04:17.000><c> space</c><00:04:17.440><c> R3</c><00:04:18.440><c> how</c><00:04:18.560><c> do</c><00:04:18.639><c> you</c><00:04:18.799><c> do</c><00:04:19.000><c> that</c><00:04:19.320><c> well</c>
+
+00:04:19.509 --> 00:04:19.519 align:start position:0%
+ukian space R3 how do you do that well
+ 
+
+00:04:19.519 --> 00:04:22.310 align:start position:0%
+ukian space R3 how do you do that well
+you<00:04:19.639><c> can</c><00:04:19.880><c> represent</c><00:04:20.320><c> it</c><00:04:20.519><c> by</c>
+
+00:04:22.310 --> 00:04:22.320 align:start position:0%
+you can represent it by
+ 
+
+00:04:22.320 --> 00:04:25.629 align:start position:0%
+you can represent it by
+this<00:04:23.320><c> x</c><00:04:23.560><c> can</c><00:04:23.759><c> be</c><00:04:23.919><c> anything</c><00:04:24.759><c> this</c><00:04:25.080><c> represents</c>
+
+00:04:25.629 --> 00:04:25.639 align:start position:0%
+this x can be anything this represents
+ 
+
+00:04:25.639 --> 00:04:28.550 align:start position:0%
+this x can be anything this represents
+when<00:04:25.800><c> X</c><00:04:26.000><c> takes</c><00:04:26.240><c> all</c><00:04:26.520><c> values</c><00:04:27.280><c> the</c><00:04:27.479><c> x-</c>
+
+00:04:28.550 --> 00:04:28.560 align:start position:0%
+when X takes all values the x-
+ 
+
+00:04:28.560 --> 00:04:30.950 align:start position:0%
+when X takes all values the x-
+axis<00:04:29.560><c> what</c><00:04:29.759><c> Y</c><00:04:29.919><c> and</c><00:04:30.120><c> Z</c><00:04:30.320><c> directions</c><00:04:30.720><c> are</c>
+
+00:04:30.950 --> 00:04:30.960 align:start position:0%
+axis what Y and Z directions are
+ 
+
+00:04:30.960 --> 00:04:33.830 align:start position:0%
+axis what Y and Z directions are
+constraint<00:04:31.400><c> to</c><00:04:31.479><c> be</c><00:04:31.759><c> zero</c><00:04:32.680><c> boom</c><00:04:32.960><c> boom</c><00:04:33.639><c> and</c>
+
+00:04:33.830 --> 00:04:33.840 align:start position:0%
+constraint to be zero boom boom and
+ 
+
+00:04:33.840 --> 00:04:36.510 align:start position:0%
+constraint to be zero boom boom and
+that's<00:04:34.199><c> one</c><00:04:34.680><c> dimension</c><00:04:35.680><c> if</c><00:04:35.800><c> you</c><00:04:35.919><c> want</c><00:04:36.080><c> a</c><00:04:36.280><c> two</c>
+
+00:04:36.510 --> 00:04:36.520 align:start position:0%
+that's one dimension if you want a two
+ 
+
+00:04:36.520 --> 00:04:39.749 align:start position:0%
+that's one dimension if you want a two
+dimensional<00:04:37.080><c> object</c><00:04:37.479><c> in</c><00:04:37.720><c> R3</c><00:04:38.400><c> you</c><00:04:38.520><c> can</c><00:04:38.680><c> do</c><00:04:38.919><c> this</c>
+
+00:04:39.749 --> 00:04:39.759 align:start position:0%
+dimensional object in R3 you can do this
+ 
+
+00:04:39.759 --> 00:04:42.110 align:start position:0%
+dimensional object in R3 you can do this
+X<00:04:39.960><c> and</c><00:04:40.160><c> Y</c><00:04:40.320><c> are</c><00:04:40.479><c> three</c><00:04:40.840><c> parameters</c><00:04:41.840><c> they</c><00:04:41.960><c> can</c>
+
+00:04:42.110 --> 00:04:42.120 align:start position:0%
+X and Y are three parameters they can
+ 
+
+00:04:42.120 --> 00:04:44.710 align:start position:0%
+X and Y are three parameters they can
+take<00:04:42.360><c> anything</c><00:04:42.919><c> so</c><00:04:43.479><c> this</c><00:04:43.840><c> when</c><00:04:44.039><c> you</c><00:04:44.199><c> vary</c><00:04:44.520><c> X</c>
+
+00:04:44.710 --> 00:04:44.720 align:start position:0%
+take anything so this when you vary X
+ 
+
+00:04:44.720 --> 00:04:47.390 align:start position:0%
+take anything so this when you vary X
+and<00:04:44.960><c> Y</c><00:04:45.360><c> will</c><00:04:45.560><c> move</c><00:04:46.080><c> all</c><00:04:46.440><c> over</c><00:04:46.720><c> the</c><00:04:46.840><c> horizontal</c>
+
+00:04:47.390 --> 00:04:47.400 align:start position:0%
+and Y will move all over the horizontal
+ 
+
+00:04:47.400 --> 00:04:50.790 align:start position:0%
+and Y will move all over the horizontal
+plane<00:04:48.120><c> but</c><00:04:48.479><c> the</c><00:04:49.160><c> vertical</c><00:04:50.160><c> coordinate</c><00:04:50.600><c> is</c>
+
+00:04:50.790 --> 00:04:50.800 align:start position:0%
+plane but the vertical coordinate is
+ 
+
+00:04:50.800 --> 00:04:52.990 align:start position:0%
+plane but the vertical coordinate is
+constraint<00:04:51.280><c> be</c><00:04:51.520><c> zero</c><00:04:52.039><c> so</c><00:04:52.240><c> that's</c><00:04:52.400><c> two</c>
+
+00:04:52.990 --> 00:04:53.000 align:start position:0%
+constraint be zero so that's two
+ 
+
+00:04:53.000 --> 00:04:55.510 align:start position:0%
+constraint be zero so that's two
+dimensional<00:04:54.000><c> okay</c><00:04:54.479><c> and</c><00:04:54.800><c> that's</c><00:04:55.039><c> exactly</c><00:04:55.400><c> the</c>
+
+00:04:55.510 --> 00:04:55.520 align:start position:0%
+dimensional okay and that's exactly the
+ 
+
+00:04:55.520 --> 00:04:58.710 align:start position:0%
+dimensional okay and that's exactly the
+same<00:04:55.759><c> thing</c><00:04:56.199><c> but</c><00:04:56.400><c> in</c><00:04:56.600><c> higher</c><00:04:57.080><c> Dimensions</c><00:04:58.080><c> okay</c>
+
+00:04:58.710 --> 00:04:58.720 align:start position:0%
+same thing but in higher Dimensions okay
+ 
+
+00:04:58.720 --> 00:05:01.110 align:start position:0%
+same thing but in higher Dimensions okay
+so<00:04:58.960><c> that's</c><00:04:59.120><c> the</c><00:04:59.280><c> k</c><00:04:59.680><c> dial</c><00:05:00.080><c> case</c><00:05:00.720><c> how</c><00:05:00.840><c> about</c><00:05:01.000><c> the</c>
+
+00:05:01.110 --> 00:05:01.120 align:start position:0%
+so that's the k dial case how about the
+ 
+
+00:05:01.120 --> 00:05:04.790 align:start position:0%
+so that's the k dial case how about the
+L<00:05:01.360><c> dimensional</c><00:05:02.000><c> case</c><00:05:03.000><c> well</c>
+
+00:05:04.790 --> 00:05:04.800 align:start position:0%
+L dimensional case well
+ 
+
+00:05:04.800 --> 00:05:10.110 align:start position:0%
+L dimensional case well
+again<00:05:05.800><c> they</c><00:05:06.039><c> M</c><00:05:06.440><c> components</c><00:05:07.440><c> and</c><00:05:07.960><c> let's</c><00:05:08.320><c> try</c><00:05:09.280><c> to</c>
+
+00:05:10.110 --> 00:05:10.120 align:start position:0%
+again they M components and let's try to
+ 
+
+00:05:10.120 --> 00:05:13.270 align:start position:0%
+again they M components and let's try to
+make<00:05:10.400><c> the</c><00:05:10.639><c> overlap</c><00:05:11.520><c> as</c><00:05:11.759><c> small</c><00:05:12.199><c> as</c>
+
+00:05:13.270 --> 00:05:13.280 align:start position:0%
+make the overlap as small as
+ 
+
+00:05:13.280 --> 00:05:15.230 align:start position:0%
+make the overlap as small as
+possible<00:05:14.280><c> that</c><00:05:14.440><c> means</c><00:05:14.680><c> that</c><00:05:14.840><c> you</c><00:05:14.960><c> see</c><00:05:15.160><c> there</c>
+
+00:05:15.230 --> 00:05:15.240 align:start position:0%
+possible that means that you see there
+ 
+
+00:05:15.240 --> 00:05:17.430 align:start position:0%
+possible that means that you see there
+are<00:05:15.400><c> lots</c><00:05:15.680><c> of</c><00:05:15.880><c> nonzero</c><00:05:16.400><c> numbers</c><00:05:16.919><c> here</c><00:05:17.240><c> and</c>
+
+00:05:17.430 --> 00:05:17.440 align:start position:0%
+are lots of nonzero numbers here and
+ 
+
+00:05:17.440 --> 00:05:20.029 align:start position:0%
+are lots of nonzero numbers here and
+zero<00:05:17.680><c> numbers</c><00:05:18.120><c> here</c><00:05:18.680><c> so</c><00:05:18.880><c> I</c><00:05:18.960><c> want</c><00:05:19.199><c> to</c><00:05:19.360><c> put</c><00:05:19.680><c> all</c>
+
+00:05:20.029 --> 00:05:20.039 align:start position:0%
+zero numbers here so I want to put all
+ 
+
+00:05:20.039 --> 00:05:23.070 align:start position:0%
+zero numbers here so I want to put all
+the<00:05:20.360><c> nonzero</c><00:05:20.840><c> numbers</c><00:05:21.280><c> at</c><00:05:21.440><c> the</c><00:05:21.600><c> bottom</c><00:05:22.600><c> and</c>
+
+00:05:23.070 --> 00:05:23.080 align:start position:0%
+the nonzero numbers at the bottom and
+ 
+
+00:05:23.080 --> 00:05:26.270 align:start position:0%
+the nonzero numbers at the bottom and
+make<00:05:23.440><c> zero</c><00:05:23.800><c> at</c><00:05:23.880><c> the</c><00:05:24.080><c> top</c><00:05:25.039><c> so</c><00:05:25.440><c> we</c><00:05:25.560><c> shall</c><00:05:25.880><c> put</c><00:05:26.120><c> the</c>
+
+00:05:26.270 --> 00:05:26.280 align:start position:0%
+make zero at the top so we shall put the
+ 
+
+00:05:26.280 --> 00:05:27.990 align:start position:0%
+make zero at the top so we shall put the
+L
+
+00:05:27.990 --> 00:05:28.000 align:start position:0%
+L
+ 
+
+00:05:28.000 --> 00:05:30.189 align:start position:0%
+L
+dimensional<00:05:29.000><c> some</c><00:05:29.280><c> manifold</c>
+
+00:05:30.189 --> 00:05:30.199 align:start position:0%
+dimensional some manifold
+ 
+
+00:05:30.199 --> 00:05:33.990 align:start position:0%
+dimensional some manifold
+and<00:05:30.400><c> parameterize</c><00:05:31.120><c> them</c><00:05:31.840><c> by</c>
+
+00:05:33.990 --> 00:05:34.000 align:start position:0%
+and parameterize them by
+ 
+
+00:05:34.000 --> 00:05:38.270 align:start position:0%
+and parameterize them by
+putting<00:05:35.000><c> it</c><00:05:35.199><c> in</c><00:05:35.400><c> this</c><00:05:35.600><c> form</c><00:05:36.600><c> so</c><00:05:36.960><c> there</c><00:05:37.960><c> L</c>
+
+00:05:38.270 --> 00:05:38.280 align:start position:0%
+putting it in this form so there L
+ 
+
+00:05:38.280 --> 00:05:40.469 align:start position:0%
+putting it in this form so there L
+entries<00:05:38.960><c> which</c><00:05:39.120><c> are</c><00:05:39.319><c> completely</c><00:05:39.759><c> free</c><00:05:40.240><c> so</c>
+
+00:05:40.469 --> 00:05:40.479 align:start position:0%
+entries which are completely free so
+ 
+
+00:05:40.479 --> 00:05:42.430 align:start position:0%
+entries which are completely free so
+they<00:05:40.600><c> can</c><00:05:40.800><c> be</c><00:05:41.120><c> take</c><00:05:41.360><c> arbit</c><00:05:41.759><c> numbers</c><00:05:42.199><c> and</c><00:05:42.319><c> the</c>
+
+00:05:42.430 --> 00:05:42.440 align:start position:0%
+they can be take arbit numbers and the
+ 
+
+00:05:42.440 --> 00:05:43.590 align:start position:0%
+they can be take arbit numbers and the
+rest<00:05:42.639><c> are</c>
+
+00:05:43.590 --> 00:05:43.600 align:start position:0%
+rest are
+ 
+
+00:05:43.600 --> 00:05:47.309 align:start position:0%
+rest are
+zero<00:05:44.600><c> okay</c><00:05:44.960><c> so</c><00:05:45.240><c> that's</c><00:05:45.680><c> a</c><00:05:45.800><c> k</c><00:05:46.000><c> Dimension</c><00:05:47.000><c> that's</c>
+
+00:05:47.309 --> 00:05:47.319 align:start position:0%
+zero okay so that's a k Dimension that's
+ 
+
+00:05:47.319 --> 00:05:50.870 align:start position:0%
+zero okay so that's a k Dimension that's
+L<00:05:47.919><c> Dimension</c><00:05:48.919><c> inside</c><00:05:49.680><c> a</c><00:05:49.880><c> common</c><00:05:50.360><c> ambient</c>
+
+00:05:50.870 --> 00:05:50.880 align:start position:0%
+L Dimension inside a common ambient
+ 
+
+00:05:50.880 --> 00:05:53.510 align:start position:0%
+L Dimension inside a common ambient
+space<00:05:51.240><c> that</c><00:05:51.400><c> has</c><00:05:51.560><c> Dimension</c><00:05:52.039><c> n</c><00:05:52.759><c> now</c><00:05:53.160><c> question</c>
+
+00:05:53.510 --> 00:05:53.520 align:start position:0%
+space that has Dimension n now question
+ 
+
+00:05:53.520 --> 00:05:54.909 align:start position:0%
+space that has Dimension n now question
+do<00:05:53.759><c> they</c>
+
+00:05:54.909 --> 00:05:54.919 align:start position:0%
+do they
+ 
+
+00:05:54.919 --> 00:05:57.830 align:start position:0%
+do they
+overlap<00:05:55.919><c> the</c><00:05:56.120><c> answer</c><00:05:56.560><c> is</c><00:05:56.880><c> they</c><00:05:57.120><c> overlap</c><00:05:57.680><c> if</c>
+
+00:05:57.830 --> 00:05:57.840 align:start position:0%
+overlap the answer is they overlap if
+ 
+
+00:05:57.840 --> 00:06:00.469 align:start position:0%
+overlap the answer is they overlap if
+and<00:05:58.039><c> only</c><00:05:58.319><c> if</c><00:05:58.520><c> this</c><00:05:58.720><c> comes</c><00:05:59.160><c> down</c><00:05:59.759><c> far</c><00:06:00.039><c> and</c><00:06:00.240><c> this</c>
+
+00:06:00.469 --> 00:06:00.479 align:start position:0%
+and only if this comes down far and this
+ 
+
+00:06:00.479 --> 00:06:03.909 align:start position:0%
+and only if this comes down far and this
+comes<00:06:00.759><c> up</c><00:06:01.440><c> far</c><00:06:02.440><c> if</c><00:06:02.639><c> there</c><00:06:02.720><c> are</c><00:06:03.319><c> not</c><00:06:03.600><c> many</c><00:06:03.800><c> of</c>
+
+00:06:03.909 --> 00:06:03.919 align:start position:0%
+comes up far if there are not many of
+ 
+
+00:06:03.919 --> 00:06:06.029 align:start position:0%
+comes up far if there are not many of
+them<00:06:04.160><c> not</c><00:06:04.360><c> many</c><00:06:04.560><c> of</c><00:06:04.680><c> them</c><00:06:04.840><c> they</c><00:06:04.960><c> don't</c>
+
+00:06:06.029 --> 00:06:06.039 align:start position:0%
+them not many of them they don't
+ 
+
+00:06:06.039 --> 00:06:09.230 align:start position:0%
+them not many of them they don't
+overlap<00:06:07.039><c> okay</c><00:06:07.960><c> but</c><00:06:08.120><c> you</c><00:06:08.280><c> see</c><00:06:08.880><c> what's</c><00:06:09.080><c> the</c>
+
+00:06:09.230 --> 00:06:09.240 align:start position:0%
+overlap okay but you see what's the
+ 
+
+00:06:09.240 --> 00:06:15.070 align:start position:0%
+overlap okay but you see what's the
+overlap<00:06:10.360><c> that's</c><00:06:11.440><c> k</c><00:06:12.440><c> and</c><00:06:12.759><c> l</c><00:06:13.720><c> and</c><00:06:14.440><c> m</c><00:06:14.800><c> you</c><00:06:14.880><c> can</c>
+
+00:06:15.070 --> 00:06:15.080 align:start position:0%
+overlap that's k and l and m you can
+ 
+
+00:06:15.080 --> 00:06:16.790 align:start position:0%
+overlap that's k and l and m you can
+figure<00:06:15.280><c> out</c><00:06:15.440><c> over</c><00:06:15.720><c> that</c><00:06:16.080><c> and</c><00:06:16.240><c> because</c><00:06:16.520><c> some</c><00:06:16.680><c> of</c>
+
+00:06:16.790 --> 00:06:16.800 align:start position:0%
+figure out over that and because some of
+ 
+
+00:06:16.800 --> 00:06:19.870 align:start position:0%
+figure out over that and because some of
+us<00:06:17.000><c> are</c><00:06:17.680><c> feeling</c><00:06:18.120><c> the</c>
+
+00:06:19.870 --> 00:06:19.880 align:start position:0%
+us are feeling the
+ 
+
+00:06:19.880 --> 00:06:23.350 align:start position:0%
+us are feeling the
+temperature<00:06:20.880><c> if</c><00:06:21.000><c> you</c><00:06:21.240><c> have</c><00:06:21.599><c> General</c><00:06:22.199><c> K</c><00:06:23.199><c> let's</c>
+
+00:06:23.350 --> 00:06:23.360 align:start position:0%
+temperature if you have General K let's
+ 
+
+00:06:23.360 --> 00:06:25.350 align:start position:0%
+temperature if you have General K let's
+say<00:06:23.520><c> that</c><00:06:23.720><c> K</c><00:06:23.880><c> is</c><00:06:24.039><c> quite</c><00:06:24.240><c> large</c><00:06:24.479><c> and</c><00:06:24.639><c> L</c><00:06:24.840><c> is</c><00:06:25.120><c> quite</c>
+
+00:06:25.350 --> 00:06:25.360 align:start position:0%
+say that K is quite large and L is quite
+ 
+
+00:06:25.360 --> 00:06:28.230 align:start position:0%
+say that K is quite large and L is quite
+large<00:06:26.120><c> how</c><00:06:26.319><c> much</c><00:06:26.599><c> overlap</c><00:06:27.120><c> do</c><00:06:27.199><c> you</c><00:06:27.360><c> get</c><00:06:27.520><c> in</c><00:06:27.639><c> the</c>
+
+00:06:28.230 --> 00:06:28.240 align:start position:0%
+large how much overlap do you get in the
+ 
+
+00:06:28.240 --> 00:06:32.110 align:start position:0%
+large how much overlap do you get in the
+middle<00:06:29.240><c> man</c>
+
+00:06:32.110 --> 00:06:32.120 align:start position:0%
+ 
+ 
+
+00:06:32.120 --> 00:06:34.469 align:start position:0%
+ 
+you<00:06:32.360><c> have</c><00:06:32.520><c> you</c><00:06:32.639><c> have</c><00:06:33.039><c> K</c><00:06:33.560><c> the</c><00:06:33.680><c> whole</c><00:06:33.960><c> density</c><00:06:34.319><c> is</c>
+
+00:06:34.469 --> 00:06:34.479 align:start position:0%
+you have you have K the whole density is
+ 
+
+00:06:34.479 --> 00:06:37.790 align:start position:0%
+you have you have K the whole density is
+M<00:06:35.280><c> and</c><00:06:35.400><c> you</c><00:06:35.520><c> start</c><00:06:35.759><c> fitting</c><00:06:36.599><c> K</c><00:06:36.800><c> SS</c><00:06:37.160><c> from</c><00:06:37.360><c> above</c>
+
+00:06:37.790 --> 00:06:37.800 align:start position:0%
+M and you start fitting K SS from above
+ 
+
+00:06:37.800 --> 00:06:41.830 align:start position:0%
+M and you start fitting K SS from above
+El<00:06:38.360><c> SS</c><00:06:38.639><c> from</c><00:06:39.120><c> below</c><00:06:40.120><c> and</c><00:06:40.680><c> they</c><00:06:41.440><c> sometimes</c>
+
+00:06:41.830 --> 00:06:41.840 align:start position:0%
+El SS from below and they sometimes
+ 
+
+00:06:41.840 --> 00:06:44.390 align:start position:0%
+El SS from below and they sometimes
+overlap<00:06:42.840><c> what's</c><00:06:43.039><c> the</c><00:06:43.160><c> overlap</c><00:06:43.560><c> in</c><00:06:43.639><c> terms</c><00:06:43.880><c> of</c><00:06:44.080><c> k</c>
+
+00:06:44.390 --> 00:06:44.400 align:start position:0%
+overlap what's the overlap in terms of k
+ 
+
+00:06:44.400 --> 00:06:46.110 align:start position:0%
+overlap what's the overlap in terms of k
+and<00:06:44.599><c> l</c><00:06:44.840><c> and</c>
+
+00:06:46.110 --> 00:06:46.120 align:start position:0%
+and l and
+ 
+
+00:06:46.120 --> 00:06:56.550 align:start position:0%
+and l and
+m<00:06:47.120><c> yeah</c>
+
+00:06:56.550 --> 00:06:56.560 align:start position:0%
+ 
+ 
+
+00:06:56.560 --> 00:07:00.430 align:start position:0%
+ 
+no<00:06:57.560><c> let's</c><00:06:57.759><c> go</c><00:06:57.879><c> over</c><00:06:58.120><c> up</c><00:06:59.039><c> let's</c><00:06:59.240><c> do</c><00:06:59.319><c> it</c><00:06:59.599><c> in</c>
+
+00:07:00.430 --> 00:07:00.440 align:start position:0%
+no let's go over up let's do it in
+ 
+
+00:07:00.440 --> 00:07:05.230 align:start position:0%
+no let's go over up let's do it in
+3D<00:07:01.440><c> two</c><00:07:01.800><c> Dimensions</c><00:07:02.800><c> X</c><00:07:03.080><c> and</c><00:07:03.319><c> Y</c><00:07:03.560><c> and</c><00:07:04.039><c> Zer</c><00:07:05.039><c> and</c>
+
+00:07:05.230 --> 00:07:05.240 align:start position:0%
+3D two Dimensions X and Y and Zer and
+ 
+
+00:07:05.240 --> 00:07:07.830 align:start position:0%
+3D two Dimensions X and Y and Zer and
+then<00:07:05.440><c> maybe</c><00:07:05.840><c> Y</c><00:07:06.080><c> and</c><00:07:06.360><c> Z</c><00:07:06.840><c> and</c><00:07:07.080><c> Zer</c><00:07:07.319><c> so</c><00:07:07.479><c> this</c><00:07:07.680><c> is</c>
+
+00:07:07.830 --> 00:07:07.840 align:start position:0%
+then maybe Y and Z and Zer so this is
+ 
+
+00:07:07.840 --> 00:07:09.790 align:start position:0%
+then maybe Y and Z and Zer so this is
+also<00:07:08.080><c> two</c><00:07:08.280><c> and</c><00:07:08.479><c> two</c><00:07:08.879><c> inside</c><00:07:09.280><c> three</c><00:07:09.520><c> what's</c><00:07:09.680><c> the</c>
+
+00:07:09.790 --> 00:07:09.800 align:start position:0%
+also two and two inside three what's the
+ 
+
+00:07:09.800 --> 00:07:12.830 align:start position:0%
+also two and two inside three what's the
+overlap<00:07:10.680><c> you</c><00:07:10.879><c> overlap</c><00:07:11.280><c> in</c><00:07:11.360><c> the</c><00:07:11.479><c> middle</c><00:07:12.000><c> right</c>
+
+00:07:12.830 --> 00:07:12.840 align:start position:0%
+overlap you overlap in the middle right
+ 
+
+00:07:12.840 --> 00:07:15.550 align:start position:0%
+overlap you overlap in the middle right
+overlap<00:07:13.280><c> Dimension</c><00:07:13.639><c> is</c><00:07:13.840><c> one</c><00:07:14.840><c> that's</c><00:07:15.120><c> because</c>
+
+00:07:15.550 --> 00:07:15.560 align:start position:0%
+overlap Dimension is one that's because
+ 
+
+00:07:15.560 --> 00:07:17.350 align:start position:0%
+overlap Dimension is one that's because
+there<00:07:15.639><c> are</c><00:07:15.879><c> two</c><00:07:16.319><c> here</c><00:07:16.599><c> two</c><00:07:16.919><c> here</c><00:07:17.120><c> but</c><00:07:17.240><c> the</c>
+
+00:07:17.350 --> 00:07:17.360 align:start position:0%
+there are two here two here but the
+ 
+
+00:07:17.360 --> 00:07:18.749 align:start position:0%
+there are two here two here but the
+ambient<00:07:17.759><c> Dimension</c><00:07:18.080><c> is</c>
+
+00:07:18.749 --> 00:07:18.759 align:start position:0%
+ambient Dimension is
+ 
+
+00:07:18.759 --> 00:07:21.309 align:start position:0%
+ambient Dimension is
+three<00:07:19.759><c> you</c><00:07:19.960><c> start</c><00:07:20.199><c> overlapping</c><00:07:21.000><c> so</c><00:07:21.160><c> what's</c>
+
+00:07:21.309 --> 00:07:21.319 align:start position:0%
+three you start overlapping so what's
+ 
+
+00:07:21.319 --> 00:07:24.869 align:start position:0%
+three you start overlapping so what's
+the<00:07:21.440><c> overlap</c><00:07:21.840><c> dimension</c><00:07:22.199><c> in</c><00:07:22.319><c> the</c>
+
+00:07:24.869 --> 00:07:24.879 align:start position:0%
+ 
+ 
+
+00:07:24.879 --> 00:07:27.670 align:start position:0%
+ 
+middle<00:07:25.879><c> yeah</c><00:07:26.080><c> yeah</c><00:07:26.240><c> so</c><00:07:26.800><c> but</c><00:07:26.960><c> in</c><00:07:27.080><c> terms</c><00:07:27.280><c> of</c><00:07:27.479><c> k</c>
+
+00:07:27.670 --> 00:07:27.680 align:start position:0%
+middle yeah yeah so but in terms of k
+ 
+
+00:07:27.680 --> 00:07:31.550 align:start position:0%
+middle yeah yeah so but in terms of k
+and<00:07:27.879><c> l</c><00:07:28.120><c> and</c><00:07:28.319><c> m</c><00:07:29.720><c> how</c><00:07:29.879><c> much</c><00:07:30.199><c> overlap</c><00:07:30.639><c> is</c>
+
+00:07:31.550 --> 00:07:31.560 align:start position:0%
+and l and m how much overlap is
+ 
+
+00:07:31.560 --> 00:07:36.070 align:start position:0%
+and l and m how much overlap is
+there<00:07:32.560><c> K</c><00:07:32.759><c> plus</c><00:07:33.000><c> L</c><00:07:33.319><c> minus</c><00:07:33.759><c> M</c><00:07:34.199><c> exactly</c><00:07:34.840><c> and</c><00:07:35.199><c> that</c>
+
+00:07:36.070 --> 00:07:36.080 align:start position:0%
+there K plus L minus M exactly and that
+ 
+
+00:07:36.080 --> 00:07:38.790 align:start position:0%
+there K plus L minus M exactly and that
+guess<00:07:36.360><c> what</c><00:07:37.280><c> is</c><00:07:37.560><c> the</c><00:07:37.680><c> definition</c><00:07:38.080><c> of</c><00:07:38.199><c> the</c>
+
+00:07:38.790 --> 00:07:38.800 align:start position:0%
+guess what is the definition of the
+ 
+
+00:07:38.800 --> 00:07:41.070 align:start position:0%
+guess what is the definition of the
+Overflow<00:07:39.800><c> so</c><00:07:39.960><c> that's</c><00:07:40.160><c> the</c><00:07:40.280><c> overlap</c><00:07:40.720><c> Dimension</c>
+
+00:07:41.070 --> 00:07:41.080 align:start position:0%
+Overflow so that's the overlap Dimension
+ 
+
+00:07:41.080 --> 00:07:43.110 align:start position:0%
+Overflow so that's the overlap Dimension
+that<00:07:41.199><c> you</c><00:07:41.400><c> get</c><00:07:41.960><c> and</c><00:07:42.280><c> this</c>
+
+00:07:43.110 --> 00:07:43.120 align:start position:0%
+that you get and this
+ 
+
+00:07:43.120 --> 00:07:47.029 align:start position:0%
+that you get and this
+is<00:07:44.120><c> as</c><00:07:44.240><c> I</c><00:07:44.400><c> say</c><00:07:44.759><c> the</c><00:07:45.039><c> picture</c><00:07:45.879><c> of</c><00:07:46.159><c> this</c>
+
+00:07:47.029 --> 00:07:47.039 align:start position:0%
+is as I say the picture of this
+ 
+
+00:07:47.039 --> 00:07:48.869 align:start position:0%
+is as I say the picture of this
+theorem<00:07:48.039><c> do</c><00:07:48.120><c> you</c><00:07:48.440><c> understand</c><00:07:48.639><c> what</c><00:07:48.720><c> the</c>
+
+00:07:48.869 --> 00:07:48.879 align:start position:0%
+theorem do you understand what the
+ 
+
+00:07:48.879 --> 00:07:50.550 align:start position:0%
+theorem do you understand what the
+picture<00:07:49.240><c> is</c><00:07:49.479><c> it's</c><00:07:49.680><c> very</c><00:07:49.840><c> strange</c><00:07:50.240><c> I</c><00:07:50.319><c> didn't</c>
+
+00:07:50.550 --> 00:07:50.560 align:start position:0%
+picture is it's very strange I didn't
+ 
+
+00:07:50.560 --> 00:07:53.149 align:start position:0%
+picture is it's very strange I didn't
+draw<00:07:50.840><c> a</c><00:07:51.000><c> picture</c><00:07:51.879><c> but</c><00:07:52.080><c> in</c><00:07:52.280><c> some</c><00:07:52.560><c> sense</c><00:07:52.919><c> you</c><00:07:53.039><c> can</c>
+
+00:07:53.149 --> 00:07:53.159 align:start position:0%
+draw a picture but in some sense you can
+ 
+
+00:07:53.159 --> 00:07:55.469 align:start position:0%
+draw a picture but in some sense you can
+see<00:07:53.479><c> that</c><00:07:54.120><c> you</c><00:07:54.240><c> are</c><00:07:54.400><c> thinking</c><00:07:54.800><c> geometrically</c>
+
+00:07:55.469 --> 00:07:55.479 align:start position:0%
+see that you are thinking geometrically
+ 
+
+00:07:55.479 --> 00:07:57.830 align:start position:0%
+see that you are thinking geometrically
+when<00:07:55.639><c> we</c><00:07:55.800><c> do</c><00:07:56.000><c> this</c><00:07:56.919><c> in</c><00:07:57.039><c> terms</c><00:07:57.280><c> of</c><00:07:57.360><c> a</c><00:07:57.520><c> simple</c>
+
+00:07:57.830 --> 00:07:57.840 align:start position:0%
+when we do this in terms of a simple
+ 
+
+00:07:57.840 --> 00:08:00.070 align:start position:0%
+when we do this in terms of a simple
+example<00:07:58.280><c> that</c><00:07:58.440><c> you</c><00:07:58.800><c> kind</c><00:07:59.000><c> of</c><00:07:59.120><c> visual</c><00:07:59.879><c> you</c><00:07:59.960><c> are</c>
+
+00:08:00.070 --> 00:08:00.080 align:start position:0%
+example that you kind of visual you are
+ 
+
+00:08:00.080 --> 00:08:01.749 align:start position:0%
+example that you kind of visual you are
+not<00:08:00.280><c> of</c><00:08:00.400><c> course</c><00:08:00.599><c> visualizing</c><00:08:01.159><c> because</c><00:08:01.440><c> K</c>
+
+00:08:01.749 --> 00:08:01.759 align:start position:0%
+not of course visualizing because K
+ 
+
+00:08:01.759 --> 00:08:04.909 align:start position:0%
+not of course visualizing because K
+might<00:08:01.960><c> might</c><00:08:02.159><c> be</c><00:08:02.720><c> 200</c><00:08:03.120><c> and</c><00:08:03.280><c> M</c><00:08:03.479><c> might</c><00:08:03.639><c> be</c><00:08:03.919><c> 500</c>
+
+00:08:04.909 --> 00:08:04.919 align:start position:0%
+might might be 200 and M might be 500
+ 
+
+00:08:04.919 --> 00:08:06.869 align:start position:0%
+might might be 200 and M might be 500
+higher<00:08:05.199><c> dimensional</c><00:08:05.560><c> spaces</c><00:08:06.199><c> but</c><00:08:06.360><c> we</c><00:08:06.560><c> still</c>
+
+00:08:06.869 --> 00:08:06.879 align:start position:0%
+higher dimensional spaces but we still
+ 
+
+00:08:06.879 --> 00:08:10.710 align:start position:0%
+higher dimensional spaces but we still
+feel<00:08:07.319><c> that</c><00:08:07.520><c> we</c><00:08:08.280><c> understand</c><00:08:09.280><c> that's</c><00:08:10.199><c> one</c><00:08:10.560><c> way</c>
+
+00:08:10.710 --> 00:08:10.720 align:start position:0%
+feel that we understand that's one way
+ 
+
+00:08:10.720 --> 00:08:13.149 align:start position:0%
+feel that we understand that's one way
+to<00:08:10.840><c> do</c><00:08:11.520><c> geometry</c>
+
+00:08:13.149 --> 00:08:13.159 align:start position:0%
+to do geometry
+ 
+
+00:08:13.159 --> 00:08:16.230 align:start position:0%
+to do geometry
+okay<00:08:14.159><c> any</c><00:08:14.400><c> questions</c><00:08:14.960><c> and</c><00:08:15.319><c> it's</c><00:08:15.599><c> getting</c><00:08:15.960><c> very</c>
+
+00:08:16.230 --> 00:08:16.240 align:start position:0%
+okay any questions and it's getting very
+ 
+
+00:08:16.240 --> 00:08:18.469 align:start position:0%
+okay any questions and it's getting very
+hot<00:08:16.520><c> so</c><00:08:17.120><c> well</c><00:08:17.319><c> I</c><00:08:17.440><c> thought</c><00:08:17.720><c> in</c><00:08:17.879><c> Madagascar</c><00:08:18.400><c> it</c>
+
+00:08:18.469 --> 00:08:18.479 align:start position:0%
+hot so well I thought in Madagascar it
+ 
+
+00:08:18.479 --> 00:08:20.110 align:start position:0%
+hot so well I thought in Madagascar it
+was<00:08:18.639><c> hotter</c><00:08:18.960><c> than</c><00:08:19.159><c> this</c><00:08:19.400><c> but</c>
+
+00:08:20.110 --> 00:08:20.120 align:start position:0%
+was hotter than this but
+ 
+
+00:08:20.120 --> 00:08:23.189 align:start position:0%
+was hotter than this but
+it's<00:08:21.120><c> of</c><00:08:21.240><c> course</c><00:08:21.479><c> it's</c><00:08:21.639><c> also</c><00:08:21.919><c> after</c><00:08:22.199><c> lunch</c>
+
+00:08:23.189 --> 00:08:23.199 align:start position:0%
+it's of course it's also after lunch
+ 
+
+00:08:23.199 --> 00:08:24.749 align:start position:0%
+it's of course it's also after lunch
+next<00:08:23.520><c> week</c><00:08:23.800><c> we'll</c><00:08:24.000><c> be</c><00:08:24.120><c> doing</c><00:08:24.360><c> this</c><00:08:24.520><c> before</c>
+
+00:08:24.749 --> 00:08:24.759 align:start position:0%
+next week we'll be doing this before
+ 
+
+00:08:24.759 --> 00:08:26.830 align:start position:0%
+next week we'll be doing this before
+lunch<00:08:25.039><c> when</c><00:08:25.240><c> everyone's</c><00:08:25.680><c> hungry</c><00:08:26.159><c> and</c><00:08:26.400><c> quite</c>
+
+00:08:26.830 --> 00:08:26.840 align:start position:0%
+lunch when everyone's hungry and quite
+ 
+
+00:08:26.840 --> 00:08:32.509 align:start position:0%
+lunch when everyone's hungry and quite
+nervous<00:08:27.680><c> so</c><00:08:27.919><c> it</c><00:08:28.080><c> would</c><00:08:28.520><c> go</c><00:08:28.759><c> better</c>
+
+00:08:32.509 --> 00:08:32.519 align:start position:0%
+ 
+ 
+
+00:08:32.519 --> 00:08:36.110 align:start position:0%
+ 
+okay<00:08:33.519><c> now</c><00:08:34.479><c> so</c>
+
+00:08:36.110 --> 00:08:36.120 align:start position:0%
+okay now so
+ 
+
+00:08:36.120 --> 00:08:39.469 align:start position:0%
+okay now so
+far<00:08:37.120><c> we</c><00:08:37.320><c> had</c><00:08:37.599><c> a</c><00:08:38.159><c> static</c><00:08:38.640><c> picture</c><00:08:39.120><c> in</c><00:08:39.240><c> other</c>
+
+00:08:39.469 --> 00:08:39.479 align:start position:0%
+far we had a static picture in other
+ 
+
+00:08:39.479 --> 00:08:41.870 align:start position:0%
+far we had a static picture in other
+words<00:08:40.240><c> some</c><00:08:40.479><c> manifolds</c><00:08:41.000><c> manifolds</c><00:08:41.440><c> and</c><00:08:41.519><c> so</c><00:08:41.719><c> on</c>
+
+00:08:41.870 --> 00:08:41.880 align:start position:0%
+words some manifolds manifolds and so on
+ 
+
+00:08:41.880 --> 00:08:44.829 align:start position:0%
+words some manifolds manifolds and so on
+they<00:08:41.959><c> were</c><00:08:42.120><c> not</c><00:08:42.760><c> moving</c><00:08:43.760><c> they</c><00:08:43.959><c> just</c><00:08:44.440><c> stay</c>
+
+00:08:44.829 --> 00:08:44.839 align:start position:0%
+they were not moving they just stay
+ 
+
+00:08:44.839 --> 00:08:47.590 align:start position:0%
+they were not moving they just stay
+there<00:08:45.519><c> and</c><00:08:45.720><c> we</c><00:08:46.120><c> contemplated</c><00:08:46.880><c> them</c><00:08:47.200><c> we</c><00:08:47.360><c> just</c>
+
+00:08:47.590 --> 00:08:47.600 align:start position:0%
+there and we contemplated them we just
+ 
+
+00:08:47.600 --> 00:08:53.070 align:start position:0%
+there and we contemplated them we just
+watched<00:08:48.160><c> them</c><00:08:49.160><c> at</c><00:08:49.720><c> rest</c><00:08:50.720><c> let's</c><00:08:51.160><c> start</c><00:08:52.080><c> moving</c>
+
+00:08:53.070 --> 00:08:53.080 align:start position:0%
+watched them at rest let's start moving
+ 
+
+00:08:53.080 --> 00:08:54.150 align:start position:0%
+watched them at rest let's start moving
+once<00:08:53.480><c> sub</c>
+
+00:08:54.150 --> 00:08:54.160 align:start position:0%
+once sub
+ 
+
+00:08:54.160 --> 00:08:57.590 align:start position:0%
+once sub
+manifold<00:08:55.279><c> inside</c><00:08:56.279><c> a</c>
+
+00:08:57.590 --> 00:08:57.600 align:start position:0%
+manifold inside a
+ 
+
+00:08:57.600 --> 00:09:00.150 align:start position:0%
+manifold inside a
+manifold<00:08:58.600><c> and</c><00:08:58.800><c> try</c><00:08:59.040><c> to</c><00:08:59.160><c> go</c><00:08:59.560><c> around</c><00:08:59.959><c> an</c>
+
+00:09:00.150 --> 00:09:00.160 align:start position:0%
+manifold and try to go around an
+ 
+
+00:09:00.160 --> 00:09:03.190 align:start position:0%
+manifold and try to go around an
+obstacle<00:09:00.880><c> run</c><00:09:01.200><c> into</c><00:09:01.480><c> an</c><00:09:01.760><c> obstacle</c><00:09:02.360><c> and</c><00:09:02.519><c> so</c><00:09:02.760><c> on</c>
+
+00:09:03.190 --> 00:09:03.200 align:start position:0%
+obstacle run into an obstacle and so on
+ 
+
+00:09:03.200 --> 00:09:07.470 align:start position:0%
+obstacle run into an obstacle and so on
+let's<00:09:03.600><c> move</c><00:09:04.440><c> some</c>
+
+00:09:07.470 --> 00:09:07.480 align:start position:0%
+ 
+ 
+
+00:09:07.480 --> 00:09:11.310 align:start position:0%
+ 
+manifolds<00:09:08.480><c> as</c><00:09:08.839><c> before</c><00:09:09.839><c> we'll</c><00:09:10.160><c> start</c><00:09:10.640><c> with</c>
+
+00:09:11.310 --> 00:09:11.320 align:start position:0%
+manifolds as before we'll start with
+ 
+
+00:09:11.320 --> 00:09:13.509 align:start position:0%
+manifolds as before we'll start with
+some<00:09:11.920><c> illustrative</c><00:09:12.640><c> examples</c><00:09:13.240><c> and</c><00:09:13.399><c> then</c>
+
+00:09:13.509 --> 00:09:13.519 align:start position:0%
+some illustrative examples and then
+ 
+
+00:09:13.519 --> 00:09:16.430 align:start position:0%
+some illustrative examples and then
+we'll<00:09:13.760><c> be</c><00:09:13.920><c> able</c><00:09:14.160><c> to</c><00:09:14.959><c> guess</c><00:09:15.320><c> what</c><00:09:15.560><c> the</c><00:09:16.079><c> general</c>
+
+00:09:16.430 --> 00:09:16.440 align:start position:0%
+we'll be able to guess what the general
+ 
+
+00:09:16.440 --> 00:09:18.930 align:start position:0%
+we'll be able to guess what the general
+result
+
+00:09:18.930 --> 00:09:18.940 align:start position:0%
+ 
+ 
+
+00:09:18.940 --> 00:09:21.590 align:start position:0%
+ 
+[Music]
+
+00:09:21.590 --> 00:09:21.600 align:start position:0%
+[Music]
+ 
+
+00:09:21.600 --> 00:09:27.430 align:start position:0%
+[Music]
+is<00:09:22.839><c> again</c><00:09:23.839><c> in</c>
+
+00:09:27.430 --> 00:09:27.440 align:start position:0%
+ 
+ 
+
+00:09:27.440 --> 00:09:31.710 align:start position:0%
+ 
+R2<00:09:28.440><c> imagine</c><00:09:28.800><c> that</c><00:09:28.959><c> we</c><00:09:29.079><c> have</c><00:09:29.200><c> a</c><00:09:29.440><c> line</c><00:09:30.279><c> R2</c><00:09:31.279><c> and</c><00:09:31.480><c> a</c>
+
+00:09:31.710 --> 00:09:31.720 align:start position:0%
+R2 imagine that we have a line R2 and a
+ 
+
+00:09:31.720 --> 00:09:35.870 align:start position:0%
+R2 imagine that we have a line R2 and a
+point<00:09:32.480><c> on</c><00:09:32.680><c> one</c><00:09:32.920><c> side</c><00:09:33.120><c> of</c><00:09:33.240><c> the</c><00:09:33.760><c> line</c><00:09:34.760><c> and</c><00:09:35.320><c> this</c>
+
+00:09:35.870 --> 00:09:35.880 align:start position:0%
+point on one side of the line and this
+ 
+
+00:09:35.880 --> 00:09:38.509 align:start position:0%
+point on one side of the line and this
+point<00:09:36.240><c> which</c><00:09:36.399><c> you</c><00:09:36.519><c> might</c><00:09:36.760><c> think</c><00:09:37.000><c> of</c><00:09:37.640><c> as</c><00:09:38.240><c> say</c>
+
+00:09:38.509 --> 00:09:38.519 align:start position:0%
+point which you might think of as say
+ 
+
+00:09:38.519 --> 00:09:41.550 align:start position:0%
+point which you might think of as say
+Tadashi<00:09:39.519><c> and</c><00:09:39.720><c> this</c><00:09:39.839><c> is</c><00:09:40.000><c> the</c><00:09:40.200><c> river</c><00:09:41.120><c> wants</c><00:09:41.399><c> to</c>
+
+00:09:41.550 --> 00:09:41.560 align:start position:0%
+Tadashi and this is the river wants to
+ 
+
+00:09:41.560 --> 00:09:43.790 align:start position:0%
+Tadashi and this is the river wants to
+go<00:09:41.880><c> from</c><00:09:42.079><c> one</c><00:09:42.320><c> side</c><00:09:42.560><c> to</c><00:09:42.760><c> the</c><00:09:42.959><c> other</c><00:09:43.279><c> side</c><00:09:43.640><c> of</c>
+
+00:09:43.790 --> 00:09:43.800 align:start position:0%
+go from one side to the other side of
+ 
+
+00:09:43.800 --> 00:09:46.190 align:start position:0%
+go from one side to the other side of
+the
+
+00:09:46.190 --> 00:09:46.200 align:start position:0%
+ 
+ 
+
+00:09:46.200 --> 00:09:49.350 align:start position:0%
+ 
+river<00:09:47.200><c> well</c><00:09:47.440><c> at</c><00:09:47.640><c> some</c><00:09:47.920><c> point</c><00:09:48.399><c> tashi's</c><00:09:49.040><c> feet</c>
+
+00:09:49.350 --> 00:09:49.360 align:start position:0%
+river well at some point tashi's feet
+ 
+
+00:09:49.360 --> 00:09:51.509 align:start position:0%
+river well at some point tashi's feet
+will<00:09:49.600><c> get</c>
+
+00:09:51.509 --> 00:09:51.519 align:start position:0%
+will get
+ 
+
+00:09:51.519 --> 00:09:53.710 align:start position:0%
+will get
+wet<00:09:52.519><c> it's</c><00:09:52.880><c> sometimes</c><00:09:53.120><c> known</c><00:09:53.360><c> as</c><00:09:53.519><c> the</c>
+
+00:09:53.710 --> 00:09:53.720 align:start position:0%
+wet it's sometimes known as the
+ 
+
+00:09:53.720 --> 00:09:55.350 align:start position:0%
+wet it's sometimes known as the
+intermediate<00:09:54.399><c> value</c>
+
+00:09:55.350 --> 00:09:55.360 align:start position:0%
+intermediate value
+ 
+
+00:09:55.360 --> 00:09:57.069 align:start position:0%
+intermediate value
+the
+
+00:09:57.069 --> 00:09:57.079 align:start position:0%
+the
+ 
+
+00:09:57.079 --> 00:10:01.030 align:start position:0%
+the
+Okay<00:09:58.079><c> so</c>
+
+00:10:01.030 --> 00:10:01.040 align:start position:0%
+Okay so
+ 
+
+00:10:01.040 --> 00:10:04.590 align:start position:0%
+Okay so
+in<00:10:01.360><c> R2</c><00:10:02.360><c> so</c><00:10:02.600><c> two</c><00:10:02.839><c> dimensional</c>
+
+00:10:04.590 --> 00:10:04.600 align:start position:0%
+in R2 so two dimensional
+ 
+
+00:10:04.600 --> 00:10:08.550 align:start position:0%
+in R2 so two dimensional
+space<00:10:05.600><c> our</c><00:10:05.920><c> point</c><00:10:06.720><c> which</c><00:10:06.880><c> has</c><00:10:07.040><c> Dimension</c>
+
+00:10:08.550 --> 00:10:08.560 align:start position:0%
+space our point which has Dimension
+ 
+
+00:10:08.560 --> 00:10:11.870 align:start position:0%
+space our point which has Dimension
+zero<00:10:09.560><c> moving</c><00:10:10.120><c> from</c><00:10:10.360><c> one</c><00:10:10.720><c> side</c><00:10:10.920><c> of</c><00:10:11.079><c> a</c>
+
+00:10:11.870 --> 00:10:11.880 align:start position:0%
+zero moving from one side of a
+ 
+
+00:10:11.880 --> 00:10:15.389 align:start position:0%
+zero moving from one side of a
+line<00:10:12.880><c> to</c><00:10:13.120><c> another</c><00:10:13.640><c> to</c><00:10:13.800><c> the</c><00:10:13.920><c> other</c><00:10:14.200><c> side</c><00:10:15.079><c> and</c>
+
+00:10:15.389 --> 00:10:15.399 align:start position:0%
+line to another to the other side and
+ 
+
+00:10:15.399 --> 00:10:16.870 align:start position:0%
+line to another to the other side and
+please<00:10:15.600><c> don't</c><00:10:15.839><c> worry</c><00:10:16.079><c> too</c><00:10:16.240><c> much</c><00:10:16.440><c> about</c><00:10:16.720><c> what</c>
+
+00:10:16.870 --> 00:10:16.880 align:start position:0%
+please don't worry too much about what
+ 
+
+00:10:16.880 --> 00:10:18.750 align:start position:0%
+please don't worry too much about what
+we<00:10:17.000><c> mean</c><00:10:17.240><c> by</c><00:10:17.480><c> side</c>
+
+00:10:18.750 --> 00:10:18.760 align:start position:0%
+we mean by side
+ 
+
+00:10:18.760 --> 00:10:21.590 align:start position:0%
+we mean by side
+one
+
+00:10:21.590 --> 00:10:21.600 align:start position:0%
+one
+ 
+
+00:10:21.600 --> 00:10:23.630 align:start position:0%
+one
+side
+
+00:10:23.630 --> 00:10:23.640 align:start position:0%
+side
+ 
+
+00:10:23.640 --> 00:10:28.030 align:start position:0%
+side
+to<00:10:24.640><c> the</c><00:10:25.120><c> other</c>
+
+00:10:28.030 --> 00:10:28.040 align:start position:0%
+to the other
+ 
+
+00:10:28.040 --> 00:10:30.750 align:start position:0%
+to the other
+side<00:10:29.040><c> over</c><00:10:29.360><c> a</c>
+
+00:10:30.750 --> 00:10:30.760 align:start position:0%
+side over a
+ 
+
+00:10:30.760 --> 00:10:35.190 align:start position:0%
+side over a
+line<00:10:31.760><c> which</c><00:10:32.000><c> has</c><00:10:32.680><c> Dimension</c>
+
+00:10:35.190 --> 00:10:35.200 align:start position:0%
+line which has Dimension
+ 
+
+00:10:35.200 --> 00:10:38.590 align:start position:0%
+line which has Dimension
+one<00:10:36.360><c> must</c><00:10:37.360><c> make</c><00:10:37.519><c> a</c>
+
+00:10:38.590 --> 00:10:38.600 align:start position:0%
+one must make a
+ 
+
+00:10:38.600 --> 00:10:44.030 align:start position:0%
+one must make a
+Crossing
+
+00:10:44.030 --> 00:10:44.040 align:start position:0%
+ 
+ 
+
+00:10:44.040 --> 00:10:47.470 align:start position:0%
+ 
+okay<00:10:45.040><c> the</c><00:10:45.279><c> situation</c><00:10:46.040><c> you</c><00:10:46.240><c> realize</c><00:10:46.880><c> is</c><00:10:47.360><c> a</c>
+
+00:10:47.470 --> 00:10:47.480 align:start position:0%
+okay the situation you realize is a
+ 
+
+00:10:47.480 --> 00:10:49.110 align:start position:0%
+okay the situation you realize is a
+little<00:10:47.839><c> different</c><00:10:48.200><c> from</c><00:10:48.480><c> the</c><00:10:48.720><c> static</c>
+
+00:10:49.110 --> 00:10:49.120 align:start position:0%
+little different from the static
+ 
+
+00:10:49.120 --> 00:10:51.150 align:start position:0%
+little different from the static
+situation<00:10:49.600><c> before</c><00:10:49.959><c> because</c><00:10:50.160><c> you</c><00:10:50.279><c> see</c><00:10:50.839><c> this</c><00:10:50.959><c> is</c>
+
+00:10:51.150 --> 00:10:51.160 align:start position:0%
+situation before because you see this is
+ 
+
+00:10:51.160 --> 00:10:53.470 align:start position:0%
+situation before because you see this is
+dimension<00:10:51.560><c> zero</c><00:10:51.839><c> this</c><00:10:51.959><c> is</c><00:10:52.079><c> dimension</c><00:10:52.480><c> one</c>
+
+00:10:53.470 --> 00:10:53.480 align:start position:0%
+dimension zero this is dimension one
+ 
+
+00:10:53.480 --> 00:10:55.190 align:start position:0%
+dimension zero this is dimension one
+dimension<00:10:53.880><c> is</c><00:10:54.040><c> two</c><00:10:54.440><c> there's</c><00:10:54.600><c> a</c><00:10:54.800><c> lot</c><00:10:55.040><c> of</c>
+
+00:10:55.190 --> 00:10:55.200 align:start position:0%
+dimension is two there's a lot of
+ 
+
+00:10:55.200 --> 00:10:56.750 align:start position:0%
+dimension is two there's a lot of
+ambient<00:10:55.560><c> Dimension</c><00:10:55.959><c> and</c><00:10:56.079><c> nonetheless</c><00:10:56.639><c> they</c>
+
+00:10:56.750 --> 00:10:56.760 align:start position:0%
+ambient Dimension and nonetheless they
+ 
+
+00:10:56.760 --> 00:10:57.590 align:start position:0%
+ambient Dimension and nonetheless they
+must
+
+00:10:57.590 --> 00:10:57.600 align:start position:0%
+must
+ 
+
+00:10:57.600 --> 00:11:00.150 align:start position:0%
+must
+intercept<00:10:58.600><c> why</c><00:10:58.720><c> do</c><00:10:58.839><c> they</c><00:10:58.959><c> have</c><00:10:59.040><c> to</c><00:10:59.320><c> intercept</c>
+
+00:11:00.150 --> 00:11:00.160 align:start position:0%
+intercept why do they have to intercept
+ 
+
+00:11:00.160 --> 00:11:03.670 align:start position:0%
+intercept why do they have to intercept
+0<00:11:00.480><c> +</c><00:11:00.760><c> 1</c><00:11:01.040><c> is</c><00:11:01.399><c> less</c><00:11:01.720><c> than</c><00:11:02.440><c> two</c><00:11:02.880><c> overflow</c><00:11:03.360><c> seems</c><00:11:03.560><c> to</c>
+
+00:11:03.670 --> 00:11:03.680 align:start position:0%
+0 + 1 is less than two overflow seems to
+ 
+
+00:11:03.680 --> 00:11:06.590 align:start position:0%
+0 + 1 is less than two overflow seems to
+be<00:11:03.839><c> negative</c><00:11:04.240><c> and</c><00:11:04.360><c> nonetheless</c><00:11:05.279><c> they</c><00:11:05.440><c> must</c>
+
+00:11:06.590 --> 00:11:06.600 align:start position:0%
+be negative and nonetheless they must
+ 
+
+00:11:06.600 --> 00:11:08.790 align:start position:0%
+be negative and nonetheless they must
+intersect
+
+00:11:08.790 --> 00:11:08.800 align:start position:0%
+intersect
+ 
+
+00:11:08.800 --> 00:11:16.230 align:start position:0%
+intersect
+next<00:11:09.800><c> if</c><00:11:09.920><c> you</c><00:11:10.079><c> do</c><00:11:10.279><c> the</c><00:11:10.399><c> same</c><00:11:10.600><c> thing</c><00:11:10.760><c> in</c>
+
+00:11:16.230 --> 00:11:16.240 align:start position:0%
+ 
+ 
+
+00:11:16.240 --> 00:11:18.949 align:start position:0%
+ 
+R3<00:11:17.240><c> a</c><00:11:17.399><c> point</c><00:11:17.639><c> moving</c><00:11:18.000><c> from</c><00:11:18.200><c> one</c><00:11:18.399><c> side</c><00:11:18.560><c> to</c><00:11:18.760><c> the</c>
+
+00:11:18.949 --> 00:11:18.959 align:start position:0%
+R3 a point moving from one side to the
+ 
+
+00:11:18.959 --> 00:11:21.389 align:start position:0%
+R3 a point moving from one side to the
+other
+
+00:11:21.389 --> 00:11:21.399 align:start position:0%
+ 
+ 
+
+00:11:21.399 --> 00:11:30.550 align:start position:0%
+ 
+side<00:11:22.399><c> of</c><00:11:22.560><c> a</c><00:11:22.760><c> line</c>
+
+00:11:30.550 --> 00:11:30.560 align:start position:0%
+ 
+ 
+
+00:11:30.560 --> 00:11:33.190 align:start position:0%
+ 
+Tashi<00:11:31.000><c> starts</c><00:11:31.320><c> going</c><00:11:31.880><c> there</c><00:11:32.560><c> but</c><00:11:32.800><c> then</c><00:11:33.040><c> he</c>
+
+00:11:33.190 --> 00:11:33.200 align:start position:0%
+Tashi starts going there but then he
+ 
+
+00:11:33.200 --> 00:11:36.110 align:start position:0%
+Tashi starts going there but then he
+sees<00:11:34.160><c> that</c><00:11:34.320><c> the</c><00:11:34.480><c> river</c><00:11:34.760><c> is</c><00:11:34.959><c> coming</c><00:11:35.800><c> and</c><00:11:36.000><c> he</c>
+
+00:11:36.110 --> 00:11:36.120 align:start position:0%
+sees that the river is coming and he
+ 
+
+00:11:36.120 --> 00:11:37.790 align:start position:0%
+sees that the river is coming and he
+wants<00:11:36.360><c> to</c><00:11:36.639><c> avoid</c><00:11:36.959><c> the</c><00:11:37.079><c> intersecting</c><00:11:37.639><c> the</c>
+
+00:11:37.790 --> 00:11:37.800 align:start position:0%
+wants to avoid the intersecting the
+ 
+
+00:11:37.800 --> 00:11:41.870 align:start position:0%
+wants to avoid the intersecting the
+river<00:11:38.160><c> what</c><00:11:38.279><c> does</c><00:11:38.440><c> he</c><00:11:38.600><c> do</c><00:11:39.279><c> where</c><00:11:39.399><c> is</c><00:11:39.519><c> the</c><00:11:39.920><c> stick</c>
+
+00:11:41.870 --> 00:11:41.880 align:start position:0%
+river what does he do where is the stick
+ 
+
+00:11:41.880 --> 00:11:44.069 align:start position:0%
+river what does he do where is the stick
+there
+
+00:11:44.069 --> 00:11:44.079 align:start position:0%
+there
+ 
+
+00:11:44.079 --> 00:11:51.470 align:start position:0%
+there
+huh<00:11:45.320><c> exactly</c><00:11:46.320><c> he</c><00:11:46.600><c> comes</c><00:11:46.880><c> like</c><00:11:47.160><c> this</c><00:11:47.839><c> and</c><00:11:48.040><c> he</c>
+
+00:11:51.470 --> 00:11:51.480 align:start position:0%
+ 
+ 
+
+00:11:51.480 --> 00:11:54.150 align:start position:0%
+ 
+goes<00:11:52.480><c> I</c><00:11:52.639><c> could</c><00:11:52.920><c> jump</c><00:11:53.399><c> because</c><00:11:53.720><c> there</c><00:11:53.839><c> was</c><00:11:53.959><c> a</c>
+
+00:11:54.150 --> 00:11:54.160 align:start position:0%
+goes I could jump because there was a
+ 
+
+00:11:54.160 --> 00:11:57.190 align:start position:0%
+goes I could jump because there was a
+third<00:11:54.519><c> dimension</c><00:11:55.160><c> into</c><00:11:55.760><c> which</c><00:11:56.000><c> to</c><00:11:56.240><c> jump</c><00:11:57.079><c> I</c>
+
+00:11:57.190 --> 00:11:57.200 align:start position:0%
+third dimension into which to jump I
+ 
+
+00:11:57.200 --> 00:12:07.920 align:start position:0%
+third dimension into which to jump I
+could<00:11:57.639><c> Escape</c><00:11:58.279><c> into</c><00:11:58.600><c> this</c><00:11:58.760><c> extra</c><00:11:59.040><c> Di</c>
+
+00:12:07.920 --> 00:12:07.930 align:start position:0%
+ 
+ 
+
+00:12:07.930 --> 00:12:11.829 align:start position:0%
+ 
+[Music]
+
+00:12:11.829 --> 00:12:11.839 align:start position:0%
+ 
+ 
+
+00:12:11.839 --> 00:12:13.750 align:start position:0%
+ 
+it<00:12:12.040><c> can</c>
+
+00:12:13.750 --> 00:12:13.760 align:start position:0%
+it can
+ 
+
+00:12:13.760 --> 00:12:21.389 align:start position:0%
+it can
+avoid<00:12:14.760><c> the</c>
+
+00:12:21.389 --> 00:12:21.399 align:start position:0%
+ 
+ 
+
+00:12:21.399 --> 00:12:24.230 align:start position:0%
+ 
+crossing<00:12:22.399><c> okay</c><00:12:23.000><c> that's</c>
+
+00:12:24.230 --> 00:12:24.240 align:start position:0%
+crossing okay that's
+ 
+
+00:12:24.240 --> 00:12:26.590 align:start position:0%
+crossing okay that's
+interesting
+
+00:12:26.590 --> 00:12:26.600 align:start position:0%
+interesting
+ 
+
+00:12:26.600 --> 00:12:30.150 align:start position:0%
+interesting
+let's<00:12:27.600><c> think</c><00:12:27.880><c> about</c><00:12:28.240><c> this</c>
+
+00:12:30.150 --> 00:12:30.160 align:start position:0%
+let's think about this
+ 
+
+00:12:30.160 --> 00:12:31.949 align:start position:0%
+let's think about this
+in<00:12:30.399><c> R3</c>
+
+00:12:31.949 --> 00:12:31.959 align:start position:0%
+in R3
+ 
+
+00:12:31.959 --> 00:12:37.590 align:start position:0%
+in R3
+then<00:12:32.959><c> a</c><00:12:33.560><c> line</c><00:12:34.560><c> which</c><00:12:34.760><c> has</c><00:12:34.959><c> Dimension</c>
+
+00:12:37.590 --> 00:12:37.600 align:start position:0%
+ 
+ 
+
+00:12:37.600 --> 00:12:39.470 align:start position:0%
+ 
+One
+
+00:12:39.470 --> 00:12:39.480 align:start position:0%
+One
+ 
+
+00:12:39.480 --> 00:12:42.069 align:start position:0%
+One
+moving<00:12:40.480><c> from</c><00:12:40.760><c> one</c><00:12:41.120><c> side</c><00:12:41.320><c> to</c><00:12:41.560><c> the</c><00:12:41.680><c> other</c><00:12:41.920><c> side</c>
+
+00:12:42.069 --> 00:12:42.079 align:start position:0%
+moving from one side to the other side
+ 
+
+00:12:42.079 --> 00:12:43.470 align:start position:0%
+moving from one side to the other side
+of<00:12:42.160><c> the</c><00:12:42.320><c> line</c>
+
+00:12:43.470 --> 00:12:43.480 align:start position:0%
+of the line
+ 
+
+00:12:43.480 --> 00:12:45.629 align:start position:0%
+of the line
+from<00:12:44.480><c> one</c>
+
+00:12:45.629 --> 00:12:45.639 align:start position:0%
+from one
+ 
+
+00:12:45.639 --> 00:12:50.350 align:start position:0%
+from one
+side<00:12:46.639><c> to</c><00:12:47.000><c> the</c><00:12:47.279><c> other</c>
+
+00:12:50.350 --> 00:12:50.360 align:start position:0%
+ 
+ 
+
+00:12:50.360 --> 00:12:54.509 align:start position:0%
+ 
+side<00:12:51.360><c> of</c><00:12:52.120><c> a</c><00:12:52.399><c> line</c><00:12:53.240><c> another</c>
+
+00:12:54.509 --> 00:12:54.519 align:start position:0%
+side of a line another
+ 
+
+00:12:54.519 --> 00:12:57.389 align:start position:0%
+side of a line another
+line<00:12:55.519><c> which</c><00:12:55.800><c> also</c><00:12:56.040><c> has</c><00:12:56.240><c> Dimension</c>
+
+00:12:57.389 --> 00:12:57.399 align:start position:0%
+line which also has Dimension
+ 
+
+00:12:57.399 --> 00:13:02.150 align:start position:0%
+line which also has Dimension
+One<00:12:58.399><c> what</c><00:12:58.600><c> happens</c><00:12:59.519><c> in</c><00:12:59.680><c> order</c><00:12:59.920><c> to</c><00:13:00.040><c> do</c>
+
+00:13:02.150 --> 00:13:02.160 align:start position:0%
+One what happens in order to do
+ 
+
+00:13:02.160 --> 00:13:05.230 align:start position:0%
+One what happens in order to do
+this<00:13:03.160><c> would</c><00:13:03.320><c> you</c><00:13:03.480><c> kindly</c><00:13:03.920><c> hold</c><00:13:04.279><c> this</c><00:13:05.000><c> like</c>
+
+00:13:05.230 --> 00:13:05.240 align:start position:0%
+this would you kindly hold this like
+ 
+
+00:13:05.240 --> 00:13:07.949 align:start position:0%
+this would you kindly hold this like
+that<00:13:05.560><c> and</c><00:13:05.720><c> then</c><00:13:05.959><c> don't</c><00:13:06.240><c> let</c><00:13:06.399><c> it</c><00:13:06.600><c> go</c><00:13:07.519><c> so</c><00:13:07.760><c> that's</c>
+
+00:13:07.949 --> 00:13:07.959 align:start position:0%
+that and then don't let it go so that's
+ 
+
+00:13:07.959 --> 00:13:10.269 align:start position:0%
+that and then don't let it go so that's
+one<00:13:08.199><c> line</c><00:13:08.880><c> we</c><00:13:09.000><c> are</c><00:13:09.199><c> stay</c><00:13:09.560><c> we</c><00:13:09.639><c> are</c><00:13:09.800><c> inside</c><00:13:10.079><c> a</c>
+
+00:13:10.269 --> 00:13:10.279 align:start position:0%
+one line we are stay we are inside a
+ 
+
+00:13:10.279 --> 00:13:11.350 align:start position:0%
+one line we are stay we are inside a
+three<00:13:10.480><c> dimensional</c><00:13:10.839><c> space</c><00:13:11.079><c> and</c><00:13:11.199><c> that's</c>
+
+00:13:11.350 --> 00:13:11.360 align:start position:0%
+three dimensional space and that's
+ 
+
+00:13:11.360 --> 00:13:13.110 align:start position:0%
+three dimensional space and that's
+another<00:13:11.680><c> line</c><00:13:12.160><c> and</c><00:13:12.360><c> please</c><00:13:12.600><c> imagine</c><00:13:12.920><c> that</c>
+
+00:13:13.110 --> 00:13:13.120 align:start position:0%
+another line and please imagine that
+ 
+
+00:13:13.120 --> 00:13:15.710 align:start position:0%
+another line and please imagine that
+this<00:13:13.279><c> line</c><00:13:13.519><c> goes</c><00:13:13.920><c> up</c><00:13:14.079><c> and</c><00:13:14.240><c> down</c><00:13:14.720><c> infinitely</c>
+
+00:13:15.710 --> 00:13:15.720 align:start position:0%
+this line goes up and down infinitely
+ 
+
+00:13:15.720 --> 00:13:19.509 align:start position:0%
+this line goes up and down infinitely
+when<00:13:15.920><c> I</c><00:13:16.279><c> come</c>
+
+00:13:19.509 --> 00:13:19.519 align:start position:0%
+ 
+ 
+
+00:13:19.519 --> 00:13:23.389 align:start position:0%
+ 
+across<00:13:20.519><c> I</c><00:13:20.639><c> have</c><00:13:20.760><c> to</c><00:13:21.279><c> make</c><00:13:21.440><c> a</c><00:13:21.639><c> cross</c><00:13:22.279><c> right</c><00:13:23.279><c> I</c>
+
+00:13:23.389 --> 00:13:23.399 align:start position:0%
+across I have to make a cross right I
+ 
+
+00:13:23.399 --> 00:13:26.150 align:start position:0%
+across I have to make a cross right I
+cannot<00:13:23.760><c> avoid</c><00:13:24.120><c> this</c><00:13:24.680><c> Crossing</c><00:13:25.680><c> I</c><00:13:25.800><c> might</c><00:13:26.000><c> try</c>
+
+00:13:26.150 --> 00:13:26.160 align:start position:0%
+cannot avoid this Crossing I might try
+ 
+
+00:13:26.160 --> 00:13:30.269 align:start position:0%
+cannot avoid this Crossing I might try
+to<00:13:26.360><c> go</c><00:13:27.560><c> but</c><00:13:28.560><c> I</c><00:13:28.880><c> might</c><00:13:29.160><c> try</c><00:13:29.360><c> to</c>
+
+00:13:30.269 --> 00:13:30.279 align:start position:0%
+to go but I might try to
+ 
+
+00:13:30.279 --> 00:13:33.230 align:start position:0%
+to go but I might try to
+go<00:13:31.279><c> you</c><00:13:31.480><c> might</c><00:13:31.680><c> be</c><00:13:31.839><c> thinking</c><00:13:32.279><c> what</c><00:13:32.440><c> about</c><00:13:32.839><c> this</c>
+
+00:13:33.230 --> 00:13:33.240 align:start position:0%
+go you might be thinking what about this
+ 
+
+00:13:33.240 --> 00:13:35.030 align:start position:0%
+go you might be thinking what about this
+ah<00:13:33.399><c> but</c><00:13:33.600><c> remember</c><00:13:34.040><c> this</c><00:13:34.199><c> line</c><00:13:34.399><c> is</c><00:13:34.600><c> infinitely</c>
+
+00:13:35.030 --> 00:13:35.040 align:start position:0%
+ah but remember this line is infinitely
+ 
+
+00:13:35.040 --> 00:13:37.949 align:start position:0%
+ah but remember this line is infinitely
+long<00:13:35.279><c> so</c><00:13:35.360><c> it</c><00:13:35.519><c> goes</c><00:13:36.480><c> so</c><00:13:37.079><c> there</c><00:13:37.199><c> is</c><00:13:37.440><c> no</c><00:13:37.680><c> way</c><00:13:37.800><c> to</c>
+
+00:13:37.949 --> 00:13:37.959 align:start position:0%
+long so it goes so there is no way to
+ 
+
+00:13:37.959 --> 00:13:40.350 align:start position:0%
+long so it goes so there is no way to
+avoid<00:13:38.160><c> the</c>
+
+00:13:40.350 --> 00:13:40.360 align:start position:0%
+ 
+ 
+
+00:13:40.360 --> 00:13:45.450 align:start position:0%
+ 
+[Music]
+
+00:13:45.450 --> 00:13:45.460 align:start position:0%
+ 
+ 
+
+00:13:45.460 --> 00:13:50.310 align:start position:0%
+ 
+[Applause]
+
+00:13:50.310 --> 00:13:50.320 align:start position:0%
+ 
+ 
+
+00:13:50.320 --> 00:13:54.310 align:start position:0%
+ 
+crossing
+
+00:13:54.310 --> 00:13:54.320 align:start position:0%
+ 
+ 
+
+00:13:54.320 --> 00:13:58.810 align:start position:0%
+ 
+however<00:13:55.320><c> in</c><00:13:55.560><c> R4</c><00:13:56.240><c> four</c><00:13:56.480><c> dimensional</c><00:13:57.000><c> space</c>
+
+00:13:58.810 --> 00:13:58.820 align:start position:0%
+however in R4 four dimensional space
+ 
+
+00:13:58.820 --> 00:14:01.069 align:start position:0%
+however in R4 four dimensional space
+[Applause]
+
+00:14:01.069 --> 00:14:01.079 align:start position:0%
+[Applause]
+ 
+
+00:14:01.079 --> 00:14:02.590 align:start position:0%
+[Applause]
+it<00:14:01.320><c> can</c><00:14:01.680><c> avoid</c><00:14:02.000><c> a</c>
+
+00:14:02.590 --> 00:14:02.600 align:start position:0%
+it can avoid a
+ 
+
+00:14:02.600 --> 00:14:10.150 align:start position:0%
+it can avoid a
+[Applause]
+
+00:14:10.150 --> 00:14:10.160 align:start position:0%
+ 
+ 
+
+00:14:10.160 --> 00:14:14.269 align:start position:0%
+ 
+Crossing<00:14:11.360><c> hey</c><00:14:12.360><c> can</c><00:14:12.480><c> you</c><00:14:12.600><c> hold</c><00:14:12.800><c> it</c><00:14:13.079><c> again</c><00:14:14.079><c> how</c>
+
+00:14:14.269 --> 00:14:14.279 align:start position:0%
+Crossing hey can you hold it again how
+ 
+
+00:14:14.279 --> 00:14:17.430 align:start position:0%
+Crossing hey can you hold it again how
+do<00:14:14.399><c> we</c><00:14:14.519><c> avoid</c><00:14:14.759><c> the</c><00:14:14.880><c> Crossing</c><00:14:15.720><c> in</c><00:14:15.920><c> R4</c><00:14:16.920><c> well</c><00:14:17.279><c> this</c>
+
+00:14:17.430 --> 00:14:17.440 align:start position:0%
+do we avoid the Crossing in R4 well this
+ 
+
+00:14:17.440 --> 00:14:21.230 align:start position:0%
+do we avoid the Crossing in R4 well this
+is<00:14:17.600><c> the</c><00:14:18.160><c> line</c><00:14:19.160><c> infinite</c><00:14:19.600><c> line</c><00:14:19.920><c> and</c><00:14:20.079><c> it</c><00:14:20.240><c> comes</c>
+
+00:14:21.230 --> 00:14:21.240 align:start position:0%
+is the line infinite line and it comes
+ 
+
+00:14:21.240 --> 00:14:24.910 align:start position:0%
+is the line infinite line and it comes
+and<00:14:21.440><c> then</c><00:14:21.720><c> it's</c><00:14:22.000><c> like</c><00:14:22.720><c> Tadashi</c><00:14:23.720><c> area</c><00:14:24.639><c> when</c><00:14:24.759><c> he</c>
+
+00:14:24.910 --> 00:14:24.920 align:start position:0%
+and then it's like Tadashi area when he
+ 
+
+00:14:24.920 --> 00:14:29.590 align:start position:0%
+and then it's like Tadashi area when he
+comes<00:14:25.720><c> here</c><00:14:26.720><c> he</c><00:14:26.880><c> wants</c><00:14:27.160><c> to</c><00:14:27.519><c> jump</c><00:14:28.040><c> into</c><00:14:29.279><c> an</c>
+
+00:14:29.590 --> 00:14:29.600 align:start position:0%
+comes here he wants to jump into an
+ 
+
+00:14:29.600 --> 00:14:31.710 align:start position:0%
+comes here he wants to jump into an
+extra
+
+00:14:31.710 --> 00:14:31.720 align:start position:0%
+extra
+ 
+
+00:14:31.720 --> 00:14:35.269 align:start position:0%
+extra
+Dimension<00:14:32.720><c> it</c><00:14:33.040><c> jumps</c><00:14:34.040><c> and</c><00:14:34.199><c> so</c><00:14:34.560><c> this</c><00:14:34.759><c> part</c>
+
+00:14:35.269 --> 00:14:35.279 align:start position:0%
+Dimension it jumps and so this part
+ 
+
+00:14:35.279 --> 00:14:39.509 align:start position:0%
+Dimension it jumps and so this part
+disappears<00:14:36.279><c> from</c><00:14:36.839><c> 3D</c><00:14:37.839><c> just</c><00:14:38.120><c> as</c><00:14:38.759><c> excuse</c><00:14:39.040><c> me</c>
+
+00:14:39.509 --> 00:14:39.519 align:start position:0%
+disappears from 3D just as excuse me
+ 
+
+00:14:39.519 --> 00:14:42.710 align:start position:0%
+disappears from 3D just as excuse me
+when<00:14:39.639><c> I</c><00:14:39.759><c> was</c><00:14:39.959><c> jumping</c><00:14:40.680><c> across</c><00:14:41.079><c> the</c><00:14:41.600><c> river</c><00:14:42.480><c> I</c>
+
+00:14:42.710 --> 00:14:42.720 align:start position:0%
+when I was jumping across the river I
+ 
+
+00:14:42.720 --> 00:14:44.710 align:start position:0%
+when I was jumping across the river I
+disappeared<00:14:43.320><c> from</c><00:14:43.480><c> the</c><00:14:43.600><c> two</c><00:14:43.839><c> dimensional</c>
+
+00:14:44.710 --> 00:14:44.720 align:start position:0%
+disappeared from the two dimensional
+ 
+
+00:14:44.720 --> 00:14:47.069 align:start position:0%
+disappeared from the two dimensional
+plane<00:14:45.720><c> I</c><00:14:45.839><c> left</c><00:14:46.079><c> the</c><00:14:46.199><c> two</c><00:14:46.399><c> dimensional</c><00:14:46.839><c> plane</c>
+
+00:14:47.069 --> 00:14:47.079 align:start position:0%
+plane I left the two dimensional plane
+ 
+
+00:14:47.079 --> 00:14:49.150 align:start position:0%
+plane I left the two dimensional plane
+so<00:14:47.360><c> if</c><00:14:47.480><c> you</c><00:14:47.720><c> just</c><00:14:47.959><c> observing</c><00:14:48.480><c> me</c><00:14:48.720><c> in</c><00:14:48.839><c> the</c><00:14:48.959><c> two</c>
+
+00:14:49.150 --> 00:14:49.160 align:start position:0%
+so if you just observing me in the two
+ 
+
+00:14:49.160 --> 00:14:50.990 align:start position:0%
+so if you just observing me in the two
+dimensional<00:14:49.560><c> plane</c><00:14:49.880><c> it</c><00:14:50.000><c> looks</c><00:14:50.320><c> like</c><00:14:50.600><c> like</c><00:14:50.800><c> I</c>
+
+00:14:50.990 --> 00:14:51.000 align:start position:0%
+dimensional plane it looks like like I
+ 
+
+00:14:51.000 --> 00:14:54.150 align:start position:0%
+dimensional plane it looks like like I
+disappeared<00:14:52.000><c> and</c><00:14:52.160><c> then</c><00:14:52.320><c> suddenly</c><00:14:53.079><c> appeared</c>
+
+00:14:54.150 --> 00:14:54.160 align:start position:0%
+disappeared and then suddenly appeared
+ 
+
+00:14:54.160 --> 00:14:56.430 align:start position:0%
+disappeared and then suddenly appeared
+again
+
+00:14:56.430 --> 00:14:56.440 align:start position:0%
+again
+ 
+
+00:14:56.440 --> 00:15:01.629 align:start position:0%
+again
+yeah<00:14:57.800><c> wo</c><00:14:58.800><c> so</c><00:14:59.040><c> so</c><00:14:59.199><c> it's</c><00:14:59.360><c> the</c><00:14:59.519><c> same</c><00:15:00.199><c> thing</c><00:15:01.199><c> I</c>
+
+00:15:01.629 --> 00:15:01.639 align:start position:0%
+yeah wo so so it's the same thing I
+ 
+
+00:15:01.639 --> 00:15:04.670 align:start position:0%
+yeah wo so so it's the same thing I
+deform<00:15:02.440><c> myself</c><00:15:03.399><c> into</c><00:15:03.680><c> a</c><00:15:03.880><c> higher</c>
+
+00:15:04.670 --> 00:15:04.680 align:start position:0%
+deform myself into a higher
+ 
+
+00:15:04.680 --> 00:15:07.310 align:start position:0%
+deform myself into a higher
+Dimension<00:15:05.680><c> and</c><00:15:05.800><c> then</c><00:15:06.000><c> reappear</c>
+
+00:15:07.310 --> 00:15:07.320 align:start position:0%
+Dimension and then reappear
+ 
+
+00:15:07.320 --> 00:15:10.790 align:start position:0%
+Dimension and then reappear
+here<00:15:08.320><c> and</c><00:15:08.680><c> I</c><00:15:08.839><c> can</c><00:15:09.040><c> cross</c><00:15:09.320><c> over</c><00:15:09.639><c> it's</c><00:15:10.079><c> perfectly</c>
+
+00:15:10.790 --> 00:15:10.800 align:start position:0%
+here and I can cross over it's perfectly
+ 
+
+00:15:10.800 --> 00:15:15.150 align:start position:0%
+here and I can cross over it's perfectly
+rigorous<00:15:11.920><c> so</c><00:15:12.920><c> in</c><00:15:13.079><c> R4</c><00:15:13.639><c> you</c><00:15:13.759><c> can</c><00:15:14.000><c> avoid</c><00:15:14.240><c> a</c>
+
+00:15:15.150 --> 00:15:15.160 align:start position:0%
+rigorous so in R4 you can avoid a
+ 
+
+00:15:15.160 --> 00:15:18.230 align:start position:0%
+rigorous so in R4 you can avoid a
+cross<00:15:16.160><c> amazing</c>
+
+00:15:18.230 --> 00:15:18.240 align:start position:0%
+cross amazing
+ 
+
+00:15:18.240 --> 00:15:23.069 align:start position:0%
+cross amazing
+stuff<00:15:19.279><c> so</c><00:15:20.279><c> what</c><00:15:20.440><c> is</c><00:15:20.639><c> the</c><00:15:20.959><c> general</c><00:15:21.839><c> theorem</c><00:15:22.519><c> and</c>
+
+00:15:23.069 --> 00:15:23.079 align:start position:0%
+stuff so what is the general theorem and
+ 
+
+00:15:23.079 --> 00:15:24.710 align:start position:0%
+stuff so what is the general theorem and
+this<00:15:23.240><c> is</c>
+
+00:15:24.710 --> 00:15:24.720 align:start position:0%
+this is
+ 
+
+00:15:24.720 --> 00:15:29.430 align:start position:0%
+this is
+the<00:15:25.720><c> main</c><00:15:26.160><c> fact</c><00:15:26.759><c> that</c><00:15:27.440><c> underlies</c><00:15:28.440><c> the</c>
+
+00:15:29.430 --> 00:15:29.440 align:start position:0%
+the main fact that underlies the
+ 
+
+00:15:29.440 --> 00:15:37.829 align:start position:0%
+the main fact that underlies the
+operation<00:15:29.800><c> of</c>
+
+00:15:37.829 --> 00:15:37.839 align:start position:0%
+ 
+ 
+
+00:15:37.839 --> 00:15:41.550 align:start position:0%
+ 
+isotopy<00:15:38.839><c> the</c><00:15:39.160><c> dynamic</c><00:15:39.839><c> picture</c><00:15:40.440><c> of</c><00:15:41.360><c> um</c>
+
+00:15:41.550 --> 00:15:41.560 align:start position:0%
+isotopy the dynamic picture of um
+ 
+
+00:15:41.560 --> 00:15:48.949 align:start position:0%
+isotopy the dynamic picture of um
+Crossing<00:15:42.040><c> and</c><00:15:42.319><c> not</c>
+
+00:15:48.949 --> 00:15:48.959 align:start position:0%
+ 
+ 
+
+00:15:48.959 --> 00:15:58.910 align:start position:0%
+ 
+crossing<00:15:49.959><c> the</c>
+
+00:15:58.910 --> 00:15:58.920 align:start position:0%
+ 
+ 
+
+00:15:58.920 --> 00:16:00.309 align:start position:0%
+ 
+[Applause]
+
+00:16:00.309 --> 00:16:00.319 align:start position:0%
+[Applause]
+ 
+
+00:16:00.319 --> 00:16:03.670 align:start position:0%
+[Applause]
+so<00:16:01.319><c> imagine</c><00:16:01.800><c> that</c><00:16:01.959><c> you</c><00:16:02.120><c> have</c><00:16:02.319><c> two</c><00:16:02.600><c> sub</c><00:16:02.880><c> manles</c>
+
+00:16:03.670 --> 00:16:03.680 align:start position:0%
+so imagine that you have two sub manles
+ 
+
+00:16:03.680 --> 00:16:07.470 align:start position:0%
+so imagine that you have two sub manles
+k<00:16:04.120><c> l</c><00:16:05.120><c> inside</c>
+
+00:16:07.470 --> 00:16:07.480 align:start position:0%
+k l inside
+ 
+
+00:16:07.480 --> 00:16:13.189 align:start position:0%
+k l inside
+M<00:16:08.480><c> and</c><00:16:08.920><c> they're</c><00:16:09.199><c> such</c><00:16:09.519><c> that</c><00:16:10.079><c> the</c><00:16:10.680><c> Overflow</c><00:16:11.639><c> the</c>
+
+00:16:13.189 --> 00:16:13.199 align:start position:0%
+M and they're such that the Overflow the
+ 
+
+00:16:13.199 --> 00:16:15.710 align:start position:0%
+M and they're such that the Overflow the
+Overflow<00:16:14.199><c> which</c><00:16:14.360><c> we</c><00:16:14.519><c> Define</c><00:16:15.199><c> I</c><00:16:15.399><c> like</c><00:16:15.600><c> to</c>
+
+00:16:15.710 --> 00:16:15.720 align:start position:0%
+Overflow which we Define I like to
+ 
+
+00:16:15.720 --> 00:16:18.110 align:start position:0%
+Overflow which we Define I like to
+remind<00:16:16.000><c> you</c><00:16:16.160><c> what</c><00:16:16.279><c> it</c><00:16:16.440><c> was</c><00:16:17.000><c> Dimension</c><00:16:17.519><c> K</c><00:16:17.800><c> plus</c>
+
+00:16:18.110 --> 00:16:18.120 align:start position:0%
+remind you what it was Dimension K plus
+ 
+
+00:16:18.120 --> 00:16:22.150 align:start position:0%
+remind you what it was Dimension K plus
+Dimension<00:16:19.120><c> L</c><00:16:19.680><c> minus</c><00:16:20.040><c> Dimension</c><00:16:20.680><c> M</c><00:16:21.680><c> that's</c><00:16:21.880><c> the</c>
+
+00:16:22.150 --> 00:16:22.160 align:start position:0%
+Dimension L minus Dimension M that's the
+ 
+
+00:16:22.160 --> 00:16:24.470 align:start position:0%
+Dimension L minus Dimension M that's the
+Overflow<00:16:23.160><c> now</c><00:16:23.360><c> do</c><00:16:23.480><c> you</c><00:16:23.639><c> remember</c><00:16:24.079><c> in</c><00:16:24.240><c> the</c>
+
+00:16:24.470 --> 00:16:24.480 align:start position:0%
+Overflow now do you remember in the
+ 
+
+00:16:24.480 --> 00:16:25.710 align:start position:0%
+Overflow now do you remember in the
+static
+
+00:16:25.710 --> 00:16:25.720 align:start position:0%
+static
+ 
+
+00:16:25.720 --> 00:16:29.389 align:start position:0%
+static
+case<00:16:26.720><c> overflow</c><00:16:27.360><c> had</c><00:16:27.480><c> to</c><00:16:27.920><c> be</c><00:16:28.920><c> strictly</c>
+
+00:16:29.389 --> 00:16:29.399 align:start position:0%
+case overflow had to be strictly
+ 
+
+00:16:29.399 --> 00:16:31.150 align:start position:0%
+case overflow had to be strictly
+negative<00:16:29.880><c> in</c><00:16:30.000><c> order</c><00:16:30.240><c> to</c><00:16:30.360><c> avoiding</c>
+
+00:16:31.150 --> 00:16:31.160 align:start position:0%
+negative in order to avoiding
+ 
+
+00:16:31.160 --> 00:16:33.990 align:start position:0%
+negative in order to avoiding
+intersection<00:16:31.880><c> in</c><00:16:32.040><c> other</c><00:16:32.519><c> words</c><00:16:33.519><c> strictly</c>
+
+00:16:33.990 --> 00:16:34.000 align:start position:0%
+intersection in other words strictly
+ 
+
+00:16:34.000 --> 00:16:35.150 align:start position:0%
+intersection in other words strictly
+less<00:16:34.199><c> than</c>
+
+00:16:35.150 --> 00:16:35.160 align:start position:0%
+less than
+ 
+
+00:16:35.160 --> 00:16:38.230 align:start position:0%
+less than
+zero<00:16:36.160><c> but</c><00:16:36.440><c> here</c><00:16:36.639><c> in</c><00:16:36.759><c> the</c><00:16:37.000><c> dynamic</c><00:16:37.759><c> case</c><00:16:38.079><c> when</c>
+
+00:16:38.230 --> 00:16:38.240 align:start position:0%
+zero but here in the dynamic case when
+ 
+
+00:16:38.240 --> 00:16:42.269 align:start position:0%
+zero but here in the dynamic case when
+you<00:16:38.720><c> move</c><00:16:39.199><c> one</c><00:16:39.440><c> thing</c><00:16:40.360><c> past</c><00:16:40.720><c> each</c><00:16:41.079><c> other</c><00:16:42.079><c> you</c>
+
+00:16:42.269 --> 00:16:42.279 align:start position:0%
+you move one thing past each other you
+ 
+
+00:16:42.279 --> 00:16:44.829 align:start position:0%
+you move one thing past each other you
+see<00:16:42.639><c> that</c><00:16:42.800><c> you</c><00:16:42.959><c> need</c><00:16:43.199><c> a</c><00:16:43.399><c> little</c><00:16:43.720><c> more</c>
+
+00:16:44.829 --> 00:16:44.839 align:start position:0%
+see that you need a little more
+ 
+
+00:16:44.839 --> 00:16:46.590 align:start position:0%
+see that you need a little more
+overflow
+
+00:16:46.590 --> 00:16:46.600 align:start position:0%
+overflow
+ 
+
+00:16:46.600 --> 00:16:49.949 align:start position:0%
+overflow
+and<00:16:47.600><c> so</c><00:16:47.880><c> we'll</c><00:16:48.199><c> start</c><00:16:48.560><c> from</c><00:16:49.079><c> zero</c><00:16:49.560><c> and</c><00:16:49.759><c> this</c>
+
+00:16:49.949 --> 00:16:49.959 align:start position:0%
+and so we'll start from zero and this
+ 
+
+00:16:49.959 --> 00:16:53.670 align:start position:0%
+and so we'll start from zero and this
+and<00:16:50.160><c> zero</c><00:16:50.560><c> so</c><00:16:50.800><c> that</c><00:16:51.319><c> you</c><00:16:51.519><c> do</c><00:16:51.759><c> get</c><00:16:51.920><c> some</c>
+
+00:16:53.670 --> 00:16:53.680 align:start position:0%
+and zero so that you do get some
+ 
+
+00:16:53.680 --> 00:16:55.870 align:start position:0%
+and zero so that you do get some
+intersection<00:16:54.680><c> so</c><00:16:54.920><c> that</c><00:16:55.120><c> excuse</c><00:16:55.399><c> me</c><00:16:55.519><c> so</c><00:16:55.680><c> that</c>
+
+00:16:55.870 --> 00:16:55.880 align:start position:0%
+intersection so that excuse me so that
+ 
+
+00:16:55.880 --> 00:16:57.749 align:start position:0%
+intersection so that excuse me so that
+you<00:16:56.279><c> um</c><00:16:56.959><c> so</c><00:16:57.120><c> that</c><00:16:57.240><c> you</c><00:16:57.360><c> don't</c><00:16:57.560><c> get</c><00:16:57.680><c> the</c>
+
+00:16:57.749 --> 00:16:57.759 align:start position:0%
+you um so that you don't get the
+ 
+
+00:16:57.759 --> 00:17:00.550 align:start position:0%
+you um so that you don't get the
+intersection<00:16:58.240><c> initially</c><00:16:58.920><c> so</c><00:16:59.160><c> that</c><00:16:59.800><c> the</c>
+
+00:17:00.550 --> 00:17:00.560 align:start position:0%
+intersection initially so that the
+ 
+
+00:17:00.560 --> 00:17:05.870 align:start position:0%
+intersection initially so that the
+theorem<00:17:01.560><c> one</c><00:17:02.480><c> by</c><00:17:03.480><c> theorem</c><00:17:03.880><c> one</c><00:17:04.880><c> initially</c>
+
+00:17:05.870 --> 00:17:05.880 align:start position:0%
+theorem one by theorem one initially
+ 
+
+00:17:05.880 --> 00:17:11.909 align:start position:0%
+theorem one by theorem one initially
+they<00:17:06.000><c> are</c><00:17:06.120><c> not</c>
+
+00:17:11.909 --> 00:17:11.919 align:start position:0%
+ 
+ 
+
+00:17:11.919 --> 00:17:16.230 align:start position:0%
+ 
+Crossing<00:17:12.919><c> now</c><00:17:13.600><c> suppose</c><00:17:14.199><c> that</c><00:17:14.400><c> I</c><00:17:14.520><c> start</c><00:17:15.240><c> moving</c>
+
+00:17:16.230 --> 00:17:16.240 align:start position:0%
+Crossing now suppose that I start moving
+ 
+
+00:17:16.240 --> 00:17:18.630 align:start position:0%
+Crossing now suppose that I start moving
+then<00:17:16.520><c> they</c><00:17:16.720><c> might</c><00:17:16.959><c> start</c><00:17:17.240><c> Crossing</c><00:17:17.679><c> you</c><00:17:17.839><c> see</c>
+
+00:17:18.630 --> 00:17:18.640 align:start position:0%
+then they might start Crossing you see
+ 
+
+00:17:18.640 --> 00:17:21.189 align:start position:0%
+then they might start Crossing you see
+so<00:17:19.679><c> K</c>
+
+00:17:21.189 --> 00:17:21.199 align:start position:0%
+so K
+ 
+
+00:17:21.199 --> 00:17:23.789 align:start position:0%
+so K
+moves<00:17:22.199><c> just</c><00:17:22.439><c> like</c><00:17:22.640><c> those</c><00:17:22.919><c> examples</c><00:17:23.439><c> bear</c><00:17:23.679><c> in</c>
+
+00:17:23.789 --> 00:17:23.799 align:start position:0%
+moves just like those examples bear in
+ 
+
+00:17:23.799 --> 00:17:27.309 align:start position:0%
+moves just like those examples bear in
+mind<00:17:24.039><c> those</c><00:17:24.240><c> examples</c><00:17:24.720><c> please</c><00:17:25.439><c> from</c><00:17:26.120><c> one</c>
+
+00:17:27.309 --> 00:17:27.319 align:start position:0%
+mind those examples please from one
+ 
+
+00:17:27.319 --> 00:17:37.310 align:start position:0%
+mind those examples please from one
+side<00:17:28.319><c> to</c><00:17:28.480><c> the</c><00:17:28.600><c> other</c><00:17:28.720><c> side</c><00:17:29.039><c> side</c><00:17:29.320><c> of</c>
+
+00:17:37.310 --> 00:17:37.320 align:start position:0%
+ 
+ 
+
+00:17:37.320 --> 00:17:41.789 align:start position:0%
+ 
+L<00:17:38.320><c> starts</c><00:17:38.640><c> moving</c><00:17:39.120><c> in</c><00:17:39.280><c> that</c><00:17:39.559><c> like</c><00:17:39.799><c> that</c><00:17:40.600><c> and</c><00:17:41.520><c> we</c>
+
+00:17:41.789 --> 00:17:41.799 align:start position:0%
+L starts moving in that like that and we
+ 
+
+00:17:41.799 --> 00:17:44.150 align:start position:0%
+L starts moving in that like that and we
+really<00:17:42.080><c> want</c>
+
+00:17:44.150 --> 00:17:44.160 align:start position:0%
+really want
+ 
+
+00:17:44.160 --> 00:17:46.710 align:start position:0%
+really want
+to<00:17:45.160><c> avoid</c>
+
+00:17:46.710 --> 00:17:46.720 align:start position:0%
+to avoid
+ 
+
+00:17:46.720 --> 00:17:52.669 align:start position:0%
+to avoid
+Crossing<00:17:47.720><c> tries</c>
+
+00:17:52.669 --> 00:17:52.679 align:start position:0%
+ 
+ 
+
+00:17:52.679 --> 00:17:54.710 align:start position:0%
+ 
+to<00:17:53.679><c> step</c>
+
+00:17:54.710 --> 00:17:54.720 align:start position:0%
+to step
+ 
+
+00:17:54.720 --> 00:17:59.230 align:start position:0%
+to step
+aside<00:17:55.720><c> or</c><00:17:55.960><c> step</c><00:17:56.280><c> around</c><00:17:57.240><c> as</c><00:17:57.400><c> we</c><00:17:57.640><c> did</c><00:17:58.480><c> when</c><00:17:58.679><c> I</c><00:17:58.880><c> I</c>
+
+00:17:59.230 --> 00:17:59.240 align:start position:0%
+aside or step around as we did when I I
+ 
+
+00:17:59.240 --> 00:18:01.750 align:start position:0%
+aside or step around as we did when I I
+jumped<00:18:00.240><c> or</c><00:18:00.600><c> as</c><00:18:00.760><c> we</c><00:18:00.960><c> disappeared</c><00:18:01.480><c> into</c><00:18:01.640><c> an</c>
+
+00:18:01.750 --> 00:18:01.760 align:start position:0%
+jumped or as we disappeared into an
+ 
+
+00:18:01.760 --> 00:18:04.870 align:start position:0%
+jumped or as we disappeared into an
+extra<00:18:02.080><c> Dimension</c><00:18:02.440><c> and</c><00:18:02.640><c> came</c><00:18:03.120><c> back</c><00:18:04.120><c> okay</c><00:18:04.520><c> step</c>
+
+00:18:04.870 --> 00:18:04.880 align:start position:0%
+extra Dimension and came back okay step
+ 
+
+00:18:04.880 --> 00:18:07.070 align:start position:0%
+extra Dimension and came back okay step
+us
+
+00:18:07.070 --> 00:18:07.080 align:start position:0%
+us
+ 
+
+00:18:07.080 --> 00:18:09.230 align:start position:0%
+us
+around<00:18:08.080><c> to</c>
+
+00:18:09.230 --> 00:18:09.240 align:start position:0%
+around to
+ 
+
+00:18:09.240 --> 00:18:14.350 align:start position:0%
+around to
+avoid<00:18:10.240><c> the</c>
+
+00:18:14.350 --> 00:18:14.360 align:start position:0%
+ 
+ 
+
+00:18:14.360 --> 00:18:19.029 align:start position:0%
+ 
+crossing<00:18:15.400><c> okay</c><00:18:16.679><c> theorem</c><00:18:17.679><c> or</c><00:18:17.880><c> the</c><00:18:18.039><c> result</c><00:18:18.840><c> if</c>
+
+00:18:19.029 --> 00:18:19.039 align:start position:0%
+crossing okay theorem or the result if
+ 
+
+00:18:19.039 --> 00:18:22.230 align:start position:0%
+crossing okay theorem or the result if
+the<00:18:19.559><c> Overflow</c><00:18:20.559><c> we</c><00:18:20.720><c> know</c><00:18:20.880><c> that</c><00:18:21.080><c> overflow</c><00:18:21.559><c> is</c>
+
+00:18:22.230 --> 00:18:22.240 align:start position:0%
+the Overflow we know that overflow is
+ 
+
+00:18:22.240 --> 00:18:25.430 align:start position:0%
+the Overflow we know that overflow is
+negative<00:18:23.080><c> but</c><00:18:23.280><c> it</c><00:18:23.600><c> overflow</c>
+
+00:18:25.430 --> 00:18:25.440 align:start position:0%
+negative but it overflow
+ 
+
+00:18:25.440 --> 00:18:30.149 align:start position:0%
+negative but it overflow
+is<00:18:26.440><c> sufficiently</c><00:18:27.200><c> negative</c><00:18:27.760><c> that</c><00:18:27.960><c> is</c>
+
+00:18:30.149 --> 00:18:30.159 align:start position:0%
+is sufficiently negative that is
+ 
+
+00:18:30.159 --> 00:18:33.789 align:start position:0%
+is sufficiently negative that is
+less<00:18:30.400><c> than</c><00:18:30.559><c> or</c><00:18:30.760><c> equal</c><00:18:31.039><c> to</c><00:18:31.240><c> minus</c>
+
+00:18:33.789 --> 00:18:33.799 align:start position:0%
+ 
+ 
+
+00:18:33.799 --> 00:18:38.270 align:start position:0%
+ 
+one<00:18:34.799><c> oh</c><00:18:35.000><c> excuse</c><00:18:35.280><c> me</c><00:18:36.000><c> um</c><00:18:36.320><c> is</c><00:18:36.880><c> equal</c><00:18:37.360><c> minus</c><00:18:37.679><c> one</c>
+
+00:18:38.270 --> 00:18:38.280 align:start position:0%
+one oh excuse me um is equal minus one
+ 
+
+00:18:38.280 --> 00:18:39.590 align:start position:0%
+one oh excuse me um is equal minus one
+then<00:18:38.480><c> it</c>
+
+00:18:39.590 --> 00:18:39.600 align:start position:0%
+then it
+ 
+
+00:18:39.600 --> 00:18:41.669 align:start position:0%
+then it
+fails<00:18:40.600><c> excuse</c>
+
+00:18:41.669 --> 00:18:41.679 align:start position:0%
+fails excuse
+ 
+
+00:18:41.679 --> 00:18:43.750 align:start position:0%
+fails excuse
+me
+
+00:18:43.750 --> 00:18:43.760 align:start position:0%
+me
+ 
+
+00:18:43.760 --> 00:18:48.710 align:start position:0%
+me
+so<00:18:44.760><c> Crossing</c><00:18:45.080><c> is</c>
+
+00:18:48.710 --> 00:18:48.720 align:start position:0%
+ 
+ 
+
+00:18:48.720 --> 00:18:51.789 align:start position:0%
+ 
+inevitable
+
+00:18:51.789 --> 00:18:51.799 align:start position:0%
+ 
+ 
+
+00:18:51.799 --> 00:18:55.830 align:start position:0%
+ 
+happens<00:18:52.799><c> whereas</c><00:18:53.679><c> if</c><00:18:53.880><c> the</c>
+
+00:18:55.830 --> 00:18:55.840 align:start position:0%
+happens whereas if the
+ 
+
+00:18:55.840 --> 00:19:01.390 align:start position:0%
+happens whereas if the
+Overflow<00:18:56.840><c> is</c><00:18:57.200><c> less</c><00:18:57.520><c> than</c><00:18:58.159><c> minus</c><00:18:58.520><c> one</c>
+
+00:19:01.390 --> 00:19:01.400 align:start position:0%
+ 
+ 
+
+00:19:01.400 --> 00:19:03.549 align:start position:0%
+ 
+then<00:19:01.600><c> it</c>
+
+00:19:03.549 --> 00:19:03.559 align:start position:0%
+then it
+ 
+
+00:19:03.559 --> 00:19:06.560 align:start position:0%
+then it
+succeeds<00:19:04.559><c> that</c><00:19:04.720><c> is</c><00:19:05.080><c> crossing</c><00:19:05.480><c> is</c>
+
+00:19:06.560 --> 00:19:06.570 align:start position:0%
+succeeds that is crossing is
+ 
+
+00:19:06.570 --> 00:19:17.430 align:start position:0%
+succeeds that is crossing is
+[Applause]
+
+00:19:17.430 --> 00:19:17.440 align:start position:0%
+ 
+ 
+
+00:19:17.440 --> 00:19:30.110 align:start position:0%
+ 
+avoided<00:19:18.440><c> that's</c><00:19:18.919><c> the</c><00:19:19.200><c> theory</c>
+
+00:19:30.110 --> 00:19:30.120 align:start position:0%
+ 
+ 
+
+00:19:30.120 --> 00:19:33.630 align:start position:0%
+ 
+as<00:19:30.760><c> usual</c><00:19:31.760><c> it's</c><00:19:32.039><c> much</c><00:19:32.280><c> better</c><00:19:32.600><c> to</c><00:19:33.200><c> draw</c><00:19:33.480><c> a</c>
+
+00:19:33.630 --> 00:19:33.640 align:start position:0%
+as usual it's much better to draw a
+ 
+
+00:19:33.640 --> 00:19:36.149 align:start position:0%
+as usual it's much better to draw a
+picture<00:19:34.240><c> and</c><00:19:34.720><c> understand</c><00:19:34.880><c> it</c><00:19:35.080><c> in</c><00:19:35.200><c> ter</c><00:19:35.480><c> of</c><00:19:35.840><c> of</c>
+
+00:19:36.149 --> 00:19:36.159 align:start position:0%
+picture and understand it in ter of of
+ 
+
+00:19:36.159 --> 00:19:38.789 align:start position:0%
+picture and understand it in ter of of
+of<00:19:36.320><c> the</c><00:19:36.440><c> picture</c><00:19:37.440><c> indeed</c><00:19:38.039><c> writing</c><00:19:38.400><c> it</c><00:19:38.600><c> like</c>
+
+00:19:38.789 --> 00:19:38.799 align:start position:0%
+of the picture indeed writing it like
+ 
+
+00:19:38.799 --> 00:19:41.390 align:start position:0%
+of the picture indeed writing it like
+this<00:19:39.000><c> in</c><00:19:39.200><c> words</c><00:19:39.880><c> makes</c><00:19:40.320><c> things</c><00:19:40.559><c> look</c>
+
+00:19:41.390 --> 00:19:41.400 align:start position:0%
+this in words makes things look
+ 
+
+00:19:41.400 --> 00:19:44.830 align:start position:0%
+this in words makes things look
+complicated<00:19:42.720><c> um</c><00:19:43.720><c> in</c><00:19:43.880><c> fact</c><00:19:44.200><c> the</c><00:19:44.360><c> way</c><00:19:44.640><c> I</c>
+
+00:19:44.830 --> 00:19:44.840 align:start position:0%
+complicated um in fact the way I
+ 
+
+00:19:44.840 --> 00:19:46.909 align:start position:0%
+complicated um in fact the way I
+prepared<00:19:45.360><c> this</c><00:19:45.559><c> statement</c><00:19:46.039><c> is</c><00:19:46.280><c> I</c><00:19:46.440><c> first</c><00:19:46.679><c> drew</c>
+
+00:19:46.909 --> 00:19:46.919 align:start position:0%
+prepared this statement is I first drew
+ 
+
+00:19:46.919 --> 00:19:49.270 align:start position:0%
+prepared this statement is I first drew
+a<00:19:47.080><c> picture</c><00:19:47.919><c> and</c><00:19:48.120><c> then</c><00:19:48.799><c> looking</c><00:19:49.080><c> at</c><00:19:49.159><c> the</c>
+
+00:19:49.270 --> 00:19:49.280 align:start position:0%
+a picture and then looking at the
+ 
+
+00:19:49.280 --> 00:19:51.830 align:start position:0%
+a picture and then looking at the
+picture<00:19:49.600><c> described</c><00:19:50.000><c> it</c><00:19:50.120><c> in</c><00:19:50.559><c> words</c><00:19:51.559><c> that's</c><00:19:51.720><c> the</c>
+
+00:19:51.830 --> 00:19:51.840 align:start position:0%
+picture described it in words that's the
+ 
+
+00:19:51.840 --> 00:19:53.710 align:start position:0%
+picture described it in words that's the
+order<00:19:52.159><c> in</c><00:19:52.280><c> which</c><00:19:52.440><c> I</c><00:19:52.520><c> did</c><00:19:52.679><c> it</c><00:19:52.960><c> I</c><00:19:53.080><c> didn't</c><00:19:53.480><c> have</c>
+
+00:19:53.710 --> 00:19:53.720 align:start position:0%
+order in which I did it I didn't have
+ 
+
+00:19:53.720 --> 00:19:55.909 align:start position:0%
+order in which I did it I didn't have
+the<00:19:53.880><c> statement</c><00:19:54.360><c> and</c><00:19:54.520><c> try</c><00:19:54.720><c> to</c><00:19:54.840><c> draw</c><00:19:55.080><c> a</c><00:19:55.200><c> picture</c>
+
+00:19:55.909 --> 00:19:55.919 align:start position:0%
+the statement and try to draw a picture
+ 
+
+00:19:55.919 --> 00:19:57.630 align:start position:0%
+the statement and try to draw a picture
+it's<00:19:56.120><c> the</c><00:19:56.200><c> other</c><00:19:56.400><c> way</c>
+
+00:19:57.630 --> 00:19:57.640 align:start position:0%
+it's the other way
+ 
+
+00:19:57.640 --> 00:20:05.990 align:start position:0%
+it's the other way
+around<00:19:58.720><c> so</c><00:19:58.880><c> here's</c><00:19:59.039><c> the</c>
+
+00:20:05.990 --> 00:20:06.000 align:start position:0%
+ 
+ 
+
+00:20:06.000 --> 00:20:20.669 align:start position:0%
+ 
+picture<00:20:07.000><c> Z</c><00:20:07.919><c> Zia</c><00:20:08.919><c> okay</c><00:20:09.640><c> so</c><00:20:10.640><c> let's</c><00:20:11.679><c> draw</c><00:20:13.120><c> Zia</c>
+
+00:20:20.669 --> 00:20:20.679 align:start position:0%
+ 
+ 
+
+00:20:20.679 --> 00:20:22.230 align:start position:0%
+ 
+and
+
+00:20:22.230 --> 00:20:22.240 align:start position:0%
+and
+ 
+
+00:20:22.240 --> 00:20:53.950 align:start position:0%
+and
+that<00:20:23.240><c> two</c><00:20:23.600><c> people</c>
+
+00:20:53.950 --> 00:20:53.960 align:start position:0%
+ 
+ 
+
+00:20:53.960 --> 00:20:59.029 align:start position:0%
+ 
+and<00:20:54.960><c> they</c><00:20:55.080><c> are</c><00:20:55.320><c> having</c><00:20:55.720><c> this</c><00:20:56.240><c> sub</c><00:20:56.559><c> manifold</c><00:20:57.200><c> l</c>
+
+00:20:59.029 --> 00:20:59.039 align:start position:0%
+and they are having this sub manifold l
+ 
+
+00:20:59.039 --> 00:21:02.870 align:start position:0%
+and they are having this sub manifold l
+inside<00:20:59.480><c> the</c><00:20:59.559><c> manifold</c><00:21:00.480><c> M</c><00:21:01.480><c> and</c><00:21:01.640><c> then</c><00:21:01.840><c> Tashi</c><00:21:02.679><c> is</c>
+
+00:21:02.870 --> 00:21:02.880 align:start position:0%
+inside the manifold M and then Tashi is
+ 
+
+00:21:02.880 --> 00:21:05.710 align:start position:0%
+inside the manifold M and then Tashi is
+trying
+
+00:21:05.710 --> 00:21:05.720 align:start position:0%
+ 
+ 
+
+00:21:05.720 --> 00:21:13.549 align:start position:0%
+ 
+to<00:21:06.720><c> cross</c>
+
+00:21:13.549 --> 00:21:13.559 align:start position:0%
+ 
+ 
+
+00:21:13.559 --> 00:21:19.070 align:start position:0%
+ 
+over<00:21:14.559><c> so</c><00:21:14.720><c> this</c><00:21:14.840><c> is</c><00:21:15.240><c> K</c><00:21:16.240><c> and</c><00:21:16.400><c> it's</c><00:21:16.559><c> moving</c>
+
+00:21:19.070 --> 00:21:19.080 align:start position:0%
+ 
+ 
+
+00:21:19.080 --> 00:21:22.789 align:start position:0%
+ 
+forward<00:21:20.080><c> okay</c><00:21:20.760><c> and</c><00:21:20.880><c> the</c><00:21:21.080><c> question</c><00:21:21.440><c> is</c><00:21:22.440><c> is</c><00:21:22.600><c> it</c>
+
+00:21:22.789 --> 00:21:22.799 align:start position:0%
+forward okay and the question is is it
+ 
+
+00:21:22.799 --> 00:21:23.830 align:start position:0%
+forward okay and the question is is it
+going
+
+00:21:23.830 --> 00:21:23.840 align:start position:0%
+going
+ 
+
+00:21:23.840 --> 00:21:37.750 align:start position:0%
+going
+to<00:21:24.840><c> Cross</c><00:21:25.200><c> or</c><00:21:25.760><c> not</c><00:21:26.760><c> or</c><00:21:26.960><c> can</c><00:21:27.080><c> I</c><00:21:27.600><c> avoid</c><00:21:28.080><c> it</c>
+
+00:21:37.750 --> 00:21:37.760 align:start position:0%
+ 
+ 
+
+00:21:37.760 --> 00:21:39.390 align:start position:0%
+ 
+intersection
+
+00:21:39.390 --> 00:21:39.400 align:start position:0%
+intersection
+ 
+
+00:21:39.400 --> 00:21:41.789 align:start position:0%
+intersection
+now<00:21:40.400><c> here</c><00:21:40.559><c> is</c><00:21:40.679><c> the</c>
+
+00:21:41.789 --> 00:21:41.799 align:start position:0%
+now here is the
+ 
+
+00:21:41.799 --> 00:21:44.830 align:start position:0%
+now here is the
+idea<00:21:42.799><c> as</c><00:21:43.120><c> K</c>
+
+00:21:44.830 --> 00:21:44.840 align:start position:0%
+idea as K
+ 
+
+00:21:44.840 --> 00:21:47.510 align:start position:0%
+idea as K
+moves<00:21:45.840><c> we</c><00:21:46.000><c> thought</c><00:21:46.279><c> the</c><00:21:46.480><c> dimension</c><00:21:47.080><c> of</c><00:21:47.360><c> that</c>
+
+00:21:47.510 --> 00:21:47.520 align:start position:0%
+moves we thought the dimension of that
+ 
+
+00:21:47.520 --> 00:21:49.750 align:start position:0%
+moves we thought the dimension of that
+matter<00:21:47.840><c> was</c><00:21:48.080><c> dimension</c><00:21:48.440><c> of</c><00:21:48.640><c> K</c><00:21:49.000><c> but</c><00:21:49.240><c> in</c><00:21:49.440><c> fact</c><00:21:49.640><c> it</c>
+
+00:21:49.750 --> 00:21:49.760 align:start position:0%
+matter was dimension of K but in fact it
+ 
+
+00:21:49.760 --> 00:21:54.110 align:start position:0%
+matter was dimension of K but in fact it
+isn't<00:21:50.600><c> when</c><00:21:50.880><c> K</c><00:21:51.120><c> moves</c><00:21:51.760><c> imagine</c><00:21:52.120><c> that</c><00:21:52.440><c> K</c><00:21:53.440><c> sweeps</c>
+
+00:21:54.110 --> 00:21:54.120 align:start position:0%
+isn't when K moves imagine that K sweeps
+ 
+
+00:21:54.120 --> 00:21:57.190 align:start position:0%
+isn't when K moves imagine that K sweeps
+out<00:21:54.400><c> the</c><00:21:54.600><c> whole</c><00:21:54.960><c> screen</c><00:21:55.679><c> whole</c><00:21:56.000><c> whole</c>
+
+00:21:57.190 --> 00:21:57.200 align:start position:0%
+out the whole screen whole whole
+ 
+
+00:21:57.200 --> 00:21:59.870 align:start position:0%
+out the whole screen whole whole
+surface<00:21:58.200><c> okay</c>
+
+00:21:59.870 --> 00:21:59.880 align:start position:0%
+surface okay
+ 
+
+00:21:59.880 --> 00:22:02.230 align:start position:0%
+surface okay
+that's<00:22:00.120><c> the</c><00:22:00.320><c> trajectory</c><00:22:00.840><c> of</c><00:22:01.080><c> K</c><00:22:01.520><c> it's</c><00:22:01.799><c> leaving</c>
+
+00:22:02.230 --> 00:22:02.240 align:start position:0%
+that's the trajectory of K it's leaving
+ 
+
+00:22:02.240 --> 00:22:06.870 align:start position:0%
+that's the trajectory of K it's leaving
+behind<00:22:02.559><c> sort</c><00:22:02.760><c> of</c><00:22:02.840><c> a</c><00:22:03.039><c> cloud</c><00:22:04.039><c> smoke</c><00:22:04.799><c> screen</c><00:22:05.880><c> and</c>
+
+00:22:06.870 --> 00:22:06.880 align:start position:0%
+behind sort of a cloud smoke screen and
+ 
+
+00:22:06.880 --> 00:22:09.110 align:start position:0%
+behind sort of a cloud smoke screen and
+that<00:22:07.640><c> has</c><00:22:07.799><c> a</c><00:22:07.960><c> lot</c><00:22:08.159><c> of</c><00:22:08.320><c> Dimension</c><00:22:08.840><c> and</c><00:22:09.000><c> the</c>
+
+00:22:09.110 --> 00:22:09.120 align:start position:0%
+that has a lot of Dimension and the
+ 
+
+00:22:09.120 --> 00:22:11.630 align:start position:0%
+that has a lot of Dimension and the
+question<00:22:09.440><c> is</c><00:22:09.840><c> whether</c><00:22:10.240><c> L</c><00:22:10.640><c> is</c><00:22:10.840><c> going</c><00:22:11.039><c> to</c>
+
+00:22:11.630 --> 00:22:11.640 align:start position:0%
+question is whether L is going to
+ 
+
+00:22:11.640 --> 00:22:16.630 align:start position:0%
+question is whether L is going to
+intersect<00:22:12.480><c> that</c><00:22:13.400><c> trajectory</c><00:22:14.400><c> of</c><00:22:15.000><c> of</c><00:22:15.279><c> K</c><00:22:16.039><c> so</c><00:22:16.360><c> as</c>
+
+00:22:16.630 --> 00:22:16.640 align:start position:0%
+intersect that trajectory of of K so as
+ 
+
+00:22:16.640 --> 00:22:21.350 align:start position:0%
+intersect that trajectory of of K so as
+K<00:22:17.159><c> moves</c><00:22:18.159><c> it</c><00:22:18.640><c> sweeps</c><00:22:19.240><c> out</c><00:22:19.600><c> do</c><00:22:19.679><c> you</c><00:22:19.760><c> know</c><00:22:19.960><c> this</c>
+
+00:22:21.350 --> 00:22:21.360 align:start position:0%
+K moves it sweeps out do you know this
+ 
+
+00:22:21.360 --> 00:22:24.190 align:start position:0%
+K moves it sweeps out do you know this
+expression<00:22:22.640><c> yeah</c><00:22:23.640><c> do</c><00:22:23.720><c> you</c><00:22:23.840><c> know</c><00:22:24.000><c> this</c>
+
+00:22:24.190 --> 00:22:24.200 align:start position:0%
+expression yeah do you know this
+ 
+
+00:22:24.200 --> 00:22:26.470 align:start position:0%
+expression yeah do you know this
+expression<00:22:24.919><c> so</c><00:22:25.400><c> when</c><00:22:25.559><c> I</c><00:22:25.720><c> move</c><00:22:26.000><c> for</c><00:22:26.159><c> example</c>
+
+00:22:26.470 --> 00:22:26.480 align:start position:0%
+expression so when I move for example
+ 
+
+00:22:26.480 --> 00:22:29.470 align:start position:0%
+expression so when I move for example
+something<00:22:26.840><c> like</c><00:22:27.520><c> this</c><00:22:28.559><c> can</c><00:22:28.679><c> you</c><00:22:28.840><c> imagine</c><00:22:29.279><c> the</c>
+
+00:22:29.470 --> 00:22:29.480 align:start position:0%
+something like this can you imagine the
+ 
+
+00:22:29.480 --> 00:22:32.110 align:start position:0%
+something like this can you imagine the
+surface<00:22:30.039><c> that</c><00:22:30.360><c> is</c><00:22:30.559><c> Left</c><00:22:30.880><c> Behind</c><00:22:31.279><c> when</c><00:22:31.400><c> I</c><00:22:31.559><c> move</c>
+
+00:22:32.110 --> 00:22:32.120 align:start position:0%
+surface that is Left Behind when I move
+ 
+
+00:22:32.120 --> 00:22:34.310 align:start position:0%
+surface that is Left Behind when I move
+that's<00:22:32.400><c> called</c><00:22:32.679><c> the</c><00:22:32.840><c> surface</c><00:22:33.279><c> swept</c><00:22:33.760><c> out</c><00:22:34.120><c> by</c>
+
+00:22:34.310 --> 00:22:34.320 align:start position:0%
+that's called the surface swept out by
+ 
+
+00:22:34.320 --> 00:22:37.750 align:start position:0%
+that's called the surface swept out by
+this<00:22:35.000><c> by</c><00:22:35.159><c> this</c><00:22:35.440><c> stick</c><00:22:36.440><c> okay</c><00:22:37.240><c> and</c><00:22:37.400><c> if</c><00:22:37.480><c> you</c><00:22:37.640><c> have</c>
+
+00:22:37.750 --> 00:22:37.760 align:start position:0%
+this by this stick okay and if you have
+ 
+
+00:22:37.760 --> 00:22:39.990 align:start position:0%
+this by this stick okay and if you have
+a<00:22:37.919><c> point</c><00:22:38.919><c> it</c>
+
+00:22:39.990 --> 00:22:40.000 align:start position:0%
+a point it
+ 
+
+00:22:40.000 --> 00:22:42.510 align:start position:0%
+a point it
+moves<00:22:41.000><c> what</c><00:22:41.159><c> is</c><00:22:41.279><c> swept</c><00:22:41.640><c> out</c><00:22:41.840><c> by</c><00:22:42.000><c> this</c><00:22:42.159><c> point</c><00:22:42.400><c> is</c>
+
+00:22:42.510 --> 00:22:42.520 align:start position:0%
+moves what is swept out by this point is
+ 
+
+00:22:42.520 --> 00:22:45.830 align:start position:0%
+moves what is swept out by this point is
+a<00:22:42.919><c> is</c><00:22:43.039><c> a</c><00:22:43.320><c> curve</c><00:22:44.320><c> okay</c><00:22:44.520><c> you</c><00:22:44.720><c> sweep</c><00:22:45.159><c> out</c><00:22:45.520><c> because</c>
+
+00:22:45.830 --> 00:22:45.840 align:start position:0%
+a is a curve okay you sweep out because
+ 
+
+00:22:45.840 --> 00:22:47.870 align:start position:0%
+a is a curve okay you sweep out because
+sweeping<00:22:46.440><c> is</c><00:22:46.640><c> what</c><00:22:46.760><c> you</c><00:22:46.919><c> do</c><00:22:47.159><c> when</c><00:22:47.279><c> you</c><00:22:47.440><c> have</c><00:22:47.600><c> a</c>
+
+00:22:47.870 --> 00:22:47.880 align:start position:0%
+sweeping is what you do when you have a
+ 
+
+00:22:47.880 --> 00:22:50.669 align:start position:0%
+sweeping is what you do when you have a
+you<00:22:48.000><c> know</c><00:22:48.120><c> broom</c><00:22:48.520><c> and</c><00:22:48.679><c> so</c><00:22:48.919><c> forth</c><00:22:49.919><c> okay</c><00:22:50.559><c> it</c>
+
+00:22:50.669 --> 00:22:50.679 align:start position:0%
+you know broom and so forth okay it
+ 
+
+00:22:50.679 --> 00:22:54.590 align:start position:0%
+you know broom and so forth okay it
+sweeps
+
+00:22:54.590 --> 00:22:54.600 align:start position:0%
+ 
+ 
+
+00:22:54.600 --> 00:22:59.590 align:start position:0%
+ 
+out<00:22:55.600><c> a</c><00:22:55.960><c> surface</c>
+
+00:22:59.590 --> 00:22:59.600 align:start position:0%
+ 
+ 
+
+00:22:59.600 --> 00:23:02.430 align:start position:0%
+ 
+of<00:22:59.919><c> Dimension</c><00:23:00.880><c> what's</c>
+
+00:23:02.430 --> 00:23:02.440 align:start position:0%
+of Dimension what's
+ 
+
+00:23:02.440 --> 00:23:08.269 align:start position:0%
+of Dimension what's
+Dimension<00:23:03.679><c> Dimension</c><00:23:04.679><c> k</c><00:23:05.039><c> +</c>
+
+00:23:08.269 --> 00:23:08.279 align:start position:0%
+ 
+ 
+
+00:23:08.279 --> 00:23:12.149 align:start position:0%
+ 
+1
+
+00:23:12.149 --> 00:23:12.159 align:start position:0%
+ 
+ 
+
+00:23:12.159 --> 00:23:14.870 align:start position:0%
+ 
+okay<00:23:13.159><c> so</c><00:23:13.520><c> stepping</c>
+
+00:23:14.870 --> 00:23:14.880 align:start position:0%
+okay so stepping
+ 
+
+00:23:14.880 --> 00:23:18.070 align:start position:0%
+okay so stepping
+around<00:23:15.880><c> as</c><00:23:16.039><c> we</c><00:23:16.240><c> call</c>
+
+00:23:18.070 --> 00:23:18.080 align:start position:0%
+around as we call
+ 
+
+00:23:18.080 --> 00:23:20.750 align:start position:0%
+around as we call
+it<00:23:19.080><c> to</c><00:23:19.320><c> avoid</c><00:23:19.600><c> the</c>
+
+00:23:20.750 --> 00:23:20.760 align:start position:0%
+it to avoid the
+ 
+
+00:23:20.760 --> 00:23:30.310 align:start position:0%
+it to avoid the
+intersection<00:23:21.760><c> would</c><00:23:22.000><c> be</c><00:23:22.159><c> successful</c>
+
+00:23:30.310 --> 00:23:30.320 align:start position:0%
+ 
+ 
+
+00:23:30.320 --> 00:23:35.110 align:start position:0%
+ 
+if<00:23:31.039><c> there</c><00:23:31.159><c> is</c><00:23:31.559><c> enough</c><00:23:32.559><c> ambient</c><00:23:33.120><c> Dimension</c><00:23:34.120><c> to</c>
+
+00:23:35.110 --> 00:23:35.120 align:start position:0%
+if there is enough ambient Dimension to
+ 
+
+00:23:35.120 --> 00:23:37.590 align:start position:0%
+if there is enough ambient Dimension to
+avoid<00:23:35.640><c> intersection</c><00:23:36.159><c> between</c><00:23:36.520><c> this</c><00:23:36.919><c> screen</c>
+
+00:23:37.590 --> 00:23:37.600 align:start position:0%
+avoid intersection between this screen
+ 
+
+00:23:37.600 --> 00:23:43.470 align:start position:0%
+avoid intersection between this screen
+this<00:23:38.000><c> s</c><00:23:38.320><c> out</c><00:23:38.559><c> surface</c><00:23:39.320><c> and</c>
+
+00:23:43.470 --> 00:23:43.480 align:start position:0%
+ 
+ 
+
+00:23:43.480 --> 00:23:46.590 align:start position:0%
+ 
+L<00:23:44.480><c> if</c><00:23:45.000><c> this</c>
+
+00:23:46.590 --> 00:23:46.600 align:start position:0%
+L if this
+ 
+
+00:23:46.600 --> 00:23:49.470 align:start position:0%
+L if this
+surface<00:23:47.600><c> or</c><00:23:47.880><c> let's</c><00:23:48.120><c> call</c><00:23:48.279><c> it</c><00:23:48.520><c> sheet</c><00:23:49.200><c> because</c>
+
+00:23:49.470 --> 00:23:49.480 align:start position:0%
+surface or let's call it sheet because
+ 
+
+00:23:49.480 --> 00:23:51.269 align:start position:0%
+surface or let's call it sheet because
+that's
+
+00:23:51.269 --> 00:23:51.279 align:start position:0%
+that's
+ 
+
+00:23:51.279 --> 00:23:53.269 align:start position:0%
+that's
+probably
+
+00:23:53.269 --> 00:23:53.279 align:start position:0%
+probably
+ 
+
+00:23:53.279 --> 00:24:01.549 align:start position:0%
+probably
+more<00:23:54.279><c> suggested</c><00:23:55.039><c> if</c><00:23:55.559><c> sheet</c><00:23:56.559><c> yeah</c>
+
+00:24:01.549 --> 00:24:01.559 align:start position:0%
+ 
+ 
+
+00:24:01.559 --> 00:24:08.310 align:start position:0%
+ 
+there's<00:24:01.799><c> not</c>
+
+00:24:08.310 --> 00:24:08.320 align:start position:0%
+ 
+ 
+
+00:24:08.320 --> 00:24:11.870 align:start position:0%
+ 
+intercept<00:24:09.679><c> L</c><00:24:10.679><c> but</c><00:24:10.960><c> what</c><00:24:11.080><c> is</c><00:24:11.279><c> the</c><00:24:11.600><c> condition</c>
+
+00:24:11.870 --> 00:24:11.880 align:start position:0%
+intercept L but what is the condition
+ 
+
+00:24:11.880 --> 00:24:14.490 align:start position:0%
+intercept L but what is the condition
+for<00:24:12.200><c> the</c><00:24:12.520><c> avoiding</c>
+
+00:24:14.490 --> 00:24:14.500 align:start position:0%
+for the avoiding
+ 
+
+00:24:14.500 --> 00:24:16.510 align:start position:0%
+for the avoiding
+[Applause]
+
+00:24:16.510 --> 00:24:16.520 align:start position:0%
+[Applause]
+ 
+
+00:24:16.520 --> 00:24:18.070 align:start position:0%
+[Applause]
+intersection
+
+00:24:18.070 --> 00:24:18.080 align:start position:0%
+intersection
+ 
+
+00:24:18.080 --> 00:24:20.830 align:start position:0%
+intersection
+by<00:24:19.080><c> which</c><00:24:19.320><c> theorem</c><00:24:19.720><c> is</c>
+
+00:24:20.830 --> 00:24:20.840 align:start position:0%
+by which theorem is
+ 
+
+00:24:20.840 --> 00:24:24.470 align:start position:0%
+by which theorem is
+this<00:24:21.840><c> do</c><00:24:21.880><c> I</c><00:24:22.039><c> have</c><00:24:22.200><c> it</c><00:24:22.600><c> is</c><00:24:22.760><c> that</c><00:24:23.080><c> number</c>
+
+00:24:24.470 --> 00:24:24.480 align:start position:0%
+this do I have it is that number
+ 
+
+00:24:24.480 --> 00:24:26.830 align:start position:0%
+this do I have it is that number
+two<00:24:25.480><c> yeah</c><00:24:25.640><c> that's</c><00:24:25.880><c> right</c><00:24:26.120><c> by</c><00:24:26.320><c> theor</c><00:24:26.640><c> number</c>
+
+00:24:26.830 --> 00:24:26.840 align:start position:0%
+two yeah that's right by theor number
+ 
+
+00:24:26.840 --> 00:24:29.230 align:start position:0%
+two yeah that's right by theor number
+two
+
+00:24:29.230 --> 00:24:29.240 align:start position:0%
+two
+ 
+
+00:24:29.240 --> 00:24:32.029 align:start position:0%
+two
+no<00:24:29.440><c> the</c><00:24:29.799><c> number</c><00:24:30.240><c> one</c><00:24:31.240><c> because</c><00:24:31.559><c> it's</c><00:24:31.840><c> we're</c>
+
+00:24:32.029 --> 00:24:32.039 align:start position:0%
+no the number one because it's we're
+ 
+
+00:24:32.039 --> 00:24:34.110 align:start position:0%
+no the number one because it's we're
+using<00:24:33.000><c> Theory</c><00:24:33.360><c> number</c><00:24:33.520><c> two</c><00:24:33.679><c> is</c><00:24:33.799><c> what</c><00:24:33.919><c> we</c><00:24:34.000><c> are</c>
+
+00:24:34.110 --> 00:24:34.120 align:start position:0%
+using Theory number two is what we are
+ 
+
+00:24:34.120 --> 00:24:36.990 align:start position:0%
+using Theory number two is what we are
+proving<00:24:34.640><c> number</c><00:24:34.880><c> one</c><00:24:35.120><c> is</c><00:24:35.279><c> what</c><00:24:35.440><c> we</c><00:24:35.679><c> already</c>
+
+00:24:36.990 --> 00:24:37.000 align:start position:0%
+proving number one is what we already
+ 
+
+00:24:37.000 --> 00:24:43.149 align:start position:0%
+proving number one is what we already
+know<00:24:38.320><c> sheet</c><00:24:39.320><c> and</c><00:24:40.039><c> L</c><00:24:41.039><c> will</c><00:24:41.799><c> have</c><00:24:42.799><c> empty</c>
+
+00:24:43.149 --> 00:24:43.159 align:start position:0%
+know sheet and L will have empty
+ 
+
+00:24:43.159 --> 00:24:45.549 align:start position:0%
+know sheet and L will have empty
+intersection<00:24:43.679><c> generically</c><00:24:44.640><c> you</c><00:24:44.799><c> can</c><00:24:45.120><c> sort</c><00:24:45.320><c> of</c>
+
+00:24:45.549 --> 00:24:45.559 align:start position:0%
+intersection generically you can sort of
+ 
+
+00:24:45.559 --> 00:24:48.950 align:start position:0%
+intersection generically you can sort of
+generically<00:24:46.080><c> part</c><00:24:46.440><c> it</c><00:24:46.640><c> to</c><00:24:47.200><c> El</c><00:24:47.720><c> intersection</c>
+
+00:24:48.950 --> 00:24:48.960 align:start position:0%
+generically part it to El intersection
+ 
+
+00:24:48.960 --> 00:24:53.630 align:start position:0%
+generically part it to El intersection
+if<00:24:49.960><c> the</c><00:24:50.520><c> Overflow</c><00:24:51.520><c> which</c><00:24:51.679><c> is</c><00:24:52.159><c> one</c><00:24:52.640><c> plus</c>
+
+00:24:53.630 --> 00:24:53.640 align:start position:0%
+if the Overflow which is one plus
+ 
+
+00:24:53.640 --> 00:24:55.950 align:start position:0%
+if the Overflow which is one plus
+dimension<00:24:54.039><c> of</c><00:24:54.240><c> K</c><00:24:55.200><c> that's</c><00:24:55.399><c> the</c><00:24:55.520><c> dimension</c><00:24:55.840><c> of</c>
+
+00:24:55.950 --> 00:24:55.960 align:start position:0%
+dimension of K that's the dimension of
+ 
+
+00:24:55.960 --> 00:24:59.110 align:start position:0%
+dimension of K that's the dimension of
+the<00:24:56.039><c> sheet</c><00:24:56.960><c> yeah</c><00:24:57.559><c> plus</c><00:24:57.880><c> dimension</c>
+
+00:24:59.110 --> 00:24:59.120 align:start position:0%
+the sheet yeah plus dimension
+ 
+
+00:24:59.120 --> 00:25:04.149 align:start position:0%
+the sheet yeah plus dimension
+L<00:25:00.120><c> minus</c><00:25:00.559><c> dimension</c><00:25:01.360><c> of</c><00:25:02.360><c> M</c><00:25:03.000><c> is</c><00:25:03.600><c> negative</c>
+
+00:25:04.149 --> 00:25:04.159 align:start position:0%
+L minus dimension of M is negative
+ 
+
+00:25:04.159 --> 00:25:05.149 align:start position:0%
+L minus dimension of M is negative
+strictly
+
+00:25:05.149 --> 00:25:05.159 align:start position:0%
+strictly
+ 
+
+00:25:05.159 --> 00:25:08.350 align:start position:0%
+strictly
+negative<00:25:06.159><c> but</c><00:25:06.480><c> what</c><00:25:06.600><c> is</c><00:25:06.840><c> this</c><00:25:07.559><c> it</c><00:25:07.720><c> is</c><00:25:08.000><c> simply</c>
+
+00:25:08.350 --> 00:25:08.360 align:start position:0%
+negative but what is this it is simply
+ 
+
+00:25:08.360 --> 00:25:10.590 align:start position:0%
+negative but what is this it is simply
+equal<00:25:08.600><c> to</c><00:25:08.960><c> this</c><00:25:09.120><c> number</c><00:25:09.320><c> is</c><00:25:09.480><c> Overflow</c><00:25:10.039><c> it's</c><00:25:10.279><c> 1</c>
+
+00:25:10.590 --> 00:25:10.600 align:start position:0%
+equal to this number is Overflow it's 1
+ 
+
+00:25:10.600 --> 00:25:11.950 align:start position:0%
+equal to this number is Overflow it's 1
+plus<00:25:10.880><c> the</c>
+
+00:25:11.950 --> 00:25:11.960 align:start position:0%
+plus the
+ 
+
+00:25:11.960 --> 00:25:15.830 align:start position:0%
+plus the
+Overflow<00:25:12.960><c> and</c><00:25:13.120><c> you</c><00:25:13.240><c> see</c><00:25:13.559><c> that</c><00:25:14.399><c> therefore</c><00:25:15.399><c> it's</c>
+
+00:25:15.830 --> 00:25:15.840 align:start position:0%
+Overflow and you see that therefore it's
+ 
+
+00:25:15.840 --> 00:25:18.549 align:start position:0%
+Overflow and you see that therefore it's
+successful<00:25:16.840><c> you</c><00:25:16.960><c> can</c><00:25:17.640><c> avoid</c><00:25:17.919><c> a</c><00:25:18.080><c> Crossing</c><00:25:18.440><c> if</c>
+
+00:25:18.549 --> 00:25:18.559 align:start position:0%
+successful you can avoid a Crossing if
+ 
+
+00:25:18.559 --> 00:25:20.590 align:start position:0%
+successful you can avoid a Crossing if
+and<00:25:18.720><c> only</c><00:25:18.919><c> if</c><00:25:19.039><c> the</c><00:25:19.159><c> Overflow</c><00:25:19.720><c> is</c><00:25:20.039><c> strictly</c>
+
+00:25:20.590 --> 00:25:20.600 align:start position:0%
+and only if the Overflow is strictly
+ 
+
+00:25:20.600 --> 00:25:21.870 align:start position:0%
+and only if the Overflow is strictly
+less<00:25:20.799><c> than</c><00:25:21.000><c> minus</c>
+
+00:25:21.870 --> 00:25:21.880 align:start position:0%
+less than minus
+ 
+
+00:25:21.880 --> 00:25:24.950 align:start position:0%
+less than minus
+one<00:25:22.880><c> that's</c><00:25:23.120><c> the</c><00:25:23.640><c> condition</c><00:25:24.200><c> if</c><00:25:24.360><c> it's</c><00:25:24.640><c> equal</c>
+
+00:25:24.950 --> 00:25:24.960 align:start position:0%
+one that's the condition if it's equal
+ 
+
+00:25:24.960 --> 00:25:27.430 align:start position:0%
+one that's the condition if it's equal
+to<00:25:25.080><c> minus</c><00:25:25.399><c> one</c><00:25:25.799><c> you're</c><00:25:26.039><c> in</c><00:25:26.159><c> the</c><00:25:26.320><c> case</c><00:25:26.640><c> where</c>
+
+00:25:27.430 --> 00:25:27.440 align:start position:0%
+to minus one you're in the case where
+ 
+
+00:25:27.440 --> 00:25:31.630 align:start position:0%
+to minus one you're in the case where
+the<00:25:28.200><c> the</c><00:25:28.360><c> this</c><00:25:28.679><c> sheet</c><00:25:29.640><c> and</c><00:25:29.919><c> L</c><00:25:30.399><c> intersect</c><00:25:31.000><c> in</c>
+
+00:25:31.630 --> 00:25:31.640 align:start position:0%
+the the this sheet and L intersect in
+ 
+
+00:25:31.640 --> 00:25:34.510 align:start position:0%
+the the this sheet and L intersect in
+points<00:25:32.440><c> in</c><00:25:32.640><c> Zero</c><00:25:32.919><c> Dimensional</c><00:25:33.320><c> things</c><00:25:34.200><c> that's</c>
+
+00:25:34.510 --> 00:25:34.520 align:start position:0%
+points in Zero Dimensional things that's
+ 
+
+00:25:34.520 --> 00:25:35.909 align:start position:0%
+points in Zero Dimensional things that's
+the
+
+00:25:35.909 --> 00:25:35.919 align:start position:0%
+the
+ 
+
+00:25:35.919 --> 00:25:40.269 align:start position:0%
+the
+uh<00:25:37.279><c> conclusion</c>
+
+00:25:40.269 --> 00:25:40.279 align:start position:0%
+uh conclusion
+ 
+
+00:25:40.279 --> 00:25:44.630 align:start position:0%
+uh conclusion
+okay<00:25:41.279><c> I'll</c><00:25:41.559><c> add</c><00:25:41.760><c> one</c><00:25:41.880><c> or</c><00:25:42.080><c> two</c><00:25:42.760><c> cories</c><00:25:43.520><c> and</c><00:25:43.720><c> then</c>
+
+00:25:44.630 --> 00:25:44.640 align:start position:0%
+okay I'll add one or two cories and then
+ 
+
+00:25:44.640 --> 00:25:48.029 align:start position:0%
+okay I'll add one or two cories and then
+that's
+
+00:25:48.029 --> 00:25:48.039 align:start position:0%
+ 
+ 
+
+00:25:48.039 --> 00:25:52.870 align:start position:0%
+ 
+it<00:25:49.399><c> okay</c><00:25:50.399><c> have</c><00:25:50.520><c> you</c><00:25:50.640><c> heard</c><00:25:50.840><c> of</c><00:25:51.080><c> not</c>
+
+00:25:52.870 --> 00:25:52.880 align:start position:0%
+it okay have you heard of not
+ 
+
+00:25:52.880 --> 00:25:56.710 align:start position:0%
+it okay have you heard of not
+Theory<00:25:53.960><c> huh</c><00:25:54.960><c> have</c><00:25:55.120><c> you</c><00:25:55.440><c> not</c><00:25:55.720><c> Theory</c><00:25:56.399><c> first</c><00:25:56.600><c> of</c>
+
+00:25:56.710 --> 00:25:56.720 align:start position:0%
+Theory huh have you not Theory first of
+ 
+
+00:25:56.720 --> 00:25:59.310 align:start position:0%
+Theory huh have you not Theory first of
+all<00:25:56.880><c> not</c><00:25:57.120><c> Theory</c><00:25:57.440><c> doesn't</c><00:25:57.720><c> mean</c>
+
+00:25:59.310 --> 00:25:59.320 align:start position:0%
+all not Theory doesn't mean
+ 
+
+00:25:59.320 --> 00:26:01.950 align:start position:0%
+all not Theory doesn't mean
+not
+
+00:26:01.950 --> 00:26:01.960 align:start position:0%
+not
+ 
+
+00:26:01.960 --> 00:26:05.350 align:start position:0%
+not
+Theory<00:26:03.120><c> it'sot</c><00:26:04.120><c> Theory</c><00:26:04.600><c> not</c><00:26:04.880><c> Theory</c><00:26:05.200><c> so</c>
+
+00:26:05.350 --> 00:26:05.360 align:start position:0%
+Theory it'sot Theory not Theory so
+ 
+
+00:26:05.360 --> 00:26:06.430 align:start position:0%
+Theory it'sot Theory not Theory so
+theory<00:26:05.640><c> of</c>
+
+00:26:06.430 --> 00:26:06.440 align:start position:0%
+theory of
+ 
+
+00:26:06.440 --> 00:26:10.029 align:start position:0%
+theory of
+Nots<00:26:07.440><c> things</c><00:26:07.799><c> like</c><00:26:08.080><c> that</c><00:26:08.480><c> this</c><00:26:08.600><c> is</c><00:26:08.919><c> noted</c><00:26:09.919><c> this</c>
+
+00:26:10.029 --> 00:26:10.039 align:start position:0%
+Nots things like that this is noted this
+ 
+
+00:26:10.039 --> 00:26:12.510 align:start position:0%
+Nots things like that this is noted this
+is<00:26:10.200><c> not</c><00:26:10.399><c> noted</c><00:26:11.000><c> and</c><00:26:11.200><c> so</c><00:26:11.720><c> not</c><00:26:11.960><c> Theory</c><00:26:12.320><c> have</c><00:26:12.399><c> you</c>
+
+00:26:12.510 --> 00:26:12.520 align:start position:0%
+is not noted and so not Theory have you
+ 
+
+00:26:12.520 --> 00:26:13.830 align:start position:0%
+is not noted and so not Theory have you
+heard<00:26:12.720><c> of</c><00:26:12.880><c> this</c><00:26:13.080><c> this</c><00:26:13.200><c> used</c><00:26:13.360><c> to</c><00:26:13.440><c> be</c><00:26:13.600><c> quite</c>
+
+00:26:13.830 --> 00:26:13.840 align:start position:0%
+heard of this this used to be quite
+ 
+
+00:26:13.840 --> 00:26:15.590 align:start position:0%
+heard of this this used to be quite
+popular<00:26:14.399><c> but</c><00:26:14.559><c> maybe</c><00:26:14.799><c> now</c><00:26:15.159><c> it's</c><00:26:15.279><c> not</c><00:26:15.399><c> so</c>
+
+00:26:15.590 --> 00:26:15.600 align:start position:0%
+popular but maybe now it's not so
+ 
+
+00:26:15.600 --> 00:26:17.830 align:start position:0%
+popular but maybe now it's not so
+popular<00:26:16.520><c> so</c><00:26:16.760><c> I'm</c><00:26:16.919><c> going</c><00:26:17.039><c> to</c><00:26:17.159><c> show</c><00:26:17.279><c> you</c><00:26:17.399><c> that</c><00:26:17.559><c> no</c>
+
+00:26:17.830 --> 00:26:17.840 align:start position:0%
+popular so I'm going to show you that no
+ 
+
+00:26:17.840 --> 00:26:21.269 align:start position:0%
+popular so I'm going to show you that no
+theory<00:26:18.679><c> is</c><00:26:18.799><c> a</c><00:26:18.960><c> very</c><00:26:19.200><c> special</c><00:26:20.000><c> subject</c><00:26:21.000><c> and</c>
+
+00:26:21.269 --> 00:26:21.279 align:start position:0%
+theory is a very special subject and
+ 
+
+00:26:21.279 --> 00:26:25.029 align:start position:0%
+theory is a very special subject and
+it's<00:26:21.840><c> not</c><00:26:22.840><c> generally</c><00:26:23.640><c> applicable</c><00:26:24.399><c> first</c><00:26:24.679><c> cor</c>
+
+00:26:25.029 --> 00:26:25.039 align:start position:0%
+it's not generally applicable first cor
+ 
+
+00:26:25.039 --> 00:26:28.909 align:start position:0%
+it's not generally applicable first cor
+is<00:26:25.200><c> three</c>
+
+00:26:28.909 --> 00:26:28.919 align:start position:0%
+ 
+ 
+
+00:26:28.919 --> 00:26:31.190 align:start position:0%
+ 
+you<00:26:29.080><c> know</c><00:26:29.240><c> if</c><00:26:29.360><c> you</c><00:26:29.480><c> have</c><00:26:29.640><c> something</c><00:26:30.000><c> like</c><00:26:30.240><c> that</c>
+
+00:26:31.190 --> 00:26:31.200 align:start position:0%
+you know if you have something like that
+ 
+
+00:26:31.200 --> 00:26:33.789 align:start position:0%
+you know if you have something like that
+without<00:26:31.520><c> cutting</c><00:26:32.440><c> you</c><00:26:32.600><c> cannot</c><00:26:32.960><c> unot</c><00:26:33.399><c> it</c><00:26:33.559><c> to</c>
+
+00:26:33.789 --> 00:26:33.799 align:start position:0%
+without cutting you cannot unot it to
+ 
+
+00:26:33.799 --> 00:26:34.750 align:start position:0%
+without cutting you cannot unot it to
+make
+
+00:26:34.750 --> 00:26:34.760 align:start position:0%
+make
+ 
+
+00:26:34.760 --> 00:26:36.310 align:start position:0%
+make
+this
+
+00:26:36.310 --> 00:26:36.320 align:start position:0%
+this
+ 
+
+00:26:36.320 --> 00:26:39.029 align:start position:0%
+this
+yeah<00:26:37.320><c> I</c><00:26:37.440><c> should</c><00:26:37.600><c> have</c><00:26:37.799><c> brought</c><00:26:38.080><c> a</c><00:26:38.360><c> string</c><00:26:38.880><c> in</c>
+
+00:26:39.029 --> 00:26:39.039 align:start position:0%
+yeah I should have brought a string in
+ 
+
+00:26:39.039 --> 00:26:41.070 align:start position:0%
+yeah I should have brought a string in
+fact<00:26:39.520><c> uh</c><00:26:39.760><c> somebody</c><00:26:40.240><c> was</c><00:26:40.399><c> doing</c><00:26:40.640><c> this</c><00:26:40.880><c> last</c>
+
+00:26:41.070 --> 00:26:41.080 align:start position:0%
+fact uh somebody was doing this last
+ 
+
+00:26:41.080 --> 00:26:43.350 align:start position:0%
+fact uh somebody was doing this last
+night<00:26:41.880><c> yeah</c><00:26:42.039><c> you</c><00:26:42.159><c> cannot</c><00:26:42.440><c> unnote</c><00:26:42.919><c> this</c><00:26:43.120><c> to</c>
+
+00:26:43.350 --> 00:26:43.360 align:start position:0%
+night yeah you cannot unnote this to
+ 
+
+00:26:43.360 --> 00:26:46.350 align:start position:0%
+night yeah you cannot unnote this to
+make
+
+00:26:46.350 --> 00:26:46.360 align:start position:0%
+ 
+ 
+
+00:26:46.360 --> 00:26:48.909 align:start position:0%
+ 
+this<00:26:47.360><c> yeah</c><00:26:47.480><c> you</c><00:26:47.600><c> cannot</c><00:26:48.000><c> because</c><00:26:48.480><c> if</c><00:26:48.600><c> you</c><00:26:48.799><c> have</c>
+
+00:26:48.909 --> 00:26:48.919 align:start position:0%
+this yeah you cannot because if you have
+ 
+
+00:26:48.919 --> 00:26:51.110 align:start position:0%
+this yeah you cannot because if you have
+a<00:26:49.120><c> string</c><00:26:49.720><c> imagine</c><00:26:50.080><c> that</c><00:26:50.320><c> this</c><00:26:50.440><c> is</c><00:26:50.559><c> made</c><00:26:50.760><c> of</c>
+
+00:26:51.110 --> 00:26:51.120 align:start position:0%
+a string imagine that this is made of
+ 
+
+00:26:51.120 --> 00:26:54.909 align:start position:0%
+a string imagine that this is made of
+string<00:26:52.120><c> I</c><00:26:52.480><c> cannot</c><00:26:53.480><c> make</c><00:26:53.679><c> it</c><00:26:54.039><c> into</c><00:26:54.320><c> this</c><00:26:54.480><c> shape</c>
+
+00:26:54.909 --> 00:26:54.919 align:start position:0%
+string I cannot make it into this shape
+ 
+
+00:26:54.919 --> 00:26:56.269 align:start position:0%
+string I cannot make it into this shape
+inside
+
+00:26:56.269 --> 00:26:56.279 align:start position:0%
+inside
+ 
+
+00:26:56.279 --> 00:27:01.510 align:start position:0%
+inside
+R3<00:26:57.279><c> I</c><00:26:57.880><c> do</c><00:26:58.000><c> you</c><00:26:58.600><c> agree</c><00:26:59.600><c> yeah</c><00:26:59.760><c> you</c><00:26:59.840><c> can</c><00:27:00.000><c> see</c><00:27:00.520><c> this</c>
+
+00:27:01.510 --> 00:27:01.520 align:start position:0%
+R3 I do you agree yeah you can see this
+ 
+
+00:27:01.520 --> 00:27:03.990 align:start position:0%
+R3 I do you agree yeah you can see this
+I<00:27:01.720><c> really</c><00:27:01.960><c> wish</c><00:27:02.200><c> that</c><00:27:02.360><c> I</c><00:27:02.480><c> was</c><00:27:02.679><c> wearing</c><00:27:03.279><c> a</c><00:27:03.559><c> shoe</c>
+
+00:27:03.990 --> 00:27:04.000 align:start position:0%
+I really wish that I was wearing a shoe
+ 
+
+00:27:04.000 --> 00:27:06.230 align:start position:0%
+I really wish that I was wearing a shoe
+with<00:27:04.159><c> shoelaces</c><00:27:04.799><c> does</c><00:27:05.039><c> anybody</c><00:27:05.360><c> have</c><00:27:05.480><c> a</c>
+
+00:27:06.230 --> 00:27:06.240 align:start position:0%
+with shoelaces does anybody have a
+ 
+
+00:27:06.240 --> 00:27:08.750 align:start position:0%
+with shoelaces does anybody have a
+shoeless<00:27:07.240><c> no</c>
+
+00:27:08.750 --> 00:27:08.760 align:start position:0%
+shoeless no
+ 
+
+00:27:08.760 --> 00:27:11.470 align:start position:0%
+shoeless no
+okay<00:27:09.760><c> okay</c><00:27:10.720><c> do</c><00:27:10.799><c> you</c><00:27:10.880><c> know</c><00:27:11.039><c> what</c><00:27:11.120><c> I'm</c><00:27:11.279><c> talking</c>
+
+00:27:11.470 --> 00:27:11.480 align:start position:0%
+okay okay do you know what I'm talking
+ 
+
+00:27:11.480 --> 00:27:12.789 align:start position:0%
+okay okay do you know what I'm talking
+about<00:27:11.720><c> what</c><00:27:11.840><c> do</c><00:27:11.919><c> you</c><00:27:12.000><c> know</c><00:27:12.120><c> what</c><00:27:12.240><c> the</c><00:27:12.320><c> shoelace</c>
+
+00:27:12.789 --> 00:27:12.799 align:start position:0%
+about what do you know what the shoelace
+ 
+
+00:27:12.799 --> 00:27:14.670 align:start position:0%
+about what do you know what the shoelace
+is<00:27:13.039><c> it's</c><00:27:13.240><c> the</c><00:27:13.480><c> string</c><00:27:13.840><c> that</c><00:27:13.960><c> you</c>
+
+00:27:14.670 --> 00:27:14.680 align:start position:0%
+is it's the string that you
+ 
+
+00:27:14.680 --> 00:27:16.070 align:start position:0%
+is it's the string that you
+[Music]
+
+00:27:16.070 --> 00:27:16.080 align:start position:0%
+[Music]
+ 
+
+00:27:16.080 --> 00:27:18.870 align:start position:0%
+[Music]
+have<00:27:17.080><c> M</c><00:27:17.440><c> can</c><00:27:17.559><c> you</c><00:27:17.640><c> lend</c><00:27:17.880><c> me</c><00:27:18.000><c> your</c><00:27:18.120><c> Sho</c><00:27:18.399><c> Sho</c><00:27:18.679><c> this</c>
+
+00:27:18.870 --> 00:27:18.880 align:start position:0%
+have M can you lend me your Sho Sho this
+ 
+
+00:27:18.880 --> 00:27:23.870 align:start position:0%
+have M can you lend me your Sho Sho this
+in<00:27:18.960><c> a</c><00:27:19.399><c> moment</c>
+
+00:27:23.870 --> 00:27:23.880 align:start position:0%
+ 
+ 
+
+00:27:23.880 --> 00:27:26.950 align:start position:0%
+ 
+okay<00:27:24.880><c> you</c><00:27:25.000><c> have</c><00:27:25.159><c> a</c><00:27:25.559><c> oh</c><00:27:25.880><c> that's</c><00:27:26.159><c> but</c><00:27:26.440><c> I</c><00:27:26.520><c> can</c><00:27:26.799><c> cut</c>
+
+00:27:26.950 --> 00:27:26.960 align:start position:0%
+okay you have a oh that's but I can cut
+ 
+
+00:27:26.960 --> 00:27:30.990 align:start position:0%
+okay you have a oh that's but I can cut
+it<00:27:27.279><c> right</c><00:27:28.399><c> because</c><00:27:28.679><c> we</c><00:27:28.840><c> have</c><00:27:29.279><c> no</c><00:27:30.279><c> no</c><00:27:30.480><c> scissors</c>
+
+00:27:30.990 --> 00:27:31.000 align:start position:0%
+it right because we have no no scissors
+ 
+
+00:27:31.000 --> 00:27:33.470 align:start position:0%
+it right because we have no no scissors
+somewhere<00:27:31.600><c> anyway</c><00:27:31.960><c> in</c>
+
+00:27:33.470 --> 00:27:33.480 align:start position:0%
+somewhere anyway in
+ 
+
+00:27:33.480 --> 00:27:35.950 align:start position:0%
+somewhere anyway in
+aims<00:27:34.480><c> thank</c><00:27:34.640><c> you</c><00:27:34.799><c> very</c><00:27:34.960><c> much</c><00:27:35.360><c> thank</c><00:27:35.480><c> you</c><00:27:35.640><c> I'll</c>
+
+00:27:35.950 --> 00:27:35.960 align:start position:0%
+aims thank you very much thank you I'll
+ 
+
+00:27:35.960 --> 00:27:38.789 align:start position:0%
+aims thank you very much thank you I'll
+return<00:27:36.159><c> it</c><00:27:36.640><c> and</c><00:27:36.760><c> so</c><00:27:37.320><c> thank</c><00:27:37.520><c> you</c><00:27:37.679><c> very</c><00:27:37.880><c> much</c><00:27:38.440><c> to</c>
+
+00:27:38.789 --> 00:27:38.799 align:start position:0%
+return it and so thank you very much to
+ 
+
+00:27:38.799 --> 00:27:44.149 align:start position:0%
+return it and so thank you very much to
+M<00:27:39.279><c> for</c><00:27:39.600><c> his</c><00:27:40.240><c> support</c><00:27:41.240><c> in</c><00:27:41.480><c> the</c><00:27:41.640><c> mathematical</c>
+
+00:27:44.149 --> 00:27:44.159 align:start position:0%
+M for his support in the mathematical
+ 
+
+00:27:44.159 --> 00:27:47.310 align:start position:0%
+M for his support in the mathematical
+Sciences<00:27:45.159><c> yeah</c><00:27:45.559><c> so</c><00:27:45.840><c> this</c>
+
+00:27:47.310 --> 00:27:47.320 align:start position:0%
+Sciences yeah so this
+ 
+
+00:27:47.320 --> 00:27:53.470 align:start position:0%
+Sciences yeah so this
+is<00:27:48.320><c> yeah</c><00:27:48.840><c> a</c><00:27:49.039><c> simple</c><00:27:49.840><c> Loop</c><00:27:50.840><c> but</c><00:27:51.080><c> now</c><00:27:51.919><c> let's</c><00:27:52.480><c> take</c>
+
+00:27:53.470 --> 00:27:53.480 align:start position:0%
+is yeah a simple Loop but now let's take
+ 
+
+00:27:53.480 --> 00:27:56.830 align:start position:0%
+is yeah a simple Loop but now let's take
+something
+
+00:27:56.830 --> 00:27:56.840 align:start position:0%
+ 
+ 
+
+00:27:56.840 --> 00:28:00.750 align:start position:0%
+ 
+else<00:27:57.840><c> if</c><00:27:57.960><c> we</c><00:27:58.240><c> have</c><00:27:58.360><c> something</c><00:27:58.679><c> like</c><00:27:59.399><c> that</c><00:28:00.399><c> let</c>
+
+00:28:00.750 --> 00:28:00.760 align:start position:0%
+else if we have something like that let
+ 
+
+00:28:00.760 --> 00:28:03.950 align:start position:0%
+else if we have something like that let
+me<00:28:01.760><c> tie</c><00:28:02.000><c> a</c>
+
+00:28:03.950 --> 00:28:03.960 align:start position:0%
+me tie a
+ 
+
+00:28:03.960 --> 00:28:06.830 align:start position:0%
+me tie a
+not<00:28:04.960><c> excuse</c>
+
+00:28:06.830 --> 00:28:06.840 align:start position:0%
+not excuse
+ 
+
+00:28:06.840 --> 00:28:09.630 align:start position:0%
+not excuse
+me<00:28:07.840><c> yeah</c><00:28:08.120><c> something</c><00:28:08.480><c> like</c>
+
+00:28:09.630 --> 00:28:09.640 align:start position:0%
+me yeah something like
+ 
+
+00:28:09.640 --> 00:28:13.389 align:start position:0%
+me yeah something like
+this<00:28:10.640><c> yeah</c><00:28:11.480><c> I</c><00:28:11.640><c> cannot</c>
+
+00:28:13.389 --> 00:28:13.399 align:start position:0%
+this yeah I cannot
+ 
+
+00:28:13.399 --> 00:28:17.669 align:start position:0%
+this yeah I cannot
+undo<00:28:14.399><c> this</c><00:28:14.720><c> note</c><00:28:15.720><c> what</c><00:28:15.840><c> am</c><00:28:15.960><c> I</c><00:28:16.120><c> doing</c><00:28:16.679><c> here</c>
+
+00:28:17.669 --> 00:28:17.679 align:start position:0%
+undo this note what am I doing here
+ 
+
+00:28:17.679 --> 00:28:20.310 align:start position:0%
+undo this note what am I doing here
+anyway<00:28:18.080><c> something</c><00:28:18.399><c> like</c><00:28:18.640><c> this</c><00:28:19.320><c> yeah</c><00:28:19.840><c> I</c><00:28:20.000><c> cannot</c>
+
+00:28:20.310 --> 00:28:20.320 align:start position:0%
+anyway something like this yeah I cannot
+ 
+
+00:28:20.320 --> 00:28:23.830 align:start position:0%
+anyway something like this yeah I cannot
+undo<00:28:20.840><c> this</c><00:28:21.679><c> and</c><00:28:21.880><c> make</c><00:28:22.039><c> it</c><00:28:22.240><c> just</c><00:28:22.399><c> a</c>
+
+00:28:23.830 --> 00:28:23.840 align:start position:0%
+undo this and make it just a
+ 
+
+00:28:23.840 --> 00:28:27.230 align:start position:0%
+undo this and make it just a
+straight<00:28:24.840><c> it's</c><00:28:25.039><c> clear</c><00:28:25.799><c> but</c><00:28:25.919><c> I</c><00:28:26.039><c> cannot</c><00:28:26.760><c> undo</c>
+
+00:28:27.230 --> 00:28:27.240 align:start position:0%
+straight it's clear but I cannot undo
+ 
+
+00:28:27.240 --> 00:28:29.630 align:start position:0%
+straight it's clear but I cannot undo
+this<00:28:27.519><c> in</c><00:28:27.720><c> 3D</c>
+
+00:28:29.630 --> 00:28:29.640 align:start position:0%
+this in 3D
+ 
+
+00:28:29.640 --> 00:28:31.509 align:start position:0%
+this in 3D
+but<00:28:29.880><c> that's</c><00:28:30.159><c> because</c><00:28:30.440><c> I</c><00:28:30.559><c> cannot</c><00:28:30.840><c> undo</c><00:28:31.200><c> this</c>
+
+00:28:31.509 --> 00:28:31.519 align:start position:0%
+but that's because I cannot undo this
+ 
+
+00:28:31.519 --> 00:28:33.789 align:start position:0%
+but that's because I cannot undo this
+because<00:28:32.039><c> we</c><00:28:32.159><c> are</c><00:28:32.399><c> in</c><00:28:32.600><c> threedimensional</c><00:28:33.039><c> space</c>
+
+00:28:33.789 --> 00:28:33.799 align:start position:0%
+because we are in threedimensional space
+ 
+
+00:28:33.799 --> 00:28:36.029 align:start position:0%
+because we are in threedimensional space
+in<00:28:33.960><c> four</c><00:28:34.320><c> dimensional</c><00:28:34.880><c> space</c><00:28:35.240><c> we</c>
+
+00:28:36.029 --> 00:28:36.039 align:start position:0%
+in four dimensional space we
+ 
+
+00:28:36.039 --> 00:28:38.350 align:start position:0%
+in four dimensional space we
+can<00:28:37.039><c> we</c><00:28:37.200><c> can</c><00:28:37.399><c> sort</c><00:28:37.600><c> of</c><00:28:37.760><c> go</c><00:28:37.880><c> to</c><00:28:38.000><c> the</c><00:28:38.120><c> four</c>
+
+00:28:38.350 --> 00:28:38.360 align:start position:0%
+can we can sort of go to the four
+ 
+
+00:28:38.360 --> 00:28:42.310 align:start position:0%
+can we can sort of go to the four
+dimensional
+
+00:28:42.310 --> 00:28:42.320 align:start position:0%
+ 
+ 
+
+00:28:42.320 --> 00:28:45.350 align:start position:0%
+ 
+space<00:28:43.320><c> it's</c><00:28:43.799><c> it</c><00:28:44.080><c> left</c><00:28:44.519><c> and</c><00:28:44.840><c> it</c><00:28:44.919><c> will</c><00:28:45.080><c> come</c><00:28:45.240><c> back</c>
+
+00:28:45.350 --> 00:28:45.360 align:start position:0%
+space it's it left and it will come back
+ 
+
+00:28:45.360 --> 00:28:46.710 align:start position:0%
+space it's it left and it will come back
+in<00:28:45.440><c> a</c><00:28:45.559><c> moment</c><00:28:45.799><c> it's</c><00:28:45.919><c> in</c><00:28:46.039><c> the</c><00:28:46.120><c> four</c><00:28:46.320><c> dimensional</c>
+
+00:28:46.710 --> 00:28:46.720 align:start position:0%
+in a moment it's in the four dimensional
+ 
+
+00:28:46.720 --> 00:28:51.190 align:start position:0%
+in a moment it's in the four dimensional
+space
+
+00:28:51.190 --> 00:28:51.200 align:start position:0%
+ 
+ 
+
+00:28:51.200 --> 00:28:53.509 align:start position:0%
+ 
+now<00:28:52.200><c> just</c><00:28:52.360><c> one</c><00:28:52.519><c> second</c><00:28:52.799><c> it</c><00:28:52.960><c> takes</c><00:28:53.240><c> quite</c><00:28:53.399><c> a</c>
+
+00:28:53.509 --> 00:28:53.519 align:start position:0%
+now just one second it takes quite a
+ 
+
+00:28:53.519 --> 00:28:56.669 align:start position:0%
+now just one second it takes quite a
+while<00:28:53.679><c> to</c><00:28:53.799><c> go</c><00:28:53.919><c> to</c><00:28:54.039><c> the</c><00:28:54.120><c> four</c><00:28:54.279><c> dimensional</c>
+
+00:28:56.669 --> 00:28:56.679 align:start position:0%
+while to go to the four dimensional
+ 
+
+00:28:56.679 --> 00:28:59.789 align:start position:0%
+while to go to the four dimensional
+space<00:28:57.679><c> yeah</c><00:28:57.840><c> yeah</c><00:28:58.159><c> yeah</c><00:28:58.360><c> but</c><00:28:58.880><c> that's</c><00:28:59.120><c> because</c>
+
+00:28:59.789 --> 00:28:59.799 align:start position:0%
+space yeah yeah yeah but that's because
+ 
+
+00:28:59.799 --> 00:29:02.669 align:start position:0%
+space yeah yeah yeah but that's because
+Egyptian<00:29:00.279><c> women</c><00:29:00.559><c> have</c><00:29:00.720><c> special</c><00:29:01.080><c> vision</c><00:29:01.799><c> and</c>
+
+00:29:02.669 --> 00:29:02.679 align:start position:0%
+Egyptian women have special vision and
+ 
+
+00:29:02.679 --> 00:29:05.990 align:start position:0%
+Egyptian women have special vision and
+and<00:29:02.919><c> it</c><00:29:03.080><c> comes</c><00:29:03.679><c> like</c><00:29:04.039><c> this</c>
+
+00:29:05.990 --> 00:29:06.000 align:start position:0%
+and it comes like this
+ 
+
+00:29:06.000 --> 00:29:09.509 align:start position:0%
+and it comes like this
+so<00:29:07.000><c> that's</c><00:29:07.240><c> the</c><00:29:07.480><c> statement</c><00:29:08.440><c> it</c><00:29:08.640><c> sounds</c><00:29:09.039><c> crazy</c>
+
+00:29:09.509 --> 00:29:09.519 align:start position:0%
+so that's the statement it sounds crazy
+ 
+
+00:29:09.519 --> 00:29:12.750 align:start position:0%
+so that's the statement it sounds crazy
+but<00:29:09.720><c> we</c><00:29:09.840><c> shall</c><00:29:10.039><c> see</c><00:29:10.279><c> that</c><00:29:10.440><c> it</c><00:29:10.559><c> is</c>
+
+00:29:12.750 --> 00:29:12.760 align:start position:0%
+but we shall see that it is
+ 
+
+00:29:12.760 --> 00:29:14.950 align:start position:0%
+but we shall see that it is
+true<00:29:13.760><c> so</c>
+
+00:29:14.950 --> 00:29:14.960 align:start position:0%
+true so
+ 
+
+00:29:14.960 --> 00:29:18.509 align:start position:0%
+true so
+every<00:29:15.960><c> not</c><00:29:16.320><c> made</c><00:29:16.519><c> of</c>
+
+00:29:18.509 --> 00:29:18.519 align:start position:0%
+every not made of
+ 
+
+00:29:18.519 --> 00:29:20.190 align:start position:0%
+every not made of
+strings
+
+00:29:20.190 --> 00:29:20.200 align:start position:0%
+strings
+ 
+
+00:29:20.200 --> 00:29:26.310 align:start position:0%
+strings
+yeah<00:29:21.200><c> every</c><00:29:21.480><c> string</c><00:29:21.840><c> KN</c><00:29:22.240><c> excuse</c>
+
+00:29:26.310 --> 00:29:26.320 align:start position:0%
+ 
+ 
+
+00:29:26.320 --> 00:29:29.350 align:start position:0%
+ 
+me<00:29:27.320><c> made</c><00:29:27.640><c> of</c><00:29:28.440><c> a</c>
+
+00:29:29.350 --> 00:29:29.360 align:start position:0%
+me made of a
+ 
+
+00:29:29.360 --> 00:29:32.430 align:start position:0%
+me made of a
+curve<00:29:30.360><c> yeah</c><00:29:30.799><c> I'm</c><00:29:30.960><c> going</c><00:29:31.159><c> to</c><00:29:31.880><c> discuss</c><00:29:32.240><c> other</c>
+
+00:29:32.430 --> 00:29:32.440 align:start position:0%
+curve yeah I'm going to discuss other
+ 
+
+00:29:32.440 --> 00:29:34.430 align:start position:0%
+curve yeah I'm going to discuss other
+things<00:29:32.640><c> so</c><00:29:33.039><c> made</c><00:29:33.240><c> of</c>
+
+00:29:34.430 --> 00:29:34.440 align:start position:0%
+things so made of
+ 
+
+00:29:34.440 --> 00:29:40.110 align:start position:0%
+things so made of
+curve<00:29:35.440><c> can</c><00:29:35.960><c> be</c>
+
+00:29:40.110 --> 00:29:40.120 align:start position:0%
+ 
+ 
+
+00:29:40.120 --> 00:29:43.389 align:start position:0%
+ 
+unoted
+
+00:29:43.389 --> 00:29:43.399 align:start position:0%
+ 
+ 
+
+00:29:43.399 --> 00:29:48.470 align:start position:0%
+ 
+in<00:29:44.519><c> RM</c><00:29:45.519><c> for</c><00:29:46.000><c> all</c>
+
+00:29:48.470 --> 00:29:48.480 align:start position:0%
+in RM for all
+ 
+
+00:29:48.480 --> 00:29:52.070 align:start position:0%
+in RM for all
+M<00:29:49.480><c> from</c><00:29:49.919><c> four</c><00:29:50.159><c> dimensions</c><00:29:50.600><c> and</c><00:29:50.840><c> above</c><00:29:51.600><c> that's</c>
+
+00:29:52.070 --> 00:29:52.080 align:start position:0%
+M from four dimensions and above that's
+ 
+
+00:29:52.080 --> 00:29:54.990 align:start position:0%
+M from four dimensions and above that's
+in<00:29:52.320><c> 3D</c><00:29:53.000><c> you</c><00:29:53.200><c> cannot</c><00:29:54.120><c> that's</c><00:29:54.360><c> why</c><00:29:54.519><c> we</c><00:29:54.679><c> have</c><00:29:54.840><c> all</c>
+
+00:29:54.990 --> 00:29:55.000 align:start position:0%
+in 3D you cannot that's why we have all
+ 
+
+00:29:55.000 --> 00:29:57.590 align:start position:0%
+in 3D you cannot that's why we have all
+those<00:29:55.200><c> knes</c><00:29:55.480><c> in</c><00:29:55.640><c> 3D</c><00:29:56.279><c> in</c><00:29:56.440><c> our</c><00:29:56.720><c> space</c><00:29:57.039><c> but</c><00:29:57.159><c> inti</c>
+
+00:29:57.590 --> 00:29:57.600 align:start position:0%
+those knes in 3D in our space but inti
+ 
+
+00:29:57.600 --> 00:29:59.590 align:start position:0%
+those knes in 3D in our space but inti
+dimensions<00:29:58.039><c> they</c><00:29:58.159><c> can</c><00:29:58.279><c> all</c><00:29:58.399><c> be</c><00:29:58.519><c> unnoted</c><00:29:59.480><c> and</c>
+
+00:29:59.590 --> 00:29:59.600 align:start position:0%
+dimensions they can all be unnoted and
+ 
+
+00:29:59.600 --> 00:30:00.909 align:start position:0%
+dimensions they can all be unnoted and
+the<00:29:59.720><c> proof</c><00:30:00.000><c> is</c><00:30:00.159><c> very</c>
+
+00:30:00.909 --> 00:30:00.919 align:start position:0%
+the proof is very
+ 
+
+00:30:00.919 --> 00:30:04.389 align:start position:0%
+the proof is very
+easy<00:30:01.919><c> you</c><00:30:02.240><c> see</c><00:30:03.240><c> suppose</c><00:30:03.600><c> that</c><00:30:03.720><c> you</c><00:30:03.880><c> have</c><00:30:04.080><c> two</c>
+
+00:30:04.389 --> 00:30:04.399 align:start position:0%
+easy you see suppose that you have two
+ 
+
+00:30:04.399 --> 00:30:06.549 align:start position:0%
+easy you see suppose that you have two
+parts<00:30:04.799><c> of</c><00:30:05.000><c> this</c><00:30:05.159><c> string</c><00:30:05.720><c> one</c><00:30:05.919><c> part</c><00:30:06.159><c> is</c><00:30:06.320><c> like</c>
+
+00:30:06.549 --> 00:30:06.559 align:start position:0%
+parts of this string one part is like
+ 
+
+00:30:06.559 --> 00:30:08.110 align:start position:0%
+parts of this string one part is like
+this<00:30:06.799><c> and</c><00:30:06.919><c> then</c><00:30:07.120><c> another</c><00:30:07.399><c> part</c><00:30:07.600><c> is</c><00:30:07.799><c> like</c><00:30:07.960><c> this</c>
+
+00:30:08.110 --> 00:30:08.120 align:start position:0%
+this and then another part is like this
+ 
+
+00:30:08.120 --> 00:30:10.990 align:start position:0%
+this and then another part is like this
+it's<00:30:08.279><c> passing</c><00:30:09.000><c> behind</c><00:30:10.000><c> and</c><00:30:10.200><c> suppose</c><00:30:10.679><c> that</c><00:30:10.880><c> by</c>
+
+00:30:10.990 --> 00:30:11.000 align:start position:0%
+it's passing behind and suppose that by
+ 
+
+00:30:11.000 --> 00:30:14.909 align:start position:0%
+it's passing behind and suppose that by
+some<00:30:11.279><c> magic</c><00:30:12.240><c> I</c>
+
+00:30:14.909 --> 00:30:14.919 align:start position:0%
+ 
+ 
+
+00:30:14.919 --> 00:30:18.110 align:start position:0%
+ 
+can<00:30:15.919><c> make</c><00:30:16.200><c> this</c><00:30:16.360><c> part</c><00:30:16.519><c> of</c><00:30:16.640><c> the</c><00:30:16.840><c> string</c><00:30:17.840><c> come</c>
+
+00:30:18.110 --> 00:30:18.120 align:start position:0%
+can make this part of the string come
+ 
+
+00:30:18.120 --> 00:30:20.310 align:start position:0%
+can make this part of the string come
+across<00:30:18.799><c> and</c><00:30:19.080><c> appear</c><00:30:19.360><c> on</c><00:30:19.519><c> the</c><00:30:19.640><c> other</c><00:30:19.960><c> side</c>
+
+00:30:20.310 --> 00:30:20.320 align:start position:0%
+across and appear on the other side
+ 
+
+00:30:20.320 --> 00:30:21.269 align:start position:0%
+across and appear on the other side
+without
+
+00:30:21.269 --> 00:30:21.279 align:start position:0%
+without
+ 
+
+00:30:21.279 --> 00:30:23.549 align:start position:0%
+without
+intersecting<00:30:22.279><c> well</c><00:30:22.559><c> if</c><00:30:22.720><c> I</c><00:30:22.840><c> can</c><00:30:23.000><c> do</c><00:30:23.279><c> that</c>
+
+00:30:23.549 --> 00:30:23.559 align:start position:0%
+intersecting well if I can do that
+ 
+
+00:30:23.559 --> 00:30:26.070 align:start position:0%
+intersecting well if I can do that
+operation<00:30:24.159><c> I</c><00:30:24.279><c> can</c><00:30:24.480><c> unot</c>
+
+00:30:26.070 --> 00:30:26.080 align:start position:0%
+operation I can unot
+ 
+
+00:30:26.080 --> 00:30:29.590 align:start position:0%
+operation I can unot
+everything<00:30:27.080><c> right</c><00:30:28.360><c> so</c><00:30:28.640><c> the</c><00:30:28.919><c> question</c><00:30:29.200><c> is</c><00:30:29.480><c> can</c>
+
+00:30:29.590 --> 00:30:29.600 align:start position:0%
+everything right so the question is can
+ 
+
+00:30:29.600 --> 00:30:33.430 align:start position:0%
+everything right so the question is can
+I<00:30:29.799><c> do</c><00:30:30.039><c> this</c><00:30:30.200><c> operation</c><00:30:30.559><c> or</c><00:30:30.720><c> not</c><00:30:31.159><c> and</c><00:30:31.480><c> we</c>
+
+00:30:33.430 --> 00:30:33.440 align:start position:0%
+I do this operation or not and we
+ 
+
+00:30:33.440 --> 00:30:36.990 align:start position:0%
+I do this operation or not and we
+can<00:30:34.440><c> in</c><00:30:34.640><c> this</c><00:30:34.840><c> Dimension</c><00:30:35.399><c> this</c>
+
+00:30:36.990 --> 00:30:37.000 align:start position:0%
+can in this Dimension this
+ 
+
+00:30:37.000 --> 00:30:44.110 align:start position:0%
+can in this Dimension this
+move<00:30:38.000><c> is</c>
+
+00:30:44.110 --> 00:30:44.120 align:start position:0%
+ 
+ 
+
+00:30:44.120 --> 00:30:50.590 align:start position:0%
+ 
+possible<00:30:45.120><c> without</c>
+
+00:30:50.590 --> 00:30:50.600 align:start position:0%
+ 
+ 
+
+00:30:50.600 --> 00:30:52.350 align:start position:0%
+ 
+Crossing
+
+00:30:52.350 --> 00:30:52.360 align:start position:0%
+Crossing
+ 
+
+00:30:52.360 --> 00:30:54.549 align:start position:0%
+Crossing
+if<00:30:53.360><c> by</c><00:30:53.519><c> the</c><00:30:53.679><c> theorem</c><00:30:54.039><c> that</c><00:30:54.120><c> we</c><00:30:54.240><c> have</c><00:30:54.399><c> just</c>
+
+00:30:54.549 --> 00:30:54.559 align:start position:0%
+if by the theorem that we have just
+ 
+
+00:30:54.559 --> 00:30:58.029 align:start position:0%
+if by the theorem that we have just
+proved<00:30:54.960><c> theorem</c><00:30:55.279><c> two</c>
+
+00:30:58.029 --> 00:30:58.039 align:start position:0%
+proved theorem two
+ 
+
+00:30:58.039 --> 00:31:00.950 align:start position:0%
+proved theorem two
+the<00:30:58.679><c> Overflow</c><00:30:59.320><c> which</c><00:30:59.440><c> is</c><00:30:59.639><c> 1</c><00:31:00.000><c> +</c><00:31:00.320><c> one</c><00:31:00.639><c> because</c>
+
+00:31:00.950 --> 00:31:00.960 align:start position:0%
+the Overflow which is 1 + one because
+ 
+
+00:31:00.960 --> 00:31:02.470 align:start position:0%
+the Overflow which is 1 + one because
+you<00:31:01.120><c> have</c><00:31:01.320><c> one</c><00:31:01.559><c> dimension</c><00:31:02.080><c> here</c><00:31:02.320><c> one</c>
+
+00:31:02.470 --> 00:31:02.480 align:start position:0%
+you have one dimension here one
+ 
+
+00:31:02.480 --> 00:31:05.269 align:start position:0%
+you have one dimension here one
+dimension<00:31:02.960><c> here</c><00:31:03.519><c> and</c><00:31:03.760><c> minus</c><00:31:04.760><c> the</c><00:31:04.919><c> ambient</c>
+
+00:31:05.269 --> 00:31:05.279 align:start position:0%
+dimension here and minus the ambient
+ 
+
+00:31:05.279 --> 00:31:10.110 align:start position:0%
+dimension here and minus the ambient
+Dimension<00:31:05.679><c> m</c><00:31:06.559><c> is</c><00:31:07.399><c> strictly</c><00:31:07.880><c> less</c><00:31:08.080><c> than</c><00:31:08.279><c> minus</c>
+
+00:31:10.110 --> 00:31:10.120 align:start position:0%
+Dimension m is strictly less than minus
+ 
+
+00:31:10.120 --> 00:31:14.509 align:start position:0%
+Dimension m is strictly less than minus
+one<00:31:11.120><c> but</c><00:31:11.320><c> this</c><00:31:11.519><c> inequality</c><00:31:12.600><c> says</c><00:31:13.600><c> that</c><00:31:14.039><c> m</c><00:31:14.320><c> is</c>
+
+00:31:14.509 --> 00:31:14.519 align:start position:0%
+one but this inequality says that m is
+ 
+
+00:31:14.519 --> 00:31:16.629 align:start position:0%
+one but this inequality says that m is
+strictly<00:31:15.000><c> greater</c><00:31:15.360><c> than</c><00:31:15.559><c> three</c><00:31:15.960><c> that</c><00:31:16.080><c> means</c><00:31:16.440><c> m</c>
+
+00:31:16.629 --> 00:31:16.639 align:start position:0%
+strictly greater than three that means m
+ 
+
+00:31:16.639 --> 00:31:18.789 align:start position:0%
+strictly greater than three that means m
+is<00:31:16.799><c> greater</c><00:31:17.120><c> than</c><00:31:17.240><c> or</c><00:31:17.399><c> equal</c><00:31:17.639><c> to</c>
+
+00:31:18.789 --> 00:31:18.799 align:start position:0%
+is greater than or equal to
+ 
+
+00:31:18.799 --> 00:31:20.710 align:start position:0%
+is greater than or equal to
+4
+
+00:31:20.710 --> 00:31:20.720 align:start position:0%
+4
+ 
+
+00:31:20.720 --> 00:31:24.350 align:start position:0%
+4
+okay<00:31:21.720><c> so</c>
+
+00:31:24.350 --> 00:31:24.360 align:start position:0%
+ 
+ 
+
+00:31:24.360 --> 00:31:26.669 align:start position:0%
+ 
+I
+
+00:31:26.669 --> 00:31:26.679 align:start position:0%
+I
+ 
+
+00:31:26.679 --> 00:31:28.909 align:start position:0%
+I
+oops<00:31:27.679><c> you</c><00:31:27.880><c> in</c><00:31:27.960><c> other</c><00:31:28.120><c> words</c><00:31:28.440><c> in</c><00:31:28.559><c> four</c>
+
+00:31:28.909 --> 00:31:28.919 align:start position:0%
+oops you in other words in four
+ 
+
+00:31:28.919 --> 00:31:31.110 align:start position:0%
+oops you in other words in four
+dimensions<00:31:29.360><c> and</c><00:31:29.559><c> above</c><00:31:30.039><c> all</c><00:31:30.399><c> knots</c><00:31:30.799><c> can</c><00:31:30.960><c> be</c>
+
+00:31:31.110 --> 00:31:31.120 align:start position:0%
+dimensions and above all knots can be
+ 
+
+00:31:31.120 --> 00:31:34.950 align:start position:0%
+dimensions and above all knots can be
+unnoted<00:31:31.840><c> there</c><00:31:31.960><c> are</c><00:31:32.200><c> no</c><00:31:32.480><c> knots</c><00:31:33.480><c> everything</c><00:31:33.799><c> is</c>
+
+00:31:34.950 --> 00:31:34.960 align:start position:0%
+unnoted there are no knots everything is
+ 
+
+00:31:34.960 --> 00:31:37.909 align:start position:0%
+unnoted there are no knots everything is
+Trivial<00:31:35.960><c> that's</c><00:31:36.159><c> quite</c>
+
+00:31:37.909 --> 00:31:37.919 align:start position:0%
+Trivial that's quite
+ 
+
+00:31:37.919 --> 00:31:40.870 align:start position:0%
+Trivial that's quite
+interesting<00:31:38.960><c> however</c><00:31:39.960><c> another</c><00:31:40.320><c> interesting</c>
+
+00:31:40.870 --> 00:31:40.880 align:start position:0%
+interesting however another interesting
+ 
+
+00:31:40.880 --> 00:31:45.789 align:start position:0%
+interesting however another interesting
+thing
+
+00:31:45.789 --> 00:31:45.799 align:start position:0%
+ 
+ 
+
+00:31:45.799 --> 00:31:51.149 align:start position:0%
+ 
+is<00:31:46.799><c> in</c>
+
+00:31:51.149 --> 00:31:51.159 align:start position:0%
+ 
+ 
+
+00:31:51.159 --> 00:31:55.669 align:start position:0%
+ 
+R2<00:31:52.159><c> if</c><00:31:52.279><c> you</c><00:31:52.440><c> go</c><00:31:52.960><c> down</c><00:31:53.960><c> too</c><00:31:54.200><c> much</c><00:31:54.440><c> in</c><00:31:54.679><c> dimension</c>
+
+00:31:55.669 --> 00:31:55.679 align:start position:0%
+R2 if you go down too much in dimension
+ 
+
+00:31:55.679 --> 00:31:59.350 align:start position:0%
+R2 if you go down too much in dimension
+from<00:31:55.960><c> this</c><00:31:56.159><c> space</c><00:31:56.480><c> to</c><00:31:56.880><c> thing</c>
+
+00:31:59.350 --> 00:31:59.360 align:start position:0%
+from this space to thing
+ 
+
+00:31:59.360 --> 00:32:05.389 align:start position:0%
+from this space to thing
+on<00:31:59.519><c> the</c><00:31:59.639><c> other</c>
+
+00:32:05.389 --> 00:32:05.399 align:start position:0%
+ 
+ 
+
+00:32:05.399 --> 00:32:11.310 align:start position:0%
+ 
+hand<00:32:06.399><c> in</c><00:32:06.639><c> R2</c><00:32:07.200><c> so</c><00:32:07.360><c> we</c><00:32:07.519><c> had</c><00:32:07.960><c> R4</c><00:32:08.440><c> and</c><00:32:08.639><c> above</c><00:32:08.960><c> but</c><00:32:09.080><c> in</c>
+
+00:32:11.310 --> 00:32:11.320 align:start position:0%
+ 
+ 
+
+00:32:11.320 --> 00:32:14.669 align:start position:0%
+ 
+R2<00:32:12.320><c> a</c><00:32:12.559><c> loop</c><00:32:13.559><c> like</c>
+
+00:32:14.669 --> 00:32:14.679 align:start position:0%
+R2 a loop like
+ 
+
+00:32:14.679 --> 00:32:18.029 align:start position:0%
+R2 a loop like
+this<00:32:15.679><c> might</c><00:32:15.960><c> be</c><00:32:16.399><c> a</c><00:32:16.559><c> nice</c><00:32:16.840><c> Loop</c><00:32:17.639><c> but</c><00:32:17.760><c> it</c><00:32:17.880><c> could</c>
+
+00:32:18.029 --> 00:32:18.039 align:start position:0%
+this might be a nice Loop but it could
+ 
+
+00:32:18.039 --> 00:32:19.950 align:start position:0%
+this might be a nice Loop but it could
+be<00:32:18.200><c> a</c><00:32:18.320><c> loop</c><00:32:18.639><c> like</c>
+
+00:32:19.950 --> 00:32:19.960 align:start position:0%
+be a loop like
+ 
+
+00:32:19.960 --> 00:32:22.110 align:start position:0%
+be a loop like
+this<00:32:20.960><c> it</c><00:32:21.080><c> might</c><00:32:21.320><c> cross</c>
+
+00:32:22.110 --> 00:32:22.120 align:start position:0%
+this it might cross
+ 
+
+00:32:22.120 --> 00:32:26.950 align:start position:0%
+this it might cross
+itself<00:32:23.120><c> now</c><00:32:23.559><c> may</c><00:32:23.679><c> I</c><00:32:24.320><c> borrow</c><00:32:24.880><c> this</c><00:32:25.880><c> so</c><00:32:26.519><c> if</c><00:32:26.679><c> you</c>
+
+00:32:26.950 --> 00:32:26.960 align:start position:0%
+itself now may I borrow this so if you
+ 
+
+00:32:26.960 --> 00:32:29.909 align:start position:0%
+itself now may I borrow this so if you
+have<00:32:27.360><c> a</c><00:32:27.559><c> loop</c><00:32:28.120><c> which</c><00:32:28.240><c> is</c><00:32:28.519><c> crossing</c>
+
+00:32:29.909 --> 00:32:29.919 align:start position:0%
+have a loop which is crossing
+ 
+
+00:32:29.919 --> 00:32:32.629 align:start position:0%
+have a loop which is crossing
+like<00:32:30.919><c> like</c><00:32:31.159><c> this</c><00:32:31.279><c> on</c><00:32:31.440><c> the</c>
+
+00:32:32.629 --> 00:32:32.639 align:start position:0%
+like like this on the
+ 
+
+00:32:32.639 --> 00:32:35.350 align:start position:0%
+like like this on the
+plane<00:32:33.639><c> well</c><00:32:33.960><c> your</c><00:32:34.200><c> natural</c><00:32:34.559><c> instinct</c><00:32:35.000><c> is</c><00:32:35.279><c> I</c>
+
+00:32:35.350 --> 00:32:35.360 align:start position:0%
+plane well your natural instinct is I
+ 
+
+00:32:35.360 --> 00:32:37.350 align:start position:0%
+plane well your natural instinct is I
+don't<00:32:35.639><c> o</c><00:32:35.960><c> what's</c><00:32:36.200><c> this</c><00:32:36.600><c> I</c><00:32:36.679><c> don't</c><00:32:36.880><c> like</c><00:32:37.120><c> this</c>
+
+00:32:37.350 --> 00:32:37.360 align:start position:0%
+don't o what's this I don't like this
+ 
+
+00:32:37.360 --> 00:32:39.710 align:start position:0%
+don't o what's this I don't like this
+Crossing<00:32:38.360><c> so</c><00:32:38.559><c> I'm</c><00:32:38.799><c> going</c><00:32:38.960><c> to</c><00:32:39.240><c> undo</c><00:32:39.600><c> the</c>
+
+00:32:39.710 --> 00:32:39.720 align:start position:0%
+Crossing so I'm going to undo the
+ 
+
+00:32:39.720 --> 00:32:42.029 align:start position:0%
+Crossing so I'm going to undo the
+crossing<00:32:40.159><c> by</c><00:32:40.360><c> lifting</c><00:32:40.840><c> one</c><00:32:41.200><c> strand</c><00:32:41.679><c> of</c><00:32:41.880><c> the</c>
+
+00:32:42.029 --> 00:32:42.039 align:start position:0%
+crossing by lifting one strand of the
+ 
+
+00:32:42.039 --> 00:32:44.990 align:start position:0%
+crossing by lifting one strand of the
+loop<00:32:43.039><c> from</c><00:32:43.279><c> the</c><00:32:43.399><c> other</c><00:32:43.880><c> now</c><00:32:44.039><c> they</c><00:32:44.159><c> don't</c><00:32:44.320><c> cross</c>
+
+00:32:44.990 --> 00:32:45.000 align:start position:0%
+loop from the other now they don't cross
+ 
+
+00:32:45.000 --> 00:32:49.190 align:start position:0%
+loop from the other now they don't cross
+any<00:32:46.000><c> yeah</c><00:32:46.880><c> but</c><00:32:47.200><c> that</c><00:32:47.840><c> and</c><00:32:48.240><c> doing</c><00:32:48.519><c> the</c><00:32:48.679><c> crossing</c>
+
+00:32:49.190 --> 00:32:49.200 align:start position:0%
+any yeah but that and doing the crossing
+ 
+
+00:32:49.200 --> 00:32:52.269 align:start position:0%
+any yeah but that and doing the crossing
+can<00:32:49.399><c> is</c><00:32:50.000><c> possible</c><00:32:51.000><c> because</c><00:32:51.399><c> we</c><00:32:51.519><c> have</c><00:32:51.679><c> an</c><00:32:51.880><c> extra</c>
+
+00:32:52.269 --> 00:32:52.279 align:start position:0%
+can is possible because we have an extra
+ 
+
+00:32:52.279 --> 00:32:55.830 align:start position:0%
+can is possible because we have an extra
+Dimension<00:32:52.840><c> into</c><00:32:53.240><c> which</c><00:32:53.440><c> we</c><00:32:53.600><c> can</c><00:32:54.000><c> escape</c><00:32:55.000><c> in</c><00:32:55.159><c> R2</c>
+
+00:32:55.830 --> 00:32:55.840 align:start position:0%
+Dimension into which we can escape in R2
+ 
+
+00:32:55.840 --> 00:32:57.070 align:start position:0%
+Dimension into which we can escape in R2
+you<00:32:55.960><c> may</c><00:32:56.120><c> not</c><00:32:56.240><c> be</c><00:32:56.360><c> able</c><00:32:56.519><c> to</c><00:32:56.679><c> escape</c><00:32:56.960><c> for</c>
+
+00:32:57.070 --> 00:32:57.080 align:start position:0%
+you may not be able to escape for
+ 
+
+00:32:57.080 --> 00:32:58.629 align:start position:0%
+you may not be able to escape for
+example<00:32:57.519><c> this</c><00:32:57.639><c> is</c><00:32:57.840><c> is</c>
+
+00:32:58.629 --> 00:32:58.639 align:start position:0%
+example this is is
+ 
+
+00:32:58.639 --> 00:33:01.549 align:start position:0%
+example this is is
+stuck<00:32:59.639><c> however</c><00:32:59.840><c> you</c><00:33:00.039><c> move</c><00:33:00.559><c> however</c><00:33:00.760><c> you</c><00:33:01.440><c> this</c>
+
+00:33:01.549 --> 00:33:01.559 align:start position:0%
+stuck however you move however you this
+ 
+
+00:33:01.559 --> 00:33:04.909 align:start position:0%
+stuck however you move however you this
+Crossing<00:33:01.919><c> Will</c><00:33:02.120><c> Survive</c><00:33:02.880><c> so</c><00:33:03.159><c> in</c><00:33:03.360><c> R2</c><00:33:04.039><c> a</c><00:33:04.279><c> loop</c>
+
+00:33:04.909 --> 00:33:04.919 align:start position:0%
+Crossing Will Survive so in R2 a loop
+ 
+
+00:33:04.919 --> 00:33:09.149 align:start position:0%
+Crossing Will Survive so in R2 a loop
+like<00:33:05.200><c> this</c><00:33:06.000><c> may</c>
+
+00:33:09.149 --> 00:33:09.159 align:start position:0%
+ 
+ 
+
+00:33:09.159 --> 00:33:11.990 align:start position:0%
+ 
+have
+
+00:33:11.990 --> 00:33:12.000 align:start position:0%
+have
+ 
+
+00:33:12.000 --> 00:33:15.310 align:start position:0%
+have
+generic<00:33:13.000><c> uh</c><00:33:13.120><c> self</c>
+
+00:33:15.310 --> 00:33:15.320 align:start position:0%
+generic uh self
+ 
+
+00:33:15.320 --> 00:33:16.950 align:start position:0%
+generic uh self
+intersections<00:33:16.320><c> in</c><00:33:16.480><c> other</c><00:33:16.679><c> words</c>
+
+00:33:16.950 --> 00:33:16.960 align:start position:0%
+intersections in other words
+ 
+
+00:33:16.960 --> 00:33:18.629 align:start position:0%
+intersections in other words
+intersections<00:33:17.519><c> that</c><00:33:17.679><c> cannot</c><00:33:17.960><c> be</c><00:33:18.159><c> made</c><00:33:18.440><c> to</c>
+
+00:33:18.629 --> 00:33:18.639 align:start position:0%
+intersections that cannot be made to
+ 
+
+00:33:18.639 --> 00:33:22.549 align:start position:0%
+intersections that cannot be made to
+Disappear<00:33:19.240><c> by</c><00:33:19.399><c> small</c><00:33:20.120><c> preservations</c><00:33:21.559><c> yeah</c>
+
+00:33:22.549 --> 00:33:22.559 align:start position:0%
+Disappear by small preservations yeah
+ 
+
+00:33:22.559 --> 00:33:24.789 align:start position:0%
+Disappear by small preservations yeah
+and<00:33:22.760><c> that's</c><00:33:22.960><c> by</c><00:33:23.159><c> theorem</c><00:33:23.559><c> one</c><00:33:24.279><c> if</c><00:33:24.360><c> you</c><00:33:24.480><c> do</c><00:33:24.639><c> the</c>
+
+00:33:24.789 --> 00:33:24.799 align:start position:0%
+and that's by theorem one if you do the
+ 
+
+00:33:24.799 --> 00:33:26.149 align:start position:0%
+and that's by theorem one if you do the
+calculation<00:33:25.240><c> of</c><00:33:25.360><c> the</c>
+
+00:33:26.149 --> 00:33:26.159 align:start position:0%
+calculation of the
+ 
+
+00:33:26.159 --> 00:33:28.310 align:start position:0%
+calculation of the
+Overflow<00:33:27.159><c> so</c>
+
+00:33:28.310 --> 00:33:28.320 align:start position:0%
+Overflow so
+ 
+
+00:33:28.320 --> 00:33:32.990 align:start position:0%
+Overflow so
+it<00:33:28.480><c> means</c><00:33:28.960><c> that</c><00:33:29.440><c> in</c><00:33:29.919><c> R2</c><00:33:31.360><c> usually</c><00:33:32.360><c> knots</c><00:33:32.799><c> or</c>
+
+00:33:32.990 --> 00:33:33.000 align:start position:0%
+it means that in R2 usually knots or
+ 
+
+00:33:33.000 --> 00:33:35.629 align:start position:0%
+it means that in R2 usually knots or
+Loops<00:33:33.760><c> have</c><00:33:34.120><c> self</c><00:33:34.679><c> intersections</c><00:33:35.360><c> which</c><00:33:35.519><c> we</c>
+
+00:33:35.629 --> 00:33:35.639 align:start position:0%
+Loops have self intersections which we
+ 
+
+00:33:35.639 --> 00:33:39.629 align:start position:0%
+Loops have self intersections which we
+don't<00:33:36.240><c> like</c><00:33:37.240><c> in</c><00:33:37.440><c> our</c><00:33:37.720><c> four</c><00:33:38.000><c> and</c><00:33:38.240><c> above</c><00:33:39.120><c> all</c><00:33:39.360><c> kns</c>
+
+00:33:39.629 --> 00:33:39.639 align:start position:0%
+don't like in our four and above all kns
+ 
+
+00:33:39.639 --> 00:33:43.029 align:start position:0%
+don't like in our four and above all kns
+are<00:33:40.240><c> trivial</c><00:33:41.240><c> so</c><00:33:41.600><c> the</c><00:33:41.799><c> only</c><00:33:42.279><c> dimension</c><00:33:42.880><c> in</c>
+
+00:33:43.029 --> 00:33:43.039 align:start position:0%
+are trivial so the only dimension in
+ 
+
+00:33:43.039 --> 00:33:45.750 align:start position:0%
+are trivial so the only dimension in
+which<00:33:43.240><c> not</c><00:33:43.519><c> theory</c><00:33:43.840><c> is</c><00:33:44.000><c> interesting</c><00:33:44.600><c> is</c><00:33:44.760><c> R3</c>
+
+00:33:45.750 --> 00:33:45.760 align:start position:0%
+which not theory is interesting is R3
+ 
+
+00:33:45.760 --> 00:33:48.509 align:start position:0%
+which not theory is interesting is R3
+there's<00:33:45.960><c> no</c><00:33:46.120><c> other</c>
+
+00:33:48.509 --> 00:33:48.519 align:start position:0%
+ 
+ 
+
+00:33:48.519 --> 00:33:51.029 align:start position:0%
+ 
+damage<00:33:49.519><c> not</c><00:33:49.840><c> Theory</c><00:33:50.240><c> becomes</c><00:33:50.639><c> completely</c>
+
+00:33:51.029 --> 00:33:51.039 align:start position:0%
+damage not Theory becomes completely
+ 
+
+00:33:51.039 --> 00:33:54.070 align:start position:0%
+damage not Theory becomes completely
+trivial<00:33:51.519><c> in</c><00:33:51.880><c> R4</c><00:33:52.360><c> and</c><00:33:52.559><c> above</c><00:33:53.320><c> and</c><00:33:53.519><c> becomes</c><00:33:53.840><c> too</c>
+
+00:33:54.070 --> 00:33:54.080 align:start position:0%
+trivial in R4 and above and becomes too
+ 
+
+00:33:54.080 --> 00:33:57.310 align:start position:0%
+trivial in R4 and above and becomes too
+ugly<00:33:54.480><c> in</c><00:33:54.840><c> R2</c><00:33:55.840><c> the</c><00:33:55.960><c> only</c><00:33:56.279><c> Dimension</c><00:33:57.000><c> by</c><00:33:57.159><c> not</c>
+
+00:33:57.310 --> 00:33:57.320 align:start position:0%
+ugly in R2 the only Dimension by not
+ 
+
+00:33:57.320 --> 00:34:01.389 align:start position:0%
+ugly in R2 the only Dimension by not
+Series<00:33:57.600><c> in</c><00:33:57.799><c> interesting</c><00:33:58.240><c> is</c><00:33:58.399><c> R3</c><00:33:59.240><c> so</c>
+
+00:34:01.389 --> 00:34:01.399 align:start position:0%
+Series in interesting is R3 so
+ 
+
+00:34:01.399 --> 00:34:05.230 align:start position:0%
+Series in interesting is R3 so
+that's<00:34:02.399><c> not</c><00:34:03.159><c> Theory</c><00:34:04.159><c> it's</c><00:34:04.320><c> a</c><00:34:04.480><c> big</c><00:34:04.720><c> subject</c><00:34:05.080><c> so</c>
+
+00:34:05.230 --> 00:34:05.240 align:start position:0%
+that's not Theory it's a big subject so
+ 
+
+00:34:05.240 --> 00:34:11.310 align:start position:0%
+that's not Theory it's a big subject so
+you<00:34:05.360><c> might</c><00:34:05.559><c> like</c><00:34:05.760><c> to</c><00:34:06.000><c> look</c><00:34:06.200><c> at</c><00:34:06.360><c> that</c><00:34:06.799><c> but</c><00:34:07.039><c> is</c>
+
+00:34:11.310 --> 00:34:11.320 align:start position:0%
+ 
+ 
+
+00:34:11.320 --> 00:34:12.990 align:start position:0%
+ 
+interesting
+
+00:34:12.990 --> 00:34:13.000 align:start position:0%
+interesting
+ 
+
+00:34:13.000 --> 00:34:15.829 align:start position:0%
+interesting
+only
+
+00:34:15.829 --> 00:34:15.839 align:start position:0%
+only
+ 
+
+00:34:15.839 --> 00:34:19.869 align:start position:0%
+only
+in<00:34:16.839><c> three</c><00:34:17.159><c> dimension</c><00:34:17.599><c> three</c><00:34:18.399><c> okay</c><00:34:18.879><c> that's</c>
+
+00:34:19.869 --> 00:34:19.879 align:start position:0%
+in three dimension three okay that's
+ 
+
+00:34:19.879 --> 00:34:22.879 align:start position:0%
+in three dimension three okay that's
+enough
+

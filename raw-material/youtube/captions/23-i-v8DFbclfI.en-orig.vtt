@@ -1,0 +1,4224 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:06.540 --> 00:00:14.240 align:start position:0%
+ 
+you
+
+00:00:14.240 --> 00:00:14.250 align:start position:0%
+ 
+ 
+
+00:00:14.250 --> 00:00:19.160 align:start position:0%
+ 
+the<00:00:15.240><c> central</c><00:00:16.139><c> theorem</c><00:00:16.439><c> of</c><00:00:16.770><c> Markov</c><00:00:17.369><c> chain</c><00:00:18.170><c> is</c>
+
+00:00:19.160 --> 00:00:19.170 align:start position:0%
+the central theorem of Markov chain is
+ 
+
+00:00:19.170 --> 00:00:26.420 align:start position:0%
+the central theorem of Markov chain is
+called<00:00:19.470><c> a</c><00:00:19.680><c> good</c><00:00:20.039><c> exterior</c><00:00:25.070><c> have</c><00:00:26.070><c> you</c><00:00:26.189><c> heard</c>
+
+00:00:26.420 --> 00:00:26.430 align:start position:0%
+called a good exterior have you heard
+ 
+
+00:00:26.430 --> 00:00:27.529 align:start position:0%
+called a good exterior have you heard
+this<00:00:26.550><c> expression</c><00:00:26.730><c> before</c>
+
+00:00:27.529 --> 00:00:27.539 align:start position:0%
+this expression before
+ 
+
+00:00:27.539 --> 00:00:31.970 align:start position:0%
+this expression before
+ergo<00:00:28.110><c> the</c><00:00:28.289><c> theorem</c><00:00:30.320><c> if</c><00:00:31.320><c> you</c><00:00:31.500><c> haven't</c><00:00:31.800><c> I'm</c>
+
+00:00:31.970 --> 00:00:31.980 align:start position:0%
+ergo the theorem if you haven't I'm
+ 
+
+00:00:31.980 --> 00:00:34.160 align:start position:0%
+ergo the theorem if you haven't I'm
+going<00:00:32.189><c> to</c><00:00:32.250><c> tell</c><00:00:32.399><c> you</c><00:00:32.460><c> what</c><00:00:32.610><c> it</c><00:00:32.700><c> is</c><00:00:32.870><c> it</c><00:00:33.870><c> turns</c>
+
+00:00:34.160 --> 00:00:34.170 align:start position:0%
+going to tell you what it is it turns
+ 
+
+00:00:34.170 --> 00:00:37.660 align:start position:0%
+going to tell you what it is it turns
+out<00:00:35.239><c> I'm</c><00:00:36.239><c> going</c><00:00:36.480><c> to</c><00:00:36.540><c> say</c><00:00:36.719><c> this</c><00:00:36.780><c> slightly</c>
+
+00:00:37.660 --> 00:00:37.670 align:start position:0%
+out I'm going to say this slightly
+ 
+
+00:00:37.670 --> 00:00:41.810 align:start position:0%
+out I'm going to say this slightly
+loosely<00:00:38.670><c> but</c><00:00:38.850><c> you</c><00:00:39.450><c> understand</c><00:00:40.160><c> that</c><00:00:41.160><c> for</c>
+
+00:00:41.810 --> 00:00:41.820 align:start position:0%
+loosely but you understand that for
+ 
+
+00:00:41.820 --> 00:00:44.569 align:start position:0%
+loosely but you understand that for
+every<00:00:42.480><c> initial</c><00:00:43.110><c> distribution</c><00:00:43.530><c> however</c><00:00:44.399><c> you</c>
+
+00:00:44.569 --> 00:00:44.579 align:start position:0%
+every initial distribution however you
+ 
+
+00:00:44.579 --> 00:00:53.180 align:start position:0%
+every initial distribution however you
+start<00:00:45.030><c> a</c><00:00:45.320><c> Markov</c><00:00:46.320><c> chain</c><00:00:49.489><c> this</c><00:00:50.489><c> chain</c><00:00:52.190><c> this</c>
+
+00:00:53.180 --> 00:00:53.190 align:start position:0%
+start a Markov chain this chain this
+ 
+
+00:00:53.190 --> 00:00:56.450 align:start position:0%
+start a Markov chain this chain this
+Markov<00:00:53.519><c> chain</c><00:00:53.789><c> if</c><00:00:54.480><c> you</c><00:00:54.510><c> keep</c><00:00:55.319><c> going</c><00:00:55.739><c> for</c><00:00:56.249><c> long</c>
+
+00:00:56.450 --> 00:00:56.460 align:start position:0%
+Markov chain if you keep going for long
+ 
+
+00:00:56.460 --> 00:01:04.549 align:start position:0%
+Markov chain if you keep going for long
+enough<00:00:57.289><c> converges</c><00:01:02.449><c> to</c><00:01:03.449><c> a</c><00:01:03.749><c> limit</c><00:01:04.199><c> the</c><00:01:04.379><c> switch</c>
+
+00:01:04.549 --> 00:01:04.559 align:start position:0%
+enough converges to a limit the switch
+ 
+
+00:01:04.559 --> 00:01:10.640 align:start position:0%
+enough converges to a limit the switch
+over<00:01:04.860><c> thank</c><00:01:05.070><c> you</c><00:01:05.159><c> village</c><00:01:05.400><c> and</c><00:01:09.110><c> to</c><00:01:10.110><c> a</c><00:01:10.350><c> linear</c>
+
+00:01:10.640 --> 00:01:10.650 align:start position:0%
+over thank you village and to a linear
+ 
+
+00:01:10.650 --> 00:01:15.649 align:start position:0%
+over thank you village and to a linear
+distribution<00:01:13.610><c> and</c><00:01:14.610><c> this</c><00:01:14.970><c> limit</c><00:01:15.330><c> distribution</c>
+
+00:01:15.649 --> 00:01:15.659 align:start position:0%
+distribution and this limit distribution
+ 
+
+00:01:15.659 --> 00:01:19.100 align:start position:0%
+distribution and this limit distribution
+in<00:01:16.140><c> fact</c><00:01:16.380><c> is</c><00:01:16.680><c> unique</c><00:01:17.100><c> and</c><00:01:17.670><c> this</c><00:01:18.660><c> limited</c>
+
+00:01:19.100 --> 00:01:19.110 align:start position:0%
+in fact is unique and this limited
+ 
+
+00:01:19.110 --> 00:01:20.900 align:start position:0%
+in fact is unique and this limited
+distribution<00:01:19.230><c> is</c><00:01:19.770><c> often</c><00:01:20.310><c> called</c><00:01:20.580><c> by</c>
+
+00:01:20.900 --> 00:01:20.910 align:start position:0%
+distribution is often called by
+ 
+
+00:01:20.910 --> 00:01:29.580 align:start position:0%
+distribution is often called by
+physicists<00:01:21.540><c> statistical</c><00:01:22.470><c> equilibrium</c>
+
+00:01:29.580 --> 00:01:29.590 align:start position:0%
+ 
+ 
+
+00:01:29.590 --> 00:01:32.380 align:start position:0%
+ 
+that's<00:01:30.590><c> for</c><00:01:31.130><c> example</c><00:01:31.460><c> the</c><00:01:31.610><c> equilibrium</c><00:01:31.820><c> state</c>
+
+00:01:32.380 --> 00:01:32.390 align:start position:0%
+that's for example the equilibrium state
+ 
+
+00:01:32.390 --> 00:01:34.980 align:start position:0%
+that's for example the equilibrium state
+you<00:01:32.689><c> get</c><00:01:32.869><c> in</c><00:01:33.079><c> statistical</c><00:01:33.500><c> physics</c>
+
+00:01:34.980 --> 00:01:34.990 align:start position:0%
+you get in statistical physics
+ 
+
+00:01:34.990 --> 00:01:37.539 align:start position:0%
+you get in statistical physics
+stationary<00:01:35.990><c> distribution</c><00:01:36.140><c> in</c><00:01:36.590><c> nature</c><00:01:36.680><c> and</c><00:01:37.100><c> so</c>
+
+00:01:37.539 --> 00:01:37.549 align:start position:0%
+stationary distribution in nature and so
+ 
+
+00:01:37.549 --> 00:01:39.789 align:start position:0%
+stationary distribution in nature and so
+the<00:01:38.259><c> stationary</c><00:01:39.259><c> distribution</c><00:01:39.380><c> is</c>
+
+00:01:39.789 --> 00:01:39.799 align:start position:0%
+the stationary distribution is
+ 
+
+00:01:39.799 --> 00:01:41.020 align:start position:0%
+the stationary distribution is
+absolutely<00:01:40.159><c> correct</c><00:01:40.310><c> in</c><00:01:40.610><c> the</c><00:01:40.700><c> theory</c><00:01:40.939><c> of</c>
+
+00:01:41.020 --> 00:01:41.030 align:start position:0%
+absolutely correct in the theory of
+ 
+
+00:01:41.030 --> 00:01:43.210 align:start position:0%
+absolutely correct in the theory of
+Markov<00:01:41.420><c> chains</c><00:01:41.780><c> if</c><00:01:42.229><c> you</c><00:01:42.380><c> know</c><00:01:42.530><c> that</c><00:01:42.680><c> world</c><00:01:42.950><c> so</c>
+
+00:01:43.210 --> 00:01:43.220 align:start position:0%
+Markov chains if you know that world so
+ 
+
+00:01:43.220 --> 00:01:44.080 align:start position:0%
+Markov chains if you know that world so
+much<00:01:43.490><c> the</c><00:01:43.640><c> better</c>
+
+00:01:44.080 --> 00:01:44.090 align:start position:0%
+much the better
+ 
+
+00:01:44.090 --> 00:01:47.649 align:start position:0%
+much the better
+I<00:01:44.140><c> didn't</c><00:01:45.140><c> write</c><00:01:45.320><c> it</c><00:01:45.350><c> because</c><00:01:46.450><c> people</c><00:01:47.450><c> seem</c><00:01:47.630><c> to</c>
+
+00:01:47.649 --> 00:01:47.659 align:start position:0%
+I didn't write it because people seem to
+ 
+
+00:01:47.659 --> 00:01:49.090 align:start position:0%
+I didn't write it because people seem to
+understand<00:01:48.140><c> it</c><00:01:48.259><c> a</c><00:01:48.380><c> little</c><00:01:48.439><c> better</c><00:01:48.740><c> but</c>
+
+00:01:49.090 --> 00:01:49.100 align:start position:0%
+understand it a little better but
+ 
+
+00:01:49.100 --> 00:01:53.340 align:start position:0%
+understand it a little better but
+station<00:01:49.909><c> is</c><00:01:50.090><c> efficient</c><00:01:50.479><c> and</c><00:01:50.929><c> swim</c><00:01:51.890><c> as</c><00:01:52.220><c> time</c>
+
+00:01:53.340 --> 00:01:53.350 align:start position:0%
+station is efficient and swim as time
+ 
+
+00:01:53.350 --> 00:02:00.010 align:start position:0%
+station is efficient and swim as time
+goes<00:01:54.350><c> to</c><00:01:54.619><c> evening</c><00:01:58.030><c> we</c><00:01:59.030><c> shall</c><00:01:59.240><c> prove</c><00:01:59.659><c> this</c>
+
+00:02:00.010 --> 00:02:00.020 align:start position:0%
+goes to evening we shall prove this
+ 
+
+00:02:00.020 --> 00:02:05.080 align:start position:0%
+goes to evening we shall prove this
+wonderful<00:02:00.979><c> a</c><00:02:01.250><c> parabolic</c><00:02:01.789><c> theorem</c><00:02:04.090><c> rather</c>
+
+00:02:05.080 --> 00:02:05.090 align:start position:0%
+wonderful a parabolic theorem rather
+ 
+
+00:02:05.090 --> 00:02:12.490 align:start position:0%
+wonderful a parabolic theorem rather
+easily<00:02:05.630><c> and</c><00:02:07.720><c> the</c><00:02:10.450><c> reason</c><00:02:11.450><c> the</c><00:02:11.660><c> proof</c><00:02:11.900><c> is</c><00:02:12.110><c> easy</c>
+
+00:02:12.490 --> 00:02:12.500 align:start position:0%
+easily and the reason the proof is easy
+ 
+
+00:02:12.500 --> 00:02:15.160 align:start position:0%
+easily and the reason the proof is easy
+although<00:02:12.980><c> the</c><00:02:13.160><c> result</c><00:02:13.549><c> is</c><00:02:13.760><c> beepin</c><00:02:14.239><c> useful</c><00:02:14.720><c> is</c>
+
+00:02:15.160 --> 00:02:15.170 align:start position:0%
+although the result is beepin useful is
+ 
+
+00:02:15.170 --> 00:02:18.509 align:start position:0%
+although the result is beepin useful is
+thanks<00:02:15.920><c> to</c><00:02:15.950><c> the</c><00:02:16.160><c> power</c><00:02:16.370><c> of</c><00:02:16.549><c> proposal</c><00:02:17.230><c> of</c>
+
+00:02:18.509 --> 00:02:18.519 align:start position:0%
+thanks to the power of proposal of
+ 
+
+00:02:18.519 --> 00:02:22.570 align:start position:0%
+thanks to the power of proposal of
+thinking<00:02:19.519><c> in</c><00:02:19.610><c> terms</c><00:02:19.640><c> of</c><00:02:19.940><c> pictures</c><00:02:20.299><c> I</c><00:02:21.580><c> should</c>
+
+00:02:22.570 --> 00:02:22.580 align:start position:0%
+thinking in terms of pictures I should
+ 
+
+00:02:22.580 --> 00:02:23.620 align:start position:0%
+thinking in terms of pictures I should
+say<00:02:22.819><c> that</c><00:02:23.030><c> there</c><00:02:23.239><c> are</c><00:02:23.330><c> many</c><00:02:23.450><c> different</c>
+
+00:02:23.620 --> 00:02:23.630 align:start position:0%
+say that there are many different
+ 
+
+00:02:23.630 --> 00:02:25.720 align:start position:0%
+say that there are many different
+versions<00:02:24.230><c> variable</c><00:02:24.799><c> in</c><00:02:24.920><c> serum</c><00:02:25.250><c> this</c><00:02:25.459><c> is</c><00:02:25.580><c> not</c>
+
+00:02:25.720 --> 00:02:25.730 align:start position:0%
+versions variable in serum this is not
+ 
+
+00:02:25.730 --> 00:02:27.940 align:start position:0%
+versions variable in serum this is not
+the<00:02:25.819><c> only</c><00:02:25.910><c> one</c><00:02:26.209><c> I</c><00:02:26.510><c> stated</c><00:02:27.049><c> the</c><00:02:27.260><c> one</c><00:02:27.380><c> that</c><00:02:27.769><c> is</c>
+
+00:02:27.940 --> 00:02:27.950 align:start position:0%
+the only one I stated the one that is
+ 
+
+00:02:27.950 --> 00:02:30.100 align:start position:0%
+the only one I stated the one that is
+clearest<00:02:28.670><c> but</c><00:02:29.299><c> there</c><00:02:29.480><c> are</c><00:02:29.540><c> many</c><00:02:29.690><c> others</c><00:02:30.080><c> that</c>
+
+00:02:30.100 --> 00:02:30.110 align:start position:0%
+clearest but there are many others that
+ 
+
+00:02:30.110 --> 00:02:32.170 align:start position:0%
+clearest but there are many others that
+you<00:02:30.440><c> might</c><00:02:30.560><c> encounter</c><00:02:30.950><c> strategy</c><00:02:31.580><c> scientific</c>
+
+00:02:32.170 --> 00:02:32.180 align:start position:0%
+you might encounter strategy scientific
+ 
+
+00:02:32.180 --> 00:02:36.280 align:start position:0%
+you might encounter strategy scientific
+area<00:02:32.450><c> and</c><00:02:32.920><c> some</c><00:02:33.920><c> of</c><00:02:34.070><c> them</c><00:02:34.359><c> need</c><00:02:35.359><c> techniques</c>
+
+00:02:36.280 --> 00:02:36.290 align:start position:0%
+area and some of them need techniques
+ 
+
+00:02:36.290 --> 00:02:39.460 align:start position:0%
+area and some of them need techniques
+from<00:02:36.440><c> outside</c><00:02:36.920><c> topology</c><00:02:37.480><c> but</c><00:02:38.480><c> this</c><00:02:38.720><c> one</c><00:02:38.930><c> this</c>
+
+00:02:39.460 --> 00:02:39.470 align:start position:0%
+from outside topology but this one this
+ 
+
+00:02:39.470 --> 00:02:42.099 align:start position:0%
+from outside topology but this one this
+simple<00:02:39.859><c> one</c><00:02:40.209><c> can</c><00:02:41.209><c> be</c><00:02:41.299><c> completely</c><00:02:41.720><c> understood</c>
+
+00:02:42.099 --> 00:02:42.109 align:start position:0%
+simple one can be completely understood
+ 
+
+00:02:42.109 --> 00:02:44.410 align:start position:0%
+simple one can be completely understood
+in<00:02:42.290><c> terms</c><00:02:42.410><c> of</c><00:02:42.620><c> propulsion</c><00:02:42.859><c> another</c><00:02:43.730><c> comment</c>
+
+00:02:44.410 --> 00:02:44.420 align:start position:0%
+in terms of propulsion another comment
+ 
+
+00:02:44.420 --> 00:02:46.059 align:start position:0%
+in terms of propulsion another comment
+that<00:02:44.450><c> I</c><00:02:44.660><c> shall</c><00:02:44.870><c> make</c><00:02:45.079><c> before</c><00:02:45.590><c> starting</c><00:02:46.010><c> the</c>
+
+00:02:46.059 --> 00:02:46.069 align:start position:0%
+that I shall make before starting the
+ 
+
+00:02:46.069 --> 00:02:49.420 align:start position:0%
+that I shall make before starting the
+proof<00:02:46.450><c> another</c><00:02:47.450><c> comment</c><00:02:47.870><c> I</c><00:02:48.079><c> said</c><00:02:48.920><c> it</c>
+
+00:02:49.420 --> 00:02:49.430 align:start position:0%
+proof another comment I said it
+ 
+
+00:02:49.430 --> 00:02:51.340 align:start position:0%
+proof another comment I said it
+converges<00:02:49.970><c> to</c><00:02:50.150><c> a</c><00:02:50.299><c> limit</c><00:02:50.569><c> distribution</c><00:02:50.870><c> in</c>
+
+00:02:51.340 --> 00:02:51.350 align:start position:0%
+converges to a limit distribution in
+ 
+
+00:02:51.350 --> 00:02:53.770 align:start position:0%
+converges to a limit distribution in
+other<00:02:51.470><c> words</c><00:02:51.680><c> if</c><00:02:52.010><c> you</c><00:02:52.160><c> keep</c><00:02:52.340><c> iterating</c><00:02:52.780><c> very</c>
+
+00:02:53.770 --> 00:02:53.780 align:start position:0%
+other words if you keep iterating very
+ 
+
+00:02:53.780 --> 00:02:57.699 align:start position:0%
+other words if you keep iterating very
+soon<00:02:54.200><c> you</c><00:02:54.680><c> see</c><00:02:54.980><c> some</c><00:02:55.340><c> distribution</c><00:02:56.440><c> say</c><00:02:57.440><c> two</c>
+
+00:02:57.699 --> 00:02:57.709 align:start position:0%
+soon you see some distribution say two
+ 
+
+00:02:57.709 --> 00:02:59.259 align:start position:0%
+soon you see some distribution say two
+thousand<00:02:58.069><c> rabbits</c><00:02:58.340><c> here</c><00:02:58.549><c> three</c><00:02:58.970><c> thousand</c>
+
+00:02:59.259 --> 00:02:59.269 align:start position:0%
+thousand rabbits here three thousand
+ 
+
+00:02:59.269 --> 00:03:01.569 align:start position:0%
+thousand rabbits here three thousand
+rabbits<00:02:59.569><c> here</c><00:02:59.859><c> 100</c><00:03:00.859><c> rabbits</c><00:03:01.040><c> here</c>
+
+00:03:01.569 --> 00:03:01.579 align:start position:0%
+rabbits here 100 rabbits here
+ 
+
+00:03:01.579 --> 00:03:05.229 align:start position:0%
+rabbits here 100 rabbits here
+only<00:03:01.940><c> one</c><00:03:02.090><c> rabbit</c><00:03:02.269><c> here</c><00:03:02.660><c> and</c><00:03:03.100><c> 20</c><00:03:04.100><c> hundred</c><00:03:05.030><c> and</c>
+
+00:03:05.229 --> 00:03:05.239 align:start position:0%
+only one rabbit here and 20 hundred and
+ 
+
+00:03:05.239 --> 00:03:07.349 align:start position:0%
+only one rabbit here and 20 hundred and
+twenty<00:03:05.870><c> thousand</c><00:03:06.230><c> rabbits</c><00:03:06.560><c> here</c><00:03:06.709><c> and</c><00:03:06.920><c> so</c><00:03:07.100><c> on</c>
+
+00:03:07.349 --> 00:03:07.359 align:start position:0%
+twenty thousand rabbits here and so on
+ 
+
+00:03:07.359 --> 00:03:10.150 align:start position:0%
+twenty thousand rabbits here and so on
+such<00:03:08.359><c> that</c><00:03:08.630><c> when</c><00:03:08.900><c> you</c><00:03:09.049><c> keep</c><00:03:09.410><c> applying</c><00:03:09.829><c> the</c>
+
+00:03:10.150 --> 00:03:10.160 align:start position:0%
+such that when you keep applying the
+ 
+
+00:03:10.160 --> 00:03:10.750 align:start position:0%
+such that when you keep applying the
+Markov<00:03:10.489><c> chain</c>
+
+00:03:10.750 --> 00:03:10.760 align:start position:0%
+Markov chain
+ 
+
+00:03:10.760 --> 00:03:15.160 align:start position:0%
+Markov chain
+it<00:03:11.030><c> doesn't</c><00:03:11.420><c> change</c><00:03:13.000><c> that's</c><00:03:14.000><c> why</c><00:03:14.239><c> as</c><00:03:14.660><c> Sheamus</c>
+
+00:03:15.160 --> 00:03:15.170 align:start position:0%
+it doesn't change that's why as Sheamus
+ 
+
+00:03:15.170 --> 00:03:17.080 align:start position:0%
+it doesn't change that's why as Sheamus
+said<00:03:15.350><c> it's</c><00:03:15.650><c> a</c><00:03:15.739><c> stationary</c><00:03:16.370><c> distribution</c><00:03:16.519><c> is</c><00:03:17.060><c> a</c>
+
+00:03:17.080 --> 00:03:17.090 align:start position:0%
+said it's a stationary distribution is a
+ 
+
+00:03:17.090 --> 00:03:19.900 align:start position:0%
+said it's a stationary distribution is a
+linear<00:03:17.450><c> distribution</c><00:03:17.859><c> okay</c><00:03:18.859><c> so</c><00:03:19.280><c> it's</c><00:03:19.639><c> a</c>
+
+00:03:19.900 --> 00:03:19.910 align:start position:0%
+linear distribution okay so it's a
+ 
+
+00:03:19.910 --> 00:03:21.390 align:start position:0%
+linear distribution okay so it's a
+distribution<00:03:20.780><c> of</c><00:03:20.930><c> probabilities</c>
+
+00:03:21.390 --> 00:03:21.400 align:start position:0%
+distribution of probabilities
+ 
+
+00:03:21.400 --> 00:03:23.979 align:start position:0%
+distribution of probabilities
+probability<00:03:22.400><c> distribution</c><00:03:22.850><c> that</c><00:03:23.540><c> no</c><00:03:23.780><c> longer</c>
+
+00:03:23.979 --> 00:03:23.989 align:start position:0%
+probability distribution that no longer
+ 
+
+00:03:23.989 --> 00:03:26.309 align:start position:0%
+probability distribution that no longer
+evolves<00:03:24.769><c> you</c><00:03:25.100><c> have</c><00:03:25.310><c> reached</c><00:03:25.670><c> an</c><00:03:26.000><c> equilibrium</c>
+
+00:03:26.309 --> 00:03:26.319 align:start position:0%
+evolves you have reached an equilibrium
+ 
+
+00:03:26.319 --> 00:03:29.890 align:start position:0%
+evolves you have reached an equilibrium
+the<00:03:27.319><c> temperature</c><00:03:27.350><c> has</c><00:03:28.010><c> settled</c><00:03:28.370><c> and</c><00:03:28.730><c> so</c><00:03:28.970><c> it</c>
+
+00:03:29.890 --> 00:03:29.900 align:start position:0%
+the temperature has settled and so it
+ 
+
+00:03:29.900 --> 00:03:31.059 align:start position:0%
+the temperature has settled and so it
+doesn't<00:03:30.260><c> have</c><00:03:30.380><c> to</c><00:03:30.410><c> be</c><00:03:30.590><c> a</c><00:03:30.620><c> uniform</c>
+
+00:03:31.059 --> 00:03:31.069 align:start position:0%
+doesn't have to be a uniform
+ 
+
+00:03:31.069 --> 00:03:33.550 align:start position:0%
+doesn't have to be a uniform
+distribution<00:03:31.989><c> you</c><00:03:32.989><c> get</c><00:03:33.139><c> a</c><00:03:33.170><c> uniform</c>
+
+00:03:33.550 --> 00:03:33.560 align:start position:0%
+distribution you get a uniform
+ 
+
+00:03:33.560 --> 00:03:35.500 align:start position:0%
+distribution you get a uniform
+distribution<00:03:33.709><c> if</c><00:03:34.250><c> all</c><00:03:34.489><c> the</c><00:03:34.639><c> generality</c>
+
+00:03:35.500 --> 00:03:35.510 align:start position:0%
+distribution if all the generality
+ 
+
+00:03:35.510 --> 00:03:37.660 align:start position:0%
+distribution if all the generality
+the<00:03:35.629><c> same</c><00:03:35.840><c> but</c><00:03:36.379><c> otherwise</c><00:03:36.650><c> this</c><00:03:36.950><c> country</c><00:03:37.340><c> have</c>
+
+00:03:37.660 --> 00:03:37.670 align:start position:0%
+the same but otherwise this country have
+ 
+
+00:03:37.670 --> 00:03:39.699 align:start position:0%
+the same but otherwise this country have
+more<00:03:37.939><c> probably</c><00:03:38.390><c> here</c><00:03:38.659><c> less</c><00:03:38.870><c> poverty</c><00:03:39.110><c> here</c><00:03:39.409><c> so</c>
+
+00:03:39.699 --> 00:03:39.709 align:start position:0%
+more probably here less poverty here so
+ 
+
+00:03:39.709 --> 00:03:42.210 align:start position:0%
+more probably here less poverty here so
+but<00:03:40.189><c> you</c><00:03:40.489><c> get</c><00:03:40.730><c> a</c><00:03:40.909><c> limit</c><00:03:41.269><c> distribution</c>
+
+00:03:42.210 --> 00:03:42.220 align:start position:0%
+but you get a limit distribution
+ 
+
+00:03:42.220 --> 00:03:46.630 align:start position:0%
+but you get a limit distribution
+now<00:03:44.019><c> it's</c><00:03:45.019><c> a</c><00:03:45.260><c> bit</c><00:03:45.409><c> annoying</c><00:03:45.769><c> to</c><00:03:45.950><c> have</c><00:03:46.340><c> a</c>
+
+00:03:46.630 --> 00:03:46.640 align:start position:0%
+now it's a bit annoying to have a
+ 
+
+00:03:46.640 --> 00:03:49.600 align:start position:0%
+now it's a bit annoying to have a
+mathematician<00:03:47.180><c> saying</c><00:03:47.780><c> it</c><00:03:48.620><c> converges</c><00:03:49.189><c> to</c><00:03:49.400><c> a</c>
+
+00:03:49.600 --> 00:03:49.610 align:start position:0%
+mathematician saying it converges to a
+ 
+
+00:03:49.610 --> 00:03:52.809 align:start position:0%
+mathematician saying it converges to a
+limit<00:03:49.879><c> because</c><00:03:50.860><c> natural</c><00:03:51.860><c> scientists</c><00:03:52.430><c> we</c>
+
+00:03:52.809 --> 00:03:52.819 align:start position:0%
+limit because natural scientists we
+ 
+
+00:03:52.819 --> 00:03:55.089 align:start position:0%
+limit because natural scientists we
+scientists<00:03:53.390><c> want</c><00:03:53.629><c> to</c><00:03:53.720><c> know</c><00:03:53.810><c> how</c><00:03:54.319><c> fast</c><00:03:54.769><c> it</c>
+
+00:03:55.089 --> 00:03:55.099 align:start position:0%
+scientists want to know how fast it
+ 
+
+00:03:55.099 --> 00:03:57.839 align:start position:0%
+scientists want to know how fast it
+converges<00:03:55.629><c> and</c><00:03:56.629><c> as</c><00:03:56.750><c> a</c><00:03:56.900><c> Christian</c><00:03:57.170><c> says</c><00:03:57.379><c> oh</c>
+
+00:03:57.839 --> 00:03:57.849 align:start position:0%
+converges and as a Christian says oh
+ 
+
+00:03:57.849 --> 00:04:00.970 align:start position:0%
+converges and as a Christian says oh
+when<00:03:58.849><c> n</c><00:03:59.090><c> goes</c><00:03:59.329><c> T</c><00:03:59.840><c> goes</c><00:04:00.049><c> thinking</c><00:04:00.379><c> it</c><00:04:00.590><c> converges</c>
+
+00:04:00.970 --> 00:04:00.980 align:start position:0%
+when n goes T goes thinking it converges
+ 
+
+00:04:00.980 --> 00:04:03.160 align:start position:0%
+when n goes T goes thinking it converges
+but<00:04:01.670><c> we</c><00:04:01.819><c> want</c><00:04:02.030><c> to</c><00:04:02.090><c> know</c><00:04:02.150><c> for</c><00:04:02.450><c> example</c><00:04:02.540><c> when</c><00:04:02.930><c> T's</c>
+
+00:04:03.160 --> 00:04:03.170 align:start position:0%
+but we want to know for example when T's
+ 
+
+00:04:03.170 --> 00:04:05.199 align:start position:0%
+but we want to know for example when T's
+100<00:04:03.829><c> has</c><00:04:04.190><c> it</c><00:04:04.340><c> already</c><00:04:04.519><c> more</c><00:04:05.090><c> or</c><00:04:05.180><c> less</c>
+
+00:04:05.199 --> 00:04:05.209 align:start position:0%
+100 has it already more or less
+ 
+
+00:04:05.209 --> 00:04:07.300 align:start position:0%
+100 has it already more or less
+converged<00:04:05.720><c> maybe</c><00:04:06.650><c> it's</c><00:04:06.859><c> not</c><00:04:06.950><c> going</c><00:04:07.159><c> to</c><00:04:07.250><c> be</c>
+
+00:04:07.300 --> 00:04:07.310 align:start position:0%
+converged maybe it's not going to be
+ 
+
+00:04:07.310 --> 00:04:09.250 align:start position:0%
+converged maybe it's not going to be
+exactly<00:04:07.640><c> limit</c><00:04:08.000><c> but</c><00:04:08.180><c> maybe</c><00:04:08.390><c> it's</c><00:04:08.629><c> very</c><00:04:08.900><c> close</c>
+
+00:04:09.250 --> 00:04:09.260 align:start position:0%
+exactly limit but maybe it's very close
+ 
+
+00:04:09.260 --> 00:04:12.759 align:start position:0%
+exactly limit but maybe it's very close
+to<00:04:09.470><c> it</c><00:04:09.650><c> oh</c><00:04:09.890><c> maybe</c><00:04:10.849><c> after</c><00:04:11.420><c> 100</c><00:04:11.900><c> steps</c><00:04:12.109><c> were</c>
+
+00:04:12.759 --> 00:04:12.769 align:start position:0%
+to it oh maybe after 100 steps were
+ 
+
+00:04:12.769 --> 00:04:15.539 align:start position:0%
+to it oh maybe after 100 steps were
+still<00:04:13.220><c> very</c><00:04:13.549><c> far</c><00:04:13.849><c> away</c><00:04:13.970><c> we</c><00:04:14.659><c> don't</c><00:04:14.870><c> know</c>
+
+00:04:15.539 --> 00:04:15.549 align:start position:0%
+still very far away we don't know
+ 
+
+00:04:15.549 --> 00:04:19.270 align:start position:0%
+still very far away we don't know
+however<00:04:16.930><c> although</c><00:04:17.930><c> I</c><00:04:18.079><c> won't</c><00:04:18.410><c> be</c><00:04:18.680><c> I</c><00:04:18.889><c> will</c><00:04:19.130><c> not</c>
+
+00:04:19.270 --> 00:04:19.280 align:start position:0%
+however although I won't be I will not
+ 
+
+00:04:19.280 --> 00:04:21.460 align:start position:0%
+however although I won't be I will not
+be<00:04:19.430><c> able</c><00:04:19.639><c> to</c><00:04:19.789><c> explain</c><00:04:20.180><c> this</c><00:04:20.449><c> that</c><00:04:20.870><c> convergence</c>
+
+00:04:21.460 --> 00:04:21.470 align:start position:0%
+be able to explain this that convergence
+ 
+
+00:04:21.470 --> 00:04:26.020 align:start position:0%
+be able to explain this that convergence
+is<00:04:21.650><c> extremely</c><00:04:22.610><c> fast</c><00:04:22.820><c> it</c><00:04:23.630><c> does</c><00:04:24.160><c> so</c><00:04:25.160><c> for</c><00:04:25.789><c> all</c>
+
+00:04:26.020 --> 00:04:26.030 align:start position:0%
+is extremely fast it does so for all
+ 
+
+00:04:26.030 --> 00:04:27.340 align:start position:0%
+is extremely fast it does so for all
+intents<00:04:26.570><c> and</c><00:04:26.630><c> purposes</c>
+
+00:04:27.340 --> 00:04:27.350 align:start position:0%
+intents and purposes
+ 
+
+00:04:27.350 --> 00:04:30.310 align:start position:0%
+intents and purposes
+after<00:04:27.979><c> several</c><00:04:28.729><c> steps</c><00:04:29.150><c> you</c><00:04:29.419><c> can</c><00:04:29.870><c> assume</c><00:04:30.289><c> that</c>
+
+00:04:30.310 --> 00:04:30.320 align:start position:0%
+after several steps you can assume that
+ 
+
+00:04:30.320 --> 00:04:32.650 align:start position:0%
+after several steps you can assume that
+your<00:04:30.680><c> state</c><00:04:30.919><c> is</c><00:04:31.070><c> roughly</c><00:04:31.789><c> in</c><00:04:32.060><c> equilibrium</c>
+
+00:04:32.650 --> 00:04:32.660 align:start position:0%
+your state is roughly in equilibrium
+ 
+
+00:04:32.660 --> 00:04:35.560 align:start position:0%
+your state is roughly in equilibrium
+that's<00:04:33.500><c> why</c><00:04:33.800><c> the</c><00:04:34.100><c> world</c><00:04:34.340><c> most</c><00:04:35.090><c> of</c><00:04:35.240><c> the</c><00:04:35.389><c> world</c>
+
+00:04:35.560 --> 00:04:35.570 align:start position:0%
+that's why the world most of the world
+ 
+
+00:04:35.570 --> 00:04:38.320 align:start position:0%
+that's why the world most of the world
+we<00:04:35.810><c> see</c><00:04:35.840><c> is</c><00:04:36.560><c> in</c><00:04:36.979><c> equilibrium</c><00:04:37.490><c> much</c><00:04:38.030><c> over</c><00:04:38.240><c> the</c>
+
+00:04:38.320 --> 00:04:38.330 align:start position:0%
+we see is in equilibrium much over the
+ 
+
+00:04:38.330 --> 00:04:42.510 align:start position:0%
+we see is in equilibrium much over the
+time<00:04:39.370><c> as</c><00:04:40.370><c> soon</c><00:04:40.639><c> as</c><00:04:40.760><c> we</c><00:04:40.940><c> go</c><00:04:41.330><c> away</c><00:04:41.449><c> from</c><00:04:41.570><c> a</c><00:04:41.810><c> cream</c>
+
+00:04:42.510 --> 00:04:42.520 align:start position:0%
+time as soon as we go away from a cream
+ 
+
+00:04:42.520 --> 00:04:46.230 align:start position:0%
+time as soon as we go away from a cream
+very<00:04:43.520><c> quickly</c><00:04:43.789><c> you</c><00:04:44.030><c> come</c><00:04:44.240><c> back</c><00:04:44.389><c> to</c><00:04:44.539><c> the</c><00:04:44.660><c> food</c>
+
+00:04:46.230 --> 00:04:46.240 align:start position:0%
+very quickly you come back to the food
+ 
+
+00:04:46.240 --> 00:04:49.450 align:start position:0%
+very quickly you come back to the food
+after<00:04:47.240><c> all</c><00:04:47.750><c> the</c><00:04:47.930><c> speech</c><00:04:48.260><c> let</c><00:04:48.889><c> through</c><00:04:49.220><c> this</c>
+
+00:04:49.450 --> 00:04:49.460 align:start position:0%
+after all the speech let through this
+ 
+
+00:04:49.460 --> 00:04:56.980 align:start position:0%
+after all the speech let through this
+result<00:04:52.570><c> the</c><00:04:53.570><c> key</c><00:04:54.080><c> remark</c><00:04:54.940><c> is</c><00:04:55.940><c> the</c><00:04:56.300><c> one</c><00:04:56.449><c> that</c><00:04:56.780><c> we</c>
+
+00:04:56.980 --> 00:04:56.990 align:start position:0%
+result the key remark is the one that we
+ 
+
+00:04:56.990 --> 00:05:00.820 align:start position:0%
+result the key remark is the one that we
+have<00:04:57.139><c> been</c><00:04:57.289><c> using</c><00:04:57.560><c> in</c><00:04:58.060><c> exercises</c><00:04:59.830><c> yesterday</c>
+
+00:05:00.820 --> 00:05:00.830 align:start position:0%
+have been using in exercises yesterday
+ 
+
+00:05:00.830 --> 00:05:02.860 align:start position:0%
+have been using in exercises yesterday
+and<00:05:01.160><c> the</c><00:05:01.280><c> day</c><00:05:01.310><c> before</c><00:05:01.460><c> the</c><00:05:02.419><c> limit</c>
+
+00:05:02.860 --> 00:05:02.870 align:start position:0%
+and the day before the limit
+ 
+
+00:05:02.870 --> 00:05:10.450 align:start position:0%
+and the day before the limit
+distribution<00:05:04.270><c> is</c><00:05:05.270><c> a</c><00:05:05.630><c> fixed</c><00:05:06.260><c> point</c><00:05:06.500><c> of</c><00:05:09.460><c> this</c>
+
+00:05:10.450 --> 00:05:10.460 align:start position:0%
+distribution is a fixed point of this
+ 
+
+00:05:10.460 --> 00:05:13.159 align:start position:0%
+distribution is a fixed point of this
+mapping<00:05:10.970><c> G</c>
+
+00:05:13.159 --> 00:05:13.169 align:start position:0%
+mapping G
+ 
+
+00:05:13.169 --> 00:05:20.059 align:start position:0%
+mapping G
+why<00:05:13.979><c> is</c><00:05:14.039><c> this</c><00:05:16.759><c> you</c><00:05:17.759><c> see</c><00:05:17.999><c> if</c><00:05:18.840><c> you</c><00:05:19.080><c> look</c><00:05:19.530><c> at</c><00:05:19.740><c> this</c>
+
+00:05:20.059 --> 00:05:20.069 align:start position:0%
+why is this you see if you look at this
+ 
+
+00:05:20.069 --> 00:05:26.869 align:start position:0%
+why is this you see if you look at this
+formula<00:05:21.050><c> it's</c><00:05:22.050><c> also</c><00:05:22.469><c> true</c><00:05:22.919><c> that</c><00:05:24.889><c> p1</c><00:05:25.889><c> at</c><00:05:26.159><c> T</c><00:05:26.610><c> plus</c>
+
+00:05:26.869 --> 00:05:26.879 align:start position:0%
+formula it's also true that p1 at T plus
+ 
+
+00:05:26.879 --> 00:05:32.779 align:start position:0%
+formula it's also true that p1 at T plus
+1<00:05:27.270><c> and</c><00:05:27.830><c> p.m.</c><00:05:28.830><c> at</c><00:05:29.310><c> T</c><00:05:29.580><c> plus</c><00:05:29.729><c> 1</c><00:05:31.009><c> is</c><00:05:32.009><c> equal</c><00:05:32.249><c> to</c><00:05:32.460><c> G</c>
+
+00:05:32.779 --> 00:05:32.789 align:start position:0%
+1 and p.m. at T plus 1 is equal to G
+ 
+
+00:05:32.789 --> 00:05:40.070 align:start position:0%
+1 and p.m. at T plus 1 is equal to G
+applied<00:05:33.719><c> to</c><00:05:34.080><c> T</c><00:05:34.349><c> 1</c><00:05:34.529><c> T</c><00:05:34.949><c> 2</c><00:05:35.120><c> T</c><00:05:36.120><c> M</c><00:05:37.189><c> T</c><00:05:38.189><c> correct</c><00:05:39.080><c> so</c>
+
+00:05:40.070 --> 00:05:40.080 align:start position:0%
+applied to T 1 T 2 T M T correct so
+ 
+
+00:05:40.080 --> 00:05:42.769 align:start position:0%
+applied to T 1 T 2 T M T correct so
+click<00:05:40.409><c> the</c><00:05:40.560><c> minute</c><00:05:40.830><c> on</c><00:05:41.069><c> both</c><00:05:41.370><c> sides</c><00:05:41.729><c> as</c><00:05:42.060><c> T</c><00:05:42.569><c> goes</c>
+
+00:05:42.769 --> 00:05:42.779 align:start position:0%
+click the minute on both sides as T goes
+ 
+
+00:05:42.779 --> 00:05:44.360 align:start position:0%
+click the minute on both sides as T goes
+to<00:05:42.840><c> infinity</c><00:05:43.050><c> what</c><00:05:43.889><c> do</c><00:05:43.979><c> you</c><00:05:44.069><c> get</c>
+
+00:05:44.360 --> 00:05:44.370 align:start position:0%
+to infinity what do you get
+ 
+
+00:05:44.370 --> 00:05:48.200 align:start position:0%
+to infinity what do you get
+well<00:05:44.520><c> you</c><00:05:44.819><c> get</c><00:05:44.999><c> the</c><00:05:46.849><c> equation</c><00:05:47.849><c> that</c><00:05:48.000><c> the</c>
+
+00:05:48.200 --> 00:05:48.210 align:start position:0%
+well you get the equation that the
+ 
+
+00:05:48.210 --> 00:05:51.279 align:start position:0%
+well you get the equation that the
+limiting<00:05:48.659><c> distribution</c><00:05:49.050><c> at</c><00:05:49.710><c> time</c><00:05:50.400><c> infinity</c>
+
+00:05:51.279 --> 00:05:51.289 align:start position:0%
+limiting distribution at time infinity
+ 
+
+00:05:51.289 --> 00:05:55.129 align:start position:0%
+limiting distribution at time infinity
+is<00:05:52.289><c> equal</c><00:05:52.469><c> to</c><00:05:52.860><c> G</c><00:05:53.279><c> applied</c><00:05:53.969><c> to</c><00:05:54.300><c> the</c><00:05:54.810><c> same</c>
+
+00:05:55.129 --> 00:05:55.139 align:start position:0%
+is equal to G applied to the same
+ 
+
+00:05:55.139 --> 00:06:01.219 align:start position:0%
+is equal to G applied to the same
+distribution<00:05:58.069><c> which</c><00:05:59.069><c> shows</c><00:05:59.969><c> exactly</c><00:06:00.900><c> that</c>
+
+00:06:01.219 --> 00:06:01.229 align:start position:0%
+distribution which shows exactly that
+ 
+
+00:06:01.229 --> 00:06:03.830 align:start position:0%
+distribution which shows exactly that
+when<00:06:01.439><c> you</c><00:06:01.560><c> apply</c><00:06:01.830><c> this</c><00:06:02.520><c> distribution</c><00:06:03.300><c> vector</c>
+
+00:06:03.830 --> 00:06:03.840 align:start position:0%
+when you apply this distribution vector
+ 
+
+00:06:03.840 --> 00:06:06.709 align:start position:0%
+when you apply this distribution vector
+does<00:06:03.960><c> not</c><00:06:04.139><c> move</c><00:06:04.349><c> so</c><00:06:05.029><c> the</c><00:06:06.029><c> limiting</c>
+
+00:06:06.709 --> 00:06:06.719 align:start position:0%
+does not move so the limiting
+ 
+
+00:06:06.719 --> 00:06:08.240 align:start position:0%
+does not move so the limiting
+distribution<00:06:06.870><c> limit</c><00:06:07.770><c> which</c><00:06:07.889><c> will</c><00:06:08.009><c> be</c><00:06:08.099><c> shown</c>
+
+00:06:08.240 --> 00:06:08.250 align:start position:0%
+distribution limit which will be shown
+ 
+
+00:06:08.250 --> 00:06:11.809 align:start position:0%
+distribution limit which will be shown
+is<00:06:08.370><c> a</c><00:06:08.460><c> fixed</c><00:06:08.699><c> quantity</c><00:06:08.759><c> and</c><00:06:09.620><c> you</c><00:06:10.620><c> can</c><00:06:10.800><c> see</c><00:06:11.039><c> how</c>
+
+00:06:11.809 --> 00:06:11.819 align:start position:0%
+is a fixed quantity and you can see how
+ 
+
+00:06:11.819 --> 00:06:14.600 align:start position:0%
+is a fixed quantity and you can see how
+the<00:06:12.270><c> browser</c><00:06:12.539><c> expansion</c><00:06:13.199><c> can</c><00:06:13.439><c> be</c><00:06:13.469><c> applied</c><00:06:14.310><c> so</c>
+
+00:06:14.600 --> 00:06:14.610 align:start position:0%
+the browser expansion can be applied so
+ 
+
+00:06:14.610 --> 00:06:21.769 align:start position:0%
+the browser expansion can be applied so
+the<00:06:15.509><c> problem</c><00:06:18.889><c> then</c><00:06:19.889><c> is</c><00:06:20.129><c> to</c><00:06:21.089><c> prove</c><00:06:21.539><c> the</c>
+
+00:06:21.769 --> 00:06:21.779 align:start position:0%
+the problem then is to prove the
+ 
+
+00:06:21.779 --> 00:06:37.960 align:start position:0%
+the problem then is to prove the
+existence<00:06:21.839><c> of</c><00:06:22.349><c> a</c><00:06:22.409><c> fixed</c><00:06:22.680><c> point</c>
+
+00:06:37.960 --> 00:06:37.970 align:start position:0%
+ 
+ 
+
+00:06:37.970 --> 00:06:43.510 align:start position:0%
+ 
+in<00:06:38.480><c> Danvers</c><00:06:39.550><c> because</c><00:06:40.550><c> jesus</c><00:06:41.000><c> H</c><00:06:41.150><c> X</c><00:06:42.310><c> what</c><00:06:43.310><c> does</c>
+
+00:06:43.510 --> 00:06:43.520 align:start position:0%
+in Danvers because jesus H X what does
+ 
+
+00:06:43.520 --> 00:06:46.990 align:start position:0%
+in Danvers because jesus H X what does
+this<00:06:43.700><c> say</c><00:06:44.000><c> it</c><00:06:44.390><c> says</c><00:06:45.160><c> remember</c><00:06:46.160><c> geez</c><00:06:46.520><c> mate</c><00:06:46.790><c> ryx</c>
+
+00:06:46.990 --> 00:06:47.000 align:start position:0%
+this say it says remember geez mate ryx
+ 
+
+00:06:47.000 --> 00:06:50.340 align:start position:0%
+this say it says remember geez mate ryx
+and<00:06:47.470><c> biometrics</c><00:06:48.470><c> it</c><00:06:49.010><c> says</c><00:06:49.370><c> that</c><00:06:49.580><c> this</c><00:06:49.790><c> vector</c>
+
+00:06:50.340 --> 00:06:50.350 align:start position:0%
+and biometrics it says that this vector
+ 
+
+00:06:50.350 --> 00:06:55.060 align:start position:0%
+and biometrics it says that this vector
+is<00:06:51.350><c> an</c><00:06:51.620><c> eigenvector</c><00:06:52.930><c> you</c><00:06:53.930><c> see</c><00:06:54.110><c> because</c><00:06:54.440><c> if</c><00:06:54.920><c> I</c>
+
+00:06:55.060 --> 00:06:55.070 align:start position:0%
+is an eigenvector you see because if I
+ 
+
+00:06:55.070 --> 00:06:56.970 align:start position:0%
+is an eigenvector you see because if I
+apply<00:06:55.370><c> this</c><00:06:55.430><c> matrix</c><00:06:55.910><c> this</c><00:06:56.090><c> vector</c><00:06:56.450><c> becomes</c>
+
+00:06:56.970 --> 00:06:56.980 align:start position:0%
+apply this matrix this vector becomes
+ 
+
+00:06:56.980 --> 00:07:00.730 align:start position:0%
+apply this matrix this vector becomes
+proportional<00:06:57.980><c> to</c><00:06:58.520><c> itself</c><00:06:58.790><c> but</c><00:06:59.630><c> the</c><00:06:59.930><c> VA</c><00:07:00.170><c> it's</c>
+
+00:07:00.730 --> 00:07:00.740 align:start position:0%
+proportional to itself but the VA it's
+ 
+
+00:07:00.740 --> 00:07:03.240 align:start position:0%
+proportional to itself but the VA it's
+an<00:07:00.860><c> eigenvector</c><00:07:01.250><c> but</c><00:07:01.580><c> what's</c><00:07:01.790><c> the</c><00:07:01.910><c> eigenvalue</c>
+
+00:07:03.240 --> 00:07:03.250 align:start position:0%
+an eigenvector but what's the eigenvalue
+ 
+
+00:07:03.250 --> 00:07:07.810 align:start position:0%
+an eigenvector but what's the eigenvalue
+so<00:07:04.250><c> here</c><00:07:04.690><c> what</c><00:07:05.690><c> it</c><00:07:06.260><c> becomes</c><00:07:06.560><c> 1</c><00:07:07.010><c> times</c><00:07:07.340><c> itself</c>
+
+00:07:07.810 --> 00:07:07.820 align:start position:0%
+so here what it becomes 1 times itself
+ 
+
+00:07:07.820 --> 00:07:15.390 align:start position:0%
+so here what it becomes 1 times itself
+so<00:07:08.390><c> or</c><00:07:08.720><c> to</c><00:07:09.350><c> find</c><00:07:09.640><c> prove</c><00:07:10.640><c> the</c><00:07:10.790><c> existence</c><00:07:11.000><c> of</c><00:07:14.320><c> an</c>
+
+00:07:15.390 --> 00:07:15.400 align:start position:0%
+so or to find prove the existence of an
+ 
+
+00:07:15.400 --> 00:07:29.860 align:start position:0%
+so or to find prove the existence of an
+eigenvector<00:07:20.710><c> with</c><00:07:21.710><c> eigenvalue</c><00:07:22.090><c> 1</c><00:07:28.840><c> there</c><00:07:29.840><c> is</c>
+
+00:07:29.860 --> 00:07:29.870 align:start position:0%
+eigenvector with eigenvalue 1 there is
+ 
+
+00:07:29.870 --> 00:07:31.600 align:start position:0%
+eigenvector with eigenvalue 1 there is
+something<00:07:30.260><c> else</c><00:07:30.410><c> though</c><00:07:30.680><c> it's</c><00:07:31.010><c> not</c><00:07:31.190><c> enough</c><00:07:31.490><c> to</c>
+
+00:07:31.600 --> 00:07:31.610 align:start position:0%
+something else though it's not enough to
+ 
+
+00:07:31.610 --> 00:07:34.510 align:start position:0%
+something else though it's not enough to
+find<00:07:31.850><c> an</c><00:07:32.650><c> eigenvector</c><00:07:33.650><c> with</c><00:07:33.950><c> eigenvalue</c><00:07:33.980><c> 1</c>
+
+00:07:34.510 --> 00:07:34.520 align:start position:0%
+find an eigenvector with eigenvalue 1
+ 
+
+00:07:34.520 --> 00:07:36.700 align:start position:0%
+find an eigenvector with eigenvalue 1
+for<00:07:35.270><c> example</c><00:07:35.360><c> suppose</c><00:07:36.080><c> that</c><00:07:36.110><c> you</c><00:07:36.380><c> found</c><00:07:36.590><c> the</c>
+
+00:07:36.700 --> 00:07:36.710 align:start position:0%
+for example suppose that you found the
+ 
+
+00:07:36.710 --> 00:07:38.740 align:start position:0%
+for example suppose that you found the
+eigenvector<00:07:37.310><c> which</c><00:07:37.550><c> looks</c><00:07:37.790><c> like</c><00:07:38.000><c> this</c><00:07:38.180><c> 1</c>
+
+00:07:38.740 --> 00:07:38.750 align:start position:0%
+eigenvector which looks like this 1
+ 
+
+00:07:38.750 --> 00:07:45.940 align:start position:0%
+eigenvector which looks like this 1
+minus<00:07:39.620><c> 2</c><00:07:39.860><c> and</c><00:07:40.190><c> minus</c><00:07:41.500><c> 0.1</c><00:07:44.620><c> suppose</c><00:07:45.620><c> that</c><00:07:45.770><c> this</c>
+
+00:07:45.940 --> 00:07:45.950 align:start position:0%
+minus 2 and minus 0.1 suppose that this
+ 
+
+00:07:45.950 --> 00:07:49.060 align:start position:0%
+minus 2 and minus 0.1 suppose that this
+eigenvector<00:07:46.640><c> has</c><00:07:47.000><c> eigen</c><00:07:47.330><c> value</c><00:07:47.510><c> 1</c><00:07:47.720><c> that's</c><00:07:48.710><c> not</c>
+
+00:07:49.060 --> 00:07:49.070 align:start position:0%
+eigenvector has eigen value 1 that's not
+ 
+
+00:07:49.070 --> 00:07:52.090 align:start position:0%
+eigenvector has eigen value 1 that's not
+what<00:07:49.340><c> we</c><00:07:49.490><c> want</c><00:07:49.760><c> because</c><00:07:50.140><c> all</c><00:07:51.140><c> those</c><00:07:51.590><c> entries</c>
+
+00:07:52.090 --> 00:07:52.100 align:start position:0%
+what we want because all those entries
+ 
+
+00:07:52.100 --> 00:07:55.330 align:start position:0%
+what we want because all those entries
+are<00:07:52.610><c> probabilities</c><00:07:53.950><c> they</c><00:07:54.950><c> cannot</c><00:07:55.130><c> be</c>
+
+00:07:55.330 --> 00:07:55.340 align:start position:0%
+are probabilities they cannot be
+ 
+
+00:07:55.340 --> 00:07:56.070 align:start position:0%
+are probabilities they cannot be
+negative
+
+00:07:56.070 --> 00:07:56.080 align:start position:0%
+negative
+ 
+
+00:07:56.080 --> 00:08:00.159 align:start position:0%
+negative
+furthermore<00:07:57.080><c> dimmers</c><00:07:57.530><c> are</c><00:07:57.710><c> not</c><00:07:57.860><c> 1</c><00:07:58.160><c> so</c><00:07:59.169><c> that's</c>
+
+00:08:00.159 --> 00:08:00.169 align:start position:0%
+furthermore dimmers are not 1 so that's
+ 
+
+00:08:00.169 --> 00:08:05.760 align:start position:0%
+furthermore dimmers are not 1 so that's
+not<00:08:00.760><c> so</c><00:08:01.760><c> you</c><00:08:01.820><c> want</c><00:08:02.390><c> an</c><00:08:02.510><c> eigenvector</c><00:08:03.400><c> who's</c>
+
+00:08:05.760 --> 00:08:05.770 align:start position:0%
+not so you want an eigenvector who's
+ 
+
+00:08:05.770 --> 00:08:14.770 align:start position:0%
+not so you want an eigenvector who's
+such<00:08:06.770><c> that</c><00:08:09.400><c> each</c><00:08:10.400><c> P</c><00:08:10.850><c> I</c><00:08:11.120><c> is</c><00:08:11.860><c> positive</c><00:08:13.330><c> 4</c><00:08:14.330><c> or</c><00:08:14.540><c> I</c>
+
+00:08:14.770 --> 00:08:14.780 align:start position:0%
+such that each P I is positive 4 or I
+ 
+
+00:08:14.780 --> 00:08:20.590 align:start position:0%
+such that each P I is positive 4 or I
+and<00:08:15.820><c> the</c><00:08:16.820><c> sum</c><00:08:17.120><c> of</c><00:08:17.150><c> the</c><00:08:17.419><c> three</c><00:08:17.630><c> RS</c><00:08:17.990><c> is</c><00:08:18.919><c> one</c><00:08:19.600><c> with</c>
+
+00:08:20.590 --> 00:08:20.600 align:start position:0%
+and the sum of the three RS is one with
+ 
+
+00:08:20.600 --> 00:08:23.980 align:start position:0%
+and the sum of the three RS is one with
+eigenvalue<00:08:21.350><c> 1</c><00:08:21.730><c> that's</c><00:08:22.730><c> what</c><00:08:22.940><c> we</c><00:08:23.090><c> want</c><00:08:23.270><c> you</c><00:08:23.810><c> see</c>
+
+00:08:23.980 --> 00:08:23.990 align:start position:0%
+eigenvalue 1 that's what we want you see
+ 
+
+00:08:23.990 --> 00:08:26.620 align:start position:0%
+eigenvalue 1 that's what we want you see
+it<00:08:24.260><c> has</c><00:08:24.440><c> a</c><00:08:24.470><c> local</c><00:08:24.770><c> constraints</c><00:08:25.419><c> but</c><00:08:26.419><c> those</c>
+
+00:08:26.620 --> 00:08:26.630 align:start position:0%
+it has a local constraints but those
+ 
+
+00:08:26.630 --> 00:08:29.409 align:start position:0%
+it has a local constraints but those
+constraints<00:08:27.140><c> the</c><00:08:27.740><c> constraints</c><00:08:27.770><c> will</c><00:08:28.520><c> be</c><00:08:28.550><c> over</c>
+
+00:08:29.409 --> 00:08:29.419 align:start position:0%
+constraints the constraints will be over
+ 
+
+00:08:29.419 --> 00:08:37.299 align:start position:0%
+constraints the constraints will be over
+advantage<00:08:29.900><c> to</c><00:08:30.050><c> us</c>
+
+00:08:37.299 --> 00:08:37.309 align:start position:0%
+ 
+ 
+
+00:08:37.309 --> 00:08:42.019 align:start position:0%
+ 
+you<00:08:39.050><c> might</c><00:08:40.050><c> have</c><00:08:40.339><c> been</c><00:08:41.339><c> watching</c><00:08:41.550><c> carefully</c>
+
+00:08:42.019 --> 00:08:42.029 align:start position:0%
+you might have been watching carefully
+ 
+
+00:08:42.029 --> 00:08:45.350 align:start position:0%
+you might have been watching carefully
+and<00:08:42.449><c> might</c><00:08:43.139><c> have</c><00:08:43.319><c> noticed</c><00:08:43.769><c> that</c><00:08:43.829><c> I'm</c><00:08:44.699><c> cheating</c>
+
+00:08:45.350 --> 00:08:45.360 align:start position:0%
+and might have noticed that I'm cheating
+ 
+
+00:08:45.360 --> 00:08:48.109 align:start position:0%
+and might have noticed that I'm cheating
+a<00:08:45.689><c> little</c><00:08:45.720><c> I</c><00:08:46.369><c> said</c><00:08:47.369><c> the</c><00:08:47.519><c> problem</c><00:08:47.850><c> is</c><00:08:47.970><c> to</c><00:08:48.089><c> find</c>
+
+00:08:48.109 --> 00:08:48.119 align:start position:0%
+a little I said the problem is to find
+ 
+
+00:08:48.119 --> 00:08:52.549 align:start position:0%
+a little I said the problem is to find
+an<00:08:48.569><c> eigen</c><00:08:49.259><c> value</c><00:08:50.129><c> or</c><00:08:50.490><c> a</c><00:08:50.519><c> fixed</c><00:08:50.879><c> point</c><00:08:51.230><c> in</c><00:08:52.230><c> fact</c>
+
+00:08:52.549 --> 00:08:52.559 align:start position:0%
+an eigen value or a fixed point in fact
+ 
+
+00:08:52.559 --> 00:08:54.829 align:start position:0%
+an eigen value or a fixed point in fact
+you<00:08:52.769><c> should</c><00:08:52.980><c> also</c><00:08:53.360><c> prove</c><00:08:54.360><c> that</c><00:08:54.389><c> this</c>
+
+00:08:54.829 --> 00:08:54.839 align:start position:0%
+you should also prove that this
+ 
+
+00:08:54.839 --> 00:08:58.999 align:start position:0%
+you should also prove that this
+convergence<00:08:55.619><c> takes</c><00:08:55.949><c> place</c><00:08:57.319><c> you</c><00:08:58.319><c> see</c><00:08:58.529><c> the</c><00:08:58.800><c> way</c>
+
+00:08:58.999 --> 00:08:59.009 align:start position:0%
+convergence takes place you see the way
+ 
+
+00:08:59.009 --> 00:09:01.309 align:start position:0%
+convergence takes place you see the way
+I<00:08:59.220><c> presented</c><00:08:59.519><c> argument</c><00:09:00.029><c> says</c><00:09:00.600><c> that</c><00:09:00.629><c> if</c><00:09:01.050><c> it</c>
+
+00:09:01.309 --> 00:09:01.319 align:start position:0%
+I presented argument says that if it
+ 
+
+00:09:01.319 --> 00:09:04.129 align:start position:0%
+I presented argument says that if it
+converges<00:09:02.300><c> then</c><00:09:03.300><c> the</c><00:09:03.629><c> limiting</c><00:09:04.019><c> distribution</c>
+
+00:09:04.129 --> 00:09:04.139 align:start position:0%
+converges then the limiting distribution
+ 
+
+00:09:04.139 --> 00:09:07.519 align:start position:0%
+converges then the limiting distribution
+is<00:09:04.829><c> the</c><00:09:05.040><c> I</c><00:09:05.160><c> is</c><00:09:05.579><c> again</c><00:09:05.899><c> vector</c><00:09:06.899><c> and</c><00:09:07.079><c> so</c><00:09:07.259><c> forth</c>
+
+00:09:07.519 --> 00:09:07.529 align:start position:0%
+is the I is again vector and so forth
+ 
+
+00:09:07.529 --> 00:09:09.710 align:start position:0%
+is the I is again vector and so forth
+but<00:09:07.649><c> I</c><00:09:07.980><c> haven't</c><00:09:08.220><c> quite</c><00:09:08.639><c> said</c><00:09:09.029><c> why</c><00:09:09.360><c> this</c>
+
+00:09:09.710 --> 00:09:09.720 align:start position:0%
+but I haven't quite said why this
+ 
+
+00:09:09.720 --> 00:09:12.710 align:start position:0%
+but I haven't quite said why this
+converges<00:09:10.290><c> I</c><00:09:10.529><c> will</c><00:09:11.429><c> skip</c><00:09:11.730><c> this</c><00:09:11.910><c> step</c><00:09:11.970><c> with</c>
+
+00:09:12.710 --> 00:09:12.720 align:start position:0%
+converges I will skip this step with
+ 
+
+00:09:12.720 --> 00:09:16.160 align:start position:0%
+converges I will skip this step with
+apologies<00:09:13.079><c> it</c><00:09:13.980><c> is</c><00:09:14.189><c> not</c><00:09:14.369><c> difficult</c><00:09:14.809><c> and</c><00:09:15.809><c> if</c><00:09:16.050><c> you</c>
+
+00:09:16.160 --> 00:09:16.170 align:start position:0%
+apologies it is not difficult and if you
+ 
+
+00:09:16.170 --> 00:09:17.689 align:start position:0%
+apologies it is not difficult and if you
+are<00:09:16.230><c> interested</c><00:09:16.709><c> I'll</c><00:09:16.889><c> be</c><00:09:17.129><c> able</c><00:09:17.249><c> to</c><00:09:17.429><c> I</c><00:09:17.490><c> will</c>
+
+00:09:17.689 --> 00:09:17.699 align:start position:0%
+are interested I'll be able to I will
+ 
+
+00:09:17.699 --> 00:09:19.609 align:start position:0%
+are interested I'll be able to I will
+show<00:09:17.879><c> you</c><00:09:17.939><c> but</c><00:09:18.540><c> that</c><00:09:18.809><c> step</c><00:09:19.139><c> is</c><00:09:19.319><c> purely</c>
+
+00:09:19.609 --> 00:09:19.619 align:start position:0%
+show you but that step is purely
+ 
+
+00:09:19.619 --> 00:09:20.989 align:start position:0%
+show you but that step is purely
+analytical<00:09:19.980><c> you</c><00:09:20.369><c> have</c><00:09:20.519><c> to</c><00:09:20.639><c> write</c><00:09:20.759><c> some</c>
+
+00:09:20.989 --> 00:09:20.999 align:start position:0%
+analytical you have to write some
+ 
+
+00:09:20.999 --> 00:09:22.970 align:start position:0%
+analytical you have to write some
+inequalities<00:09:21.569><c> and</c><00:09:21.839><c> you</c><00:09:22.019><c> see</c><00:09:22.319><c> that</c><00:09:22.499><c> the</c>
+
+00:09:22.970 --> 00:09:22.980 align:start position:0%
+inequalities and you see that the
+ 
+
+00:09:22.980 --> 00:09:25.309 align:start position:0%
+inequalities and you see that the
+convergence<00:09:23.490><c> takes</c><00:09:23.730><c> place</c><00:09:24.029><c> and</c><00:09:24.300><c> you</c><00:09:24.869><c> more</c><00:09:25.170><c> of</c>
+
+00:09:25.309 --> 00:09:25.319 align:start position:0%
+convergence takes place and you more of
+ 
+
+00:09:25.319 --> 00:09:27.769 align:start position:0%
+convergence takes place and you more of
+a<00:09:25.410><c> see</c><00:09:25.589><c> an</c><00:09:26.309><c> idea</c><00:09:26.639><c> remembers</c><00:09:27.089><c> that</c><00:09:27.600><c> the</c>
+
+00:09:27.769 --> 00:09:27.779 align:start position:0%
+a see an idea remembers that the
+ 
+
+00:09:27.779 --> 00:09:30.470 align:start position:0%
+a see an idea remembers that the
+convergence<00:09:28.139><c> is</c><00:09:28.439><c> very</c><00:09:28.709><c> fast</c><00:09:29.009><c> I'll</c><00:09:29.999><c> stick</c><00:09:30.449><c> that</c>
+
+00:09:30.470 --> 00:09:30.480 align:start position:0%
+convergence is very fast I'll stick that
+ 
+
+00:09:30.480 --> 00:09:32.780 align:start position:0%
+convergence is very fast I'll stick that
+step<00:09:30.869><c> because</c><00:09:31.199><c> it's</c><00:09:31.679><c> not</c><00:09:32.009><c> related</c><00:09:32.610><c> to</c>
+
+00:09:32.780 --> 00:09:32.790 align:start position:0%
+step because it's not related to
+ 
+
+00:09:32.790 --> 00:09:35.359 align:start position:0%
+step because it's not related to
+topology<00:09:33.540><c> and</c><00:09:33.839><c> I'd</c><00:09:34.259><c> like</c><00:09:34.470><c> to</c><00:09:34.589><c> show</c><00:09:34.800><c> you</c><00:09:34.829><c> focus</c>
+
+00:09:35.359 --> 00:09:35.369 align:start position:0%
+topology and I'd like to show you focus
+ 
+
+00:09:35.369 --> 00:09:37.369 align:start position:0%
+topology and I'd like to show you focus
+on<00:09:35.550><c> the</c><00:09:35.759><c> topological</c><00:09:36.059><c> part</c><00:09:36.480><c> diagram</c><00:09:36.959><c> which</c><00:09:37.199><c> is</c>
+
+00:09:37.369 --> 00:09:37.379 align:start position:0%
+on the topological part diagram which is
+ 
+
+00:09:37.379 --> 00:09:40.579 align:start position:0%
+on the topological part diagram which is
+the<00:09:37.559><c> existence</c><00:09:38.490><c> of</c><00:09:38.670><c> one</c><00:09:39.149><c> fixed</c><00:09:39.509><c> point</c><00:09:39.749><c> of</c><00:09:39.929><c> the</c>
+
+00:09:40.579 --> 00:09:40.589 align:start position:0%
+the existence of one fixed point of the
+ 
+
+00:09:40.589 --> 00:09:43.249 align:start position:0%
+the existence of one fixed point of the
+eigenvector<00:09:41.660><c> probabilistic</c><00:09:42.660><c> eigenvector</c>
+
+00:09:43.249 --> 00:09:43.259 align:start position:0%
+eigenvector probabilistic eigenvector
+ 
+
+00:09:43.259 --> 00:09:49.369 align:start position:0%
+eigenvector probabilistic eigenvector
+with<00:09:43.529><c> eigenvalue</c><00:09:43.559><c> 1</c><00:09:45.860><c> right</c><00:09:47.240><c> the</c><00:09:48.379><c> statements</c>
+
+00:09:49.369 --> 00:09:49.379 align:start position:0%
+with eigenvalue 1 right the statements
+ 
+
+00:09:49.379 --> 00:09:58.010 align:start position:0%
+with eigenvalue 1 right the statements
+this<00:09:50.279><c> existence</c><00:09:52.309><c> has</c><00:09:53.309><c> a</c><00:09:53.339><c> name</c>
+
+00:09:58.010 --> 00:09:58.020 align:start position:0%
+ 
+ 
+
+00:09:58.020 --> 00:10:02.640 align:start position:0%
+ 
+the<00:09:59.020><c> existence</c><00:09:59.800><c> of</c><00:10:00.420><c> an</c><00:10:01.420><c> eigenvector</c><00:10:01.840><c> like</c>
+
+00:10:02.640 --> 00:10:02.650 align:start position:0%
+the existence of an eigenvector like
+ 
+
+00:10:02.650 --> 00:10:07.890 align:start position:0%
+the existence of an eigenvector like
+this<00:10:04.290><c> with</c><00:10:05.290><c> eigenvalue</c><00:10:05.860><c> 1</c><00:10:06.390><c> this</c><00:10:07.390><c> thing</c><00:10:07.630><c> I'm</c>
+
+00:10:07.890 --> 00:10:07.900 align:start position:0%
+this with eigenvalue 1 this thing I'm
+ 
+
+00:10:07.900 --> 00:10:10.460 align:start position:0%
+this with eigenvalue 1 this thing I'm
+sorry<00:10:08.080><c> about</c><00:10:08.260><c> right</c><00:10:08.680><c> right</c><00:10:08.950><c> here</c><00:10:09.400><c> is</c><00:10:09.790><c> called</c>
+
+00:10:10.460 --> 00:10:10.470 align:start position:0%
+sorry about right right here is called
+ 
+
+00:10:10.470 --> 00:10:17.190 align:start position:0%
+sorry about right right here is called
+pebble<00:10:12.750><c> Frobenius</c><00:10:13.750><c> theorem</c><00:10:15.600><c> which</c><00:10:16.600><c> has</c><00:10:16.870><c> quite</c>
+
+00:10:17.190 --> 00:10:17.200 align:start position:0%
+pebble Frobenius theorem which has quite
+ 
+
+00:10:17.200 --> 00:10:18.870 align:start position:0%
+pebble Frobenius theorem which has quite
+a<00:10:17.230><c> lot</c><00:10:17.440><c> of</c><00:10:17.470><c> applications</c><00:10:18.160><c> in</c><00:10:18.400><c> Applied</c>
+
+00:10:18.870 --> 00:10:18.880 align:start position:0%
+a lot of applications in Applied
+ 
+
+00:10:18.880 --> 00:10:24.840 align:start position:0%
+a lot of applications in Applied
+Sciences<00:10:22.350><c> to</c><00:10:23.350><c> people</c><00:10:23.740><c> they</c><00:10:24.100><c> won't</c><00:10:24.340><c> proved</c><00:10:24.640><c> it</c>
+
+00:10:24.840 --> 00:10:24.850 align:start position:0%
+Sciences to people they won't proved it
+ 
+
+00:10:24.850 --> 00:10:28.800 align:start position:0%
+Sciences to people they won't proved it
+in<00:10:25.050><c> 1907</c><00:10:26.910><c> Frobenius</c><00:10:27.910><c> who</c><00:10:28.390><c> has</c><00:10:28.540><c> a</c><00:10:28.570><c> great</c>
+
+00:10:28.800 --> 00:10:28.810 align:start position:0%
+in 1907 Frobenius who has a great
+ 
+
+00:10:28.810 --> 00:10:30.650 align:start position:0%
+in 1907 Frobenius who has a great
+professor<00:10:29.170><c> saying</c><00:10:29.380><c> they'll</c><00:10:29.980><c> be</c><00:10:30.160><c> improved</c>
+
+00:10:30.650 --> 00:10:30.660 align:start position:0%
+professor saying they'll be improved
+ 
+
+00:10:30.660 --> 00:10:33.840 align:start position:0%
+professor saying they'll be improved
+1912<00:10:31.660><c> and</c><00:10:32.020><c> for</c><00:10:32.710><c> some</c><00:10:32.890><c> reason</c><00:10:33.220><c> both</c><00:10:33.460><c> people</c>
+
+00:10:33.840 --> 00:10:33.850 align:start position:0%
+1912 and for some reason both people
+ 
+
+00:10:33.850 --> 00:10:34.650 align:start position:0%
+1912 and for some reason both people
+would<00:10:34.000><c> have</c><00:10:34.120><c> pre-credit</c>
+
+00:10:34.650 --> 00:10:34.660 align:start position:0%
+would have pre-credit
+ 
+
+00:10:34.660 --> 00:10:36.750 align:start position:0%
+would have pre-credit
+that's<00:10:35.530><c> very</c><00:10:35.740><c> nice</c><00:10:36.130><c> you</c><00:10:36.280><c> proved</c><00:10:36.520><c> something</c>
+
+00:10:36.750 --> 00:10:36.760 align:start position:0%
+that's very nice you proved something
+ 
+
+00:10:36.760 --> 00:10:38.430 align:start position:0%
+that's very nice you proved something
+five<00:10:37.150><c> years</c><00:10:37.450><c> after</c><00:10:37.660><c> somebody</c><00:10:38.110><c> else</c><00:10:38.290><c> on</c>
+
+00:10:38.430 --> 00:10:38.440 align:start position:0%
+five years after somebody else on
+ 
+
+00:10:38.440 --> 00:10:44.490 align:start position:0%
+five years after somebody else on
+YouTube<00:10:38.890><c> yet</c><00:10:39.670><c> remember</c><00:10:42.390><c> but</c><00:10:43.390><c> in</c><00:10:43.660><c> general</c><00:10:44.140><c> you</c>
+
+00:10:44.490 --> 00:10:44.500 align:start position:0%
+YouTube yet remember but in general you
+ 
+
+00:10:44.500 --> 00:10:47.130 align:start position:0%
+YouTube yet remember but in general you
+should<00:10:44.530><c> be</c><00:10:44.860><c> aware</c><00:10:45.310><c> that</c><00:10:45.790><c> in</c><00:10:46.330><c> mathematics</c><00:10:46.570><c> and</c>
+
+00:10:47.130 --> 00:10:47.140 align:start position:0%
+should be aware that in mathematics and
+ 
+
+00:10:47.140 --> 00:10:50.210 align:start position:0%
+should be aware that in mathematics and
+in<00:10:47.260><c> science</c><00:10:47.770><c> when</c><00:10:48.520><c> you</c><00:10:48.700><c> see</c><00:10:48.970><c> some</c><00:10:49.780><c> results</c>
+
+00:10:50.210 --> 00:10:50.220 align:start position:0%
+in science when you see some results
+ 
+
+00:10:50.220 --> 00:10:53.790 align:start position:0%
+in science when you see some results
+called<00:10:51.220><c> after</c><00:10:51.580><c> somebody</c><00:10:51.970><c> you</c><00:10:52.240><c> know</c><00:10:53.050><c> for</c>
+
+00:10:53.790 --> 00:10:53.800 align:start position:0%
+called after somebody you know for
+ 
+
+00:10:53.800 --> 00:10:58.560 align:start position:0%
+called after somebody you know for
+example<00:10:54.220><c> something</c><00:10:54.730><c> is</c><00:10:55.000><c> called</c><00:10:57.570><c> Brownian</c>
+
+00:10:58.560 --> 00:10:58.570 align:start position:0%
+example something is called Brownian
+ 
+
+00:10:58.570 --> 00:11:01.590 align:start position:0%
+example something is called Brownian
+motion<00:10:59.430><c> well</c><00:11:00.430><c> it</c><00:11:00.730><c> probably</c><00:11:01.090><c> was</c><00:11:01.390><c> not</c>
+
+00:11:01.590 --> 00:11:01.600 align:start position:0%
+motion well it probably was not
+ 
+
+00:11:01.600 --> 00:11:05.070 align:start position:0%
+motion well it probably was not
+discovered<00:11:02.020><c> by</c><00:11:02.290><c> mr.</c><00:11:02.590><c> Broun</c><00:11:03.750><c> usually</c><00:11:04.750><c> the</c><00:11:04.870><c> name</c>
+
+00:11:05.070 --> 00:11:05.080 align:start position:0%
+discovered by mr. Broun usually the name
+ 
+
+00:11:05.080 --> 00:11:08.220 align:start position:0%
+discovered by mr. Broun usually the name
+of<00:11:05.440><c> a</c><00:11:05.590><c> result</c><00:11:05.950><c> is</c><00:11:06.730><c> not</c><00:11:07.000><c> that</c><00:11:07.060><c> of</c><00:11:07.510><c> a</c><00:11:07.720><c> discoverer</c>
+
+00:11:08.220 --> 00:11:08.230 align:start position:0%
+of a result is not that of a discoverer
+ 
+
+00:11:08.230 --> 00:11:10.140 align:start position:0%
+of a result is not that of a discoverer
+of<00:11:08.500><c> the</c><00:11:08.860><c> discovery</c><00:11:09.310><c> it's</c><00:11:09.580><c> probably</c><00:11:09.940><c> somebody</c>
+
+00:11:10.140 --> 00:11:10.150 align:start position:0%
+of the discovery it's probably somebody
+ 
+
+00:11:10.150 --> 00:11:14.130 align:start position:0%
+of the discovery it's probably somebody
+else<00:11:10.450><c> and</c><00:11:10.720><c> history</c><00:11:11.140><c> is</c><00:11:11.230><c> complicated</c><00:11:12.870><c> so</c><00:11:13.870><c> this</c>
+
+00:11:14.130 --> 00:11:14.140 align:start position:0%
+else and history is complicated so this
+ 
+
+00:11:14.140 --> 00:11:18.030 align:start position:0%
+else and history is complicated so this
+principle<00:11:14.680><c> that</c><00:11:15.240><c> the</c><00:11:16.240><c> result</c><00:11:17.050><c> in</c><00:11:17.320><c> science</c><00:11:17.740><c> in</c>
+
+00:11:18.030 --> 00:11:18.040 align:start position:0%
+principle that the result in science in
+ 
+
+00:11:18.040 --> 00:11:19.560 align:start position:0%
+principle that the result in science in
+mathematics<00:11:18.220><c> in</c><00:11:18.640><c> particular</c><00:11:18.850><c> is</c><00:11:19.120><c> almost</c>
+
+00:11:19.560 --> 00:11:19.570 align:start position:0%
+mathematics in particular is almost
+ 
+
+00:11:19.570 --> 00:11:22.170 align:start position:0%
+mathematics in particular is almost
+never<00:11:19.870><c> named</c><00:11:20.320><c> after</c><00:11:20.620><c> its</c><00:11:20.890><c> true</c><00:11:21.100><c> discoverer</c><00:11:21.610><c> is</c>
+
+00:11:22.170 --> 00:11:22.180 align:start position:0%
+never named after its true discoverer is
+ 
+
+00:11:22.180 --> 00:11:27.930 align:start position:0%
+never named after its true discoverer is
+called<00:11:22.600><c> Tadashi's</c><00:11:23.110><c> principle</c>
+
+00:11:27.930 --> 00:11:27.940 align:start position:0%
+ 
+ 
+
+00:11:27.940 --> 00:11:35.080 align:start position:0%
+ 
+because<00:11:28.940><c> he</c><00:11:29.060><c> was</c><00:11:29.210><c> not</c><00:11:29.420><c> discovered</c><00:11:29.840><c> by</c><00:11:29.990><c> I</c><00:11:34.090><c> hope</c>
+
+00:11:35.080 --> 00:11:35.090 align:start position:0%
+because he was not discovered by I hope
+ 
+
+00:11:35.090 --> 00:11:36.850 align:start position:0%
+because he was not discovered by I hope
+you<00:11:35.300><c> use</c><00:11:35.750><c> this</c><00:11:35.780><c> Prince</c><00:11:36.290><c> principle</c><00:11:36.770><c> to</c>
+
+00:11:36.850 --> 00:11:36.860 align:start position:0%
+you use this Prince principle to
+ 
+
+00:11:36.860 --> 00:11:38.400 align:start position:0%
+you use this Prince principle to
+advantage
+
+00:11:38.400 --> 00:11:38.410 align:start position:0%
+advantage
+ 
+
+00:11:38.410 --> 00:11:43.690 align:start position:0%
+advantage
+let's<00:11:39.410><c> then</c><00:11:41.050><c> discuss</c><00:11:42.050><c> and</c><00:11:42.430><c> establish</c><00:11:43.430><c> the</c>
+
+00:11:43.690 --> 00:11:43.700 align:start position:0%
+let's then discuss and establish the
+ 
+
+00:11:43.700 --> 00:11:47.830 align:start position:0%
+let's then discuss and establish the
+existence<00:11:44.240><c> of</c><00:11:44.660><c> an</c><00:11:44.960><c> eigenvector</c><00:11:45.800><c> of</c><00:11:46.190><c> G</c><00:11:46.840><c> with</c>
+
+00:11:47.830 --> 00:11:47.840 align:start position:0%
+existence of an eigenvector of G with
+ 
+
+00:11:47.840 --> 00:11:50.680 align:start position:0%
+existence of an eigenvector of G with
+all<00:11:48.110><c> positive</c><00:11:48.530><c> entries</c><00:11:48.860><c> and</c><00:11:49.390><c> such</c><00:11:50.390><c> that</c><00:11:50.540><c> they</c>
+
+00:11:50.680 --> 00:11:50.690 align:start position:0%
+all positive entries and such that they
+ 
+
+00:11:50.690 --> 00:11:53.500 align:start position:0%
+all positive entries and such that they
+adapt<00:11:51.050><c> one</c><00:11:51.320><c> whose</c><00:11:52.040><c> eigenvalues</c><00:11:52.520><c> as</c><00:11:53.180><c> the</c><00:11:53.360><c> DA</c>
+
+00:11:53.500 --> 00:11:53.510 align:start position:0%
+adapt one whose eigenvalues as the DA
+ 
+
+00:11:53.510 --> 00:11:59.470 align:start position:0%
+adapt one whose eigenvalues as the DA
+points<00:11:53.810><c> out</c><00:11:53.990><c> is</c><00:11:54.410><c> one</c><00:11:56.320><c> no</c><00:11:57.320><c> 30</c><00:11:57.920><c> again</c><00:11:58.910><c> we</c><00:11:59.180><c> are</c>
+
+00:11:59.470 --> 00:11:59.480 align:start position:0%
+points out is one no 30 again we are
+ 
+
+00:11:59.480 --> 00:12:02.020 align:start position:0%
+points out is one no 30 again we are
+going<00:11:59.630><c> to</c><00:11:59.840><c> essentially</c><00:12:00.260><c> draw</c><00:12:00.560><c> a</c><00:12:00.590><c> picture</c><00:12:01.030><c> the</c>
+
+00:12:02.020 --> 00:12:02.030 align:start position:0%
+going to essentially draw a picture the
+ 
+
+00:12:02.030 --> 00:12:11.910 align:start position:0%
+going to essentially draw a picture the
+space<00:12:02.510><c> of</c><00:12:02.840><c> all</c><00:12:05.140><c> probability</c><00:12:06.140><c> distributions</c>
+
+00:12:11.910 --> 00:12:11.920 align:start position:0%
+ 
+ 
+
+00:12:11.920 --> 00:12:16.180 align:start position:0%
+ 
+which<00:12:12.920><c> I'll</c><00:12:13.280><c> write</c><00:12:13.580><c> it</c><00:12:13.730><c> like</c><00:12:13.760><c> this</c><00:12:13.940><c> P</c><00:12:14.630><c> 1</c><00:12:14.870><c> 2</c><00:12:15.590><c> p.m.</c>
+
+00:12:16.180 --> 00:12:16.190 align:start position:0%
+which I'll write it like this P 1 2 p.m.
+ 
+
+00:12:16.190 --> 00:12:18.520 align:start position:0%
+which I'll write it like this P 1 2 p.m.
+you<00:12:17.180><c> see</c><00:12:17.330><c> that</c><00:12:17.480><c> the</c><00:12:17.600><c> probability</c><00:12:17.810><c> of</c><00:12:18.110><c> being</c><00:12:18.350><c> in</c>
+
+00:12:18.520 --> 00:12:18.530 align:start position:0%
+you see that the probability of being in
+ 
+
+00:12:18.530 --> 00:12:22.360 align:start position:0%
+you see that the probability of being in
+state<00:12:18.590><c> 1</c><00:12:19.040><c> to</c><00:12:19.250><c> state</c><00:12:19.420><c> 2</c><00:12:20.420><c> and</c><00:12:20.690><c> so</c><00:12:21.110><c> on</c><00:12:21.140><c> and</c><00:12:21.370><c> this</c>
+
+00:12:22.360 --> 00:12:22.370 align:start position:0%
+state 1 to state 2 and so on and this
+ 
+
+00:12:22.370 --> 00:12:28.060 align:start position:0%
+state 1 to state 2 and so on and this
+simply<00:12:22.970><c> is</c><00:12:23.270><c> a</c><00:12:23.600><c> vector</c><00:12:24.440><c> in</c><00:12:25.340><c> RN</c><00:12:25.910><c> such</c><00:12:26.720><c> that</c><00:12:26.780><c> as</c><00:12:27.260><c> we</c>
+
+00:12:28.060 --> 00:12:28.070 align:start position:0%
+simply is a vector in RN such that as we
+ 
+
+00:12:28.070 --> 00:12:33.370 align:start position:0%
+simply is a vector in RN such that as we
+wrote<00:12:28.300><c> 3i</c><00:12:29.530><c> is</c><00:12:30.530><c> open</c><00:12:31.070><c> space</c><00:12:31.310><c> for</c><00:12:31.580><c> all</c><00:12:31.760><c> I</c><00:12:31.790><c> and</c><00:12:32.380><c> the</c>
+
+00:12:33.370 --> 00:12:33.380 align:start position:0%
+wrote 3i is open space for all I and the
+ 
+
+00:12:33.380 --> 00:12:41.550 align:start position:0%
+wrote 3i is open space for all I and the
+sum<00:12:33.740><c> of</c><00:12:34.040><c> the</c><00:12:34.550><c> entries</c><00:12:35.860><c> is</c><00:12:36.860><c> one</c><00:12:39.430><c> such</c><00:12:40.430><c> a</c><00:12:40.460><c> space</c>
+
+00:12:41.550 --> 00:12:41.560 align:start position:0%
+sum of the entries is one such a space
+ 
+
+00:12:41.560 --> 00:12:44.220 align:start position:0%
+sum of the entries is one such a space
+can<00:12:42.560><c> be</c><00:12:42.710><c> drawn</c><00:12:43.010><c> as</c><00:12:43.280><c> a</c><00:12:43.370><c> picture</c>
+
+00:12:44.220 --> 00:12:44.230 align:start position:0%
+can be drawn as a picture
+ 
+
+00:12:44.230 --> 00:12:48.970 align:start position:0%
+can be drawn as a picture
+wonderful<00:12:45.880><c> is</c><00:12:47.050><c> you</c><00:12:48.050><c> might</c><00:12:48.230><c> call</c><00:12:48.740><c> a</c>
+
+00:12:48.970 --> 00:12:48.980 align:start position:0%
+wonderful is you might call a
+ 
+
+00:12:48.980 --> 00:12:52.800 align:start position:0%
+wonderful is you might call a
+tetrahedron<00:12:49.970><c> or</c><00:12:50.210><c> generalized</c><00:12:51.050><c> in</c><00:12:51.410><c> Trujillo</c>
+
+00:12:52.800 --> 00:12:52.810 align:start position:0%
+tetrahedron or generalized in Trujillo
+ 
+
+00:12:52.810 --> 00:12:57.430 align:start position:0%
+tetrahedron or generalized in Trujillo
+by<00:12:53.810><c> which</c><00:12:53.990><c> I</c><00:12:54.200><c> mean</c><00:12:54.380><c> a</c><00:12:54.590><c> shape</c><00:12:54.890><c> like</c><00:12:55.100><c> this</c><00:12:56.440><c> but</c>
+
+00:12:57.430 --> 00:12:57.440 align:start position:0%
+by which I mean a shape like this but
+ 
+
+00:12:57.440 --> 00:13:00.490 align:start position:0%
+by which I mean a shape like this but
+please<00:12:58.090><c> realize</c><00:12:59.090><c> that</c><00:12:59.120><c> I'm</c><00:12:59.510><c> mean</c><00:13:00.020><c> the</c><00:13:00.260><c> shape</c>
+
+00:13:00.490 --> 00:13:00.500 align:start position:0%
+please realize that I'm mean the shape
+ 
+
+00:13:00.500 --> 00:13:04.750 align:start position:0%
+please realize that I'm mean the shape
+with<00:13:00.830><c> a</c><00:13:01.100><c> solid</c><00:13:01.640><c> interior</c><00:13:02.120><c> also</c><00:13:02.800><c> how</c><00:13:03.800><c> do</c><00:13:03.860><c> I</c><00:13:04.100><c> mean</c>
+
+00:13:04.750 --> 00:13:04.760 align:start position:0%
+with a solid interior also how do I mean
+ 
+
+00:13:04.760 --> 00:13:08.940 align:start position:0%
+with a solid interior also how do I mean
+that<00:13:05.060><c> of</c><00:13:05.240><c> different</c><00:13:05.810><c> dimension</c><00:13:06.440><c> M</c><00:13:07.310><c> minus</c><00:13:08.180><c> 1</c>
+
+00:13:08.940 --> 00:13:08.950 align:start position:0%
+that of different dimension M minus 1
+ 
+
+00:13:08.950 --> 00:13:12.910 align:start position:0%
+that of different dimension M minus 1
+here<00:13:09.950><c> is</c><00:13:10.100><c> how</c><00:13:10.840><c> let's</c><00:13:11.840><c> do</c><00:13:12.050><c> it</c><00:13:12.170><c> in</c><00:13:12.320><c> the</c><00:13:12.410><c> case</c><00:13:12.590><c> N</c>
+
+00:13:12.910 --> 00:13:12.920 align:start position:0%
+here is how let's do it in the case N
+ 
+
+00:13:12.920 --> 00:13:17.140 align:start position:0%
+here is how let's do it in the case N
+equals<00:13:13.130><c> 2</c><00:13:13.670><c> that</c><00:13:14.300><c> only</c><00:13:14.750><c> two</c><00:13:14.930><c> states</c><00:13:15.260><c> so</c><00:13:15.820><c> P</c><00:13:16.820><c> 1</c><00:13:17.000><c> and</c>
+
+00:13:17.140 --> 00:13:17.150 align:start position:0%
+equals 2 that only two states so P 1 and
+ 
+
+00:13:17.150 --> 00:13:18.960 align:start position:0%
+equals 2 that only two states so P 1 and
+P<00:13:17.330><c> 2</c>
+
+00:13:18.960 --> 00:13:18.970 align:start position:0%
+P 2
+ 
+
+00:13:18.970 --> 00:13:25.150 align:start position:0%
+P 2
+those<00:13:19.970><c> are</c><00:13:20.150><c> axes</c><00:13:20.860><c> and</c><00:13:23.110><c> I'm</c><00:13:24.110><c> drawing</c><00:13:24.620><c> only</c><00:13:24.950><c> the</c>
+
+00:13:25.150 --> 00:13:25.160 align:start position:0%
+those are axes and I'm drawing only the
+ 
+
+00:13:25.160 --> 00:13:26.920 align:start position:0%
+those are axes and I'm drawing only the
+first<00:13:25.430><c> quadrant</c><00:13:25.730><c> this</c><00:13:26.180><c> part</c><00:13:26.450><c> and</c><00:13:26.660><c> not</c><00:13:26.870><c> the</c>
+
+00:13:26.920 --> 00:13:26.930 align:start position:0%
+first quadrant this part and not the
+ 
+
+00:13:26.930 --> 00:13:28.780 align:start position:0%
+first quadrant this part and not the
+rest<00:13:27.230><c> of</c><00:13:27.350><c> the</c><00:13:27.470><c> plane</c><00:13:27.680><c> because</c><00:13:27.920><c> P</c><00:13:28.400><c> 1</c><00:13:28.520><c> and</c><00:13:28.640><c> P</c><00:13:28.760><c> 2</c>
+
+00:13:28.780 --> 00:13:28.790 align:start position:0%
+rest of the plane because P 1 and P 2
+ 
+
+00:13:28.790 --> 00:13:29.640 align:start position:0%
+rest of the plane because P 1 and P 2
+must<00:13:29.120><c> be</c><00:13:29.240><c> positive</c>
+
+00:13:29.640 --> 00:13:29.650 align:start position:0%
+must be positive
+ 
+
+00:13:29.650 --> 00:13:31.800 align:start position:0%
+must be positive
+both<00:13:29.800><c> of</c><00:13:29.980><c> both</c><00:13:30.220><c> of</c><00:13:30.370><c> them</c><00:13:30.520><c> greater</c><00:13:31.240><c> than</c><00:13:31.510><c> zero</c>
+
+00:13:31.800 --> 00:13:31.810 align:start position:0%
+both of both of them greater than zero
+ 
+
+00:13:31.810 --> 00:13:36.510 align:start position:0%
+both of both of them greater than zero
+and<00:13:32.470><c> they</c><00:13:33.250><c> must</c><00:13:33.490><c> adapt</c><00:13:33.880><c> one</c><00:13:34.710><c> so</c><00:13:35.710><c> what</c><00:13:36.070><c> does</c><00:13:36.310><c> the</c>
+
+00:13:36.510 --> 00:13:36.520 align:start position:0%
+and they must adapt one so what does the
+ 
+
+00:13:36.520 --> 00:13:39.060 align:start position:0%
+and they must adapt one so what does the
+picture<00:13:37.000><c> of</c><00:13:37.210><c> p1</c><00:13:37.690><c> plus</c><00:13:37.900><c> p2</c><00:13:37.930><c> equal</c><00:13:38.650><c> one</c><00:13:38.860><c> look</c>
+
+00:13:39.060 --> 00:13:39.070 align:start position:0%
+picture of p1 plus p2 equal one look
+ 
+
+00:13:39.070 --> 00:13:41.880 align:start position:0%
+picture of p1 plus p2 equal one look
+like<00:13:39.279><c> I</c><00:13:39.580><c> hope</c><00:13:40.390><c> you</c><00:13:40.540><c> can</c><00:13:40.750><c> draw</c><00:13:40.930><c> this</c><00:13:41.110><c> in</c><00:13:41.410><c> one</c>
+
+00:13:41.880 --> 00:13:41.890 align:start position:0%
+like I hope you can draw this in one
+ 
+
+00:13:41.890 --> 00:13:47.370 align:start position:0%
+like I hope you can draw this in one
+second<00:13:42.400><c> it</c><00:13:43.120><c> looks</c><00:13:43.360><c> like</c><00:13:43.510><c> this</c><00:13:45.990><c> that's</c><00:13:46.990><c> 0</c>
+
+00:13:47.370 --> 00:13:47.380 align:start position:0%
+second it looks like this that's 0
+ 
+
+00:13:47.380 --> 00:13:50.550 align:start position:0%
+second it looks like this that's 0
+that's<00:13:47.620><c> 1</c><00:13:48.310><c> that's</c><00:13:49.240><c> 1</c><00:13:49.360><c> if</c><00:13:49.779><c> you</c><00:13:49.900><c> are</c><00:13:49.930><c> anywhere</c><00:13:50.410><c> on</c>
+
+00:13:50.550 --> 00:13:50.560 align:start position:0%
+that's 1 that's 1 if you are anywhere on
+ 
+
+00:13:50.560 --> 00:13:54.180 align:start position:0%
+that's 1 that's 1 if you are anywhere on
+this<00:13:50.740><c> yellow</c><00:13:51.100><c> line</c><00:13:51.130><c> it</c><00:13:52.060><c> is</c><00:13:52.350><c> the</c><00:13:53.350><c> case</c><00:13:53.560><c> that</c><00:13:53.589><c> P</c><00:13:54.010><c> 1</c>
+
+00:13:54.180 --> 00:13:54.190 align:start position:0%
+this yellow line it is the case that P 1
+ 
+
+00:13:54.190 --> 00:13:57.060 align:start position:0%
+this yellow line it is the case that P 1
+plus<00:13:54.460><c> P</c><00:13:54.580><c> 2</c><00:13:54.940><c> is</c><00:13:55.089><c> 1</c><00:13:55.300><c> this</c><00:13:55.690><c> summons</c><00:13:56.050><c> 1</c><00:13:56.230><c> and</c><00:13:56.470><c> each</c><00:13:56.920><c> of</c>
+
+00:13:57.060 --> 00:13:57.070 align:start position:0%
+plus P 2 is 1 this summons 1 and each of
+ 
+
+00:13:57.070 --> 00:14:00.360 align:start position:0%
+plus P 2 is 1 this summons 1 and each of
+these<00:13:57.250><c> is</c><00:13:57.520><c> greater</c><00:13:58.029><c> than</c><00:13:58.210><c> equal</c><00:13:58.510><c> to</c><00:13:58.540><c> 0</c><00:13:58.839><c> ok</c><00:13:59.620><c> now</c>
+
+00:14:00.360 --> 00:14:00.370 align:start position:0%
+these is greater than equal to 0 ok now
+ 
+
+00:14:00.370 --> 00:14:02.370 align:start position:0%
+these is greater than equal to 0 ok now
+that<00:14:00.610><c> doesn't</c><00:14:01.060><c> look</c><00:14:01.360><c> really</c><00:14:01.750><c> like</c><00:14:01.900><c> turkey</c>
+
+00:14:02.370 --> 00:14:02.380 align:start position:0%
+that doesn't look really like turkey
+ 
+
+00:14:02.380 --> 00:14:07.290 align:start position:0%
+that doesn't look really like turkey
+drawn<00:14:02.680><c> or</c><00:14:03.070><c> a</c><00:14:03.160><c> triangle</c><00:14:03.760><c> but</c><00:14:04.150><c> watch</c><00:14:04.510><c> next</c><00:14:06.300><c> case</c>
+
+00:14:07.290 --> 00:14:07.300 align:start position:0%
+drawn or a triangle but watch next case
+ 
+
+00:14:07.300 --> 00:14:18.630 align:start position:0%
+drawn or a triangle but watch next case
+M<00:14:07.900><c> equals</c><00:14:08.380><c> 3</c><00:14:09.930><c> P</c><00:14:10.930><c> 1</c><00:14:11.110><c> P</c><00:14:12.040><c> 2</c><00:14:12.279><c> and</c><00:14:13.320><c> P</c><00:14:14.320><c> 3</c><00:14:14.589><c> I</c><00:14:16.830><c> hope</c><00:14:17.830><c> he</c><00:14:18.520><c> has</c>
+
+00:14:18.630 --> 00:14:18.640 align:start position:0%
+M equals 3 P 1 P 2 and P 3 I hope he has
+ 
+
+00:14:18.640 --> 00:14:20.040 align:start position:0%
+M equals 3 P 1 P 2 and P 3 I hope he has
+seen<00:14:18.880><c> the</c><00:14:18.910><c> picture</c><00:14:19.270><c> that</c><00:14:19.330><c> I'm</c><00:14:19.510><c> seeing</c><00:14:19.810><c> I'm</c>
+
+00:14:20.040 --> 00:14:20.050 align:start position:0%
+seen the picture that I'm seeing I'm
+ 
+
+00:14:20.050 --> 00:14:24.840 align:start position:0%
+seen the picture that I'm seeing I'm
+looking<00:14:20.560><c> at</c><00:14:20.650><c> the</c><00:14:20.770><c> corner</c><00:14:21.160><c> over</c><00:14:21.370><c> over</c><00:14:22.000><c> room</c><00:14:23.850><c> ok</c>
+
+00:14:24.840 --> 00:14:24.850 align:start position:0%
+looking at the corner over over room ok
+ 
+
+00:14:24.850 --> 00:14:28.380 align:start position:0%
+looking at the corner over over room ok
+in<00:14:25.360><c> this</c><00:14:25.570><c> space</c><00:14:25.960><c> this</c><00:14:26.860><c> part</c><00:14:27.160><c> the</c><00:14:27.550><c> octant</c><00:14:28.060><c> with</c>
+
+00:14:28.380 --> 00:14:28.390 align:start position:0%
+in this space this part the octant with
+ 
+
+00:14:28.390 --> 00:14:31.230 align:start position:0%
+in this space this part the octant with
+puppets<00:14:28.839><c> sticking</c><00:14:29.380><c> up</c><00:14:29.529><c> to</c><00:14:29.710><c> us</c><00:14:29.800><c> you</c><00:14:30.089><c> has</c><00:14:31.089><c> the</c>
+
+00:14:31.230 --> 00:14:31.240 align:start position:0%
+puppets sticking up to us you has the
+ 
+
+00:14:31.240 --> 00:14:33.350 align:start position:0%
+puppets sticking up to us you has the
+property<00:14:31.540><c> that</c><00:14:31.570><c> all</c><00:14:31.930><c> the</c><00:14:32.050><c> peas</c><00:14:32.290><c> are</c><00:14:32.560><c> positive</c>
+
+00:14:33.350 --> 00:14:33.360 align:start position:0%
+property that all the peas are positive
+ 
+
+00:14:33.360 --> 00:14:39.420 align:start position:0%
+property that all the peas are positive
+in<00:14:34.360><c> this</c><00:14:34.570><c> octant</c><00:14:35.520><c> what</c><00:14:36.520><c> does</c><00:14:36.880><c> this</c><00:14:37.630><c> set</c><00:14:38.430><c> this</c>
+
+00:14:39.420 --> 00:14:39.430 align:start position:0%
+in this octant what does this set this
+ 
+
+00:14:39.430 --> 00:14:43.050 align:start position:0%
+in this octant what does this set this
+set<00:14:39.490><c> look</c><00:14:40.060><c> like</c><00:14:40.300><c> I</c><00:14:41.130><c> hope</c><00:14:42.130><c> you</c><00:14:42.339><c> can</c><00:14:42.520><c> draw</c><00:14:42.790><c> this</c>
+
+00:14:43.050 --> 00:14:43.060 align:start position:0%
+set look like I hope you can draw this
+ 
+
+00:14:43.060 --> 00:14:48.269 align:start position:0%
+set look like I hope you can draw this
+set<00:14:43.480><c> in</c><00:14:43.900><c> 2</c><00:14:44.320><c> seconds</c><00:14:45.420><c> it</c><00:14:46.420><c> looks</c><00:14:46.690><c> like</c><00:14:46.870><c> this</c><00:14:47.279><c> you</c>
+
+00:14:48.269 --> 00:14:48.279 align:start position:0%
+set in 2 seconds it looks like this you
+ 
+
+00:14:48.279 --> 00:14:52.050 align:start position:0%
+set in 2 seconds it looks like this you
+take<00:14:48.520><c> a</c><00:14:48.730><c> point</c><00:14:49.240><c> on</c><00:14:49.480><c> the</c><00:14:49.779><c> P</c><00:14:49.990><c> 1</c><00:14:50.140><c> axis</c><00:14:50.529><c> at</c><00:14:51.100><c> distance</c>
+
+00:14:52.050 --> 00:14:52.060 align:start position:0%
+take a point on the P 1 axis at distance
+ 
+
+00:14:52.060 --> 00:14:55.410 align:start position:0%
+take a point on the P 1 axis at distance
+1<00:14:52.150><c> from</c><00:14:52.270><c> the</c><00:14:52.480><c> origin</c><00:14:52.680><c> P</c><00:14:53.680><c> to</c><00:14:53.860><c> access</c><00:14:54.279><c> a</c><00:14:54.550><c> distance</c>
+
+00:14:55.410 --> 00:14:55.420 align:start position:0%
+1 from the origin P to access a distance
+ 
+
+00:14:55.420 --> 00:14:57.720 align:start position:0%
+1 from the origin P to access a distance
+R<00:14:55.630><c> from</c><00:14:55.750><c> the</c><00:14:55.930><c> origin</c><00:14:56.080><c> and</c><00:14:56.650><c> III</c><00:14:57.160><c> axis</c><00:14:57.550><c> at</c>
+
+00:14:57.720 --> 00:14:57.730 align:start position:0%
+R from the origin and III axis at
+ 
+
+00:14:57.730 --> 00:15:00.060 align:start position:0%
+R from the origin and III axis at
+distance<00:14:58.089><c> 1</c><00:14:58.150><c> from</c><00:14:58.300><c> the</c><00:14:58.720><c> origin</c><00:14:58.839><c> and</c><00:14:59.380><c> you</c>
+
+00:15:00.060 --> 00:15:00.070 align:start position:0%
+distance 1 from the origin and you
+ 
+
+00:15:00.070 --> 00:15:02.730 align:start position:0%
+distance 1 from the origin and you
+connect<00:15:00.459><c> those</c><00:15:00.790><c> three</c><00:15:01.570><c> points</c><00:15:01.810><c> that</c><00:15:02.500><c> gives</c>
+
+00:15:02.730 --> 00:15:02.740 align:start position:0%
+connect those three points that gives
+ 
+
+00:15:02.740 --> 00:15:06.780 align:start position:0%
+connect those three points that gives
+you<00:15:02.860><c> a</c><00:15:02.890><c> triangle</c><00:15:03.959><c> which</c><00:15:04.959><c> is</c><00:15:04.990><c> put</c><00:15:05.800><c> into</c><00:15:06.580><c> a</c>
+
+00:15:06.780 --> 00:15:06.790 align:start position:0%
+you a triangle which is put into a
+ 
+
+00:15:06.790 --> 00:15:09.690 align:start position:0%
+you a triangle which is put into a
+corner<00:15:07.410><c> not</c><00:15:08.410><c> all</c><00:15:08.650><c> the</c><00:15:08.800><c> way</c><00:15:08.890><c> to</c><00:15:08.950><c> the</c><00:15:09.130><c> corner</c><00:15:09.430><c> but</c>
+
+00:15:09.690 --> 00:15:09.700 align:start position:0%
+corner not all the way to the corner but
+ 
+
+00:15:09.700 --> 00:15:12.180 align:start position:0%
+corner not all the way to the corner but
+sort<00:15:10.060><c> of</c><00:15:10.150><c> put</c><00:15:10.420><c> in</c><00:15:10.570><c> a</c><00:15:10.690><c> corner</c><00:15:11.050><c> and</c><00:15:11.350><c> this</c>
+
+00:15:12.180 --> 00:15:12.190 align:start position:0%
+sort of put in a corner and this
+ 
+
+00:15:12.190 --> 00:15:18.019 align:start position:0%
+sort of put in a corner and this
+triangle<00:15:13.680><c> is</c><00:15:14.680><c> exactly</c><00:15:15.570><c> the</c><00:15:16.570><c> shape</c><00:15:16.900><c> that's</c>
+
+00:15:18.019 --> 00:15:18.029 align:start position:0%
+triangle is exactly the shape that's
+ 
+
+00:15:18.029 --> 00:15:20.730 align:start position:0%
+triangle is exactly the shape that's
+represented<00:15:19.029><c> there</c><00:15:19.240><c> P</c><00:15:19.450><c> 1</c><00:15:19.600><c> plus</c><00:15:19.839><c> P</c><00:15:19.959><c> 2</c><00:15:20.320><c> plus</c><00:15:20.440><c> P</c><00:15:20.560><c> 3</c>
+
+00:15:20.730 --> 00:15:20.740 align:start position:0%
+represented there P 1 plus P 2 plus P 3
+ 
+
+00:15:20.740 --> 00:15:24.900 align:start position:0%
+represented there P 1 plus P 2 plus P 3
+cos<00:15:21.130><c> 0</c><00:15:21.160><c> is</c><00:15:22.029><c> equal</c><00:15:22.330><c> to</c><00:15:22.360><c> 1</c><00:15:22.450><c> now</c><00:15:23.550><c> it</c><00:15:24.550><c> looks</c><00:15:24.700><c> like</c><00:15:24.880><c> a</c>
+
+00:15:24.900 --> 00:15:24.910 align:start position:0%
+cos 0 is equal to 1 now it looks like a
+ 
+
+00:15:24.910 --> 00:15:29.810 align:start position:0%
+cos 0 is equal to 1 now it looks like a
+triangle<00:15:25.180><c> right</c><00:15:27.300><c> this</c><00:15:28.300><c> is</c><00:15:28.480><c> if</c><00:15:29.110><c> you</c><00:15:29.290><c> like</c><00:15:29.500><c> a</c>
+
+00:15:29.810 --> 00:15:29.820 align:start position:0%
+triangle right this is if you like a
+ 
+
+00:15:29.820 --> 00:15:31.860 align:start position:0%
+triangle right this is if you like a
+one-dimensional<00:15:30.820><c> triangle</c><00:15:31.360><c> that's</c><00:15:31.690><c> a</c>
+
+00:15:31.860 --> 00:15:31.870 align:start position:0%
+one-dimensional triangle that's a
+ 
+
+00:15:31.870 --> 00:15:35.519 align:start position:0%
+one-dimensional triangle that's a
+two-dimensional<00:15:32.589><c> triangle</c><00:15:33.450><c> yes</c><00:15:34.450><c> and</c><00:15:34.720><c> in</c>
+
+00:15:35.519 --> 00:15:35.529 align:start position:0%
+two-dimensional triangle yes and in
+ 
+
+00:15:35.529 --> 00:15:36.510 align:start position:0%
+two-dimensional triangle yes and in
+higher<00:15:35.800><c> dimensions</c>
+
+00:15:36.510 --> 00:15:36.520 align:start position:0%
+higher dimensions
+ 
+
+00:15:36.520 --> 00:15:37.740 align:start position:0%
+higher dimensions
+triangles<00:15:37.209><c> are</c><00:15:37.330><c> coated</c>
+
+00:15:37.740 --> 00:15:37.750 align:start position:0%
+triangles are coated
+ 
+
+00:15:37.750 --> 00:15:41.130 align:start position:0%
+triangles are coated
+he<00:15:37.990><c> drones</c><00:15:38.250><c> in</c><00:15:39.250><c> dimension</c><00:15:39.790><c> three</c><00:15:40.030><c> you</c><00:15:41.020><c> know</c>
+
+00:15:41.130 --> 00:15:41.140 align:start position:0%
+he drones in dimension three you know
+ 
+
+00:15:41.140 --> 00:15:43.110 align:start position:0%
+he drones in dimension three you know
+what<00:15:41.290><c> it</c><00:15:41.410><c> looks</c><00:15:41.530><c> like</c><00:15:41.830><c> I</c><00:15:41.890><c> hope</c><00:15:42.160><c> that's</c><00:15:42.670><c> exactly</c>
+
+00:15:43.110 --> 00:15:43.120 align:start position:0%
+what it looks like I hope that's exactly
+ 
+
+00:15:43.120 --> 00:15:45.690 align:start position:0%
+what it looks like I hope that's exactly
+the<00:15:43.210><c> picture</c><00:15:43.630><c> I</c><00:15:43.780><c> drew</c><00:15:43.840><c> before</c><00:15:44.200><c> it</c><00:15:44.830><c> has</c><00:15:45.070><c> four</c>
+
+00:15:45.690 --> 00:15:45.700 align:start position:0%
+the picture I drew before it has four
+ 
+
+00:15:45.700 --> 00:15:47.940 align:start position:0%
+the picture I drew before it has four
+vertices<00:15:46.300><c> and</c><00:15:46.930><c> then</c><00:15:47.320><c> you</c><00:15:47.440><c> connect</c><00:15:47.770><c> them</c><00:15:47.920><c> and</c>
+
+00:15:47.940 --> 00:15:47.950 align:start position:0%
+vertices and then you connect them and
+ 
+
+00:15:47.950 --> 00:15:49.980 align:start position:0%
+vertices and then you connect them and
+they<00:15:48.160><c> say</c><00:15:48.220><c> interior</c><00:15:48.760><c> it</c><00:15:49.300><c> looks</c><00:15:49.600><c> like</c><00:15:49.810><c> this</c>
+
+00:15:49.980 --> 00:15:49.990 align:start position:0%
+they say interior it looks like this
+ 
+
+00:15:49.990 --> 00:15:52.320 align:start position:0%
+they say interior it looks like this
+it's<00:15:50.770><c> difficult</c><00:15:51.340><c> to</c><00:15:51.460><c> imagine</c><00:15:51.520><c> this</c><00:15:51.910><c> perhaps</c>
+
+00:15:52.320 --> 00:15:52.330 align:start position:0%
+it's difficult to imagine this perhaps
+ 
+
+00:15:52.330 --> 00:15:54.870 align:start position:0%
+it's difficult to imagine this perhaps
+because<00:15:52.780><c> we</c><00:15:53.050><c> cannot</c><00:15:53.410><c> draw</c><00:15:53.680><c> the</c><00:15:53.740><c> picture</c><00:15:54.250><c> still</c>
+
+00:15:54.870 --> 00:15:54.880 align:start position:0%
+because we cannot draw the picture still
+ 
+
+00:15:54.880 --> 00:15:58.350 align:start position:0%
+because we cannot draw the picture still
+over<00:15:55.690><c> four</c><00:15:55.900><c> dimensional</c><00:15:56.380><c> space</c><00:15:56.530><c> and</c><00:15:57.280><c> see</c><00:15:58.000><c> what</c>
+
+00:15:58.350 --> 00:15:58.360 align:start position:0%
+over four dimensional space and see what
+ 
+
+00:15:58.360 --> 00:16:01.110 align:start position:0%
+over four dimensional space and see what
+he<00:15:58.570><c> said</c><00:15:58.840><c> P</c><00:15:59.320><c> 1</c><00:15:59.500><c> plus</c><00:15:59.590><c> P</c><00:15:59.710><c> 2</c><00:15:59.980><c> plus</c><00:16:00.040><c> P</c><00:16:00.190><c> 3</c><00:16:00.370><c> plus</c><00:16:00.730><c> P</c><00:16:00.940><c> 4</c>
+
+00:16:01.110 --> 00:16:01.120 align:start position:0%
+he said P 1 plus P 2 plus P 3 plus P 4
+ 
+
+00:16:01.120 --> 00:16:02.970 align:start position:0%
+he said P 1 plus P 2 plus P 3 plus P 4
+equals<00:16:01.420><c> 1</c><00:16:01.480><c> looks</c><00:16:01.960><c> like</c><00:16:02.080><c> but</c><00:16:02.470><c> it</c><00:16:02.620><c> looks</c><00:16:02.800><c> like</c>
+
+00:16:02.970 --> 00:16:02.980 align:start position:0%
+equals 1 looks like but it looks like
+ 
+
+00:16:02.980 --> 00:16:05.460 align:start position:0%
+equals 1 looks like but it looks like
+this<00:16:03.160><c> essentially</c><00:16:03.910><c> that's</c><00:16:04.660><c> why</c><00:16:04.840><c> I</c><00:16:05.050><c> call</c><00:16:05.350><c> them</c>
+
+00:16:05.460 --> 00:16:05.470 align:start position:0%
+this essentially that's why I call them
+ 
+
+00:16:05.470 --> 00:16:08.310 align:start position:0%
+this essentially that's why I call them
+tetrahedron<00:16:06.340><c> and</c><00:16:06.580><c> it's</c><00:16:07.450><c> between</c><00:16:07.630><c> quotation</c>
+
+00:16:08.310 --> 00:16:08.320 align:start position:0%
+tetrahedron and it's between quotation
+ 
+
+00:16:08.320 --> 00:16:10.050 align:start position:0%
+tetrahedron and it's between quotation
+marks<00:16:08.560><c> because</c><00:16:08.740><c> it's</c><00:16:09.010><c> not</c><00:16:09.160><c> quite</c><00:16:09.460><c> at</c><00:16:09.730><c> receiver</c>
+
+00:16:10.050 --> 00:16:10.060 align:start position:0%
+marks because it's not quite at receiver
+ 
+
+00:16:10.060 --> 00:16:12.420 align:start position:0%
+marks because it's not quite at receiver
+and<00:16:10.360><c> tetra</c><00:16:10.810><c> means</c><00:16:10.960><c> 4</c><00:16:11.320><c> faces</c><00:16:11.800><c> so</c><00:16:12.160><c> it's</c><00:16:12.280><c> not</c>
+
+00:16:12.420 --> 00:16:12.430 align:start position:0%
+and tetra means 4 faces so it's not
+ 
+
+00:16:12.430 --> 00:16:15.150 align:start position:0%
+and tetra means 4 faces so it's not
+really<00:16:12.820><c> for</c><00:16:13.000><c> but</c><00:16:13.480><c> in</c><00:16:13.630><c> dimension</c><00:16:14.080><c> n</c><00:16:14.260><c> minus</c><00:16:14.740><c> 1</c><00:16:14.920><c> is</c>
+
+00:16:15.150 --> 00:16:15.160 align:start position:0%
+really for but in dimension n minus 1 is
+ 
+
+00:16:15.160 --> 00:16:18.510 align:start position:0%
+really for but in dimension n minus 1 is
+the<00:16:15.220><c> same</c><00:16:15.580><c> what</c><00:16:16.570><c> is</c><00:16:16.780><c> very</c><00:16:17.710><c> important</c><00:16:18.160><c> is</c><00:16:18.310><c> that</c>
+
+00:16:18.510 --> 00:16:18.520 align:start position:0%
+the same what is very important is that
+ 
+
+00:16:18.520 --> 00:16:25.290 align:start position:0%
+the same what is very important is that
+G<00:16:19.440><c> acts</c><00:16:20.440><c> on</c><00:16:21.100><c> this</c><00:16:21.970><c> tetrahedron</c><00:16:23.970><c> in</c><00:16:24.970><c> any</c>
+
+00:16:25.290 --> 00:16:25.300 align:start position:0%
+G acts on this tetrahedron in any
+ 
+
+00:16:25.300 --> 00:16:28.500 align:start position:0%
+G acts on this tetrahedron in any
+dimension<00:16:25.840><c> and</c><00:16:26.340><c> this</c><00:16:27.340><c> tetrahedron</c><00:16:28.090><c> is</c>
+
+00:16:28.500 --> 00:16:28.510 align:start position:0%
+dimension and this tetrahedron is
+ 
+
+00:16:28.510 --> 00:16:32.340 align:start position:0%
+dimension and this tetrahedron is
+homeomorphic<00:16:29.110><c> to</c><00:16:29.590><c> a</c><00:16:30.250><c> ball</c><00:16:30.910><c> of</c><00:16:31.270><c> dimension</c><00:16:31.780><c> M</c><00:16:31.960><c> -</c>
+
+00:16:32.340 --> 00:16:32.350 align:start position:0%
+homeomorphic to a ball of dimension M -
+ 
+
+00:16:32.350 --> 00:16:37.850 align:start position:0%
+homeomorphic to a ball of dimension M -
+mark
+
+00:16:37.850 --> 00:16:37.860 align:start position:0%
+ 
+ 
+
+00:16:37.860 --> 00:16:40.880 align:start position:0%
+ 
+why<00:16:38.399><c> is</c><00:16:38.459><c> this</c><00:16:38.760><c> let's</c><00:16:39.540><c> check</c><00:16:39.899><c> that</c><00:16:40.110><c> it's</c>
+
+00:16:40.880 --> 00:16:40.890 align:start position:0%
+why is this let's check that it's
+ 
+
+00:16:40.890 --> 00:16:43.880 align:start position:0%
+why is this let's check that it's
+homomorphic<00:16:41.519><c> to</c><00:16:41.760><c> be</c><00:16:42.660><c> minus</c><00:16:42.990><c> one</c><00:16:43.170><c> for</c><00:16:43.830><c> example</c>
+
+00:16:43.880 --> 00:16:43.890 align:start position:0%
+homomorphic to be minus one for example
+ 
+
+00:16:43.890 --> 00:16:46.509 align:start position:0%
+homomorphic to be minus one for example
+is<00:16:44.670><c> it</c><00:16:44.880><c> true</c><00:16:45.149><c> that</c><00:16:45.180><c> this</c><00:16:45.510><c> yellow</c><00:16:45.779><c> thing</c><00:16:46.200><c> is</c>
+
+00:16:46.509 --> 00:16:46.519 align:start position:0%
+is it true that this yellow thing is
+ 
+
+00:16:46.519 --> 00:16:51.650 align:start position:0%
+is it true that this yellow thing is
+remembered<00:16:47.519><c> to</c><00:16:47.940><c> be</c><00:16:48.300><c> of</c><00:16:48.660><c> 3-1</c><00:16:49.350><c> what</c><00:16:50.220><c> is</c><00:16:50.370><c> P</c><00:16:50.610><c> of</c><00:16:50.640><c> 2-1</c>
+
+00:16:51.650 --> 00:16:51.660 align:start position:0%
+remembered to be of 3-1 what is P of 2-1
+ 
+
+00:16:51.660 --> 00:16:55.970 align:start position:0%
+remembered to be of 3-1 what is P of 2-1
+it's<00:16:52.200><c> B</c><00:16:52.500><c> of</c><00:16:52.680><c> one</c><00:16:53.630><c> yes</c><00:16:54.649><c> what's</c><00:16:55.649><c> the</c><00:16:55.740><c> one</c>
+
+00:16:55.970 --> 00:16:55.980 align:start position:0%
+it's B of one yes what's the one
+ 
+
+00:16:55.980 --> 00:17:02.269 align:start position:0%
+it's B of one yes what's the one
+dimensional<00:16:56.490><c> ball</c><00:16:58.730><c> hey</c><00:17:00.200><c> it's</c><00:17:01.200><c> a</c><00:17:01.440><c> segment</c><00:17:02.100><c> is</c><00:17:02.250><c> a</c>
+
+00:17:02.269 --> 00:17:02.279 align:start position:0%
+dimensional ball hey it's a segment is a
+ 
+
+00:17:02.279 --> 00:17:04.790 align:start position:0%
+dimensional ball hey it's a segment is a
+line<00:17:02.519><c> between</c><00:17:02.820><c> minus</c><00:17:03.420><c> 1</c><00:17:03.600><c> and</c><00:17:03.630><c> 1</c><00:17:03.839><c> so</c><00:17:04.230><c> you</c><00:17:04.620><c> see</c>
+
+00:17:04.790 --> 00:17:04.800 align:start position:0%
+line between minus 1 and 1 so you see
+ 
+
+00:17:04.800 --> 00:17:06.650 align:start position:0%
+line between minus 1 and 1 so you see
+it's<00:17:04.949><c> homomorphic</c><00:17:05.520><c> topologically</c><00:17:06.390><c> the</c><00:17:06.510><c> same</c>
+
+00:17:06.650 --> 00:17:06.660 align:start position:0%
+it's homomorphic topologically the same
+ 
+
+00:17:06.660 --> 00:17:11.480 align:start position:0%
+it's homomorphic topologically the same
+shape<00:17:07.760><c> next</c><00:17:09.350><c> let's</c><00:17:10.350><c> check</c><00:17:10.620><c> the</c><00:17:10.800><c> statement</c><00:17:11.250><c> in</c>
+
+00:17:11.480 --> 00:17:11.490 align:start position:0%
+shape next let's check the statement in
+ 
+
+00:17:11.490 --> 00:17:14.510 align:start position:0%
+shape next let's check the statement in
+dimension<00:17:11.910><c> 3</c><00:17:12.059><c> Direction</c><00:17:12.720><c> 3</c><00:17:12.839><c> let's</c><00:17:13.439><c> peel</c><00:17:13.740><c> 3</c>
+
+00:17:14.510 --> 00:17:14.520 align:start position:0%
+dimension 3 Direction 3 let's peel 3
+ 
+
+00:17:14.520 --> 00:17:17.809 align:start position:0%
+dimension 3 Direction 3 let's peel 3
+minus<00:17:14.850><c> 1</c><00:17:15.120><c> it's</c><00:17:15.980><c> b2q</c><00:17:16.980><c> dimension</c><00:17:17.339><c> about</c><00:17:17.550><c> what</c><00:17:17.699><c> is</c>
+
+00:17:17.809 --> 00:17:17.819 align:start position:0%
+minus 1 it's b2q dimension about what is
+ 
+
+00:17:17.819 --> 00:17:21.370 align:start position:0%
+minus 1 it's b2q dimension about what is
+two<00:17:17.939><c> dimensional</c><00:17:18.089><c> ball</c><00:17:18.420><c> look</c><00:17:18.870><c> like</c><00:17:19.550><c> it's</c><00:17:20.550><c> cold</c>
+
+00:17:21.370 --> 00:17:21.380 align:start position:0%
+two dimensional ball look like it's cold
+ 
+
+00:17:21.380 --> 00:17:25.669 align:start position:0%
+two dimensional ball look like it's cold
+it's<00:17:22.380><c> cold</c><00:17:22.470><c> at</c><00:17:22.709><c> least</c><00:17:22.890><c> yeah</c><00:17:23.730><c> disk</c><00:17:24.689><c> does</c><00:17:25.500><c> it</c>
+
+00:17:25.669 --> 00:17:25.679 align:start position:0%
+it's cold at least yeah disk does it
+ 
+
+00:17:25.679 --> 00:17:28.700 align:start position:0%
+it's cold at least yeah disk does it
+look<00:17:25.890><c> like</c><00:17:26.069><c> this</c><00:17:26.540><c> well</c><00:17:27.540><c> yes</c><00:17:28.380><c> it's</c><00:17:28.500><c> a</c>
+
+00:17:28.700 --> 00:17:28.710 align:start position:0%
+look like this well yes it's a
+ 
+
+00:17:28.710 --> 00:17:31.220 align:start position:0%
+look like this well yes it's a
+disc<00:17:28.920><c> you</c><00:17:29.760><c> have</c><00:17:29.790><c> mr.</c><00:17:30.360><c> one</c><00:17:30.480><c> has</c><00:17:30.690><c> coolness</c><00:17:31.050><c> but</c>
+
+00:17:31.220 --> 00:17:31.230 align:start position:0%
+disc you have mr. one has coolness but
+ 
+
+00:17:31.230 --> 00:17:31.820 align:start position:0%
+disc you have mr. one has coolness but
+it<00:17:31.350><c> doesn't</c><00:17:31.590><c> matter</c>
+
+00:17:31.820 --> 00:17:31.830 align:start position:0%
+it doesn't matter
+ 
+
+00:17:31.830 --> 00:17:34.310 align:start position:0%
+it doesn't matter
+it's<00:17:32.010><c> a</c><00:17:32.100><c> disc</c><00:17:32.309><c> to</c><00:17:32.520><c> polish</c><00:17:32.850><c> them</c><00:17:33.000><c> and</c><00:17:33.210><c> so</c><00:17:33.929><c> on</c><00:17:34.080><c> so</c>
+
+00:17:34.310 --> 00:17:34.320 align:start position:0%
+it's a disc to polish them and so on so
+ 
+
+00:17:34.320 --> 00:17:37.610 align:start position:0%
+it's a disc to polish them and so on so
+of<00:17:34.700><c> dimension</c><00:17:35.700><c> n</c><00:17:35.850><c> minus</c><00:17:36.150><c> 1</c><00:17:36.360><c> what</c><00:17:37.170><c> does</c><00:17:37.320><c> it</c><00:17:37.470><c> mean</c>
+
+00:17:37.610 --> 00:17:37.620 align:start position:0%
+of dimension n minus 1 what does it mean
+ 
+
+00:17:37.620 --> 00:17:40.280 align:start position:0%
+of dimension n minus 1 what does it mean
+to<00:17:37.770><c> act</c><00:17:38.010><c> it</c><00:17:38.640><c> means</c><00:17:39.000><c> the</c><00:17:39.120><c> following</c><00:17:39.270><c> let's</c><00:17:40.080><c> say</c>
+
+00:17:40.280 --> 00:17:40.290 align:start position:0%
+to act it means the following let's say
+ 
+
+00:17:40.290 --> 00:17:42.500 align:start position:0%
+to act it means the following let's say
+that<00:17:40.590><c> I</c><00:17:40.800><c> start</c><00:17:40.920><c> from</c><00:17:41.610><c> for</c><00:17:41.910><c> example</c><00:17:41.970><c> somewhere</c>
+
+00:17:42.500 --> 00:17:42.510 align:start position:0%
+that I start from for example somewhere
+ 
+
+00:17:42.510 --> 00:17:45.890 align:start position:0%
+that I start from for example somewhere
+here<00:17:43.400><c> so</c><00:17:44.400><c> p1</c><00:17:44.640><c> is</c><00:17:44.880><c> something</c><00:17:45.210><c> T</c><00:17:45.330><c> 2</c><00:17:45.480><c> is</c><00:17:45.540><c> something</c>
+
+00:17:45.890 --> 00:17:45.900 align:start position:0%
+here so p1 is something T 2 is something
+ 
+
+00:17:45.900 --> 00:17:50.270 align:start position:0%
+here so p1 is something T 2 is something
+and<00:17:46.110><c> then</c><00:17:46.679><c> I</c><00:17:46.890><c> apply</c><00:17:47.490><c> this</c><00:17:47.880><c> matrix</c><00:17:48.090><c> G</c><00:17:49.130><c> in</c><00:17:50.130><c> this</c>
+
+00:17:50.270 --> 00:17:50.280 align:start position:0%
+and then I apply this matrix G in this
+ 
+
+00:17:50.280 --> 00:17:53.330 align:start position:0%
+and then I apply this matrix G in this
+case<00:17:50.429><c> 2</c><00:17:50.640><c> by</c><00:17:50.760><c> 2</c><00:17:50.820><c> matrix</c><00:17:51.270><c> and</c><00:17:51.510><c> that</c><00:17:51.540><c> gives</c><00:17:52.320><c> me</c><00:17:52.530><c> P</c><00:17:53.160><c> 1</c>
+
+00:17:53.330 --> 00:17:53.340 align:start position:0%
+case 2 by 2 matrix and that gives me P 1
+ 
+
+00:17:53.340 --> 00:17:57.980 align:start position:0%
+case 2 by 2 matrix and that gives me P 1
+and<00:17:53.490><c> P</c><00:17:53.640><c> 2</c><00:17:53.669><c> at</c><00:17:54.000><c> the</c><00:17:54.120><c> next</c><00:17:54.450><c> moment</c><00:17:54.600><c> in</c><00:17:54.929><c> half</c><00:17:56.990><c> but</c>
+
+00:17:57.980 --> 00:17:57.990 align:start position:0%
+and P 2 at the next moment in half but
+ 
+
+00:17:57.990 --> 00:18:01.790 align:start position:0%
+and P 2 at the next moment in half but
+the<00:17:58.169><c> mean</c><00:17:58.559><c> p1</c><00:17:59.190><c> and</c><00:17:59.400><c> p2</c><00:17:59.690><c> must</c><00:18:00.690><c> still</c><00:18:01.260><c> stay</c><00:18:01.559><c> on</c>
+
+00:18:01.790 --> 00:18:01.800 align:start position:0%
+the mean p1 and p2 must still stay on
+ 
+
+00:18:01.800 --> 00:18:05.930 align:start position:0%
+the mean p1 and p2 must still stay on
+this<00:18:01.980><c> line</c><00:18:03.530><c> yes</c><00:18:04.530><c> because</c><00:18:05.280><c> it's</c><00:18:05.610><c> a</c><00:18:05.669><c> probability</c>
+
+00:18:05.930 --> 00:18:05.940 align:start position:0%
+this line yes because it's a probability
+ 
+
+00:18:05.940 --> 00:18:08.390 align:start position:0%
+this line yes because it's a probability
+distribution<00:18:06.600><c> so</c><00:18:06.720><c> all</c><00:18:07.380><c> it's</c><00:18:07.650><c> doing</c><00:18:07.830><c> is</c><00:18:08.070><c> that</c><00:18:08.220><c> I</c>
+
+00:18:08.390 --> 00:18:08.400 align:start position:0%
+distribution so all it's doing is that I
+ 
+
+00:18:08.400 --> 00:18:10.610 align:start position:0%
+distribution so all it's doing is that I
+move<00:18:08.760><c> this</c><00:18:09.179><c> point</c><00:18:09.270><c> to</c><00:18:09.630><c> maybe</c><00:18:09.809><c> somewhere</c><00:18:10.169><c> else</c>
+
+00:18:10.610 --> 00:18:10.620 align:start position:0%
+move this point to maybe somewhere else
+ 
+
+00:18:10.620 --> 00:18:13.610 align:start position:0%
+move this point to maybe somewhere else
+and<00:18:11.270><c> each</c><00:18:12.270><c> point</c><00:18:12.660><c> on</c><00:18:12.809><c> this</c><00:18:12.929><c> line</c><00:18:13.140><c> moves</c><00:18:13.440><c> to</c>
+
+00:18:13.610 --> 00:18:13.620 align:start position:0%
+and each point on this line moves to
+ 
+
+00:18:13.620 --> 00:18:15.460 align:start position:0%
+and each point on this line moves to
+some<00:18:13.770><c> other</c><00:18:13.980><c> point</c><00:18:14.190><c> on</c><00:18:14.429><c> this</c><00:18:14.520><c> time</c>
+
+00:18:15.460 --> 00:18:15.470 align:start position:0%
+some other point on this time
+ 
+
+00:18:15.470 --> 00:18:18.440 align:start position:0%
+some other point on this time
+similarly<00:18:16.470><c> here</c><00:18:16.770><c> let's</c><00:18:17.400><c> say</c><00:18:17.580><c> that</c><00:18:17.610><c> you</c><00:18:17.970><c> have</c><00:18:18.179><c> a</c>
+
+00:18:18.440 --> 00:18:18.450 align:start position:0%
+similarly here let's say that you have a
+ 
+
+00:18:18.450 --> 00:18:20.980 align:start position:0%
+similarly here let's say that you have a
+case<00:18:18.770><c> Markov</c><00:18:19.770><c> chain</c><00:18:19.950><c> with</c><00:18:19.980><c> three</c><00:18:20.250><c> states</c>
+
+00:18:20.980 --> 00:18:20.990 align:start position:0%
+case Markov chain with three states
+ 
+
+00:18:20.990 --> 00:18:23.990 align:start position:0%
+case Markov chain with three states
+where<00:18:21.990><c> in</c><00:18:22.140><c> this</c><00:18:22.320><c> stage</c><00:18:22.559><c> and</c><00:18:23.130><c> suppose</c><00:18:23.460><c> that</c><00:18:23.490><c> PU</c>
+
+00:18:23.990 --> 00:18:24.000 align:start position:0%
+where in this stage and suppose that PU
+ 
+
+00:18:24.000 --> 00:18:26.390 align:start position:0%
+where in this stage and suppose that PU
+the<00:18:24.510><c> state</c><00:18:24.780><c> one</c><00:18:24.990><c> has</c><00:18:25.020><c> a</c><00:18:25.260><c> probability</c><00:18:25.530><c> p1</c><00:18:25.950><c> state</c>
+
+00:18:26.390 --> 00:18:26.400 align:start position:0%
+the state one has a probability p1 state
+ 
+
+00:18:26.400 --> 00:18:28.250 align:start position:0%
+the state one has a probability p1 state
+to<00:18:26.610><c> provide</c><00:18:26.910><c> EP</c><00:18:27.210><c> 2</c><00:18:27.390><c> step</c><00:18:27.690><c> 3</c>
+
+00:18:28.250 --> 00:18:28.260 align:start position:0%
+to provide EP 2 step 3
+ 
+
+00:18:28.260 --> 00:18:31.310 align:start position:0%
+to provide EP 2 step 3
+being<00:18:28.710><c> probabilities</c><00:18:29.580><c> P</c><00:18:30.419><c> 3</c><00:18:30.630><c> so</c><00:18:31.110><c> we</c><00:18:31.260><c> are</c>
+
+00:18:31.310 --> 00:18:31.320 align:start position:0%
+being probabilities P 3 so we are
+ 
+
+00:18:31.320 --> 00:18:34.930 align:start position:0%
+being probabilities P 3 so we are
+somewhere<00:18:31.679><c> on</c><00:18:32.010><c> this</c><00:18:32.220><c> planet</c><00:18:32.600><c> at</c><00:18:33.600><c> time</c><00:18:34.320><c> 0</c>
+
+00:18:34.930 --> 00:18:34.940 align:start position:0%
+somewhere on this planet at time 0
+ 
+
+00:18:34.940 --> 00:18:36.860 align:start position:0%
+somewhere on this planet at time 0
+what's<00:18:35.940><c> gonna</c><00:18:36.210><c> be</c><00:18:36.419><c> the</c><00:18:36.570><c> probability</c>
+
+00:18:36.860 --> 00:18:36.870 align:start position:0%
+what's gonna be the probability
+ 
+
+00:18:36.870 --> 00:18:39.799 align:start position:0%
+what's gonna be the probability
+distribution<00:18:37.140><c> at</c><00:18:37.710><c> time</c><00:18:37.950><c> 1</c><00:18:38.220><c> well</c><00:18:38.760><c> I</c><00:18:39.059><c> apply</c><00:18:39.750><c> this</c>
+
+00:18:39.799 --> 00:18:39.809 align:start position:0%
+distribution at time 1 well I apply this
+ 
+
+00:18:39.809 --> 00:18:43.379 align:start position:0%
+distribution at time 1 well I apply this
+G<00:18:40.230><c> to</c><00:18:40.950><c> the</c><00:18:41.070><c> vector</c><00:18:41.250><c> p1</c><00:18:42.030><c> p2</c><00:18:42.330><c> p3</c><00:18:42.480><c> and</c>
+
+00:18:43.379 --> 00:18:43.389 align:start position:0%
+G to the vector p1 p2 p3 and
+ 
+
+00:18:43.389 --> 00:18:47.009 align:start position:0%
+G to the vector p1 p2 p3 and
+I<00:18:43.450><c> get</c><00:18:43.719><c> a</c><00:18:43.749><c> new</c><00:18:43.989><c> vendor</c><00:18:44.700><c> okay</c><00:18:45.700><c> that</c><00:18:46.419><c> new</c><00:18:46.629><c> vector</c>
+
+00:18:47.009 --> 00:18:47.019 align:start position:0%
+I get a new vendor okay that new vector
+ 
+
+00:18:47.019 --> 00:18:49.199 align:start position:0%
+I get a new vendor okay that new vector
+is<00:18:47.529><c> the</c><00:18:47.739><c> probability</c><00:18:48.039><c> distribution</c><00:18:48.369><c> at</c><00:18:48.969><c> time</c>
+
+00:18:49.199 --> 00:18:49.209 align:start position:0%
+is the probability distribution at time
+ 
+
+00:18:49.209 --> 00:18:51.629 align:start position:0%
+is the probability distribution at time
+one<00:18:49.389><c> but</c><00:18:49.839><c> that</c><00:18:50.529><c> means</c><00:18:50.709><c> that</c><00:18:50.829><c> I</c><00:18:51.039><c> still</c><00:18:51.309><c> have</c><00:18:51.489><c> to</c>
+
+00:18:51.629 --> 00:18:51.639 align:start position:0%
+one but that means that I still have to
+ 
+
+00:18:51.639 --> 00:18:54.539 align:start position:0%
+one but that means that I still have to
+stay<00:18:51.849><c> on</c><00:18:51.999><c> this</c><00:18:52.089><c> triangle</c><00:18:52.599><c> so</c><00:18:52.950><c> I</c><00:18:53.950><c> have</c><00:18:54.249><c> a</c><00:18:54.279><c> map</c>
+
+00:18:54.539 --> 00:18:54.549 align:start position:0%
+stay on this triangle so I have a map
+ 
+
+00:18:54.549 --> 00:18:58.169 align:start position:0%
+stay on this triangle so I have a map
+from<00:18:54.879><c> this</c><00:18:55.119><c> planet</c><00:18:55.450><c> of</c><00:18:55.869><c> God</c><00:18:56.139><c> itself</c><00:18:56.529><c> a</c><00:18:57.179><c> special</c>
+
+00:18:58.169 --> 00:18:58.179 align:start position:0%
+from this planet of God itself a special
+ 
+
+00:18:58.179 --> 00:19:01.799 align:start position:0%
+from this planet of God itself a special
+map<00:18:58.359><c> that</c><00:18:58.690><c> the</c><00:18:59.109><c> optional</c><00:18:59.649><c> G</c><00:19:00.029><c> similarly</c><00:19:01.029><c> in</c><00:19:01.599><c> a</c>
+
+00:19:01.799 --> 00:19:01.809 align:start position:0%
+map that the optional G similarly in a
+ 
+
+00:19:01.809 --> 00:19:04.829 align:start position:0%
+map that the optional G similarly in a
+dimension<00:19:02.379><c> G</c><00:19:03.039><c> is</c><00:19:03.339><c> mapping</c><00:19:03.729><c> this</c><00:19:04.119><c> tetrahedron</c>
+
+00:19:04.829 --> 00:19:04.839 align:start position:0%
+dimension G is mapping this tetrahedron
+ 
+
+00:19:04.839 --> 00:19:07.889 align:start position:0%
+dimension G is mapping this tetrahedron
+or<00:19:05.169><c> to</c><00:19:05.469><c> be</c><00:19:05.559><c> precise</c><00:19:05.950><c> this</c><00:19:06.279><c> set</c><00:19:06.489><c> to</c><00:19:06.820><c> itself</c><00:19:07.239><c> all</c>
+
+00:19:07.889 --> 00:19:07.899 align:start position:0%
+or to be precise this set to itself all
+ 
+
+00:19:07.899 --> 00:19:15.029 align:start position:0%
+or to be precise this set to itself all
+the<00:19:08.109><c> time</c><00:19:08.349><c> Oh</c><00:19:11.489><c> Wallace</c><00:19:12.489><c> so</c><00:19:13.450><c> G</c><00:19:13.749><c> takes</c><00:19:14.559><c> this</c><00:19:14.799><c> set</c>
+
+00:19:15.029 --> 00:19:15.039 align:start position:0%
+the time Oh Wallace so G takes this set
+ 
+
+00:19:15.039 --> 00:19:17.699 align:start position:0%
+the time Oh Wallace so G takes this set
+and<00:19:15.219><c> Maps</c><00:19:15.609><c> it</c><00:19:15.820><c> itself</c><00:19:16.329><c> but</c><00:19:16.989><c> this</c><00:19:17.289><c> step</c><00:19:17.499><c> is</c>
+
+00:19:17.699 --> 00:19:17.709 align:start position:0%
+and Maps it itself but this step is
+ 
+
+00:19:17.709 --> 00:19:21.869 align:start position:0%
+and Maps it itself but this step is
+homomorphic<00:19:18.369><c> to</c><00:19:18.639><c> a</c><00:19:18.909><c> bowl</c><00:19:19.379><c> so</c><00:19:20.379><c> brava</c><00:19:20.879><c> applies</c>
+
+00:19:21.869 --> 00:19:21.879 align:start position:0%
+homomorphic to a bowl so brava applies
+ 
+
+00:19:21.879 --> 00:19:24.449 align:start position:0%
+homomorphic to a bowl so brava applies
+and<00:19:22.359><c> says</c><00:19:23.229><c> that</c><00:19:23.469><c> there</c><00:19:23.739><c> must</c><00:19:23.919><c> be</c><00:19:24.129><c> a</c><00:19:24.159><c> fixed</c>
+
+00:19:24.449 --> 00:19:24.459 align:start position:0%
+and says that there must be a fixed
+ 
+
+00:19:24.459 --> 00:19:30.209 align:start position:0%
+and says that there must be a fixed
+point<00:19:26.849><c> and</c><00:19:28.409><c> automatically</c><00:19:29.409><c> this</c><00:19:29.769><c> fixed</c><00:19:30.039><c> point</c>
+
+00:19:30.209 --> 00:19:30.219 align:start position:0%
+point and automatically this fixed point
+ 
+
+00:19:30.219 --> 00:19:33.180 align:start position:0%
+point and automatically this fixed point
+satisfies<00:19:31.059><c> the</c><00:19:31.570><c> constraints</c><00:19:32.169><c> because</c><00:19:32.739><c> we</c><00:19:33.039><c> are</c>
+
+00:19:33.180 --> 00:19:33.190 align:start position:0%
+satisfies the constraints because we are
+ 
+
+00:19:33.190 --> 00:19:48.370 align:start position:0%
+satisfies the constraints because we are
+applying<00:19:33.609><c> fixed</c><00:19:33.909><c> point</c><00:19:34.089><c> theorem</c><00:19:34.539><c> in</c><00:19:34.869><c> this</c><00:19:35.200><c> set</c>
+
+00:19:48.370 --> 00:19:48.380 align:start position:0%
+ 
+ 
+
+00:19:48.380 --> 00:19:51.700 align:start position:0%
+ 
+let's<00:19:49.039><c> take</c><00:19:49.280><c> maybe</c><00:19:50.030><c> two</c><00:19:50.360><c> or</c><00:19:50.480><c> three</c><00:19:50.510><c> minutes</c><00:19:50.929><c> in</c>
+
+00:19:51.700 --> 00:19:51.710 align:start position:0%
+let's take maybe two or three minutes in
+ 
+
+00:19:51.710 --> 00:19:55.240 align:start position:0%
+let's take maybe two or three minutes in
+order<00:19:52.070><c> to</c><00:19:52.660><c> see</c><00:19:53.660><c> examples</c><00:19:54.110><c> of</c><00:19:54.590><c> how</c><00:19:54.740><c> this</c><00:19:54.919><c> works</c>
+
+00:19:55.240 --> 00:19:55.250 align:start position:0%
+order to see examples of how this works
+ 
+
+00:19:55.250 --> 00:19:57.669 align:start position:0%
+order to see examples of how this works
+and<00:19:55.580><c> then</c><00:19:55.820><c> you</c><00:19:56.000><c> might</c><00:19:56.210><c> see</c><00:19:56.539><c> this</c><00:19:56.929><c> argument</c><00:19:57.230><c> and</c>
+
+00:19:57.669 --> 00:19:57.679 align:start position:0%
+and then you might see this argument and
+ 
+
+00:19:57.679 --> 00:20:02.159 align:start position:0%
+and then you might see this argument and
+the<00:19:57.770><c> picture</c><00:19:58.190><c> a</c><00:19:58.700><c> little</c><00:19:59.120><c> later</c>
+
+00:20:02.159 --> 00:20:02.169 align:start position:0%
+ 
+ 
+
+00:20:02.169 --> 00:20:04.570 align:start position:0%
+ 
+consider<00:20:03.169><c> a</c><00:20:03.200><c> Markov</c><00:20:03.590><c> chain</c><00:20:03.620><c> with</c><00:20:03.860><c> only</c><00:20:04.250><c> three</c>
+
+00:20:04.570 --> 00:20:04.580 align:start position:0%
+consider a Markov chain with only three
+ 
+
+00:20:04.580 --> 00:20:08.890 align:start position:0%
+consider a Markov chain with only three
+states<00:20:04.820><c> so</c><00:20:05.809><c> this</c><00:20:06.440><c> phenomenon</c><00:20:07.390><c> this</c><00:20:08.390><c> universe</c>
+
+00:20:08.890 --> 00:20:08.900 align:start position:0%
+states so this phenomenon this universe
+ 
+
+00:20:08.900 --> 00:20:11.409 align:start position:0%
+states so this phenomenon this universe
+this<00:20:09.260><c> system</c><00:20:09.710><c> can</c><00:20:10.429><c> be</c><00:20:10.580><c> in</c><00:20:10.820><c> one</c><00:20:11.000><c> of</c><00:20:11.030><c> the</c><00:20:11.240><c> three</c>
+
+00:20:11.409 --> 00:20:11.419 align:start position:0%
+this system can be in one of the three
+ 
+
+00:20:11.419 --> 00:20:17.440 align:start position:0%
+this system can be in one of the three
+states<00:20:11.830><c> state</c><00:20:14.590><c> let's</c><00:20:15.590><c> call</c><00:20:15.770><c> it</c><00:20:15.890><c> state</c><00:20:16.100><c> 1</c><00:20:16.450><c> let's</c>
+
+00:20:17.440 --> 00:20:17.450 align:start position:0%
+states state let's call it state 1 let's
+ 
+
+00:20:17.450 --> 00:20:23.020 align:start position:0%
+states state let's call it state 1 let's
+go<00:20:17.600><c> to</c><00:20:17.660><c> state</c><00:20:17.960><c> 2</c><00:20:18.730><c> let's</c><00:20:19.730><c> call</c><00:20:19.940><c> this</c><00:20:20.030><c> state</c><00:20:22.000><c> ok</c>
+
+00:20:23.020 --> 00:20:23.030 align:start position:0%
+go to state 2 let's call this state ok
+ 
+
+00:20:23.030 --> 00:20:25.600 align:start position:0%
+go to state 2 let's call this state ok
+for<00:20:23.299><c> some</c><00:20:23.419><c> reason</c><00:20:23.720><c> I'm</c><00:20:23.900><c> writing</c><00:20:24.049><c> 2</c><00:20:24.440><c> 1</c><00:20:24.710><c> 3</c><00:20:25.039><c> I</c><00:20:25.220><c> I</c>
+
+00:20:25.600 --> 00:20:25.610 align:start position:0%
+for some reason I'm writing 2 1 3 I I
+ 
+
+00:20:25.610 --> 00:20:27.399 align:start position:0%
+for some reason I'm writing 2 1 3 I I
+don't<00:20:26.000><c> know</c><00:20:26.090><c> why</c><00:20:26.240><c> I'm</c><00:20:26.450><c> writing</c><00:20:26.630><c> this</c><00:20:26.960><c> in</c><00:20:27.260><c> this</c>
+
+00:20:27.399 --> 00:20:27.409 align:start position:0%
+don't know why I'm writing this in this
+ 
+
+00:20:27.409 --> 00:20:32.620 align:start position:0%
+don't know why I'm writing this in this
+order<00:20:27.590><c> and</c><00:20:28.460><c> then</c><00:20:29.380><c> we</c><00:20:30.380><c> shall</c><00:20:30.620><c> assign</c><00:20:31.520><c> how</c><00:20:32.179><c> they</c>
+
+00:20:32.620 --> 00:20:32.630 align:start position:0%
+order and then we shall assign how they
+ 
+
+00:20:32.630 --> 00:20:35.430 align:start position:0%
+order and then we shall assign how they
+jump<00:20:32.960><c> let's</c><00:20:33.740><c> say</c><00:20:33.950><c> that</c><00:20:34.070><c> if</c><00:20:34.220><c> I'm</c><00:20:34.400><c> state</c><00:20:34.669><c> 1</c><00:20:34.909><c> I</c>
+
+00:20:35.430 --> 00:20:35.440 align:start position:0%
+jump let's say that if I'm state 1 I
+ 
+
+00:20:35.440 --> 00:20:38.830 align:start position:0%
+jump let's say that if I'm state 1 I
+always<00:20:36.440><c> stay</c><00:20:36.980><c> at</c><00:20:37.159><c> state</c><00:20:37.429><c> 1</c><00:20:37.640><c> so</c><00:20:38.059><c> I</c><00:20:38.270><c> jump</c><00:20:38.630><c> from</c>
+
+00:20:38.830 --> 00:20:38.840 align:start position:0%
+always stay at state 1 so I jump from
+ 
+
+00:20:38.840 --> 00:20:41.950 align:start position:0%
+always stay at state 1 so I jump from
+state<00:20:39.049><c> 1</c><00:20:39.230><c> to</c><00:20:39.260><c> state</c><00:20:39.380><c> 1</c><00:20:39.740><c> we</c><00:20:40.549><c> will</c><00:20:41.480><c> probably</c><00:20:41.690><c> see</c>
+
+00:20:41.950 --> 00:20:41.960 align:start position:0%
+state 1 to state 1 we will probably see
+ 
+
+00:20:41.960 --> 00:20:45.370 align:start position:0%
+state 1 to state 1 we will probably see
+one<00:20:42.080><c> I</c><00:20:42.380><c> don't</c><00:20:43.010><c> go</c><00:20:43.100><c> anywhere</c><00:20:43.309><c> else</c><00:20:44.200><c> let's</c><00:20:45.200><c> also</c>
+
+00:20:45.370 --> 00:20:45.380 align:start position:0%
+one I don't go anywhere else let's also
+ 
+
+00:20:45.380 --> 00:20:47.830 align:start position:0%
+one I don't go anywhere else let's also
+say<00:20:45.679><c> that</c><00:20:45.830><c> if</c><00:20:45.950><c> I</c><00:20:46.070><c> misstated</c><00:20:46.429><c> to</c><00:20:46.730><c> I</c><00:20:47.030><c> moved</c><00:20:47.690><c> to</c>
+
+00:20:47.830 --> 00:20:47.840 align:start position:0%
+say that if I misstated to I moved to
+ 
+
+00:20:47.840 --> 00:20:51.730 align:start position:0%
+say that if I misstated to I moved to
+state<00:20:48.080><c> 1</c><00:20:48.470><c> with</c><00:20:48.710><c> probability</c><00:20:48.770><c> 1</c><00:20:49.600><c> and</c><00:20:50.600><c> if</c><00:20:51.590><c> I</c>
+
+00:20:51.730 --> 00:20:51.740 align:start position:0%
+state 1 with probability 1 and if I
+ 
+
+00:20:51.740 --> 00:20:54.669 align:start position:0%
+state 1 with probability 1 and if I
+mistake<00:20:51.890><c> at</c><00:20:52.130><c> stage</c><00:20:52.340><c> 3</c><00:20:52.580><c> I</c><00:20:52.820><c> moved</c><00:20:53.179><c> to</c><00:20:53.500><c> state</c><00:20:54.500><c> 1</c>
+
+00:20:54.669 --> 00:20:54.679 align:start position:0%
+mistake at stage 3 I moved to state 1
+ 
+
+00:20:54.679 --> 00:20:58.289 align:start position:0%
+mistake at stage 3 I moved to state 1
+with<00:20:54.830><c> property</c><00:20:55.280><c> one</c><00:20:55.990><c> in</c><00:20:56.990><c> other</c><00:20:57.289><c> words</c><00:20:57.590><c> this</c><00:20:58.010><c> is</c>
+
+00:20:58.289 --> 00:20:58.299 align:start position:0%
+with property one in other words this is
+ 
+
+00:20:58.299 --> 00:21:03.310 align:start position:0%
+with property one in other words this is
+really<00:20:59.299><c> a</c><00:20:59.330><c> deterministic</c><00:21:00.289><c> process</c><00:21:02.320><c> you</c>
+
+00:21:03.310 --> 00:21:03.320 align:start position:0%
+really a deterministic process you
+ 
+
+00:21:03.320 --> 00:21:05.620 align:start position:0%
+really a deterministic process you
+understand<00:21:03.650><c> at</c><00:21:03.860><c> each</c><00:21:04.250><c> moment</c><00:21:04.429><c> of</c><00:21:04.640><c> time</c><00:21:04.789><c> I</c><00:21:05.000><c> show</c>
+
+00:21:05.620 --> 00:21:05.630 align:start position:0%
+understand at each moment of time I show
+ 
+
+00:21:05.630 --> 00:21:06.580 align:start position:0%
+understand at each moment of time I show
+what<00:21:05.900><c> to</c><00:21:06.020><c> do</c><00:21:06.200><c> next</c>
+
+00:21:06.580 --> 00:21:06.590 align:start position:0%
+what to do next
+ 
+
+00:21:06.590 --> 00:21:08.740 align:start position:0%
+what to do next
+there<00:21:06.710><c> is</c><00:21:06.770><c> no</c><00:21:06.890><c> probabilistic</c><00:21:07.789><c> uncertainty</c><00:21:08.720><c> I</c>
+
+00:21:08.740 --> 00:21:08.750 align:start position:0%
+there is no probabilistic uncertainty I
+ 
+
+00:21:08.750 --> 00:21:12.490 align:start position:0%
+there is no probabilistic uncertainty I
+just<00:21:09.080><c> know</c><00:21:09.230><c> now</c><00:21:09.799><c> suppose</c><00:21:10.520><c> that</c><00:21:10.549><c> you</c><00:21:11.500><c> start</c>
+
+00:21:12.490 --> 00:21:12.500 align:start position:0%
+just know now suppose that you start
+ 
+
+00:21:12.500 --> 00:21:14.590 align:start position:0%
+just know now suppose that you start
+from<00:21:12.890><c> some</c><00:21:13.130><c> probability</c><00:21:13.610><c> distribution</c><00:21:14.210><c> and</c>
+
+00:21:14.590 --> 00:21:14.600 align:start position:0%
+from some probability distribution and
+ 
+
+00:21:14.600 --> 00:21:17.680 align:start position:0%
+from some probability distribution and
+then<00:21:15.110><c> I</c><00:21:15.289><c> run</c><00:21:15.559><c> this</c><00:21:15.740><c> Markov</c><00:21:16.130><c> chain</c><00:21:16.490><c> what</c><00:21:17.419><c> do</c><00:21:17.600><c> you</c>
+
+00:21:17.680 --> 00:21:17.690 align:start position:0%
+then I run this Markov chain what do you
+ 
+
+00:21:17.690 --> 00:21:22.899 align:start position:0%
+then I run this Markov chain what do you
+think<00:21:17.900><c> will</c><00:21:18.020><c> happen</c><00:21:20.830><c> after</c><00:21:21.830><c> one</c><00:21:22.190><c> step</c><00:21:22.370><c> what</c>
+
+00:21:22.899 --> 00:21:22.909 align:start position:0%
+think will happen after one step what
+ 
+
+00:21:22.909 --> 00:21:24.820 align:start position:0%
+think will happen after one step what
+happens<00:21:23.240><c> all</c><00:21:23.570><c> the</c><00:21:23.630><c> rabbits</c><00:21:23.990><c> which</c><00:21:24.650><c> were</c>
+
+00:21:24.820 --> 00:21:24.830 align:start position:0%
+happens all the rabbits which were
+ 
+
+00:21:24.830 --> 00:21:26.830 align:start position:0%
+happens all the rabbits which were
+distributed<00:21:25.520><c> in</c><00:21:25.549><c> state</c><00:21:25.940><c> 1</c><00:21:26.120><c> step</c><00:21:26.360><c> 2</c><00:21:26.539><c> step</c><00:21:26.570><c> 3</c>
+
+00:21:26.830 --> 00:21:26.840 align:start position:0%
+distributed in state 1 step 2 step 3
+ 
+
+00:21:26.840 --> 00:21:30.520 align:start position:0%
+distributed in state 1 step 2 step 3
+what<00:21:27.650><c> happens</c><00:21:28.010><c> to</c><00:21:28.100><c> them</c><00:21:28.720><c> they</c><00:21:29.720><c> also</c><00:21:30.020><c> jump</c><00:21:30.470><c> to</c>
+
+00:21:30.520 --> 00:21:30.530 align:start position:0%
+what happens to them they also jump to
+ 
+
+00:21:30.530 --> 00:21:33.909 align:start position:0%
+what happens to them they also jump to
+state<00:21:30.830><c> 1</c><00:21:31.039><c> and</c><00:21:31.280><c> stay</c><00:21:31.820><c> there</c><00:21:32.030><c> forever</c><00:21:32.240><c> so</c><00:21:32.919><c> that's</c>
+
+00:21:33.909 --> 00:21:33.919 align:start position:0%
+state 1 and stay there forever so that's
+ 
+
+00:21:33.919 --> 00:21:36.640 align:start position:0%
+state 1 and stay there forever so that's
+the<00:21:34.130><c> limiting</c><00:21:34.490><c> distribution</c><00:21:35.559><c> limit</c><00:21:36.559><c> the</c>
+
+00:21:36.640 --> 00:21:36.650 align:start position:0%
+the limiting distribution limit the
+ 
+
+00:21:36.650 --> 00:21:39.640 align:start position:0%
+the limiting distribution limit the
+distribution<00:21:36.890><c> is</c><00:21:37.370><c> well</c><00:21:38.059><c> at</c><00:21:38.360><c> any</c><00:21:39.080><c> later</c><00:21:39.350><c> time</c>
+
+00:21:39.640 --> 00:21:39.650 align:start position:0%
+distribution is well at any later time
+ 
+
+00:21:39.650 --> 00:21:42.340 align:start position:0%
+distribution is well at any later time
+if<00:21:39.950><c> you</c><00:21:40.130><c> look</c><00:21:40.280><c> at</c><00:21:40.429><c> this</c><00:21:40.580><c> system</c><00:21:40.760><c> after</c><00:21:41.750><c> you</c><00:21:41.870><c> run</c>
+
+00:21:42.340 --> 00:21:42.350 align:start position:0%
+if you look at this system after you run
+ 
+
+00:21:42.350 --> 00:21:45.010 align:start position:0%
+if you look at this system after you run
+the<00:21:42.380><c> Markov</c><00:21:42.710><c> chain</c><00:21:43.030><c> you</c><00:21:44.030><c> are</c><00:21:44.179><c> sure</c><00:21:44.720><c> to</c><00:21:44.750><c> find</c>
+
+00:21:45.010 --> 00:21:45.020 align:start position:0%
+the Markov chain you are sure to find
+ 
+
+00:21:45.020 --> 00:21:47.230 align:start position:0%
+the Markov chain you are sure to find
+everyone<00:21:45.799><c> in</c><00:21:46.010><c> state</c><00:21:46.250><c> 1</c><00:21:46.429><c> in</c><00:21:46.820><c> other</c><00:21:47.000><c> words</c><00:21:47.179><c> the</c>
+
+00:21:47.230 --> 00:21:47.240 align:start position:0%
+everyone in state 1 in other words the
+ 
+
+00:21:47.240 --> 00:21:48.320 align:start position:0%
+everyone in state 1 in other words the
+state<00:21:47.510><c> is</c><00:21:47.750><c> instead</c>
+
+00:21:48.320 --> 00:21:48.330 align:start position:0%
+state is instead
+ 
+
+00:21:48.330 --> 00:21:51.320 align:start position:0%
+state is instead
+with<00:21:48.690><c> property</c><00:21:49.200><c> one</c><00:21:49.380><c> and</c><00:21:49.769><c> you</c><00:21:50.700><c> can</c><00:21:50.970><c> never</c><00:21:51.179><c> find</c>
+
+00:21:51.320 --> 00:21:51.330 align:start position:0%
+with property one and you can never find
+ 
+
+00:21:51.330 --> 00:21:53.840 align:start position:0%
+with property one and you can never find
+a<00:21:51.630><c> state</c><00:21:51.870><c> in</c><00:21:52.110><c> privity</c><00:21:52.529><c> in</c><00:21:53.279><c> state</c><00:21:53.549><c> Tuesday</c>
+
+00:21:53.840 --> 00:21:53.850 align:start position:0%
+a state in privity in state Tuesday
+ 
+
+00:21:53.850 --> 00:21:56.950 align:start position:0%
+a state in privity in state Tuesday
+three<00:21:54.299><c> okay</c><00:21:55.289><c> so</c><00:21:55.500><c> the</c><00:21:56.010><c> limited</c><00:21:56.519><c> distribution</c>
+
+00:21:56.950 --> 00:21:56.960 align:start position:0%
+three okay so the limited distribution
+ 
+
+00:21:56.960 --> 00:21:59.860 align:start position:0%
+three okay so the limited distribution
+if<00:21:57.960><c> you</c><00:21:58.140><c> think</c><00:21:58.350><c> over</c><00:21:58.500><c> the</c><00:21:58.620><c> back</c><00:21:58.740><c> that</c><00:21:58.950><c> p1</c><00:21:59.309><c> p2</c><00:21:59.519><c> p3</c>
+
+00:21:59.860 --> 00:21:59.870 align:start position:0%
+if you think over the back that p1 p2 p3
+ 
+
+00:21:59.870 --> 00:22:04.970 align:start position:0%
+if you think over the back that p1 p2 p3
+should<00:22:00.870><c> be</c><00:22:01.049><c> P</c><00:22:01.289><c> 1</c><00:22:01.320><c> is</c><00:22:01.590><c> 1</c><00:22:01.799><c> and</c><00:22:02.130><c> P</c><00:22:02.940><c> 2</c><00:22:02.970><c> is</c><00:22:03.419><c> real</c><00:22:03.659><c> 0</c><00:22:03.929><c> 1</c><00:22:04.649><c> 0</c>
+
+00:22:04.970 --> 00:22:04.980 align:start position:0%
+should be P 1 is 1 and P 2 is real 0 1 0
+ 
+
+00:22:04.980 --> 00:22:06.519 align:start position:0%
+should be P 1 is 1 and P 2 is real 0 1 0
+0<00:22:05.010><c> that</c><00:22:05.399><c> should</c><00:22:05.429><c> be</c><00:22:05.640><c> the</c><00:22:05.730><c> limit</c><00:22:05.850><c> distribution</c>
+
+00:22:06.519 --> 00:22:06.529 align:start position:0%
+0 that should be the limit distribution
+ 
+
+00:22:06.529 --> 00:22:09.919 align:start position:0%
+0 that should be the limit distribution
+right<00:22:07.580><c> let's</c><00:22:08.580><c> see</c><00:22:08.970><c> if</c><00:22:09.210><c> that's</c><00:22:09.480><c> really</c><00:22:09.750><c> the</c>
+
+00:22:09.919 --> 00:22:09.929 align:start position:0%
+right let's see if that's really the
+ 
+
+00:22:09.929 --> 00:22:16.840 align:start position:0%
+right let's see if that's really the
+case<00:22:11.480><c> in</c><00:22:12.480><c> this</c><00:22:12.659><c> case</c><00:22:13.080><c> what</c><00:22:13.649><c> is</c><00:22:13.679><c> G</c><00:22:15.559><c> well</c>
+
+00:22:16.840 --> 00:22:16.850 align:start position:0%
+case in this case what is G well
+ 
+
+00:22:16.850 --> 00:22:19.820 align:start position:0%
+case in this case what is G well
+remember<00:22:17.850><c> this</c><00:22:18.419><c> is</c><00:22:18.630><c> this</c><00:22:19.080><c> is</c><00:22:19.260><c> a</c><00:22:19.380><c> probably</c><00:22:19.679><c> fee</c>
+
+00:22:19.820 --> 00:22:19.830 align:start position:0%
+remember this is this is a probably fee
+ 
+
+00:22:19.830 --> 00:22:21.940 align:start position:0%
+remember this is this is a probably fee
+that<00:22:19.950><c> one</c><00:22:20.190><c> just</c><00:22:20.460><c> 1</c><00:22:20.760><c> so</c><00:22:20.940><c> it's</c><00:22:21.059><c> 1</c>
+
+00:22:21.940 --> 00:22:21.950 align:start position:0%
+that one just 1 so it's 1
+ 
+
+00:22:21.950 --> 00:22:25.810 align:start position:0%
+that one just 1 so it's 1
+what<00:22:22.950><c> was</c><00:22:23.100><c> this</c><00:22:23.250><c> probability</c><00:22:23.850><c> here</c>
+
+00:22:25.810 --> 00:22:25.820 align:start position:0%
+what was this probability here
+ 
+
+00:22:25.820 --> 00:22:30.710 align:start position:0%
+what was this probability here
+tip<00:22:26.820><c> 1</c><00:22:27.120><c> so</c><00:22:27.740><c> 2</c><00:22:28.740><c> jumps</c><00:22:29.159><c> to</c><00:22:29.279><c> 1</c><00:22:29.429><c> and</c><00:22:29.730><c> that's</c><00:22:29.909><c> 1</c><00:22:30.210><c> and</c><00:22:30.539><c> 3</c>
+
+00:22:30.710 --> 00:22:30.720 align:start position:0%
+tip 1 so 2 jumps to 1 and that's 1 and 3
+ 
+
+00:22:30.720 --> 00:22:33.740 align:start position:0%
+tip 1 so 2 jumps to 1 and that's 1 and 3
+times<00:22:30.899><c> 1</c><00:22:30.990><c> that's</c><00:22:31.139><c> 1</c><00:22:31.789><c> here</c><00:22:32.789><c> is</c><00:22:33.090><c> probably</c><00:22:33.480><c> that</c>
+
+00:22:33.740 --> 00:22:33.750 align:start position:0%
+times 1 that's 1 here is probably that
+ 
+
+00:22:33.750 --> 00:22:37.310 align:start position:0%
+times 1 that's 1 here is probably that
+one<00:22:34.289><c> jumps</c><00:22:34.649><c> to</c><00:22:34.769><c> 2</c><00:22:34.980><c> which</c><00:22:35.309><c> is</c><00:22:35.490><c> 0</c><00:22:35.690><c> 2</c><00:22:36.690><c> times</c><00:22:36.929><c> 2</c>
+
+00:22:37.310 --> 00:22:37.320 align:start position:0%
+one jumps to 2 which is 0 2 times 2
+ 
+
+00:22:37.320 --> 00:22:42.049 align:start position:0%
+one jumps to 2 which is 0 2 times 2
+which<00:22:37.350><c> is</c><00:22:37.590><c> 0</c><00:22:37.740><c> and</c><00:22:38.250><c> it's</c><00:22:38.730><c> 0</c><00:22:39.000><c> 0</c><00:22:39.240><c> 0</c><00:22:39.419><c> ed</c><00:22:41.029><c> can</c><00:22:42.029><c> you</c>
+
+00:22:42.049 --> 00:22:42.059 align:start position:0%
+which is 0 and it's 0 0 0 ed can you
+ 
+
+00:22:42.059 --> 00:22:44.570 align:start position:0%
+which is 0 and it's 0 0 0 ed can you
+calculate<00:22:42.389><c> the</c><00:22:43.080><c> square</c><00:22:43.500><c> of</c><00:22:43.710><c> this</c><00:22:43.830><c> matrix</c><00:22:44.279><c> the</c>
+
+00:22:44.570 --> 00:22:44.580 align:start position:0%
+calculate the square of this matrix the
+ 
+
+00:22:44.580 --> 00:22:47.870 align:start position:0%
+calculate the square of this matrix the
+cube<00:22:44.880><c> of</c><00:22:45.000><c> this</c><00:22:45.179><c> matrix</c><00:22:45.419><c> G</c><00:22:45.990><c> x</c><00:22:46.230><c> GD</c><00:22:46.799><c> x</c><00:22:46.830><c> GD</c><00:22:47.130><c> x</c><00:22:47.250><c> GD</c><00:22:47.549><c> x</c>
+
+00:22:47.870 --> 00:22:47.880 align:start position:0%
+cube of this matrix G x GD x GD x GD x
+ 
+
+00:22:47.880 --> 00:22:50.810 align:start position:0%
+cube of this matrix G x GD x GD x GD x
+with<00:22:48.269><c> Angie</c><00:22:48.600><c> can</c><00:22:48.960><c> you</c><00:22:48.990><c> calculate</c><00:22:49.169><c> this</c><00:22:49.820><c> well</c>
+
+00:22:50.810 --> 00:22:50.820 align:start position:0%
+with Angie can you calculate this well
+ 
+
+00:22:50.820 --> 00:22:54.200 align:start position:0%
+with Angie can you calculate this well
+in<00:22:51.029><c> principle</c><00:22:51.210><c> you</c><00:22:51.480><c> can</c><00:22:51.799><c> but</c><00:22:52.799><c> let's</c><00:22:53.250><c> note</c><00:22:54.179><c> that</c>
+
+00:22:54.200 --> 00:22:54.210 align:start position:0%
+in principle you can but let's note that
+ 
+
+00:22:54.210 --> 00:23:01.790 align:start position:0%
+in principle you can but let's note that
+1<00:22:54.720><c> 0</c><00:22:55.080><c> 0</c><00:22:55.380><c> is</c><00:22:55.679><c> a</c><00:22:55.889><c> fixed</c><00:22:56.340><c> point</c>
+
+00:23:01.790 --> 00:23:01.800 align:start position:0%
+ 
+ 
+
+00:23:01.800 --> 00:23:07.580 align:start position:0%
+ 
+is<00:23:02.250><c> that</c><00:23:02.490><c> true</c><00:23:03.080><c> huh</c><00:23:05.480><c> if</c><00:23:06.480><c> I</c><00:23:06.690><c> apply</c><00:23:07.050><c> this</c><00:23:07.110><c> to</c><00:23:07.290><c> 1</c>
+
+00:23:07.580 --> 00:23:07.590 align:start position:0%
+is that true huh if I apply this to 1
+ 
+
+00:23:07.590 --> 00:23:08.710 align:start position:0%
+is that true huh if I apply this to 1
+0-0
+
+00:23:08.710 --> 00:23:08.720 align:start position:0%
+0-0
+ 
+
+00:23:08.720 --> 00:23:14.030 align:start position:0%
+0-0
+what<00:23:09.720><c> do</c><00:23:09.810><c> you</c><00:23:09.870><c> get</c><00:23:11.060><c> 1</c><00:23:12.060><c> 0</c><00:23:12.360><c> 0</c><00:23:13.020><c> so</c><00:23:13.530><c> it</c><00:23:13.650><c> doesn't</c><00:23:13.920><c> move</c>
+
+00:23:14.030 --> 00:23:14.040 align:start position:0%
+what do you get 1 0 0 so it doesn't move
+ 
+
+00:23:14.040 --> 00:23:16.850 align:start position:0%
+what do you get 1 0 0 so it doesn't move
+and<00:23:14.690><c> it</c><00:23:15.690><c> turns</c><00:23:15.930><c> out</c><00:23:16.050><c> to</c><00:23:16.110><c> be</c><00:23:16.200><c> the</c><00:23:16.320><c> only</c><00:23:16.500><c> fixed</c>
+
+00:23:16.850 --> 00:23:16.860 align:start position:0%
+and it turns out to be the only fixed
+ 
+
+00:23:16.860 --> 00:23:21.980 align:start position:0%
+and it turns out to be the only fixed
+point<00:23:17.070><c> and</c><00:23:17.460><c> we</c><00:23:18.330><c> check</c><00:23:20.450><c> please</c><00:23:21.450><c> fill</c><00:23:21.690><c> the</c><00:23:21.780><c> check</c>
+
+00:23:21.980 --> 00:23:21.990 align:start position:0%
+point and we check please fill the check
+ 
+
+00:23:21.990 --> 00:23:24.410 align:start position:0%
+point and we check please fill the check
+if<00:23:22.140><c> you're</c><00:23:22.290><c> worried</c><00:23:22.580><c> if</c><00:23:23.580><c> you</c><00:23:23.760><c> are</c><00:23:23.880><c> not</c><00:23:24.030><c> worried</c>
+
+00:23:24.410 --> 00:23:24.420 align:start position:0%
+if you're worried if you are not worried
+ 
+
+00:23:24.420 --> 00:23:28.340 align:start position:0%
+if you're worried if you are not worried
+I'm<00:23:24.570><c> not</c><00:23:24.690><c> a</c><00:23:24.720><c> mystic</c><00:23:25.140><c> please</c><00:23:25.380><c> trust</c><00:23:25.620><c> me</c><00:23:25.890><c> that</c><00:23:27.350><c> G</c>
+
+00:23:28.340 --> 00:23:28.350 align:start position:0%
+I'm not a mystic please trust me that G
+ 
+
+00:23:28.350 --> 00:23:32.680 align:start position:0%
+I'm not a mystic please trust me that G
+square<00:23:28.710><c> is</c><00:23:28.980><c> simply</c><00:23:29.640><c> equal</c><00:23:29.940><c> to</c><00:23:30.030><c> G</c><00:23:30.210><c> itself</c><00:23:30.890><c> and</c>
+
+00:23:32.680 --> 00:23:32.690 align:start position:0%
+square is simply equal to G itself and
+ 
+
+00:23:32.690 --> 00:23:40.160 align:start position:0%
+square is simply equal to G itself and
+similarly<00:23:33.690><c> for</c><00:23:34.200><c> any</c><00:23:34.520><c> P</c><00:23:35.520><c> not</c><00:23:36.120><c> equal</c><00:23:36.150><c> to</c><00:23:36.830><c> 0</c><00:23:38.630><c> G</c><00:23:39.630><c> is</c>
+
+00:23:40.160 --> 00:23:40.170 align:start position:0%
+similarly for any P not equal to 0 G is
+ 
+
+00:23:40.170 --> 00:23:47.550 align:start position:0%
+similarly for any P not equal to 0 G is
+just<00:23:40.920><c> G</c><00:23:42.920><c> so</c>
+
+00:23:47.550 --> 00:23:47.560 align:start position:0%
+ 
+ 
+
+00:23:47.560 --> 00:23:55.890 align:start position:0%
+ 
+for<00:23:48.280><c> any</c><00:23:48.880><c> ol</c><00:23:49.810><c> initial</c><00:23:50.500><c> distribution</c><00:23:54.570><c> t1</c><00:23:55.570><c> and</c>
+
+00:23:55.890 --> 00:23:55.900 align:start position:0%
+for any ol initial distribution t1 and
+ 
+
+00:23:55.900 --> 00:24:04.020 align:start position:0%
+for any ol initial distribution t1 and
+t2<00:23:56.530><c> and</c><00:23:56.800><c> t3</c><00:23:56.980><c> the</c><00:23:57.310><c> three</c><00:23:57.550><c> of</c><00:23:57.640><c> them</c><00:23:58.080><c> -</c><00:24:02.790><c> we</c><00:24:03.790><c> have</c>
+
+00:24:04.020 --> 00:24:04.030 align:start position:0%
+t2 and t3 the three of them - we have
+ 
+
+00:24:04.030 --> 00:24:11.490 align:start position:0%
+t2 and t3 the three of them - we have
+that<00:24:04.210><c> the</c><00:24:04.780><c> limit</c><00:24:05.290><c> of</c><00:24:06.060><c> G</c><00:24:07.060><c> super</c><00:24:07.840><c> T</c><00:24:08.710><c> of</c><00:24:09.040><c> P</c><00:24:09.700><c> 1</c><00:24:10.120><c> 0</c><00:24:10.720><c> P</c><00:24:11.470><c> 2</c>
+
+00:24:11.490 --> 00:24:11.500 align:start position:0%
+that the limit of G super T of P 1 0 P 2
+ 
+
+00:24:11.500 --> 00:24:18.990 align:start position:0%
+that the limit of G super T of P 1 0 P 2
+0<00:24:11.980><c> 3</c><00:24:12.900><c> 0</c><00:24:13.900><c> so</c><00:24:14.590><c> this</c><00:24:14.740><c> is</c><00:24:14.950><c> the</c><00:24:18.000><c> probability</c>
+
+00:24:18.990 --> 00:24:19.000 align:start position:0%
+0 3 0 so this is the probability
+ 
+
+00:24:19.000 --> 00:24:24.560 align:start position:0%
+0 3 0 so this is the probability
+distribution<00:24:19.270><c> time</c><00:24:19.870><c> T</c><00:24:20.140><c> is</c><00:24:20.710><c> simply</c><00:24:21.340><c> equal</c><00:24:21.700><c> to</c><00:24:22.890><c> G</c>
+
+00:24:24.560 --> 00:24:24.570 align:start position:0%
+distribution time T is simply equal to G
+ 
+
+00:24:24.570 --> 00:24:26.850 align:start position:0%
+distribution time T is simply equal to G
+single<00:24:25.570><c> power</c><00:24:25.750><c> because</c><00:24:26.320><c> you</c><00:24:26.440><c> know</c><00:24:26.560><c> for</c>
+
+00:24:26.850 --> 00:24:26.860 align:start position:0%
+single power because you know for
+ 
+
+00:24:26.860 --> 00:24:32.150 align:start position:0%
+single power because you know for
+anything<00:24:27.130><c> it's</c><00:24:27.610><c> equal</c><00:24:27.910><c> G</c><00:24:28.120><c> of</c><00:24:28.410><c> T</c><00:24:29.410><c> 1</c><00:24:29.620><c> 0</c><00:24:30.240><c> into</c><00:24:31.240><c> 0</c><00:24:31.300><c> is</c>
+
+00:24:32.150 --> 00:24:32.160 align:start position:0%
+anything it's equal G of T 1 0 into 0 is
+ 
+
+00:24:32.160 --> 00:24:35.640 align:start position:0%
+anything it's equal G of T 1 0 into 0 is
+race<00:24:33.160><c> alone</c><00:24:33.460><c> and</c><00:24:34.050><c> if</c><00:24:35.050><c> you</c><00:24:35.200><c> remember</c><00:24:35.410><c> what</c>
+
+00:24:35.640 --> 00:24:35.650 align:start position:0%
+race alone and if you remember what
+ 
+
+00:24:35.650 --> 00:24:37.800 align:start position:0%
+race alone and if you remember what
+chimp<00:24:35.920><c> lady</c><00:24:36.070><c> looks</c><00:24:36.460><c> like</c><00:24:36.670><c> it's</c><00:24:37.330><c> very</c><00:24:37.390><c> easy</c><00:24:37.720><c> to</c>
+
+00:24:37.800 --> 00:24:37.810 align:start position:0%
+chimp lady looks like it's very easy to
+ 
+
+00:24:37.810 --> 00:24:40.050 align:start position:0%
+chimp lady looks like it's very easy to
+see<00:24:38.080><c> it</c><00:24:38.530><c> is</c><00:24:38.710><c> equal</c><00:24:39.070><c> to</c><00:24:39.220><c> what's</c><00:24:39.730><c> the</c><00:24:39.850><c> first</c>
+
+00:24:40.050 --> 00:24:40.060 align:start position:0%
+see it is equal to what's the first
+ 
+
+00:24:40.060 --> 00:24:46.250 align:start position:0%
+see it is equal to what's the first
+component<00:24:40.720><c> if</c><00:24:41.500><c> I</c><00:24:41.620><c> apply</c><00:24:41.830><c> this</c><00:24:41.890><c> G</c><00:24:42.220><c> to</c><00:24:42.370><c> this</c>
+
+00:24:46.250 --> 00:24:46.260 align:start position:0%
+ 
+ 
+
+00:24:46.260 --> 00:24:48.210 align:start position:0%
+ 
+victim<00:24:47.260><c> without</c><00:24:47.380><c> the</c><00:24:47.650><c> visa</c><00:24:48.010><c> and</c>
+
+00:24:48.210 --> 00:24:48.220 align:start position:0%
+victim without the visa and
+ 
+
+00:24:48.220 --> 00:24:54.690 align:start position:0%
+victim without the visa and
+hard-of-hearing<00:24:52.950><c> it's</c><00:24:53.950><c> not</c><00:24:54.130><c> like</c><00:24:54.280><c> before</c><00:24:54.580><c> you</c>
+
+00:24:54.690 --> 00:24:54.700 align:start position:0%
+hard-of-hearing it's not like before you
+ 
+
+00:24:54.700 --> 00:24:56.360 align:start position:0%
+hard-of-hearing it's not like before you
+do<00:24:54.850><c> the</c><00:24:54.910><c> calculation</c><00:24:55.480><c> what</c><00:24:55.720><c> happens</c><00:24:56.050><c> if</c><00:24:56.170><c> I</c>
+
+00:24:56.360 --> 00:24:56.370 align:start position:0%
+do the calculation what happens if I
+ 
+
+00:24:56.370 --> 00:25:02.160 align:start position:0%
+do the calculation what happens if I
+yeah<00:24:57.370><c> that's</c><00:24:57.580><c> like</c><00:24:57.730><c> p1</c><00:24:58.210><c> 0</c><00:24:59.200><c> plus</c><00:24:59.500><c> P</c><00:24:59.710><c> 2</c><00:24:59.890><c> 0</c><00:25:00.960><c> plus</c><00:25:01.960><c> P</c>
+
+00:25:02.160 --> 00:25:02.170 align:start position:0%
+yeah that's like p1 0 plus P 2 0 plus P
+ 
+
+00:25:02.170 --> 00:25:06.270 align:start position:0%
+yeah that's like p1 0 plus P 2 0 plus P
+3<00:25:02.200><c> 0</c><00:25:02.620><c> yes</c><00:25:03.300><c> and</c><00:25:04.300><c> house</c><00:25:04.600><c> where</c><00:25:04.840><c> you</c><00:25:05.530><c> get</c><00:25:05.680><c> to</c><00:25:05.800><c> 0</c><00:25:06.070><c> and</c>
+
+00:25:06.270 --> 00:25:06.280 align:start position:0%
+3 0 yes and house where you get to 0 and
+ 
+
+00:25:06.280 --> 00:25:09.090 align:start position:0%
+3 0 yes and house where you get to 0 and
+0<00:25:06.490><c> but</c><00:25:07.450><c> what</c><00:25:07.630><c> is</c><00:25:07.810><c> this</c><00:25:07.960><c> term</c><00:25:08.170><c> is</c><00:25:08.440><c> of</c><00:25:08.620><c> course</c><00:25:08.860><c> 1</c>
+
+00:25:09.090 --> 00:25:09.100 align:start position:0%
+0 but what is this term is of course 1
+ 
+
+00:25:09.100 --> 00:25:13.140 align:start position:0%
+0 but what is this term is of course 1
+because<00:25:09.580><c> you</c><00:25:10.300><c> know</c><00:25:10.450><c> I</c><00:25:11.760><c> am</c><00:25:12.760><c> talking</c><00:25:13.120><c> about</c>
+
+00:25:13.140 --> 00:25:13.150 align:start position:0%
+because you know I am talking about
+ 
+
+00:25:13.150 --> 00:25:16.440 align:start position:0%
+because you know I am talking about
+probabilities<00:25:13.750><c> so</c><00:25:14.050><c> this</c><00:25:14.290><c> is</c><00:25:14.410><c> equal</c><00:25:14.710><c> to</c><00:25:14.890><c> 1</c><00:25:15.850><c> 0</c><00:25:15.880><c> 0</c>
+
+00:25:16.440 --> 00:25:16.450 align:start position:0%
+probabilities so this is equal to 1 0 0
+ 
+
+00:25:16.450 --> 00:25:19.110 align:start position:0%
+probabilities so this is equal to 1 0 0
+so<00:25:17.050><c> you</c><00:25:17.110><c> see</c><00:25:17.470><c> that</c><00:25:17.620><c> the</c><00:25:17.860><c> fixed</c><00:25:18.250><c> point</c><00:25:18.490><c> is</c><00:25:18.760><c> the</c>
+
+00:25:19.110 --> 00:25:19.120 align:start position:0%
+so you see that the fixed point is the
+ 
+
+00:25:19.120 --> 00:25:22.710 align:start position:0%
+so you see that the fixed point is the
+limited<00:25:19.510><c> distribution</c><00:25:20.880><c> the</c><00:25:21.880><c> limit</c><00:25:22.270><c> is</c><00:25:22.540><c> the</c>
+
+00:25:22.710 --> 00:25:22.720 align:start position:0%
+limited distribution the limit is the
+ 
+
+00:25:22.720 --> 00:25:29.289 align:start position:0%
+limited distribution the limit is the
+fixed<00:25:22.990><c> point</c><00:25:24.240><c> so</c><00:25:25.240><c> this</c><00:25:25.720><c> is</c><00:25:25.870><c> what</c>
+
+00:25:29.289 --> 00:25:29.299 align:start position:0%
+ 
+ 
+
+00:25:29.299 --> 00:25:32.240 align:start position:0%
+ 
+let<00:25:30.299><c> us</c><00:25:30.450><c> discuss</c><00:25:30.690><c> another</c><00:25:31.470><c> example</c><00:25:32.070><c> which</c><00:25:32.220><c> is</c>
+
+00:25:32.240 --> 00:25:32.250 align:start position:0%
+let us discuss another example which is
+ 
+
+00:25:32.250 --> 00:25:35.149 align:start position:0%
+let us discuss another example which is
+only<00:25:32.610><c> slightly</c><00:25:32.970><c> more</c><00:25:33.330><c> complicated</c><00:25:33.919><c> but</c><00:25:34.919><c> not</c>
+
+00:25:35.149 --> 00:25:35.159 align:start position:0%
+only slightly more complicated but not
+ 
+
+00:25:35.159 --> 00:26:00.520 align:start position:0%
+only slightly more complicated but not
+so<00:25:35.429><c> trained</c><00:25:36.330><c> and</c><00:25:37.080><c> this</c><00:25:37.259><c> is</c><00:25:37.440><c> elastic</c>
+
+00:26:00.520 --> 00:26:00.530 align:start position:0%
+ 
+ 
+
+00:26:00.530 --> 00:26:09.920 align:start position:0%
+ 
+example<00:26:01.530><c> 19</c><00:26:05.360><c> let's</c><00:26:06.360><c> now</c><00:26:07.280><c> discuss</c><00:26:08.280><c> a</c><00:26:08.930><c> system</c>
+
+00:26:09.920 --> 00:26:09.930 align:start position:0%
+example 19 let's now discuss a system
+ 
+
+00:26:09.930 --> 00:26:16.850 align:start position:0%
+example 19 let's now discuss a system
+with<00:26:10.170><c> only</c><00:26:10.380><c> two</c><00:26:10.770><c> states</c><00:26:12.740><c> state</c><00:26:13.740><c> 1</c><00:26:14.010><c> state</c><00:26:15.410><c> 2</c>
+
+00:26:16.850 --> 00:26:16.860 align:start position:0%
+with only two states state 1 state 2
+ 
+
+00:26:16.860 --> 00:26:22.310 align:start position:0%
+with only two states state 1 state 2
+okay<00:26:18.200><c> and</c><00:26:20.390><c> will</c><00:26:21.390><c> not</c><00:26:21.690><c> make</c><00:26:21.960><c> it</c>
+
+00:26:22.310 --> 00:26:22.320 align:start position:0%
+okay and will not make it
+ 
+
+00:26:22.320 --> 00:26:24.140 align:start position:0%
+okay and will not make it
+deterministic<00:26:22.890><c> and</c><00:26:23.280><c> Bob</c><00:26:23.490><c> will</c><00:26:23.820><c> make</c><00:26:24.000><c> it</c>
+
+00:26:24.140 --> 00:26:24.150 align:start position:0%
+deterministic and Bob will make it
+ 
+
+00:26:24.150 --> 00:26:27.070 align:start position:0%
+deterministic and Bob will make it
+probably<00:26:24.570><c> stick</c><00:26:24.780><c> let's</c><00:26:25.620><c> say</c><00:26:25.920><c> that</c><00:26:26.220><c> state</c><00:26:26.520><c> 1</c>
+
+00:26:27.070 --> 00:26:27.080 align:start position:0%
+probably stick let's say that state 1
+ 
+
+00:26:27.080 --> 00:26:30.100 align:start position:0%
+probably stick let's say that state 1
+jumps<00:26:28.080><c> to</c><00:26:28.200><c> stay</c><00:26:28.380><c> tuned</c><00:26:28.770><c> with</c><00:26:29.160><c> the</c><00:26:29.190><c> property</c>
+
+00:26:30.100 --> 00:26:30.110 align:start position:0%
+jumps to stay tuned with the property
+ 
+
+00:26:30.110 --> 00:26:37.640 align:start position:0%
+jumps to stay tuned with the property
+3/4<00:26:34.400><c> okay</c><00:26:35.400><c> and</c><00:26:35.580><c> state</c><00:26:36.270><c> 2</c><00:26:36.600><c> jumps</c><00:26:37.110><c> the</c><00:26:37.260><c> state</c><00:26:37.440><c> 1</c>
+
+00:26:37.640 --> 00:26:37.650 align:start position:0%
+3/4 okay and state 2 jumps the state 1
+ 
+
+00:26:37.650 --> 00:26:45.710 align:start position:0%
+3/4 okay and state 2 jumps the state 1
+with<00:26:38.580><c> poverty</c><00:26:38.970><c> 1/3</c><00:26:41.840><c> in</c><00:26:42.840><c> that</c><00:26:43.080><c> case</c><00:26:44.300><c> the</c><00:26:45.300><c> chemo</c>
+
+00:26:45.710 --> 00:26:45.720 align:start position:0%
+with poverty 1/3 in that case the chemo
+ 
+
+00:26:45.720 --> 00:26:48.620 align:start position:0%
+with poverty 1/3 in that case the chemo
+arrows<00:26:46.110><c> here</c><00:26:46.610><c> 2</c><00:26:47.610><c> goes</c><00:26:47.790><c> to</c><00:26:47.850><c> stay</c><00:26:48.180><c> tuned</c><00:26:48.420><c> and</c>
+
+00:26:48.620 --> 00:26:48.630 align:start position:0%
+arrows here 2 goes to stay tuned and
+ 
+
+00:26:48.630 --> 00:26:51.350 align:start position:0%
+arrows here 2 goes to stay tuned and
+spectral<00:26:49.050><c> goes</c><00:26:49.260><c> to</c><00:26:49.410><c> state</c><00:26:49.590><c> 1</c><00:26:50.150><c> what</c><00:26:51.150><c> is</c><00:26:51.180><c> the</c>
+
+00:26:51.350 --> 00:26:51.360 align:start position:0%
+spectral goes to state 1 what is the
+ 
+
+00:26:51.360 --> 00:26:54.070 align:start position:0%
+spectral goes to state 1 what is the
+probability<00:26:51.480><c> assigned</c><00:26:52.350><c> to</c><00:26:52.470><c> this</c><00:26:52.590><c> our</c>
+
+00:26:54.070 --> 00:26:54.080 align:start position:0%
+probability assigned to this our
+ 
+
+00:26:54.080 --> 00:26:58.670 align:start position:0%
+probability assigned to this our
+workforce<00:26:55.080><c> because</c><00:26:56.450><c> this</c><00:26:57.450><c> and</c><00:26:57.780><c> this</c><00:26:57.990><c> must</c>
+
+00:26:58.670 --> 00:26:58.680 align:start position:0%
+workforce because this and this must
+ 
+
+00:26:58.680 --> 00:27:00.380 align:start position:0%
+workforce because this and this must
+account<00:26:59.010><c> for</c><00:26:59.130><c> the</c><00:26:59.370><c> possibilities</c><00:26:59.910><c> and</c><00:27:00.120><c> here</c>
+
+00:27:00.380 --> 00:27:00.390 align:start position:0%
+account for the possibilities and here
+ 
+
+00:27:00.390 --> 00:27:06.110 align:start position:0%
+account for the possibilities and here
+is<00:27:00.660><c> 2/3</c><00:27:03.020><c> easy</c><00:27:04.020><c> enough</c><00:27:04.610><c> let's</c><00:27:05.610><c> cause</c><00:27:05.820><c> that</c><00:27:06.000><c> is</c>
+
+00:27:06.110 --> 00:27:06.120 align:start position:0%
+is 2/3 easy enough let's cause that is
+ 
+
+00:27:06.120 --> 00:27:08.630 align:start position:0%
+is 2/3 easy enough let's cause that is
+Markov<00:27:06.510><c> chain</c><00:27:06.720><c> the</c><00:27:07.500><c> transition</c><00:27:08.340><c> or</c><00:27:08.580><c> the</c>
+
+00:27:08.630 --> 00:27:08.640 align:start position:0%
+Markov chain the transition or the
+ 
+
+00:27:08.640 --> 00:27:17.380 align:start position:0%
+Markov chain the transition or the
+generator<00:27:09.120><c> matrix</c><00:27:09.630><c> simply</c><00:27:10.470><c> looks</c><00:27:10.680><c> like</c><00:27:10.830><c> this</c>
+
+00:27:17.380 --> 00:27:17.390 align:start position:0%
+ 
+ 
+
+00:27:17.390 --> 00:27:25.520 align:start position:0%
+ 
+and<00:27:18.390><c> this</c><00:27:18.570><c> is</c><00:27:18.780><c> 3/4</c><00:27:19.740><c> I</c><00:27:19.860><c> mean</c><00:27:20.070><c> I</c><00:27:20.220><c> think</c><00:27:22.550><c> ok</c><00:27:24.530><c> you</c>
+
+00:27:25.520 --> 00:27:25.530 align:start position:0%
+and this is 3/4 I mean I think ok you
+ 
+
+00:27:25.530 --> 00:27:27.350 align:start position:0%
+and this is 3/4 I mean I think ok you
+might<00:27:25.680><c> have</c><00:27:25.890><c> noticed</c><00:27:26.280><c> that</c><00:27:26.460><c> if</c><00:27:26.790><c> you</c><00:27:26.970><c> take</c><00:27:27.180><c> the</c>
+
+00:27:27.350 --> 00:27:27.360 align:start position:0%
+might have noticed that if you take the
+ 
+
+00:27:27.360 --> 00:27:30.350 align:start position:0%
+might have noticed that if you take the
+generator<00:27:27.720><c> and</c><00:27:28.200><c> add</c><00:27:28.640><c> each</c><00:27:29.640><c> column</c><00:27:30.090><c> each</c>
+
+00:27:30.350 --> 00:27:30.360 align:start position:0%
+generator and add each column each
+ 
+
+00:27:30.360 --> 00:27:32.930 align:start position:0%
+generator and add each column each
+column<00:27:30.720><c> adds</c><00:27:30.840><c> up</c><00:27:31.020><c> to</c><00:27:31.050><c> one</c><00:27:31.260><c> and</c><00:27:32.250><c> that's</c><00:27:32.850><c> because</c>
+
+00:27:32.930 --> 00:27:32.940 align:start position:0%
+column adds up to one and that's because
+ 
+
+00:27:32.940 --> 00:27:35.080 align:start position:0%
+column adds up to one and that's because
+we<00:27:33.300><c> are</c><00:27:33.360><c> talking</c><00:27:33.510><c> about</c><00:27:33.690><c> probabilities</c>
+
+00:27:35.080 --> 00:27:35.090 align:start position:0%
+we are talking about probabilities
+ 
+
+00:27:35.090 --> 00:27:36.280 align:start position:0%
+we are talking about probabilities
+excellent
+
+00:27:36.280 --> 00:27:36.290 align:start position:0%
+excellent
+ 
+
+00:27:36.290 --> 00:27:39.910 align:start position:0%
+excellent
+what<00:27:37.290><c> is</c><00:27:37.440><c> a</c><00:27:37.470><c> fixed</c><00:27:37.860><c> point</c><00:27:38.040><c> of</c><00:27:38.340><c> this</c><00:27:38.610><c> matrix</c>
+
+00:27:39.910 --> 00:27:39.920 align:start position:0%
+what is a fixed point of this matrix
+ 
+
+00:27:39.920 --> 00:27:46.520 align:start position:0%
+what is a fixed point of this matrix
+it's<00:27:40.920><c> not</c><00:27:41.130><c> easy</c><00:27:41.370><c> to</c><00:27:41.610><c> see</c><00:27:42.320><c> how</c><00:27:43.320><c> about</c><00:27:45.290><c> maybe</c><00:27:46.290><c> the</c>
+
+00:27:46.520 --> 00:27:46.530 align:start position:0%
+it's not easy to see how about maybe the
+ 
+
+00:27:46.530 --> 00:27:48.260 align:start position:0%
+it's not easy to see how about maybe the
+fixed<00:27:46.770><c> point</c><00:27:46.950><c> is</c><00:27:47.100><c> not</c><00:27:47.220><c> easy</c><00:27:47.460><c> to</c><00:27:47.580><c> see</c><00:27:47.790><c> but</c><00:27:48.030><c> you</c>
+
+00:27:48.260 --> 00:27:48.270 align:start position:0%
+fixed point is not easy to see but you
+ 
+
+00:27:48.270 --> 00:27:51.860 align:start position:0%
+fixed point is not easy to see but you
+can<00:27:48.680><c> find</c><00:27:49.680><c> out</c><00:27:49.920><c> by</c><00:27:50.190><c> calculation</c><00:27:50.870><c> certainly</c>
+
+00:27:51.860 --> 00:27:51.870 align:start position:0%
+can find out by calculation certainly
+ 
+
+00:27:51.870 --> 00:27:54.200 align:start position:0%
+can find out by calculation certainly
+right<00:27:52.050><c> what</c><00:27:52.920><c> you're</c><00:27:53.100><c> doing</c><00:27:53.340><c> is</c><00:27:53.580><c> you</c><00:27:54.000><c> apply</c>
+
+00:27:54.200 --> 00:27:54.210 align:start position:0%
+right what you're doing is you apply
+ 
+
+00:27:54.210 --> 00:27:56.270 align:start position:0%
+right what you're doing is you apply
+this<00:27:54.300><c> to</c><00:27:54.570><c> P</c><00:27:54.720><c> 1</c><00:27:54.840><c> P</c><00:27:55.020><c> 2</c><00:27:55.050><c> and</c><00:27:55.530><c> it</c><00:27:55.800><c> should</c><00:27:55.980><c> be</c><00:27:56.100><c> equal</c>
+
+00:27:56.270 --> 00:27:56.280 align:start position:0%
+this to P 1 P 2 and it should be equal
+ 
+
+00:27:56.280 --> 00:27:59.520 align:start position:0%
+this to P 1 P 2 and it should be equal
+to<00:27:56.490><c> P</c><00:27:56.610><c> 1</c><00:27:56.700><c> P</c><00:27:56.880><c> 2</c><00:27:56.910><c> you</c><00:27:57.660><c> have</c><00:27:57.840><c> two</c><00:27:58.110><c> equations</c><00:27:58.590><c> two</c>
+
+00:27:59.520 --> 00:27:59.530 align:start position:0%
+to P 1 P 2 you have two equations two
+ 
+
+00:27:59.530 --> 00:28:01.470 align:start position:0%
+to P 1 P 2 you have two equations two
+we<00:27:59.830><c> can</c><00:27:59.980><c> certainly</c><00:28:00.220><c> find</c><00:28:00.490><c> what</c><00:28:00.760><c> P</c><00:28:00.970><c> 1</c><00:28:01.120><c> and</c><00:28:01.210><c> P</c><00:28:01.330><c> 2</c>
+
+00:28:01.470 --> 00:28:01.480 align:start position:0%
+we can certainly find what P 1 and P 2
+ 
+
+00:28:01.480 --> 00:28:04.800 align:start position:0%
+we can certainly find what P 1 and P 2
+are<00:28:01.830><c> effectively</c><00:28:02.830><c> at</c><00:28:03.640><c> the</c><00:28:04.270><c> calculation</c><00:28:04.750><c> you</c>
+
+00:28:04.800 --> 00:28:04.810 align:start position:0%
+are effectively at the calculation you
+ 
+
+00:28:04.810 --> 00:28:06.360 align:start position:0%
+are effectively at the calculation you
+are<00:28:04.900><c> doing</c><00:28:05.200><c> is</c><00:28:05.410><c> exactly</c><00:28:06.010><c> the</c><00:28:06.220><c> same</c>
+
+00:28:06.360 --> 00:28:06.370 align:start position:0%
+are doing is exactly the same
+ 
+
+00:28:06.370 --> 00:28:08.880 align:start position:0%
+are doing is exactly the same
+calculation<00:28:06.580><c> as</c><00:28:07.210><c> the</c><00:28:08.050><c> one</c><00:28:08.200><c> for</c><00:28:08.440><c> finding</c>
+
+00:28:08.880 --> 00:28:08.890 align:start position:0%
+calculation as the one for finding
+ 
+
+00:28:08.890 --> 00:28:11.850 align:start position:0%
+calculation as the one for finding
+eigenvectors<00:28:09.670><c> and</c><00:28:09.820><c> eigenvalues</c><00:28:10.590><c> you</c><00:28:11.590><c> must</c>
+
+00:28:11.850 --> 00:28:11.860 align:start position:0%
+eigenvectors and eigenvalues you must
+ 
+
+00:28:11.860 --> 00:28:14.610 align:start position:0%
+eigenvectors and eigenvalues you must
+have<00:28:12.010><c> done</c><00:28:12.190><c> such</c><00:28:12.460><c> calculations</c><00:28:12.700><c> up</c><00:28:13.620><c> enough</c>
+
+00:28:14.610 --> 00:28:14.620 align:start position:0%
+have done such calculations up enough
+ 
+
+00:28:14.620 --> 00:28:16.410 align:start position:0%
+have done such calculations up enough
+number<00:28:15.010><c> of</c><00:28:15.070><c> times</c><00:28:15.340><c> in</c><00:28:15.760><c> your</c><00:28:15.970><c> undergraduate</c>
+
+00:28:16.410 --> 00:28:16.420 align:start position:0%
+number of times in your undergraduate
+ 
+
+00:28:16.420 --> 00:28:18.480 align:start position:0%
+number of times in your undergraduate
+days<00:28:16.690><c> when</c><00:28:17.260><c> you</c><00:28:17.410><c> learn</c><00:28:17.560><c> linear</c><00:28:18.010><c> algebra</c>
+
+00:28:18.480 --> 00:28:18.490 align:start position:0%
+days when you learn linear algebra
+ 
+
+00:28:18.490 --> 00:28:21.840 align:start position:0%
+days when you learn linear algebra
+matrix<00:28:19.060><c> theorem</c><00:28:19.450><c> so</c><00:28:19.660><c> well</c><00:28:20.320><c> this</c><00:28:21.160><c> is</c><00:28:21.400><c> the</c><00:28:21.580><c> kind</c>
+
+00:28:21.840 --> 00:28:21.850 align:start position:0%
+matrix theorem so well this is the kind
+ 
+
+00:28:21.850 --> 00:28:26.610 align:start position:0%
+matrix theorem so well this is the kind
+of<00:28:22.030><c> problem</c><00:28:22.270><c> where</c><00:28:22.780><c> it's</c><00:28:22.990><c> used</c><00:28:25.230><c> it</c><00:28:26.230><c> actually</c>
+
+00:28:26.610 --> 00:28:26.620 align:start position:0%
+of problem where it's used it actually
+ 
+
+00:28:26.620 --> 00:28:29.880 align:start position:0%
+of problem where it's used it actually
+has<00:28:26.740><c> a</c><00:28:26.770><c> meaning</c><00:28:27.100><c> and</c><00:28:27.420><c> I</c><00:28:28.420><c> did</c><00:28:29.230><c> this</c><00:28:29.380><c> situation</c>
+
+00:28:29.880 --> 00:28:29.890 align:start position:0%
+has a meaning and I did this situation
+ 
+
+00:28:29.890 --> 00:28:32.670 align:start position:0%
+has a meaning and I did this situation
+at<00:28:30.010><c> home</c><00:28:30.250><c> and</c><00:28:30.610><c> if</c><00:28:30.970><c> I'm</c><00:28:31.120><c> not</c><00:28:31.270><c> mistaking</c><00:28:31.390><c> for</c><00:28:32.140><c> 13</c>
+
+00:28:32.670 --> 00:28:32.680 align:start position:0%
+at home and if I'm not mistaking for 13
+ 
+
+00:28:32.680 --> 00:28:46.099 align:start position:0%
+at home and if I'm not mistaking for 13
+and<00:28:33.240><c> 9</c><00:28:34.240><c> 13</c><00:28:35.550><c> is</c><00:28:36.550><c> a</c><00:28:36.610><c> fixed</c>
+
+00:28:46.099 --> 00:28:46.109 align:start position:0%
+ 
+ 
+
+00:28:46.109 --> 00:28:49.219 align:start position:0%
+ 
+and<00:28:46.319><c> you</c><00:28:46.529><c> can</c><00:28:46.679><c> trust</c><00:28:46.889><c> me</c><00:28:47.569><c> your</c><00:28:48.569><c> life</c><00:28:48.779><c> is</c><00:28:48.929><c> short</c>
+
+00:28:49.219 --> 00:28:49.229 align:start position:0%
+and you can trust me your life is short
+ 
+
+00:28:49.229 --> 00:28:51.919 align:start position:0%
+and you can trust me your life is short
+so<00:28:49.439><c> it's</c><00:28:49.739><c> mine</c><00:28:49.979><c> but</c><00:28:50.309><c> I</c><00:28:50.519><c> devoted</c><00:28:51.329><c> some</c><00:28:51.629><c> of</c><00:28:51.749><c> my</c>
+
+00:28:51.919 --> 00:28:51.929 align:start position:0%
+so it's mine but I devoted some of my
+ 
+
+00:28:51.929 --> 00:28:55.969 align:start position:0%
+so it's mine but I devoted some of my
+life<00:28:52.139><c> to</c><00:28:53.039><c> make</c><00:28:53.309><c> your</c><00:28:53.669><c> life</c><00:28:53.849><c> more</c><00:28:54.059><c> you</c><00:28:54.209><c> but</c><00:28:55.019><c> now</c>
+
+00:28:55.969 --> 00:28:55.979 align:start position:0%
+life to make your life more you but now
+ 
+
+00:28:55.979 --> 00:29:00.889 align:start position:0%
+life to make your life more you but now
+I<00:28:56.279><c> do</c><00:28:56.429><c> have</c><00:28:56.849><c> one</c><00:28:57.089><c> comment</c><00:28:57.599><c> about</c><00:28:58.019><c> this</c><00:28:59.749><c> to</c><00:29:00.749><c> say</c>
+
+00:29:00.889 --> 00:29:00.899 align:start position:0%
+I do have one comment about this to say
+ 
+
+00:29:00.899 --> 00:29:02.419 align:start position:0%
+I do have one comment about this to say
+that<00:29:01.049><c> it's</c><00:29:01.199><c> a</c><00:29:01.259><c> fixed</c><00:29:01.409><c> amount</c><00:29:01.529><c> means</c><00:29:01.979><c> that</c><00:29:02.159><c> if</c><00:29:02.309><c> I</c>
+
+00:29:02.419 --> 00:29:02.429 align:start position:0%
+that it's a fixed amount means that if I
+ 
+
+00:29:02.429 --> 00:29:05.779 align:start position:0%
+that it's a fixed amount means that if I
+apply<00:29:02.549><c> G</c><00:29:02.939><c> this</c><00:29:03.749><c> factor</c><00:29:04.109><c> becomes</c><00:29:04.199><c> itself</c><00:29:04.789><c> but</c>
+
+00:29:05.779 --> 00:29:05.789 align:start position:0%
+apply G this factor becomes itself but
+ 
+
+00:29:05.789 --> 00:29:09.889 align:start position:0%
+apply G this factor becomes itself but
+money<00:29:06.059><c> I</c><00:29:06.449><c> take</c><00:29:06.959><c> twice</c><00:29:07.469><c> this</c><00:29:07.709><c> vector</c><00:29:08.899><c> what's</c>
+
+00:29:09.889 --> 00:29:09.899 align:start position:0%
+money I take twice this vector what's
+ 
+
+00:29:09.899 --> 00:29:12.229 align:start position:0%
+money I take twice this vector what's
+going<00:29:10.049><c> to</c><00:29:10.079><c> happen</c><00:29:10.319><c> if</c><00:29:10.499><c> I</c><00:29:10.649><c> apply</c><00:29:10.679><c> G</c><00:29:11.129><c> well</c><00:29:12.059><c> it's</c>
+
+00:29:12.229 --> 00:29:12.239 align:start position:0%
+going to happen if I apply G well it's
+ 
+
+00:29:12.239 --> 00:29:15.799 align:start position:0%
+going to happen if I apply G well it's
+going<00:29:12.419><c> to</c><00:29:12.509><c> be</c><00:29:12.629><c> twice</c><00:29:12.989><c> this</c><00:29:13.229><c> vector</c><00:29:13.559><c> -</c><00:29:14.149><c> yes</c><00:29:15.149><c> so</c>
+
+00:29:15.799 --> 00:29:15.809 align:start position:0%
+going to be twice this vector - yes so
+ 
+
+00:29:15.809 --> 00:29:19.099 align:start position:0%
+going to be twice this vector - yes so
+that's<00:29:16.139><c> also</c><00:29:16.379><c> a</c><00:29:16.559><c> fixed</c><00:29:16.769><c> point</c><00:29:17.779><c> that's</c><00:29:18.779><c> also</c><00:29:19.019><c> a</c>
+
+00:29:19.099 --> 00:29:19.109 align:start position:0%
+that's also a fixed point that's also a
+ 
+
+00:29:19.109 --> 00:29:22.249 align:start position:0%
+that's also a fixed point that's also a
+fixed<00:29:19.259><c> point</c><00:29:19.559><c> and</c><00:29:19.979><c> so</c><00:29:20.309><c> on</c><00:29:20.989><c> yes</c>
+
+00:29:22.249 --> 00:29:22.259 align:start position:0%
+fixed point and so on yes
+ 
+
+00:29:22.259 --> 00:29:25.999 align:start position:0%
+fixed point and so on yes
+in<00:29:23.189><c> particular</c><00:29:23.639><c> for</c><00:29:24.259><c> nine</c><00:29:25.259><c> that's</c><00:29:25.679><c> a</c><00:29:25.829><c> fixed</c>
+
+00:29:25.999 --> 00:29:26.009 align:start position:0%
+in particular for nine that's a fixed
+ 
+
+00:29:26.009 --> 00:29:30.439 align:start position:0%
+in particular for nine that's a fixed
+point<00:29:26.249><c> of</c><00:29:26.519><c> this</c><00:29:27.509><c> matrix</c><00:29:28.189><c> why</c><00:29:29.189><c> it's</c><00:29:30.119><c> one</c><00:29:30.269><c> rather</c>
+
+00:29:30.439 --> 00:29:30.449 align:start position:0%
+point of this matrix why it's one rather
+ 
+
+00:29:30.449 --> 00:29:34.639 align:start position:0%
+point of this matrix why it's one rather
+than<00:29:30.569><c> this</c><00:29:30.779><c> one</c><00:29:32.299><c> exactly</c><00:29:33.299><c> because</c><00:29:33.629><c> those</c><00:29:34.409><c> are</c>
+
+00:29:34.639 --> 00:29:34.649 align:start position:0%
+than this one exactly because those are
+ 
+
+00:29:34.649 --> 00:29:36.799 align:start position:0%
+than this one exactly because those are
+supposed<00:29:34.799><c> to</c><00:29:35.009><c> be</c><00:29:35.099><c> probabilities</c><00:29:35.729><c> it's</c><00:29:36.569><c> nice</c>
+
+00:29:36.799 --> 00:29:36.809 align:start position:0%
+supposed to be probabilities it's nice
+ 
+
+00:29:36.809 --> 00:29:39.379 align:start position:0%
+supposed to be probabilities it's nice
+that<00:29:36.839><c> I</c><00:29:37.349><c> find</c><00:29:37.979><c> a</c><00:29:38.039><c> fixed</c><00:29:38.249><c> point</c><00:29:38.279><c> with</c><00:29:38.759><c> positive</c>
+
+00:29:39.379 --> 00:29:39.389 align:start position:0%
+that I find a fixed point with positive
+ 
+
+00:29:39.389 --> 00:29:41.899 align:start position:0%
+that I find a fixed point with positive
+entries<00:29:39.719><c> but</c><00:29:40.019><c> also</c><00:29:40.289><c> the</c><00:29:40.859><c> entries</c><00:29:41.339><c> must</c><00:29:41.579><c> adapt</c>
+
+00:29:41.899 --> 00:29:41.909 align:start position:0%
+entries but also the entries must adapt
+ 
+
+00:29:41.909 --> 00:29:46.729 align:start position:0%
+entries but also the entries must adapt
+one<00:29:42.949><c> that's</c><00:29:43.949><c> why</c><00:29:44.219><c> I</c><00:29:44.249><c> divided</c><00:29:44.969><c> by</c><00:29:45.059><c> thirteen</c><00:29:45.739><c> so</c>
+
+00:29:46.729 --> 00:29:46.739 align:start position:0%
+one that's why I divided by thirteen so
+ 
+
+00:29:46.739 --> 00:29:48.139 align:start position:0%
+one that's why I divided by thirteen so
+what<00:29:46.889><c> happened</c><00:29:47.279><c> when</c><00:29:47.399><c> I</c><00:29:47.429><c> did</c><00:29:47.519><c> the</c><00:29:47.699><c> calculation</c>
+
+00:29:48.139 --> 00:29:48.149 align:start position:0%
+what happened when I did the calculation
+ 
+
+00:29:48.149 --> 00:29:51.199 align:start position:0%
+what happened when I did the calculation
+was<00:29:48.269><c> I</c><00:29:48.509><c> found</c><00:29:48.989><c> this</c><00:29:49.169><c> first</c><00:29:49.409><c> but</c><00:29:50.339><c> I</c><00:29:50.369><c> said</c><00:29:50.669><c> oh</c><00:29:50.909><c> we</c>
+
+00:29:51.199 --> 00:29:51.209 align:start position:0%
+was I found this first but I said oh we
+ 
+
+00:29:51.209 --> 00:29:53.269 align:start position:0%
+was I found this first but I said oh we
+have<00:29:51.239><c> normalized</c><00:29:51.959><c> make</c><00:29:52.499><c> them</c><00:29:52.679><c> probably</c><00:29:52.949><c> so</c>
+
+00:29:53.269 --> 00:29:53.279 align:start position:0%
+have normalized make them probably so
+ 
+
+00:29:53.279 --> 00:29:57.799 align:start position:0%
+have normalized make them probably so
+divided<00:29:53.759><c> by</c><00:29:53.849><c> something</c><00:29:54.409><c> okay</c><00:29:56.179><c> anyway</c><00:29:57.179><c> that's</c>
+
+00:29:57.799 --> 00:29:57.809 align:start position:0%
+divided by something okay anyway that's
+ 
+
+00:29:57.809 --> 00:30:01.299 align:start position:0%
+divided by something okay anyway that's
+a<00:29:57.899><c> fixed</c><00:29:58.079><c> point</c>
+
+00:30:01.299 --> 00:30:01.309 align:start position:0%
+ 
+ 
+
+00:30:01.309 --> 00:30:04.519 align:start position:0%
+ 
+therefore<00:30:02.309><c> we</c><00:30:02.969><c> know</c><00:30:03.149><c> from</c><00:30:03.359><c> the</c><00:30:04.049><c> general</c>
+
+00:30:04.519 --> 00:30:04.529 align:start position:0%
+therefore we know from the general
+ 
+
+00:30:04.529 --> 00:30:06.799 align:start position:0%
+therefore we know from the general
+theory<00:30:04.709><c> Markov</c><00:30:05.189><c> chains</c><00:30:05.489><c> and</c><00:30:05.789><c> Theory</c><00:30:06.329><c> theorem</c>
+
+00:30:06.799 --> 00:30:06.809 align:start position:0%
+theory Markov chains and Theory theorem
+ 
+
+00:30:06.809 --> 00:30:08.989 align:start position:0%
+theory Markov chains and Theory theorem
+particulate<00:30:07.259><c> we</c><00:30:07.469><c> proved</c><00:30:07.769><c> that</c><00:30:07.979><c> for</c><00:30:08.489><c> every</c>
+
+00:30:08.989 --> 00:30:08.999 align:start position:0%
+particulate we proved that for every
+ 
+
+00:30:08.999 --> 00:30:20.259 align:start position:0%
+particulate we proved that for every
+initial<00:30:09.419><c> distribution</c><00:30:15.019><c> even</c><00:30:16.019><c> zero</c><00:30:18.949><c> that</c><00:30:19.949><c> the</c>
+
+00:30:20.259 --> 00:30:20.269 align:start position:0%
+initial distribution even zero that the
+ 
+
+00:30:20.269 --> 00:30:25.879 align:start position:0%
+initial distribution even zero that the
+limit<00:30:21.269><c> as</c><00:30:21.449><c> time</c><00:30:22.079><c> goes</c><00:30:22.349><c> to</c><00:30:22.669><c> the</c><00:30:23.669><c> future</c><00:30:24.119><c> of</c><00:30:24.889><c> G</c>
+
+00:30:25.879 --> 00:30:25.889 align:start position:0%
+limit as time goes to the future of G
+ 
+
+00:30:25.889 --> 00:30:31.309 align:start position:0%
+limit as time goes to the future of G
+key<00:30:26.819><c> of</c><00:30:27.179><c> this</c><00:30:28.139><c> applied</c><00:30:28.859><c> to</c><00:30:28.889><c> the</c><00:30:29.249><c> same</c><00:30:30.319><c> initial</c>
+
+00:30:31.309 --> 00:30:31.319 align:start position:0%
+key of this applied to the same initial
+ 
+
+00:30:31.319 --> 00:30:32.929 align:start position:0%
+key of this applied to the same initial
+distribution<00:30:31.559><c> so</c><00:30:32.069><c> this</c><00:30:32.219><c> is</c><00:30:32.429><c> the</c><00:30:32.609><c> probability</c>
+
+00:30:32.929 --> 00:30:32.939 align:start position:0%
+distribution so this is the probability
+ 
+
+00:30:32.939 --> 00:30:37.359 align:start position:0%
+distribution so this is the probability
+of<00:30:33.389><c> being</c><00:30:33.749><c> States</c><00:30:34.139><c> one</c><00:30:34.529><c> or</c><00:30:34.709><c> two</c><00:30:34.919><c> at</c><00:30:35.339><c> time</c><00:30:35.699><c> T</c>
+
+00:30:37.359 --> 00:30:37.369 align:start position:0%
+of being States one or two at time T
+ 
+
+00:30:37.369 --> 00:30:44.620 align:start position:0%
+of being States one or two at time T
+must<00:30:38.369><c> converge</c><00:30:38.849><c> to</c><00:30:40.099><c> 430</c>
+
+00:30:44.620 --> 00:30:44.630 align:start position:0%
+ 
+ 
+
+00:30:44.630 --> 00:30:48.740 align:start position:0%
+ 
+amazingly<00:30:45.630><c> no</c><00:30:47.030><c> do</c><00:30:48.030><c> you</c><00:30:48.120><c> understand</c><00:30:48.450><c> what</c><00:30:48.630><c> this</c>
+
+00:30:48.740 --> 00:30:48.750 align:start position:0%
+amazingly no do you understand what this
+ 
+
+00:30:48.750 --> 00:30:51.730 align:start position:0%
+amazingly no do you understand what this
+is<00:30:48.810><c> saying</c><00:30:49.070><c> it's</c><00:30:50.070><c> saying</c><00:30:50.370><c> that</c><00:30:50.660><c> whatever</c>
+
+00:30:51.730 --> 00:30:51.740 align:start position:0%
+is saying it's saying that whatever
+ 
+
+00:30:51.740 --> 00:30:54.830 align:start position:0%
+is saying it's saying that whatever
+initial<00:30:52.740><c> vector</c><00:30:53.460><c> I</c><00:30:53.820><c> choose</c><00:30:54.090><c> for</c><00:30:54.390><c> example</c><00:30:54.420><c> if</c><00:30:54.720><c> I</c>
+
+00:30:54.830 --> 00:30:54.840 align:start position:0%
+initial vector I choose for example if I
+ 
+
+00:30:54.840 --> 00:30:56.930 align:start position:0%
+initial vector I choose for example if I
+choose<00:30:55.050><c> the</c><00:30:55.560><c> vector</c><00:30:55.890><c> 1</c><00:30:56.070><c> 0</c><00:30:56.100><c> that</c><00:30:56.670><c> is</c><00:30:56.820><c> the</c>
+
+00:30:56.930 --> 00:30:56.940 align:start position:0%
+choose the vector 1 0 that is the
+ 
+
+00:30:56.940 --> 00:31:01.580 align:start position:0%
+choose the vector 1 0 that is the
+simplest<00:30:57.300><c> and</c><00:30:57.600><c> then</c><00:30:58.610><c> 1</c><00:30:59.610><c> 0</c><00:30:59.880><c> 1</c><00:31:00.270><c> 0</c><00:31:00.330><c> I</c><00:31:00.720><c> keep</c><00:31:01.200><c> this</c><00:31:01.380><c> up</c>
+
+00:31:01.580 --> 00:31:01.590 align:start position:0%
+simplest and then 1 0 1 0 I keep this up
+ 
+
+00:31:01.590 --> 00:31:06.530 align:start position:0%
+simplest and then 1 0 1 0 I keep this up
+-<00:31:02.070><c> matrix</c><00:31:02.640><c> over</c><00:31:03.270><c> and</c><00:31:03.540><c> over</c><00:31:03.960><c> and</c><00:31:04.020><c> over</c><00:31:04.770><c> again</c><00:31:05.540><c> -</c>
+
+00:31:06.530 --> 00:31:06.540 align:start position:0%
+- matrix over and over and over again -
+ 
+
+00:31:06.540 --> 00:31:12.370 align:start position:0%
+- matrix over and over and over again -
+1<00:31:06.690><c> 0</c><00:31:07.910><c> quickly</c><00:31:08.910><c> I</c><00:31:08.940><c> converge</c><00:31:09.420><c> to</c><00:31:09.600><c> this</c><00:31:09.720><c> vector</c>
+
+00:31:12.370 --> 00:31:12.380 align:start position:0%
+ 
+ 
+
+00:31:12.380 --> 00:31:15.920 align:start position:0%
+ 
+yeah<00:31:13.380><c> that's</c><00:31:13.620><c> it</c><00:31:13.770><c> and</c><00:31:14.090><c> see</c><00:31:15.090><c> if</c><00:31:15.450><c> I</c><00:31:15.570><c> start</c><00:31:15.840><c> from</c>
+
+00:31:15.920 --> 00:31:15.930 align:start position:0%
+yeah that's it and see if I start from
+ 
+
+00:31:15.930 --> 00:31:19.010 align:start position:0%
+yeah that's it and see if I start from
+any<00:31:16.200><c> other</c><00:31:16.380><c> thing</c><00:31:16.650><c> 0</c><00:31:17.160><c> 1</c><00:31:17.400><c> I</c><00:31:17.730><c> apply</c><00:31:18.540><c> this</c><00:31:18.600><c> over</c>
+
+00:31:19.010 --> 00:31:19.020 align:start position:0%
+any other thing 0 1 I apply this over
+ 
+
+00:31:19.020 --> 00:31:22.670 align:start position:0%
+any other thing 0 1 I apply this over
+and<00:31:19.200><c> over</c><00:31:19.440><c> again</c><00:31:19.880><c> you</c><00:31:20.880><c> conversely</c><00:31:21.560><c> to</c><00:31:22.560><c> this</c>
+
+00:31:22.670 --> 00:31:22.680 align:start position:0%
+and over again you conversely to this
+ 
+
+00:31:22.680 --> 00:31:25.820 align:start position:0%
+and over again you conversely to this
+vector<00:31:23.390><c> what</c><00:31:24.390><c> Shane</c><00:31:24.810><c> is</c><00:31:24.990><c> commenting</c><00:31:25.470><c> is</c><00:31:25.650><c> that</c>
+
+00:31:25.820 --> 00:31:25.830 align:start position:0%
+vector what Shane is commenting is that
+ 
+
+00:31:25.830 --> 00:31:27.230 align:start position:0%
+vector what Shane is commenting is that
+there<00:31:26.070><c> are</c><00:31:26.130><c> different</c><00:31:26.580><c> kinds</c><00:31:26.760><c> of</c><00:31:26.970><c> Markov</c>
+
+00:31:27.230 --> 00:31:27.240 align:start position:0%
+there are different kinds of Markov
+ 
+
+00:31:27.240 --> 00:31:30.010 align:start position:0%
+there are different kinds of Markov
+chains<00:31:27.540><c> but</c><00:31:28.260><c> regular</c><00:31:28.950><c> Markov</c><00:31:29.220><c> chain</c><00:31:29.490><c> and</c>
+
+00:31:30.010 --> 00:31:30.020 align:start position:0%
+chains but regular Markov chain and
+ 
+
+00:31:30.020 --> 00:31:32.030 align:start position:0%
+chains but regular Markov chain and
+irreducible<00:31:31.020><c> component</c><00:31:31.530><c> and</c><00:31:31.680><c> so</c><00:31:31.800><c> forth</c>
+
+00:31:32.030 --> 00:31:32.040 align:start position:0%
+irreducible component and so forth
+ 
+
+00:31:32.040 --> 00:31:34.310 align:start position:0%
+irreducible component and so forth
+that's<00:31:32.490><c> the</c><00:31:32.700><c> interesting</c><00:31:32.910><c> part</c><00:31:33.150><c> I</c><00:31:33.600><c> mean</c><00:31:34.080><c> the</c>
+
+00:31:34.310 --> 00:31:34.320 align:start position:0%
+that's the interesting part I mean the
+ 
+
+00:31:34.320 --> 00:31:37.940 align:start position:0%
+that's the interesting part I mean the
+other<00:31:34.590><c> words</c><00:31:34.950><c> that</c><00:31:36.230><c> non-reducible</c><00:31:37.230><c> irregular</c>
+
+00:31:37.940 --> 00:31:37.950 align:start position:0%
+other words that non-reducible irregular
+ 
+
+00:31:37.950 --> 00:31:39.920 align:start position:0%
+other words that non-reducible irregular
+and<00:31:38.010><c> so</c><00:31:38.220><c> on</c><00:31:38.280><c> but</c><00:31:38.700><c> those</c><00:31:38.940><c> words</c><00:31:39.240><c> I</c><00:31:39.420><c> introduced</c>
+
+00:31:39.920 --> 00:31:39.930 align:start position:0%
+and so on but those words I introduced
+ 
+
+00:31:39.930 --> 00:31:42.620 align:start position:0%
+and so on but those words I introduced
+in<00:31:40.170><c> order</c><00:31:40.380><c> to</c><00:31:40.680><c> think</c><00:31:41.310><c> about</c><00:31:41.670><c> uninteresting</c>
+
+00:31:42.620 --> 00:31:42.630 align:start position:0%
+in order to think about uninteresting
+ 
+
+00:31:42.630 --> 00:31:46.370 align:start position:0%
+in order to think about uninteresting
+cases<00:31:42.960><c> in</c><00:31:43.140><c> some</c><00:31:43.290><c> sense</c><00:31:44.720><c> so</c><00:31:45.720><c> that's</c><00:31:45.960><c> the</c><00:31:46.110><c> heart</c>
+
+00:31:46.370 --> 00:31:46.380 align:start position:0%
+cases in some sense so that's the heart
+ 
+
+00:31:46.380 --> 00:31:49.550 align:start position:0%
+cases in some sense so that's the heart
+of<00:31:46.560><c> the</c><00:31:47.030><c> that's</c><00:31:48.030><c> the</c><00:31:48.150><c> simplest</c><00:31:48.780><c> but</c><00:31:49.020><c> difficult</c>
+
+00:31:49.550 --> 00:31:49.560 align:start position:0%
+of the that's the simplest but difficult
+ 
+
+00:31:49.560 --> 00:31:51.500 align:start position:0%
+of the that's the simplest but difficult
+part<00:31:50.010><c> of</c><00:31:50.250><c> the</c><00:31:50.460><c> theory</c><00:31:50.790><c> and</c><00:31:51.060><c> once</c><00:31:51.120><c> we</c>
+
+00:31:51.500 --> 00:31:51.510 align:start position:0%
+part of the theory and once we
+ 
+
+00:31:51.510 --> 00:31:55.180 align:start position:0%
+part of the theory and once we
+understand<00:31:51.930><c> it</c><00:31:52.050><c> the</c><00:31:52.230><c> rest</c><00:31:52.680><c> is</c><00:31:52.830><c> just</c><00:31:52.920><c> language</c>
+
+00:31:55.180 --> 00:31:55.190 align:start position:0%
+understand it the rest is just language
+ 
+
+00:31:55.190 --> 00:31:59.870 align:start position:0%
+understand it the rest is just language
+ok<00:31:56.190><c> the</c><00:31:57.410><c> theory</c><00:31:58.410><c> of</c><00:31:58.560><c> Markov</c><00:31:59.040><c> chains</c><00:31:59.340><c> as</c><00:31:59.640><c> I</c>
+
+00:31:59.870 --> 00:31:59.880 align:start position:0%
+ok the theory of Markov chains as I
+ 
+
+00:31:59.880 --> 00:32:02.570 align:start position:0%
+ok the theory of Markov chains as I
+explained<00:32:00.240><c> is</c><00:32:00.390><c> very</c><00:32:00.630><c> central</c><00:32:01.080><c> phylidia</c><00:32:01.860><c> as</c>
+
+00:32:02.570 --> 00:32:02.580 align:start position:0%
+explained is very central phylidia as
+ 
+
+00:32:02.580 --> 00:32:04.820 align:start position:0%
+explained is very central phylidia as
+you<00:32:02.850><c> might</c><00:32:03.120><c> have</c><00:32:03.360><c> guessed</c><00:32:03.930><c> probabilistic</c>
+
+00:32:04.820 --> 00:32:04.830 align:start position:0%
+you might have guessed probabilistic
+ 
+
+00:32:04.830 --> 00:32:07.580 align:start position:0%
+you might have guessed probabilistic
+thinking<00:32:05.460><c> especially</c><00:32:06.170><c> thinking</c><00:32:07.170><c> in</c><00:32:07.230><c> terms</c><00:32:07.260><c> of</c>
+
+00:32:07.580 --> 00:32:07.590 align:start position:0%
+thinking especially thinking in terms of
+ 
+
+00:32:07.590 --> 00:32:10.520 align:start position:0%
+thinking especially thinking in terms of
+stochastic<00:32:07.890><c> Arana</c><00:32:08.400><c> processes</c><00:32:08.940><c> is</c><00:32:09.390><c> very</c><00:32:10.140><c> very</c>
+
+00:32:10.520 --> 00:32:10.530 align:start position:0%
+stochastic Arana processes is very very
+ 
+
+00:32:10.530 --> 00:32:12.860 align:start position:0%
+stochastic Arana processes is very very
+useful<00:32:10.800><c> in</c><00:32:11.520><c> modern</c><00:32:11.850><c> sciences</c><00:32:12.360><c> I</c><00:32:12.540><c> hope</c><00:32:12.690><c> you</c>
+
+00:32:12.860 --> 00:32:12.870 align:start position:0%
+useful in modern sciences I hope you
+ 
+
+00:32:12.870 --> 00:32:14.750 align:start position:0%
+useful in modern sciences I hope you
+like<00:32:13.080><c> it</c><00:32:13.110><c> and</c><00:32:13.500><c> I</c><00:32:13.860><c> hope</c><00:32:14.040><c> you</c><00:32:14.100><c> appreciated</c>
+
+00:32:14.750 --> 00:32:14.760 align:start position:0%
+like it and I hope you appreciated
+ 
+
+00:32:14.760 --> 00:32:20.630 align:start position:0%
+like it and I hope you appreciated
+topology<00:32:15.680><c> times</c><00:32:16.680><c> its</c><00:32:17.010><c> use</c><00:32:17.370><c> even</c><00:32:17.850><c> in</c><00:32:18.270><c> areas</c>
+

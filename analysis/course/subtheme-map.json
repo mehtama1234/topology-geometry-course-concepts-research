@@ -1,0 +1,52 @@
+[
+  {
+    "id": "allowed-moves",
+    "title": "Allowed moves",
+    "plain": "First decide what changes are legal. Without that rule, no invariant means anything."
+  },
+  {
+    "id": "invariant-receipts",
+    "title": "Invariant receipts",
+    "plain": "An invariant is a receipt for what survived the trip from one picture to another."
+  },
+  {
+    "id": "holes-and-boundaries",
+    "title": "Holes and boundaries",
+    "plain": "Holes are not empty decoration; they are missing routes, blocked fillings, and accounting terms."
+  },
+  {
+    "id": "curves-loops-knots",
+    "title": "Curves, loops, and knots",
+    "plain": "A loop can carry memory of how it sits in space, even when its exact length and shape are forgotten."
+  },
+  {
+    "id": "turning-and-curvature",
+    "title": "Turning and curvature",
+    "plain": "Curvature is a way of measuring how direction changes, and totals often matter more than point-by-point values."
+  },
+  {
+    "id": "signs-and-cancellation",
+    "title": "Signs and cancellation",
+    "plain": "Opposite contributions can be born or die together while the total stays fixed."
+  },
+  {
+    "id": "surfaces-and-orientation",
+    "title": "Surfaces and orientation",
+    "plain": "A surface may have two sides, one side, a boundary, or no boundary, and those facts govern what can be drawn on it."
+  },
+  {
+    "id": "mechanisms-and-locks",
+    "title": "Mechanisms and locks",
+    "plain": "Some physical systems are explained by the routes their parts are allowed to take."
+  },
+  {
+    "id": "singular-moments",
+    "title": "Singular moments",
+    "plain": "A special accident is often the moment where two ordinary pictures meet."
+  },
+  {
+    "id": "models-not-labels",
+    "title": "Models, not labels",
+    "plain": "The course's named ideas matter only when they help build a usable mental model."
+  }
+]

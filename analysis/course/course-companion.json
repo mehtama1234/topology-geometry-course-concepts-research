@@ -1,0 +1,1437 @@
+{
+  "course_goal": "Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and familiar teaching cliches. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve.",
+  "playlist": {
+    "title": "Topology & Geometry by Dr Tadashi Tokieda",
+    "url": "https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF5woAbrzJ",
+    "uploader": "African Institute for Mathematical Sciences (South Africa)"
+  },
+  "videos": [
+    {
+      "index": 1,
+      "id": "SXHHvoaSctc",
+      "title": "Topology & Geometry - LECTURE 01 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 1,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 1677,
+      "youtube_url": "https://www.youtube.com/watch?v=SXHHvoaSctc",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/01-SXHHvoaSctc.en-orig.vtt",
+      "transcript_words": 3479
+    },
+    {
+      "index": 2,
+      "id": "Wj5foqm5MfM",
+      "title": "Topology & Geometry - LECTURE 01 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 1,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 1213,
+      "youtube_url": "https://www.youtube.com/watch?v=Wj5foqm5MfM",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/02-Wj5foqm5MfM.en-orig.vtt",
+      "transcript_words": 2180
+    },
+    {
+      "index": 3,
+      "id": "8YDw4YxT-FM",
+      "title": "Topology & Geometry - LECTURE 02 Part 01/03 - by Dr Tadashi Tokieda",
+      "lecture": 2,
+      "part": 1,
+      "parts_total": 3,
+      "duration_seconds": 1954,
+      "youtube_url": "https://www.youtube.com/watch?v=8YDw4YxT-FM",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/03-8YDw4YxT-FM.en-orig.vtt",
+      "transcript_words": 3539
+    },
+    {
+      "index": 4,
+      "id": "D0TCp2X0pCY",
+      "title": "Topology & Geometry - LECTURE 02 Part 02/03 - by Dr Tadashi Tokieda",
+      "lecture": 2,
+      "part": 2,
+      "parts_total": 3,
+      "duration_seconds": 1232,
+      "youtube_url": "https://www.youtube.com/watch?v=D0TCp2X0pCY",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/04-D0TCp2X0pCY.en-orig.vtt",
+      "transcript_words": 2211
+    },
+    {
+      "index": 5,
+      "id": "J7vojBbvudQ",
+      "title": "Topology & Geometry - LECTURE 02 Part 03/03 - by Dr Tadashi Tokieda",
+      "lecture": 2,
+      "part": 3,
+      "parts_total": 3,
+      "duration_seconds": 1216,
+      "youtube_url": "https://www.youtube.com/watch?v=J7vojBbvudQ",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/05-J7vojBbvudQ.en-orig.vtt",
+      "transcript_words": 2173
+    },
+    {
+      "index": 6,
+      "id": "VuFCRFKiWvA",
+      "title": "Topology & Geometry - LECTURE 03 Part 01/03 - by Dr Tadashi Tokieda",
+      "lecture": 3,
+      "part": 1,
+      "parts_total": 3,
+      "duration_seconds": 1912,
+      "youtube_url": "https://www.youtube.com/watch?v=VuFCRFKiWvA",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/06-VuFCRFKiWvA.en-orig.vtt",
+      "transcript_words": 3940
+    },
+    {
+      "index": 7,
+      "id": "v425ePq9tyo",
+      "title": "Topology & Geometry - LECTURE 03 Part 02/03 - by Dr Tadashi Tokieda",
+      "lecture": 3,
+      "part": 2,
+      "parts_total": 3,
+      "duration_seconds": 1707,
+      "youtube_url": "https://www.youtube.com/watch?v=v425ePq9tyo",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/07-v425ePq9tyo.en-orig.vtt",
+      "transcript_words": 3500
+    },
+    {
+      "index": 8,
+      "id": "AU0pn3qdWfw",
+      "title": "Topology & Geometry - LECTURE 03 Part 03/03 - by Dr Tadashi Tokieda",
+      "lecture": 3,
+      "part": 3,
+      "parts_total": 3,
+      "duration_seconds": 891,
+      "youtube_url": "https://www.youtube.com/watch?v=AU0pn3qdWfw",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/08-AU0pn3qdWfw.en-orig.vtt",
+      "transcript_words": 1693
+    },
+    {
+      "index": 9,
+      "id": "B6vEdfk7SWU",
+      "title": "Topology & Geometry - LECTURE 04 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 4,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 1857,
+      "youtube_url": "https://www.youtube.com/watch?v=B6vEdfk7SWU",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/09-B6vEdfk7SWU.en-orig.vtt",
+      "transcript_words": 3357
+    },
+    {
+      "index": 10,
+      "id": "pxsL5JTTk5Q",
+      "title": "Topology & Geometry - LECTURE 04 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 4,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 1940,
+      "youtube_url": "https://www.youtube.com/watch?v=pxsL5JTTk5Q",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/10-pxsL5JTTk5Q.en-orig.vtt",
+      "transcript_words": 3483
+    },
+    {
+      "index": 11,
+      "id": "dG0OOiXhfZ4",
+      "title": "Topology & Geometry - LECTURE 05 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 5,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 2170,
+      "youtube_url": "https://www.youtube.com/watch?v=dG0OOiXhfZ4",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/11-dG0OOiXhfZ4.en-orig.vtt",
+      "transcript_words": 3749
+    },
+    {
+      "index": 12,
+      "id": "CZqeAC07_UE",
+      "title": "Topology & Geometry - LECTURE 05 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 5,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 2067,
+      "youtube_url": "https://www.youtube.com/watch?v=CZqeAC07_UE",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/12-CZqeAC07_UE.en-orig.vtt",
+      "transcript_words": 3529
+    },
+    {
+      "index": 13,
+      "id": "CJBfpvWBmSs",
+      "title": "Topology & Geometry - LECTURE 06 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 6,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 1524,
+      "youtube_url": "https://www.youtube.com/watch?v=CJBfpvWBmSs",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/13-CJBfpvWBmSs.en-orig.vtt",
+      "transcript_words": 2648
+    },
+    {
+      "index": 14,
+      "id": "Cfgj43ebMqM",
+      "title": "Topology & Geometry - LECTURE 06 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 6,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 2492,
+      "youtube_url": "https://www.youtube.com/watch?v=Cfgj43ebMqM",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/14-Cfgj43ebMqM.en-orig.vtt",
+      "transcript_words": 4236
+    },
+    {
+      "index": 15,
+      "id": "d4bbG6VxbXE",
+      "title": "Topology & Geometry - LECTURE 07 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 7,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 1790,
+      "youtube_url": "https://www.youtube.com/watch?v=d4bbG6VxbXE",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/15-d4bbG6VxbXE.en-orig.vtt",
+      "transcript_words": 3189
+    },
+    {
+      "index": 16,
+      "id": "AgUGxqeVFZE",
+      "title": "Topology & Geometry - LECTURE 07 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 7,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 2434,
+      "youtube_url": "https://www.youtube.com/watch?v=AgUGxqeVFZE",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/16-AgUGxqeVFZE.en-orig.vtt",
+      "transcript_words": 4359
+    },
+    {
+      "index": 17,
+      "id": "PrOKlcBu4mA",
+      "title": "Topology & Geometry - LECTURE 08 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 8,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 1925,
+      "youtube_url": "https://www.youtube.com/watch?v=PrOKlcBu4mA",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/17-PrOKlcBu4mA.en-orig.vtt",
+      "transcript_words": 3596
+    },
+    {
+      "index": 18,
+      "id": "2DVB4ENn7uc",
+      "title": "Topology & Geometry - LECTURE 08 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 8,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 2855,
+      "youtube_url": "https://www.youtube.com/watch?v=2DVB4ENn7uc",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/18-2DVB4ENn7uc.en-orig.vtt",
+      "transcript_words": 5533
+    },
+    {
+      "index": 19,
+      "id": "1_l_sdaWsEQ",
+      "title": "Topology & Geometry - LECTURE 09 Part 01/03 - by Dr Tadashi Tokieda",
+      "lecture": 9,
+      "part": 1,
+      "parts_total": 3,
+      "duration_seconds": 1543,
+      "youtube_url": "https://www.youtube.com/watch?v=1_l_sdaWsEQ",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/19-1_l_sdaWsEQ.en-orig.vtt",
+      "transcript_words": 3132
+    },
+    {
+      "index": 20,
+      "id": "nx1XOlezuvk",
+      "title": "Topology & Geometry - LECTURE 09 Part 02/03 - by Dr Tadashi Tokieda",
+      "lecture": 9,
+      "part": 2,
+      "parts_total": 3,
+      "duration_seconds": 1283,
+      "youtube_url": "https://www.youtube.com/watch?v=nx1XOlezuvk",
+      "caption_status": "missing captions in yt-dlp list-subs",
+      "caption_file": null,
+      "transcript_words": 0
+    },
+    {
+      "index": 21,
+      "id": "nyQ8aYOg_Ws",
+      "title": "Topology & Geometry - LECTURE 09 Part 03/03 - by Dr Tadashi Tokieda",
+      "lecture": 9,
+      "part": 3,
+      "parts_total": 3,
+      "duration_seconds": 1489,
+      "youtube_url": "https://www.youtube.com/watch?v=nyQ8aYOg_Ws",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/21-nyQ8aYOg_Ws.en-orig.vtt",
+      "transcript_words": 2870
+    },
+    {
+      "index": 22,
+      "id": "QzfZS3iopR0",
+      "title": "Topology & Geometry - LECTURE 10 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 10,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 1832,
+      "youtube_url": "https://www.youtube.com/watch?v=QzfZS3iopR0",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/22-QzfZS3iopR0.en-orig.vtt",
+      "transcript_words": 3358
+    },
+    {
+      "index": 23,
+      "id": "i-v8DFbclfI",
+      "title": "Topology & Geometry - LECTURE 10 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 10,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 1947,
+      "youtube_url": "https://www.youtube.com/watch?v=i-v8DFbclfI",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/23-i-v8DFbclfI.en-orig.vtt",
+      "transcript_words": 3798
+    },
+    {
+      "index": 24,
+      "id": "kM455bs11C8",
+      "title": "Topology & Geometry - LECTURE 11 Part 01/03 - by Dr Tadashi Tokieda",
+      "lecture": 11,
+      "part": 1,
+      "parts_total": 3,
+      "duration_seconds": 1770,
+      "youtube_url": "https://www.youtube.com/watch?v=kM455bs11C8",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/24-kM455bs11C8.en-orig.vtt",
+      "transcript_words": 3634
+    },
+    {
+      "index": 25,
+      "id": "0IZn2BygKc8",
+      "title": "Topology & Geometry - LECTURE 11 Part 02/03 - by Dr Tadashi Tokieda",
+      "lecture": 11,
+      "part": 2,
+      "parts_total": 3,
+      "duration_seconds": 2161,
+      "youtube_url": "https://www.youtube.com/watch?v=0IZn2BygKc8",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/25-0IZn2BygKc8.en-orig.vtt",
+      "transcript_words": 3620
+    },
+    {
+      "index": 26,
+      "id": "dfl_V1kox9s",
+      "title": "Topology & Geometry - LECTURE 11 Part 03/03 - by Dr Tadashi Tokieda",
+      "lecture": 11,
+      "part": 3,
+      "parts_total": 3,
+      "duration_seconds": 2152,
+      "youtube_url": "https://www.youtube.com/watch?v=dfl_V1kox9s",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/26-dfl_V1kox9s.en-orig.vtt",
+      "transcript_words": 4182
+    },
+    {
+      "index": 27,
+      "id": "j0ToZXOfR9w",
+      "title": "Topology & Geometry - LECTURE 12 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 12,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 2262,
+      "youtube_url": "https://www.youtube.com/watch?v=j0ToZXOfR9w",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/27-j0ToZXOfR9w.en-orig.vtt",
+      "transcript_words": 4590
+    },
+    {
+      "index": 28,
+      "id": "W2NeEwg3P6c",
+      "title": "Topology & Geometry - LECTURE 12 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 12,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 1865,
+      "youtube_url": "https://www.youtube.com/watch?v=W2NeEwg3P6c",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/28-W2NeEwg3P6c.en-orig.vtt",
+      "transcript_words": 3746
+    },
+    {
+      "index": 29,
+      "id": "8j0psI3Oer8",
+      "title": "Topology & Geometry - LECTURE 13 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 13,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 2072,
+      "youtube_url": "https://www.youtube.com/watch?v=8j0psI3Oer8",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/29-8j0psI3Oer8.en-orig.vtt",
+      "transcript_words": 4227
+    },
+    {
+      "index": 30,
+      "id": "q3L67ZyUJbU",
+      "title": "Topology & Geometry - LECTURE 13 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 13,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 2151,
+      "youtube_url": "https://www.youtube.com/watch?v=q3L67ZyUJbU",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/30-q3L67ZyUJbU.en-orig.vtt",
+      "transcript_words": 3827
+    },
+    {
+      "index": 31,
+      "id": "bJQA0yDIEFA",
+      "title": "Topology & Geometry - LECTURE 14 Part 01/02 - by Dr Tadashi Tokieda",
+      "lecture": 14,
+      "part": 1,
+      "parts_total": 2,
+      "duration_seconds": 2178,
+      "youtube_url": "https://www.youtube.com/watch?v=bJQA0yDIEFA",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/31-bJQA0yDIEFA.en-orig.vtt",
+      "transcript_words": 3987
+    },
+    {
+      "index": 32,
+      "id": "5ozE-a0-qj8",
+      "title": "Topology & Geometry - LECTURE 14 Part 02/02 - by Dr Tadashi Tokieda",
+      "lecture": 14,
+      "part": 2,
+      "parts_total": 2,
+      "duration_seconds": 1539,
+      "youtube_url": "https://www.youtube.com/watch?v=5ozE-a0-qj8",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/32-5ozE-a0-qj8.en-orig.vtt",
+      "transcript_words": 2898
+    },
+    {
+      "index": 33,
+      "id": "FyBlZ1a22RI",
+      "title": "Topology & Geometry - LECTURE 15 Part 01/03 - by Dr Tadashi Tokieda",
+      "lecture": 15,
+      "part": 1,
+      "parts_total": 3,
+      "duration_seconds": 840,
+      "youtube_url": "https://www.youtube.com/watch?v=FyBlZ1a22RI",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/33-FyBlZ1a22RI.en-orig.vtt",
+      "transcript_words": 1622
+    },
+    {
+      "index": 34,
+      "id": "daCsmGX2ebk",
+      "title": "Topology & Geometry - LECTURE 15 Part 02/03 - by Dr Tadashi Tokieda",
+      "lecture": 15,
+      "part": 2,
+      "parts_total": 3,
+      "duration_seconds": 1798,
+      "youtube_url": "https://www.youtube.com/watch?v=daCsmGX2ebk",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/34-daCsmGX2ebk.en-orig.vtt",
+      "transcript_words": 3580
+    },
+    {
+      "index": 35,
+      "id": "Y2bVgbTtv94",
+      "title": "Topology & Geometry - LECTURE 15 Part 03/03 - by Dr Tadashi Tokieda",
+      "lecture": 15,
+      "part": 3,
+      "parts_total": 3,
+      "duration_seconds": 507,
+      "youtube_url": "https://www.youtube.com/watch?v=Y2bVgbTtv94",
+      "caption_status": "en-orig auto-caption recovered",
+      "caption_file": "raw-material/youtube/captions/35-Y2bVgbTtv94.en-orig.vtt",
+      "transcript_words": 999
+    }
+  ],
+  "lectures": [
+    {
+      "lecture": 1,
+      "videos": [
+        {
+          "index": 1,
+          "id": "SXHHvoaSctc",
+          "title": "Topology & Geometry - LECTURE 01 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 1,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 1677,
+          "youtube_url": "https://www.youtube.com/watch?v=SXHHvoaSctc",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/01-SXHHvoaSctc.en-orig.vtt",
+          "transcript_words": 3479
+        },
+        {
+          "index": 2,
+          "id": "Wj5foqm5MfM",
+          "title": "Topology & Geometry - LECTURE 01 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 1,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 1213,
+          "youtube_url": "https://www.youtube.com/watch?v=Wj5foqm5MfM",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/02-Wj5foqm5MfM.en-orig.vtt",
+          "transcript_words": 2180
+        }
+      ],
+      "duration_seconds": 2890,
+      "transcript_words": 5659,
+      "missing_caption_ids": [],
+      "plain_reading": "Course entrance: the method is to look at an ordinary situation, find what survives change, and use deformation to make the answer visible.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 2,
+      "videos": [
+        {
+          "index": 3,
+          "id": "8YDw4YxT-FM",
+          "title": "Topology & Geometry - LECTURE 02 Part 01/03 - by Dr Tadashi Tokieda",
+          "lecture": 2,
+          "part": 1,
+          "parts_total": 3,
+          "duration_seconds": 1954,
+          "youtube_url": "https://www.youtube.com/watch?v=8YDw4YxT-FM",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/03-8YDw4YxT-FM.en-orig.vtt",
+          "transcript_words": 3539
+        },
+        {
+          "index": 4,
+          "id": "D0TCp2X0pCY",
+          "title": "Topology & Geometry - LECTURE 02 Part 02/03 - by Dr Tadashi Tokieda",
+          "lecture": 2,
+          "part": 2,
+          "parts_total": 3,
+          "duration_seconds": 1232,
+          "youtube_url": "https://www.youtube.com/watch?v=D0TCp2X0pCY",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/04-D0TCp2X0pCY.en-orig.vtt",
+          "transcript_words": 2211
+        },
+        {
+          "index": 5,
+          "id": "J7vojBbvudQ",
+          "title": "Topology & Geometry - LECTURE 02 Part 03/03 - by Dr Tadashi Tokieda",
+          "lecture": 2,
+          "part": 3,
+          "parts_total": 3,
+          "duration_seconds": 1216,
+          "youtube_url": "https://www.youtube.com/watch?v=J7vojBbvudQ",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/05-J7vojBbvudQ.en-orig.vtt",
+          "transcript_words": 2173
+        }
+      ],
+      "duration_seconds": 4402,
+      "transcript_words": 7923,
+      "missing_caption_ids": [],
+      "plain_reading": "The early lectures build comfort with replacing exact drawings by legal moves and with treating diagrams as arguments.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 3,
+      "videos": [
+        {
+          "index": 6,
+          "id": "VuFCRFKiWvA",
+          "title": "Topology & Geometry - LECTURE 03 Part 01/03 - by Dr Tadashi Tokieda",
+          "lecture": 3,
+          "part": 1,
+          "parts_total": 3,
+          "duration_seconds": 1912,
+          "youtube_url": "https://www.youtube.com/watch?v=VuFCRFKiWvA",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/06-VuFCRFKiWvA.en-orig.vtt",
+          "transcript_words": 3940
+        },
+        {
+          "index": 7,
+          "id": "v425ePq9tyo",
+          "title": "Topology & Geometry - LECTURE 03 Part 02/03 - by Dr Tadashi Tokieda",
+          "lecture": 3,
+          "part": 2,
+          "parts_total": 3,
+          "duration_seconds": 1707,
+          "youtube_url": "https://www.youtube.com/watch?v=v425ePq9tyo",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/07-v425ePq9tyo.en-orig.vtt",
+          "transcript_words": 3500
+        },
+        {
+          "index": 8,
+          "id": "AU0pn3qdWfw",
+          "title": "Topology & Geometry - LECTURE 03 Part 03/03 - by Dr Tadashi Tokieda",
+          "lecture": 3,
+          "part": 3,
+          "parts_total": 3,
+          "duration_seconds": 891,
+          "youtube_url": "https://www.youtube.com/watch?v=AU0pn3qdWfw",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/08-AU0pn3qdWfw.en-orig.vtt",
+          "transcript_words": 1693
+        }
+      ],
+      "duration_seconds": 4510,
+      "transcript_words": 9133,
+      "missing_caption_ids": [],
+      "plain_reading": "The course deepens the habit of watching crossings, contacts, and exceptional moments as controlled changes rather than noise.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 4,
+      "videos": [
+        {
+          "index": 9,
+          "id": "B6vEdfk7SWU",
+          "title": "Topology & Geometry - LECTURE 04 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 4,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 1857,
+          "youtube_url": "https://www.youtube.com/watch?v=B6vEdfk7SWU",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/09-B6vEdfk7SWU.en-orig.vtt",
+          "transcript_words": 3357
+        },
+        {
+          "index": 10,
+          "id": "pxsL5JTTk5Q",
+          "title": "Topology & Geometry - LECTURE 04 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 4,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 1940,
+          "youtube_url": "https://www.youtube.com/watch?v=pxsL5JTTk5Q",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/10-pxsL5JTTk5Q.en-orig.vtt",
+          "transcript_words": 3483
+        }
+      ],
+      "duration_seconds": 3797,
+      "transcript_words": 6840,
+      "missing_caption_ids": [],
+      "plain_reading": "Surfaces and drawings start to become ledgers: what is inside, outside, bordered, connected, or forced by the page.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 5,
+      "videos": [
+        {
+          "index": 11,
+          "id": "dG0OOiXhfZ4",
+          "title": "Topology & Geometry - LECTURE 05 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 5,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 2170,
+          "youtube_url": "https://www.youtube.com/watch?v=dG0OOiXhfZ4",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/11-dG0OOiXhfZ4.en-orig.vtt",
+          "transcript_words": 3749
+        },
+        {
+          "index": 12,
+          "id": "CZqeAC07_UE",
+          "title": "Topology & Geometry - LECTURE 05 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 5,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 2067,
+          "youtube_url": "https://www.youtube.com/watch?v=CZqeAC07_UE",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/12-CZqeAC07_UE.en-orig.vtt",
+          "transcript_words": 3529
+        }
+      ],
+      "duration_seconds": 4237,
+      "transcript_words": 7278,
+      "missing_caption_ids": [],
+      "plain_reading": "Counting enters as a serious tool: not counting everything, but counting the feature that legal redrawings cannot erase.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 6,
+      "videos": [
+        {
+          "index": 13,
+          "id": "CJBfpvWBmSs",
+          "title": "Topology & Geometry - LECTURE 06 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 6,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 1524,
+          "youtube_url": "https://www.youtube.com/watch?v=CJBfpvWBmSs",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/13-CJBfpvWBmSs.en-orig.vtt",
+          "transcript_words": 2648
+        },
+        {
+          "index": 14,
+          "id": "Cfgj43ebMqM",
+          "title": "Topology & Geometry - LECTURE 06 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 6,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 2492,
+          "youtube_url": "https://www.youtube.com/watch?v=Cfgj43ebMqM",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/14-Cfgj43ebMqM.en-orig.vtt",
+          "transcript_words": 4236
+        }
+      ],
+      "duration_seconds": 4016,
+      "transcript_words": 6884,
+      "missing_caption_ids": [],
+      "plain_reading": "The lectures press toward Euler-style bookkeeping, where pieces cancel locally and leave a whole-shape number that cannot be changed by redrawing the same surface.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 7,
+      "videos": [
+        {
+          "index": 15,
+          "id": "d4bbG6VxbXE",
+          "title": "Topology & Geometry - LECTURE 07 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 7,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 1790,
+          "youtube_url": "https://www.youtube.com/watch?v=d4bbG6VxbXE",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/15-d4bbG6VxbXE.en-orig.vtt",
+          "transcript_words": 3189
+        },
+        {
+          "index": 16,
+          "id": "AgUGxqeVFZE",
+          "title": "Topology & Geometry - LECTURE 07 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 7,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 2434,
+          "youtube_url": "https://www.youtube.com/watch?v=AgUGxqeVFZE",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/16-AgUGxqeVFZE.en-orig.vtt",
+          "transcript_words": 4359
+        }
+      ],
+      "duration_seconds": 4224,
+      "transcript_words": 7548,
+      "missing_caption_ids": [],
+      "plain_reading": "Curves, loops, and surface routes become central: the question is often whether one route can be changed into another without breaking rules.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 8,
+      "videos": [
+        {
+          "index": 17,
+          "id": "PrOKlcBu4mA",
+          "title": "Topology & Geometry - LECTURE 08 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 8,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 1925,
+          "youtube_url": "https://www.youtube.com/watch?v=PrOKlcBu4mA",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/17-PrOKlcBu4mA.en-orig.vtt",
+          "transcript_words": 3596
+        },
+        {
+          "index": 18,
+          "id": "2DVB4ENn7uc",
+          "title": "Topology & Geometry - LECTURE 08 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 8,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 2855,
+          "youtube_url": "https://www.youtube.com/watch?v=2DVB4ENn7uc",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/18-2DVB4ENn7uc.en-orig.vtt",
+          "transcript_words": 5533
+        }
+      ],
+      "duration_seconds": 4780,
+      "transcript_words": 9129,
+      "missing_caption_ids": [],
+      "plain_reading": "Knotted and linked behavior shows why exact appearance is too weak; the legal moves and preserved relation carry the information.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 9,
+      "videos": [
+        {
+          "index": 19,
+          "id": "1_l_sdaWsEQ",
+          "title": "Topology & Geometry - LECTURE 09 Part 01/03 - by Dr Tadashi Tokieda",
+          "lecture": 9,
+          "part": 1,
+          "parts_total": 3,
+          "duration_seconds": 1543,
+          "youtube_url": "https://www.youtube.com/watch?v=1_l_sdaWsEQ",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/19-1_l_sdaWsEQ.en-orig.vtt",
+          "transcript_words": 3132
+        },
+        {
+          "index": 20,
+          "id": "nx1XOlezuvk",
+          "title": "Topology & Geometry - LECTURE 09 Part 02/03 - by Dr Tadashi Tokieda",
+          "lecture": 9,
+          "part": 2,
+          "parts_total": 3,
+          "duration_seconds": 1283,
+          "youtube_url": "https://www.youtube.com/watch?v=nx1XOlezuvk",
+          "caption_status": "missing captions in yt-dlp list-subs",
+          "caption_file": null,
+          "transcript_words": 0
+        },
+        {
+          "index": 21,
+          "id": "nyQ8aYOg_Ws",
+          "title": "Topology & Geometry - LECTURE 09 Part 03/03 - by Dr Tadashi Tokieda",
+          "lecture": 9,
+          "part": 3,
+          "parts_total": 3,
+          "duration_seconds": 1489,
+          "youtube_url": "https://www.youtube.com/watch?v=nyQ8aYOg_Ws",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/21-nyQ8aYOg_Ws.en-orig.vtt",
+          "transcript_words": 2870
+        }
+      ],
+      "duration_seconds": 4315,
+      "transcript_words": 6002,
+      "missing_caption_ids": [
+        "nx1XOlezuvk"
+      ],
+      "plain_reading": "The missing-caption middle part is treated carefully, but the surrounding lecture arc points to signs, crossings, and controlled changes.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 10,
+      "videos": [
+        {
+          "index": 22,
+          "id": "QzfZS3iopR0",
+          "title": "Topology & Geometry - LECTURE 10 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 10,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 1832,
+          "youtube_url": "https://www.youtube.com/watch?v=QzfZS3iopR0",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/22-QzfZS3iopR0.en-orig.vtt",
+          "transcript_words": 3358
+        },
+        {
+          "index": 23,
+          "id": "i-v8DFbclfI",
+          "title": "Topology & Geometry - LECTURE 10 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 10,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 1947,
+          "youtube_url": "https://www.youtube.com/watch?v=i-v8DFbclfI",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/23-i-v8DFbclfI.en-orig.vtt",
+          "transcript_words": 3798
+        }
+      ],
+      "duration_seconds": 3779,
+      "transcript_words": 7156,
+      "missing_caption_ids": [],
+      "plain_reading": "The course connects local turning and global conclusion: totals matter because tiny contributions have to fit the whole shape.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 11,
+      "videos": [
+        {
+          "index": 24,
+          "id": "kM455bs11C8",
+          "title": "Topology & Geometry - LECTURE 11 Part 01/03 - by Dr Tadashi Tokieda",
+          "lecture": 11,
+          "part": 1,
+          "parts_total": 3,
+          "duration_seconds": 1770,
+          "youtube_url": "https://www.youtube.com/watch?v=kM455bs11C8",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/24-kM455bs11C8.en-orig.vtt",
+          "transcript_words": 3634
+        },
+        {
+          "index": 25,
+          "id": "0IZn2BygKc8",
+          "title": "Topology & Geometry - LECTURE 11 Part 02/03 - by Dr Tadashi Tokieda",
+          "lecture": 11,
+          "part": 2,
+          "parts_total": 3,
+          "duration_seconds": 2161,
+          "youtube_url": "https://www.youtube.com/watch?v=0IZn2BygKc8",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/25-0IZn2BygKc8.en-orig.vtt",
+          "transcript_words": 3620
+        },
+        {
+          "index": 26,
+          "id": "dfl_V1kox9s",
+          "title": "Topology & Geometry - LECTURE 11 Part 03/03 - by Dr Tadashi Tokieda",
+          "lecture": 11,
+          "part": 3,
+          "parts_total": 3,
+          "duration_seconds": 2152,
+          "youtube_url": "https://www.youtube.com/watch?v=dfl_V1kox9s",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/26-dfl_V1kox9s.en-orig.vtt",
+          "transcript_words": 4182
+        }
+      ],
+      "duration_seconds": 6083,
+      "transcript_words": 11436,
+      "missing_caption_ids": [],
+      "plain_reading": "Vector-field and index-style reasoning appears as a way to count failures and show that some failures cannot be avoided.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 12,
+      "videos": [
+        {
+          "index": 27,
+          "id": "j0ToZXOfR9w",
+          "title": "Topology & Geometry - LECTURE 12 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 12,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 2262,
+          "youtube_url": "https://www.youtube.com/watch?v=j0ToZXOfR9w",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/27-j0ToZXOfR9w.en-orig.vtt",
+          "transcript_words": 4590
+        },
+        {
+          "index": 28,
+          "id": "W2NeEwg3P6c",
+          "title": "Topology & Geometry - LECTURE 12 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 12,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 1865,
+          "youtube_url": "https://www.youtube.com/watch?v=W2NeEwg3P6c",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/28-W2NeEwg3P6c.en-orig.vtt",
+          "transcript_words": 3746
+        }
+      ],
+      "duration_seconds": 4127,
+      "transcript_words": 8336,
+      "missing_caption_ids": [],
+      "plain_reading": "Configuration-space thinking becomes useful: study all possible positions as a shape of its own, then read motion as a path through that shape.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 13,
+      "videos": [
+        {
+          "index": 29,
+          "id": "8j0psI3Oer8",
+          "title": "Topology & Geometry - LECTURE 13 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 13,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 2072,
+          "youtube_url": "https://www.youtube.com/watch?v=8j0psI3Oer8",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/29-8j0psI3Oer8.en-orig.vtt",
+          "transcript_words": 4227
+        },
+        {
+          "index": 30,
+          "id": "q3L67ZyUJbU",
+          "title": "Topology & Geometry - LECTURE 13 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 13,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 2151,
+          "youtube_url": "https://www.youtube.com/watch?v=q3L67ZyUJbU",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/30-q3L67ZyUJbU.en-orig.vtt",
+          "transcript_words": 3827
+        }
+      ],
+      "duration_seconds": 4223,
+      "transcript_words": 8054,
+      "missing_caption_ids": [],
+      "plain_reading": "Physical examples and mechanisms show that topology is not naming shapes; it is reasoning about constrained motion when the allowed positions have holes, walls, or forced passages.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 14,
+      "videos": [
+        {
+          "index": 31,
+          "id": "bJQA0yDIEFA",
+          "title": "Topology & Geometry - LECTURE 14 Part 01/02 - by Dr Tadashi Tokieda",
+          "lecture": 14,
+          "part": 1,
+          "parts_total": 2,
+          "duration_seconds": 2178,
+          "youtube_url": "https://www.youtube.com/watch?v=bJQA0yDIEFA",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/31-bJQA0yDIEFA.en-orig.vtt",
+          "transcript_words": 3987
+        },
+        {
+          "index": 32,
+          "id": "5ozE-a0-qj8",
+          "title": "Topology & Geometry - LECTURE 14 Part 02/02 - by Dr Tadashi Tokieda",
+          "lecture": 14,
+          "part": 2,
+          "parts_total": 2,
+          "duration_seconds": 1539,
+          "youtube_url": "https://www.youtube.com/watch?v=5ozE-a0-qj8",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/32-5ozE-a0-qj8.en-orig.vtt",
+          "transcript_words": 2898
+        }
+      ],
+      "duration_seconds": 3717,
+      "transcript_words": 6885,
+      "missing_caption_ids": [],
+      "plain_reading": "The late lectures consolidate the method across pictures, surfaces, mechanisms, and invariants, showing the same habit of thought in several different-looking problems.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    },
+    {
+      "lecture": 15,
+      "videos": [
+        {
+          "index": 33,
+          "id": "FyBlZ1a22RI",
+          "title": "Topology & Geometry - LECTURE 15 Part 01/03 - by Dr Tadashi Tokieda",
+          "lecture": 15,
+          "part": 1,
+          "parts_total": 3,
+          "duration_seconds": 840,
+          "youtube_url": "https://www.youtube.com/watch?v=FyBlZ1a22RI",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/33-FyBlZ1a22RI.en-orig.vtt",
+          "transcript_words": 1622
+        },
+        {
+          "index": 34,
+          "id": "daCsmGX2ebk",
+          "title": "Topology & Geometry - LECTURE 15 Part 02/03 - by Dr Tadashi Tokieda",
+          "lecture": 15,
+          "part": 2,
+          "parts_total": 3,
+          "duration_seconds": 1798,
+          "youtube_url": "https://www.youtube.com/watch?v=daCsmGX2ebk",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/34-daCsmGX2ebk.en-orig.vtt",
+          "transcript_words": 3580
+        },
+        {
+          "index": 35,
+          "id": "Y2bVgbTtv94",
+          "title": "Topology & Geometry - LECTURE 15 Part 03/03 - by Dr Tadashi Tokieda",
+          "lecture": 15,
+          "part": 3,
+          "parts_total": 3,
+          "duration_seconds": 507,
+          "youtube_url": "https://www.youtube.com/watch?v=Y2bVgbTtv94",
+          "caption_status": "en-orig auto-caption recovered",
+          "caption_file": "raw-material/youtube/captions/35-Y2bVgbTtv94.en-orig.vtt",
+          "transcript_words": 999
+        }
+      ],
+      "duration_seconds": 3145,
+      "transcript_words": 6201,
+      "missing_caption_ids": [],
+      "plain_reading": "The course closes by tying the motto back together: deform the problem, protect the right fact, and let shape force the answer.",
+      "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    }
+  ],
+  "themes": [
+    {
+      "id": "see-by-deforming",
+      "title": "See by bending without tearing",
+      "plain": "The course keeps asking what remains true after a shape is stretched, nudged, or redrawn. The point is not that exact shape is unimportant. The point is that many hard questions become visible only after you stop worshiping exact size and angle.",
+      "why_math_matters": "A deformation is a promise: every step changes the picture, but not the chosen kind of truth. Once that promise is clear, a messy object can be replaced by a simpler one without losing the answer."
+    },
+    {
+      "id": "count-what-survives",
+      "title": "Count the thing that cannot disappear",
+      "plain": "Many arguments in the lectures replace a complicated picture with a stubborn count: holes, crossings, turns, regions, signs, or boundary pieces. The count is valuable only when it survives allowed changes.",
+      "why_math_matters": "A good count turns a drawing into evidence. If the count would have to change for the desired outcome, the desired outcome is impossible under the allowed moves."
+    },
+    {
+      "id": "local-to-global",
+      "title": "Use small facts to force whole-shape facts",
+      "plain": "A surface may look harmless when seen in tiny neighborhoods. The surprise is that many small local rules add up to a global demand on the whole object.",
+      "why_math_matters": "The mathematical principle is bookkeeping across a whole shape. Local turns, curvatures, or signs are not isolated facts; their total can be fixed by the way the object is connected."
+    },
+    {
+      "id": "generic-before-exception",
+      "title": "Understand the ordinary case first",
+      "plain": "The course often moves away from special coincidences: tangencies, perfect alignments, double accidents, or delicate symmetries. The ordinary case is easier to reason about because accidents have been removed.",
+      "why_math_matters": "The ordinary case gives a stable picture. Exceptional cases are then handled by gently moving them aside or by seeing them as moments where a stable count changes in a controlled pair."
+    },
+    {
+      "id": "pictures-to-proofs",
+      "title": "Make pictures carry reasons",
+      "plain": "The lectures use drawings heavily, but not as decoration. A drawing is useful only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
+      "why_math_matters": "A proof can be a disciplined picture: the picture tells you what is allowed to move, what must stay fixed, and why no hidden step smuggles in a new assumption."
+    },
+    {
+      "id": "shape-as-machine",
+      "title": "Treat shape as a machine",
+      "plain": "A shape can force motion, block a motion, or make an outcome unavoidable. This is why topology and geometry reach into mechanisms, knots, surfaces, and physical puzzles.",
+      "why_math_matters": "The key idea is constraint. If the shape leaves only certain paths open, then the mathematics can predict behavior without solving every tiny physical detail."
+    }
+  ],
+  "subthemes": [
+    {
+      "id": "allowed-moves",
+      "title": "Allowed moves",
+      "plain": "First decide what changes are legal. Without that rule, no invariant means anything."
+    },
+    {
+      "id": "invariant-receipts",
+      "title": "Invariant receipts",
+      "plain": "An invariant is a receipt for what survived the trip from one picture to another."
+    },
+    {
+      "id": "holes-and-boundaries",
+      "title": "Holes and boundaries",
+      "plain": "Holes are not empty decoration; they are missing routes, blocked fillings, and accounting terms."
+    },
+    {
+      "id": "curves-loops-knots",
+      "title": "Curves, loops, and knots",
+      "plain": "A loop can carry memory of how it sits in space, even when its exact length and shape are forgotten."
+    },
+    {
+      "id": "turning-and-curvature",
+      "title": "Turning and curvature",
+      "plain": "Curvature is a way of measuring how direction changes, and totals often matter more than point-by-point values."
+    },
+    {
+      "id": "signs-and-cancellation",
+      "title": "Signs and cancellation",
+      "plain": "Opposite contributions can be born or die together while the total stays fixed."
+    },
+    {
+      "id": "surfaces-and-orientation",
+      "title": "Surfaces and orientation",
+      "plain": "A surface may have two sides, one side, a boundary, or no boundary, and those facts govern what can be drawn on it."
+    },
+    {
+      "id": "mechanisms-and-locks",
+      "title": "Mechanisms and locks",
+      "plain": "Some physical systems are explained by the routes their parts are allowed to take."
+    },
+    {
+      "id": "singular-moments",
+      "title": "Singular moments",
+      "plain": "A special accident is often the moment where two ordinary pictures meet."
+    },
+    {
+      "id": "models-not-labels",
+      "title": "Models, not labels",
+      "plain": "The course's named ideas matter only when they help build a usable mental model."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "generic-position",
+      "title": "Generic position",
+      "theme": "generic-before-exception",
+      "subthemes": [
+        "allowed-moves",
+        "singular-moments"
+      ],
+      "first_principles": "Imagine trying to understand a room while every chair is exactly lined up with every table edge. That neatness is a trap: tiny movements destroy it. Generic position means shifting the picture just enough that fragile coincidences are gone. Then crossings happen one at a time, contacts are clean, and the argument sees the structure rather than the accident.",
+      "important_detail": "The shift must be small enough that it does not change the real question. It removes accidental equalities, not the object being studied.",
+      "math_principle": "Stable reasoning begins with a case that survives small disturbances."
+    },
+    {
+      "id": "deformation",
+      "title": "Deformation",
+      "theme": "see-by-deforming",
+      "subthemes": [
+        "allowed-moves",
+        "invariant-receipts"
+      ],
+      "first_principles": "A deformation is a continuous change, like bending a wire or stretching a rubber sheet, where nothing is cut, glued, or teleported. It lets you replace a hard picture by an easier picture while keeping the kind of truth you care about.",
+      "important_detail": "The power is in the rulebook. If cutting is forbidden, a knot cannot simply be untied by passing a strand through another strand.",
+      "math_principle": "A controlled change preserves chosen facts and exposes which facts are truly structural."
+    },
+    {
+      "id": "invariant",
+      "title": "Invariant",
+      "theme": "count-what-survives",
+      "subthemes": [
+        "invariant-receipts",
+        "signs-and-cancellation"
+      ],
+      "first_principles": "An invariant is something you check before and after an allowed change. If it is the same, it can certify that two pictures may belong to the same world. If it differs, the pictures cannot be connected by the allowed moves.",
+      "important_detail": "An invariant does not need to describe everything. It only needs to catch the difference that matters for the question.",
+      "math_principle": "A preserved quantity can turn impossibility into a short argument."
+    },
+    {
+      "id": "topology-vs-geometry",
+      "title": "Topology and geometry",
+      "theme": "see-by-deforming",
+      "subthemes": [
+        "models-not-labels"
+      ],
+      "first_principles": "Geometry cares about measured shape: distance, angle, area, curvature. Topology cares about connectedness, holes, boundary, and what survives bending. The course needs both because some questions depend on exact bending while others depend only on the routes and obstructions inside the shape.",
+      "important_detail": "The distinction is not a wall. Geometry often produces the local measurements, while topology explains why their total has no freedom.",
+      "math_principle": "Choose the level of description that keeps the real constraint and discards the distracting details."
+    },
+    {
+      "id": "euler-characteristic",
+      "title": "Euler characteristic",
+      "theme": "count-what-survives",
+      "subthemes": [
+        "holes-and-boundaries",
+        "signs-and-cancellation"
+      ],
+      "first_principles": "Break a surface into corners, edges, and pieces. Count corners, subtract edges, add pieces. The surprising part is that many different breakups give the same final number. That number is a compact way to remember how the surface is put together.",
+      "important_detail": "The pieces can be changed, refined, or redrawn, but the alternating count is built so added internal boundaries cancel out.",
+      "math_principle": "A local accounting scheme can produce a global fingerprint of a surface."
+    },
+    {
+      "id": "triangulation",
+      "title": "Triangulation and cell decomposition",
+      "theme": "pictures-to-proofs",
+      "subthemes": [
+        "holes-and-boundaries",
+        "models-not-labels"
+      ],
+      "first_principles": "To reason about a soft surface, cut it mentally into simple patches. Triangles are convenient because they are easy to count and glue, but the deeper move is to replace a slippery continuous object with a finite ledger. Once the surface is made of patches, the argument can ask what happens when patches are split, joined, or redrawn.",
+      "important_detail": "The cuts are a tool, not the truth itself. A valid count must survive when the surface is cut in another acceptable way.",
+      "math_principle": "Complicated continuous objects can be studied through finite bookkeeping."
+    },
+    {
+      "id": "graph-planarity",
+      "title": "Planar graphs",
+      "theme": "shape-as-machine",
+      "subthemes": [
+        "holes-and-boundaries",
+        "mechanisms-and-locks"
+      ],
+      "first_principles": "A graph is dots joined by lines. Asking whether it can be drawn on a page without unwanted crossings is really a question about available routes on a surface. The graph may be simple as a list of connections, but the page has limited room, and that room can force crossings no matter how patiently the drawing is rearranged.",
+      "important_detail": "Crossings are not just ugly drawings. A crossing may signal that the page lacks enough room for the required connections.",
+      "math_principle": "Connectivity plus surface bookkeeping can forbid a drawing before anyone tries every drawing."
+    },
+    {
+      "id": "knots-and-links",
+      "title": "Knots and links",
+      "theme": "shape-as-machine",
+      "subthemes": [
+        "curves-loops-knots",
+        "allowed-moves"
+      ],
+      "first_principles": "A knot is a closed loop in space. The question is not whether it looks tangled, but whether it can be moved into a simple circle without cutting it or passing it through itself. This turns untangling into a rule-governed problem: the loop may slide and bend freely, but it cannot cheat by breaking the space it lives in.",
+      "important_detail": "A flat drawing hides over-under information. The drawing is evidence only when those crossings are recorded.",
+      "math_principle": "A path in space can carry information that survives all legal untangling moves."
+    },
+    {
+      "id": "winding-linking",
+      "title": "Winding and linking",
+      "theme": "count-what-survives",
+      "subthemes": [
+        "curves-loops-knots",
+        "signs-and-cancellation"
+      ],
+      "first_principles": "A loop can go around something. If it winds once around a post, pulling the loop tighter or looser does not remove that fact. Linking is the same stubbornness shared by two loops. The useful question is not how long the loop is, but whether its route has trapped a relationship that legal motion cannot remove.",
+      "important_detail": "Direction matters. Opposite windings can cancel, so the sign of a turn or crossing is part of the count.",
+      "math_principle": "Going around is a measurable relationship, not merely a visual impression."
+    },
+    {
+      "id": "boundary-orientation",
+      "title": "Boundary and orientation",
+      "theme": "local-to-global",
+      "subthemes": [
+        "surfaces-and-orientation",
+        "holes-and-boundaries"
+      ],
+      "first_principles": "A boundary is where a surface stops. Orientation is the ability to choose a consistent sense of clockwise or outward across the surface. Some surfaces allow that choice everywhere; some betray it after one trip around.",
+      "important_detail": "The trouble often appears only after a full loop. Locally everything can look ordinary while the whole surface refuses a consistent choice.",
+      "math_principle": "A global obstruction can be invisible in every small neighborhood."
+    },
+    {
+      "id": "gauss-bonnet",
+      "title": "Gauss-Bonnet as total turning",
+      "theme": "local-to-global",
+      "subthemes": [
+        "turning-and-curvature",
+        "holes-and-boundaries"
+      ],
+      "first_principles": "Curvature tells how a surface bends near a point. Gauss-Bonnet is the deeper message that the total bending over a whole surface is tied to the surface's basic shape. Local bend is not free to add up to anything it likes.",
+      "important_detail": "Boundaries and corners contribute too. Ignoring the edge of the surface breaks the accounting.",
+      "math_principle": "Local bending totals can be forced by global topology."
+    },
+    {
+      "id": "vector-field-index",
+      "title": "Vector field index",
+      "theme": "local-to-global",
+      "subthemes": [
+        "turning-and-curvature",
+        "signs-and-cancellation"
+      ],
+      "first_principles": "Put a little arrow at each point of a surface. Where the arrow pattern breaks down, you get a defect. The index is a signed count of how the arrows turn around that defect. This matters because a surface may allow the defects to move, but it may not allow the total defect count to disappear.",
+      "important_detail": "Defects can be moved or split, but their total signed effect can be fixed by the surface.",
+      "math_principle": "Local failures of a field are constrained by the whole space that carries the field."
+    },
+    {
+      "id": "fixed-points",
+      "title": "Fixed points",
+      "theme": "shape-as-machine",
+      "subthemes": [
+        "mechanisms-and-locks",
+        "local-to-global"
+      ],
+      "first_principles": "A fixed point is a place that ends up where it started after a motion or rule is applied. Some spaces force at least one fixed point for any rule of a certain kind. The idea is powerful because it proves existence without naming the point: the shape leaves no way for every point to avoid itself.",
+      "important_detail": "The claim depends on the shape of the space and the allowed kind of rule. Change either, and the guarantee may vanish.",
+      "math_principle": "The shape of all possible positions can force a solution to exist."
+    },
+    {
+      "id": "configuration-space",
+      "title": "Configuration space",
+      "theme": "shape-as-machine",
+      "subthemes": [
+        "mechanisms-and-locks",
+        "models-not-labels"
+      ],
+      "first_principles": "Instead of watching a mechanism directly, list every possible position it can take. That list becomes a new shape. Questions about motion become questions about paths inside that shape. If a path is blocked, split, or forced through a narrow passage, the mechanism inherits that restriction from its space of possibilities.",
+      "important_detail": "Forbidden positions are holes or walls in this new shape. They are often the reason a motion is impossible.",
+      "math_principle": "A moving system can be understood by studying the shape of its possible states."
+    },
+    {
+      "id": "duality",
+      "title": "Dual pictures",
+      "theme": "pictures-to-proofs",
+      "subthemes": [
+        "models-not-labels",
+        "holes-and-boundaries"
+      ],
+      "first_principles": "Sometimes a problem becomes easier when regions become dots and shared borders become lines, or when a surface is replaced by another bookkeeping picture. The same situation is being viewed through a different ledger. The value is that the second picture may make adjacency, separation, or counting visible when the first picture hides it.",
+      "important_detail": "A dual picture is useful only if it preserves the relationships needed by the question.",
+      "math_principle": "Changing representation can reveal the invariant that was hidden in the original drawing."
+    },
+    {
+      "id": "parity",
+      "title": "Parity",
+      "theme": "count-what-survives",
+      "subthemes": [
+        "signs-and-cancellation"
+      ],
+      "first_principles": "Parity asks whether a count is even or odd. It is a blunt tool, but sometimes blunt is exactly right: many changes create or remove events in pairs, so evenness or oddness cannot change. When the exact number is too fragile, the odd-or-even shadow of the number may be the part that survives.",
+      "important_detail": "Parity deliberately forgets most details. That is strength when all allowed changes affect the count by twos.",
+      "math_principle": "A coarse count can be more stable than a detailed measurement."
+    }
+  ],
+  "families": [
+    {
+      "id": "deformation-family",
+      "title": "Deformation arguments",
+      "purpose": "Replace a difficult object by an easier one while preserving the answer.",
+      "first_principles": "This family begins by deciding what moves are legal. Then it moves the picture until the answer is easier to see. The proof lives in the guarantee that the motion did not change the feature being asked about.",
+      "concepts": [
+        "generic-position",
+        "deformation",
+        "invariant",
+        "topology-vs-geometry"
+      ]
+    },
+    {
+      "id": "counting-family",
+      "title": "Surviving-count arguments",
+      "purpose": "Find a number or sign that legal moves cannot alter.",
+      "first_principles": "This family turns shape into accounting. It counts pieces, holes, crossings, turns, or defects in a way that cancels fake changes and keeps the real obstruction.",
+      "concepts": [
+        "euler-characteristic",
+        "triangulation",
+        "winding-linking",
+        "parity"
+      ]
+    },
+    {
+      "id": "surface-family",
+      "title": "Surface bookkeeping",
+      "purpose": "Connect small patches, boundaries, and holes to whole-surface conclusions.",
+      "first_principles": "This family treats a surface as a connected ledger. Local behavior can be drawn patch by patch, but the patches must agree when glued back together.",
+      "concepts": [
+        "boundary-orientation",
+        "gauss-bonnet",
+        "vector-field-index",
+        "euler-characteristic"
+      ]
+    },
+    {
+      "id": "embedding-family",
+      "title": "Drawing and embedding arguments",
+      "purpose": "Ask whether connections can live on a chosen surface without forbidden crossings.",
+      "first_principles": "This family studies room. A page, sphere, torus, or other surface gives routes and limitations. The answer may be decided before a perfect drawing is found.",
+      "concepts": [
+        "graph-planarity",
+        "knots-and-links",
+        "duality",
+        "winding-linking"
+      ]
+    },
+    {
+      "id": "motion-family",
+      "title": "Motion through possible states",
+      "purpose": "Turn mechanical or physical questions into questions about paths and barriers.",
+      "first_principles": "This family replaces the object in motion with the space of all its possible positions. Holes and walls in that space explain blocked motions, unavoidable coincidences, and forced positions.",
+      "concepts": [
+        "configuration-space",
+        "fixed-points",
+        "deformation",
+        "shape-as-machine"
+      ]
+    }
+  ],
+  "math_why": {
+    "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. If exact measurement changes too easily, the course asks for a better handle: a count, a boundary, a hole, a turn, a sign, or a forced route.",
+    "first_principles": "Start with an object that is too complicated to inspect directly. Decide which changes leave the real problem unchanged. Move the object until it becomes simpler. Track the feature that did not change. If the simplified object makes the answer clear, the original object inherits that answer.",
+    "important_detail": "The allowed changes are the whole contract. A result is only as strong as the promise that the change did not cut, glue, pass through, erase a boundary, reverse a side, or create a forbidden coincidence.",
+    "principle": "Topology and geometry become powerful when local details are organized so that the whole shape has fewer choices than it appears to have."
+  },
+  "missing_caption_ids": [
+    "nx1XOlezuvk"
+  ],
+  "stats": {
+    "videos": 35,
+    "lectures": 15,
+    "captioned_videos": 34,
+    "missing_captions": 1,
+    "themes": 6,
+    "subthemes": 10,
+    "concepts": 16,
+    "families": 5
+  }
+}

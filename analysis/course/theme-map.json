@@ -1,0 +1,38 @@
+[
+  {
+    "id": "see-by-deforming",
+    "title": "See by bending without tearing",
+    "plain": "The course keeps asking what remains true after a shape is stretched, nudged, or redrawn. The point is not that exact shape is unimportant. The point is that many hard questions become visible only after you stop worshiping exact size and angle.",
+    "why_math_matters": "A deformation is a promise: every step changes the picture, but not the chosen kind of truth. Once that promise is clear, a messy object can be replaced by a simpler one without losing the answer."
+  },
+  {
+    "id": "count-what-survives",
+    "title": "Count the thing that cannot disappear",
+    "plain": "Many arguments in the lectures replace a complicated picture with a stubborn count: holes, crossings, turns, regions, signs, or boundary pieces. The count is valuable only when it survives allowed changes.",
+    "why_math_matters": "A good count turns a drawing into evidence. If the count would have to change for the desired outcome, the desired outcome is impossible under the allowed moves."
+  },
+  {
+    "id": "local-to-global",
+    "title": "Use small facts to force whole-shape facts",
+    "plain": "A surface may look harmless when seen in tiny neighborhoods. The surprise is that many small local rules add up to a global demand on the whole object.",
+    "why_math_matters": "The mathematical principle is bookkeeping across a whole shape. Local turns, curvatures, or signs are not isolated facts; their total can be fixed by the way the object is connected."
+  },
+  {
+    "id": "generic-before-exception",
+    "title": "Understand the ordinary case first",
+    "plain": "The course often moves away from special coincidences: tangencies, perfect alignments, double accidents, or delicate symmetries. The ordinary case is easier to reason about because accidents have been removed.",
+    "why_math_matters": "The ordinary case gives a stable picture. Exceptional cases are then handled by gently moving them aside or by seeing them as moments where a stable count changes in a controlled pair."
+  },
+  {
+    "id": "pictures-to-proofs",
+    "title": "Make pictures carry reasons",
+    "plain": "The lectures use drawings heavily, but not as decoration. A drawing is useful only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
+    "why_math_matters": "A proof can be a disciplined picture: the picture tells you what is allowed to move, what must stay fixed, and why no hidden step smuggles in a new assumption."
+  },
+  {
+    "id": "shape-as-machine",
+    "title": "Treat shape as a machine",
+    "plain": "A shape can force motion, block a motion, or make an outcome unavoidable. This is why topology and geometry reach into mechanisms, knots, surfaces, and physical puzzles.",
+    "why_math_matters": "The key idea is constraint. If the shape leaves only certain paths open, then the mathematics can predict behavior without solving every tiny physical detail."
+  }
+]

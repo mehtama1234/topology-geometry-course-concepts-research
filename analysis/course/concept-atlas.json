@@ -1,0 +1,192 @@
+[
+  {
+    "id": "generic-position",
+    "title": "Generic position",
+    "theme": "generic-before-exception",
+    "subthemes": [
+      "allowed-moves",
+      "singular-moments"
+    ],
+    "first_principles": "Imagine trying to understand a room while every chair is exactly lined up with every table edge. That neatness is a trap: tiny movements destroy it. Generic position means shifting the picture just enough that fragile coincidences are gone. Then crossings happen one at a time, contacts are clean, and the argument sees the structure rather than the accident.",
+    "important_detail": "The shift must be small enough that it does not change the real question. It removes accidental equalities, not the object being studied.",
+    "math_principle": "Stable reasoning begins with a case that survives small disturbances."
+  },
+  {
+    "id": "deformation",
+    "title": "Deformation",
+    "theme": "see-by-deforming",
+    "subthemes": [
+      "allowed-moves",
+      "invariant-receipts"
+    ],
+    "first_principles": "A deformation is a continuous change, like bending a wire or stretching a rubber sheet, where nothing is cut, glued, or teleported. It lets you replace a hard picture by an easier picture while keeping the kind of truth you care about.",
+    "important_detail": "The power is in the rulebook. If cutting is forbidden, a knot cannot simply be untied by passing a strand through another strand.",
+    "math_principle": "A controlled change preserves chosen facts and exposes which facts are truly structural."
+  },
+  {
+    "id": "invariant",
+    "title": "Invariant",
+    "theme": "count-what-survives",
+    "subthemes": [
+      "invariant-receipts",
+      "signs-and-cancellation"
+    ],
+    "first_principles": "An invariant is something you check before and after an allowed change. If it is the same, it can certify that two pictures may belong to the same world. If it differs, the pictures cannot be connected by the allowed moves.",
+    "important_detail": "An invariant does not need to describe everything. It only needs to catch the difference that matters for the question.",
+    "math_principle": "A preserved quantity can turn impossibility into a short argument."
+  },
+  {
+    "id": "topology-vs-geometry",
+    "title": "Topology and geometry",
+    "theme": "see-by-deforming",
+    "subthemes": [
+      "models-not-labels"
+    ],
+    "first_principles": "Geometry cares about measured shape: distance, angle, area, curvature. Topology cares about connectedness, holes, boundary, and what survives bending. The course needs both because some questions depend on exact bending while others depend only on the routes and obstructions inside the shape.",
+    "important_detail": "The distinction is not a wall. Geometry often produces the local measurements, while topology explains why their total has no freedom.",
+    "math_principle": "Choose the level of description that keeps the real constraint and discards the distracting details."
+  },
+  {
+    "id": "euler-characteristic",
+    "title": "Euler characteristic",
+    "theme": "count-what-survives",
+    "subthemes": [
+      "holes-and-boundaries",
+      "signs-and-cancellation"
+    ],
+    "first_principles": "Break a surface into corners, edges, and pieces. Count corners, subtract edges, add pieces. The surprising part is that many different breakups give the same final number. That number is a compact way to remember how the surface is put together.",
+    "important_detail": "The pieces can be changed, refined, or redrawn, but the alternating count is built so added internal boundaries cancel out.",
+    "math_principle": "A local accounting scheme can produce a global fingerprint of a surface."
+  },
+  {
+    "id": "triangulation",
+    "title": "Triangulation and cell decomposition",
+    "theme": "pictures-to-proofs",
+    "subthemes": [
+      "holes-and-boundaries",
+      "models-not-labels"
+    ],
+    "first_principles": "To reason about a soft surface, cut it mentally into simple patches. Triangles are convenient because they are easy to count and glue, but the deeper move is to replace a slippery continuous object with a finite ledger. Once the surface is made of patches, the argument can ask what happens when patches are split, joined, or redrawn.",
+    "important_detail": "The cuts are a tool, not the truth itself. A valid count must survive when the surface is cut in another acceptable way.",
+    "math_principle": "Complicated continuous objects can be studied through finite bookkeeping."
+  },
+  {
+    "id": "graph-planarity",
+    "title": "Planar graphs",
+    "theme": "shape-as-machine",
+    "subthemes": [
+      "holes-and-boundaries",
+      "mechanisms-and-locks"
+    ],
+    "first_principles": "A graph is dots joined by lines. Asking whether it can be drawn on a page without unwanted crossings is really a question about available routes on a surface. The graph may be simple as a list of connections, but the page has limited room, and that room can force crossings no matter how patiently the drawing is rearranged.",
+    "important_detail": "Crossings are not just ugly drawings. A crossing may signal that the page lacks enough room for the required connections.",
+    "math_principle": "Connectivity plus surface bookkeeping can forbid a drawing before anyone tries every drawing."
+  },
+  {
+    "id": "knots-and-links",
+    "title": "Knots and links",
+    "theme": "shape-as-machine",
+    "subthemes": [
+      "curves-loops-knots",
+      "allowed-moves"
+    ],
+    "first_principles": "A knot is a closed loop in space. The question is not whether it looks tangled, but whether it can be moved into a simple circle without cutting it or passing it through itself. This turns untangling into a rule-governed problem: the loop may slide and bend freely, but it cannot cheat by breaking the space it lives in.",
+    "important_detail": "A flat drawing hides over-under information. The drawing is evidence only when those crossings are recorded.",
+    "math_principle": "A path in space can carry information that survives all legal untangling moves."
+  },
+  {
+    "id": "winding-linking",
+    "title": "Winding and linking",
+    "theme": "count-what-survives",
+    "subthemes": [
+      "curves-loops-knots",
+      "signs-and-cancellation"
+    ],
+    "first_principles": "A loop can go around something. If it winds once around a post, pulling the loop tighter or looser does not remove that fact. Linking is the same stubbornness shared by two loops. The useful question is not how long the loop is, but whether its route has trapped a relationship that legal motion cannot remove.",
+    "important_detail": "Direction matters. Opposite windings can cancel, so the sign of a turn or crossing is part of the count.",
+    "math_principle": "Going around is a measurable relationship, not merely a visual impression."
+  },
+  {
+    "id": "boundary-orientation",
+    "title": "Boundary and orientation",
+    "theme": "local-to-global",
+    "subthemes": [
+      "surfaces-and-orientation",
+      "holes-and-boundaries"
+    ],
+    "first_principles": "A boundary is where a surface stops. Orientation is the ability to choose a consistent sense of clockwise or outward across the surface. Some surfaces allow that choice everywhere; some betray it after one trip around.",
+    "important_detail": "The trouble often appears only after a full loop. Locally everything can look ordinary while the whole surface refuses a consistent choice.",
+    "math_principle": "A global obstruction can be invisible in every small neighborhood."
+  },
+  {
+    "id": "gauss-bonnet",
+    "title": "Gauss-Bonnet as total turning",
+    "theme": "local-to-global",
+    "subthemes": [
+      "turning-and-curvature",
+      "holes-and-boundaries"
+    ],
+    "first_principles": "Curvature tells how a surface bends near a point. Gauss-Bonnet is the deeper message that the total bending over a whole surface is tied to the surface's basic shape. Local bend is not free to add up to anything it likes.",
+    "important_detail": "Boundaries and corners contribute too. Ignoring the edge of the surface breaks the accounting.",
+    "math_principle": "Local bending totals can be forced by global topology."
+  },
+  {
+    "id": "vector-field-index",
+    "title": "Vector field index",
+    "theme": "local-to-global",
+    "subthemes": [
+      "turning-and-curvature",
+      "signs-and-cancellation"
+    ],
+    "first_principles": "Put a little arrow at each point of a surface. Where the arrow pattern breaks down, you get a defect. The index is a signed count of how the arrows turn around that defect. This matters because a surface may allow the defects to move, but it may not allow the total defect count to disappear.",
+    "important_detail": "Defects can be moved or split, but their total signed effect can be fixed by the surface.",
+    "math_principle": "Local failures of a field are constrained by the whole space that carries the field."
+  },
+  {
+    "id": "fixed-points",
+    "title": "Fixed points",
+    "theme": "shape-as-machine",
+    "subthemes": [
+      "mechanisms-and-locks",
+      "local-to-global"
+    ],
+    "first_principles": "A fixed point is a place that ends up where it started after a motion or rule is applied. Some spaces force at least one fixed point for any rule of a certain kind. The idea is powerful because it proves existence without naming the point: the shape leaves no way for every point to avoid itself.",
+    "important_detail": "The claim depends on the shape of the space and the allowed kind of rule. Change either, and the guarantee may vanish.",
+    "math_principle": "The shape of all possible positions can force a solution to exist."
+  },
+  {
+    "id": "configuration-space",
+    "title": "Configuration space",
+    "theme": "shape-as-machine",
+    "subthemes": [
+      "mechanisms-and-locks",
+      "models-not-labels"
+    ],
+    "first_principles": "Instead of watching a mechanism directly, list every possible position it can take. That list becomes a new shape. Questions about motion become questions about paths inside that shape. If a path is blocked, split, or forced through a narrow passage, the mechanism inherits that restriction from its space of possibilities.",
+    "important_detail": "Forbidden positions are holes or walls in this new shape. They are often the reason a motion is impossible.",
+    "math_principle": "A moving system can be understood by studying the shape of its possible states."
+  },
+  {
+    "id": "duality",
+    "title": "Dual pictures",
+    "theme": "pictures-to-proofs",
+    "subthemes": [
+      "models-not-labels",
+      "holes-and-boundaries"
+    ],
+    "first_principles": "Sometimes a problem becomes easier when regions become dots and shared borders become lines, or when a surface is replaced by another bookkeeping picture. The same situation is being viewed through a different ledger. The value is that the second picture may make adjacency, separation, or counting visible when the first picture hides it.",
+    "important_detail": "A dual picture is useful only if it preserves the relationships needed by the question.",
+    "math_principle": "Changing representation can reveal the invariant that was hidden in the original drawing."
+  },
+  {
+    "id": "parity",
+    "title": "Parity",
+    "theme": "count-what-survives",
+    "subthemes": [
+      "signs-and-cancellation"
+    ],
+    "first_principles": "Parity asks whether a count is even or odd. It is a blunt tool, but sometimes blunt is exactly right: many changes create or remove events in pairs, so evenness or oddness cannot change. When the exact number is too fragile, the odd-or-even shadow of the number may be the part that survives.",
+    "important_detail": "Parity deliberately forgets most details. That is strength when all allowed changes affect the count by twos.",
+    "math_principle": "A coarse count can be more stable than a detailed measurement."
+  }
+]
