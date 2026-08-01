@@ -143,7 +143,7 @@
     },
     {
       "requirement": "Concept contrast reading",
-      "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 1355 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
+      "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 2261 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
       "status": "met"
     },
     {
@@ -232,7 +232,7 @@
     "theorem_use_contracts": 8,
     "theorem_contract_words": 1368,
     "concept_contrasts": 10,
-    "concept_contrast_words": 1355,
+    "concept_contrast_words": 2261,
     "reader_checks": 11,
     "term_translations": 16,
     "term_translation_words": 1850,
