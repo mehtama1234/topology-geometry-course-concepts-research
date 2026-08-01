@@ -2684,6 +2684,15 @@ def build_lecture_reader_test(lecture, spine_row):
     }
 
 
+def build_lecture_answer_guide(lecture, spine_row):
+    examples = lecture["deep"]["examples"]
+    return {
+        "object_answer": f"A strong answer names {spine_row['object']} as the thing being reasoned about, then explains what data it carries in the lecture. It should use '{examples[0]['title']}' as a concrete anchor and avoid treating the object as a loose drawing or a memorized term.",
+        "move_answer": f"A strong answer says that the legal move is {spine_row['legal_move']}. It should also name an illegal shortcut: any motion that drops boundary data, changes the carrier space, invents extra room, removes a required sign rule, or forgets the source caveat would change the problem rather than solve it.",
+        "conclusion_answer": f"A strong answer protects this fact: {spine_row['surviving_fact']} It then uses that protected fact to explain the consequence in plain language and connects forward to the later need: {spine_row['why_later']}",
+    }
+
+
 def build_quality_audit(data):
     stats = data["stats"]
     concept_min = min(len(c["appearances"]) for c in data["concepts"])
@@ -2697,6 +2706,7 @@ def build_quality_audit(data):
     lecture_caption_nuance_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["caption_nuance"][field])) for field in ["risk", "safe_reading", "verify_question"]) for l in data["lectures"])
     lecture_source_faithfulness_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["source_faithfulness"][field])) for field in ["caption_support", "course_inference", "caveat"]) for l in data["lectures"])
     lecture_reader_test_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["reader_test"][field])) for field in ["explain_object", "test_allowed_move", "protect_conclusion"]) for l in data["lectures"])
+    lecture_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["answer_guide"][field])) for field in ["object_answer", "move_answer", "conclusion_answer"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
     concept_anchor_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["anchor"][field])) for field in ["course_moment", "principle", "reader_question"]) for c in data["concepts"])
@@ -2731,7 +2741,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Lecture reader testing",
-            "evidence": f"Each lecture page now includes a three-part reader test for explaining the object, checking the allowed move, and protecting the conclusion, with {lecture_reader_test_words} total reader-test words.",
+            "evidence": f"Each lecture page now includes a three-part reader test and answer guide for explaining the object, checking the allowed move, and protecting the conclusion, with {lecture_reader_test_words} reader-test words and {lecture_answer_guide_words} answer-guide words.",
             "status": "met",
         },
         {
@@ -2813,6 +2823,7 @@ def build_quality_audit(data):
             "lecture_caption_nuance_words": lecture_caption_nuance_words,
             "lecture_source_faithfulness_words": lecture_source_faithfulness_words,
             "lecture_reader_test_words": lecture_reader_test_words,
+            "lecture_answer_guide_words": lecture_answer_guide_words,
             "concept_essay_words": concept_essay_words,
             "concept_workup_words": concept_workup_words,
             "concept_anchor_words": concept_anchor_words,
@@ -3171,6 +3182,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         nuance = l["deep"]["caption_nuance"]
         faith = l["deep"]["source_faithfulness"]
         reader_test = l["deep"]["reader_test"]
+        answer_guide = l["deep"]["answer_guide"]
         lecture_refs = [ref for ref in data["references"] if l["lecture"] in ref["lectures"]]
         lecture_html += f"""<section class="lecture{miss}"><h2>Lecture {l['lecture']:02d}: {esc(l['deep']['title'])}</h2><p>{esc(l['deep']['problem'])}</p><p>{esc(l['deep']['first_principles'])}</p><div>{vids}</div><p><a class="arrow" href="{href}">Open lecture explainer</a></p><p class="evidence">Transcript words: {l['transcript_words']}. Missing captions: {', '.join(l['missing_caption_ids']) or 'none'}.</p></section>"""
         lecture_body = f"""
@@ -3198,6 +3210,10 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <p><b>Explain the object:</b> {esc(reader_test['explain_object'])}</p>
   <p><b>Check the allowed move:</b> {esc(reader_test['test_allowed_move'])}</p>
   <p><b>Protect the conclusion:</b> {esc(reader_test['protect_conclusion'])}</p>
+  <h3>Answer Guide</h3>
+  <p><b>Object answer:</b> {esc(answer_guide['object_answer'])}</p>
+  <p><b>Move answer:</b> {esc(answer_guide['move_answer'])}</p>
+  <p><b>Conclusion answer:</b> {esc(answer_guide['conclusion_answer'])}</p>
 </section>
 <section class="panel">
   <h2>First Principles</h2>
@@ -3298,7 +3314,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['references']} references, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['references']} references, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -3378,6 +3394,7 @@ def main():
         }
         lecture_record["deep"]["source_faithfulness"] = build_source_faithfulness(lecture_record)
         lecture_record["deep"]["reader_test"] = build_lecture_reader_test(lecture_record, spine_by_lecture[number])
+        lecture_record["deep"]["answer_guide"] = build_lecture_answer_guide(lecture_record, spine_by_lecture[number])
         lectures.append(lecture_record)
 
     themes = []
@@ -3483,6 +3500,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {metrics['lecture_deepening_words']} lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields
 - {metrics['lecture_walkthrough_words']} slow-walkthrough words across lecture pages, explaining each lecture from object to payoff to reader check
 - {metrics['lecture_reader_test_words']} lecture reader-test words asking the reader to explain the object, check the allowed move, and protect the conclusion
+- {metrics['lecture_answer_guide_words']} lecture answer-guide words showing what a strong self-check answer must contain
 - {metrics['lecture_caption_nuance_words']} caption-nuance words across lecture pages and source audit, explaining risky transcript terms and safe readings
 - {metrics['lecture_source_lens_words']} source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
 - {metrics['lecture_source_checkpoint_words']} source-checkpoint words across lecture trust, overread-warning, and math-question fields
@@ -3507,7 +3525,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - references.html with {metrics['references']} course, primary-paper, and standard-text links, each with source caveats and lecture/concept coverage
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, and every method-playbook field to clear 25 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, and every method-playbook field to clear 25 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

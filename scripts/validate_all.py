@@ -200,6 +200,10 @@ def main():
         for field in ["explain_object", "test_allowed_move", "protect_conclusion"]:
             if len(words(reader_test.get(field))) < 35:
                 fail(f"lecture {lecture['lecture']} reader test {field} too thin")
+        answer_guide = deep.get("answer_guide") or {}
+        for field in ["object_answer", "move_answer", "conclusion_answer"]:
+            if len(words(answer_guide.get(field))) < 30:
+                fail(f"lecture {lecture['lecture']} answer guide {field} too thin")
         essay_words = sum(len(words(p)) for p in deep.get("essay") or [])
         if essay_words < 300:
             fail(f"lecture {lecture['lecture']} essay too thin")
@@ -404,6 +408,9 @@ def main():
         for phrase in ["Can You Explain It?", "Explain the object:", "Check the allowed move:", "Protect the conclusion:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing reader test phrase {phrase}: {lecture_name}")
+        for phrase in ["Answer Guide", "Object answer:", "Move answer:", "Conclusion answer:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing answer guide phrase {phrase}: {lecture_name}")
         for phrase in ["Further Source Trail", "Why it belongs:", "Use carefully:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing reference phrase {phrase}: {lecture_name}")

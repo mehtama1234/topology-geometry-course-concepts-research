@@ -13,7 +13,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Own repo/folder | Local git repo at `topology-geometry-course-concepts-research` on `main` | Met |
 | Source coverage | 35 playlist videos indexed; 15 lecture groups; 34 caption files recovered; missing id `nx1XOlezuvk` preserved | Met with caveat |
 | Individual video links | `site/videos.html` lists every YouTube item in playlist order | Met |
-| Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, lecture deepening, slow walkthrough, reader test, source checkpoint, source-faithfulness audit, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
+| Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, lecture deepening, slow walkthrough, reader test, answer guide, source checkpoint, source-faithfulness audit, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
 | Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures | Met |
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, anchor examples, work-from-scratch blocks, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections; themes include lenses, subthemes include first-principles bridges and reading routines, and families include method playbooks and contracts | Met |
@@ -45,6 +45,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 2,805 lecture reader-test words.
+- 2,860 lecture answer-guide words.
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
@@ -73,7 +74,7 @@ The validator checks:
 
 - expected video, lecture, caption, concept, theme, subtheme, family counts;
 - required generated pages;
-- depth floors for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why prose;
+- depth floors for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why prose;
 - at least three concrete examples per lecture;
 - lecture-spine structure and length;
 - concept/theme/subtheme/family id integrity;
@@ -88,6 +89,7 @@ The validator checks:
 - lecture-page source-checkpoint sections;
 - lecture-page source-faithfulness audit sections;
 - lecture-page can-you-explain-it reader-test sections;
+- lecture-page answer-guide sections;
 - concept-page anchor-example sections;
 - concept-page work-from-scratch sections;
 - theme-page lens sections;

@@ -48,6 +48,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 2,805 lecture reader-test words.
+- 2,860 lecture answer-guide words.
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
