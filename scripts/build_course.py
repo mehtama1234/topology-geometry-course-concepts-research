@@ -4199,6 +4199,7 @@ def build_source_faithfulness(lecture):
     anchors = ", ".join(lecture["deep"]["anchors"][:4])
     examples = "; ".join(example["title"] for example in lecture["deep"]["examples"][:3])
     number = lecture["lecture"]
+    title = lecture["deep"]["title"]
     if lecture["missing_caption_ids"]:
         support = f"The available captions support the lecture through anchors such as {anchors}, and through concrete course moments such as {examples}. The missing video id {', '.join(lecture['missing_caption_ids'])} means transcript-level evidence is incomplete, so exact wording and theorem-transition claims must stay tied to recovered captions or visible demonstrations."
         inference = "The page uses the lecture sequence, the surrounding parts, and the course's repeated object-move-surviving-fact pattern to connect the recovered source to the broader explanation. Those connections are useful course-arc interpretation, not direct quotation from the missing segment and not proof that Tokieda used the same wording."
@@ -4222,7 +4223,15 @@ def build_source_faithfulness(lecture):
             "The safest revision habit is to label the kind of support. If the claim needs exact terminology, recheck the video; if it only explains the course role, keep it framed as interpretation rather than as transcript evidence.",
             "Caption evidence can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports.",
         ])
-        support = f"The recovered captions support the page through anchors such as {anchors}, and through concrete course moments such as {examples}. {support_tail}"
+        support_open = varied((number, "faith-support-open"), [
+            f"For \"{title}\", use these recovered caption anchors as the source footing: {anchors}. The concrete course moments are {examples}.",
+            f"In \"{title}\", the caption trail gives these anchors: {anchors}. The page also has to stay tied to course moments such as {examples}.",
+            f"Source support for \"{title}\" begins with the recovered anchors {anchors}, then with visible course moments such as {examples}.",
+            f"\"{title}\" is grounded by caption anchors including {anchors}, plus concrete course moments such as {examples}.",
+            f"Treat {anchors} as caption-level support for \"{title}\", and use {examples} as the demonstration-level support.",
+            f"The source trail for \"{title}\" is strongest where the anchors {anchors} line up with course moments such as {examples}.",
+        ])
+        support = f"{support_open} {support_tail}"
     return {
         "caption_support": support,
         "course_inference": inference,
@@ -4236,6 +4245,7 @@ def build_lecture_reader_test(lecture, spine_row):
     second_example = examples[1]["title"]
     third_example = examples[2]["title"]
     number = lecture["lecture"]
+    title = lecture["deep"]["title"]
     object_close = varied((number, "reader-object-close"), [
         "Say what information that object carries before any theorem name is used.",
         "Name the data the object keeps track of before using course vocabulary.",
@@ -4260,10 +4270,34 @@ def build_lecture_reader_test(lecture, spine_row):
         "Show how the protected evidence makes the conclusion unavoidable or limited.",
         "Carry the surviving fact all the way to the payoff so the final claim has a reason.",
     ])
+    object_open = varied((number, "reader-object-open"), [
+        f"Use '{first_example}' to name the object in everyday words: {spine_row['object']}",
+        f"Let '{first_example}' reveal what the lecture is acting on: {spine_row['object']}",
+        f"Start from '{first_example}' and put the object into plain words: {spine_row['object']}",
+        f"Rebuild \"{title}\" from the carrier of the claim: {spine_row['object']}",
+        f"Before the topic name appears, use '{first_example}' to name what is being watched: {spine_row['object']}",
+        f"Make the working object in \"{title}\" explicit: {spine_row['object']}",
+    ])
+    move_open = varied((number, "reader-move-open"), [
+        f"Use '{second_example}' to state the allowed move before trusting the simplified picture: {spine_row['legal_move']}",
+        f"Let '{second_example}' show what change the lecture permits: {spine_row['legal_move']}",
+        f"Turn the move in '{second_example}' into a permitted action: {spine_row['legal_move']}",
+        f"In '{second_example}', name the legal motion or construction: {spine_row['legal_move']}",
+        f"Use '{second_example}' to give the rulebook for the move: {spine_row['legal_move']}",
+        f"Describe the action in '{second_example}' that leaves the same problem in place: {spine_row['legal_move']}",
+    ])
+    conclusion_open = varied((number, "reader-conclusion-open"), [
+        f"Use '{third_example}' to protect this surviving fact: {spine_row['surviving_fact']}",
+        f"Let '{third_example}' keep this evidence visible after the move: {spine_row['surviving_fact']}",
+        f"Say what survives in '{third_example}': {spine_row['surviving_fact']}",
+        f"Make the conclusion in \"{title}\" rest on this fact: {spine_row['surviving_fact']}",
+        f"Carry the evidence from '{third_example}' through the explanation: {spine_row['surviving_fact']}",
+        f"Name the fact in '{third_example}' that the legal move cannot erase: {spine_row['surviving_fact']}",
+    ])
     return {
-        "explain_object": f"In everyday language, explain the lecture's main object: {spine_row['object']} {picture_warning} Use the concrete moment '{first_example}'. {object_close}",
-        "test_allowed_move": f"Name the allowed move in this lecture: {spine_row['legal_move']} {move_close} Use '{second_example}' as the check that keeps the motion honest.",
-        "protect_conclusion": f"State the surviving fact: {spine_row['surviving_fact']} {conclusion_close} Use '{third_example}' to connect the protected evidence to the later course arc: {spine_row['why_later']}",
+        "explain_object": f"{object_open} {picture_warning} {object_close}",
+        "test_allowed_move": f"{move_open} {move_close} That check keeps the move tied to the original lecture problem.",
+        "protect_conclusion": f"{conclusion_open} {conclusion_close} Connect that protected evidence to the later course arc: {spine_row['why_later']}",
     }
 
 
@@ -4288,7 +4322,7 @@ def build_lecture_answer_guide(lecture, spine_row):
     lecture_label = f"Lecture {number:02d}"
     object_close = varied((number, "answer-object-close"), [
         "Use the anchor to keep the explanation tied to a real course moment instead of a memorized term.",
-        "The answer should make the object do work before the title of the concept appears.",
+        "The object has to do work before the concept title appears.",
         "This keeps the reader focused on the carrier of the reasoning, not only the name of the topic.",
         "The concrete anchor should show what the object records and why the lecture needed it.",
     ])
@@ -4314,18 +4348,18 @@ def build_lecture_answer_guide(lecture, spine_row):
         "That shortcut would change the problem rather than solve it.",
         "That move would make the easier conclusion belong to a different problem.",
         "The shortcut is illegal because it discards the rule the lecture is testing.",
-        "The reader should see why the shortcut breaks the contract of the lecture.",
+        "The shortcut must be visibly tied to the contract it breaks.",
     ])
     surviving_fact = spine_row["surviving_fact"].rstrip(".")
     why_strong_open = varied((number, "answer-why-open"), [
-        "A good answer is not a longer list of topics. It works because it separates the carrier, the allowed change, and the fact that survives.",
+        "The guide is not a longer list of topics; it separates the carrier, the allowed change, and the fact that survives.",
         "This answer works when the reader can see the chain from the course example to the conclusion without leaning on a theorem title.",
         "The test is whether the answer would still make sense if all formal labels were hidden and only the object, rule, and surviving evidence remained.",
         "The point of the guide is to make the proof habit visible: choose the right thing to watch, state the rule of motion, then say what the motion cannot erase.",
         "The answer has force when the reader can rebuild the argument from the classroom object, not from memory of the lecture title.",
-        "The answer should read like a small proof contract: what is present, what may change, what must survive, and what conclusion that survival earns.",
+        "Read the guide as a small proof contract: what is present, what may change, what must survive, and what conclusion that survival earns.",
         "The guide works only if a beginner can test each sentence against the lecture scene instead of accepting a formal name as authority.",
-        "The answer should expose the load-bearing detail: the object, the permitted action, the surviving evidence, and the limit of the claim.",
+        "The load-bearing detail has to stay exposed: the object, the permitted action, the surviving evidence, and the limit of the claim.",
     ])
     why_strong_close = varied((number, "answer-why-close"), [
         f"In this lecture, '{examples[1]['title']}' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted.",
