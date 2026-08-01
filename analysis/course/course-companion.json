@@ -552,8 +552,8 @@
           "payoff": "The reader learns the course's first durable lesson: local sameness does not guarantee global sameness, and a physical test can expose the difference."
         },
         "source_lens": [
-          "Read the Mobius-strip words as evidence about a gluing rule. The important source move is not that paper is surprising; it is that following, coloring, or cutting the strip tests whether a local side choice survives one full trip around the surface.",
-          "The anchor words should be held together. Twist and glue explain how the object is made. One side versus two sides explains what the whole object remembers. Cutting along the center is the controlled operation that makes that memory visible."
+          "Read the Mobius-strip words as evidence about a gluing rule. The important source move is not that paper is surprising; it is that following, coloring, or cutting the strip tests whether a local side choice survives one full trip around the surface. That makes the paper model a first-principles experiment about local information meeting a whole-object constraint.",
+          "The anchor words should be held together. Twist and glue explain how the object is made. One side versus two sides explains what the whole object remembers. Cutting along the center is the controlled operation that makes that memory visible. The later course keeps this pattern: make the object honestly, choose a legal operation, and ask what survives the full journey."
         ],
         "source_checkpoint": {
           "trust": "Trust the making-following-cutting sequence as evidence about the gluing rule. The spoken and visual source keeps returning to actions that test the same question: when local side information is carried around the strip, does it return unchanged or reversed?",
@@ -682,8 +682,8 @@
           "payoff": "The reader learns how a simplified picture can answer the original problem without secretly solving a different boundary puzzle."
         },
         "source_lens": [
-          "Read the disk-path lecture as a proof about boundary order. The source language around deformation and curves that do not intersect matters because it fixes the contract before any drawing is simplified.",
-          "The anchor words prevent a common false proof. A disk by itself is not enough; the paired boundary points, their order, and the no-crossing rule are the data. Deformation is evidence only while those data stay unchanged."
+          "Read the disk-path lecture as a proof about boundary order. The source language around deformation and curves that do not intersect matters because it fixes the contract before any drawing is simplified. The proof is not that one sketch looks impossible; it is that every legal sketch inherits the same boundary order problem.",
+          "The anchor words prevent a common false proof. A disk by itself is not enough; the paired boundary points, their order, and the no-crossing rule are the data. Deformation is evidence only while those data stay unchanged. This becomes the course's rule for every later simplification: first state what cannot be disturbed, then simplify."
         ],
         "source_checkpoint": {
           "trust": "Trust the disk-path setup only together with endpoint order, fixed boundary data, and the rule that paths may not cross. The source is not asking whether one can draw neatly; it is asking what every legal drawing inherits from the boundary.",
@@ -816,8 +816,8 @@
           "payoff": "The reader can later test whether a theorem is being applied to the right space, because the space's construction rules are visible."
         },
         "source_lens": [
-          "Read product, quotient, surgery, balls, spheres, and manifolds as construction words. The lecture is teaching how a space is made before later theorems are allowed to use that space.",
-          "The source lens is to ask what each construction changes. Product adds independent choices. Quotient changes sameness. Surgery changes a part under a boundary rule. Manifold says local neighborhoods are ordinary enough for later local arguments."
+          "Read product, quotient, surgery, balls, spheres, and manifolds as construction words. The lecture is teaching how a space is made before later theorems are allowed to use that space. The source evidence is therefore not a vocabulary list; it is a set of recipes for creating the worlds in which paths, maps, and fields will live.",
+          "The source lens is to ask what each construction changes. Product adds independent choices. Quotient changes sameness. Surgery changes a part under a boundary rule. Manifold says local neighborhoods are ordinary enough for later local arguments. If a reader can state the construction rule in everyday language, later abstract terms become tools rather than labels."
         ],
         "source_checkpoint": {
           "trust": "Trust product, quotient, manifold, and surgery language as construction evidence. The lecture is saying how spaces are built before they are used, so each word should be read as a rule about choices, sameness, local patches, or replacement.",
@@ -936,8 +936,8 @@
           "payoff": "The reader gains the habit needed for quotient spaces, orientation, and any later argument where the object is defined by a rule rather than by appearance."
         },
         "source_lens": [
-          "Read the square and boundary-identification anchors as instructions rather than pictures. The source point is that the same drawn square can become different spaces depending on which edges are treated as the same and whether direction is reversed.",
-          "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing is useful only after the identification rule has been read."
+          "Read the square and boundary-identification anchors as instructions rather than pictures. The source point is that the same drawn square can become different spaces depending on which edges are treated as the same and whether direction is reversed. A boundary label is a travel rule, so it changes the possible routes inside the finished space.",
+          "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing is useful only after the identification rule has been read. That is why orientation and quotient space belong together: the way a traveler returns decides whether local direction choices can agree globally."
         ],
         "source_checkpoint": {
           "trust": "Trust edge labels and arrows as travel instructions. They decide whether a path stops, re-enters somewhere else, or returns with its local direction changed, which means the labels are part of the mathematical object rather than decoration.",
@@ -1056,8 +1056,8 @@
           "payoff": "The reader sees why later counts and signs need a surface type beneath them; the surface is the stage that gives those later statements force."
         },
         "source_lens": [
-          "Read classification, orientable, non-orientable, Mobius, and surgery as a vocabulary for durable surface parts. The source arc is about reducing surfaces to pieces that survive legal simplification.",
-          "The practical evidence is not the name of a surface family alone. Handles give routes, crosscaps reverse side choices, boundaries add edge behavior, and surgery explains how the surface is changed while these features are tracked."
+          "Read classification, orientable, non-orientable, Mobius, and surgery as a vocabulary for durable surface parts. The source arc is about reducing surfaces to pieces that survive legal simplification. The lecture is not asking the reader to memorize a catalog; it is showing which features remain after the surface is rearranged without changing its type.",
+          "The practical evidence is not the name of a surface family alone. Handles give routes, crosscaps reverse side choices, boundaries add edge behavior, and surgery explains how the surface is changed while these features are tracked. Later Euler characteristic and index theorems need this discipline because their numbers depend on the surface being identified correctly."
         ],
         "source_checkpoint": {
           "trust": "Trust handles, crosscaps, orientability, and boundary components as durable surface evidence, not as surface names alone. The source treats them as features that survive legal simplification and therefore can support classification.",
@@ -1176,8 +1176,8 @@
           "payoff": "The reader is prepared for intersection number because only clean, evidence-bearing meetings deserve to be counted."
         },
         "source_lens": [
-          "Read submanifold, obstacles, dimensions, and intersection as a question about room. The source material is preparing the reader to separate a meeting caused by a cramped space from a meeting caused by a careless drawing.",
-          "The important source move is ordinary position. Before counting intersections, the objects must be placed so meetings are clean enough to inspect. Dimension then tells whether avoidance is expected or whether meeting carries evidence."
+          "Read submanifold, obstacles, dimensions, and intersection as a question about room. The source material is preparing the reader to separate a meeting caused by a cramped space from a meeting caused by a careless drawing. Dimension is being used as a count of available freedom, not as an abstract tag.",
+          "The important source move is ordinary position. Before counting intersections, the objects must be placed so meetings are clean enough to inspect. Dimension then tells whether avoidance is expected or whether meeting carries evidence. This is the setup that makes signed intersection number honest: the later count only works after the meetings are ordinary enough to assign meaning."
         ],
         "source_checkpoint": {
           "trust": "Trust dimension and ordinary-position language as preparation for deciding whether meetings are accidental or forced. The source is building the right conditions for later counting, where each meeting must be clean enough to inspect.",
@@ -1294,8 +1294,8 @@
           "payoff": "The reader learns why topology can prove that a special state exists even when the exact state is not computed."
         },
         "source_lens": [
-          "Read center of gravity and continuous motion as the physical entrance to forced existence. The lecture is not only about balance; it is about a changing condition that cannot jump past the special state.",
-          "The source lens is to translate the demonstration into intersection language. One moving condition and another condition must meet. That same shape of reasoning prepares fixed points, diagonals, equilibria, and later state-space applications."
+          "Read center of gravity and continuous motion as the physical entrance to forced existence. The lecture is not only about balance; it is about a changing condition that cannot jump past the special state. The source evidence is the no-jump behavior of the process, not the exact location of the balance point.",
+          "The source lens is to translate the demonstration into intersection language. One moving condition and another condition must meet. That same shape of reasoning prepares fixed points, diagonals, equilibria, and later state-space applications. The reader should notice the pattern: a continuous path crosses a required condition, so existence is forced before computation begins."
         ],
         "source_checkpoint": {
           "trust": "Trust the center-of-gravity demonstration as continuity evidence. The useful source fact is that a changing physical condition moves without jumps, so passing from one side of a balance condition to the other must include equality.",
@@ -1414,8 +1414,8 @@
           "payoff": "The reader learns the central pattern of designed counting: choose arithmetic that forgets fake changes and remembers the obstruction."
         },
         "source_lens": [
-          "Read intersection number, orientation, positive or negative, isotopy invariant, and pairwise creation as one account. The lecture is not merely introducing signs; it is explaining why signs let the count survive legal motion.",
-          "The source evidence is the birth and cancellation of pairs. A raw crossing count changes, but a signed total can stay fixed. Orientation is what makes the plus or minus mean something rather than being arithmetic pasted onto a picture."
+          "Read intersection number, orientation, positive or negative, isotopy invariant, and pairwise creation as one account. The lecture is not merely introducing signs; it is explaining why signs let the count survive legal motion. The source words should be read as a design problem: choose a number that ignores accidental pair changes.",
+          "The source evidence is the birth and cancellation of pairs. A raw crossing count changes, but a signed total can stay fixed. Orientation is what makes the plus or minus mean something rather than being arithmetic pasted onto a picture. This same protected-total idea will return when vector-field defects are counted by index."
         ],
         "source_checkpoint": {
           "trust": "Trust the signed crossing language only when orientation explains the plus and minus signs and pair creation has been accounted for. The source is protecting a designed total, not asking the reader to count every visible meeting equally.",
@@ -1548,8 +1548,8 @@
           "payoff": "The reader sees fixed points as intersections, which connects the theorem language back to the course's earlier deformation and counting tools."
         },
         "source_lens": [
-          "Read graph of a mapping, diagonal, and fixed points as the translation of a rule into a meeting problem. Because one middle caption is missing, the source lens must stay modest and lean on the available surrounding lecture parts.",
-          "The important source move is the graph. A map becomes a geometric object in a larger space. The diagonal records self-agreement. Their meeting is not an analogy; it is the fixed point written in a form that intersection reasoning can inspect."
+          "Read graph of a mapping, diagonal, and fixed points as the translation of a rule into a meeting problem. Because one middle caption is missing, the source lens must stay modest and lean on the available surrounding lecture parts. The safe claim is the conversion itself, not every theorem detail that may have appeared in the missing segment.",
+          "The important source move is the graph. A map becomes a geometric object in a larger space. The diagonal records self-agreement. Their meeting is not an analogy; it is the fixed point written in a form that intersection reasoning can inspect. That translation explains why fixed points belong after intersection number in the course chain."
         ],
         "source_checkpoint": {
           "trust": "Trust the available graph-and-diagonal spine, while keeping the missing middle caption visible as a source limit. The supported move is the translation from a rule to its graph and from self-agreement to the diagonal.",
@@ -1667,8 +1667,8 @@
           "payoff": "The reader learns how the shape of a space can force a solution before any formula for that solution is available."
         },
         "source_lens": [
-          "Read Brouwer, closed ball, boundary, and continuous map as a statement about no global escape. The source arc is existence without computation: a filled shape can force at least one point to stay put.",
-          "The boundary words matter. The theorem is not saying every space and every rule has a fixed point. It is saying that a closed ball, together with continuity and self-mapping, blocks the attempt to move every point away from itself."
+          "Read Brouwer, closed ball, boundary, and continuous map as a statement about no global escape. The source arc is existence without computation: a filled shape can force at least one point to stay put. The theorem is a precise form of the course's larger habit: the whole space can block a locally plausible avoidance plan.",
+          "The boundary words matter. The theorem is not saying every space and every rule has a fixed point. It is saying that a closed ball, together with continuity and self-mapping, blocks the attempt to move every point away from itself. The safe reading keeps all those assumptions visible before using Brouwer as evidence."
         ],
         "source_checkpoint": {
           "trust": "Trust Brouwer language only with the closed filled domain, self-map condition, boundary included, and continuity kept explicit. Those details are not formal clutter; they are the parts that make the escape argument impossible.",
@@ -1800,8 +1800,8 @@
           "payoff": "The reader sees how motion can be studied topologically: defects in an arrow field become countable evidence."
         },
         "source_lens": [
-          "Read vector field, differential equations, equilibria, and index as a change in what counts as understanding motion. The lecture does not solve paths one by one; it asks what the arrow pattern must contain.",
-          "The source lens is to look around an equilibrium, not only at it. Nearby arrows turn around the failure point, and that turning becomes a signed local count. This is intersection-number thinking moved into dynamics."
+          "Read vector field, differential equations, equilibria, and index as a change in what counts as understanding motion. The lecture does not solve paths one by one; it asks what the arrow pattern must contain. The source words are moving the reader from exact trajectories to structural constraints on the whole field.",
+          "The source lens is to look around an equilibrium, not only at it. Nearby arrows turn around the failure point, and that turning becomes a signed local count. This is intersection-number thinking moved into dynamics: local evidence is assigned a sign-like value so the whole surface can later control the total."
         ],
         "source_checkpoint": {
           "trust": "Trust vector-field language as arrow-pattern evidence, especially the places where arrows vanish and nearby arrows turn. The source is shifting attention from solving every path to reading what the whole field cannot remove.",
@@ -1920,8 +1920,8 @@
           "payoff": "The reader sees Euler characteristic becoming a demand on motion, not only a surface bookkeeping number."
         },
         "source_lens": [
-          "Read index of a vector field, equilibria, Euler characteristic, and Poincare-Hopf as a sum-over-the-whole-surface lecture. The source point is that local defects have a total controlled by the surface.",
-          "The evidence is the move from local to global. Sources, sinks, saddles, and other defects may shift under cleanup, but the total signed index is not free. It has to answer to the surface carrying the field."
+          "Read index of a vector field, equilibria, Euler characteristic, and Poincare-Hopf as a sum-over-the-whole-surface lecture. The source point is that local defects have a total controlled by the surface. One equilibrium is evidence only after it is placed in the account that includes all isolated defects.",
+          "The evidence is the move from local to global. Sources, sinks, saddles, and other defects may shift under cleanup, but the total signed index is not free. It has to answer to the surface carrying the field. This is why Euler characteristic returns: a number first read from surface pieces now controls motion on that surface."
         ],
         "source_checkpoint": {
           "trust": "Trust index-sum language only after local vector-field defects are isolated and every defect belongs to the whole-surface account. The source is preparing a total, so missing even one defect changes the evidence.",
@@ -2041,8 +2041,8 @@
           "payoff": "The reader can use topology to predict motion failures or use observed failures to infer information about the surface."
         },
         "source_lens": [
-          "Read Poincare-Hopf, index sum, Euler characteristic, hairy ball, and equilibria as a two-way exchange. The lecture uses topology to predict defects, and it can also use observed defects to say something about the surface.",
-          "The hairy-ball anchor should be read as the plain case, not the whole theorem. The deeper source point is the total over all isolated defects. A local arrow choice may look possible, but the completed surface can forbid all choices from agreeing."
+          "Read Poincare-Hopf, index sum, Euler characteristic, hairy ball, and equilibria as a two-way exchange. The lecture uses topology to predict defects, and it can also use observed defects to say something about the surface. The source words link two ledgers: surface bookkeeping and arrow-field bookkeeping.",
+          "The hairy-ball anchor should be read as the plain case, not the whole theorem. The deeper source point is the total over all isolated defects. A local arrow choice may look possible, but the completed surface can forbid all choices from agreeing. That is the course's local-to-global theme in its dynamics form."
         ],
         "source_checkpoint": {
           "trust": "Trust Poincare-Hopf as a two-sided account linking all local defects to Euler characteristic. The source is connecting surface bookkeeping with arrow-field bookkeeping, so the theorem should be read as a translation between those accounts.",
@@ -2158,8 +2158,8 @@
           "payoff": "The reader learns that modeling is part of the proof, not a story added before the mathematics begins."
         },
         "source_lens": [
-          "Read applications, rotations in space, Poincare-Hopf, and dynamical systems as a modeling lecture. The source material is testing whether earlier proof families can be carried into physical or moving systems without losing the real constraints.",
-          "The source lens is model first, theorem second. Name the space of states, the rule or motion, the forbidden behavior, and the protected count. Only then can a topological theorem say something about the application."
+          "Read applications, rotations in space, Poincare-Hopf, and dynamical systems as a modeling lecture. The source material is testing whether earlier proof families can be carried into physical or moving systems without losing the real constraints. The mathematical object is the state space built from the problem, not the physical story by itself.",
+          "The source lens is model first, theorem second. Name the space of states, the rule or motion, the forbidden behavior, and the protected count. Only then can a topological theorem say something about the application. This protects the reader from treating applications as decorations; the model must preserve the freedoms and restrictions of the actual system."
         ],
         "source_checkpoint": {
           "trust": "Trust applications only after the state space, allowed motion, forbidden states, and protected obstruction have been named. The source is showing how a physical story becomes a mathematical object before any theorem can speak.",
@@ -2293,8 +2293,8 @@
           "payoff": "The reader leaves with a portable method for reading the whole companion and for testing whether any page has reached first-principles depth."
         },
         "source_lens": [
-          "Read table of contents, pictorial thinking, deformation, intersection, fixed point, and vector field as a dependency chain. The final lecture is not a list of topics; it is a review of one reasoning habit as it changes setting.",
-          "The source lens is to follow the conversions. Paper strips become global surface evidence. Deformations protect questions. Intersections become signed counts. Fixed points and vector fields turn those counts into existence and motion statements."
+          "Read table of contents, pictorial thinking, deformation, intersection, fixed point, and vector field as a dependency chain. The final lecture is not a list of topics; it is a review of one reasoning habit as it changes setting. Each topic should be read by asking what object is made, what move is legal, and what evidence survives.",
+          "The source lens is to follow the conversions. Paper strips become global surface evidence. Deformations protect questions. Intersections become signed counts. Fixed points and vector fields turn those counts into existence and motion statements. The final review matters because it shows that the same reasoning pattern has been reused, not replaced, across the course."
         ],
         "source_checkpoint": {
           "trust": "Trust the final review as a dependency map linking objects, legal moves, protected evidence, and forced conclusions across the course. The source is gathering the same reasoning pattern after it has appeared in strips, surfaces, maps, and fields.",
@@ -5141,7 +5141,7 @@
       "lecture_essay_words": 5332,
       "lecture_deepening_words": 1289,
       "lecture_walkthrough_words": 1986,
-      "lecture_source_lens_words": 1090,
+      "lecture_source_lens_words": 1645,
       "lecture_source_checkpoint_words": 1532,
       "lecture_caption_nuance_words": 1492,
       "concept_essay_words": 7741,

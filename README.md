@@ -23,7 +23,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,289 lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields.
 - 1,986 lecture walkthrough words that slow each lecture down from starting object to mathematical payoff to reader check.
 - 1,492 caption-nuance words explaining risky auto-caption terms and safe mathematical readings by lecture.
-- 1,090 lecture source-lens words explaining how transcript anchors should be read as evidence.
+- 1,645 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - 1,532 lecture source-checkpoint words across trust, overread warning, and math-question fields.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - 7,741 concept essay words, with every concept essay now clearing the 290-word validator floor.

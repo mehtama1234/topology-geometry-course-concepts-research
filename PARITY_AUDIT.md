@@ -44,7 +44,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,289 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 1,492 caption-nuance words.
-- 1,090 lecture source-lens words.
+- 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
 - 7,741 concept essay words.
 - 1,781 concept workup words.

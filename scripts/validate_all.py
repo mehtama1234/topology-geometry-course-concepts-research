@@ -176,7 +176,7 @@ def main():
         source_lens = deep.get("source_lens") or []
         if len(source_lens) < 2:
             fail(f"lecture {lecture['lecture']} needs source lens paragraphs")
-        if sum(len(words(p)) for p in source_lens) < 60:
+        if sum(len(words(p)) for p in source_lens) < 100:
             fail(f"lecture {lecture['lecture']} source lens too thin")
         source_checkpoint = deep.get("source_checkpoint") or {}
         for field in ["trust", "do_not_overread", "math_question"]:
