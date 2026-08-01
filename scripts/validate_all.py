@@ -377,6 +377,28 @@ def main():
         if missing:
             fail(f"repair clinic {row.get('title')} unknown concepts: {missing}")
 
+    oral_exam_prompts = data.get("oral_exam_prompts") or []
+    required_oral_titles = {
+        "Explain the course in one chain",
+        "Defend a deformation argument",
+        "Turn a count into evidence",
+        "Read a theorem contract",
+        "Model a physical motion problem",
+        "Separate fixed points and equilibria",
+        "Audit a source-supported claim",
+    }
+    if {row.get("title") for row in oral_exam_prompts} != required_oral_titles:
+        fail("oral exam prompts do not match required prompt set")
+    for row in oral_exam_prompts:
+        for field in ["prompt", "strong_answer", "must_include", "common_failure", "follow_up"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"oral exam {row.get('title')} {field} too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"oral exam {row.get('title')} needs concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"oral exam {row.get('title')} unknown concepts: {missing}")
+
     family_ids = {family["id"] for family in data["families"]}
     proof_moves = data.get("proof_moves") or []
     if len(proof_moves) < 5:
@@ -542,7 +564,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -589,6 +611,14 @@ def main():
         fail("repair clinic page needs eight cards")
     if len(words(re.sub(r"<[^>]+>", " ", repair_clinic))) < 1700:
         fail("repair clinic page too thin")
+    oral_exam = (SITE / "oral-exam.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Oral Exam", "Prompt:", "Strong answer:", "Must include:", "Common failure:", "Follow-up:", "The Passing Standard"]:
+        if phrase not in oral_exam:
+            fail(f"oral exam page missing phrase: {phrase}")
+    if oral_exam.count("<article") < 7:
+        fail("oral exam page needs seven cards")
+    if len(words(re.sub(r"<[^>]+>", " ", oral_exam))) < 1500:
+        fail("oral exam page too thin")
     lecture_spine_page = (SITE / "lecture-spine.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Lecture Spine", "Object:", "Plain question:", "Legal move:", "Surviving fact:", "Why later lectures need it:"]:
         if phrase not in lecture_spine_page:

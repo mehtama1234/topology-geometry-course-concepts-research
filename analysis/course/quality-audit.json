@@ -102,6 +102,11 @@
       "status": "met"
     },
     {
+      "requirement": "Oral exam readiness",
+      "evidence": "The Oral Exam page gives 7 final readiness prompts with prompt, strong answer, must-include field, common failure, follow-up question, and concept links, with 875 oral-exam words.",
+      "status": "met"
+    },
+    {
       "requirement": "Proof-move recipes",
       "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
       "status": "met"
@@ -188,6 +193,8 @@
     "transfer_lab_words": 1187,
     "repair_clinic_cases": 8,
     "repair_clinic_words": 1136,
+    "oral_exam_prompts": 7,
+    "oral_exam_words": 875,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
     "theorem_contract_words": 1271,
@@ -203,6 +210,6 @@
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 89
+    "html_pages_before_audit_page": 90
   }
 }
