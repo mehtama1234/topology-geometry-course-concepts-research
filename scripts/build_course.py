@@ -2888,6 +2888,7 @@ def page(title, body, current=""):
         ("term-translator.html", "Term Translator"),
         ("paper-source-reader.html", "Paper Source Reader"),
         ("lecture-source-bridges.html", "Lecture Source Bridges"),
+        ("lecture-reconstruction-drills.html", "Reconstruction Drills"),
         ("references.html", "References"),
         ("quality-rubric.html", "Quality Rubric"),
         ("rubric-coverage.html", "Rubric Coverage"),
@@ -3014,6 +3015,40 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             "concepts": concepts[:6],
         })
     return bridges
+
+
+def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
+    bridge_by_lecture = {row["lecture"]: row for row in lecture_source_bridges}
+    spine_by_lecture = {row["lecture"]: row for row in LECTURE_SPINE}
+    drills = []
+    for lecture in lectures:
+        number = lecture["lecture"]
+        spine = spine_by_lecture[number]
+        bridge = bridge_by_lecture[number]
+        examples = lecture["deep"]["examples"]
+        concept_ids = []
+        for example in examples:
+            for concept_id in example["concepts"]:
+                if concept_id not in concept_ids:
+                    concept_ids.append(concept_id)
+        drills.append({
+            "lecture": number,
+            "title": lecture["deep"]["title"],
+            "start_from": f"Start from {examples[0]['title']}. Treat it as a real object with rules, not as an illustration. The object is {spine['object']} and the plain question is this: {spine['plain_question']}",
+            "rebuild_steps": [
+                f"Name the object in ordinary words: {spine['object']} Say what information that object carries before using a term from the course.",
+                f"State the allowed move: {spine['legal_move']} Then name one nearby action that would break the problem rather than simplify it.",
+                f"Protect the surviving fact: {spine['surviving_fact']} Explain why this fact remains available after the allowed move.",
+                f"Use a second lecture moment, {examples[1]['title']}, to show the same rule at work in a concrete case rather than only in a general sentence.",
+                f"Connect forward: {spine['why_later']} This step should make clear why the lecture is needed later in the course.",
+                f"Attach the source family carefully: {bridge['source_family']} can support the broader idea only after the lecture demonstration and source caveat have been kept visible.",
+            ],
+            "self_check": f"A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
+            "common_failure": f"The common failure is to jump from {examples[0]['title']} straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
+            "source_check": f"Before citing a source, ask this: does the source support the family of ideas behind Lecture {number:02d}, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: {bridge['overread_warning']}",
+            "concepts": concept_ids[:6],
+        })
+    return drills
 
 
 def build_concept_self_check(concept):
@@ -3163,6 +3198,7 @@ def build_quality_audit(data):
     lecture_caption_nuance_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["caption_nuance"][field])) for field in ["risk", "safe_reading", "verify_question"]) for l in data["lectures"])
     lecture_source_faithfulness_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["source_faithfulness"][field])) for field in ["caption_support", "course_inference", "caveat"]) for l in data["lectures"])
     lecture_source_bridge_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["course_demonstration", "mathematical_bridge", "how_source_extends", "overread_warning", "reader_question"]) for row in data["lecture_source_bridges"])
+    lecture_reconstruction_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", step)) for step in row["rebuild_steps"]) + sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["start_from", "self_check", "common_failure", "source_check"]) for row in data["lecture_reconstruction_drills"])
     lecture_reader_test_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["reader_test"][field])) for field in ["explain_object", "test_allowed_move", "protect_conclusion"]) for l in data["lectures"])
     lecture_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["answer_guide"][field])) for field in ["object_answer", "move_answer", "conclusion_answer"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
@@ -3211,6 +3247,11 @@ def build_quality_audit(data):
         {
             "requirement": "Lecture reader testing",
             "evidence": f"Each lecture page now includes a three-part reader test and answer guide for explaining the object, checking the allowed move, and protecting the conclusion, with {lecture_reader_test_words} reader-test words and {lecture_answer_guide_words} answer-guide words.",
+            "status": "met",
+        },
+        {
+            "requirement": "Lecture reconstruction practice",
+            "evidence": f"The Lecture Reconstruction Drills page gives {len(data['lecture_reconstruction_drills'])} lecture drills that rebuild each lecture from starting example to object, legal move, surviving fact, later use, source family, self-check, common failure, and source check, with {lecture_reconstruction_words} reconstruction words.",
             "status": "met",
         },
         {
@@ -3313,6 +3354,8 @@ def build_quality_audit(data):
             "lecture_source_faithfulness_words": lecture_source_faithfulness_words,
             "lecture_source_bridge_words": lecture_source_bridge_words,
             "lecture_source_bridges": len(data["lecture_source_bridges"]),
+            "lecture_reconstruction_drills": len(data["lecture_reconstruction_drills"]),
+            "lecture_reconstruction_words": lecture_reconstruction_words,
             "lecture_reader_test_words": lecture_reader_test_words,
             "lecture_answer_guide_words": lecture_answer_guide_words,
             "concept_essay_words": concept_essay_words,
@@ -3413,6 +3456,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Term Translator', 'Sixteen formal course words translated into the job they perform in an argument, with failure tests and concept links for each one.', 'term-translator.html', 'Terms')}
 {card('Paper Source Reader', 'A first-principles guide to the course source, primary papers, and standard references: what problem each source family answers and how to read it without overclaiming.', 'paper-source-reader.html', 'Sources')}
 {card('Lecture Source Bridges', 'Fifteen lecture-level bridges connect each demonstration to the source family it prepares, with the exact overread warning a reader should keep in view.', 'lecture-source-bridges.html', 'Bridges')}
+{card('Reconstruction Drills', 'Fifteen lecture drills make the reader rebuild the idea from a concrete example through object, legal move, surviving fact, later use, and source check.', 'lecture-reconstruction-drills.html', 'Practice')}
 {card('References', 'Course, primary-paper, and standard-text links for the main ideas, with notes on what each source supports and what claim would overread it.', 'references.html', 'Sources')}
 {card('Quality Rubric', 'Six first-principles tests keep long prose honest: object, legal move, surviving evidence, failure condition, course anchor, and everyday-language replacement.', 'quality-rubric.html', 'Rubric')}
 {card('Rubric Coverage', 'A layer-by-layer audit maps the six quality tests onto lectures, concepts, themes, subthemes, method families, source pages, and review checks.', 'rubric-coverage.html', 'Coverage')}
@@ -3745,6 +3789,38 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 """
     (SITE / "lecture-source-bridges.html").write_text(page("Lecture Source Bridges", lecture_bridge_body, "Lecture Source Bridges"), encoding="utf-8")
+
+    reconstruction_cards = []
+    for row in data["lecture_reconstruction_drills"]:
+        reconstruction_cards.append(
+            f"""<article class="card">
+  <div class="meta">Lecture {row['lecture']:02d}</div>
+  <h3>{esc(row['title'])}</h3>
+  <p><b>Start from:</b> {esc(row['start_from'])}</p>
+  <p><b>Rebuild steps:</b></p>
+  <ol>{''.join(f'<li>{esc(step)}</li>' for step in row['rebuild_steps'])}</ol>
+  <p><b>Self-check:</b> {esc(row['self_check'])}</p>
+  <p><b>Common failure:</b> {esc(row['common_failure'])}</p>
+  <p><b>Source check:</b> {esc(row['source_check'])}</p>
+  <p>{concept_pills(row['concepts'], data['concepts'])}</p>
+  <a class="arrow" href="lecture-{row['lecture']:02d}.html">Open lecture</a>
+</article>"""
+        )
+    reconstruction_body = f"""
+<h1>Lecture Reconstruction Drills</h1>
+<p class="lead">This page turns each lecture into a rebuild task. The reader starts from one concrete course moment and reconstructs the object, legal move, surviving fact, later use, and source check in order.</p>
+<section class="lecture">
+  <h2>How To Use A Drill</h2>
+  <p>Do the steps before rereading the lecture page. The order matters: start with the concrete object, name the allowed move, protect the surviving fact, connect to a second example, then attach the source family carefully. This prevents a lecture from shrinking into a term or theorem name.</p>
+  <p>The self-check and common-failure fields are the guardrails. If the reconstruction skips the legal move, ignores the protected fact, or cites a source before the course evidence is clear, the answer is not ready.</p>
+</section>
+<div class="grid two">{''.join(reconstruction_cards)}</div>
+<section class="lecture">
+  <h2>The Readiness Test</h2>
+  <p>A lecture is understood when the reader can rebuild it without the page open, then return to the page and find the exact sentences that support each step. The goal is not memorized wording. The goal is a usable chain: object, move, surviving evidence, consequence, source boundary.</p>
+</section>
+"""
+    (SITE / "lecture-reconstruction-drills.html").write_text(page("Lecture Reconstruction Drills", reconstruction_body, "Reconstruction Drills"), encoding="utf-8")
 
     global_reference_cards = []
     for ref in data["references"]:
@@ -4101,6 +4177,7 @@ def main():
         families.append(enriched)
     math_why = MATH_WHY
     lecture_source_bridges = build_lecture_source_bridges(lectures, REFERENCES, SOURCE_READERS)
+    lecture_reconstruction_drills = build_lecture_reconstruction_drills(lectures, lecture_source_bridges)
     data = {
         "course_goal": COURSE_GOAL,
         "playlist": {"title": playlist.get("title"), "url": PLAYLIST_URL, "uploader": playlist.get("uploader")},
@@ -4113,6 +4190,7 @@ def main():
         "math_why": math_why,
         "lecture_spine": LECTURE_SPINE,
         "lecture_source_bridges": lecture_source_bridges,
+        "lecture_reconstruction_drills": lecture_reconstruction_drills,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
         "term_translations": TERM_TRANSLATIONS,
@@ -4144,6 +4222,7 @@ def main():
     write_json(ANALYSIS / "math-why.json", math_why)
     write_json(ANALYSIS / "lecture-spine.json", LECTURE_SPINE)
     write_json(ANALYSIS / "lecture-source-bridges.json", lecture_source_bridges)
+    write_json(ANALYSIS / "lecture-reconstruction-drills.json", lecture_reconstruction_drills)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "term-translations.json", TERM_TRANSLATIONS)

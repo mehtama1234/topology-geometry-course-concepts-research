@@ -407,11 +407,31 @@ def main():
             if len(words(row.get(field))) < 24:
                 fail(f"lecture source bridge {row.get('lecture')} {field} too thin")
 
+    lecture_reconstruction_drills = data.get("lecture_reconstruction_drills") or []
+    if len(lecture_reconstruction_drills) != 15:
+        fail("lecture reconstruction drills need exactly fifteen drills")
+    if {row.get("lecture") for row in lecture_reconstruction_drills} != lecture_numbers:
+        fail("lecture reconstruction drills do not match lecture numbers")
+    for row in lecture_reconstruction_drills:
+        if len(row.get("rebuild_steps") or []) < 6:
+            fail(f"lecture reconstruction drill {row.get('lecture')} needs six rebuild steps")
+        for step in row.get("rebuild_steps") or []:
+            if len(words(step)) < 14:
+                fail(f"lecture reconstruction drill {row.get('lecture')} step too thin")
+        for field in ["start_from", "self_check", "common_failure", "source_check"]:
+            if len(words(row.get(field))) < 24:
+                fail(f"lecture reconstruction drill {row.get('lecture')} {field} too thin")
+        unknown_concepts = sorted(set(row.get("concepts") or []) - concept_ids)
+        if unknown_concepts:
+            fail(f"lecture reconstruction drill {row.get('lecture')} unknown concepts: {unknown_concepts}")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"lecture reconstruction drill {row.get('lecture')} needs concept links")
+
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -503,6 +523,16 @@ def main():
         fail("lecture source bridges page needs fifteen cards")
     if len(words(re.sub(r"<[^>]+>", " ", lecture_source_bridges_page))) < 2400:
         fail("lecture source bridges page too thin")
+    lecture_reconstruction_page = (SITE / "lecture-reconstruction-drills.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Lecture Reconstruction Drills", "Start from:", "Rebuild steps:", "Self-check:", "Common failure:", "Source check:", "The Readiness Test"]:
+        if phrase not in lecture_reconstruction_page:
+            fail(f"lecture reconstruction drills page missing phrase: {phrase}")
+    if lecture_reconstruction_page.count("<article") < 15:
+        fail("lecture reconstruction drills page needs fifteen cards")
+    if lecture_reconstruction_page.count("<li>") < 90:
+        fail("lecture reconstruction drills page needs ninety rebuild steps")
+    if len(words(re.sub(r"<[^>]+>", " ", lecture_reconstruction_page))) < 3600:
+        fail("lecture reconstruction drills page too thin")
     references_page = (SITE / "references.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["References", "Source Caveat", "Why it belongs", "Use carefully", "Lecture coverage", "Concept coverage"]:
         if phrase not in references_page:
