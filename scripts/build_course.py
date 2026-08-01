@@ -4026,6 +4026,44 @@ def reference_cards(refs):
     )
 
 
+def split_course_references(refs):
+    course_refs = [ref for ref in refs if ref["kind"].startswith("course source")]
+    support_refs = [ref for ref in refs if not ref["kind"].startswith("course source")]
+    return course_refs, support_refs
+
+
+def compact_course_reference_card(refs, seed, page_kind):
+    if not refs:
+        return ""
+    mirror = next((ref for ref in refs if ref["id"] == "tib-av-portal-course"), None)
+    mirror_text = " The TIB record is a provenance check for the series, not a separate proof source." if mirror else ""
+    why = varied((seed, "course-reference-why"), [
+        f"The course videos are the authority for what this {page_kind} is explaining: the order of ideas, the demonstrations, and the level of plainness.{mirror_text}",
+        f"This {page_kind} is anchored in Tokieda's course rather than in a generic topology syllabus. The videos supply the teaching sequence and the concrete moves.{mirror_text}",
+        f"The companion starts from the course source because the mathematical point depends on how the lecture builds the object, changes it, and reads what survives.{mirror_text}",
+        f"The source trail begins with the course because it fixes the actual classroom route: picture first, legal move second, protected fact third.{mirror_text}",
+    ])
+    careful = varied((seed, "course-reference-careful"), [
+        "Captions are recovered rather than official notes, so exact wording should be checked against the video before any claim is sharpened.",
+        "Use the videos for course evidence, and keep paper or textbook references in their proper role as background support.",
+        "Do not turn a source link into extra authority. A claim about the lecture still needs caption evidence, a visible demonstration, or an explicitly named course-arc inference.",
+        "When the page makes an interpretive connection, read it as a course-arc explanation unless the wording says it is directly caption-supported.",
+    ])
+    links = "".join(f'<a class="arrow" href="{esc(ref["url"])}">{esc(ref["title"])}</a>' for ref in refs)
+    return f"""<article class="card">
+  <div class="meta">Course provenance</div>
+  <h3>Course Source Note</h3>
+  <p><b>Why it belongs:</b> {esc(why)}</p>
+  <p><b>Use carefully:</b> {esc(careful)}</p>
+  {links}
+</article>"""
+
+
+def source_trail_cards(refs, seed, page_kind):
+    course_refs, support_refs = split_course_references(refs)
+    return compact_course_reference_card(course_refs, seed, page_kind) + reference_cards(support_refs)
+
+
 def build_source_faithfulness(lecture):
     anchors = ", ".join(lecture["deep"]["anchors"][:4])
     examples = "; ".join(example["title"] for example in lecture["deep"]["examples"][:3])
@@ -5770,7 +5808,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Further Source Trail</h2>
   <p class="evidence">These references support the mathematical background for this lecture. They are not claims that the lecture cites each source directly.</p>
-  <div class="grid two">{reference_cards(lecture_refs)}</div>
+  <div class="grid two">{source_trail_cards(lecture_refs, ("lecture", l["lecture"]), "lecture")}</div>
 </section>
 <p class="evidence">Transcript words: {l['transcript_words']}. Missing captions: {', '.join(l['missing_caption_ids']) or 'none'}.</p>
 """
@@ -5788,7 +5826,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         anchor = c["anchor"]
         self_check = c["self_check"]
         concept_refs = [ref for ref in data["references"] if c["id"] in ref["concepts"]]
-        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><section class="lecture"><h2>Can You Use It?</h2><p><b>Object check:</b> {esc(self_check['object_check'])}</p><p><b>Operation check:</b> {esc(self_check['operation_check'])}</p><p><b>Protected fact check:</b> {esc(self_check['protected_check'])}</p><p><b>Failure check:</b> {esc(self_check['failure_check'])}</p></section><section class="lecture"><h2>Further Source Trail</h2><p class="evidence">These references support the broader mathematical background for this concept. The lecture examples above remain the first source for how the companion uses it.</p><div class="grid two">{reference_cards(concept_refs)}</div></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
+        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><section class="lecture"><h2>Can You Use It?</h2><p><b>Object check:</b> {esc(self_check['object_check'])}</p><p><b>Operation check:</b> {esc(self_check['operation_check'])}</p><p><b>Protected fact check:</b> {esc(self_check['protected_check'])}</p><p><b>Failure check:</b> {esc(self_check['failure_check'])}</p></section><section class="lecture"><h2>Further Source Trail</h2><p class="evidence">These references support the broader mathematical background for this concept. The lecture examples above remain the first source for how the companion uses it.</p><div class="grid two">{source_trail_cards(concept_refs, ("concept", c["id"]), "concept")}</div></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
     body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"
