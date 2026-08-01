@@ -4063,7 +4063,14 @@
         "Deformation arguments are the course's way of replacing a hard object by an easier one without losing the question. The first step is not to move anything. The first step is to state the contract: what may bend, what must stay attached, which crossings are forbidden, which endpoints stay fixed, and which boundaries still count as boundaries. Only after that contract is clear does motion become a proof method.",
         "The family matters because many topological questions are impossible to settle from the first drawing. A tangled drawing may hide a simple answer; a simple-looking drawing may hide an obstruction. Deformation gives the reader permission to simplify, but only under rules that preserve the feature being tested. This is why the endpoint of a deformation proof is not evidence by itself. The evidence is the whole legal journey from the original picture to the easier one.",
         "The mathematical principle is plain: if every allowed step preserves the relevant fact, then the final easy picture can speak for the original hard picture."
-      ]
+      ],
+      "contract": {
+        "input": "A hard picture whose exact drawing is less important than a route, boundary, side behavior, or count it carries.",
+        "action": "State the legal moves, move the object through only those moves, and replace the hard picture by an easier one.",
+        "evidence": "The protected evidence is the fact that survives the whole motion: same endpoints, same boundary data, same route relation, or same invariant.",
+        "output": "The output is a simpler picture that can answer the original question because the legal path to it preserved the question.",
+        "failure_test": "Reject the argument if it cuts, glues, passes through forbidden matter, moves fixed data, or changes the meaning of sameness."
+      }
     },
     {
       "id": "counting-family",
@@ -4089,7 +4096,14 @@
         "Surviving-count arguments begin with a practical problem: the visible picture changes too much. Crossings can appear, cells can be subdivided, arrows can be redrawn, and defects can move. A raw count of everything usually fails because it records accidental clutter. The course therefore asks for a count designed to ignore the harmless changes while keeping the obstruction that matters.",
         "Euler characteristic does this by alternating pieces. Intersection number does this by using signs. Vector-field index does this by recording how arrows turn around a defect. Parity does it more coarsely by keeping only evenness or oddness. These examples look different on the surface, but they share one idea: count the part of the situation that legal motion cannot erase.",
         "The family is important because a good count can prove impossibility or forced existence without listing every possible drawing. Once the count is known in one honest version of the object, every legally related version has to obey it."
-      ]
+      ],
+      "contract": {
+        "input": "A situation where visible local events change too easily: cells split, crossings appear, defects move, or raw counts fluctuate.",
+        "action": "Design a count that ignores harmless changes by cancellation, alternating terms, parity, or signs with geometric meaning.",
+        "evidence": "The protected evidence is the total that legal redrawings cannot change, even though individual local events may appear or disappear.",
+        "output": "The output is a number or parity fact that can prove impossibility, force existence, or compare two legally related pictures.",
+        "failure_test": "Reject the argument if the count changes under a legal harmless move or if signs are assigned without a rule that can be checked."
+      }
     },
     {
       "id": "surface-family",
@@ -4116,7 +4130,14 @@
         "Surface bookkeeping is needed because a surface can lie to local inspection. Every tiny patch of a sphere, torus, disk, or Mobius strip may look like an ordinary piece of paper. The difference appears when patches are glued into a whole: a route may return reversed, a boundary may add a term, a handle may create a new loop, or a missing disk may change what can be filled.",
         "This family teaches the reader to track the whole surface without losing the local pieces. Cut the surface into manageable parts, count or orient those parts, then check what survives when they are put back together. Euler characteristic, boundary orientation, surface classification, and Poincare-Hopf all depend on this discipline.",
         "The mathematical principle is that local freedom is not the same as global freedom. A patch may allow an arrow, a side choice, or a sign, while the completed surface refuses to let all those local choices agree at once."
-      ]
+      ],
+      "contract": {
+        "input": "A surface whose small patches look manageable but whose complete shape may carry holes, boundary behavior, handles, or side reversal.",
+        "action": "Cut the surface into pieces, track boundary and orientation data, and glue the account back into a whole-surface statement.",
+        "evidence": "The protected evidence is the global surface account: Euler characteristic, orientability, boundary behavior, or a total controlled by the surface.",
+        "output": "The output is a whole-surface conclusion that local inspection alone could not justify.",
+        "failure_test": "Reject the argument if it assumes every local choice glues globally, ignores boundary terms, or changes the surface while counting."
+      }
     },
     {
       "id": "embedding-family",
@@ -4142,7 +4163,14 @@
         "Drawing and embedding arguments ask whether there is enough room for required connections. A failed drawing is not enough, because a better drawing may exist. The family therefore separates the object that must be placed from the space that must receive it. Which endpoints are fixed? Which crossings are forbidden? Can one strand pass through another? Does the surrounding surface have holes or handles that provide alternate routes?",
         "This is where knots, links, planar graphs, path puzzles, and intersection arguments meet. Each problem asks whether a relation can be removed by legal motion or whether it belongs to the shape of the situation. A crossing on the page may be accidental. A linking relation or forced intersection may survive every attempt to redraw.",
         "The important mathematical idea is not drawing skill. It is proving that all legal drawings face the same constraint. The surface or surrounding space supplies only certain routes, and sometimes those routes are not enough."
-      ]
+      ],
+      "contract": {
+        "input": "An object with required connections or loop relations that must live inside a chosen surface or surrounding space.",
+        "action": "Separate accidental crossings from forced ones by using allowed motion, surface room, over-under data, and route information.",
+        "evidence": "The protected evidence is a relation that every legal placement must respect: linking, winding, unavoidable crossing, or unavailable route room.",
+        "output": "The output is either a legal placement or a proof that no legal placement can avoid the obstruction.",
+        "failure_test": "Reject the argument if it treats one failed drawing as impossibility or forgets data needed to distinguish crossings in space."
+      }
     },
     {
       "id": "motion-family",
@@ -4170,7 +4198,14 @@
         "Motion-through-state arguments are the course's bridge from shapes to behavior. Instead of following a mechanism directly, the method lists its possible states and treats each state as a point in a new space. A motion is then a path through that space. A rule becomes a map of the space to itself. A forbidden physical arrangement becomes a wall, hole, or missing region in the state space.",
         "This family explains why fixed points, vector fields, configuration spaces, and physical examples belong with surface topology. They are all ways of asking what behavior the shape of possibility permits. The course does not need every equation of motion to say something meaningful. If the state space has the right obstruction, some positions, coincidences, defects, or blocked motions are forced before detailed solving begins.",
         "The detail that keeps the method honest is modeling. The state space must contain the right freedoms and remove the right forbidden states. If that translation is wrong, the topological conclusion may be true about the model but false about the physical situation."
-      ]
+      ],
+      "contract": {
+        "input": "A physical or dynamical situation whose direct motion is too complicated to follow point by point.",
+        "action": "Build the space of possible states, translate motion into paths or rules, and apply fixed-point, index, or obstruction reasoning there.",
+        "evidence": "The protected evidence is the shape of possibility: a barrier, hole, forced self-agreement, index total, or missing legal path.",
+        "output": "The output is a constraint on the original motion, such as an unavoidable state, blocked motion, equilibrium, or required defect.",
+        "failure_test": "Reject the argument if the state space leaves out a real freedom, adds a false barrier, or cannot translate the conclusion back to the physical setup."
+      }
     }
   ],
   "math_why": {
@@ -4607,6 +4642,7 @@
       "subtheme_essay_words": 1500,
       "subtheme_routine_words": 858,
       "family_essay_words": 824,
+      "family_contract_words": 493,
       "playground_widgets": 4,
       "synthesis_sections": 8,
       "dependency_paths": 8,

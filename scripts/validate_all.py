@@ -100,6 +100,10 @@ def main():
         family_essay_words = sum(len(words(p)) for p in family.get("essay") or [])
         if family_essay_words < 130:
             fail(f"family {family['id']} essay too thin")
+        contract = family.get("contract") or {}
+        for field in ["input", "action", "evidence", "output", "failure_test"]:
+            if len(words(contract.get(field))) < 12:
+                fail(f"family {family['id']} contract {field} too thin")
 
     theme_ids = {theme["id"] for theme in data["themes"]}
     subtheme_ids = {subtheme["id"] for subtheme in data["subthemes"]}
@@ -334,8 +338,13 @@ def main():
             if phrase not in subtheme_html:
                 fail(f"subtheme page missing routine phrase {phrase}: {subtheme_name}")
     for family in data["families"]:
-        if f"family-{family['id']}.html" not in names:
+        family_name = f"family-{family['id']}.html"
+        if family_name not in names:
             fail(f"missing family page {family['id']}")
+        family_html = (SITE / family_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["Method Contract", "Input:", "Action:", "Protected evidence:", "Output:", "Failure test:"]:
+            if phrase not in family_html:
+                fail(f"family page missing contract phrase {phrase}: {family_name}")
 
     corpus = "\n".join(p.read_text(encoding="utf-8", errors="ignore").lower() for p in html_files)
     for phrase in FORBIDDEN:

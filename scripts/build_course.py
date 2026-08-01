@@ -1028,6 +1028,45 @@ FAMILY_DEPTH = {
 }
 
 
+FAMILY_CONTRACTS = {
+    "deformation-family": {
+        "input": "A hard picture whose exact drawing is less important than a route, boundary, side behavior, or count it carries.",
+        "action": "State the legal moves, move the object through only those moves, and replace the hard picture by an easier one.",
+        "evidence": "The protected evidence is the fact that survives the whole motion: same endpoints, same boundary data, same route relation, or same invariant.",
+        "output": "The output is a simpler picture that can answer the original question because the legal path to it preserved the question.",
+        "failure_test": "Reject the argument if it cuts, glues, passes through forbidden matter, moves fixed data, or changes the meaning of sameness.",
+    },
+    "counting-family": {
+        "input": "A situation where visible local events change too easily: cells split, crossings appear, defects move, or raw counts fluctuate.",
+        "action": "Design a count that ignores harmless changes by cancellation, alternating terms, parity, or signs with geometric meaning.",
+        "evidence": "The protected evidence is the total that legal redrawings cannot change, even though individual local events may appear or disappear.",
+        "output": "The output is a number or parity fact that can prove impossibility, force existence, or compare two legally related pictures.",
+        "failure_test": "Reject the argument if the count changes under a legal harmless move or if signs are assigned without a rule that can be checked.",
+    },
+    "surface-family": {
+        "input": "A surface whose small patches look manageable but whose complete shape may carry holes, boundary behavior, handles, or side reversal.",
+        "action": "Cut the surface into pieces, track boundary and orientation data, and glue the account back into a whole-surface statement.",
+        "evidence": "The protected evidence is the global surface account: Euler characteristic, orientability, boundary behavior, or a total controlled by the surface.",
+        "output": "The output is a whole-surface conclusion that local inspection alone could not justify.",
+        "failure_test": "Reject the argument if it assumes every local choice glues globally, ignores boundary terms, or changes the surface while counting.",
+    },
+    "embedding-family": {
+        "input": "An object with required connections or loop relations that must live inside a chosen surface or surrounding space.",
+        "action": "Separate accidental crossings from forced ones by using allowed motion, surface room, over-under data, and route information.",
+        "evidence": "The protected evidence is a relation that every legal placement must respect: linking, winding, unavoidable crossing, or unavailable route room.",
+        "output": "The output is either a legal placement or a proof that no legal placement can avoid the obstruction.",
+        "failure_test": "Reject the argument if it treats one failed drawing as impossibility or forgets data needed to distinguish crossings in space.",
+    },
+    "motion-family": {
+        "input": "A physical or dynamical situation whose direct motion is too complicated to follow point by point.",
+        "action": "Build the space of possible states, translate motion into paths or rules, and apply fixed-point, index, or obstruction reasoning there.",
+        "evidence": "The protected evidence is the shape of possibility: a barrier, hole, forced self-agreement, index total, or missing legal path.",
+        "output": "The output is a constraint on the original motion, such as an unavoidable state, blocked motion, equilibrium, or required defect.",
+        "failure_test": "Reject the argument if the state space leaves out a real freedom, adds a false barrier, or cannot translate the conclusion back to the physical setup.",
+    },
+}
+
+
 FAMILY_ESSAYS = {
     "deformation-family": [
         "Deformation arguments are the course's way of replacing a hard object by an easier one without losing the question. The first step is not to move anything. The first step is to state the contract: what may bend, what must stay attached, which crossings are forbidden, which endpoints stay fixed, and which boundaries still count as boundaries. Only after that contract is clear does motion become a proof method.",
@@ -2010,6 +2049,7 @@ def build_quality_audit(data):
     subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
     subtheme_routine_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", s["routine"][field])) for field in ["look_for", "ask", "use", "mistake"]) for s in data["subthemes"])
     family_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in f["essay"]) for f in data["families"])
+    family_contract_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["contract"][field])) for field in ["input", "action", "evidence", "output", "failure_test"]) for f in data["families"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -2102,6 +2142,7 @@ def build_quality_audit(data):
             "subtheme_essay_words": subtheme_essay_words,
             "subtheme_routine_words": subtheme_routine_words,
             "family_essay_words": family_essay_words,
+            "family_contract_words": family_contract_words,
             "playground_widgets": 4,
             "synthesis_sections": 8,
             "dependency_paths": len(data["concept_dependencies"]),
@@ -2493,7 +2534,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     (SITE / "families.html").write_text(page("Families", body, "Families"), encoding="utf-8")
     for f in data["families"]:
         related = [c for c in data["concepts"] if c["id"] in f["concepts"]]
-        body = f"""<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['depth']['human_problem'])}</p><section class="lecture"><h2>Method Essay</h2>{paragraph_block(f['essay'])}</section><section class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p><h2>First Principles</h2><p>{esc(f['depth']['first_principles'])}</p><h2>How It Works</h2><p>{esc(f['depth']['how_it_works'])}</p><h2>Course Examples</h2><p>{esc(f['depth']['course_examples'])}</p><h2>Failure Mode</h2><p>{esc(f['depth']['failure_mode'])}</p></section><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        contract = f["contract"]
+        body = f"""<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['depth']['human_problem'])}</p><section class="lecture"><h2>Method Essay</h2>{paragraph_block(f['essay'])}</section><section class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p><h2>First Principles</h2><p>{esc(f['depth']['first_principles'])}</p><h2>How It Works</h2><p>{esc(f['depth']['how_it_works'])}</p><h2>Course Examples</h2><p>{esc(f['depth']['course_examples'])}</p><h2>Failure Mode</h2><p>{esc(f['depth']['failure_mode'])}</p></section><section class="lecture"><h2>Method Contract</h2><p><b>Input:</b> {esc(contract['input'])}</p><p><b>Action:</b> {esc(contract['action'])}</p><p><b>Protected evidence:</b> {esc(contract['evidence'])}</p><p><b>Output:</b> {esc(contract['output'])}</p><p><b>Failure test:</b> {esc(contract['failure_test'])}</p></section><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("family", f["id"])).write_text(page(f["title"], body, "Families"), encoding="utf-8")
 
     math_why = f"""<h1>The Math Why</h1><p class="lead">{esc(data['math_why']['big_picture'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(data['math_why']['first_principles'])}</p><h2>Important Detail</h2><p>{esc(data['math_why']['important_detail'])}</p><h2>Principle Behind the Mathematics</h2><p>{esc(data['math_why']['principle'])}</p><h2>Why These Concepts Matter</h2><p>{esc(data['math_why']['concepts_matter'])}</p><h2>How To Read The Course</h2><p>{esc(data['math_why']['reader_path'])}</p></section>"""
@@ -2504,7 +2546,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -2609,6 +2651,7 @@ def main():
         enriched = dict(family)
         enriched["depth"] = FAMILY_DEPTH[family["id"]]
         enriched["essay"] = FAMILY_ESSAYS[family["id"]]
+        enriched["contract"] = FAMILY_CONTRACTS[family["id"]]
         families.append(enriched)
     math_why = MATH_WHY
     data = {
@@ -2680,6 +2723,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 10 expanded subtheme pages with essay, first-principles, and course-role sections
 - {metrics['subtheme_routine_words']} subtheme routine words across look-for, ask, use, and mistake fields
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
+- {metrics['family_contract_words']} method-contract words across input, action, protected-evidence, output, and failure-test fields
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
@@ -2687,7 +2731,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, and every method-family essay to clear 130 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['family_essay_words']} method-family essay words, and {metrics['family_contract_words']} method-contract words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every method-family essay to clear 130 words, and every method-contract field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
