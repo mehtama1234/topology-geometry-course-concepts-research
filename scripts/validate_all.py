@@ -167,6 +167,17 @@ def main():
         if missing:
             fail(f"family {family['id']} references unknown concept ids: {missing}")
 
+    lecture_numbers = {lecture["lecture"] for lecture in data["lectures"]}
+    lecture_spine = data.get("lecture_spine") or []
+    if len(lecture_spine) != 15:
+        fail(f"lecture spine needs exactly 15 entries, got {len(lecture_spine)}")
+    if {row.get("lecture") for row in lecture_spine} != lecture_numbers:
+        fail("lecture spine does not match lecture numbers")
+    for row in lecture_spine:
+        for field in ["object", "plain_question", "legal_move", "surviving_fact", "why_later"]:
+            if len(words(row.get(field))) < 10:
+                fail(f"lecture spine {row.get('lecture')} {field} too thin")
+
     dependencies = data.get("concept_dependencies") or []
     if len(dependencies) < 8:
         fail("concept dependencies too small")
@@ -196,7 +207,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -227,6 +238,17 @@ def main():
         fail("concept dependencies page needs eight dependency cards")
     if len(words(re.sub(r"<[^>]+>", " ", dependency_page))) < 850:
         fail("concept dependencies page too thin")
+    lecture_spine_page = (SITE / "lecture-spine.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Lecture Spine", "Object:", "Plain question:", "Legal move:", "Surviving fact:", "Why later lectures need it:"]:
+        if phrase not in lecture_spine_page:
+            fail(f"lecture spine page missing phrase: {phrase}")
+    if lecture_spine_page.count("<article") < 15:
+        fail("lecture spine page needs fifteen lecture cards")
+    for number in range(1, 16):
+        if f"lecture-{number:02d}.html" not in lecture_spine_page:
+            fail(f"lecture spine missing lecture link: {number:02d}")
+    if len(words(re.sub(r"<[^>]+>", " ", lecture_spine_page))) < 1400:
+        fail("lecture spine page too thin")
     proof_page = (SITE / "proof-moves.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Proof Moves", "Steps", "Why it works", "Failure mode", "Course example"]:
         if phrase not in proof_page:

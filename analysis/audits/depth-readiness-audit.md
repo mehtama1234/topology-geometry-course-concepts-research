@@ -3,6 +3,7 @@
 This repo now has a transcript-backed depth pass across the lecture, concept, theme, subtheme, and method-family layers. The first shallow layer has been replaced across the main explanatory surfaces:
 
 - 15 hand-authored lecture explainers from 35 videos
+- lecture-spine.html with 15 lecture-by-lecture reasoning entries
 - 1090 source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
 - 24 expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections

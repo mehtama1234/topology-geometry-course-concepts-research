@@ -16,8 +16,9 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1 video currently reports no captions through `yt-dlp`: `nx1XOlezuvk`.
 - Raw captions live in `raw-material/youtube/captions/`.
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
-- 76 generated HTML pages in `site/`.
+- 77 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
+- 15 lecture-spine entries that name the object, question, legal move, surviving fact, and later use for every lecture.
 - 1,090 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - A course-level synthesis page, a reader-checks page, a quality audit, and a four-widget interactive math playground.
@@ -26,6 +27,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 
 - `site/index.html` — starting point and source state.
 - `site/lectures.html` and `site/lecture-*.html` — 15 lecture explainers.
+- `site/lecture-spine.html` — one reasoning path through all lectures from object to later use.
 - `site/concepts.html` and `site/concept-*.html` — concept atlas with reverse lecture links.
 - `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps.
 - `site/the-math-why.html` — first-principles mathematical synthesis.
@@ -66,9 +68,10 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 `scripts/validate_all.py` enforces the current quality shape:
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
-- Required generated pages, including synthesis, concept dependencies, proof moves, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
+- Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
 - Minimum essay depth for lecture, source-lens, concept, theme, subtheme, method-family, and math-why layers.
 - Source-lens sections on every lecture page.
+- Lecture-spine entries for all 15 lectures.
 - Proof-move recipes with enough steps, explanations, failure modes, and examples.
 - At least three concrete lecture examples per lecture.
 - Concept/theme/subtheme/family id integrity.

@@ -23,13 +23,14 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 76.
+- HTML pages: 77.
 
 ## Main Reader Surfaces
 
 - `index.html` — entry point and source state.
 - `videos.html` — all individual YouTube links.
 - `lectures.html`, `lecture-*.html` — lecture explainers.
+- `lecture-spine.html` — one reasoning path through all 15 lectures from object to later use.
 - `concepts.html`, `concept-*.html` — concept atlas and reverse lecture appearances.
 - `themes.html`, `subthemes.html`, `families.html` — recurring ideas and proof families.
 - `the-math-why.html` — core mathematical reason the course works.
@@ -62,6 +63,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - required page existence;
 - lecture, source-lens, concept, theme, subtheme, family, and math-why depth floors;
 - at least three concrete examples per lecture;
+- lecture-spine structure for all 15 lectures;
 - referential integrity across concepts, themes, subthemes, and families;
 - playground page and four widget renderers;
 - course synthesis structure;
@@ -77,6 +79,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 As of the current generated audit:
 
 - 45 lecture examples.
+- 15 lecture-spine entries.
 - 3,855 lecture essay words.
 - 1,090 lecture source-lens words.
 - 4,830 concept essay words.

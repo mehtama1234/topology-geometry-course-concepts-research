@@ -39,7 +39,8 @@ The reader should be able to understand the course without prior math vocabulary
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 76 generated HTML pages.
+- 77 generated HTML pages.
+- 15 lecture-spine entries.
 - 8 concept dependency paths.
 - 5 proof-move recipes.
 - 45 lecture-grounded examples.

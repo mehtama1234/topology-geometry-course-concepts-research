@@ -14,6 +14,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Source coverage | 35 playlist videos indexed; 15 lecture groups; 34 caption files recovered; missing id `nx1XOlezuvk` preserved | Met with caveat |
 | Individual video links | `site/videos.html` lists every YouTube item in playlist order | Met |
 | Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
+| Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures | Met |
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
@@ -23,7 +24,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Interactive learning | `site/math-playground.html` has four canvas widgets: Euler characteristic, signed cancellation, fixed points, vector-field index | Met |
 | Reader failure checks | `site/reader-checks.html` has eleven checks for common reasoning errors | Met |
 | Quality/source audits | `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md` | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 76 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 77 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -36,8 +37,9 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 76 generated HTML pages.
+- 77 generated HTML pages.
 - 45 lecture-grounded examples.
+- 15 lecture-spine entries.
 - 3,855 lecture essay words.
 - 1,090 lecture source-lens words.
 - 4,830 concept essay words.
@@ -58,6 +60,7 @@ The validator checks:
 - required generated pages;
 - depth floors for lecture, source-lens, concept, theme, subtheme, family, and math-why prose;
 - at least three concrete examples per lecture;
+- lecture-spine structure and length;
 - concept/theme/subtheme/family id integrity;
 - playground widget structure and JS renderer names;
 - course synthesis sections and length;

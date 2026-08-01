@@ -1245,6 +1245,130 @@ LECTURE_SOURCE_LENS = {
 }
 
 
+LECTURE_SPINE = [
+    {
+        "lecture": 1,
+        "object": "A strip made by gluing its ends after a half-turn.",
+        "plain_question": "Can a surface look ordinary in every small patch while carrying a whole-surface rule that changes what side means?",
+        "legal_move": "Follow, mark, or cut the strip without pretending the glued edge rule has disappeared.",
+        "surviving_fact": "A full trip around the strip reverses the local side choice instead of returning it unchanged.",
+        "why_later": "This is the first warning against local-only thinking. Later orientation, manifolds, vector fields, and surface classification all use the same gap between small-patch behavior and whole-object behavior.",
+    },
+    {
+        "lecture": 2,
+        "object": "Curves inside a disk with boundary points held in their circular order.",
+        "plain_question": "When can a messy drawing be replaced by a cleaner one without changing the problem it was meant to answer?",
+        "legal_move": "Slide and bend curves while keeping endpoints fixed in order and while preventing forbidden crossings.",
+        "surviving_fact": "Boundary order and the no-crossing rule survive the redraw, so an unavoidable crossing belongs to the original setup.",
+        "why_later": "This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question.",
+    },
+    {
+        "lecture": 3,
+        "object": "Spaces built from choices, identifications, local patches, and controlled replacements.",
+        "plain_question": "How can a complicated space be made from simple instructions instead of being drawn all at once?",
+        "legal_move": "Build by product, quotient, manifold charts, or surgery while keeping the construction rule visible.",
+        "surviving_fact": "The rule of construction decides the routes, holes, sides, and local neighborhoods available in the finished space.",
+        "why_later": "Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery.",
+    },
+    {
+        "lecture": 4,
+        "object": "A square whose marked edges are read as travel instructions for a finished surface.",
+        "plain_question": "How can the same flat drawing represent different worlds depending on which edge exits are declared identical?",
+        "legal_move": "Read each edge identification as part of the object, including whether direction is preserved or reversed.",
+        "surviving_fact": "The gluing rule determines whether paths close, whether sides remain consistent, and whether the drawn boundary is a true boundary.",
+        "why_later": "This is the plain entrance to quotient thinking. It prepares the reader for manifolds and for later situations where a rule, not visual appearance, defines the mathematical object.",
+    },
+    {
+        "lecture": 5,
+        "object": "Surfaces broken into standard features such as handles, crosscaps, and boundary components.",
+        "plain_question": "What does it mean to say two surfaces are the same when their drawings can look very different?",
+        "legal_move": "Cut, glue, and simplify under controlled surface operations while tracking the features those operations preserve.",
+        "surviving_fact": "Orientability, boundary behavior, and durable surface pieces remain as the evidence used to classify the surface.",
+        "why_later": "This gives Euler characteristic and orientation a home. Later local counts only have force because they live on a surface whose global type has been understood.",
+    },
+    {
+        "lecture": 6,
+        "object": "Subspaces placed inside a surrounding space with only so much room to avoid one another.",
+        "plain_question": "When is a meeting between objects an accident of the drawing, and when is it forced by dimension and position?",
+        "legal_move": "Move objects into ordinary position so meetings are clean and separate, without changing the surrounding problem.",
+        "surviving_fact": "After accidental coincidences are removed, the remaining pattern of meetings can carry real information.",
+        "why_later": "This lecture supplies the discipline needed before signs can be assigned. Intersection number only works after meetings are clean enough to count honestly.",
+    },
+    {
+        "lecture": 7,
+        "object": "A physical balance condition that changes continuously as the setup moves.",
+        "plain_question": "How can a special state be forced even when we cannot calculate its exact location?",
+        "legal_move": "Track the changing condition continuously and ask whether it can pass from one side of a requirement to another without meeting it.",
+        "surviving_fact": "Continuity prevents the condition from jumping over the balance state.",
+        "why_later": "This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers.",
+    },
+    {
+        "lecture": 8,
+        "object": "Clean intersections between oriented objects, equipped with plus and minus signs.",
+        "plain_question": "How can a count survive when crossings can appear or disappear during legal motion?",
+        "legal_move": "Assign signs using a consistent orientation rule and allow only deformations where pair creation is inspected.",
+        "surviving_fact": "Opposite-signed pairs can be born or die without changing the signed total.",
+        "why_later": "This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled.",
+    },
+    {
+        "lecture": 9,
+        "object": "The graph of a map compared with the diagonal of self-agreement.",
+        "plain_question": "How can the equation that says 'the output equals the input' become a visible geometric meeting?",
+        "legal_move": "Translate the rule into its graph in input-output space and compare it with the diagonal without changing what equality means.",
+        "surviving_fact": "A meeting of graph and diagonal is exactly a fixed point of the original map.",
+        "why_later": "This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra.",
+    },
+    {
+        "lecture": 10,
+        "object": "A continuous self-map of a closed ball, including its filled interior and boundary.",
+        "plain_question": "Why can a filled shape force at least one point to stay put under every continuous rule of the right kind?",
+        "legal_move": "Keep the domain filled, keep the boundary condition honest, and forbid jumps in the rule.",
+        "surviving_fact": "The ball gives no continuous escape plan that moves every point away from itself at once.",
+        "why_later": "This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule.",
+    },
+    {
+        "lecture": 11,
+        "object": "A vector field, meaning an arrow assigned to each point of a surface or state space.",
+        "plain_question": "What can be learned about motion without solving every path of motion?",
+        "legal_move": "Study the arrow pattern and isolate the points where the arrow vanishes.",
+        "surviving_fact": "An equilibrium carries more information than its location; nearby arrows turn around it in a countable way.",
+        "why_later": "This shifts the course from fixed places to motion laws. It prepares index as the local evidence attached to a failure of motion.",
+    },
+    {
+        "lecture": 12,
+        "object": "Indices assigned to isolated vector-field defects by reading nearby arrow turning.",
+        "plain_question": "How can many local motion failures add up to one whole-surface demand?",
+        "legal_move": "Clean the field to isolated defects, read the turning around each one, and add the signed local counts.",
+        "surviving_fact": "Defects may move or split, but the total signed index is constrained by the surface.",
+        "why_later": "This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion.",
+    },
+    {
+        "lecture": 13,
+        "object": "A vector field on a surface, with all isolated defects counted together.",
+        "plain_question": "Why must the total defect of a motion pattern answer to the shape that carries it?",
+        "legal_move": "Use Poincare-Hopf only after the field is clean enough and the surface carrying it is the right one.",
+        "surviving_fact": "The sum of local indices equals the Euler characteristic of the surface.",
+        "why_later": "This gathers the course's main chain: surface bookkeeping, signs, local defects, and global constraint. The hairy-ball idea is one visible consequence, not the whole story.",
+    },
+    {
+        "lecture": 14,
+        "object": "A physical or moving system translated into a space of possible states.",
+        "plain_question": "How can topology say something useful about an application before every motion equation is solved?",
+        "legal_move": "Choose the state space honestly, include the real freedoms, exclude the real forbidden states, and then apply the theorem to that model.",
+        "surviving_fact": "Barriers, holes, fixed points, and index totals in the state space become constraints on the original system.",
+        "why_later": "This tests the whole course outside its cleanest surface examples. It shows that first-principles modeling is part of the mathematics, not a preliminary story.",
+    },
+    {
+        "lecture": 15,
+        "object": "The whole course as a chain of picture-based reasoning moves.",
+        "plain_question": "What single habit connects strips, surfaces, intersections, fixed points, and vector fields?",
+        "legal_move": "Translate each situation into objects, allowed moves, protected evidence, and a conclusion that follows from that evidence.",
+        "surviving_fact": "The same reasoning pattern survives across settings: build the right picture, move it legally, count what survives, and let the shape force the answer.",
+        "why_later": "This is the final reader standard for the companion. A page is deep enough only when the reader can say what object was made, what move was legal, what fact survived, and why that fact forces the conclusion.",
+    },
+]
+
+
 CONCEPT_DEPENDENCIES = [
     {
         "stage": "From local patch evidence to whole-surface behavior",
@@ -1440,6 +1564,7 @@ def page(title, body, current=""):
         ("index.html", "Course"),
         ("videos.html", "Videos"),
         ("lectures.html", "Lectures"),
+        ("lecture-spine.html", "Lecture Spine"),
         ("concepts.html", "Concepts"),
         ("themes.html", "Themes"),
         ("subthemes.html", "Subthemes"),
@@ -1513,6 +1638,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Lecture-by-lecture reasoning spine",
+            "evidence": f"The Lecture Spine page gives {len(data['lecture_spine'])} lecture entries that name the object, plain question, legal move, surviving fact, and later use.",
+            "status": "met",
+        },
+        {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
             "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields.",
             "status": "met",
@@ -1572,6 +1702,7 @@ def build_quality_audit(data):
             "captioned_videos": stats["captioned_videos"],
             "missing_captions": data["missing_caption_ids"],
             "lecture_examples": lecture_examples,
+            "lecture_spine_entries": len(data["lecture_spine"]),
             "lecture_essay_words": lecture_essay_words,
             "lecture_source_lens_words": lecture_source_lens_words,
             "concept_essay_words": concept_essay_words,
@@ -1646,6 +1777,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <div class="grid two">
 {card('Math Playground', 'Four small canvas models let the reader adjust cuts, signed pairs, fixed-point graphs, and vector-field turning. The controls make the course principles visible without assuming prior notation.', 'math-playground.html', 'Playground')}
 {card('Course Synthesis', 'A single first-principles path through the whole course: hard situation, mathematical object, operation, reason, and what becomes possible.', 'course-synthesis.html', 'Synthesis')}
+{card('Lecture Spine', 'One dense path through all 15 lectures: object, plain question, legal move, surviving fact, and why the lecture is needed later.', 'lecture-spine.html', 'Spine')}
 {card('Concept Dependencies', 'Eight paths show what a reader should understand first, what later idea depends on it, and why the dependency matters.', 'concept-dependencies.html', 'Dependencies')}
 {card('Proof Moves', 'Five reusable proof recipes show the steps: name the object, name legal moves, protect evidence, and use the conclusion without hiding the contract.', 'proof-moves.html', 'Moves')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
@@ -1653,6 +1785,34 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </div>
 """
     (SITE / "index.html").write_text(page("Topology & Geometry Course Companion", body, "Course"), encoding="utf-8")
+
+    lecture_by_number = {l["lecture"]: l for l in data["lectures"]}
+    spine_cards = []
+    for row in data["lecture_spine"]:
+        lecture = lecture_by_number[row["lecture"]]
+        spine_cards.append(
+            f"""<article class="card">
+  <div class="meta">Lecture {row['lecture']:02d}</div>
+  <h3>{esc(lecture['deep']['title'])}</h3>
+  <p><b>Object:</b> {esc(row['object'])}</p>
+  <p><b>Plain question:</b> {esc(row['plain_question'])}</p>
+  <p><b>Legal move:</b> {esc(row['legal_move'])}</p>
+  <p><b>Surviving fact:</b> {esc(row['surviving_fact'])}</p>
+  <p><b>Why later lectures need it:</b> {esc(row['why_later'])}</p>
+  <a class="arrow" href="lecture-{row['lecture']:02d}.html">Open lecture</a>
+</article>"""
+        )
+    spine_body = f"""
+<h1>Lecture Spine</h1>
+<p class="lead">This page reads the course as one chain of reasoning. Each lecture is reduced to the object it builds, the plain question it asks, the move it allows, the fact it protects, and the later mathematical work that depends on it.</p>
+<section class="lecture">
+  <h2>How To Read This Spine</h2>
+  <p>Use each row as a check against shallow understanding. If the lecture is remembered only as a topic name, the main idea has probably been lost. The useful memory is the working contract: what object is under discussion, what may be changed, what must survive the change, and what conclusion that survival later supports.</p>
+  <p>The sequence also shows why the course has its particular order. The Mobius strip teaches local versus global. Deformation teaches legal motion. Constructed spaces and quotient rules teach how the stage is made. Intersections and signs teach protected counting. Fixed points and vector fields turn that protected evidence into existence and motion statements.</p>
+</section>
+<div class="grid two">{''.join(spine_cards)}</div>
+"""
+    (SITE / "lecture-spine.html").write_text(page("Lecture Spine", spine_body, "Lecture Spine"), encoding="utf-8")
 
     playground_body = """
 <h1>Math Playground</h1>
@@ -1934,7 +2094,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -2036,6 +2196,7 @@ def main():
         "concepts": concepts,
         "families": families,
         "math_why": math_why,
+        "lecture_spine": LECTURE_SPINE,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
     }
@@ -2060,6 +2221,7 @@ def main():
     write_json(ANALYSIS / "subtheme-map.json", subthemes)
     write_json(ANALYSIS / "family-map.json", families)
     write_json(ANALYSIS / "math-why.json", math_why)
+    write_json(ANALYSIS / "lecture-spine.json", LECTURE_SPINE)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "course-companion.json", data)
@@ -2082,6 +2244,7 @@ def main():
 This repo now has a transcript-backed depth pass across the lecture, concept, theme, subtheme, and method-family layers. The first shallow layer has been replaced across the main explanatory surfaces:
 
 - 15 hand-authored lecture explainers from 35 videos
+- lecture-spine.html with {metrics['lecture_spine_entries']} lecture-by-lecture reasoning entries
 - {metrics['lecture_source_lens_words']} source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections

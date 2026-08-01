@@ -17,6 +17,11 @@
       "status": "met"
     },
     {
+      "requirement": "Lecture-by-lecture reasoning spine",
+      "evidence": "The Lecture Spine page gives 15 lecture entries that name the object, plain question, legal move, surviving fact, and later use.",
+      "status": "met"
+    },
+    {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
       "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields.",
       "status": "met"
@@ -75,6 +80,7 @@
       "nx1XOlezuvk"
     ],
     "lecture_examples": 45,
+    "lecture_spine_entries": 15,
     "lecture_essay_words": 3855,
     "lecture_source_lens_words": 1090,
     "concept_essay_words": 4830,
@@ -88,6 +94,6 @@
     "reader_checks": 11,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 76
+    "html_pages_before_audit_page": 77
   }
 }
