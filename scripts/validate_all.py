@@ -89,7 +89,7 @@ def main():
             if len(words(depth.get(field))) < 30:
                 fail(f"subtheme {subtheme['id']} depth {field} too thin")
         subtheme_essay_words = sum(len(words(p)) for p in subtheme.get("essay") or [])
-        if subtheme_essay_words < 130:
+        if subtheme_essay_words < 260:
             fail(f"subtheme {subtheme['id']} essay too thin")
         routine = subtheme.get("routine") or {}
         for field in ["look_for", "ask", "use", "mistake"]:
