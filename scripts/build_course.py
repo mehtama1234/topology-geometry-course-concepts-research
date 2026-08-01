@@ -151,10 +151,10 @@ SOURCE_READERS = [
         "reader_problem": "The course source answers the starting problem: how can a person reason about shape when exact measurement is not the right evidence?",
         "object_to_watch": "Watch the physical or drawn object first: a strip, route, surface, graph, arrow field, or state space. The object carries the rulebook before any theorem name appears.",
         "first_principles_bridge": "The lectures keep converting a visible situation into a protected account. A strip becomes a gluing rule, a failed drawing becomes a boundary-order obstruction, a moving system becomes a space of possible states.",
-        "how_to_read": "Read the videos as the primary sequence of ideas. Start from the demonstration, name the allowed motion, then ask what fact survives that motion. The transcript supports the reading, but the demonstrations carry much of the mathematical force.",
+        "how_to_read": "Read the videos as the primary sequence of ideas. Start from the demonstration, name the allowed motion, then ask what fact survives that motion. The recovered captions can support titles, phrases, and visible lecture anchors, but a course-arc explanation must still be marked as interpretation unless the caption or visible demonstration directly carries it.",
         "family": "Course spine",
-        "do_not_overread": "Do not treat auto-caption wording as exact lecture notes. Use the recovered captions as evidence for the course arc while keeping the missing-caption caveat visible.",
-        "reader_question": "What object is Tokieda manipulating, what move is legal, and what fact survives that move?",
+        "do_not_overread": "Do not treat auto-caption wording as exact lecture notes, and do not treat a generated explanation as something Tokieda literally said. Use recovered captions as evidence for the lecture object and course arc while keeping the missing-caption caveat visible.",
+        "reader_question": "What object is Tokieda manipulating, what move is legal, what fact survives that move, and which sentence is interpretation rather than transcript-level evidence?",
         "concepts": ["deformation", "invariant", "configuration-space"],
     },
     {
@@ -173,10 +173,10 @@ SOURCE_READERS = [
         "reader_problem": "Poincare's source line answers a whole-space question: what can be known about a space from facts that survive continuous change?",
         "object_to_watch": "Watch the space as a whole object, not one drawing of it. Manifolds, holes, cycles, and preserved accounts matter because they remain meaningful after the picture is redrawn.",
         "first_principles_bridge": "The course's surface bookkeeping and invariant habits sit in this source family. Euler characteristic, dual pictures, and Poincare-Hopf all depend on the idea that a whole space can carry evidence no single local patch reveals.",
-        "how_to_read": "Read this source as historical and conceptual background after the companion has explained the lecture objects. The useful beginner question is not the original notation; it is why preserved structure became the right way to study spaces.",
+        "how_to_read": "Read this source as historical and conceptual background after the companion has explained the lecture objects. It can support the whole-space-invariant family, but it should not be used as proof that a specific lecture used one exact statement, notation, or proof order.",
         "family": "Whole-space invariants",
-        "do_not_overread": "Do not claim Tokieda cites a specific passage. Use the source as background for the mathematical family behind the course's invariant and manifold thread.",
-        "reader_question": "What feature of the whole space is being protected across allowed changes, and what conclusion depends on that protected feature?",
+        "do_not_overread": "Do not claim Tokieda cites a specific passage or that this source proves the wording of a companion paragraph. Use it as background for the mathematical family behind the course's invariant and manifold thread.",
+        "reader_question": "What feature of the whole space is being protected across allowed changes, what conclusion depends on that protected feature, and what exact lecture wording remains unsupported?",
         "concepts": ["manifold", "invariant", "euler-characteristic"],
     },
     {
@@ -184,10 +184,10 @@ SOURCE_READERS = [
         "reader_problem": "Hopf's paper family answers a motion question: how can local failures of an arrow field be forced by the shape carrying the arrows?",
         "object_to_watch": "Watch an arrow field on a surface and the isolated places where the field breaks down. The local object is a small loop around a defect; the global object is the entire surface.",
         "first_principles_bridge": "The course reaches this family after teaching signed counts and Euler characteristic. A source, sink, or saddle is not only a picture; it has an index, and the indices must be compared with the surface's own count.",
-        "how_to_read": "Read it through the lecture picture first: walk around each defect, count how arrows turn, add the local counts, then compare the sum with the surface. Only after that should the formal paper be used.",
+        "how_to_read": "Read it through the lecture picture first: walk around each defect, count how arrows turn, add the local counts, then compare the sum with the surface. The paper family supports that theorem family; it does not by itself verify any one caption sentence or compute a motion path.",
         "family": "Vector-field index",
-        "do_not_overread": "Do not reduce the theorem to a familiar slogan about hair on a sphere. The paper family concerns a signed total over all isolated defects on the right kind of space.",
-        "reader_question": "Which defects are being counted, what sign does each one carry, and what whole-surface number controls the total?",
+        "do_not_overread": "Do not reduce the theorem to a familiar slogan about hair on a sphere, and do not say it solves the dynamics. The paper family concerns a signed total over all isolated defects on the right kind of space.",
+        "reader_question": "Which defects are being counted, what sign does each one carry, what whole-surface number controls the total, and which stronger motion claim is not supported?",
         "concepts": ["vector-field-index", "equilibrium", "poincare-hopf"],
     },
     {
@@ -195,9 +195,9 @@ SOURCE_READERS = [
         "reader_problem": "Hatcher's text answers the machinery question: how can holes, loops, gluing, and deformation be organized into repeatable tools?",
         "object_to_watch": "Watch the spaces and maps, especially quotient spaces, product spaces, loops, cells, and homotopy-style deformations. These objects record allowed movement and preserved structure.",
         "first_principles_bridge": "The course uses pictures before formal machinery. Hatcher supplies a broader language for the same habit: replace accidental geometry by route, gluing, and invariant information that survives allowed changes.",
-        "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives?",
+        "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives? Treat it as broader machinery support, not as evidence for a specific classroom sentence.",
         "family": "Algebraic topology background",
-        "do_not_overread": "Do not import the text's full abstraction into the course pages. The companion should stay grounded in Tokieda's demonstrations and use Hatcher only for broader mathematical support.",
+        "do_not_overread": "Do not import the text's full abstraction into the course pages or imply the lectures follow this book's order. The companion should stay grounded in Tokieda's demonstrations and use Hatcher only for broader mathematical support.",
         "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course?",
         "concepts": ["quotient-space", "product-space", "invariant"],
     },
@@ -206,10 +206,10 @@ SOURCE_READERS = [
         "reader_problem": "Milnor's notes answer the bridge question: how do smooth local pictures produce topological conclusions about fixed points, degree, and vector fields?",
         "object_to_watch": "Watch smooth manifolds, maps, regular values, boundaries, and vector fields. The important object is often local and smooth, but the conclusion belongs to the whole space.",
         "first_principles_bridge": "The course repeatedly prepares a clean ordinary case, assigns signs or indices, and then reads a global conclusion. Milnor gives a compact formal route through that same local-to-global movement.",
-        "how_to_read": "Read it after the term translator and formula reader. Whenever the notes use a formal word, translate it into the job it performs: preparing clean meetings, assigning signs, or forcing a whole-space count.",
+        "how_to_read": "Read it after the term translator and formula reader. Whenever the notes use a formal word, translate it into the job it performs: preparing clean meetings, assigning signs, or forcing a whole-space count. Use it to strengthen the formal background, not to replace the course's plain-language contract.",
         "family": "Differentiable topology bridge",
-        "do_not_overread": "Do not assume the companion's reader has Milnor's prerequisites. The site should explain the course idea first and use this source as formal backup.",
-        "reader_question": "What local smooth condition is being prepared so that a global topological count can be trusted?",
+        "do_not_overread": "Do not assume the companion's reader has Milnor's prerequisites, and do not present Milnor's formal route as the lecture's route unless the lecture evidence says so. Explain the course idea first and use this source as formal backup.",
+        "reader_question": "What local smooth condition is being prepared so that a global topological count can be trusted, and which part is formal background rather than course evidence?",
         "concepts": ["generic-position", "fixed-points", "vector-field-index"],
     },
     {
@@ -217,9 +217,9 @@ SOURCE_READERS = [
         "reader_problem": "Guillemin and Pollack answer the clean-meeting question: how can intersections, signs, and ordinary positions be made reliable enough to count?",
         "object_to_watch": "Watch maps, submanifolds, clean intersections, orientations, and the small moves that remove fragile coincidences.",
         "first_principles_bridge": "The course's intersection-number thread needs this family of ideas. Before signs can be added, meetings must be clean; before counts can survive, accidental cases must be understood as controlled changes.",
-        "how_to_read": "Use it to support the ordinary-case habit behind generic position and intersection number. Keep translating formal statements into the course's concrete test: what moved, what became clean, and why the count survived.",
+        "how_to_read": "Use it to support the ordinary-case habit behind generic position and intersection number. Keep translating formal statements into the course's concrete test: what moved, what became clean, and why the count survived. It supports sign and transversality background, not exact wording from the videos.",
         "family": "Clean intersections and signs",
-        "do_not_overread": "Do not let the formal setting erase the lecture picture. The course's explanation still begins with visible meetings, signs, and legal nudges.",
+        "do_not_overread": "Do not let the formal setting erase the lecture picture or turn the companion into a textbook summary. The course's explanation still begins with visible meetings, signs, and legal nudges.",
         "reader_question": "What coincidence was removed, what sign rule became available, and why does the signed total survive the allowed move?",
         "concepts": ["generic-position", "intersection-number", "boundary-orientation"],
     },
@@ -232,11 +232,11 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "family": "Course spine",
         "problem": "This family answers the teaching problem: how can a learner reason about shape before formal language is available?",
         "object": "The object is the course sequence itself, moving from physical demonstrations to drawings, surfaces, fields, and state spaces.",
-        "allowed_reading": "Use the lecture order as evidence for how ideas depend on one another, while keeping auto-caption wording separate from visible demonstrations.",
+        "allowed_reading": "Use the lecture order as evidence for how ideas depend on one another, while keeping auto-caption wording, visible demonstrations, and course-arc interpretation in separate buckets.",
         "protected_idea": "The protected idea is the course habit: name the object, name the legal move, protect the surviving fact, and only then name the formal result.",
         "course_bridge": "It anchors every page because the companion should explain Tokieda's demonstrations before importing later terminology or background source language.",
-        "overclaim": "Do not treat cleaned transcripts as exact notes or claim a precise wording when the evidence is only a recovered auto-caption or visible course motion.",
-        "reader_test": "Can the reader point to a lecture moment, name the object being manipulated, and separate caption support from course-arc inference?",
+        "overclaim": "Do not treat cleaned transcripts as exact notes, claim precise wording from a paraphrase, or say a generated synthesis was spoken in the lecture when the evidence is only a recovered auto-caption or visible course motion.",
+        "reader_test": "Can the reader point to a lecture moment, name the object being manipulated, and label the sentence as caption support, visible demonstration, source-family support, or course-arc inference?",
         "concepts": ["deformation", "invariant", "configuration-space"],
     },
     {
@@ -256,11 +256,11 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "family": "Whole-space invariants",
         "problem": "This family answers the whole-space problem: what can be known when exact drawing, size, and position are not the evidence that matters?",
         "object": "The object is a space or manifold treated as a whole, with features such as holes, cycles, and surviving accounts.",
-        "allowed_reading": "Use it as historical and conceptual background for invariants, not as a claim that one lecture cites one exact passage.",
+        "allowed_reading": "Use it as historical and conceptual background for invariants, not as a claim that one lecture cites one exact passage or follows the original paper's notation.",
         "protected_idea": "The protected idea is that a space can carry evidence that survives continuous change and cannot be seen from one small local patch.",
         "course_bridge": "It supports the companion's path from surface bookkeeping to Euler characteristic, duality, and later whole-surface constraints on fields.",
-        "overclaim": "Do not ask a beginner to start with the original paper's notation before the course object and protected fact have been explained plainly.",
-        "reader_test": "Can the reader name the whole-space fact being protected and the lecture conclusion that depends on that protected fact?",
+        "overclaim": "Do not ask a beginner to start with the original paper's notation, and do not use the source to prove exact Tokieda wording before the course object and protected fact have been explained plainly.",
+        "reader_test": "Can the reader name the whole-space fact being protected, the lecture conclusion that depends on it, and the claim boundary between historical background and lecture evidence?",
         "concepts": ["manifold", "invariant", "euler-characteristic"],
     },
     {
@@ -268,11 +268,11 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "family": "Vector-field index",
         "problem": "This family answers the defect problem: how can local failures of an arrow field be forced by the shape carrying the arrows?",
         "object": "The object is a vector field on a surface, together with all isolated defects and the small loops used to read their turning.",
-        "allowed_reading": "Read it through the course's arrow pictures first: walk around a defect, count local turning, then add all defects on the same surface.",
+        "allowed_reading": "Read it through the course's arrow pictures first: walk around a defect, count local turning, then add all defects on the same surface. Use the source to support the theorem family, not to strengthen claims about exact lecture wording.",
         "protected_idea": "The protected idea is the signed total of local indices, which is constrained by the Euler characteristic under the theorem's assumptions.",
         "course_bridge": "It supports the transition from local equilibria to Poincare-Hopf, where the whole surface controls the total defect account.",
-        "overclaim": "Do not reduce the family to a slogan about hair on a sphere or pretend it computes every motion path of a system.",
-        "reader_test": "Can the reader name the field, list the defects being counted, and say what surface number controls the total?",
+        "overclaim": "Do not reduce the family to a slogan about hair on a sphere, pretend it computes every motion path of a system, or cite it as proof of a caption sentence.",
+        "reader_test": "Can the reader name the field, list the defects being counted, say what surface number controls the total, and state what stronger dynamics claim is not supported?",
         "concepts": ["vector-field-index", "equilibrium", "poincare-hopf"],
     },
     {
@@ -280,10 +280,10 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "family": "Algebraic topology background",
         "problem": "This family answers the machinery problem: how can routes, gluing rules, holes, and deformations become repeatable tools?",
         "object": "The object is a space with maps, quotient constructions, product constructions, cells, loops, and deformation relations.",
-        "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence.",
+        "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence. It can justify broader machinery, not a lecture-specific paraphrase unless the lecture source also supports it.",
         "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures.",
         "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages.",
-        "overclaim": "Do not import the full abstraction into beginner-facing prose before the concrete route, gluing rule, or count has been named.",
+        "overclaim": "Do not import the full abstraction into beginner-facing prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",
         "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, and what conclusion follows?",
         "concepts": ["quotient-space", "product-space", "invariant"],
     },
@@ -292,11 +292,11 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "family": "Differentiable topology bridge",
         "problem": "This family answers the bridge problem: how do smooth local conditions create trustworthy whole-space topological conclusions?",
         "object": "The object is a smooth manifold with maps, boundaries, regular values, fixed-point questions, degree-like counts, or vector fields.",
-        "allowed_reading": "Use it after translating its formal words into course jobs: prepare clean cases, assign signs, compare maps, and add local evidence.",
+        "allowed_reading": "Use it after translating its formal words into course jobs: prepare clean cases, assign signs, compare maps, and add local evidence. Treat it as formal backup for a family of moves, not as a substitute course transcript.",
         "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion.",
         "course_bridge": "It supports generic position, fixed-point reasoning, boundary behavior, and vector-field index without forcing the companion to assume advanced prerequisites.",
-        "overclaim": "Do not treat the reference as required background for a lecture page; it is formal support after the everyday explanation has done its work.",
-        "reader_test": "Can the reader identify the local smooth condition and say which global count or existence claim it makes trustworthy?",
+        "overclaim": "Do not treat the reference as required background for a lecture page, and do not use its proof path as evidence that the lecture followed the same path. It is formal support after the everyday explanation has done its work.",
+        "reader_test": "Can the reader identify the local smooth condition, say which global count or existence claim it makes trustworthy, and separate formal support from lecture evidence?",
         "concepts": ["generic-position", "fixed-points", "vector-field-index"],
     },
     {
@@ -304,10 +304,10 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "family": "Clean intersections and signs",
         "problem": "This family answers the clean-meeting problem: how can intersections and signs be prepared carefully enough to count?",
         "object": "The object is a map, submanifold, or pair of objects whose meetings need ordinary position and orientation before signs are meaningful.",
-        "allowed_reading": "Use it to support the course habit of moving fragile coincidences aside before trusting a signed count.",
+        "allowed_reading": "Use it to support the course habit of moving fragile coincidences aside before trusting a signed count. It supports the sign-and-clean-meeting family, not exact wording from the videos.",
         "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges.",
         "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic.",
-        "overclaim": "Do not let the formal setting erase the beginner's picture; the page should still begin with what moved and why the count survived.",
+        "overclaim": "Do not let the formal setting erase the beginner's picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived.",
         "reader_test": "Can the reader name the coincidence removed, the sign rule made available, and the legal move that preserves the signed total?",
         "concepts": ["generic-position", "intersection-number", "boundary-orientation"],
     },
@@ -4030,13 +4030,13 @@ def build_source_faithfulness(lecture):
     anchors = ", ".join(lecture["deep"]["anchors"][:4])
     examples = "; ".join(example["title"] for example in lecture["deep"]["examples"][:3])
     if lecture["missing_caption_ids"]:
-        support = f"The available captions support the lecture through anchors such as {anchors}, and through concrete course moments such as {examples}. The missing video id {', '.join(lecture['missing_caption_ids'])} means this page must keep theorem-level claims tied to the recovered parts and avoid pretending the middle source is complete."
-        inference = "The page uses the lecture sequence, the surrounding parts, and the course's repeated object-move-surviving-fact pattern to connect the recovered source to the broader explanation. Those connections are useful, but they should be read as structured course interpretation rather than direct transcript quotation from the missing segment."
-        caveat = f"Recheck any claim that depends on the absent caption before strengthening it. The safest audit question is: would this sentence still be justified by the recovered captions, the listed anchors, and the visible lecture examples if {', '.join(lecture['missing_caption_ids'])} remained unavailable?"
+        support = f"The available captions support the lecture through anchors such as {anchors}, and through concrete course moments such as {examples}. The missing video id {', '.join(lecture['missing_caption_ids'])} means transcript-level evidence is incomplete, so exact wording and theorem-transition claims must stay tied to recovered captions or visible demonstrations."
+        inference = "The page uses the lecture sequence, the surrounding parts, and the course's repeated object-move-surviving-fact pattern to connect the recovered source to the broader explanation. Those connections are useful course-arc interpretation, not direct quotation from the missing segment and not proof that Tokieda used the same wording."
+        caveat = f"Recheck any claim that depends on the absent caption before strengthening it. Label the claim as caption support, visible demonstration, course-arc inference, or background-source support. The safest audit question is: would this sentence still be justified if {', '.join(lecture['missing_caption_ids'])} remained unavailable?"
     else:
-        support = f"The recovered captions support the page through anchors such as {anchors}, and through concrete course moments such as {examples}. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use."
-        inference = "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary."
-        caveat = "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        support = f"The recovered captions support the page through anchors such as {anchors}, and through concrete course moments such as {examples}. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes."
+        inference = "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording."
+        caveat = "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
     return {
         "caption_support": support,
         "course_inference": inference,
@@ -5201,6 +5201,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Course-To-Paper Test</h2>
   <p>A source belongs only when it helps explain a concrete course move. The course may bend a strip, glue a square, count cells, assign signs, compare a graph with a diagonal, or walk around an arrow-field defect. The paper or text should clarify that move, not replace it. If a source cannot be tied back to an object, legal move, protected fact, or failure condition, it is not doing useful work here.</p>
+  <p>For every source-backed sentence, label the support type before trusting it. Caption support means recovered lecture words or visible lecture anchors carry the sentence. Course-arc inference means the sentence connects lectures by the companion's reasoning pattern. Background-source support means a paper or text supports the broader mathematical family. These labels should not be blended into one vague claim of support.</p>
 </section>
 """
     (SITE / "paper-source-reader.html").write_text(page("Paper Source Reader", source_reader_body, "Paper Source Reader"), encoding="utf-8")
@@ -5236,6 +5237,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <h2>The Paper-Family Test</h2>
   <p>A paper family is doing work when it makes a course page more accountable. It may support a historical line, a formal theorem family, a modeling habit, a sign convention, or a source caveat. It is not doing work when it only makes the page look more scholarly.</p>
   <p>For each source, the reader should be able to write two plain sentences. First: this family studies this kind of object because this kind of problem needs a stable account. Second: the course uses that account here, but the source does not prove this stronger claim. If those sentences cannot be written, the citation is not ready.</p>
+  <p>The strongest source use also says what kind of evidence is doing the work: lecture caption, visible demonstration, course-arc inference, historical background, formal theorem family, or standard textbook machinery. A citation should not let those different jobs blur together.</p>
 </section>
 <section class="lecture">
   <h2>Repairing A Citation</h2>

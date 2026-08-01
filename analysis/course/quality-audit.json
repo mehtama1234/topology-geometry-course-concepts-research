@@ -18,7 +18,7 @@
     },
     {
       "requirement": "Lecture source-faithfulness audit",
-      "evidence": "Each lecture page now includes caption support, course-inference, and caveat fields that distinguish recovered-caption evidence from course-arc interpretation, with 2109 total source-faithfulness words.",
+      "evidence": "Each lecture page now includes caption support, course-inference, and caveat fields that distinguish recovered-caption evidence from course-arc interpretation, with 2338 total source-faithfulness words.",
       "status": "met"
     },
     {
@@ -163,12 +163,12 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "The Paper Source Reader page explains all 7 sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with 1095 source-reader words.",
+      "evidence": "The Paper Source Reader page explains all 7 sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with 1267 source-reader words.",
       "status": "met"
     },
     {
       "requirement": "Paper family ledger",
-      "evidence": "The Paper Family Ledger page gives 7 paper/source family contracts with problem, object, allowed reading, protected idea, course bridge, overclaim boundary, reader test, and concept links, with 1005 paper-family words.",
+      "evidence": "The Paper Family Ledger page gives 7 paper/source family contracts with problem, object, allowed reading, protected idea, course bridge, overclaim boundary, reader test, and concept links, with 1180 paper-family words.",
       "status": "met"
     }
   ],
@@ -187,7 +187,7 @@
     "lecture_source_lens_words": 1645,
     "lecture_source_checkpoint_words": 1532,
     "lecture_caption_nuance_words": 1492,
-    "lecture_source_faithfulness_words": 2109,
+    "lecture_source_faithfulness_words": 2338,
     "lecture_source_bridge_words": 4206,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
@@ -237,9 +237,9 @@
     "term_translations": 16,
     "term_translation_words": 1850,
     "source_readers": 7,
-    "source_reader_words": 1095,
+    "source_reader_words": 1267,
     "paper_family_ledger_rows": 7,
-    "paper_family_ledger_words": 1005,
+    "paper_family_ledger_words": 1180,
     "references": 7,
     "quality_rubric_items": 6,
     "rubric_coverage_layers": 6,
