@@ -4348,6 +4348,7 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             "Use the source as support, not substitution.",
             "The reference cannot do the classroom evidence work.",
         ])
+        overread_warning = lecture_overread_warning(number, warning_open, object_text, spine)
         bridges.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
@@ -4356,11 +4357,23 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             "course_demonstration": f"The lecture works from {object_text} and uses concrete moments such as {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}. {evidence_close}",
             "mathematical_bridge": f"{bridge_open} {spine['plain_question']} The legal move is this: {spine['legal_move']} The fact carried forward is this: {spine['surviving_fact']}",
             "how_source_extends": f"{source_bridge} {source_close}",
-            "overread_warning": f"{warning_open} The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: {spine['why_later']}",
+            "overread_warning": overread_warning,
             "reader_question": f"Can the reader explain Lecture {number:02d} from the demonstration to the source family by naming the object, the legal move, the surviving fact, and the exact source claim that is being used?",
             "concepts": concepts[:6],
         })
     return bridges
+
+
+def lecture_overread_warning(number, warning_open, object_text, spine):
+    surviving = spine["surviving_fact"].rstrip(".")
+    why_later = spine["why_later"]
+    options = [
+        f"{warning_open} The reference may widen the setting, but it cannot replace the lecture's own evidence. Keep returning to the lecture object: {object_text}; to this protected fact: {surviving}; and to the reason this lecture is needed later: {why_later}",
+        f"{warning_open} Do not turn the source into a stronger claim than the course earned. The safe claim still has to pass through the lecture object: {object_text}; preserve this fact: {surviving}; and then connect forward: {why_later}",
+        f"{warning_open} A source-backed sentence is too strong if the reader can no longer see the course demonstration inside it. The warning signs are losing the lecture object: {object_text}; skipping this protected fact: {surviving}; or forgetting the later role: {why_later}",
+        f"{warning_open} Treat the source as background pressure, not as a shortcut. The lecture claim remains honest only when it stays tied to the lecture object: {object_text}; this surviving fact: {surviving}; and the later use: {why_later}",
+    ]
+    return varied((number, "overread-warning"), options)
 
 
 def lecture_source_family_bridge(number, spine, source_reader):
