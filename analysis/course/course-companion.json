@@ -3366,6 +3366,11 @@
         "requirement": "Interactive first-principles playground",
         "evidence": "The Math Playground page has four canvas widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.",
         "status": "met"
+      },
+      {
+        "requirement": "Course-level synthesis",
+        "evidence": "The Course Synthesis page connects the lecture sequence, proof families, mathematical objects, operations, failure modes, and reader questions in one first-principles path.",
+        "status": "met"
       }
     ],
     "metrics": {
@@ -3382,6 +3387,7 @@
       "subtheme_essay_words": 1500,
       "family_essay_words": 824,
       "playground_widgets": 4,
+      "synthesis_sections": 8,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
       "html_pages_before_audit_page": 63

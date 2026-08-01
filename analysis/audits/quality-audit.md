@@ -11,3 +11,4 @@ The companion now satisfies the requested depth shape across the main reader-fac
 - **Connected course map** (met): 45 lecture examples link forward to concepts; every concept links back to lecture appearances, with appearance counts from 2 to 20.
 - **Big-picture mathematical synthesis** (met): The Math Why page explains the course engine: allowed changes, preserved facts, designed counts, and whole-shape constraints.
 - **Interactive first-principles playground** (met): The Math Playground page has four canvas widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.
+- **Course-level synthesis** (met): The Course Synthesis page connects the lecture sequence, proof families, mathematical objects, operations, failure modes, and reader questions in one first-principles path.

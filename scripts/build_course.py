@@ -1083,6 +1083,7 @@ def page(title, body, current=""):
         ("families.html", "Families"),
         ("the-math-why.html", "The Math Why"),
         ("math-playground.html", "Playground"),
+        ("course-synthesis.html", "Synthesis"),
         ("quality-audit.html", "Quality Audit"),
         ("source-audit.html", "Source Audit"),
     ]
@@ -1168,6 +1169,11 @@ def build_quality_audit(data):
             "evidence": "The Math Playground page has four canvas widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.",
             "status": "met",
         },
+        {
+            "requirement": "Course-level synthesis",
+            "evidence": "The Course Synthesis page connects the lecture sequence, proof families, mathematical objects, operations, failure modes, and reader questions in one first-principles path.",
+            "status": "met",
+        },
     ]
     return {
         "summary": "The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
@@ -1184,6 +1190,7 @@ def build_quality_audit(data):
             "subtheme_essay_words": subtheme_essay_words,
             "family_essay_words": family_essay_words,
             "playground_widgets": 4,
+            "synthesis_sections": 8,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -1246,6 +1253,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <h2>Interactive Math</h2>
 <div class="grid two">
 {card('Math Playground', 'Four small canvas models let the reader adjust cuts, signed pairs, fixed-point graphs, and vector-field turning. The controls make the course principles visible without assuming prior notation.', 'math-playground.html', 'Playground')}
+{card('Course Synthesis', 'A single first-principles path through the whole course: hard situation, mathematical object, operation, reason, and what becomes possible.', 'course-synthesis.html', 'Synthesis')}
 </div>
 """
     (SITE / "index.html").write_text(page("Topology & Geometry Course Companion", body, "Course"), encoding="utf-8")
@@ -1290,6 +1298,66 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <script src="assets/playground.js"></script>
 """
     (SITE / "math-playground.html").write_text(page("Math Playground", playground_body, "Playground"), encoding="utf-8")
+
+    chain_rows = [
+        ("Paper strip", "A small twist changes a whole surface.", "A gluing rule for the ends of a strip.", "Follow a route and cut along chosen paths.", "The route returns with side information that one small patch cannot reveal.", "Global surface facts become visible."),
+        ("Disk paths", "Trying drawings cannot prove that no drawing works.", "Boundary order plus a no-crossing rule.", "Deform all legal drawings toward a cleaner case.", "The boundary order survives, so a forced crossing in the clean case blocks every legal case.", "Impossibility can be proved without testing every route."),
+        ("Built spaces", "A shape cannot be understood if its construction is hidden.", "Products, quotients, and surgery recipes.", "Track how choices vary, how points are identified, and how pieces are replaced.", "The recipe tells which routes, edges, and neighborhoods are real in the finished space.", "Later theorems have a precise stage to act on."),
+        ("Surface classification", "Many drawings may describe the same surface type.", "Handles, crosscaps, boundaries, and orientation.", "Cut, move, and reassemble until durable parts are exposed.", "Legal simplification removes drawing accidents while keeping global surface structure.", "Surfaces can be named by what survives."),
+        ("Intersections", "Meetings can appear or disappear during motion.", "A signed count of clean meetings.", "Assign signs and add them.", "Opposite pairs born during deformation cancel, while forced meetings leave a total.", "Pictures become arithmetic without losing geometry."),
+        ("Fixed points", "A rule may force a self-return without revealing where.", "The graph of the rule and the diagonal of self-agreement.", "Translate the rule into a shape and compare it with the diagonal.", "A forced intersection is a fixed point written geometrically.", "Existence follows from shape and continuity."),
+        ("Vector fields", "A motion law may be hard to solve exactly.", "Arrow-field defects with signed index.", "Walk around each defect and count arrow turning.", "Local defects may move, but their total can be tied to the surface.", "The shape predicts failures of motion."),
+        ("Applications", "A physical story is too detailed to use directly.", "A state space, a rule, and a protected obstruction.", "Model possible states and apply the earlier proof family.", "The topology applies only when the model carries the real freedoms and barriers.", "Behavior can be constrained before exact calculation."),
+    ]
+    chain_html = "".join(
+        f"""<article class="card"><div class="meta">{esc(stage)}</div><h3>{esc(hard)}</h3><p><b>Turns into:</b> {esc(obj)}</p><p><b>Operation:</b> {esc(op)}</p><p><b>Reason:</b> {esc(reason)}</p><p><b>What becomes possible:</b> {esc(poss)}</p></article>"""
+        for stage, hard, obj, op, reason, poss in chain_rows
+    )
+    family_rows = [
+        ("Deformation", "Move the object while guarding the question.", "allowed motion", "replace a hard picture by an easier legal picture"),
+        ("Surviving Count", "Build a count whose fake changes cancel.", "protected total", "prove impossibility or forced existence"),
+        ("Surface Bookkeeping", "Cut a surface into pieces and glue the account back together.", "global ledger", "make local patches obey a whole-surface fact"),
+        ("Embedding", "Separate required connections from available room.", "route demand", "decide whether every legal drawing faces an obstruction"),
+        ("Motion Through States", "Replace motion over time by the shape of possible states.", "state space", "read behavior as paths, walls, holes, and fixed points"),
+    ]
+    family_html = "".join(
+        f"""<article class="card"><div class="meta">{esc(name)}</div><h3>{esc(move)}</h3><p><b>Mathematical object:</b> {esc(obj)}.</p><p><b>Course use:</b> {esc(use)}.</p></article>"""
+        for name, move, obj, use in family_rows
+    )
+    lecture_spine = "".join(
+        f"""<article class="card"><div class="meta">Lecture {l['lecture']:02d}</div><h3>{esc(l['deep']['title'])}</h3><p>{esc(l['deep']['connection'])}</p><a class="arrow" href="lecture-{l['lecture']:02d}.html">Open lecture</a></article>"""
+        for l in data["lectures"]
+    )
+    deep_body = f"""
+<h1>Course Synthesis</h1>
+<p class="lead">The course is one method learned in stages: build or move a picture, name the legal changes, protect the right evidence, and let the whole shape force the answer.</p>
+<section class="lecture">
+  <h2>What The Course Turns Hard Problems Into</h2>
+  <p>The hard thing is rarely a formula. It is a surface that fools local inspection, a drawing with too many possible routes, a rule whose fixed point is not visible, or a motion law that cannot be solved path by path. The course turns each case into a mathematical object simple enough to audit: a gluing rule, a boundary order, a signed count, a graph and diagonal, a vector-field index, or a state space.</p>
+  <p>The operation is also repeated. Deform the object, count the protected part, compare two shapes, add local contributions, or model the possible states. The reason this works is that the operation is chosen to ignore accidental detail while preserving the obstruction. That is the mathematical spine of the course.</p>
+</section>
+<h2>Dependency Spine</h2>
+<div class="grid two">{chain_html}</div>
+<section class="lecture">
+  <h2>The One Engine</h2>
+  <p>Every major result asks the same plain questions. What is allowed to move? What is forbidden to change? What object carries the evidence? What operation is performed on that object? Why does that operation preserve the evidence? What answer becomes forced after the evidence is protected?</p>
+  <p>This is why the Mobius strip belongs with Poincare-Hopf. The strip teaches that the whole object can remember a side reversal. Poincare-Hopf teaches that the whole surface can demand a total index. The objects differ, but the reasoning habit is the same: local freedom is organized by global structure.</p>
+</section>
+<h2>Proof Families</h2>
+<div class="grid two">{family_html}</div>
+<section class="lecture">
+  <h2>Where Beginners Usually Lose The Thread</h2>
+  <p>The first loss happens when a drawing is treated as the object itself. Many drawings are codes for gluing rules, route constraints, or state spaces. The second loss happens when any simplification is treated as legal. A deformation only proves something after the allowed moves are named. The third loss happens when a count is accepted without asking why it survives. A count is useful only when legal changes either leave it alone or make opposite contributions cancel.</p>
+  <p>The companion is organized to prevent those losses. Lecture pages show the chronological path. Concept pages name the tools. Theme and subtheme pages show the recurring habits. Method-family pages show the proof moves. The playground lets the reader adjust the simplest cases by hand.</p>
+</section>
+<h2>Lecture Spine</h2>
+<div class="grid">{lecture_spine}</div>
+<section class="lecture">
+  <h2>How To Read Any Page</h2>
+  <p>Start by finding the hard physical or pictorial situation. Then ask what the page turns it into: a route, a count, a graph, a surface ledger, a field, or a space of possible states. Next identify the operation: deformation, signed addition, comparison with a diagonal, summing local indices, or searching paths in a state space. Finally ask why the operation works. The answer should name the protected detail, not merely say that the method succeeds.</p>
+</section>
+"""
+    (SITE / "course-synthesis.html").write_text(page("Course Synthesis", deep_body, "Synthesis"), encoding="utf-8")
 
     video_links = "".join(f'<a href="{esc(v["youtube_url"])}">{v["index"]:02d}. {esc(v["title"])}</a>' for v in data["videos"])
     body = f"<h1>Video Links</h1><p class='lead'>Every individual YouTube item in playlist order.</p><div class='video-list'>{video_links}</div>"
@@ -1371,7 +1439,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1520,6 +1588,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 10 expanded subtheme pages with essay, first-principles, and course-role sections
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - math-playground.html with four interactive first-principles canvas widgets
+- course-synthesis.html with the full dependency spine and proof-family synthesis
 - explicit source coverage and missing-caption audit
 
 Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
