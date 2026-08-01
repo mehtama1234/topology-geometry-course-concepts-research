@@ -164,7 +164,7 @@
       "first_principles": "Separate the object's required connections from the room supplied by the surrounding surface or space. If every legal placement would force a forbidden meeting, the obstruction belongs to the topology, not to a bad drawing.",
       "how_it_works": "Embedding arguments track crossings, over-under information, winding, linking, and surface room. They ask whether deformation can remove intersections or whether a count proves that some relation survives every allowed placement in the space under study.",
       "course_examples": "Path puzzles in a disk, planar graph questions, knots and links, and intersection theory all belong here. The family teaches the reader to distinguish accidental crossings from forced ones by checking what legal motion can remove.",
-      "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the most obvious arrangement."
+      "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the first plausible arrangement."
     },
     "essay": [
       "Drawing and embedding arguments ask whether there is enough room for required connections. A failed drawing is not enough, because a better drawing may exist. The family therefore separates the object that must be placed from the space that must receive it. Which endpoints are fixed? Which crossings are forbidden? Can one strand pass through another? Does the surrounding surface have holes or handles that provide alternate routes?",

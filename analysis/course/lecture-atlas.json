@@ -183,7 +183,7 @@
       "problem": "The lecture asks whether several pairs of boundary points in a disk can be connected without the connecting paths meeting. Drawn directly, the question looks like a routing puzzle. The deeper problem is how to prove impossibility without trying every possible drawing.",
       "first_principles": "If a drawing can be stretched, slid, or rounded without changing the question, then the exact drawing was never the main thing. What matters is the order of the points on the boundary and the rule that paths may not cross. Deformation lets us simplify the picture while protecting those facts.",
       "math_move": "Replace the drawing by a cleaner drawing through allowed motion. If any successful drawing existed, the cleaned-up version would still exist. When the clean version forces a crossing, the original problem is impossible too.",
-      "detail": "A deformation argument always depends on a contract. You may move paths continuously, but you may not let one path pass through another, move endpoints past each other, or tear the disk. If that contract is vague, the proof solves an unclear problem; if it is precise, the motion itself becomes evidence.",
+      "detail": "A deformation argument always depends on a contract. You may move paths continuously, but you may not let one path pass through another, move endpoints past each other, or tear the disk. If that contract is unstated, the proof solves an unclear problem; if it is precise, the motion itself becomes evidence.",
       "connection": "This lecture gives the course its working method. Later intersection numbers, fixed-point arguments, and vector-field indices all use the same idea: change the picture while protecting the answer. The names become more advanced, but the habit remains this simple: simplify only by moves that keep the question intact.",
       "anchors": [
         "deformation",
@@ -194,7 +194,7 @@
       "examples": [
         {
           "title": "Connecting boundary pairs in a disk",
-          "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing.",
+          "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing.",
           "concepts": [
             "deformation",
             "graph-planarity",
@@ -395,7 +395,7 @@
       "walkthrough": {
         "start_here": "Start by treating spaces as things that can be built from instructions. A product says two choices vary together. A quotient says different-looking points are declared the same. Surgery says a controlled piece is removed and another controlled piece is attached along a stated boundary rule.",
         "payoff": "The mathematical payoff is honest modeling. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they are construction rules that decide routes, boundaries, holes, and local neighborhoods.",
-        "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction is vague, any theorem applied to that space is standing on weak ground."
+        "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction rule is unstated, any theorem applied to that space is standing on weak ground."
       },
       "caption_nuance": {
         "terms": [

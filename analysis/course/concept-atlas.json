@@ -131,7 +131,7 @@
       {
         "lecture": 2,
         "title": "Connecting boundary pairs in a disk",
-        "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+        "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing."
       },
       {
         "lecture": 2,
@@ -239,7 +239,7 @@
       {
         "lecture": 2,
         "title": "Connecting boundary pairs in a disk",
-        "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+        "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing."
       },
       {
         "lecture": 2,
@@ -610,7 +610,7 @@
       {
         "lecture": 2,
         "title": "Connecting boundary pairs in a disk",
-        "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+        "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing."
       },
       {
         "lecture": 6,
@@ -1233,7 +1233,7 @@
     },
     "essay": [
       "Duality means changing the picture so the useful structure becomes visible. Regions may become dots, shared borders may become edges, or a rule may become a graph in a product space. The new picture is not a new problem. It is another representation of the same relationships, chosen because it exposes a count, route, or obstruction that the first picture hid.",
-      "The first-principles reason is that some relationships are hard to see in their original form. A map as an instruction can feel invisible, but its graph is a shape. A collection of regions can be hard to compare, but a graph recording which regions touch may make the connection pattern obvious. Duality changes the bookkeeping surface without changing the relationships that are meant to be kept.",
+      "The first-principles reason is that some relationships are hard to see in their original form. A map as an instruction can feel invisible, but its graph is a shape. A collection of regions can be hard to compare, but a graph recording which regions touch can expose the connection pattern. Duality changes the bookkeeping surface without changing the relationships that are meant to be kept.",
       "The course relies on this habit constantly. A square with edge labels represents a surface. A map becomes its graph. A fixed point becomes an intersection with the diagonal. A physical mechanism becomes a configuration space. Duality is therefore part of pictorial thinking: redraw the situation, but preserve the relationships that matter. If the redraw loses those relationships, it is only a different drawing, not a proof.",
       "A good dual picture earns its place by making the protected fact easier to see without changing what must be proved. It should make a route, count, adjacency, fixed point, or obstruction easier to inspect. It should not smuggle in extra crossings, erase boundary data, or forget which original objects the new objects represent.",
       "The important check is translation back. After solving the dual problem, the conclusion must mean something in the original picture. If regions become dots, the answer about dots must still say something about regions. If a map becomes a graph, an intersection must still mean a fixed point. Duality is useful only when both directions of meaning are kept clear."
@@ -1242,7 +1242,7 @@
       "object": "A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules. The object needs another representation because the first one obscures the evidence.",
       "operation": "Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph. The operation is translation, not replacement of the problem.",
       "protected": "The protected fact is the meaning that survives translation between the original picture and the dual picture. The new picture is valid only because it preserves the needed relationships.",
-      "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left vague. A dual view must return with the original claim intact."
+      "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left unstated. A dual view must return with the original claim intact."
     },
     "anchor": {
       "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question.",
@@ -1253,7 +1253,7 @@
       "object_check": "Ask what the page is really studying: A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules. The object needs another representation because the first one obscures the evidence. Now attach that answer to the lecture evidence: A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question. The course example should make the object visible enough that the reader can tell whether a later source is talking about the same kind of thing.",
       "operation_check": "Now say what is done to that object: Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph. The operation is translation, not replacement of the problem. State the permission in words that can be checked on the course example. The allowed move is not paperwork; it is the reason a simpler picture can still answer the original question.",
       "protected_check": "After the move, identify what is still available as evidence: The meaning that survives translation between the original picture and the dual picture. The new picture is valid only because it preserves the needed relationships. The course principle says why that evidence matters: Changing representation is valid when the relationships needed by the proof can be read both before and after the change. The new picture must preserve the old question. The reader should be able to separate this surviving fact from details such as neatness, length, position, or one convenient drawing.",
-      "failure_check": "Close by naming the bad use: Solving the new picture no longer answers the old question, or if the translation back is left vague. A dual view must return with the original claim intact. The common first mistake is: to treat the dual picture as a new problem. It is a change of representation, and it is valid only when it preserves the relationships the original question depends on. Otherwise it is just a different drawing. The failure case is part of Dual pictures: it tells the reader which changed assumption destroys the claim."
+      "failure_check": "Close by naming the bad use: Solving the new picture no longer answers the old question, or if the translation back is left unstated. A dual view must return with the original claim intact. The common first mistake is: to treat the dual picture as a new problem. It is a change of representation, and it is valid only when it preserves the relationships the original question depends on. Otherwise it is just a different drawing. The failure case is part of Dual pictures: it tells the reader which changed assumption destroys the claim."
     },
     "appearances": [
       {
@@ -1493,7 +1493,7 @@
       "object": "A surface or space with a controlled part that can be removed and replaced along a stated boundary. The object must say exactly where the operation acts.",
       "operation": "Remove the chosen piece, keep track of the exposed boundary, and attach the replacement by a specified rule. The operation is local, but its effect is read globally.",
       "protected": "The protected fact is the bookkeeping of what the local replacement changed and what global feature it was meant to reveal. The boundary account keeps the operation honest.",
-      "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is vague, because then the operation is not auditable. The reader cannot know which space resulted."
+      "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is unstated, because then the operation is not auditable. The reader cannot know which space resulted."
     },
     "anchor": {
       "course_moment": "Surface classification uses controlled removal and attachment to expose handles, crosscaps, and boundaries. The operation has to say exactly what boundary is left and how the replacement is glued.",
@@ -1504,7 +1504,7 @@
       "object_check": "Make the carrier of the idea visible first: A surface or space with a controlled part that can be removed and replaced along a stated boundary. The object must say exactly where the operation acts. The course moment is the check on that carrier: Surface classification uses controlled removal and attachment to expose handles, crosscaps, and boundaries. The operation has to say exactly what boundary is left and how the replacement is glued. A good answer can point to the object before using any theorem name, because the later conclusion has to belong to that object.",
       "operation_check": "Next describe the allowed move without hiding behind terminology: Remove the chosen piece, keep track of the exposed boundary, and attach the replacement by a specified rule. The operation is local, but its effect is read globally. Explain what fixed data, boundary behavior, or model condition stays in place. The move should sound like something that can be checked on the course example, not like a permission imported from a definition.",
       "protected_check": "Do not stop at the changed picture; say what came through unchanged: The bookkeeping of what the local replacement changed and what global feature it was meant to reveal. The boundary account keeps the operation honest. Link that survival to the principle: Changing a space locally can reveal global structure only when the local replacement is accounted for exactly. The boundary left behind controls what attachment is legal. If the same fact would not survive the legal change, the concept has only been named, not used.",
-      "failure_check": "Finally say where the idea fails: The removed piece, boundary, or gluing rule is vague, because then the operation is not auditable. The reader cannot know which space resulted. Then name the beginner mistake it prevents: to think surgery permits any convenient alteration. It does not. The removed piece, the attaching boundary, and the replacement rule are part of the argument. Change those without accounting for them and the surface has become a different problem. For Surgery, the beginner trap is not a side note; it is the fastest way to see which detail the concept protects."
+      "failure_check": "Finally say where the idea fails: The removed piece, boundary, or gluing rule is unstated, because then the operation is not auditable. The reader cannot know which space resulted. Then name the beginner mistake it prevents: to think surgery permits any convenient alteration. It does not. The removed piece, the attaching boundary, and the replacement rule are part of the argument. Change those without accounting for them and the surface has become a different problem. For Surgery, the beginner trap is not a side note; it is the fastest way to see which detail the concept protects."
     },
     "appearances": [
       {

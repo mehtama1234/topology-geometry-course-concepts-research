@@ -16,7 +16,7 @@ SITE = ROOT / "site"
 PLAYLIST_URL = "https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF5woAbrzJ"
 
 
-COURSE_GOAL = """Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and stock teaching phrases. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve."""
+COURSE_GOAL = """Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid loose filler and stock teaching phrases. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve."""
 
 
 QUALITY_RUBRIC = [
@@ -320,7 +320,7 @@ TERM_TRANSLATIONS = [
         "everyday_sentence": "Topology asks what a shape still makes possible after distances, angles, and exact measurements are allowed to change.",
         "job_in_argument": "Its job is to move attention from measured appearance to permissions: which routes remain open, which crossings are forbidden, which boundaries matter, and which relationships survive legal motion.",
         "not_a_definition": "It is not a license to ignore detail. It ignores only the details that the problem has declared irrelevant while protecting the detail that can force the answer.",
-        "failure_if_misread": "If topology is read as vague shape talk, the proof loses its rulebook. A reader may bend, cross, or erase a feature that the original problem required them to keep.",
+        "failure_if_misread": "If topology is read as loose shape talk, the proof loses its rulebook. A reader may bend, cross, or erase a feature that the original problem required them to keep.",
         "concepts": ["topology-vs-geometry", "deformation", "invariant"],
         "reader_question": "What exact detail is topology keeping alive after the drawing has been changed, and which move would destroy that detail?",
     },
@@ -1068,7 +1068,7 @@ CHANGE_LEDGER_ROWS = [
         "object": "The object is a route or curve together with the rules attached to it: fixed endpoints, boundary order, missing regions, other curves, or crossing limits. The drawn line alone is not enough information.",
         "legal_change": "The route may be nudged into a cleaner position when every moment of the motion respects the same rules. It is not enough for the beginning and ending pictures to look acceptable; the in-between motion must also avoid forbidden regions and forbidden crossings.",
         "protected_fact": "The protected fact is the route's relation to the obstacle, boundary order, or other curve that the problem refuses to let it cross. If that relation survives the entire motion, the cleaner picture is allowed to answer the original question.",
-        "why_matters": "A deformation proof earns its force by replacing a hard picture with an easier picture while keeping the same question alive. The mathematics is in the rule for the whole motion, not in the prettiness of the final drawing.",
+        "why_matters": "A deformation proof earns its force by replacing a hard picture with an easier picture while keeping the same question alive. The mathematics is in the rule for the whole motion, not in the visual neatness of the final drawing.",
         "false_move": "The false move is to clean the drawing by sliding through an obstacle, through another curve, or through a boundary constraint, then announce that the final picture was equivalent all along.",
         "reader_test": "Can the reader describe a legal nudge, a forbidden shortcut, the in-between moment where the shortcut breaks the rules, and the exact route relation that the legal nudge preserves?",
         "concepts": ["deformation", "knots-and-links", "generic-position"],
@@ -1384,7 +1384,7 @@ WEAK_CLAIM_REPAIR_ROWS = [
     },
     {
         "title": "The picture makes it clear",
-        "weak_claim": "The picture makes the conclusion obvious once the reader sees the drawing in the right way, even though the proof feature has not been named.",
+        "weak_claim": "The picture settles the conclusion once the reader sees the drawing in the right way, even though the proof feature has not been named.",
         "why_weak": "A picture can suggest the right idea while still hiding the rule that makes the idea true. The reader needs to know what part of the picture is evidence and what part is only a helpful drawing. Without that distinction, a diagram becomes persuasion instead of proof.",
         "first_principles_repair": "Point to the exact feature being used: a side change, a forced crossing, a signed pair, a boundary order, a hole in a state space, or a whole-surface total. Then explain why that feature survives legal changes. The repair should say what the reader should watch if the picture is redrawn.",
         "detail_to_check": "Ask whether redrawing the picture, changing scale, or moving a curve legally would keep the named feature. If the feature disappears under a harmless redraw, it was probably a drawing artifact rather than mathematical evidence.",
@@ -2313,7 +2313,7 @@ CONCEPT_WORKUPS = {
         "object": "A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules. The object needs another representation because the first one obscures the evidence.",
         "operation": "Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph. The operation is translation, not replacement of the problem.",
         "protected": "The protected fact is the meaning that survives translation between the original picture and the dual picture. The new picture is valid only because it preserves the needed relationships.",
-        "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left vague. A dual view must return with the original claim intact.",
+        "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left unstated. A dual view must return with the original claim intact.",
     },
     "parity": {
         "object": "A count whose exact value may change while its evenness or oddness is expected to survive. The object is a problem where only zero versus nonzero may matter.",
@@ -2337,7 +2337,7 @@ CONCEPT_WORKUPS = {
         "object": "A surface or space with a controlled part that can be removed and replaced along a stated boundary. The object must say exactly where the operation acts.",
         "operation": "Remove the chosen piece, keep track of the exposed boundary, and attach the replacement by a specified rule. The operation is local, but its effect is read globally.",
         "protected": "The protected fact is the bookkeeping of what the local replacement changed and what global feature it was meant to reveal. The boundary account keeps the operation honest.",
-        "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is vague, because then the operation is not auditable. The reader cannot know which space resulted.",
+        "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is unstated, because then the operation is not auditable. The reader cannot know which space resulted.",
     },
     "manifold": {
         "object": "A space that looks like ordinary room when inspected close up, even if its whole shape is unfamiliar. The object is locally manageable but globally unresolved.",
@@ -2597,7 +2597,7 @@ CONCEPT_ESSAYS = {
     ],
     "duality": [
         "Duality means changing the picture so the useful structure becomes visible. Regions may become dots, shared borders may become edges, or a rule may become a graph in a product space. The new picture is not a new problem. It is another representation of the same relationships, chosen because it exposes a count, route, or obstruction that the first picture hid.",
-        "The first-principles reason is that some relationships are hard to see in their original form. A map as an instruction can feel invisible, but its graph is a shape. A collection of regions can be hard to compare, but a graph recording which regions touch may make the connection pattern obvious. Duality changes the bookkeeping surface without changing the relationships that are meant to be kept.",
+        "The first-principles reason is that some relationships are hard to see in their original form. A map as an instruction can feel invisible, but its graph is a shape. A collection of regions can be hard to compare, but a graph recording which regions touch can expose the connection pattern. Duality changes the bookkeeping surface without changing the relationships that are meant to be kept.",
         "The course relies on this habit constantly. A square with edge labels represents a surface. A map becomes its graph. A fixed point becomes an intersection with the diagonal. A physical mechanism becomes a configuration space. Duality is therefore part of pictorial thinking: redraw the situation, but preserve the relationships that matter. If the redraw loses those relationships, it is only a different drawing, not a proof.",
         "A good dual picture earns its place by making the protected fact easier to see without changing what must be proved. It should make a route, count, adjacency, fixed point, or obstruction easier to inspect. It should not smuggle in extra crossings, erase boundary data, or forget which original objects the new objects represent.",
         "The important check is translation back. After solving the dual problem, the conclusion must mean something in the original picture. If regions become dots, the answer about dots must still say something about regions. If a map becomes a graph, an intersection must still mean a fixed point. Duality is useful only when both directions of meaning are kept clear.",
@@ -2734,7 +2734,7 @@ FAMILY_DEPTH = {
         "first_principles": "Separate the object's required connections from the room supplied by the surrounding surface or space. If every legal placement would force a forbidden meeting, the obstruction belongs to the topology, not to a bad drawing.",
         "how_it_works": "Embedding arguments track crossings, over-under information, winding, linking, and surface room. They ask whether deformation can remove intersections or whether a count proves that some relation survives every allowed placement in the space under study.",
         "course_examples": "Path puzzles in a disk, planar graph questions, knots and links, and intersection theory all belong here. The family teaches the reader to distinguish accidental crossings from forced ones by checking what legal motion can remove.",
-        "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the most obvious arrangement.",
+        "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the first plausible arrangement.",
     },
     "motion-family": {
         "human_problem": "The human problem is to understand motion when exact equations or trajectories are unavailable. This family asks what the shape of possible states can force before anything is solved second by second or computed point by point.",
@@ -2907,7 +2907,7 @@ LECTURE_DEPTH = {
         "problem": "The lecture asks whether several pairs of boundary points in a disk can be connected without the connecting paths meeting. Drawn directly, the question looks like a routing puzzle. The deeper problem is how to prove impossibility without trying every possible drawing.",
         "first_principles": "If a drawing can be stretched, slid, or rounded without changing the question, then the exact drawing was never the main thing. What matters is the order of the points on the boundary and the rule that paths may not cross. Deformation lets us simplify the picture while protecting those facts.",
         "math_move": "Replace the drawing by a cleaner drawing through allowed motion. If any successful drawing existed, the cleaned-up version would still exist. When the clean version forces a crossing, the original problem is impossible too.",
-        "detail": "A deformation argument always depends on a contract. You may move paths continuously, but you may not let one path pass through another, move endpoints past each other, or tear the disk. If that contract is vague, the proof solves an unclear problem; if it is precise, the motion itself becomes evidence.",
+        "detail": "A deformation argument always depends on a contract. You may move paths continuously, but you may not let one path pass through another, move endpoints past each other, or tear the disk. If that contract is unstated, the proof solves an unclear problem; if it is precise, the motion itself becomes evidence.",
         "connection": "This lecture gives the course its working method. Later intersection numbers, fixed-point arguments, and vector-field indices all use the same idea: change the picture while protecting the answer. The names become more advanced, but the habit remains this simple: simplify only by moves that keep the question intact.",
         "anchors": ["deformation", "disk", "boundary points", "curves that do not intersect"],
     },
@@ -3038,7 +3038,7 @@ LECTURE_EXAMPLES = {
         {"title": "Off-center cuts create linked pieces", "text": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other.", "concepts": ["knots-and-links", "winding-linking", "boundary-orientation"]},
     ],
     2: [
-        {"title": "Connecting boundary pairs in a disk", "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing.", "concepts": ["deformation", "graph-planarity", "invariant"]},
+        {"title": "Connecting boundary pairs in a disk", "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing.", "concepts": ["deformation", "graph-planarity", "invariant"]},
         {"title": "Deformation as proof of impossibility", "text": "The lecture uses legal motion to simplify paths. If the simplified situation still forces a crossing, the original problem could not have had a legal crossing-free solution.", "concepts": ["deformation", "topology-vs-geometry", "generic-position"]},
         {"title": "Endpoint order carries the obstruction", "text": "The boundary points are not movable labels. Their circular order is part of the problem, and deformation is allowed to clean the interior curves only while preserving that boundary order.", "concepts": ["boundary-orientation", "invariant", "deformation"]},
     ],
@@ -3499,7 +3499,7 @@ LECTURE_WALKTHROUGHS = {
     3: {
         "start_here": "Start by treating spaces as things that can be built from instructions. A product says two choices vary together. A quotient says different-looking points are declared the same. Surgery says a controlled piece is removed and another controlled piece is attached along a stated boundary rule.",
         "payoff": "The mathematical payoff is honest modeling. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they are construction rules that decide routes, boundaries, holes, and local neighborhoods.",
-        "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction is vague, any theorem applied to that space is standing on weak ground.",
+        "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction rule is unstated, any theorem applied to that space is standing on weak ground.",
     },
     4: {
         "start_here": "Start with a square on paper, then stop treating the ink as the finished object. Edge labels are instructions for travel. If the left edge is glued to the right edge, a path leaving one side re-enters from the other. If an edge is reversed, direction changes during the return.",
@@ -3824,77 +3824,77 @@ PROOF_MOVES = [
     {
         "name": "Deform a picture without changing the original question",
         "family": "deformation-family",
-        "problem": "The first drawing is too tangled to reason from directly.",
+        "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing is useful only if the path to it respects the original rules.",
         "steps": [
-            "Name the object that is allowed to move.",
+            "Name the object that is allowed to move and the data attached to it, such as endpoints, boundary order, glued edges, or obstacles.",
             "Name the forbidden moves: passing through, breaking, gluing, moving endpoints, or dropping a boundary.",
-            "Move the picture only through legal changes.",
-            "State the fact that survived the whole motion.",
-            "Use the simpler final picture to answer the original question.",
+            "Move the picture only through legal changes, checking the in-between moments rather than only the final picture.",
+            "State the fact that survived the whole motion and say why it still belongs to the original object.",
+            "Use the simpler final picture to answer the original question, while naming the conclusion that the motion is strong enough to support.",
         ],
-        "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest.",
-        "failure": "The usual failure is simplifying first and justifying later. If the legal moves are not named before the motion, the proof may have solved a different problem.",
-        "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction.",
+        "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest, and because the protected feature can be carried back to the starting picture.",
+        "failure": "The usual failure is simplifying first and justifying later. If endpoints move, a path crosses an obstacle, or a gluing rule changes before the motion is checked, the proof may have solved a different problem.",
+        "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction. The cleaner drawing matters only because those boundary data stayed fixed during the motion.",
     },
     {
         "name": "Build a count that survives legal redrawings by cancellation",
         "family": "counting-family",
-        "problem": "The visible number of pieces, crossings, or defects changes when the picture is cleaned up.",
+        "problem": "The visible number of pieces, crossings, or defects can change when the picture is cleaned up, so the proof needs a count designed to ignore harmless changes.",
         "steps": [
-            "Decide which local events matter.",
+            "Decide which local events matter and which visible events are only artifacts of one drawing.",
             "Watch how those events can appear or disappear under legal motion.",
-            "Choose an account where harmless changes cancel.",
-            "Check the account on a simple version of the object.",
-            "Use the protected total to force existence or impossibility.",
+            "Choose an account where harmless changes cancel, such as an alternating count, parity, or a signed total.",
+            "Check the account on a simple version of the object and explain why the simplification did not change the object being counted.",
+            "Use the protected total to force existence or impossibility, while stating what the count does not classify or locate.",
         ],
-        "why": "A useful count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because fake changes do not alter the protected account.",
-        "failure": "The raw count is often the wrong count. If the proof does not explain why the number survives, the number is only a measurement of one drawing.",
-        "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero.",
+        "why": "A useful count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because local bookkeeping changes either cancel, arrive in pairs, or preserve a signed total.",
+        "failure": "The raw count is often the wrong count. If the proof does not explain what legal event threatens the number and why the chosen account survives it, the number is only a measurement of one drawing.",
+        "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero. Euler characteristic does a similar job for cell refinements by making added pieces cancel in the alternating ledger.",
     },
     {
         "name": "Translate an invisible rule into a comparable shape",
         "family": "motion-family",
-        "problem": "A map or motion law feels invisible because it is an instruction rather than a drawn object.",
+        "problem": "A map or motion law can feel invisible because it is an instruction rather than a drawn object, so the proof first turns the rule into something comparable.",
         "steps": [
-            "List the input space and output space.",
-            "Draw or describe the graph that records input and output together.",
+            "List the input space and output space, and check whether the rule really sends points back into the space the conclusion needs.",
+            "Draw or describe the graph that records input and output together, so the rule becomes a geometric object rather than only a formula.",
             "Identify the comparison object, such as the diagonal of self-agreement.",
-            "Turn the desired conclusion into a meeting or avoidance question.",
-            "Apply the earlier count, obstruction, or fixed-point idea.",
+            "Turn the desired conclusion into a meeting or avoidance question and state why that meeting means the original rule has the desired property.",
+            "Apply the earlier count, obstruction, or fixed-point idea only after the graph and comparison object still represent the original problem.",
         ],
-        "why": "The proof works because the rule becomes an object that can be moved, compared, and counted. A fixed point is no longer hidden inside notation; it is a meeting with the diagonal.",
-        "failure": "The translation fails if the graph no longer represents the original rule or if the diagonal does not represent the desired self-agreement.",
-        "example": "Fixed-point lectures turn f(x) = x into the graph of f meeting the diagonal.",
+        "why": "The proof works because the rule becomes an object that can be moved, compared, and counted. A fixed point is no longer hidden inside notation; it is a meeting with the diagonal inside the product space where input and output are recorded together.",
+        "failure": "The translation fails if the graph no longer represents the original rule, if outputs land in the wrong space, or if the diagonal no longer represents the desired self-agreement.",
+        "example": "Fixed-point lectures turn f(x) = x into the graph of f meeting the diagonal. The graph records what the rule does, the diagonal records self-agreement, and their intersection is the fixed point claim.",
     },
     {
         "name": "Read local defects as evidence about the whole surface",
         "family": "surface-family",
-        "problem": "A vector field may have several local failures, and each one looks adjustable in isolation.",
+        "problem": "A vector field may have several local failures, and each one can look adjustable in isolation, but the surface may constrain their total account.",
         "steps": [
-            "Clean the field so the defects are isolated.",
-            "Walk around each defect with a small loop.",
-            "Record how the nearby arrows turn.",
-            "Add the signed local indices.",
-            "Compare the total with the surface's Euler characteristic.",
+            "Clean the field so the defects are isolated and the surrounding arrows can be read one defect at a time.",
+            "Walk around each defect with a small loop that contains that defect and no other defect.",
+            "Record how the nearby arrows turn, including the sign of that local turning.",
+            "Add the signed local indices over the complete list of defects on the same surface.",
+            "Compare the total with the surface's Euler characteristic and state the conclusion as a constraint on defects, not as a solved motion path.",
         ],
-        "why": "The proof works because isolated local defects can move or cancel in controlled ways, but their total is tied to the surface that carries the field.",
-        "failure": "The theorem is misread when one equilibrium is treated as the whole story. Poincare-Hopf is about the total over the complete surface.",
-        "example": "The hairy-ball idea is the plain case: a sphere cannot carry a continuous nonzero tangent arrow field everywhere.",
+        "why": "The proof works because isolated local defects can move, split, or cancel in controlled ways, but their signed total is tied to the surface that carries the field. The whole surface limits what the local arrow failures can add up to.",
+        "failure": "The theorem is misread when one equilibrium is treated as the whole story, when one defect is omitted, or when the theorem is taken to solve trajectories. Poincare-Hopf is about the total over the complete surface.",
+        "example": "The hairy-ball idea is the plain case: a sphere cannot carry a continuous nonzero tangent arrow field everywhere. The reason is not a single bad point; it is the surface-wide defect total required by the sphere.",
     },
     {
         "name": "Model physical motion as a space of possible states",
         "family": "motion-family",
-        "problem": "A physical setup has too many details to track directly over time.",
+        "problem": "A physical setup has too many details to track directly over time, so the proof must first decide what counts as one complete allowed state.",
         "steps": [
-            "Say what information describes one complete state.",
-            "Treat every possible state as a point in a new space.",
-            "Remove forbidden states or mark boundary restrictions.",
-            "Translate motion into paths or rules on that state space.",
-            "Use holes, barriers, fixed points, or indices to constrain the original system.",
+            "Say what information describes one complete state, including positions, angles, contacts, or choices the question cares about.",
+            "Treat every possible state as a point in a new space, but only after the state description is complete enough for the problem.",
+            "Remove forbidden states or mark boundary restrictions such as collisions, blocked positions, or impossible choices.",
+            "Translate motion into paths or rules on that state space, checking that every modeled path is a real gradual motion.",
+            "Use holes, barriers, fixed points, or indices to constrain the original system, while stating the limit of what the model proves.",
         ],
-        "why": "The proof works only if the state space carries the real freedoms and real exclusions of the physical problem. Topology then reasons about the shape of possibility.",
-        "failure": "A careless state space can prove a true theorem about the wrong model. The physical conclusion is only as good as the translation.",
-        "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory.",
+        "why": "The proof works only if the state space carries the real freedoms and real exclusions of the physical problem. Topology then reasons about the shape of possibility: paths, holes, walls, separated regions, and forced self-agreement.",
+        "failure": "A careless state space can prove a true theorem about the wrong model. If a freedom is omitted or a forbidden state remains, the physical conclusion is only as good as the mistaken translation.",
+        "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory. The useful claim is about allowed routes or forced states in the model, not every detail of the physical motion.",
     },
 ]
 
@@ -5167,7 +5167,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "First-principles plain language",
-            "evidence": "Validation enforces minimum depth across all explanatory layers and blocks vague stock phrases; pages explain why ideas exist and what detail matters.",
+            "evidence": "Validation enforces minimum depth across all explanatory layers and blocks loose stock phrases; pages explain why ideas exist and what detail matters.",
             "status": "met",
         },
         {
@@ -5657,7 +5657,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <div class="grid two">{transfer_cards}</div>
 <section class="lecture">
   <h2>The Transfer Test</h2>
-  <p>A transfer is strong when the reader can replace the everyday story with a course object and still keep the allowed move and protected fact intact. If the answer changes only the words while leaving the object vague, the transfer has not happened yet.</p>
+  <p>A transfer is strong when the reader can replace the everyday story with a course object and still keep the allowed move and protected fact intact. If the answer changes only the words while leaving the object unspecified, the transfer has not happened yet.</p>
   <p>A strong answer has three sentences. First, it says what one point, loop, field, surface, or route represents. Second, it says which change is legal and which change would break the problem. Third, it says what fact survives that legal change and what conclusion that survival can support.</p>
   <p>If those sentences cannot be written in everyday language, return to the matching concept page before using the case as evidence of understanding.</p>
 </section>
@@ -5794,7 +5794,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 <section class="lecture">
   <h2>Repairing A Failed Claim</h2>
-  <p>When a counterexample breaks a sentence, do not replace it with a vague warning. Repair the sentence by naming the condition that was missing. If the problem changed at the boundary, say the boundary data must stay fixed. If a count failed, say which part of the count survives legal moves. If a model failed, say what one state records and which states are forbidden.</p>
+  <p>When a counterexample breaks a sentence, do not replace it with an untethered warning. Repair the sentence by naming the condition that was missing. If the problem changed at the boundary, say the boundary data must stay fixed. If a count failed, say which part of the count survives legal moves. If a model failed, say what one state records and which states are forbidden.</p>
   <p>The repair should be smaller than a new explanation. A useful repair often begins with words like provided that, as long as, after checking, or for this same object. Those words are not decoration. They are the permission that lets the claim speak.</p>
   <p>Use the repaired sentence on the matching lecture, concept, theorem contract, or source page. A reader should be able to return to the original explanation and see exactly where the missing condition now belongs.</p>
 </section>
@@ -5807,7 +5807,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <h2>Connection To Readiness</h2>
   <p>Use this gallery before the oral exam. For each oral answer, ask for one failure scene. If the answer explains deformation, ask what illegal move would make the deformation false. If it explains a theorem, ask which assumption would make the theorem stop applying. If it explains a source, ask which stronger sentence would overread the evidence.</p>
   <p>This is how the companion avoids shallow confidence. A reader is not ready when they can only state the correct version. They are ready when they can also say what nearby false version would fail and how to repair it.</p>
-  <p>During review, give credit only when the failure scene changes one named condition and leaves the rest of the problem recognizable. If everything changes at once, the counterexample is too vague to teach the original claim.</p>
+  <p>During review, give credit only when the failure scene changes one named condition and leaves the rest of the problem recognizable. If everything changes at once, the counterexample is too unfocused to teach the original claim.</p>
   <p>The best failure scene is small, local, and easy to inspect.</p>
 </section>
 """
@@ -5835,7 +5835,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Page Review Method</h2>
   <p>Use this page as a pass over the whole companion. On each lecture, concept, theme, subtheme, method-family, theorem, and source page, find the sentence that carries the most weight. If that sentence does not name its object, permission, protected detail, or limit, repair it before adding more material.</p>
-  <p>The goal is not to make every page longer. The goal is to make the decisive sentences less slippery. A short page can be strong if its main claim is checkable. A long page can still be shallow if it leans on words like obvious, invariant, theorem, source, or example without saying what the reader can inspect.</p>
+  <p>The goal is not to make every page longer. The goal is to make the decisive sentences less slippery. A short page can be strong if its main claim is checkable. A long page can still be shallow if it leans on words like invariant, theorem, source, or example without saying what the reader can inspect.</p>
   <p>For a lecture page, attach the repair to the concrete demonstration. For a concept page, attach it to the example that shows the concept's job. For a paper page, attach it to the exact source role. For a theorem page, attach it to the assumption and conclusion contract.</p>
   <p>When the repair is done, read the old sentence and the new sentence aloud. The new one should make one extra obligation visible, not merely sound more polished.</p>
 </section>
@@ -5961,7 +5961,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <div class="grid two">{''.join(contrast_cards)}</div>
 <section class="lecture">
   <h2>The Separation Test</h2>
-  <p>For any two course ideas, ask whether replacing one word with the other would change the object, the allowed move, the protected evidence, or the conclusion. If nothing changes, the explanation is probably too vague. If the change is visible in everyday language, the contrast is doing useful work.</p>
+  <p>For any two course ideas, ask whether replacing one word with the other would change the object, the allowed move, the protected evidence, or the conclusion. If nothing changes, the explanation is probably too underspecified. If the change is visible in everyday language, the contrast is doing useful work.</p>
 </section>
 """
     (SITE / "concept-contrasts.html").write_text(page("Concept Contrasts", contrasts_body, "Concept Contrasts"), encoding="utf-8")
@@ -6056,7 +6056,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Course-To-Paper Test</h2>
   <p>A source belongs only when it helps explain a concrete course move. The course may bend a strip, glue a square, count cells, assign signs, compare a graph with a diagonal, or walk around an arrow-field defect. The paper or text should clarify that move, not replace it. If a source cannot be tied back to an object, legal move, protected fact, or failure condition, it is not doing useful work here.</p>
-  <p>For every source-backed sentence, label the support type before trusting it. Caption support means recovered lecture words or visible lecture anchors carry the sentence. Course-arc inference means the sentence connects lectures by the companion's reasoning pattern. Background-source support means a paper or text supports the broader mathematical family. These labels should not be blended into one vague claim of support.</p>
+  <p>For every source-backed sentence, label the support type before trusting it. Caption support means recovered lecture words or visible lecture anchors carry the sentence. Course-arc inference means the sentence connects lectures by the companion's reasoning pattern. Background-source support means a paper or text supports the broader mathematical family. These labels should not be blended into one undifferentiated claim of support.</p>
 </section>
 """
     (SITE / "paper-source-reader.html").write_text(page("Paper Source Reader", source_reader_body, "Paper Source Reader"), encoding="utf-8")
@@ -6244,7 +6244,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <h2>Reviewer Rule</h2>
   <p>Do not accept a page because the site has a general rubric. Accept it only when the relevant layer has its own object, legal move, surviving evidence, failure condition, course anchor, and plain-language replacement in the page content.</p>
   <p>A useful review pass starts with one page and one test. For example, open a concept page and ask only what object appears before the term. Then ask what move is legal. Then ask what survives. This slower pass is better than reading for general polish, because it finds the exact missing sentence the writer needs to add.</p>
-  <p>The coverage map also protects against uneven depth. Lecture pages can be strong while method pages stay vague, or concept pages can name failures while theme pages do not. The reviewer should use the layer card to find which fields carry the burden, then inspect a real generated page before accepting the layer.</p>
+  <p>The coverage map also protects against uneven depth. Lecture pages can be strong while method pages stay underspecified, or concept pages can name failures while theme pages do not. The reviewer should use the layer card to find which fields carry the burden, then inspect a real generated page before accepting the layer.</p>
   <p>When a test fails, repair the page itself and regenerate the site. Do not edit only this audit page.</p>
 </section>
 """

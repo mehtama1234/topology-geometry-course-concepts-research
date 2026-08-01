@@ -18,7 +18,7 @@
     "object": "The object is a route or curve together with the rules attached to it: fixed endpoints, boundary order, missing regions, other curves, or crossing limits. The drawn line alone is not enough information.",
     "legal_change": "The route may be nudged into a cleaner position when every moment of the motion respects the same rules. It is not enough for the beginning and ending pictures to look acceptable; the in-between motion must also avoid forbidden regions and forbidden crossings.",
     "protected_fact": "The protected fact is the route's relation to the obstacle, boundary order, or other curve that the problem refuses to let it cross. If that relation survives the entire motion, the cleaner picture is allowed to answer the original question.",
-    "why_matters": "A deformation proof earns its force by replacing a hard picture with an easier picture while keeping the same question alive. The mathematics is in the rule for the whole motion, not in the prettiness of the final drawing.",
+    "why_matters": "A deformation proof earns its force by replacing a hard picture with an easier picture while keeping the same question alive. The mathematics is in the rule for the whole motion, not in the visual neatness of the final drawing.",
     "false_move": "The false move is to clean the drawing by sliding through an obstacle, through another curve, or through a boundary constraint, then announce that the final picture was equivalent all along.",
     "reader_test": "Can the reader describe a legal nudge, a forbidden shortcut, the in-between moment where the shortcut breaks the rules, and the exact route relation that the legal nudge preserves?",
     "concepts": [

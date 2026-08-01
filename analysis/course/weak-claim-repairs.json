@@ -40,7 +40,7 @@
   },
   {
     "title": "The picture makes it clear",
-    "weak_claim": "The picture makes the conclusion obvious once the reader sees the drawing in the right way, even though the proof feature has not been named.",
+    "weak_claim": "The picture settles the conclusion once the reader sees the drawing in the right way, even though the proof feature has not been named.",
     "why_weak": "A picture can suggest the right idea while still hiding the rule that makes the idea true. The reader needs to know what part of the picture is evidence and what part is only a helpful drawing. Without that distinction, a diagram becomes persuasion instead of proof.",
     "first_principles_repair": "Point to the exact feature being used: a side change, a forced crossing, a signed pair, a boundary order, a hole in a state space, or a whole-surface total. Then explain why that feature survives legal changes. The repair should say what the reader should watch if the picture is redrawn.",
     "detail_to_check": "Ask whether redrawing the picture, changing scale, or moving a curve legally would keep the named feature. If the feature disappears under a harmless redraw, it was probably a drawing artifact rather than mathematical evidence.",

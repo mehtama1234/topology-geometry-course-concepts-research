@@ -1,5 +1,5 @@
 {
-  "course_goal": "Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and stock teaching phrases. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve.",
+  "course_goal": "Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid loose filler and stock teaching phrases. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve.",
   "playlist": {
     "title": "Topology & Geometry by Dr Tadashi Tokieda",
     "url": "https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF5woAbrzJ",
@@ -647,7 +647,7 @@
         "problem": "The lecture asks whether several pairs of boundary points in a disk can be connected without the connecting paths meeting. Drawn directly, the question looks like a routing puzzle. The deeper problem is how to prove impossibility without trying every possible drawing.",
         "first_principles": "If a drawing can be stretched, slid, or rounded without changing the question, then the exact drawing was never the main thing. What matters is the order of the points on the boundary and the rule that paths may not cross. Deformation lets us simplify the picture while protecting those facts.",
         "math_move": "Replace the drawing by a cleaner drawing through allowed motion. If any successful drawing existed, the cleaned-up version would still exist. When the clean version forces a crossing, the original problem is impossible too.",
-        "detail": "A deformation argument always depends on a contract. You may move paths continuously, but you may not let one path pass through another, move endpoints past each other, or tear the disk. If that contract is vague, the proof solves an unclear problem; if it is precise, the motion itself becomes evidence.",
+        "detail": "A deformation argument always depends on a contract. You may move paths continuously, but you may not let one path pass through another, move endpoints past each other, or tear the disk. If that contract is unstated, the proof solves an unclear problem; if it is precise, the motion itself becomes evidence.",
         "connection": "This lecture gives the course its working method. Later intersection numbers, fixed-point arguments, and vector-field indices all use the same idea: change the picture while protecting the answer. The names become more advanced, but the habit remains this simple: simplify only by moves that keep the question intact.",
         "anchors": [
           "deformation",
@@ -658,7 +658,7 @@
         "examples": [
           {
             "title": "Connecting boundary pairs in a disk",
-            "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing.",
+            "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing.",
             "concepts": [
               "deformation",
               "graph-planarity",
@@ -859,7 +859,7 @@
         "walkthrough": {
           "start_here": "Start by treating spaces as things that can be built from instructions. A product says two choices vary together. A quotient says different-looking points are declared the same. Surgery says a controlled piece is removed and another controlled piece is attached along a stated boundary rule.",
           "payoff": "The mathematical payoff is honest modeling. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they are construction rules that decide routes, boundaries, holes, and local neighborhoods.",
-          "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction is vague, any theorem applied to that space is standing on weak ground."
+          "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction rule is unstated, any theorem applied to that space is standing on weak ground."
         },
         "caption_nuance": {
           "terms": [
@@ -3271,7 +3271,7 @@
         {
           "lecture": 2,
           "title": "Connecting boundary pairs in a disk",
-          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing."
         },
         {
           "lecture": 2,
@@ -3379,7 +3379,7 @@
         {
           "lecture": 2,
           "title": "Connecting boundary pairs in a disk",
-          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing."
         },
         {
           "lecture": 2,
@@ -3750,7 +3750,7 @@
         {
           "lecture": 2,
           "title": "Connecting boundary pairs in a disk",
-          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
+          "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the visual neatness of one attempted drawing."
         },
         {
           "lecture": 6,
@@ -4373,7 +4373,7 @@
       },
       "essay": [
         "Duality means changing the picture so the useful structure becomes visible. Regions may become dots, shared borders may become edges, or a rule may become a graph in a product space. The new picture is not a new problem. It is another representation of the same relationships, chosen because it exposes a count, route, or obstruction that the first picture hid.",
-        "The first-principles reason is that some relationships are hard to see in their original form. A map as an instruction can feel invisible, but its graph is a shape. A collection of regions can be hard to compare, but a graph recording which regions touch may make the connection pattern obvious. Duality changes the bookkeeping surface without changing the relationships that are meant to be kept.",
+        "The first-principles reason is that some relationships are hard to see in their original form. A map as an instruction can feel invisible, but its graph is a shape. A collection of regions can be hard to compare, but a graph recording which regions touch can expose the connection pattern. Duality changes the bookkeeping surface without changing the relationships that are meant to be kept.",
         "The course relies on this habit constantly. A square with edge labels represents a surface. A map becomes its graph. A fixed point becomes an intersection with the diagonal. A physical mechanism becomes a configuration space. Duality is therefore part of pictorial thinking: redraw the situation, but preserve the relationships that matter. If the redraw loses those relationships, it is only a different drawing, not a proof.",
         "A good dual picture earns its place by making the protected fact easier to see without changing what must be proved. It should make a route, count, adjacency, fixed point, or obstruction easier to inspect. It should not smuggle in extra crossings, erase boundary data, or forget which original objects the new objects represent.",
         "The important check is translation back. After solving the dual problem, the conclusion must mean something in the original picture. If regions become dots, the answer about dots must still say something about regions. If a map becomes a graph, an intersection must still mean a fixed point. Duality is useful only when both directions of meaning are kept clear."
@@ -4382,7 +4382,7 @@
         "object": "A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules. The object needs another representation because the first one obscures the evidence.",
         "operation": "Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph. The operation is translation, not replacement of the problem.",
         "protected": "The protected fact is the meaning that survives translation between the original picture and the dual picture. The new picture is valid only because it preserves the needed relationships.",
-        "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left vague. A dual view must return with the original claim intact."
+        "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left unstated. A dual view must return with the original claim intact."
       },
       "anchor": {
         "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question.",
@@ -4393,7 +4393,7 @@
         "object_check": "Ask what the page is really studying: A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules. The object needs another representation because the first one obscures the evidence. Now attach that answer to the lecture evidence: A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question. The course example should make the object visible enough that the reader can tell whether a later source is talking about the same kind of thing.",
         "operation_check": "Now say what is done to that object: Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph. The operation is translation, not replacement of the problem. State the permission in words that can be checked on the course example. The allowed move is not paperwork; it is the reason a simpler picture can still answer the original question.",
         "protected_check": "After the move, identify what is still available as evidence: The meaning that survives translation between the original picture and the dual picture. The new picture is valid only because it preserves the needed relationships. The course principle says why that evidence matters: Changing representation is valid when the relationships needed by the proof can be read both before and after the change. The new picture must preserve the old question. The reader should be able to separate this surviving fact from details such as neatness, length, position, or one convenient drawing.",
-        "failure_check": "Close by naming the bad use: Solving the new picture no longer answers the old question, or if the translation back is left vague. A dual view must return with the original claim intact. The common first mistake is: to treat the dual picture as a new problem. It is a change of representation, and it is valid only when it preserves the relationships the original question depends on. Otherwise it is just a different drawing. The failure case is part of Dual pictures: it tells the reader which changed assumption destroys the claim."
+        "failure_check": "Close by naming the bad use: Solving the new picture no longer answers the old question, or if the translation back is left unstated. A dual view must return with the original claim intact. The common first mistake is: to treat the dual picture as a new problem. It is a change of representation, and it is valid only when it preserves the relationships the original question depends on. Otherwise it is just a different drawing. The failure case is part of Dual pictures: it tells the reader which changed assumption destroys the claim."
       },
       "appearances": [
         {
@@ -4633,7 +4633,7 @@
         "object": "A surface or space with a controlled part that can be removed and replaced along a stated boundary. The object must say exactly where the operation acts.",
         "operation": "Remove the chosen piece, keep track of the exposed boundary, and attach the replacement by a specified rule. The operation is local, but its effect is read globally.",
         "protected": "The protected fact is the bookkeeping of what the local replacement changed and what global feature it was meant to reveal. The boundary account keeps the operation honest.",
-        "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is vague, because then the operation is not auditable. The reader cannot know which space resulted."
+        "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is unstated, because then the operation is not auditable. The reader cannot know which space resulted."
       },
       "anchor": {
         "course_moment": "Surface classification uses controlled removal and attachment to expose handles, crosscaps, and boundaries. The operation has to say exactly what boundary is left and how the replacement is glued.",
@@ -4644,7 +4644,7 @@
         "object_check": "Make the carrier of the idea visible first: A surface or space with a controlled part that can be removed and replaced along a stated boundary. The object must say exactly where the operation acts. The course moment is the check on that carrier: Surface classification uses controlled removal and attachment to expose handles, crosscaps, and boundaries. The operation has to say exactly what boundary is left and how the replacement is glued. A good answer can point to the object before using any theorem name, because the later conclusion has to belong to that object.",
         "operation_check": "Next describe the allowed move without hiding behind terminology: Remove the chosen piece, keep track of the exposed boundary, and attach the replacement by a specified rule. The operation is local, but its effect is read globally. Explain what fixed data, boundary behavior, or model condition stays in place. The move should sound like something that can be checked on the course example, not like a permission imported from a definition.",
         "protected_check": "Do not stop at the changed picture; say what came through unchanged: The bookkeeping of what the local replacement changed and what global feature it was meant to reveal. The boundary account keeps the operation honest. Link that survival to the principle: Changing a space locally can reveal global structure only when the local replacement is accounted for exactly. The boundary left behind controls what attachment is legal. If the same fact would not survive the legal change, the concept has only been named, not used.",
-        "failure_check": "Finally say where the idea fails: The removed piece, boundary, or gluing rule is vague, because then the operation is not auditable. The reader cannot know which space resulted. Then name the beginner mistake it prevents: to think surgery permits any convenient alteration. It does not. The removed piece, the attaching boundary, and the replacement rule are part of the argument. Change those without accounting for them and the surface has become a different problem. For Surgery, the beginner trap is not a side note; it is the fastest way to see which detail the concept protects."
+        "failure_check": "Finally say where the idea fails: The removed piece, boundary, or gluing rule is unstated, because then the operation is not auditable. The reader cannot know which space resulted. Then name the beginner mistake it prevents: to think surgery permits any convenient alteration. It does not. The removed piece, the attaching boundary, and the replacement rule are part of the argument. Change those without accounting for them and the surface has become a different problem. For Surgery, the beginner trap is not a side note; it is the fastest way to see which detail the concept protects."
       },
       "appearances": [
         {
@@ -5146,7 +5146,7 @@
         "first_principles": "Separate the object's required connections from the room supplied by the surrounding surface or space. If every legal placement would force a forbidden meeting, the obstruction belongs to the topology, not to a bad drawing.",
         "how_it_works": "Embedding arguments track crossings, over-under information, winding, linking, and surface room. They ask whether deformation can remove intersections or whether a count proves that some relation survives every allowed placement in the space under study.",
         "course_examples": "Path puzzles in a disk, planar graph questions, knots and links, and intersection theory all belong here. The family teaches the reader to distinguish accidental crossings from forced ones by checking what legal motion can remove.",
-        "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the most obvious arrangement."
+        "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the first plausible arrangement."
       },
       "essay": [
         "Drawing and embedding arguments ask whether there is enough room for required connections. A failed drawing is not enough, because a better drawing may exist. The family therefore separates the object that must be placed from the space that must receive it. Which endpoints are fixed? Which crossings are forbidden? Can one strand pass through another? Does the surrounding surface have holes or handles that provide alternate routes?",
@@ -6740,7 +6740,7 @@
       "object": "The object is a route or curve together with the rules attached to it: fixed endpoints, boundary order, missing regions, other curves, or crossing limits. The drawn line alone is not enough information.",
       "legal_change": "The route may be nudged into a cleaner position when every moment of the motion respects the same rules. It is not enough for the beginning and ending pictures to look acceptable; the in-between motion must also avoid forbidden regions and forbidden crossings.",
       "protected_fact": "The protected fact is the route's relation to the obstacle, boundary order, or other curve that the problem refuses to let it cross. If that relation survives the entire motion, the cleaner picture is allowed to answer the original question.",
-      "why_matters": "A deformation proof earns its force by replacing a hard picture with an easier picture while keeping the same question alive. The mathematics is in the rule for the whole motion, not in the prettiness of the final drawing.",
+      "why_matters": "A deformation proof earns its force by replacing a hard picture with an easier picture while keeping the same question alive. The mathematics is in the rule for the whole motion, not in the visual neatness of the final drawing.",
       "false_move": "The false move is to clean the drawing by sliding through an obstacle, through another curve, or through a boundary constraint, then announce that the final picture was equivalent all along.",
       "reader_test": "Can the reader describe a legal nudge, a forbidden shortcut, the in-between moment where the shortcut breaks the rules, and the exact route relation that the legal nudge preserves?",
       "concepts": [
@@ -7178,7 +7178,7 @@
     },
     {
       "title": "The picture makes it clear",
-      "weak_claim": "The picture makes the conclusion obvious once the reader sees the drawing in the right way, even though the proof feature has not been named.",
+      "weak_claim": "The picture settles the conclusion once the reader sees the drawing in the right way, even though the proof feature has not been named.",
       "why_weak": "A picture can suggest the right idea while still hiding the rule that makes the idea true. The reader needs to know what part of the picture is evidence and what part is only a helpful drawing. Without that distinction, a diagram becomes persuasion instead of proof.",
       "first_principles_repair": "Point to the exact feature being used: a side change, a forced crossing, a signed pair, a boundary order, a hole in a state space, or a whole-surface total. Then explain why that feature survives legal changes. The repair should say what the reader should watch if the picture is redrawn.",
       "detail_to_check": "Ask whether redrawing the picture, changing scale, or moving a curve legally would keep the named feature. If the feature disappears under a harmless redraw, it was probably a drawing artifact rather than mathematical evidence.",
@@ -7272,77 +7272,77 @@
     {
       "name": "Deform a picture without changing the original question",
       "family": "deformation-family",
-      "problem": "The first drawing is too tangled to reason from directly.",
+      "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing is useful only if the path to it respects the original rules.",
       "steps": [
-        "Name the object that is allowed to move.",
+        "Name the object that is allowed to move and the data attached to it, such as endpoints, boundary order, glued edges, or obstacles.",
         "Name the forbidden moves: passing through, breaking, gluing, moving endpoints, or dropping a boundary.",
-        "Move the picture only through legal changes.",
-        "State the fact that survived the whole motion.",
-        "Use the simpler final picture to answer the original question."
+        "Move the picture only through legal changes, checking the in-between moments rather than only the final picture.",
+        "State the fact that survived the whole motion and say why it still belongs to the original object.",
+        "Use the simpler final picture to answer the original question, while naming the conclusion that the motion is strong enough to support."
       ],
-      "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest.",
-      "failure": "The usual failure is simplifying first and justifying later. If the legal moves are not named before the motion, the proof may have solved a different problem.",
-      "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction."
+      "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest, and because the protected feature can be carried back to the starting picture.",
+      "failure": "The usual failure is simplifying first and justifying later. If endpoints move, a path crosses an obstacle, or a gluing rule changes before the motion is checked, the proof may have solved a different problem.",
+      "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction. The cleaner drawing matters only because those boundary data stayed fixed during the motion."
     },
     {
       "name": "Build a count that survives legal redrawings by cancellation",
       "family": "counting-family",
-      "problem": "The visible number of pieces, crossings, or defects changes when the picture is cleaned up.",
+      "problem": "The visible number of pieces, crossings, or defects can change when the picture is cleaned up, so the proof needs a count designed to ignore harmless changes.",
       "steps": [
-        "Decide which local events matter.",
+        "Decide which local events matter and which visible events are only artifacts of one drawing.",
         "Watch how those events can appear or disappear under legal motion.",
-        "Choose an account where harmless changes cancel.",
-        "Check the account on a simple version of the object.",
-        "Use the protected total to force existence or impossibility."
+        "Choose an account where harmless changes cancel, such as an alternating count, parity, or a signed total.",
+        "Check the account on a simple version of the object and explain why the simplification did not change the object being counted.",
+        "Use the protected total to force existence or impossibility, while stating what the count does not classify or locate."
       ],
-      "why": "A useful count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because fake changes do not alter the protected account.",
-      "failure": "The raw count is often the wrong count. If the proof does not explain why the number survives, the number is only a measurement of one drawing.",
-      "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero."
+      "why": "A useful count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because local bookkeeping changes either cancel, arrive in pairs, or preserve a signed total.",
+      "failure": "The raw count is often the wrong count. If the proof does not explain what legal event threatens the number and why the chosen account survives it, the number is only a measurement of one drawing.",
+      "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero. Euler characteristic does a similar job for cell refinements by making added pieces cancel in the alternating ledger."
     },
     {
       "name": "Translate an invisible rule into a comparable shape",
       "family": "motion-family",
-      "problem": "A map or motion law feels invisible because it is an instruction rather than a drawn object.",
+      "problem": "A map or motion law can feel invisible because it is an instruction rather than a drawn object, so the proof first turns the rule into something comparable.",
       "steps": [
-        "List the input space and output space.",
-        "Draw or describe the graph that records input and output together.",
+        "List the input space and output space, and check whether the rule really sends points back into the space the conclusion needs.",
+        "Draw or describe the graph that records input and output together, so the rule becomes a geometric object rather than only a formula.",
         "Identify the comparison object, such as the diagonal of self-agreement.",
-        "Turn the desired conclusion into a meeting or avoidance question.",
-        "Apply the earlier count, obstruction, or fixed-point idea."
+        "Turn the desired conclusion into a meeting or avoidance question and state why that meeting means the original rule has the desired property.",
+        "Apply the earlier count, obstruction, or fixed-point idea only after the graph and comparison object still represent the original problem."
       ],
-      "why": "The proof works because the rule becomes an object that can be moved, compared, and counted. A fixed point is no longer hidden inside notation; it is a meeting with the diagonal.",
-      "failure": "The translation fails if the graph no longer represents the original rule or if the diagonal does not represent the desired self-agreement.",
-      "example": "Fixed-point lectures turn f(x) = x into the graph of f meeting the diagonal."
+      "why": "The proof works because the rule becomes an object that can be moved, compared, and counted. A fixed point is no longer hidden inside notation; it is a meeting with the diagonal inside the product space where input and output are recorded together.",
+      "failure": "The translation fails if the graph no longer represents the original rule, if outputs land in the wrong space, or if the diagonal no longer represents the desired self-agreement.",
+      "example": "Fixed-point lectures turn f(x) = x into the graph of f meeting the diagonal. The graph records what the rule does, the diagonal records self-agreement, and their intersection is the fixed point claim."
     },
     {
       "name": "Read local defects as evidence about the whole surface",
       "family": "surface-family",
-      "problem": "A vector field may have several local failures, and each one looks adjustable in isolation.",
+      "problem": "A vector field may have several local failures, and each one can look adjustable in isolation, but the surface may constrain their total account.",
       "steps": [
-        "Clean the field so the defects are isolated.",
-        "Walk around each defect with a small loop.",
-        "Record how the nearby arrows turn.",
-        "Add the signed local indices.",
-        "Compare the total with the surface's Euler characteristic."
+        "Clean the field so the defects are isolated and the surrounding arrows can be read one defect at a time.",
+        "Walk around each defect with a small loop that contains that defect and no other defect.",
+        "Record how the nearby arrows turn, including the sign of that local turning.",
+        "Add the signed local indices over the complete list of defects on the same surface.",
+        "Compare the total with the surface's Euler characteristic and state the conclusion as a constraint on defects, not as a solved motion path."
       ],
-      "why": "The proof works because isolated local defects can move or cancel in controlled ways, but their total is tied to the surface that carries the field.",
-      "failure": "The theorem is misread when one equilibrium is treated as the whole story. Poincare-Hopf is about the total over the complete surface.",
-      "example": "The hairy-ball idea is the plain case: a sphere cannot carry a continuous nonzero tangent arrow field everywhere."
+      "why": "The proof works because isolated local defects can move, split, or cancel in controlled ways, but their signed total is tied to the surface that carries the field. The whole surface limits what the local arrow failures can add up to.",
+      "failure": "The theorem is misread when one equilibrium is treated as the whole story, when one defect is omitted, or when the theorem is taken to solve trajectories. Poincare-Hopf is about the total over the complete surface.",
+      "example": "The hairy-ball idea is the plain case: a sphere cannot carry a continuous nonzero tangent arrow field everywhere. The reason is not a single bad point; it is the surface-wide defect total required by the sphere."
     },
     {
       "name": "Model physical motion as a space of possible states",
       "family": "motion-family",
-      "problem": "A physical setup has too many details to track directly over time.",
+      "problem": "A physical setup has too many details to track directly over time, so the proof must first decide what counts as one complete allowed state.",
       "steps": [
-        "Say what information describes one complete state.",
-        "Treat every possible state as a point in a new space.",
-        "Remove forbidden states or mark boundary restrictions.",
-        "Translate motion into paths or rules on that state space.",
-        "Use holes, barriers, fixed points, or indices to constrain the original system."
+        "Say what information describes one complete state, including positions, angles, contacts, or choices the question cares about.",
+        "Treat every possible state as a point in a new space, but only after the state description is complete enough for the problem.",
+        "Remove forbidden states or mark boundary restrictions such as collisions, blocked positions, or impossible choices.",
+        "Translate motion into paths or rules on that state space, checking that every modeled path is a real gradual motion.",
+        "Use holes, barriers, fixed points, or indices to constrain the original system, while stating the limit of what the model proves."
       ],
-      "why": "The proof works only if the state space carries the real freedoms and real exclusions of the physical problem. Topology then reasons about the shape of possibility.",
-      "failure": "A careless state space can prove a true theorem about the wrong model. The physical conclusion is only as good as the translation.",
-      "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory."
+      "why": "The proof works only if the state space carries the real freedoms and real exclusions of the physical problem. Topology then reasons about the shape of possibility: paths, holes, walls, separated regions, and forced self-agreement.",
+      "failure": "A careless state space can prove a true theorem about the wrong model. If a freedom is omitted or a forbidden state remains, the physical conclusion is only as good as the mistaken translation.",
+      "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory. The useful claim is about allowed routes or forced states in the model, not every detail of the physical motion."
     }
   ],
   "theorem_use_contracts": [
@@ -7635,7 +7635,7 @@
       "everyday_sentence": "Topology asks what a shape still makes possible after distances, angles, and exact measurements are allowed to change.",
       "job_in_argument": "Its job is to move attention from measured appearance to permissions: which routes remain open, which crossings are forbidden, which boundaries matter, and which relationships survive legal motion.",
       "not_a_definition": "It is not a license to ignore detail. It ignores only the details that the problem has declared irrelevant while protecting the detail that can force the answer.",
-      "failure_if_misread": "If topology is read as vague shape talk, the proof loses its rulebook. A reader may bend, cross, or erase a feature that the original problem required them to keep.",
+      "failure_if_misread": "If topology is read as loose shape talk, the proof loses its rulebook. A reader may bend, cross, or erase a feature that the original problem required them to keep.",
       "concepts": [
         "topology-vs-geometry",
         "deformation",
@@ -8466,7 +8466,7 @@
       },
       {
         "requirement": "First-principles plain language",
-        "evidence": "Validation enforces minimum depth across all explanatory layers and blocks vague stock phrases; pages explain why ideas exist and what detail matters.",
+        "evidence": "Validation enforces minimum depth across all explanatory layers and blocks loose stock phrases; pages explain why ideas exist and what detail matters.",
         "status": "met"
       },
       {
@@ -8521,7 +8521,7 @@
       },
       {
         "requirement": "Change ledger",
-        "evidence": "10 change-ledger cases separate legal change from false motion. The 2018 words ask the reader to say what object changed, what fact survived, why the survival matters, and which tempting move would solve a different problem.",
+        "evidence": "10 change-ledger cases separate legal change from false motion. The 2019 words ask the reader to say what object changed, what fact survived, why the survival matters, and which tempting move would solve a different problem.",
         "status": "met"
       },
       {
@@ -8536,7 +8536,7 @@
       },
       {
         "requirement": "Weak-claim repair layer",
-        "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1775 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
+        "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1774 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
         "status": "met"
       },
       {
@@ -8596,7 +8596,7 @@
       "lecture_spine_entries": 15,
       "lecture_essay_words": 5595,
       "lecture_deepening_words": 1594,
-      "lecture_walkthrough_words": 1986,
+      "lecture_walkthrough_words": 1987,
       "lecture_source_lens_words": 1645,
       "lecture_source_checkpoint_words": 1532,
       "lecture_caption_nuance_words": 1492,
@@ -8609,7 +8609,7 @@
       "source_nuance_repair_words": 1734,
       "lecture_reader_test_words": 2734,
       "lecture_answer_guide_words": 3536,
-      "concept_essay_words": 7959,
+      "concept_essay_words": 7958,
       "concept_workup_words": 2746,
       "concept_anchor_words": 1965,
       "concept_self_check_words": 8376,
@@ -8634,13 +8634,13 @@
       "oral_exam_prompts": 7,
       "oral_exam_words": 1570,
       "change_ledger_rows": 10,
-      "change_ledger_words": 2018,
+      "change_ledger_words": 2019,
       "assumption_ledger_rows": 10,
       "assumption_ledger_words": 1835,
       "counterexample_gallery_rows": 10,
       "counterexample_gallery_words": 1921,
       "weak_claim_repair_rows": 10,
-      "weak_claim_repair_words": 1775,
+      "weak_claim_repair_words": 1774,
       "proof_moves": 5,
       "theorem_use_contracts": 8,
       "theorem_contract_words": 1368,
