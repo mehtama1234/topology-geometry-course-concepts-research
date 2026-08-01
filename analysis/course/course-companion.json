@@ -548,6 +548,11 @@
           "Read the Mobius-strip words as evidence about a gluing rule. The important source move is not that paper is surprising; it is that following, coloring, or cutting the strip tests whether a local side choice survives one full trip around the surface.",
           "The anchor words should be held together. Twist and glue explain how the object is made. One side versus two sides explains what the whole object remembers. Cutting along the center is the controlled operation that makes that memory visible."
         ],
+        "source_checkpoint": {
+          "trust": "Trust the making-following-cutting sequence as evidence about the gluing rule, because each action tests whether local side information survives a full trip.",
+          "do_not_overread": "Do not overread the paper surprise as a one-off curiosity or as a statement about exact shape, length, or bend angle.",
+          "math_question": "What whole-surface fact appears only after the traveler or cut has gone all the way around the strip?"
+        },
         "walkthrough": {
           "start_here": "Start with the plain act of making the strip. A rectangle by itself has two long sides and two short ends. The surprise enters when the ends are glued after one half-turn. That gluing instruction means a traveler who follows the surface all the way around comes back with the local sense of side reversed.",
           "payoff": "The mathematical payoff is the difference between small evidence and whole-object evidence. Every tiny patch of the strip looks like an ordinary two-sided strip, so local inspection cannot settle the question. The full trip around the object is the test, and that test reveals a global rule.",
@@ -665,6 +670,11 @@
           "Read the disk-path lecture as a proof about boundary order. The source language around deformation and curves that do not intersect matters because it fixes the contract before any drawing is simplified.",
           "The anchor words prevent a common false proof. A disk by itself is not enough; the paired boundary points, their order, and the no-crossing rule are the data. Deformation is evidence only while those data stay unchanged."
         ],
+        "source_checkpoint": {
+          "trust": "Trust the disk-path setup only together with endpoint order, fixed boundary data, and the rule that paths may not cross.",
+          "do_not_overread": "Do not treat a cleaner redraw as proof unless the redraw was reached by legal motion that preserved the original boundary problem.",
+          "math_question": "Which part of the endpoint order survives every allowed redraw and forces or forbids a crossing?"
+        },
         "walkthrough": {
           "start_here": "Start with curves in a disk and boundary points that are not free to wander. The curves may look messy, but the proof does not care about their exact wiggles. It cares about whether the curves can be redrawn under legal motion while the endpoints and no-crossing rule stay fixed.",
           "payoff": "The mathematical payoff is that a picture can be simplified without losing its force. Deformation becomes valid only because the question is protected during the motion. This is the first time the course turns a visual cleanup into a proof rather than a preference for a neater drawing.",
@@ -786,6 +796,11 @@
           "Read product, quotient, surgery, balls, spheres, and manifolds as construction words. The lecture is teaching how a space is made before later theorems are allowed to use that space.",
           "The source lens is to ask what each construction changes. Product adds independent choices. Quotient changes sameness. Surgery changes a part under a boundary rule. Manifold says local neighborhoods are ordinary enough for later local arguments."
         ],
+        "source_checkpoint": {
+          "trust": "Trust product, quotient, manifold, and surgery language as construction evidence: the lecture is saying how spaces are built before they are used.",
+          "do_not_overread": "Do not treat a square, cube, or cut surface as the final object until the construction rule has been read.",
+          "math_question": "Which choices are combined, which points are identified, and which local replacement changes the possible routes?"
+        },
         "walkthrough": {
           "start_here": "Start by treating spaces as things that can be built from instructions. A product says two choices vary together. A quotient says different-looking points are declared the same. Surgery says a controlled piece is removed and another controlled piece is attached along a stated boundary rule.",
           "payoff": "The mathematical payoff is honest modeling. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they are construction rules that decide routes, boundaries, holes, and local neighborhoods.",
@@ -893,6 +908,11 @@
           "Read the square and boundary-identification anchors as instructions rather than pictures. The source point is that the same drawn square can become different spaces depending on which edges are treated as the same and whether direction is reversed.",
           "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing is useful only after the identification rule has been read."
         ],
+        "source_checkpoint": {
+          "trust": "Trust edge labels and arrows as travel instructions, because they decide whether a path stops, re-enters, or returns with direction changed.",
+          "do_not_overread": "Do not read the visible boundary of the drawn square as the boundary of the finished space without checking the identifications.",
+          "math_question": "Where does a traveler go after crossing a labeled edge, and does the rule preserve or reverse orientation?"
+        },
         "walkthrough": {
           "start_here": "Start with a square on paper, then stop treating the ink as the finished object. Edge labels are instructions for travel. If the left edge is glued to the right edge, a path leaving one side re-enters from the other. If an edge is reversed, direction changes during the return.",
           "payoff": "The mathematical payoff is quotient thinking in everyday form. The same square drawing can describe different spaces because the identification rule, not the visual outline, decides the object. This prepares the reader to see maps, surfaces, and state spaces as rule-built objects.",
@@ -1001,6 +1021,11 @@
           "Read classification, orientable, non-orientable, Mobius, and surgery as a vocabulary for durable surface parts. The source arc is about reducing surfaces to pieces that survive legal simplification.",
           "The practical evidence is not the name of a surface family alone. Handles give routes, crosscaps reverse side choices, boundaries add edge behavior, and surgery explains how the surface is changed while these features are tracked."
         ],
+        "source_checkpoint": {
+          "trust": "Trust handles, crosscaps, orientability, and boundary components as durable surface evidence, not as surface names alone.",
+          "do_not_overread": "Do not accept classification by visual resemblance; two drawings can differ while carrying the same preserved surface data.",
+          "math_question": "Which durable feature survives the cutting, gluing, or surface simplification being used in the argument?"
+        },
         "walkthrough": {
           "start_here": "Start with the problem of recognizing a surface after it has been bent, stretched, cut, and reassembled under legal rules. The visual drawing may change dramatically. Classification asks which durable features remain: boundary components, handles, crosscaps, and whether a consistent side choice survives everywhere.",
           "payoff": "The mathematical payoff is that surfaces can be sorted by what survives simplification, not by how they happen to be drawn. This gives later counts a stage. Euler characteristic, orientation, and vector-field index matter because they belong to the surface, not to one picture of it.",
@@ -1109,6 +1134,11 @@
           "Read submanifold, obstacles, dimensions, and intersection as a question about room. The source material is preparing the reader to separate a meeting caused by a cramped space from a meeting caused by a careless drawing.",
           "The important source move is ordinary position. Before counting intersections, the objects must be placed so meetings are clean enough to inspect. Dimension then tells whether avoidance is expected or whether meeting carries evidence."
         ],
+        "source_checkpoint": {
+          "trust": "Trust dimension and ordinary-position language as preparation for deciding whether meetings are accidental or forced.",
+          "do_not_overread": "Do not count a messy contact before the picture has been cleaned enough for separate meetings to be inspected.",
+          "math_question": "After a tiny legal nudge, which meetings disappear as accidents and which remain as evidence?"
+        },
         "walkthrough": {
           "start_here": "Start with the everyday idea of room. Two objects may avoid each other if the surrounding space gives them enough directions to move. In cramped settings, meeting may be forced. The lecture cleans the objects into ordinary position so accidental contacts do not obscure the real room-counting question.",
           "payoff": "The mathematical payoff is preparation for intersection theory. A meeting should not be counted until the picture is clean enough to make meetings separate and inspectable. Once that ordinary position is reached, dimension and placement can say whether intersections are accidental, avoidable, or evidence-bearing.",
@@ -1215,6 +1245,11 @@
           "Read center of gravity and continuous motion as the physical entrance to forced existence. The lecture is not only about balance; it is about a changing condition that cannot jump past the special state.",
           "The source lens is to translate the demonstration into intersection language. One moving condition and another condition must meet. That same shape of reasoning prepares fixed points, diagonals, equilibria, and later state-space applications."
         ],
+        "source_checkpoint": {
+          "trust": "Trust the center-of-gravity demonstration as continuity evidence: a changing physical condition cannot jump past the balancing event.",
+          "do_not_overread": "Do not treat the demonstration as a formula for locating the special point; its job is to prove the event must occur.",
+          "math_question": "What changes continuously, and what event is impossible to skip under that continuous change?"
+        },
         "walkthrough": {
           "start_here": "Start with a physical balance condition that changes continuously. The point is not to compute the exact balance location first. The point is to notice that a condition moving from one side of a requirement to another cannot jump over the special state if the change is continuous.",
           "payoff": "The mathematical payoff is forced existence. The course begins turning demonstrations into statements of the form: some special state must occur even if we cannot name it directly. That habit leads to fixed points, equilibria, and state-space arguments where shape blocks total avoidance.",
@@ -1323,6 +1358,11 @@
           "Read intersection number, orientation, positive or negative, isotopy invariant, and pairwise creation as one account. The lecture is not merely introducing signs; it is explaining why signs let the count survive legal motion.",
           "The source evidence is the birth and cancellation of pairs. A raw crossing count changes, but a signed total can stay fixed. Orientation is what makes the plus or minus mean something rather than being arithmetic pasted onto a picture."
         ],
+        "source_checkpoint": {
+          "trust": "Trust the signed crossing language only when orientation explains the plus and minus signs and pair creation has been accounted for.",
+          "do_not_overread": "Do not use the raw number of visible crossings as protected evidence, because legal motion can change that number.",
+          "math_question": "Why does a positive-negative pair contribute no net change to the signed total?"
+        },
         "walkthrough": {
           "start_here": "Start with a weakness in raw counting. If two curves move, the visible number of crossings can change. A pair can appear or disappear. The lecture repairs the count by assigning signs to clean intersections, so harmless pair changes contribute plus one and minus one together.",
           "payoff": "The mathematical payoff is protected arithmetic. The signed total is not just a number read from one drawing; it is a number designed to survive legal deformation. This is why orientation and pair creation matter. They explain why the count deserves trust.",
@@ -1444,6 +1484,11 @@
           "Read graph of a mapping, diagonal, and fixed points as the translation of a rule into a meeting problem. Because one middle caption is missing, the source lens must stay modest and lean on the available surrounding lecture parts.",
           "The important source move is the graph. A map becomes a geometric object in a larger space. The diagonal records self-agreement. Their meeting is not an analogy; it is the fixed point written in a form that intersection reasoning can inspect."
         ],
+        "source_checkpoint": {
+          "trust": "Trust the available graph-and-diagonal spine, while keeping the missing middle caption visible as a source limit.",
+          "do_not_overread": "Do not fill the missing caption gap with a stronger theorem claim than the surrounding source arc supports.",
+          "math_question": "Why does an intersection of the graph with the diagonal mean the original rule has a fixed point?"
+        },
         "walkthrough": {
           "start_here": "Start with a rule that sends each input somewhere. The equation for a fixed point can look invisible because it lives inside the rule. The lecture makes it visible by drawing the graph of the rule and comparing it with the diagonal, the set of input-output pairs where both entries agree.",
           "payoff": "The mathematical payoff is translation. A fixed point becomes an intersection problem, so earlier ideas about clean meetings and protected counts become relevant. The source caveat matters here because one middle caption is missing, but the graph-diagonal conversion remains the reliable spine.",
@@ -1551,6 +1596,11 @@
           "Read Brouwer, closed ball, boundary, and continuous map as a statement about no global escape. The source arc is existence without computation: a filled shape can force at least one point to stay put.",
           "The boundary words matter. The theorem is not saying every space and every rule has a fixed point. It is saying that a closed ball, together with continuity and self-mapping, blocks the attempt to move every point away from itself."
         ],
+        "source_checkpoint": {
+          "trust": "Trust Brouwer language only with the closed filled domain, self-map condition, boundary included, and continuity kept explicit.",
+          "do_not_overread": "Do not turn the theorem into a claim about every space or every rule; changing the domain can change the conclusion.",
+          "math_question": "What blocks a continuous attempt to move every point of the filled ball away from itself?"
+        },
         "walkthrough": {
           "start_here": "Start with a filled disk or ball and a continuous rule that sends every point back into that same filled object. Brouwer says at least one point must land where it began. The theorem is not trying to find the point; it rules out the possibility that every point escapes itself.",
           "payoff": "The mathematical payoff is existence from shape. The filled interior, boundary, and continuity of the rule work together. If any of those pieces is changed, the conclusion may fail. This makes the theorem a disciplined statement, not a slogan about all motion.",
@@ -1672,6 +1722,11 @@
           "Read vector field, differential equations, equilibria, and index as a change in what counts as understanding motion. The lecture does not solve paths one by one; it asks what the arrow pattern must contain.",
           "The source lens is to look around an equilibrium, not only at it. Nearby arrows turn around the failure point, and that turning becomes a signed local count. This is intersection-number thinking moved into dynamics."
         ],
+        "source_checkpoint": {
+          "trust": "Trust vector-field language as arrow-pattern evidence, especially the places where arrows vanish and nearby arrows turn.",
+          "do_not_overread": "Do not confuse naming an equilibrium with understanding its topological evidence; the surrounding arrows matter.",
+          "math_question": "What does a small loop around the equilibrium see in the nearby arrow directions?"
+        },
         "walkthrough": {
           "start_here": "Start with arrows rather than paths. A vector field tells each point which way motion wants to go. Solving every path may be hard, but the places where the arrow vanishes are visible failures of motion. The nearby arrows then tell how that failure is shaped.",
           "payoff": "The mathematical payoff is understanding motion through local defects. An equilibrium is not only a location where motion stops. It has surrounding behavior, and that behavior can be counted through turning. This opens a route from dynamics back to topology.",
@@ -1780,6 +1835,11 @@
           "Read index of a vector field, equilibria, Euler characteristic, and Poincare-Hopf as a sum-over-the-whole-surface lecture. The source point is that local defects have a total controlled by the surface.",
           "The evidence is the move from local to global. Sources, sinks, saddles, and other defects may shift under cleanup, but the total signed index is not free. It has to answer to the surface carrying the field."
         ],
+        "source_checkpoint": {
+          "trust": "Trust index-sum language only after local vector-field defects are isolated and every defect belongs to the whole-surface account.",
+          "do_not_overread": "Do not treat one defect as the theorem; the lecture is preparing a total over the entire surface.",
+          "math_question": "Which local indices are being added, and what surface controls their total?"
+        },
         "walkthrough": {
           "start_here": "Start by isolating the defects of a vector field. Each defect has nearby arrows circling it in some pattern, and that pattern receives a signed index. The lecture then asks what happens when all those local signed counts are added over the whole surface.",
           "payoff": "The mathematical payoff is the move from local dynamics to global bookkeeping. Individual defects can move, split, or cancel under controlled changes, but the total signed index is not free. It is constrained by the surface that carries the arrows.",
@@ -1889,6 +1949,11 @@
           "Read Poincare-Hopf, index sum, Euler characteristic, hairy ball, and equilibria as a two-way exchange. The lecture uses topology to predict defects, and it can also use observed defects to say something about the surface.",
           "The hairy-ball anchor should be read as the plain case, not the whole theorem. The deeper source point is the total over all isolated defects. A local arrow choice may look possible, but the completed surface can forbid all choices from agreeing."
         ],
+        "source_checkpoint": {
+          "trust": "Trust Poincare-Hopf as a two-sided account linking all local defects to Euler characteristic.",
+          "do_not_overread": "Do not reduce the lecture to the hairy-ball example; that example is one visible consequence of the full index-sum statement.",
+          "math_question": "How does the complete surface force the total defect count of a vector field?"
+        },
         "walkthrough": {
           "start_here": "Start with Poincare-Hopf as a balance sheet. On one side are all the local indices of isolated vector-field defects. On the other side is Euler characteristic, a number belonging to the surface. The theorem says these two accounts must match.",
           "payoff": "The mathematical payoff is that topology predicts something about motion before the differential equation is solved. A sphere demands a different total defect from a torus. The hairy-ball idea is a visible case, but the deeper point is the enforced equality between local failures and whole-surface shape.",
@@ -1994,6 +2059,11 @@
           "Read applications, rotations in space, Poincare-Hopf, and dynamical systems as a modeling lecture. The source material is testing whether earlier proof families can be carried into physical or moving systems without losing the real constraints.",
           "The source lens is model first, theorem second. Name the space of states, the rule or motion, the forbidden behavior, and the protected count. Only then can a topological theorem say something about the application."
         ],
+        "source_checkpoint": {
+          "trust": "Trust applications only after the state space, allowed motion, forbidden states, and protected obstruction have been named.",
+          "do_not_overread": "Do not paste a theorem onto a physical story before proving the model carries the real freedoms and restrictions.",
+          "math_question": "What exact feature of the state space becomes the claimed physical constraint?"
+        },
         "walkthrough": {
           "start_here": "Start with an application by refusing to apply a theorem too early. First name the possible states of the system. Then say which states are forbidden, which boundaries matter, and what continuous rule or motion acts on that space. Only then does topology have a correct object to study.",
           "payoff": "The mathematical payoff is disciplined transfer from pure examples to physical systems. Holes, barriers, fixed points, and index totals can constrain real behavior, but only when the model represents the real freedoms and exclusions. The modeling step is part of the proof.",
@@ -2117,6 +2187,11 @@
           "Read table of contents, pictorial thinking, deformation, intersection, fixed point, and vector field as a dependency chain. The final lecture is not a list of topics; it is a review of one reasoning habit as it changes setting.",
           "The source lens is to follow the conversions. Paper strips become global surface evidence. Deformations protect questions. Intersections become signed counts. Fixed points and vector fields turn those counts into existence and motion statements."
         ],
+        "source_checkpoint": {
+          "trust": "Trust the final review as a dependency map linking objects, legal moves, protected evidence, and forced conclusions across the course.",
+          "do_not_overread": "Do not treat pictorial thinking as a style preference; in this course the picture must carry a rule or count.",
+          "math_question": "Can each topic be read as object, legal move, surviving fact, and forced conclusion?"
+        },
         "walkthrough": {
           "start_here": "Start by reading the final lecture as a map of habits, not a list of topics. The same pattern has appeared repeatedly: build the right object, specify legal motion, identify protected evidence, and use that evidence to force a conclusion that the original picture hid.",
           "payoff": "The mathematical payoff is a portable way to think. Mobius strips, surface classification, intersections, fixed points, vector fields, and applications are different settings for the same discipline. Pictorial thinking is deep here because the pictures carry rules and preserved facts.",
@@ -4876,6 +4951,7 @@
       "lecture_essay_words": 3855,
       "lecture_walkthrough_words": 1986,
       "lecture_source_lens_words": 1090,
+      "lecture_source_checkpoint_words": 811,
       "lecture_caption_nuance_words": 979,
       "concept_essay_words": 4830,
       "concept_workup_words": 1781,

@@ -174,6 +174,10 @@ def main():
             fail(f"lecture {lecture['lecture']} needs source lens paragraphs")
         if sum(len(words(p)) for p in source_lens) < 60:
             fail(f"lecture {lecture['lecture']} source lens too thin")
+        source_checkpoint = deep.get("source_checkpoint") or {}
+        for field in ["trust", "do_not_overread", "math_question"]:
+            if len(words(source_checkpoint.get(field))) < 12:
+                fail(f"lecture {lecture['lecture']} source checkpoint {field} too thin")
         nuance = deep.get("caption_nuance") or {}
         if len(nuance.get("terms") or []) < 4:
             fail(f"lecture {lecture['lecture']} caption nuance needs four terms")
@@ -314,7 +318,7 @@ def main():
     if len(words(re.sub(r"<[^>]+>", " ", reader_checks))) < 700:
         fail("reader checks page too thin")
     source_audit = (SITE / "source-audit.html").read_text(encoding="utf-8", errors="ignore")
-    for phrase in ["Caption Nuance By Lecture", "Caption risk:", "Safe reading:", "Verify:"]:
+    for phrase in ["Caption Nuance By Lecture", "Caption risk:", "Safe reading:", "Verify:", "Source checkpoint:"]:
         if phrase not in source_audit:
             fail(f"source audit missing caption nuance phrase: {phrase}")
     if source_audit.count("<article") < 15:
@@ -336,6 +340,9 @@ def main():
         lecture_html = (SITE / lecture_name).read_text(encoding="utf-8", errors="ignore")
         if "Source Lens" not in lecture_html:
             fail(f"lecture page missing source lens: {lecture_name}")
+        for phrase in ["Source Checkpoint", "Trust:", "Do not overread:", "Math question:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing source checkpoint phrase {phrase}: {lecture_name}")
         for phrase in ["Caption Nuance", "Caption risk:", "Safe reading:", "Verify:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing caption nuance phrase {phrase}: {lecture_name}")

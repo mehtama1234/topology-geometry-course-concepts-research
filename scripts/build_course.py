@@ -1753,6 +1753,85 @@ LECTURE_SOURCE_LENS = {
 }
 
 
+LECTURE_SOURCE_CHECKPOINTS = {
+    1: {
+        "trust": "Trust the making-following-cutting sequence as evidence about the gluing rule, because each action tests whether local side information survives a full trip.",
+        "do_not_overread": "Do not overread the paper surprise as a one-off curiosity or as a statement about exact shape, length, or bend angle.",
+        "math_question": "What whole-surface fact appears only after the traveler or cut has gone all the way around the strip?",
+    },
+    2: {
+        "trust": "Trust the disk-path setup only together with endpoint order, fixed boundary data, and the rule that paths may not cross.",
+        "do_not_overread": "Do not treat a cleaner redraw as proof unless the redraw was reached by legal motion that preserved the original boundary problem.",
+        "math_question": "Which part of the endpoint order survives every allowed redraw and forces or forbids a crossing?",
+    },
+    3: {
+        "trust": "Trust product, quotient, manifold, and surgery language as construction evidence: the lecture is saying how spaces are built before they are used.",
+        "do_not_overread": "Do not treat a square, cube, or cut surface as the final object until the construction rule has been read.",
+        "math_question": "Which choices are combined, which points are identified, and which local replacement changes the possible routes?",
+    },
+    4: {
+        "trust": "Trust edge labels and arrows as travel instructions, because they decide whether a path stops, re-enters, or returns with direction changed.",
+        "do_not_overread": "Do not read the visible boundary of the drawn square as the boundary of the finished space without checking the identifications.",
+        "math_question": "Where does a traveler go after crossing a labeled edge, and does the rule preserve or reverse orientation?",
+    },
+    5: {
+        "trust": "Trust handles, crosscaps, orientability, and boundary components as durable surface evidence, not as surface names alone.",
+        "do_not_overread": "Do not accept classification by visual resemblance; two drawings can differ while carrying the same preserved surface data.",
+        "math_question": "Which durable feature survives the cutting, gluing, or surface simplification being used in the argument?",
+    },
+    6: {
+        "trust": "Trust dimension and ordinary-position language as preparation for deciding whether meetings are accidental or forced.",
+        "do_not_overread": "Do not count a messy contact before the picture has been cleaned enough for separate meetings to be inspected.",
+        "math_question": "After a tiny legal nudge, which meetings disappear as accidents and which remain as evidence?",
+    },
+    7: {
+        "trust": "Trust the center-of-gravity demonstration as continuity evidence: a changing physical condition cannot jump past the balancing event.",
+        "do_not_overread": "Do not treat the demonstration as a formula for locating the special point; its job is to prove the event must occur.",
+        "math_question": "What changes continuously, and what event is impossible to skip under that continuous change?",
+    },
+    8: {
+        "trust": "Trust the signed crossing language only when orientation explains the plus and minus signs and pair creation has been accounted for.",
+        "do_not_overread": "Do not use the raw number of visible crossings as protected evidence, because legal motion can change that number.",
+        "math_question": "Why does a positive-negative pair contribute no net change to the signed total?",
+    },
+    9: {
+        "trust": "Trust the available graph-and-diagonal spine, while keeping the missing middle caption visible as a source limit.",
+        "do_not_overread": "Do not fill the missing caption gap with a stronger theorem claim than the surrounding source arc supports.",
+        "math_question": "Why does an intersection of the graph with the diagonal mean the original rule has a fixed point?",
+    },
+    10: {
+        "trust": "Trust Brouwer language only with the closed filled domain, self-map condition, boundary included, and continuity kept explicit.",
+        "do_not_overread": "Do not turn the theorem into a claim about every space or every rule; changing the domain can change the conclusion.",
+        "math_question": "What blocks a continuous attempt to move every point of the filled ball away from itself?",
+    },
+    11: {
+        "trust": "Trust vector-field language as arrow-pattern evidence, especially the places where arrows vanish and nearby arrows turn.",
+        "do_not_overread": "Do not confuse naming an equilibrium with understanding its topological evidence; the surrounding arrows matter.",
+        "math_question": "What does a small loop around the equilibrium see in the nearby arrow directions?",
+    },
+    12: {
+        "trust": "Trust index-sum language only after local vector-field defects are isolated and every defect belongs to the whole-surface account.",
+        "do_not_overread": "Do not treat one defect as the theorem; the lecture is preparing a total over the entire surface.",
+        "math_question": "Which local indices are being added, and what surface controls their total?",
+    },
+    13: {
+        "trust": "Trust Poincare-Hopf as a two-sided account linking all local defects to Euler characteristic.",
+        "do_not_overread": "Do not reduce the lecture to the hairy-ball example; that example is one visible consequence of the full index-sum statement.",
+        "math_question": "How does the complete surface force the total defect count of a vector field?",
+    },
+    14: {
+        "trust": "Trust applications only after the state space, allowed motion, forbidden states, and protected obstruction have been named.",
+        "do_not_overread": "Do not paste a theorem onto a physical story before proving the model carries the real freedoms and restrictions.",
+        "math_question": "What exact feature of the state space becomes the claimed physical constraint?",
+    },
+    15: {
+        "trust": "Trust the final review as a dependency map linking objects, legal moves, protected evidence, and forced conclusions across the course.",
+        "do_not_overread": "Do not treat pictorial thinking as a style preference; in this course the picture must carry a rule or count.",
+        "math_question": "Can each topic be read as object, legal move, surviving fact, and forced conclusion?",
+    },
+}
+
+
 LECTURE_SPINE = [
     {
         "lecture": 1,
@@ -2299,6 +2378,7 @@ def build_quality_audit(data):
     lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
     lecture_walkthrough_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["walkthrough"][field])) for field in ["start_here", "payoff", "reader_check"]) for l in data["lectures"])
     lecture_source_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["source_lens"]) for l in data["lectures"])
+    lecture_source_checkpoint_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["source_checkpoint"][field])) for field in ["trust", "do_not_overread", "math_question"]) for l in data["lectures"])
     lecture_caption_nuance_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["caption_nuance"][field])) for field in ["risk", "safe_reading", "verify_question"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
@@ -2396,6 +2476,7 @@ def build_quality_audit(data):
             "lecture_essay_words": lecture_essay_words,
             "lecture_walkthrough_words": lecture_walkthrough_words,
             "lecture_source_lens_words": lecture_source_lens_words,
+            "lecture_source_checkpoint_words": lecture_source_checkpoint_words,
             "lecture_caption_nuance_words": lecture_caption_nuance_words,
             "concept_essay_words": concept_essay_words,
             "concept_workup_words": concept_workup_words,
@@ -2750,6 +2831,12 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <h2>Source Lens</h2>
   {paragraph_block(l['deep']['source_lens'])}
 </section>
+<section class="lecture">
+  <h2>Source Checkpoint</h2>
+  <p><b>Trust:</b> {esc(l['deep']['source_checkpoint']['trust'])}</p>
+  <p><b>Do not overread:</b> {esc(l['deep']['source_checkpoint']['do_not_overread'])}</p>
+  <p><b>Math question:</b> {esc(l['deep']['source_checkpoint']['math_question'])}</p>
+</section>
 <section class="panel{' warn' if l['missing_caption_ids'] else ''}">
   <h2>Caption Nuance</h2>
   <p><b>Listen for:</b> {', '.join(esc(t) for t in nuance['terms'])}</p>
@@ -2815,7 +2902,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -2826,6 +2913,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <p><b>Caption risk:</b> {esc(l['deep']['caption_nuance']['risk'])}</p>
   <p><b>Safe reading:</b> {esc(l['deep']['caption_nuance']['safe_reading'])}</p>
   <p><b>Verify:</b> {esc(l['deep']['caption_nuance']['verify_question'])}</p>
+  <p><b>Source checkpoint:</b> {esc(l['deep']['source_checkpoint']['math_question'])}</p>
   <a class="arrow" href="lecture-{l['lecture']:02d}.html">Open lecture</a>
 </article>"""
         for l in data["lectures"]
@@ -2874,6 +2962,7 @@ def main():
         deep["examples"] = LECTURE_EXAMPLES[number]
         deep["essay"] = LECTURE_ESSAYS[number]
         deep["source_lens"] = LECTURE_SOURCE_LENS[number]
+        deep["source_checkpoint"] = LECTURE_SOURCE_CHECKPOINTS[number]
         deep["walkthrough"] = LECTURE_WALKTHROUGHS[number]
         deep["caption_nuance"] = LECTURE_CAPTION_NUANCE[number]
         lectures.append({
@@ -2988,6 +3077,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {metrics['lecture_walkthrough_words']} slow-walkthrough words across lecture pages, explaining each lecture from object to payoff to reader check
 - {metrics['lecture_caption_nuance_words']} caption-nuance words across lecture pages and source audit, explaining risky transcript terms and safe readings
 - {metrics['lecture_source_lens_words']} source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
+- {metrics['lecture_source_checkpoint_words']} source-checkpoint words across lecture trust, overread-warning, and math-question fields
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
 - {metrics['concept_workup_words']} concept workup words across object, operation, protected-fact, and failure-test fields
@@ -3007,7 +3097,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 130 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every lecture source-checkpoint field to clear 12 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 130 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

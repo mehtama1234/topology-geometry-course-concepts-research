@@ -47,6 +47,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 1,986 lecture walkthrough words.
 - 979 caption-nuance words.
 - 1,090 lecture source-lens words.
+- 811 lecture source-checkpoint words.
 - 1,781 concept workup words.
 - 1,641 concept anchor words.
 - 466 theme lens words.
