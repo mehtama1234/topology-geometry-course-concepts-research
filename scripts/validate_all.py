@@ -148,6 +148,10 @@ def main():
         for field in ["course_moment", "principle", "reader_question"]:
             if len(words(anchor.get(field))) < 25:
                 fail(f"concept {concept['id']} anchor {field} too thin")
+        self_check = concept.get("self_check") or {}
+        for field in ["object_check", "operation_check", "protected_check", "failure_check"]:
+            if len(words(self_check.get(field))) < 40:
+                fail(f"concept {concept['id']} self check {field} too thin")
         appearances = concept.get("appearances") or []
         if len(appearances) < 2:
             fail(f"concept {concept['id']} needs at least two lecture appearances")
@@ -377,7 +381,7 @@ def main():
         if concept_name not in names:
             fail(f"missing concept page {concept['id']}")
         concept_html = (SITE / concept_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Anchor Example", "Course moment:", "Principle:", "Reader question:", "Work It From Scratch", "Object:", "Operation:", "Protected fact:", "Breaks if:"]:
+        for phrase in ["Anchor Example", "Course moment:", "Principle:", "Reader question:", "Work It From Scratch", "Object:", "Operation:", "Protected fact:", "Breaks if:", "Can You Use It?", "Object check:", "Operation check:", "Protected fact check:", "Failure check:"]:
             if phrase not in concept_html:
                 fail(f"concept page missing concept phrase {phrase}: {concept_name}")
         for phrase in ["Further Source Trail", "Why it belongs:", "Use carefully:"]:

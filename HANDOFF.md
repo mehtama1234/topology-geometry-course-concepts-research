@@ -31,7 +31,7 @@ This repo is the source and generated static site for a first-principles compani
 - `videos.html` — all individual YouTube links.
 - `lectures.html`, `lecture-*.html` — lecture explainers with lecture deepening, slow walkthroughs, reader tests, answer guides, source checkpoints, source-faithfulness audits, and caption nuance.
 - `lecture-spine.html` — one reasoning path through all 15 lectures from object to later use.
-- `concepts.html`, `concept-*.html` — concept atlas, reverse lecture appearances, anchor examples, and work-from-scratch blocks.
+- `concepts.html`, `concept-*.html` — concept atlas, reverse lecture appearances, anchor examples, work-from-scratch blocks, and self-check answer guides.
 - `themes.html`, `subthemes.html`, `families.html` — recurring ideas, theme lenses, subtheme bridges and routines, proof families, method playbooks, and method contracts.
 - `the-math-why.html` — core mathematical reason the course works.
 - `course-synthesis.html` — dependency spine and proof-family synthesis.
@@ -62,7 +62,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - exact expected video and lecture counts;
 - caption coverage and missing-caption caveat;
 - required page existence;
-- lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why depth floors;
+- lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, concept-self-check, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why depth floors;
 - at least three concrete examples per lecture;
 - lecture-spine structure for all 15 lectures;
 - referential integrity across concepts, themes, subthemes, and families;
@@ -80,6 +80,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - caption-nuance sections on every lecture page and source-audit cards for every lecture, including caption support, course inference, and caveat fields;
 - anchor-example sections on every concept page;
 - work-from-scratch sections on every concept page;
+- can-you-use-it self-check sections on every concept page;
 - theme-lens sections on every theme page;
 - first-principles-bridge sections on every subtheme page;
 - reading-routine sections on every subtheme page;
@@ -108,6 +109,7 @@ As of the current generated audit:
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
+- 9,387 concept self-check words.
 - 1,963 theme essay words.
 - 803 theme lens words.
 - 2,761 subtheme essay words.

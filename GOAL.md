@@ -56,6 +56,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
+- 9,387 concept self-check words.
 - 803 theme lens words.
 - 1,110 subtheme routine words.
 - 985 subtheme bridge words.

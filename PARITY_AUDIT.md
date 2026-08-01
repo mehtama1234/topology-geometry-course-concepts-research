@@ -15,7 +15,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Individual video links | `site/videos.html` lists every YouTube item in playlist order | Met |
 | Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, lecture deepening, slow walkthrough, reader test, answer guide, source checkpoint, source-faithfulness audit, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
 | Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures | Met |
-| Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, anchor examples, work-from-scratch blocks, and reverse lecture links | Met |
+| Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, anchor examples, work-from-scratch blocks, self-check answer guides, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections; themes include lenses, subthemes include first-principles bridges and reading routines, and families include method playbooks and contracts | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
 | Concept dependency map | `site/concept-dependencies.html` gives eight prerequisite paths from early ideas to later theorem-level ideas | Met |
@@ -53,6 +53,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
+- 9,387 concept self-check words.
 - 1,963 theme essay words.
 - 803 theme lens words.
 - 2,761 subtheme essay words.
@@ -74,7 +75,7 @@ The validator checks:
 
 - expected video, lecture, caption, concept, theme, subtheme, family counts;
 - required generated pages;
-- depth floors for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why prose;
+- depth floors for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, concept-self-check, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why prose;
 - at least three concrete examples per lecture;
 - lecture-spine structure and length;
 - concept/theme/subtheme/family id integrity;
@@ -92,6 +93,7 @@ The validator checks:
 - lecture-page answer-guide sections;
 - concept-page anchor-example sections;
 - concept-page work-from-scratch sections;
+- concept-page can-you-use-it self-check sections;
 - theme-page lens sections;
 - subtheme-page first-principles-bridge sections;
 - subtheme-page reading-routine sections;
