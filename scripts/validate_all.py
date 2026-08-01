@@ -180,7 +180,7 @@ def main():
             fail(f"lecture {lecture['lecture']} source lens too thin")
         source_checkpoint = deep.get("source_checkpoint") or {}
         for field in ["trust", "do_not_overread", "math_question"]:
-            if len(words(source_checkpoint.get(field))) < 12:
+            if len(words(source_checkpoint.get(field))) < 25:
                 fail(f"lecture {lecture['lecture']} source checkpoint {field} too thin")
         nuance = deep.get("caption_nuance") or {}
         if len(nuance.get("terms") or []) < 4:

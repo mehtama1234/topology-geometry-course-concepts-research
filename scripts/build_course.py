@@ -1855,79 +1855,79 @@ LECTURE_SOURCE_LENS = {
 
 LECTURE_SOURCE_CHECKPOINTS = {
     1: {
-        "trust": "Trust the making-following-cutting sequence as evidence about the gluing rule, because each action tests whether local side information survives a full trip.",
-        "do_not_overread": "Do not overread the paper surprise as a one-off curiosity or as a statement about exact shape, length, or bend angle.",
-        "math_question": "What whole-surface fact appears only after the traveler or cut has gone all the way around the strip?",
+        "trust": "Trust the making-following-cutting sequence as evidence about the gluing rule. The spoken and visual source keeps returning to actions that test the same question: when local side information is carried around the strip, does it return unchanged or reversed?",
+        "do_not_overread": "Do not overread the paper surprise as a one-off curiosity, a claim about exact shape, or a claim about how much the paper bends. The evidence is about the identification rule at the ends and the whole trip forced by that rule.",
+        "math_question": "What whole-surface fact appears only after the traveler, mark, or cut has gone all the way around the strip, and why could no small patch of paper have shown that fact by itself?",
     },
     2: {
-        "trust": "Trust the disk-path setup only together with endpoint order, fixed boundary data, and the rule that paths may not cross.",
-        "do_not_overread": "Do not treat a cleaner redraw as proof unless the redraw was reached by legal motion that preserved the original boundary problem.",
-        "math_question": "Which part of the endpoint order survives every allowed redraw and forces or forbids a crossing?",
+        "trust": "Trust the disk-path setup only together with endpoint order, fixed boundary data, and the rule that paths may not cross. The source is not asking whether one can draw neatly; it is asking what every legal drawing inherits from the boundary.",
+        "do_not_overread": "Do not treat a cleaner redraw as proof unless the redraw was reached by legal motion that preserved the original boundary problem. If endpoints move through each other or a curve slips across another curve, the argument has changed the problem.",
+        "math_question": "Which part of the circular endpoint order survives every allowed redraw, and how does that surviving order force or forbid a crossing before any particular sketch is judged?",
     },
     3: {
-        "trust": "Trust product, quotient, manifold, and surgery language as construction evidence: the lecture is saying how spaces are built before they are used.",
-        "do_not_overread": "Do not treat a square, cube, or cut surface as the final object until the construction rule has been read.",
-        "math_question": "Which choices are combined, which points are identified, and which local replacement changes the possible routes?",
+        "trust": "Trust product, quotient, manifold, and surgery language as construction evidence. The lecture is saying how spaces are built before they are used, so each word should be read as a rule about choices, sameness, local patches, or replacement.",
+        "do_not_overread": "Do not treat a square, cube, or cut surface as the final object until the construction rule has been read. The drawn container may be only a code for a different travel rule after edges or pieces are identified.",
+        "math_question": "Which choices are being combined, which points are declared to be the same, and which local replacement changes the routes a traveler can take through the finished space?",
     },
     4: {
-        "trust": "Trust edge labels and arrows as travel instructions, because they decide whether a path stops, re-enters, or returns with direction changed.",
-        "do_not_overread": "Do not read the visible boundary of the drawn square as the boundary of the finished space without checking the identifications.",
-        "math_question": "Where does a traveler go after crossing a labeled edge, and does the rule preserve or reverse orientation?",
+        "trust": "Trust edge labels and arrows as travel instructions. They decide whether a path stops, re-enters somewhere else, or returns with its local direction changed, which means the labels are part of the mathematical object rather than decoration.",
+        "do_not_overread": "Do not read the visible boundary of the drawn square as the boundary of the finished space without checking the identifications. A line that looks like an edge on the page may be a doorway in the actual surface.",
+        "math_question": "Where does a traveler go after crossing a labeled edge, does the rule preserve or reverse orientation, and what full-loop behavior follows from repeating that rule?",
     },
     5: {
-        "trust": "Trust handles, crosscaps, orientability, and boundary components as durable surface evidence, not as surface names alone.",
-        "do_not_overread": "Do not accept classification by visual resemblance; two drawings can differ while carrying the same preserved surface data.",
-        "math_question": "Which durable feature survives the cutting, gluing, or surface simplification being used in the argument?",
+        "trust": "Trust handles, crosscaps, orientability, and boundary components as durable surface evidence, not as surface names alone. The source treats them as features that survive legal simplification and therefore can support classification.",
+        "do_not_overread": "Do not accept classification by visual resemblance. Two drawings can look different while carrying the same preserved surface data, and two similar drawings can differ because one reverses side or contains a different route structure.",
+        "math_question": "Which durable feature survives the cutting, gluing, handle slide, or surface simplification being used in the argument, and how would a different drawing still have to carry it?",
     },
     6: {
-        "trust": "Trust dimension and ordinary-position language as preparation for deciding whether meetings are accidental or forced.",
-        "do_not_overread": "Do not count a messy contact before the picture has been cleaned enough for separate meetings to be inspected.",
-        "math_question": "After a tiny legal nudge, which meetings disappear as accidents and which remain as evidence?",
+        "trust": "Trust dimension and ordinary-position language as preparation for deciding whether meetings are accidental or forced. The source is building the right conditions for later counting, where each meeting must be clean enough to inspect.",
+        "do_not_overread": "Do not count a messy contact before the picture has been cleaned enough for separate meetings to be inspected. A tangency, triple meeting, or overlap may hide several ordinary events inside one special-looking event.",
+        "math_question": "After a tiny legal nudge, which meetings disappear as accidents, which remain as evidence, and what amount of room did the surrounding space give the objects to avoid each other?",
     },
     7: {
-        "trust": "Trust the center-of-gravity demonstration as continuity evidence: a changing physical condition cannot jump past the balancing event.",
-        "do_not_overread": "Do not treat the demonstration as a formula for locating the special point; its job is to prove the event must occur.",
-        "math_question": "What changes continuously, and what event is impossible to skip under that continuous change?",
+        "trust": "Trust the center-of-gravity demonstration as continuity evidence. The useful source fact is that a changing physical condition moves without jumps, so passing from one side of a balance condition to the other must include equality.",
+        "do_not_overread": "Do not treat the demonstration as a formula for locating the special point. Its job is to prove the event must occur, not to compute it, optimize it, or explain every physical force in the setup.",
+        "math_question": "What quantity changes continuously, what are the two sides of the condition, and why is the balancing event impossible to skip under that no-jump change?",
     },
     8: {
-        "trust": "Trust the signed crossing language only when orientation explains the plus and minus signs and pair creation has been accounted for.",
-        "do_not_overread": "Do not use the raw number of visible crossings as protected evidence, because legal motion can change that number.",
-        "math_question": "Why does a positive-negative pair contribute no net change to the signed total?",
+        "trust": "Trust the signed crossing language only when orientation explains the plus and minus signs and pair creation has been accounted for. The source is protecting a designed total, not asking the reader to count every visible meeting equally.",
+        "do_not_overread": "Do not use the raw number of visible crossings as protected evidence, because legal motion can change that number. A count matters here only if the course has explained why the permitted changes leave it unchanged.",
+        "math_question": "Why does a positive-negative pair contribute no net change to the signed total, and what orientation choice makes the signs meaningful rather than arbitrary labels?",
     },
     9: {
-        "trust": "Trust the available graph-and-diagonal spine, while keeping the missing middle caption visible as a source limit.",
-        "do_not_overread": "Do not fill the missing caption gap with a stronger theorem claim than the surrounding source arc supports.",
-        "math_question": "Why does an intersection of the graph with the diagonal mean the original rule has a fixed point?",
+        "trust": "Trust the available graph-and-diagonal spine, while keeping the missing middle caption visible as a source limit. The supported move is the translation from a rule to its graph and from self-agreement to the diagonal.",
+        "do_not_overread": "Do not fill the missing caption gap with a stronger theorem claim than the surrounding source arc supports. The companion can explain the reliable structure, but it should not invent missing spoken details or hidden hypotheses.",
+        "math_question": "Why does an intersection of the graph with the diagonal mean the original rule has a fixed point, and which assumptions would be needed before turning that meeting into a theorem?",
     },
     10: {
-        "trust": "Trust Brouwer language only with the closed filled domain, self-map condition, boundary included, and continuity kept explicit.",
-        "do_not_overread": "Do not turn the theorem into a claim about every space or every rule; changing the domain can change the conclusion.",
-        "math_question": "What blocks a continuous attempt to move every point of the filled ball away from itself?",
+        "trust": "Trust Brouwer language only with the closed filled domain, self-map condition, boundary included, and continuity kept explicit. Those details are not formal clutter; they are the parts that make the escape argument impossible.",
+        "do_not_overread": "Do not turn the theorem into a claim about every space or every rule. Changing the domain, removing the boundary, allowing discontinuous jumps, or letting points leave the space can change the conclusion.",
+        "math_question": "What blocks a continuous attempt to move every point of the filled ball away from itself, and which part of that block would fail if the space or rule changed?",
     },
     11: {
-        "trust": "Trust vector-field language as arrow-pattern evidence, especially the places where arrows vanish and nearby arrows turn.",
-        "do_not_overread": "Do not confuse naming an equilibrium with understanding its topological evidence; the surrounding arrows matter.",
-        "math_question": "What does a small loop around the equilibrium see in the nearby arrow directions?",
+        "trust": "Trust vector-field language as arrow-pattern evidence, especially the places where arrows vanish and nearby arrows turn. The source is shifting attention from solving every path to reading what the whole field cannot remove.",
+        "do_not_overread": "Do not confuse naming an equilibrium with understanding its topological evidence. The surrounding arrows matter because they record how the failure sits in the field, and that record is what index later counts.",
+        "math_question": "What does a small loop around the equilibrium see in the nearby arrow directions, and how could that turning survive a legal cleanup of the field?",
     },
     12: {
-        "trust": "Trust index-sum language only after local vector-field defects are isolated and every defect belongs to the whole-surface account.",
-        "do_not_overread": "Do not treat one defect as the theorem; the lecture is preparing a total over the entire surface.",
-        "math_question": "Which local indices are being added, and what surface controls their total?",
+        "trust": "Trust index-sum language only after local vector-field defects are isolated and every defect belongs to the whole-surface account. The source is preparing a total, so missing even one defect changes the evidence.",
+        "do_not_overread": "Do not treat one defect as the theorem. The lecture is preparing a statement about the entire surface, where local failures may move, split, or cancel while the total remains tied to the surface.",
+        "math_question": "Which local indices are being added, what surface controls their total, and what boundary, isolation, or cleanup assumption is needed before that total is legitimate evidence?",
     },
     13: {
-        "trust": "Trust Poincare-Hopf as a two-sided account linking all local defects to Euler characteristic.",
-        "do_not_overread": "Do not reduce the lecture to the hairy-ball example; that example is one visible consequence of the full index-sum statement.",
-        "math_question": "How does the complete surface force the total defect count of a vector field?",
+        "trust": "Trust Poincare-Hopf as a two-sided account linking all local defects to Euler characteristic. The source is connecting surface bookkeeping with arrow-field bookkeeping, so the theorem should be read as a translation between those accounts.",
+        "do_not_overread": "Do not reduce the lecture to the hairy-ball example. That example is one visible consequence of the full index-sum statement, not a replacement for the condition that all defects on the surface are being counted.",
+        "math_question": "How does the complete surface force the total defect count of a vector field, and how can the same equation be read from shape to motion or from motion back to shape?",
     },
     14: {
-        "trust": "Trust applications only after the state space, allowed motion, forbidden states, and protected obstruction have been named.",
-        "do_not_overread": "Do not paste a theorem onto a physical story before proving the model carries the real freedoms and restrictions.",
-        "math_question": "What exact feature of the state space becomes the claimed physical constraint?",
+        "trust": "Trust applications only after the state space, allowed motion, forbidden states, and protected obstruction have been named. The source is showing how a physical story becomes a mathematical object before any theorem can speak.",
+        "do_not_overread": "Do not paste a theorem onto a physical story before proving the model carries the real freedoms and restrictions. If the model drops a freedom, adds a false wall, or forgets a boundary condition, the conclusion can stop describing the system.",
+        "math_question": "What exact feature of the state space becomes the claimed physical constraint, and which modeling choice makes that feature part of the actual problem rather than a drawing convenience?",
     },
     15: {
-        "trust": "Trust the final review as a dependency map linking objects, legal moves, protected evidence, and forced conclusions across the course.",
-        "do_not_overread": "Do not treat pictorial thinking as a style preference; in this course the picture must carry a rule or count.",
-        "math_question": "Can each topic be read as object, legal move, surviving fact, and forced conclusion?",
+        "trust": "Trust the final review as a dependency map linking objects, legal moves, protected evidence, and forced conclusions across the course. The source is gathering the same reasoning pattern after it has appeared in strips, surfaces, maps, and fields.",
+        "do_not_overread": "Do not treat pictorial thinking as a style preference. In this course a picture earns its place only when it carries a rule, a protected count, a forced meeting, or a constraint on motion.",
+        "math_question": "Can each topic be read as object, legal move, surviving fact, and forced conclusion, and where does that topic hand its evidence to the next part of the course?",
     },
 }
 
@@ -3302,7 +3302,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every lecture source-checkpoint field to clear 12 words, every concept essay to clear 290 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 12 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 12 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
