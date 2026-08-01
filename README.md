@@ -26,6 +26,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,090 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - 811 lecture source-checkpoint words across trust, overread warning, and math-question fields.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
+- 6,060 concept essay words, with every concept essay now clearing the 195-word validator floor.
 - 1,781 concept workup words across object, operation, protected fact, and failure tests.
 - 1,641 concept anchor words tying every concept to a concrete course moment, principle, and reader question.
 - 466 theme lens words across notices, ignored distractions, problem changes, and reader tests.

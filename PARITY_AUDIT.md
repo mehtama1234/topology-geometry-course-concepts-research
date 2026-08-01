@@ -46,7 +46,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 979 caption-nuance words.
 - 1,090 lecture source-lens words.
 - 811 lecture source-checkpoint words.
-- 4,830 concept essay words.
+- 6,060 concept essay words.
 - 1,781 concept workup words.
 - 1,641 concept anchor words.
 - 1,278 theme essay words.
