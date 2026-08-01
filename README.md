@@ -16,7 +16,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1 video currently reports no captions through `yt-dlp`: `nx1XOlezuvk`.
 - Raw captions live in `raw-material/youtube/captions/`.
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
-- 90 generated HTML pages in `site/`.
+- 91 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
 - 15 lecture-spine entries that name the object, question, legal move, surviving fact, and later use for every lecture.
 - 5,333 lecture essay words, with every lecture essay now clearing the 300-word validator floor.
@@ -36,6 +36,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 8 transfer-lab cases with 1,187 words asking readers to apply course ideas to everyday situations.
 - 8 repair-clinic cases with 1,136 words diagnosing weak explanations and rewriting them from first principles.
 - 7 oral-exam prompts with 875 words testing whether readers can explain the course chain, proof contracts, modeling choices, and source caveats without page prompts.
+- 10 change-ledger cases with 1,275 words separating object, legal change, protected fact, false move, reader test, and concept links.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - 7,732 concept essay words, with every concept essay now clearing the 290-word validator floor.
 - 2,746 concept workup words across object, operation, protected fact, and failure tests.
@@ -54,7 +55,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 2,258 method-family answer-guide words showing what strong method explanations must include.
 - 16 term translations with 1,850 words translating formal course words into everyday sentences, argument jobs, failure tests, reader questions, and concept links.
 - 7 paper/source reader cards with 1,095 words explaining source families from first principles.
-- A course-level synthesis page, a transfer-lab page, a repair-clinic page, an oral-exam page, a reader-checks page, a term-translator page, a theorem-use-contracts page, a concept-contrasts page, a paper-source-reader page, a lecture-source-bridges page, a lecture-reconstruction-drills page, a source-nuance-repairs page, a references page with 7 course/paper/text links, a six-test quality rubric, a six-layer rubric coverage audit, a quality audit, and a four-widget interactive math playground.
+- A course-level synthesis page, a transfer-lab page, a repair-clinic page, an oral-exam page, a change-ledger page, a reader-checks page, a term-translator page, a theorem-use-contracts page, a concept-contrasts page, a paper-source-reader page, a lecture-source-bridges page, a lecture-reconstruction-drills page, a source-nuance-repairs page, a references page with 7 course/paper/text links, a six-test quality rubric, a six-layer rubric coverage audit, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces
 
@@ -69,6 +70,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/transfer-lab.html` — eight everyday transfer cases that test object, allowed move, protected fact, wrong transfer, and course bridge.
 - `site/repair-clinic.html` — eight weak explanations diagnosed and rewritten into stronger first-principles versions.
 - `site/oral-exam.html` — seven no-notes readiness prompts that make readers explain object, allowed move, protected fact, theorem contract, model boundary, and source caveat out loud.
+- `site/change-ledger.html` — ten cases that make readers separate what changes from what stays fixed before trusting a picture, count, theorem, model, or source sentence.
 - `site/proof-moves.html` — five reusable first-principles proof recipes with steps, failure modes, and course examples.
 - `site/formula-reader.html` — plain readings of the course's central formulas and theorem statements.
 - `site/theorem-use-contracts.html` — use contracts for central results and methods, with object, move, protected evidence, conclusion, failure condition, and everyday test.
@@ -114,7 +116,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 `scripts/validate_all.py` enforces the current quality shape:
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
-- Required generated pages, including lecture spine, synthesis, concept dependencies, transfer lab, repair clinic, oral exam, proof moves, formula reader, theorem contracts, concept contrasts, reader checks, term translator, paper source reader, lecture source bridges, lecture reconstruction drills, source nuance repairs, references, quality rubric, rubric coverage, playground, audits, lectures, concepts, themes, subthemes, and families.
+- Required generated pages, including lecture spine, synthesis, concept dependencies, transfer lab, repair clinic, oral exam, change ledger, proof moves, formula reader, theorem contracts, concept contrasts, reader checks, term translator, paper source reader, lecture source bridges, lecture reconstruction drills, source nuance repairs, references, quality rubric, rubric coverage, playground, audits, lectures, concepts, themes, subthemes, and families.
 - Minimum essay depth for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, concept-self-check, theme, theme-lens, theme-answer-guide, subtheme, subtheme-routine, subtheme-bridge, subtheme-answer-guide, method-family, method-contract, method-playbook, method-family-answer-guide, and math-why layers.
 - Lecture Deepening sections on every lecture page.
 - Source-lens sections on every lecture page.

@@ -23,6 +23,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Transfer lab | `site/transfer-lab.html` gives eight everyday transfer cases that test object, allowed move, protected fact, wrong transfer, reader task, and course bridge | Met |
 | Repair clinic | `site/repair-clinic.html` gives eight weak explanations diagnosed and rewritten into stronger first-principles versions | Met |
 | Oral exam readiness | `site/oral-exam.html` gives seven no-notes prompts that test whether a reader can explain the course chain, deformation arguments, theorem contracts, physical models, fixed points, equilibria, and source claims out loud | Met |
+| Change ledger | `site/change-ledger.html` gives ten cases that separate object, legal change, protected fact, false move, reader test, and concept links | Met |
 | Proof moves | `site/proof-moves.html` gives five reusable first-principles proof recipes with steps, failure modes, and course examples | Met |
 | Formula reader | `site/formula-reader.html` translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks; `site/theorem-use-contracts.html` states when eight central results and methods may be used | Met |
 | Concept contrast reader | `site/concept-contrasts.html` separates ten neighboring ideas readers often blur, including topology/geometry, invariant/raw count, quotient/drawing, fixed point/equilibrium, and index/Euler characteristic | Met |
@@ -31,7 +32,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Term translator | `site/term-translator.html` translates 16 formal course words into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links | Met |
 | References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats; `site/paper-source-reader.html` explains each source family from first principles | Met |
 | Quality/source audits | `site/quality-rubric.html`, `site/rubric-coverage.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, rubric coverage maps those tests across six layers, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 90 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 91 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -44,7 +45,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 90 generated HTML pages.
+- 91 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 5,333 lecture essay words.
@@ -83,6 +84,8 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,136 repair-clinic words.
 - 7 oral-exam prompts.
 - 875 oral-exam words.
+- 10 change-ledger cases.
+- 1,275 change-ledger words.
 - 5 proof-move recipes.
 - 8 theorem-use contracts.
 - 1,271 theorem-contract words.
@@ -117,6 +120,7 @@ The validator checks:
 - transfer lab structure, required case set, field depth, and concept-link integrity;
 - repair clinic structure, required case set, field depth, and concept-link integrity;
 - oral exam structure, required prompt set, field depth, page depth, and concept-link integrity;
+- change ledger structure, required case set, field depth, page depth, and concept-link integrity;
 - proof-move structure and length;
 - theorem-use contract structure, required result set, field depth, and concept-link integrity;
 - concept contrast structure, required contrast set, field depth, and concept-link integrity;

@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Paper strip to global surface fact",
+    "object": "The object is the whole strip with its end-gluing rule, not the small rectangular patch held in the hand.",
+    "legal_change": "The strip may be bent, carried, or locally inspected as long as the end relation and the route being followed are not changed.",
+    "protected_fact": "The protected fact is whether a trip around the strip returns to the same side or to the opposite side.",
+    "why_matters": "That surviving side information is the first lesson of the course: a small local view can miss a whole-shape fact that controls what later cuts and routes can do.",
+    "false_move": "The false move is to flatten a twisted strip into an ordinary band and then reason as if the gluing rule had survived.",
+    "reader_test": "Can the reader say which part of the story is allowed to bend and which part must remember the original end relation?",
+    "concepts": [
+      "topology-vs-geometry",
+      "quotient-space",
+      "boundary-orientation"
+    ]
+  },
+  {
+    "title": "Messy route to legal deformation",
+    "object": "The object is a route or curve drawn with endpoint, boundary, obstacle, or crossing rules attached to it.",
+    "legal_change": "The route may be nudged into a cleaner position when endpoints, forbidden regions, and required separations remain respected during the entire motion.",
+    "protected_fact": "The protected fact is the route's relation to the obstacle, boundary order, or other curve that the problem refuses to let it cross illegally.",
+    "why_matters": "A deformation proof works because it replaces a hard picture by an easier picture without changing the question being answered.",
+    "false_move": "The false move is to clean the drawing by sliding through the obstacle or through another curve and then call the final picture equivalent.",
+    "reader_test": "Can the reader name one motion that is legal, one motion that is forbidden, and the exact fact that survived the legal motion?",
+    "concepts": [
+      "deformation",
+      "knots-and-links",
+      "generic-position"
+    ]
+  },
+  {
+    "title": "Visible crossings to signed evidence",
+    "object": "The object is a pair of curves or sheets whose meetings are being counted after they have been put in ordinary position.",
+    "legal_change": "The curves may move through legal deformations that create or remove simple meeting pairs, provided the boundary and orientation rules are preserved.",
+    "protected_fact": "The protected fact is the signed total, because opposite-sign pairs can be born or die together while the total remains accountable.",
+    "why_matters": "The course trusts signed evidence because it survives the local accidents that would make a raw crossing count untrustworthy.",
+    "false_move": "The false move is to count every visible crossing equally and forget that a small legal motion can create two crossings that should cancel.",
+    "reader_test": "Can the reader describe the local event, the two signs it creates, and why the useful total does not change?",
+    "concepts": [
+      "intersection-number",
+      "boundary-orientation",
+      "generic-position"
+    ]
+  },
+  {
+    "title": "Cell drawing to Euler characteristic",
+    "object": "The object is a surface cut into vertices, edges, and faces so the whole surface can be counted.",
+    "legal_change": "The cutting pattern may be refined, redrawn, or simplified as long as it still describes the same surface and respects the boundary.",
+    "protected_fact": "The protected fact is the alternating count of vertices, edges, and faces, not any one chosen drawing of the cells.",
+    "why_matters": "Euler characteristic matters because it turns the whole surface into a number that survives changes in the bookkeeping plan.",
+    "false_move": "The false move is to treat a convenient cell drawing as the surface itself and trust a count without checking whether the same surface is still being counted.",
+    "reader_test": "Can the reader say what changes when the cutting pattern changes and what number is supposed to remain the same?",
+    "concepts": [
+      "euler-characteristic",
+      "triangulation",
+      "manifold"
+    ]
+  },
+  {
+    "title": "Square diagram to quotient surface",
+    "object": "The object is the finished surface defined by edge identifications, not the square sheet before those identifications are imposed.",
+    "legal_change": "The diagram may be redrawn or relabeled only when the same points are still being identified in the finished space.",
+    "protected_fact": "The protected fact is the identification rule: which edges, directions, and boundary points become the same point of the surface.",
+    "why_matters": "Quotient thinking matters because it lets the course build surfaces whose global behavior is not visible from the flat drawing alone.",
+    "false_move": "The false move is to reason about distances or sides in the square as if no points had been glued together.",
+    "reader_test": "Can the reader point to two different drawn points and say whether they become one point after the quotient rule is applied?",
+    "concepts": [
+      "quotient-space",
+      "product-space",
+      "manifold"
+    ]
+  },
+  {
+    "title": "Map rule to fixed-point evidence",
+    "object": "The object is a rule that sends each point of a space back into the same space, together with the graph of that rule.",
+    "legal_change": "The rule may be studied through a graph-and-diagonal comparison when continuity and the same-domain same-target condition are preserved.",
+    "protected_fact": "The protected fact is forced self-agreement: a meeting between the graph and the diagonal means a point is sent to itself.",
+    "why_matters": "This matters because existence can be forced by shape even when the exact fixed point is not calculated.",
+    "false_move": "The false move is to say a fixed point exists before checking that the rule actually maps the space into itself in the required way.",
+    "reader_test": "Can the reader identify the space, the rule, the diagonal of self-agreement, and what the theorem can and cannot locate?",
+    "concepts": [
+      "fixed-points",
+      "brouwer-fixed-point",
+      "intersection-number"
+    ]
+  },
+  {
+    "title": "Arrow field to local index",
+    "object": "The object is a vector field on a surface, especially what the arrows do near an isolated place where the field fails.",
+    "legal_change": "The arrows may be deformed away from the defect as long as the boundary loop around the defect keeps its comparison to direction.",
+    "protected_fact": "The protected fact is the turning number of the arrows around the defect, counted with sign.",
+    "why_matters": "Index matters because it changes a local failure of motion into evidence that can be added across the whole surface.",
+    "false_move": "The false move is to count visible equilibria while ignoring whether their local arrow patterns have the same signed behavior.",
+    "reader_test": "Can the reader walk around one defect and explain what is being counted before adding it to other defects?",
+    "concepts": [
+      "vector-field-index",
+      "equilibrium",
+      "poincare-hopf"
+    ]
+  },
+  {
+    "title": "Local defects to Poincare-Hopf",
+    "object": "The object is one vector field on one surface, with all isolated defects included in the same account.",
+    "legal_change": "Defects may move or split under permitted changes to the field, but the comparison must stay on the same surface.",
+    "protected_fact": "The protected fact is the total signed index of all defects, which must match the Euler characteristic under the theorem's assumptions.",
+    "why_matters": "The theorem matters because it ties every local failure of the field to a whole-surface number that cannot be negotiated away.",
+    "false_move": "The false move is to use the theorem as if it describes every motion path, rather than a constraint on the sum of local indices.",
+    "reader_test": "Can the reader name both sides of the equality and say why leaving out one defect would break the account?",
+    "concepts": [
+      "poincare-hopf",
+      "vector-field-index",
+      "euler-characteristic"
+    ]
+  },
+  {
+    "title": "Machine motion to configuration space",
+    "object": "The object is the space of allowed states, where one point records one complete position or choice of the system.",
+    "legal_change": "A physical motion becomes a path only if every intermediate state is allowed and all forbidden collisions or blocked positions have been removed.",
+    "protected_fact": "The protected fact is the shape of the allowed state space: its walls, holes, separated regions, and possible paths.",
+    "why_matters": "Configuration space matters because it changes a moving physical story into a static shape that can carry obstructions.",
+    "false_move": "The false move is to draw the machine itself and assume the drawing records all freedoms, obstacles, and continuous choices.",
+    "reader_test": "Can the reader say what one point records, which states are forbidden, and what a path in the space means physically?",
+    "concepts": [
+      "configuration-space",
+      "product-space",
+      "deformation"
+    ]
+  },
+  {
+    "title": "Source sentence to supported claim",
+    "object": "The object is a claim in the companion, together with the caption, lecture context, paper, or textbook support available for it.",
+    "legal_change": "The sentence may be strengthened or weakened only according to the evidence actually available and the source caveats around that evidence.",
+    "protected_fact": "The protected fact is the boundary between caption support, course-arc inference, background source support, and claims that still need human checking.",
+    "why_matters": "Source discipline matters because mathematical explanation should not become louder than the evidence, especially with auto-captions and one missing caption file.",
+    "false_move": "The false move is to treat a reference link as proof that every surrounding explanatory sentence was stated in the lecture.",
+    "reader_test": "Can the reader quote the exact claim, name the evidence behind it, and rewrite the sentence if the evidence is weaker?",
+    "concepts": [
+      "topology-vs-geometry",
+      "invariant",
+      "poincare-hopf"
+    ]
+  }
+]

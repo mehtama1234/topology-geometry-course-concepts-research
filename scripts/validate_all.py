@@ -399,6 +399,31 @@ def main():
         if missing:
             fail(f"oral exam {row.get('title')} unknown concepts: {missing}")
 
+    change_ledger_rows = data.get("change_ledger_rows") or []
+    required_ledger_titles = {
+        "Paper strip to global surface fact",
+        "Messy route to legal deformation",
+        "Visible crossings to signed evidence",
+        "Cell drawing to Euler characteristic",
+        "Square diagram to quotient surface",
+        "Map rule to fixed-point evidence",
+        "Arrow field to local index",
+        "Local defects to Poincare-Hopf",
+        "Machine motion to configuration space",
+        "Source sentence to supported claim",
+    }
+    if {row.get("title") for row in change_ledger_rows} != required_ledger_titles:
+        fail("change ledger rows do not match required case set")
+    for row in change_ledger_rows:
+        for field in ["object", "legal_change", "protected_fact", "why_matters", "false_move", "reader_test"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"change ledger {row.get('title')} {field} too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"change ledger {row.get('title')} needs concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"change ledger {row.get('title')} unknown concepts: {missing}")
+
     family_ids = {family["id"] for family in data["families"]}
     proof_moves = data.get("proof_moves") or []
     if len(proof_moves) < 5:
@@ -564,7 +589,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "change-ledger.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -619,6 +644,14 @@ def main():
         fail("oral exam page needs seven cards")
     if len(words(re.sub(r"<[^>]+>", " ", oral_exam))) < 1500:
         fail("oral exam page too thin")
+    change_ledger = (SITE / "change-ledger.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Change Ledger", "Object:", "Legal change:", "Protected fact:", "Why it matters:", "False move:", "Reader test:", "The Ledger Test"]:
+        if phrase not in change_ledger:
+            fail(f"change ledger page missing phrase: {phrase}")
+    if change_ledger.count("<article") < 10:
+        fail("change ledger page needs ten cards")
+    if len(words(re.sub(r"<[^>]+>", " ", change_ledger))) < 2100:
+        fail("change ledger page too thin")
     lecture_spine_page = (SITE / "lecture-spine.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Lecture Spine", "Object:", "Plain question:", "Legal move:", "Surviving fact:", "Why later lectures need it:"]:
         if phrase not in lecture_spine_page:
