@@ -946,123 +946,123 @@ CONCEPT_WORKUPS = {
 CONCEPT_ANCHORS = {
     "generic-position": {
         "course_moment": "In the intersection lectures, a messy meeting is first nudged into clean separate meetings. That small cleanup is not cosmetic. It is what lets each meeting receive a sign or be paired with another meeting.",
-        "principle": "A proof should count ordinary events whose behavior survives small legal motion, because accidental coincidences can hide the event that actually carries evidence.",
-        "reader_question": "If the picture is nudged a little, which events remain readable, and which exact coincidences were only making the drawing harder to audit?",
+        "principle": "A proof should count ordinary events whose behavior survives small legal motion, because accidental coincidences can hide the event that actually carries evidence. The cleanup is part of making the evidence trustworthy.",
+        "reader_question": "If the picture is nudged a little, which events remain readable, which exact coincidences disappear, and why was the cleaned picture allowed to answer the original question?",
     },
     "deformation": {
         "course_moment": "The disk path puzzle asks whether boundary pairs can be joined without crossings. The useful move is to slide and smooth paths while keeping endpoint order and the no-crossing rule intact.",
-        "principle": "A picture can be simplified only after the allowed motion and the protected fact have both been named.",
-        "reader_question": "What did the motion preserve, and would the answer change if an endpoint moved past another endpoint or a path crossed a forbidden obstacle?",
+        "principle": "A picture can be simplified only after the allowed motion and the protected fact have both been named. Without that contract, simplification may silently solve a different problem.",
+        "reader_question": "What did the motion preserve, and would the answer change if an endpoint moved past another endpoint or a path crossed a forbidden obstacle during the simplification?",
     },
     "invariant": {
         "course_moment": "The Mobius strip keeps one-sided behavior while it bends, and signed intersections keep a total while pairs appear or vanish. Both are receipts for what survived a legal change.",
         "principle": "The useful fact is not the one most visible in the drawing; it is the one that remains fixed under the moves the problem allows.",
-        "reader_question": "What fact is being carried from the original picture to the simplified one, and why is that fact allowed to speak for both pictures?",
+        "reader_question": "What fact is being carried from the original picture to the simplified one, why does legal motion preserve it, and why may that fact speak for both pictures?",
     },
     "topology-vs-geometry": {
         "course_moment": "A paper strip has lengths and bends, but the Mobius lesson depends on the end-gluing rule. A vector field has arrow sizes, but the index lesson depends on how nearby directions turn.",
-        "principle": "The right description is the one that keeps the constraint the question needs and leaves aside details that can change without changing the answer.",
-        "reader_question": "Is the problem asking about measurement, or is it asking about routes, gluing, sides, holes, signs, or forced agreement?",
+        "principle": "The right description is the one that keeps the constraint the question needs and leaves aside details that can change without changing the answer. The model should match the question.",
+        "reader_question": "Is the problem asking about measurement, or is it asking about routes, gluing, sides, holes, signs, or forced agreement that survives legal change in the problem?",
     },
     "euler-characteristic": {
         "course_moment": "When a surface is divided into vertices, edges, and faces, extra internal cuts change the raw counts. The alternating total is built so those artificial changes cancel.",
-        "principle": "A count earns trust when it forgets the chosen bookkeeping device and remembers the surface being booked.",
-        "reader_question": "Which changes came only from the chosen decomposition, and how does the alternating count cancel those changes?",
+        "principle": "A count earns trust when it forgets the chosen bookkeeping device and remembers the surface being booked. The arithmetic must ignore artificial subdivisions while preserving surface information.",
+        "reader_question": "Which changes came only from the chosen decomposition, how does the alternating count cancel those changes, and what surface fact remains after the cancellation is finished?",
     },
     "triangulation": {
         "course_moment": "Surface classification needs a smooth object to become countable. Triangulation supplies a finite ledger, then later checks that the answer does not belong only to that one ledger.",
-        "principle": "A finite drawing can support a proof when the final fact survives replacing one finite drawing by another.",
-        "reader_question": "Which part of the argument uses the chosen pieces, and which part proves the conclusion belongs to the surface instead?",
+        "principle": "A finite drawing can support a proof when the final fact survives replacing one finite drawing by another. The pieces are useful only if the result does not depend on that one choice.",
+        "reader_question": "Which part of the argument uses the chosen pieces, and which part proves the conclusion belongs to the surface instead of the particular triangulation used?",
     },
     "graph-planarity": {
         "course_moment": "The boundary-pair disk problem is not settled by one failed drawing. The obstruction must show that every legal drawing of the required connections runs into the same shortage of room.",
-        "principle": "A connection demand and a surface's available room must be judged together; drawing failure is not yet mathematical impossibility.",
-        "reader_question": "What required connections are fixed, what surface carries them, and what protected fact blocks all crossing-free attempts?",
+        "principle": "A connection demand and a surface's available room must be judged together; drawing failure is not yet mathematical impossibility. The obstruction must belong to every legal drawing.",
+        "reader_question": "What required connections are fixed, what surface carries them, and what protected fact blocks all crossing-free attempts rather than only defeating one attempted sketch?",
     },
     "knots-and-links": {
         "course_moment": "Off-center Mobius cuts can leave pieces linked. The important event is not that the strips look tangled, but that separating them would require a forbidden pass-through.",
-        "principle": "A loop in space carries embedding information: how it sits inside surrounding room matters even when its exact shape changes.",
-        "reader_question": "What motion is allowed for the loops, and where would an attempted simplification secretly pass one strand through another?",
+        "principle": "A loop in space carries embedding information: how it sits inside surrounding room matters even when its exact shape changes. Legal motion may bend the loop without erasing its placement history.",
+        "reader_question": "What motion is allowed for the loops, where would an attempted simplification secretly pass one strand through another, and why is that pass-through forbidden?",
     },
     "winding-linking": {
         "course_moment": "A route around a hole or another loop may stretch and wiggle while still going around. Later signed counts refine this by letting opposite turns cancel.",
-        "principle": "Some counts record a relationship between objects, not a size of one object; the relationship survives until a forbidden crossing or break occurs.",
-        "reader_question": "What is being gone around, what direction is recorded, and what legal move would be needed to change that aroundness?",
+        "principle": "Some counts record a relationship between objects, not a size of one object; the relationship survives until a forbidden crossing or break occurs. The count belongs to the placement relation.",
+        "reader_question": "What is being gone around, what direction is recorded, and what legal move would be needed to change that aroundness without breaking the stated rules?",
     },
     "boundary-orientation": {
         "course_moment": "The Mobius strip shows that every small patch can look two-sided while a full trip reverses the side choice. Signed intersections later require that this reversal not happen.",
-        "principle": "Local direction choices matter only if they can be carried consistently through the whole object and across any boundary terms.",
-        "reader_question": "Can the chosen side or direction travel all the way around and come back agreeing with itself?",
+        "principle": "Local direction choices matter only if they can be carried consistently through the whole object and across any boundary terms. A sign rule needs that global agreement.",
+        "reader_question": "Can the chosen side or direction travel all the way around and come back agreeing with itself, and what later signed count depends on that agreement?",
     },
     "gauss-bonnet": {
         "course_moment": "The course's local-to-global habit appears when local bending or turning is summed and compared with a whole-surface number, instead of being treated as isolated measurements.",
-        "principle": "Local geometric contributions can be free one by one while their total is constrained by the shape carrying them.",
-        "reader_question": "What local quantities are being added, and what boundary or corner terms must be included before the total can be trusted?",
+        "principle": "Local geometric contributions can be free one by one while their total is constrained by the shape carrying them. The whole surface controls the finished account.",
+        "reader_question": "What local quantities are being added, and what boundary or corner terms must be included before the total can be trusted as whole-surface evidence?",
     },
     "vector-field-index": {
         "course_moment": "Around a source, sink, or saddle, nearby arrows turn in a pattern that can be read on a small loop. That turning becomes a signed local count.",
-        "principle": "A failure of motion can carry evidence through the behavior around it, not only through the dot where the arrow vanishes.",
-        "reader_question": "If you walk once around the defect, how do the arrows turn, and why does that local count survive cleanup of the field?",
+        "principle": "A failure of motion can carry evidence through the behavior around it, not only through the dot where the arrow vanishes. The nearby turning is the countable information.",
+        "reader_question": "If you walk once around the defect, how do the arrows turn, and why does that local count survive cleanup of the surrounding vector field?",
     },
     "fixed-points": {
         "course_moment": "The graph of a map and the diagonal turn the question f(x) = x into a meeting problem. A fixed point is no longer hidden inside a rule; it is a visible intersection.",
-        "principle": "A rule can be made into a shape, and self-agreement can be tested by comparing that shape with the diagonal.",
-        "reader_question": "What is the graph recording, what is the diagonal recording, and why does their meeting mean the original rule fixes a point?",
+        "principle": "A rule can be made into a shape, and self-agreement can be tested by comparing that shape with the diagonal. This turns solving an equation into reading a meeting.",
+        "reader_question": "What is the graph recording, what is the diagonal recording, and why does their meeting mean the original rule sends some point back to itself?",
     },
     "configuration-space": {
         "course_moment": "In applications, a physical motion is replaced by the space of all possible states. Legal motion becomes a path, and forbidden states become missing regions or walls.",
-        "principle": "A hard motion problem can become a shape-of-possibilities problem when every allowed state is represented honestly.",
-        "reader_question": "What data describe one complete state, what states are forbidden, and what path in the state space would perform the motion?",
+        "principle": "A hard motion problem can become a shape-of-possibilities problem when every allowed state is represented honestly. The state space must keep the real freedoms and restrictions.",
+        "reader_question": "What data describe one complete state, what states are forbidden, and what path in the state space would perform the motion without leaving the model?",
     },
     "duality": {
         "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question.",
-        "principle": "Changing representation is valid when the relationships needed by the proof can be read both before and after the change.",
-        "reader_question": "After solving the new picture, how does the conclusion translate back to the original object or question?",
+        "principle": "Changing representation is valid when the relationships needed by the proof can be read both before and after the change. The new picture must preserve the old question.",
+        "reader_question": "After solving the new picture, how does the conclusion translate back to the original object or question, and what preserved relationship made the translation valid?",
     },
     "parity": {
-        "course_moment": "When legal changes create or remove events two at a time, the exact number may change while oddness or evenness stays fixed.",
-        "principle": "A coarse count can be strong if the problem only needs to know whether zero is possible.",
-        "reader_question": "Can every legal change alter this count only by pairs, and does the protected odd or even value block the desired outcome?",
+        "course_moment": "When legal changes create or remove events two at a time, the exact number may change while oddness or evenness stays fixed across the motion.",
+        "principle": "A coarse count can be strong if the problem only needs to know whether zero is possible. Oddness or evenness may survive when the exact number changes.",
+        "reader_question": "Can every legal change alter this count only by pairs, and does the protected odd or even value block the desired outcome in every legal drawing?",
     },
     "product-space": {
         "course_moment": "A graph of a map records input and output together; a configuration space records several freedoms together. Product thinking supplies the larger room where those combined choices live.",
-        "principle": "Independent choices form a space of combined states, and later constraints carve the actual problem out of that space.",
-        "reader_question": "Which choices vary independently, and which equations, boundaries, or forbidden states reduce the product to the space the problem really uses?",
+        "principle": "Independent choices form a space of combined states, and later constraints carve the actual problem out of that space. Product space is the starting room before restrictions are applied.",
+        "reader_question": "Which choices vary independently, and which equations, boundaries, or forbidden states reduce the product to the space the problem really uses afterward in the proof?",
     },
     "quotient-space": {
         "course_moment": "A square with edge labels can describe a cylinder, torus, or Mobius-type surface. The drawn boundary is not final until the identification rule has been read.",
-        "principle": "A space can be made by declaring points to be the same; the rule of sameness controls travel more than the visible drawing does.",
-        "reader_question": "When a traveler reaches a labeled edge, where do they re-enter, and does their direction or side choice return changed?",
+        "principle": "A space can be made by declaring points to be the same; the rule of sameness controls travel more than the visible drawing does. Identification changes routes.",
+        "reader_question": "When a traveler reaches a labeled edge, where do they re-enter, and does their direction or side choice return changed after a full loop?",
     },
     "surgery": {
         "course_moment": "Surface classification uses controlled removal and attachment to expose handles, crosscaps, and boundaries. The operation has to say exactly what boundary is left and how the replacement is glued.",
-        "principle": "Changing a space locally can reveal global structure only when the local replacement is accounted for exactly.",
-        "reader_question": "What piece was removed, what boundary did it leave, what was attached, and which global feature changed as a result?",
+        "principle": "Changing a space locally can reveal global structure only when the local replacement is accounted for exactly. The boundary left behind controls what attachment is legal.",
+        "reader_question": "What piece was removed, what boundary did it leave, what was attached, and which global feature changed or survived as a result of that operation?",
     },
     "manifold": {
-        "course_moment": "A sphere, torus, and Mobius band all look ordinary close up, yet they differ in loops, side behavior, and vector-field demands.",
-        "principle": "Local ordinariness lets the course draw and count small events, while global shape decides whether those local choices can agree everywhere.",
-        "reader_question": "Which part of the reasoning uses ordinary local neighborhoods, and where does the whole space add a constraint the local view cannot see?",
+        "course_moment": "A sphere, torus, and Mobius band all look ordinary close up, yet they differ in loops, side behavior, and vector-field demands across the whole space.",
+        "principle": "Local ordinariness lets the course draw and count small events, while global shape decides whether those local choices can agree everywhere across the finished space.",
+        "reader_question": "Which part of the reasoning uses ordinary local neighborhoods, and where does the whole space add a constraint the local view cannot see by itself?",
     },
     "intersection-number": {
-        "course_moment": "Lecture 8 counts clean meetings with signs so that a positive and negative pair can appear or vanish without changing the total.",
-        "principle": "The count is protected because local birth and cancellation rules have been built into the arithmetic.",
-        "reader_question": "Where do the signs come from, and why does a newly born pair contribute zero to the total evidence?",
+        "course_moment": "Lecture 8 counts clean meetings with signs so that a positive and negative pair can appear or vanish without changing the total during legal deformation.",
+        "principle": "The count is protected because local birth and cancellation rules have been built into the arithmetic. The number remembers forced intersection rather than every visible crossing.",
+        "reader_question": "Where do the signs come from, and why does a newly born positive-negative pair contribute zero to the total evidence being preserved under deformation?",
     },
     "brouwer-fixed-point": {
         "course_moment": "For a continuous self-map of a filled ball, Brouwer says at least one point cannot escape itself. The course reads this as shape forcing existence without giving a formula for the point.",
-        "principle": "The filled domain and the continuity of the rule can block a global escape plan for all points at once.",
-        "reader_question": "What would it mean for every point to avoid itself, and why do the filled ball and its boundary make that avoidance impossible?",
+        "principle": "The filled domain and the continuity of the rule can block a global escape plan for all points at once. Existence follows from the shape and rule.",
+        "reader_question": "What would it mean for every point to avoid itself, and why do the filled ball and its boundary make that avoidance impossible under continuity?",
     },
     "equilibrium": {
-        "course_moment": "In the dynamics lectures, an equilibrium is where the arrow vanishes, but the useful evidence is how nearby arrows turn around that vanishing point.",
-        "principle": "A stopped state matters mathematically when its surrounding arrow pattern can be counted and compared with the whole surface.",
-        "reader_question": "What does the arrow field do around the equilibrium, and what signed evidence does that local pattern contribute?",
+        "course_moment": "In the dynamics lectures, an equilibrium is where the arrow vanishes, but the useful evidence is how nearby arrows turn around that vanishing point locally.",
+        "principle": "A stopped state matters mathematically when its surrounding arrow pattern can be counted and compared with the whole surface. The local failure enters a total.",
+        "reader_question": "What does the arrow field do around the equilibrium, and what signed evidence does that local pattern contribute to the whole-surface account of motion?",
     },
     "poincare-hopf": {
         "course_moment": "Poincare-Hopf adds every isolated vector-field index and compares the sum with Euler characteristic. Local motion failures must answer to the surface carrying them.",
-        "principle": "The whole surface controls the total of local defects, so dynamics can be constrained before individual trajectories are solved.",
-        "reader_question": "Have all defects been counted with signs, and what total does the underlying surface require?",
+        "principle": "The whole surface controls the total of local defects, so dynamics can be constrained before individual trajectories are solved. Shape sets a demand on motion.",
+        "reader_question": "Have all defects been counted with signs, and what total does the underlying surface require from that complete list of local failures in the field?",
     },
 }
 
@@ -3302,7 +3302,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 12 words, every concept anchor field to clear 25 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

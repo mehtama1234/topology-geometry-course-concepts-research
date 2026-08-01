@@ -146,7 +146,7 @@ def main():
                 fail(f"concept {concept['id']} workup {field} too thin")
         anchor = concept.get("anchor") or {}
         for field in ["course_moment", "principle", "reader_question"]:
-            if len(words(anchor.get(field))) < 14:
+            if len(words(anchor.get(field))) < 25:
                 fail(f"concept {concept['id']} anchor {field} too thin")
         appearances = concept.get("appearances") or []
         if len(appearances) < 2:
