@@ -108,7 +108,7 @@
     },
     {
       "requirement": "Change ledger",
-      "evidence": "10 change-ledger cases separate legal change from false motion. The 1275 words ask the reader to say what object changed, what fact survived, why the survival matters, and which tempting move would solve a different problem.",
+      "evidence": "10 change-ledger cases separate legal change from false motion. The 2018 words ask the reader to say what object changed, what fact survived, why the survival matters, and which tempting move would solve a different problem.",
       "status": "met"
     },
     {
@@ -221,7 +221,7 @@
     "oral_exam_prompts": 7,
     "oral_exam_words": 1570,
     "change_ledger_rows": 10,
-    "change_ledger_words": 1275,
+    "change_ledger_words": 2018,
     "assumption_ledger_rows": 10,
     "assumption_ledger_words": 1363,
     "counterexample_gallery_rows": 10,
