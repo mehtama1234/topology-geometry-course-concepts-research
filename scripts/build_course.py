@@ -105,6 +105,37 @@ THEME_DEPTH = {
 }
 
 
+THEME_ESSAYS = {
+    "see-by-deforming": [
+        "Seeing by deformation is the course's most important habit because it changes what a problem is allowed to look like. A hard drawing may contain too many accidental details: a curve wiggles, a strip bends in space, a handle is drawn awkwardly, or a field has defects in inconvenient places. Deformation says that if the real question survives a legal motion, then the picture may be moved until the structure is easier to see. The proof is not the final pretty picture. The proof is the whole legal path from the original picture to the simpler one.",
+        "This theme starts with the Mobius strip and disk path puzzle, but it does not stay there. Surface classification uses deformation and surgery to reduce surfaces to standard pieces. Intersection number is meaningful because it survives deformation. Fixed-point theory uses graphs and diagonals that can be compared under motion. Vector-field index survives cleanup of an arrow pattern. The theme teaches disciplined flexibility: move freely only after deciding what cannot change.",
+    ],
+    "count-what-survives": [
+        "Counting what survives is the course's answer to unreliable pictures. A visible crossing count can change when curves move. A raw cell count can change when a surface is subdivided. A local arrow pattern can be redrawn. The course does not give up on counting; it designs better counts. Alternating signs, plus-minus intersections, parity, and index are all ways of making fake changes cancel while the real obstruction remains.",
+        "The theme becomes richer as the course progresses. Euler characteristic is the first major stable count for surfaces. Intersection number turns meetings into signed evidence. Poincare-Hopf turns vector-field defects into a total controlled by the surface. The underlying first-principles idea is simple: if a number survives every allowed change, then it can prove impossibility, existence, or forced behavior. The hard work is choosing the right number.",
+        "A reader should leave this theme asking not 'what can I count?' but 'what count is protected by the rules of this problem?'",
+    ],
+    "local-to-global": [
+        "Local-to-global thinking is the reason the course begins with objects like the Mobius strip. Every small patch of the strip looks ordinary, yet the whole strip has one side. Every small patch of a sphere can carry a tangent arrow, yet a full nonzero arrow field on the sphere is impossible. Local evidence is necessary, but it is not sufficient. The global gluing of all local pieces can impose a condition no single patch reveals.",
+        "This theme threads through orientation, surface classification, Euler characteristic, Gauss-Bonnet-style total turning, vector-field index, and Poincare-Hopf. Each case asks how local facts add up. Sometimes the local facts are patches of a surface. Sometimes they are crossings. Sometimes they are arrow defects. The recurring lesson is that the whole object can have fewer choices than its pieces seem to have independently.",
+    ],
+    "generic-before-exception": [
+        "Generic-before-exception is the course's way of keeping proofs honest around special accidents. A drawing with perfect tangency or a triple crossing may look interesting, but it may be unstable. A tiny perturbation can split the event into ordinary pieces. The course therefore studies the ordinary case first: clean intersections, isolated defects, and controlled pair creation or cancellation. This is not avoiding difficulty. It is exposing the stable mechanism.",
+        "Exceptional cases still matter, but they are best understood as boundaries between ordinary cases. When two intersections are born together, the singular moment is important because it explains why the signed count does not change. When equilibria are not isolated, the field must be cleaned up before index makes sense. This theme protects the reader from proving a theorem about a coincidence instead of proving a theorem about the shape.",
+    ],
+    "pictures-to-proofs": [
+        "Pictures-to-proofs is the theme that makes Tokieda's course distinctive. The drawings and demonstrations are not illustrations pasted onto the mathematics afterward. They are often the place where the reasoning happens. A strip cut, a square with edge identifications, a handle slide, a graph meeting a diagonal, or a vector field around a defect can show the allowed moves and the protected quantity directly.",
+        "A picture becomes proof-bearing only when it makes its rules visible. The reader must know which parts can move, which parts are fixed, what counts as crossing, how edges are glued, where signs come from, and what quantity survives. Otherwise the picture may be memorable but mathematically weak. By the final lecture, pictorial thinking names the course's real discipline: use pictures that carry constraints, not pictures that merely look suggestive.",
+        "This is why the course can stay plain without becoming shallow: the picture does real work when its constraints are explicit.",
+    ],
+    "shape-as-machine": [
+        "Shape-as-machine is the theme that connects topology to behavior. A shape is not only something to classify; it can force motion, block motion, or guarantee a special state. A closed ball can force a fixed point. A sphere can force a vector-field defect. A configuration space can show that a physical motion is blocked because no legal path exists through the space of possibilities.",
+        "This theme is why the course can move from paper strips to dynamical systems without changing its soul. The same proof engine keeps returning: identify the space, identify the rule or motion, decide the allowed changes, and find the protected obstruction. The shape then behaves like a machine of constraints. It does not compute every detail of motion, but it can make certain outcomes unavoidable.",
+        "The result is a practical kind of mathematics: understand the shape of possibility, and some behavior follows before calculation begins.",
+    ],
+}
+
+
 SUBTHEMES = [
     ("allowed-moves", "Allowed moves", "First decide what changes are legal. Without that rule, no invariant means anything."),
     ("invariant-receipts", "Invariant receipts", "An invariant is a receipt for what survived the trip from one picture to another."),
@@ -961,6 +992,7 @@ def build_quality_audit(data):
     lecture_examples = sum(len(l["deep"]["examples"]) for l in data["lectures"])
     lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
+    theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -979,7 +1011,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts with essay sections, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have validated depth fields.",
+            "evidence": f"{stats['concepts']} concepts with essay sections, {stats['themes']} themes with essay sections, {stats['subthemes']} subthemes, and {stats['families']} method families all have validated depth fields.",
             "status": "met",
         },
         {
@@ -1009,6 +1041,7 @@ def build_quality_audit(data):
             "lecture_examples": lecture_examples,
             "lecture_essay_words": lecture_essay_words,
             "concept_essay_words": concept_essay_words,
+            "theme_essay_words": theme_essay_words,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -1106,7 +1139,7 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
     for t in data["themes"]:
         related = [c for c in data["concepts"] if c["theme"] == t["id"]]
         lecture_links = "".join(f'<a class="pill" href="lecture-{n:02d}.html">Lecture {n:02d}</a>' for n in t["depth"]["lectures"])
-        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class="lecture"><h2>Theme Essay</h2>{paragraph_block(t['essay'])}</section><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("theme", t["id"])).write_text(page(t["title"], body, "Themes"), encoding="utf-8")
 
     body = "<h1>Subthemes</h1><p class='lead'>Subthemes are the smaller recurring moves inside the larger course habits: the contracts, counts, signs, boundaries, and modeling choices that make the arguments work.</p><div class='grid'>" + "".join(card(s["title"], s["depth"]["problem"], slug_page("subtheme", s["id"]), "Subtheme") for s in data["subthemes"]) + "</div>"
@@ -1131,7 +1164,7 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1192,6 +1225,7 @@ def main():
     for theme in THEMES:
         enriched = dict(theme)
         enriched["depth"] = THEME_DEPTH[theme["id"]]
+        enriched["essay"] = THEME_ESSAYS[theme["id"]]
         themes.append(enriched)
     subthemes = []
     for i, t, p in SUBTHEMES:

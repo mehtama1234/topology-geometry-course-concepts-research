@@ -70,6 +70,9 @@ def main():
                 fail(f"theme {theme['id']} depth {field} too thin")
         if len(depth.get("lectures") or []) < 4:
             fail(f"theme {theme['id']} needs lecture thread")
+        theme_essay_words = sum(len(words(p)) for p in theme.get("essay") or [])
+        if theme_essay_words < 140:
+            fail(f"theme {theme['id']} essay too thin")
 
     for subtheme in data["subthemes"]:
         depth = subtheme.get("depth") or {}
