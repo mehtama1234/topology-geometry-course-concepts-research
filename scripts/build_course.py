@@ -4060,6 +4060,17 @@ def varied(seed, options):
     return options[sum(ord(ch) for ch in str(seed)) % len(options)]
 
 
+def plain_fragment(text, prefixes):
+    cleaned = (text or "").strip()
+    for prefix in prefixes:
+        if cleaned.lower().startswith(prefix.lower()):
+            cleaned = cleaned[len(prefix):].lstrip(" :;,-")
+            if cleaned and cleaned[0].islower():
+                cleaned = cleaned[0].upper() + cleaned[1:]
+            break
+    return cleaned
+
+
 def build_lecture_answer_guide(lecture, spine_row):
     examples = lecture["deep"]["examples"]
     number = lecture["lecture"]
@@ -4141,11 +4152,13 @@ def build_concept_self_check(concept):
     anchor = concept["anchor"]
     depth = concept["depth"]
     cid = concept["id"]
+    protected = plain_fragment(work["protected"], ["The protected fact is", "The protected fact"])
+    failure = plain_fragment(work["breaks_if"], ["It breaks if", "It breaks when", "The idea breaks if"])
     return {
-        "object_check": f"{varied((cid, 'object'), ['Begin by naming the object in ordinary words:', 'The object has to come first:', 'A usable explanation starts with the thing itself:', 'Before the term appears, identify'])} {work['object']} Then tie that object to the course moment, not to the title alone: {anchor['course_moment']} The reader should be able to say what is present before any named theorem is allowed to do work.",
-        "operation_check": f"{varied((cid, 'operation'), ['Say what the course is allowed to do with the object:', 'Next state the permitted operation:', 'The action to justify is', 'The legal change is'])} {work['operation']} Also say why this operation is legal for the problem at hand. Describe the permitted change before trusting the outcome, so the explanation does not hide the main step inside a technical label.",
-        "protected_check": f"{varied((cid, 'protected'), ['Name the thing that must survive the operation:', 'The preserved evidence is', 'The durable fact to carry forward is', 'Keep this fact visible:'])} {work['protected']} Connect that surviving fact to the principle in the course: {anchor['principle']} This is the heart of the mathematical idea, because the conclusion only has force when the evidence is carried through the allowed move.",
-        "failure_check": f"{varied((cid, 'failure'), ['Say when the idea stops helping:', 'The failure case is', 'This explanation must know its limit:', 'The claim breaks under this condition:'])} {work['breaks_if']} Also name the beginner mistake it avoids: {depth['beginner_trap']} This check keeps the concept honest by showing which hidden assumption would change the problem instead of clarifying it.",
+        "object_check": f"First say what the object is in ordinary words: {work['object']} Then anchor that object in the course moment: {anchor['course_moment']} The explanation should point to the thing being reasoned about before any theorem name appears.",
+        "operation_check": f"Next say what is allowed to happen to that object: {work['operation']} The answer also has to say why that move is legal here. Without that permission, the operation may be changing the problem instead of explaining it.",
+        "protected_check": f"Now name the evidence that must survive: {protected} Connect that evidence to the course principle: {anchor['principle']} This is the mathematical core, because the conclusion only has force if the evidence lives through the allowed move.",
+        "failure_check": f"Finally state when the idea reaches its limit: {failure} Also name the beginner mistake it avoids: {depth['beginner_trap']} This check matters because the same words can become false when a hidden assumption changes.",
     }
 
 
@@ -4153,11 +4166,13 @@ def build_theme_answer_guide(theme):
     lens = theme["lens"]
     depth = theme["depth"]
     tid = theme["id"]
+    notices = plain_fragment(lens["notices"], ["This lens notices", "It notices"])
+    ignores = plain_fragment(lens["ignores"], ["It ignores", "This lens ignores"])
     return {
-        "notice_answer": f"{varied((tid, 'notice'), ['Say what this theme trains the reader to notice:', 'The theme starts by making this visible:', 'The useful habit is to notice', 'This theme earns its place by noticing'])} {lens['notices']} Connect that habit to the course problem, not only to one lecture: {depth['problem']} The answer should name the evidence the theme keeps visible before any conclusion is trusted.",
-        "ignore_answer": f"{varied((tid, 'ignore'), ['Say what this theme deliberately sets aside:', 'The distraction to put aside is', 'The theme also refuses to chase', 'Leave this out of the main account:'])} {lens['ignores']} Explain why those details may distract from the mathematical question. The reader should be able to separate a memorable picture from the part of the picture that carries proof.",
+        "notice_answer": f"Say what this theme trains the reader to notice: {notices} Connect that habit to the course problem, not only to one lecture: {depth['problem']} The answer should name the evidence the theme keeps visible before any conclusion is trusted.",
+        "ignore_answer": f"Say what the theme deliberately sets aside: {ignores} Then explain why those details may distract from the mathematical question. The useful separation is between the memorable picture and the part of the picture that carries proof.",
         "transfer_answer": f"{varied((tid, 'transfer'), ['Explain how the theme changes the problem:', 'The transfer across lectures works like this:', 'The theme shifts the problem by doing this:', 'Carry the theme forward through this change:'])} {lens['changes_problem']} Then connect that shift to the course arc: {depth['course_arc']} The goal is to show how the same habit travels from early examples to later theorem-level uses.",
-        "test_answer": f"{varied((tid, 'test'), ['Pass the reader test in plain words:', 'The page-level check is', 'The theme is understood when the reader can answer', 'Use this question to test the theme:'])} {lens['reader_test']} Include the important detail: {depth['important_detail']} That detail is what keeps the theme from becoming a loose slogan.",
+        "test_answer": f"Use this question to test the theme: {lens['reader_test']} Include the important detail: {depth['important_detail']} That detail is what keeps the theme from becoming a loose slogan.",
     }
 
 
@@ -4166,11 +4181,15 @@ def build_subtheme_answer_guide(subtheme):
     bridge = subtheme["bridge"]
     depth = subtheme["depth"]
     sid = subtheme["id"]
+    look = plain_fragment(routine["look_for"], ["Look first for", "Look for"])
+    ask = plain_fragment(routine["ask"], ["Ask"])
+    use = plain_fragment(routine["use"], ["Use this routine before", "Use this routine when", "Use this routine whenever", "Use singular moments as", "Use"])
+    mistake = plain_fragment(routine["mistake"], ["The mistake is", "The common wrong turn is"])
     return {
-        "look_answer": f"{varied((sid, 'look'), ['Begin with what to look for:', 'The first visual cue is', 'On the page, look for', 'The routine starts by finding'])} {routine['look_for']} Tie that search to the course moment: {bridge['course_moment']} The reader should be able to point to the exact feature in a lecture page, not only name the subtheme.",
-        "ask_answer": f"{varied((sid, 'ask'), ['Ask the working question before using the idea:', 'The question that makes the routine active is', 'Before applying the subtheme, ask', 'The reader should pause over this question:'])} {routine['ask']} Explain the thinking shift: {bridge['thinking_shift']} That shift is what turns the subtheme from a label into a way of reading a proof.",
-        "use_answer": f"{varied((sid, 'use'), ['Use the routine in this setting:', 'The routine belongs wherever this happens:', 'Apply this reading move when', 'The right time to use it is'])} {routine['use']} Connect that use to the first-principles reason: {depth['first_principles']} The answer should make clear what problem the routine helps solve.",
-        "mistake_answer": f"{varied((sid, 'mistake'), ['Name the mistake to avoid:', 'The common wrong turn is', 'The routine protects against this error:', 'Do not let the reader stop here:'])} {routine['mistake']} It should be able to answer the reader test: {bridge['reader_test']} This keeps the subtheme tied to an action the reader can perform on a page.",
+        "look_answer": f"Begin by looking for this: {look} Tie that search to the course moment: {bridge['course_moment']} The check is whether the reader can point to the exact feature in a lecture page, not only to the subtheme name.",
+        "ask_answer": f"Before applying the subtheme, ask this in plain words: {ask} Explain the thinking shift: {bridge['thinking_shift']} That shift turns the subtheme from a label into a way of reading a proof.",
+        "use_answer": f"Use the routine in this setting: {use} Connect that use to the first-principles reason: {depth['first_principles']} The answer should make clear what problem the routine helps solve.",
+        "mistake_answer": f"Name the mistake to avoid: {mistake} Then answer the reader test: {bridge['reader_test']} This keeps the subtheme tied to an action the reader can perform on a page.",
     }
 
 
@@ -4179,12 +4198,15 @@ def build_family_answer_guide(family):
     playbook = family["playbook"]
     depth = family["depth"]
     fid = family["id"]
+    evidence = plain_fragment(contract["evidence"], ["The protected evidence is", "The protected evidence"])
+    output = plain_fragment(contract["output"], ["The output is", "The output"])
+    failure = plain_fragment(contract["failure_test"], ["The method fails when", "It fails when", "The contract breaks if"])
     return {
-        "input_answer": f"{varied((fid, 'input'), ['Start by naming the input:', 'The method receives this kind of situation:', 'Before the method begins, identify', 'The input side of the contract is'])} {contract['input']} Connect that input to the human problem: {depth['human_problem']} The method cannot be used honestly until the reader knows what object or situation is being fed into it.",
-        "action_answer": f"{varied((fid, 'action'), ['State the action:', 'The method acts by doing this:', 'The playbook move has to be named:', 'The action side of the contract is'])} {contract['action']} Also name the playbook move: {playbook['move']} The answer should describe what is being done before any method name is allowed to carry the reasoning.",
-        "evidence_answer": f"{varied((fid, 'evidence'), ['Protect the evidence:', 'The method keeps this evidence alive:', 'The preserved part of the contract is', 'The proof depends on this evidence:'])} {contract['evidence']} Explain the payoff: {playbook['payoff']} The method works only because this evidence survives the allowed action and can still answer the starting question.",
-        "output_answer": f"{varied((fid, 'output'), ['Name the output:', 'The method is supposed to produce', 'At the end, the reader should have', 'The output side of the contract is'])} {contract['output']} Connect that output to how the method works: {depth['how_it_works']} The reader should be able to say what has been proved, counted, blocked, or forced at the end.",
-        "failure_answer": f"{varied((fid, 'failure'), ['Know the failure test:', 'The method fails this way:', 'The contract breaks if', 'The guardrail is'])} {contract['failure_test']} Connect that test to the playbook failure: {playbook['failure']} This is the guardrail that prevents the method from solving a different problem.",
+        "input_answer": f"Start by naming the input: {contract['input']} Connect that input to the human problem: {depth['human_problem']} The method cannot be used honestly until the reader knows what object or situation is being fed into it.",
+        "action_answer": f"State the action before naming the method: {contract['action']} Then name the playbook move: {playbook['move']} The answer should describe what is being done before any method name is allowed to carry the reasoning.",
+        "evidence_answer": f"Protect this evidence: {evidence} Explain the payoff: {playbook['payoff']} The method works only because this evidence survives the allowed action and can still answer the starting question.",
+        "output_answer": f"Name what the method is supposed to produce: {output} Connect that output to how the method works: {depth['how_it_works']} The reader should be able to say what has been proved, counted, blocked, or forced at the end.",
+        "failure_answer": f"Know the failure test: {failure} Connect that test to the playbook failure: {playbook['failure']} This guard keeps the method from solving a different problem.",
     }
 
 
