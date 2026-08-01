@@ -344,6 +344,31 @@ def main():
             if len(words(row.get(field))) < 8:
                 fail(f"proof move {row.get('name')} {field} too thin")
 
+    theorem_contracts = data.get("theorem_use_contracts") or []
+    if len(theorem_contracts) < 8:
+        fail("theorem use contracts need eight contracts")
+    required_contracts = {
+        "Euler characteristic",
+        "Generic position",
+        "Signed intersection number",
+        "Graph and diagonal fixed-point test",
+        "Brouwer fixed-point theorem",
+        "Vector-field index",
+        "Poincare-Hopf theorem",
+        "Configuration-space modeling",
+    }
+    if {row.get("name") for row in theorem_contracts} != required_contracts:
+        fail("theorem use contracts do not match required contract set")
+    for row in theorem_contracts:
+        for field in ["use_when", "object_needed", "allowed_move", "protected_evidence", "conclusion_it_can_force", "breaks_if", "everyday_test"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"theorem contract {row.get('name')} {field} too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"theorem contract {row.get('name')} needs concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"theorem contract {row.get('name')} unknown concepts: {missing}")
+
     references = data.get("references") or []
     if len(references) < 7:
         fail("references layer too small")
@@ -431,7 +456,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -491,6 +516,14 @@ def main():
         fail("formula reader needs seven formula cards")
     if len(words(re.sub(r"<[^>]+>", " ", formula_reader))) < 700:
         fail("formula reader too thin")
+    theorem_contract_page = (SITE / "theorem-use-contracts.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Theorem Use Contracts", "Use when:", "Object needed:", "Allowed move:", "Protected evidence:", "Conclusion it can force:", "Breaks if:", "Everyday test:", "The Misuse Test"]:
+        if phrase not in theorem_contract_page:
+            fail(f"theorem use contracts page missing phrase: {phrase}")
+    if theorem_contract_page.count("<article") < 8:
+        fail("theorem use contracts page needs eight cards")
+    if len(words(re.sub(r"<[^>]+>", " ", theorem_contract_page))) < 1500:
+        fail("theorem use contracts page too thin")
     reader_checks = (SITE / "reader-checks.html").read_text(encoding="utf-8", errors="ignore")
     if reader_checks.count("Reader check") < 11:
         fail("reader checks page needs eleven checks")

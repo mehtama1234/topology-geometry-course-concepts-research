@@ -97,6 +97,11 @@
       "status": "met"
     },
     {
+      "requirement": "Theorem-use contracts",
+      "evidence": "The Theorem Use Contracts page gives 8 use contracts with required object, allowed move, protected evidence, conclusion, break condition, everyday test, and concept links, with 1271 theorem-contract words.",
+      "status": "met"
+    },
+    {
       "requirement": "Reader checks for common failure modes",
       "evidence": "The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.",
       "status": "met"
@@ -158,6 +163,8 @@
     "synthesis_sections": 8,
     "dependency_paths": 8,
     "proof_moves": 5,
+    "theorem_use_contracts": 8,
+    "theorem_contract_words": 1271,
     "reader_checks": 11,
     "term_translations": 16,
     "term_translation_words": 1850,
@@ -168,6 +175,6 @@
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 84
+    "html_pages_before_audit_page": 85
   }
 }

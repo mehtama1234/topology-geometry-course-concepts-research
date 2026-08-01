@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Euler characteristic",
+    "use_when": "Use it when a surface has been divided into countable pieces and the question needs a whole-surface account rather than the details of one drawing.",
+    "object_needed": "The object is the completed surface together with a valid cell or triangulation account: vertices, edges, faces, and any boundary behavior that changes the ledger.",
+    "allowed_move": "The allowed move is to refine, redraw, or replace the cell division while keeping the same surface and the same boundary conditions.",
+    "protected_evidence": "The protected evidence is the alternating count. Internal refinements change separate counts, but the artificial changes cancel in the final account.",
+    "conclusion_it_can_force": "It can identify a whole-surface constraint and later control total vector-field index. It cannot by itself describe every geometric feature of the surface.",
+    "breaks_if": "It breaks if the counted pieces do not describe the actual surface, if boundary terms are ignored, or if the count is treated as belonging to one drawing rather than to the surface.",
+    "everyday_test": "Can the reader say what surface is being counted, what pieces make the account, and why changing the breakup leaves the final number fixed?",
+    "concepts": [
+      "euler-characteristic",
+      "triangulation",
+      "poincare-hopf"
+    ]
+  },
+  {
+    "name": "Generic position",
+    "use_when": "Use it when a drawing has fragile coincidences and the proof needs clean, separate events before it can count, assign signs, or inspect defects.",
+    "object_needed": "The object is the same curve, surface, map, or field after a small legal nudge that removes special alignments without changing the question.",
+    "allowed_move": "The allowed move is a tiny adjustment that keeps the protected relation, boundary rule, and surrounding space intact while removing accidental tangencies or multiple meetings.",
+    "protected_evidence": "The protected evidence is the stable pattern that remains after accidents are removed: clean meetings, isolated defects, or ordinary local behavior.",
+    "conclusion_it_can_force": "It can make a count or sign rule honest enough to use. It does not prove that special cases are irrelevant; it prepares the ordinary case and then controls how special cases are approached.",
+    "breaks_if": "It breaks if the nudge changes the object, crosses a forbidden boundary, removes a required contact, or silently changes the protected count.",
+    "everyday_test": "Can the reader name the coincidence being removed and explain why the small move leaves the original question unchanged?",
+    "concepts": [
+      "generic-position",
+      "intersection-number",
+      "vector-field-index"
+    ]
+  },
+  {
+    "name": "Signed intersection number",
+    "use_when": "Use it when two oriented objects meet cleanly and the question is whether legal motion can remove all meetings.",
+    "object_needed": "The objects are the meeting subspaces plus an orientation rule that gives each clean meeting a plus or minus sign.",
+    "allowed_move": "The allowed move is a deformation that keeps the objects in the right surrounding space and inspects births or deaths of meeting pairs.",
+    "protected_evidence": "The protected evidence is the signed total. Opposite-sign pairs can appear or disappear without changing the total.",
+    "conclusion_it_can_force": "A nonzero signed total can force some meeting to remain under legal motion. It can turn a visual crossing question into durable arithmetic.",
+    "breaks_if": "It breaks if signs have no orientation source, if meetings are not clean, or if the deformation lets the objects pass through a forbidden move.",
+    "everyday_test": "Can the reader explain where each sign comes from and why a newly born pair contributes no net evidence?",
+    "concepts": [
+      "intersection-number",
+      "boundary-orientation",
+      "generic-position"
+    ]
+  },
+  {
+    "name": "Graph and diagonal fixed-point test",
+    "use_when": "Use it when a rule sends inputs to outputs and the question is whether some input is sent back to itself.",
+    "object_needed": "The object is the graph of the rule in input-output space, together with the diagonal that records self-agreement.",
+    "allowed_move": "The allowed move is to translate the rule into its graph without changing what input, output, or equality means.",
+    "protected_evidence": "The protected evidence is the exact equivalence between graph meeting diagonal and fixed point of the original rule.",
+    "conclusion_it_can_force": "It can turn a fixed-point question into an intersection question, letting earlier meeting and continuity reasoning become available.",
+    "breaks_if": "It breaks if the graph is drawn for the wrong rule, if the diagonal does not represent equality in the same space, or if the domain has been changed.",
+    "everyday_test": "Can the reader point to one graph point and say which input and output it records, then explain why diagonal meeting means self-agreement?",
+    "concepts": [
+      "fixed-points",
+      "duality",
+      "intersection-number"
+    ]
+  },
+  {
+    "name": "Brouwer fixed-point theorem",
+    "use_when": "Use it when a continuous rule sends a closed filled ball back into itself and the goal is to prove that some point stays put.",
+    "object_needed": "The object is the closed filled ball, including its interior and boundary, plus a self-map that never sends points outside the ball.",
+    "allowed_move": "The allowed move is to use continuity and the filled shape's boundary constraint to rule out a total escape from self-agreement.",
+    "protected_evidence": "The protected evidence is the no-escape structure of the closed ball under a continuous self-map.",
+    "conclusion_it_can_force": "It can force existence of at least one fixed point without computing where that point is.",
+    "breaks_if": "It breaks if the space is not the right closed filled shape, if the rule is not continuous, or if the rule sends points outside the domain.",
+    "everyday_test": "Can the reader state the space, the rule, the inside-itself condition, and why the theorem proves existence rather than location?",
+    "concepts": [
+      "brouwer-fixed-point",
+      "fixed-points",
+      "topology-vs-geometry"
+    ]
+  },
+  {
+    "name": "Vector-field index",
+    "use_when": "Use it when an arrow field has isolated defects and the question needs a signed local account of how arrows turn around each defect.",
+    "object_needed": "The object is a vector field on a surface or state space, with one isolated defect enclosed by a small loop that contains no other defect.",
+    "allowed_move": "The allowed move is to clean or redraw the nearby arrow pattern while keeping the defect isolated and the surrounding loop meaningful.",
+    "protected_evidence": "The protected evidence is the signed turning of arrows during one trip around the defect.",
+    "conclusion_it_can_force": "It can turn a local failure of motion into countable evidence that can later be added across the whole surface.",
+    "breaks_if": "It breaks if the defect is not isolated, if another defect lies inside the loop, or if the surface carrying the arrows has been modeled incorrectly.",
+    "everyday_test": "Can the reader walk around the defect in words and say how the arrows turn during one full trip?",
+    "concepts": [
+      "vector-field-index",
+      "equilibrium",
+      "generic-position"
+    ]
+  },
+  {
+    "name": "Poincare-Hopf theorem",
+    "use_when": "Use it when every isolated vector-field defect on the right surface has been counted and the question concerns the total failure of the field.",
+    "object_needed": "The object is the entire surface carrying the vector field, plus the complete list of isolated defects and their indices.",
+    "allowed_move": "The allowed move is to add all local indices and compare that total with the Euler characteristic of the same surface.",
+    "protected_evidence": "The protected evidence is the equality between total local index and the surface's Euler characteristic.",
+    "conclusion_it_can_force": "It can force defects, forbid a nowhere-zero field on some surfaces, or show that local motion failures answer to whole-surface structure.",
+    "breaks_if": "It breaks if one defect is omitted, if the field is not on the claimed surface, if boundary behavior is ignored, or if one equilibrium is treated as the whole theorem.",
+    "everyday_test": "Can the reader name the surface, list every defect, add their signed indices, and say which Euler characteristic the total must match?",
+    "concepts": [
+      "poincare-hopf",
+      "vector-field-index",
+      "euler-characteristic"
+    ]
+  },
+  {
+    "name": "Configuration-space modeling",
+    "use_when": "Use it when a physical or moving system is too hard to inspect directly and the question can be asked as a route, barrier, fixed-point, or defect problem.",
+    "object_needed": "The object is the space of all allowed states, with enough coordinates to describe one complete state and with forbidden states removed.",
+    "allowed_move": "The allowed move is to translate physical motion into paths through the state space without adding false freedoms or removing real barriers.",
+    "protected_evidence": "The protected evidence is the shape of possible states: connected regions, holes, walls, fixed points, or total index constraints.",
+    "conclusion_it_can_force": "It can show that a motion is blocked, that a special state must exist, or that a physical behavior is constrained before detailed equations are solved.",
+    "breaks_if": "It breaks if the state space forgets a real degree of freedom, includes forbidden collisions, or lets a theorem speak about a model that no longer represents the original system.",
+    "everyday_test": "Can the reader describe one complete state, name the forbidden states, and explain how a path in the model represents real motion?",
+    "concepts": [
+      "configuration-space",
+      "product-space",
+      "fixed-points"
+    ]
+  }
+]

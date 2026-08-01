@@ -374,6 +374,98 @@ TERM_TRANSLATIONS = [
 ]
 
 
+THEOREM_USE_CONTRACTS = [
+    {
+        "name": "Euler characteristic",
+        "use_when": "Use it when a surface has been divided into countable pieces and the question needs a whole-surface account rather than the details of one drawing.",
+        "object_needed": "The object is the completed surface together with a valid cell or triangulation account: vertices, edges, faces, and any boundary behavior that changes the ledger.",
+        "allowed_move": "The allowed move is to refine, redraw, or replace the cell division while keeping the same surface and the same boundary conditions.",
+        "protected_evidence": "The protected evidence is the alternating count. Internal refinements change separate counts, but the artificial changes cancel in the final account.",
+        "conclusion_it_can_force": "It can identify a whole-surface constraint and later control total vector-field index. It cannot by itself describe every geometric feature of the surface.",
+        "breaks_if": "It breaks if the counted pieces do not describe the actual surface, if boundary terms are ignored, or if the count is treated as belonging to one drawing rather than to the surface.",
+        "everyday_test": "Can the reader say what surface is being counted, what pieces make the account, and why changing the breakup leaves the final number fixed?",
+        "concepts": ["euler-characteristic", "triangulation", "poincare-hopf"],
+    },
+    {
+        "name": "Generic position",
+        "use_when": "Use it when a drawing has fragile coincidences and the proof needs clean, separate events before it can count, assign signs, or inspect defects.",
+        "object_needed": "The object is the same curve, surface, map, or field after a small legal nudge that removes special alignments without changing the question.",
+        "allowed_move": "The allowed move is a tiny adjustment that keeps the protected relation, boundary rule, and surrounding space intact while removing accidental tangencies or multiple meetings.",
+        "protected_evidence": "The protected evidence is the stable pattern that remains after accidents are removed: clean meetings, isolated defects, or ordinary local behavior.",
+        "conclusion_it_can_force": "It can make a count or sign rule honest enough to use. It does not prove that special cases are irrelevant; it prepares the ordinary case and then controls how special cases are approached.",
+        "breaks_if": "It breaks if the nudge changes the object, crosses a forbidden boundary, removes a required contact, or silently changes the protected count.",
+        "everyday_test": "Can the reader name the coincidence being removed and explain why the small move leaves the original question unchanged?",
+        "concepts": ["generic-position", "intersection-number", "vector-field-index"],
+    },
+    {
+        "name": "Signed intersection number",
+        "use_when": "Use it when two oriented objects meet cleanly and the question is whether legal motion can remove all meetings.",
+        "object_needed": "The objects are the meeting subspaces plus an orientation rule that gives each clean meeting a plus or minus sign.",
+        "allowed_move": "The allowed move is a deformation that keeps the objects in the right surrounding space and inspects births or deaths of meeting pairs.",
+        "protected_evidence": "The protected evidence is the signed total. Opposite-sign pairs can appear or disappear without changing the total.",
+        "conclusion_it_can_force": "A nonzero signed total can force some meeting to remain under legal motion. It can turn a visual crossing question into durable arithmetic.",
+        "breaks_if": "It breaks if signs have no orientation source, if meetings are not clean, or if the deformation lets the objects pass through a forbidden move.",
+        "everyday_test": "Can the reader explain where each sign comes from and why a newly born pair contributes no net evidence?",
+        "concepts": ["intersection-number", "boundary-orientation", "generic-position"],
+    },
+    {
+        "name": "Graph and diagonal fixed-point test",
+        "use_when": "Use it when a rule sends inputs to outputs and the question is whether some input is sent back to itself.",
+        "object_needed": "The object is the graph of the rule in input-output space, together with the diagonal that records self-agreement.",
+        "allowed_move": "The allowed move is to translate the rule into its graph without changing what input, output, or equality means.",
+        "protected_evidence": "The protected evidence is the exact equivalence between graph meeting diagonal and fixed point of the original rule.",
+        "conclusion_it_can_force": "It can turn a fixed-point question into an intersection question, letting earlier meeting and continuity reasoning become available.",
+        "breaks_if": "It breaks if the graph is drawn for the wrong rule, if the diagonal does not represent equality in the same space, or if the domain has been changed.",
+        "everyday_test": "Can the reader point to one graph point and say which input and output it records, then explain why diagonal meeting means self-agreement?",
+        "concepts": ["fixed-points", "duality", "intersection-number"],
+    },
+    {
+        "name": "Brouwer fixed-point theorem",
+        "use_when": "Use it when a continuous rule sends a closed filled ball back into itself and the goal is to prove that some point stays put.",
+        "object_needed": "The object is the closed filled ball, including its interior and boundary, plus a self-map that never sends points outside the ball.",
+        "allowed_move": "The allowed move is to use continuity and the filled shape's boundary constraint to rule out a total escape from self-agreement.",
+        "protected_evidence": "The protected evidence is the no-escape structure of the closed ball under a continuous self-map.",
+        "conclusion_it_can_force": "It can force existence of at least one fixed point without computing where that point is.",
+        "breaks_if": "It breaks if the space is not the right closed filled shape, if the rule is not continuous, or if the rule sends points outside the domain.",
+        "everyday_test": "Can the reader state the space, the rule, the inside-itself condition, and why the theorem proves existence rather than location?",
+        "concepts": ["brouwer-fixed-point", "fixed-points", "topology-vs-geometry"],
+    },
+    {
+        "name": "Vector-field index",
+        "use_when": "Use it when an arrow field has isolated defects and the question needs a signed local account of how arrows turn around each defect.",
+        "object_needed": "The object is a vector field on a surface or state space, with one isolated defect enclosed by a small loop that contains no other defect.",
+        "allowed_move": "The allowed move is to clean or redraw the nearby arrow pattern while keeping the defect isolated and the surrounding loop meaningful.",
+        "protected_evidence": "The protected evidence is the signed turning of arrows during one trip around the defect.",
+        "conclusion_it_can_force": "It can turn a local failure of motion into countable evidence that can later be added across the whole surface.",
+        "breaks_if": "It breaks if the defect is not isolated, if another defect lies inside the loop, or if the surface carrying the arrows has been modeled incorrectly.",
+        "everyday_test": "Can the reader walk around the defect in words and say how the arrows turn during one full trip?",
+        "concepts": ["vector-field-index", "equilibrium", "generic-position"],
+    },
+    {
+        "name": "Poincare-Hopf theorem",
+        "use_when": "Use it when every isolated vector-field defect on the right surface has been counted and the question concerns the total failure of the field.",
+        "object_needed": "The object is the entire surface carrying the vector field, plus the complete list of isolated defects and their indices.",
+        "allowed_move": "The allowed move is to add all local indices and compare that total with the Euler characteristic of the same surface.",
+        "protected_evidence": "The protected evidence is the equality between total local index and the surface's Euler characteristic.",
+        "conclusion_it_can_force": "It can force defects, forbid a nowhere-zero field on some surfaces, or show that local motion failures answer to whole-surface structure.",
+        "breaks_if": "It breaks if one defect is omitted, if the field is not on the claimed surface, if boundary behavior is ignored, or if one equilibrium is treated as the whole theorem.",
+        "everyday_test": "Can the reader name the surface, list every defect, add their signed indices, and say which Euler characteristic the total must match?",
+        "concepts": ["poincare-hopf", "vector-field-index", "euler-characteristic"],
+    },
+    {
+        "name": "Configuration-space modeling",
+        "use_when": "Use it when a physical or moving system is too hard to inspect directly and the question can be asked as a route, barrier, fixed-point, or defect problem.",
+        "object_needed": "The object is the space of all allowed states, with enough coordinates to describe one complete state and with forbidden states removed.",
+        "allowed_move": "The allowed move is to translate physical motion into paths through the state space without adding false freedoms or removing real barriers.",
+        "protected_evidence": "The protected evidence is the shape of possible states: connected regions, holes, walls, fixed points, or total index constraints.",
+        "conclusion_it_can_force": "It can show that a motion is blocked, that a special state must exist, or that a physical behavior is constrained before detailed equations are solved.",
+        "breaks_if": "It breaks if the state space forgets a real degree of freedom, includes forbidden collisions, or lets a theorem speak about a model that no longer represents the original system.",
+        "everyday_test": "Can the reader describe one complete state, name the forbidden states, and explain how a path in the model represents real motion?",
+        "concepts": ["configuration-space", "product-space", "fixed-points"],
+    },
+]
+
+
 THEMES = [
     {
         "id": "see-by-deforming",
@@ -2884,6 +2976,7 @@ def page(title, body, current=""):
         ("concept-dependencies.html", "Dependencies"),
         ("proof-moves.html", "Proof Moves"),
         ("formula-reader.html", "Formula Reader"),
+        ("theorem-use-contracts.html", "Theorem Contracts"),
         ("reader-checks.html", "Reader Checks"),
         ("term-translator.html", "Term Translator"),
         ("paper-source-reader.html", "Paper Source Reader"),
@@ -3201,6 +3294,7 @@ def build_quality_audit(data):
     lecture_reconstruction_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", step)) for step in row["rebuild_steps"]) + sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["start_from", "self_check", "common_failure", "source_check"]) for row in data["lecture_reconstruction_drills"])
     lecture_reader_test_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["reader_test"][field])) for field in ["explain_object", "test_allowed_move", "protect_conclusion"]) for l in data["lectures"])
     lecture_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["answer_guide"][field])) for field in ["object_answer", "move_answer", "conclusion_answer"]) for l in data["lectures"])
+    theorem_contract_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["use_when", "object_needed", "allowed_move", "protected_evidence", "conclusion_it_can_force", "breaks_if", "everyday_test"]) for row in data["theorem_use_contracts"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
     concept_anchor_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["anchor"][field])) for field in ["course_moment", "principle", "reader_question"]) for c in data["concepts"])
@@ -3315,6 +3409,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Theorem-use contracts",
+            "evidence": f"The Theorem Use Contracts page gives {len(data['theorem_use_contracts'])} use contracts with required object, allowed move, protected evidence, conclusion, break condition, everyday test, and concept links, with {theorem_contract_words} theorem-contract words.",
+            "status": "met",
+        },
+        {
             "requirement": "Reader checks for common failure modes",
             "evidence": "The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.",
             "status": "met",
@@ -3377,6 +3476,8 @@ def build_quality_audit(data):
             "synthesis_sections": 8,
             "dependency_paths": len(data["concept_dependencies"]),
             "proof_moves": len(data["proof_moves"]),
+            "theorem_use_contracts": len(data["theorem_use_contracts"]),
+            "theorem_contract_words": theorem_contract_words,
             "reader_checks": 11,
             "term_translations": len(data["term_translations"]),
             "term_translation_words": term_translation_words,
@@ -3452,6 +3553,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Concept Dependencies', 'Eight paths show what a reader should understand first, what later idea depends on it, and why the dependency matters.', 'concept-dependencies.html', 'Dependencies')}
 {card('Proof Moves', 'Five reusable proof recipes show the steps: name the object, name legal moves, protect evidence, and use the conclusion without hiding the contract.', 'proof-moves.html', 'Moves')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
+{card('Theorem Contracts', 'Eight contracts state when central course results may be used: required object, allowed move, protected evidence, conclusion, break condition, and everyday test.', 'theorem-use-contracts.html', 'Contracts')}
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 {card('Term Translator', 'Sixteen formal course words translated into the job they perform in an argument, with failure tests and concept links for each one.', 'term-translator.html', 'Terms')}
 {card('Paper Source Reader', 'A first-principles guide to the course source, primary papers, and standard references: what problem each source family answers and how to read it without overclaiming.', 'paper-source-reader.html', 'Sources')}
@@ -3658,6 +3760,38 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 """
     (SITE / "formula-reader.html").write_text(page("Formula Reader", formula_body, "Formula Reader"), encoding="utf-8")
+
+    contract_cards = []
+    for row in data["theorem_use_contracts"]:
+        contract_cards.append(
+            f"""<article class="card">
+  <div class="meta">Use contract</div>
+  <h3>{esc(row['name'])}</h3>
+  <p><b>Use when:</b> {esc(row['use_when'])}</p>
+  <p><b>Object needed:</b> {esc(row['object_needed'])}</p>
+  <p><b>Allowed move:</b> {esc(row['allowed_move'])}</p>
+  <p><b>Protected evidence:</b> {esc(row['protected_evidence'])}</p>
+  <p><b>Conclusion it can force:</b> {esc(row['conclusion_it_can_force'])}</p>
+  <p><b>Breaks if:</b> {esc(row['breaks_if'])}</p>
+  <p><b>Everyday test:</b> {esc(row['everyday_test'])}</p>
+  <p>{concept_pills(row['concepts'], data['concepts'])}</p>
+</article>"""
+        )
+    contracts_body = f"""
+<h1>Theorem Use Contracts</h1>
+<p class="lead">This page says when the course's central results and methods are allowed to speak. A theorem name is not evidence by itself. The object, allowed move, protected evidence, conclusion, and break condition must all be visible.</p>
+<section class="lecture">
+  <h2>How To Use A Contract</h2>
+  <p>Before using a theorem or method, read the contract from top to bottom. First check that the required object is really present. Then check the allowed move and the evidence it protects. Only then ask what conclusion the result can force. The break condition is not a footnote; it is the line between a valid use and a wrong use with familiar words.</p>
+  <p>Use these contracts beside the formula reader and reconstruction drills. The formula reader explains what a statement says. The contract explains when that statement is allowed to be used on a live problem.</p>
+</section>
+<div class="grid two">{''.join(contract_cards)}</div>
+<section class="lecture">
+  <h2>The Misuse Test</h2>
+  <p>A result is being misused when the name appears before the object, when the allowed move is unstated, when the protected evidence is missing, or when the conclusion is stronger than the contract allows. Repair the explanation by naming the missing part rather than adding more formal vocabulary.</p>
+</section>
+"""
+    (SITE / "theorem-use-contracts.html").write_text(page("Theorem Use Contracts", contracts_body, "Theorem Contracts"), encoding="utf-8")
 
     check_rows = [
         ("The drawing is being treated as the object", "A square with edge labels, a graph of a map, or a configuration space is a code for relationships. The ink is not the final object.", "The same visible drawing can describe different spaces when the edge rule changes, so the rule has to be read before the picture can be trusted.", "What rule does this picture represent, and what relationships must survive if I redraw it?", "lecture-04.html", "Read Lecture 04"),
@@ -4193,6 +4327,7 @@ def main():
         "lecture_reconstruction_drills": lecture_reconstruction_drills,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
+        "theorem_use_contracts": THEOREM_USE_CONTRACTS,
         "term_translations": TERM_TRANSLATIONS,
         "source_readers": SOURCE_READERS,
         "references": REFERENCES,
@@ -4225,6 +4360,7 @@ def main():
     write_json(ANALYSIS / "lecture-reconstruction-drills.json", lecture_reconstruction_drills)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
+    write_json(ANALYSIS / "theorem-use-contracts.json", THEOREM_USE_CONTRACTS)
     write_json(ANALYSIS / "term-translations.json", TERM_TRANSLATIONS)
     write_json(ANALYSIS / "source-readers.json", SOURCE_READERS)
     write_json(ANALYSIS / "references.json", REFERENCES)

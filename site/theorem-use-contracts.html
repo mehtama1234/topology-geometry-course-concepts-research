@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Theorem Use Contracts</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand">Topology & Geometry</div><nav><a class="" href="index.html">Course</a><a class="" href="videos.html">Videos</a><a class="" href="lectures.html">Lectures</a><a class="" href="lecture-spine.html">Lecture Spine</a><a class="" href="concepts.html">Concepts</a><a class="" href="themes.html">Themes</a><a class="" href="subthemes.html">Subthemes</a><a class="" href="families.html">Families</a><a class="" href="the-math-why.html">The Math Why</a><a class="" href="math-playground.html">Playground</a><a class="" href="course-synthesis.html">Synthesis</a><a class="" href="concept-dependencies.html">Dependencies</a><a class="" href="proof-moves.html">Proof Moves</a><a class="" href="formula-reader.html">Formula Reader</a><a class="active" href="theorem-use-contracts.html">Theorem Contracts</a><a class="" href="reader-checks.html">Reader Checks</a><a class="" href="term-translator.html">Term Translator</a><a class="" href="paper-source-reader.html">Paper Source Reader</a><a class="" href="lecture-source-bridges.html">Lecture Source Bridges</a><a class="" href="lecture-reconstruction-drills.html">Reconstruction Drills</a><a class="" href="references.html">References</a><a class="" href="quality-rubric.html">Quality Rubric</a><a class="" href="rubric-coverage.html">Rubric Coverage</a><a class="" href="quality-audit.html">Quality Audit</a><a class="" href="source-audit.html">Source Audit</a></nav></header>
+  <main>
+<h1>Theorem Use Contracts</h1>
+<p class="lead">This page says when the course's central results and methods are allowed to speak. A theorem name is not evidence by itself. The object, allowed move, protected evidence, conclusion, and break condition must all be visible.</p>
+<section class="lecture">
+  <h2>How To Use A Contract</h2>
+  <p>Before using a theorem or method, read the contract from top to bottom. First check that the required object is really present. Then check the allowed move and the evidence it protects. Only then ask what conclusion the result can force. The break condition is not a footnote; it is the line between a valid use and a wrong use with familiar words.</p>
+  <p>Use these contracts beside the formula reader and reconstruction drills. The formula reader explains what a statement says. The contract explains when that statement is allowed to be used on a live problem.</p>
+</section>
+<div class="grid two"><article class="card">
+  <div class="meta">Use contract</div>
+  <h3>Euler characteristic</h3>
+  <p><b>Use when:</b> Use it when a surface has been divided into countable pieces and the question needs a whole-surface account rather than the details of one drawing.</p>
+  <p><b>Object needed:</b> The object is the completed surface together with a valid cell or triangulation account: vertices, edges, faces, and any boundary behavior that changes the ledger.</p>
+  <p><b>Allowed move:</b> The allowed move is to refine, redraw, or replace the cell division while keeping the same surface and the same boundary conditions.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the alternating count. Internal refinements change separate counts, but the artificial changes cancel in the final account.</p>
+  <p><b>Conclusion it can force:</b> It can identify a whole-surface constraint and later control total vector-field index. It cannot by itself describe every geometric feature of the surface.</p>
+  <p><b>Breaks if:</b> It breaks if the counted pieces do not describe the actual surface, if boundary terms are ignored, or if the count is treated as belonging to one drawing rather than to the surface.</p>
+  <p><b>Everyday test:</b> Can the reader say what surface is being counted, what pieces make the account, and why changing the breakup leaves the final number fixed?</p>
+  <p><a class="pill" href="concept-euler-characteristic.html">Euler characteristic</a><a class="pill" href="concept-triangulation.html">Triangulation and cell decomposition</a><a class="pill" href="concept-poincare-hopf.html">Poincare-Hopf theorem</a></p>
+</article><article class="card">
+  <div class="meta">Use contract</div>
+  <h3>Generic position</h3>
+  <p><b>Use when:</b> Use it when a drawing has fragile coincidences and the proof needs clean, separate events before it can count, assign signs, or inspect defects.</p>
+  <p><b>Object needed:</b> The object is the same curve, surface, map, or field after a small legal nudge that removes special alignments without changing the question.</p>
+  <p><b>Allowed move:</b> The allowed move is a tiny adjustment that keeps the protected relation, boundary rule, and surrounding space intact while removing accidental tangencies or multiple meetings.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the stable pattern that remains after accidents are removed: clean meetings, isolated defects, or ordinary local behavior.</p>
+  <p><b>Conclusion it can force:</b> It can make a count or sign rule honest enough to use. It does not prove that special cases are irrelevant; it prepares the ordinary case and then controls how special cases are approached.</p>
+  <p><b>Breaks if:</b> It breaks if the nudge changes the object, crosses a forbidden boundary, removes a required contact, or silently changes the protected count.</p>
+  <p><b>Everyday test:</b> Can the reader name the coincidence being removed and explain why the small move leaves the original question unchanged?</p>
+  <p><a class="pill" href="concept-generic-position.html">Generic position</a><a class="pill" href="concept-intersection-number.html">Intersection number</a><a class="pill" href="concept-vector-field-index.html">Vector field index</a></p>
+</article><article class="card">
+  <div class="meta">Use contract</div>
+  <h3>Signed intersection number</h3>
+  <p><b>Use when:</b> Use it when two oriented objects meet cleanly and the question is whether legal motion can remove all meetings.</p>
+  <p><b>Object needed:</b> The objects are the meeting subspaces plus an orientation rule that gives each clean meeting a plus or minus sign.</p>
+  <p><b>Allowed move:</b> The allowed move is a deformation that keeps the objects in the right surrounding space and inspects births or deaths of meeting pairs.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the signed total. Opposite-sign pairs can appear or disappear without changing the total.</p>
+  <p><b>Conclusion it can force:</b> A nonzero signed total can force some meeting to remain under legal motion. It can turn a visual crossing question into durable arithmetic.</p>
+  <p><b>Breaks if:</b> It breaks if signs have no orientation source, if meetings are not clean, or if the deformation lets the objects pass through a forbidden move.</p>
+  <p><b>Everyday test:</b> Can the reader explain where each sign comes from and why a newly born pair contributes no net evidence?</p>
+  <p><a class="pill" href="concept-intersection-number.html">Intersection number</a><a class="pill" href="concept-boundary-orientation.html">Boundary and orientation</a><a class="pill" href="concept-generic-position.html">Generic position</a></p>
+</article><article class="card">
+  <div class="meta">Use contract</div>
+  <h3>Graph and diagonal fixed-point test</h3>
+  <p><b>Use when:</b> Use it when a rule sends inputs to outputs and the question is whether some input is sent back to itself.</p>
+  <p><b>Object needed:</b> The object is the graph of the rule in input-output space, together with the diagonal that records self-agreement.</p>
+  <p><b>Allowed move:</b> The allowed move is to translate the rule into its graph without changing what input, output, or equality means.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the exact equivalence between graph meeting diagonal and fixed point of the original rule.</p>
+  <p><b>Conclusion it can force:</b> It can turn a fixed-point question into an intersection question, letting earlier meeting and continuity reasoning become available.</p>
+  <p><b>Breaks if:</b> It breaks if the graph is drawn for the wrong rule, if the diagonal does not represent equality in the same space, or if the domain has been changed.</p>
+  <p><b>Everyday test:</b> Can the reader point to one graph point and say which input and output it records, then explain why diagonal meeting means self-agreement?</p>
+  <p><a class="pill" href="concept-fixed-points.html">Fixed points</a><a class="pill" href="concept-duality.html">Dual pictures</a><a class="pill" href="concept-intersection-number.html">Intersection number</a></p>
+</article><article class="card">
+  <div class="meta">Use contract</div>
+  <h3>Brouwer fixed-point theorem</h3>
+  <p><b>Use when:</b> Use it when a continuous rule sends a closed filled ball back into itself and the goal is to prove that some point stays put.</p>
+  <p><b>Object needed:</b> The object is the closed filled ball, including its interior and boundary, plus a self-map that never sends points outside the ball.</p>
+  <p><b>Allowed move:</b> The allowed move is to use continuity and the filled shape&#x27;s boundary constraint to rule out a total escape from self-agreement.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the no-escape structure of the closed ball under a continuous self-map.</p>
+  <p><b>Conclusion it can force:</b> It can force existence of at least one fixed point without computing where that point is.</p>
+  <p><b>Breaks if:</b> It breaks if the space is not the right closed filled shape, if the rule is not continuous, or if the rule sends points outside the domain.</p>
+  <p><b>Everyday test:</b> Can the reader state the space, the rule, the inside-itself condition, and why the theorem proves existence rather than location?</p>
+  <p><a class="pill" href="concept-brouwer-fixed-point.html">Brouwer fixed-point theorem</a><a class="pill" href="concept-fixed-points.html">Fixed points</a><a class="pill" href="concept-topology-vs-geometry.html">Topology and geometry</a></p>
+</article><article class="card">
+  <div class="meta">Use contract</div>
+  <h3>Vector-field index</h3>
+  <p><b>Use when:</b> Use it when an arrow field has isolated defects and the question needs a signed local account of how arrows turn around each defect.</p>
+  <p><b>Object needed:</b> The object is a vector field on a surface or state space, with one isolated defect enclosed by a small loop that contains no other defect.</p>
+  <p><b>Allowed move:</b> The allowed move is to clean or redraw the nearby arrow pattern while keeping the defect isolated and the surrounding loop meaningful.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the signed turning of arrows during one trip around the defect.</p>
+  <p><b>Conclusion it can force:</b> It can turn a local failure of motion into countable evidence that can later be added across the whole surface.</p>
+  <p><b>Breaks if:</b> It breaks if the defect is not isolated, if another defect lies inside the loop, or if the surface carrying the arrows has been modeled incorrectly.</p>
+  <p><b>Everyday test:</b> Can the reader walk around the defect in words and say how the arrows turn during one full trip?</p>
+  <p><a class="pill" href="concept-vector-field-index.html">Vector field index</a><a class="pill" href="concept-equilibrium.html">Equilibrium</a><a class="pill" href="concept-generic-position.html">Generic position</a></p>
+</article><article class="card">
+  <div class="meta">Use contract</div>
+  <h3>Poincare-Hopf theorem</h3>
+  <p><b>Use when:</b> Use it when every isolated vector-field defect on the right surface has been counted and the question concerns the total failure of the field.</p>
+  <p><b>Object needed:</b> The object is the entire surface carrying the vector field, plus the complete list of isolated defects and their indices.</p>
+  <p><b>Allowed move:</b> The allowed move is to add all local indices and compare that total with the Euler characteristic of the same surface.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the equality between total local index and the surface&#x27;s Euler characteristic.</p>
+  <p><b>Conclusion it can force:</b> It can force defects, forbid a nowhere-zero field on some surfaces, or show that local motion failures answer to whole-surface structure.</p>
+  <p><b>Breaks if:</b> It breaks if one defect is omitted, if the field is not on the claimed surface, if boundary behavior is ignored, or if one equilibrium is treated as the whole theorem.</p>
+  <p><b>Everyday test:</b> Can the reader name the surface, list every defect, add their signed indices, and say which Euler characteristic the total must match?</p>
+  <p><a class="pill" href="concept-poincare-hopf.html">Poincare-Hopf theorem</a><a class="pill" href="concept-vector-field-index.html">Vector field index</a><a class="pill" href="concept-euler-characteristic.html">Euler characteristic</a></p>
+</article><article class="card">
+  <div class="meta">Use contract</div>
+  <h3>Configuration-space modeling</h3>
+  <p><b>Use when:</b> Use it when a physical or moving system is too hard to inspect directly and the question can be asked as a route, barrier, fixed-point, or defect problem.</p>
+  <p><b>Object needed:</b> The object is the space of all allowed states, with enough coordinates to describe one complete state and with forbidden states removed.</p>
+  <p><b>Allowed move:</b> The allowed move is to translate physical motion into paths through the state space without adding false freedoms or removing real barriers.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the shape of possible states: connected regions, holes, walls, fixed points, or total index constraints.</p>
+  <p><b>Conclusion it can force:</b> It can show that a motion is blocked, that a special state must exist, or that a physical behavior is constrained before detailed equations are solved.</p>
+  <p><b>Breaks if:</b> It breaks if the state space forgets a real degree of freedom, includes forbidden collisions, or lets a theorem speak about a model that no longer represents the original system.</p>
+  <p><b>Everyday test:</b> Can the reader describe one complete state, name the forbidden states, and explain how a path in the model represents real motion?</p>
+  <p><a class="pill" href="concept-configuration-space.html">Configuration space</a><a class="pill" href="concept-product-space.html">Product space</a><a class="pill" href="concept-fixed-points.html">Fixed points</a></p>
+</article></div>
+<section class="lecture">
+  <h2>The Misuse Test</h2>
+  <p>A result is being misused when the name appears before the object, when the allowed move is unstated, when the protected evidence is missing, or when the conclusion is stronger than the contract allows. Repair the explanation by naming the missing part rather than adding more formal vocabulary.</p>
+</section>
+</main>
+</body>
+</html>
