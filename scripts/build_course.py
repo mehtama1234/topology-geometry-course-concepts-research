@@ -1007,8 +1007,8 @@ ORAL_EXAM_PROMPTS = [
     {
         "title": "Turn a count into evidence",
         "prompt": "Explain why the course trusts some counts but rejects raw visible counts, using a local change that appears during deformation.",
-        "strong_answer": "A strong answer says a count becomes evidence only after it is tested against the legal moves. Raw crossings, cells, regions, or defects may appear and disappear during harmless redrawings, so the first visible number may remember only the drawing. The useful account is designed to survive: signs can make opposite events cancel, parity can ignore paired changes, Euler characteristic can survive subdivision, and index can record the turning around isolated defects while local patterns move. The answer should explain a local threat to the count and then show why the repaired account still speaks about the original problem.",
-        "must_include": "The answer must include a local event that threatens a count, the cancellation or whole-surface rule that protects the useful account, and the conclusion the surviving account is allowed to force.",
+        "strong_answer": "A strong answer says a count becomes evidence only after it is tested against the legal moves. Raw crossings, cells, regions, or defects may appear and disappear during harmless redrawings, so the first visible number may remember only the drawing. The protected count is designed to survive: signs can make opposite events cancel, parity can ignore paired changes, Euler characteristic can survive subdivision, and index can record the turning around isolated defects while local patterns move. The answer should explain a local threat to the count and then show why the repaired account still speaks about the original problem.",
+        "must_include": "The answer must include a local event that threatens a count, the cancellation or whole-surface rule that protects the count being used, and the conclusion the surviving account is allowed to force.",
         "common_failure": "A weak answer says important numbers are invariants because the course uses them, reversing the reason. The course uses them because their survival has been checked against the moves the problem allows.",
         "follow_up": "What changes during a legal move, what part of the count refuses to change, why does that surviving part become evidence, and what claim would be too strong for that count?",
         "concepts": ["invariant", "intersection-number", "euler-characteristic"],
@@ -1402,7 +1402,7 @@ WEAK_CLAIM_REPAIR_ROWS = [
     },
     {
         "title": "Signs cancel",
-        "weak_claim": "The plus and minus terms cancel, so only the total matters for the final answer without explaining the shared sign convention.",
+        "weak_claim": "The plus and minus terms cancel, so the signed total, not the raw count, carries the final answer without explaining the shared sign convention.",
         "why_weak": "The sentence treats signs as if they were automatic labels. It does not explain where the shared direction rule comes from or why opposite signs are comparable. A plus and a minus can cancel only after the page earns a common sign convention.",
         "first_principles_repair": "Name the orientation rule, boundary direction, or local direction comparison that assigns signs. Then explain the local pair creation or cancellation event that keeps the signed total stable. The repaired sentence should make cancellation a checked event, not an arithmetic wish.",
         "detail_to_check": "Ask whether a plus sign in one place and a minus sign in another place were assigned by the same rulebook. If the rule cannot be carried across the object, the signed total may not be defined.",
@@ -1429,7 +1429,7 @@ WEAK_CLAIM_REPAIR_ROWS = [
     },
     {
         "title": "This is just an example of the concept",
-        "weak_claim": "This example illustrates the concept and helps the reader see why the idea is useful without saying what the example lets them inspect.",
+        "weak_claim": "This example names the concept but does not say what the example lets the reader inspect.",
         "why_weak": "The sentence does not say what the example lets the reader inspect. A useful example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
         "first_principles_repair": "Say what the example makes visible. It may show one point in a state space, one legal deformation, one crossing pair, one glued boundary, one defect, or one source boundary. Then say what the reader should test. The repaired sentence should turn the example into an inspection task.",
         "detail_to_check": "Ask whether the example would still teach the idea if the formal concept name were removed from the paragraph. If not, the example is probably leaning on the name instead of showing the job.",
@@ -4683,6 +4683,48 @@ def drill_phrase(text):
     return text
 
 
+def practice_phrase(text):
+    replacements = {
+        "A strong answer says": "A complete response says",
+        "A strong answer starts": "A complete response starts",
+        "A strong answer states": "A complete response states",
+        "A strong answer separates": "A complete response separates",
+        "A strong answer can": "A complete response should",
+        "A weak answer says": "A shallow response says",
+        "A weak answer draws": "A shallow response draws",
+        "A weak answer lists": "A shallow response lists",
+        "A weak answer invokes": "A shallow response invokes",
+        "A weak answer tries": "A shallow response tries",
+        "A weak answer stares": "A shallow response stares",
+        "A weak answer counts": "A shallow response counts",
+        "A weak answer treats": "A shallow response treats",
+        "The weak version": "The shallow version",
+        "This sounds plausible": "The sentence sounds plausible",
+        "an important number": "a number",
+        "important numbers": "numbers",
+        "A Mobius strip matters because": "A Mobius strip exposes a first problem because",
+        "A useful example": "A working example",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text
+
+
+def normalize_practice_rows(rows):
+    normalized = []
+    for row in rows:
+        new_row = {}
+        for key, value in row.items():
+            if isinstance(value, str):
+                new_row[key] = practice_phrase(value)
+            elif isinstance(value, list):
+                new_row[key] = [practice_phrase(item) if isinstance(item, str) else item for item in value]
+            else:
+                new_row[key] = value
+        normalized.append(new_row)
+    return normalized
+
+
 def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
     bridge_by_lecture = {row["lecture"]: row for row in lecture_source_bridges}
     spine_by_lecture = {row["lecture"]: row for row in LECTURE_SPINE}
@@ -5749,7 +5791,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>The Transfer Test</h2>
   <p>A transfer is strong when the reader can replace the everyday story with a course object and still keep the allowed move and protected fact intact. If the answer changes only the words while leaving the object unspecified, the transfer has not happened yet.</p>
-  <p>A strong answer has three sentences. First, it says what one point, loop, field, surface, or route represents. Second, it says which change is legal and which change would break the problem. Third, it says what fact survives that legal change and what conclusion that survival can support.</p>
+  <p>A complete transfer answer has three sentences. First, it says what one point, loop, field, surface, or route represents. Second, it says which change is legal and which change would break the problem. Third, it says what fact survives that legal change and what conclusion that survival can support.</p>
   <p>If those sentences cannot be written in everyday language, return to the matching concept page before using the case as evidence of understanding.</p>
 </section>
 """
@@ -6668,13 +6710,13 @@ def main():
         "lecture_reconstruction_drills": lecture_reconstruction_drills,
         "source_nuance_repairs": SOURCE_NUANCE_REPAIRS,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
-        "transfer_lab_cases": TRANSFER_LAB_CASES,
-        "repair_clinic_cases": REPAIR_CLINIC_CASES,
-        "oral_exam_prompts": ORAL_EXAM_PROMPTS,
-        "change_ledger_rows": CHANGE_LEDGER_ROWS,
-        "assumption_ledger_rows": ASSUMPTION_LEDGER_ROWS,
-        "counterexample_gallery_rows": COUNTEREXAMPLE_GALLERY_ROWS,
-        "weak_claim_repair_rows": WEAK_CLAIM_REPAIR_ROWS,
+        "transfer_lab_cases": normalize_practice_rows(TRANSFER_LAB_CASES),
+        "repair_clinic_cases": normalize_practice_rows(REPAIR_CLINIC_CASES),
+        "oral_exam_prompts": normalize_practice_rows(ORAL_EXAM_PROMPTS),
+        "change_ledger_rows": normalize_practice_rows(CHANGE_LEDGER_ROWS),
+        "assumption_ledger_rows": normalize_practice_rows(ASSUMPTION_LEDGER_ROWS),
+        "counterexample_gallery_rows": normalize_practice_rows(COUNTEREXAMPLE_GALLERY_ROWS),
+        "weak_claim_repair_rows": normalize_practice_rows(WEAK_CLAIM_REPAIR_ROWS),
         "proof_moves": PROOF_MOVES,
         "theorem_use_contracts": THEOREM_USE_CONTRACTS,
         "concept_contrasts": CONCEPT_CONTRASTS,
@@ -6711,13 +6753,13 @@ def main():
     write_json(ANALYSIS / "lecture-reconstruction-drills.json", lecture_reconstruction_drills)
     write_json(ANALYSIS / "source-nuance-repairs.json", SOURCE_NUANCE_REPAIRS)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
-    write_json(ANALYSIS / "transfer-lab.json", TRANSFER_LAB_CASES)
-    write_json(ANALYSIS / "repair-clinic.json", REPAIR_CLINIC_CASES)
-    write_json(ANALYSIS / "oral-exam.json", ORAL_EXAM_PROMPTS)
-    write_json(ANALYSIS / "change-ledger.json", CHANGE_LEDGER_ROWS)
-    write_json(ANALYSIS / "assumption-ledger.json", ASSUMPTION_LEDGER_ROWS)
-    write_json(ANALYSIS / "counterexample-gallery.json", COUNTEREXAMPLE_GALLERY_ROWS)
-    write_json(ANALYSIS / "weak-claim-repairs.json", WEAK_CLAIM_REPAIR_ROWS)
+    write_json(ANALYSIS / "transfer-lab.json", data["transfer_lab_cases"])
+    write_json(ANALYSIS / "repair-clinic.json", data["repair_clinic_cases"])
+    write_json(ANALYSIS / "oral-exam.json", data["oral_exam_prompts"])
+    write_json(ANALYSIS / "change-ledger.json", data["change_ledger_rows"])
+    write_json(ANALYSIS / "assumption-ledger.json", data["assumption_ledger_rows"])
+    write_json(ANALYSIS / "counterexample-gallery.json", data["counterexample_gallery_rows"])
+    write_json(ANALYSIS / "weak-claim-repairs.json", data["weak_claim_repair_rows"])
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "theorem-use-contracts.json", THEOREM_USE_CONTRACTS)
     write_json(ANALYSIS / "concept-contrasts.json", CONCEPT_CONTRASTS)

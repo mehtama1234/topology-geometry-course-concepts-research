@@ -6407,7 +6407,7 @@
       "allowed_move": "The allowed move is a continuous sliding and stretching of the loop while the band stays uncut and never crosses through the handle. The band may get longer, thinner, or uglier; it may not pass through ceramic or open itself.",
       "protected_fact": "The protected fact is whether the loop is linked around the handle. That relation survives many changes of shape because the only moves that would remove it are exactly the moves the problem forbids.",
       "course_bridge": "This transfers the knot-and-link habit from the course: do not trust the drawing's neatness; ask what relationship cannot be removed by legal deformation. The mug handle plays the role of forbidden matter, and the band plays the role of a loop whose route memory matters.",
-      "wrong_transfer": "A weak answer says the band looks circular or messy. That talks about geometry of the drawing, not the topological relation that blocks removal. It also misses the illegal move: pulling the band through the handle or cutting it open.",
+      "wrong_transfer": "A shallow response says the band looks circular or messy. That talks about geometry of the drawing, not the topological relation that blocks removal. It also misses the illegal move: pulling the band through the handle or cutting it open.",
       "reader_task": "Explain whether the band can be freed without cutting it, name the exact move that would be illegal, and say which relationship survives every legal stretch.",
       "concepts": [
         "knots-and-links",
@@ -6422,7 +6422,7 @@
       "allowed_move": "The allowed move is to slide a route through open walking space while keeping its endpoints at the gates and never crossing the fence. The path may wiggle, shorten, or lengthen, but the endpoints and forbidden region define the same route problem.",
       "protected_fact": "The protected fact is whether the route winds around the missing region. A fenced hole can block one path from being changed into the other because any attempted slide would have to cross the fence or move an endpoint.",
       "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region matters because it changes which deformations are legal. The course habit is to read the obstacle as part of the object, not as decoration in the drawing.",
-      "wrong_transfer": "A weak answer says both paths are just lines between the same gates. That ignores the obstacle that makes the state space different and treats endpoint agreement as enough by itself.",
+      "wrong_transfer": "A shallow response says both paths are just lines between the same gates. That ignores the obstacle that makes the state space different and treats endpoint agreement as enough by itself.",
       "reader_task": "Decide whether one route can be deformed into the other while respecting the fence, say what the fence contributes to the proof, and name the illegal shortcut that would make the routes look equivalent.",
       "concepts": [
         "deformation",
@@ -6437,7 +6437,7 @@
       "allowed_move": "The allowed move is to clean or redraw nearby arrows without removing the calm point from the loop or dragging another calm point inside. The loop must continue to isolate the same failure so the turning account is about one defect.",
       "protected_fact": "The protected fact is the total turning of the arrows during one walk around the loop. That turning can survive redrawings even when individual arrows are sketched differently.",
       "course_bridge": "This transfers vector-field index from the course: local arrow behavior can become signed evidence without solving the motion everywhere. The everyday map becomes mathematical only after the reader walks around the defect and reads the surrounding arrows.",
-      "wrong_transfer": "A weak answer tries to predict the full weather. The course idea only needs the local turning account around the defect. It also must not count every calm-looking point unless the point is isolated and has a readable surrounding pattern.",
+      "wrong_transfer": "A shallow response tries to predict the full weather. The course idea only needs the local turning account around the defect. It also must not count every calm-looking point unless the point is isolated and has a readable surrounding pattern.",
       "reader_task": "Walk around the calm point in words, say what has to stay isolated before an index-like count is meaningful, and state what this local count does not predict.",
       "concepts": [
         "vector-field-index",
@@ -6452,7 +6452,7 @@
       "allowed_move": "The allowed move is a continuous path through allowed states where every intermediate position avoids collision. The sofa cannot jump through a tight corner, and the model cannot forget rotation if rotation is part of the physical motion.",
       "protected_fact": "The protected fact is whether the start state and end state lie in the same connected region of allowed states. If a wall or narrow turn separates those regions, no continuous legal motion connects the two poses.",
       "course_bridge": "This transfers configuration-space modeling: a motion problem becomes a route problem in the space of possible states. The course idea is not to stare harder at the hallway, but to build the right state space and inspect its allowed paths.",
-      "wrong_transfer": "A weak answer stares only at the floor plan. The proof needs the larger space that records both location and angle. It also has to remove collision states before claiming a route exists.",
+      "wrong_transfer": "A shallow response stares only at the floor plan. The proof needs the larger space that records both location and angle. It also has to remove collision states before claiming a route exists.",
       "reader_task": "Name what one point of the state space represents, what would count as a forbidden state, and how a path in that space translates back into real sofa motion.",
       "concepts": [
         "configuration-space",
@@ -6467,7 +6467,7 @@
       "allowed_move": "The allowed move is a continuous self-map of the filled region, with no point sent outside the cup. Nearby starting points must end nearby, and the final positions must still live inside the same filled region.",
       "protected_fact": "The protected fact is that a continuous self-map of the right kind of filled region cannot avoid some self-agreement. The conclusion is about at least one starting point matching its ending point, not about all points returning.",
       "course_bridge": "This transfers fixed-point thinking: the question is not where the point is, but why some point must return to itself. The everyday motion becomes course mathematics only after the domain, rule, and self-map condition are named.",
-      "wrong_transfer": "A weak answer says every point returns or that the theorem computes the point. The safe conclusion is existence of at least one fixed point, and only after the self-map contract has been checked.",
+      "wrong_transfer": "A shallow response says every point returns or that the theorem computes the point. The safe conclusion is existence of at least one fixed point, and only after the self-map contract has been checked.",
       "reader_task": "State the domain, the rule, and the exact conclusion without pretending to locate the fixed point or claiming that every bit of coffee returns.",
       "concepts": [
         "brouwer-fixed-point",
@@ -6482,7 +6482,7 @@
       "allowed_move": "The allowed move is to reason after the edge identifications have been made, treating glued points as the same point. Redrawing the sheet is harmless only if the same identification rule is still being used.",
       "protected_fact": "The protected fact is the route and boundary behavior of the completed surface after the taped edges are treated as one. A path that looks like it hits an edge on paper may continue through the glued edge in the finished surface.",
       "course_bridge": "This transfers quotient-space reading: the drawing is a code, and the gluing rule tells the reader what space the code describes. The course habit is to read the rule before trusting the picture.",
-      "wrong_transfer": "A weak answer counts the border of the flat sheet as a real boundary after the taping rule has already removed it. That reasons about the code instead of the finished object.",
+      "wrong_transfer": "A shallow response counts the border of the flat sheet as a real boundary after the taping rule has already removed it. That reasons about the code instead of the finished object.",
       "reader_task": "Say which points become the same point, what boundary claim changes after the identification, and which feature of the flat drawing should no longer be read literally.",
       "concepts": [
         "quotient-space",
@@ -6497,7 +6497,7 @@
       "allowed_move": "The allowed move is to bend and redraw the surface without tearing, puncturing, or changing how the surface is connected. Changing the cell account is allowed only when it still describes the same surface.",
       "protected_fact": "The protected fact is a whole-surface count such as Euler characteristic, not the raw count of dents or patch lines. Dents may appear or disappear; the useful count is the one designed to survive legal changes to the surface account.",
       "course_bridge": "This transfers the stable-count habit: choose the count designed to survive the legal changes, not the count easiest to see. The everyday squeezed ball becomes a test for separating drawing noise from whole-surface evidence.",
-      "wrong_transfer": "A weak answer counts every wrinkle as mathematical evidence. Wrinkles are drawing noise unless the argument says why they survive. The repair is to ask which count remains the same after the surface is redrawn honestly.",
+      "wrong_transfer": "A shallow response counts every wrinkle as mathematical evidence. Wrinkles are drawing noise unless the argument says why they survive. The repair is to ask which count remains the same after the surface is redrawn honestly.",
       "reader_task": "Identify one visible count that is not protected, one whole-surface fact that is protected, and the illegal change that would stop the protected fact from applying.",
       "concepts": [
         "euler-characteristic",
@@ -6512,7 +6512,7 @@
       "allowed_move": "The allowed move is a continuous path through allowed joint choices, with no intermediate pose entering the blocked zone. The arm may move gradually through joint space, but the path cannot pass through a forbidden pose just because the drawing on the table looks convenient.",
       "protected_fact": "The protected fact is whether the allowed-pose space has a route from the start pose to the target pose. A blocked zone can create a hole, wall, or disconnected region in the space of choices.",
       "course_bridge": "This transfers late-course application thinking: topology studies the shape of possible states before detailed motion equations are solved. The course does not need every control input before it can ask whether the allowed state space has a route.",
-      "wrong_transfer": "A weak answer draws only the arm in physical space. The topological question lives in the space of all allowed joint choices, after forbidden poses have been removed and real freedoms have been kept.",
+      "wrong_transfer": "A shallow response draws only the arm in physical space. The topological question lives in the space of all allowed joint choices, after forbidden poses have been removed and real freedoms have been kept.",
       "reader_task": "Describe one complete state of the arm, explain what removed states do to the route question, and say what conclusion would overclaim beyond the state-space model.",
       "concepts": [
         "configuration-space",
@@ -6527,7 +6527,7 @@
       "flawed_explanation": "The Mobius strip is surprising because it has one side, so topology is about weird shapes.",
       "why_it_fails": "This sentence remembers the punchline but loses the method. It does not say what object is being tested, what motion or walk reveals the fact, or why local patches fail to show the whole behavior. It also turns the course into a collection of surprising objects instead of a way to ask what survives a full journey around an object.",
       "repair_move": "Replace the surprise with the walk-around account. Say what a mark or traveler does on the strip and what returns changed after one complete trip. Then contrast that full-trip evidence with the local view, where every small patch still looks ordinary.",
-      "strong_version": "A Mobius strip matters because a local view of the paper does not reveal the whole-side behavior. When a mark is followed around the full strip, the route returns with side information that an ordinary band would not have. The course uses this to show why whole-shape facts can be invisible in small pieces, and why a topological explanation must name the completed object rather than only the part visible at one moment.",
+      "strong_version": "A Mobius strip exposes a first problem because a local view of the paper does not reveal the whole-side behavior. When a mark is followed around the full strip, the route returns with side information that an ordinary band would not have. The course uses this to show why whole-shape facts can be invisible in small pieces, and why a topological explanation must name the completed object rather than only the part visible at one moment.",
       "reviewer_test": "Can the reader explain the one-side claim by describing a full trip around the strip, naming what changes after the trip, and saying why a small local patch could not have shown that fact?",
       "concepts": [
         "topology-vs-geometry",
@@ -6537,8 +6537,8 @@
     },
     {
       "title": "Invariant as any number that stays useful",
-      "flawed_explanation": "An invariant is an important number we calculate from a shape, and it helps us compare examples.",
-      "why_it_fails": "This sounds plausible but avoids the main test. A number is not an invariant because it is useful once; it earns the role by surviving the allowed changes in the problem. The weak sentence also hides the difference between a raw visible count and a count that has been designed to ignore harmless changes.",
+      "flawed_explanation": "An invariant is a number we calculate from a shape, and it helps us compare examples.",
+      "why_it_fails": "The sentence sounds plausible but avoids the main test. A number is not an invariant because it is useful once; it earns the role by surviving the allowed changes in the problem. The weak sentence also hides the difference between a raw visible count and a count that has been designed to ignore harmless changes.",
       "repair_move": "Name the legal move that threatens the count, then explain why the proposed number survives that move or how signs, parity, or cancellation repair the count. The repair should include one local event, such as a pair of crossings being born, so the reader can see the survival test happen.",
       "strong_version": "An invariant is evidence designed to survive the moves the problem allows. If two crossings are born as an opposite pair, a raw crossing count changes, but a signed total can stay fixed. The invariant is useful because it carries the same information from one legal drawing to another and because a different value can rule out a desired legal deformation.",
       "reviewer_test": "Does the explanation say which allowed change tries to alter the number, why the chosen account survives, and what conclusion that surviving account can actually force?",
@@ -6631,9 +6631,9 @@
     {
       "title": "Explain the course in one chain",
       "prompt": "Explain the whole course as one chain, starting from a paper strip and ending with constraints on motion, without listing topic names as a substitute for reasons.",
-      "strong_answer": "A strong answer says the course begins by showing that small local views can miss whole-shape facts. The paper strip is not a throwaway surprise; it makes the reader ask what survives a full trip around the object. From there the course turns surprise into method: legal deformation lets a hard picture be replaced by an easier one, quotient rules build spaces from gluing instructions, protected counts turn change into evidence, signed intersections make meetings auditable, fixed points turn self-agreement into a forced meeting, vector-field index records local arrow failure, and configuration spaces let shape constrain motion. The chain should sound like one growing habit: name the object, state the legal move, protect the fact that survives, and then say what the protected fact forces.",
+      "strong_answer": "A complete response says the course begins by showing that small local views can miss whole-shape facts. The paper strip is not a throwaway surprise; it makes the reader ask what survives a full trip around the object. From there the course turns surprise into method: legal deformation lets a hard picture be replaced by an easier one, quotient rules build spaces from gluing instructions, protected counts turn change into evidence, signed intersections make meetings auditable, fixed points turn self-agreement into a forced meeting, vector-field index records local arrow failure, and configuration spaces let shape constrain motion. The chain should sound like one growing habit: name the object, state the legal move, protect the fact that survives, and then say what the protected fact forces.",
       "must_include": "The answer must include a concrete early object, the allowed move that turns pictures into proof, one protected fact that travels through the course, and a later conclusion about forced meeting, forced defect, or blocked motion.",
-      "common_failure": "A weak answer lists topics in order without saying why each topic is needed by the next one. It sounds organized but does not show how a paper-strip lesson becomes a method for proving later constraints.",
+      "common_failure": "A shallow response lists topics in order without saying why each topic is needed by the next one. It sounds organized but does not show how a paper-strip lesson becomes a method for proving later constraints.",
       "follow_up": "Where does the course first move from a visual surprise to a reusable proof method, what new obligation appears at that moment, and how does that obligation reappear in a late motion example?",
       "concepts": [
         "topology-vs-geometry",
@@ -6644,9 +6644,9 @@
     {
       "title": "Defend a deformation argument",
       "prompt": "Given a messy drawing, explain when simplifying it is a proof and when it changes the problem by breaking the allowed move.",
-      "strong_answer": "A strong answer says simplification is valid only when every step is an allowed move for the original question. The easier endpoint is not evidence by itself; the legal route to it is the evidence. The answer should name the starting object, the rulebook for motion, and the feature that must not change: endpoint order, obstacle avoidance, boundary behavior, gluing rule, side choice, crossing data, or state restriction. It should also name a tempting illegal shortcut, such as cutting a loop, passing through a forbidden obstacle, moving a fixed endpoint, or changing the state space while pretending the same problem is still being solved.",
+      "strong_answer": "A complete response says simplification is valid only when every step is an allowed move for the original question. The easier endpoint is not evidence by itself; the legal route to it is the evidence. The answer should name the starting object, the rulebook for motion, and the feature that must not change: endpoint order, obstacle avoidance, boundary behavior, gluing rule, side choice, crossing data, or state restriction. It should also name a tempting illegal shortcut, such as cutting a loop, passing through a forbidden obstacle, moving a fixed endpoint, or changing the state space while pretending the same problem is still being solved.",
       "must_include": "The answer must name one allowed motion, one forbidden shortcut, the fact that survives the legal motion, and the exact moment where the shortcut would change the problem.",
-      "common_failure": "A weak answer says the drawing can be cleaned up because it looks equivalent, without naming the rule that makes the cleanup legal. It treats visual resemblance as proof and loses the contract that made deformation useful.",
+      "common_failure": "A shallow response says the drawing can be cleaned up because it looks equivalent, without naming the rule that makes the cleanup legal. It treats visual resemblance as proof and loses the contract that made deformation useful.",
       "follow_up": "What feature would make the simplified drawing solve a different problem, how would you catch that change before trusting the picture, and what would the corrected proof have to protect instead?",
       "concepts": [
         "deformation",
@@ -6657,9 +6657,9 @@
     {
       "title": "Turn a count into evidence",
       "prompt": "Explain why the course trusts some counts but rejects raw visible counts, using a local change that appears during deformation.",
-      "strong_answer": "A strong answer says a count becomes evidence only after it is tested against the legal moves. Raw crossings, cells, regions, or defects may appear and disappear during harmless redrawings, so the first visible number may remember only the drawing. The useful account is designed to survive: signs can make opposite events cancel, parity can ignore paired changes, Euler characteristic can survive subdivision, and index can record the turning around isolated defects while local patterns move. The answer should explain a local threat to the count and then show why the repaired account still speaks about the original problem.",
-      "must_include": "The answer must include a local event that threatens a count, the cancellation or whole-surface rule that protects the useful account, and the conclusion the surviving account is allowed to force.",
-      "common_failure": "A weak answer says important numbers are invariants because the course uses them, reversing the reason. The course uses them because their survival has been checked against the moves the problem allows.",
+      "strong_answer": "A complete response says a count becomes evidence only after it is tested against the legal moves. Raw crossings, cells, regions, or defects may appear and disappear during harmless redrawings, so the first visible number may remember only the drawing. The protected count is designed to survive: signs can make opposite events cancel, parity can ignore paired changes, Euler characteristic can survive subdivision, and index can record the turning around isolated defects while local patterns move. The answer should explain a local threat to the count and then show why the repaired account still speaks about the original problem.",
+      "must_include": "The answer must include a local event that threatens a count, the cancellation or whole-surface rule that protects the count being used, and the conclusion the surviving account is allowed to force.",
+      "common_failure": "A shallow response says numbers are invariants because the course uses them, reversing the reason. The course uses them because their survival has been checked against the moves the problem allows.",
       "follow_up": "What changes during a legal move, what part of the count refuses to change, why does that surviving part become evidence, and what claim would be too strong for that count?",
       "concepts": [
         "invariant",
@@ -6670,9 +6670,9 @@
     {
       "title": "Read a theorem contract",
       "prompt": "Explain how to use a theorem name without letting the name replace the argument, including the assumptions that must be checked first.",
-      "strong_answer": "A strong answer starts with the theorem's contract. It names the object, checks the assumptions, states the allowed move or comparison, identifies the protected evidence, and gives only the conclusion the theorem can actually force. For Brouwer, the object is a continuous rule from a filled ball back into itself, and the conclusion is that at least one point returns to itself, not where it is. For Poincare-Hopf, the object is a vector field with isolated defects on a surface, and the conclusion is a total index constraint tied to Euler characteristic, not a solved motion path. The theorem name should arrive after the setup is clear enough that the reader can see why the theorem is allowed to speak.",
+      "strong_answer": "A complete response starts with the theorem's contract. It names the object, checks the assumptions, states the allowed move or comparison, identifies the protected evidence, and gives only the conclusion the theorem can actually force. For Brouwer, the object is a continuous rule from a filled ball back into itself, and the conclusion is that at least one point returns to itself, not where it is. For Poincare-Hopf, the object is a vector field with isolated defects on a surface, and the conclusion is a total index constraint tied to Euler characteristic, not a solved motion path. The theorem name should arrive after the setup is clear enough that the reader can see why the theorem is allowed to speak.",
       "must_include": "The answer must say what the theorem needs before it speaks, what exact conclusion it gives, what stronger claim remains unproved, and which condition would break the use.",
-      "common_failure": "A weak answer invokes Brouwer, Poincare-Hopf, or Euler characteristic as authority before naming the object, assumptions, and conclusion limit. It makes the theorem sound like permission to skip the proof contract.",
+      "common_failure": "A shallow response invokes Brouwer, Poincare-Hopf, or Euler characteristic as authority before naming the object, assumptions, and conclusion limit. It makes the theorem sound like permission to skip the proof contract.",
       "follow_up": "What would make this theorem application invalid even if the theorem itself is true, which assumption would fail first, and how would you weaken the conclusion to stay honest?",
       "concepts": [
         "brouwer-fixed-point",
@@ -6683,9 +6683,9 @@
     {
       "title": "Model a physical motion problem",
       "prompt": "Explain how the course turns a physical motion problem into topology without overclaiming, starting from what a single state records.",
-      "strong_answer": "A strong answer says the physical story must be translated into a space of possible states before topology can act on it. One point must represent one complete state, with all positions, angles, contacts, boundary conditions, or choices the question cares about. Forbidden states must be removed, real freedoms must not be forgotten, and a real motion must become a continuous path through allowed states. Only then can a hole, wall, disconnected region, fixed point, or index constraint in the state space say something about the original system. The answer should also state the limit: a correct topological model may prove a blockage or forced state without describing every second of motion.",
+      "strong_answer": "A complete response says the physical story must be translated into a space of possible states before topology can act on it. One point must represent one complete state, with all positions, angles, contacts, boundary conditions, or choices the question cares about. Forbidden states must be removed, real freedoms must not be forgotten, and a real motion must become a continuous path through allowed states. Only then can a hole, wall, disconnected region, fixed point, or index constraint in the state space say something about the original system. The answer should also state the limit: a correct topological model may prove a blockage or forced state without describing every second of motion.",
       "must_include": "The answer must include what one state records, what is forbidden, which route or obstruction question replaces the original motion story, and what conclusion would overclaim beyond the model.",
-      "common_failure": "A weak answer draws the physical object and says topology applies, but never defines the state space that topology is supposed to inspect. It leaves the theorem with no honest object to see.",
+      "common_failure": "A shallow response draws the physical object and says topology applies, but never defines the state space that topology is supposed to inspect. It leaves the theorem with no honest object to see.",
       "follow_up": "Which false freedom or missing obstacle would make the model lie about the original problem, where would it enter the state space, and what physical conclusion would become unreliable?",
       "concepts": [
         "configuration-space",
@@ -6696,9 +6696,9 @@
     {
       "title": "Separate fixed points and equilibria",
       "prompt": "Explain the difference between a fixed point and an equilibrium in plain language, naming the rule or field behind each claim.",
-      "strong_answer": "A strong answer says a fixed point belongs to a rule that sends points back into the same space, while an equilibrium belongs to an arrow field or motion law where the arrow vanishes. For a fixed point, the evidence is self-agreement: the input and output are the same point, and the graph can be compared with the diagonal. For an equilibrium, the evidence is local arrow behavior: the arrow at the point vanishes, and nearby arrows may turn in a way that gives an index. Both can be forced special states, but the proof must name the object before using the shared intuition that something is staying put.",
+      "strong_answer": "A complete response says a fixed point belongs to a rule that sends points back into the same space, while an equilibrium belongs to an arrow field or motion law where the arrow vanishes. For a fixed point, the evidence is self-agreement: the input and output are the same point, and the graph can be compared with the diagonal. For an equilibrium, the evidence is local arrow behavior: the arrow at the point vanishes, and nearby arrows may turn in a way that gives an index. Both can be forced special states, but the proof must name the object before using the shared intuition that something is staying put.",
       "must_include": "The answer must include self-agreement for a map, vanishing arrows for a vector field, the evidence each object uses, and the danger of mixing the two objects.",
-      "common_failure": "A weak answer says both are places where nothing moves, which hides the rule or field that gives the statement meaning. It uses the feeling of stillness instead of the mathematical carrier.",
+      "common_failure": "A shallow response says both are places where nothing moves, which hides the rule or field that gives the statement meaning. It uses the feeling of stillness instead of the mathematical carrier.",
       "follow_up": "Which object are you studying: a map from points to points, or arrows attached to points, what evidence belongs to that object, and what would be false if you used the other language?",
       "concepts": [
         "fixed-points",
@@ -6709,9 +6709,9 @@
     {
       "title": "Audit a source-supported claim",
       "prompt": "Explain how to decide whether a source supports a sentence in the companion, especially when captions are partial or possibly misheard.",
-      "strong_answer": "A strong answer separates caption support, visible demonstration, course-arc inference, background-source support, and claims that need human checking. It states the exact sentence being audited, names the evidence available for that sentence, and keeps the missing-caption caveat visible when the source is incomplete. If the sentence depends on unavailable, garbled, or interpretive wording, the answer weakens it without throwing away the useful idea: it can say the page is making a course-arc inference, or that a source supports the broader mathematical family, rather than claiming Tokieda said the sentence exactly.",
+      "strong_answer": "A complete response separates caption support, visible demonstration, course-arc inference, background-source support, and claims that need human checking. It states the exact sentence being audited, names the evidence available for that sentence, and keeps the missing-caption caveat visible when the source is incomplete. If the sentence depends on unavailable, garbled, or interpretive wording, the answer weakens it without throwing away the useful idea: it can say the page is making a course-arc inference, or that a source supports the broader mathematical family, rather than claiming Tokieda said the sentence exactly.",
       "must_include": "The answer must include the exact claim, the source evidence available, the evidence type, and the stronger claim that should remain unsaid.",
-      "common_failure": "A weak answer treats the reference list or recovered captions as proof of every interpretive sentence on the site. It lets citation replace claim-by-claim accountability.",
+      "common_failure": "A shallow response treats the reference list or recovered captions as proof of every interpretive sentence on the site. It lets citation replace claim-by-claim accountability.",
       "follow_up": "Would the sentence still be justified if the missing caption stayed unavailable, how would you weaken it without losing the useful idea, and what evidence would upgrade the claim later?",
       "concepts": [
         "topology-vs-geometry",
@@ -7204,7 +7204,7 @@
     },
     {
       "title": "Signs cancel",
-      "weak_claim": "The plus and minus terms cancel, so only the total matters for the final answer without explaining the shared sign convention.",
+      "weak_claim": "The plus and minus terms cancel, so the signed total, not the raw count, carries the final answer without explaining the shared sign convention.",
       "why_weak": "The sentence treats signs as if they were automatic labels. It does not explain where the shared direction rule comes from or why opposite signs are comparable. A plus and a minus can cancel only after the page earns a common sign convention.",
       "first_principles_repair": "Name the orientation rule, boundary direction, or local direction comparison that assigns signs. Then explain the local pair creation or cancellation event that keeps the signed total stable. The repaired sentence should make cancellation a checked event, not an arithmetic wish.",
       "detail_to_check": "Ask whether a plus sign in one place and a minus sign in another place were assigned by the same rulebook. If the rule cannot be carried across the object, the signed total may not be defined.",
@@ -7243,8 +7243,8 @@
     },
     {
       "title": "This is just an example of the concept",
-      "weak_claim": "This example illustrates the concept and helps the reader see why the idea is useful without saying what the example lets them inspect.",
-      "why_weak": "The sentence does not say what the example lets the reader inspect. A useful example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
+      "weak_claim": "This example names the concept but does not say what the example lets the reader inspect.",
+      "why_weak": "The sentence does not say what the example lets the reader inspect. A working example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
       "first_principles_repair": "Say what the example makes visible. It may show one point in a state space, one legal deformation, one crossing pair, one glued boundary, one defect, or one source boundary. Then say what the reader should test. The repaired sentence should turn the example into an inspection task.",
       "detail_to_check": "Ask whether the example would still teach the idea if the formal concept name were removed from the paragraph. If not, the example is probably leaning on the name instead of showing the job.",
       "where_to_use": "Use this repair on concept pages, theme pages, subtheme pages, and lecture examples that currently rely too much on naming.",
@@ -8511,7 +8511,7 @@
       },
       {
         "requirement": "Explanation repair clinic",
-        "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1651 repair-clinic words make the no-filler standard concrete.",
+        "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1654 repair-clinic words make the no-filler standard concrete.",
         "status": "met"
       },
       {
@@ -8536,7 +8536,7 @@
       },
       {
         "requirement": "Weak-claim repair layer",
-        "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1774 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
+        "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1770 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
         "status": "met"
       },
       {
@@ -8630,7 +8630,7 @@
       "transfer_lab_cases": 8,
       "transfer_lab_words": 1936,
       "repair_clinic_cases": 8,
-      "repair_clinic_words": 1651,
+      "repair_clinic_words": 1654,
       "oral_exam_prompts": 7,
       "oral_exam_words": 1570,
       "change_ledger_rows": 10,
@@ -8640,7 +8640,7 @@
       "counterexample_gallery_rows": 10,
       "counterexample_gallery_words": 1921,
       "weak_claim_repair_rows": 10,
-      "weak_claim_repair_words": 1774,
+      "weak_claim_repair_words": 1770,
       "proof_moves": 5,
       "theorem_use_contracts": 8,
       "theorem_contract_words": 1530,

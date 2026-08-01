@@ -6,7 +6,7 @@
     "allowed_move": "The allowed move is a continuous sliding and stretching of the loop while the band stays uncut and never crosses through the handle. The band may get longer, thinner, or uglier; it may not pass through ceramic or open itself.",
     "protected_fact": "The protected fact is whether the loop is linked around the handle. That relation survives many changes of shape because the only moves that would remove it are exactly the moves the problem forbids.",
     "course_bridge": "This transfers the knot-and-link habit from the course: do not trust the drawing's neatness; ask what relationship cannot be removed by legal deformation. The mug handle plays the role of forbidden matter, and the band plays the role of a loop whose route memory matters.",
-    "wrong_transfer": "A weak answer says the band looks circular or messy. That talks about geometry of the drawing, not the topological relation that blocks removal. It also misses the illegal move: pulling the band through the handle or cutting it open.",
+    "wrong_transfer": "A shallow response says the band looks circular or messy. That talks about geometry of the drawing, not the topological relation that blocks removal. It also misses the illegal move: pulling the band through the handle or cutting it open.",
     "reader_task": "Explain whether the band can be freed without cutting it, name the exact move that would be illegal, and say which relationship survives every legal stretch.",
     "concepts": [
       "knots-and-links",
@@ -21,7 +21,7 @@
     "allowed_move": "The allowed move is to slide a route through open walking space while keeping its endpoints at the gates and never crossing the fence. The path may wiggle, shorten, or lengthen, but the endpoints and forbidden region define the same route problem.",
     "protected_fact": "The protected fact is whether the route winds around the missing region. A fenced hole can block one path from being changed into the other because any attempted slide would have to cross the fence or move an endpoint.",
     "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region matters because it changes which deformations are legal. The course habit is to read the obstacle as part of the object, not as decoration in the drawing.",
-    "wrong_transfer": "A weak answer says both paths are just lines between the same gates. That ignores the obstacle that makes the state space different and treats endpoint agreement as enough by itself.",
+    "wrong_transfer": "A shallow response says both paths are just lines between the same gates. That ignores the obstacle that makes the state space different and treats endpoint agreement as enough by itself.",
     "reader_task": "Decide whether one route can be deformed into the other while respecting the fence, say what the fence contributes to the proof, and name the illegal shortcut that would make the routes look equivalent.",
     "concepts": [
       "deformation",
@@ -36,7 +36,7 @@
     "allowed_move": "The allowed move is to clean or redraw nearby arrows without removing the calm point from the loop or dragging another calm point inside. The loop must continue to isolate the same failure so the turning account is about one defect.",
     "protected_fact": "The protected fact is the total turning of the arrows during one walk around the loop. That turning can survive redrawings even when individual arrows are sketched differently.",
     "course_bridge": "This transfers vector-field index from the course: local arrow behavior can become signed evidence without solving the motion everywhere. The everyday map becomes mathematical only after the reader walks around the defect and reads the surrounding arrows.",
-    "wrong_transfer": "A weak answer tries to predict the full weather. The course idea only needs the local turning account around the defect. It also must not count every calm-looking point unless the point is isolated and has a readable surrounding pattern.",
+    "wrong_transfer": "A shallow response tries to predict the full weather. The course idea only needs the local turning account around the defect. It also must not count every calm-looking point unless the point is isolated and has a readable surrounding pattern.",
     "reader_task": "Walk around the calm point in words, say what has to stay isolated before an index-like count is meaningful, and state what this local count does not predict.",
     "concepts": [
       "vector-field-index",
@@ -51,7 +51,7 @@
     "allowed_move": "The allowed move is a continuous path through allowed states where every intermediate position avoids collision. The sofa cannot jump through a tight corner, and the model cannot forget rotation if rotation is part of the physical motion.",
     "protected_fact": "The protected fact is whether the start state and end state lie in the same connected region of allowed states. If a wall or narrow turn separates those regions, no continuous legal motion connects the two poses.",
     "course_bridge": "This transfers configuration-space modeling: a motion problem becomes a route problem in the space of possible states. The course idea is not to stare harder at the hallway, but to build the right state space and inspect its allowed paths.",
-    "wrong_transfer": "A weak answer stares only at the floor plan. The proof needs the larger space that records both location and angle. It also has to remove collision states before claiming a route exists.",
+    "wrong_transfer": "A shallow response stares only at the floor plan. The proof needs the larger space that records both location and angle. It also has to remove collision states before claiming a route exists.",
     "reader_task": "Name what one point of the state space represents, what would count as a forbidden state, and how a path in that space translates back into real sofa motion.",
     "concepts": [
       "configuration-space",
@@ -66,7 +66,7 @@
     "allowed_move": "The allowed move is a continuous self-map of the filled region, with no point sent outside the cup. Nearby starting points must end nearby, and the final positions must still live inside the same filled region.",
     "protected_fact": "The protected fact is that a continuous self-map of the right kind of filled region cannot avoid some self-agreement. The conclusion is about at least one starting point matching its ending point, not about all points returning.",
     "course_bridge": "This transfers fixed-point thinking: the question is not where the point is, but why some point must return to itself. The everyday motion becomes course mathematics only after the domain, rule, and self-map condition are named.",
-    "wrong_transfer": "A weak answer says every point returns or that the theorem computes the point. The safe conclusion is existence of at least one fixed point, and only after the self-map contract has been checked.",
+    "wrong_transfer": "A shallow response says every point returns or that the theorem computes the point. The safe conclusion is existence of at least one fixed point, and only after the self-map contract has been checked.",
     "reader_task": "State the domain, the rule, and the exact conclusion without pretending to locate the fixed point or claiming that every bit of coffee returns.",
     "concepts": [
       "brouwer-fixed-point",
@@ -81,7 +81,7 @@
     "allowed_move": "The allowed move is to reason after the edge identifications have been made, treating glued points as the same point. Redrawing the sheet is harmless only if the same identification rule is still being used.",
     "protected_fact": "The protected fact is the route and boundary behavior of the completed surface after the taped edges are treated as one. A path that looks like it hits an edge on paper may continue through the glued edge in the finished surface.",
     "course_bridge": "This transfers quotient-space reading: the drawing is a code, and the gluing rule tells the reader what space the code describes. The course habit is to read the rule before trusting the picture.",
-    "wrong_transfer": "A weak answer counts the border of the flat sheet as a real boundary after the taping rule has already removed it. That reasons about the code instead of the finished object.",
+    "wrong_transfer": "A shallow response counts the border of the flat sheet as a real boundary after the taping rule has already removed it. That reasons about the code instead of the finished object.",
     "reader_task": "Say which points become the same point, what boundary claim changes after the identification, and which feature of the flat drawing should no longer be read literally.",
     "concepts": [
       "quotient-space",
@@ -96,7 +96,7 @@
     "allowed_move": "The allowed move is to bend and redraw the surface without tearing, puncturing, or changing how the surface is connected. Changing the cell account is allowed only when it still describes the same surface.",
     "protected_fact": "The protected fact is a whole-surface count such as Euler characteristic, not the raw count of dents or patch lines. Dents may appear or disappear; the useful count is the one designed to survive legal changes to the surface account.",
     "course_bridge": "This transfers the stable-count habit: choose the count designed to survive the legal changes, not the count easiest to see. The everyday squeezed ball becomes a test for separating drawing noise from whole-surface evidence.",
-    "wrong_transfer": "A weak answer counts every wrinkle as mathematical evidence. Wrinkles are drawing noise unless the argument says why they survive. The repair is to ask which count remains the same after the surface is redrawn honestly.",
+    "wrong_transfer": "A shallow response counts every wrinkle as mathematical evidence. Wrinkles are drawing noise unless the argument says why they survive. The repair is to ask which count remains the same after the surface is redrawn honestly.",
     "reader_task": "Identify one visible count that is not protected, one whole-surface fact that is protected, and the illegal change that would stop the protected fact from applying.",
     "concepts": [
       "euler-characteristic",
@@ -111,7 +111,7 @@
     "allowed_move": "The allowed move is a continuous path through allowed joint choices, with no intermediate pose entering the blocked zone. The arm may move gradually through joint space, but the path cannot pass through a forbidden pose just because the drawing on the table looks convenient.",
     "protected_fact": "The protected fact is whether the allowed-pose space has a route from the start pose to the target pose. A blocked zone can create a hole, wall, or disconnected region in the space of choices.",
     "course_bridge": "This transfers late-course application thinking: topology studies the shape of possible states before detailed motion equations are solved. The course does not need every control input before it can ask whether the allowed state space has a route.",
-    "wrong_transfer": "A weak answer draws only the arm in physical space. The topological question lives in the space of all allowed joint choices, after forbidden poses have been removed and real freedoms have been kept.",
+    "wrong_transfer": "A shallow response draws only the arm in physical space. The topological question lives in the space of all allowed joint choices, after forbidden poses have been removed and real freedoms have been kept.",
     "reader_task": "Describe one complete state of the arm, explain what removed states do to the route question, and say what conclusion would overclaim beyond the state-space model.",
     "concepts": [
       "configuration-space",

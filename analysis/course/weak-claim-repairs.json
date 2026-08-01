@@ -66,7 +66,7 @@
   },
   {
     "title": "Signs cancel",
-    "weak_claim": "The plus and minus terms cancel, so only the total matters for the final answer without explaining the shared sign convention.",
+    "weak_claim": "The plus and minus terms cancel, so the signed total, not the raw count, carries the final answer without explaining the shared sign convention.",
     "why_weak": "The sentence treats signs as if they were automatic labels. It does not explain where the shared direction rule comes from or why opposite signs are comparable. A plus and a minus can cancel only after the page earns a common sign convention.",
     "first_principles_repair": "Name the orientation rule, boundary direction, or local direction comparison that assigns signs. Then explain the local pair creation or cancellation event that keeps the signed total stable. The repaired sentence should make cancellation a checked event, not an arithmetic wish.",
     "detail_to_check": "Ask whether a plus sign in one place and a minus sign in another place were assigned by the same rulebook. If the rule cannot be carried across the object, the signed total may not be defined.",
@@ -105,8 +105,8 @@
   },
   {
     "title": "This is just an example of the concept",
-    "weak_claim": "This example illustrates the concept and helps the reader see why the idea is useful without saying what the example lets them inspect.",
-    "why_weak": "The sentence does not say what the example lets the reader inspect. A useful example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
+    "weak_claim": "This example names the concept but does not say what the example lets the reader inspect.",
+    "why_weak": "The sentence does not say what the example lets the reader inspect. A working example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
     "first_principles_repair": "Say what the example makes visible. It may show one point in a state space, one legal deformation, one crossing pair, one glued boundary, one defect, or one source boundary. Then say what the reader should test. The repaired sentence should turn the example into an inspection task.",
     "detail_to_check": "Ask whether the example would still teach the idea if the formal concept name were removed from the paragraph. If not, the example is probably leaning on the name instead of showing the job.",
     "where_to_use": "Use this repair on concept pages, theme pages, subtheme pages, and lecture examples that currently rely too much on naming.",
