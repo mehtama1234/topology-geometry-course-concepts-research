@@ -98,7 +98,7 @@ As of the current generated audit:
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
 - 7,741 concept essay words.
-- 1,781 concept workup words.
+- 2,746 concept workup words.
 - 1,965 concept anchor words.
 - 1,964 theme essay words.
 - 803 theme lens words.

@@ -2827,10 +2827,10 @@
         "This does not mean the course ignores special cases. It means the proof first studies the stable nearby situation where the mechanism can be seen. Then the special case can be approached as a limiting or transition case. The clean picture is not a simplification of the theorem; it is the microscope that lets the theorem's evidence appear."
       ],
       "workup": {
-        "object": "A drawing or configuration that may contain accidental alignments, tangencies, or multiple events happening at the same place.",
-        "operation": "Move it a very small amount while preserving the actual question, so fragile coincidences separate into ordinary events.",
-        "protected": "The protected fact is the answer to the original problem, not the exact accidental arrangement that made the first drawing hard to read.",
-        "breaks_if": "It breaks if the small move changes the object being studied, crosses a forbidden boundary, or removes a condition the problem required."
+        "object": "A drawing or configuration that may contain accidental alignments, tangencies, or multiple events happening at the same place. The object is suspect because one special-looking picture can hide several ordinary events.",
+        "operation": "Move it a very small amount while preserving the actual question, so fragile coincidences separate into ordinary events. The motion is allowed only when it keeps the original boundary data, objects, and restrictions intact.",
+        "protected": "The protected fact is the answer to the original problem, not the exact accidental arrangement that made the first drawing hard to read. Cleanup should expose evidence without changing what is being proved.",
+        "breaks_if": "It breaks if the small move changes the object being studied, crosses a forbidden boundary, or removes a condition the problem required. Then the ordinary picture no longer answers the original question."
       },
       "anchor": {
         "course_moment": "In the intersection lectures, a messy meeting is first nudged into clean separate meetings. That small cleanup is not cosmetic. It is what lets each meeting receive a sign or be paired with another meeting.",
@@ -2904,10 +2904,10 @@
         "From first principles, the recurring question is simple: what changes continuously, and what fact is guarded while it changes? If that protected fact is clear, the simplified picture speaks for the original. If not, the simplification may have solved a different problem."
       ],
       "workup": {
-        "object": "A curve, surface, field, or diagram whose exact shape is less important than what it can become under allowed motion.",
-        "operation": "Bend, slide, stretch, or redraw continuously while keeping forbidden moves out of the argument.",
-        "protected": "The protected fact is the feature the question is really about: route order, side behavior, crossing obstruction, or total count.",
-        "breaks_if": "It breaks if the simplification uses a move the original problem did not permit, such as passing through an obstacle or moving fixed data."
+        "object": "A curve, surface, field, or diagram whose exact shape is less important than what it can become under allowed motion. The object must come with rules saying which changes count as the same problem.",
+        "operation": "Bend, slide, stretch, or redraw continuously while keeping forbidden moves out of the argument. The operation should make the picture easier to inspect while preserving the data that matter.",
+        "protected": "The protected fact is the feature the question is really about: route order, side behavior, crossing obstruction, or total count. That fact is what lets a simplified picture speak for the original.",
+        "breaks_if": "It breaks if the simplification uses a move the original problem did not permit, such as passing through an obstacle or moving fixed data. Then deformation becomes a hidden change of subject."
       },
       "anchor": {
         "course_moment": "The disk path puzzle asks whether boundary pairs can be joined without crossings. The useful move is to slide and smooth paths while keeping endpoint order and the no-crossing rule intact.",
@@ -3006,10 +3006,10 @@
         "The beginner trap is to treat any number attached to a picture as an invariant. A raw crossing count is not protected if legal motion can create or remove a canceling pair. A length is not protected if the object can stretch. The invariant is the part of the evidence that the allowed moves cannot destroy."
       ],
       "workup": {
-        "object": "A changing situation where many visible details vary while one chosen piece of evidence is meant to stay fixed.",
-        "operation": "Check the evidence before and after every allowed move, and keep only the part that survives those moves.",
-        "protected": "The protected fact is the stored memory of the problem: a side count, hole count, parity, signed meeting count, or total index.",
-        "breaks_if": "It breaks if the chosen quantity changes under a harmless legal redraw, or if it remembers details unrelated to the question."
+        "object": "A changing situation where many visible details vary while one chosen piece of evidence is meant to stay fixed. The concept begins with motion and asks what can be trusted through it.",
+        "operation": "Check the evidence before and after every allowed move, and keep only the part that survives those moves. The operation is a stress test for whether the proposed witness is real.",
+        "protected": "The protected fact is the stored memory of the problem: a side count, hole count, parity, signed meeting count, or total index. It remains useful because legal change cannot erase it.",
+        "breaks_if": "It breaks if the chosen quantity changes under a harmless legal redraw, or if it remembers details unrelated to the question. Then the witness tracks the drawing, not the problem."
       },
       "anchor": {
         "course_moment": "The Mobius strip keeps one-sided behavior while it bends, and signed intersections keep a total while pairs appear or vanish. Both are receipts for what survived a legal change.",
@@ -3142,10 +3142,10 @@
         "The deeper lesson is that the same object may support several kinds of questions. A sphere can be studied by its curvature, by its Euler characteristic, by vector fields on it, or by maps from it to itself. The reader should choose the level of description that preserves the fact the problem is actually asking about."
       ],
       "workup": {
-        "object": "A shape or motion that can be described either by measurements or by route, boundary, and connection facts.",
-        "operation": "Choose the level of description that keeps the real constraint while discarding details that can legally vary.",
-        "protected": "The protected fact is whichever feature the problem depends on: measured bending for geometry, or surviving arrangement for topology.",
-        "breaks_if": "It breaks if a topological argument throws away a needed measurement, or if a geometric description hides a whole-shape obstruction."
+        "object": "A shape or motion that can be described either by measurements or by route, boundary, and connection facts. The same picture may support different questions depending on what must be preserved.",
+        "operation": "Choose the level of description that keeps the real constraint while discarding details that can legally vary. The operation is deciding which facts belong to the problem and which are noise.",
+        "protected": "The protected fact is whichever feature the problem depends on: measured bending for geometry, or surviving arrangement for topology. The right language is the one that keeps that feature visible.",
+        "breaks_if": "It breaks if a topological argument throws away a needed measurement, or if a geometric description hides a whole-shape obstruction. The chosen description must match the actual question."
       },
       "anchor": {
         "course_moment": "A paper strip has lengths and bends, but the Mobius lesson depends on the end-gluing rule. A vector field has arrow sizes, but the index lesson depends on how nearby directions turn.",
@@ -3234,10 +3234,10 @@
         "For a beginner, the key is not to worship the symbols. The symbols are a bookkeeping device for a plain idea: choose a count that changes zero when the drawing changes harmlessly. Once that habit is clear, intersection number and vector-field index feel like relatives rather than new mysteries."
       ],
       "workup": {
-        "object": "A surface divided into vertices, edges, and faces by a chosen decomposition.",
-        "operation": "Count vertices, subtract edges, add faces, and check that refinements only add canceling bookkeeping terms.",
-        "protected": "The protected fact is the alternating total attached to the surface rather than to the particular mesh drawn on it.",
-        "breaks_if": "It breaks if boundaries, identifications, or cell choices are counted inconsistently, because then cancellation no longer records the surface honestly."
+        "object": "A surface divided into vertices, edges, and faces by a chosen decomposition. The chosen mesh is a counting device, not the surface's true identity or final evidence.",
+        "operation": "Count vertices, subtract edges, add faces, and check that refinements only add canceling bookkeeping terms. The operation is designed so artificial subdivisions do not change the final number.",
+        "protected": "The protected fact is the alternating total attached to the surface rather than to the particular mesh drawn on it. That total can later control vector-field defects.",
+        "breaks_if": "It breaks if boundaries, identifications, or cell choices are counted inconsistently, because then cancellation no longer records the surface honestly. Bad bookkeeping creates a number for the drawing, not the surface."
       },
       "anchor": {
         "course_moment": "When a surface is divided into vertices, edges, and faces, extra internal cuts change the raw counts. The alternating total is built so those artificial changes cancel.",
@@ -3306,10 +3306,10 @@
         "This is why triangulation belongs beside deformation and invariance. It is not the answer itself. It is a controlled translation into a form where arithmetic can begin, followed by a check that the arithmetic did not become a statement about the translation alone."
       ],
       "workup": {
-        "object": "A continuous surface that is too slippery to count directly but can be divided into manageable finite pieces.",
-        "operation": "Replace the surface by a finite ledger of cells or triangles, then compare what happens when that ledger is refined.",
-        "protected": "The protected fact is the surface information that survives after the chosen pieces are redrawn, split, or merged legally.",
-        "breaks_if": "It breaks if the pieces are treated as the surface itself, or if the count depends on one arbitrary decomposition."
+        "object": "A continuous surface that is too slippery to count directly but can be divided into manageable finite pieces. The division gives the reader handles for bookkeeping.",
+        "operation": "Replace the surface by a finite ledger of cells or triangles, then compare what happens when that ledger is refined. The operation makes counting possible without pretending the first ledger is sacred.",
+        "protected": "The protected fact is the surface information that survives after the chosen pieces are redrawn, split, or merged legally. The proof must outlive the chosen triangulation.",
+        "breaks_if": "It breaks if the pieces are treated as the surface itself, or if the count depends on one arbitrary decomposition. Then the argument proves something about the mesh, not the surface."
       },
       "anchor": {
         "course_moment": "Surface classification needs a smooth object to become countable. Triangulation supplies a finite ledger, then later checks that the answer does not belong only to that one ledger.",
@@ -3358,10 +3358,10 @@
         "That is why graph planarity belongs with deformation and invariants rather than with drawing skill. A good planarity argument does not say, 'I cannot draw it.' It says which protected order, count, or separation condition prevents every drawing of the required kind."
       ],
       "workup": {
-        "object": "A set of required connections between vertices, placed on a surface with limited room for routes.",
-        "operation": "Try to embed the connections without forbidden crossings, while using surface bookkeeping to decide whether every attempt must fail.",
-        "protected": "The protected fact is the connection demand together with the surface room available for carrying those connections.",
-        "breaks_if": "It breaks if one failed drawing is mistaken for proof, or if the surface is silently changed to give extra routes."
+        "object": "A set of required connections between vertices, placed on a surface with limited room for routes. The object is the demand plus the surface that must carry it.",
+        "operation": "Try to embed the connections without forbidden crossings, while using surface bookkeeping to decide whether every attempt must fail. The operation turns drawing into a test of available room.",
+        "protected": "The protected fact is the connection demand together with the surface room available for carrying those connections. The obstruction must survive across all legal redrawings.",
+        "breaks_if": "It breaks if one failed drawing is mistaken for proof, or if the surface is silently changed to give extra routes. Impossibility must come from the problem, not from a bad sketch."
       },
       "anchor": {
         "course_moment": "The boundary-pair disk problem is not settled by one failed drawing. The obstruction must show that every legal drawing of the required connections runs into the same shortage of room.",
@@ -3415,10 +3415,10 @@
         "This concept connects to intersections and invariants because a knot needs evidence that survives deformation. A picture of a knot can be made uglier or cleaner without changing the knot. The reader should ask what relation remains after all legal simplification has been tried: linking, winding, crossing information, or another protected record of how the curve travels."
       ],
       "workup": {
-        "object": "A closed loop or several loops sitting in space, with over-under information at crossings when drawn on a page.",
-        "operation": "Move the loops by legal ambient motion while forbidding cuts, breaks, and strands passing through each other.",
-        "protected": "The protected fact is the embedding relation: whether the loop can become a plain circle or whether loops remain linked.",
-        "breaks_if": "It breaks if the flat drawing forgets over-under data, or if the argument lets strands pass through each other."
+        "object": "A closed loop or several loops sitting in space, with over-under information at crossings when drawn on a page. The object includes its placement in surrounding room.",
+        "operation": "Move the loops by legal ambient motion while forbidding cuts, breaks, and strands passing through each other. The operation asks what tangling remains under honest motion.",
+        "protected": "The protected fact is the embedding relation: whether the loop can become a plain circle or whether loops remain linked. The exact drawing may change while the placement relation survives.",
+        "breaks_if": "It breaks if the flat drawing forgets over-under data, or if the argument lets strands pass through each other. That illegal pass-through erases the evidence being tested."
       },
       "anchor": {
         "course_moment": "Off-center Mobius cuts can leave pieces linked. The important event is not that the strips look tangled, but that separating them would require a forbidden pass-through.",
@@ -3462,10 +3462,10 @@
         "From first principles, winding asks whether a route can be pulled off a forbidden center without crossing it. Linking asks the same kind of question for two closed curves. Both ideas teach the reader to look for a relationship that belongs to the whole route, not to one convenient snapshot of the drawing. A good explanation must always name the surrounding space and the forbidden crossings."
       ],
       "workup": {
-        "object": "A loop or pair of loops whose route may go around a hole, post, point, or another loop.",
-        "operation": "Track the aroundness with direction, so opposite turns or crossings can cancel when the motion changes the picture.",
-        "protected": "The protected fact is the signed relationship of going around, not the length, roundness, or visual neatness of the loop.",
-        "breaks_if": "It breaks if direction is ignored, because opposite windings can look similar while canceling in the actual count."
+        "object": "A loop or pair of loops whose route may go around a hole, post, point, or another loop. The important data is relational: one object is positioned around another.",
+        "operation": "Track the aroundness with direction, so opposite turns or crossings can cancel when the motion changes the picture. The operation turns route memory into signed evidence.",
+        "protected": "The protected fact is the signed relationship of going around, not the length, roundness, or visual neatness of the loop. Legal deformation may redraw the loop without changing that relation.",
+        "breaks_if": "It breaks if direction is ignored, because opposite windings can look similar while canceling in the actual count. It also breaks if a forbidden crossing changes the relation."
       },
       "anchor": {
         "course_moment": "A route around a hole or another loop may stretch and wiggle while still going around. Later signed counts refine this by letting opposite turns cancel.",
@@ -3524,10 +3524,10 @@
         "The first-principles test is simple: can a local choice be carried all the way around without contradiction, and does the surface have an edge where extra behavior enters? Those questions decide whether later arithmetic is legal. Boundary and orientation are therefore part of the proof's foundation, not a cleanup step after the idea is already known."
       ],
       "workup": {
-        "object": "A surface with possible edges and a possible global choice of consistent direction or side.",
-        "operation": "Carry a local direction choice around the whole surface and account for any boundary terms separately.",
-        "protected": "The protected fact is whether local signs and side choices can be made consistently over the complete surface.",
-        "breaks_if": "It breaks if local two-sidedness is mistaken for global orientability, or if boundary contributions are left out of the account."
+        "object": "A surface with possible edges and a possible global choice of consistent direction or side. Local patches may look harmless while the whole route reverses the choice.",
+        "operation": "Carry a local direction choice around the whole surface and account for any boundary terms separately. The operation tests whether signs can be assigned consistently.",
+        "protected": "The protected fact is whether local signs and side choices can be made consistently over the complete surface. Later signed counts rely on this agreement.",
+        "breaks_if": "It breaks if local two-sidedness is mistaken for global orientability, or if boundary contributions are left out of the account. Then signs or totals may be assigned in a space that cannot support them."
       },
       "anchor": {
         "course_moment": "The Mobius strip shows that every small patch can look two-sided while a full trip reverses the side choice. Signed intersections later require that this reversal not happen.",
@@ -3646,10 +3646,10 @@
         "For a beginner, the important detail is that the theorem balances several kinds of information. Interior curvature, boundary turning, and corner contributions may all be needed before the total matches the surface. Leaving out an edge term is not a small oversight; it changes the account being balanced. Gauss-Bonnet teaches that a global conclusion often appears only after every local contribution has been put into the same ledger."
       ],
       "workup": {
-        "object": "A surface or region whose local bending, boundary turning, and corner behavior can be measured and summed.",
-        "operation": "Add the local geometric contributions with the necessary boundary and corner terms, then compare the total to whole-surface topology.",
-        "protected": "The protected fact is the total account, which can be constrained by the surface even when local bending changes.",
-        "breaks_if": "It breaks if edge or corner terms are ignored, because then the total no longer balances the actual geometric object."
+        "object": "A surface or region whose local bending, boundary turning, and corner behavior can be measured and summed. The object must include every place where turning enters the account.",
+        "operation": "Add the local geometric contributions with the necessary boundary and corner terms, then compare the total to whole-surface topology. The operation asks how local shape answers to the whole.",
+        "protected": "The protected fact is the total account, which can be constrained by the surface even when local bending changes. The sum is meaningful only when all contributions are included.",
+        "breaks_if": "It breaks if edge or corner terms are ignored, because then the total no longer balances the actual geometric object. Missing terms make the local-to-global claim false."
       },
       "anchor": {
         "course_moment": "The course's local-to-global habit appears when local bending or turning is summed and compared with a whole-surface number, instead of being treated as isolated measurements.",
@@ -3693,10 +3693,10 @@
         "The important caution is that the index belongs to isolated defects with a readable surrounding arrow pattern. If a whole curve of arrows vanishes, or if the local picture is not cleaned up, the count may not yet be available. Generic position and deformation prepare the field so the local evidence can be counted and then added across the surface."
       ],
       "workup": {
-        "object": "An arrow field on a surface with isolated places where the arrow pattern fails or vanishes.",
-        "operation": "Walk around each defect on a small loop and count how the nearby arrows turn.",
-        "protected": "The protected fact is the signed local turning count, which can move with the defect and enter a global sum.",
-        "breaks_if": "It breaks if the defect is not isolated, or if the surrounding arrow direction is not read consistently around the loop."
+        "object": "An arrow field on a surface with isolated places where the arrow pattern fails or vanishes. The object is the field plus the surface that carries it.",
+        "operation": "Walk around each defect on a small loop and count how the nearby arrows turn. The operation reads the failure from its surroundings instead of only naming the zero.",
+        "protected": "The protected fact is the signed local turning count, which can move with the defect and enter a global sum. The count records how motion fails locally.",
+        "breaks_if": "It breaks if the defect is not isolated, or if the surrounding arrow direction is not read consistently around the loop. Then the local count cannot be trusted."
       },
       "anchor": {
         "course_moment": "Around a source, sink, or saddle, nearby arrows turn in a pattern that can be read on a small loop. That turning becomes a signed local count.",
@@ -3780,10 +3780,10 @@
         "The mathematical detail is that continuity ties nearby inputs to nearby outputs. If the rule could jump, it might dodge the forced agreement. The theorem is not saying every process has a fixed point; it is saying that certain shapes and certain continuous rules leave no global escape from self-agreement. The shape and the rule must both be named honestly."
       ],
       "workup": {
-        "object": "A rule that sends points of a space to points, together with the question of whether some point returns to itself.",
-        "operation": "Translate the rule into a graph and compare it with the diagonal where input and output agree.",
-        "protected": "The protected fact is self-agreement: a graph-diagonal meeting means the original rule has a fixed point.",
-        "breaks_if": "It breaks if the graph no longer represents the rule, or if the space and continuity assumptions are not the ones the theorem needs."
+        "object": "A rule that sends points of a space to points, together with the question of whether some point returns to itself. The object is a motion rule viewed geometrically.",
+        "operation": "Translate the rule into a graph and compare it with the diagonal where input and output agree. The operation turns self-agreement into a meeting that topology can inspect.",
+        "protected": "The protected fact is self-agreement: a graph-diagonal meeting means the original rule has a fixed point. This preserves the meaning of the equation while changing its form.",
+        "breaks_if": "It breaks if the graph no longer represents the rule, or if the space and continuity assumptions are not the ones the theorem needs. Then the meeting no longer proves the fixed-point claim."
       },
       "anchor": {
         "course_moment": "The graph of a map and the diagonal turn the question f(x) = x into a meeting problem. A fixed point is no longer hidden inside a rule; it is a visible intersection.",
@@ -3877,10 +3877,10 @@
         "The payoff is that a motion question becomes a route question. Can one state be reached from another without crossing a forbidden region? Must a rule on the state space leave some state fixed? Does the shape of possible states force an equilibrium or obstruction? Configuration space lets the whole course's route, boundary, and fixed-point ideas act on physical behavior."
       ],
       "workup": {
-        "object": "The full list of possible states of a mechanism, physical setup, or moving system.",
-        "operation": "Represent each state as a point, remove forbidden states, and read motion as paths through the resulting space.",
-        "protected": "The protected fact is the shape of possibility: holes, walls, components, and forced passages in the state space.",
-        "breaks_if": "It breaks if the model omits a real freedom, adds a false restriction, or forgets a boundary condition from the physical problem."
+        "object": "The full list of possible states of a mechanism, physical setup, or moving system. One point should describe one complete allowed situation in the model.",
+        "operation": "Represent each state as a point, remove forbidden states, and read motion as paths through the resulting space. The operation changes a physical question into a route question.",
+        "protected": "The protected fact is the shape of possibility: holes, walls, components, and forced passages in the state space. Those features can constrain behavior without solving every motion.",
+        "breaks_if": "It breaks if the model omits a real freedom, adds a false restriction, or forgets a boundary condition from the physical problem. A dishonest state space proves the wrong statement."
       },
       "anchor": {
         "course_moment": "In applications, a physical motion is replaced by the space of all possible states. Legal motion becomes a path, and forbidden states become missing regions or walls.",
@@ -3959,10 +3959,10 @@
         "The important check is translation back. After solving the dual problem, the conclusion must mean something in the original picture. If regions become dots, the answer about dots must still say something about regions. If a map becomes a graph, an intersection must still mean a fixed point. Duality is useful only when both directions of meaning are kept clear."
       ],
       "workup": {
-        "object": "A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules.",
-        "operation": "Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph.",
-        "protected": "The protected fact is the meaning that survives translation between the original picture and the dual picture.",
-        "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left vague."
+        "object": "A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules. The object needs another representation because the first one obscures the evidence.",
+        "operation": "Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph. The operation is translation, not replacement of the problem.",
+        "protected": "The protected fact is the meaning that survives translation between the original picture and the dual picture. The new picture is valid only because it preserves the needed relationships.",
+        "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left vague. A dual view must return with the original claim intact."
       },
       "anchor": {
         "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question.",
@@ -4040,10 +4040,10 @@
         "The important caution is to prove that changes really happen in pairs. If a legal move can create one event by itself, parity is not protected. The power of parity comes from the rule of motion, not from the word odd or even. It is a small invariant, but it must still be earned."
       ],
       "workup": {
-        "object": "A count whose exact value may change while its evenness or oddness is expected to survive.",
-        "operation": "Forget all information except odd or even, then check that every legal change alters the raw count by pairs.",
-        "protected": "The protected fact is parity, which can prove zero impossible when an odd count must remain odd.",
-        "breaks_if": "It breaks if a legal move can change the count by one, because then oddness and evenness are not protected."
+        "object": "A count whose exact value may change while its evenness or oddness is expected to survive. The object is a problem where only zero versus nonzero may matter.",
+        "operation": "Forget all information except odd or even, then check that every legal change alters the raw count by pairs. The operation keeps the coarsest evidence that still blocks the outcome.",
+        "protected": "The protected fact is parity, which can prove zero impossible when an odd count must remain odd. It is useful because pair changes cannot flip oddness.",
+        "breaks_if": "It breaks if a legal move can change the count by one, because then oddness and evenness are not protected. The parity witness must survive every allowed move."
       },
       "anchor": {
         "course_moment": "When legal changes create or remove events two at a time, the exact number may change while oddness or evenness stays fixed across the motion.",
@@ -4092,10 +4092,10 @@
         "This is why product spaces appear behind fixed points and applications. The graph of a map lives in an input-output product. A diagonal lives in the same product and records equality of the two entries. Configuration spaces often begin as products before constraints remove forbidden states. Products are the room in which multi-choice problems become geometric."
       ],
       "workup": {
-        "object": "Several independent choices that must be recorded together as one combined state or point.",
-        "operation": "Let each choice vary and treat the combined choices as a new space with its own routes and boundaries.",
-        "protected": "The protected fact is independence: each coordinate keeps its freedom until the actual problem imposes a constraint.",
-        "breaks_if": "It breaks if dependent choices are treated as independent, because the product then contains states the problem never allowed."
+        "object": "Several independent choices that must be recorded together as one combined state or point. The object is a space of simultaneous choices, not a single variable.",
+        "operation": "Let each choice vary and treat the combined choices as a new space with its own routes and boundaries. The operation builds the room where constraints can later be imposed.",
+        "protected": "The protected fact is independence: each coordinate keeps its freedom until the actual problem imposes a constraint. This keeps the starting model honest before restrictions are added.",
+        "breaks_if": "It breaks if dependent choices are treated as independent, because the product then contains states the problem never allowed. False independence makes the later state space too large."
       },
       "anchor": {
         "course_moment": "A graph of a map records input and output together; a configuration space records several freedoms together. Product thinking supplies the larger room where those combined choices live.",
@@ -4139,10 +4139,10 @@
         "The beginner danger is to treat the drawing as the object. In quotient thinking, the ink is only a code. Two points that look far apart on the page may be the same point in the space, and a boundary line on the drawing may no longer be a boundary in the finished object. Once that habit is learned, later constructions become less mysterious: maps, state spaces, and manifolds are often understood by the rules that identify their points."
       ],
       "workup": {
-        "object": "A drawn shape together with a rule declaring certain points, edges, or exits to be the same.",
-        "operation": "Apply the identification rule and read travel, loops, sides, and boundaries in the resulting space rather than in the drawing.",
-        "protected": "The protected fact is rule-made sameness: points that look separate on the page may be identical in the space.",
-        "breaks_if": "It breaks if the drawing is read literally after identifications have changed what counts as a point or boundary."
+        "object": "A drawn shape together with a rule declaring certain points, edges, or exits to be the same. The object is the drawing plus the sameness rule.",
+        "operation": "Apply the identification rule and read travel, loops, sides, and boundaries in the resulting space rather than in the drawing. The operation changes what counts as leaving or returning.",
+        "protected": "The protected fact is rule-made sameness: points that look separate on the page may be identical in the space. Travel must obey the quotient rule.",
+        "breaks_if": "It breaks if the drawing is read literally after identifications have changed what counts as a point or boundary. Then the reader reasons about the picture, not the space."
       },
       "anchor": {
         "course_moment": "A square with edge labels can describe a cylinder, torus, or Mobius-type surface. The drawn boundary is not final until the identification rule has been read.",
@@ -4186,10 +4186,10 @@
         "The payoff is that a local replacement can reveal a global fact: which routes have been added, which side choices now fail, or which surface family the object belongs to. Surgery is therefore not a visual stunt. It is a controlled way to change the object while keeping a ledger of the topological consequences."
       ],
       "workup": {
-        "object": "A surface or space with a controlled part that can be removed and replaced along a stated boundary.",
-        "operation": "Remove the chosen piece, keep track of the exposed boundary, and attach the replacement by a specified rule.",
-        "protected": "The protected fact is the bookkeeping of what the local replacement changed and what global feature it was meant to reveal.",
-        "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is vague, because then the operation is not auditable."
+        "object": "A surface or space with a controlled part that can be removed and replaced along a stated boundary. The object must say exactly where the operation acts.",
+        "operation": "Remove the chosen piece, keep track of the exposed boundary, and attach the replacement by a specified rule. The operation is local, but its effect is read globally.",
+        "protected": "The protected fact is the bookkeeping of what the local replacement changed and what global feature it was meant to reveal. The boundary account keeps the operation honest.",
+        "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is vague, because then the operation is not auditable. The reader cannot know which space resulted."
       },
       "anchor": {
         "course_moment": "Surface classification uses controlled removal and attachment to expose handles, crosscaps, and boundaries. The operation has to say exactly what boundary is left and how the replacement is glued.",
@@ -4233,10 +4233,10 @@
         "The beginner trap is to think a manifold is just a fancy surface name. In this course it is a promise about local ordinary behavior plus a warning about global structure. Both halves matter. Without local ordinary behavior, the course cannot define arrows and intersections cleanly. Without global structure, there is no topological constraint to discover."
       ],
       "workup": {
-        "object": "A space that looks like ordinary room when inspected close up, even if its whole shape is unfamiliar.",
-        "operation": "Use local ordinary neighborhoods for drawing curves, maps, and fields, then check what global gluing does to them.",
-        "protected": "The protected fact is the gap between local simplicity and global constraint, which lets the course reason patch by patch without stopping there.",
-        "breaks_if": "It breaks if local ordinariness is used to conclude global simplicity, because holes, side reversal, and total counts can be invisible locally."
+        "object": "A space that looks like ordinary room when inspected close up, even if its whole shape is unfamiliar. The object is locally manageable but globally unresolved.",
+        "operation": "Use local ordinary neighborhoods for drawing curves, maps, and fields, then check what global gluing does to them. The operation permits local reasoning while demanding a whole-space check.",
+        "protected": "The protected fact is the gap between local simplicity and global constraint, which lets the course reason patch by patch without stopping there. Local work must still fit globally.",
+        "breaks_if": "It breaks if local ordinariness is used to conclude global simplicity, because holes, side reversal, and total counts can be invisible locally. Small-patch evidence is not enough."
       },
       "anchor": {
         "course_moment": "A sphere, torus, and Mobius band all look ordinary close up, yet they differ in loops, side behavior, and vector-field demands across the whole space.",
@@ -4290,10 +4290,10 @@
         "The important caution is that signs are not decoration. They come from orientation data and from the way the objects meet. If orientation is missing or the meeting is not clean, the count may not be defined. The power of the concept comes from this discipline: count only evidence that survives the legal motion being used."
       ],
       "workup": {
-        "object": "Clean meetings between oriented curves, surfaces, or subspaces inside a surrounding space where direction has meaning.",
-        "operation": "Assign each meeting a sign from the orientation rule and add the signs rather than the raw number of meetings.",
-        "protected": "The protected fact is the signed total, which survives legal deformation when newly born pairs cancel.",
-        "breaks_if": "It breaks if meetings are not clean or signs are not justified, because then cancellation is not trustworthy evidence."
+        "object": "Clean meetings between oriented curves, surfaces, or subspaces inside a surrounding space where direction has meaning. The object must be in ordinary position before counting.",
+        "operation": "Assign each meeting a sign from the orientation rule and add the signs rather than the raw number of meetings. The operation builds cancellation into the count.",
+        "protected": "The protected fact is the signed total, which survives legal deformation when newly born pairs cancel. It records forced meeting, not every visible crossing in one drawing.",
+        "breaks_if": "It breaks if meetings are not clean or signs are not justified, because then cancellation is not trustworthy evidence. The count needs both ordinary position and orientation."
       },
       "anchor": {
         "course_moment": "Lecture 8 counts clean meetings with signs so that a positive and negative pair can appear or vanish without changing the total during legal deformation.",
@@ -4357,10 +4357,10 @@
         "This is why Brouwer fits the course's larger habit: identify the space honestly, identify the allowed rule, then let the topology of that space decide whether avoidance is possible. The theorem is a fixed-point result, but it is also a model for the course's style of proof: shape plus continuity can force existence before calculation begins."
       ],
       "workup": {
-        "object": "A continuous rule sending every point of a closed filled ball back into that same filled ball.",
-        "operation": "Assume every point avoids itself and read that attempted escape against the filled shape and its boundary.",
-        "protected": "The protected fact is forced self-agreement: the ball gives no continuous way for all points to escape themselves.",
-        "breaks_if": "It breaks if the space is not the right closed filled object, or if the rule jumps or leaves the domain."
+        "object": "A continuous rule sending every point of a closed filled ball back into that same filled ball. The object includes the domain, boundary, and self-map condition.",
+        "operation": "Assume every point avoids itself and read that attempted escape against the filled shape and its boundary. The operation tests whether a no-fixed-point motion can exist.",
+        "protected": "The protected fact is forced self-agreement: the ball gives no continuous way for all points to escape themselves. Existence is forced without locating the point.",
+        "breaks_if": "It breaks if the space is not the right closed filled object, or if the rule jumps or leaves the domain. Then the escape obstruction may disappear."
       },
       "anchor": {
         "course_moment": "For a continuous self-map of a filled ball, Brouwer says at least one point cannot escape itself. The course reads this as shape forcing existence without giving a formula for the point.",
@@ -4404,10 +4404,10 @@
         "The caution is that not every still-looking point carries the same evidence. The local arrow pattern must be inspected. A defect may contribute positively, negatively, or in another signed way depending on how nearby arrows turn. That is why equilibrium belongs with index and Poincare-Hopf, not only with the vocabulary of differential equations."
       ],
       "workup": {
-        "object": "A state in a vector field where the motion arrow vanishes and nearby arrows show the local pattern.",
-        "operation": "Inspect the arrows around the vanishing point and read their turning as local evidence.",
-        "protected": "The protected fact is the signed behavior around the equilibrium, not merely the fact that the dot is present.",
-        "breaks_if": "It breaks if the surrounding arrow pattern is ignored, because topology uses the local turning rather than the label of the equilibrium."
+        "object": "A state in a vector field where the motion arrow vanishes and nearby arrows show the local pattern. The object is the stopped point plus its surrounding field.",
+        "operation": "Inspect the arrows around the vanishing point and read their turning as local evidence. The operation asks what the nearby motion says about the defect.",
+        "protected": "The protected fact is the signed behavior around the equilibrium, not merely the fact that the dot is present. That local behavior can enter a whole-surface total.",
+        "breaks_if": "It breaks if the surrounding arrow pattern is ignored, because topology uses the local turning rather than the label of the equilibrium. A name without the pattern carries too little evidence."
       },
       "anchor": {
         "course_moment": "In the dynamics lectures, an equilibrium is where the arrow vanishes, but the useful evidence is how nearby arrows turn around that vanishing point locally.",
@@ -4461,10 +4461,10 @@
         "The caution is that no single defect tells the whole story. A source, sink, or saddle may be moved or paired with another defect. The theorem asks for the total over the surface. The reader should therefore look past memorable examples and ask what the full signed sum must be on the surface being used."
       ],
       "workup": {
-        "object": "A vector field on a surface with all isolated defects included in one account.",
-        "operation": "Add the signed indices of every defect and compare the sum with Euler characteristic.",
-        "protected": "The protected fact is the equality between total local defect count and the whole-surface number.",
-        "breaks_if": "It breaks if any defect is omitted, if defects are not isolated, or if the surface carrying the field is changed."
+        "object": "A vector field on a surface with all isolated defects included in one account. The object is not one equilibrium; it is the completed surface carrying the field.",
+        "operation": "Add the signed indices of every defect and compare the sum with Euler characteristic. The operation makes local failures answer to a whole-surface number.",
+        "protected": "The protected fact is the equality between total local defect count and the whole-surface number. It links surface bookkeeping with motion bookkeeping in one statement.",
+        "breaks_if": "It breaks if any defect is omitted, if defects are not isolated, or if the surface carrying the field is changed. Then the total no longer describes the same problem."
       },
       "anchor": {
         "course_moment": "Poincare-Hopf adds every isolated vector-field index and compares the sum with Euler characteristic. Local motion failures must answer to the surface carrying them.",
@@ -5145,7 +5145,7 @@
       "lecture_source_checkpoint_words": 1532,
       "lecture_caption_nuance_words": 1492,
       "concept_essay_words": 7741,
-      "concept_workup_words": 1781,
+      "concept_workup_words": 2746,
       "concept_anchor_words": 1965,
       "theme_essay_words": 1964,
       "theme_lens_words": 803,

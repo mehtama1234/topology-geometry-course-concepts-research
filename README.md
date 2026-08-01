@@ -27,7 +27,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,532 lecture source-checkpoint words across trust, overread warning, and math-question fields.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - 7,741 concept essay words, with every concept essay now clearing the 290-word validator floor.
-- 1,781 concept workup words across object, operation, protected fact, and failure tests.
+- 2,746 concept workup words across object, operation, protected fact, and failure tests.
 - 1,965 concept anchor words tying every concept to a concrete course moment, principle, and reader question.
 - 1,964 theme essay words, with every theme essay now clearing the 300-word validator floor.
 - 803 theme lens words across notices, ignored distractions, problem changes, and reader tests.
