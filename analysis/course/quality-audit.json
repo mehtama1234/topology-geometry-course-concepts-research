@@ -138,7 +138,7 @@
     },
     {
       "requirement": "Theorem-use contracts",
-      "evidence": "8 theorem-use contracts state when a theorem is allowed to speak. The 1368 words require the object, allowed move, protected evidence, conclusion, break condition, and everyday test before a theorem name can carry weight.",
+      "evidence": "8 theorem-use contracts state when a theorem is allowed to speak. The 1530 words require the object, allowed move, protected evidence, conclusion, break condition, and everyday test before a theorem name can carry weight.",
       "status": "met"
     },
     {
@@ -230,7 +230,7 @@
     "weak_claim_repair_words": 1774,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
-    "theorem_contract_words": 1368,
+    "theorem_contract_words": 1530,
     "concept_contrasts": 10,
     "concept_contrast_words": 2261,
     "reader_checks": 11,
