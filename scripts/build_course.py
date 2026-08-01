@@ -198,7 +198,7 @@ SOURCE_READERS = [
         "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives? A quotient should become an identification rule, a homotopy should become legal motion, and a homology-style count should become protected evidence. Treat it as broader machinery support, not as evidence for a specific classroom sentence.",
         "family": "Algebraic topology background",
         "do_not_overread": "Do not import the text's full abstraction into the course pages or imply the lectures follow this book's order. The companion should stay grounded in Tokieda's demonstrations and use Hatcher only for broader mathematical support after the everyday object and protected fact are visible.",
-        "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course, and what would be lost if that construction were named before its job was explained? The answer should translate the formal word into a page action.",
+        "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course, and what would be lost if that construction were named before its job was explained? The answer should translate the formal word into a plain action in the argument.",
         "concepts": ["quotient-space", "product-space", "invariant"],
     },
     {
@@ -1705,7 +1705,7 @@ SUBTHEME_ESSAYS = {
     ],
     "holes-and-boundaries": [
         "Holes and boundaries are route constraints. A hole is missing room, a blocked filling, or a place a loop can remember going around. A boundary is where the surface stops, and that stopping changes what can be attached, counted, or forced. These are not decorative marks in a drawing; they determine what paths, surfaces, maps, and fields can do.",
-        "From first principles, a hole says that some apparent shortcut is unavailable. A loop around a missing region may not shrink because the filling disk is absent. A linked curve may not separate because the forbidden passage would have to cross another curve. A configuration space may have a hole because a collision state has been removed. The missing part becomes active evidence.",
+        "From first principles, a hole says that some apparent shortcut is unavailable. A loop around a missing region may not shrink because the filling disk is absent. A linked curve may not separate because the forbidden passage would have to cross another curve. A configuration space may have a hole because a collision state has been removed. The missing part becomes part of the evidence.",
         "A boundary matters for a different but related reason. At an edge, motion and accounting change. A fixed-point theorem may rely on the boundary of a filled ball. A curvature total may require boundary terms. A surface classification argument has to track whether boundaries remain or are capped off. Ignoring the edge can change the theorem being used.",
         "The course uses this subtheme from Mobius-strip boundaries to Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become walls. When a proof depends on a surface's edge or missing region, this subtheme is doing the work.",
         "A beginner should treat holes and boundaries as instructions for motion. Ask what route is blocked, what filling is missing, what escape is prevented, and what extra term appears at the edge. The drawing's empty region may be the main reason the proof works.",
@@ -4673,8 +4673,8 @@ def build_theme_answer_guide(theme):
     ignores = plain_fragment(lens["ignores"], ["It ignores", "This lens ignores"])
     notice_close = varied((tid, "notice-close"), [
         f"For {title}, the answer should name the evidence that stays visible before any conclusion is trusted.",
-        f"The point is to make {title} show up as work on the page, not as an abstract course mood.",
-        f"A useful answer names the thing the reader must watch while {title} is doing its job.",
+        f"The answer should say which object, route, count, field, or state space the theme is watching.",
+        f"A useful answer names the concrete feature the reader must track before the page is allowed to conclude anything.",
         f"{title} earns its place only when the reader can point to the proof feature it protects.",
     ])
     ignore_close = varied((tid, "ignore-close"), [
@@ -4684,21 +4684,21 @@ def build_theme_answer_guide(theme):
         f"This keeps attention on the feature that lets the theme carry proof rather than on visual noise.",
     ])
     separation_close = varied((tid, "separation-close"), [
-        f"Separate the part that makes the example memorable from the part that carries proof.",
-        "The page should separate what makes the example vivid from what makes the argument valid.",
-        f"That distinction keeps the theme from becoming only a memorable picture.",
+        f"Separate the visible story from the part that carries proof.",
+        "The page should separate the demonstration detail from the rule that makes the argument valid.",
+        f"That distinction keeps the theme tied to a checkable object rather than to a remembered scene.",
         f"The reader should leave knowing which part of the picture can actually support the claim.",
     ])
     transfer_close = varied((tid, "transfer-close"), [
-        f"Show how {title} travels from early examples to later theorem-level uses.",
-        f"This turns {title} into a bridge across the course, not a label attached to one lecture.",
+        f"Show how the same object-move-surviving-fact pattern travels from early examples to later theorem-level uses.",
+        f"This carries the theme across the course by naming the repeated work it does, not by repeating the title.",
         f"The answer should show which later proof would lose force without {title}.",
-        f"{title} is deep only when it explains why distant lectures use the same kind of move.",
+        f"{title} is deep only when it explains why distant lectures need the same kind of check.",
     ])
     test_close = varied((tid, "test-close"), [
-        f"That detail keeps the theme from becoming only a broad summary.",
+        f"That detail keeps the theme attached to a claim the reader can test.",
         f"That detail separates a useful use of the theme from a summary that has no checkable claim.",
-        f"Without that detail, {title} would sound fluent while failing to control a real argument.",
+        f"Without that detail, {title} would not control the object, move, count, or model on the page.",
         f"The important detail is where {title} becomes checkable.",
     ])
     notice_prompt = varied((tid, "notice-answer-prompt"), [
@@ -4746,25 +4746,25 @@ def build_subtheme_answer_guide(subtheme):
     look_close = varied((sid, "look-close"), [
         f"For {title}, the reader should be able to point to the exact feature that changes the argument, not only repeat the subtheme name.",
         f"That keeps {title} tied to evidence the lecture actually supplies: a boundary, sign, route, count, failure point, or state-space rule.",
-        f"The check is whether the reader can find {title} at work in a live argument without being handed the label first.",
-        f"A useful answer names the page detail that carries {title} and says why that detail matters for the claim.",
+        f"The check is whether the reader can find the boundary, sign, route, count, defect, or state-space rule before using the subtheme name.",
+        f"A useful answer names the page detail and says why that detail matters for the claim.",
     ])
     ask_close = varied((sid, "ask-close"), [
-        f"That question changes {title} from a topic label into a proof feature the reader can inspect.",
-        f"The question should make the reader inspect the proof, not merely recognize {title} as a familiar topic.",
-        f"This is where {title} becomes active: it tells the reader what uncertainty the page has to settle.",
+        f"That question turns the subtheme into an inspection of the proof itself.",
+        f"The question should make the reader inspect the object, move, protected fact, or model rather than recognize a familiar title.",
+        f"This is where the page has to settle the uncertainty: what is allowed, what survives, what is counted, or what is modeled.",
         f"The answer should expose the hidden rule or evidence that makes {title} necessary on this page.",
     ])
     use_close = varied((sid, "use-close"), [
         f"The explanation should name the specific problem {title} helps solve in the argument.",
-        f"The payoff is a better reading of the argument, not a new heading called {title}.",
-        f"Use {title} only when it changes what the reader checks on the page.",
-        f"{title} earns its place by making a live claim easier to check in plain language.",
+        f"The payoff is a better reading of the argument: what is now ruled out, forced, protected, or modeled.",
+        f"Use this routine only when it changes what the reader checks on the page.",
+        f"{title} earns its place by making the live claim easier to check in plain language.",
     ])
     mistake_close = varied((sid, "mistake-close"), [
-        f"The repair should turn {title} into a page action, not leave it as a warning floating above the proof.",
+        f"The repair should name the missing object, move, count, sign rule, boundary condition, or model.",
         f"The correction is practical: return to the object, move, evidence, or model that the {title} mistake skipped.",
-        f"The reader test should expose the false shortcut that {title} is meant to prevent, not merely restate the warning.",
+        f"The reader test should expose the false shortcut and the exact condition it skipped.",
         f"A good correction says what the page must check before {title} can support the conclusion.",
     ])
     look_prompt = varied((sid, "look-answer-prompt"), [
@@ -5103,7 +5103,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Explanation repair clinic",
-            "evidence": f"{len(data['repair_clinic_cases'])} repair-clinic cases start with explanations that sound fluent but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The {repair_clinic_words} repair-clinic words make the no-filler standard concrete.",
+            "evidence": f"{len(data['repair_clinic_cases'])} repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The {repair_clinic_words} repair-clinic words make the no-filler standard concrete.",
             "status": "met",
         },
         {

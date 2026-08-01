@@ -67,7 +67,7 @@
     "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives? A quotient should become an identification rule, a homotopy should become legal motion, and a homology-style count should become protected evidence. Treat it as broader machinery support, not as evidence for a specific classroom sentence.",
     "family": "Algebraic topology background",
     "do_not_overread": "Do not import the text's full abstraction into the course pages or imply the lectures follow this book's order. The companion should stay grounded in Tokieda's demonstrations and use Hatcher only for broader mathematical support after the everyday object and protected fact are visible.",
-    "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course, and what would be lost if that construction were named before its job was explained? The answer should translate the formal word into a page action.",
+    "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course, and what would be lost if that construction were named before its job was explained? The answer should translate the formal word into a plain action in the argument.",
     "concepts": [
       "quotient-space",
       "product-space",
