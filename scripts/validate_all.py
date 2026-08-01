@@ -113,7 +113,7 @@ def main():
             if len(words(depth.get(field))) < 35:
                 fail(f"concept {concept['id']} depth {field} too thin")
         concept_essay_words = sum(len(words(p)) for p in concept.get("essay") or [])
-        if concept_essay_words < 130:
+        if concept_essay_words < 180:
             fail(f"concept {concept['id']} essay too thin")
         appearances = concept.get("appearances") or []
         if len(appearances) < 2:
