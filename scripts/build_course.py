@@ -4439,6 +4439,220 @@ def lecture_source_family_bridge(number, spine, source_reader):
     return varied((number, family, "source-family-bridge"), options)
 
 
+LECTURE_DRILL_OVERLAYS = {
+    1: {
+        "start_from": "Start with the band before the name arrives. Make the reader follow a mark around the glued strip, then ask what came back changed after one complete trip.",
+        "rebuild_steps": [
+            "Make the object by hand in words: a strip whose two ends have been glued after a half-turn. The half-turn is part of the object, not a flourish in the drawing.",
+            "Describe the legal tests: follow a line, color a side, or cut along a chosen path while keeping the end-gluing rule in force.",
+            "State the protected fact: a tiny patch looks ordinary, but a full trip reverses the local side choice. That is the first local-versus-whole lesson of the course.",
+            "Compare with an ordinary band only after the rule is clear. The comparison should show why the same local paper can produce different whole-surface behavior.",
+            "Connect forward to orientation and manifolds: later pages keep asking whether a local choice can survive a complete trip around the object.",
+            "Use course-source support only to anchor the lecture and sequence. Do not turn the paper demonstration into a claim that all topology is about surprising craft objects.",
+        ],
+        "self_check": "A complete answer should let a beginner act out the full-trip test and say exactly what local side information fails to return unchanged.",
+        "common_failure": "The weak version remembers that a Mobius strip has one side but never explains how the full trip detects that fact. Repair it by naming the gluing rule and the travel test.",
+        "source_check": "Before strengthening a sentence, ask whether it is supported by the lecture object itself: strip, half-turn gluing, full trip, and side reversal. Anything beyond that belongs in background support, not as spoken lecture evidence.",
+    },
+    2: {
+        "start_from": "Start with marked boundary points on a disk and the demand that paths connect them without crossing. The point is not to draw a prettier routing picture; it is to prove no legal picture can do the job.",
+        "rebuild_steps": [
+            "Name the object as the disk together with boundary points in a fixed circular order. The order is data, not scenery.",
+            "State the legal motion: slide and bend paths while endpoints stay fixed in order and paths do not pass through one another.",
+            "Identify the forbidden shortcut: moving an endpoint past another endpoint or letting two paths cross during the cleanup.",
+            "Explain the surviving fact: if the cleaned version forces a crossing while the boundary order is unchanged, the original problem already contained that obstruction.",
+            "Connect forward to intersection number: later the course stops saying only that meetings are forced and starts counting meetings that survive legal motion.",
+            "Use sources after the deformation contract is visible. A reference cannot rescue a proof that never said what was allowed to move.",
+        ],
+        "self_check": "A strong answer can close the drawing and still state the disk data, the legal deformation, the illegal crossing, and the reason one forced crossing speaks for every legal redraw.",
+        "common_failure": "The weak version says the drawing can be simplified and stops there. The missing part is permission: endpoints, boundary order, and no-crossing rules must stay fixed while the drawing changes.",
+        "source_check": "Check whether the sentence depends on the lecture's boundary-order evidence or on a wider topology source. If the source is doing the work before the disk rule is stated, the explanation is out of order.",
+    },
+    3: {
+        "start_from": "Start from the idea that spaces can be built by rules. Product, quotient, manifold, and surgery should read as different construction moves, not as a loose list of names.",
+        "rebuild_steps": [
+            "Say what each construction records in everyday terms: independent choices, declared sameness, locally ordinary patches, or a controlled cut-and-glue replacement.",
+            "For product, ask what one point records and which choices vary independently before any constraint is added.",
+            "For quotient, ask which different-looking points are now the same point in the finished space.",
+            "For surgery, name the removed piece, the exposed boundary, and the rule for attaching the replacement.",
+            "Connect forward to configuration spaces and graph-of-map arguments: later proofs only work because the stage was built honestly.",
+            "Use formal sources as construction support after the course recipe is clear. Do not let the source turn a recipe into unexplained abstraction.",
+        ],
+        "self_check": "The answer is ready when the reader can explain how the same raw piece can become different spaces because the construction rule changed, and can say which routes or boundaries changed with it.",
+        "common_failure": "The weak version lists product, quotient, and surgery as terms. The repair is to say what each operation does to choices, sameness, routes, or boundaries.",
+        "source_check": "When a source is cited, ask which construction rule it supports and whether the lecture page has already translated that rule into choices, identifications, or cut-and-glue instructions.",
+    },
+    4: {
+        "start_from": "Start with a square whose arrows and edge labels must be read before the square is trusted. The drawing is a code for a finished surface.",
+        "rebuild_steps": [
+            "Name the object as the completed surface described by edge identifications, not the flat square alone.",
+            "State what the arrows decide: which exit returns as which entrance, and whether direction is preserved or reversed.",
+            "Ask what stops being a real boundary after gluing. A drawn edge may be only a doorway to the same surface.",
+            "Track one route through the identified edges and say where it reappears in the finished space.",
+            "Connect forward to vector fields and intersections on manifolds: later local data live on the finished surface, not on the unglued code.",
+            "Use source support to widen quotient language only after the reader can perform the gluing mentally.",
+        ],
+        "self_check": "A complete answer should make the reader distrust the unglued square until the edge rule has been applied, because the apparent border may no longer be a border in the finished surface.",
+        "common_failure": "The weak version counts borders and routes in the flat drawing after the rule has already changed the space. Repair it by applying the identifications first.",
+        "source_check": "Check whether the claim is about the code on the page or the surface produced by the code. A source citation cannot blur that boundary.",
+    },
+    5: {
+        "start_from": "Start with many drawings of surfaces and ask why they should not all count as different species. Classification begins when legal cutting and reassembly expose durable parts.",
+        "rebuild_steps": [
+            "Name the surface features being tracked: handles, crosscaps, boundary components, and whether side or direction choices can stay consistent.",
+            "State the legal simplification: cut, slide, and reassemble only in ways that preserve the surface type being classified.",
+            "Explain why orientability is a travel test around the whole surface, not a visual judgment about twistiness in one drawing.",
+            "Say what a normal form is doing: it removes drawing accidents while keeping the durable surface features.",
+            "Connect forward to Euler characteristic and Poincare-Hopf: later counts speak about the surface family, not one convenient sketch.",
+            "Use references for the larger classification family only after the lecture's cut-and-glue account is visible.",
+        ],
+        "self_check": "A strong answer can say which features survive the simplification and why those features deserve to name the surface family rather than one temporary drawing.",
+        "common_failure": "The weak version treats classification as naming pictures. The repair is to explain what legal moves reduce many pictures to the same durable account.",
+        "source_check": "Before citing a classification source, ask whether the page has already named the preserved features, the allowed surface changes, and the drawing changes that do not count.",
+    },
+    6: {
+        "start_from": "Start with two objects trying to avoid each other inside a surrounding space. The everyday question is whether there is enough room to move without collision.",
+        "rebuild_steps": [
+            "Name the two moving or placed objects and the surrounding space that gives or denies room.",
+            "State the legal move as a small deformation inside that surrounding space, not a jump through an obstacle.",
+            "Separate accidental meetings from forced meetings. A bad drawing may create a crossing that legal motion can remove.",
+            "Use dimension as room-counting language: more available directions can make avoidance possible; too little room can make meeting unavoidable.",
+            "Connect forward to signed intersection: once forced meetings matter, the course needs a count that survives motion.",
+            "Use formal dimension language only after the physical room test is plain enough that a reader can describe the possible escape directions.",
+        ],
+        "self_check": "The answer should let a reader say what would count as moving away, what would count as cheating through forbidden space, and why the surrounding space matters.",
+        "common_failure": "The weak version says objects intersect because the picture shows a crossing. The repair is to ask whether legal motion could remove that crossing.",
+        "source_check": "Check whether a source-backed sentence keeps the surrounding space visible. Without that space, dimension language has no plain meaning and the avoidance claim has no stage.",
+    },
+    7: {
+        "start_from": "Start with the center-of-gravity demonstration as a continuous process. The point is to see why a special state must be crossed, not to admire the physical performance.",
+        "rebuild_steps": [
+            "Name the changing quantity and the condition that counts as the desired meeting or balance.",
+            "State the legal motion as gradual change. No jumping over the balance condition is allowed.",
+            "Explain why continuity matters: nearby hand positions must produce nearby changes in the relevant condition.",
+            "Turn the physical story into an intersection question: two organized pieces of evidence must meet.",
+            "Connect forward to fixed points and equilibria, where the same existence-without-location habit returns.",
+            "Use sources only after the physical continuity claim has been translated into a mathematical meeting claim.",
+        ],
+        "self_check": "A complete answer should say what event is forced, why a jump would break the argument, and why the proof does not need to locate the event in advance.",
+        "common_failure": "The weak version retells the demonstration but never names the continuous condition that cannot be skipped, so the forced meeting sounds like a physical surprise rather than an argument.",
+        "source_check": "Before widening the claim, check whether the lecture evidence supports continuity, forced meeting, or only the physical setup, and label the stronger statement if it comes from background support.",
+    },
+    8: {
+        "start_from": "Start with meetings that appear and disappear while the picture moves. A raw count is too fragile; the lecture has to build a count with memory.",
+        "rebuild_steps": [
+            "Name the objects that meet and the oriented setting in which a sign can be assigned.",
+            "State the legal motion and the ordinary local event where a positive and negative pair is born or dies.",
+            "Explain why the raw number changes but the signed total does not change in that local event.",
+            "Say why orientation is needed before plus and minus can mean anything stable across a legal motion.",
+            "Connect forward to fixed points and index: later existence and dynamics arguments reuse signed protected evidence.",
+            "Use formal intersection sources only after the sign rule has been explained from the moving picture.",
+        ],
+        "self_check": "A strong answer can describe one birth-death pair and say why its two signs cancel without making cancellation sound like wishful arithmetic or a chosen convention after the fact.",
+        "common_failure": "The weak version says signed counts are invariant. The repair is to show the local event that would ruin a raw count and why signs repair it.",
+        "source_check": "Check whether the source-backed sentence names the sign rule and the legal motion. Without both, the count has not earned authority and the invariant claim is too strong.",
+    },
+    9: {
+        "start_from": "Start with a rule from a space back to itself. Make the rule visible by recording input and output together, then compare that record with self-agreement.",
+        "rebuild_steps": [
+            "Name the graph of the map as the collection of input-output pairs, with one pair for each starting point.",
+            "Name the diagonal as the place where input and output are the same point of the same space.",
+            "Explain why a graph-diagonal meeting is exactly a fixed point, not a loose analogy.",
+            "Keep the missing middle caption visible when stating theorem-level transitions, especially any claim about hypotheses or proof order.",
+            "Connect forward to Brouwer: the next lecture asks when the shape of the domain forces such a meeting.",
+            "Use background sources for the fixed-point family without inventing details from the unavailable caption.",
+        ],
+        "self_check": "A complete answer should let the reader point to one pair on the graph, one pair on the diagonal, and the equality that makes their meeting a fixed point.",
+        "common_failure": "The weak version says a fixed point is where something does not move. The repair is to name the rule, the self-map condition, the graph, and the diagonal.",
+        "source_check": "Because one caption is missing, any stronger theorem claim must be labeled as source-family support or course-arc interpretation, not recovered lecture wording.",
+    },
+    10: {
+        "start_from": "Start with a continuous rule that sends a closed filled ball back into itself. The theorem is about a trapped escape plan, not about computing a point.",
+        "rebuild_steps": [
+            "Name the domain as closed and filled, including its boundary, before invoking the fixed-point conclusion.",
+            "Name the rule as continuous and self-mapping: every output remains inside the same space.",
+            "Explain the attempted escape: every point tries to avoid returning to itself while the rule remains continuous.",
+            "Say why the filled ball blocks a continuous all-points escape, while nearby spaces may not.",
+            "Connect forward to dynamics: forced existence can matter even when exact paths are unknown.",
+            "Use Brouwer sources only after these conditions are stated in ordinary language and tied to this lecture's closed-ball setup.",
+        ],
+        "self_check": "A strong answer states domain, same-space rule, no-jump condition, and existence-only conclusion without claiming the theorem finds the point or works for every space.",
+        "common_failure": "The weak version says Brouwer means something must stay fixed. The repair is to state the closed ball, self-map, continuity, and the limited conclusion.",
+        "source_check": "Check whether a sentence has silently changed the space to an open ball, a circle, or a general motion story. The source only applies after the stated conditions match.",
+    },
+    11: {
+        "start_from": "Start with arrows on a surface before any solution curve is drawn. The lecture asks what the arrow pattern can reveal when solving the equation is too much.",
+        "rebuild_steps": [
+            "Name the vector field as an arrow assigned to each point of the surface or state space.",
+            "Separate an equilibrium from a fixed point: here the arrow vanishes; a map has not necessarily been named.",
+            "Walk around one isolated defect and watch nearby arrows turn during one complete loop around it.",
+            "Explain why that local turning is evidence even before trajectories are solved, because it records the field around the failure point.",
+            "Connect forward to index sums and Poincare-Hopf: local arrow evidence will be added across the whole surface.",
+            "Use dynamics sources without replacing the lecture's arrow-field reading by equation-solving language.",
+        ],
+        "self_check": "A complete answer should say what an arrow records, what vanishing means, and what the surrounding arrows add beyond the location of the equilibrium.",
+        "common_failure": "The weak version treats an equilibrium as a dot to count. The repair is to inspect the arrow pattern around the dot and ask what signed local behavior it records.",
+        "source_check": "Check whether the source sentence preserves the difference between solving trajectories and extracting topological information from the field, because the lecture is using arrows before exact paths.",
+    },
+    12: {
+        "start_from": "Start with several isolated arrow-field defects on one surface. The lecture asks what their local turning accounts know together once every defect is included in the same sum.",
+        "rebuild_steps": [
+            "Name one defect and the small loop used to read its local index from the surrounding arrows.",
+            "Then name the whole surface and the full list of defects being included in the total.",
+            "Explain how defects may move, split, or cancel while the total signed index remains constrained.",
+            "Connect the total to Euler characteristic as a whole-surface demand, not as another name for one local number.",
+            "Prepare Poincare-Hopf: the next step is using this equality as a two-way translation between shape and motion.",
+            "Use references only after local index and whole-surface sum have been kept separate.",
+        ],
+        "self_check": "A strong answer distinguishes one local index from the total over all isolated defects on the same surface, and says why the total is the theorem's object.",
+        "common_failure": "The weak version compares one equilibrium directly with Euler characteristic. The repair is to add every defect in the permitted account and only then compare with the whole surface.",
+        "source_check": "Check whether the source-backed sentence states the scope of the sum. Missing one defect changes the theorem's account and turns a whole-surface statement into a partial count.",
+    },
+    13: {
+        "start_from": "Start with Poincare-Hopf as an exchange between two ledgers: surface bookkeeping and arrow-field defect bookkeeping, with both ledgers belonging to the same surface.",
+        "rebuild_steps": [
+            "Name the surface and its Euler characteristic as the whole-shape side of the account.",
+            "Name the vector field and every isolated defect being counted before any total is compared.",
+            "Assign each defect a local signed index by the surrounding-arrow test, using the same surface account throughout.",
+            "State the equality as a total-account statement, not as a story about one memorable example.",
+            "Use the hairy-ball idea as one consequence after the bookkeeping contract is visible.",
+            "Use source support to clarify the theorem family without claiming it solves the differential equation.",
+        ],
+        "self_check": "A complete answer can use the theorem in both directions while saying exactly what data each side of the equality contains and what the theorem refuses to compute.",
+        "common_failure": "The weak version remembers the hairy-ball slogan. The repair is to name the surface, the field, the isolated defects, the local indices, and the total.",
+        "source_check": "Check whether a sentence claims motion paths, locations, or full dynamics. Poincare-Hopf constrains the defect account; it does not solve the motion law.",
+    },
+    14: {
+        "start_from": "Start with the application as a modeling task. The physical story is not yet mathematics until one point of the chosen space has a clear meaning.",
+        "rebuild_steps": [
+            "Name what one state-space point records: position, angle, orientation, joint choice, or whatever freedoms the problem truly needs.",
+            "Remove forbidden states such as collisions, blocked positions, or impossible choices before asking for paths.",
+            "State what a path in the state space means back in the original physical system.",
+            "Name which earlier course tool is being used: fixed point, index, obstruction, or route through allowed states.",
+            "State the limit of the model. If a freedom or barrier was omitted, the conclusion may describe the wrong problem.",
+            "Use application sources only after the model has been audited in plain language, including its states, forbidden states, and allowed paths.",
+        ],
+        "self_check": "A strong answer can translate both ways: from physical scene to state space, and from a path or obstruction in state space back to the physical scene.",
+        "common_failure": "The weak version applies a theorem to a physical story before building the space of possible states, so the conclusion may describe a model the problem never actually had.",
+        "source_check": "Check whether the source-backed sentence depends on a model condition the page has not stated. The model is part of the proof, not an introduction before the proof.",
+    },
+    15: {
+        "start_from": "Start with the whole course as one reasoning habit. The final lecture should not sound like a celebration of pictures; it should sound like an audit of what a picture must carry.",
+        "rebuild_steps": [
+            "Name the repeated object types: strip, path system, glued surface, signed meeting, graph of a map, vector field, and state space.",
+            "For each type, ask what move is legal and what move would change the problem.",
+            "Name the protected evidence: side reversal, boundary order, gluing rule, signed total, self-agreement, local index, or route through allowed states.",
+            "Explain why the evidence can force a conclusion without measuring every detail, because the protected fact survives the allowed changes.",
+            "Use one early lecture and one late lecture to show the same object-move-surviving-fact pattern across the course.",
+            "Use sources as background only after the course's own proof habit has been stated in plain language.",
+        ],
+        "self_check": "A complete answer can take a new example and place it into the course pattern without hiding behind a theorem name or skipping the allowed-move check.",
+        "common_failure": "The weak version says the course uses visual intuition. The repair is to say what a course picture must specify before it can prove anything.",
+        "source_check": "Check whether the final synthesis is supported as course-arc interpretation rather than presented as a quotation from one source, especially when it summarizes several lectures at once.",
+    },
+}
+
+
 def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
     bridge_by_lecture = {row["lecture"]: row for row in lecture_source_bridges}
     spine_by_lecture = {row["lecture"]: row for row in LECTURE_SPINE}
@@ -4453,123 +4667,18 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             for concept_id in example["concepts"]:
                 if concept_id not in concept_ids:
                     concept_ids.append(concept_id)
-        start_guard = varied((number, "start-guard"), [
-            "Treat the demonstration as an object with rules, not as decoration.",
-            "Read it as a problem setup with permitted and forbidden moves.",
-            "Use the visible setup as evidence, not as a loose illustration.",
-            "Begin from the concrete object and the rulebook it carries.",
-        ])
-        object_close = varied((number, "drill-object-close"), [
-            "Say what information that object carries before naming any course term.",
-            "Make clear what data are present before the vocabulary begins.",
-            "The reader should know what the object records before hearing the formal name.",
-            "The point is to rebuild the carrier of the argument, not to recite its label.",
-        ])
-        illegal_close = varied((number, "drill-illegal-close"), [
-            "Then name one nearby action that would change the problem rather than simplify it.",
-            "Also state the tempting shortcut that would break the rulebook.",
-            "Name the illegal move that would make the easier picture irrelevant to the original question.",
-            "Say which shortcut would erase the very obstruction the lecture is trying to study.",
-        ])
-        survive_close = varied((number, "drill-survive-close"), [
-            "Explain why this fact remains available after the allowed move.",
-            "Say why the legal motion carries this fact instead of destroying it.",
-            "Connect the allowed move to the evidence that still survives afterward.",
-            "Make the survival check explicit before using the fact as proof evidence.",
-        ])
-        forward_close = varied((number, "drill-forward-close"), [
-            "This should show why the lecture is needed later in the course.",
-            "The forward link should make the lecture feel like a tool the later course reuses.",
-            "The point is to show what later argument would be weaker without this lecture.",
-            "Name the later need so the lecture does not read as an isolated demonstration.",
-        ])
-        source_close = varied((number, "drill-source-close"), [
-            "Keep the lecture demonstration and source caveat visible while using that support.",
-            "Use source support only after the course example has supplied the object and protected fact.",
-            "Do not let the source layer replace the work done by the recovered lecture evidence.",
-            "Let the source broaden the claim only after the classroom move has been reconstructed.",
-        ])
-        source_family_label = "the course source layer" if bridge["source_family"] == "Course spine" else bridge["source_family"]
-        object_text = spine["object"].rstrip(".")
-        source_step = lecture_drill_source_step(number, spine, source_family_label, source_close)
-        self_check = lecture_drill_self_check(number, spine, source_family_label)
-        source_check = lecture_drill_source_check(number, spine, bridge, source_family_label)
-        common_failure = lecture_drill_common_failure(number, spine, examples)
+        overlay = LECTURE_DRILL_OVERLAYS[number]
         drills.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
-            "start_from": f"Start from {examples[0]['title']}. {start_guard} Object: {object_text}. Plain question: {spine['plain_question']}",
-            "rebuild_steps": [
-                f"Name the object in ordinary words: {spine['object']} {object_close}",
-                f"State the allowed move: {spine['legal_move']} {illegal_close}",
-                f"Protect the surviving fact: {spine['surviving_fact']} {survive_close}",
-                f"Use a second lecture moment, {examples[1]['title']}, to show the same rule at work in a concrete case rather than only in a general sentence.",
-                f"Connect forward: {spine['why_later']} {forward_close}",
-                source_step,
-            ],
-            "self_check": self_check,
-            "common_failure": common_failure,
-            "source_check": source_check,
+            "start_from": overlay["start_from"],
+            "rebuild_steps": overlay["rebuild_steps"],
+            "self_check": overlay["self_check"],
+            "common_failure": overlay["common_failure"],
+            "source_check": overlay["source_check"],
             "concepts": concept_ids[:6],
         })
     return drills
-
-
-def lecture_drill_common_failure(number, spine, examples):
-    object_text = spine["object"].rstrip(".")
-    legal_move = spine["legal_move"].rstrip(".")
-    surviving = spine["surviving_fact"].rstrip(".")
-    why_later = spine["why_later"]
-    example_title = examples[0]["title"]
-    options = [
-        f"A weak reconstruction starts with {example_title} and then names a theorem before rebuilding the lecture object: {object_text}. The repair is to state the allowed move: {legal_move}; and only then use the protected fact: {surviving}.",
-        f"The failure is to remember the example but skip the rulebook. For Lecture {number:02d}, the missing rule is not decorative: {legal_move}. Without that rule, this surviving fact has not been earned: {surviving}.",
-        f"The shallow version treats {example_title} as a memorable illustration. The stronger version explains what the example makes testable: object: {object_text}; move: {legal_move}; protected fact: {surviving}.",
-        f"The common overreach is to move straight from the demonstration to a source or theorem name. The lecture needs one more step first: connect the allowed move, {legal_move}, to the protected fact: {surviving}. Then connect that result forward: {why_later}",
-    ]
-    return varied((number, "drill-common-failure"), options)
-
-
-def lecture_drill_self_check(number, spine, source_family_label):
-    object_text = spine["object"].rstrip(".")
-    legal_move = spine["legal_move"].rstrip(".")
-    surviving = spine["surviving_fact"].rstrip(".")
-    why_later = spine["why_later"]
-    options = [
-        f"The answer is ready only if the reader can rebuild this chain without a vocabulary shortcut: object: {object_text}; move: {legal_move}; protected fact: {surviving}; later use: {why_later}",
-        f"Close the page and try the reconstruction from memory. A complete answer should recover the lecture object, the allowed move, and this surviving fact: {surviving}. Bring in {source_family_label} only after those pieces are clear.",
-        f"The self-check is whether the explanation still works after the theorem name is removed. It should name the object: {object_text}; explain the move: {legal_move}; and show why this fact survives: {surviving}.",
-        f"A strong reconstruction should sound like a route, not a topic list. It begins with the object: {object_text}; passes through the move: {legal_move}; protects this fact: {surviving}; and only then uses {source_family_label} as background.",
-    ]
-    return varied((number, source_family_label, "drill-self-check"), options)
-
-
-def lecture_drill_source_step(number, spine, source_family_label, source_close):
-    object_text = spine["object"].rstrip(".")
-    legal_move = spine["legal_move"].rstrip(".")
-    surviving = spine["surviving_fact"].rstrip(".")
-    source_subject = "The course source layer" if source_family_label == "the course source layer" else source_family_label
-    options = [
-        f"Use {source_family_label} only after the drill has rebuilt the lecture object: {object_text}; the allowed move: {legal_move}; and the protected fact: {surviving}. {source_close}",
-        f"Attach {source_family_label} as background for the source boundary, not as a replacement proof. The lecture claim still rests on the move: {legal_move}; and the fact: {surviving}. {source_close}",
-        f"Let {source_family_label} widen the setting only after the classroom evidence is clear: object: {object_text}; move: {legal_move}; protected fact: {surviving}. {source_close}",
-        f"Name the source role last. {source_subject} can support the broader mathematical line, but the sentence must still return to the lecture object and this protected fact: {surviving}. {source_close}",
-    ]
-    return varied((number, source_family_label, "drill-source-step-specific"), options)
-
-
-def lecture_drill_source_check(number, spine, bridge, source_family_label):
-    object_text = spine["object"].rstrip(".")
-    legal_move = spine["legal_move"].rstrip(".")
-    surviving = spine["surviving_fact"].rstrip(".")
-    warning = bridge["overread_warning"]
-    options = [
-        f"Before using {source_family_label}, test the claim against the lecture itself. Can it still name the object: {object_text}; the allowed move: {legal_move}; and the protected fact: {surviving}? The bridge warning says: {warning}",
-        f"Use this source check before strengthening a sentence. {source_family_label} may broaden the setting only if the sentence still returns to {object_text}, uses the legal move: {legal_move}, and protects this fact: {surviving}. The bridge warning says: {warning}",
-        f"The source audit is concrete for Lecture {number:02d}: what exact claim can {source_family_label} carry, and what must remain a course demonstration? Keep the answer tied to the object: {object_text}; the move: {legal_move}; and the fact: {surviving}. The bridge warning says: {warning}",
-        f"Pause at the source boundary. If {source_family_label} makes the sentence sound stronger, ask what the lecture itself proved from the object: {object_text}; what move was allowed; and what fact survived: {surviving}. The bridge warning says: {warning}",
-    ]
-    return varied((number, source_family_label, "drill-source-check"), options)
 
 
 def build_concept_self_check(concept):
@@ -6053,7 +6162,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>How To Use A Drill</h2>
   <p>Do the steps before rereading the lecture page. The order matters: start with the concrete object, name the allowed move, protect the surviving fact, connect to a second example, then attach the source family carefully. This prevents a lecture from shrinking into a term or theorem name.</p>
-  <p>The self-check and common-failure fields are the guardrails. If the reconstruction skips the legal move, ignores the protected fact, or cites a source before the course evidence is clear, the answer is not ready.</p>
+  <p>The self-check and common-failure fields are the tests. If the reconstruction skips the legal move, ignores the protected fact, or cites a source before the course evidence is clear, the answer is not ready.</p>
 </section>
 <div class="grid two">{''.join(reconstruction_cards)}</div>
 <section class="lecture">
