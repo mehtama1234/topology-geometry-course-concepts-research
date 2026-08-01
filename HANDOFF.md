@@ -58,11 +58,12 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - exact expected video and lecture counts;
 - caption coverage and missing-caption caveat;
 - required page existence;
-- lecture, concept, theme, subtheme, family, and math-why depth floors;
+- lecture, source-lens, concept, theme, subtheme, family, and math-why depth floors;
 - at least three concrete examples per lecture;
 - referential integrity across concepts, themes, subthemes, and families;
 - playground page and four widget renderers;
 - course synthesis structure;
+- source-lens sections on every lecture page;
 - reader checks structure;
 - broken local links;
 - banned vague phrases in generated HTML.
@@ -73,6 +74,7 @@ As of the current generated audit:
 
 - 45 lecture examples.
 - 3,855 lecture essay words.
+- 1,090 lecture source-lens words.
 - 4,830 concept essay words.
 - 1,278 theme essay words.
 - 1,500 subtheme essay words.

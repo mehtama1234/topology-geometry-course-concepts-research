@@ -1181,6 +1181,70 @@ LECTURE_ESSAYS = {
 }
 
 
+LECTURE_SOURCE_LENS = {
+    1: [
+        "Read the Mobius-strip words as evidence about a gluing rule. The important source move is not that paper is surprising; it is that following, coloring, or cutting the strip tests whether a local side choice survives one full trip around the surface.",
+        "The anchor words should be held together. Twist and glue explain how the object is made. One side versus two sides explains what the whole object remembers. Cutting along the center is the controlled operation that makes that memory visible.",
+    ],
+    2: [
+        "Read the disk-path lecture as a proof about boundary order. The source language around deformation and curves that do not intersect matters because it fixes the contract before any drawing is simplified.",
+        "The anchor words prevent a common false proof. A disk by itself is not enough; the paired boundary points, their order, and the no-crossing rule are the data. Deformation is evidence only while those data stay unchanged.",
+    ],
+    3: [
+        "Read product, quotient, surgery, balls, spheres, and manifolds as construction words. The lecture is teaching how a space is made before later theorems are allowed to use that space.",
+        "The source lens is to ask what each construction changes. Product adds independent choices. Quotient changes sameness. Surgery changes a part under a boundary rule. Manifold says local neighborhoods are ordinary enough for later local arguments.",
+    ],
+    4: [
+        "Read the square and boundary-identification anchors as instructions rather than pictures. The source point is that the same drawn square can become different spaces depending on which edges are treated as the same and whether direction is reversed.",
+        "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing is useful only after the identification rule has been read.",
+    ],
+    5: [
+        "Read classification, orientable, non-orientable, Mobius, and surgery as a vocabulary for durable surface parts. The source arc is about reducing surfaces to pieces that survive legal simplification.",
+        "The practical evidence is not the name of a surface family alone. Handles give routes, crosscaps reverse side choices, boundaries add edge behavior, and surgery explains how the surface is changed while these features are tracked.",
+    ],
+    6: [
+        "Read submanifold, obstacles, dimensions, and intersection as a question about room. The source material is preparing the reader to separate a meeting caused by a cramped space from a meeting caused by a careless drawing.",
+        "The important source move is ordinary position. Before counting intersections, the objects must be placed so meetings are clean enough to inspect. Dimension then tells whether avoidance is expected or whether meeting carries evidence.",
+    ],
+    7: [
+        "Read center of gravity and continuous motion as the physical entrance to forced existence. The lecture is not only about balance; it is about a changing condition that cannot jump past the special state.",
+        "The source lens is to translate the demonstration into intersection language. One moving condition and another condition must meet. That same shape of reasoning prepares fixed points, diagonals, equilibria, and later state-space applications.",
+    ],
+    8: [
+        "Read intersection number, orientation, positive or negative, isotopy invariant, and pairwise creation as one account. The lecture is not merely introducing signs; it is explaining why signs let the count survive legal motion.",
+        "The source evidence is the birth and cancellation of pairs. A raw crossing count changes, but a signed total can stay fixed. Orientation is what makes the plus or minus mean something rather than being arithmetic pasted onto a picture.",
+    ],
+    9: [
+        "Read graph of a mapping, diagonal, and fixed points as the translation of a rule into a meeting problem. Because one middle caption is missing, the source lens must stay modest and lean on the available surrounding lecture parts.",
+        "The important source move is the graph. A map becomes a geometric object in a larger space. The diagonal records self-agreement. Their meeting is not an analogy; it is the fixed point written in a form that intersection reasoning can inspect.",
+    ],
+    10: [
+        "Read Brouwer, closed ball, boundary, and continuous map as a statement about no global escape. The source arc is existence without computation: a filled shape can force at least one point to stay put.",
+        "The boundary words matter. The theorem is not saying every space and every rule has a fixed point. It is saying that a closed ball, together with continuity and self-mapping, blocks the attempt to move every point away from itself.",
+    ],
+    11: [
+        "Read vector field, differential equations, equilibria, and index as a change in what counts as understanding motion. The lecture does not solve paths one by one; it asks what the arrow pattern must contain.",
+        "The source lens is to look around an equilibrium, not only at it. Nearby arrows turn around the failure point, and that turning becomes a signed local count. This is intersection-number thinking moved into dynamics.",
+    ],
+    12: [
+        "Read index of a vector field, equilibria, Euler characteristic, and Poincare-Hopf as a sum-over-the-whole-surface lecture. The source point is that local defects have a total controlled by the surface.",
+        "The evidence is the move from local to global. Sources, sinks, saddles, and other defects may shift under cleanup, but the total signed index is not free. It has to answer to the surface carrying the field.",
+    ],
+    13: [
+        "Read Poincare-Hopf, index sum, Euler characteristic, hairy ball, and equilibria as a two-way exchange. The lecture uses topology to predict defects, and it can also use observed defects to say something about the surface.",
+        "The hairy-ball anchor should be read as the plain case, not the whole theorem. The deeper source point is the total over all isolated defects. A local arrow choice may look possible, but the completed surface can forbid all choices from agreeing.",
+    ],
+    14: [
+        "Read applications, rotations in space, Poincare-Hopf, and dynamical systems as a modeling lecture. The source material is testing whether earlier proof families can be carried into physical or moving systems without losing the real constraints.",
+        "The source lens is model first, theorem second. Name the space of states, the rule or motion, the forbidden behavior, and the protected count. Only then can a topological theorem say something about the application.",
+    ],
+    15: [
+        "Read table of contents, pictorial thinking, deformation, intersection, fixed point, and vector field as a dependency chain. The final lecture is not a list of topics; it is a review of one reasoning habit as it changes setting.",
+        "The source lens is to follow the conversions. Paper strips become global surface evidence. Deformations protect questions. Intersections become signed counts. Fixed points and vector fields turn those counts into existence and motion statements.",
+    ],
+}
+
+
 def clean_vtt(path):
     seen = []
     out = []
@@ -1278,6 +1342,7 @@ def build_quality_audit(data):
     concept_max = max(len(c["appearances"]) for c in data["concepts"])
     lecture_examples = sum(len(l["deep"]["examples"]) for l in data["lectures"])
     lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
+    lecture_source_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["source_lens"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
     subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
@@ -1295,7 +1360,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written lecture depth",
-            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, problem, first principles, mathematical move, important detail, connection, transcript anchors, and examples.",
+            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
             "status": "met",
         },
         {
@@ -1349,6 +1414,7 @@ def build_quality_audit(data):
             "missing_captions": data["missing_caption_ids"],
             "lecture_examples": lecture_examples,
             "lecture_essay_words": lecture_essay_words,
+            "lecture_source_lens_words": lecture_source_lens_words,
             "concept_essay_words": concept_essay_words,
             "theme_essay_words": theme_essay_words,
             "subtheme_essay_words": subtheme_essay_words,
@@ -1614,6 +1680,10 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 <h2>Transcript Anchors</h2>
 <p>{''.join(f'<span class="pill">{esc(a)}</span>' for a in l['deep']['anchors'])}</p>
+<section class="lecture">
+  <h2>Source Lens</h2>
+  {paragraph_block(l['deep']['source_lens'])}
+</section>
 <h2>Concrete Course Moments</h2>
 <div class="grid two">
 {''.join(f'<article class="card"><div class="meta">Transcript-grounded example</div><h3>{esc(ex["title"])}</h3><p>{esc(ex["text"])}</p><p>{concept_pills(ex["concepts"], data["concepts"])}</p></article>' for ex in l['deep']['examples'])}
@@ -1665,7 +1735,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1711,6 +1781,7 @@ def main():
         deep = dict(LECTURE_DEPTH[number])
         deep["examples"] = LECTURE_EXAMPLES[number]
         deep["essay"] = LECTURE_ESSAYS[number]
+        deep["source_lens"] = LECTURE_SOURCE_LENS[number]
         lectures.append({
             "lecture": number,
             "videos": [v for v, _ in items],
@@ -1808,6 +1879,7 @@ def main():
 This repo now has a transcript-backed depth pass across the lecture, concept, theme, subtheme, and method-family layers. The first shallow layer has been replaced across the main explanatory surfaces:
 
 - 15 hand-authored lecture explainers from 35 videos
+- {metrics['lecture_source_lens_words']} source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
@@ -1818,7 +1890,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage and missing-caption audit
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

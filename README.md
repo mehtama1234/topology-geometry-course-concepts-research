@@ -18,6 +18,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
 - 74 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
+- 1,090 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - A course-level synthesis page, a reader-checks page, a quality audit, and a four-widget interactive math playground.
 
@@ -64,7 +65,8 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
 - Required generated pages, including synthesis, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
-- Minimum essay depth for lecture, concept, theme, subtheme, method-family, and math-why layers.
+- Minimum essay depth for lecture, source-lens, concept, theme, subtheme, method-family, and math-why layers.
+- Source-lens sections on every lecture page.
 - At least three concrete lecture examples per lecture.
 - Concept/theme/subtheme/family id integrity.
 - No broken local links.

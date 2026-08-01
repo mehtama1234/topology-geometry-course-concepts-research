@@ -41,6 +41,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 5 method families.
 - 74 generated HTML pages.
 - 45 lecture-grounded examples.
+- 1,090 lecture source-lens words.
 - Four playground widgets.
 - Course synthesis and reader-checks pages.
 

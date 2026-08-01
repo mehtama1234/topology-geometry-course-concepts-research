@@ -13,7 +13,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Own repo/folder | Local git repo at `topology-geometry-course-concepts-research` on `main` | Met |
 | Source coverage | 35 playlist videos indexed; 15 lecture groups; 34 caption files recovered; missing id `nx1XOlezuvk` preserved | Met with caveat |
 | Individual video links | `site/videos.html` lists every YouTube item in playlist order | Met |
-| Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, first principles, mathematical move, detail, connection, anchors, and three examples | Met |
+| Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
@@ -37,6 +37,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 74 generated HTML pages.
 - 45 lecture-grounded examples.
 - 3,855 lecture essay words.
+- 1,090 lecture source-lens words.
 - 4,830 concept essay words.
 - 1,278 theme essay words.
 - 1,500 subtheme essay words.
@@ -51,7 +52,7 @@ The validator checks:
 
 - expected video, lecture, caption, concept, theme, subtheme, family counts;
 - required generated pages;
-- depth floors for lecture, concept, theme, subtheme, family, and math-why prose;
+- depth floors for lecture, source-lens, concept, theme, subtheme, family, and math-why prose;
 - at least three concrete examples per lecture;
 - concept/theme/subtheme/family id integrity;
 - playground widget structure and JS renderer names;

@@ -141,6 +141,11 @@ def main():
                 fail(f"lecture {lecture['lecture']} deep {field} too thin")
         if len(deep.get("anchors") or []) < 4:
             fail(f"lecture {lecture['lecture']} needs transcript anchors")
+        source_lens = deep.get("source_lens") or []
+        if len(source_lens) < 2:
+            fail(f"lecture {lecture['lecture']} needs source lens paragraphs")
+        if sum(len(words(p)) for p in source_lens) < 60:
+            fail(f"lecture {lecture['lecture']} source lens too thin")
         essay_words = sum(len(words(p)) for p in deep.get("essay") or [])
         if essay_words < 230:
             fail(f"lecture {lecture['lecture']} essay too thin")
@@ -209,8 +214,12 @@ def main():
         if f"concept-{concept['id']}.html" not in names:
             fail(f"missing concept page {concept['id']}")
     for lecture in data["lectures"]:
-        if f"lecture-{lecture['lecture']:02d}.html" not in names:
+        lecture_name = f"lecture-{lecture['lecture']:02d}.html"
+        if lecture_name not in names:
             fail(f"missing lecture page {lecture['lecture']:02d}")
+        lecture_html = (SITE / lecture_name).read_text(encoding="utf-8", errors="ignore")
+        if "Source Lens" not in lecture_html:
+            fail(f"lecture page missing source lens: {lecture_name}")
     for theme in data["themes"]:
         if f"theme-{theme['id']}.html" not in names:
             fail(f"missing theme page {theme['id']}")
