@@ -4740,19 +4740,59 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
                 if concept_id not in concept_ids:
                     concept_ids.append(concept_id)
         overlay = LECTURE_DRILL_OVERLAYS[number]
+        title = lecture["deep"]["title"]
         start_from = drill_phrase(overlay["start_from"])
         self_check = drill_phrase(overlay["self_check"])
         common_failure = drill_phrase(overlay["common_failure"])
         source_check = drill_phrase(overlay["source_check"])
-        lecture_label = f"Lecture {number:02d}"
+        object_join = varied((number, "drill-object-join"), [
+            f"The object to rebuild is: {spine['object']}",
+            f"Keep this object in view: {spine['object']}",
+            f"That opening has to become this course object: {spine['object']}",
+            f"The reconstruction should put this object on the table: {spine['object']}",
+            f"Treat this as the carrier of the argument: {spine['object']}",
+            f"The first concrete thing is: {spine['object']}",
+        ])
+        move_join = varied((number, "drill-move-join"), [
+            f"It must also state the allowed move in ordinary words: {spine['legal_move']}",
+            f"The legal move has to be explicit: {spine['legal_move']}",
+            f"Then the reader has to say what motion or construction is permitted: {spine['legal_move']}",
+            f"The move is part of the proof, so it has to be named: {spine['legal_move']}",
+            f"Do not let the answer proceed until this permission is clear: {spine['legal_move']}",
+            f"The allowed action is the contract: {spine['legal_move']}",
+        ])
+        survival_join = varied((number, "drill-survival-join"), [
+            f"The surviving fact is the evidence to protect: {spine['surviving_fact']}",
+            f"The final check is whether this fact stays visible: {spine['surviving_fact']}",
+            f"The answer should carry this fact without turning it into a slogan: {spine['surviving_fact']}",
+            f"What remains after the legal move is: {spine['surviving_fact']}",
+            f"The fact that must survive the whole explanation is: {spine['surviving_fact']}",
+            f"Keep the conclusion attached to this protected fact: {spine['surviving_fact']}",
+        ])
+        repair_join = varied((number, "drill-repair-join"), [
+            f"Repair it by rebuilding the lecture chain from object to move to surviving fact, then to the later use: {spine['why_later']}",
+            f"The fix is to return to the course chain, not to add topic names: object, legal move, surviving fact, later use: {spine['why_later']}",
+            f"Bring the answer back to the lecture's working order: object first, legal move second, surviving fact third, later use last: {spine['why_later']}",
+            f"A fuller reconstruction should reconnect the failed sentence to the later role: {spine['why_later']}",
+            f"The repaired version has to explain why this lecture is needed later: {spine['why_later']}",
+            f"Use the later role as a check on the repair: {spine['why_later']}",
+        ])
+        overread_join = varied((number, "drill-overread-join"), [
+            f"The bridge layer gives the same boundary in sharper form: {bridge['overread_warning']}",
+            f"The bridge warning names the overreach to avoid: {bridge['overread_warning']}",
+            f"That source caution matches this bridge warning: {bridge['overread_warning']}",
+            f"The overread guard is: {bridge['overread_warning']}",
+            f"Keep this bridge warning attached to the drill: {bridge['overread_warning']}",
+            f"The source claim should stop at this boundary: {bridge['overread_warning']}",
+        ])
         drills.append({
             "lecture": number,
-            "title": lecture["deep"]["title"],
-            "start_from": f"{start_from} Start from this lecture object: {spine['object']} The drill should begin there because the later source bridge only makes sense after the lecture object is visible.",
+            "title": title,
+            "start_from": f"{start_from} {object_join} Before the source bridge for \"{title}\" can be read honestly, that object has to be visible.",
             "rebuild_steps": overlay["rebuild_steps"],
-            "self_check": f"The reconstruction is ready when this check passes: {self_check} The answer also has to state the allowed move in plain words: {spine['legal_move']} Then it has to name the surviving fact without turning it into a slogan: {spine['surviving_fact']}",
-            "common_failure": f"Watch for this failure: {common_failure} The repair is not a longer topic summary; it is a return to the lecture chain from object to legal move to surviving fact, then to the later use: {spine['why_later']}",
-            "source_check": f"Check the source boundary before strengthening the claim: {source_check} The source boundary is also stated in the bridge layer: {bridge['overread_warning']}",
+            "self_check": f"A rebuild of \"{title}\" is ready only after this test passes: {self_check} {move_join} {survival_join}",
+            "common_failure": f"A shallow rebuild of \"{title}\" fails here: {common_failure} {repair_join}",
+            "source_check": f"The source boundary for \"{title}\" starts here: {source_check} {overread_join}",
             "concepts": concept_ids[:6],
         })
     return drills
