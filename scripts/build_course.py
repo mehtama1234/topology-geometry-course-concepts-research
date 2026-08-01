@@ -4285,6 +4285,7 @@ def plain_fragment(text, prefixes):
 def build_lecture_answer_guide(lecture, spine_row):
     examples = lecture["deep"]["examples"]
     number = lecture["lecture"]
+    lecture_label = f"Lecture {number:02d}"
     object_close = varied((number, "answer-object-close"), [
         "Use the anchor to keep the explanation tied to a real course moment instead of a memorized term.",
         "The answer should make the object do work before the title of the concept appears.",
@@ -4317,10 +4318,14 @@ def build_lecture_answer_guide(lecture, spine_row):
     ])
     surviving_fact = spine_row["surviving_fact"].rstrip(".")
     why_strong_open = varied((number, "answer-why-open"), [
-        "A strong answer is not a longer list of topics. It is strong because it separates the carrier, the allowed change, and the fact that survives.",
+        "A good answer is not a longer list of topics. It works because it separates the carrier, the allowed change, and the fact that survives.",
         "This answer works when the reader can see the chain from the course example to the conclusion without leaning on a theorem title.",
         "The test is whether the answer would still make sense if all formal labels were hidden and only the object, rule, and surviving evidence remained.",
         "The point of the guide is to make the proof habit visible: choose the right thing to watch, state the rule of motion, then say what the motion cannot erase.",
+        "The answer has force when the reader can rebuild the argument from the classroom object, not from memory of the lecture title.",
+        "The answer should read like a small proof contract: what is present, what may change, what must survive, and what conclusion that survival earns.",
+        "The guide works only if a beginner can test each sentence against the lecture scene instead of accepting a formal name as authority.",
+        "The answer should expose the load-bearing detail: the object, the permitted action, the surviving evidence, and the limit of the claim.",
     ])
     why_strong_close = varied((number, "answer-why-close"), [
         f"In this lecture, '{examples[1]['title']}' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted.",
@@ -4329,10 +4334,10 @@ def build_lecture_answer_guide(lecture, spine_row):
         f"That is why the answer must end with a limit as well as a payoff. The surviving fact is: {surviving_fact}. It tells the reader what is forced, not every extra thing one might wish to know.",
     ])
     return {
-        "object_answer": f"{varied((number, 'object'), ['Start with the object:', 'First name what is being reasoned about:', 'The answer begins by identifying', 'Make the carrier of the reasoning explicit:'])} {spine_row['object']} {data_close} Use '{examples[0]['title']}' as a concrete anchor. {object_close}",
-        "move_answer": f"{varied((number, 'move'), ['Name the permitted move:', 'The legal action is', 'The proof move to state is', 'Put the allowed change in plain words:'])} {spine_row['legal_move']} {illegal_shortcut} {shortcut_close}",
-        "conclusion_answer": f"{varied((number, 'conclusion'), ['Protect this surviving fact:', 'The evidence to keep is', 'The conclusion rests on this fact:', 'Carry this fact through the explanation:'])} {spine_row['surviving_fact']} {conclusion_close} Connect forward to the later need: {spine_row['why_later']}",
-        "why_strong": f"{why_strong_open} {why_strong_close}",
+        "object_answer": f"For {lecture_label}, use this object answer. {varied((number, 'object'), ['Put the lecture object before the topic name:', 'Name the thing the argument acts on:', 'Begin from the course object, not the summary:', 'Say what the reader should picture first:', 'Identify the object that carries the claim:', 'Open with the thing being moved, counted, built, or watched:', 'State the carrier of the lecture evidence:', 'Describe the object before giving it a formal role:'])} {spine_row['object']} {data_close} Use '{examples[0]['title']}' as a concrete anchor. {object_close}",
+        "move_answer": f"For {lecture_label}, use this move answer. {varied((number, 'move'), ['Name the permitted move:', 'The legal action is', 'The proof move to state is', 'Put the allowed change in plain words:', 'State the allowed manipulation before the payoff:', 'Name the rule-governed change:', 'Say what the lecture permits the object to do:', 'Turn the method into an action the reader can check:'])} {spine_row['legal_move']} {illegal_shortcut} {shortcut_close}",
+        "conclusion_answer": f"For {lecture_label}, use this conclusion answer. {varied((number, 'conclusion'), ['Protect this surviving fact:', 'The evidence to keep is', 'The conclusion rests on this fact:', 'Carry this fact through the explanation:', 'Name the fact that survives the legal move:', 'State the evidence that comes through unchanged:', 'Say what remains available after the action:', 'Put the surviving fact before the theorem name:'])} {spine_row['surviving_fact']} {conclusion_close} Connect forward to the later need: {spine_row['why_later']}",
+        "why_strong": f"For {lecture_label}, use this strength check. {why_strong_open} {why_strong_close}",
     }
 
 
