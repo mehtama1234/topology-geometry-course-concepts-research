@@ -35,11 +35,11 @@ The reader should be able to understand the course without prior math vocabulary
 - 15 lecture groups.
 - 34 recovered caption files.
 - 1 explicit missing-caption caveat: `nx1XOlezuvk`.
-- 16 concepts.
+- 24 concepts.
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 65 generated HTML pages.
+- 73 generated HTML pages.
 - 45 lecture-grounded examples.
 - Four playground widgets.
 - Course synthesis and reader-checks pages.

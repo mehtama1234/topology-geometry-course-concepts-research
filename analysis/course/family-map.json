@@ -8,7 +8,8 @@
       "generic-position",
       "deformation",
       "invariant",
-      "topology-vs-geometry"
+      "topology-vs-geometry",
+      "surgery"
     ],
     "depth": {
       "human_problem": "The human problem is that the original picture is often too tangled to reason about directly. The family asks how to change that picture without changing the answer, so the reader can solve the simpler version with confidence.",
@@ -32,7 +33,9 @@
       "euler-characteristic",
       "triangulation",
       "winding-linking",
-      "parity"
+      "parity",
+      "intersection-number",
+      "poincare-hopf"
     ],
     "depth": {
       "human_problem": "The human problem is that a drawing can change while the underlying obstruction remains. A count gives the reader something stable enough to compare before and after the change, even when the visible picture has been redrawn.",
@@ -56,7 +59,10 @@
       "boundary-orientation",
       "gauss-bonnet",
       "vector-field-index",
-      "euler-characteristic"
+      "euler-characteristic",
+      "quotient-space",
+      "manifold",
+      "poincare-hopf"
     ],
     "depth": {
       "human_problem": "The human problem is that surfaces look simple nearby but can behave differently as wholes. This family asks how patches, boundaries, holes, and orientation combine into whole-surface facts that local inspection alone misses completely.",
@@ -80,7 +86,9 @@
       "graph-planarity",
       "knots-and-links",
       "duality",
-      "winding-linking"
+      "winding-linking",
+      "manifold",
+      "intersection-number"
     ],
     "depth": {
       "human_problem": "The human problem is to know whether one object can sit inside another without forbidden collisions. A drawing may suggest an answer, but this family asks for a reason that covers every drawing and every legal attempt.",
@@ -104,7 +112,11 @@
       "configuration-space",
       "fixed-points",
       "deformation",
-      "vector-field-index"
+      "vector-field-index",
+      "product-space",
+      "brouwer-fixed-point",
+      "equilibrium",
+      "poincare-hopf"
     ],
     "depth": {
       "human_problem": "The human problem is to understand motion when exact equations or trajectories are unavailable. This family asks what the shape of possible states can force before anything is solved explicitly or computed point by point.",

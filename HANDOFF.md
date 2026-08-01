@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 65.
+- HTML pages: 73.
 
 ## Main Reader Surfaces
 
@@ -72,7 +72,7 @@ As of the current generated audit:
 
 - 45 lecture examples.
 - 3,855 lecture essay words.
-- 3,207 concept essay words.
+- 4,830 concept essay words.
 - 1,278 theme essay words.
 - 1,500 subtheme essay words.
 - 824 method-family essay words.

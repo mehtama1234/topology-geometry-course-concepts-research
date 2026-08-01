@@ -16,9 +16,9 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1 video currently reports no captions through `yt-dlp`: `nx1XOlezuvk`.
 - Raw captions live in `raw-material/youtube/captions/`.
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
-- 65 generated HTML pages in `site/`.
+- 73 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
-- Long-form first-principles essays for lectures, concepts, themes, subthemes, and method families.
+- Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - A course-level synthesis page, a reader-checks page, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces
