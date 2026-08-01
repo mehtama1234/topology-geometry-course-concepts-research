@@ -4678,12 +4678,17 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 
     playground_body = """
 <h1>Math Playground</h1>
-<p class="lead">These small models make the course engine visible: choose legal data, watch what changes, and notice what count or meeting survives.</p>
+<p class="lead">These small models make the course engine visible: choose legal data, watch what changes, and say exactly what count, meeting, or local behavior survives the allowed change.</p>
+<section class="lecture">
+  <h2>How To Use The Playground</h2>
+  <p>Do not treat the canvas as a toy picture. For each widget, name four things before moving the slider: the object being modeled, the slider move that is legal, the evidence that should survive, and the failure that would make the model stop proving the claim.</p>
+  <p>The goal is to practice the course habit with your hands. If the drawing changes but the protected account stays fixed, say why. If the protected account would change under a different move, say which rule was broken.</p>
+</section>
 <section class="play-grid">
   <article class="play">
     <div class="meta">Euler characteristic</div>
     <h2>Cut a disk into pieces</h2>
-    <p>More cuts change the ledger of vertices, edges, and faces. The alternating count stays attached to the disk.</p>
+    <p>More cuts change the ledger of vertices, edges, and faces. The legal move is refinement of the same disk, and the protected evidence is the alternating count attached to that disk.</p>
     <div class="equation">V - E + F stays 1</div>
     <canvas data-play="euler" aria-label="Euler characteristic playground"></canvas>
     <div class="control"><label for="euler-cuts">Cuts</label><input id="euler-cuts" type="range" min="3" max="12" value="6"><span class="readout" data-out="euler-cuts">6</span></div>
@@ -4691,7 +4696,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <article class="play">
     <div class="meta">Signed cancellation</div>
     <h2>Birth of opposite meetings</h2>
-    <p>A pair can appear during motion. The raw count changes, but the plus and minus signs cancel.</p>
+    <p>A pair can appear during motion. The raw count changes, but the plus and minus signs cancel because the legal local event creates opposite contributions.</p>
     <div class="equation">(+1) + (-1) = 0</div>
     <canvas data-play="signs" aria-label="Signed cancellation playground"></canvas>
     <div class="control"><label for="sign-sep">Separation</label><input id="sign-sep" type="range" min="0" max="100" value="55"><span class="readout" data-out="sign-sep">55</span></div>
@@ -4699,7 +4704,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <article class="play">
     <div class="meta">Fixed points</div>
     <h2>Graph meets diagonal</h2>
-    <p>A rule becomes a graph. Where the graph meets the diagonal, a point returns to itself.</p>
+    <p>A rule becomes a graph. Where the graph meets the diagonal, a point returns to itself. The model fails if the graph no longer records a rule from the space back to itself.</p>
     <div class="equation">fixed point means f(x) = x</div>
     <canvas data-play="fixed" aria-label="Fixed point playground"></canvas>
     <div class="control"><label for="fixed-bend">Rule bend</label><input id="fixed-bend" type="range" min="0" max="100" value="50"><span class="readout" data-out="fixed-bend">50</span></div>
@@ -4707,11 +4712,16 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <article class="play">
     <div class="meta">Vector-field index</div>
     <h2>Walk around a defect</h2>
-    <p>The index records how nearby arrows turn around a failure point. Local turning becomes countable evidence.</p>
+    <p>The index records how nearby arrows turn around one isolated failure point. Local turning becomes countable evidence only while the loop encloses that defect and no other one.</p>
     <div class="equation">local arrow turn gives a signed count</div>
     <canvas data-play="index" aria-label="Vector-field index playground"></canvas>
     <div class="control"><label for="index-mode">Arrow pattern</label><input id="index-mode" type="range" min="0" max="100" value="20"><span class="readout" data-out="index-mode">20</span></div>
   </article>
+</section>
+<section class="lecture">
+  <h2>Reader Drill</h2>
+  <p>After moving a slider, answer one sentence: what changed in the picture, and what stayed fixed in the mathematical account? For Euler characteristic, the drawing ledger changes while the alternating total stays fixed. For signs, the raw number of meetings changes while the signed total stays fixed. For fixed points, the graph bends while self-agreement remains a meeting with the diagonal. For index, nearby arrows change while the loop test records local turning around the defect.</p>
+  <p>If that sentence cannot be said, the widget has become decoration. Reset the slider and name the object, legal move, protected evidence, and break condition before trying again.</p>
 </section>
 <script src="assets/playground.js"></script>
 """
@@ -5009,11 +5019,13 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <h2>How To Use These Recipes</h2>
   <p>When a page feels compressed, find the proof move it is using. Do not start with the theorem name. Start with the action: move a picture, build a count, translate a rule, add local defects, or model possible states. Then ask what detail makes the action legal.</p>
   <p>The course becomes easier when every proof is read as a sequence of obligations. What is the object? What may change? What must survive? What count or comparison is protected? What conclusion follows because the protected evidence cannot be removed?</p>
+  <p>A recipe is not complete until the failure mode is visible. For each proof move below, try to say the nearby wrong proof: the illegal deformation, the raw count, the graph of the wrong rule, the missing defect, or the dishonest state space. The wrong proof is what shows why the contract matters.</p>
 </section>
 <div class="grid two">{proof_cards}</div>
 <section class="lecture">
   <h2>Audit Question</h2>
   <p>After reading any proof in the course, ask which recipe was used and where the proof paid its debt. A deformation proof pays its debt by naming legal motion. A counting proof pays its debt by explaining cancellation. A fixed-point proof pays its debt by translating the rule into a graph-and-diagonal meeting. A dynamics proof pays its debt by showing why local defects can be added over the whole surface.</p>
+  <p>If the page gives a conclusion before paying that debt, repair it by inserting the missing sentence. The repair should name the object, allowed move, protected evidence, and limit of the conclusion in ordinary language.</p>
 </section>
 """
     (SITE / "proof-moves.html").write_text(page("Proof Moves", proof_body, "Proof Moves"), encoding="utf-8")
@@ -5038,12 +5050,14 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <h2>How To Read A Formula Here</h2>
   <p>Start by asking what object the formula is talking about: a surface, a pair of meeting objects, a map, a vector field, or a space of possible states. Then ask what operation produced the numbers: splitting into pieces, assigning signs, walking around a defect, or comparing a graph with a diagonal. Finally ask why the number is allowed to speak after the picture changes. That last step is the mathematics.</p>
   <p>A formula is useful only when it guards the right information. If the surface was modeled incorrectly, if the signs have no orientation, if the boundary was ignored, or if the defect is not isolated, the symbols may still be written down while the reason has failed.</p>
+  <p>Read every formula as a contract with a limit. The contract says what account survives. The limit says what the formula does not give: exact geometry, a location of the fixed point, a trajectory, or permission to change the model.</p>
 </section>
 <div class="grid two">{formula_cards}</div>
 <section class="lecture">
   <h2>The Common Pattern</h2>
   <p>Every formula above turns a flexible situation into a disciplined account. Euler characteristic forgets the chosen mesh and remembers the surface. Intersection number forgets temporary crossing pairs and remembers unavoidable meeting. Brouwer turns a rule into forced self-agreement. Poincare-Hopf turns local arrow failures into a whole-surface demand.</p>
   <p>That is the first-principles point: mathematics is not adding symbols to a picture. It is choosing an account that survives the legal changes in the problem and is strong enough to rule something in or out.</p>
+  <p>The reader test is simple: cover the formula and explain the account in one everyday sentence. If the sentence cannot name the object, legal operation, protected evidence, and conclusion limit, the formula has been memorized but not understood.</p>
 </section>
 """
     (SITE / "formula-reader.html").write_text(page("Formula Reader", formula_body, "Formula Reader"), encoding="utf-8")
@@ -5071,11 +5085,13 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <h2>How To Use A Contract</h2>
   <p>Before using a theorem or method, read the contract from top to bottom. First check that the required object is really present. Then check the allowed move and the evidence it protects. Only then ask what conclusion the result can force. The break condition is not a footnote; it is the line between a valid use and a wrong use with familiar words.</p>
   <p>Use these contracts beside the formula reader and reconstruction drills. The formula reader explains what a statement says. The contract explains when that statement is allowed to be used on a live problem.</p>
+  <p>The strongest theorem use also states what the theorem does not do. Brouwer forces existence without location. Poincare-Hopf controls a total without solving trajectories. Configuration-space modeling can block a route only after the model records the real allowed states.</p>
 </section>
 <div class="grid two">{''.join(contract_cards)}</div>
 <section class="lecture">
   <h2>The Misuse Test</h2>
   <p>A result is being misused when the name appears before the object, when the allowed move is unstated, when the protected evidence is missing, or when the conclusion is stronger than the contract allows. Repair the explanation by naming the missing part rather than adding more formal vocabulary.</p>
+  <p>For any theorem sentence, ask for the nearest failure scene. What if the ball is open, the rule jumps, a defect is not isolated, the boundary has changed, or the state space forgets a real freedom? If that failure scene breaks the claim, the missing condition belongs in the explanation.</p>
 </section>
 """
     (SITE / "theorem-use-contracts.html").write_text(page("Theorem Use Contracts", contracts_body, "Theorem Contracts"), encoding="utf-8")
