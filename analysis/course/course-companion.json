@@ -578,7 +578,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as Mobius strip, twist and glue, cutting along the center, one side versus two sides, and through concrete course moments such as Cutting an ordinary band versus a Mobius band; One side is a global fact; Off-center cuts create linked pieces. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -723,7 +723,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as deformation, disk, boundary points, curves that do not intersect, and through concrete course moments such as Connecting boundary pairs in a disk; Deformation as proof of impossibility; Endpoint order carries the obstruction. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -872,7 +872,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as balls and spheres, product, quotient, surgery, and through concrete course moments such as Products make spaces from independent choices; Quotients turn edge instructions into spaces; Surgery treats construction as reasoning. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -1007,7 +1007,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as square, product, quotient, manifolds, and through concrete course moments such as A square is not the space until its edges are read; Reversing an edge changes the global surface; A route can leave the drawing and keep going. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -1104,7 +1104,7 @@
         ],
         "essay": [
           "Lecture 5 is where surfaces become classifiable objects rather than isolated examples. Handles, crosscaps, boundaries, and orientability are not decorative features. A handle supplies a route through and around. A crosscap, represented by Mobius-strip behavior, reverses side after a trip. A boundary changes the accounting at the edge. Classification says that once surfaces are simplified by legal cutting, gluing, and deformation, these durable parts determine the family of the surface.",
-          "The handle-sliding discussion is especially important because it makes classification operational. One does not simply declare that a mixed surface is equivalent to a standard form. One moves handles across one-sided regions and watches how the surface changes while preserving its topological type. This is arithmetic with surfaces: connected sums, handles, and Mobius strips become manipulable pieces. The lecture teaches that topology can classify objects not by measuring them, but by reducing them to stable building blocks whose presence cannot be hidden by a different drawing.",
+          "The handle-sliding discussion makes classification operational. One does not simply declare that a mixed surface is equivalent to a standard form. One moves handles across one-sided regions and watches how the surface changes while preserving its topological type. This is arithmetic with surfaces: connected sums, handles, and Mobius strips become manipulable pieces. The lecture teaches that topology can classify objects not by measuring them, but by reducing them to stable building blocks whose presence cannot be hidden by a different drawing.",
           "This is also where the course starts to feel like a working language. A surface is no longer a single picture but a member of a family with operations. Once that is understood, later formulas have a home: Euler characteristic, intersection signs, and vector-field indices are not floating symbols. They are ways of reading information from a surface whose type has already been disciplined by classification.",
           "The first-principles point is that classification is not naming by appearance. It is naming by what survives all legal simplification. Two drawings can look different while carrying the same handles, boundaries, and orientation behavior; two similar-looking drawings can hide different global side structure.",
           "The deeper mathematical need is economy. Without classification, every surface would have to be argued about from scratch. With classification, a reader can reduce a complicated surface to a controlled list of durable features, then know which later tools are allowed to apply. The lecture therefore turns visual variety into a smaller set of cases: how many handles, how many one-sided pieces, whether there is boundary, and whether a consistent side choice survives."
@@ -1142,7 +1142,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as classification of surfaces, Mobius, orientable, non-orientable, and through concrete course moments such as Classification separates surfaces by durable parts; Surgery changes a surface by controlled cutting and gluing; Handles and crosscaps are durable building blocks. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -1277,7 +1277,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as submanifold, moving inside a manifold, obstacles, dimensions, and through concrete course moments such as Moving an object inside a manifold; Forced meetings become evidence; Dimension measures available escape room. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -1410,7 +1410,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as center of gravity, continuous motion, intersection, existence, and through concrete course moments such as The center-of-gravity demonstration; Existence without a formula; A physical motion becomes an intersection question. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -1545,7 +1545,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as intersection number, orientation, positive or negative, isotopy invariant, and through concrete course moments such as Signed intersection number; Pair creation and cancellation; Orientation gives signs their meaning. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -1828,7 +1828,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as Brouwer fixed-point theorem, closed ball, boundary, continuous map, and through concrete course moments such as Brouwer on the closed ball; Boundary changes the theorem; No global escape from self-agreement. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -1976,7 +1976,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as dynamical systems, differential equations, vector field, equilibria, and through concrete course moments such as Vector fields replace solved trajectories; Equilibria are arrow-field failures; Local arrow patterns can be counted. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -2111,7 +2111,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as index of a vector field, equilibria, Euler characteristic, Poincare-Hopf, and through concrete course moments such as Adding local indices; Poincare-Hopf as surface bookkeeping; Defects can move while the total stays fixed. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -2247,7 +2247,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as Poincare-Hopf theorem, index sum, Euler characteristic, hairy ball, and through concrete course moments such as Using Poincare-Hopf in both directions; The hairy-ball idea in plain form; Topology predicts a failure of motion. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -2379,7 +2379,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as applications, rotations in space, Poincare-Hopf, dynamical systems, and through concrete course moments such as Applications as honest translations; Rotations and dynamics share the same proof engine; The model must carry the real constraint. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -2529,7 +2529,7 @@
         },
         "source_faithfulness": {
           "caption_support": "The recovered captions support the page through anchors such as table of contents, pictorial thinking, deformation, intersection, and through concrete course moments such as The table of contents becomes one argument; Pictures earn their role by carrying constraints; The final strip demonstration returns to linking. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-          "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+          "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
         },
         "reader_test": {
@@ -2607,7 +2607,7 @@
       "essay": [
         "Counting what survives is the course's answer to unreliable pictures. A visible crossing count can change when curves move. A raw cell count can change when a surface is subdivided. A local arrow pattern can be redrawn. The course does not give up on counting; it designs better counts. Alternating signs, plus-minus intersections, parity, and index are all ways of making fake changes cancel while the real obstruction remains.",
         "From first principles, a useful count is built around the moves that might otherwise ruin it. If a surface is divided differently, the count must ignore the artificial extra pieces. If intersections are born as an opposite pair, the signed total must ignore that temporary visual change. If vector-field defects move, split, or cancel, the total index must record what the surface still demands. The count earns authority by surviving the exact legal changes in the problem.",
-        "The theme becomes richer as the course progresses. Euler characteristic is the first major stable count for surfaces. Intersection number turns meetings into signed evidence. Poincare-Hopf turns vector-field defects into a total controlled by the surface. Parity is the simplest version, keeping only evenness or oddness when pairs are the only allowed change. These are not separate tricks; they are one habit applied to different objects.",
+        "The theme gains more precise bookkeeping as the course progresses. Euler characteristic is the first major stable count for surfaces. Intersection number turns meetings into signed evidence. Poincare-Hopf turns vector-field defects into a total controlled by the surface. Parity is the simplest version, keeping only evenness or oddness when pairs are the only allowed change. These are not separate tricks; they are one habit applied to different objects.",
         "The course-level payoff is that a count can prove something without trying every drawing. If the protected total is nonzero, a crossing-free or defect-free outcome may be impossible. If the surface demands a total index, some local failure of motion must appear. A small arithmetic statement can speak for many pictures because it was designed to survive all legal redrawings.",
         "A reader should leave this theme asking not 'what can I count?' but 'what count is protected by the rules of this problem?' Signs and alternating terms are not formal decoration. They are repair mechanisms for counts that would otherwise be too brittle. The surviving total is the mathematical evidence."
       ],
@@ -2684,7 +2684,7 @@
       "essay": [
         "Generic-before-exception is the course's way of keeping proofs honest around special accidents. A drawing with perfect tangency or a triple crossing may carry real information, but it may be unstable. A tiny perturbation can split the event into ordinary pieces. The course therefore studies the ordinary case first: clean intersections, isolated defects, and controlled pair creation or cancellation. This is not avoiding difficulty. It is exposing the stable mechanism.",
         "From first principles, a proof needs events it can inspect and count. A clean crossing can be assigned a sign. An isolated vector-field defect can be assigned an index. A pair of intersections born together can be compared just before and just after the birth. By contrast, a fragile exact alignment may hide several ordinary events inside one special picture. The ordinary case gives the proof usable evidence.",
-        "Exceptional cases still matter, but they are best understood as boundaries between ordinary cases. When two intersections are born together, the singular moment is important because it explains why the signed count does not change. When equilibria are not isolated, the field must be cleaned up before index makes sense. This theme protects the reader from proving a theorem about a coincidence instead of proving a theorem about the shape.",
+        "Exceptional cases still matter, but they are best understood as boundaries between ordinary cases. When two intersections are born together, the singular moment explains why the signed count does not change. When equilibria are not isolated, the field must be cleaned up before index makes sense. This theme protects the reader from proving a theorem about a coincidence instead of proving a theorem about the shape.",
         "The course-level payoff is that exceptions become controlled transitions rather than mysterious failures. A singular moment is studied through the ordinary pictures around it. The proof asks what appeared, what disappeared, whether signs cancel, and whether the protected total survived. This is how the course handles motion without letting rare perfect alignments dominate the argument.",
         "The mathematical principle is that stable events can be assigned stable evidence. The exception is not ignored; it is handled through the ordinary cases it connects. A reader should ask what tiny legal nudge would reveal and what invariant remains through that nudge."
       ],
@@ -3573,7 +3573,7 @@
       },
       "essay": [
         "Euler characteristic is surface bookkeeping designed to survive redrawing. If a surface is divided into vertices, edges, and faces, those individual counts depend on the chosen division. Add a diagonal to a face and the number of edges changes. The number of faces changes too. The alternating combination is arranged so those artificial internal changes balance each other. That is why the final number belongs to the surface rather than to one particular mesh drawn on it.",
-        "The everyday need is simple: the course wants a number that can recognize a whole surface without caring about the artist's drawing. A sphere can be divided in many ways. A torus can be divided in many ways. If the count changed every time the drawing was improved, it would be useless as evidence. Euler characteristic earns its place because it ignores the replaceable drawing choices and remembers a whole-surface fact.",
+        "The everyday need is simple: the course wants a number that can recognize a whole surface without caring about the artist's drawing. A sphere can be divided by triangles, squares, or mixed cell pieces. A torus can be cut into several different ledgers of vertices, edges, and faces. If the count changed every time the drawing was improved, it would be useless as evidence. Euler characteristic earns its place because it ignores the replaceable drawing choices and remembers a whole-surface fact.",
         "This concept becomes much more than a formula. Early on, it helps classify and recognize surfaces. Later, in Poincare-Hopf, it becomes the number that a vector field's local indices must add up to. That is the conceptual bridge: a count first learned from surface pieces later controls possible failures of motion. Shape accounting becomes a demand placed on arrows.",
         "The detail behind the arithmetic is cancellation. When a face is split, the extra edge and extra face enter with opposite effects. When a triangulation is refined, many raw numbers change, but the alternating total is designed to remain still. The formula is useful because it has been engineered to forget the divisions the mathematician chose and remember the surface those divisions describe.",
         "For a beginner, the key is not to worship the symbols. The symbols are a bookkeeping device for a plain idea: choose a count that changes zero when the drawing changes harmlessly. Once that habit is clear, intersection number and vector-field index feel like relatives rather than new mysteries."
@@ -4015,7 +4015,7 @@
       "important_detail": "Boundaries and corners contribute too. Ignoring the edge of the surface breaks the accounting.",
       "math_principle": "Local bending totals can be forced by global topology.",
       "depth": {
-        "why_it_exists": "Gauss-Bonnet exists because local bending and whole-shape topology are not separate worlds. A surface can bend in many ways, but the total bending, with boundary terms included when needed, can be tied to the surface's topology.",
+        "why_it_exists": "Gauss-Bonnet exists because local bending and whole-shape topology are not separate worlds. A surface can move curvature from one region to another, but the total bending, with boundary terms included when needed, can be tied to the surface's topology.",
         "beginner_trap": "The trap is to think curvature is only a point-by-point geometric measurement. The course cares about total curvature because totals can be protected by topology. The local measurement matters most when its sum is forced.",
         "course_role": "It belongs to the local-to-global theme. Even when the course later emphasizes vector fields, the same pattern remains: local contributions add up to a global demand. Gauss-Bonnet is the curvature version of that demand."
       },
@@ -4441,12 +4441,12 @@
       "depth": {
         "why_it_exists": "Parity exists because sometimes the exact number is too sensitive, but evenness or oddness is stable. If legal changes create or remove events two at a time, the parity cannot change, even while the visible count changes.",
         "beginner_trap": "The trap is to dismiss parity as crude. Crude is useful when the problem only needs an obstruction, and an odd count can prove that zero is impossible. The coarseness is the reason it survives.",
-        "course_role": "Parity is the simplest surviving-count idea. It prepares the reader for richer signed counts, where cancellation is tracked with more information than odd or even. The course repeatedly upgrades this simple habit into finer bookkeeping."
+        "course_role": "Parity is the simplest surviving-count idea. It prepares the reader for signed counts that track cancellation with more information than odd or even. The course repeatedly upgrades this simple habit into finer bookkeeping when intersection signs and vector-field indices need to remember direction, not only pair changes."
       },
       "essay": [
         "Parity asks whether a count is even or odd. It is deliberately coarse, and that coarseness is useful. If legal changes create or remove events in pairs, the exact count may change but the parity cannot. An odd count can prove that zero is impossible, which is often enough for an existence or obstruction argument.",
         "The first-principles need is to keep only the part of the count that the allowed moves cannot destroy. Suppose crossings appear two at a time, or solutions are born in pairs. The exact number may be fragile. The even-or-odd status may be stable. Parity throws away detail on purpose so that the remaining statement survives the motion.",
-        "The course uses richer signed counts later, but parity is the simplest version of the same survival idea. It teaches the reader not to demand more information than the problem needs. Sometimes the stable shadow of a number is more useful than the fragile exact number. This prepares the mind for intersection signs and index sums, where cancellation is tracked with finer detail.",
+        "The course uses signed counts with more local information later, but parity is the simplest version of the same survival idea. It teaches the reader not to demand more information than the problem needs. Sometimes the stable shadow of a number is more useful than the fragile exact number. This prepares the mind for intersection signs and index sums, where cancellation is tracked with finer detail.",
         "This is why parity is a first-principles tool rather than a shortcut. If every legal change alters a count by two, then evenness or oddness is protected by the rules of motion. The proof may not know the exact count at the end, but it can still know that zero is impossible when the protected parity is odd. The argument is not saying the exact number does not matter in life; it is saying this particular problem only needs a witness that cannot fall to zero.",
         "The important caution is to prove that changes really happen in pairs. If a legal move can create one event by itself, parity is not protected. The power of parity comes from the rule of motion, not from the word odd or even. It is a small invariant, but it must still be earned by checking the allowed local changes."
       ],
@@ -4504,7 +4504,7 @@
       "essay": [
         "A product space is the course's plainest way to build a new world from choices. If one choice moves left to right and another moves up and down, the combined choice fills a square. If a third independent choice is added, the combined choices fill a box. This is not only a drawing device. It is the beginning of treating a list of possibilities as a shape with routes, boundaries, and obstacles of its own.",
         "The first-principles idea is bookkeeping for several freedoms at once. A point in a product does not record one number or one position. It records a tuple of choices: this input and that output, this position and that angle, this point on one curve and that point on another. Once choices are bundled this way, the set of all bundles becomes a space that can be studied topologically.",
-        "The idea becomes important because many mathematical objects in the course are not physical pieces of paper. The graph of a map records an input and an output together. A configuration space records all data needed to describe a mechanical state. A path through such a space records a continuous change of all those choices at once. Product thinking is the step that lets the course put several ordinary freedoms into one organized object.",
+        "Product space becomes necessary when the course studies objects that are built from simultaneous choices rather than from one physical piece of paper. The graph of a map records an input and an output together. A configuration space records all data needed to describe a mechanical state. A path through such a space records a continuous change of all those choices at once. Product thinking is the step that lets the course put several ordinary freedoms into one organized object.",
         "The detail that keeps the idea honest is independence. A product says each coordinate can vary without immediately determining the other. If the problem has a constraint tying the choices together, then the allowed states form a smaller shape inside the product. From first principles, the product gives the large room first; equations, forbidden states, or boundary rules then describe which part of that room the problem actually uses.",
         "This is why product spaces appear behind fixed points and applications. The graph of a map lives in an input-output product. A diagonal lives in the same product and records equality of the two entries. Configuration spaces often begin as products before constraints remove forbidden states. Products are the room in which multi-choice problems become geometric."
       ],
@@ -4656,7 +4656,7 @@
       "important_detail": "Local ordinariness does not settle the global question. The whole course depends on that gap.",
       "math_principle": "A space can be locally simple and globally constrained at the same time.",
       "depth": {
-        "why_it_exists": "Manifold exists as the course's word for a space where small neighborhoods behave like ordinary room, even when the total space does not. This lets the lectures put curves, surfaces, maps, and vector fields in settings that are locally manageable but globally rich.",
+        "why_it_exists": "Manifold exists as the course's word for a space where small neighborhoods behave like ordinary room, even when the total space does not. This lets the lectures put curves, surfaces, maps, and vector fields in settings that are locally manageable but still carry holes, side reversal, boundary behavior, or whole-surface constraints.",
         "beginner_trap": "The trap is to think local familiarity implies global simplicity. A Mobius band can look ordinary near every point and still reverse side after a full trip. A torus can look ordinary locally while carrying routes a sphere does not have.",
         "course_role": "Manifolds are the stage for intersection theory, fixed points, vector fields, and Poincare-Hopf. The word matters only because it tells the reader what local reasoning is allowed and why whole-space bookkeeping is still necessary."
       },
@@ -5038,7 +5038,7 @@
         "Surviving-count arguments begin with a practical problem: the visible picture changes too much. Crossings can appear, cells can be subdivided, arrows can be redrawn, and defects can move. A raw count of everything usually fails because it records accidental clutter. The course therefore asks for a count designed to ignore the harmless changes while keeping the obstruction that matters.",
         "Euler characteristic does this by alternating pieces. Intersection number does this by using signs. Vector-field index does this by recording how arrows turn around a defect. Parity does it more coarsely by keeping only evenness or oddness. These examples look different on the surface, but they share one idea: count the part of the situation that legal motion cannot erase.",
         "From first principles, the count is engineered around the allowed local changes. If a face is split, the added edge and face must cancel in the Euler account. If two intersections are born together, their signs must add to zero. If a vector-field defect splits into pieces, the local indices must keep the same total. The count is not chosen because it looks important; it is chosen because the harmless changes leave it alone.",
-        "The family is important because a good count can prove impossibility or forced existence without listing every possible drawing. Once the count is known in one honest version of the object, every legally related version has to obey it. If the total is odd, at least one event must remain. If the signed total is nonzero, complete cancellation is impossible. If the Euler account is fixed, any decomposition of the same surface must pay the same final bill. That is why a small number can carry a large conclusion: it represents all legal redrawings, not one snapshot.",
+        "A good count can prove impossibility or forced existence without listing every possible drawing. Once the count is known in one honest version of the object, every legally related version has to obey it. If the total is odd, at least one event must remain. If the signed total is nonzero, complete cancellation is impossible. If the Euler account is fixed, any decomposition of the same surface must pay the same final bill. That is why a small number can carry a large conclusion: it represents all legal redrawings, not one snapshot.",
         "The reader should test every surviving-count argument by asking what one allowed change does to the total. If the proof cannot explain that local event, the count has not earned trust. If it can, the arithmetic becomes a way to hold the whole moving picture still."
       ],
       "contract": {
@@ -8416,7 +8416,7 @@
       },
       {
         "requirement": "Lecture source-faithfulness audit",
-        "evidence": "Each lecture page now includes caption support, course-inference, and caveat fields that distinguish recovered-caption evidence from course-arc interpretation, with 2338 total source-faithfulness words.",
+        "evidence": "Each lecture page now includes caption support, course-inference, and caveat fields that distinguish recovered-caption evidence from course-arc interpretation, with 2520 total source-faithfulness words.",
         "status": "met"
       },
       {
@@ -8579,13 +8579,13 @@
       ],
       "lecture_examples": 45,
       "lecture_spine_entries": 15,
-      "lecture_essay_words": 5600,
+      "lecture_essay_words": 5595,
       "lecture_deepening_words": 1594,
       "lecture_walkthrough_words": 1986,
       "lecture_source_lens_words": 1645,
       "lecture_source_checkpoint_words": 1532,
       "lecture_caption_nuance_words": 1492,
-      "lecture_source_faithfulness_words": 2338,
+      "lecture_source_faithfulness_words": 2520,
       "lecture_source_bridge_words": 4206,
       "lecture_source_bridges": 15,
       "lecture_reconstruction_drills": 15,
@@ -8594,18 +8594,18 @@
       "source_nuance_repair_words": 1734,
       "lecture_reader_test_words": 2805,
       "lecture_answer_guide_words": 2657,
-      "concept_essay_words": 7944,
+      "concept_essay_words": 7963,
       "concept_workup_words": 2746,
       "concept_anchor_words": 1965,
       "concept_self_check_words": 8582,
-      "theme_essay_words": 1963,
+      "theme_essay_words": 1961,
       "theme_lens_words": 803,
       "theme_answer_guide_words": 2353,
       "subtheme_essay_words": 3009,
       "subtheme_routine_words": 1110,
       "subtheme_bridge_words": 985,
       "subtheme_answer_guide_words": 3628,
-      "family_essay_words": 1667,
+      "family_essay_words": 1662,
       "family_contract_words": 797,
       "family_playbook_words": 738,
       "family_answer_guide_words": 2385,

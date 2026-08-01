@@ -114,7 +114,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as Mobius strip, twist and glue, cutting along the center, one side versus two sides, and through concrete course moments such as Cutting an ordinary band versus a Mobius band; One side is a global fact; Off-center cuts create linked pieces. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -259,7 +259,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as deformation, disk, boundary points, curves that do not intersect, and through concrete course moments such as Connecting boundary pairs in a disk; Deformation as proof of impossibility; Endpoint order carries the obstruction. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -408,7 +408,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as balls and spheres, product, quotient, surgery, and through concrete course moments such as Products make spaces from independent choices; Quotients turn edge instructions into spaces; Surgery treats construction as reasoning. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -543,7 +543,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as square, product, quotient, manifolds, and through concrete course moments such as A square is not the space until its edges are read; Reversing an edge changes the global surface; A route can leave the drawing and keep going. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -640,7 +640,7 @@
       ],
       "essay": [
         "Lecture 5 is where surfaces become classifiable objects rather than isolated examples. Handles, crosscaps, boundaries, and orientability are not decorative features. A handle supplies a route through and around. A crosscap, represented by Mobius-strip behavior, reverses side after a trip. A boundary changes the accounting at the edge. Classification says that once surfaces are simplified by legal cutting, gluing, and deformation, these durable parts determine the family of the surface.",
-        "The handle-sliding discussion is especially important because it makes classification operational. One does not simply declare that a mixed surface is equivalent to a standard form. One moves handles across one-sided regions and watches how the surface changes while preserving its topological type. This is arithmetic with surfaces: connected sums, handles, and Mobius strips become manipulable pieces. The lecture teaches that topology can classify objects not by measuring them, but by reducing them to stable building blocks whose presence cannot be hidden by a different drawing.",
+        "The handle-sliding discussion makes classification operational. One does not simply declare that a mixed surface is equivalent to a standard form. One moves handles across one-sided regions and watches how the surface changes while preserving its topological type. This is arithmetic with surfaces: connected sums, handles, and Mobius strips become manipulable pieces. The lecture teaches that topology can classify objects not by measuring them, but by reducing them to stable building blocks whose presence cannot be hidden by a different drawing.",
         "This is also where the course starts to feel like a working language. A surface is no longer a single picture but a member of a family with operations. Once that is understood, later formulas have a home: Euler characteristic, intersection signs, and vector-field indices are not floating symbols. They are ways of reading information from a surface whose type has already been disciplined by classification.",
         "The first-principles point is that classification is not naming by appearance. It is naming by what survives all legal simplification. Two drawings can look different while carrying the same handles, boundaries, and orientation behavior; two similar-looking drawings can hide different global side structure.",
         "The deeper mathematical need is economy. Without classification, every surface would have to be argued about from scratch. With classification, a reader can reduce a complicated surface to a controlled list of durable features, then know which later tools are allowed to apply. The lecture therefore turns visual variety into a smaller set of cases: how many handles, how many one-sided pieces, whether there is boundary, and whether a consistent side choice survives."
@@ -678,7 +678,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as classification of surfaces, Mobius, orientable, non-orientable, and through concrete course moments such as Classification separates surfaces by durable parts; Surgery changes a surface by controlled cutting and gluing; Handles and crosscaps are durable building blocks. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -813,7 +813,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as submanifold, moving inside a manifold, obstacles, dimensions, and through concrete course moments such as Moving an object inside a manifold; Forced meetings become evidence; Dimension measures available escape room. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -946,7 +946,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as center of gravity, continuous motion, intersection, existence, and through concrete course moments such as The center-of-gravity demonstration; Existence without a formula; A physical motion becomes an intersection question. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -1081,7 +1081,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as intersection number, orientation, positive or negative, isotopy invariant, and through concrete course moments such as Signed intersection number; Pair creation and cancellation; Orientation gives signs their meaning. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -1364,7 +1364,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as Brouwer fixed-point theorem, closed ball, boundary, continuous map, and through concrete course moments such as Brouwer on the closed ball; Boundary changes the theorem; No global escape from self-agreement. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -1512,7 +1512,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as dynamical systems, differential equations, vector field, equilibria, and through concrete course moments such as Vector fields replace solved trajectories; Equilibria are arrow-field failures; Local arrow patterns can be counted. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -1647,7 +1647,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as index of a vector field, equilibria, Euler characteristic, Poincare-Hopf, and through concrete course moments such as Adding local indices; Poincare-Hopf as surface bookkeeping; Defects can move while the total stays fixed. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -1783,7 +1783,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as Poincare-Hopf theorem, index sum, Euler characteristic, hairy ball, and through concrete course moments such as Using Poincare-Hopf in both directions; The hairy-ball idea in plain form; Topology predicts a failure of motion. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -1915,7 +1915,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as applications, rotations in space, Poincare-Hopf, dynamical systems, and through concrete course moments such as Applications as honest translations; Rotations and dynamics share the same proof engine; The model must carry the real constraint. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
@@ -2065,7 +2065,7 @@
       },
       "source_faithfulness": {
         "caption_support": "The recovered captions support the page through anchors such as table of contents, pictorial thinking, deformation, intersection, and through concrete course moments such as The table of contents becomes one argument; Pictures earn their role by carrying constraints; The final strip demonstration returns to linking. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes.",
-        "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
+        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording.",
         "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
       },
       "reader_test": {
