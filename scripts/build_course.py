@@ -4713,39 +4713,64 @@ def build_subtheme_answer_guide(subtheme):
     bridge = subtheme["bridge"]
     depth = subtheme["depth"]
     sid = subtheme["id"]
+    title = subtheme["title"]
     look = plain_fragment(routine["look_for"], ["Look first for", "Look for"])
     ask = plain_fragment(routine["ask"], ["Ask"])
     use = plain_fragment(routine["use"], ["Use this routine whenever", "Use this routine before", "Use this routine when", "Use singular moments as", "Use"])
-    mistake = plain_fragment(routine["mistake"], ["The mistake is", "The common wrong turn is"])
+    mistake = sentence_fragment(plain_fragment(routine["mistake"], ["The mistake is", "The common wrong turn is"]))
     look_close = varied((sid, "look-close"), [
-        "The reader should be able to point to a visible feature on the page, not only repeat the subtheme name.",
-        "That keeps the routine attached to evidence the lecture actually supplies.",
-        "The check is whether the reader can find the feature in a live argument without being handed the label.",
-        "A useful answer names the page detail that carries the idea.",
+        f"For {title}, the reader should be able to point to the exact feature that changes the argument, not only repeat the subtheme name.",
+        f"That keeps {title} tied to evidence the lecture actually supplies: a boundary, sign, route, count, failure point, or state-space rule.",
+        f"The check is whether the reader can find {title} at work in a live argument without being handed the label first.",
+        f"A useful answer names the page detail that carries {title} and says why that detail matters for the claim.",
     ])
     ask_close = varied((sid, "ask-close"), [
-        "That shift changes the page from a topic label into a proof the reader can inspect.",
-        "The question should make the reader inspect the proof, not merely recognize the topic.",
-        "This is where the routine becomes active: it tells the reader what uncertainty to test.",
-        "The answer should expose the hidden rule or evidence that the page depends on.",
+        f"That question changes {title} from a topic label into a proof feature the reader can inspect.",
+        f"The question should make the reader inspect the proof, not merely recognize {title} as a familiar topic.",
+        f"This is where {title} becomes active: it tells the reader what uncertainty the page has to settle.",
+        f"The answer should expose the hidden rule or evidence that makes {title} necessary on this page.",
     ])
     use_close = varied((sid, "use-close"), [
-        "The explanation should name the problem this routine helps solve.",
-        "The useful payoff is a better reading of the argument, not a new heading to memorize.",
-        "Use it only when it changes what the reader checks on the page.",
-        "The routine earns its place by making a live claim easier to audit.",
+        f"The explanation should name the specific problem {title} helps solve in the argument.",
+        f"The payoff is a better reading of the argument, not a new heading called {title}.",
+        f"Use {title} only when it changes what the reader checks on the page.",
+        f"{title} earns its place by making a live claim easier to check in plain language.",
     ])
     mistake_close = varied((sid, "mistake-close"), [
-        "The subtheme should end as a page action, not as a warning floating above the proof.",
-        "The repair is practical: return to the object, move, evidence, or model that the mistake skipped.",
-        "The reader test should expose the false shortcut, not merely restate the warning.",
-        "A good correction says what the page must check before the conclusion is trusted.",
+        f"The repair should turn {title} into a page action, not leave it as a warning floating above the proof.",
+        f"The correction is practical: return to the object, move, evidence, or model that the {title} mistake skipped.",
+        f"The reader test should expose the false shortcut that {title} is meant to prevent, not merely restate the warning.",
+        f"A good correction says what the page must check before {title} can support the conclusion.",
+    ])
+    look_prompt = varied((sid, "look-answer-prompt"), [
+        f"Begin the {title} routine by looking for this: {look} The course moment makes the search concrete: {bridge['course_moment']} {look_close}",
+        f"To use {title}, first find the page feature: {look} Test that feature against the course moment: {bridge['course_moment']} {look_close}",
+        f"Start with what can be seen or acted out: {look} The lecture evidence for that search is: {bridge['course_moment']} {look_close}",
+        f"Before naming {title}, locate the working detail: {look} The course moment keeps that detail grounded: {bridge['course_moment']} {look_close}",
+    ])
+    ask_prompt = varied((sid, "ask-answer-prompt"), [
+        f"Ask the {title} question in plain words: {ask} The thinking shift is this: {bridge['thinking_shift']} {ask_close}",
+        f"Once the feature is found, ask what it changes: {ask} That question should produce this shift: {bridge['thinking_shift']} {ask_close}",
+        f"The next move is a question, not a label: {ask} The point of the question is: {bridge['thinking_shift']} {ask_close}",
+        f"Use the question to test the argument: {ask} It should move the reader this way: {bridge['thinking_shift']} {ask_close}",
+    ])
+    use_prompt = varied((sid, "use-answer-prompt"), [
+        f"Use {title} in this setting: {use} The first-principles reason is: {depth['first_principles']} {use_close}",
+        f"Apply {title} only where it changes the reading task: {use} The reason from first principles is: {depth['first_principles']} {use_close}",
+        f"Put {title} to work here: {use} The plain reason underneath is: {depth['first_principles']} {use_close}",
+        f"Use the routine when the page needs this job done: {use} The first-principles account is: {depth['first_principles']} {use_close}",
+    ])
+    mistake_prompt = varied((sid, "mistake-answer-prompt"), [
+        f"Name the {title} mistake directly: {mistake} Then answer the reader test: {bridge['reader_test']} {mistake_close}",
+        f"Close by naming the false shortcut: {mistake} The reader test is: {bridge['reader_test']} {mistake_close}",
+        f"Say what bad reading {title} prevents: {mistake} Then use the reader test: {bridge['reader_test']} {mistake_close}",
+        f"End with the failure mode: {mistake} The check on that failure is: {bridge['reader_test']} {mistake_close}",
     ])
     return {
-        "look_answer": f"Begin by looking for this: {look} Tie that search to the course moment: {bridge['course_moment']} {look_close}",
-        "ask_answer": f"Before applying the subtheme, ask this in plain words: {ask} Explain the thinking shift: {bridge['thinking_shift']} {ask_close}",
-        "use_answer": f"Use the routine in this setting: {use} Connect that use to the first-principles reason: {depth['first_principles']} {use_close}",
-        "mistake_answer": f"Name the mistake to avoid: {mistake} Then answer the reader test: {bridge['reader_test']} {mistake_close}",
+        "look_answer": look_prompt,
+        "ask_answer": ask_prompt,
+        "use_answer": use_prompt,
+        "mistake_answer": mistake_prompt,
     }
 
 
