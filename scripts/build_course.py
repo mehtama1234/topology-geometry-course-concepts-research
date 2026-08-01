@@ -26,7 +26,7 @@ REFERENCES = [
         "kind": "course source",
         "url": PLAYLIST_URL,
         "lectures": list(range(1, 16)),
-        "concepts": ["deformation", "mobius-strip", "euler-characteristic", "intersection-number", "fixed-points", "vector-field-index", "poincare-hopf"],
+        "concepts": ["topology-vs-geometry", "boundary-orientation", "deformation", "triangulation", "euler-characteristic", "quotient-space", "product-space", "surgery", "manifold", "generic-position", "intersection-number", "fixed-points", "brouwer-fixed-point", "vector-field-index", "equilibrium", "poincare-hopf", "configuration-space", "knots-and-links", "winding-linking", "duality", "parity", "graph-planarity", "gauss-bonnet"],
         "why": "This is the primary source for the companion. It fixes the order of ideas, the paper-strip demonstrations, the recurring pictorial method, and the level of explanation the site is trying to preserve.",
         "use_carefully": "The playlist is supported here by auto-captions, not official lecture notes. One video still lacks recovered captions, so source claims must stay tied to available transcript evidence.",
     },
@@ -36,7 +36,7 @@ REFERENCES = [
         "kind": "course source mirror",
         "url": "https://av.tib.eu/series/549",
         "lectures": list(range(1, 16)),
-        "concepts": ["deformation", "quotient-space", "manifold", "fixed-points", "poincare-hopf"],
+        "concepts": ["deformation", "quotient-space", "product-space", "surgery", "manifold", "fixed-points", "brouwer-fixed-point", "configuration-space", "poincare-hopf"],
         "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for the course identity beyond the YouTube playlist.",
         "use_carefully": "Use it to verify the course source, not to infer extra mathematics. The lecture explanations still need to be grounded in the actual videos and recovered transcripts.",
     },
@@ -66,7 +66,7 @@ REFERENCES = [
         "kind": "standard open textbook",
         "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html",
         "lectures": [3, 4, 5, 8, 9, 10, 15],
-        "concepts": ["quotient-space", "invariant", "euler-characteristic", "fixed-points", "duality"],
+        "concepts": ["topology-vs-geometry", "quotient-space", "product-space", "triangulation", "invariant", "euler-characteristic", "fixed-points", "brouwer-fixed-point", "duality", "graph-planarity"],
         "why": "Hatcher gives a standard modern route into homotopy, homology, quotient spaces, and invariants. It is useful when a reader wants the formal machinery behind the companion's plain-language maps.",
         "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it as a next reference, not as required reading for understanding a lecture page.",
     },
@@ -76,7 +76,7 @@ REFERENCES = [
         "kind": "standard reference",
         "url": "https://math.uchicago.edu/~may/REU2017/MilnorDiff.pdf",
         "lectures": [6, 8, 10, 11, 12, 13],
-        "concepts": ["generic-position", "manifold", "fixed-points", "vector-field-index", "poincare-hopf"],
+        "concepts": ["generic-position", "manifold", "boundary-orientation", "fixed-points", "brouwer-fixed-point", "vector-field-index", "poincare-hopf"],
         "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. They support the course's move from pictures to counts and indices.",
         "use_carefully": "The text assumes more mathematical preparation than the companion. Use it for formal backup after the everyday explanation has already named the object and allowed move.",
     },
@@ -86,7 +86,7 @@ REFERENCES = [
         "kind": "standard reference",
         "url": "https://web.math.ucsb.edu/~bigelow/books/guillemin_pollack.pdf",
         "lectures": [6, 8, 11, 12, 13],
-        "concepts": ["generic-position", "manifold", "intersection-number", "vector-field-index", "gauss-bonnet"],
+        "concepts": ["generic-position", "manifold", "boundary-orientation", "intersection-number", "vector-field-index", "gauss-bonnet"],
         "why": "This reference supports generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. It helps explain why clean meetings are prepared before signs and counts are trusted.",
         "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should not import its vocabulary before explaining the course idea plainly.",
     },
@@ -2639,6 +2639,21 @@ def concept_pills(concept_ids, concepts):
     return "".join(f'<a class="pill" href="{slug_page("concept", cid)}">{esc(by_id[cid]["title"])}</a>' for cid in concept_ids if cid in by_id)
 
 
+def reference_cards(refs):
+    if not refs:
+        return ""
+    return "".join(
+        f"""<article class="card">
+  <div class="meta">{esc(ref['kind'])}</div>
+  <h3>{esc(ref['title'])}</h3>
+  <p><b>Why it belongs:</b> {esc(ref['why'])}</p>
+  <p><b>Use carefully:</b> {esc(ref['use_carefully'])}</p>
+  <a class="arrow" href="{esc(ref['url'])}">Open source</a>
+</article>"""
+        for ref in refs
+    )
+
+
 def build_quality_audit(data):
     stats = data["stats"]
     concept_min = min(len(c["appearances"]) for c in data["concepts"])
@@ -2734,7 +2749,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "References and paper trail",
-            "evidence": f"The References page gives {len(data['references'])} course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats.",
+            "evidence": f"The References page gives {len(data['references'])} course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
             "status": "met",
         },
     ]
@@ -3069,14 +3084,14 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     (SITE / "reader-checks.html").write_text(page("Reader Checks", checks_body, "Reader Checks"), encoding="utf-8")
 
     known_concepts = {c["id"]: c for c in data["concepts"]}
-    reference_cards = []
+    global_reference_cards = []
     for ref in data["references"]:
         lecture_links = " ".join(f'<a class="pill" href="lecture-{n:02d}.html">Lecture {n:02d}</a>' for n in ref["lectures"])
         concept_links = " ".join(
             f'<a class="pill" href="{slug_page("concept", cid)}">{esc(known_concepts[cid]["title"])}</a>' if cid in known_concepts else f'<span class="pill">{esc(cid)}</span>'
             for cid in ref["concepts"]
         )
-        reference_cards.append(
+        global_reference_cards.append(
             f"""<article class="card">
   <div class="meta">{esc(ref['kind'])}</div>
   <h3>{esc(ref['title'])}</h3>
@@ -3095,7 +3110,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <p>The lecture videos remain the source for what Tokieda teaches in this course. The primary papers and textbooks below support the mathematical family behind the ideas; they are not claims that a specific lecture cited a specific paper.</p>
   <p>Use this page after reading a lecture or concept page. The companion should first explain the idea in everyday language, then this page can point to the formal or historical source layer.</p>
 </section>
-<div class="grid two">{''.join(reference_cards)}</div>
+<div class="grid two">{''.join(global_reference_cards)}</div>
 """
     (SITE / "references.html").write_text(page("References", references_body, "References"), encoding="utf-8")
 
@@ -3110,6 +3125,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         href = f"lecture-{l['lecture']:02d}.html"
         walk = l["deep"]["walkthrough"]
         nuance = l["deep"]["caption_nuance"]
+        lecture_refs = [ref for ref in data["references"] if l["lecture"] in ref["lectures"]]
         lecture_html += f"""<section class="lecture{miss}"><h2>Lecture {l['lecture']:02d}: {esc(l['deep']['title'])}</h2><p>{esc(l['deep']['problem'])}</p><p>{esc(l['deep']['first_principles'])}</p><div>{vids}</div><p><a class="arrow" href="{href}">Open lecture explainer</a></p><p class="evidence">Transcript words: {l['transcript_words']}. Missing captions: {', '.join(l['missing_caption_ids']) or 'none'}.</p></section>"""
         lecture_body = f"""
 <h1>Lecture {l['lecture']:02d}: {esc(l['deep']['title'])}</h1>
@@ -3166,6 +3182,11 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </div>
 <h2>Video Parts</h2>
 <p>{vids}</p>
+<section class="lecture">
+  <h2>Further Source Trail</h2>
+  <p class="evidence">These references support the mathematical background for this lecture. They are not claims that the lecture cites each source directly.</p>
+  <div class="grid two">{reference_cards(lecture_refs)}</div>
+</section>
 <p class="evidence">Transcript words: {l['transcript_words']}. Missing captions: {', '.join(l['missing_caption_ids']) or 'none'}.</p>
 """
         (SITE / href).write_text(page(f"Lecture {l['lecture']:02d}", lecture_body, "Lectures"), encoding="utf-8")
@@ -3180,7 +3201,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         )
         work = c["workup"]
         anchor = c["anchor"]
-        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
+        concept_refs = [ref for ref in data["references"] if c["id"] in ref["concepts"]]
+        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><section class="lecture"><h2>Further Source Trail</h2><p class="evidence">These references support the broader mathematical background for this concept. The lecture examples above remain the first source for how the companion uses it.</p><div class="grid two">{reference_cards(concept_refs)}</div></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
     body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"

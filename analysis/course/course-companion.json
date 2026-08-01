@@ -5066,13 +5066,29 @@
         15
       ],
       "concepts": [
+        "topology-vs-geometry",
+        "boundary-orientation",
         "deformation",
-        "mobius-strip",
+        "triangulation",
         "euler-characteristic",
+        "quotient-space",
+        "product-space",
+        "surgery",
+        "manifold",
+        "generic-position",
         "intersection-number",
         "fixed-points",
+        "brouwer-fixed-point",
         "vector-field-index",
-        "poincare-hopf"
+        "equilibrium",
+        "poincare-hopf",
+        "configuration-space",
+        "knots-and-links",
+        "winding-linking",
+        "duality",
+        "parity",
+        "graph-planarity",
+        "gauss-bonnet"
       ],
       "why": "This is the primary source for the companion. It fixes the order of ideas, the paper-strip demonstrations, the recurring pictorial method, and the level of explanation the site is trying to preserve.",
       "use_carefully": "The playlist is supported here by auto-captions, not official lecture notes. One video still lacks recovered captions, so source claims must stay tied to available transcript evidence."
@@ -5102,8 +5118,12 @@
       "concepts": [
         "deformation",
         "quotient-space",
+        "product-space",
+        "surgery",
         "manifold",
         "fixed-points",
+        "brouwer-fixed-point",
+        "configuration-space",
         "poincare-hopf"
       ],
       "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for the course identity beyond the YouTube playlist.",
@@ -5167,11 +5187,16 @@
         15
       ],
       "concepts": [
+        "topology-vs-geometry",
         "quotient-space",
+        "product-space",
+        "triangulation",
         "invariant",
         "euler-characteristic",
         "fixed-points",
-        "duality"
+        "brouwer-fixed-point",
+        "duality",
+        "graph-planarity"
       ],
       "why": "Hatcher gives a standard modern route into homotopy, homology, quotient spaces, and invariants. It is useful when a reader wants the formal machinery behind the companion's plain-language maps.",
       "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it as a next reference, not as required reading for understanding a lecture page."
@@ -5192,7 +5217,9 @@
       "concepts": [
         "generic-position",
         "manifold",
+        "boundary-orientation",
         "fixed-points",
+        "brouwer-fixed-point",
         "vector-field-index",
         "poincare-hopf"
       ],
@@ -5214,6 +5241,7 @@
       "concepts": [
         "generic-position",
         "manifold",
+        "boundary-orientation",
         "intersection-number",
         "vector-field-index",
         "gauss-bonnet"
@@ -5310,7 +5338,7 @@
       },
       {
         "requirement": "References and paper trail",
-        "evidence": "The References page gives 7 course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats.",
+        "evidence": "The References page gives 7 course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
         "status": "met"
       }
     ],

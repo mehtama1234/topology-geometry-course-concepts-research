@@ -252,6 +252,7 @@ def main():
     references = data.get("references") or []
     if len(references) < 7:
         fail("references layer too small")
+    referenced_concepts = set()
     for row in references:
         if not str(row.get("url", "")).startswith("https://"):
             fail(f"reference missing https url: {row.get('id')}")
@@ -263,6 +264,13 @@ def main():
             fail(f"reference needs lecture coverage: {row.get('id')}")
         if len(row.get("concepts") or []) < 3:
             fail(f"reference needs concept coverage: {row.get('id')}")
+        unknown = sorted(set(row.get("concepts") or []) - concept_ids)
+        if unknown:
+            fail(f"reference {row.get('id')} has unknown concept ids: {unknown}")
+        referenced_concepts.update(row.get("concepts") or [])
+    uncovered_concepts = sorted(concept_ids - referenced_concepts)
+    if uncovered_concepts:
+        fail(f"concepts missing reference coverage: {uncovered_concepts}")
 
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 65:
@@ -360,6 +368,9 @@ def main():
         for phrase in ["Anchor Example", "Course moment:", "Principle:", "Reader question:", "Work It From Scratch", "Object:", "Operation:", "Protected fact:", "Breaks if:"]:
             if phrase not in concept_html:
                 fail(f"concept page missing concept phrase {phrase}: {concept_name}")
+        for phrase in ["Further Source Trail", "Why it belongs:", "Use carefully:"]:
+            if phrase not in concept_html:
+                fail(f"concept page missing reference phrase {phrase}: {concept_name}")
     for lecture in data["lectures"]:
         lecture_name = f"lecture-{lecture['lecture']:02d}.html"
         if lecture_name not in names:
@@ -379,6 +390,9 @@ def main():
         for phrase in ["Slow Walkthrough", "Start here:", "Mathematical payoff:", "Reader check:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing walkthrough phrase {phrase}: {lecture_name}")
+        for phrase in ["Further Source Trail", "Why it belongs:", "Use carefully:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing reference phrase {phrase}: {lecture_name}")
     for theme in data["themes"]:
         theme_name = f"theme-{theme['id']}.html"
         if theme_name not in names:
