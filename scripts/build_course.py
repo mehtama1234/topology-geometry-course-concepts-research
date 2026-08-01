@@ -4089,7 +4089,7 @@ def build_lecture_source_bridges(lectures, references, source_readers):
         number = lecture["lecture"]
         spine = spine_by_lecture[number]
         lecture_refs = [ref for ref in references if number in ref["lectures"]]
-        support_refs = [ref for ref in lecture_refs if ref["id"] != "tokieda-aims-course"]
+        support_refs = [ref for ref in lecture_refs if not ref["kind"].startswith("course source")]
         primary = support_refs[0] if support_refs else lecture_refs[0]
         source_reader = source_by_ref[primary["id"]]
         examples = lecture["deep"]["examples"]
@@ -4098,15 +4098,39 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             for concept_id in ref["concepts"]:
                 if concept_id not in concepts:
                     concepts.append(concept_id)
+        evidence_close = varied((number, "bridge-evidence"), [
+            "Those examples are the first evidence; the outside source enters only after the lecture object is clear.",
+            "Use those moments to keep the bridge grounded before any reference broadens the picture.",
+            "The source trail should begin with what the lecture actually makes visible.",
+            "The outside reading should answer to these demonstrations, not replace them.",
+        ])
+        bridge_open = varied((number, "bridge-open"), [
+            "The bridge to the source family is concrete:",
+            "Read the source connection through this course chain:",
+            "The reference supports this lecture only after the lecture move is named:",
+            "The mathematical bridge is the object-move-surviving-fact path:",
+        ])
+        source_close = varied((number, "source-close"), [
+            "Read it after the lecture has named the object and the fact being protected.",
+            "Use it as background for the family of ideas, not as a transcript for this lecture.",
+            "It should sharpen the source layer only after the course example has done the first explanatory work.",
+            "The reference belongs behind the lecture claim, not in front of the beginner's explanation.",
+        ])
+        warning_open = varied((number, "warning-open"), [
+            "Keep the claim boundary visible.",
+            "Do not let the reference take over the lecture.",
+            "Use the source as support, not substitution.",
+            "The outside source cannot do the classroom evidence work.",
+        ])
         bridges.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
             "references": [ref["id"] for ref in lecture_refs],
             "source_family": source_reader["family"],
-            "course_demonstration": f"The lecture works from {spine['object']} and uses concrete moments such as {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}. Read those moments as the evidence before reading any outside source.",
-            "mathematical_bridge": f"The bridge to the source family is the same object-move-surviving-fact chain: {spine['plain_question']} The legal move is this: {spine['legal_move']} The fact carried forward is this: {spine['surviving_fact']}",
-            "how_source_extends": f"The supporting source family, {source_reader['family']}, helps because it answers this problem: {source_reader['reader_problem']} It should be read after the lecture has made the object and protected fact clear.",
-            "overread_warning": f"Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: {spine['why_later']}",
+            "course_demonstration": f"The lecture works from {spine['object']} and uses concrete moments such as {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}. {evidence_close}",
+            "mathematical_bridge": f"{bridge_open} {spine['plain_question']} The legal move is this: {spine['legal_move']} The fact carried forward is this: {spine['surviving_fact']}",
+            "how_source_extends": f"The supporting source family, {source_reader['family']}, helps because it answers this problem: {source_reader['reader_problem']} {source_close}",
+            "overread_warning": f"{warning_open} The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: {spine['why_later']}",
             "reader_question": f"Can the reader explain Lecture {number:02d} from the demonstration to the source family by naming the object, the legal move, the surviving fact, and the exact source claim that is being used?",
             "concepts": concepts[:6],
         })
@@ -4127,21 +4151,75 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             for concept_id in example["concepts"]:
                 if concept_id not in concept_ids:
                     concept_ids.append(concept_id)
+        start_guard = varied((number, "start-guard"), [
+            "Treat the demonstration as an object with rules, not as decoration.",
+            "Read it as a problem setup with permitted and forbidden moves.",
+            "Use the visible setup as evidence, not as a loose illustration.",
+            "Begin from the concrete object and the rulebook it carries.",
+        ])
+        object_close = varied((number, "drill-object-close"), [
+            "Say what information that object carries before naming any course term.",
+            "Make clear what data are present before the vocabulary begins.",
+            "The reader should know what the object records before hearing the formal name.",
+            "The point is to rebuild the carrier of the argument, not to recite its label.",
+        ])
+        illegal_close = varied((number, "drill-illegal-close"), [
+            "Then name one nearby action that would change the problem rather than simplify it.",
+            "Also state the tempting shortcut that would break the rulebook.",
+            "Name the illegal move that would make the easier picture irrelevant to the original question.",
+            "Say which shortcut would erase the very obstruction the lecture is trying to study.",
+        ])
+        survive_close = varied((number, "drill-survive-close"), [
+            "Explain why this fact remains available after the allowed move.",
+            "Say why the legal motion carries this fact instead of destroying it.",
+            "Connect the allowed move to the evidence that still survives afterward.",
+            "Make the survival check explicit before using the fact as proof evidence.",
+        ])
+        forward_close = varied((number, "drill-forward-close"), [
+            "This should show why the lecture is needed later in the course.",
+            "The forward link should make the lecture feel like a tool the later course reuses.",
+            "The point is to show what later argument would be weaker without this lecture.",
+            "Name the later need so the lecture does not read as an isolated demonstration.",
+        ])
+        source_close = varied((number, "drill-source-close"), [
+            "Keep the lecture demonstration and source caveat visible while using that support.",
+            "Use the source family only after the course example has supplied the object and protected fact.",
+            "Do not let the source family replace the work done by the recovered lecture evidence.",
+            "Let the source broaden the claim only after the classroom move has been reconstructed.",
+        ])
+        self_check = varied((number, "drill-self"), [
+            "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
+            "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
+            "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
+            "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
+        ])
+        common_failure_close = varied((number, "drill-failure"), [
+            "That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
+            "The missing middle is the proof: what was allowed to move and what evidence survived.",
+            "A theorem name cannot replace the route from concrete setup to protected evidence.",
+            "The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
+        ])
+        source_check_open = varied((number, "source-check-open"), [
+            "Before citing a source, ask this:",
+            "Use this source check before strengthening a sentence:",
+            "The source audit question is:",
+            "Pause before importing outside authority:",
+        ])
         drills.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
-            "start_from": f"Start from {examples[0]['title']}. Treat it as a real object with rules, not as an illustration. The object is {spine['object']} and the plain question is this: {spine['plain_question']}",
+            "start_from": f"Start from {examples[0]['title']}. {start_guard} The object is {spine['object']} and the plain question is this: {spine['plain_question']}",
             "rebuild_steps": [
-                f"Name the object in ordinary words: {spine['object']} Say what information that object carries before using a term from the course.",
-                f"State the allowed move: {spine['legal_move']} Then name one nearby action that would break the problem rather than simplify it.",
-                f"Protect the surviving fact: {spine['surviving_fact']} Explain why this fact remains available after the allowed move.",
+                f"Name the object in ordinary words: {spine['object']} {object_close}",
+                f"State the allowed move: {spine['legal_move']} {illegal_close}",
+                f"Protect the surviving fact: {spine['surviving_fact']} {survive_close}",
                 f"Use a second lecture moment, {examples[1]['title']}, to show the same rule at work in a concrete case rather than only in a general sentence.",
-                f"Connect forward: {spine['why_later']} This step should make clear why the lecture is needed later in the course.",
-                f"Attach the source family carefully: {bridge['source_family']} can support the broader idea only after the lecture demonstration and source caveat have been kept visible.",
+                f"Connect forward: {spine['why_later']} {forward_close}",
+                f"Attach the source family carefully: {bridge['source_family']} can support the broader idea. {source_close}",
             ],
-            "self_check": f"A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-            "common_failure": f"The common failure is to jump from {examples[0]['title']} straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-            "source_check": f"Before citing a source, ask this: does the source support the family of ideas behind Lecture {number:02d}, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: {bridge['overread_warning']}",
+            "self_check": self_check,
+            "common_failure": f"The common failure is to jump from {examples[0]['title']} straight to a theorem or source name. {common_failure_close}",
+            "source_check": f"{source_check_open} does the source support the family of ideas behind Lecture {number:02d}, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: {bridge['overread_warning']}",
             "concepts": concept_ids[:6],
         })
     return drills

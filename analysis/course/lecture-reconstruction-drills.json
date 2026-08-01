@@ -2,18 +2,18 @@
   {
     "lecture": 1,
     "title": "The Mobius strip reveals the course's central problem",
-    "start_from": "Start from Cutting an ordinary band versus a Mobius band. Treat it as a real object with rules, not as an illustration. The object is A strip made by gluing its ends after a half-turn. and the plain question is this: Can a surface look ordinary in every small patch while carrying a whole-surface rule that changes what side means?",
+    "start_from": "Start from Cutting an ordinary band versus a Mobius band. Use the visible setup as evidence, not as a loose illustration. The object is A strip made by gluing its ends after a half-turn. and the plain question is this: Can a surface look ordinary in every small patch while carrying a whole-surface rule that changes what side means?",
     "rebuild_steps": [
-      "Name the object in ordinary words: A strip made by gluing its ends after a half-turn. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Follow, mark, or cut the strip without pretending the glued edge rule has disappeared. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: A full trip around the strip reverses the local side choice instead of returning it unchanged. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: A strip made by gluing its ends after a half-turn. The reader should know what the object records before hearing the formal name.",
+      "State the allowed move: Follow, mark, or cut the strip without pretending the glued edge rule has disappeared. Also state the tempting shortcut that would break the rulebook.",
+      "Protect the surviving fact: A full trip around the strip reverses the local side choice instead of returning it unchanged. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, One side is a global fact, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This is the first warning against local-only thinking. Later orientation, manifolds, vector fields, and surface classification all use the same gap between small-patch behavior and whole-object behavior. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This is the first warning against local-only thinking. Later orientation, manifolds, vector fields, and surface classification all use the same gap between small-patch behavior and whole-object behavior. This should show why the lecture is needed later in the course.",
+      "Attach the source family carefully: Course spine can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
+    "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from Cutting an ordinary band versus a Mobius band straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 01, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the first warning against local-only thinking. Later orientation, manifolds, vector fields, and surface classification all use the same gap between small-patch behavior and whole-object behavior.",
+    "source_check": "Pause before importing outside authority: does the source support the family of ideas behind Lecture 01, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not let the reference take over the lecture. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the first warning against local-only thinking. Later orientation, manifolds, vector fields, and surface classification all use the same gap between small-patch behavior and whole-object behavior.",
     "concepts": [
       "boundary-orientation",
       "topology-vs-geometry",
@@ -26,18 +26,18 @@
   {
     "lecture": 2,
     "title": "Deformation as a way to solve, not decorate",
-    "start_from": "Start from Connecting boundary pairs in a disk. Treat it as a real object with rules, not as an illustration. The object is Curves inside a disk with boundary points held in their circular order. and the plain question is this: When can a messy drawing be replaced by a cleaner one without changing the problem it was meant to answer?",
+    "start_from": "Start from Connecting boundary pairs in a disk. Begin from the concrete object and the rulebook it carries. The object is Curves inside a disk with boundary points held in their circular order. and the plain question is this: When can a messy drawing be replaced by a cleaner one without changing the problem it was meant to answer?",
     "rebuild_steps": [
-      "Name the object in ordinary words: Curves inside a disk with boundary points held in their circular order. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Slide and bend curves while keeping endpoints fixed in order and while preventing forbidden crossings. Then name one nearby action that would break the problem rather than simplify it.",
+      "Name the object in ordinary words: Curves inside a disk with boundary points held in their circular order. The point is to rebuild the carrier of the argument, not to recite its label.",
+      "State the allowed move: Slide and bend curves while keeping endpoints fixed in order and while preventing forbidden crossings. Name the illegal move that would make the easier picture irrelevant to the original question.",
       "Protect the surviving fact: Boundary order and the no-crossing rule survive the redraw, so an unavoidable crossing belongs to the original setup. Explain why this fact remains available after the allowed move.",
       "Use a second lecture moment, Deformation as proof of impossibility, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question. The forward link should make the lecture feel like a tool the later course reuses.",
+      "Attach the source family carefully: Course spine can support the broader idea. Use the source family only after the course example has supplied the object and protected fact."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from Connecting boundary pairs in a disk straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 02, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question.",
+    "self_check": "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
+    "common_failure": "The common failure is to jump from Connecting boundary pairs in a disk straight to a theorem or source name. The missing middle is the proof: what was allowed to move and what evidence survived.",
+    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 02, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Use the source as support, not substitution. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question.",
     "concepts": [
       "deformation",
       "graph-planarity",
@@ -50,18 +50,18 @@
   {
     "lecture": 3,
     "title": "Building spaces from simple pieces",
-    "start_from": "Start from Products make spaces from independent choices. Treat it as a real object with rules, not as an illustration. The object is Spaces built from choices, identifications, local patches, and controlled replacements. and the plain question is this: How can a complicated space be made from simple instructions instead of being drawn all at once?",
+    "start_from": "Start from Products make spaces from independent choices. Treat the demonstration as an object with rules, not as decoration. The object is Spaces built from choices, identifications, local patches, and controlled replacements. and the plain question is this: How can a complicated space be made from simple instructions instead of being drawn all at once?",
     "rebuild_steps": [
-      "Name the object in ordinary words: Spaces built from choices, identifications, local patches, and controlled replacements. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Build by product, quotient, manifold charts, or surgery while keeping the construction rule visible. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: The rule of construction decides the routes, holes, sides, and local neighborhoods available in the finished space. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: Spaces built from choices, identifications, local patches, and controlled replacements. Say what information that object carries before naming any course term.",
+      "State the allowed move: Build by product, quotient, manifold charts, or surgery while keeping the construction rule visible. Say which shortcut would erase the very obstruction the lecture is trying to study.",
+      "Protect the surviving fact: The rule of construction decides the routes, holes, sides, and local neighborhoods available in the finished space. Say why the legal motion carries this fact instead of destroying it.",
       "Use a second lecture moment, Quotients turn edge instructions into spaces, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery. The point is to show what later argument would be weaker without this lecture.",
+      "Attach the source family carefully: Whole-space invariants can support the broader idea. Do not let the source family replace the work done by the recovered lecture evidence."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from Products make spaces from independent choices straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 03, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery.",
+    "self_check": "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
+    "common_failure": "The common failure is to jump from Products make spaces from independent choices straight to a theorem or source name. A theorem name cannot replace the route from concrete setup to protected evidence.",
+    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 03, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The outside source cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery.",
     "concepts": [
       "configuration-space",
       "topology-vs-geometry",
@@ -74,18 +74,18 @@
   {
     "lecture": 4,
     "title": "Gluing rules make new worlds",
-    "start_from": "Start from A square is not the space until its edges are read. Treat it as a real object with rules, not as an illustration. The object is A square whose marked edges are read as travel instructions for a finished surface. and the plain question is this: How can the same flat drawing represent different worlds depending on which edge exits are declared identical?",
+    "start_from": "Start from A square is not the space until its edges are read. Read it as a problem setup with permitted and forbidden moves. The object is A square whose marked edges are read as travel instructions for a finished surface. and the plain question is this: How can the same flat drawing represent different worlds depending on which edge exits are declared identical?",
     "rebuild_steps": [
-      "Name the object in ordinary words: A square whose marked edges are read as travel instructions for a finished surface. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Read each edge identification as part of the object, including whether direction is preserved or reversed. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: The gluing rule determines whether paths close, whether sides remain consistent, and whether the drawn boundary is a true boundary. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: A square whose marked edges are read as travel instructions for a finished surface. Make clear what data are present before the vocabulary begins.",
+      "State the allowed move: Read each edge identification as part of the object, including whether direction is preserved or reversed. Then name one nearby action that would change the problem rather than simplify it.",
+      "Protect the surviving fact: The gluing rule determines whether paths close, whether sides remain consistent, and whether the drawn boundary is a true boundary. Connect the allowed move to the evidence that still survives afterward.",
       "Use a second lecture moment, Reversing an edge changes the global surface, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This is the plain entrance to quotient thinking. It prepares the reader for manifolds and for later situations where a rule, not visual appearance, defines the mathematical object. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This is the plain entrance to quotient thinking. It prepares the reader for manifolds and for later situations where a rule, not visual appearance, defines the mathematical object. Name the later need so the lecture does not read as an isolated demonstration.",
+      "Attach the source family carefully: Whole-space invariants can support the broader idea. Let the source broaden the claim only after the classroom move has been reconstructed."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from A square is not the space until its edges are read straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 04, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the plain entrance to quotient thinking. It prepares the reader for manifolds and for later situations where a rule, not visual appearance, defines the mathematical object.",
+    "self_check": "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
+    "common_failure": "The common failure is to jump from A square is not the space until its edges are read straight to a theorem or source name. The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
+    "source_check": "The source audit question is: does the source support the family of ideas behind Lecture 04, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Keep the claim boundary visible. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the plain entrance to quotient thinking. It prepares the reader for manifolds and for later situations where a rule, not visual appearance, defines the mathematical object.",
     "concepts": [
       "duality",
       "boundary-orientation",
@@ -98,18 +98,18 @@
   {
     "lecture": 5,
     "title": "Classifying surfaces by what survives cutting and gluing",
-    "start_from": "Start from Classification separates surfaces by durable parts. Treat it as a real object with rules, not as an illustration. The object is Surfaces broken into standard features such as handles, crosscaps, and boundary components. and the plain question is this: What does it mean to say two surfaces are the same when their drawings can look very different?",
+    "start_from": "Start from Classification separates surfaces by durable parts. Use the visible setup as evidence, not as a loose illustration. The object is Surfaces broken into standard features such as handles, crosscaps, and boundary components. and the plain question is this: What does it mean to say two surfaces are the same when their drawings can look very different?",
     "rebuild_steps": [
-      "Name the object in ordinary words: Surfaces broken into standard features such as handles, crosscaps, and boundary components. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Cut, glue, and simplify under controlled surface operations while tracking the features those operations preserve. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: Orientability, boundary behavior, and durable surface pieces remain as the evidence used to classify the surface. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: Surfaces broken into standard features such as handles, crosscaps, and boundary components. The reader should know what the object records before hearing the formal name.",
+      "State the allowed move: Cut, glue, and simplify under controlled surface operations while tracking the features those operations preserve. Also state the tempting shortcut that would break the rulebook.",
+      "Protect the surviving fact: Orientability, boundary behavior, and durable surface pieces remain as the evidence used to classify the surface. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, Surgery changes a surface by controlled cutting and gluing, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This gives Euler characteristic and orientation a home. Later local counts only have force because they live on a surface whose global type has been understood. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This gives Euler characteristic and orientation a home. Later local counts only have force because they live on a surface whose global type has been understood. This should show why the lecture is needed later in the course.",
+      "Attach the source family carefully: Whole-space invariants can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
+    "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from Classification separates surfaces by durable parts straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 05, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This gives Euler characteristic and orientation a home. Later local counts only have force because they live on a surface whose global type has been understood.",
+    "source_check": "Pause before importing outside authority: does the source support the family of ideas behind Lecture 05, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not let the reference take over the lecture. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This gives Euler characteristic and orientation a home. Later local counts only have force because they live on a surface whose global type has been understood.",
     "concepts": [
       "euler-characteristic",
       "boundary-orientation",
@@ -122,18 +122,18 @@
   {
     "lecture": 6,
     "title": "Moving subspaces and meeting only when dimension forces it",
-    "start_from": "Start from Moving an object inside a manifold. Treat it as a real object with rules, not as an illustration. The object is Subspaces placed inside a surrounding space with only so much room to avoid one another. and the plain question is this: When is a meeting between objects an accident of the drawing, and when is it forced by dimension and position?",
+    "start_from": "Start from Moving an object inside a manifold. Begin from the concrete object and the rulebook it carries. The object is Subspaces placed inside a surrounding space with only so much room to avoid one another. and the plain question is this: When is a meeting between objects an accident of the drawing, and when is it forced by dimension and position?",
     "rebuild_steps": [
-      "Name the object in ordinary words: Subspaces placed inside a surrounding space with only so much room to avoid one another. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Move objects into ordinary position so meetings are clean and separate, without changing the surrounding problem. Then name one nearby action that would break the problem rather than simplify it.",
+      "Name the object in ordinary words: Subspaces placed inside a surrounding space with only so much room to avoid one another. The point is to rebuild the carrier of the argument, not to recite its label.",
+      "State the allowed move: Move objects into ordinary position so meetings are clean and separate, without changing the surrounding problem. Name the illegal move that would make the easier picture irrelevant to the original question.",
       "Protect the surviving fact: After accidental coincidences are removed, the remaining pattern of meetings can carry real information. Explain why this fact remains available after the allowed move.",
       "Use a second lecture moment, Forced meetings become evidence, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This lecture supplies the discipline needed before signs can be assigned. Intersection number only works after meetings are clean enough to count honestly. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This lecture supplies the discipline needed before signs can be assigned. Intersection number only works after meetings are clean enough to count honestly. The forward link should make the lecture feel like a tool the later course reuses.",
+      "Attach the source family carefully: Differentiable topology bridge can support the broader idea. Use the source family only after the course example has supplied the object and protected fact."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from Moving an object inside a manifold straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 06, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This lecture supplies the discipline needed before signs can be assigned. Intersection number only works after meetings are clean enough to count honestly.",
+    "self_check": "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
+    "common_failure": "The common failure is to jump from Moving an object inside a manifold straight to a theorem or source name. The missing middle is the proof: what was allowed to move and what evidence survived.",
+    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 06, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Use the source as support, not substitution. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This lecture supplies the discipline needed before signs can be assigned. Intersection number only works after meetings are clean enough to count honestly.",
     "concepts": [
       "generic-position",
       "deformation",
@@ -146,18 +146,18 @@
   {
     "lecture": 7,
     "title": "Center of gravity and the birth of intersection thinking",
-    "start_from": "Start from The center-of-gravity demonstration. Treat it as a real object with rules, not as an illustration. The object is A physical balance condition that changes continuously as the setup moves. and the plain question is this: How can a special state be forced even when we cannot calculate its exact location?",
+    "start_from": "Start from The center-of-gravity demonstration. Treat the demonstration as an object with rules, not as decoration. The object is A physical balance condition that changes continuously as the setup moves. and the plain question is this: How can a special state be forced even when we cannot calculate its exact location?",
     "rebuild_steps": [
-      "Name the object in ordinary words: A physical balance condition that changes continuously as the setup moves. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Track the changing condition continuously and ask whether it can pass from one side of a requirement to another without meeting it. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: Continuity prevents the condition from jumping over the balance state. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: A physical balance condition that changes continuously as the setup moves. Say what information that object carries before naming any course term.",
+      "State the allowed move: Track the changing condition continuously and ask whether it can pass from one side of a requirement to another without meeting it. Say which shortcut would erase the very obstruction the lecture is trying to study.",
+      "Protect the surviving fact: Continuity prevents the condition from jumping over the balance state. Say why the legal motion carries this fact instead of destroying it.",
       "Use a second lecture moment, Existence without a formula, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers. The point is to show what later argument would be weaker without this lecture.",
+      "Attach the source family carefully: Course spine can support the broader idea. Do not let the source family replace the work done by the recovered lecture evidence."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from The center-of-gravity demonstration straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 07, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers.",
+    "self_check": "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
+    "common_failure": "The common failure is to jump from The center-of-gravity demonstration straight to a theorem or source name. A theorem name cannot replace the route from concrete setup to protected evidence.",
+    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 07, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The outside source cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers.",
     "concepts": [
       "fixed-points",
       "configuration-space",
@@ -170,18 +170,18 @@
   {
     "lecture": 8,
     "title": "Intersection number is a count with memory",
-    "start_from": "Start from Signed intersection number. Treat it as a real object with rules, not as an illustration. The object is Clean intersections between oriented objects, equipped with plus and minus signs. and the plain question is this: How can a count survive when crossings can appear or disappear during legal motion?",
+    "start_from": "Start from Signed intersection number. Read it as a problem setup with permitted and forbidden moves. The object is Clean intersections between oriented objects, equipped with plus and minus signs. and the plain question is this: How can a count survive when crossings can appear or disappear during legal motion?",
     "rebuild_steps": [
-      "Name the object in ordinary words: Clean intersections between oriented objects, equipped with plus and minus signs. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Assign signs using a consistent orientation rule and allow only deformations where pair creation is inspected. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: Opposite-signed pairs can be born or die without changing the signed total. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: Clean intersections between oriented objects, equipped with plus and minus signs. Make clear what data are present before the vocabulary begins.",
+      "State the allowed move: Assign signs using a consistent orientation rule and allow only deformations where pair creation is inspected. Then name one nearby action that would change the problem rather than simplify it.",
+      "Protect the surviving fact: Opposite-signed pairs can be born or die without changing the signed total. Connect the allowed move to the evidence that still survives afterward.",
       "Use a second lecture moment, Pair creation and cancellation, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled. Name the later need so the lecture does not read as an isolated demonstration.",
+      "Attach the source family carefully: Algebraic topology background can support the broader idea. Let the source broaden the claim only after the classroom move has been reconstructed."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from Signed intersection number straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 08, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled.",
+    "self_check": "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
+    "common_failure": "The common failure is to jump from Signed intersection number straight to a theorem or source name. The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
+    "source_check": "The source audit question is: does the source support the family of ideas behind Lecture 08, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Keep the claim boundary visible. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled.",
     "concepts": [
       "winding-linking",
       "boundary-orientation",
@@ -194,18 +194,18 @@
   {
     "lecture": 9,
     "title": "Fixed points as intersections with the diagonal",
-    "start_from": "Start from The graph of a map meets the diagonal. Treat it as a real object with rules, not as an illustration. The object is The graph of a map compared with the diagonal of self-agreement. and the plain question is this: How can the equation that says 'the output equals the input' become a visible geometric meeting?",
+    "start_from": "Start from The graph of a map meets the diagonal. Use the visible setup as evidence, not as a loose illustration. The object is The graph of a map compared with the diagonal of self-agreement. and the plain question is this: How can the equation that says 'the output equals the input' become a visible geometric meeting?",
     "rebuild_steps": [
-      "Name the object in ordinary words: The graph of a map compared with the diagonal of self-agreement. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Translate the rule into its graph in input-output space and compare it with the diagonal without changing what equality means. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: A meeting of graph and diagonal is exactly a fixed point of the original map. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: The graph of a map compared with the diagonal of self-agreement. The reader should know what the object records before hearing the formal name.",
+      "State the allowed move: Translate the rule into its graph in input-output space and compare it with the diagonal without changing what equality means. Also state the tempting shortcut that would break the rulebook.",
+      "Protect the surviving fact: A meeting of graph and diagonal is exactly a fixed point of the original map. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, Missing middle caption is kept visible, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra. This should show why the lecture is needed later in the course.",
+      "Attach the source family carefully: Algebraic topology background can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
+    "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from The graph of a map meets the diagonal straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 09, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra.",
+    "source_check": "Pause before importing outside authority: does the source support the family of ideas behind Lecture 09, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not let the reference take over the lecture. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra.",
     "concepts": [
       "fixed-points",
       "duality",
@@ -218,18 +218,18 @@
   {
     "lecture": 10,
     "title": "Brouwer fixed point theorem: shape forces a point to stay",
-    "start_from": "Start from Brouwer on the closed ball. Treat it as a real object with rules, not as an illustration. The object is A continuous self-map of a closed ball, including its filled interior and boundary. and the plain question is this: Why can a filled shape force at least one point to stay put under every continuous rule of the right kind?",
+    "start_from": "Start from Brouwer on the closed ball. Use the visible setup as evidence, not as a loose illustration. The object is A continuous self-map of a closed ball, including its filled interior and boundary. and the plain question is this: Why can a filled shape force at least one point to stay put under every continuous rule of the right kind?",
     "rebuild_steps": [
-      "Name the object in ordinary words: A continuous self-map of a closed ball, including its filled interior and boundary. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Keep the domain filled, keep the boundary condition honest, and forbid jumps in the rule. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: The ball gives no continuous escape plan that moves every point away from itself at once. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: A continuous self-map of a closed ball, including its filled interior and boundary. The reader should know what the object records before hearing the formal name.",
+      "State the allowed move: Keep the domain filled, keep the boundary condition honest, and forbid jumps in the rule. Also state the tempting shortcut that would break the rulebook.",
+      "Protect the surviving fact: The ball gives no continuous escape plan that moves every point away from itself at once. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, Boundary changes the theorem, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule. This should show why the lecture is needed later in the course.",
+      "Attach the source family carefully: Algebraic topology background can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
+    "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from Brouwer on the closed ball straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 10, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule.",
+    "source_check": "Pause before importing outside authority: does the source support the family of ideas behind Lecture 10, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not let the reference take over the lecture. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule.",
     "concepts": [
       "fixed-points",
       "boundary-orientation",
@@ -242,18 +242,18 @@
   {
     "lecture": 11,
     "title": "Vector fields: learning without solving the equations",
-    "start_from": "Start from Vector fields replace solved trajectories. Treat it as a real object with rules, not as an illustration. The object is A vector field, meaning an arrow assigned to each point of a surface or state space. and the plain question is this: What can be learned about motion without solving every path of motion?",
+    "start_from": "Start from Vector fields replace solved trajectories. Begin from the concrete object and the rulebook it carries. The object is A vector field, meaning an arrow assigned to each point of a surface or state space. and the plain question is this: What can be learned about motion without solving every path of motion?",
     "rebuild_steps": [
-      "Name the object in ordinary words: A vector field, meaning an arrow assigned to each point of a surface or state space. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Study the arrow pattern and isolate the points where the arrow vanishes. Then name one nearby action that would break the problem rather than simplify it.",
+      "Name the object in ordinary words: A vector field, meaning an arrow assigned to each point of a surface or state space. The point is to rebuild the carrier of the argument, not to recite its label.",
+      "State the allowed move: Study the arrow pattern and isolate the points where the arrow vanishes. Name the illegal move that would make the easier picture irrelevant to the original question.",
       "Protect the surviving fact: An equilibrium carries more information than its location; nearby arrows turn around it in a countable way. Explain why this fact remains available after the allowed move.",
       "Use a second lecture moment, Equilibria are arrow-field failures, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This shifts the course from fixed places to motion laws. It prepares index as the local evidence attached to a failure of motion. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This shifts the course from fixed places to motion laws. It prepares index as the local evidence attached to a failure of motion. The forward link should make the lecture feel like a tool the later course reuses.",
+      "Attach the source family carefully: Vector-field index can support the broader idea. Use the source family only after the course example has supplied the object and protected fact."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from Vector fields replace solved trajectories straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 11, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This shifts the course from fixed places to motion laws. It prepares index as the local evidence attached to a failure of motion.",
+    "self_check": "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
+    "common_failure": "The common failure is to jump from Vector fields replace solved trajectories straight to a theorem or source name. The missing middle is the proof: what was allowed to move and what evidence survived.",
+    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 11, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Use the source as support, not substitution. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This shifts the course from fixed places to motion laws. It prepares index as the local evidence attached to a failure of motion.",
     "concepts": [
       "vector-field-index",
       "fixed-points",
@@ -266,18 +266,18 @@
   {
     "lecture": 12,
     "title": "Index becomes global bookkeeping",
-    "start_from": "Start from Adding local indices. Treat it as a real object with rules, not as an illustration. The object is Indices assigned to isolated vector-field defects by reading nearby arrow turning. and the plain question is this: How can many local motion failures add up to one whole-surface demand?",
+    "start_from": "Start from Adding local indices. Treat the demonstration as an object with rules, not as decoration. The object is Indices assigned to isolated vector-field defects by reading nearby arrow turning. and the plain question is this: How can many local motion failures add up to one whole-surface demand?",
     "rebuild_steps": [
-      "Name the object in ordinary words: Indices assigned to isolated vector-field defects by reading nearby arrow turning. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Clean the field to isolated defects, read the turning around each one, and add the signed local counts. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: Defects may move or split, but the total signed index is constrained by the surface. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: Indices assigned to isolated vector-field defects by reading nearby arrow turning. Say what information that object carries before naming any course term.",
+      "State the allowed move: Clean the field to isolated defects, read the turning around each one, and add the signed local counts. Say which shortcut would erase the very obstruction the lecture is trying to study.",
+      "Protect the surviving fact: Defects may move or split, but the total signed index is constrained by the surface. Say why the legal motion carries this fact instead of destroying it.",
       "Use a second lecture moment, Poincare-Hopf as surface bookkeeping, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion. The point is to show what later argument would be weaker without this lecture.",
+      "Attach the source family carefully: Whole-space invariants can support the broader idea. Do not let the source family replace the work done by the recovered lecture evidence."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from Adding local indices straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 12, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion.",
+    "self_check": "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
+    "common_failure": "The common failure is to jump from Adding local indices straight to a theorem or source name. A theorem name cannot replace the route from concrete setup to protected evidence.",
+    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 12, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The outside source cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion.",
     "concepts": [
       "vector-field-index",
       "euler-characteristic",
@@ -290,18 +290,18 @@
   {
     "lecture": 13,
     "title": "Poincare-Hopf turns topology into a prediction about motion",
-    "start_from": "Start from Using Poincare-Hopf in both directions. Treat it as a real object with rules, not as an illustration. The object is A vector field on a surface, with all isolated defects counted together. and the plain question is this: Why must the total defect of a motion pattern answer to the shape that carries it?",
+    "start_from": "Start from Using Poincare-Hopf in both directions. Read it as a problem setup with permitted and forbidden moves. The object is A vector field on a surface, with all isolated defects counted together. and the plain question is this: Why must the total defect of a motion pattern answer to the shape that carries it?",
     "rebuild_steps": [
-      "Name the object in ordinary words: A vector field on a surface, with all isolated defects counted together. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Use Poincare-Hopf only after the field is clean enough and the surface carrying it is the right one. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: The sum of local indices equals the Euler characteristic of the surface. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: A vector field on a surface, with all isolated defects counted together. Make clear what data are present before the vocabulary begins.",
+      "State the allowed move: Use Poincare-Hopf only after the field is clean enough and the surface carrying it is the right one. Then name one nearby action that would change the problem rather than simplify it.",
+      "Protect the surviving fact: The sum of local indices equals the Euler characteristic of the surface. Connect the allowed move to the evidence that still survives afterward.",
       "Use a second lecture moment, The hairy-ball idea in plain form, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This gathers the course's main chain: surface bookkeeping, signs, local defects, and global constraint. The hairy-ball idea is one visible consequence, not the whole story. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This gathers the course's main chain: surface bookkeeping, signs, local defects, and global constraint. The hairy-ball idea is one visible consequence, not the whole story. Name the later need so the lecture does not read as an isolated demonstration.",
+      "Attach the source family carefully: Whole-space invariants can support the broader idea. Let the source broaden the claim only after the classroom move has been reconstructed."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from Using Poincare-Hopf in both directions straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 13, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This gathers the course's main chain: surface bookkeeping, signs, local defects, and global constraint. The hairy-ball idea is one visible consequence, not the whole story.",
+    "self_check": "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
+    "common_failure": "The common failure is to jump from Using Poincare-Hopf in both directions straight to a theorem or source name. The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
+    "source_check": "The source audit question is: does the source support the family of ideas behind Lecture 13, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Keep the claim boundary visible. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This gathers the course's main chain: surface bookkeeping, signs, local defects, and global constraint. The hairy-ball idea is one visible consequence, not the whole story.",
     "concepts": [
       "vector-field-index",
       "euler-characteristic",
@@ -314,18 +314,18 @@
   {
     "lecture": 14,
     "title": "Applications show the same method in new settings",
-    "start_from": "Start from Applications as honest translations. Treat it as a real object with rules, not as an illustration. The object is A physical or moving system translated into a space of possible states. and the plain question is this: How can topology say something useful about an application before every motion equation is solved?",
+    "start_from": "Start from Applications as honest translations. Use the visible setup as evidence, not as a loose illustration. The object is A physical or moving system translated into a space of possible states. and the plain question is this: How can topology say something useful about an application before every motion equation is solved?",
     "rebuild_steps": [
-      "Name the object in ordinary words: A physical or moving system translated into a space of possible states. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Choose the state space honestly, include the real freedoms, exclude the real forbidden states, and then apply the theorem to that model. Then name one nearby action that would break the problem rather than simplify it.",
-      "Protect the surviving fact: Barriers, holes, fixed points, and index totals in the state space become constraints on the original system. Explain why this fact remains available after the allowed move.",
+      "Name the object in ordinary words: A physical or moving system translated into a space of possible states. The reader should know what the object records before hearing the formal name.",
+      "State the allowed move: Choose the state space honestly, include the real freedoms, exclude the real forbidden states, and then apply the theorem to that model. Also state the tempting shortcut that would break the rulebook.",
+      "Protect the surviving fact: Barriers, holes, fixed points, and index totals in the state space become constraints on the original system. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, Rotations and dynamics share the same proof engine, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This tests the whole course outside its cleanest surface examples. It shows that first-principles modeling is part of the mathematics, not a preliminary story. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This tests the whole course outside its cleanest surface examples. It shows that first-principles modeling is part of the mathematics, not a preliminary story. This should show why the lecture is needed later in the course.",
+      "Attach the source family carefully: Vector-field index can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
+    "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from Applications as honest translations straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 14, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This tests the whole course outside its cleanest surface examples. It shows that first-principles modeling is part of the mathematics, not a preliminary story.",
+    "source_check": "Pause before importing outside authority: does the source support the family of ideas behind Lecture 14, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not let the reference take over the lecture. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This tests the whole course outside its cleanest surface examples. It shows that first-principles modeling is part of the mathematics, not a preliminary story.",
     "concepts": [
       "configuration-space",
       "fixed-points",
@@ -338,18 +338,18 @@
   {
     "lecture": 15,
     "title": "The course as pictorial thinking",
-    "start_from": "Start from The table of contents becomes one argument. Treat it as a real object with rules, not as an illustration. The object is The whole course as a chain of picture-based reasoning moves. and the plain question is this: What single habit connects strips, surfaces, intersections, fixed points, and vector fields?",
+    "start_from": "Start from The table of contents becomes one argument. Begin from the concrete object and the rulebook it carries. The object is The whole course as a chain of picture-based reasoning moves. and the plain question is this: What single habit connects strips, surfaces, intersections, fixed points, and vector fields?",
     "rebuild_steps": [
-      "Name the object in ordinary words: The whole course as a chain of picture-based reasoning moves. Say what information that object carries before using a term from the course.",
-      "State the allowed move: Translate each situation into objects, allowed moves, protected evidence, and a conclusion that follows from that evidence. Then name one nearby action that would break the problem rather than simplify it.",
+      "Name the object in ordinary words: The whole course as a chain of picture-based reasoning moves. The point is to rebuild the carrier of the argument, not to recite its label.",
+      "State the allowed move: Translate each situation into objects, allowed moves, protected evidence, and a conclusion that follows from that evidence. Name the illegal move that would make the easier picture irrelevant to the original question.",
       "Protect the surviving fact: The same reasoning pattern survives across settings: build the right picture, move it legally, count what survives, and let the shape force the answer. Explain why this fact remains available after the allowed move.",
       "Use a second lecture moment, Pictures earn their role by carrying constraints, to show the same rule at work in a concrete case rather than only in a general sentence.",
-      "Connect forward: This is the final reader standard for the companion. A page is deep enough only when the reader can say what object was made, what move was legal, what fact survived, and why that fact forces the conclusion. This step should make clear why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course provenance can support the broader idea only after the lecture demonstration and source caveat have been kept visible."
+      "Connect forward: This is the final reader standard for the companion. A page is deep enough only when the reader can say what object was made, what move was legal, what fact survived, and why that fact forces the conclusion. The forward link should make the lecture feel like a tool the later course reuses.",
+      "Attach the source family carefully: Whole-space invariants can support the broader idea. Use the source family only after the course example has supplied the object and protected fact."
     ],
-    "self_check": "A good reconstruction can be spoken without prior vocabulary: object, move, surviving fact, concrete example, later use, and source family all appear in that order. If any part is missing, the reader may be remembering a label rather than rebuilding the reasoning.",
-    "common_failure": "The common failure is to jump from The table of contents becomes one argument straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 15, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the final reader standard for the companion. A page is deep enough only when the reader can say what object was made, what move was legal, what fact survived, and why that fact forces the conclusion.",
+    "self_check": "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
+    "common_failure": "The common failure is to jump from The table of contents becomes one argument straight to a theorem or source name. The missing middle is the proof: what was allowed to move and what evidence survived.",
+    "source_check": "Before citing a source, ask this: does the source support the family of ideas behind Lecture 15, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: Use the source as support, not substitution. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the final reader standard for the companion. A page is deep enough only when the reader can say what object was made, what move was legal, what fact survived, and why that fact forces the conclusion.",
     "concepts": [
       "deformation",
       "invariant",
