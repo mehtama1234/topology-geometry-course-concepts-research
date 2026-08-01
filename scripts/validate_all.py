@@ -331,6 +331,29 @@ def main():
             if len(words(row.get(field))) < 8:
                 fail(f"concept dependency {row.get('stage')} {field} too thin")
 
+    transfer_lab_cases = data.get("transfer_lab_cases") or []
+    required_transfer_titles = {
+        "Rubber band around a mug handle",
+        "Two walking routes around a fountain",
+        "Matching arrows on a weather map",
+        "Moving a sofa through a hallway",
+        "Stirring coffee in a cup",
+        "Drawing a map on a folded sheet",
+        "Counting dents on a squeezed ball",
+        "A robot arm avoiding a blocked zone",
+    }
+    if {row.get("title") for row in transfer_lab_cases} != required_transfer_titles:
+        fail("transfer lab cases do not match required case set")
+    for row in transfer_lab_cases:
+        for field in ["situation", "object", "allowed_move", "protected_fact", "course_bridge", "wrong_transfer", "reader_task"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"transfer lab {row.get('title')} {field} too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"transfer lab {row.get('title')} needs concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"transfer lab {row.get('title')} unknown concepts: {missing}")
+
     family_ids = {family["id"] for family in data["families"]}
     proof_moves = data.get("proof_moves") or []
     if len(proof_moves) < 5:
@@ -496,7 +519,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -527,6 +550,14 @@ def main():
         fail("concept dependencies page needs eight dependency cards")
     if len(words(re.sub(r"<[^>]+>", " ", dependency_page))) < 850:
         fail("concept dependencies page too thin")
+    transfer_lab = (SITE / "transfer-lab.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Transfer Lab", "Situation:", "Object:", "Allowed move:", "Protected fact:", "Course bridge:", "Wrong transfer:", "Reader task:", "The Transfer Test"]:
+        if phrase not in transfer_lab:
+            fail(f"transfer lab page missing phrase: {phrase}")
+    if transfer_lab.count("<article") < 8:
+        fail("transfer lab page needs eight cards")
+    if len(words(re.sub(r"<[^>]+>", " ", transfer_lab))) < 1700:
+        fail("transfer lab page too thin")
     lecture_spine_page = (SITE / "lecture-spine.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Lecture Spine", "Object:", "Plain question:", "Legal move:", "Surviving fact:", "Why later lectures need it:"]:
         if phrase not in lecture_spine_page:

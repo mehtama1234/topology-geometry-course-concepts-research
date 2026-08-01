@@ -6384,6 +6384,128 @@
       "reader_check": "Does the state space include the real freedoms and exclude the real forbidden states?"
     }
   ],
+  "transfer_lab_cases": [
+    {
+      "title": "Rubber band around a mug handle",
+      "situation": "A rubber band is looped around the handle of a mug. You can stretch the band and slide it on the mug, but you cannot cut it or pass it through the ceramic.",
+      "object": "The object is the loop together with the mug handle acting as an obstacle. The exact roundness of the band is not the issue.",
+      "allowed_move": "The allowed move is a continuous sliding and stretching of the loop while the band stays uncut and never crosses through the handle.",
+      "protected_fact": "The protected fact is whether the loop is linked around the handle. That relation survives many changes of shape.",
+      "course_bridge": "This transfers the knot-and-link habit from the course: do not trust the drawing's neatness; ask what relationship cannot be removed by legal deformation.",
+      "wrong_transfer": "A weak answer says the band looks circular or messy. That talks about geometry of the drawing, not the topological relation that blocks removal.",
+      "reader_task": "Explain whether the band can be freed without cutting it, and name the exact move that would be illegal.",
+      "concepts": [
+        "knots-and-links",
+        "winding-linking",
+        "deformation"
+      ]
+    },
+    {
+      "title": "Two walking routes around a fountain",
+      "situation": "Two routes across a plaza start and end at the same gates, but one route goes around a fenced fountain and the other does not.",
+      "object": "The object is not the pavement drawing alone. It is the plaza with the fenced region removed and the two paths inside the remaining space.",
+      "allowed_move": "The allowed move is to slide a route through open walking space while keeping its endpoints at the gates and never crossing the fence.",
+      "protected_fact": "The protected fact is whether the route winds around the missing region. A fenced hole can block one path from being changed into the other.",
+      "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region matters because it changes which deformations are legal.",
+      "wrong_transfer": "A weak answer says both paths are just lines between the same gates. That ignores the obstacle that makes the state space different.",
+      "reader_task": "Decide whether one route can be deformed into the other while respecting the fence, and say what the fence contributes to the proof.",
+      "concepts": [
+        "deformation",
+        "winding-linking",
+        "configuration-space"
+      ]
+    },
+    {
+      "title": "Matching arrows on a weather map",
+      "situation": "A small weather map shows wind arrows around a calm point. Nearby arrows turn as you walk around the calm point.",
+      "object": "The object is the arrow field near an isolated calm point, together with a small loop around that point.",
+      "allowed_move": "The allowed move is to clean or redraw nearby arrows without removing the calm point from the loop or dragging another calm point inside.",
+      "protected_fact": "The protected fact is the total turning of the arrows during one walk around the loop.",
+      "course_bridge": "This transfers vector-field index from the course: local arrow behavior can become signed evidence without solving the motion everywhere.",
+      "wrong_transfer": "A weak answer tries to predict the full weather. The course idea only needs the local turning account around the defect.",
+      "reader_task": "Walk around the calm point in words and say what has to stay isolated before an index-like count is meaningful.",
+      "concepts": [
+        "vector-field-index",
+        "equilibrium",
+        "generic-position"
+      ]
+    },
+    {
+      "title": "Moving a sofa through a hallway",
+      "situation": "A sofa must move from one room to another through a hallway without hitting the walls. The sofa can rotate and slide, but cannot pass through walls.",
+      "object": "The object is the space of all allowed sofa positions and rotations, not just one drawing of the hallway.",
+      "allowed_move": "The allowed move is a continuous path through allowed states where every intermediate position avoids collision.",
+      "protected_fact": "The protected fact is whether the start state and end state lie in the same connected region of allowed states.",
+      "course_bridge": "This transfers configuration-space modeling: a motion problem becomes a route problem in the space of possible states.",
+      "wrong_transfer": "A weak answer stares only at the floor plan. The proof needs the larger space that records both location and angle.",
+      "reader_task": "Name what one point of the state space represents and what would count as a forbidden state.",
+      "concepts": [
+        "configuration-space",
+        "product-space",
+        "deformation"
+      ]
+    },
+    {
+      "title": "Stirring coffee in a cup",
+      "situation": "A spoon stirs coffee inside a round cup, and after the motion every bit of coffee has moved somewhere in the same cup.",
+      "object": "The object is the filled cup as a disk-like region and the rule sending each starting point to its ending point.",
+      "allowed_move": "The allowed move is a continuous self-map of the filled region, with no point sent outside the cup.",
+      "protected_fact": "The protected fact is that a continuous self-map of the right kind of filled region cannot avoid some self-agreement.",
+      "course_bridge": "This transfers fixed-point thinking: the question is not where the point is, but why some point must return to itself.",
+      "wrong_transfer": "A weak answer says every point returns or that the theorem computes the point. The safe conclusion is existence of at least one fixed point.",
+      "reader_task": "State the domain, the rule, and the exact conclusion without pretending to locate the fixed point.",
+      "concepts": [
+        "brouwer-fixed-point",
+        "fixed-points",
+        "topology-vs-geometry"
+      ]
+    },
+    {
+      "title": "Drawing a map on a folded sheet",
+      "situation": "A map is drawn on a sheet whose opposite edges are taped together according to arrows. After taping, some apparent edges are no longer edges.",
+      "object": "The object is the finished surface created by the taping rule, not the flat sheet before the rule is applied.",
+      "allowed_move": "The allowed move is to reason after the edge identifications have been made, treating glued points as the same point.",
+      "protected_fact": "The protected fact is the route and boundary behavior of the completed surface after the taped edges are treated as one.",
+      "course_bridge": "This transfers quotient-space reading: the drawing is a code, and the gluing rule tells the reader what space the code describes.",
+      "wrong_transfer": "A weak answer counts the border of the flat sheet as a real boundary after the taping rule has already removed it.",
+      "reader_task": "Say which points become the same point and what boundary claim changes after the identification.",
+      "concepts": [
+        "quotient-space",
+        "boundary-orientation",
+        "manifold"
+      ]
+    },
+    {
+      "title": "Counting dents on a squeezed ball",
+      "situation": "A soft ball is squeezed, dented, and redrawn with different patches, but it is never punctured or glued to another piece.",
+      "object": "The object is the surface of the ball under legal deformation, not the number of visible dents in one picture.",
+      "allowed_move": "The allowed move is to bend and redraw the surface without tearing, puncturing, or changing how the surface is connected.",
+      "protected_fact": "The protected fact is a whole-surface count such as Euler characteristic, not the raw count of dents or patch lines.",
+      "course_bridge": "This transfers the stable-count habit: choose the count designed to survive the legal changes, not the count easiest to see.",
+      "wrong_transfer": "A weak answer counts every wrinkle as mathematical evidence. Wrinkles are drawing noise unless the argument says why they survive.",
+      "reader_task": "Identify one visible count that is not protected and one whole-surface fact that is protected.",
+      "concepts": [
+        "euler-characteristic",
+        "invariant",
+        "topology-vs-geometry"
+      ]
+    },
+    {
+      "title": "A robot arm avoiding a blocked zone",
+      "situation": "A simple arm has two joints and must move from one pose to another while its tip avoids a blocked zone on the table.",
+      "object": "The object is the space of joint choices after forbidden choices have been removed. One point records one complete arm pose.",
+      "allowed_move": "The allowed move is a continuous path through allowed joint choices, with no intermediate pose entering the blocked zone.",
+      "protected_fact": "The protected fact is whether the allowed-pose space has a route from the start pose to the target pose.",
+      "course_bridge": "This transfers late-course application thinking: topology studies the shape of possible states before detailed motion equations are solved.",
+      "wrong_transfer": "A weak answer draws only the arm in physical space. The topological question lives in the space of all allowed joint choices.",
+      "reader_task": "Describe one complete state of the arm and explain what removed states do to the route question.",
+      "concepts": [
+        "configuration-space",
+        "product-space",
+        "fixed-points"
+      ]
+    }
+  ],
   "proof_moves": [
     {
       "name": "Deform a picture without changing the original question",
@@ -7507,6 +7629,11 @@
         "status": "met"
       },
       {
+        "requirement": "First-principles transfer lab",
+        "evidence": "The Transfer Lab page gives 8 everyday transfer cases with situation, object, allowed move, protected fact, course bridge, wrong transfer, reader task, and concept links, with 1187 transfer words.",
+        "status": "met"
+      },
+      {
         "requirement": "Proof-move recipes",
         "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
         "status": "met"
@@ -7589,6 +7716,8 @@
       "playground_widgets": 4,
       "synthesis_sections": 8,
       "dependency_paths": 8,
+      "transfer_lab_cases": 8,
+      "transfer_lab_words": 1187,
       "proof_moves": 5,
       "theorem_use_contracts": 8,
       "theorem_contract_words": 1271,
@@ -7604,7 +7733,7 @@
       "rubric_coverage_layers": 6,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 87
+      "html_pages_before_audit_page": 88
     }
   }
 }

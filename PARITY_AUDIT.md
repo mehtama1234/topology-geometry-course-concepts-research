@@ -20,6 +20,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections; themes include lenses and answer guides, subthemes include first-principles bridges, reading routines and answer guides, and families include method playbooks, contracts, and answer guides | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
 | Concept dependency map | `site/concept-dependencies.html` gives eight prerequisite paths from early ideas to later theorem-level ideas | Met |
+| Transfer lab | `site/transfer-lab.html` gives eight everyday transfer cases that test object, allowed move, protected fact, wrong transfer, reader task, and course bridge | Met |
 | Proof moves | `site/proof-moves.html` gives five reusable first-principles proof recipes with steps, failure modes, and course examples | Met |
 | Formula reader | `site/formula-reader.html` translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks; `site/theorem-use-contracts.html` states when eight central results and methods may be used | Met |
 | Concept contrast reader | `site/concept-contrasts.html` separates ten neighboring ideas readers often blur, including topology/geometry, invariant/raw count, quotient/drawing, fixed point/equilibrium, and index/Euler characteristic | Met |
@@ -28,7 +29,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Term translator | `site/term-translator.html` translates 16 formal course words into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links | Met |
 | References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats; `site/paper-source-reader.html` explains each source family from first principles | Met |
 | Quality/source audits | `site/quality-rubric.html`, `site/rubric-coverage.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, rubric coverage maps those tests across six layers, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 87 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 88 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -41,7 +42,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 87 generated HTML pages.
+- 88 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 5,333 lecture essay words.
@@ -74,6 +75,8 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 4 playground widgets.
 - 8 synthesis sections.
 - 8 concept dependency paths.
+- 8 transfer-lab cases.
+- 1,187 transfer-lab words.
 - 5 proof-move recipes.
 - 8 theorem-use contracts.
 - 1,271 theorem-contract words.
@@ -105,6 +108,7 @@ The validator checks:
 - playground widget structure and JS renderer names;
 - course synthesis sections and length;
 - concept dependency structure and length;
+- transfer lab structure, required case set, field depth, and concept-link integrity;
 - proof-move structure and length;
 - theorem-use contract structure, required result set, field depth, and concept-link integrity;
 - concept contrast structure, required contrast set, field depth, and concept-link integrity;
