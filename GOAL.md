@@ -48,7 +48,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 2,805 lecture reader-test words.
-- 2,860 lecture answer-guide words.
+- 2,657 lecture answer-guide words.
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
@@ -56,15 +56,15 @@ The reader should be able to understand the course without prior math vocabulary
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
-- 9,387 concept self-check words.
+- 8,582 concept self-check words.
 - 803 theme lens words.
-- 2,481 theme answer-guide words.
+- 2,353 theme answer-guide words.
 - 1,110 subtheme routine words.
 - 985 subtheme bridge words.
-- 3,784 subtheme answer-guide words.
+- 3,584 subtheme answer-guide words.
 - 727 method-contract words.
 - 711 method-playbook words.
-- 2,339 method-family answer-guide words.
+- 2,258 method-family answer-guide words.
 - 7 references across course sources, primary papers, and standard texts.
 - 6 quality-rubric tests.
 - 6 rubric-coverage layer maps.

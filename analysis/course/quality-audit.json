@@ -23,7 +23,7 @@
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture page now includes a three-part reader test and answer guide for explaining the object, checking the allowed move, and protecting the conclusion, with 2805 reader-test words and 2860 answer-guide words.",
+      "evidence": "Each lecture page now includes a three-part reader test and answer guide for explaining the object, checking the allowed move, and protecting the conclusion, with 2805 reader-test words and 2657 answer-guide words.",
       "status": "met"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples and self-check answer guides; theme, subtheme, and method-family pages now include answer guides. These cross-course answer guides add 8604 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples and self-check answer guides; theme, subtheme, and method-family pages now include answer guides. These cross-course answer guides add 8195 words.",
       "status": "met"
     },
     {
@@ -114,22 +114,22 @@
     "lecture_caption_nuance_words": 1492,
     "lecture_source_faithfulness_words": 2109,
     "lecture_reader_test_words": 2805,
-    "lecture_answer_guide_words": 2860,
+    "lecture_answer_guide_words": 2657,
     "concept_essay_words": 7732,
     "concept_workup_words": 2746,
     "concept_anchor_words": 1965,
-    "concept_self_check_words": 9387,
+    "concept_self_check_words": 8582,
     "theme_essay_words": 1963,
     "theme_lens_words": 803,
-    "theme_answer_guide_words": 2481,
+    "theme_answer_guide_words": 2353,
     "subtheme_essay_words": 2761,
     "subtheme_routine_words": 1110,
     "subtheme_bridge_words": 985,
-    "subtheme_answer_guide_words": 3784,
+    "subtheme_answer_guide_words": 3584,
     "family_essay_words": 1523,
     "family_contract_words": 727,
     "family_playbook_words": 711,
-    "family_answer_guide_words": 2339,
+    "family_answer_guide_words": 2258,
     "playground_widgets": 4,
     "synthesis_sections": 8,
     "dependency_paths": 8,

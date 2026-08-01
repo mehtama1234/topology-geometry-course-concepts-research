@@ -506,6 +506,8 @@ def main():
     for phrase in FORBIDDEN:
         if re.search(rf"\b{re.escape(phrase)}\b", corpus):
             fail(f"forbidden phrase found: {phrase}")
+    if corpus.count("a strong answer") > 25:
+        fail("generated prose repeats 'a strong answer' too often")
 
     for path in html_files:
         text = path.read_text(encoding="utf-8", errors="ignore")

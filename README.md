@@ -23,7 +23,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,594 lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields, with every field now clearing the 25-word validator floor.
 - 1,986 lecture walkthrough words that slow each lecture down from starting object to mathematical payoff to reader check.
 - 2,805 lecture reader-test words asking readers to explain the object, check the allowed move, and protect the conclusion.
-- 2,860 lecture answer-guide words showing what strong self-check answers must contain.
+- 2,657 lecture answer-guide words showing what strong self-check answers must contain.
 - 1,492 caption-nuance words explaining risky auto-caption terms and safe mathematical readings by lecture.
 - 1,645 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - 1,532 lecture source-checkpoint words across trust, overread warning, and math-question fields.
@@ -32,18 +32,18 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 7,732 concept essay words, with every concept essay now clearing the 290-word validator floor.
 - 2,746 concept workup words across object, operation, protected fact, and failure tests.
 - 1,965 concept anchor words tying every concept to a concrete course moment, principle, and reader question.
-- 9,387 concept self-check words showing what strong answers must include for the object, operation, protected fact, and failure condition.
+- 8,582 concept self-check words showing what strong answers must include for the object, operation, protected fact, and failure condition.
 - 1,963 theme essay words, with every theme essay now clearing the 300-word validator floor.
 - 803 theme lens words across notices, ignored distractions, problem changes, and reader tests.
-- 2,481 theme answer-guide words showing how to carry each theme across lectures.
+- 2,353 theme answer-guide words showing how to carry each theme across lectures.
 - 2,761 subtheme essay words, with every subtheme essay now clearing the 260-word validator floor.
 - 1,110 subtheme routine words across look-for, ask, use, and mistake fields.
 - 985 subtheme bridge words tying recurring moves to course moments, thinking shifts, and reader tests.
-- 3,784 subtheme answer-guide words showing how to apply each routine on a real page.
+- 3,584 subtheme answer-guide words showing how to apply each routine on a real page.
 - 1,523 method-family essay words, with every method-family essay now clearing the 285-word validator floor.
 - 727 method-contract words across input, action, protected evidence, output, and failure tests.
 - 711 method-playbook words across setup, move, payoff, failure, and reader-test fields.
-- 2,339 method-family answer-guide words showing what strong method explanations must include.
+- 2,258 method-family answer-guide words showing what strong method explanations must include.
 - A course-level synthesis page, a reader-checks page, a references page with 7 course/paper/text links, a six-test quality rubric, a six-layer rubric coverage audit, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces

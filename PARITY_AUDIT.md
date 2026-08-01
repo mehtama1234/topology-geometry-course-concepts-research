@@ -45,7 +45,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 2,805 lecture reader-test words.
-- 2,860 lecture answer-guide words.
+- 2,657 lecture answer-guide words.
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
@@ -53,18 +53,18 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
-- 9,387 concept self-check words.
+- 8,582 concept self-check words.
 - 1,963 theme essay words.
 - 803 theme lens words.
-- 2,481 theme answer-guide words.
+- 2,353 theme answer-guide words.
 - 2,761 subtheme essay words.
 - 1,110 subtheme routine words.
 - 985 subtheme bridge words.
-- 3,784 subtheme answer-guide words.
+- 3,584 subtheme answer-guide words.
 - 1,523 method-family essay words.
 - 727 method-contract words.
 - 711 method-playbook words.
-- 2,339 method-family answer-guide words.
+- 2,258 method-family answer-guide words.
 - 4 playground widgets.
 - 8 synthesis sections.
 - 8 concept dependency paths.
