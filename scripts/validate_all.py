@@ -115,6 +115,9 @@ def main():
                 fail(f"lecture {lecture['lecture']} deep {field} too thin")
         if len(deep.get("anchors") or []) < 4:
             fail(f"lecture {lecture['lecture']} needs transcript anchors")
+        essay_words = sum(len(words(p)) for p in deep.get("essay") or [])
+        if essay_words < 180:
+            fail(f"lecture {lecture['lecture']} essay too thin")
         examples = deep.get("examples") or []
         if len(examples) < 2:
             fail(f"lecture {lecture['lecture']} needs at least two concrete examples")

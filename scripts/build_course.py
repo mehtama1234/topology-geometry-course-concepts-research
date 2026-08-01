@@ -717,6 +717,82 @@ LECTURE_EXAMPLES = {
 }
 
 
+LECTURE_ESSAYS = {
+    1: [
+        "The first lecture does not begin with a definition because a definition would make the subject look smaller than it is. The Mobius strip is a better opening because it forces the reader to separate local appearance from global behavior. Every small patch of the strip is ordinary paper. Nothing in a tiny square of paper announces that the whole strip has only one side, one boundary component, or surprising cutting behavior. The mathematical lesson is that a surface is not exhausted by its local patches. A whole trip around the object can return with information that was invisible at the start.",
+        "That is why cutting matters. Cutting the center line of an ordinary band and cutting the center line of a Mobius band are controlled experiments on the gluing rule. The scissors are not a prop; they reveal what the ends of the strip remembered after being joined with a twist. Off-center cuts add another layer: pieces can remain linked because their routes through the strip have wrapped around each other. The lecture is already teaching the course's whole method: make a physical picture, decide the legal operation, watch what survives, and let the result expose a global constraint.",
+    ],
+    2: [
+        "The second lecture turns the physical surprise of the Mobius strip into an explicit method: solve by deformation. The disk path problem is deliberately simple to state. Several pairs of boundary points must be joined inside a disk without the joining curves crossing. A beginner may try to draw clever routes, but trying drawings one by one cannot prove impossibility. The lecture changes the question from drawing skill to protected structure: if endpoints stay in their boundary order and paths are not allowed to cross, what can any drawing do?",
+        "The power of deformation is that it lets the picture move while the question stays fixed. A path can be rounded, stretched, or slid if it does not pass through another path or move an endpoint past another endpoint. Once those rules are clear, a simpler picture is allowed to speak for the original. This is a first-principles proof style, not a trick. It shows why topology is useful when exact measurement is irrelevant: the answer depends on the arrangement of routes and obstructions, not on the length or beauty of the curves.",
+    ],
+    3: [
+        "After deformation is introduced, the course needs a supply of spaces whose behavior is worth studying. Lecture 3 explains that spaces can be built from recipes. A product lets independent choices vary together, so an interval times an interval becomes a square-like world, and more products build higher-dimensional boxes. A quotient says that different-looking points should be treated as the same point. Surgery removes a piece and glues something back in. These are plain operations, but they change the kind of routes and neighborhoods the resulting space contains.",
+        "The important shift is that a drawing becomes an instruction manual. A square with edge labels is not merely a square; it can be a code for a cylinder, torus, Mobius band, or other surface depending on how its edges are identified. This is the course's move from demonstration to toolkit. Later, when fixed points are graphs meeting diagonals or when vector fields live on manifolds, the reader needs to remember that the space itself was made by rules. The construction recipe controls what motion, boundary, and sameness mean.",
+    ],
+    4: [
+        "Lecture 4 deepens the idea that gluing rules create worlds. The same visible patch can describe different spaces if its boundary is read differently. This matters because the mathematical object is not the ink on the page; it is the travel rule encoded by that ink. If leaving through one edge returns through another edge, then routes inside the square have a wraparound behavior. If an edge is reversed before it is glued, a trip through the surface can reverse the sense of side.",
+        "This lecture is a quiet but important bridge. It makes quotient constructions less mysterious by treating them as route instructions. It also prepares the reader for why orientation, boundary, and global consistency keep returning. A vector field on a sphere and a vector field on a torus do not differ merely by their drawing style. They differ because the underlying surface gives different routes for arrows and loops to follow. The course is teaching the reader to ask, for every picture, what rules the picture represents.",
+        "The first-principles point is that sameness is created by the rule, not by visual resemblance. If two exits of a drawn square are declared to be the same passage, then a path leaving one side has not ended; it has re-entered the world somewhere else. That habit becomes essential later when maps, diagonals, and vector fields are also treated as objects whose behavior depends on the space carrying them.",
+    ],
+    5: [
+        "Lecture 5 is where surfaces become classifiable objects rather than isolated examples. Handles, crosscaps, boundaries, and orientability are not decorative features. A handle supplies a route through and around. A crosscap, represented by Mobius-strip behavior, reverses side after a trip. A boundary changes the accounting at the edge. Classification says that once surfaces are simplified by legal cutting, gluing, and deformation, these durable parts determine the family of the surface.",
+        "The handle-sliding discussion is especially important because it makes classification operational. One does not simply declare that a mixed surface is equivalent to a standard form. One moves handles across one-sided regions and watches how the surface changes while preserving its topological type. This is arithmetic with surfaces: connected sums, handles, and Mobius strips become manipulable pieces. The lecture teaches that topology can classify objects not by measuring them, but by reducing them to stable building blocks whose presence cannot be hidden by a different drawing.",
+        "This is also where the course starts to feel like a working language. A surface is no longer a single picture but a member of a family with operations. Once that is understood, later formulas have a home: Euler characteristic, intersection signs, and vector-field indices are not floating symbols. They are ways of reading information from a surface whose type has already been disciplined by classification.",
+    ],
+    6: [
+        "Lecture 6 begins the systematic study of moving submanifolds inside an ambient manifold. In everyday language, it asks whether two things have enough room to avoid each other. A point on a line has little room. A line in a plane may cross another line unless arranged specially. Objects in higher-dimensional spaces may have extra directions for escape. The lecture turns that spatial intuition into the idea of dimension overflow: when the objects are too large for the room they share, intersection becomes expected rather than accidental.",
+        "This matters because the course is preparing to count intersections. Before a count can mean anything, the reader must know the difference between a crossing caused by a clumsy drawing and a crossing forced by the surrounding space. Generic position removes fragile coincidences and leaves the ordinary case, where meetings happen cleanly. If a meeting can be removed by a legal motion, it should not be treated as evidence. If it cannot be removed, it becomes the raw material for intersection number.",
+        "The plain-language moral is that space is a resource. If there is enough room, two objects can miss each other after a small adjustment. If there is not enough room, the attempted avoidance overflows into intersection. That is why dimension is not an abstract label here; it measures the amount of freedom available for avoiding obstacles.",
+    ],
+    7: [
+        "Lecture 7 uses physical reasoning to make existence feel concrete. The center-of-gravity demonstration is not separate from the mathematics. When two hands slide inward under an object, they meet at a balancing point because the relevant quantities change continuously. The balancing state is forced without anyone solving an equation for it. This is the same kind of conclusion topology wants: an object or state must exist because a continuous process has no legal way around it.",
+        "The conceptual move is to translate an existence problem into an intersection problem. One condition moves, another condition is fixed, and the desired event is their meeting. This prepares fixed-point theory, where the graph of a map meets the diagonal, and dynamics, where equilibria appear as failures of a vector field. The lecture is valuable because it keeps the theorem-level ideas grounded in bodily experience: continuous motion cannot always avoid a special state.",
+        "This lecture also raises the standard for what counts as understanding. Knowing that a balancing point exists may be enough even when the exact point is not computed. That is a recurring topological attitude. The course is teaching existence from constraint: if a continuous process has no legal way to pass from one side of a condition to the other without meeting it, the meeting is forced.",
+    ],
+    8: [
+        "Lecture 8 is one of the course's central turning points. It introduces intersection number as a count with memory. Counting visible intersections is too fragile because intersections can appear or disappear when the picture is deformed. The key is to count with signs. If a positive and a negative intersection are born together, the visible count changes by two, but the signed count changes by zero. The count has been designed so fake changes cancel.",
+        "Orientation is the detail that makes this possible. Without orientation, the signs have no stable meaning. With orientation, an intersection records how two pieces meet inside the surrounding space. This is why the lecture matters far beyond intersections. It teaches the general method of protected arithmetic: identify local events, assign signs or alternating contributions, and add them so the total survives legal motion. Vector-field index later repeats the same pattern with arrow defects instead of crossings.",
+        "The lecture is therefore a turning point from visual topology to numerical topology. The number is not a measurement of length or size. It is a record of unavoidable meeting. Once a reader understands why opposite pairs cancel, many later results become less mysterious: the course keeps designing counts so that accidental changes disappear and forced information remains.",
+    ],
+    9: [
+        "Lecture 9 carries intersection thinking into fixed points. A map from a space to itself can feel abstract because it is a rule rather than a visible object. The lecture makes it visible by drawing the graph of the map. It also draws the diagonal, the set of pairs where the starting point and ending point are the same. A fixed point is exactly an intersection between those two objects. The problem has been translated from solving a rule to finding a forced meeting.",
+        "This translation is one of the course's strongest examples of pictorial thinking. The graph and diagonal are not illustrations after the fact; they are the proof setting. If intersection machinery says the graph and diagonal cannot avoid each other, then the map must have a fixed point. The missing middle caption is a real source caveat, but the surrounding lecture arc is clear: fixed-point theory is being built from the earlier language of intersections, deformation, and invariance.",
+        "The first-principles gain is that a rule has been turned into a shape. A map may sound like an instruction, but its graph can be moved, compared, and counted. The diagonal is the shape of self-agreement. Their intersection is not a metaphor for a fixed point; it is the fixed point written geometrically. This is exactly the kind of conversion the course wants readers to learn.",
+    ],
+    10: [
+        "Lecture 10 focuses on the Brouwer fixed-point theorem for the closed ball. In plain language, if every point of a filled disk or ball is moved continuously to another point inside the same filled shape, at least one point must end up where it started. The theorem does not tell us which point. Its strength is that it proves existence from the shape of the domain and the continuity of the rule.",
+        "The boundary is not a minor technicality. A closed ball includes its boundary, and the boundary helps trap the continuous rule. If every point tried to avoid itself, the resulting escape pattern would contradict the way the boundary and interior fit together. This lecture shows the payoff of the earlier machinery: topology can prove that something exists without solving for it. That same payoff becomes essential in dynamics, where exact trajectories may be out of reach but forced equilibria can still be known.",
+        "For a beginner, the hard part is accepting that existence can be a geometric consequence. The theorem is not guessing that a fixed point probably exists. It says the whole filled shape leaves no continuous escape plan. That is why the closed ball matters: the theorem is a statement about the space of all possible positions and the way its boundary holds that space together.",
+    ],
+    11: [
+        "Lecture 11 begins the dynamics chapter by changing what it means to understand a differential equation. Instead of solving the equation exactly, the course asks what can be known from the arrow pattern of a vector field. Each point receives an arrow showing the direction of motion. Where the arrow vanishes, there is an equilibrium. The question is no longer only where trajectories go, but what the whole arrow field is forced to contain.",
+        "The index of an equilibrium is the new signed count. Around a defect, the nearby arrows turn in a certain way. That turning can be counted, and the count survives appropriate deformation of the field. This is the dynamics version of intersection number. The course has moved from curves and surfaces to motion, but the proof engine is still the same: isolate clean local events, attach signed evidence to them, and ask what total the whole space forces.",
+        "This is where the course becomes especially useful beyond pure shape puzzles. Many differential equations cannot be solved in a useful closed form, but their qualitative behavior still matters. Vector fields give a picture of that behavior, and topology asks what the picture cannot avoid. The result is not a trajectory-by-trajectory solution; it is structural knowledge about all possible motion.",
+    ],
+    12: [
+        "Lecture 12 asks what all the local indices know together. A vector field may have several equilibria: sources, sinks, saddles, and other local arrow patterns. Each has an index, but those indices are not independent. When the field lives on a surface, the sum of the local indices is tied to the Euler characteristic of that surface. Local failures of motion add up to a whole-shape number.",
+        "This is where the earlier surface bookkeeping becomes visibly necessary. Euler characteristic was not just a cell-counting curiosity. It becomes the number that controls the total defect of a vector field. The lecture therefore connects three layers of the course: surfaces can be decomposed and counted, vector fields can fail locally, and topology can force the total of those failures. Poincare-Hopf is powerful because it makes motion answer to shape.",
+        "The important detail is that local defects can move around. A source can be shifted, a pair can be created or canceled under the right circumstances, and a drawing can be cleaned up. But the total signed index is not free when the underlying surface is fixed. That is the same survival principle from intersection number, now expressed in the language of dynamics.",
+    ],
+    13: [
+        "Lecture 13 uses Poincare-Hopf as a working tool rather than a slogan. If the topology of the surface is known, the theorem restricts what equilibria a vector field can have. If the equilibria and their indices are known, they can reveal information about the surface. This is a two-way exchange between shape and motion. The theorem is not merely a formula; it is a bridge between two kinds of evidence.",
+        "The hairy-ball idea is the most everyday form of the message. On a sphere, one cannot choose a continuous nonzero tangent arrow everywhere. Some defect must occur because the whole surface does not allow all local arrow choices to agree. This is exactly the course's local-to-global principle in dynamics. Every small patch may seem able to carry an arrow, but the complete surface has fewer choices than the patches suggest.",
+        "The theorem's depth is that it can be used in both directions without changing its meaning. If the surface is known, it predicts what kinds of vector-field failures must occur. If the failures are observed, they give information about the surface. The equation is therefore not just a result to remember; it is a tool for translating between local motion and global shape.",
+    ],
+    14: [
+        "Lecture 14 turns the machinery toward applications. Rotations, physical systems, and dynamical examples can look unrelated, but the course asks the same modeling questions each time. What is the space? What is the rule or motion on that space? What changes are legal? What count, fixed point, index, or obstruction is protected? Without that translation, applying topology would be empty.",
+        "The value of the applications is that they show topology as a method for behavior, not only for static shapes. A physical system may have too many details to track directly, but the space of its possible states can have holes, walls, boundaries, or forced passages. Once a problem is honestly translated into that space, the earlier proof families apply. The course's demonstrations are therefore not isolated tricks; they are examples of a reusable way to reason about constrained motion.",
+        "This lecture also warns against careless application. A theorem cannot be pasted onto a physical story until the modeling has been done. The state space, boundary conditions, allowed motions, and protected quantity must be identified. When that translation is honest, topology can explain why a behavior is unavoidable even when the physical system itself looks messy.",
+    ],
+    15: [
+        "The final lecture reviews the course as pictorial thinking. That phrase matters because the pictures have not been decorative. The Mobius strip, disk paths, edge identifications, handle slides, intersections, graphs of maps, diagonals, and vector fields all served as proof environments. The point of the course is to learn how to make a picture carry constraints: what may move, what may not move, what survives, and what conclusion is forced.",
+        "Read backward, the course becomes one chain. Mobius strips teach global surprise. Deformation teaches legal simplification. Products, quotients, and surgery build spaces. Surface classification names durable parts. Intersection number turns meetings into signed evidence. Fixed points turn rules into forced self-agreement. Vector-field index and Poincare-Hopf turn motion into surface bookkeeping. The final demonstrations return to strips because the whole course has been about seeing more in a picture than its immediate appearance.",
+        "The ready-state lesson is therefore not a list of theorems. It is a way of asking questions. What is allowed to move? What survives the motion? What count is designed to ignore fake changes? What whole-shape constraint forces the answer? If the reader can ask those questions across strips, surfaces, maps, and vector fields, then the course has done its work.",
+    ],
+}
+
+
 def clean_vtt(path):
     seen = []
     out = []
@@ -809,6 +885,7 @@ def build_quality_audit(data):
     concept_min = min(len(c["appearances"]) for c in data["concepts"])
     concept_max = max(len(c["appearances"]) for c in data["concepts"])
     lecture_examples = sum(len(l["deep"]["examples"]) for l in data["lectures"])
+    lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -822,7 +899,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written lecture depth",
-            "evidence": f"{stats['lectures']} lecture explainers with problem, first principles, mathematical move, important detail, connection, transcript anchors, and examples.",
+            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, problem, first principles, mathematical move, important detail, connection, transcript anchors, and examples.",
             "status": "met",
         },
         {
@@ -855,6 +932,7 @@ def build_quality_audit(data):
             "captioned_videos": stats["captioned_videos"],
             "missing_captions": data["missing_caption_ids"],
             "lecture_examples": lecture_examples,
+            "lecture_essay_words": lecture_essay_words,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -910,6 +988,10 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
         lecture_body = f"""
 <h1>Lecture {l['lecture']:02d}: {esc(l['deep']['title'])}</h1>
 <p class="lead">{esc(l['deep']['problem'])}</p>
+<section class="lecture">
+  <h2>Lecture Essay</h2>
+  {paragraph_block(l['deep']['essay'])}
+</section>
 <section class="panel">
   <h2>First Principles</h2>
   <p>{esc(l['deep']['first_principles'])}</p>
@@ -973,7 +1055,7 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_essay_words']} lecture essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1018,6 +1100,7 @@ def main():
         missing = [v["id"] for v, text in items if not text]
         deep = dict(LECTURE_DEPTH[number])
         deep["examples"] = LECTURE_EXAMPLES[number]
+        deep["essay"] = LECTURE_ESSAYS[number]
         lectures.append({
             "lecture": number,
             "videos": [v for v, _ in items],
