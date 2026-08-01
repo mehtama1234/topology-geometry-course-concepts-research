@@ -4276,11 +4276,41 @@ def build_theme_answer_guide(theme):
     tid = theme["id"]
     notices = plain_fragment(lens["notices"], ["This lens notices", "It notices"])
     ignores = plain_fragment(lens["ignores"], ["It ignores", "This lens ignores"])
+    notice_close = varied((tid, "notice-close"), [
+        "Name the evidence the theme keeps visible before any conclusion is trusted.",
+        "The point is to make the theme show up as evidence on the page, not as an abstract mood.",
+        "A useful answer names the thing the reader must watch while the argument moves.",
+        "The theme earns its place only when the reader can point to the proof feature it protects.",
+    ])
+    ignore_close = varied((tid, "ignore-close"), [
+        "Explain why those details can distract from the mathematical question.",
+        "Say why leaving those details aside clarifies the claim instead of weakening it.",
+        "The discarded detail should be named so the reader knows the page is ignoring it on purpose.",
+        "This keeps attention on the feature that carries proof rather than on visual noise.",
+    ])
+    separation_close = varied((tid, "separation-close"), [
+        "Separate the part that makes the picture memorable from the part that carries proof.",
+        "The page should separate what makes the example vivid from what makes the argument valid.",
+        "That distinction keeps the demonstration from turning into a loose visual slogan.",
+        "The reader should leave knowing which part of the picture can actually support the claim.",
+    ])
+    transfer_close = varied((tid, "transfer-close"), [
+        "Show how the habit travels from early examples to later theorem-level uses.",
+        "This turns the theme into a bridge across the course, not a label attached to one lecture.",
+        "The answer should show which later proof would lose force without this habit.",
+        "The theme is deep only when it explains why distant lectures use the same kind of move.",
+    ])
+    test_close = varied((tid, "test-close"), [
+        "That detail keeps the theme from becoming a loose slogan.",
+        "That detail is the guardrail between a useful theme and a vague summary.",
+        "Without that detail, the theme would sound fluent while failing to control a real argument.",
+        "The important detail is where the broad course habit becomes checkable.",
+    ])
     return {
-        "notice_answer": f"Say what this theme trains the reader to notice: {notices} Connect that habit to the course problem, not only to one lecture: {depth['problem']} The answer should name the evidence the theme keeps visible before any conclusion is trusted.",
-        "ignore_answer": f"Say what the theme deliberately sets aside: {ignores} Then explain why those details may distract from the mathematical question. The useful separation is between the memorable picture and the part of the picture that carries proof.",
-        "transfer_answer": f"{varied((tid, 'transfer'), ['Explain how the theme changes the problem:', 'The transfer across lectures works like this:', 'The theme shifts the problem by doing this:', 'Carry the theme forward through this change:'])} {lens['changes_problem']} Then connect that shift to the course arc: {depth['course_arc']} The goal is to show how the same habit travels from early examples to later theorem-level uses.",
-        "test_answer": f"Use this question to test the theme: {lens['reader_test']} Include the important detail: {depth['important_detail']} That detail is what keeps the theme from becoming a loose slogan.",
+        "notice_answer": f"Say what this theme trains the reader to notice: {notices} Connect that habit to the course problem, not only to one lecture: {depth['problem']} {notice_close}",
+        "ignore_answer": f"Say what the theme deliberately sets aside: {ignores} {ignore_close} {separation_close}",
+        "transfer_answer": f"{varied((tid, 'transfer'), ['Explain how the theme changes the problem:', 'The transfer across lectures works like this:', 'The theme shifts the problem by doing this:', 'Carry the theme forward through this change:'])} {lens['changes_problem']} Then connect that shift to the course arc: {depth['course_arc']} {transfer_close}",
+        "test_answer": f"Use this question to test the theme: {lens['reader_test']} Include the important detail: {depth['important_detail']} {test_close}",
     }
 
 
@@ -4333,12 +4363,42 @@ def build_family_answer_guide(family):
     evidence = plain_fragment(contract["evidence"], ["The protected evidence is", "The protected evidence"])
     output = plain_fragment(contract["output"], ["The output is", "The output"])
     failure = plain_fragment(contract["failure_test"], ["The method fails when", "It fails when", "The contract breaks if"])
+    input_close = varied((fid, "input-close"), [
+        "Use of the method starts only after the reader knows what object or situation is being fed into it.",
+        "That starting object decides whether the method is answering the intended problem.",
+        "If the input is vague, every later step may be precise about the wrong thing.",
+        "The family starts here because a method has no force without the right object.",
+    ])
+    action_close = varied((fid, "action-close"), [
+        "Describe the action before allowing the method name to carry the reasoning.",
+        "The action is the proof move; the family name is only a handle for it.",
+        "This keeps the method from becoming a label for a result whose work is hidden.",
+        "The reader should see the operation before trusting the method title.",
+    ])
+    evidence_close = varied((fid, "evidence-close"), [
+        "The method works because this evidence survives the allowed action and still answers the starting question.",
+        "That survival is what lets the final object speak about the original one.",
+        "The evidence is the load-bearing part of the method; without it, the action is only a transformation.",
+        "This is the reason one cleaned-up, counted, or modeled situation can stand for the starting problem.",
+    ])
+    output_close = varied((fid, "output-close"), [
+        "The reader should be able to name the proved, counted, blocked, or forced consequence.",
+        "The output should be stated as a consequence, not as a restatement of the method name.",
+        "The method is successful only when the final claim returns to the problem it began with.",
+        "The ending should say exactly what new constraint, comparison, or existence claim has been earned.",
+    ])
+    failure_close = varied((fid, "family-failure-close"), [
+        "This guard prevents the method from solving a different problem.",
+        "The failure test marks the boundary between a valid use and an attractive misuse.",
+        "That guardrail is part of the method, because the same action can be illegal under a different rulebook.",
+        "The method is not ready until the reader can say what would make it break.",
+    ])
     return {
-        "input_answer": f"Start by naming the input: {contract['input']} Connect that input to the human problem: {depth['human_problem']} The method cannot be used honestly until the reader knows what object or situation is being fed into it.",
-        "action_answer": f"State the action before naming the method: {contract['action']} Then name the playbook move: {playbook['move']} The answer should describe what is being done before any method name is allowed to carry the reasoning.",
-        "evidence_answer": f"Protect this evidence: {evidence} Explain the payoff: {playbook['payoff']} The method works only because this evidence survives the allowed action and can still answer the starting question.",
-        "output_answer": f"Name what the method is supposed to produce: {output} Connect that output to how the method works: {depth['how_it_works']} The reader should be able to say what has been proved, counted, blocked, or forced at the end.",
-        "failure_answer": f"Know the failure test: {failure} Connect that test to the playbook failure: {playbook['failure']} This guard keeps the method from solving a different problem.",
+        "input_answer": f"Start by naming the input: {contract['input']} Connect that input to the human problem: {depth['human_problem']} {input_close}",
+        "action_answer": f"State the action before naming the method: {contract['action']} Then name the playbook move: {playbook['move']} {action_close}",
+        "evidence_answer": f"Protect this evidence: {evidence} Explain the payoff: {playbook['payoff']} {evidence_close}",
+        "output_answer": f"Name what the method is supposed to produce: {output} Connect that output to how the method works: {depth['how_it_works']} {output_close}",
+        "failure_answer": f"Know the failure test: {failure} Connect that test to the playbook failure: {playbook['failure']} {failure_close}",
     }
 
 
