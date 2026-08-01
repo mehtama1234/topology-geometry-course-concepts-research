@@ -385,11 +385,33 @@ def main():
         if missing:
             fail(f"source reader {row.get('reference')} references unknown concept ids: {missing}")
 
+    lecture_source_bridges = data.get("lecture_source_bridges") or []
+    if len(lecture_source_bridges) != 15:
+        fail("lecture source bridges need exactly fifteen lecture bridges")
+    if {row.get("lecture") for row in lecture_source_bridges} != lecture_numbers:
+        fail("lecture source bridges do not match lecture numbers")
+    for row in lecture_source_bridges:
+        if len(row.get("references") or []) < 1:
+            fail(f"lecture source bridge {row.get('lecture')} needs references")
+        unknown_refs = sorted(set(row.get("references") or []) - reference_ids)
+        if unknown_refs:
+            fail(f"lecture source bridge {row.get('lecture')} unknown references: {unknown_refs}")
+        unknown_concepts = sorted(set(row.get("concepts") or []) - concept_ids)
+        if unknown_concepts:
+            fail(f"lecture source bridge {row.get('lecture')} unknown concepts: {unknown_concepts}")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"lecture source bridge {row.get('lecture')} needs concept links")
+        if len(words(row.get("source_family"))) < 2:
+            fail(f"lecture source bridge {row.get('lecture')} source family too thin")
+        for field in ["course_demonstration", "mathematical_bridge", "how_source_extends", "overread_warning", "reader_question"]:
+            if len(words(row.get(field))) < 24:
+                fail(f"lecture source bridge {row.get('lecture')} {field} too thin")
+
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -473,6 +495,14 @@ def main():
         fail("paper source reader needs seven source cards")
     if len(words(re.sub(r"<[^>]+>", " ", paper_source_reader))) < 1200:
         fail("paper source reader too thin")
+    lecture_source_bridges_page = (SITE / "lecture-source-bridges.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Lecture Source Bridges", "Course demonstration:", "Mathematical bridge:", "How the source extends it:", "Overread warning:", "Reader question:", "The Transfer Test"]:
+        if phrase not in lecture_source_bridges_page:
+            fail(f"lecture source bridges page missing phrase: {phrase}")
+    if lecture_source_bridges_page.count("<article") < 15:
+        fail("lecture source bridges page needs fifteen cards")
+    if len(words(re.sub(r"<[^>]+>", " ", lecture_source_bridges_page))) < 2400:
+        fail("lecture source bridges page too thin")
     references_page = (SITE / "references.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["References", "Source Caveat", "Why it belongs", "Use carefully", "Lecture coverage", "Concept coverage"]:
         if phrase not in references_page:

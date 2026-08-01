@@ -2887,6 +2887,7 @@ def page(title, body, current=""):
         ("reader-checks.html", "Reader Checks"),
         ("term-translator.html", "Term Translator"),
         ("paper-source-reader.html", "Paper Source Reader"),
+        ("lecture-source-bridges.html", "Lecture Source Bridges"),
         ("references.html", "References"),
         ("quality-rubric.html", "Quality Rubric"),
         ("rubric-coverage.html", "Rubric Coverage"),
@@ -2981,6 +2982,38 @@ def build_lecture_answer_guide(lecture, spine_row):
         "move_answer": f"{varied((number, 'move'), ['Name the permitted move:', 'The legal action is', 'The proof move to state is', 'Put the allowed change in plain words:'])} {spine_row['legal_move']} Also name an illegal shortcut: any motion that drops boundary data, changes the carrier space, invents extra room, removes a required sign rule, or forgets the source caveat would change the problem rather than solve it.",
         "conclusion_answer": f"{varied((number, 'conclusion'), ['Protect this surviving fact:', 'The evidence to keep is', 'The conclusion rests on this fact:', 'Carry this fact through the explanation:'])} {spine_row['surviving_fact']} Then use that protected fact to explain the consequence in plain language and connect forward to the later need: {spine_row['why_later']}",
     }
+
+
+def build_lecture_source_bridges(lectures, references, source_readers):
+    source_by_ref = {row["reference"]: row for row in source_readers}
+    spine_by_lecture = {row["lecture"]: row for row in LECTURE_SPINE}
+    bridges = []
+    for lecture in lectures:
+        number = lecture["lecture"]
+        spine = spine_by_lecture[number]
+        lecture_refs = [ref for ref in references if number in ref["lectures"]]
+        support_refs = [ref for ref in lecture_refs if ref["id"] != "tokieda-aims-course"]
+        primary = support_refs[0] if support_refs else lecture_refs[0]
+        source_reader = source_by_ref[primary["id"]]
+        examples = lecture["deep"]["examples"]
+        concepts = []
+        for ref in lecture_refs:
+            for concept_id in ref["concepts"]:
+                if concept_id not in concepts:
+                    concepts.append(concept_id)
+        bridges.append({
+            "lecture": number,
+            "title": lecture["deep"]["title"],
+            "references": [ref["id"] for ref in lecture_refs],
+            "source_family": source_reader["family"],
+            "course_demonstration": f"The lecture works from {spine['object']} and uses concrete moments such as {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}. Read those moments as the evidence before reading any outside source.",
+            "mathematical_bridge": f"The bridge to the source family is the same object-move-surviving-fact chain: {spine['plain_question']} The legal move is this: {spine['legal_move']} The fact carried forward is this: {spine['surviving_fact']}",
+            "how_source_extends": f"The supporting source family, {source_reader['family']}, helps because it answers this problem: {source_reader['reader_problem']} It should be read after the lecture has made the object and protected fact clear.",
+            "overread_warning": f"Do not make the source do the lecture's work for it. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: {spine['why_later']}",
+            "reader_question": f"Can the reader explain Lecture {number:02d} from the demonstration to the source family by naming the object, the legal move, the surviving fact, and the exact source claim that is being used?",
+            "concepts": concepts[:6],
+        })
+    return bridges
 
 
 def build_concept_self_check(concept):
@@ -3129,6 +3162,7 @@ def build_quality_audit(data):
     lecture_source_checkpoint_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["source_checkpoint"][field])) for field in ["trust", "do_not_overread", "math_question"]) for l in data["lectures"])
     lecture_caption_nuance_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["caption_nuance"][field])) for field in ["risk", "safe_reading", "verify_question"]) for l in data["lectures"])
     lecture_source_faithfulness_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["source_faithfulness"][field])) for field in ["caption_support", "course_inference", "caveat"]) for l in data["lectures"])
+    lecture_source_bridge_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["course_demonstration", "mathematical_bridge", "how_source_extends", "overread_warning", "reader_question"]) for row in data["lecture_source_bridges"])
     lecture_reader_test_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["reader_test"][field])) for field in ["explain_object", "test_allowed_move", "protect_conclusion"]) for l in data["lectures"])
     lecture_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["answer_guide"][field])) for field in ["object_answer", "move_answer", "conclusion_answer"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
@@ -3167,6 +3201,11 @@ def build_quality_audit(data):
         {
             "requirement": "Lecture source-faithfulness audit",
             "evidence": f"Each lecture page now includes caption support, course-inference, and caveat fields that distinguish recovered-caption evidence from course-arc interpretation, with {lecture_source_faithfulness_words} total source-faithfulness words.",
+            "status": "met",
+        },
+        {
+            "requirement": "Lecture-to-source bridge",
+            "evidence": f"The Lecture Source Bridges page gives {len(data['lecture_source_bridges'])} lecture-level bridges from concrete demonstrations to source families, with {lecture_source_bridge_words} words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
             "status": "met",
         },
         {
@@ -3272,6 +3311,8 @@ def build_quality_audit(data):
             "lecture_source_checkpoint_words": lecture_source_checkpoint_words,
             "lecture_caption_nuance_words": lecture_caption_nuance_words,
             "lecture_source_faithfulness_words": lecture_source_faithfulness_words,
+            "lecture_source_bridge_words": lecture_source_bridge_words,
+            "lecture_source_bridges": len(data["lecture_source_bridges"]),
             "lecture_reader_test_words": lecture_reader_test_words,
             "lecture_answer_guide_words": lecture_answer_guide_words,
             "concept_essay_words": concept_essay_words,
@@ -3371,6 +3412,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 {card('Term Translator', 'Sixteen formal course words translated into the job they perform in an argument, with failure tests and concept links for each one.', 'term-translator.html', 'Terms')}
 {card('Paper Source Reader', 'A first-principles guide to the course source, primary papers, and standard references: what problem each source family answers and how to read it without overclaiming.', 'paper-source-reader.html', 'Sources')}
+{card('Lecture Source Bridges', 'Fifteen lecture-level bridges connect each demonstration to the source family it prepares, with the exact overread warning a reader should keep in view.', 'lecture-source-bridges.html', 'Bridges')}
 {card('References', 'Course, primary-paper, and standard-text links for the main ideas, with notes on what each source supports and what claim would overread it.', 'references.html', 'Sources')}
 {card('Quality Rubric', 'Six first-principles tests keep long prose honest: object, legal move, surviving evidence, failure condition, course anchor, and everyday-language replacement.', 'quality-rubric.html', 'Rubric')}
 {card('Rubric Coverage', 'A layer-by-layer audit maps the six quality tests onto lectures, concepts, themes, subthemes, method families, source pages, and review checks.', 'rubric-coverage.html', 'Coverage')}
@@ -3666,6 +3708,43 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 """
     (SITE / "paper-source-reader.html").write_text(page("Paper Source Reader", source_reader_body, "Paper Source Reader"), encoding="utf-8")
+
+    lecture_bridge_cards = []
+    for row in data["lecture_source_bridges"]:
+        ref_links = " ".join(
+            f'<a class="pill" href="{esc(refs_by_id[ref_id]["url"])}">{esc(refs_by_id[ref_id]["title"])}</a>'
+            for ref_id in row["references"]
+            if ref_id in refs_by_id
+        )
+        lecture_bridge_cards.append(
+            f"""<article class="card">
+  <div class="meta">Lecture {row['lecture']:02d} · {esc(row['source_family'])}</div>
+  <h3>{esc(row['title'])}</h3>
+  <p><b>Course demonstration:</b> {esc(row['course_demonstration'])}</p>
+  <p><b>Mathematical bridge:</b> {esc(row['mathematical_bridge'])}</p>
+  <p><b>How the source extends it:</b> {esc(row['how_source_extends'])}</p>
+  <p><b>Overread warning:</b> {esc(row['overread_warning'])}</p>
+  <p><b>Reader question:</b> {esc(row['reader_question'])}</p>
+  <p>{concept_pills(row['concepts'], data['concepts'])}</p>
+  <p>{ref_links}</p>
+  <a class="arrow" href="lecture-{row['lecture']:02d}.html">Open lecture</a>
+</article>"""
+        )
+    lecture_bridge_body = f"""
+<h1>Lecture Source Bridges</h1>
+<p class="lead">This page connects each lecture's concrete demonstration to the source family it prepares. The point is not to turn a lecture into a citation list. The point is to show how a paper strip, square, route, graph, count, or arrow field becomes the kind of object a source can legitimately support.</p>
+<section class="lecture">
+  <h2>How To Read A Bridge</h2>
+  <p>Start with the course demonstration. Then name the mathematical bridge: object, legal move, and surviving fact. Only after that should the source family enter. This order keeps the explanation grounded in the course instead of letting a source title replace the reasoning.</p>
+  <p>The overread warning is part of the mathematics. A source can support a family of ideas while still not proving that a specific lecture used a specific sentence, notation, or theorem. The bridge is ready only when the reader can say exactly which claim the source supports.</p>
+</section>
+<div class="grid two">{''.join(lecture_bridge_cards)}</div>
+<section class="lecture">
+  <h2>The Transfer Test</h2>
+  <p>A lecture-source bridge succeeds when a reader can walk in both directions. From lecture to source: identify the demonstration, the move, the surviving fact, and the source family. From source back to lecture: explain which concrete course object the source clarifies, and which stronger claim would overread the evidence.</p>
+</section>
+"""
+    (SITE / "lecture-source-bridges.html").write_text(page("Lecture Source Bridges", lecture_bridge_body, "Lecture Source Bridges"), encoding="utf-8")
 
     global_reference_cards = []
     for ref in data["references"]:
@@ -4021,6 +4100,7 @@ def main():
         enriched["answer_guide"] = build_family_answer_guide(enriched)
         families.append(enriched)
     math_why = MATH_WHY
+    lecture_source_bridges = build_lecture_source_bridges(lectures, REFERENCES, SOURCE_READERS)
     data = {
         "course_goal": COURSE_GOAL,
         "playlist": {"title": playlist.get("title"), "url": PLAYLIST_URL, "uploader": playlist.get("uploader")},
@@ -4032,6 +4112,7 @@ def main():
         "families": families,
         "math_why": math_why,
         "lecture_spine": LECTURE_SPINE,
+        "lecture_source_bridges": lecture_source_bridges,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
         "term_translations": TERM_TRANSLATIONS,
@@ -4062,6 +4143,7 @@ def main():
     write_json(ANALYSIS / "family-map.json", families)
     write_json(ANALYSIS / "math-why.json", math_why)
     write_json(ANALYSIS / "lecture-spine.json", LECTURE_SPINE)
+    write_json(ANALYSIS / "lecture-source-bridges.json", lecture_source_bridges)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "term-translations.json", TERM_TRANSLATIONS)

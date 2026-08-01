@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 82.
+- HTML pages: 83.
 
 ## Main Reader Surfaces
 
@@ -42,6 +42,7 @@ This repo is the source and generated static site for a first-principles compani
 - `reader-checks.html` — eleven common reasoning failure checks.
 - `term-translator.html` — 16 formal course words translated into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links.
 - `paper-source-reader.html` — seven course/paper/text sources explained as first-principles source families with reading questions and overread warnings.
+- `lecture-source-bridges.html` — 15 lecture-level bridges from concrete demonstrations to source families, with overread warnings and reader questions.
 - `references.html` — course, primary-paper, and standard-text links with source caveats and lecture/concept coverage.
 - `quality-rubric.html` — six first-principles prose tests for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.
 - `rubric-coverage.html` — maps the six prose tests across lectures, concepts, themes, subthemes, method families, and source/quality pages.
@@ -78,6 +79,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - lecture-deepening sections on every lecture page;
 - source-checkpoint sections on every lecture page;
 - source-faithfulness audit sections on every lecture page;
+- lecture-source-bridges structure, field depth, reference integrity, and concept-link integrity;
 - slow-walkthrough sections on every lecture page;
 - can-you-explain-it reader-test sections on every lecture page;
 - answer-guide sections on every lecture page;
@@ -117,6 +119,7 @@ As of the current generated audit:
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
 - 2,109 lecture source-faithfulness words.
+- 4,206 lecture-source bridge words.
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.

@@ -14,7 +14,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Source coverage | 35 playlist videos indexed; 15 lecture groups; 34 caption files recovered; missing id `nx1XOlezuvk` preserved | Met with caveat |
 | Individual video links | `site/videos.html` lists every YouTube item in playlist order | Met |
 | Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, lecture deepening, slow walkthrough, reader test, answer guide, source checkpoint, source-faithfulness audit, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
-| Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures | Met |
+| Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures; `site/lecture-source-bridges.html` connects each lecture demonstration to its source family and overread warning | Met |
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, anchor examples, work-from-scratch blocks, self-check answer guides, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections; themes include lenses and answer guides, subthemes include first-principles bridges, reading routines and answer guides, and families include method playbooks, contracts, and answer guides | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
@@ -26,7 +26,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Term translator | `site/term-translator.html` translates 16 formal course words into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links | Met |
 | References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats; `site/paper-source-reader.html` explains each source family from first principles | Met |
 | Quality/source audits | `site/quality-rubric.html`, `site/rubric-coverage.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, rubric coverage maps those tests across six layers, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 82 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 83 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -39,7 +39,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 82 generated HTML pages.
+- 83 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 5,333 lecture essay words.
@@ -51,6 +51,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
 - 2,109 lecture source-faithfulness words.
+- 4,206 lecture-source bridge words.
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
@@ -88,6 +89,7 @@ The validator checks:
 - depth floors for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, concept-self-check, theme, theme-lens, theme-answer-guide, subtheme, subtheme-routine, subtheme-bridge, subtheme-answer-guide, family, method-contract, method-playbook, method-family-answer-guide, and math-why prose;
 - at least three concrete examples per lecture;
 - lecture-spine structure and length;
+- lecture-source bridge structure, field depth, reference integrity, and concept-link integrity;
 - concept/theme/subtheme/family id integrity;
 - playground widget structure and JS renderer names;
 - course synthesis sections and length;
