@@ -4625,7 +4625,7 @@ def build_concept_self_check(concept):
     failure_close = varied((cid, "failure-close"), [
         f"The failure case is part of {title}: it tells the reader which changed assumption destroys the claim.",
         "The limit should be concrete enough that the reader can recognize a bad use in a new example.",
-        "Naming the break point keeps the concept tied to its rulebook instead of turning it into a loose slogan.",
+        "Naming the break point keeps the concept tied to its rulebook instead of letting it make claims beyond its conditions.",
         "The warning belongs inside the explanation because changing the rule often changes the answer.",
         "A good answer says not only when the idea works, but which tempting nearby use would be false.",
         f"For {title}, the beginner trap is not a side note; it is the fastest way to see which detail the concept protects.",
@@ -4668,43 +4668,68 @@ def build_theme_answer_guide(theme):
     lens = theme["lens"]
     depth = theme["depth"]
     tid = theme["id"]
+    title = theme["title"]
     notices = plain_fragment(lens["notices"], ["This lens notices", "It notices"])
     ignores = plain_fragment(lens["ignores"], ["It ignores", "This lens ignores"])
     notice_close = varied((tid, "notice-close"), [
-        "Name the evidence the theme keeps visible before any conclusion is trusted.",
-        "The point is to make the theme show up as evidence on the page, not as an abstract mood.",
-        "A useful answer names the thing the reader must watch while the argument moves.",
-        "The theme earns its place only when the reader can point to the proof feature it protects.",
+        f"For {title}, the answer should name the evidence that stays visible before any conclusion is trusted.",
+        f"The point is to make {title} show up as work on the page, not as an abstract course mood.",
+        f"A useful answer names the thing the reader must watch while {title} is doing its job.",
+        f"{title} earns its place only when the reader can point to the proof feature it protects.",
     ])
     ignore_close = varied((tid, "ignore-close"), [
-        "Explain why those details can distract from the mathematical question.",
-        "Say why leaving those details aside clarifies the claim instead of weakening it.",
-        "The discarded detail should be named so the reader knows the page is ignoring it on purpose.",
-        "This keeps attention on the feature that carries proof rather than on visual noise.",
+        f"Explain why those details distract from the question this theme is meant to clarify.",
+        f"Say why leaving those details aside makes the claim sharper rather than weaker.",
+        "Name the discarded detail so the reader knows the page is ignoring it on purpose.",
+        f"This keeps attention on the feature that lets the theme carry proof rather than on visual noise.",
     ])
     separation_close = varied((tid, "separation-close"), [
-        "Separate the part that makes the picture memorable from the part that carries proof.",
+        f"Separate the part that makes the example memorable from the part that carries proof.",
         "The page should separate what makes the example vivid from what makes the argument valid.",
-        "That distinction keeps the demonstration from turning into a loose visual slogan.",
-        "The reader should leave knowing which part of the picture can actually support the claim.",
+        f"That distinction keeps the theme from becoming only a memorable picture.",
+        f"The reader should leave knowing which part of the picture can actually support the claim.",
     ])
     transfer_close = varied((tid, "transfer-close"), [
-        "Show how the habit travels from early examples to later theorem-level uses.",
-        "This turns the theme into a bridge across the course, not a label attached to one lecture.",
-        "The answer should show which later proof would lose force without this habit.",
-        "The theme is deep only when it explains why distant lectures use the same kind of move.",
+        f"Show how {title} travels from early examples to later theorem-level uses.",
+        f"This turns {title} into a bridge across the course, not a label attached to one lecture.",
+        f"The answer should show which later proof would lose force without {title}.",
+        f"{title} is deep only when it explains why distant lectures use the same kind of move.",
     ])
     test_close = varied((tid, "test-close"), [
-        "That detail keeps the theme from becoming a loose slogan.",
-        "That detail is the guardrail between a useful theme and a vague summary.",
-        "Without that detail, the theme would sound fluent while failing to control a real argument.",
-        "The important detail is where the broad course habit becomes checkable.",
+        f"That detail keeps the theme from becoming only a broad summary.",
+        f"That detail separates a useful use of the theme from a vague summary.",
+        f"Without that detail, {title} would sound fluent while failing to control a real argument.",
+        f"The important detail is where {title} becomes checkable.",
+    ])
+    notice_prompt = varied((tid, "notice-answer-prompt"), [
+        f"Begin by naming what {title} asks the reader to notice: {notices} Tie that habit to the course problem: {depth['problem']} {notice_close}",
+        f"To carry the theme, first point to the evidence it watches: {notices} The course problem behind that watchfulness is: {depth['problem']} {notice_close}",
+        f"Start with the proof feature this theme keeps visible: {notices} Then connect it to the reason the course needs the theme: {depth['problem']} {notice_close}",
+        f"Name the page feature that activates the theme: {notices} Then tie it to the larger problem: {depth['problem']} {notice_close}",
+    ])
+    ignore_prompt = varied((tid, "ignore-answer-prompt"), [
+        f"Say what this theme deliberately sets aside: {ignores} {ignore_close} {separation_close}",
+        f"Name the detail this theme refuses to chase: {ignores} {ignore_close} {separation_close}",
+        f"Explain what can be ignored while using this theme: {ignores} {ignore_close} {separation_close}",
+        f"Separate the useful signal from the distracting detail: {ignores} {ignore_close} {separation_close}",
+    ])
+    transfer_prompt = varied((tid, "transfer-answer-prompt"), [
+        f"Carry {title} forward through this change: {lens['changes_problem']} Now connect that shift to the course arc: {depth['course_arc']} {transfer_close}",
+        f"Show how {title} changes the problem: {lens['changes_problem']} The course arc explains where that change reappears: {depth['course_arc']} {transfer_close}",
+        f"Move {title} across lectures by tracking this shift: {lens['changes_problem']} Then attach it to the arc: {depth['course_arc']} {transfer_close}",
+        f"Use {title} as a cross-course bridge: {lens['changes_problem']} The bridge is visible in this arc: {depth['course_arc']} {transfer_close}",
+    ])
+    test_prompt = varied((tid, "test-answer-prompt"), [
+        f"Test {title} with this question: {lens['reader_test']} Keep this detail in view: {depth['important_detail']} {test_close}",
+        f"The spoken check for {title} is: {lens['reader_test']} The detail that keeps the check honest is: {depth['important_detail']} {test_close}",
+        f"Use this as the audit question for {title}: {lens['reader_test']} Include the detail that can break the claim: {depth['important_detail']} {test_close}",
+        f"Close by asking whether the theme is really being used: {lens['reader_test']} The answer must include this detail: {depth['important_detail']} {test_close}",
     ])
     return {
-        "notice_answer": f"Say what this theme trains the reader to notice: {notices} Connect that habit to the course problem, not only to one lecture: {depth['problem']} {notice_close}",
-        "ignore_answer": f"Say what the theme deliberately sets aside: {ignores} {ignore_close} {separation_close}",
-        "transfer_answer": f"{varied((tid, 'transfer'), ['Explain how the theme changes the problem:', 'The transfer across lectures works like this:', 'The theme shifts the problem by doing this:', 'Carry the theme forward through this change:'])} {lens['changes_problem']} Then connect that shift to the course arc: {depth['course_arc']} {transfer_close}",
-        "test_answer": f"Use this question to test the theme: {lens['reader_test']} Include the important detail: {depth['important_detail']} {test_close}",
+        "notice_answer": notice_prompt,
+        "ignore_answer": ignore_prompt,
+        "transfer_answer": transfer_prompt,
+        "test_answer": test_prompt,
     }
 
 
