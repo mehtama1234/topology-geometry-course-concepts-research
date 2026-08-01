@@ -4291,13 +4291,37 @@ def build_subtheme_answer_guide(subtheme):
     sid = subtheme["id"]
     look = plain_fragment(routine["look_for"], ["Look first for", "Look for"])
     ask = plain_fragment(routine["ask"], ["Ask"])
-    use = plain_fragment(routine["use"], ["Use this routine before", "Use this routine when", "Use this routine whenever", "Use singular moments as", "Use"])
+    use = plain_fragment(routine["use"], ["Use this routine whenever", "Use this routine before", "Use this routine when", "Use singular moments as", "Use"])
     mistake = plain_fragment(routine["mistake"], ["The mistake is", "The common wrong turn is"])
+    look_close = varied((sid, "look-close"), [
+        "The reader should be able to point to a visible feature on the page, not only repeat the subtheme name.",
+        "That keeps the routine attached to evidence the lecture actually supplies.",
+        "The check is whether the reader can find the feature in a live argument without being handed the label.",
+        "A useful answer names the page detail that carries the idea.",
+    ])
+    ask_close = varied((sid, "ask-close"), [
+        "That shift changes the page from a topic label into a proof the reader can inspect.",
+        "The question should make the reader inspect the proof, not merely recognize the topic.",
+        "This is where the routine becomes active: it tells the reader what uncertainty to test.",
+        "The answer should expose the hidden rule or evidence that the page depends on.",
+    ])
+    use_close = varied((sid, "use-close"), [
+        "The explanation should name the problem this routine helps solve.",
+        "The useful payoff is a better reading of the argument, not a new heading to memorize.",
+        "Use it only when it changes what the reader checks on the page.",
+        "The routine earns its place by making a live claim easier to audit.",
+    ])
+    mistake_close = varied((sid, "mistake-close"), [
+        "The subtheme should end as a page action, not as a warning floating above the proof.",
+        "The repair is practical: return to the object, move, evidence, or model that the mistake skipped.",
+        "The reader test should expose the false shortcut, not merely restate the warning.",
+        "A good correction says what the page must check before the conclusion is trusted.",
+    ])
     return {
-        "look_answer": f"Begin by looking for this: {look} Tie that search to the course moment: {bridge['course_moment']} The check is whether the reader can point to the exact feature in a lecture page, not only to the subtheme name.",
-        "ask_answer": f"Before applying the subtheme, ask this in plain words: {ask} Explain the thinking shift: {bridge['thinking_shift']} That shift turns the subtheme from a label into a way of reading a proof.",
-        "use_answer": f"Use the routine in this setting: {use} Connect that use to the first-principles reason: {depth['first_principles']} The answer should make clear what problem the routine helps solve.",
-        "mistake_answer": f"Name the mistake to avoid: {mistake} Then answer the reader test: {bridge['reader_test']} This keeps the subtheme tied to an action the reader can perform on a page.",
+        "look_answer": f"Begin by looking for this: {look} Tie that search to the course moment: {bridge['course_moment']} {look_close}",
+        "ask_answer": f"Before applying the subtheme, ask this in plain words: {ask} Explain the thinking shift: {bridge['thinking_shift']} {ask_close}",
+        "use_answer": f"Use the routine in this setting: {use} Connect that use to the first-principles reason: {depth['first_principles']} {use_close}",
+        "mistake_answer": f"Name the mistake to avoid: {mistake} Then answer the reader test: {bridge['reader_test']} {mistake_close}",
     }
 
 
