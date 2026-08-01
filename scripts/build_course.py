@@ -153,40 +153,40 @@ THEME_ESSAYS = {
 
 THEME_LENSES = {
     "see-by-deforming": {
-        "notices": "This lens notices which parts of a picture are free to move and which parts must stay tied to the original question.",
-        "ignores": "It ignores exact length, angle, and visual neatness when those details are not part of the protected question.",
-        "changes_problem": "It changes a problem from staring at one hard drawing into following a legal path toward a drawing whose structure is easier to inspect.",
-        "reader_test": "Can the reader name the legal moves and the fact that survives before trusting the simplified picture?",
+        "notices": "This lens notices which parts of a picture are free to move and which parts must stay tied to the original question. It asks whether endpoints, boundaries, crossings, gluing rules, or state restrictions are being preserved while the visible shape changes.",
+        "ignores": "It ignores exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing is useful only if it comes from an allowed motion.",
+        "changes_problem": "It changes a problem from staring at one hard drawing into following a legal path toward a drawing whose structure is easier to inspect. The proof lives in the permission to move, not in the prettiness of the final picture.",
+        "reader_test": "Can the reader name the legal moves, the forbidden moves, and the fact that survives before trusting the simplified picture as evidence about the original problem?",
     },
     "count-what-survives": {
-        "notices": "This lens notices the part of a changing picture that can be recorded as stable evidence: a hole count, signed total, parity, or index sum.",
-        "ignores": "It ignores raw visible clutter when that clutter can appear or disappear under harmless legal changes.",
-        "changes_problem": "It changes a problem from trying every possible drawing into building a count that every legal drawing must obey.",
-        "reader_test": "Can the reader say why the chosen count survives the allowed moves rather than only computing it once?",
+        "notices": "This lens notices the part of a changing picture that can be recorded as stable evidence: a hole count, signed total, parity, Euler characteristic, or index sum. It asks why this number is built to survive the permitted changes.",
+        "ignores": "It ignores raw visible clutter when that clutter can appear or disappear under harmless legal changes. A count that changes whenever the drawing is cleaned up is not yet mathematical evidence.",
+        "changes_problem": "It changes a problem from trying every possible drawing into building a count that every legal drawing must obey. Once the count is protected, one computation can speak for a whole family of drawings.",
+        "reader_test": "Can the reader say what is being counted, what local changes might threaten the count, and why the chosen count survives those changes rather than only being computed once?",
     },
     "local-to-global": {
-        "notices": "This lens notices when many locally possible choices must be made compatible across a whole surface, loop, field, or state space.",
-        "ignores": "It ignores the false comfort that comes from checking only one small patch and assuming the whole object behaves the same way.",
-        "changes_problem": "It changes a problem from asking whether each piece works alone into asking whether all pieces can be glued into one consistent whole.",
-        "reader_test": "Can the reader identify the full journey, full sum, or full gluing step where the global obstruction appears?",
+        "notices": "This lens notices when many locally possible choices must be made compatible across a whole surface, loop, field, or state space. It watches the moment when a choice has to return after a full trip or fit into a complete sum.",
+        "ignores": "It ignores the false comfort that comes from checking only one small patch and assuming the whole object behaves the same way. Local success is only a start; the whole object may still refuse consistency.",
+        "changes_problem": "It changes a problem from asking whether each piece works alone into asking whether all pieces can be joined into one consistent whole. The obstruction often appears only when the last piece must match the first.",
+        "reader_test": "Can the reader identify the full journey, full sum, or full gluing step where the global obstruction appears, and explain why no isolated patch could have detected it?",
     },
     "generic-before-exception": {
-        "notices": "This lens notices fragile coincidences such as tangencies, triple meetings, perfect alignments, and non-isolated defects.",
-        "ignores": "It ignores accidental exactness when that exactness would disappear under a tiny legal nudge.",
-        "changes_problem": "It changes a problem from analyzing a brittle special picture into understanding ordinary cases and the controlled transitions between them.",
-        "reader_test": "Can the reader explain what ordinary picture appears just before and just after the exceptional moment?",
+        "notices": "This lens notices fragile coincidences such as tangencies, triple meetings, perfect alignments, and non-isolated defects. It asks whether the picture shows ordinary evidence or a compressed special event that needs to be separated.",
+        "ignores": "It ignores accidental exactness when that exactness would disappear under a tiny legal nudge. The special picture is not useless, but it must be read as a boundary between ordinary pictures.",
+        "changes_problem": "It changes a problem from analyzing a brittle special picture into understanding ordinary cases and the controlled transitions between them. The proof studies exceptions only enough to know how stable evidence changes or stays fixed.",
+        "reader_test": "Can the reader explain what ordinary picture appears just before and just after the exceptional moment, and what protected count or relation survives across that moment?",
     },
     "pictures-to-proofs": {
-        "notices": "This lens notices whether a picture states the mathematical contract: objects, allowed moves, forbidden moves, signs, boundaries, and protected evidence.",
-        "ignores": "It ignores visual appeal when the drawing does not say what fact survives or what conclusion follows.",
-        "changes_problem": "It changes a problem from remembering a diagram into auditing the reason carried by that diagram.",
-        "reader_test": "Can the reader point to the exact part of the picture that prevents the forbidden outcome or forces the desired one?",
+        "notices": "This lens notices whether a picture states the mathematical contract: objects, allowed moves, forbidden moves, signs, boundaries, and protected evidence. It treats a diagram as a claim that must say exactly what it is preserving.",
+        "ignores": "It ignores visual appeal when the drawing does not say what fact survives or what conclusion follows. A memorable diagram is weak if the reader cannot locate the rule that gives it force.",
+        "changes_problem": "It changes a problem from remembering a diagram into auditing the reason carried by that diagram. The drawing becomes a proof only when its parts support a conclusion that every legal version must obey.",
+        "reader_test": "Can the reader point to the exact part of the picture that prevents the forbidden outcome or forces the desired one, and name the rule that makes that part valid evidence?",
     },
     "shape-as-machine": {
-        "notices": "This lens notices how the shape of a space permits routes, blocks routes, forces self-agreement, or demands defects.",
-        "ignores": "It ignores unnecessary point-by-point prediction when a whole-space constraint already forces the kind of behavior being asked about.",
-        "changes_problem": "It changes a problem from solving every motion detail into understanding the shape of possible states and the constraints that shape imposes.",
-        "reader_test": "Can the reader name the state space or domain, the rule acting on it, and the topological feature that forces behavior?",
+        "notices": "This lens notices how the shape of a space permits routes, blocks routes, forces self-agreement, or demands defects. It asks what the space of possibilities allows before trying to compute one exact motion.",
+        "ignores": "It ignores unnecessary point-by-point prediction when a whole-space constraint already forces the kind of behavior being asked about. Exact paths may be unknown while existence, obstruction, or defect counts are still forced.",
+        "changes_problem": "It changes a problem from solving every motion detail into understanding the shape of possible states and the constraints that shape imposes. The object under study becomes the space of possible positions, not only one physical position.",
+        "reader_test": "Can the reader name the state space or domain, the rule acting on it, the forbidden states, and the topological feature that forces the claimed behavior?",
     },
 }
 
@@ -3302,7 +3302,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 12 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

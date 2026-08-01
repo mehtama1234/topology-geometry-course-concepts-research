@@ -101,7 +101,7 @@ As of the current generated audit:
 - 1,781 concept workup words.
 - 1,641 concept anchor words.
 - 1,964 theme essay words.
-- 466 theme lens words.
+- 803 theme lens words.
 - 2,761 subtheme essay words.
 - 858 subtheme routine words.
 - 599 subtheme bridge words.

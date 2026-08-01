@@ -80,7 +80,7 @@ def main():
             fail(f"theme {theme['id']} essay too thin")
         lens = theme.get("lens") or {}
         for field in ["notices", "ignores", "changes_problem", "reader_test"]:
-            if len(words(lens.get(field))) < 12:
+            if len(words(lens.get(field))) < 25:
                 fail(f"theme {theme['id']} lens {field} too thin")
 
     for subtheme in data["subthemes"]:

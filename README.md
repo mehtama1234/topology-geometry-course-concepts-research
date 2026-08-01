@@ -30,7 +30,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,781 concept workup words across object, operation, protected fact, and failure tests.
 - 1,641 concept anchor words tying every concept to a concrete course moment, principle, and reader question.
 - 1,964 theme essay words, with every theme essay now clearing the 300-word validator floor.
-- 466 theme lens words across notices, ignored distractions, problem changes, and reader tests.
+- 803 theme lens words across notices, ignored distractions, problem changes, and reader tests.
 - 2,761 subtheme essay words, with every subtheme essay now clearing the 260-word validator floor.
 - 858 subtheme routine words across look-for, ask, use, and mistake fields.
 - 599 subtheme bridge words tying recurring moves to course moments, thinking shifts, and reader tests.
