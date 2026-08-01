@@ -5750,6 +5750,56 @@
       "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should not import its vocabulary before explaining the course idea plainly."
     }
   ],
+  "quality_rubric": [
+    {
+      "id": "object-before-name",
+      "title": "Name the object before the term",
+      "test": "The page must say what concrete thing is being reasoned about before leaning on the mathematical name: a surface, path, field, map, route, count, meeting, or state space.",
+      "strong_answer": "A strong explanation lets a reader point to the object and say what information it carries. The term can then shorten the sentence, but it cannot replace the sentence.",
+      "failure": "The writing fails when a reader can repeat the title but cannot say what thing is being moved, counted, glued, compared, or forced.",
+      "repair": "Rewrite the opening around the object in the lecture or concept. Say what is present, what data it carries, and why that object is the right stage for the problem."
+    },
+    {
+      "id": "legal-move",
+      "title": "Name the legal move",
+      "test": "The page must say what action is allowed: deforming, cutting, gluing, counting with signs, comparing a graph with a diagonal, walking around a defect, or building a state space.",
+      "strong_answer": "A strong explanation says what changes and what is forbidden to change. It treats the allowed move as the main proof obligation, not as a background detail.",
+      "failure": "The writing fails when it says the picture is simplified, transformed, or represented without saying which changes still answer the original problem.",
+      "repair": "Add the contract of motion or translation. State one allowed action and one action that would change the problem instead of solving it."
+    },
+    {
+      "id": "protected-fact",
+      "title": "Name what survives",
+      "test": "The page must identify the durable evidence: parity, Euler characteristic, boundary order, orientation, signed total, fixed-point meeting, index sum, or another preserved relation.",
+      "strong_answer": "A strong explanation makes the protected fact do work. The conclusion follows because that fact survived the legal move, not because the page says the method is useful.",
+      "failure": "The writing fails when it gives an outcome without showing what evidence survived long enough to force that outcome.",
+      "repair": "Add one sentence that starts with the surviving evidence and ends with the conclusion it can force."
+    },
+    {
+      "id": "failure-condition",
+      "title": "Say what would break the claim",
+      "test": "The page must name the hidden condition that would make the explanation invalid: missing orientation, illegal crossing, changed boundary, incomplete defect list, wrong state space, or overread source.",
+      "strong_answer": "A strong explanation protects the reader from using the idea too broadly. It names the condition under which the same words would no longer prove the same claim.",
+      "failure": "The writing fails when every method sounds available everywhere and no page says when the method stops helping.",
+      "repair": "Add a failure sentence tied to the object. Say what assumption is required and what would go wrong if the assumption were absent."
+    },
+    {
+      "id": "course-anchor",
+      "title": "Tie the idea to a course moment",
+      "test": "The page must connect the explanation to a lecture moment, source trail, example, or transcript-grounded anchor rather than floating as a general summary.",
+      "strong_answer": "A strong explanation lets the reader move from the page back to a lecture example or source note and see why that exact moment supports the claim.",
+      "failure": "The writing fails when it could be pasted into any topology summary without changing a word.",
+      "repair": "Add the lecture number, example, or source caveat that makes the explanation belong to this course companion."
+    },
+    {
+      "id": "plain-language-replacement",
+      "title": "Replace formal words with everyday sentences",
+      "test": "The page must be readable by someone who has not studied topology. Formal words may appear, but each important word needs a plain sentence saying what job it performs.",
+      "strong_answer": "A strong explanation can be read twice: first as everyday reasoning about shapes and motion, then as the formal mathematical term that names that reasoning.",
+      "failure": "The writing fails when it hides the reason inside words such as invariant, manifold, index, orientation, generic position, or configuration space.",
+      "repair": "After each important word, add a sentence beginning with the job it performs: it keeps track, blocks an escape, records a turn, carries signs, or lists possible states."
+    }
+  ],
   "missing_caption_ids": [
     "nx1XOlezuvk"
   ],
@@ -5804,6 +5854,11 @@
       {
         "requirement": "First-principles plain language",
         "evidence": "Validation enforces minimum depth across all explanatory layers and bans common vague/cliche phrases; pages explain why ideas exist and what detail matters.",
+        "status": "met"
+      },
+      {
+        "requirement": "First-principles quality rubric",
+        "evidence": "The Quality Rubric page gives 6 enforced prose tests: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.",
         "status": "met"
       },
       {
@@ -5891,9 +5946,10 @@
       "proof_moves": 5,
       "reader_checks": 11,
       "references": 7,
+      "quality_rubric_items": 6,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 78
+      "html_pages_before_audit_page": 79
     }
   }
 }

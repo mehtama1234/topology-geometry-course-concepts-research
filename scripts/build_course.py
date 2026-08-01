@@ -19,6 +19,58 @@ PLAYLIST_URL = "https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF
 COURSE_GOAL = """Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and familiar teaching cliches. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve."""
 
 
+QUALITY_RUBRIC = [
+    {
+        "id": "object-before-name",
+        "title": "Name the object before the term",
+        "test": "The page must say what concrete thing is being reasoned about before leaning on the mathematical name: a surface, path, field, map, route, count, meeting, or state space.",
+        "strong_answer": "A strong explanation lets a reader point to the object and say what information it carries. The term can then shorten the sentence, but it cannot replace the sentence.",
+        "failure": "The writing fails when a reader can repeat the title but cannot say what thing is being moved, counted, glued, compared, or forced.",
+        "repair": "Rewrite the opening around the object in the lecture or concept. Say what is present, what data it carries, and why that object is the right stage for the problem.",
+    },
+    {
+        "id": "legal-move",
+        "title": "Name the legal move",
+        "test": "The page must say what action is allowed: deforming, cutting, gluing, counting with signs, comparing a graph with a diagonal, walking around a defect, or building a state space.",
+        "strong_answer": "A strong explanation says what changes and what is forbidden to change. It treats the allowed move as the main proof obligation, not as a background detail.",
+        "failure": "The writing fails when it says the picture is simplified, transformed, or represented without saying which changes still answer the original problem.",
+        "repair": "Add the contract of motion or translation. State one allowed action and one action that would change the problem instead of solving it.",
+    },
+    {
+        "id": "protected-fact",
+        "title": "Name what survives",
+        "test": "The page must identify the durable evidence: parity, Euler characteristic, boundary order, orientation, signed total, fixed-point meeting, index sum, or another preserved relation.",
+        "strong_answer": "A strong explanation makes the protected fact do work. The conclusion follows because that fact survived the legal move, not because the page says the method is useful.",
+        "failure": "The writing fails when it gives an outcome without showing what evidence survived long enough to force that outcome.",
+        "repair": "Add one sentence that starts with the surviving evidence and ends with the conclusion it can force.",
+    },
+    {
+        "id": "failure-condition",
+        "title": "Say what would break the claim",
+        "test": "The page must name the hidden condition that would make the explanation invalid: missing orientation, illegal crossing, changed boundary, incomplete defect list, wrong state space, or overread source.",
+        "strong_answer": "A strong explanation protects the reader from using the idea too broadly. It names the condition under which the same words would no longer prove the same claim.",
+        "failure": "The writing fails when every method sounds available everywhere and no page says when the method stops helping.",
+        "repair": "Add a failure sentence tied to the object. Say what assumption is required and what would go wrong if the assumption were absent.",
+    },
+    {
+        "id": "course-anchor",
+        "title": "Tie the idea to a course moment",
+        "test": "The page must connect the explanation to a lecture moment, source trail, example, or transcript-grounded anchor rather than floating as a general summary.",
+        "strong_answer": "A strong explanation lets the reader move from the page back to a lecture example or source note and see why that exact moment supports the claim.",
+        "failure": "The writing fails when it could be pasted into any topology summary without changing a word.",
+        "repair": "Add the lecture number, example, or source caveat that makes the explanation belong to this course companion.",
+    },
+    {
+        "id": "plain-language-replacement",
+        "title": "Replace formal words with everyday sentences",
+        "test": "The page must be readable by someone who has not studied topology. Formal words may appear, but each important word needs a plain sentence saying what job it performs.",
+        "strong_answer": "A strong explanation can be read twice: first as everyday reasoning about shapes and motion, then as the formal mathematical term that names that reasoning.",
+        "failure": "The writing fails when it hides the reason inside words such as invariant, manifold, index, orientation, generic position, or configuration space.",
+        "repair": "After each important word, add a sentence beginning with the job it performs: it keeps track, blocks an escape, records a turn, carries signs, or lists possible states.",
+    },
+]
+
+
 REFERENCES = [
     {
         "id": "tokieda-aims-course",
@@ -2605,6 +2657,7 @@ def page(title, body, current=""):
         ("formula-reader.html", "Formula Reader"),
         ("reader-checks.html", "Reader Checks"),
         ("references.html", "References"),
+        ("quality-rubric.html", "Quality Rubric"),
         ("quality-audit.html", "Quality Audit"),
         ("source-audit.html", "Source Audit"),
     ]
@@ -2812,6 +2865,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "First-principles quality rubric",
+            "evidence": f"The Quality Rubric page gives {len(data['quality_rubric'])} enforced prose tests: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.",
+            "status": "met",
+        },
+        {
             "requirement": "Connected course map",
             "evidence": f"{lecture_examples} lecture examples link forward to concepts; every concept links back to lecture appearances, with appearance counts from {concept_min} to {concept_max}.",
             "status": "met",
@@ -2897,6 +2955,7 @@ def build_quality_audit(data):
             "proof_moves": len(data["proof_moves"]),
             "reader_checks": 11,
             "references": len(data["references"]),
+            "quality_rubric_items": len(data["quality_rubric"]),
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -2966,6 +3025,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 {card('References', 'Course, primary-paper, and standard-text links for the main ideas, with notes on what each source supports and what claim would overread it.', 'references.html', 'Sources')}
+{card('Quality Rubric', 'Six first-principles tests keep long prose honest: object, legal move, surviving evidence, failure condition, course anchor, and everyday-language replacement.', 'quality-rubric.html', 'Rubric')}
 </div>
 """
     (SITE / "index.html").write_text(page("Topology & Geometry Course Companion", body, "Course"), encoding="utf-8")
@@ -3225,6 +3285,26 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 """
     (SITE / "references.html").write_text(page("References", references_body, "References"), encoding="utf-8")
 
+    rubric_cards = "".join(
+        f"""<article class="card"><div class="meta">{esc(item['id'])}</div><h3>{esc(item['title'])}</h3><p><b>Test:</b> {esc(item['test'])}</p><p><b>Strong answer:</b> {esc(item['strong_answer'])}</p><p><b>Failure:</b> {esc(item['failure'])}</p><p><b>Repair:</b> {esc(item['repair'])}</p></article>"""
+        for item in data["quality_rubric"]
+    )
+    rubric_body = f"""
+<h1>Quality Rubric</h1>
+<p class="lead">This page is the writing standard for the companion. It catches prose that is long but still too loose by requiring every important explanation to name the object, move, surviving evidence, failure condition, course anchor, and plain-language replacement.</p>
+<section class="lecture">
+  <h2>How To Use The Rubric</h2>
+  <p>Read a lecture, concept, theme, subtheme, or method-family page with these six tests beside it. If a paragraph cannot pass one test, the repair is not to add a harder word. The repair is to state the missing object, action, protected fact, failure condition, source footing, or everyday sentence.</p>
+  <p>The goal is not simpler in the sense of thinner. The goal is more accountable. A reader should be able to say what the page is doing before they trust a theorem name, formula, or formal term.</p>
+</section>
+<div class="grid two">{rubric_cards}</div>
+<section class="lecture">
+  <h2>Completion Test</h2>
+  <p>A page is not ready merely because it is long. It is ready when a reader can use the page to answer six questions: What is the object? What move is allowed? What fact survives? What would break the claim? Which course moment or source supports it? What everyday sentence replaces the formal word?</p>
+</section>
+"""
+    (SITE / "quality-rubric.html").write_text(page("Quality Rubric", rubric_body, "Quality Rubric"), encoding="utf-8")
+
     video_links = "".join(f'<a href="{esc(v["youtube_url"])}">{v["index"]:02d}. {esc(v["title"])}</a>' for v in data["videos"])
     body = f"<h1>Video Links</h1><p class='lead'>Every individual YouTube item in playlist order.</p><div class='video-list'>{video_links}</div>"
     (SITE / "videos.html").write_text(page("Video Links", body, "Videos"), encoding="utf-8")
@@ -3374,7 +3454,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['references']} references, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -3515,6 +3595,7 @@ def main():
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
         "references": REFERENCES,
+        "quality_rubric": QUALITY_RUBRIC,
     }
     missing = [v["id"] for v in videos if not v["caption_file"]]
     data["missing_caption_ids"] = missing
@@ -3541,6 +3622,7 @@ def main():
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "references.json", REFERENCES)
+    write_json(ANALYSIS / "quality-rubric.json", QUALITY_RUBRIC)
     write_json(ANALYSIS / "course-companion.json", data)
     write_json(ANALYSIS / "quality-audit.json", data["quality_audit"])
     metrics = data["quality_audit"]["metrics"]
@@ -3592,6 +3674,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - proof-moves.html with {metrics['proof_moves']} reusable proof recipes
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - references.html with {metrics['references']} course, primary-paper, and standard-text links, each with source caveats and lecture/concept coverage
+- quality-rubric.html with {metrics['quality_rubric_items']} prose tests for object, legal move, protected fact, failure condition, course anchor, and plain-language replacement
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
 Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.

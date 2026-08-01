@@ -41,6 +41,7 @@ This repo is the source and generated static site for a first-principles compani
 - `math-playground.html` — four interactive canvas widgets.
 - `reader-checks.html` — eleven common reasoning failure checks.
 - `references.html` — course, primary-paper, and standard-text links with source caveats and lecture/concept coverage.
+- `quality-rubric.html` — six first-principles prose tests for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.
 - `quality-audit.html` — generated readiness evidence.
 - `source-audit.html` — caption/source caveats and per-lecture caption nuance.
 
@@ -91,6 +92,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - can-you-use-this-method answer-guide sections on every family page;
 - reader checks structure;
 - references layer structure and page content;
+- quality-rubric structure and page content;
 - broken local links;
 - banned vague phrases in generated HTML.
 
@@ -129,6 +131,7 @@ As of the current generated audit:
 - 8 concept dependency paths.
 - 5 proof-move recipes.
 - 11 reader checks.
+- 6 quality-rubric tests.
 
 ## Local Readiness Evidence
 
