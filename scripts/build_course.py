@@ -4804,45 +4804,78 @@ def build_family_answer_guide(family):
     playbook = family["playbook"]
     depth = family["depth"]
     fid = family["id"]
+    title = family["title"]
     evidence = plain_fragment(contract["evidence"], ["The protected evidence is", "The protected evidence"])
     output = plain_fragment(contract["output"], ["The output is", "The output"])
-    failure = plain_fragment(contract["failure_test"], ["The method fails when", "It fails when", "The contract breaks if"])
+    failure = sentence_fragment(plain_fragment(contract["failure_test"], ["Reject the argument if", "The method fails when", "It fails when", "The contract breaks if"]))
+    human_problem = sentence_fragment(plain_fragment(depth["human_problem"], ["The human problem is"]))
+    human_problem_reason = f"the course needs {human_problem}" if human_problem.startswith("to ") else human_problem
     input_close = varied((fid, "input-close"), [
-        "Use of the method starts only after the reader knows what object or situation is being fed into it.",
-        "That starting object decides whether the method is answering the intended problem.",
-        "If the input is vague, every later step may be precise about the wrong thing.",
-        "The family starts here because a method has no force without the right object.",
+        f"{title} starts only after the reader knows what object or situation is being fed into it.",
+        f"That starting object decides whether {title} is answering the intended problem.",
+        f"If the input is unclear, every later step in {title} may be precise about the wrong thing.",
+        f"This family has no force until the starting object has been named plainly.",
     ])
     action_close = varied((fid, "action-close"), [
-        "Describe the action before allowing the method name to carry the reasoning.",
-        "The action is the proof move; the family name is only a handle for it.",
-        "This keeps the method from becoming a label for a result whose work is hidden.",
-        "The reader should see the operation before trusting the method title.",
+        f"Describe the action before allowing {title} to carry the reasoning by name.",
+        f"The action is the part that does the work; the method title only names that move after it is visible.",
+        f"This keeps {title} from becoming a label for work the page has not shown.",
+        f"The reader should see the operation before trusting the method title.",
     ])
     evidence_close = varied((fid, "evidence-close"), [
-        "The method works because this evidence survives the allowed action and still answers the starting question.",
-        "That survival is what lets the final object speak about the original one.",
-        "The evidence is the load-bearing part of the method; without it, the action is only a transformation.",
-        "This is the reason one cleaned-up, counted, or modeled situation can stand for the starting problem.",
+        f"{title} works only if this evidence survives the allowed action and still answers the starting question.",
+        f"That survival is what lets the final situation speak about the original one.",
+        f"The evidence is the part that does the mathematical work; without it, the action is only a transformation.",
+        f"This is why one cleaned-up, counted, or modeled situation can stand for the starting problem.",
     ])
     output_close = varied((fid, "output-close"), [
-        "The reader should be able to name the proved, counted, blocked, or forced consequence.",
-        "The output should be stated as a consequence, not as a restatement of the method name.",
-        "The method is successful only when the final claim returns to the problem it began with.",
-        "The ending should say exactly what new constraint, comparison, or existence claim has been earned.",
+        f"The reader should be able to name the consequence this method has earned: what was proved, counted, blocked, or forced.",
+        f"The output should be stated as a consequence, not as a restatement of the method name.",
+        f"{title} succeeds only when the final claim returns to the problem it began with.",
+        f"The final sentence should name the new constraint, comparison, or existence claim that has been earned.",
     ])
     failure_close = varied((fid, "family-failure-close"), [
-        "This guard prevents the method from solving a different problem.",
-        "The failure test marks the boundary between a valid use and an attractive misuse.",
-        "That guardrail is part of the method, because the same action can be illegal under a different rulebook.",
-        "The method is not ready until the reader can say what would make it break.",
+        f"This guard prevents {title} from solving a different problem.",
+        f"The failure test shows the reader exactly where a tempting use stops being valid.",
+        f"That guardrail is part of {title}, because the same action can be illegal under a different rulebook.",
+        f"{title} is not ready until the reader can say what would make it break.",
+    ])
+    input_prompt = varied((fid, "family-input-answer-prompt"), [
+        f"For {title}, first name the situation being fed into the method: {contract['input']} The human problem is {human_problem} {input_close}",
+        f"Start the method from its object, not from its name: {contract['input']} That object matters for this reason: {human_problem_reason} {input_close}",
+        f"Before using {title}, say what kind of situation it accepts: {contract['input']} This answers the human problem: {human_problem} {input_close}",
+        f"Make the input inspectable before the method begins: {contract['input']} The input matters because it points to this need: {human_problem_reason} {input_close}",
+    ])
+    action_prompt = varied((fid, "family-action-answer-prompt"), [
+        f"Now say what {title} does to that input: {contract['action']} The playbook version is: {playbook['move']} {action_close}",
+        f"Describe the move in ordinary words: {contract['action']} On the page, that move appears as: {playbook['move']} {action_close}",
+        f"Use {title} as an action, not a label: {contract['action']} The playbook move makes the action checkable: {playbook['move']} {action_close}",
+        f"State the operation the family performs: {contract['action']} Then compare it with the playbook move: {playbook['move']} {action_close}",
+    ])
+    evidence_prompt = varied((fid, "family-evidence-answer-prompt"), [
+        f"Name the evidence {title} must protect: {evidence} The payoff is: {playbook['payoff']} {evidence_close}",
+        f"After the action, ask what survived: {evidence} That survival gives this payoff: {playbook['payoff']} {evidence_close}",
+        f"The method earns trust by carrying this evidence: {evidence} The payoff explains why it matters: {playbook['payoff']} {evidence_close}",
+        f"Do not stop at the action; name the evidence it preserves: {evidence} The playbook payoff is: {playbook['payoff']} {evidence_close}",
+    ])
+    output_prompt = varied((fid, "family-output-answer-prompt"), [
+        f"Say what {title} produces at the end: {output} The method works this way: {depth['how_it_works']} {output_close}",
+        f"State the final consequence in plain words: {output} Then tie it to the working mechanism: {depth['how_it_works']} {output_close}",
+        f"The output of {title} should be a claim about the original problem: {output} The reason the claim follows is: {depth['how_it_works']} {output_close}",
+        f"Close the method by naming its earned result: {output} That result comes from this mechanism: {depth['how_it_works']} {output_close}",
+    ])
+    failure_prompt = varied((fid, "family-failure-answer-prompt"), [
+        f"Finally test where {title} breaks: {failure} The playbook failure says the same risk this way: {playbook['failure']} {failure_close}",
+        f"Name the bad use before trusting the method: {failure} The playbook warning is: {playbook['failure']} {failure_close}",
+        f"Reject the method when this condition appears: {failure} That matches the playbook failure: {playbook['failure']} {failure_close}",
+        f"End by naming what would make the argument fail: {failure} The method page describes that failure as: {playbook['failure']} {failure_close}",
     ])
     return {
-        "input_answer": f"Start by naming the input: {contract['input']} Connect that input to the human problem: {depth['human_problem']} {input_close}",
-        "action_answer": f"State the action before naming the method: {contract['action']} Then name the playbook move: {playbook['move']} {action_close}",
-        "evidence_answer": f"Protect this evidence: {evidence} Explain the payoff: {playbook['payoff']} {evidence_close}",
-        "output_answer": f"Name what the method is supposed to produce: {output} Connect that output to how the method works: {depth['how_it_works']} {output_close}",
-        "failure_answer": f"Know the failure test: {failure} Connect that test to the playbook failure: {playbook['failure']} {failure_close}",
+        "input_answer": input_prompt,
+        "action_answer": action_prompt,
+        "evidence_answer": evidence_prompt,
+        "output_answer": output_prompt,
+        "failure_answer": failure_prompt,
     }
 
 
