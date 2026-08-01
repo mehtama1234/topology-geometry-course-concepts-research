@@ -7121,6 +7121,138 @@
       ]
     }
   ],
+  "weak_claim_repair_rows": [
+    {
+      "title": "Same shape means same answer",
+      "weak_claim": "These two pictures are the same topologically, so the answer is the same for the original problem.",
+      "why_weak": "The sentence skips the object and the permission. A reader cannot tell whether the gluing rule, endpoint data, boundary order, or forbidden crossing rule survived the move.",
+      "first_principles_repair": "Say what the object is first. Then say the picture was changed only by moves that keep the gluing rule, boundary data, and forbidden regions fixed, so the question being answered is still the original question.",
+      "detail_to_check": "Check one local move at a time and ask whether it changes the rule that defines the object, not whether the final drawing looks cleaner.",
+      "where_to_use": "Use this repair on deformation, quotient, knot, route, and surface pages before saying that a simplified drawing proves the original claim.",
+      "concepts": [
+        "deformation",
+        "quotient-space",
+        "topology-vs-geometry"
+      ]
+    },
+    {
+      "title": "The count is invariant",
+      "weak_claim": "This number is invariant, so it proves the obstruction and shows the desired motion cannot happen.",
+      "why_weak": "The word invariant does all the work without naming the allowed changes or explaining why the number survives them.",
+      "first_principles_repair": "Name the moves the problem allows, then explain what happens to the count under each move. If new pieces appear in matched pairs, or if signed contributions cancel, say that plainly before using the number as evidence.",
+      "detail_to_check": "Ask what event could change the raw count and what rule prevents that event from changing the protected count.",
+      "where_to_use": "Use this repair on Euler characteristic, parity, winding, linking, intersection-number, and graph-planarity explanations whenever a number is used as proof.",
+      "concepts": [
+        "invariant",
+        "intersection-number",
+        "euler-characteristic"
+      ]
+    },
+    {
+      "title": "The theorem applies",
+      "weak_claim": "By the theorem, the required point or obstruction exists, so the example has the conclusion we wanted.",
+      "why_weak": "The sentence asks the theorem to speak before proving that the current object is the kind of object the theorem is about.",
+      "first_principles_repair": "Before the theorem name, list the object, the rule or field on it, the needed condition, and the exact conclusion type. Then say whether the theorem gives existence, equality, parity, obstruction, or a count.",
+      "detail_to_check": "Check that the rule maps the space back into itself, the field includes all defects, or the surface/count is the one named by the theorem.",
+      "where_to_use": "Use this repair on fixed-point, Brouwer, Poincare-Hopf, vector-field index, and theorem-contract pages.",
+      "concepts": [
+        "brouwer-fixed-point",
+        "poincare-hopf",
+        "fixed-points"
+      ]
+    },
+    {
+      "title": "The picture makes it clear",
+      "weak_claim": "The picture makes the conclusion obvious once the reader sees the drawing in the right way.",
+      "why_weak": "A picture can suggest the right idea while still hiding the rule that makes the idea true. The reader needs to know what part of the picture is evidence and what part is only a helpful drawing.",
+      "first_principles_repair": "Point to the exact feature being used: a side change, a forced crossing, a signed pair, a boundary order, a hole in a state space, or a whole-surface total. Then explain why that feature survives legal changes.",
+      "detail_to_check": "Ask whether redrawing the picture, changing scale, or moving a curve legally would keep the named feature.",
+      "where_to_use": "Use this repair on lecture pages where a demonstration carries the explanation from a concrete object into a mathematical claim.",
+      "concepts": [
+        "generic-position",
+        "boundary-orientation",
+        "configuration-space"
+      ]
+    },
+    {
+      "title": "The model captures the motion",
+      "weak_claim": "The configuration space shows whether the system can move from one physical position to another.",
+      "why_weak": "The sentence skips the meaning of one point in the model and does not say which physical states were removed as impossible.",
+      "first_principles_repair": "Say what one point of the configuration space records: every position, angle, choice, or relation needed for one allowed state. Then name the collision, boundary, or blocked states that have been removed.",
+      "detail_to_check": "Trace one physical motion and one path in the state space, and confirm that every intermediate point represents a legal physical state.",
+      "where_to_use": "Use this repair on configuration-space, product-space, motion-family, and transfer-lab pages.",
+      "concepts": [
+        "configuration-space",
+        "product-space",
+        "deformation"
+      ]
+    },
+    {
+      "title": "Signs cancel",
+      "weak_claim": "The plus and minus terms cancel, so only the total matters for the final answer.",
+      "why_weak": "The sentence treats signs as if they were automatic labels. It does not explain where the shared direction rule comes from or why opposite signs are comparable.",
+      "first_principles_repair": "Name the orientation rule, boundary direction, or local direction comparison that assigns signs. Then explain the local pair creation or cancellation event that keeps the signed total stable.",
+      "detail_to_check": "Ask whether a plus sign in one place and a minus sign in another place were assigned by the same rulebook.",
+      "where_to_use": "Use this repair on boundary orientation, intersection number, vector-field index, and formula-reader pages.",
+      "concepts": [
+        "boundary-orientation",
+        "intersection-number",
+        "vector-field-index"
+      ]
+    },
+    {
+      "title": "Local behavior determines the whole surface",
+      "weak_claim": "The local pieces add up to the global conclusion, so the whole surface must obey the formula.",
+      "why_weak": "The sentence says local and global without explaining the bookkeeping bridge between small neighborhoods and the whole object.",
+      "first_principles_repair": "Describe one local contribution first, such as a turn, defect index, angle shortage, or cell piece. Then explain the rule for adding all contributions across the whole surface and what total they must match.",
+      "detail_to_check": "Ask whether every local contribution is included exactly once and whether the surface used for the total is the same surface being studied.",
+      "where_to_use": "Use this repair on Gauss-Bonnet, Poincare-Hopf, Euler characteristic, triangulation, and local-to-global theme pages.",
+      "concepts": [
+        "gauss-bonnet",
+        "poincare-hopf",
+        "euler-characteristic"
+      ]
+    },
+    {
+      "title": "The source supports this",
+      "weak_claim": "The listed source supports the explanation on this page and gives the reader enough authority.",
+      "why_weak": "The sentence does not say what kind of support is being claimed: exact lecture wording, recovered caption evidence, course-arc inference, background theorem, or broader source family.",
+      "first_principles_repair": "Name the sentence being supported and the source role behind it. If the source supports only a background family or a formal theorem, weaken the page sentence so it does not pretend to be exact lecture evidence.",
+      "detail_to_check": "Ask what stronger sentence would no longer be supported if the caption stayed missing or the source were only a background reference.",
+      "where_to_use": "Use this repair on references, paper-source-reader, lecture-source-bridges, source-nuance-repairs, and source-audit pages.",
+      "concepts": [
+        "topology-vs-geometry",
+        "invariant",
+        "poincare-hopf"
+      ]
+    },
+    {
+      "title": "This is just an example of the concept",
+      "weak_claim": "This example illustrates the concept and helps the reader see why the idea is useful.",
+      "why_weak": "The sentence does not say what the example lets the reader inspect. A useful example should expose the object, the allowed move, the protected fact, or the failure condition.",
+      "first_principles_repair": "Say what the example makes visible. It may show one point in a state space, one legal deformation, one crossing pair, one glued boundary, one defect, or one source boundary. Then say what the reader should test.",
+      "detail_to_check": "Ask whether the example would still teach the idea if the formal concept name were removed from the paragraph.",
+      "where_to_use": "Use this repair on concept pages, theme pages, subtheme pages, and lecture examples that currently rely too much on naming.",
+      "concepts": [
+        "topology-vs-geometry",
+        "deformation",
+        "invariant"
+      ]
+    },
+    {
+      "title": "The big picture is about shape",
+      "weak_claim": "The big picture is that topology studies shape and ignores geometry when solving these problems.",
+      "why_weak": "The sentence is too broad and can mislead the reader into thinking size and angle never matter. The course is more precise: it chooses which facts should survive a chosen class of changes.",
+      "first_principles_repair": "Say the course studies questions where the important fact survives bending, redrawing, cutting into valid cells, or moving through allowed states. Geometry is not thrown away; it is kept when the question needs it and set aside when it distracts from the surviving fact.",
+      "detail_to_check": "Ask what the current question protects: side information, boundary order, a count, a path obstruction, a self-agreement point, or a whole-surface total.",
+      "where_to_use": "Use this repair on course-synthesis, math-why, topology-vs-geometry, themes, and first-viewport overview pages.",
+      "concepts": [
+        "topology-vs-geometry",
+        "invariant",
+        "manifold"
+      ]
+    }
+  ],
   "proof_moves": [
     {
       "name": "Deform a picture without changing the original question",
@@ -8388,6 +8520,11 @@
         "status": "met"
       },
       {
+        "requirement": "Weak-claim repair layer",
+        "evidence": "The Weak Claim Repairs page gives 10 shallow course sentences rewritten into first-principles explanations with diagnosis, repair, detail check, where-to-use field, and concept links, with 1174 repair words.",
+        "status": "met"
+      },
+      {
         "requirement": "Proof-move recipes",
         "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
         "status": "met"
@@ -8487,6 +8624,8 @@
       "assumption_ledger_words": 1363,
       "counterexample_gallery_rows": 10,
       "counterexample_gallery_words": 1053,
+      "weak_claim_repair_rows": 10,
+      "weak_claim_repair_words": 1174,
       "proof_moves": 5,
       "theorem_use_contracts": 8,
       "theorem_contract_words": 1271,
@@ -8504,7 +8643,7 @@
       "rubric_coverage_layers": 6,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 94
+      "html_pages_before_audit_page": 95
     }
   }
 }

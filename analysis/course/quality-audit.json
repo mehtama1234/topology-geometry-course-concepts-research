@@ -122,6 +122,11 @@
       "status": "met"
     },
     {
+      "requirement": "Weak-claim repair layer",
+      "evidence": "The Weak Claim Repairs page gives 10 shallow course sentences rewritten into first-principles explanations with diagnosis, repair, detail check, where-to-use field, and concept links, with 1174 repair words.",
+      "status": "met"
+    },
+    {
       "requirement": "Proof-move recipes",
       "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
       "status": "met"
@@ -221,6 +226,8 @@
     "assumption_ledger_words": 1363,
     "counterexample_gallery_rows": 10,
     "counterexample_gallery_words": 1053,
+    "weak_claim_repair_rows": 10,
+    "weak_claim_repair_words": 1174,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
     "theorem_contract_words": 1271,
@@ -238,6 +245,6 @@
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 94
+    "html_pages_before_audit_page": 95
   }
 }
