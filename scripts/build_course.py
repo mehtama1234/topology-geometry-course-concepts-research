@@ -1260,6 +1260,100 @@ ASSUMPTION_LEDGER_ROWS = [
 ]
 
 
+COUNTEREXAMPLE_GALLERY_ROWS = [
+    {
+        "title": "Flattening a twist loses the surface",
+        "tempting_claim": "The strip can be flattened into an ordinary band, so the two strip pictures should answer the same question.",
+        "missing_condition": "The flattening forgot the end-gluing rule. A legal simplification must preserve which edge points are identified and how a route returns after one trip.",
+        "failure_scene": "A local drawing of a twisted strip and an untwisted band may look like the same rectangle, but walking around the finished strip records different side information.",
+        "why_it_breaks": "The simplified picture changed the whole object. It did not merely move the object; it replaced the gluing rule that carries the global fact.",
+        "repair": "State the gluing rule before drawing. Then any simplification has to preserve that rule, not only the visible rectangular shape.",
+        "concepts": ["quotient-space", "topology-vs-geometry", "boundary-orientation"],
+    },
+    {
+        "title": "Moving an endpoint removes the obstruction",
+        "tempting_claim": "Two routes can be uncrossed by sliding one endpoint around the boundary, so the crossing was never forced.",
+        "missing_condition": "The boundary data are part of the problem. Endpoint order, marked points, or boundary labels must stay fixed during the deformation.",
+        "failure_scene": "If an endpoint can move freely around the boundary, a route obstruction may vanish, but that motion answers a different route problem.",
+        "why_it_breaks": "The argument changed the rulebook at the boundary. The original obstruction lived in the boundary order that was silently rearranged.",
+        "repair": "Mark the endpoints and keep them fixed while simplifying the interior. Then test whether a crossing remains forced under that restricted motion.",
+        "concepts": ["boundary-orientation", "graph-planarity", "deformation"],
+    },
+    {
+        "title": "Counting raw crossings overreads the picture",
+        "tempting_claim": "The drawing has two crossings, so the mathematical evidence should be the visible number two.",
+        "missing_condition": "The count needs a survival rule. Raw crossings can appear or disappear under legal motion unless signs, parity, or another protected account is being used.",
+        "failure_scene": "A small legal nudge can create a pair of crossings or remove a pair without changing the problem being studied.",
+        "why_it_breaks": "The raw number measured an accident of the drawing. It did not name the part of the count that survives the allowed changes.",
+        "repair": "Ask what the legal moves do to the count. Use signed totals, parity, or another protected account only after explaining why it survives.",
+        "concepts": ["intersection-number", "parity", "invariant"],
+    },
+    {
+        "title": "Using signs without orientation",
+        "tempting_claim": "The plus crossings and minus crossings cancel, so the signed total proves the same conclusion.",
+        "missing_condition": "The signs need a shared direction rule. Orientation or boundary orientation must make plus and minus comparable across the object.",
+        "failure_scene": "If each local sign is chosen independently, the symbols may cancel on paper while failing to describe one consistent mathematical account.",
+        "why_it_breaks": "The addition used labels that did not belong to the same rulebook. A signed total has meaning only when the sign convention can be carried consistently.",
+        "repair": "Name the orientation source first. If the object cannot support the required direction rule, do not use signed cancellation as evidence.",
+        "concepts": ["boundary-orientation", "intersection-number", "vector-field-index"],
+    },
+    {
+        "title": "Applying Brouwer outside its contract",
+        "tempting_claim": "A continuous rule has a fixed point because Brouwer says continuous maps have fixed points.",
+        "missing_condition": "The rule must map the right kind of space back into itself and satisfy the theorem's setup. The domain, target, boundary, and continuity conditions matter.",
+        "failure_scene": "A rule from an interval into a larger line can move every point outside the interval, so the diagonal comparison inside the original interval no longer applies.",
+        "why_it_breaks": "The theorem was asked to speak about the wrong object. Self-agreement is a statement inside one space, not a reward for any continuous formula.",
+        "repair": "Before naming Brouwer, name the space, the rule, where outputs land, and which condition forces the graph to meet the diagonal.",
+        "concepts": ["brouwer-fixed-point", "fixed-points", "configuration-space"],
+    },
+    {
+        "title": "Leaving out one vector-field defect",
+        "tempting_claim": "The visible equilibria have total index zero, so the surface allows a defect-free field elsewhere.",
+        "missing_condition": "Every isolated defect on the relevant surface must be counted, and the field must satisfy the theorem's surface or boundary conditions.",
+        "failure_scene": "A drawing can hide a defect outside the pictured patch or at the boundary, making the visible total smaller than the true whole-surface account.",
+        "why_it_breaks": "Poincare-Hopf compares the complete local total with the whole surface. A partial list is not the theorem's local side.",
+        "repair": "Name the surface, inspect all defects, state boundary behavior, and only then compare the total index with Euler characteristic.",
+        "concepts": ["poincare-hopf", "vector-field-index", "euler-characteristic"],
+    },
+    {
+        "title": "Modeling motion with missing forbidden states",
+        "tempting_claim": "A path exists in the drawn state diagram, so the physical system can move that way.",
+        "missing_condition": "The configuration space must remove every forbidden state and record every freedom needed to describe one complete physical state.",
+        "failure_scene": "If collision states remain in the diagram, a path may pass through a physical impossibility while looking continuous in the model.",
+        "why_it_breaks": "The topology was applied to the wrong state space. Paths in the model no longer correspond to legal motions of the original system.",
+        "repair": "Say what one point records, remove forbidden states, then ask whether a path through the remaining space represents a real motion.",
+        "concepts": ["configuration-space", "product-space", "deformation"],
+    },
+    {
+        "title": "Changing the surface during a cell count",
+        "tempting_claim": "The Euler characteristic changed after redrawing the cells, so the surface number itself changed.",
+        "missing_condition": "Both cell accounts must describe the same surface. Refining or redrawing cells is allowed; changing the gluing, boundary, or surface type is not.",
+        "failure_scene": "A careless diagram can drop a boundary edge or double-count a glued edge, producing a new number that belongs to the bookkeeping error.",
+        "why_it_breaks": "The alternating count only survives valid changes in the cell account. It does not protect mistakes that change the surface being counted.",
+        "repair": "Check the surface first, then check vertices, edges, and faces. The count is evidence only when the cell account still describes the same object.",
+        "concepts": ["euler-characteristic", "triangulation", "manifold"],
+    },
+    {
+        "title": "Reading a source as stronger than it is",
+        "tempting_claim": "The reference is listed, so it proves the exact sentence on the lecture page.",
+        "missing_condition": "A source supports only the claim its evidence can actually carry: course identity, background family, formal theorem, visible lecture move, or recovered caption wording.",
+        "failure_scene": "A background text may support vector-field index as a mathematical family without proving that Tokieda stated one exact sentence in one lecture.",
+        "why_it_breaks": "The citation was used as authority without naming the claim it supports. That turns a source trail into overclaiming.",
+        "repair": "Name the sentence, name the source evidence, and weaken the sentence if the evidence supports only a background family or course-arc inference.",
+        "concepts": ["topology-vs-geometry", "poincare-hopf", "invariant"],
+    },
+    {
+        "title": "Treating a theorem as a procedure",
+        "tempting_claim": "The theorem proves existence, so it also tells us how to find the object or path.",
+        "missing_condition": "The theorem's conclusion must be read exactly. Some results force existence, parity, obstruction, or total count without giving a construction or location.",
+        "failure_scene": "A fixed-point theorem may prove that some point exists while giving no recipe for finding it, and Poincare-Hopf may constrain defects without solving trajectories.",
+        "why_it_breaks": "The answer asked the theorem for more than its contract provides. Existence, location, construction, and computation are different kinds of conclusions.",
+        "repair": "State the conclusion type: existence, obstruction, equality, parity, or count. Then say what stronger conclusion remains unproved.",
+        "concepts": ["brouwer-fixed-point", "poincare-hopf", "fixed-points"],
+    },
+]
+
+
 THEMES = [
     {
         "id": "see-by-deforming",
@@ -3773,6 +3867,7 @@ def page(title, body, current=""):
         ("oral-exam.html", "Oral Exam"),
         ("change-ledger.html", "Change Ledger"),
         ("assumption-ledger.html", "Assumption Ledger"),
+        ("counterexample-gallery.html", "Counterexamples"),
         ("proof-moves.html", "Proof Moves"),
         ("formula-reader.html", "Formula Reader"),
         ("theorem-use-contracts.html", "Theorem Contracts"),
@@ -4122,6 +4217,7 @@ def build_quality_audit(data):
     oral_exam_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["prompt", "strong_answer", "must_include", "common_failure", "follow_up"]) for row in data["oral_exam_prompts"])
     change_ledger_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["object", "legal_change", "protected_fact", "why_matters", "false_move", "reader_test"]) for row in data["change_ledger_rows"])
     assumption_ledger_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["claim", "assumption", "why_needed", "plain_check", "breaks_if", "course_place"]) for row in data["assumption_ledger_rows"])
+    counterexample_gallery_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["tempting_claim", "missing_condition", "failure_scene", "why_it_breaks", "repair"]) for row in data["counterexample_gallery_rows"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -4239,6 +4335,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Counterexample gallery",
+            "evidence": f"The Counterexample Gallery page gives {len(data['counterexample_gallery_rows'])} tempting false claims with missing condition, failure scene, why it breaks, repair, and concept links, with {counterexample_gallery_words} counterexample words.",
+            "status": "met",
+        },
+        {
             "requirement": "Proof-move recipes",
             "evidence": f"The Proof Moves page gives {len(data['proof_moves'])} reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
             "status": "met",
@@ -4337,6 +4438,8 @@ def build_quality_audit(data):
             "change_ledger_words": change_ledger_words,
             "assumption_ledger_rows": len(data["assumption_ledger_rows"]),
             "assumption_ledger_words": assumption_ledger_words,
+            "counterexample_gallery_rows": len(data["counterexample_gallery_rows"]),
+            "counterexample_gallery_words": counterexample_gallery_words,
             "proof_moves": len(data["proof_moves"]),
             "theorem_use_contracts": len(data["theorem_use_contracts"]),
             "theorem_contract_words": theorem_contract_words,
@@ -4422,6 +4525,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Oral Exam', 'Seven final prompts test whether a reader can explain the course chain, theorem contracts, modeling choices, and source caveats without page prompts.', 'oral-exam.html', 'Readiness')}
 {card('Change Ledger', 'Ten cases make the reader separate what changes from what stays fixed: object, legal change, protected fact, false move, and reader test.', 'change-ledger.html', 'Ledger')}
 {card('Assumption Ledger', 'Ten hidden assumptions show when a deformation, count, theorem, model, source claim, or fixed-point argument is allowed to speak.', 'assumption-ledger.html', 'Assumptions')}
+{card('Counterexample Gallery', 'Ten failure scenes show what breaks when a hidden condition is removed, then repair the claim in plain language.', 'counterexample-gallery.html', 'Failures')}
 {card('Proof Moves', 'Five reusable proof recipes show the steps: name the object, name legal moves, protect evidence, and use the conclusion without hiding the contract.', 'proof-moves.html', 'Moves')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Theorem Contracts', 'Eight contracts state when central course results may be used: required object, allowed move, protected evidence, conclusion, break condition, and everyday test.', 'theorem-use-contracts.html', 'Contracts')}
@@ -4716,6 +4820,45 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 """
     (SITE / "assumption-ledger.html").write_text(page("Assumption Ledger", assumption_body, "Assumption Ledger"), encoding="utf-8")
+
+    counterexample_cards = "".join(
+        f"""<article class="card"><div class="meta">Failure scene</div><h3>{esc(row['title'])}</h3><p><b>Tempting claim:</b> {esc(row['tempting_claim'])}</p><p><b>Missing condition:</b> {esc(row['missing_condition'])}</p><p><b>Failure scene:</b> {esc(row['failure_scene'])}</p><p><b>Why it breaks:</b> {esc(row['why_it_breaks'])}</p><p><b>Repair:</b> {esc(row['repair'])}</p><p>{concept_pills(row['concepts'], data['concepts'])}</p></article>"""
+        for row in data["counterexample_gallery_rows"]
+    )
+    counterexample_body = f"""
+<h1>Counterexample Gallery</h1>
+<p class="lead">This page shows what breaks when a correct-looking sentence drops a needed condition. Each card starts with a tempting claim, names the missing condition, gives a concrete failure scene, and repairs the sentence.</p>
+<section class="lecture">
+  <h2>How To Use A Counterexample</h2>
+  <p>Do not read a counterexample as a separate topic. Read it as a stress test for a claim you wanted to believe. If the claim fails after one condition is removed, that condition belongs in the explanation. The point is not to memorize the failure scene; the point is to learn which permission the original argument needed.</p>
+  <p>The repair line matters because a counterexample should not leave the reader with only a warning. It should teach how to write the sentence correctly: name the object, name the condition, and state the conclusion that remains justified.</p>
+</section>
+<div class="grid two">{counterexample_cards}</div>
+<section class="lecture">
+  <h2>The Counterexample Test</h2>
+  <p>Use this page after the assumption ledger. The assumption ledger asks what must be true. The counterexample gallery asks what goes wrong when it is not true. Together they make theorem use and modeling accountable.</p>
+  <p>A good counterexample answer has three sentences. First, it says the tempting claim in plain language. Second, it says which condition was removed. Third, it explains why the repaired claim is weaker but now true for the original course object.</p>
+</section>
+<section class="lecture">
+  <h2>Repairing A Failed Claim</h2>
+  <p>When a counterexample breaks a sentence, do not replace it with a vague warning. Repair the sentence by naming the condition that was missing. If the problem changed at the boundary, say the boundary data must stay fixed. If a count failed, say which part of the count survives legal moves. If a model failed, say what one state records and which states are forbidden.</p>
+  <p>The repair should be smaller than a new explanation. A useful repair often begins with words like provided that, as long as, after checking, or for this same object. Those words are not decoration. They are the permission that lets the claim speak.</p>
+  <p>Use the repaired sentence on the matching lecture, concept, theorem contract, or source page. A reader should be able to return to the original explanation and see exactly where the missing condition now belongs.</p>
+</section>
+<section class="lecture">
+  <h2>How To Review With This Gallery</h2>
+  <p>Pick a page and find its strongest claim. Then ask which card in this gallery could break that claim if a condition were removed. A deformation page should survive the endpoint and gluing tests. A counting page should survive the raw-count and sign-rule tests. A fixed-point page should survive the same-space test. A source page should survive the exact-claim test.</p>
+  <p>The point is not to make every page longer. The point is to prevent a short sentence from hiding a changed problem. If the condition is already visible nearby, leave the page alone. If it is missing, add one plain sentence before the theorem name, count, model, or citation is used.</p>
+</section>
+<section class="lecture">
+  <h2>Connection To Readiness</h2>
+  <p>Use this gallery before the oral exam. For each oral answer, ask for one failure scene. If the answer explains deformation, ask what illegal move would make the deformation false. If it explains a theorem, ask which assumption would make the theorem stop applying. If it explains a source, ask which stronger sentence would overread the evidence.</p>
+  <p>This is how the companion avoids shallow confidence. A reader is not ready when they can only state the correct version. They are ready when they can also say what nearby false version would fail and how to repair it.</p>
+  <p>During review, give credit only when the failure scene changes one named condition and leaves the rest of the problem recognizable. If everything changes at once, the counterexample is too vague to teach the original claim.</p>
+  <p>The best failure scene is small, local, and easy to inspect.</p>
+</section>
+"""
+    (SITE / "counterexample-gallery.html").write_text(page("Counterexample Gallery", counterexample_body, "Counterexamples"), encoding="utf-8")
 
     proof_cards = "".join(
         f"""<article class="card"><div class="meta">{esc(row['name'])}</div><h3>{esc(row['problem'])}</h3><p><b>Steps:</b></p><ol>{''.join(f'<li>{esc(step)}</li>' for step in row['steps'])}</ol><p><b>Why it works:</b> {esc(row['why'])}</p><p><b>Failure mode:</b> {esc(row['failure'])}</p><p><b>Course example:</b> {esc(row['example'])}</p><p><b>Family:</b> <a class="pill" href="{slug_page('family', row['family'])}">{esc(row['family'])}</a></p></article>"""
@@ -5261,7 +5404,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['transfer_lab_cases']} transfer-lab cases, {qa_metrics['repair_clinic_cases']} repair-clinic cases, {qa_metrics['oral_exam_prompts']} oral-exam prompts, {qa_metrics['change_ledger_rows']} change-ledger rows, {qa_metrics['assumption_ledger_rows']} assumption-ledger rows, {qa_metrics['paper_family_ledger_rows']} paper-family rows, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['concept_contrasts']} concept contrast pairs, {qa_metrics['source_nuance_repairs']} source nuance repair notes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['source_nuance_repair_words']} source-nuance repair words, {qa_metrics['transfer_lab_words']} transfer-lab words, {qa_metrics['repair_clinic_words']} repair-clinic words, {qa_metrics['oral_exam_words']} oral-exam words, {qa_metrics['change_ledger_words']} change-ledger words, {qa_metrics['assumption_ledger_words']} assumption-ledger words, {qa_metrics['paper_family_ledger_words']} paper-family words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['concept_contrast_words']} concept-contrast words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['transfer_lab_cases']} transfer-lab cases, {qa_metrics['repair_clinic_cases']} repair-clinic cases, {qa_metrics['oral_exam_prompts']} oral-exam prompts, {qa_metrics['change_ledger_rows']} change-ledger rows, {qa_metrics['assumption_ledger_rows']} assumption-ledger rows, {qa_metrics['counterexample_gallery_rows']} counterexample rows, {qa_metrics['paper_family_ledger_rows']} paper-family rows, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['concept_contrasts']} concept contrast pairs, {qa_metrics['source_nuance_repairs']} source nuance repair notes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['source_nuance_repair_words']} source-nuance repair words, {qa_metrics['transfer_lab_words']} transfer-lab words, {qa_metrics['repair_clinic_words']} repair-clinic words, {qa_metrics['oral_exam_words']} oral-exam words, {qa_metrics['change_ledger_words']} change-ledger words, {qa_metrics['assumption_ledger_words']} assumption-ledger words, {qa_metrics['counterexample_gallery_words']} counterexample words, {qa_metrics['paper_family_ledger_words']} paper-family words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['concept_contrast_words']} concept-contrast words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -5443,6 +5586,7 @@ def main():
         "oral_exam_prompts": ORAL_EXAM_PROMPTS,
         "change_ledger_rows": CHANGE_LEDGER_ROWS,
         "assumption_ledger_rows": ASSUMPTION_LEDGER_ROWS,
+        "counterexample_gallery_rows": COUNTEREXAMPLE_GALLERY_ROWS,
         "proof_moves": PROOF_MOVES,
         "theorem_use_contracts": THEOREM_USE_CONTRACTS,
         "concept_contrasts": CONCEPT_CONTRASTS,
@@ -5484,6 +5628,7 @@ def main():
     write_json(ANALYSIS / "oral-exam.json", ORAL_EXAM_PROMPTS)
     write_json(ANALYSIS / "change-ledger.json", CHANGE_LEDGER_ROWS)
     write_json(ANALYSIS / "assumption-ledger.json", ASSUMPTION_LEDGER_ROWS)
+    write_json(ANALYSIS / "counterexample-gallery.json", COUNTEREXAMPLE_GALLERY_ROWS)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "theorem-use-contracts.json", THEOREM_USE_CONTRACTS)
     write_json(ANALYSIS / "concept-contrasts.json", CONCEPT_CONTRASTS)
@@ -5547,6 +5692,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - oral-exam.html with {metrics['oral_exam_prompts']} final readiness prompts and {metrics['oral_exam_words']} oral-exam words
 - change-ledger.html with {metrics['change_ledger_rows']} change-versus-survival cases and {metrics['change_ledger_words']} change-ledger words
 - assumption-ledger.html with {metrics['assumption_ledger_rows']} hidden-assumption cases and {metrics['assumption_ledger_words']} assumption-ledger words
+- counterexample-gallery.html with {metrics['counterexample_gallery_rows']} failure scenes and {metrics['counterexample_gallery_words']} counterexample words
 - proof-moves.html with {metrics['proof_moves']} reusable proof recipes
 - concept-contrasts.html with {metrics['concept_contrasts']} contrast pairs and {metrics['concept_contrast_words']} contrast words separating ideas readers often blur
 - source-nuance-repairs.html with {metrics['source_nuance_repairs']} lecture-specific source repair notes that state caption hazards, safe claims, repair moves, do-not-claim guards, and reviewer questions
@@ -5558,7 +5704,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every source-nuance repair field to clear 14 words, every transfer-lab field to clear 14 words, every repair-clinic field to clear 14 words, every oral-exam field to clear 14 words, every change-ledger field to clear 14 words, every assumption-ledger field to clear 14 words, every paper-family field to clear 14 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every source-nuance repair field to clear 14 words, every transfer-lab field to clear 14 words, every repair-clinic field to clear 14 words, every oral-exam field to clear 14 words, every change-ledger field to clear 14 words, every assumption-ledger field to clear 14 words, every counterexample field to clear 14 words, every paper-family field to clear 14 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

@@ -449,6 +449,31 @@ def main():
         if missing:
             fail(f"assumption ledger {row.get('title')} unknown concepts: {missing}")
 
+    counterexample_gallery_rows = data.get("counterexample_gallery_rows") or []
+    required_counterexample_titles = {
+        "Flattening a twist loses the surface",
+        "Moving an endpoint removes the obstruction",
+        "Counting raw crossings overreads the picture",
+        "Using signs without orientation",
+        "Applying Brouwer outside its contract",
+        "Leaving out one vector-field defect",
+        "Modeling motion with missing forbidden states",
+        "Changing the surface during a cell count",
+        "Reading a source as stronger than it is",
+        "Treating a theorem as a procedure",
+    }
+    if {row.get("title") for row in counterexample_gallery_rows} != required_counterexample_titles:
+        fail("counterexample gallery rows do not match required case set")
+    for row in counterexample_gallery_rows:
+        for field in ["tempting_claim", "missing_condition", "failure_scene", "why_it_breaks", "repair"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"counterexample gallery {row.get('title')} {field} too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"counterexample gallery {row.get('title')} needs concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"counterexample gallery {row.get('title')} unknown concepts: {missing}")
+
     family_ids = {family["id"] for family in data["families"]}
     proof_moves = data.get("proof_moves") or []
     if len(proof_moves) < 5:
@@ -631,7 +656,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "change-ledger.html", "assumption-ledger.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "paper-family-ledger.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "change-ledger.html", "assumption-ledger.html", "counterexample-gallery.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "paper-family-ledger.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -702,6 +727,14 @@ def main():
         fail("assumption ledger page needs ten cards")
     if len(words(re.sub(r"<[^>]+>", " ", assumption_ledger))) < 2200:
         fail("assumption ledger page too thin")
+    counterexample_gallery = (SITE / "counterexample-gallery.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Counterexample Gallery", "Tempting claim:", "Missing condition:", "Failure scene:", "Why it breaks:", "Repair:", "The Counterexample Test"]:
+        if phrase not in counterexample_gallery:
+            fail(f"counterexample gallery page missing phrase: {phrase}")
+    if counterexample_gallery.count("<article") < 10:
+        fail("counterexample gallery page needs ten cards")
+    if len(words(re.sub(r"<[^>]+>", " ", counterexample_gallery))) < 2000:
+        fail("counterexample gallery page too thin")
     lecture_spine_page = (SITE / "lecture-spine.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Lecture Spine", "Object:", "Plain question:", "Legal move:", "Surviving fact:", "Why later lectures need it:"]:
         if phrase not in lecture_spine_page:

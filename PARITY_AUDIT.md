@@ -25,6 +25,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Oral exam readiness | `site/oral-exam.html` gives seven no-notes prompts that test whether a reader can explain the course chain, deformation arguments, theorem contracts, physical models, fixed points, equilibria, and source claims out loud | Met |
 | Change ledger | `site/change-ledger.html` gives ten cases that separate object, legal change, protected fact, false move, reader test, and concept links | Met |
 | Assumption ledger | `site/assumption-ledger.html` gives ten hidden-assumption cases that state what must be true before a deformation, count, theorem, model, fixed-point claim, or source claim can speak | Met |
+| Counterexample gallery | `site/counterexample-gallery.html` gives ten failure scenes that show what breaks when a needed condition is removed and how to repair the claim | Met |
 | Proof moves | `site/proof-moves.html` gives five reusable first-principles proof recipes with steps, failure modes, and course examples | Met |
 | Formula reader | `site/formula-reader.html` translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks; `site/theorem-use-contracts.html` states when eight central results and methods may be used | Met |
 | Concept contrast reader | `site/concept-contrasts.html` separates ten neighboring ideas readers often blur, including topology/geometry, invariant/raw count, quotient/drawing, fixed point/equilibrium, and index/Euler characteristic | Met |
@@ -33,7 +34,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Term translator | `site/term-translator.html` translates 16 formal course words into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links | Met |
 | References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats; `site/paper-source-reader.html` explains each source family from first principles; `site/paper-family-ledger.html` states the paper-family contract for each source | Met |
 | Quality/source audits | `site/quality-rubric.html`, `site/rubric-coverage.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, rubric coverage maps those tests across six layers, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 93 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 94 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -46,7 +47,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 93 generated HTML pages.
+- 94 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 5,333 lecture essay words.
@@ -89,6 +90,8 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,275 change-ledger words.
 - 10 assumption-ledger cases.
 - 1,363 assumption-ledger words.
+- 10 counterexample-gallery cases.
+- 1,053 counterexample words.
 - 5 proof-move recipes.
 - 8 theorem-use contracts.
 - 1,271 theorem-contract words.
@@ -127,6 +130,7 @@ The validator checks:
 - oral exam structure, required prompt set, field depth, page depth, and concept-link integrity;
 - change ledger structure, required case set, field depth, page depth, and concept-link integrity;
 - assumption ledger structure, required case set, field depth, page depth, and concept-link integrity;
+- counterexample gallery structure, required case set, field depth, page depth, and concept-link integrity;
 - proof-move structure and length;
 - theorem-use contract structure, required result set, field depth, and concept-link integrity;
 - concept contrast structure, required contrast set, field depth, and concept-link integrity;

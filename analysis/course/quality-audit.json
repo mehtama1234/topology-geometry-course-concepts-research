@@ -117,6 +117,11 @@
       "status": "met"
     },
     {
+      "requirement": "Counterexample gallery",
+      "evidence": "The Counterexample Gallery page gives 10 tempting false claims with missing condition, failure scene, why it breaks, repair, and concept links, with 1053 counterexample words.",
+      "status": "met"
+    },
+    {
       "requirement": "Proof-move recipes",
       "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
       "status": "met"
@@ -214,6 +219,8 @@
     "change_ledger_words": 1275,
     "assumption_ledger_rows": 10,
     "assumption_ledger_words": 1363,
+    "counterexample_gallery_rows": 10,
+    "counterexample_gallery_words": 1053,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
     "theorem_contract_words": 1271,
@@ -231,6 +238,6 @@
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 93
+    "html_pages_before_audit_page": 94
   }
 }

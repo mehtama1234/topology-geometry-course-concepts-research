@@ -26,6 +26,7 @@ The companion now satisfies the requested depth shape across the main reader-fac
 - **Oral exam readiness** (met): The Oral Exam page gives 7 final readiness prompts with prompt, strong answer, must-include field, common failure, follow-up question, and concept links, with 875 oral-exam words.
 - **Change ledger** (met): The Change Ledger page gives 10 change-versus-survival cases with object, legal change, protected fact, why it matters, false move, reader test, and concept links, with 1275 change-ledger words.
 - **Assumption ledger** (met): The Assumption Ledger page gives 10 hidden-assumption cases with claim, assumption, why needed, plain check, break condition, course place, and concept links, with 1363 assumption-ledger words.
+- **Counterexample gallery** (met): The Counterexample Gallery page gives 10 tempting false claims with missing condition, failure scene, why it breaks, repair, and concept links, with 1053 counterexample words.
 - **Proof-move recipes** (met): The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.
 - **Formula reader for mathematical statements** (met): The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.
 - **Theorem-use contracts** (met): The Theorem Use Contracts page gives 8 use contracts with required object, allowed move, protected evidence, conclusion, break condition, everyday test, and concept links, with 1271 theorem-contract words.

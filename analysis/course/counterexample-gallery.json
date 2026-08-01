@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Flattening a twist loses the surface",
+    "tempting_claim": "The strip can be flattened into an ordinary band, so the two strip pictures should answer the same question.",
+    "missing_condition": "The flattening forgot the end-gluing rule. A legal simplification must preserve which edge points are identified and how a route returns after one trip.",
+    "failure_scene": "A local drawing of a twisted strip and an untwisted band may look like the same rectangle, but walking around the finished strip records different side information.",
+    "why_it_breaks": "The simplified picture changed the whole object. It did not merely move the object; it replaced the gluing rule that carries the global fact.",
+    "repair": "State the gluing rule before drawing. Then any simplification has to preserve that rule, not only the visible rectangular shape.",
+    "concepts": [
+      "quotient-space",
+      "topology-vs-geometry",
+      "boundary-orientation"
+    ]
+  },
+  {
+    "title": "Moving an endpoint removes the obstruction",
+    "tempting_claim": "Two routes can be uncrossed by sliding one endpoint around the boundary, so the crossing was never forced.",
+    "missing_condition": "The boundary data are part of the problem. Endpoint order, marked points, or boundary labels must stay fixed during the deformation.",
+    "failure_scene": "If an endpoint can move freely around the boundary, a route obstruction may vanish, but that motion answers a different route problem.",
+    "why_it_breaks": "The argument changed the rulebook at the boundary. The original obstruction lived in the boundary order that was silently rearranged.",
+    "repair": "Mark the endpoints and keep them fixed while simplifying the interior. Then test whether a crossing remains forced under that restricted motion.",
+    "concepts": [
+      "boundary-orientation",
+      "graph-planarity",
+      "deformation"
+    ]
+  },
+  {
+    "title": "Counting raw crossings overreads the picture",
+    "tempting_claim": "The drawing has two crossings, so the mathematical evidence should be the visible number two.",
+    "missing_condition": "The count needs a survival rule. Raw crossings can appear or disappear under legal motion unless signs, parity, or another protected account is being used.",
+    "failure_scene": "A small legal nudge can create a pair of crossings or remove a pair without changing the problem being studied.",
+    "why_it_breaks": "The raw number measured an accident of the drawing. It did not name the part of the count that survives the allowed changes.",
+    "repair": "Ask what the legal moves do to the count. Use signed totals, parity, or another protected account only after explaining why it survives.",
+    "concepts": [
+      "intersection-number",
+      "parity",
+      "invariant"
+    ]
+  },
+  {
+    "title": "Using signs without orientation",
+    "tempting_claim": "The plus crossings and minus crossings cancel, so the signed total proves the same conclusion.",
+    "missing_condition": "The signs need a shared direction rule. Orientation or boundary orientation must make plus and minus comparable across the object.",
+    "failure_scene": "If each local sign is chosen independently, the symbols may cancel on paper while failing to describe one consistent mathematical account.",
+    "why_it_breaks": "The addition used labels that did not belong to the same rulebook. A signed total has meaning only when the sign convention can be carried consistently.",
+    "repair": "Name the orientation source first. If the object cannot support the required direction rule, do not use signed cancellation as evidence.",
+    "concepts": [
+      "boundary-orientation",
+      "intersection-number",
+      "vector-field-index"
+    ]
+  },
+  {
+    "title": "Applying Brouwer outside its contract",
+    "tempting_claim": "A continuous rule has a fixed point because Brouwer says continuous maps have fixed points.",
+    "missing_condition": "The rule must map the right kind of space back into itself and satisfy the theorem's setup. The domain, target, boundary, and continuity conditions matter.",
+    "failure_scene": "A rule from an interval into a larger line can move every point outside the interval, so the diagonal comparison inside the original interval no longer applies.",
+    "why_it_breaks": "The theorem was asked to speak about the wrong object. Self-agreement is a statement inside one space, not a reward for any continuous formula.",
+    "repair": "Before naming Brouwer, name the space, the rule, where outputs land, and which condition forces the graph to meet the diagonal.",
+    "concepts": [
+      "brouwer-fixed-point",
+      "fixed-points",
+      "configuration-space"
+    ]
+  },
+  {
+    "title": "Leaving out one vector-field defect",
+    "tempting_claim": "The visible equilibria have total index zero, so the surface allows a defect-free field elsewhere.",
+    "missing_condition": "Every isolated defect on the relevant surface must be counted, and the field must satisfy the theorem's surface or boundary conditions.",
+    "failure_scene": "A drawing can hide a defect outside the pictured patch or at the boundary, making the visible total smaller than the true whole-surface account.",
+    "why_it_breaks": "Poincare-Hopf compares the complete local total with the whole surface. A partial list is not the theorem's local side.",
+    "repair": "Name the surface, inspect all defects, state boundary behavior, and only then compare the total index with Euler characteristic.",
+    "concepts": [
+      "poincare-hopf",
+      "vector-field-index",
+      "euler-characteristic"
+    ]
+  },
+  {
+    "title": "Modeling motion with missing forbidden states",
+    "tempting_claim": "A path exists in the drawn state diagram, so the physical system can move that way.",
+    "missing_condition": "The configuration space must remove every forbidden state and record every freedom needed to describe one complete physical state.",
+    "failure_scene": "If collision states remain in the diagram, a path may pass through a physical impossibility while looking continuous in the model.",
+    "why_it_breaks": "The topology was applied to the wrong state space. Paths in the model no longer correspond to legal motions of the original system.",
+    "repair": "Say what one point records, remove forbidden states, then ask whether a path through the remaining space represents a real motion.",
+    "concepts": [
+      "configuration-space",
+      "product-space",
+      "deformation"
+    ]
+  },
+  {
+    "title": "Changing the surface during a cell count",
+    "tempting_claim": "The Euler characteristic changed after redrawing the cells, so the surface number itself changed.",
+    "missing_condition": "Both cell accounts must describe the same surface. Refining or redrawing cells is allowed; changing the gluing, boundary, or surface type is not.",
+    "failure_scene": "A careless diagram can drop a boundary edge or double-count a glued edge, producing a new number that belongs to the bookkeeping error.",
+    "why_it_breaks": "The alternating count only survives valid changes in the cell account. It does not protect mistakes that change the surface being counted.",
+    "repair": "Check the surface first, then check vertices, edges, and faces. The count is evidence only when the cell account still describes the same object.",
+    "concepts": [
+      "euler-characteristic",
+      "triangulation",
+      "manifold"
+    ]
+  },
+  {
+    "title": "Reading a source as stronger than it is",
+    "tempting_claim": "The reference is listed, so it proves the exact sentence on the lecture page.",
+    "missing_condition": "A source supports only the claim its evidence can actually carry: course identity, background family, formal theorem, visible lecture move, or recovered caption wording.",
+    "failure_scene": "A background text may support vector-field index as a mathematical family without proving that Tokieda stated one exact sentence in one lecture.",
+    "why_it_breaks": "The citation was used as authority without naming the claim it supports. That turns a source trail into overclaiming.",
+    "repair": "Name the sentence, name the source evidence, and weaken the sentence if the evidence supports only a background family or course-arc inference.",
+    "concepts": [
+      "topology-vs-geometry",
+      "poincare-hopf",
+      "invariant"
+    ]
+  },
+  {
+    "title": "Treating a theorem as a procedure",
+    "tempting_claim": "The theorem proves existence, so it also tells us how to find the object or path.",
+    "missing_condition": "The theorem's conclusion must be read exactly. Some results force existence, parity, obstruction, or total count without giving a construction or location.",
+    "failure_scene": "A fixed-point theorem may prove that some point exists while giving no recipe for finding it, and Poincare-Hopf may constrain defects without solving trajectories.",
+    "why_it_breaks": "The answer asked the theorem for more than its contract provides. Existence, location, construction, and computation are different kinds of conclusions.",
+    "repair": "State the conclusion type: existence, obstruction, equality, parity, or count. Then say what stronger conclusion remains unproved.",
+    "concepts": [
+      "brouwer-fixed-point",
+      "poincare-hopf",
+      "fixed-points"
+    ]
+  }
+]
