@@ -4019,6 +4019,10 @@ def without_leading_label(text, label):
     return text[len(label):].lstrip() if text.startswith(label) else text
 
 
+def sentence_fragment(text):
+    return text[:1].lower() + text[1:] if text else text
+
+
 def reference_cards(refs):
     if not refs:
         return ""
@@ -4577,61 +4581,86 @@ def build_concept_self_check(concept):
     role = depth["course_role"]
     protected = plain_fragment(work["protected"], ["The protected fact is", "The protected fact"])
     failure = plain_fragment(work["breaks_if"], ["It breaks if", "It breaks when", "The idea breaks if"])
+    beginner_trap = sentence_fragment(plain_fragment(depth["beginner_trap"], ["The trap is", "The beginner trap is"]))
     object_close = varied((cid, "object-close"), [
-        "At that point the theorem name is a label for work already visible on the page.",
-        "The name should arrive after the reader can already point to the carrier of the argument.",
-        "This prevents the page from asking a formal word to do the job of an explanation.",
-        "The reader should be able to point to the working object before any formal name is trusted.",
-        f"For {title}, the first proof of understanding is being able to say what is being watched before saying what it is called.",
-        "If the object is vague, every later count, motion, theorem, or source claim is floating.",
-        "A good answer makes the object inspectable enough that another reader could draw it, model it, or test it.",
-        "The formal word should shorten the explanation only after the object has already been made visible.",
+        f"For {title}, the name earns its keep only after the reader can say what thing is being watched and where it sits in the course example.",
+        f"The object should be concrete enough that another reader could sketch it, move it, count on it, or say what part of it carries the constraint.",
+        f"Do not let the formal name hide the carrier of the idea; the page must first show the surface, route, field, map, count, or state space doing the work.",
+        f"The course moment should feel like a test case for {title}, not a caption placed beside a definition.",
+        f"A good answer can point to the object before using any theorem name, because the later conclusion has to belong to that object.",
+        f"The object statement should already contain the needed rule or setting: boundary, gluing, forbidden crossing, orientation, field, map, or possible-state description.",
+        f"For this concept, understanding begins when the reader can say what would be drawn or acted out before any symbolic shortcut appears.",
+        f"The course example should make the object visible enough that the reader can tell whether a later source is talking about the same kind of thing.",
     ])
     operation_close = varied((cid, "operation-close"), [
-        "Without that permission, the move may be replacing the problem instead of solving it.",
-        "The legal move is part of the proof, not a side condition to check after the fact.",
-        "This is where many weak explanations fail: they show the simpler picture but not the permitted route to it.",
-        "The page should make the permission visible before asking the reader to trust the outcome.",
-        "The reader should be able to say which nearby shortcut would change the question.",
-        "This is the step that turns a suggestive picture into an argument someone else can audit.",
-        "The move is honest only if the same question is still being answered after the operation.",
-        "If the rule of motion is missing, the conclusion may belong to the cleaned-up object rather than to the original one.",
+        f"The important question is whether the operation leaves the same {title} problem in place or quietly swaps in an easier one.",
+        "The allowed move is not paperwork; it is the reason a simpler picture can still answer the original question.",
+        f"For {title}, the forbidden shortcut is as important as the permitted move, because the shortcut is exactly what can erase the evidence.",
+        "The reader should be able to act out the move and also say where the move would become illegal.",
+        "A clean picture is useful only if the route to that picture respects the original boundary, crossing, gluing, field, or state rule.",
+        f"The operation should explain what changes and what is kept fixed while {title} is being used.",
+        "The move should sound like something that can be checked on the course example, not like a permission imported from a definition.",
+        "If a nearby shortcut would change the answer, the check should name that shortcut in ordinary words.",
     ])
     legal_check = varied((cid, "legal-check"), [
-        "Say why this move is allowed in the problem at hand.",
-        "Name the rule that makes this operation legitimate here.",
-        "Explain what fixed data, boundary rule, or model condition the operation preserves.",
-        "State why the operation keeps the original question intact.",
-        "Point to the feature that is not allowed to change while the operation is performed.",
-        "State the permission in words a beginner could check on the example.",
-        "Say what would count as cheating during this operation.",
-        "Tie the permission back to the course moment, not only to the formal definition.",
+        "Say which part of the setup gives permission for this move.",
+        "Name the rule that is being preserved while the picture changes.",
+        "Explain what fixed data, boundary behavior, or model condition stays in place.",
+        "Say why the operation is still answering the original question.",
+        "Point to the feature that the operation is not allowed to disturb.",
+        "State the permission in words that can be checked on the course example.",
+        "Name the shortcut that would count as cheating here.",
+        "Tie the permission to the course moment before tying it to a formal definition.",
     ])
     protected_close = varied((cid, "protected-close"), [
-        "That is the mathematical core: the conclusion only has force if the evidence survives the allowed move.",
-        "The proof lives in that survival, because the final picture speaks for the original only through carried evidence.",
-        "This is where the course turns a picture into an argument: the same evidence remains available after the legal change.",
-        "The protected evidence is what lets the reader move from an example to a conclusion without guessing.",
-        f"For {title}, this is the part that does the mathematical work; without it, the page has only a description.",
-        "The reader should be able to say why this fact, and not a visible accident of the drawing, earns the conclusion.",
-        "This carried evidence is the receipt that lets the course reuse the idea later.",
-        f"Connect this survival to the course role: {role}",
+        f"For {title}, this surviving fact is the reason the example can teach more than one drawing.",
+        "The conclusion is only as strong as the evidence that survives the permitted change.",
+        "The reader should be able to separate this surviving fact from details such as neatness, length, position, or one convenient drawing.",
+        f"This is the part of {title} that travels forward into the course role: {role}",
+        "The protected fact should explain why the final picture still speaks about the first picture.",
+        "A strong answer names the evidence that remains after the allowed move, then says what conclusion that evidence can and cannot carry.",
+        f"For this concept, the protected fact is the bridge from the course moment to the later use, not an extra sentence after the definition.",
+        "If the same fact would not survive the legal change, the concept has only been named, not used.",
     ])
     failure_close = varied((cid, "failure-close"), [
-        "This check matters because the same words can become false when a hidden assumption changes.",
-        "The failure scene keeps the explanation honest about the boundary between a valid use and an overreach.",
-        "Naming the break point stops the concept from becoming a slogan that works only in the easy case.",
-        "The limit is part of the idea, because a theorem used outside its rulebook answers a different question.",
-        "A strong explanation includes this boundary so the reader knows what not to claim.",
-        "The break point is not a warning after the fact; it is part of the meaning of the concept.",
-        "This is where the reader learns whether the idea is being used carefully or only being named.",
-        "If the failure condition is missing, the explanation may sound clear while silently proving too much.",
+        f"The failure case is part of {title}: it tells the reader which changed assumption destroys the claim.",
+        "The limit should be concrete enough that the reader can recognize a bad use in a new example.",
+        "Naming the break point keeps the concept tied to its rulebook instead of turning it into a loose slogan.",
+        "The warning belongs inside the explanation because changing the rule often changes the answer.",
+        "A good answer says not only when the idea works, but which tempting nearby use would be false.",
+        f"For {title}, the beginner trap is not a side note; it is the fastest way to see which detail the concept protects.",
+        "The break point should make the hypothesis feel necessary rather than ceremonial.",
+        "If the failure condition is missing, the explanation may sound clear while quietly claiming too much.",
+    ])
+    object_prompt = varied((cid, "object-check-prompt"), [
+        f"Start with the thing {title} is about: {work['object']} Then test it against the course moment: {anchor['course_moment']} {object_close}",
+        f"Before naming {title}, say the object in ordinary words: {work['object']} The course moment should then make that object visible: {anchor['course_moment']} {object_close}",
+        f"Ask what the page is really studying: {work['object']} Now attach that answer to the lecture evidence: {anchor['course_moment']} {object_close}",
+        f"Make the carrier of the idea visible first: {work['object']} The course moment is the check on that carrier: {anchor['course_moment']} {object_close}",
+    ])
+    operation_prompt = varied((cid, "operation-check-prompt"), [
+        f"Now say what is done to that object: {work['operation']} {legal_check} {operation_close}",
+        f"Next describe the allowed move without hiding behind terminology: {work['operation']} {legal_check} {operation_close}",
+        f"Check the operation as a rule-governed action: {work['operation']} {legal_check} {operation_close}",
+        f"Say what changes in the picture, model, count, or field: {work['operation']} {legal_check} {operation_close}",
+    ])
+    protected_prompt = varied((cid, "protected-check-prompt"), [
+        f"Name the fact that survives the move: {protected} Then connect it to the course principle: {anchor['principle']} {protected_close}",
+        f"After the move, identify what is still available as evidence: {protected} The course principle says why that evidence matters: {anchor['principle']} {protected_close}",
+        f"Do not stop at the changed picture; say what came through unchanged: {protected} Link that survival to the principle: {anchor['principle']} {protected_close}",
+        f"State the durable evidence in plain words: {protected} Then explain how the course uses it: {anchor['principle']} {protected_close}",
+    ])
+    failure_prompt = varied((cid, "failure-check-prompt"), [
+        f"Finally say where the idea fails: {failure} Then name the beginner mistake it prevents: {beginner_trap} {failure_close}",
+        f"Test the edge of the claim: {failure} The trap to avoid is this: {beginner_trap} {failure_close}",
+        f"Say which changed condition breaks the argument: {failure} Then use the beginner trap as a warning label: {beginner_trap} {failure_close}",
+        f"Close by naming the bad use: {failure} The common first mistake is: {beginner_trap} {failure_close}",
     ])
     return {
-        "object_check": f"First say what the object is in ordinary words: {work['object']} Then anchor that object in the course moment: {anchor['course_moment']} {object_close}",
-        "operation_check": f"Next say what is allowed to happen to that object: {work['operation']} {legal_check} {operation_close}",
-        "protected_check": f"Now name the evidence that must survive: {protected} Connect that evidence to the course principle: {anchor['principle']} {protected_close}",
-        "failure_check": f"Finally state when the idea reaches its limit: {failure} Also name the beginner mistake it avoids: {depth['beginner_trap']} {failure_close}",
+        "object_check": object_prompt,
+        "operation_check": operation_prompt,
+        "protected_check": protected_prompt,
+        "failure_check": failure_prompt,
     }
 
 
@@ -5513,7 +5542,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 <section class="lecture">
   <h2>Repairing A Weak Answer</h2>
-  <p>When an answer fails the ledger test, repair only the missing part. If the object is vague, add one sentence that says what one point, route, field, cell, or glued edge represents. If the legal change is vague, add one sentence naming the allowed motion and the forbidden shortcut. If the protected fact is vague, add one sentence naming the count, side information, equality, path question, or source boundary that survives.</p>
+  <p>When an answer fails the ledger test, repair only the missing part. When the object is unclear, add one sentence that says what one point, route, field, cell, or glued edge represents. When the legal change is unclear, add one sentence naming the allowed motion and the forbidden shortcut. When the protected fact is unclear, add one sentence naming the count, side information, equality, path question, or source boundary that survives.</p>
   <p>A repaired answer should not become more formal just to sound safer. It should become more checkable. The reader should be able to point to the object, act out the allowed change, say what would break the argument, and name the conclusion that the protected fact can support. That is the course habit in its plainest form.</p>
   <p>Give no credit for a sentence that only says two pictures are the same, a count is invariant, a theorem applies, or a source supports the claim. Give credit when the sentence explains the permission behind that statement. The permission is the part a beginner can test.</p>
 </section>
