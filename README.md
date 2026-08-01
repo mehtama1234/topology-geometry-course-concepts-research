@@ -16,7 +16,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1 video currently reports no captions through `yt-dlp`: `nx1XOlezuvk`.
 - Raw captions live in `raw-material/youtube/captions/`.
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
-- 73 generated HTML pages in `site/`.
+- 74 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - A course-level synthesis page, a reader-checks page, a quality audit, and a four-widget interactive math playground.
@@ -29,8 +29,9 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps.
 - `site/the-math-why.html` — first-principles mathematical synthesis.
 - `site/course-synthesis.html` — dependency spine across the whole course.
+- `site/formula-reader.html` — plain readings of the course's central formulas and theorem statements.
 - `site/math-playground.html` — interactive widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.
-- `site/reader-checks.html` — common reasoning failure checks.
+- `site/reader-checks.html` — eleven common reasoning failure checks.
 - `site/quality-audit.html` and `site/source-audit.html` — current validation evidence and source caveats.
 
 ## Readiness Docs
@@ -62,7 +63,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 `scripts/validate_all.py` enforces the current quality shape:
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
-- Required generated pages, including synthesis, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
+- Required generated pages, including synthesis, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
 - Minimum essay depth for lecture, concept, theme, subtheme, method-family, and math-why layers.
 - At least three concrete lecture examples per lecture.
 - Concept/theme/subtheme/family id integrity.

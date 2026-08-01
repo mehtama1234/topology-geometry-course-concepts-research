@@ -17,10 +17,11 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
+| Formula reader | `site/formula-reader.html` translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks | Met |
 | Interactive learning | `site/math-playground.html` has four canvas widgets: Euler characteristic, signed cancellation, fixed points, vector-field index | Met |
-| Reader failure checks | `site/reader-checks.html` has ten checks for common reasoning errors | Met |
+| Reader failure checks | `site/reader-checks.html` has eleven checks for common reasoning errors | Met |
 | Quality/source audits | `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md` | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 73 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 74 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -33,7 +34,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 73 generated HTML pages.
+- 74 generated HTML pages.
 - 45 lecture-grounded examples.
 - 3,855 lecture essay words.
 - 4,830 concept essay words.
@@ -42,7 +43,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 824 method-family essay words.
 - 4 playground widgets.
 - 8 synthesis sections.
-- 10 reader checks.
+- 11 reader checks.
 
 ## Validation Gates
 

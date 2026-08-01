@@ -166,7 +166,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "formula-reader.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -189,9 +189,17 @@ def main():
         fail("course synthesis needs dependency, family, and lecture cards")
     if len(words(re.sub(r"<[^>]+>", " ", deep_dive))) < 900:
         fail("course synthesis too thin")
+    formula_reader = (SITE / "formula-reader.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Formula Reader", "Plain reading", "Why it survives", "What it can force", "Reader check"]:
+        if phrase not in formula_reader:
+            fail(f"formula reader missing phrase: {phrase}")
+    if formula_reader.count("<article") < 7:
+        fail("formula reader needs seven formula cards")
+    if len(words(re.sub(r"<[^>]+>", " ", formula_reader))) < 700:
+        fail("formula reader too thin")
     reader_checks = (SITE / "reader-checks.html").read_text(encoding="utf-8", errors="ignore")
-    if reader_checks.count("Reader check") < 10:
-        fail("reader checks page needs ten checks")
+    if reader_checks.count("Reader check") < 11:
+        fail("reader checks page needs eleven checks")
     for phrase in ["What goes wrong", "Ask instead", "legal moves", "protected evidence"]:
         if phrase not in reader_checks:
             fail(f"reader checks page missing phrase: {phrase}")

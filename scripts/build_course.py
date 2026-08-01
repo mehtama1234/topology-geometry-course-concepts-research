@@ -1236,6 +1236,7 @@ def page(title, body, current=""):
         ("the-math-why.html", "The Math Why"),
         ("math-playground.html", "Playground"),
         ("course-synthesis.html", "Synthesis"),
+        ("formula-reader.html", "Formula Reader"),
         ("reader-checks.html", "Reader Checks"),
         ("quality-audit.html", "Quality Audit"),
         ("source-audit.html", "Source Audit"),
@@ -1328,8 +1329,13 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Formula reader for mathematical statements",
+            "evidence": "The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.",
+            "status": "met",
+        },
+        {
             "requirement": "Reader checks for common failure modes",
-            "evidence": "The Reader Checks page gathers course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, and method families.",
+            "evidence": "The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.",
             "status": "met",
         },
     ]
@@ -1349,7 +1355,7 @@ def build_quality_audit(data):
             "family_essay_words": family_essay_words,
             "playground_widgets": 4,
             "synthesis_sections": 8,
-            "reader_checks": 10,
+            "reader_checks": 11,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -1413,7 +1419,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <div class="grid two">
 {card('Math Playground', 'Four small canvas models let the reader adjust cuts, signed pairs, fixed-point graphs, and vector-field turning. The controls make the course principles visible without assuming prior notation.', 'math-playground.html', 'Playground')}
 {card('Course Synthesis', 'A single first-principles path through the whole course: hard situation, mathematical object, operation, reason, and what becomes possible.', 'course-synthesis.html', 'Synthesis')}
-{card('Reader Checks', 'Ten checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, and careless models.', 'reader-checks.html', 'Checks')}
+{card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
+{card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 </div>
 """
     (SITE / "index.html").write_text(page("Topology & Geometry Course Companion", body, "Course"), encoding="utf-8")
@@ -1519,6 +1526,36 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 """
     (SITE / "course-synthesis.html").write_text(page("Course Synthesis", deep_body, "Synthesis"), encoding="utf-8")
 
+    formula_rows = [
+        ("Euler characteristic", "chi = vertices - edges + faces", "Take a surface that has been divided into pieces. Count corner points, subtract edge pieces, then add face pieces.", "When a face is split by a new edge, both the edge count and face count change. The alternating account absorbs that artificial choice.", "The final number belongs to the surface type, not to one chosen drawing or mesh.", "Before using the number, ask what surface is being counted and whether boundaries or different kinds of cells have been accounted for.", "concept-euler-characteristic.html"),
+        ("Signed intersection number", "total = plus meetings - minus meetings", "Count each clean meeting between two objects, but record whether the meeting agrees or disagrees with the direction rule of the surrounding space.", "A legal motion can create two new meetings at once. In the ordinary case they have opposite signs, so the signed total does not change.", "If the protected total is nonzero, the objects cannot be pulled apart by legal motion.", "Before trusting the signs, ask where orientation comes from and whether the meetings are clean enough to count.", "concept-intersection-number.html"),
+        ("Parity", "only even or odd is kept", "Forget the exact number and keep only whether the number is even or odd.", "Some legal changes add or remove events two at a time. That can change the exact count while preserving oddness or evenness.", "An odd protected parity can prove that zero is impossible, even when the exact count is unknown.", "Use parity only when the allowed moves really do change the count by pairs.", "concept-parity.html"),
+        ("Fixed point as graph meets diagonal", "fixed point means graph(f) meets diagonal", "Turn a rule into a shape by drawing all input-output pairs. The diagonal is the set where input and output agree.", "The equation f(x) = x becomes a meeting question. Earlier intersection reasoning can then decide whether that meeting can be avoided.", "A fixed-point theorem can prove that some point stays put without computing which point it is.", "Check the domain, boundary, and continuity of the rule before applying the theorem.", "concept-fixed-points.html"),
+        ("Brouwer fixed point", "every continuous self-map of a closed ball has a fixed point", "Move every point of a filled ball somewhere inside the same filled ball, with nearby points still moving to nearby outputs.", "The filled shape and its boundary block a continuous escape plan in which every point avoids itself.", "Shape can force existence without a formula for the answer.", "The closed ball matters. Changing the space can change the claim.", "concept-brouwer-fixed-point.html"),
+        ("Vector-field index", "index = signed turning around a defect", "Walk around a small loop enclosing a place where the arrow field vanishes. Watch how the nearby arrows turn during that walk.", "The local arrow pattern can be moved or redrawn, but its signed turning survives allowed cleanup as long as the defect is treated honestly.", "A local failure of motion becomes countable evidence.", "Make sure the defect is isolated before assigning a single local index.", "concept-vector-field-index.html"),
+        ("Poincare-Hopf", "sum of indices = Euler characteristic", "Add the signed index of every isolated vector-field defect on a surface.", "Defects may move, split, or cancel in controlled pairs, but the total has to match the surface's Euler characteristic.", "The surface controls the total failure of any arrow field on it.", "Do not read one equilibrium alone as the theorem. The statement is about the whole surface total.", "concept-poincare-hopf.html"),
+    ]
+    formula_cards = "".join(
+        f"""<article class="card"><div class="meta">{esc(name)}</div><h3>{esc(statement)}</h3><p><b>Plain reading:</b> {esc(reading)}</p><p><b>Why it survives:</b> {esc(survival)}</p><p><b>What it can force:</b> {esc(force)}</p><p><b>Reader check:</b> {esc(check)}</p><a class="arrow" href="{href}">Open concept</a></article>"""
+        for name, statement, reading, survival, force, check, href in formula_rows
+    )
+    formula_body = f"""
+<h1>Formula Reader</h1>
+<p class="lead">The formulas in this course are compressed sentences about what is counted, what motion is allowed, why the count survives, and what conclusion the protected count can force.</p>
+<section class="lecture">
+  <h2>How To Read A Formula Here</h2>
+  <p>Start by asking what object the formula is talking about: a surface, a pair of meeting objects, a map, a vector field, or a space of possible states. Then ask what operation produced the numbers: splitting into pieces, assigning signs, walking around a defect, or comparing a graph with a diagonal. Finally ask why the number is allowed to speak after the picture changes. That last step is the mathematics.</p>
+  <p>A formula is useful only when it guards the right information. If the surface was modeled incorrectly, if the signs have no orientation, if the boundary was ignored, or if the defect is not isolated, the symbols may still be written down while the reason has failed.</p>
+</section>
+<div class="grid two">{formula_cards}</div>
+<section class="lecture">
+  <h2>The Common Pattern</h2>
+  <p>Every formula above turns a flexible situation into a disciplined account. Euler characteristic forgets the chosen mesh and remembers the surface. Intersection number forgets temporary crossing pairs and remembers unavoidable meeting. Brouwer turns a rule into forced self-agreement. Poincare-Hopf turns local arrow failures into a whole-surface demand.</p>
+  <p>That is the first-principles point: mathematics is not adding symbols to a picture. It is choosing an account that survives the legal changes in the problem and is strong enough to rule something in or out.</p>
+</section>
+"""
+    (SITE / "formula-reader.html").write_text(page("Formula Reader", formula_body, "Formula Reader"), encoding="utf-8")
+
     check_rows = [
         ("The drawing is being treated as the object", "A square with edge labels, a graph of a map, or a configuration space is a code for relationships. The ink is not the final object.", "The same visible drawing can describe different spaces when the edge rule changes, so the rule has to be read before the picture can be trusted.", "What rule does this picture represent, and what relationships must survive if I redraw it?", "lecture-04.html", "Read Lecture 04"),
         ("The allowed motion is not stated", "A deformation can only prove something after the legal moves are named. Cutting, crossing through, moving endpoints, or dropping a boundary can change the problem.", "The whole proof rests on the promise that the motion preserves the question. Without that promise, a simpler picture may solve a different problem.", "Which motion is legal here, and which feature is being protected while the picture moves?", "family-deformation-family.html", "Open deformation family"),
@@ -1529,6 +1566,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         ("The exceptional case is studied before the ordinary case", "Tangencies, triple meetings, and non-isolated defects can hide the stable mechanism. The clean case should be understood first.", "Ordinary clean cases allow isolated crossings, signs, and indices to be assigned. The exceptional moment is then used to explain how ordinary cases change.", "What happens after a tiny legal nudge, and what changes only at the singular moment?", "theme-generic-before-exception.html", "Open ordinary-case theme"),
         ("The theorem is pasted onto the wrong model", "Applications need an honest state space, rule, boundary, and protected quantity. If the model has the wrong freedoms or barriers, the conclusion may describe the model but not the situation.", "The topological theorem only sees the model. If the model omits a real motion or adds a false wall, the conclusion can be mathematically correct and physically irrelevant.", "Does the mathematical space contain exactly the states and forbidden moves in the original problem?", "family-motion-family.html", "Open motion family"),
         ("A fixed point is expected to be computed", "Fixed-point theorems often prove existence without naming the point. That is not a weakness when the goal is to prove that escape is impossible.", "The course repeatedly values forced existence. Knowing that a point, meeting, or defect must exist can be the central answer even when its exact location is unavailable.", "Is the page proving where the point is, or proving that some point must exist?", "concept-fixed-points.html", "Open fixed points"),
+        ("A formula is read without its protected account", "Symbols such as chi, index, or f(x) = x are easy to repeat while missing what they count. The formula is the end of a reasoning contract, not the beginning.", "The course's equations work only because a legal motion, sign rule, boundary condition, or surface account has already been named.", "What is being counted, why does that account survive, and what conclusion can it force?", "formula-reader.html", "Open formula reader"),
         ("A term is remembered without its job", "Names such as manifold, quotient, index, and invariant matter only when they explain what can move, what is counted, or what is forced.", "A name should compress a working idea, not replace it. If the action behind the word is unclear, the reader has vocabulary without understanding.", "What work does this word perform in the argument?", "subtheme-models-not-labels.html", "Open models, not labels"),
     ]
     checks_html = "".join(
@@ -1777,7 +1815,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
-- reader-checks.html with ten concrete checks for common reasoning failures
+- reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage and missing-caption audit
 
 Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.

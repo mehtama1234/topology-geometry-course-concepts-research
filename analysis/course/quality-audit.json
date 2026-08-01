@@ -47,8 +47,13 @@
       "status": "met"
     },
     {
+      "requirement": "Formula reader for mathematical statements",
+      "evidence": "The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.",
+      "status": "met"
+    },
+    {
       "requirement": "Reader checks for common failure modes",
-      "evidence": "The Reader Checks page gathers course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, and method families.",
+      "evidence": "The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.",
       "status": "met"
     }
   ],
@@ -67,9 +72,9 @@
     "family_essay_words": 824,
     "playground_widgets": 4,
     "synthesis_sections": 8,
-    "reader_checks": 10,
+    "reader_checks": 11,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 73
+    "html_pages_before_audit_page": 74
   }
 }
