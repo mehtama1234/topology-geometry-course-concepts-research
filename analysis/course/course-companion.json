@@ -2091,7 +2091,7 @@
         ],
         "deepening": {
           "what_is_really_happening": "The lecture asks what all local vector-field defects know together when their signed indices are added over the full surface carrying the arrows as one account.",
-          "why_it_is_hard": "It is easy to focus on one source, sink, or saddle and miss that the important object is the total over every isolated defect on the surface.",
+          "why_it_is_hard": "It is easy to focus on one source, sink, or saddle and miss the completed ledger: every isolated defect on the same surface has to enter the total.",
           "key_move": "Clean the field to isolated defects, assign each local index, then compare the sum with the surface carrying the field rather than one defect alone.",
           "payoff": "The reader sees Euler characteristic becoming a demand on motion, not only a surface bookkeeping number from earlier classification work on static shapes and decompositions."
         },
@@ -7862,7 +7862,7 @@
       "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source rather than drifting into a standard list of topology topics. Provenance protects the boundary between this course and the larger subject.",
       "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a provenance source, so it can answer who, what course, and what sequence. It cannot answer why a particular proof works, what exact mathematical claim a lecture makes, or how a missing caption should be filled.",
       "family": "Course provenance",
-      "do_not_overread": "Do not infer extra theorem content from the mirror listing. It supports identity and access, not additional mathematical claims, proof order, or first-principles explanation.",
+      "do_not_overread": "Do not infer extra theorem content from the mirror listing. It verifies identity and access, not additional mathematical claims, proof order, hidden caption content, or first-principles explanation.",
       "reader_question": "What does this source verify about the course identity, and what mathematical claim still needs evidence from captions, visible demonstrations, or a real background reference? The answer should keep identity evidence and mathematical evidence in different boxes.",
       "concepts": [
         "topology-vs-geometry",
@@ -7918,7 +7918,7 @@
     {
       "reference": "milnor-differentiable-viewpoint",
       "reader_problem": "Milnor's notes answer the bridge question: how do smooth local pictures produce topological conclusions about fixed points, degree, and vector fields? The everyday difficulty is that local motion can look like analysis, but the final answer may be a whole-space existence or counting statement.",
-      "object_to_watch": "Watch smooth manifolds, maps, regular values, boundaries, and vector fields. The important object is often local and smooth, but the conclusion belongs to the whole space. The reader should keep asking which local condition was prepared so the global claim is allowed to speak.",
+      "object_to_watch": "Watch smooth manifolds, maps, regular values, boundaries, and vector fields. The object to inspect is often a prepared local event: a clean preimage, a boundary condition, a regular value, or an isolated defect. The conclusion belongs to the whole space only after that local preparation is honest.",
       "first_principles_bridge": "The course repeatedly prepares a clean ordinary case, assigns signs or indices, and then reads a global conclusion. Milnor gives a compact formal route through that same local-to-global movement. The bridge is not that the course suddenly requires smooth machinery; it is that the machinery explains why clean local evidence can add up to a topological conclusion.",
       "how_to_read": "Read it after the term translator and formula reader. Whenever the notes use a formal word, translate it into the job it performs: preparing clean meetings, assigning signs, or forcing a whole-space count. Use it to strengthen the formal background, not to replace the course's plain-language contract or to make beginners climb through prerequisites before they understand the object.",
       "family": "Differentiable topology bridge",
@@ -7952,7 +7952,7 @@
       "family": "Course spine",
       "problem": "This family answers the teaching problem: how can a learner reason about shape before formal language is available? The problem is not a shortage of definitions. The problem is that definitions arrive too late to help unless the reader has already seen what object is being changed, what rule controls the change, and what fact survives.",
       "object": "The object is the course sequence itself, moving from physical demonstrations to drawings, surfaces, fields, and state spaces. The sequence matters as an object because it shows dependence: later fixed-point and vector-field ideas reuse the earlier habit of legal motion plus protected evidence.",
-      "allowed_reading": "Use the lecture order as evidence for how ideas depend on one another, while keeping auto-caption wording, visible demonstrations, and course-arc interpretation in separate buckets.",
+      "allowed_reading": "Use the lecture order as evidence for how ideas depend on one another: paper-strip side behavior prepares orientation, deformation prepares intersection, and signed counts prepare fixed points and index. Keep auto-caption wording, visible demonstrations, and course-arc interpretation in separate buckets.",
       "protected_idea": "The protected idea is the course habit: name the object, name the legal move, protect the surviving fact, and only then name the formal result. If that habit is lost, the companion becomes a list of topology words instead of an explanation of why the words became necessary.",
       "course_bridge": "It anchors every page because the companion should explain Tokieda's demonstrations before importing later terminology or background source language. The bridge from course to paper always starts with the classroom object: a strip, surface, path, count, field, or state space.",
       "overclaim": "Do not treat cleaned transcripts as exact notes, claim precise wording from a paraphrase, or say a generated synthesis was spoken in the lecture when the evidence is only a recovered auto-caption or visible course motion.",
@@ -7968,10 +7968,10 @@
       "family": "Course provenance",
       "problem": "This family answers the identity problem: how do we know the videos belong to a real course series rather than an isolated playlist? This matters because course identity is the ground under every later claim; without it, a companion can accidentally explain a topic instead of this course.",
       "object": "The object is the public course record: speaker, title, institutional context, series identity, and stable access path. This is a different kind of object from a mathematical surface or field. It protects provenance, not a theorem.",
-      "allowed_reading": "Use it to support provenance and access, not to add mathematical details that are not present in the listing. It can stabilize the course identity; it cannot turn a lecture summary into transcript evidence.",
+      "allowed_reading": "Use it to support provenance and access, not to add mathematical details that are absent from the listing. It can stabilize the course identity, speaker, and series record; it cannot turn a lecture summary into transcript evidence or fill a missing caption.",
       "protected_idea": "The protected idea is source identity. A companion needs to know what course it is explaining before it can make careful claims about that course, but identity is not the same kind of evidence as a proof step.",
       "course_bridge": "It strengthens the source trail while leaving mathematical explanation inside the lecture, concept, source-reader, and paper-family pages. Its job is to say that the course exists and is traceable; the mathematical jobs still have to be earned elsewhere.",
-      "overclaim": "Do not infer theorem statements, proof order, lecture-specific wording, or missing-caption content from a catalog record whose job is mainly identification.",
+      "overclaim": "Do not infer theorem statements, proof order, lecture-specific wording, or missing-caption content from a catalog record. Its job is identification and access; every mathematical claim must come from captions, visible demonstrations, or a mathematical reference.",
       "reader_test": "Can the reader say what this source verifies, what it leaves unverified, and what kind of mathematical claim must still come from the videos or supporting references? A strong answer separates course identity from proof support in one plain sentence.",
       "concepts": [
         "topology-vs-geometry",
@@ -7984,7 +7984,7 @@
       "family": "Whole-space invariants",
       "problem": "This family answers the whole-space problem: what can be known when exact drawing, size, and position are not the evidence that matters? The beginner difficulty is that a surface can be redrawn many ways, so the proof needs a fact that belongs to the whole carrier rather than one convenient picture.",
       "object": "The object is a space or manifold treated as a whole, with features such as holes, cycles, and surviving accounts. One patch of the surface is not enough, because the obstruction may appear only after the entire object has been walked around, cut up, or counted.",
-      "allowed_reading": "Use it as historical and conceptual background for invariants, not as a claim that one lecture cites one exact passage or follows the original paper's notation.",
+      "allowed_reading": "Use it as historical and conceptual grounding for invariants after the companion has named the course object. It can support the whole-space habit, but not the claim that one lecture cites one exact passage or follows the original paper's notation.",
       "protected_idea": "The protected idea is that a space can carry evidence that survives continuous change and cannot be seen from one small local patch. This is the reason Euler characteristic and later index totals can speak about the whole surface instead of about the drawing style.",
       "course_bridge": "It supports the companion's path from surface bookkeeping to Euler characteristic, duality, and later whole-surface constraints on fields. The course bridge is the repeated move from local pieces to a completed account whose total cannot be chosen freely.",
       "overclaim": "Do not ask a beginner to start with the original paper's notation, and do not use the source to prove exact Tokieda wording before the course object and protected fact have been explained plainly.",
@@ -7998,7 +7998,7 @@
     {
       "reference": "hopf-vektorfelder",
       "family": "Vector-field index",
-      "problem": "This family answers the defect problem: how can local failures of an arrow field be forced by the shape carrying the arrows? The key idea is that a defect is not merely a bad point in a picture. It can be a local piece of evidence that the whole surface requires.",
+      "problem": "This family answers the defect problem: how can local failures of an arrow field be forced by the shape carrying the arrows? A defect is not merely a bad point in a picture. It becomes evidence only when a small surrounding loop can read the nearby turning and the full surface account includes every defect.",
       "object": "The object is a vector field on a surface, together with all isolated defects and the small loops used to read their turning. The small loop makes one defect readable; the full surface account decides what the sum of all defects is allowed to be.",
       "allowed_reading": "Read it through the course's arrow pictures first: walk around a defect, count local turning, then add all defects on the same surface. Use the source to support the theorem family, not to strengthen claims about exact lecture wording.",
       "protected_idea": "The protected idea is the signed total of local indices, which is constrained by the Euler characteristic under the theorem's assumptions. The local pictures may differ, but the total cannot ignore the carrier surface.",
@@ -8031,7 +8031,7 @@
       "reference": "milnor-differentiable-viewpoint",
       "family": "Differentiable topology bridge",
       "problem": "This family answers the bridge problem: how do smooth local conditions create trustworthy whole-space topological conclusions? The plain issue is that a local picture can only carry a global claim after the proof has prepared the local situation carefully enough to count or compare it.",
-      "object": "The object is a smooth manifold with maps, boundaries, regular values, fixed-point questions, degree-like counts, or vector fields. The important object is often a clean local event whose sign, index, or presence becomes part of a whole-space account.",
+      "object": "The object is a smooth manifold with maps, boundaries, regular values, fixed-point questions, degree-like counts, or vector fields. The local event must be prepared so it is readable: clean enough for a sign, isolated enough for an index, or controlled enough to support a whole-space claim.",
       "allowed_reading": "Use it after translating its formal words into course jobs: prepare clean cases, assign signs, compare maps, and add local evidence. Treat it as formal backup for a family of moves, not as a substitute course transcript.",
       "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion. Local smoothness is not decoration; it is the condition that lets the later topological bookkeeping be trusted.",
       "course_bridge": "It supports generic position, fixed-point reasoning, boundary behavior, and vector-field index without forcing the companion to assume advanced prerequisites. The course bridge is the habit of preparing an ordinary case before asking a count or existence theorem to do work.",
@@ -8144,8 +8144,8 @@
         "configuration-space",
         "poincare-hopf"
       ],
-      "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for the course identity beyond the YouTube playlist.",
-      "use_carefully": "Use it to verify the course source, not to infer extra mathematics. The lecture explanations still need to be grounded in the actual videos and recovered transcripts."
+      "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for course identity: speaker, title, institutional host, series order, and access trail.",
+      "use_carefully": "Use it to verify identity and access, not to infer extra mathematics. A catalog record can say what course this is; it cannot supply theorem details, missing-caption content, proof order, or lecture-specific wording."
     },
     {
       "id": "poincare-analysis-situs",
@@ -8167,8 +8167,8 @@
         "duality",
         "poincare-hopf"
       ],
-      "why": "These papers are part of the historical source line for topology as a study of spaces by preserved structure. They support the course arc from surfaces and invariants toward whole-space bookkeeping.",
-      "use_carefully": "They are not beginner lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them as background for the mathematical family, not as a substitute for the course source."
+      "why": "These papers sit in the historical source line for topology as the study of spaces through preserved structure. For this companion, their job is to anchor the whole-space question: which facts belong to the completed carrier rather than to one drawing?",
+      "use_carefully": "They are not beginner lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them after the course object is plain: surface, allowed change, preserved account, and claim boundary."
     },
     {
       "id": "hopf-vektorfelder",
@@ -8188,7 +8188,7 @@
         "poincare-hopf"
       ],
       "why": "Hopf's paper is a primary reference for the vector-field-index thread behind Poincare-Hopf: local singularities of a field are added and compared with a number belonging to the whole manifold.",
-      "use_carefully": "The paper is technical and historically downstream from earlier surface intuition. The companion should translate the idea through the lecture examples before pointing readers to the paper."
+      "use_carefully": "The paper is technical and historically downstream from earlier surface intuition. The companion should first explain the arrow field, isolated defects, local turning, and same-surface total before pointing readers to the paper."
     },
     {
       "id": "hatcher-algebraic-topology",
@@ -8216,8 +8216,8 @@
         "duality",
         "graph-planarity"
       ],
-      "why": "Hatcher gives a standard modern route into homotopy, homology, quotient spaces, and invariants. It is useful when a reader wants the formal machinery behind the companion's plain-language maps.",
-      "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it as a next reference, not as required reading for understanding a lecture page."
+      "why": "Hatcher gives a modern route into homotopy, homology, quotient spaces, and invariants. For this site, its job is to show how the course's plain actions become reusable tools: identify points, move paths legally, and protect counts.",
+      "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it only after the lecture page has already explained the route, gluing rule, deformation, or count in everyday terms."
     },
     {
       "id": "milnor-differentiable-viewpoint",
@@ -8241,13 +8241,13 @@
         "vector-field-index",
         "poincare-hopf"
       ],
-      "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. They support the course's move from pictures to counts and indices.",
-      "use_carefully": "The text assumes more mathematical preparation than the companion. Use it for formal backup after the everyday explanation has already named the object and allowed move."
+      "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. For this companion, they clarify why prepared local conditions can carry whole-space conclusions.",
+      "use_carefully": "The text assumes more mathematical preparation than the companion. Use it only after the everyday explanation has named the object, legal move, local condition, and global count or existence claim."
     },
     {
       "id": "guillemin-pollack-differential-topology",
       "title": "Victor Guillemin and Alan Pollack, Differential Topology",
-      "kind": "standard reference",
+      "kind": "formal reference",
       "url": "https://web.math.ucsb.edu/~bigelow/books/guillemin_pollack.pdf",
       "lectures": [
         6,
@@ -8264,8 +8264,8 @@
         "vector-field-index",
         "gauss-bonnet"
       ],
-      "why": "This reference supports generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. It helps explain why clean meetings are prepared before signs and counts are trusted.",
-      "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should not import its vocabulary before explaining the course idea plainly."
+      "why": "This reference explains generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. Its course-facing job is to justify the cleanup before signs are trusted.",
+      "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should first say what meeting was cleaned, what sign rule became available, and why the count survives."
     }
   ],
   "quality_rubric": [
@@ -8576,12 +8576,12 @@
       },
       {
         "requirement": "First-principles paper and source reading",
-        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2032 source-reader words keep paper reading tied to first-principles course questions.",
+        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2038 source-reader words keep paper reading tied to first-principles course questions.",
         "status": "met"
       },
       {
         "requirement": "Paper family ledger",
-        "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 1953 words make the paper layer usable without letting it drown the course explanation.",
+        "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2018 words make the paper layer usable without letting it drown the course explanation.",
         "status": "met"
       }
     ],
@@ -8595,7 +8595,7 @@
       "lecture_examples": 45,
       "lecture_spine_entries": 15,
       "lecture_essay_words": 5595,
-      "lecture_deepening_words": 1594,
+      "lecture_deepening_words": 1595,
       "lecture_walkthrough_words": 1987,
       "lecture_source_lens_words": 1640,
       "lecture_source_checkpoint_words": 1532,
@@ -8650,9 +8650,9 @@
       "term_translations": 16,
       "term_translation_words": 1968,
       "source_readers": 7,
-      "source_reader_words": 2032,
+      "source_reader_words": 2038,
       "paper_family_ledger_rows": 7,
-      "paper_family_ledger_words": 1953,
+      "paper_family_ledger_words": 2018,
       "references": 7,
       "quality_rubric_items": 6,
       "rubric_coverage_layers": 6,

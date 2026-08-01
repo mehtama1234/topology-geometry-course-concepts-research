@@ -21,7 +21,7 @@
     "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source rather than drifting into a standard list of topology topics. Provenance protects the boundary between this course and the larger subject.",
     "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a provenance source, so it can answer who, what course, and what sequence. It cannot answer why a particular proof works, what exact mathematical claim a lecture makes, or how a missing caption should be filled.",
     "family": "Course provenance",
-    "do_not_overread": "Do not infer extra theorem content from the mirror listing. It supports identity and access, not additional mathematical claims, proof order, or first-principles explanation.",
+    "do_not_overread": "Do not infer extra theorem content from the mirror listing. It verifies identity and access, not additional mathematical claims, proof order, hidden caption content, or first-principles explanation.",
     "reader_question": "What does this source verify about the course identity, and what mathematical claim still needs evidence from captions, visible demonstrations, or a real background reference? The answer should keep identity evidence and mathematical evidence in different boxes.",
     "concepts": [
       "topology-vs-geometry",
@@ -77,7 +77,7 @@
   {
     "reference": "milnor-differentiable-viewpoint",
     "reader_problem": "Milnor's notes answer the bridge question: how do smooth local pictures produce topological conclusions about fixed points, degree, and vector fields? The everyday difficulty is that local motion can look like analysis, but the final answer may be a whole-space existence or counting statement.",
-    "object_to_watch": "Watch smooth manifolds, maps, regular values, boundaries, and vector fields. The important object is often local and smooth, but the conclusion belongs to the whole space. The reader should keep asking which local condition was prepared so the global claim is allowed to speak.",
+    "object_to_watch": "Watch smooth manifolds, maps, regular values, boundaries, and vector fields. The object to inspect is often a prepared local event: a clean preimage, a boundary condition, a regular value, or an isolated defect. The conclusion belongs to the whole space only after that local preparation is honest.",
     "first_principles_bridge": "The course repeatedly prepares a clean ordinary case, assigns signs or indices, and then reads a global conclusion. Milnor gives a compact formal route through that same local-to-global movement. The bridge is not that the course suddenly requires smooth machinery; it is that the machinery explains why clean local evidence can add up to a topological conclusion.",
     "how_to_read": "Read it after the term translator and formula reader. Whenever the notes use a formal word, translate it into the job it performs: preparing clean meetings, assigning signs, or forcing a whole-space count. Use it to strengthen the formal background, not to replace the course's plain-language contract or to make beginners climb through prerequisites before they understand the object.",
     "family": "Differentiable topology bridge",

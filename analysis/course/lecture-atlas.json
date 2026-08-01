@@ -1627,7 +1627,7 @@
       ],
       "deepening": {
         "what_is_really_happening": "The lecture asks what all local vector-field defects know together when their signed indices are added over the full surface carrying the arrows as one account.",
-        "why_it_is_hard": "It is easy to focus on one source, sink, or saddle and miss that the important object is the total over every isolated defect on the surface.",
+        "why_it_is_hard": "It is easy to focus on one source, sink, or saddle and miss the completed ledger: every isolated defect on the same surface has to enter the total.",
         "key_move": "Clean the field to isolated defects, assign each local index, then compare the sum with the surface carrying the field rather than one defect alone.",
         "payoff": "The reader sees Euler characteristic becoming a demand on motion, not only a surface bookkeeping number from earlier classification work on static shapes and decompositions."
       },

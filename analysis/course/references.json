@@ -82,8 +82,8 @@
       "configuration-space",
       "poincare-hopf"
     ],
-    "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for the course identity beyond the YouTube playlist.",
-    "use_carefully": "Use it to verify the course source, not to infer extra mathematics. The lecture explanations still need to be grounded in the actual videos and recovered transcripts."
+    "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for course identity: speaker, title, institutional host, series order, and access trail.",
+    "use_carefully": "Use it to verify identity and access, not to infer extra mathematics. A catalog record can say what course this is; it cannot supply theorem details, missing-caption content, proof order, or lecture-specific wording."
   },
   {
     "id": "poincare-analysis-situs",
@@ -105,8 +105,8 @@
       "duality",
       "poincare-hopf"
     ],
-    "why": "These papers are part of the historical source line for topology as a study of spaces by preserved structure. They support the course arc from surfaces and invariants toward whole-space bookkeeping.",
-    "use_carefully": "They are not beginner lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them as background for the mathematical family, not as a substitute for the course source."
+    "why": "These papers sit in the historical source line for topology as the study of spaces through preserved structure. For this companion, their job is to anchor the whole-space question: which facts belong to the completed carrier rather than to one drawing?",
+    "use_carefully": "They are not beginner lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them after the course object is plain: surface, allowed change, preserved account, and claim boundary."
   },
   {
     "id": "hopf-vektorfelder",
@@ -126,7 +126,7 @@
       "poincare-hopf"
     ],
     "why": "Hopf's paper is a primary reference for the vector-field-index thread behind Poincare-Hopf: local singularities of a field are added and compared with a number belonging to the whole manifold.",
-    "use_carefully": "The paper is technical and historically downstream from earlier surface intuition. The companion should translate the idea through the lecture examples before pointing readers to the paper."
+    "use_carefully": "The paper is technical and historically downstream from earlier surface intuition. The companion should first explain the arrow field, isolated defects, local turning, and same-surface total before pointing readers to the paper."
   },
   {
     "id": "hatcher-algebraic-topology",
@@ -154,8 +154,8 @@
       "duality",
       "graph-planarity"
     ],
-    "why": "Hatcher gives a standard modern route into homotopy, homology, quotient spaces, and invariants. It is useful when a reader wants the formal machinery behind the companion's plain-language maps.",
-    "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it as a next reference, not as required reading for understanding a lecture page."
+    "why": "Hatcher gives a modern route into homotopy, homology, quotient spaces, and invariants. For this site, its job is to show how the course's plain actions become reusable tools: identify points, move paths legally, and protect counts.",
+    "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it only after the lecture page has already explained the route, gluing rule, deformation, or count in everyday terms."
   },
   {
     "id": "milnor-differentiable-viewpoint",
@@ -179,13 +179,13 @@
       "vector-field-index",
       "poincare-hopf"
     ],
-    "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. They support the course's move from pictures to counts and indices.",
-    "use_carefully": "The text assumes more mathematical preparation than the companion. Use it for formal backup after the everyday explanation has already named the object and allowed move."
+    "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. For this companion, they clarify why prepared local conditions can carry whole-space conclusions.",
+    "use_carefully": "The text assumes more mathematical preparation than the companion. Use it only after the everyday explanation has named the object, legal move, local condition, and global count or existence claim."
   },
   {
     "id": "guillemin-pollack-differential-topology",
     "title": "Victor Guillemin and Alan Pollack, Differential Topology",
-    "kind": "standard reference",
+    "kind": "formal reference",
     "url": "https://web.math.ucsb.edu/~bigelow/books/guillemin_pollack.pdf",
     "lectures": [
       6,
@@ -202,7 +202,7 @@
       "vector-field-index",
       "gauss-bonnet"
     ],
-    "why": "This reference supports generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. It helps explain why clean meetings are prepared before signs and counts are trusted.",
-    "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should not import its vocabulary before explaining the course idea plainly."
+    "why": "This reference explains generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. Its course-facing job is to justify the cleanup before signs are trusted.",
+    "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should first say what meeting was cleaned, what sign rule became available, and why the count survives."
   }
 ]
