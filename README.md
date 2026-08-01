@@ -19,7 +19,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 77 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
 - 15 lecture-spine entries that name the object, question, legal move, surviving fact, and later use for every lecture.
-- 4,679 lecture essay words, with every lecture essay now clearing the 255-word validator floor.
+- 5,332 lecture essay words, with every lecture essay now clearing the 300-word validator floor.
 - 1,289 lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields.
 - 1,986 lecture walkthrough words that slow each lecture down from starting object to mathematical payoff to reader check.
 - 979 caption-nuance words explaining risky auto-caption terms and safe mathematical readings by lecture.

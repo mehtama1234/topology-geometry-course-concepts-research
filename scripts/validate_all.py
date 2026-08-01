@@ -193,7 +193,7 @@ def main():
             if len(words(walkthrough.get(field))) < 35:
                 fail(f"lecture {lecture['lecture']} walkthrough {field} too thin")
         essay_words = sum(len(words(p)) for p in deep.get("essay") or [])
-        if essay_words < 255:
+        if essay_words < 300:
             fail(f"lecture {lecture['lecture']} essay too thin")
         examples = deep.get("examples") or []
         if len(examples) < 3:
