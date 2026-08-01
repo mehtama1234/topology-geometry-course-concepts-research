@@ -204,6 +204,50 @@ SUBTHEME_DEPTH = {
 }
 
 
+SUBTHEME_ESSAYS = {
+    "allowed-moves": [
+        "Allowed moves are the rulebook behind every deformation argument in the course. Before deciding that two pictures are equivalent, the reader has to know what is permitted: stretching, sliding, bending, cutting, gluing, crossing through, moving endpoints, or preserving boundaries. Changing the rulebook changes the problem. A knot is only knotted because cutting is forbidden; a disk path puzzle is only obstructed because paths may not cross.",
+        "This subtheme is the first thing to inspect when a proof feels suspiciously easy. If the simplification used an illegal move, the argument may have solved a different problem. Tokieda's pictures work because they make the allowed motion visible enough for the reader to audit.",
+    ],
+    "invariant-receipts": [
+        "An invariant is a receipt for a journey through allowed changes. If a surface is deformed, a path is redrawn, or a vector field is cleaned up, the invariant records what survived. The receipt may be one-sidedness, an alternating cell count, a signed intersection number, or a total index. Its job is not to remember everything; its job is to remember the fact the proof needs.",
+        "This is why invariants make deformation rigorous. Without a receipt, a transformed picture may only feel similar to the original. With a receipt, the reader can say exactly what was preserved and use that preserved fact to prove impossibility or forced existence.",
+    ],
+    "holes-and-boundaries": [
+        "Holes and boundaries are route constraints. A hole is missing room, a blocked filling, or a place a loop can remember going around. A boundary is where the surface stops, and that stopping changes what can be glued, counted, or forced. These are not decorative marks in a drawing; they determine what paths and fields can do.",
+        "The course uses this subtheme from Mobius-strip boundaries to Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become walls. When a proof depends on a surface's edge or missing region, this subtheme is doing the work.",
+    ],
+    "curves-loops-knots": [
+        "Curves and loops are the course's simplest carriers of route memory. A loop can stretch without forgetting that it went around a hole. A knot can bend without becoming untied. A linked pair can move without separating. The exact drawing changes, but the route relation can remain locked by the allowed moves.",
+        "This subtheme prepares the reader for more abstract paths later. A path in a configuration space is still a route, even if the space represents possible states rather than physical positions. The same question remains: what can this route become without breaking the rules?",
+    ],
+    "turning-and-curvature": [
+        "Turning and curvature begin as local geometric facts: an arrow turns, a curve bends, a surface curves near a point. The course cares about them because totals can become global evidence. Total turning, total curvature, and total index all express the idea that many small local changes may be forced to add up to a whole-shape constraint.",
+        "This subtheme connects geometry to topology without erasing either side. The local measurement matters because its sum is not arbitrary. That is the same habit behind Gauss-Bonnet-style reasoning and vector-field index.",
+    ],
+    "signs-and-cancellation": [
+        "Signs are the course's way of making fake changes disappear. If two intersections are born together with opposite signs, the visible picture changes but the signed total does not. If defects can split into opposite contributions, the total can survive even while the local pattern changes. Cancellation is designed into the count.",
+        "This subtheme is the bridge from parity to intersection number to index. It teaches that the right count is often not the raw count. The right count is the one whose allowed changes cancel cleanly. The sign is the extra memory that tells a real obstruction apart from a pair that appeared only because the picture passed through a temporary accident.",
+    ],
+    "surfaces-and-orientation": [
+        "Surfaces are the stage, and orientation is one of the rules that lets signs mean anything. A surface may have two sides, one side, a boundary, handles, or crosscaps. Locally these differences can be hidden. Globally they decide whether consistent direction, signed intersections, and vector-field bookkeeping are possible.",
+        "This subtheme is why the Mobius strip is not a toy example. It shows that side information can fail globally. Later, whenever plus and minus signs appear, the reader should ask whether the surface supports those signs consistently. Orientation is the promise that a local choice can be carried around the whole object without contradiction.",
+    ],
+    "mechanisms-and-locks": [
+        "Mechanisms and locks describe the course's move from shape to behavior. A physical system may have many moving parts, but its possible states form a shape. If that shape has a wall, hole, disconnected region, or forced passage, the mechanism inherits the constraint. Topology can then say something before the detailed motion is solved.",
+        "This subtheme appears in center-of-gravity reasoning, fixed points, configuration spaces, and late applications. It is the practical side of the course: understand the shape of possibility, and you can understand some behavior. The point is not to ignore physical details, but to choose a model where the allowed states reveal the obstruction clearly.",
+    ],
+    "singular-moments": [
+        "A singular moment is an exceptional event between ordinary pictures. Two intersections are born, two cancel, a tangency appears, or a vector-field defect stops being isolated. The course does not ignore these moments. It uses them to understand how stable pictures change without changing the protected total.",
+        "This subtheme keeps generic position honest. The ordinary case is studied first, but singular moments explain transitions between ordinary cases. That is why pair creation and cancellation are not nuisances; they reveal why the invariant survives. The exception is studied just long enough to prove that the count changes in a controlled way.",
+    ],
+    "models-not-labels": [
+        "Models-not-labels is the companion's guardrail against glossary thinking. A term matters only when it does work. Manifold means local space with gluing behavior. Deformation means legal motion. Index means signed turning around a defect. If a name does not help answer a question, the reader has not yet learned the idea.",
+        "This subtheme is also a writing standard. The pages should not ask the reader to admire terminology. They should show what problem the concept solves, what detail makes it valid, and how it connects to the course's proof habits.",
+    ],
+}
+
+
 CONCEPTS = [
     {
         "id": "generic-position",
@@ -317,7 +361,7 @@ CONCEPTS = [
         "id": "fixed-points",
         "title": "Fixed points",
         "theme": "shape-as-machine",
-        "subthemes": ["mechanisms-and-locks", "local-to-global"],
+        "subthemes": ["mechanisms-and-locks", "holes-and-boundaries"],
         "first_principles": "A fixed point is a place that ends up where it started after a motion or rule is applied. Some spaces force at least one fixed point for any rule of a certain kind. The idea is powerful because it proves existence without naming the point: the shape leaves no way for every point to avoid itself.",
         "important_detail": "The claim depends on the shape of the space and the allowed kind of rule. Change either, and the guarantee may vanish.",
         "math_principle": "The shape of all possible positions can force a solution to exist.",
@@ -544,7 +588,7 @@ FAMILIES = [
         "title": "Motion through possible states",
         "purpose": "Turn mechanical or physical questions into questions about paths and barriers.",
         "first_principles": "This family replaces the object in motion with the space of all its possible positions. Holes and walls in that space explain blocked motions, unavoidable coincidences, and forced positions.",
-        "concepts": ["configuration-space", "fixed-points", "deformation", "shape-as-machine"],
+        "concepts": ["configuration-space", "fixed-points", "deformation", "vector-field-index"],
     },
 ]
 
@@ -585,6 +629,35 @@ FAMILY_DEPTH = {
         "course_examples": "The center-of-gravity demonstration, Brouwer fixed point theorem, vector fields, equilibria, Poincare-Hopf, and late applications all use this family. The course ends here because it shows topology acting on behavior, not only on static pictures.",
         "failure_mode": "The common failure is to model the state space carelessly. If the states, boundaries, forbidden positions, or allowed motions are wrong, the topological conclusion may no longer describe the physical system being studied at all.",
     },
+}
+
+
+FAMILY_ESSAYS = {
+    "deformation-family": [
+        "Deformation arguments are the course's way of replacing a hard object by an easier one without losing the question. The first step is not to move anything. The first step is to state the contract: what may bend, what must stay attached, which crossings are forbidden, which endpoints stay fixed, and which boundaries still count as boundaries. Only after that contract is clear does motion become a proof method.",
+        "The family matters because many topological questions are impossible to settle from the first drawing. A tangled drawing may hide a simple answer; a simple-looking drawing may hide an obstruction. Deformation gives the reader permission to simplify, but only under rules that preserve the feature being tested. This is why the endpoint of a deformation proof is not evidence by itself. The evidence is the whole legal journey from the original picture to the easier one.",
+        "The mathematical principle is plain: if every allowed step preserves the relevant fact, then the final easy picture can speak for the original hard picture.",
+    ],
+    "counting-family": [
+        "Surviving-count arguments begin with a practical problem: the visible picture changes too much. Crossings can appear, cells can be subdivided, arrows can be redrawn, and defects can move. A raw count of everything usually fails because it records accidental clutter. The course therefore asks for a count designed to ignore the harmless changes while keeping the obstruction that matters.",
+        "Euler characteristic does this by alternating pieces. Intersection number does this by using signs. Vector-field index does this by recording how arrows turn around a defect. Parity does it more coarsely by keeping only evenness or oddness. These examples look different on the surface, but they share one idea: count the part of the situation that legal motion cannot erase.",
+        "The family is important because a good count can prove impossibility or forced existence without listing every possible drawing. Once the count is known in one honest version of the object, every legally related version has to obey it.",
+    ],
+    "surface-family": [
+        "Surface bookkeeping is needed because a surface can lie to local inspection. Every tiny patch of a sphere, torus, disk, or Mobius strip may look like an ordinary piece of paper. The difference appears when patches are glued into a whole: a route may return reversed, a boundary may add a term, a handle may create a new loop, or a missing disk may change what can be filled.",
+        "This family teaches the reader to track the whole surface without losing the local pieces. Cut the surface into manageable parts, count or orient those parts, then check what survives when they are put back together. Euler characteristic, boundary orientation, surface classification, and Poincare-Hopf all depend on this discipline.",
+        "The mathematical principle is that local freedom is not the same as global freedom. A patch may allow an arrow, a side choice, or a sign, while the completed surface refuses to let all those local choices agree at once.",
+    ],
+    "embedding-family": [
+        "Drawing and embedding arguments ask whether there is enough room for required connections. A failed drawing is not enough, because a better drawing may exist. The family therefore separates the object that must be placed from the space that must receive it. Which endpoints are fixed? Which crossings are forbidden? Can one strand pass through another? Does the surrounding surface have holes or handles that provide alternate routes?",
+        "This is where knots, links, planar graphs, path puzzles, and intersection arguments meet. Each problem asks whether a relation can be removed by legal motion or whether it belongs to the shape of the situation. A crossing on the page may be accidental. A linking relation or forced intersection may survive every attempt to redraw.",
+        "The important mathematical idea is not clever drawing. It is proving that all legal drawings face the same constraint. The surface or surrounding space supplies only certain routes, and sometimes those routes are not enough.",
+    ],
+    "motion-family": [
+        "Motion-through-state arguments are the course's bridge from shapes to behavior. Instead of following a mechanism directly, the method lists its possible states and treats each state as a point in a new space. A motion is then a path through that space. A rule becomes a map of the space to itself. A forbidden physical arrangement becomes a wall, hole, or missing region in the state space.",
+        "This family explains why fixed points, vector fields, configuration spaces, and physical examples belong with surface topology. They are all ways of asking what behavior the shape of possibility permits. The course does not need every equation of motion to say something meaningful. If the state space has the right obstruction, some positions, coincidences, defects, or blocked motions are forced before detailed solving begins.",
+        "The detail that keeps the method honest is modeling. The state space must contain the right freedoms and remove the right forbidden states. If that translation is wrong, the topological conclusion may be true about the model but false about the physical situation.",
+    ],
 }
 
 
@@ -993,6 +1066,8 @@ def build_quality_audit(data):
     lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
+    subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
+    family_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in f["essay"]) for f in data["families"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -1011,7 +1086,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts with essay sections, {stats['themes']} themes with essay sections, {stats['subthemes']} subthemes, and {stats['families']} method families all have validated depth fields.",
+            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields.",
             "status": "met",
         },
         {
@@ -1042,6 +1117,8 @@ def build_quality_audit(data):
             "lecture_essay_words": lecture_essay_words,
             "concept_essay_words": concept_essay_words,
             "theme_essay_words": theme_essay_words,
+            "subtheme_essay_words": subtheme_essay_words,
+            "family_essay_words": family_essay_words,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -1146,14 +1223,14 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
     (SITE / "subthemes.html").write_text(page("Subthemes", body, "Subthemes"), encoding="utf-8")
     for s in data["subthemes"]:
         related = [c for c in data["concepts"] if s["id"] in c["subthemes"]]
-        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class="lecture"><h2>Subtheme Essay</h2>{paragraph_block(s['essay'])}</section><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("subtheme", s["id"])).write_text(page(s["title"], body, "Subthemes"), encoding="utf-8")
 
     body = "<h1>Method Families</h1><p class='lead'>Method families explain how the course turns pictures into reasons. They are the reusable proof moves beneath the lectures.</p><div class='grid two'>" + "".join(card(f["title"], f["depth"]["human_problem"], slug_page("family", f["id"]), f["purpose"]) for f in data["families"]) + "</div>"
     (SITE / "families.html").write_text(page("Families", body, "Families"), encoding="utf-8")
     for f in data["families"]:
         related = [c for c in data["concepts"] if c["id"] in f["concepts"]]
-        body = f"""<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['depth']['human_problem'])}</p><section class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p><h2>First Principles</h2><p>{esc(f['depth']['first_principles'])}</p><h2>How It Works</h2><p>{esc(f['depth']['how_it_works'])}</p><h2>Course Examples</h2><p>{esc(f['depth']['course_examples'])}</p><h2>Failure Mode</h2><p>{esc(f['depth']['failure_mode'])}</p></section><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        body = f"""<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['depth']['human_problem'])}</p><section class="lecture"><h2>Method Essay</h2>{paragraph_block(f['essay'])}</section><section class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p><h2>First Principles</h2><p>{esc(f['depth']['first_principles'])}</p><h2>How It Works</h2><p>{esc(f['depth']['how_it_works'])}</p><h2>Course Examples</h2><p>{esc(f['depth']['course_examples'])}</p><h2>Failure Mode</h2><p>{esc(f['depth']['failure_mode'])}</p></section><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("family", f["id"])).write_text(page(f["title"], body, "Families"), encoding="utf-8")
 
     math_why = f"""<h1>The Math Why</h1><p class="lead">{esc(data['math_why']['big_picture'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(data['math_why']['first_principles'])}</p><h2>Important Detail</h2><p>{esc(data['math_why']['important_detail'])}</p><h2>Principle Behind the Mathematics</h2><p>{esc(data['math_why']['principle'])}</p><h2>Why These Concepts Matter</h2><p>{esc(data['math_why']['concepts_matter'])}</p><h2>How To Read The Course</h2><p>{esc(data['math_why']['reader_path'])}</p></section>"""
@@ -1164,7 +1241,7 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1229,7 +1306,7 @@ def main():
         themes.append(enriched)
     subthemes = []
     for i, t, p in SUBTHEMES:
-        subthemes.append({"id": i, "title": t, "plain": p, "depth": SUBTHEME_DEPTH[i]})
+        subthemes.append({"id": i, "title": t, "plain": p, "depth": SUBTHEME_DEPTH[i], "essay": SUBTHEME_ESSAYS[i]})
     concepts = []
     for concept in CONCEPTS:
         enriched = dict(concept)
@@ -1252,6 +1329,7 @@ def main():
     for family in FAMILIES:
         enriched = dict(family)
         enriched["depth"] = FAMILY_DEPTH[family["id"]]
+        enriched["essay"] = FAMILY_ESSAYS[family["id"]]
         families.append(enriched)
     math_why = MATH_WHY
     data = {

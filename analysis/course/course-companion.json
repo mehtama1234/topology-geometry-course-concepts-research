@@ -1837,7 +1837,11 @@
         "problem": "Allowed moves define the game being played. Before saying two shapes are the same, before simplifying a drawing, and before claiming a count survives, the course must say what changes are legal.",
         "first_principles": "If a knot can be cut, it can be untied. If paths can pass through each other, a crossing obstruction disappears. If boundary points can slide around, a disk puzzle changes. The mathematics lives in the rule that certain changes are allowed and others are not.",
         "course_role": "This subtheme appears in deformation, surface surgery, knot and link reasoning, fixed-point arguments, and vector-field cleanup. It is the quiet contract behind nearly every proof and the first thing to check when an argument feels too easy."
-      }
+      },
+      "essay": [
+        "Allowed moves are the rulebook behind every deformation argument in the course. Before deciding that two pictures are equivalent, the reader has to know what is permitted: stretching, sliding, bending, cutting, gluing, crossing through, moving endpoints, or preserving boundaries. Changing the rulebook changes the problem. A knot is only knotted because cutting is forbidden; a disk path puzzle is only obstructed because paths may not cross.",
+        "This subtheme is the first thing to inspect when a proof feels suspiciously easy. If the simplification used an illegal move, the argument may have solved a different problem. Tokieda's pictures work because they make the allowed motion visible enough for the reader to audit."
+      ]
     },
     {
       "id": "invariant-receipts",
@@ -1847,7 +1851,11 @@
         "problem": "A changing picture needs a receipt for what survived. Without such a receipt, a deformation may feel convincing but leave no evidence that the answer stayed the same through every allowed move.",
         "first_principles": "An invariant is that receipt. It can be a side count, a hole count, a signed intersection number, or a total index. It is useful because it can be checked before and after legal motion.",
         "course_role": "This subtheme connects the Mobius strip to Euler characteristic, intersection number, and Poincare-Hopf. The object changes; the receipt proves what did not change and lets one picture speak for another."
-      }
+      },
+      "essay": [
+        "An invariant is a receipt for a journey through allowed changes. If a surface is deformed, a path is redrawn, or a vector field is cleaned up, the invariant records what survived. The receipt may be one-sidedness, an alternating cell count, a signed intersection number, or a total index. Its job is not to remember everything; its job is to remember the fact the proof needs.",
+        "This is why invariants make deformation rigorous. Without a receipt, a transformed picture may only feel similar to the original. With a receipt, the reader can say exactly what was preserved and use that preserved fact to prove impossibility or forced existence."
+      ]
     },
     {
       "id": "holes-and-boundaries",
@@ -1857,7 +1865,11 @@
         "problem": "Holes and boundaries decide which routes exist and which counts must include edge terms. They are not visual decoration; they change what the surface can support and what motions are possible.",
         "first_principles": "A boundary is where a surface stops. A hole is missing room or a blocked filling. Both change the way loops, paths, fields, and decompositions behave because they alter the available routes.",
         "course_role": "This subtheme is central in surface classification, Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become holes or walls in the space of possibilities itself."
-      }
+      },
+      "essay": [
+        "Holes and boundaries are route constraints. A hole is missing room, a blocked filling, or a place a loop can remember going around. A boundary is where the surface stops, and that stopping changes what can be glued, counted, or forced. These are not decorative marks in a drawing; they determine what paths and fields can do.",
+        "The course uses this subtheme from Mobius-strip boundaries to Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become walls. When a proof depends on a surface's edge or missing region, this subtheme is doing the work."
+      ]
     },
     {
       "id": "curves-loops-knots",
@@ -1867,7 +1879,11 @@
         "problem": "Curves and loops can carry information about how they sit inside a space. The problem is to distinguish accidental shape from protected route information that survives legal bending and stretching.",
         "first_principles": "A loop can stretch while still going around a hole. A knot can wiggle while still refusing to become a circle. The exact drawing changes, but the route relation may remain.",
         "course_role": "This subtheme supports deformation, winding, linking, intersections, and the move from visible curves to abstract paths in spaces of possible states. It keeps route information separate from length or appearance."
-      }
+      },
+      "essay": [
+        "Curves and loops are the course's simplest carriers of route memory. A loop can stretch without forgetting that it went around a hole. A knot can bend without becoming untied. A linked pair can move without separating. The exact drawing changes, but the route relation can remain locked by the allowed moves.",
+        "This subtheme prepares the reader for more abstract paths later. A path in a configuration space is still a route, even if the space represents possible states rather than physical positions. The same question remains: what can this route become without breaking the rules?"
+      ]
     },
     {
       "id": "turning-and-curvature",
@@ -1877,7 +1893,11 @@
         "problem": "Turning and curvature measure local change in direction, but the course is interested in totals that cannot be chosen freely by a drawing or arrow field on the whole shape.",
         "first_principles": "A little bend by itself may be a local geometric fact. When many bends are added over a closed curve, a surface, or an arrow field around a defect, the total can become topological evidence.",
         "course_role": "This subtheme links Gauss-Bonnet-style thinking to vector-field index. It prepares the reader to see local turning as part of whole-shape bookkeeping rather than isolated measurement at one point."
-      }
+      },
+      "essay": [
+        "Turning and curvature begin as local geometric facts: an arrow turns, a curve bends, a surface curves near a point. The course cares about them because totals can become global evidence. Total turning, total curvature, and total index all express the idea that many small local changes may be forced to add up to a whole-shape constraint.",
+        "This subtheme connects geometry to topology without erasing either side. The local measurement matters because its sum is not arbitrary. That is the same habit behind Gauss-Bonnet-style reasoning and vector-field index."
+      ]
     },
     {
       "id": "signs-and-cancellation",
@@ -1887,7 +1907,11 @@
         "problem": "Many events appear and disappear during a deformation. Counting them all positively gives a fragile number. The course needs a way for fake changes to cancel while forced information remains.",
         "first_principles": "Signs record direction or orientation. When two opposite events are born together, their signed contributions add to zero. The visible picture changes, but the signed total survives the allowed motion.",
         "course_role": "This subtheme is central to intersection number and vector-field index. It is also the finer version of parity: not just even or odd, but plus and minus with geometric meaning."
-      }
+      },
+      "essay": [
+        "Signs are the course's way of making fake changes disappear. If two intersections are born together with opposite signs, the visible picture changes but the signed total does not. If defects can split into opposite contributions, the total can survive even while the local pattern changes. Cancellation is designed into the count.",
+        "This subtheme is the bridge from parity to intersection number to index. It teaches that the right count is often not the raw count. The right count is the one whose allowed changes cancel cleanly. The sign is the extra memory that tells a real obstruction apart from a pair that appeared only because the picture passed through a temporary accident."
+      ]
     },
     {
       "id": "surfaces-and-orientation",
@@ -1897,7 +1921,11 @@
         "problem": "Surfaces are the main stage of the course, but they are not all alike. Some have boundaries, some have handles, some reverse side after a trip, and some allow consistent signs.",
         "first_principles": "Orientation asks whether a consistent sense of direction can be carried across the whole surface. Classification asks which handles, crosscaps, and boundaries remain after legal simplification and cutting into standard pieces.",
         "course_role": "This subtheme supports surface classification, signed intersections, Euler characteristic, and Poincare-Hopf. Without it, later plus-minus bookkeeping has no stable meaning across the whole surface or field being studied."
-      }
+      },
+      "essay": [
+        "Surfaces are the stage, and orientation is one of the rules that lets signs mean anything. A surface may have two sides, one side, a boundary, handles, or crosscaps. Locally these differences can be hidden. Globally they decide whether consistent direction, signed intersections, and vector-field bookkeeping are possible.",
+        "This subtheme is why the Mobius strip is not a toy example. It shows that side information can fail globally. Later, whenever plus and minus signs appear, the reader should ask whether the surface supports those signs consistently. Orientation is the promise that a local choice can be carried around the whole object without contradiction."
+      ]
     },
     {
       "id": "mechanisms-and-locks",
@@ -1907,7 +1935,11 @@
         "problem": "Physical systems often look complicated because parts move. The course asks whether the shape of the possible motions explains what is forced or blocked without tracking every detail of the motion.",
         "first_principles": "A mechanism can be studied by its possible states. If the state space has a hole, wall, disconnected region, or forced passage, the mechanism inherits that constraint in its physical motion.",
         "course_role": "This subtheme appears in center-of-gravity reasoning, fixed points, configuration spaces, and late applications where topology predicts behavior without solving every physical detail or trajectory explicitly from equations of motion."
-      }
+      },
+      "essay": [
+        "Mechanisms and locks describe the course's move from shape to behavior. A physical system may have many moving parts, but its possible states form a shape. If that shape has a wall, hole, disconnected region, or forced passage, the mechanism inherits the constraint. Topology can then say something before the detailed motion is solved.",
+        "This subtheme appears in center-of-gravity reasoning, fixed points, configuration spaces, and late applications. It is the practical side of the course: understand the shape of possibility, and you can understand some behavior. The point is not to ignore physical details, but to choose a model where the allowed states reveal the obstruction clearly."
+      ]
     },
     {
       "id": "singular-moments",
@@ -1917,7 +1949,11 @@
         "problem": "A special accident can be where the action happens: two intersections are born, two cancel, a tangent contact appears, or a defect ceases to be isolated for a moment during motion.",
         "first_principles": "A singular moment is not the ordinary case. It is the border between ordinary cases. By understanding how ordinary pictures change as they pass through it, the course controls exceptions instead of fearing them.",
         "course_role": "This subtheme explains pair creation and cancellation, generic position, and the need to isolate equilibria before assigning index. It turns exceptions into controlled transitions between ordinary pictures during deformation arguments."
-      }
+      },
+      "essay": [
+        "A singular moment is an exceptional event between ordinary pictures. Two intersections are born, two cancel, a tangency appears, or a vector-field defect stops being isolated. The course does not ignore these moments. It uses them to understand how stable pictures change without changing the protected total.",
+        "This subtheme keeps generic position honest. The ordinary case is studied first, but singular moments explain transitions between ordinary cases. That is why pair creation and cancellation are not nuisances; they reveal why the invariant survives. The exception is studied just long enough to prove that the count changes in a controlled way."
+      ]
     },
     {
       "id": "models-not-labels",
@@ -1927,7 +1963,11 @@
         "problem": "Topology and geometry have many names, but names do not teach the course. The real work is building a model that explains what can move, what is counted, and what is forced.",
         "first_principles": "A term matters only if it helps answer a question. Manifold means local space with gluing rules. Quotient means identified points. Index means signed turning around a defect. Each name should earn its keep.",
         "course_role": "This subtheme keeps the companion plain. It resists glossary thinking and asks every concept page to explain why the concept exists in the course and what work it performs for the reader."
-      }
+      },
+      "essay": [
+        "Models-not-labels is the companion's guardrail against glossary thinking. A term matters only when it does work. Manifold means local space with gluing behavior. Deformation means legal motion. Index means signed turning around a defect. If a name does not help answer a question, the reader has not yet learned the idea.",
+        "This subtheme is also a writing standard. The pages should not ask the reader to admire terminology. They should show what problem the concept solves, what detail makes it valid, and how it connects to the course's proof habits."
+      ]
     }
   ],
   "concepts": [
@@ -2585,7 +2625,7 @@
       "theme": "shape-as-machine",
       "subthemes": [
         "mechanisms-and-locks",
-        "local-to-global"
+        "holes-and-boundaries"
       ],
       "first_principles": "A fixed point is a place that ends up where it started after a motion or rule is applied. Some spaces force at least one fixed point for any rule of a certain kind. The idea is powerful because it proves existence without naming the point: the shape leaves no way for every point to avoid itself.",
       "important_detail": "The claim depends on the shape of the space and the allowed kind of rule. Change either, and the guarantee may vanish.",
@@ -2802,7 +2842,12 @@
         "how_it_works": "A deformation proof has three parts: the contract of allowed motion, the protected feature, and the simpler endpoint. The proof fails if any one of these is vague. The endpoint is convincing only because the route to it was legal.",
         "course_examples": "The disk-connection puzzle, surface classification by surgery, intersection invariance, and the treatment of vector-field defects all use this family. In each case, motion is not a side effect; it is the proof method.",
         "failure_mode": "The common failure is to simplify by a move that the problem does not permit. Cutting a loop, sliding an endpoint, passing through an obstacle, or changing a boundary condition may make the picture easier while solving the wrong problem."
-      }
+      },
+      "essay": [
+        "Deformation arguments are the course's way of replacing a hard object by an easier one without losing the question. The first step is not to move anything. The first step is to state the contract: what may bend, what must stay attached, which crossings are forbidden, which endpoints stay fixed, and which boundaries still count as boundaries. Only after that contract is clear does motion become a proof method.",
+        "The family matters because many topological questions are impossible to settle from the first drawing. A tangled drawing may hide a simple answer; a simple-looking drawing may hide an obstruction. Deformation gives the reader permission to simplify, but only under rules that preserve the feature being tested. This is why the endpoint of a deformation proof is not evidence by itself. The evidence is the whole legal journey from the original picture to the easier one.",
+        "The mathematical principle is plain: if every allowed step preserves the relevant fact, then the final easy picture can speak for the original hard picture."
+      ]
     },
     {
       "id": "counting-family",
@@ -2821,7 +2866,12 @@
         "how_it_works": "A surviving-count proof identifies which local changes can happen, then shows those changes leave the chosen total alone. Once the total is known in an easy picture, it constrains every legally related picture and can forbid desired outcomes.",
         "course_examples": "Euler characteristic counts cells with alternating signs. Intersection number counts meetings with plus and minus signs. Poincare-Hopf counts vector-field defects and ties their total to the surface. These are different objects but the same proof instinct.",
         "failure_mode": "The common failure is to use a count that changes under harmless redrawings. A raw crossing count, for example, can rise or fall when a canceling pair is created, so it is not the protected quantity."
-      }
+      },
+      "essay": [
+        "Surviving-count arguments begin with a practical problem: the visible picture changes too much. Crossings can appear, cells can be subdivided, arrows can be redrawn, and defects can move. A raw count of everything usually fails because it records accidental clutter. The course therefore asks for a count designed to ignore the harmless changes while keeping the obstruction that matters.",
+        "Euler characteristic does this by alternating pieces. Intersection number does this by using signs. Vector-field index does this by recording how arrows turn around a defect. Parity does it more coarsely by keeping only evenness or oddness. These examples look different on the surface, but they share one idea: count the part of the situation that legal motion cannot erase.",
+        "The family is important because a good count can prove impossibility or forced existence without listing every possible drawing. Once the count is known in one honest version of the object, every legally related version has to obey it."
+      ]
     },
     {
       "id": "surface-family",
@@ -2840,7 +2890,12 @@
         "how_it_works": "Surface bookkeeping uses decompositions, orientation choices, boundary terms, and cancellation. It is careful about what is local and what is global, because many surface obstructions appear only after a full trip around the object or a full sum over its pieces.",
         "course_examples": "The Mobius strip reveals global one-sidedness. Surface classification tracks handles and crosscaps. Euler characteristic records whole-surface type. Poincare-Hopf shows that vector fields must obey the surface's total count. The same surface facts keep reappearing in different language.",
         "failure_mode": "The common failure is to reason locally and assume the whole surface behaves the same way. A Mobius strip defeats that assumption immediately, and later orientation-dependent counts fail without global consistency across the surface."
-      }
+      },
+      "essay": [
+        "Surface bookkeeping is needed because a surface can lie to local inspection. Every tiny patch of a sphere, torus, disk, or Mobius strip may look like an ordinary piece of paper. The difference appears when patches are glued into a whole: a route may return reversed, a boundary may add a term, a handle may create a new loop, or a missing disk may change what can be filled.",
+        "This family teaches the reader to track the whole surface without losing the local pieces. Cut the surface into manageable parts, count or orient those parts, then check what survives when they are put back together. Euler characteristic, boundary orientation, surface classification, and Poincare-Hopf all depend on this discipline.",
+        "The mathematical principle is that local freedom is not the same as global freedom. A patch may allow an arrow, a side choice, or a sign, while the completed surface refuses to let all those local choices agree at once."
+      ]
     },
     {
       "id": "embedding-family",
@@ -2859,7 +2914,12 @@
         "how_it_works": "Embedding arguments track crossings, over-under information, winding, linking, and surface room. They ask whether deformation can remove intersections or whether a count proves that some relation survives every allowed placement in the space under study.",
         "course_examples": "Path puzzles in a disk, planar graph questions, knots and links, and intersection theory all belong here. The family teaches the reader to distinguish accidental crossings from forced ones by checking what legal motion can remove.",
         "failure_mode": "The common failure is to confuse a failed attempt with a proof of impossibility. A topological obstruction must show that every legal attempt fails, not only the first drawing tried or the most obvious arrangement."
-      }
+      },
+      "essay": [
+        "Drawing and embedding arguments ask whether there is enough room for required connections. A failed drawing is not enough, because a better drawing may exist. The family therefore separates the object that must be placed from the space that must receive it. Which endpoints are fixed? Which crossings are forbidden? Can one strand pass through another? Does the surrounding surface have holes or handles that provide alternate routes?",
+        "This is where knots, links, planar graphs, path puzzles, and intersection arguments meet. Each problem asks whether a relation can be removed by legal motion or whether it belongs to the shape of the situation. A crossing on the page may be accidental. A linking relation or forced intersection may survive every attempt to redraw.",
+        "The important mathematical idea is not clever drawing. It is proving that all legal drawings face the same constraint. The surface or surrounding space supplies only certain routes, and sometimes those routes are not enough."
+      ]
     },
     {
       "id": "motion-family",
@@ -2870,7 +2930,7 @@
         "configuration-space",
         "fixed-points",
         "deformation",
-        "shape-as-machine"
+        "vector-field-index"
       ],
       "depth": {
         "human_problem": "The human problem is to understand motion when exact equations or trajectories are unavailable. This family asks what the shape of possible states can force before anything is solved explicitly or computed point by point.",
@@ -2878,7 +2938,12 @@
         "how_it_works": "The family translates physical or dynamical behavior into shape: graph of a map versus diagonal, vector field defects, index sums, or paths in a configuration space. Once translated, earlier tools such as deformation and surviving counts apply.",
         "course_examples": "The center-of-gravity demonstration, Brouwer fixed point theorem, vector fields, equilibria, Poincare-Hopf, and late applications all use this family. The course ends here because it shows topology acting on behavior, not only on static pictures.",
         "failure_mode": "The common failure is to model the state space carelessly. If the states, boundaries, forbidden positions, or allowed motions are wrong, the topological conclusion may no longer describe the physical system being studied at all."
-      }
+      },
+      "essay": [
+        "Motion-through-state arguments are the course's bridge from shapes to behavior. Instead of following a mechanism directly, the method lists its possible states and treats each state as a point in a new space. A motion is then a path through that space. A rule becomes a map of the space to itself. A forbidden physical arrangement becomes a wall, hole, or missing region in the state space.",
+        "This family explains why fixed points, vector fields, configuration spaces, and physical examples belong with surface topology. They are all ways of asking what behavior the shape of possibility permits. The course does not need every equation of motion to say something meaningful. If the state space has the right obstruction, some positions, coincidences, defects, or blocked motions are forced before detailed solving begins.",
+        "The detail that keeps the method honest is modeling. The state space must contain the right freedoms and remove the right forbidden states. If that translation is wrong, the topological conclusion may be true about the model but false about the physical situation."
+      ]
     }
   ],
   "math_why": {
@@ -2922,7 +2987,7 @@
       },
       {
         "requirement": "Hand-written concepts, themes, subthemes, and method families",
-        "evidence": "16 concepts with essay sections, 6 themes with essay sections, 10 subthemes, and 5 method families all have validated depth fields.",
+        "evidence": "16 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields.",
         "status": "met"
       },
       {
@@ -2952,6 +3017,8 @@
       "lecture_essay_words": 3170,
       "concept_essay_words": 2305,
       "theme_essay_words": 924,
+      "subtheme_essay_words": 1026,
+      "family_essay_words": 824,
       "concept_appearances_min": 2,
       "concept_appearances_max": 13,
       "html_pages_before_audit_page": 62

@@ -79,14 +79,29 @@ def main():
         for field in ["problem", "first_principles", "course_role"]:
             if len(words(depth.get(field))) < 30:
                 fail(f"subtheme {subtheme['id']} depth {field} too thin")
+        subtheme_essay_words = sum(len(words(p)) for p in subtheme.get("essay") or [])
+        if subtheme_essay_words < 90:
+            fail(f"subtheme {subtheme['id']} essay too thin")
 
     for family in data["families"]:
         depth = family.get("depth") or {}
         for field in ["human_problem", "first_principles", "how_it_works", "course_examples", "failure_mode"]:
             if len(words(depth.get(field))) < 35:
                 fail(f"family {family['id']} depth {field} too thin")
+        family_essay_words = sum(len(words(p)) for p in family.get("essay") or [])
+        if family_essay_words < 130:
+            fail(f"family {family['id']} essay too thin")
+
+    theme_ids = {theme["id"] for theme in data["themes"]}
+    subtheme_ids = {subtheme["id"] for subtheme in data["subthemes"]}
+    concept_ids = {concept["id"] for concept in data["concepts"]}
 
     for concept in data["concepts"]:
+        if concept.get("theme") not in theme_ids:
+            fail(f"concept {concept['id']} references unknown theme: {concept.get('theme')}")
+        unknown_subthemes = sorted(set(concept.get("subthemes") or []) - subtheme_ids)
+        if unknown_subthemes:
+            fail(f"concept {concept['id']} references unknown subthemes: {unknown_subthemes}")
         if len(words(concept["first_principles"])) < 35:
             fail(f"concept first_principles too thin: {concept['id']}")
         if len(words(concept["important_detail"])) < 12:
@@ -136,6 +151,11 @@ def main():
             missing = [cid for cid in example.get("concepts", []) if cid not in concept_ids]
             if missing:
                 fail(f"lecture {lecture['lecture']} example has unknown concept ids: {missing}")
+
+    for family in data["families"]:
+        missing = sorted(set(family.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"family {family['id']} references unknown concept ids: {missing}")
 
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 62:

@@ -653,7 +653,7 @@
     "theme": "shape-as-machine",
     "subthemes": [
       "mechanisms-and-locks",
-      "local-to-global"
+      "holes-and-boundaries"
     ],
     "first_principles": "A fixed point is a place that ends up where it started after a motion or rule is applied. Some spaces force at least one fixed point for any rule of a certain kind. The idea is powerful because it proves existence without naming the point: the shape leaves no way for every point to avoid itself.",
     "important_detail": "The claim depends on the shape of the space and the allowed kind of rule. Change either, and the guarantee may vanish.",
