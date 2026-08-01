@@ -18,6 +18,11 @@
       "ask": "Ask whether the proposed simplification uses only those allowed moves, or whether it quietly changes the original question.",
       "use": "Use this routine before every deformation, surgery, knot, path, or vector-field cleanup argument. The allowed moves decide what sameness means.",
       "mistake": "The mistake is accepting a cleaner picture before checking the motion that produced it. A clean drawing reached illegally is not evidence."
+    },
+    "bridge": {
+      "course_moment": "The disk path puzzle makes this subtheme visible because the endpoints, boundary order, and no-crossing rule decide the problem before any drawing is simplified.",
+      "thinking_shift": "The reader stops asking whether two pictures look similar and starts asking which motion was permitted between them.",
+      "reader_test": "Can the reader name one move that is allowed, one move that is forbidden, and the fact the allowed move must preserve?"
     }
   },
   {
@@ -39,6 +44,11 @@
       "ask": "Ask why that evidence survives the exact moves allowed in the problem, not merely why it looks stable in one drawing.",
       "use": "Use the invariant as a receipt. If two situations have different receipts, no legal journey connects them; if the receipt is forced, an outcome may be unavoidable.",
       "mistake": "The mistake is asking an invariant to remember everything. A good receipt may be partial and still strong enough to rule something out."
+    },
+    "bridge": {
+      "course_moment": "The Mobius strip, Euler characteristic, intersection number, and vector-field index each preserve a different receipt while the visible object changes.",
+      "thinking_shift": "The reader stops trusting resemblance and asks for the surviving evidence that lets one picture answer for another.",
+      "reader_test": "Can the reader say what receipt is carried through the motion and why that receipt is enough for the conclusion?"
     }
   },
   {
@@ -60,6 +70,11 @@
       "ask": "Ask whether a loop can be filled, whether a boundary adds a term, and whether removing or adding an edge changes the theorem's contract.",
       "use": "Use holes and boundaries as route information. They explain why loops may not shrink, why escape may be blocked, and why counts may need edge terms.",
       "mistake": "The mistake is treating holes and boundaries as visual decoration. They change which motions exist and which accounting rules are legal."
+    },
+    "bridge": {
+      "course_moment": "The closed ball in Brouwer, the boundary of the Mobius strip, and forbidden states in configuration spaces all show that edges and missing regions change the claim.",
+      "thinking_shift": "The reader stops seeing holes and boundaries as marks on a picture and starts reading them as rules for possible travel.",
+      "reader_test": "Can the reader identify which route, filling, escape, or accounting term changes because a boundary or hole is present?"
     }
   },
   {
@@ -81,6 +96,11 @@
       "ask": "Ask what the surrounding space permits. Can the loop shrink, can strands pass through, and does the drawing record the needed spatial information?",
       "use": "Use this routine whenever the course turns a drawn curve into evidence about route, linking, winding, or impossible untangling.",
       "mistake": "The mistake is judging by visual tangledness. The protected question is what legal motion can remove, not how complicated the drawing appears."
+    },
+    "bridge": {
+      "course_moment": "Mobius strip cuts and later linked strip demonstrations show that a curve can keep route memory even after its exact shape changes.",
+      "thinking_shift": "The reader stops judging by visual tangledness and asks what legal motion can or cannot remove.",
+      "reader_test": "Can the reader name the surrounding space, the route relation, and the forbidden move needed to erase that relation?"
     }
   },
   {
@@ -102,6 +122,11 @@
       "ask": "Ask whether the local turning is being summed over the right object and whether boundary or corner terms belong in the account.",
       "use": "Use turning and curvature to connect local measurements to whole-shape restrictions, especially in total-turning, index, and Gauss-Bonnet-style arguments.",
       "mistake": "The mistake is stopping at one local bend. The course usually cares about a total whose value the whole object can constrain."
+    },
+    "bridge": {
+      "course_moment": "Vector-field index asks the reader to walk around a defect and watch arrows turn; Gauss-Bonnet-style reasoning asks how local bending contributes to a total.",
+      "thinking_shift": "The reader stops treating a local bend or turn as isolated and asks what total it contributes to.",
+      "reader_test": "Can the reader say what local turning is being added and what whole object controls the final total?"
     }
   },
   {
@@ -123,6 +148,11 @@
       "ask": "Ask where plus and minus signs come from, and whether legal changes really create canceling pairs rather than arbitrary arithmetic.",
       "use": "Use signs to make a fragile raw count into stable evidence. Cancellation is the mechanism that lets the total survive redrawings.",
       "mistake": "The mistake is assigning signs without a direction rule. Without a reason for plus and minus, cancellation has no mathematical force."
+    },
+    "bridge": {
+      "course_moment": "Signed intersections show two meetings born together with opposite signs, so the drawing changes while the total stays fixed.",
+      "thinking_shift": "The reader stops counting every visible event positively and asks which events cancel because of the direction rule.",
+      "reader_test": "Can the reader explain where the signs come from and why a pair created during motion adds no net evidence?"
     }
   },
   {
@@ -144,6 +174,11 @@
       "ask": "Ask whether local choices glue together globally. Can a side or orientation be carried around a full loop without contradiction?",
       "use": "Use this routine before trusting signed intersections, vector-field indices, surface classification, or any argument that depends on plus and minus across a surface.",
       "mistake": "The mistake is checking only a small patch. Every tiny neighborhood may look ordinary while the completed surface reverses a side or blocks a global choice."
+    },
+    "bridge": {
+      "course_moment": "The Mobius strip reverses side after a full trip, while orientable surfaces later allow consistent signs for intersections and vector-field index.",
+      "thinking_shift": "The reader stops trusting one local patch and asks whether the local side or direction choice survives a full journey.",
+      "reader_test": "Can the reader carry the chosen direction around the object and say whether it returns agreeing with itself?"
     }
   },
   {
@@ -165,6 +200,11 @@
       "ask": "Ask which physical motion becomes a path or rule in that state space, and what topological feature blocks or forces behavior.",
       "use": "Use this routine when the course moves from paper or surface examples into balance, fixed points, configuration spaces, and dynamics.",
       "mistake": "The mistake is applying a theorem before the model is honest. A wrong state space gives a conclusion about the wrong physical problem."
+    },
+    "bridge": {
+      "course_moment": "The center-of-gravity demonstration and later applications turn physical behavior into questions about paths or forced points in a state space.",
+      "thinking_shift": "The reader stops following every motion detail and asks what shape the possible states form.",
+      "reader_test": "Can the reader state the possible states, forbidden states, and topological feature that blocks or forces the physical behavior?"
     }
   },
   {
@@ -186,6 +226,11 @@
       "ask": "Ask what ordinary pictures exist just before and just after the special instant, and what protected count changes or stays fixed.",
       "use": "Use singular moments as transition evidence. They explain why ordinary cases can change without destroying a protected total.",
       "mistake": "The mistake is either ignoring the special instant or treating it as the whole proof. Its role is to explain the passage between ordinary cases."
+    },
+    "bridge": {
+      "course_moment": "Pair creation, pair cancellation, tangencies, and non-isolated defects are the special instants where one ordinary picture changes into another.",
+      "thinking_shift": "The reader stops fearing exceptions as separate mysteries and reads them as controlled transitions between stable cases.",
+      "reader_test": "Can the reader describe the ordinary picture before the special instant, after it, and what protected count survives the passage?"
     }
   },
   {
@@ -207,6 +252,11 @@
       "ask": "Ask whether the name has been translated into an everyday action before it is used in an argument.",
       "use": "Use this routine whenever a page introduces a formal word. The word earns its place only by helping solve the problem.",
       "mistake": "The mistake is collecting labels while missing the model. Knowing a term's name is not the same as knowing what it lets the proof do."
+    },
+    "bridge": {
+      "course_moment": "Manifold, quotient, index, invariant, and configuration space all matter only when they name a working model for motion, counting, or forced behavior.",
+      "thinking_shift": "The reader stops collecting terms and translates each term into the action it permits in the proof.",
+      "reader_test": "Can the reader replace the term with an everyday sentence saying what object, move, count, or obstruction it supplies?"
     }
   }
 ]

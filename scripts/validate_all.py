@@ -95,6 +95,10 @@ def main():
         for field in ["look_for", "ask", "use", "mistake"]:
             if len(words(routine.get(field))) < 12:
                 fail(f"subtheme {subtheme['id']} routine {field} too thin")
+        bridge = subtheme.get("bridge") or {}
+        for field in ["course_moment", "thinking_shift", "reader_test"]:
+            if len(words(bridge.get(field))) < 14:
+                fail(f"subtheme {subtheme['id']} bridge {field} too thin")
 
     for family in data["families"]:
         depth = family.get("depth") or {}
@@ -347,9 +351,9 @@ def main():
         if subtheme_name not in names:
             fail(f"missing subtheme page {subtheme['id']}")
         subtheme_html = (SITE / subtheme_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:"]:
+        for phrase in ["First-Principles Bridge", "Course moment:", "Thinking shift:", "Reader test:", "Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:"]:
             if phrase not in subtheme_html:
-                fail(f"subtheme page missing routine phrase {phrase}: {subtheme_name}")
+                fail(f"subtheme page missing subtheme phrase {phrase}: {subtheme_name}")
     for family in data["families"]:
         family_name = f"family-{family['id']}.html"
         if family_name not in names:
