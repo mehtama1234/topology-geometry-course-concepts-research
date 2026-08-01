@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 78.
+- HTML pages: 81.
 
 ## Main Reader Surfaces
 
@@ -40,6 +40,7 @@ This repo is the source and generated static site for a first-principles compani
 - `formula-reader.html` — plain readings of central formulas and theorem statements.
 - `math-playground.html` — four interactive canvas widgets.
 - `reader-checks.html` — eleven common reasoning failure checks.
+- `term-translator.html` — 16 formal course words translated into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links.
 - `references.html` — course, primary-paper, and standard-text links with source caveats and lecture/concept coverage.
 - `quality-rubric.html` — six first-principles prose tests for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.
 - `rubric-coverage.html` — maps the six prose tests across lectures, concepts, themes, subthemes, method families, and source/quality pages.
@@ -92,6 +93,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - method-contract sections on every family page;
 - can-you-use-this-method answer-guide sections on every family page;
 - reader checks structure;
+- term-translator structure, field depth, required term set, and concept-link integrity;
 - references layer structure and page content;
 - quality-rubric structure and page content;
 - rubric-coverage structure and page content;
@@ -133,6 +135,9 @@ As of the current generated audit:
 - 8 concept dependency paths.
 - 5 proof-move recipes.
 - 11 reader checks.
+- 16 term translations.
+- 1,850 term-translation words.
+- 7 references.
 - 6 quality-rubric tests.
 - 6 rubric-coverage layer maps.
 

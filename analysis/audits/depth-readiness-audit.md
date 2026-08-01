@@ -33,6 +33,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - concept-dependencies.html with 8 prerequisite paths linking early ideas to later theorem-level ideas
 - proof-moves.html with 5 reusable proof recipes
 - reader-checks.html with eleven concrete checks for common reasoning failures
+- term-translator.html with 16 formal course words translated into everyday sentences, argument jobs, failure tests, reader questions, and concept links
 - references.html with 7 course, primary-paper, and standard-text links, each with source caveats and lecture/concept coverage
 - quality-rubric.html with 6 prose tests for object, legal move, protected fact, failure condition, course anchor, and plain-language replacement
 - rubric-coverage.html with 6 layer maps showing where those tests are satisfied

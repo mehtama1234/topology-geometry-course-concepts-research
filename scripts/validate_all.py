@@ -83,6 +83,42 @@ def main():
             if len(words(evidence)) < 5:
                 fail(f"rubric coverage {row.get('layer')} {rubric_id} too thin")
 
+    term_concept_ids = {concept["id"] for concept in data["concepts"]}
+    term_translations = data.get("term_translations") or []
+    if len(term_translations) < 16:
+        fail("term translations layer needs at least sixteen terms")
+    required_terms = {
+        "Topology",
+        "Geometry",
+        "Invariant",
+        "Deformation",
+        "Quotient space",
+        "Product space",
+        "Manifold",
+        "Generic position",
+        "Orientation",
+        "Euler characteristic",
+        "Parity",
+        "Intersection number",
+        "Fixed point",
+        "Configuration space",
+        "Vector-field index",
+        "Poincare-Hopf theorem",
+    }
+    if {row.get("term") for row in term_translations} != required_terms:
+        fail("term translations do not match required first-principles term set")
+    for row in term_translations:
+        for field in ["everyday_sentence", "job_in_argument", "not_a_definition", "failure_if_misread"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"term translation {row.get('term')} {field} too thin")
+        if len(words(row.get("reader_question"))) < 8:
+            fail(f"term translation {row.get('term')} reader question too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"term translation {row.get('term')} needs three concept links")
+        missing = sorted(set(row.get("concepts") or []) - term_concept_ids)
+        if missing:
+            fail(f"term translation {row.get('term')} references unknown concept ids: {missing}")
+
     math_why = data.get("math_why") or {}
     for field in ["big_picture", "first_principles", "important_detail", "principle", "concepts_matter", "reader_path"]:
         if len(words(math_why.get(field))) < 45:
@@ -335,7 +371,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "term-translator.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -403,6 +439,14 @@ def main():
             fail(f"reader checks page missing phrase: {phrase}")
     if len(words(re.sub(r"<[^>]+>", " ", reader_checks))) < 700:
         fail("reader checks page too thin")
+    term_translator = (SITE / "term-translator.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Term Translator", "Everyday sentence:", "Job in the argument:", "Not a definition:", "Failure if misread:", "Reader question:"]:
+        if phrase not in term_translator:
+            fail(f"term translator missing phrase: {phrase}")
+    if term_translator.count("<article") < 16:
+        fail("term translator needs sixteen term cards")
+    if len(words(re.sub(r"<[^>]+>", " ", term_translator))) < 1200:
+        fail("term translator too thin")
     references_page = (SITE / "references.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["References", "Source Caveat", "Why it belongs", "Use carefully", "Lecture coverage", "Concept coverage"]:
         if phrase not in references_page:

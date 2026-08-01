@@ -92,6 +92,11 @@
       "status": "met"
     },
     {
+      "requirement": "Plain-language term translation",
+      "evidence": "The Term Translator page rewrites 16 formal course words as everyday sentences, jobs in an argument, non-definition warnings, failure conditions, reader questions, and concept links, with 1850 total term-translation words.",
+      "status": "met"
+    },
+    {
       "requirement": "References and paper trail",
       "evidence": "The References page gives 7 course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
       "status": "met"
@@ -135,11 +140,13 @@
     "dependency_paths": 8,
     "proof_moves": 5,
     "reader_checks": 11,
+    "term_translations": 16,
+    "term_translation_words": 1850,
     "references": 7,
     "quality_rubric_items": 6,
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 80
+    "html_pages_before_audit_page": 81
   }
 }

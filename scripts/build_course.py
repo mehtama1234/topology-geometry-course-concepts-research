@@ -145,6 +145,154 @@ REFERENCES = [
 ]
 
 
+TERM_TRANSLATIONS = [
+    {
+        "term": "Topology",
+        "everyday_sentence": "Topology asks what a shape still makes possible after distances, angles, and exact measurements are allowed to change.",
+        "job_in_argument": "Its job is to move attention from measured appearance to permissions: which routes remain open, which crossings are forbidden, which boundaries matter, and which relationships survive legal motion.",
+        "not_a_definition": "It is not a license to ignore detail. It ignores only the details that the problem has declared irrelevant while protecting the detail that can force the answer.",
+        "failure_if_misread": "If topology is read as vague shape talk, the proof loses its rulebook. A reader may bend, cross, or erase a feature that the original problem required them to keep.",
+        "concepts": ["topology-vs-geometry", "deformation", "invariant"],
+        "reader_question": "What exact detail is topology keeping alive after the drawing has been changed?",
+    },
+    {
+        "term": "Geometry",
+        "everyday_sentence": "Geometry keeps measured information in view: length, angle, area, curvature, direction, and local bending.",
+        "job_in_argument": "Its job is to supply the local facts that topology later adds up or protects. The course often uses geometric measurements as the small evidence whose total is controlled by the whole shape.",
+        "not_a_definition": "It is not the opposite of topology. In this course, geometry often prepares the measured pieces, while topology explains why the completed account has limited freedom.",
+        "failure_if_misread": "If geometry is treated as mere measurement, the reader misses why curvature, direction, and local turning become evidence about the whole surface rather than isolated numbers.",
+        "concepts": ["topology-vs-geometry", "gauss-bonnet", "boundary-orientation"],
+        "reader_question": "Which measured local fact is being kept, and what whole-shape claim will it support?",
+    },
+    {
+        "term": "Invariant",
+        "everyday_sentence": "An invariant is a fact that stays the same while the allowed changes are made.",
+        "job_in_argument": "Its job is to give the proof a receipt. If the invariant differs between two situations, no chain of legal moves can connect them; if it survives every legal move, it can carry the conclusion across a simplified picture.",
+        "not_a_definition": "It is not a complete description of the object. It is a deliberately chosen fact that survives the moves relevant to one question.",
+        "failure_if_misread": "If a reader treats any stable-looking number as an invariant, they may use a count that changes under a legal redraw and then trust evidence that has already leaked away.",
+        "concepts": ["invariant", "euler-characteristic", "parity"],
+        "reader_question": "Which allowed move has been checked, and why does this fact survive that move?",
+    },
+    {
+        "term": "Deformation",
+        "everyday_sentence": "A deformation is a slow legal change of the object, like bending without cutting, jumping, or passing through a forbidden place.",
+        "job_in_argument": "Its job is to replace a hard picture with an easier one while preserving the question. The path of change is evidence only because every step obeys the same restrictions as the original problem.",
+        "not_a_definition": "It is not visual simplification by taste. It is a controlled motion whose allowed and forbidden actions must be named.",
+        "failure_if_misread": "If the deformation secretly cuts, crosses, moves a fixed boundary, or changes the state space, the easier picture may no longer answer the original question.",
+        "concepts": ["deformation", "knots-and-links", "winding-linking"],
+        "reader_question": "What is allowed to move, and what would count as changing the problem instead of solving it?",
+    },
+    {
+        "term": "Quotient space",
+        "everyday_sentence": "A quotient space is made by declaring certain points to be the same point in the finished shape.",
+        "job_in_argument": "Its job is to turn a construction rule into the actual space being studied. Edge labels, glued boundaries, and identified points are not decoration; they decide what routes and neighborhoods exist afterward.",
+        "not_a_definition": "It is not just a drawing with arrows on the sides. The arrows are instructions for which positions become identical in the new space.",
+        "failure_if_misread": "If the identification rule is read loosely, a reader may reason on the unglued picture and prove a claim about the wrong surface.",
+        "concepts": ["quotient-space", "boundary-orientation", "manifold"],
+        "reader_question": "Which points have been declared identical, and what route or boundary changes because of that declaration?",
+    },
+    {
+        "term": "Product space",
+        "everyday_sentence": "A product space records two independent choices at once, so one point in the new space means one complete pair of choices.",
+        "job_in_argument": "Its job is to turn several freedoms into a single stage for reasoning. If one choice is position and another is angle, the product records the full state before constraints or forbidden states are removed.",
+        "not_a_definition": "It is not a multiplication of sizes. It is a way of keeping independent choices together without forgetting either one.",
+        "failure_if_misread": "If the choices are not truly independent, or if later restrictions are ignored, the product space may contain states the original problem never allowed.",
+        "concepts": ["product-space", "configuration-space", "fixed-points"],
+        "reader_question": "What are the separate choices, and does one point in the product really describe one complete state?",
+    },
+    {
+        "term": "Manifold",
+        "everyday_sentence": "A manifold is a shape that looks ordinary in each small patch, even if the whole shape has a surprising global form.",
+        "job_in_argument": "Its job is to let the proof use local tools while still asking global questions. Small neighborhoods can support arrows, signs, coordinates, or curves, but the whole object may refuse a consistent global arrangement.",
+        "not_a_definition": "It is not just a smooth-looking surface. The important point is the agreement between ordinary local patches and possibly nonordinary global behavior.",
+        "failure_if_misread": "If a reader assumes local ordinary behavior settles the whole question, they miss one-sidedness, orientation failure, forced defects, and other whole-shape obstructions.",
+        "concepts": ["manifold", "boundary-orientation", "poincare-hopf"],
+        "reader_question": "What works in each small patch, and what still has to be checked around the whole shape?",
+    },
+    {
+        "term": "Generic position",
+        "everyday_sentence": "Generic position means moving the picture away from fragile coincidences so meetings happen cleanly and one at a time.",
+        "job_in_argument": "Its job is to create a case where counting and signs are honest. Once tangencies, triple meetings, and perfect alignments are removed by a tiny legal nudge, the stable behavior can be read without accidental clutter.",
+        "not_a_definition": "It is not pretending special cases do not exist. It is a way to understand the ordinary case first, then explain special cases as controlled limits.",
+        "failure_if_misread": "If the nudge changes the protected fact, the proof has erased the hard part. If no nudge is made, the count or sign may be undefined.",
+        "concepts": ["generic-position", "intersection-number", "vector-field-index"],
+        "reader_question": "Which coincidence was removed, and why did the small move preserve the question?",
+    },
+    {
+        "term": "Orientation",
+        "everyday_sentence": "Orientation is the ability to choose a consistent sense of direction across a surface or along a boundary.",
+        "job_in_argument": "Its job is to make signs meaningful. Plus and minus crossings, boundary directions, and turning counts need a shared direction rule before they can be added.",
+        "not_a_definition": "It is not merely clockwise versus counterclockwise in one picture. The choice must remain consistent after moving across the whole object.",
+        "failure_if_misread": "If orientation is assumed where the surface cannot support it, signed counts may be meaningless even though the symbols look familiar.",
+        "concepts": ["boundary-orientation", "intersection-number", "gauss-bonnet"],
+        "reader_question": "Where does the sign convention come from, and can it be carried consistently through the space being used?",
+    },
+    {
+        "term": "Euler characteristic",
+        "everyday_sentence": "Euler characteristic is a number made by counting pieces of a surface in an alternating way: corners minus edges plus regions.",
+        "job_in_argument": "Its job is to remember a whole-surface fact while ignoring the particular way the surface was divided. The alternating account is designed so artificial internal changes cancel.",
+        "not_a_definition": "It is not the visible number of holes by itself and not a property of one drawing. It is a ledger that survives acceptable ways of cutting the surface into pieces.",
+        "failure_if_misread": "If boundaries, cells, or the surface type are counted carelessly, the final number may describe the bookkeeping error rather than the surface.",
+        "concepts": ["euler-characteristic", "triangulation", "poincare-hopf"],
+        "reader_question": "What surface is being counted, and why does changing the breakup leave the alternating account fixed?",
+    },
+    {
+        "term": "Parity",
+        "everyday_sentence": "Parity keeps only whether a count is even or odd, because that smaller fact can survive when the exact number changes.",
+        "job_in_argument": "Its job is to protect the part of a count that survives pair changes. When legal moves create or remove events two at a time, exact counts may shift but oddness or evenness remains.",
+        "not_a_definition": "It is not a weaker explanation by default. It is the right explanation when the problem only needs to know whether zero is possible.",
+        "failure_if_misread": "If legal moves can change the count by one, parity gives no protection. The odd-or-even claim then has no reason behind it.",
+        "concepts": ["parity", "intersection-number", "graph-planarity"],
+        "reader_question": "Why do the allowed changes affect the count in pairs?",
+    },
+    {
+        "term": "Intersection number",
+        "everyday_sentence": "Intersection number is a signed count of how two objects meet, keeping direction information that a raw crossing count loses.",
+        "job_in_argument": "Its job is to turn unavoidable meeting into arithmetic. Clean crossings receive signs, and opposite-sign pairs created during legal motion cancel, leaving a total that can force a meeting to remain.",
+        "not_a_definition": "It is not the raw number of crossings in a drawing. The signs and the rule that makes them survive are the point.",
+        "failure_if_misread": "If meetings are not clean, if orientation is missing, or if an illegal crossing is allowed, the signed total may not be valid evidence.",
+        "concepts": ["intersection-number", "generic-position", "boundary-orientation"],
+        "reader_question": "What gives each meeting its sign, and what legal motion could create a canceling pair?",
+    },
+    {
+        "term": "Fixed point",
+        "everyday_sentence": "A fixed point is a place that a rule sends back to itself, so input and output agree at that place.",
+        "job_in_argument": "Its job is to express forced self-agreement. The course often turns a rule into a shape, compares it with the diagonal of self-agreement, and uses topology to show that avoiding the diagonal is impossible.",
+        "not_a_definition": "It is not a request to compute the point. Many fixed-point arguments prove that some point must exist before they know where it is.",
+        "failure_if_misread": "If the domain, boundary, or continuity condition is changed, the guarantee can disappear even though the phrase fixed point still sounds applicable.",
+        "concepts": ["fixed-points", "brouwer-fixed-point", "configuration-space"],
+        "reader_question": "What is the space, what is the rule, and why can the rule not move every point away from itself?",
+    },
+    {
+        "term": "Configuration space",
+        "everyday_sentence": "A configuration space is the shape made by listing every allowed state of a system.",
+        "job_in_argument": "Its job is to turn a motion problem into a route problem. Moving the system becomes walking through this space, while forbidden states become holes, walls, or missing regions.",
+        "not_a_definition": "It is not a picture of the physical object itself. It is a picture of the object's possible states.",
+        "failure_if_misread": "If the model forgets a real freedom or includes a forbidden state, paths in the configuration space may describe motions that the real system cannot perform.",
+        "concepts": ["configuration-space", "product-space", "fixed-points"],
+        "reader_question": "What data describe one complete state, and which states have been removed as forbidden?",
+    },
+    {
+        "term": "Vector-field index",
+        "everyday_sentence": "Vector-field index counts how nearby arrows turn when you walk around a defect in an arrow pattern.",
+        "job_in_argument": "Its job is to make a local failure countable. Once each isolated defect has a signed turning count, the course can compare the sum of local failures with a number belonging to the whole surface.",
+        "not_a_definition": "It is not the size or strength of the arrows. It records the turning pattern around a place where the field breaks down.",
+        "failure_if_misread": "If the defect is not isolated, or if the loop around it crosses another defect, the local count may not belong to one failure point.",
+        "concepts": ["vector-field-index", "equilibrium", "poincare-hopf"],
+        "reader_question": "What loop surrounds the defect, and how do the arrows turn during one trip around it?",
+    },
+    {
+        "term": "Poincare-Hopf theorem",
+        "everyday_sentence": "Poincare-Hopf says that all the local arrow-field defects on a suitable surface must add up to the surface's Euler characteristic.",
+        "job_in_argument": "Its job is to connect local motion failures with whole-shape bookkeeping. Defects can move or split, but their total has to respect the surface that carries the field.",
+        "not_a_definition": "It is not a statement about one equilibrium by itself. It is a statement about the total account across the entire surface.",
+        "failure_if_misread": "If the surface, boundary behavior, or defect list is wrong, the sum may no longer be the theorem's sum. The conclusion then overreads the model.",
+        "concepts": ["poincare-hopf", "vector-field-index", "euler-characteristic"],
+        "reader_question": "What are all the defects, what is their signed total, and what surface number must that total match?",
+    },
+]
+
+
 THEMES = [
     {
         "id": "see-by-deforming",
@@ -2656,6 +2804,7 @@ def page(title, body, current=""):
         ("proof-moves.html", "Proof Moves"),
         ("formula-reader.html", "Formula Reader"),
         ("reader-checks.html", "Reader Checks"),
+        ("term-translator.html", "Term Translator"),
         ("references.html", "References"),
         ("quality-rubric.html", "Quality Rubric"),
         ("rubric-coverage.html", "Rubric Coverage"),
@@ -2915,6 +3064,7 @@ def build_quality_audit(data):
     family_contract_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["contract"][field])) for field in ["input", "action", "evidence", "output", "failure_test"]) for f in data["families"])
     family_playbook_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["playbook"][field])) for field in ["setup", "move", "payoff", "failure", "reader_test"]) for f in data["families"])
     family_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["answer_guide"][field])) for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]) for f in data["families"])
+    term_translation_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["everyday_sentence", "job_in_argument", "not_a_definition", "failure_if_misread", "reader_question"]) for row in data["term_translations"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -3007,6 +3157,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Plain-language term translation",
+            "evidence": f"The Term Translator page rewrites {len(data['term_translations'])} formal course words as everyday sentences, jobs in an argument, non-definition warnings, failure conditions, reader questions, and concept links, with {term_translation_words} total term-translation words.",
+            "status": "met",
+        },
+        {
             "requirement": "References and paper trail",
             "evidence": f"The References page gives {len(data['references'])} course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
             "status": "met",
@@ -3051,6 +3206,8 @@ def build_quality_audit(data):
             "dependency_paths": len(data["concept_dependencies"]),
             "proof_moves": len(data["proof_moves"]),
             "reader_checks": 11,
+            "term_translations": len(data["term_translations"]),
+            "term_translation_words": term_translation_words,
             "references": len(data["references"]),
             "quality_rubric_items": len(data["quality_rubric"]),
             "rubric_coverage_layers": len(data["rubric_coverage"]),
@@ -3122,6 +3279,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Proof Moves', 'Five reusable proof recipes show the steps: name the object, name legal moves, protect evidence, and use the conclusion without hiding the contract.', 'proof-moves.html', 'Moves')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
+{card('Term Translator', 'Sixteen formal course words translated into the job they perform in an argument, with failure tests and concept links for each one.', 'term-translator.html', 'Terms')}
 {card('References', 'Course, primary-paper, and standard-text links for the main ideas, with notes on what each source supports and what claim would overread it.', 'references.html', 'Sources')}
 {card('Quality Rubric', 'Six first-principles tests keep long prose honest: object, legal move, surviving evidence, failure condition, course anchor, and everyday-language replacement.', 'quality-rubric.html', 'Rubric')}
 {card('Rubric Coverage', 'A layer-by-layer audit maps the six quality tests onto lectures, concepts, themes, subthemes, method families, source pages, and review checks.', 'rubric-coverage.html', 'Coverage')}
@@ -3353,6 +3511,36 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 """
     (SITE / "reader-checks.html").write_text(page("Reader Checks", checks_body, "Reader Checks"), encoding="utf-8")
 
+    term_cards = []
+    for row in data["term_translations"]:
+        term_cards.append(
+            f"""<article class="card">
+  <div class="meta">Formal word</div>
+  <h3>{esc(row['term'])}</h3>
+  <p><b>Everyday sentence:</b> {esc(row['everyday_sentence'])}</p>
+  <p><b>Job in the argument:</b> {esc(row['job_in_argument'])}</p>
+  <p><b>Not a definition:</b> {esc(row['not_a_definition'])}</p>
+  <p><b>Failure if misread:</b> {esc(row['failure_if_misread'])}</p>
+  <p><b>Reader question:</b> {esc(row['reader_question'])}</p>
+  <p>{concept_pills(row['concepts'], data['concepts'])}</p>
+</article>"""
+        )
+    terms_body = f"""
+<h1>Term Translator</h1>
+<p class="lead">This page turns loaded course words into the work they do inside an argument. Read the everyday sentence first, then the formal word. The word is useful only after the object, move, protected fact, and failure condition are visible.</p>
+<section class="lecture">
+  <h2>How To Use This Page</h2>
+  <p>When a page uses a word such as invariant, quotient space, manifold, index, or configuration space, pause and ask what job the word is doing. Is it naming the object, the allowed move, the surviving evidence, the sign rule, the state model, or the theorem that compares local and whole-shape facts?</p>
+  <p>This is a reading tool, not a word list. A formal word should shorten an idea that has already been explained. If the word arrives before its job is clear, use the reader question on the card to recover the missing sentence.</p>
+</section>
+<div class="grid two">{''.join(term_cards)}</div>
+<section class="lecture">
+  <h2>The Common Test</h2>
+  <p>For any term, ask what it lets the proof do that ordinary description could not do cleanly. A manifold lets local patches support a global question. An invariant carries evidence through legal motion. A configuration space turns motion into routes. An index turns a local arrow failure into a signed count. The word earns its place only when that work is visible.</p>
+</section>
+"""
+    (SITE / "term-translator.html").write_text(page("Term Translator", terms_body, "Term Translator"), encoding="utf-8")
+
     known_concepts = {c["id"]: c for c in data["concepts"]}
     global_reference_cards = []
     for ref in data["references"]:
@@ -3581,7 +3769,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -3721,6 +3909,7 @@ def main():
         "lecture_spine": LECTURE_SPINE,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
+        "term_translations": TERM_TRANSLATIONS,
         "references": REFERENCES,
         "quality_rubric": QUALITY_RUBRIC,
         "rubric_coverage": RUBRIC_COVERAGE,
@@ -3749,6 +3938,7 @@ def main():
     write_json(ANALYSIS / "lecture-spine.json", LECTURE_SPINE)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
+    write_json(ANALYSIS / "term-translations.json", TERM_TRANSLATIONS)
     write_json(ANALYSIS / "references.json", REFERENCES)
     write_json(ANALYSIS / "quality-rubric.json", QUALITY_RUBRIC)
     write_json(ANALYSIS / "rubric-coverage.json", RUBRIC_COVERAGE)
@@ -3802,6 +3992,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
 - proof-moves.html with {metrics['proof_moves']} reusable proof recipes
 - reader-checks.html with eleven concrete checks for common reasoning failures
+- term-translator.html with {metrics['term_translations']} formal course words translated into everyday sentences, argument jobs, failure tests, reader questions, and concept links
 - references.html with {metrics['references']} course, primary-paper, and standard-text links, each with source caveats and lecture/concept coverage
 - quality-rubric.html with {metrics['quality_rubric_items']} prose tests for object, legal move, protected fact, failure condition, course anchor, and plain-language replacement
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
