@@ -4461,12 +4461,7 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             "A theorem name cannot replace the route from concrete setup to protected evidence.",
             "The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
         ])
-        source_check_open = varied((number, "source-check-open"), [
-            "Before citing a source, ask this:",
-            "Use this source check before strengthening a sentence:",
-            "The source audit question is:",
-            "Pause before importing outside authority:",
-        ])
+        source_check = lecture_drill_source_check(number, spine, bridge, source_family_label)
         drills.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
@@ -4481,10 +4476,24 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             ],
             "self_check": self_check,
             "common_failure": f"The common failure is to jump from {examples[0]['title']} straight to a theorem or source name. {common_failure_close}",
-            "source_check": f"{source_check_open} does the source support the family of ideas behind Lecture {number:02d}, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: {bridge['overread_warning']}",
+            "source_check": source_check,
             "concepts": concept_ids[:6],
         })
     return drills
+
+
+def lecture_drill_source_check(number, spine, bridge, source_family_label):
+    object_text = spine["object"].rstrip(".")
+    legal_move = spine["legal_move"].rstrip(".")
+    surviving = spine["surviving_fact"].rstrip(".")
+    warning = bridge["overread_warning"]
+    options = [
+        f"Before using {source_family_label}, test the claim against the lecture itself. Can it still name the object: {object_text}; the allowed move: {legal_move}; and the protected fact: {surviving}? The bridge warning says: {warning}",
+        f"Use this source check before strengthening a sentence. {source_family_label} may broaden the setting only if the sentence still returns to {object_text}, uses the legal move: {legal_move}, and protects this fact: {surviving}. The bridge warning says: {warning}",
+        f"The source audit is concrete for Lecture {number:02d}: what exact claim can {source_family_label} carry, and what must remain a course demonstration? Keep the answer tied to the object: {object_text}; the move: {legal_move}; and the fact: {surviving}. The bridge warning says: {warning}",
+        f"Pause at the source boundary. If {source_family_label} makes the sentence sound stronger, ask what the lecture itself proved from the object: {object_text}; what move was allowed; and what fact survived: {surviving}. The bridge warning says: {warning}",
+    ]
+    return varied((number, source_family_label, "drill-source-check"), options)
 
 
 def build_concept_self_check(concept):
