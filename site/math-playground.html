@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math Playground</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand">Topology & Geometry</div><nav><a class="" href="index.html">Course</a><a class="" href="videos.html">Videos</a><a class="" href="lectures.html">Lectures</a><a class="" href="concepts.html">Concepts</a><a class="" href="themes.html">Themes</a><a class="" href="subthemes.html">Subthemes</a><a class="" href="families.html">Families</a><a class="" href="the-math-why.html">The Math Why</a><a class="active" href="math-playground.html">Playground</a><a class="" href="quality-audit.html">Quality Audit</a><a class="" href="source-audit.html">Source Audit</a></nav></header>
+  <main>
+<h1>Math Playground</h1>
+<p class="lead">These small models make the course engine visible: choose legal data, watch what changes, and notice what count or meeting survives.</p>
+<section class="play-grid">
+  <article class="play">
+    <div class="meta">Euler characteristic</div>
+    <h2>Cut a disk into pieces</h2>
+    <p>More cuts change the ledger of vertices, edges, and faces. The alternating count stays attached to the disk.</p>
+    <div class="equation">V - E + F stays 1</div>
+    <canvas data-play="euler" aria-label="Euler characteristic playground"></canvas>
+    <div class="control"><label for="euler-cuts">Cuts</label><input id="euler-cuts" type="range" min="3" max="12" value="6"><span class="readout" data-out="euler-cuts">6</span></div>
+  </article>
+  <article class="play">
+    <div class="meta">Signed cancellation</div>
+    <h2>Birth of opposite meetings</h2>
+    <p>A pair can appear during motion. The raw count changes, but the plus and minus signs cancel.</p>
+    <div class="equation">(+1) + (-1) = 0</div>
+    <canvas data-play="signs" aria-label="Signed cancellation playground"></canvas>
+    <div class="control"><label for="sign-sep">Separation</label><input id="sign-sep" type="range" min="0" max="100" value="55"><span class="readout" data-out="sign-sep">55</span></div>
+  </article>
+  <article class="play">
+    <div class="meta">Fixed points</div>
+    <h2>Graph meets diagonal</h2>
+    <p>A rule becomes a graph. Where the graph meets the diagonal, a point returns to itself.</p>
+    <div class="equation">fixed point means f(x) = x</div>
+    <canvas data-play="fixed" aria-label="Fixed point playground"></canvas>
+    <div class="control"><label for="fixed-bend">Rule bend</label><input id="fixed-bend" type="range" min="0" max="100" value="50"><span class="readout" data-out="fixed-bend">50</span></div>
+  </article>
+  <article class="play">
+    <div class="meta">Vector-field index</div>
+    <h2>Walk around a defect</h2>
+    <p>The index records how nearby arrows turn around a failure point. Local turning becomes countable evidence.</p>
+    <div class="equation">local arrow turn gives a signed count</div>
+    <canvas data-play="index" aria-label="Vector-field index playground"></canvas>
+    <div class="control"><label for="index-mode">Arrow pattern</label><input id="index-mode" type="range" min="0" max="100" value="20"><span class="readout" data-out="index-mode">20</span></div>
+  </article>
+</section>
+<script src="assets/playground.js"></script>
+</main>
+</body>
+</html>

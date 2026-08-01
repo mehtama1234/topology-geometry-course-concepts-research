@@ -163,12 +163,24 @@ def main():
             fail(f"family {family['id']} references unknown concept ids: {missing}")
 
     html_files = sorted(SITE.glob("*.html"))
-    if len(html_files) < 62:
-        fail(f"expected at least 62 html pages after quality audit pass, got {len(html_files)}")
+    if len(html_files) < 63:
+        fail(f"expected at least 63 html pages after playground pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
+    playground = SITE / "math-playground.html"
+    playground_js = SITE / "assets" / "playground.js"
+    if not playground_js.exists():
+        fail("missing playground.js asset")
+    play_html = playground.read_text(encoding="utf-8", errors="ignore")
+    if play_html.count("data-play=") < 4:
+        fail("math playground needs four canvas widgets")
+    for widget in ["euler", "signs", "fixed", "index"]:
+        if f'data-play="{widget}"' not in play_html:
+            fail(f"math playground missing widget: {widget}")
+        if f"{widget}:" not in playground_js.read_text(encoding="utf-8", errors="ignore"):
+            fail(f"playground.js missing renderer: {widget}")
     for concept in data["concepts"]:
         if f"concept-{concept['id']}.html" not in names:
             fail(f"missing concept page {concept['id']}")

@@ -35,6 +35,11 @@
       "requirement": "Big-picture mathematical synthesis",
       "evidence": "The Math Why page explains the course engine: allowed changes, preserved facts, designed counts, and whole-shape constraints.",
       "status": "met"
+    },
+    {
+      "requirement": "Interactive first-principles playground",
+      "evidence": "The Math Playground page has four canvas widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.",
+      "status": "met"
     }
   ],
   "metrics": {
@@ -50,8 +55,9 @@
     "theme_essay_words": 1278,
     "subtheme_essay_words": 1500,
     "family_essay_words": 824,
+    "playground_widgets": 4,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 62
+    "html_pages_before_audit_page": 63
   }
 }

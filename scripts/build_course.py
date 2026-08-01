@@ -1082,6 +1082,7 @@ def page(title, body, current=""):
         ("subthemes.html", "Subthemes"),
         ("families.html", "Families"),
         ("the-math-why.html", "The Math Why"),
+        ("math-playground.html", "Playground"),
         ("quality-audit.html", "Quality Audit"),
         ("source-audit.html", "Source Audit"),
     ]
@@ -1162,6 +1163,11 @@ def build_quality_audit(data):
             "evidence": "The Math Why page explains the course engine: allowed changes, preserved facts, designed counts, and whole-shape constraints.",
             "status": "met",
         },
+        {
+            "requirement": "Interactive first-principles playground",
+            "evidence": "The Math Playground page has four canvas widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.",
+            "status": "met",
+        },
     ]
     return {
         "summary": "The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
@@ -1177,6 +1183,7 @@ def build_quality_audit(data):
             "theme_essay_words": theme_essay_words,
             "subtheme_essay_words": subtheme_essay_words,
             "family_essay_words": family_essay_words,
+            "playground_widgets": 4,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -1190,10 +1197,30 @@ def build_site(data):
 :root{--ink:#151515;--muted:#5e645f;--line:#d8ddd7;--paper:#fbfbf7;--band:#eef3ed;--accent:#11685f;--accent2:#8b3a2f;--gold:#9b6b12;}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;letter-spacing:0}
 .topbar{position:sticky;top:0;z-index:2;background:rgba(251,251,247,.96);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:22px;padding:12px 24px}.brand{font-weight:800;white-space:nowrap}nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;border:1px solid transparent;padding:6px 9px;border-radius:6px;font-size:14px}nav a.active,nav a:hover{border-color:var(--line);background:white}
-main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start;padding:18px 0 30px;border-bottom:1px solid var(--line)}h1{font-size:clamp(34px,5vw,64px);line-height:1;margin:0 0 18px}h2{font-size:28px;margin:34px 0 12px}h3{font-size:18px;margin:6px 0 8px}.lead{font-size:20px;color:#2f342f;max-width:800px}.panel{background:var(--band);border:1px solid var(--line);padding:18px;border-radius:8px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:white;border:1px solid var(--line);border-radius:8px;padding:15px;min-height:170px}.card p{margin:0;color:#303630}.meta{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}.arrow{display:inline-block;margin-top:12px;color:var(--accent);font-weight:700;text-decoration:none}.lecture{border-top:1px solid var(--line);padding:18px 0}.pill{display:inline-block;border:1px solid var(--line);background:white;border-radius:999px;padding:3px 8px;margin:3px;color:#303630;font-size:13px}.quote{border-left:4px solid var(--accent2);padding-left:14px;color:#282d28}.video-list a{display:block;color:var(--accent);padding:5px 0;text-decoration:none}.evidence{font-size:13px;color:var(--muted);margin-top:12px}.warn{border-color:#d7a64c;background:#fff8e8}
+main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start;padding:18px 0 30px;border-bottom:1px solid var(--line)}h1{font-size:clamp(34px,5vw,64px);line-height:1;margin:0 0 18px}h2{font-size:28px;margin:34px 0 12px}h3{font-size:18px;margin:6px 0 8px}.lead{font-size:20px;color:#2f342f;max-width:800px}.panel{background:var(--band);border:1px solid var(--line);padding:18px;border-radius:8px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:white;border:1px solid var(--line);border-radius:8px;padding:15px;min-height:170px}.card p{margin:0;color:#303630}.meta{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}.arrow{display:inline-block;margin-top:12px;color:var(--accent);font-weight:700;text-decoration:none}.lecture{border-top:1px solid var(--line);padding:18px 0}.pill{display:inline-block;border:1px solid var(--line);background:white;border-radius:999px;padding:3px 8px;margin:3px;color:#303630;font-size:13px}.quote{border-left:4px solid var(--accent2);padding-left:14px;color:#282d28}.video-list a{display:block;color:var(--accent);padding:5px 0;text-decoration:none}.evidence{font-size:13px;color:var(--muted);margin-top:12px}.warn{border-color:#d7a64c;background:#fff8e8}.play-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.play{background:white;border:1px solid var(--line);border-radius:8px;padding:14px}.play canvas{width:100%;height:240px;border:1px solid var(--line);border-radius:6px;background:#fff;display:block}.control{display:grid;grid-template-columns:130px 1fr 42px;gap:10px;align-items:center;margin:10px 0}.control label{font-size:13px;color:var(--muted)}.control input{width:100%}.readout{font-variant-numeric:tabular-nums;font-size:13px;color:#303630}.equation{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#f5f6f1;border:1px solid var(--line);border-radius:6px;padding:8px;margin:10px 0;color:#222}
 @media(max-width:850px){.topbar{align-items:flex-start;flex-direction:column}.hero,.grid,.grid.two{grid-template-columns:1fr}main{padding:18px 14px 42px}h1{font-size:40px}.lead{font-size:18px}}
+@media(max-width:850px){.play-grid{grid-template-columns:1fr}.control{grid-template-columns:72px 1fr 30px}.play canvas{height:220px}}
 """
     (SITE / "assets" / "styles.css").write_text(css.strip() + "\n", encoding="utf-8")
+    playground_js = r"""
+(function(){
+const $=(s,r=document)=>r.querySelector(s);
+const canvases=[...document.querySelectorAll('[data-play]')];
+function fit(c){const d=window.devicePixelRatio||1;const r=c.getBoundingClientRect();c.width=Math.max(1,Math.floor(r.width*d));c.height=Math.max(1,Math.floor(r.height*d));const x=c.getContext('2d');x.setTransform(d,0,0,d,0,0);return [x,r.width,r.height];}
+function line(x,a,b,c,d,col='#151515',w=2){x.strokeStyle=col;x.lineWidth=w;x.beginPath();x.moveTo(a,b);x.lineTo(c,d);x.stroke();}
+function dot(x,a,b,r,col){x.fillStyle=col;x.beginPath();x.arc(a,b,r,0,Math.PI*2);x.fill();}
+function text(x,s,a,b,size=13,col='#151515'){x.fillStyle=col;x.font=`${size}px Inter, system-ui, sans-serif`;x.fillText(s,a,b);}
+function arrow(x,a,b,c,d,col='#11685f'){line(x,a,b,c,d,col,2);const ang=Math.atan2(d-b,c-a);x.beginPath();x.moveTo(c,d);x.lineTo(c-9*Math.cos(ang-.45),d-9*Math.sin(ang-.45));x.lineTo(c-9*Math.cos(ang+.45),d-9*Math.sin(ang+.45));x.closePath();x.fillStyle=col;x.fill();}
+function clear(x,w,h){x.clearRect(0,0,w,h);x.fillStyle='#fff';x.fillRect(0,0,w,h);}
+function drawEuler(c){const [x,w,h]=fit(c),n=+$('#euler-cuts').value;clear(x,w,h);const cx=w/2,cy=h/2,r=Math.min(w,h)*.34;line(x,cx-r,cy,cx+r,cy,'#d8ddd7',1);x.strokeStyle='#11685f';x.lineWidth=3;x.beginPath();x.arc(cx,cy,r,0,Math.PI*2);x.stroke();for(let i=0;i<n;i++){const a=(i/n)*Math.PI*2;line(x,cx,cy,cx+r*Math.cos(a),cy+r*Math.sin(a),'#8b3a2f',1.5);}dot(x,cx,cy,5,'#8b3a2f');text(x,`vertices ${n+1}`,18,28);text(x,`edges ${2*n}`,18,48);text(x,`faces ${n}`,18,68);text(x,`V - E + F = ${(n+1)-(2*n)+n}`,18,92,16,'#11685f');text(x,'Cuts change the ledger; count stays.',18,h-20,13,'#5e645f');}
+function drawSigns(c){const [x,w,h]=fit(c),sep=+$('#sign-sep').value;clear(x,w,h);const y=h/2,mid=w/2;line(x,35,y,w-35,y,'#151515',2);const off=(sep-50)*2.2;line(x,mid-120,y-80,mid+120,y+80,'#11685f',3);line(x,mid-120,y+80,mid+120,y-80,'#8b3a2f',3);const a1=mid-off,a2=mid+off;if(sep>6){dot(x,a1,y,8,'#11685f');dot(x,a2,y,8,'#8b3a2f');text(x,'+1',a1-12,y-16,15,'#11685f');text(x,'-1',a2-12,y-16,15,'#8b3a2f');text(x,'signed total = 0',18,32,16,'#151515');}else{text(x,'singular moment: pair is born',18,32,16,'#151515');text(x,'the before and after totals match',18,55,13,'#5e645f');}text(x,'Raw count changes; signed count survives.',18,h-20,13,'#5e645f');}
+function drawFixed(c){const [x,w,h]=fit(c),bend=(+$('#fixed-bend').value-50)/50;clear(x,w,h);const m=34,scale=(w-2*m);line(x,m,h-m,w-m,m,'#d8ddd7',1.5);text(x,'diagonal: x = f(x)',m+8,h-m-8,12,'#5e645f');x.strokeStyle='#11685f';x.lineWidth=3;x.beginPath();for(let i=0;i<=80;i++){const t=i/80;const px=m+t*scale;const fy=.5+.35*Math.sin((t+bend*.18)*Math.PI*2)+bend*.08*(t-.5);const py=h-m-fy*(h-2*m);if(i)x.lineTo(px,py);else x.moveTo(px,py);}x.stroke();let best=[0,999];for(let i=0;i<=200;i++){const t=i/200;const fy=.5+.35*Math.sin((t+bend*.18)*Math.PI*2)+bend*.08*(t-.5);const d=Math.abs(fy-t);if(d<best[1])best=[t,d];}const px=m+best[0]*scale,py=h-m-best[0]*(h-2*m);dot(x,px,py,7,'#8b3a2f');text(x,'fixed point',px+10,py-8,13,'#8b3a2f');text(x,'graph meets diagonal',18,32,16,'#151515');text(x,'A continuous rule cannot always avoid self-agreement.',18,h-20,13,'#5e645f');}
+function drawIndex(c){const [x,w,h]=fit(c),mode=+$('#index-mode').value;clear(x,w,h);const cx=w/2,cy=h/2,r=Math.min(w,h)*.32;x.strokeStyle='#d8ddd7';x.lineWidth=1.5;x.beginPath();x.arc(cx,cy,r,0,Math.PI*2);x.stroke();for(let i=0;i<16;i++){const a=i/16*Math.PI*2,px=cx+r*Math.cos(a),py=cy+r*Math.sin(a);let ang=a;if(mode<33)ang=a;else if(mode<66)ang=-a;else ang=a+Math.PI/2*Math.sin(2*a);arrow(x,px,py,px+22*Math.cos(ang),py+22*Math.sin(ang),'#11685f');}dot(x,cx,cy,8,'#8b3a2f');const lab=mode<33?'+1 source-like':mode<66?'-1 saddle-like':'mixed local turns';text(x,`index: ${lab}`,18,32,16,'#151515');text(x,'Walk around the defect and count arrow turning.',18,h-20,13,'#5e645f');}
+function sync(){document.querySelectorAll('input[type=range]').forEach(i=>{$(`[data-out="${i.id}"]`).textContent=i.value});canvases.forEach(c=>({euler:drawEuler,signs:drawSigns,fixed:drawFixed,index:drawIndex}[c.dataset.play](c)));}
+window.addEventListener('resize',sync);document.addEventListener('input',sync);sync();
+})();
+"""
+    (SITE / "assets" / "playground.js").write_text(playground_js.strip() + "\n", encoding="utf-8")
 
     stats = data["stats"]
     body = f"""
@@ -1216,8 +1243,53 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
 <div class="grid">
 {''.join(card(c['title'], c['first_principles'], slug_page('concept', c['id']), 'Concept') for c in data['concepts'][:9])}
 </div>
+<h2>Interactive Math</h2>
+<div class="grid two">
+{card('Math Playground', 'Four small canvas models let the reader adjust cuts, signed pairs, fixed-point graphs, and vector-field turning. The controls make the course principles visible without assuming prior notation.', 'math-playground.html', 'Playground')}
+</div>
 """
     (SITE / "index.html").write_text(page("Topology & Geometry Course Companion", body, "Course"), encoding="utf-8")
+
+    playground_body = """
+<h1>Math Playground</h1>
+<p class="lead">These small models make the course engine visible: choose legal data, watch what changes, and notice what count or meeting survives.</p>
+<section class="play-grid">
+  <article class="play">
+    <div class="meta">Euler characteristic</div>
+    <h2>Cut a disk into pieces</h2>
+    <p>More cuts change the ledger of vertices, edges, and faces. The alternating count stays attached to the disk.</p>
+    <div class="equation">V - E + F stays 1</div>
+    <canvas data-play="euler" aria-label="Euler characteristic playground"></canvas>
+    <div class="control"><label for="euler-cuts">Cuts</label><input id="euler-cuts" type="range" min="3" max="12" value="6"><span class="readout" data-out="euler-cuts">6</span></div>
+  </article>
+  <article class="play">
+    <div class="meta">Signed cancellation</div>
+    <h2>Birth of opposite meetings</h2>
+    <p>A pair can appear during motion. The raw count changes, but the plus and minus signs cancel.</p>
+    <div class="equation">(+1) + (-1) = 0</div>
+    <canvas data-play="signs" aria-label="Signed cancellation playground"></canvas>
+    <div class="control"><label for="sign-sep">Separation</label><input id="sign-sep" type="range" min="0" max="100" value="55"><span class="readout" data-out="sign-sep">55</span></div>
+  </article>
+  <article class="play">
+    <div class="meta">Fixed points</div>
+    <h2>Graph meets diagonal</h2>
+    <p>A rule becomes a graph. Where the graph meets the diagonal, a point returns to itself.</p>
+    <div class="equation">fixed point means f(x) = x</div>
+    <canvas data-play="fixed" aria-label="Fixed point playground"></canvas>
+    <div class="control"><label for="fixed-bend">Rule bend</label><input id="fixed-bend" type="range" min="0" max="100" value="50"><span class="readout" data-out="fixed-bend">50</span></div>
+  </article>
+  <article class="play">
+    <div class="meta">Vector-field index</div>
+    <h2>Walk around a defect</h2>
+    <p>The index records how nearby arrows turn around a failure point. Local turning becomes countable evidence.</p>
+    <div class="equation">local arrow turn gives a signed count</div>
+    <canvas data-play="index" aria-label="Vector-field index playground"></canvas>
+    <div class="control"><label for="index-mode">Arrow pattern</label><input id="index-mode" type="range" min="0" max="100" value="20"><span class="readout" data-out="index-mode">20</span></div>
+  </article>
+</section>
+<script src="assets/playground.js"></script>
+"""
+    (SITE / "math-playground.html").write_text(page("Math Playground", playground_body, "Playground"), encoding="utf-8")
 
     video_links = "".join(f'<a href="{esc(v["youtube_url"])}">{v["index"]:02d}. {esc(v["title"])}</a>' for v in data["videos"])
     body = f"<h1>Video Links</h1><p class='lead'>Every individual YouTube item in playlist order.</p><div class='video-list'>{video_links}</div>"
@@ -1299,7 +1371,7 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1447,6 +1519,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
 - 10 expanded subtheme pages with essay, first-principles, and course-role sections
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
+- math-playground.html with four interactive first-principles canvas widgets
 - explicit source coverage and missing-caption audit
 
 Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
