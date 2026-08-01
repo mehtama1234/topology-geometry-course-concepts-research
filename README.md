@@ -33,6 +33,12 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/reader-checks.html` — common reasoning failure checks.
 - `site/quality-audit.html` and `site/source-audit.html` — current validation evidence and source caveats.
 
+## Readiness Docs
+
+- `GOAL.md` — the long-term writing and build standard.
+- `HANDOFF.md` — current state, commands, gotchas, and next work.
+- `PARITY_AUDIT.md` — comparison against the robotics-quality companion shape, with evidence and remaining caveats.
+
 ## Commands
 
 ```bash

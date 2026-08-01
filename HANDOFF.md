@@ -6,13 +6,15 @@ This repo is the source and generated static site for a first-principles compani
 
 1. Read `README.md`.
 2. Read `GOAL.md`.
-3. Run `python3 scripts/validate_all.py`.
-4. Serve the site with `python3 -m http.server 8790 --directory site`.
-5. Open `http://127.0.0.1:8790/quality-audit.html`.
+3. Read `PARITY_AUDIT.md`.
+4. Run `python3 scripts/validate_all.py`.
+5. Serve the site with `python3 -m http.server 8790 --directory site`.
+6. Open `http://127.0.0.1:8790/quality-audit.html`.
 
 ## Current State
 
 - Branch: `main`.
+- Remote: none configured in this local repo.
 - Site directory: `site/`.
 - Main generator: `scripts/build_course.py`.
 - Validator: `scripts/validate_all.py`.
@@ -77,6 +79,13 @@ As of the current generated audit:
 - 4 playground widgets.
 - 8 synthesis sections.
 - 10 reader checks.
+
+## Local Readiness Evidence
+
+- `python3 scripts/validate_all.py` passes.
+- The local HTTP server has been checked at `http://127.0.0.1:8790/`.
+- Desktop and mobile Chromium screenshots were checked for `math-playground.html`, `course-synthesis.html`, and `reader-checks.html`.
+- The repo is clean on `main` after each committed pass.
 
 ## Source Caveats
 
