@@ -106,7 +106,7 @@ def main():
             if len(words(depth.get(field))) < 35:
                 fail(f"family {family['id']} depth {field} too thin")
         family_essay_words = sum(len(words(p)) for p in family.get("essay") or [])
-        if family_essay_words < 130:
+        if family_essay_words < 285:
             fail(f"family {family['id']} essay too thin")
         contract = family.get("contract") or {}
         for field in ["input", "action", "evidence", "output", "failure_test"]:
