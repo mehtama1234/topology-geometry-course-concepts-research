@@ -104,7 +104,7 @@ As of the current generated audit:
 - 803 theme lens words.
 - 2,761 subtheme essay words.
 - 858 subtheme routine words.
-- 599 subtheme bridge words.
+- 985 subtheme bridge words.
 - 1,525 method-family essay words.
 - 493 method-contract words.
 - 540 method-playbook words.

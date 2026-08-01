@@ -97,7 +97,7 @@ def main():
                 fail(f"subtheme {subtheme['id']} routine {field} too thin")
         bridge = subtheme.get("bridge") or {}
         for field in ["course_moment", "thinking_shift", "reader_test"]:
-            if len(words(bridge.get(field))) < 14:
+            if len(words(bridge.get(field))) < 25:
                 fail(f"subtheme {subtheme['id']} bridge {field} too thin")
 
     for family in data["families"]:
