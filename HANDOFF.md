@@ -92,7 +92,7 @@ As of the current generated audit:
 - 45 lecture examples.
 - 15 lecture-spine entries.
 - 5,332 lecture essay words.
-- 1,289 lecture deepening words.
+- 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.

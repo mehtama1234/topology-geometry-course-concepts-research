@@ -169,7 +169,7 @@ def main():
                 fail(f"lecture {lecture['lecture']} deep {field} too thin")
         deepening = deep.get("deepening") or {}
         for field in ["what_is_really_happening", "why_it_is_hard", "key_move", "payoff"]:
-            if len(words(deepening.get(field))) < 14:
+            if len(words(deepening.get(field))) < 25:
                 fail(f"lecture {lecture['lecture']} deepening {field} too thin")
         if len(deep.get("anchors") or []) < 4:
             fail(f"lecture {lecture['lecture']} needs transcript anchors")

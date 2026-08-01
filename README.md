@@ -20,7 +20,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 45 lecture-grounded examples, exactly three per lecture.
 - 15 lecture-spine entries that name the object, question, legal move, surviving fact, and later use for every lecture.
 - 5,332 lecture essay words, with every lecture essay now clearing the 300-word validator floor.
-- 1,289 lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields.
+- 1,594 lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields, with every field now clearing the 25-word validator floor.
 - 1,986 lecture walkthrough words that slow each lecture down from starting object to mathematical payoff to reader check.
 - 1,492 caption-nuance words explaining risky auto-caption terms and safe mathematical readings by lecture.
 - 1,645 lecture source-lens words explaining how transcript anchors should be read as evidence.
