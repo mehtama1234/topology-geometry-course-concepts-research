@@ -24,7 +24,7 @@
     "protected_idea": "The protected idea is source identity. A companion needs to know what course it is explaining before it can make careful claims about that course, but identity is not the same kind of evidence as a proof step.",
     "course_bridge": "It strengthens the source trail while leaving mathematical explanation inside the lecture, concept, source-reader, and paper-family pages. Its job is to say that the course exists and is traceable; the mathematical jobs still have to be earned elsewhere.",
     "overclaim": "Do not infer theorem statements, proof order, lecture-specific wording, or missing-caption content from a catalog record. Its job is identification and access; every mathematical claim must come from captions, visible demonstrations, or a mathematical reference.",
-    "reader_test": "Can the reader say what this source verifies, what it leaves unverified, and what kind of mathematical claim must still come from the videos or supporting references? A strong answer separates course identity from proof support in one plain sentence.",
+    "reader_test": "Can the reader say what this source verifies, what it leaves unverified, and what kind of mathematical claim must still come from the videos or supporting references? The response should separate course identity from proof support in one plain sentence.",
     "concepts": [
       "topology-vs-geometry",
       "deformation",
@@ -88,7 +88,7 @@
     "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion. Local smoothness is not decoration; it is the condition that lets the later topological bookkeeping be trusted.",
     "course_bridge": "It supports generic position, fixed-point reasoning, boundary behavior, and vector-field index without forcing the companion to assume advanced prerequisites. The course bridge is the habit of preparing an ordinary case before asking a count or existence theorem to do work.",
     "overclaim": "Do not treat the reference as required background for a lecture page, and do not use its proof path as evidence that the lecture followed the same path. It is formal support after the everyday explanation has done its work.",
-    "reader_test": "Can the reader identify the local smooth condition, say which global count or existence claim it makes trustworthy, and separate formal support from lecture evidence? A strong answer states the local condition in everyday language first.",
+    "reader_test": "Can the reader identify the local smooth condition, say which global count or existence claim it makes trustworthy, and separate formal support from lecture evidence? The response should state the local condition in everyday language first.",
     "concepts": [
       "generic-position",
       "fixed-points",
@@ -104,7 +104,7 @@
     "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges. The source contributes the preparation standard: the event must be ordinary enough and oriented enough before arithmetic deserves trust.",
     "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic. The bridge is the moment a visual meeting stops being a sketch detail and becomes a count that can survive legal nudges.",
     "overclaim": "Do not let the formal setting erase the beginner's picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived.",
-    "reader_test": "Can the reader name the coincidence removed, the sign rule made available, the legal move that preserves the signed total, and the stronger formal claim the lecture page does not need? A strong answer says why the count would be unsafe before the cleanup.",
+    "reader_test": "Can the reader name the coincidence removed, the sign rule made available, the legal move that preserves the signed total, and the stronger formal claim the lecture page does not need? The response should say why the count would be unsafe before the cleanup.",
     "concepts": [
       "generic-position",
       "intersection-number",

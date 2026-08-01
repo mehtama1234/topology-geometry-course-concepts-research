@@ -7,7 +7,7 @@
     "how_to_read": "Read the videos as the primary sequence of ideas. Start from the demonstration, name the allowed motion, then ask what fact survives that motion. Use the recovered captions for lecture anchors and phrases, but do not let a caption fragment carry more than it says. When a page connects several lectures into a course arc, mark that connection as interpretation unless the caption or visible demonstration directly supports it.",
     "family": "Course spine",
     "do_not_overread": "Do not treat auto-caption wording as exact lecture notes, and do not treat a generated explanation as something Tokieda literally said. Use recovered captions as evidence for the lecture object and course arc while keeping the missing-caption caveat visible.",
-    "reader_question": "What object is Tokieda manipulating, what move is legal, what fact survives that move, and which sentence is interpretation rather than transcript-level evidence? A strong answer should be able to point to the course moment before it names the topic.",
+    "reader_question": "What object is Tokieda manipulating, what move is legal, what fact survives that move, and which sentence is interpretation rather than transcript-level evidence? The response should point to the course moment before it names the topic.",
     "concepts": [
       "deformation",
       "invariant",

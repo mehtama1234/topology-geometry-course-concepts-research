@@ -154,7 +154,7 @@ SOURCE_READERS = [
         "how_to_read": "Read the videos as the primary sequence of ideas. Start from the demonstration, name the allowed motion, then ask what fact survives that motion. Use the recovered captions for lecture anchors and phrases, but do not let a caption fragment carry more than it says. When a page connects several lectures into a course arc, mark that connection as interpretation unless the caption or visible demonstration directly supports it.",
         "family": "Course spine",
         "do_not_overread": "Do not treat auto-caption wording as exact lecture notes, and do not treat a generated explanation as something Tokieda literally said. Use recovered captions as evidence for the lecture object and course arc while keeping the missing-caption caveat visible.",
-        "reader_question": "What object is Tokieda manipulating, what move is legal, what fact survives that move, and which sentence is interpretation rather than transcript-level evidence? A strong answer should be able to point to the course moment before it names the topic.",
+        "reader_question": "What object is Tokieda manipulating, what move is legal, what fact survives that move, and which sentence is interpretation rather than transcript-level evidence? The response should point to the course moment before it names the topic.",
         "concepts": ["deformation", "invariant", "configuration-space"],
     },
     {
@@ -248,7 +248,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "protected_idea": "The protected idea is source identity. A companion needs to know what course it is explaining before it can make careful claims about that course, but identity is not the same kind of evidence as a proof step.",
         "course_bridge": "It strengthens the source trail while leaving mathematical explanation inside the lecture, concept, source-reader, and paper-family pages. Its job is to say that the course exists and is traceable; the mathematical jobs still have to be earned elsewhere.",
         "overclaim": "Do not infer theorem statements, proof order, lecture-specific wording, or missing-caption content from a catalog record. Its job is identification and access; every mathematical claim must come from captions, visible demonstrations, or a mathematical reference.",
-        "reader_test": "Can the reader say what this source verifies, what it leaves unverified, and what kind of mathematical claim must still come from the videos or supporting references? A strong answer separates course identity from proof support in one plain sentence.",
+        "reader_test": "Can the reader say what this source verifies, what it leaves unverified, and what kind of mathematical claim must still come from the videos or supporting references? The response should separate course identity from proof support in one plain sentence.",
         "concepts": ["topology-vs-geometry", "deformation", "manifold"],
     },
     {
@@ -296,7 +296,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion. Local smoothness is not decoration; it is the condition that lets the later topological bookkeeping be trusted.",
         "course_bridge": "It supports generic position, fixed-point reasoning, boundary behavior, and vector-field index without forcing the companion to assume advanced prerequisites. The course bridge is the habit of preparing an ordinary case before asking a count or existence theorem to do work.",
         "overclaim": "Do not treat the reference as required background for a lecture page, and do not use its proof path as evidence that the lecture followed the same path. It is formal support after the everyday explanation has done its work.",
-        "reader_test": "Can the reader identify the local smooth condition, say which global count or existence claim it makes trustworthy, and separate formal support from lecture evidence? A strong answer states the local condition in everyday language first.",
+        "reader_test": "Can the reader identify the local smooth condition, say which global count or existence claim it makes trustworthy, and separate formal support from lecture evidence? The response should state the local condition in everyday language first.",
         "concepts": ["generic-position", "fixed-points", "vector-field-index"],
     },
     {
@@ -308,7 +308,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges. The source contributes the preparation standard: the event must be ordinary enough and oriented enough before arithmetic deserves trust.",
         "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic. The bridge is the moment a visual meeting stops being a sketch detail and becomes a count that can survive legal nudges.",
         "overclaim": "Do not let the formal setting erase the beginner's picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived.",
-        "reader_test": "Can the reader name the coincidence removed, the sign rule made available, the legal move that preserves the signed total, and the stronger formal claim the lecture page does not need? A strong answer says why the count would be unsafe before the cleanup.",
+        "reader_test": "Can the reader name the coincidence removed, the sign rule made available, the legal move that preserves the signed total, and the stronger formal claim the lecture page does not need? The response should say why the count would be unsafe before the cleanup.",
         "concepts": ["generic-position", "intersection-number", "boundary-orientation"],
     },
 ]
@@ -2599,7 +2599,7 @@ CONCEPT_ESSAYS = {
         "Duality means changing the picture so the useful structure becomes visible. Regions may become dots, shared borders may become edges, or a rule may become a graph in a product space. The new picture is not a new problem. It is another representation of the same relationships, chosen because it exposes a count, route, or obstruction that the first picture hid.",
         "The first-principles reason is that some relationships are hard to see in their original form. A map as an instruction can feel invisible, but its graph is a shape. A collection of regions can be hard to compare, but a graph recording which regions touch can expose the connection pattern. Duality changes the bookkeeping surface without changing the relationships that are meant to be kept.",
         "The course relies on this habit constantly. A square with edge labels represents a surface. A map becomes its graph. A fixed point becomes an intersection with the diagonal. A physical mechanism becomes a configuration space. Duality is therefore part of pictorial thinking: redraw the situation, but preserve the relationships that matter. If the redraw loses those relationships, it is only a different drawing, not a proof.",
-        "A good dual picture earns its place by making the protected fact easier to see without changing what must be proved. It should make a route, count, adjacency, fixed point, or obstruction easier to inspect. It should not smuggle in extra crossings, erase boundary data, or forget which original objects the new objects represent.",
+        "A good dual picture makes the protected fact easier to see without changing what must be proved. It should make a route, count, adjacency, fixed point, or obstruction easier to inspect. It should not smuggle in extra crossings, erase boundary data, or forget which original objects the new objects represent.",
         "The important check is translation back. After solving the dual problem, the conclusion must mean something in the original picture. If regions become dots, the answer about dots must still say something about regions. If a map becomes a graph, an intersection must still mean a fixed point. Duality is useful only when both directions of meaning are kept clear.",
     ],
     "parity": [
@@ -4334,10 +4334,10 @@ def build_lecture_answer_guide(lecture, spine_row):
         f"That is why the answer must end with a limit as well as a payoff. The surviving fact is: {surviving_fact}. It tells the reader what is forced, not every extra thing one might wish to know.",
     ])
     return {
-        "object_answer": f"For {lecture_label}, use this object answer. {varied((number, 'object'), ['Put the lecture object before the topic name:', 'Name the thing the argument acts on:', 'Begin from the course object, not the summary:', 'Say what the reader should picture first:', 'Identify the object that carries the claim:', 'Open with the thing being moved, counted, built, or watched:', 'State the carrier of the lecture evidence:', 'Describe the object before giving it a formal role:'])} {spine_row['object']} {data_close} Use '{examples[0]['title']}' as a concrete anchor. {object_close}",
-        "move_answer": f"For {lecture_label}, use this move answer. {varied((number, 'move'), ['Name the permitted move:', 'The legal action is', 'The proof move to state is', 'Put the allowed change in plain words:', 'State the allowed manipulation before the payoff:', 'Name the rule-governed change:', 'Say what the lecture permits the object to do:', 'Turn the method into an action the reader can check:'])} {spine_row['legal_move']} {illegal_shortcut} {shortcut_close}",
-        "conclusion_answer": f"For {lecture_label}, use this conclusion answer. {varied((number, 'conclusion'), ['Protect this surviving fact:', 'The evidence to keep is', 'The conclusion rests on this fact:', 'Carry this fact through the explanation:', 'Name the fact that survives the legal move:', 'State the evidence that comes through unchanged:', 'Say what remains available after the action:', 'Put the surviving fact before the theorem name:'])} {spine_row['surviving_fact']} {conclusion_close} Connect forward to the later need: {spine_row['why_later']}",
-        "why_strong": f"For {lecture_label}, use this strength check. {why_strong_open} {why_strong_close}",
+        "object_answer": f"{varied((number, 'object'), ['Put the lecture object before the topic name:', 'Name the thing the argument acts on:', 'Begin from the course object, not the summary:', 'Say what the reader should picture first:', 'Identify the object that carries the claim:', 'Open with the thing being moved, counted, built, or watched:', 'State the carrier of the lecture evidence:', 'Describe the object before giving it a formal role:'])} {spine_row['object']} {data_close} Use '{examples[0]['title']}' as a concrete anchor. {object_close}",
+        "move_answer": f"{varied((number, 'move'), ['Name the permitted move:', 'The legal action is', 'The proof move to state is', 'Put the allowed change in plain words:', 'State the allowed manipulation before the payoff:', 'Name the rule-governed change:', 'Say what the lecture permits the object to do:', 'Turn the method into an action the reader can check:'])} {spine_row['legal_move']} {illegal_shortcut} {shortcut_close}",
+        "conclusion_answer": f"{varied((number, 'conclusion'), ['Protect this surviving fact:', 'The evidence to keep is', 'The conclusion rests on this fact:', 'Carry this fact through the explanation:', 'Name the fact that survives the legal move:', 'State the evidence that comes through unchanged:', 'Say what remains available after the action:', 'Put the surviving fact before the theorem name:'])} {spine_row['surviving_fact']} {conclusion_close} Connect forward to the later need: {spine_row['why_later']}",
+        "why_strong": f"{why_strong_open} {why_strong_close}",
     }
 
 
@@ -4748,11 +4748,11 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
         drills.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
-            "start_from": f"{start_from} For {lecture_label}, the starting object is: {spine['object']} The drill should begin there because the later source bridge only makes sense after the lecture object is visible.",
+            "start_from": f"{start_from} Start from this lecture object: {spine['object']} The drill should begin there because the later source bridge only makes sense after the lecture object is visible.",
             "rebuild_steps": overlay["rebuild_steps"],
-            "self_check": f"For {lecture_label}, the reconstruction is ready when this check passes: {self_check} The answer also has to state the allowed move in plain words: {spine['legal_move']} Then it has to name the surviving fact without turning it into a slogan: {spine['surviving_fact']}",
-            "common_failure": f"For {lecture_label}, the failure to watch for is this: {common_failure} The repair is not a longer topic summary; it is a return to the lecture chain from object to legal move to surviving fact, then to the later use: {spine['why_later']}",
-            "source_check": f"For {lecture_label}, use this source check. {source_check} The source boundary is also stated in the bridge layer: {bridge['overread_warning']}",
+            "self_check": f"The reconstruction is ready when this check passes: {self_check} The answer also has to state the allowed move in plain words: {spine['legal_move']} Then it has to name the surviving fact without turning it into a slogan: {spine['surviving_fact']}",
+            "common_failure": f"Watch for this failure: {common_failure} The repair is not a longer topic summary; it is a return to the lecture chain from object to legal move to surviving fact, then to the later use: {spine['why_later']}",
+            "source_check": f"Check the source boundary before strengthening the claim: {source_check} The source boundary is also stated in the bridge layer: {bridge['overread_warning']}",
             "concepts": concept_ids[:6],
         })
     return drills
@@ -4804,7 +4804,7 @@ def build_concept_self_check(concept):
         "The reader should be able to separate this surviving fact from details such as neatness, length, position, or one convenient drawing.",
         f"This is the part of {title} that travels forward into the course role: {role}",
         "The protected fact should explain why the final picture still speaks about the first picture.",
-        "A strong answer names the evidence that remains after the allowed move, then says what conclusion that evidence can and cannot carry.",
+        "The response should name the evidence that remains after the allowed move, then say what conclusion that evidence can and cannot carry.",
         f"For this concept, the protected fact is the bridge from the course moment to the later use, not an extra sentence after the definition.",
         "If the same fact would not survive the legal change, the concept has only been named, not used.",
     ])
@@ -4875,10 +4875,10 @@ def build_concept_self_check(concept):
         f"End with the limit of the claim: {failure} The beginner trap shows what happens when that limit is ignored: {beginner_trap} {failure_close}",
     ])
     return {
-        "object_check": f"For {title}, use this object test. {object_prompt}",
-        "operation_check": f"For {title}, use this action test. {operation_prompt}",
-        "protected_check": f"For {title}, use this survival test. {protected_prompt}",
-        "failure_check": f"For {title}, use this failure test. {failure_prompt}",
+        "object_check": object_prompt,
+        "operation_check": operation_prompt,
+        "protected_check": protected_prompt,
+        "failure_check": failure_prompt,
     }
 
 
@@ -4956,10 +4956,10 @@ def build_theme_answer_guide(theme):
         f"Turn the theme into a reader test: {lens['reader_test']} The answer has to preserve this detail: {depth['important_detail']} {test_close}",
     ])
     return {
-        "notice_answer": f"For {title}, use this notice test. {notice_prompt}",
-        "ignore_answer": f"For {title}, use this ignore test. {ignore_prompt}",
-        "transfer_answer": f"For {title}, use this transfer test. {transfer_prompt}",
-        "test_answer": f"For {title}, use this claim test. {test_prompt}",
+        "notice_answer": notice_prompt,
+        "ignore_answer": ignore_prompt,
+        "transfer_answer": transfer_prompt,
+        "test_answer": test_prompt,
     }
 
 
@@ -4977,11 +4977,11 @@ def build_subtheme_answer_guide(subtheme):
         f"For {title}, the reader should be able to point to the exact feature that changes the argument, not only repeat the subtheme name.",
         f"That keeps {title} tied to evidence the lecture actually supplies: a boundary, sign, route, count, failure point, or state-space rule.",
         f"The check is whether the reader can find the boundary, sign, route, count, defect, or state-space rule before using the subtheme name.",
-        f"The answer should name the page detail and say what that detail does for the claim.",
+        f"The named detail has to carry work: it should protect a count, license a move, mark a boundary, or expose the point where the claim could fail.",
     ])
     ask_close = varied((sid, "ask-close"), [
         f"That question turns the subtheme into an inspection of the proof itself.",
-        f"The question should make the reader inspect the object, move, protected fact, or model rather than recognize a familiar title.",
+        f"The question sends the reader back to the object, move, protected fact, or model instead of letting the title stand in for understanding.",
         f"This is where the page has to settle the uncertainty: what is allowed, what survives, what is counted, or what is modeled.",
         f"The answer should expose the hidden rule or evidence that makes {title} necessary on this page.",
     ])
@@ -4989,16 +4989,16 @@ def build_subtheme_answer_guide(subtheme):
         f"The explanation should name the specific problem {title} helps solve in the argument.",
         f"The payoff is a better reading of the argument: what is now ruled out, forced, protected, or modeled.",
         f"Apply this routine only when it changes what the reader checks on the page.",
-        f"{title} earns its place by making the live claim easier to check in plain language.",
+        f"{title} is doing real work only when it turns the live claim into something a reader can check in ordinary words.",
     ])
     mistake_close = varied((sid, "mistake-close"), [
-        f"The repair should name the missing object, move, count, sign rule, boundary condition, or model.",
+        f"The repair must return to the missing object, move, count, sign rule, boundary condition, or model.",
         f"The correction is practical: return to the object, move, evidence, or model that the {title} mistake skipped.",
         f"The reader test should expose the false shortcut and the exact condition it skipped.",
         f"A good correction says what the page must check before {title} can support the conclusion.",
     ])
     look_prompt = varied((sid, "look-answer-prompt"), [
-        f"Begin the {title} routine by looking for this: {look} The course moment makes the search concrete: {bridge['course_moment']} {look_close}",
+        f"Start with the feature the page must make visible: {look} The course moment makes the search concrete: {bridge['course_moment']} {look_close}",
         f"To use {title}, first find the page feature: {look} Test that feature against the course moment: {bridge['course_moment']} {look_close}",
         f"Begin from what can be seen or acted out: {look} The lecture evidence for that search is: {bridge['course_moment']} {look_close}",
         f"Before naming {title}, locate the working detail: {look} The course moment keeps that detail grounded: {bridge['course_moment']} {look_close}",
@@ -5029,15 +5029,15 @@ def build_subtheme_answer_guide(subtheme):
     ])
     mistake_prompt = varied((sid, "mistake-answer-prompt"), [
         f"Name the {title} mistake directly: {mistake} Then answer the reader test: {bridge['reader_test']} {mistake_close}",
-        f"Close by naming the false shortcut: {mistake} The reader test is: {bridge['reader_test']} {mistake_close}",
+        f"Name the false shortcut before accepting the routine: {mistake} The reader test is: {bridge['reader_test']} {mistake_close}",
         f"Say what bad reading {title} prevents: {mistake} Then use the reader test: {bridge['reader_test']} {mistake_close}",
         f"End with the failure mode: {mistake} The check on that failure is: {bridge['reader_test']} {mistake_close}",
     ])
     return {
-        "look_answer": f"For {title}, use this looking test. {look_prompt}",
-        "ask_answer": f"For {title}, use this question test. {ask_prompt}",
-        "use_answer": f"For {title}, use this application test. {use_prompt}",
-        "mistake_answer": f"For {title}, use this mistake test. {mistake_prompt}",
+        "look_answer": look_prompt,
+        "ask_answer": ask_prompt,
+        "use_answer": use_prompt,
+        "mistake_answer": mistake_prompt,
     }
 
 
@@ -5113,11 +5113,11 @@ def build_family_answer_guide(family):
         f"End by naming what would make the argument fail: {failure} The method page describes that failure as: {playbook['failure']} {failure_close}",
     ])
     return {
-        "input_answer": f"For {title}, use this input test. {input_prompt}",
-        "action_answer": f"For {title}, use this action test. {action_prompt}",
-        "evidence_answer": f"For {title}, use this evidence test. {evidence_prompt}",
-        "output_answer": f"For {title}, use this output test. {output_prompt}",
-        "failure_answer": f"For {title}, use this failure test. {failure_prompt}",
+        "input_answer": input_prompt,
+        "action_answer": action_prompt,
+        "evidence_answer": evidence_prompt,
+        "output_answer": output_prompt,
+        "failure_answer": failure_prompt,
     }
 
 

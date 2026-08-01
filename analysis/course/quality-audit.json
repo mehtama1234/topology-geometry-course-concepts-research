@@ -28,12 +28,12 @@
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, and then compare against an answer guide. The 2734 reader-test words and 4004 answer-guide words turn lecture understanding into an auditable task.",
+      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, and then compare against an answer guide. The 2734 reader-test words and 3584 answer-guide words turn lecture understanding into an auditable task.",
       "status": "met"
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7239 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7089 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 10444 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 9746 words.",
       "status": "met"
     },
     {
@@ -163,7 +163,7 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2038 source-reader words keep paper reading tied to first-principles course questions.",
+      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2034 source-reader words keep paper reading tied to first-principles course questions.",
       "status": "met"
     },
     {
@@ -191,26 +191,26 @@
     "lecture_source_bridge_words": 5817,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 7239,
+    "lecture_reconstruction_words": 7089,
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 2190,
     "lecture_reader_test_words": 2734,
-    "lecture_answer_guide_words": 4004,
-    "concept_essay_words": 7958,
+    "lecture_answer_guide_words": 3584,
+    "concept_essay_words": 7954,
     "concept_workup_words": 2746,
     "concept_anchor_words": 1965,
-    "concept_self_check_words": 9185,
+    "concept_self_check_words": 8485,
     "theme_essay_words": 1961,
     "theme_lens_words": 920,
-    "theme_answer_guide_words": 2799,
+    "theme_answer_guide_words": 2547,
     "subtheme_essay_words": 3011,
     "subtheme_routine_words": 1431,
     "subtheme_bridge_words": 1272,
-    "subtheme_answer_guide_words": 4537,
+    "subtheme_answer_guide_words": 4291,
     "family_essay_words": 1662,
     "family_contract_words": 1132,
     "family_playbook_words": 1086,
-    "family_answer_guide_words": 3108,
+    "family_answer_guide_words": 2908,
     "playground_widgets": 4,
     "synthesis_sections": 8,
     "dependency_paths": 8,
@@ -237,7 +237,7 @@
     "term_translations": 16,
     "term_translation_words": 1968,
     "source_readers": 7,
-    "source_reader_words": 2038,
+    "source_reader_words": 2034,
     "paper_family_ledger_rows": 7,
     "paper_family_ledger_words": 2018,
     "references": 7,
