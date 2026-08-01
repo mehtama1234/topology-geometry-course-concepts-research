@@ -466,6 +466,130 @@ THEOREM_USE_CONTRACTS = [
 ]
 
 
+CONCEPT_CONTRASTS = [
+    {
+        "title": "Topology versus geometry",
+        "left": "Topology",
+        "right": "Geometry",
+        "confusion": "A reader can think the course is choosing one and rejecting the other. That misses how the lectures use measured local facts and whole-shape facts together.",
+        "left_job": "Topology asks what survives when exact measurement is allowed to change: routes, holes, boundaries, side behavior, fixed points, and total constraints.",
+        "right_job": "Geometry keeps measured local information in view: length, angle, direction, curvature, and local bending. Those facts often become the pieces that a topological account adds up.",
+        "bridge": "The course often starts geometrically and ends topologically. A local arrow turns, a curve meets another curve, or a surface bends; then the whole shape restricts the total account.",
+        "failure_test": "If the explanation says measurement never matters, it has lost geometry. If it says only measurement matters, it has lost the reason whole-shape constraints can force an answer.",
+        "reader_question": "Which local measured fact is present, and which whole-shape fact controls what that local evidence can do?",
+        "concepts": ["topology-vs-geometry", "gauss-bonnet", "euler-characteristic"],
+    },
+    {
+        "title": "Invariant versus raw count",
+        "left": "Invariant",
+        "right": "Raw count",
+        "confusion": "A visible number can look like evidence just because it is easy to count. The course repeatedly shows that easy counts may change under harmless redrawings.",
+        "left_job": "An invariant is chosen because it survives the allowed moves. It carries the answer from one version of the picture to another.",
+        "right_job": "A raw count is simply what the eye sees in one drawing: crossings, cells, regions, or defects before the legal changes have been tested.",
+        "bridge": "The raw count becomes useful only after it is repaired. Alternating signs, parity, or plus-minus cancellation can turn an unstable count into protected evidence.",
+        "failure_test": "If the count changes during a legal move and the explanation has no cancellation rule, the count is not yet an invariant.",
+        "reader_question": "What local change threatens the count, and what part of the count survives that change?",
+        "concepts": ["invariant", "parity", "intersection-number"],
+    },
+    {
+        "title": "Deformation versus illegal shortcut",
+        "left": "Deformation",
+        "right": "Illegal shortcut",
+        "confusion": "A cleaner drawing can feel like progress even when the cleanup changed the problem. This is the main danger in visual topology.",
+        "left_job": "A deformation is a continuous legal change that preserves the question being asked. It lets an easier picture speak for the harder one.",
+        "right_job": "An illegal shortcut cuts, crosses, jumps, moves fixed data, drops a boundary, or changes the state space while pretending the answer is still about the original problem.",
+        "bridge": "The difference is the rulebook. The same visible motion may be legal in one problem and forbidden in another, so the allowed move has to be named before the simplification is trusted.",
+        "failure_test": "If a curve passes through a forbidden obstacle or an endpoint quietly changes order, the proof has solved a different problem.",
+        "reader_question": "What changed during the motion, and what exact feature was protected at every step?",
+        "concepts": ["deformation", "knots-and-links", "winding-linking"],
+    },
+    {
+        "title": "Quotient space versus drawing",
+        "left": "Quotient space",
+        "right": "Drawing",
+        "confusion": "A square with arrows can be mistaken for a square. In the course, the arrows are instructions for what the finished space actually is.",
+        "left_job": "A quotient space declares certain points to be the same point. That declaration creates the routes, neighborhoods, and side behavior of the finished object.",
+        "right_job": "A drawing is only a readable code for the rule. Its visible boundary or flat outline may not be a true boundary or shape in the completed space.",
+        "bridge": "Read the rule before reading the picture. Once the identifications are applied, travel, orientation, and boundary behavior may change.",
+        "failure_test": "If the explanation reasons on the unglued drawing after the identification rule has been stated, it is using the wrong object.",
+        "reader_question": "Which points have been identified, and what path or boundary behavior changes after that identification?",
+        "concepts": ["quotient-space", "boundary-orientation", "manifold"],
+    },
+    {
+        "title": "Product space versus configuration space",
+        "left": "Product space",
+        "right": "Configuration space",
+        "confusion": "Both can sound like spaces of choices. The distinction matters because one records independent choices, while the other must represent the actual allowed states of a system.",
+        "left_job": "A product space keeps separate choices together. One point records a tuple of choices before any later constraints are imposed.",
+        "right_job": "A configuration space records complete allowed states of a system. It may start from product choices, but then forbidden states, walls, or equations must be removed or imposed.",
+        "bridge": "Many models start with a product and become a configuration space only after the real restrictions are added. The topology speaks about the restricted state space, not the larger wishful one.",
+        "failure_test": "If the model includes collisions or impossible positions because it stopped at the product, it may erase the obstruction the application depends on.",
+        "reader_question": "Which choices vary independently, and which states must be removed before the model represents the real system?",
+        "concepts": ["product-space", "configuration-space", "fixed-points"],
+    },
+    {
+        "title": "Generic position versus special accident",
+        "left": "Generic position",
+        "right": "Special accident",
+        "confusion": "A special drawing can look more informative because it has tangencies, perfect alignments, or multiple events at once. The course often moves away from that drawing to see the stable behavior.",
+        "left_job": "Generic position gives a clean ordinary case where meetings are separated, defects are isolated, and signs or counts can be assigned.",
+        "right_job": "A special accident is a fragile coincidence. It may mark a transition, but it can hide the ordinary events on either side.",
+        "bridge": "Study the ordinary case first, then use the special accident as the moment where ordinary events are born, die, or change in controlled pairs.",
+        "failure_test": "If the small nudge changes the protected fact, generic position has been misused. If no nudge is made, the count may not be defined.",
+        "reader_question": "What accident was removed, and what ordinary count or sign rule became available afterward?",
+        "concepts": ["generic-position", "intersection-number", "vector-field-index"],
+    },
+    {
+        "title": "Fixed point versus equilibrium",
+        "left": "Fixed point",
+        "right": "Equilibrium",
+        "confusion": "Both sound like something staying put. The course uses them differently: one belongs to a rule sending points to points, the other belongs to an arrow field or motion law.",
+        "left_job": "A fixed point is an input that a rule sends back to itself. The graph-and-diagonal picture turns self-agreement into an intersection.",
+        "right_job": "An equilibrium is a place where an arrow field vanishes. Nearby arrows show how motion fails around that place.",
+        "bridge": "Both are forced special states, but their evidence differs. Fixed points use self-agreement of a map; equilibria use local arrow behavior and index.",
+        "failure_test": "If the explanation uses fixed-point language for a vector-field defect without naming the arrow field, or uses equilibrium language for a map without a motion law, the object has been blurred.",
+        "reader_question": "Is the course studying a rule that returns points, or an arrow field whose arrows vanish?",
+        "concepts": ["fixed-points", "equilibrium", "vector-field-index"],
+    },
+    {
+        "title": "Vector-field index versus Euler characteristic",
+        "left": "Vector-field index",
+        "right": "Euler characteristic",
+        "confusion": "Both are numbers in Poincare-Hopf, but they live on different sides of the account.",
+        "left_job": "Vector-field index is local evidence. It counts how arrows turn around one isolated defect.",
+        "right_job": "Euler characteristic is whole-surface evidence. It comes from the surface's global bookkeeping, independent of one arrow pattern.",
+        "bridge": "Poincare-Hopf connects them by adding every local index and comparing the total to the Euler characteristic of the same surface.",
+        "failure_test": "If one defect is compared directly to Euler characteristic, or if the surface in the index account is not the surface whose Euler characteristic is used, the theorem has been misread.",
+        "reader_question": "Which local indices are being added, and which whole surface supplies the Euler characteristic they must match?",
+        "concepts": ["vector-field-index", "euler-characteristic", "poincare-hopf"],
+    },
+    {
+        "title": "Boundary versus hole",
+        "left": "Boundary",
+        "right": "Hole",
+        "confusion": "Both can feel like missing space in a drawing, but they affect arguments in different ways.",
+        "left_job": "A boundary is where the surface stops or where extra edge behavior must be counted. It can add conditions or terms to the argument.",
+        "right_job": "A hole is an absent region or blocked filling. It can prevent a loop from shrinking or a path from escaping.",
+        "bridge": "Both change what routes and counts are legal. The reader has to ask whether the issue is an edge that contributes data or a missing region that blocks a move.",
+        "failure_test": "If an edge is ignored as though the surface had no boundary, or if a hole is treated like a removable drawing feature, the proof can lose the obstruction.",
+        "reader_question": "Is the argument using an edge condition, a missing filling region, or both at the same time?",
+        "concepts": ["boundary-orientation", "winding-linking", "configuration-space"],
+    },
+    {
+        "title": "Source support versus source overclaim",
+        "left": "Source support",
+        "right": "Source overclaim",
+        "confusion": "A reference can support a family of ideas without proving every sentence on a course page.",
+        "left_job": "Source support ties a course move to the course videos, a primary-paper family, or a standard reference for the background mathematics.",
+        "right_job": "Source overclaim treats a reference as if it directly proves a lecture interpretation, exact wording, or stronger theorem use that the available source evidence does not justify.",
+        "bridge": "The companion should move from lecture evidence to source family carefully: course demonstration first, source support second, caveat always visible.",
+        "failure_test": "If a sentence would become false or too strong when the auto-caption caveat is remembered, it is probably overclaiming.",
+        "reader_question": "What exact claim does the source support, and what stronger claim should remain unsaid?",
+        "concepts": ["topology-vs-geometry", "invariant", "poincare-hopf"],
+    },
+]
+
+
 THEMES = [
     {
         "id": "see-by-deforming",
@@ -2977,6 +3101,7 @@ def page(title, body, current=""):
         ("proof-moves.html", "Proof Moves"),
         ("formula-reader.html", "Formula Reader"),
         ("theorem-use-contracts.html", "Theorem Contracts"),
+        ("concept-contrasts.html", "Concept Contrasts"),
         ("reader-checks.html", "Reader Checks"),
         ("term-translator.html", "Term Translator"),
         ("paper-source-reader.html", "Paper Source Reader"),
@@ -3312,6 +3437,7 @@ def build_quality_audit(data):
     family_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["answer_guide"][field])) for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]) for f in data["families"])
     term_translation_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["everyday_sentence", "job_in_argument", "not_a_definition", "failure_if_misread", "reader_question"]) for row in data["term_translations"])
     source_reader_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["reader_problem", "object_to_watch", "first_principles_bridge", "how_to_read", "do_not_overread", "reader_question"]) for row in data["source_readers"])
+    concept_contrast_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["confusion", "left_job", "right_job", "bridge", "failure_test", "reader_question"]) for row in data["concept_contrasts"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -3414,6 +3540,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Concept contrast reading",
+            "evidence": f"The Concept Contrasts page gives {len(data['concept_contrasts'])} contrast pairs for ideas readers often blur, with {concept_contrast_words} words across confusion, left job, right job, bridge, failure test, reader question, and concept-link fields.",
+            "status": "met",
+        },
+        {
             "requirement": "Reader checks for common failure modes",
             "evidence": "The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.",
             "status": "met",
@@ -3478,6 +3609,8 @@ def build_quality_audit(data):
             "proof_moves": len(data["proof_moves"]),
             "theorem_use_contracts": len(data["theorem_use_contracts"]),
             "theorem_contract_words": theorem_contract_words,
+            "concept_contrasts": len(data["concept_contrasts"]),
+            "concept_contrast_words": concept_contrast_words,
             "reader_checks": 11,
             "term_translations": len(data["term_translations"]),
             "term_translation_words": term_translation_words,
@@ -3554,6 +3687,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Proof Moves', 'Five reusable proof recipes show the steps: name the object, name legal moves, protect evidence, and use the conclusion without hiding the contract.', 'proof-moves.html', 'Moves')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Theorem Contracts', 'Eight contracts state when central course results may be used: required object, allowed move, protected evidence, conclusion, break condition, and everyday test.', 'theorem-use-contracts.html', 'Contracts')}
+{card('Concept Contrasts', 'Ten contrast pairs separate neighboring ideas readers often blur: topology and geometry, invariant and raw count, quotient rule and drawing, fixed point and equilibrium, index and Euler characteristic.', 'concept-contrasts.html', 'Contrasts')}
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 {card('Term Translator', 'Sixteen formal course words translated into the job they perform in an argument, with failure tests and concept links for each one.', 'term-translator.html', 'Terms')}
 {card('Paper Source Reader', 'A first-principles guide to the course source, primary papers, and standard references: what problem each source family answers and how to read it without overclaiming.', 'paper-source-reader.html', 'Sources')}
@@ -3792,6 +3926,37 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 """
     (SITE / "theorem-use-contracts.html").write_text(page("Theorem Use Contracts", contracts_body, "Theorem Contracts"), encoding="utf-8")
+
+    contrast_cards = []
+    for row in data["concept_contrasts"]:
+        contrast_cards.append(
+            f"""<article class="card">
+  <div class="meta">{esc(row['left'])} / {esc(row['right'])}</div>
+  <h3>{esc(row['title'])}</h3>
+  <p><b>Confusion:</b> {esc(row['confusion'])}</p>
+  <p><b>Left job:</b> {esc(row['left_job'])}</p>
+  <p><b>Right job:</b> {esc(row['right_job'])}</p>
+  <p><b>Bridge:</b> {esc(row['bridge'])}</p>
+  <p><b>Failure test:</b> {esc(row['failure_test'])}</p>
+  <p><b>Reader question:</b> {esc(row['reader_question'])}</p>
+  <p>{concept_pills(row['concepts'], data['concepts'])}</p>
+</article>"""
+        )
+    contrasts_body = f"""
+<h1>Concept Contrasts</h1>
+<p class="lead">This page separates neighboring ideas that are easy to blend together. A contrast is not a dictionary entry. It says what each idea is responsible for, how the two ideas meet in a course argument, and what mistake appears when their jobs are merged.</p>
+<section class="lecture">
+  <h2>How To Use A Contrast</h2>
+  <p>Read the confusion line first. Then read the left job and right job as two different pieces of work inside a proof or model. The bridge tells how the course can use both ideas in the same argument without making them interchangeable.</p>
+  <p>The failure test is the important part for revision. When a lecture page, concept page, or source note feels fluent but thin, ask whether it has merged two jobs that should remain separate. Repair the sentence by naming the object, the protected fact, and the exact role of each side.</p>
+</section>
+<div class="grid two">{''.join(contrast_cards)}</div>
+<section class="lecture">
+  <h2>The Separation Test</h2>
+  <p>For any two course ideas, ask whether replacing one word with the other would change the object, the allowed move, the protected evidence, or the conclusion. If nothing changes, the explanation is probably too vague. If the change is visible in everyday language, the contrast is doing useful work.</p>
+</section>
+"""
+    (SITE / "concept-contrasts.html").write_text(page("Concept Contrasts", contrasts_body, "Concept Contrasts"), encoding="utf-8")
 
     check_rows = [
         ("The drawing is being treated as the object", "A square with edge labels, a graph of a map, or a configuration space is a code for relationships. The ink is not the final object.", "The same visible drawing can describe different spaces when the edge rule changes, so the rule has to be read before the picture can be trusted.", "What rule does this picture represent, and what relationships must survive if I redraw it?", "lecture-04.html", "Read Lecture 04"),
@@ -4183,7 +4348,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['concept_contrasts']} concept contrast pairs, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['concept_contrast_words']} concept-contrast words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -4328,6 +4493,7 @@ def main():
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
         "theorem_use_contracts": THEOREM_USE_CONTRACTS,
+        "concept_contrasts": CONCEPT_CONTRASTS,
         "term_translations": TERM_TRANSLATIONS,
         "source_readers": SOURCE_READERS,
         "references": REFERENCES,
@@ -4361,6 +4527,7 @@ def main():
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "theorem-use-contracts.json", THEOREM_USE_CONTRACTS)
+    write_json(ANALYSIS / "concept-contrasts.json", CONCEPT_CONTRASTS)
     write_json(ANALYSIS / "term-translations.json", TERM_TRANSLATIONS)
     write_json(ANALYSIS / "source-readers.json", SOURCE_READERS)
     write_json(ANALYSIS / "references.json", REFERENCES)
@@ -4415,6 +4582,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - course-synthesis.html with the full dependency spine and proof-family synthesis
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
 - proof-moves.html with {metrics['proof_moves']} reusable proof recipes
+- concept-contrasts.html with {metrics['concept_contrasts']} contrast pairs and {metrics['concept_contrast_words']} contrast words separating ideas readers often blur
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - term-translator.html with {metrics['term_translations']} formal course words translated into everyday sentences, argument jobs, failure tests, reader questions, and concept links
 - references.html with {metrics['references']} course, primary-paper, and standard-text links, each with source caveats and lecture/concept coverage
@@ -4422,7 +4590,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

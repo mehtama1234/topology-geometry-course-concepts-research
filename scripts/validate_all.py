@@ -369,6 +369,31 @@ def main():
         if missing:
             fail(f"theorem contract {row.get('name')} unknown concepts: {missing}")
 
+    concept_contrasts = data.get("concept_contrasts") or []
+    required_contrasts = {
+        "Topology versus geometry",
+        "Invariant versus raw count",
+        "Deformation versus illegal shortcut",
+        "Quotient space versus drawing",
+        "Product space versus configuration space",
+        "Generic position versus special accident",
+        "Fixed point versus equilibrium",
+        "Vector-field index versus Euler characteristic",
+        "Boundary versus hole",
+        "Source support versus source overclaim",
+    }
+    if {row.get("title") for row in concept_contrasts} != required_contrasts:
+        fail("concept contrasts do not match required contrast set")
+    for row in concept_contrasts:
+        for field in ["confusion", "left_job", "right_job", "bridge", "failure_test", "reader_question"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"concept contrast {row.get('title')} {field} too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"concept contrast {row.get('title')} needs concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"concept contrast {row.get('title')} unknown concepts: {missing}")
+
     references = data.get("references") or []
     if len(references) < 7:
         fail("references layer too small")
@@ -456,7 +481,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -524,6 +549,14 @@ def main():
         fail("theorem use contracts page needs eight cards")
     if len(words(re.sub(r"<[^>]+>", " ", theorem_contract_page))) < 1500:
         fail("theorem use contracts page too thin")
+    concept_contrasts_page = (SITE / "concept-contrasts.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Concept Contrasts", "Confusion:", "Left job:", "Right job:", "Bridge:", "Failure test:", "Reader question:", "The Separation Test"]:
+        if phrase not in concept_contrasts_page:
+            fail(f"concept contrasts page missing phrase: {phrase}")
+    if concept_contrasts_page.count("<article") < 10:
+        fail("concept contrasts page needs ten cards")
+    if len(words(re.sub(r"<[^>]+>", " ", concept_contrasts_page))) < 1500:
+        fail("concept contrasts page too thin")
     reader_checks = (SITE / "reader-checks.html").read_text(encoding="utf-8", errors="ignore")
     if reader_checks.count("Reader check") < 11:
         fail("reader checks page needs eleven checks")

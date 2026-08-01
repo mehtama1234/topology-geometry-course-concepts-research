@@ -6386,6 +6386,168 @@
       ]
     }
   ],
+  "concept_contrasts": [
+    {
+      "title": "Topology versus geometry",
+      "left": "Topology",
+      "right": "Geometry",
+      "confusion": "A reader can think the course is choosing one and rejecting the other. That misses how the lectures use measured local facts and whole-shape facts together.",
+      "left_job": "Topology asks what survives when exact measurement is allowed to change: routes, holes, boundaries, side behavior, fixed points, and total constraints.",
+      "right_job": "Geometry keeps measured local information in view: length, angle, direction, curvature, and local bending. Those facts often become the pieces that a topological account adds up.",
+      "bridge": "The course often starts geometrically and ends topologically. A local arrow turns, a curve meets another curve, or a surface bends; then the whole shape restricts the total account.",
+      "failure_test": "If the explanation says measurement never matters, it has lost geometry. If it says only measurement matters, it has lost the reason whole-shape constraints can force an answer.",
+      "reader_question": "Which local measured fact is present, and which whole-shape fact controls what that local evidence can do?",
+      "concepts": [
+        "topology-vs-geometry",
+        "gauss-bonnet",
+        "euler-characteristic"
+      ]
+    },
+    {
+      "title": "Invariant versus raw count",
+      "left": "Invariant",
+      "right": "Raw count",
+      "confusion": "A visible number can look like evidence just because it is easy to count. The course repeatedly shows that easy counts may change under harmless redrawings.",
+      "left_job": "An invariant is chosen because it survives the allowed moves. It carries the answer from one version of the picture to another.",
+      "right_job": "A raw count is simply what the eye sees in one drawing: crossings, cells, regions, or defects before the legal changes have been tested.",
+      "bridge": "The raw count becomes useful only after it is repaired. Alternating signs, parity, or plus-minus cancellation can turn an unstable count into protected evidence.",
+      "failure_test": "If the count changes during a legal move and the explanation has no cancellation rule, the count is not yet an invariant.",
+      "reader_question": "What local change threatens the count, and what part of the count survives that change?",
+      "concepts": [
+        "invariant",
+        "parity",
+        "intersection-number"
+      ]
+    },
+    {
+      "title": "Deformation versus illegal shortcut",
+      "left": "Deformation",
+      "right": "Illegal shortcut",
+      "confusion": "A cleaner drawing can feel like progress even when the cleanup changed the problem. This is the main danger in visual topology.",
+      "left_job": "A deformation is a continuous legal change that preserves the question being asked. It lets an easier picture speak for the harder one.",
+      "right_job": "An illegal shortcut cuts, crosses, jumps, moves fixed data, drops a boundary, or changes the state space while pretending the answer is still about the original problem.",
+      "bridge": "The difference is the rulebook. The same visible motion may be legal in one problem and forbidden in another, so the allowed move has to be named before the simplification is trusted.",
+      "failure_test": "If a curve passes through a forbidden obstacle or an endpoint quietly changes order, the proof has solved a different problem.",
+      "reader_question": "What changed during the motion, and what exact feature was protected at every step?",
+      "concepts": [
+        "deformation",
+        "knots-and-links",
+        "winding-linking"
+      ]
+    },
+    {
+      "title": "Quotient space versus drawing",
+      "left": "Quotient space",
+      "right": "Drawing",
+      "confusion": "A square with arrows can be mistaken for a square. In the course, the arrows are instructions for what the finished space actually is.",
+      "left_job": "A quotient space declares certain points to be the same point. That declaration creates the routes, neighborhoods, and side behavior of the finished object.",
+      "right_job": "A drawing is only a readable code for the rule. Its visible boundary or flat outline may not be a true boundary or shape in the completed space.",
+      "bridge": "Read the rule before reading the picture. Once the identifications are applied, travel, orientation, and boundary behavior may change.",
+      "failure_test": "If the explanation reasons on the unglued drawing after the identification rule has been stated, it is using the wrong object.",
+      "reader_question": "Which points have been identified, and what path or boundary behavior changes after that identification?",
+      "concepts": [
+        "quotient-space",
+        "boundary-orientation",
+        "manifold"
+      ]
+    },
+    {
+      "title": "Product space versus configuration space",
+      "left": "Product space",
+      "right": "Configuration space",
+      "confusion": "Both can sound like spaces of choices. The distinction matters because one records independent choices, while the other must represent the actual allowed states of a system.",
+      "left_job": "A product space keeps separate choices together. One point records a tuple of choices before any later constraints are imposed.",
+      "right_job": "A configuration space records complete allowed states of a system. It may start from product choices, but then forbidden states, walls, or equations must be removed or imposed.",
+      "bridge": "Many models start with a product and become a configuration space only after the real restrictions are added. The topology speaks about the restricted state space, not the larger wishful one.",
+      "failure_test": "If the model includes collisions or impossible positions because it stopped at the product, it may erase the obstruction the application depends on.",
+      "reader_question": "Which choices vary independently, and which states must be removed before the model represents the real system?",
+      "concepts": [
+        "product-space",
+        "configuration-space",
+        "fixed-points"
+      ]
+    },
+    {
+      "title": "Generic position versus special accident",
+      "left": "Generic position",
+      "right": "Special accident",
+      "confusion": "A special drawing can look more informative because it has tangencies, perfect alignments, or multiple events at once. The course often moves away from that drawing to see the stable behavior.",
+      "left_job": "Generic position gives a clean ordinary case where meetings are separated, defects are isolated, and signs or counts can be assigned.",
+      "right_job": "A special accident is a fragile coincidence. It may mark a transition, but it can hide the ordinary events on either side.",
+      "bridge": "Study the ordinary case first, then use the special accident as the moment where ordinary events are born, die, or change in controlled pairs.",
+      "failure_test": "If the small nudge changes the protected fact, generic position has been misused. If no nudge is made, the count may not be defined.",
+      "reader_question": "What accident was removed, and what ordinary count or sign rule became available afterward?",
+      "concepts": [
+        "generic-position",
+        "intersection-number",
+        "vector-field-index"
+      ]
+    },
+    {
+      "title": "Fixed point versus equilibrium",
+      "left": "Fixed point",
+      "right": "Equilibrium",
+      "confusion": "Both sound like something staying put. The course uses them differently: one belongs to a rule sending points to points, the other belongs to an arrow field or motion law.",
+      "left_job": "A fixed point is an input that a rule sends back to itself. The graph-and-diagonal picture turns self-agreement into an intersection.",
+      "right_job": "An equilibrium is a place where an arrow field vanishes. Nearby arrows show how motion fails around that place.",
+      "bridge": "Both are forced special states, but their evidence differs. Fixed points use self-agreement of a map; equilibria use local arrow behavior and index.",
+      "failure_test": "If the explanation uses fixed-point language for a vector-field defect without naming the arrow field, or uses equilibrium language for a map without a motion law, the object has been blurred.",
+      "reader_question": "Is the course studying a rule that returns points, or an arrow field whose arrows vanish?",
+      "concepts": [
+        "fixed-points",
+        "equilibrium",
+        "vector-field-index"
+      ]
+    },
+    {
+      "title": "Vector-field index versus Euler characteristic",
+      "left": "Vector-field index",
+      "right": "Euler characteristic",
+      "confusion": "Both are numbers in Poincare-Hopf, but they live on different sides of the account.",
+      "left_job": "Vector-field index is local evidence. It counts how arrows turn around one isolated defect.",
+      "right_job": "Euler characteristic is whole-surface evidence. It comes from the surface's global bookkeeping, independent of one arrow pattern.",
+      "bridge": "Poincare-Hopf connects them by adding every local index and comparing the total to the Euler characteristic of the same surface.",
+      "failure_test": "If one defect is compared directly to Euler characteristic, or if the surface in the index account is not the surface whose Euler characteristic is used, the theorem has been misread.",
+      "reader_question": "Which local indices are being added, and which whole surface supplies the Euler characteristic they must match?",
+      "concepts": [
+        "vector-field-index",
+        "euler-characteristic",
+        "poincare-hopf"
+      ]
+    },
+    {
+      "title": "Boundary versus hole",
+      "left": "Boundary",
+      "right": "Hole",
+      "confusion": "Both can feel like missing space in a drawing, but they affect arguments in different ways.",
+      "left_job": "A boundary is where the surface stops or where extra edge behavior must be counted. It can add conditions or terms to the argument.",
+      "right_job": "A hole is an absent region or blocked filling. It can prevent a loop from shrinking or a path from escaping.",
+      "bridge": "Both change what routes and counts are legal. The reader has to ask whether the issue is an edge that contributes data or a missing region that blocks a move.",
+      "failure_test": "If an edge is ignored as though the surface had no boundary, or if a hole is treated like a removable drawing feature, the proof can lose the obstruction.",
+      "reader_question": "Is the argument using an edge condition, a missing filling region, or both at the same time?",
+      "concepts": [
+        "boundary-orientation",
+        "winding-linking",
+        "configuration-space"
+      ]
+    },
+    {
+      "title": "Source support versus source overclaim",
+      "left": "Source support",
+      "right": "Source overclaim",
+      "confusion": "A reference can support a family of ideas without proving every sentence on a course page.",
+      "left_job": "Source support ties a course move to the course videos, a primary-paper family, or a standard reference for the background mathematics.",
+      "right_job": "Source overclaim treats a reference as if it directly proves a lecture interpretation, exact wording, or stronger theorem use that the available source evidence does not justify.",
+      "bridge": "The companion should move from lecture evidence to source family carefully: course demonstration first, source support second, caveat always visible.",
+      "failure_test": "If a sentence would become false or too strong when the auto-caption caveat is remembered, it is probably overclaiming.",
+      "reader_question": "What exact claim does the source support, and what stronger claim should remain unsaid?",
+      "concepts": [
+        "topology-vs-geometry",
+        "invariant",
+        "poincare-hopf"
+      ]
+    }
+  ],
   "term_translations": [
     {
       "term": "Topology",
@@ -7158,6 +7320,11 @@
         "status": "met"
       },
       {
+        "requirement": "Concept contrast reading",
+        "evidence": "The Concept Contrasts page gives 10 contrast pairs for ideas readers often blur, with 1355 words across confusion, left job, right job, bridge, failure test, reader question, and concept-link fields.",
+        "status": "met"
+      },
+      {
         "requirement": "Reader checks for common failure modes",
         "evidence": "The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.",
         "status": "met"
@@ -7221,6 +7388,8 @@
       "proof_moves": 5,
       "theorem_use_contracts": 8,
       "theorem_contract_words": 1271,
+      "concept_contrasts": 10,
+      "concept_contrast_words": 1355,
       "reader_checks": 11,
       "term_translations": 16,
       "term_translation_words": 1850,
@@ -7231,7 +7400,7 @@
       "rubric_coverage_layers": 6,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 85
+      "html_pages_before_audit_page": 86
     }
   }
 }

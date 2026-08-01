@@ -21,12 +21,13 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Concept dependency map | `site/concept-dependencies.html` gives eight prerequisite paths from early ideas to later theorem-level ideas | Met |
 | Proof moves | `site/proof-moves.html` gives five reusable first-principles proof recipes with steps, failure modes, and course examples | Met |
 | Formula reader | `site/formula-reader.html` translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks; `site/theorem-use-contracts.html` states when eight central results and methods may be used | Met |
+| Concept contrast reader | `site/concept-contrasts.html` separates ten neighboring ideas readers often blur, including topology/geometry, invariant/raw count, quotient/drawing, fixed point/equilibrium, and index/Euler characteristic | Met |
 | Interactive learning | `site/math-playground.html` has four canvas widgets: Euler characteristic, signed cancellation, fixed points, vector-field index | Met |
 | Reader failure checks | `site/reader-checks.html` has eleven checks for common reasoning errors | Met |
 | Term translator | `site/term-translator.html` translates 16 formal course words into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links | Met |
 | References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats; `site/paper-source-reader.html` explains each source family from first principles | Met |
 | Quality/source audits | `site/quality-rubric.html`, `site/rubric-coverage.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, rubric coverage maps those tests across six layers, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 85 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 86 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -39,7 +40,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 85 generated HTML pages.
+- 86 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 5,333 lecture essay words.
@@ -74,6 +75,8 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 5 proof-move recipes.
 - 8 theorem-use contracts.
 - 1,271 theorem-contract words.
+- 10 concept contrast pairs.
+- 1,355 concept-contrast words.
 - 11 reader checks.
 - 16 term translations.
 - 1,850 term-translation words.
@@ -100,6 +103,7 @@ The validator checks:
 - concept dependency structure and length;
 - proof-move structure and length;
 - theorem-use contract structure, required result set, field depth, and concept-link integrity;
+- concept contrast structure, required contrast set, field depth, and concept-link integrity;
 - reader checks structure and length;
 - term translator required term set, field depth, page structure, and concept-link integrity;
 - paper source reader source coverage, field depth, page structure, and concept-link integrity;

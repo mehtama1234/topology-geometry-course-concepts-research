@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 85.
+- HTML pages: 86.
 
 ## Main Reader Surfaces
 
@@ -39,6 +39,7 @@ This repo is the source and generated static site for a first-principles compani
 - `proof-moves.html` — five reusable first-principles proof recipes with steps, failure modes, and examples.
 - `formula-reader.html` — plain readings of central formulas and theorem statements.
 - `theorem-use-contracts.html` — eight use contracts for central results and methods, with required object, allowed move, protected evidence, conclusion, break condition, and everyday test.
+- `concept-contrasts.html` — ten contrast pairs that separate neighboring ideas readers often blur.
 - `math-playground.html` — four interactive canvas widgets.
 - `reader-checks.html` — eleven common reasoning failure checks.
 - `term-translator.html` — 16 formal course words translated into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links.
@@ -78,6 +79,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - concept dependency structure;
 - proof-move structure and length;
 - theorem-use-contract structure, required result set, field depth, and concept-link integrity;
+- concept-contrast structure, required contrast set, field depth, and concept-link integrity;
 - source-lens sections on every lecture page;
 - lecture-deepening sections on every lecture page;
 - source-checkpoint sections on every lecture page;
@@ -146,6 +148,8 @@ As of the current generated audit:
 - 5 proof-move recipes.
 - 8 theorem-use contracts.
 - 1,271 theorem-contract words.
+- 10 concept contrast pairs.
+- 1,355 concept-contrast words.
 - 11 reader checks.
 - 16 term translations.
 - 1,850 term-translation words.
