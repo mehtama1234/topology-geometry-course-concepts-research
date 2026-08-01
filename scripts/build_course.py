@@ -4342,6 +4342,8 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             "The reference belongs behind the lecture claim, not in front of the beginner's explanation.",
         ])
         source_bridge = lecture_source_family_bridge(number, spine, source_reader)
+        source_family_label = "the course source layer" if source_reader["family"] == "Course spine" else source_reader["family"]
+        reader_question = lecture_source_reader_question(number, spine, source_family_label, examples)
         warning_open = varied((number, "warning-open"), [
             "Keep the claim boundary visible.",
             "Do not let the reference take over the lecture.",
@@ -4358,10 +4360,24 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             "mathematical_bridge": f"{bridge_open} {spine['plain_question']} The legal move is this: {spine['legal_move']} The fact carried forward is this: {spine['surviving_fact']}",
             "how_source_extends": f"{source_bridge} {source_close}",
             "overread_warning": overread_warning,
-            "reader_question": f"Can the reader explain Lecture {number:02d} from the demonstration to the source family by naming the object, the legal move, the surviving fact, and the exact source claim that is being used?",
+            "reader_question": reader_question,
             "concepts": concepts[:6],
         })
     return bridges
+
+
+def lecture_source_reader_question(number, spine, source_family_label, examples):
+    object_text = spine["object"].rstrip(".")
+    legal_move = spine["legal_move"].rstrip(".")
+    surviving = spine["surviving_fact"].rstrip(".")
+    example_title = examples[0]["title"]
+    options = [
+        f"Can the reader start with {example_title}, name the lecture object: {object_text}; state the allowed move; and then say exactly what {source_family_label} is allowed to add without replacing the course evidence?",
+        f"Can the reader explain why the source boundary matters here: the lecture protects this fact: {surviving}; it uses this move: {legal_move}; and {source_family_label} only broadens the setting after that work is visible?",
+        f"Can the reader walk both ways: from the lecture object, {object_text}, to the protected fact, {surviving}, and then back from {source_family_label} to the concrete lecture example without making a stronger source claim?",
+        f"Can the reader answer Lecture {number:02d} without hiding behind the source name: what object is being studied, what move is legal, what fact survives, and what part of the sentence belongs only to background support?",
+    ]
+    return varied((number, source_family_label, "source-reader-question"), options)
 
 
 def lecture_overread_warning(number, warning_open, object_text, spine):
