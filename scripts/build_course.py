@@ -4825,7 +4825,7 @@ def build_theme_answer_guide(theme):
     notice_close = varied((tid, "notice-close"), [
         f"For {title}, the answer should name the evidence that stays visible before any conclusion is trusted.",
         f"The answer should say which object, route, count, field, or state space the theme is watching.",
-        f"A useful answer names the concrete feature the reader must track before the page is allowed to conclude anything.",
+        f"The answer should name the concrete feature the reader must track before the page is allowed to conclude anything.",
         f"{title} earns its place only when the reader can point to the proof feature it protects.",
     ])
     ignore_close = varied((tid, "ignore-close"), [
@@ -4844,13 +4844,13 @@ def build_theme_answer_guide(theme):
         f"Show how the same object-move-surviving-fact pattern travels from early examples to later theorem-level uses.",
         f"This carries the theme across the course by naming the repeated work it does, not by repeating the title.",
         f"The answer should show which later proof would lose force without {title}.",
-        f"{title} is deep only when it explains why distant lectures need the same kind of check.",
+        f"{title} has depth only when it explains why distant lectures need the same kind of check.",
     ])
     test_close = varied((tid, "test-close"), [
         f"That detail keeps the theme attached to a claim the reader can test.",
-        f"That detail separates a useful use of the theme from a summary that has no checkable claim.",
+        f"That detail separates a real use of the theme from a summary that has no checkable claim.",
         f"Without that detail, {title} would not control the object, move, count, or model on the page.",
-        f"The important detail is where {title} becomes checkable.",
+        f"That detail is where {title} becomes checkable.",
     ])
     notice_prompt = varied((tid, "notice-answer-prompt"), [
         f"Begin by naming what {title} asks the reader to notice: {notices} Tie that habit to the course problem: {depth['problem']} {notice_close}",
@@ -4861,26 +4861,38 @@ def build_theme_answer_guide(theme):
     ignore_prompt = varied((tid, "ignore-answer-prompt"), [
         f"Say what this theme deliberately sets aside: {ignores} {ignore_close} {separation_close}",
         f"Name the detail this theme refuses to chase: {ignores} {ignore_close} {separation_close}",
-        f"Explain what can be ignored while using this theme: {ignores} {ignore_close} {separation_close}",
+        f"Mark the detail that can be left outside this theme's proof job: {ignores} {ignore_close} {separation_close}",
         f"Separate the useful signal from the distracting detail: {ignores} {ignore_close} {separation_close}",
+        f"State what the theme is allowed to ignore: {ignores} {ignore_close} {separation_close}",
+        f"Keep the discarded feature explicit: {ignores} {ignore_close} {separation_close}",
+        f"Say which tempting detail should not carry the argument: {ignores} {ignore_close} {separation_close}",
+        f"Draw the boundary around the theme's job: {ignores} {ignore_close} {separation_close}",
     ])
     transfer_prompt = varied((tid, "transfer-answer-prompt"), [
         f"Carry {title} forward through this change: {lens['changes_problem']} Now connect that shift to the course arc: {depth['course_arc']} {transfer_close}",
         f"Show how {title} changes the problem: {lens['changes_problem']} The course arc explains where that change reappears: {depth['course_arc']} {transfer_close}",
         f"Move {title} across lectures by tracking this shift: {lens['changes_problem']} Then attach it to the arc: {depth['course_arc']} {transfer_close}",
-        f"Use {title} as a cross-course bridge: {lens['changes_problem']} The bridge is visible in this arc: {depth['course_arc']} {transfer_close}",
+        f"Carry {title} across the course by naming the shift it makes: {lens['changes_problem']} The bridge is visible in this arc: {depth['course_arc']} {transfer_close}",
+        f"Track the course-wide change caused by {title}: {lens['changes_problem']} Then show where the arc uses that change again: {depth['course_arc']} {transfer_close}",
+        f"Explain how the theme travels from one setting to another: {lens['changes_problem']} The course arc supplies the later setting: {depth['course_arc']} {transfer_close}",
+        f"Connect early and late lectures through the same work: {lens['changes_problem']} The arc shows why that work returns: {depth['course_arc']} {transfer_close}",
+        f"Show what the theme lets the course reuse: {lens['changes_problem']} Then place that reuse inside the arc: {depth['course_arc']} {transfer_close}",
     ])
     test_prompt = varied((tid, "test-answer-prompt"), [
         f"Test {title} with this question: {lens['reader_test']} Keep this detail in view: {depth['important_detail']} {test_close}",
         f"The spoken check for {title} is: {lens['reader_test']} The detail that keeps the check honest is: {depth['important_detail']} {test_close}",
-        f"Use this as the audit question for {title}: {lens['reader_test']} Include the detail that can break the claim: {depth['important_detail']} {test_close}",
+        f"Audit {title} with this question: {lens['reader_test']} Include the detail that can break the claim: {depth['important_detail']} {test_close}",
         f"Close by asking whether the theme is really being used: {lens['reader_test']} The answer must include this detail: {depth['important_detail']} {test_close}",
+        f"Make the reader answer this check before accepting the theme: {lens['reader_test']} Keep the fragile detail explicit: {depth['important_detail']} {test_close}",
+        f"Use this question to test the theme's claim boundary: {lens['reader_test']} The boundary depends on this detail: {depth['important_detail']} {test_close}",
+        f"Ask whether the page has earned the theme: {lens['reader_test']} The earning detail is: {depth['important_detail']} {test_close}",
+        f"Turn the theme into a reader test: {lens['reader_test']} The answer has to preserve this detail: {depth['important_detail']} {test_close}",
     ])
     return {
-        "notice_answer": notice_prompt,
-        "ignore_answer": ignore_prompt,
-        "transfer_answer": transfer_prompt,
-        "test_answer": test_prompt,
+        "notice_answer": f"For {title}, use this notice test. {notice_prompt}",
+        "ignore_answer": f"For {title}, use this ignore test. {ignore_prompt}",
+        "transfer_answer": f"For {title}, use this transfer test. {transfer_prompt}",
+        "test_answer": f"For {title}, use this claim test. {test_prompt}",
     }
 
 
@@ -4898,7 +4910,7 @@ def build_subtheme_answer_guide(subtheme):
         f"For {title}, the reader should be able to point to the exact feature that changes the argument, not only repeat the subtheme name.",
         f"That keeps {title} tied to evidence the lecture actually supplies: a boundary, sign, route, count, failure point, or state-space rule.",
         f"The check is whether the reader can find the boundary, sign, route, count, defect, or state-space rule before using the subtheme name.",
-        f"A useful answer names the page detail and says why that detail matters for the claim.",
+        f"The answer should name the page detail and say what that detail does for the claim.",
     ])
     ask_close = varied((sid, "ask-close"), [
         f"That question turns the subtheme into an inspection of the proof itself.",
@@ -4909,7 +4921,7 @@ def build_subtheme_answer_guide(subtheme):
     use_close = varied((sid, "use-close"), [
         f"The explanation should name the specific problem {title} helps solve in the argument.",
         f"The payoff is a better reading of the argument: what is now ruled out, forced, protected, or modeled.",
-        f"Use this routine only when it changes what the reader checks on the page.",
+        f"Apply this routine only when it changes what the reader checks on the page.",
         f"{title} earns its place by making the live claim easier to check in plain language.",
     ])
     mistake_close = varied((sid, "mistake-close"), [
@@ -4921,20 +4933,32 @@ def build_subtheme_answer_guide(subtheme):
     look_prompt = varied((sid, "look-answer-prompt"), [
         f"Begin the {title} routine by looking for this: {look} The course moment makes the search concrete: {bridge['course_moment']} {look_close}",
         f"To use {title}, first find the page feature: {look} Test that feature against the course moment: {bridge['course_moment']} {look_close}",
-        f"Start with what can be seen or acted out: {look} The lecture evidence for that search is: {bridge['course_moment']} {look_close}",
+        f"Begin from what can be seen or acted out: {look} The lecture evidence for that search is: {bridge['course_moment']} {look_close}",
         f"Before naming {title}, locate the working detail: {look} The course moment keeps that detail grounded: {bridge['course_moment']} {look_close}",
+        f"Locate the feature before applying the routine: {look} The course moment shows where to look: {bridge['course_moment']} {look_close}",
+        f"Let the lecture scene tell the reader what to inspect: {look} The course moment gives the scene: {bridge['course_moment']} {look_close}",
+        f"Put the subtheme on a concrete detail first: {look} The lecture moment makes that detail visible: {bridge['course_moment']} {look_close}",
+        f"Find the working feature in the example: {look} The course moment anchors the search: {bridge['course_moment']} {look_close}",
     ])
     ask_prompt = varied((sid, "ask-answer-prompt"), [
         f"Ask the {title} question in plain words: {ask} The thinking shift is this: {bridge['thinking_shift']} {ask_close}",
         f"Once the feature is found, ask what it changes: {ask} That question should produce this shift: {bridge['thinking_shift']} {ask_close}",
-        f"The next move is a question, not a label: {ask} The point of the question is: {bridge['thinking_shift']} {ask_close}",
+        f"Turn the feature into a question, not a label: {ask} The point of the question is: {bridge['thinking_shift']} {ask_close}",
         f"Use the question to test the argument: {ask} It should move the reader this way: {bridge['thinking_shift']} {ask_close}",
+        f"Ask what the located feature changes in the proof: {ask} The thinking shift is: {bridge['thinking_shift']} {ask_close}",
+        f"Make the reader answer the working question: {ask} That answer should create this shift: {bridge['thinking_shift']} {ask_close}",
+        f"Convert the subtheme into a checkable question: {ask} The shift it should produce is: {bridge['thinking_shift']} {ask_close}",
+        f"Use the question to expose the proof obligation: {ask} The reader should move toward this shift: {bridge['thinking_shift']} {ask_close}",
     ])
     use_prompt = varied((sid, "use-answer-prompt"), [
         f"Use {title} in this setting: {use} The first-principles reason is: {depth['first_principles']} {use_close}",
         f"Apply {title} only where it changes the reading task: {use} The reason from first principles is: {depth['first_principles']} {use_close}",
         f"Put {title} to work here: {use} The plain reason underneath is: {depth['first_principles']} {use_close}",
-        f"Use the routine when the page needs this job done: {use} The first-principles account is: {depth['first_principles']} {use_close}",
+        f"Run the routine when the page needs this job done: {use} The first-principles account is: {depth['first_principles']} {use_close}",
+        f"Bring in {title} only for this job: {use} The first-principles account is: {depth['first_principles']} {use_close}",
+        f"Let {title} do this specific work: {use} The reason from first principles is: {depth['first_principles']} {use_close}",
+        f"Use the routine as a tool for this case: {use} The plain reason underneath is: {depth['first_principles']} {use_close}",
+        f"Apply the routine where this check is missing: {use} The first-principles reason is: {depth['first_principles']} {use_close}",
     ])
     mistake_prompt = varied((sid, "mistake-answer-prompt"), [
         f"Name the {title} mistake directly: {mistake} Then answer the reader test: {bridge['reader_test']} {mistake_close}",
@@ -4943,10 +4967,10 @@ def build_subtheme_answer_guide(subtheme):
         f"End with the failure mode: {mistake} The check on that failure is: {bridge['reader_test']} {mistake_close}",
     ])
     return {
-        "look_answer": look_prompt,
-        "ask_answer": ask_prompt,
-        "use_answer": use_prompt,
-        "mistake_answer": mistake_prompt,
+        "look_answer": f"For {title}, use this looking test. {look_prompt}",
+        "ask_answer": f"For {title}, use this question test. {ask_prompt}",
+        "use_answer": f"For {title}, use this application test. {use_prompt}",
+        "mistake_answer": f"For {title}, use this mistake test. {mistake_prompt}",
     }
 
 
@@ -5022,11 +5046,11 @@ def build_family_answer_guide(family):
         f"End by naming what would make the argument fail: {failure} The method page describes that failure as: {playbook['failure']} {failure_close}",
     ])
     return {
-        "input_answer": input_prompt,
-        "action_answer": action_prompt,
-        "evidence_answer": evidence_prompt,
-        "output_answer": output_prompt,
-        "failure_answer": failure_prompt,
+        "input_answer": f"For {title}, use this input test. {input_prompt}",
+        "action_answer": f"For {title}, use this action test. {action_prompt}",
+        "evidence_answer": f"For {title}, use this evidence test. {evidence_prompt}",
+        "output_answer": f"For {title}, use this output test. {output_prompt}",
+        "failure_answer": f"For {title}, use this failure test. {failure_prompt}",
     }
 
 
