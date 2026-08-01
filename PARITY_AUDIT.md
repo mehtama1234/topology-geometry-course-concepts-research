@@ -24,8 +24,8 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Interactive learning | `site/math-playground.html` has four canvas widgets: Euler characteristic, signed cancellation, fixed points, vector-field index | Met |
 | Reader failure checks | `site/reader-checks.html` has eleven checks for common reasoning errors | Met |
 | References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats | Met |
-| Quality/source audits | `site/quality-rubric.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 79 HTML pages | Met |
+| Quality/source audits | `site/quality-rubric.html`, `site/rubric-coverage.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, rubric coverage maps those tests across six layers, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 80 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -38,7 +38,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 79 generated HTML pages.
+- 80 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 5,333 lecture essay words.
@@ -72,6 +72,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 11 reader checks.
 - 7 references.
 - 6 quality-rubric tests.
+- 6 rubric-coverage layer maps.
 
 ## Validation Gates
 
@@ -90,6 +91,7 @@ The validator checks:
 - reader checks structure and length;
 - references structure, reference page cards, and source-caveat wording;
 - quality-rubric structure and page content;
+- rubric-coverage structure and page content;
 - source-audit caption-nuance cards and source-faithfulness fields;
 - lecture-page deepening sections;
 - lecture-page source-checkpoint sections;

@@ -2658,6 +2658,7 @@ def page(title, body, current=""):
         ("reader-checks.html", "Reader Checks"),
         ("references.html", "References"),
         ("quality-rubric.html", "Quality Rubric"),
+        ("rubric-coverage.html", "Rubric Coverage"),
         ("quality-audit.html", "Quality Audit"),
         ("source-audit.html", "Source Audit"),
     ]
@@ -2794,6 +2795,88 @@ def build_family_answer_guide(family):
     }
 
 
+RUBRIC_COVERAGE = [
+    {
+        "layer": "Lectures",
+        "page": "lectures.html",
+        "coverage": {
+            "object-before-name": "lecture spine object field, lecture first-principles field, concrete examples",
+            "legal-move": "lecture spine legal_move field, math_move field, slow walkthrough",
+            "protected-fact": "lecture spine surviving_fact field, reader test, answer guide",
+            "failure-condition": "source checkpoint, caption nuance, source-faithfulness caveat",
+            "course-anchor": "transcript anchors, three lecture-grounded examples, source lens",
+            "plain-language-replacement": "plain_reading, first_principles, slow walkthrough",
+        },
+        "reader_test": "Can a reader open any lecture page and answer what object is being used, what move is allowed, what survives, what would overread the source, and which course example supports the claim?",
+    },
+    {
+        "layer": "Concepts",
+        "page": "concepts.html",
+        "coverage": {
+            "object-before-name": "workup object field and first-principles section",
+            "legal-move": "workup operation field and operation self-check",
+            "protected-fact": "workup protected field and protected-fact self-check",
+            "failure-condition": "workup breaks_if field, beginner trap, failure self-check",
+            "course-anchor": "anchor course_moment field, where-it-appears lecture cards, further source trail",
+            "plain-language-replacement": "concept essay, first-principles field, principle-behind-it field",
+        },
+        "reader_test": "Can a reader use a concept page without prior vocabulary by naming the object, operation, protected fact, failure case, course moment, and everyday role of the term?",
+    },
+    {
+        "layer": "Themes",
+        "page": "themes.html",
+        "coverage": {
+            "object-before-name": "theme problem and habit fields",
+            "legal-move": "theme lens changes_problem field",
+            "protected-fact": "theme lens notices field and test answer",
+            "failure-condition": "theme lens ignores field and important-detail field",
+            "course-anchor": "theme lecture thread, course arc field, and related concept cards",
+            "plain-language-replacement": "theme essay, why-the-math-matters field, answer guide",
+        },
+        "reader_test": "Can a reader carry the same course habit from one lecture to another while saying what the theme notices, ignores, changes, and tests?",
+    },
+    {
+        "layer": "Subthemes",
+        "page": "subthemes.html",
+        "coverage": {
+            "object-before-name": "subtheme problem and look-for routine",
+            "legal-move": "ask and use routine fields",
+            "protected-fact": "first-principles bridge and reader test",
+            "failure-condition": "mistake routine and mistake answer",
+            "course-anchor": "bridge course_moment field tied to the lecture where the routine appears",
+            "plain-language-replacement": "subtheme essay, first-principles field, answer guide",
+        },
+        "reader_test": "Can a reader apply the routine on a live page by pointing to what to look for, what to ask, when to use it, and what mistake it prevents?",
+    },
+    {
+        "layer": "Method Families",
+        "page": "families.html",
+        "coverage": {
+            "object-before-name": "contract input field and human-problem field",
+            "legal-move": "contract action field and playbook move field",
+            "protected-fact": "contract protected-evidence field and playbook payoff",
+            "failure-condition": "contract failure_test, playbook failure, failure-mode field",
+            "course-anchor": "course_examples field and related concepts",
+            "plain-language-replacement": "method essay, purpose field, answer guide",
+        },
+        "reader_test": "Can a reader explain the method as input, action, protected evidence, output, and failure test before using the method name?",
+    },
+    {
+        "layer": "Source And Quality Pages",
+        "page": "quality-rubric.html",
+        "coverage": {
+            "object-before-name": "quality rubric object-before-name test and source-trail cards",
+            "legal-move": "quality rubric legal-move test and proof-move recipes",
+            "protected-fact": "quality rubric protected-fact test and formula reader",
+            "failure-condition": "quality rubric failure-condition test, source audit caveats, reader checks",
+            "course-anchor": "quality rubric course-anchor test, references page, source audit",
+            "plain-language-replacement": "quality rubric plain-language-replacement test, reader checks, formula reader",
+        },
+        "reader_test": "Can a reviewer use the companion itself to identify a thin paragraph and name the missing repair without inventing a new standard?",
+    },
+]
+
+
 def build_quality_audit(data):
     stats = data["stats"]
     concept_min = min(len(c["appearances"]) for c in data["concepts"])
@@ -2867,6 +2950,11 @@ def build_quality_audit(data):
         {
             "requirement": "First-principles quality rubric",
             "evidence": f"The Quality Rubric page gives {len(data['quality_rubric'])} enforced prose tests: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.",
+            "status": "met",
+        },
+        {
+            "requirement": "Rubric coverage by layer",
+            "evidence": f"The Rubric Coverage page maps the six quality tests across {len(data['rubric_coverage'])} layers: lectures, concepts, themes, subthemes, method families, and source/quality pages.",
             "status": "met",
         },
         {
@@ -2956,6 +3044,7 @@ def build_quality_audit(data):
             "reader_checks": 11,
             "references": len(data["references"]),
             "quality_rubric_items": len(data["quality_rubric"]),
+            "rubric_coverage_layers": len(data["rubric_coverage"]),
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -3026,6 +3115,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 {card('References', 'Course, primary-paper, and standard-text links for the main ideas, with notes on what each source supports and what claim would overread it.', 'references.html', 'Sources')}
 {card('Quality Rubric', 'Six first-principles tests keep long prose honest: object, legal move, surviving evidence, failure condition, course anchor, and everyday-language replacement.', 'quality-rubric.html', 'Rubric')}
+{card('Rubric Coverage', 'A layer-by-layer audit maps the six quality tests onto lectures, concepts, themes, subthemes, method families, source pages, and review checks.', 'rubric-coverage.html', 'Coverage')}
 </div>
 """
     (SITE / "index.html").write_text(page("Topology & Geometry Course Companion", body, "Course"), encoding="utf-8")
@@ -3305,6 +3395,34 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 """
     (SITE / "quality-rubric.html").write_text(page("Quality Rubric", rubric_body, "Quality Rubric"), encoding="utf-8")
 
+    coverage_cards = []
+    rubric_by_id = {item["id"]: item for item in data["quality_rubric"]}
+    for row in data["rubric_coverage"]:
+        coverage_items = "".join(
+            f"<li><b>{esc(rubric_by_id[rubric_id]['title'])}:</b> {esc(evidence)}</li>"
+            for rubric_id, evidence in row["coverage"].items()
+        )
+        coverage_cards.append(
+            f"""<article class="card"><div class="meta">{esc(row['layer'])}</div><h3><a href="{esc(row['page'])}">{esc(row['page'])}</a></h3><ul>{coverage_items}</ul><p><b>Reader test:</b> {esc(row['reader_test'])}</p></article>"""
+        )
+    coverage_body = f"""
+<h1>Rubric Coverage</h1>
+<p class="lead">This audit applies the six prose tests to each major layer of the companion. It shows which generated fields and pages carry the burden for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.</p>
+<section class="lecture">
+  <h2>How To Read This Coverage</h2>
+  <p>The rubric is only useful if it points to evidence. Each card below names the layer, the page to inspect, and the exact fields or sections that should satisfy each quality test. If a later edit weakens one layer, this page shows where the missing work belongs.</p>
+</section>
+<div class="grid two">{''.join(coverage_cards)}</div>
+<section class="lecture">
+  <h2>Reviewer Rule</h2>
+  <p>Do not accept a page because the site has a general rubric. Accept it only when the relevant layer has its own object, legal move, surviving evidence, failure condition, course anchor, and plain-language replacement in the page content.</p>
+  <p>A useful review pass starts with one page and one test. For example, open a concept page and ask only what object appears before the term. Then ask what move is legal. Then ask what survives. This slower pass is better than reading for general polish, because it finds the exact missing sentence the writer needs to add.</p>
+  <p>The coverage map also protects against uneven depth. Lecture pages can be strong while method pages stay vague, or concept pages can name failures while theme pages do not. The reviewer should use the layer card to find which fields carry the burden, then inspect a real generated page before accepting the layer.</p>
+  <p>When a test fails, repair the page itself and regenerate the site. Do not edit only this audit page.</p>
+</section>
+"""
+    (SITE / "rubric-coverage.html").write_text(page("Rubric Coverage", coverage_body, "Rubric Coverage"), encoding="utf-8")
+
     video_links = "".join(f'<a href="{esc(v["youtube_url"])}">{v["index"]:02d}. {esc(v["title"])}</a>' for v in data["videos"])
     body = f"<h1>Video Links</h1><p class='lead'>Every individual YouTube item in playlist order.</p><div class='video-list'>{video_links}</div>"
     (SITE / "videos.html").write_text(page("Video Links", body, "Videos"), encoding="utf-8")
@@ -3454,7 +3572,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -3596,6 +3714,7 @@ def main():
         "proof_moves": PROOF_MOVES,
         "references": REFERENCES,
         "quality_rubric": QUALITY_RUBRIC,
+        "rubric_coverage": RUBRIC_COVERAGE,
     }
     missing = [v["id"] for v in videos if not v["caption_file"]]
     data["missing_caption_ids"] = missing
@@ -3623,6 +3742,7 @@ def main():
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "references.json", REFERENCES)
     write_json(ANALYSIS / "quality-rubric.json", QUALITY_RUBRIC)
+    write_json(ANALYSIS / "rubric-coverage.json", RUBRIC_COVERAGE)
     write_json(ANALYSIS / "course-companion.json", data)
     write_json(ANALYSIS / "quality-audit.json", data["quality_audit"])
     metrics = data["quality_audit"]["metrics"]
@@ -3675,6 +3795,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - references.html with {metrics['references']} course, primary-paper, and standard-text links, each with source caveats and lecture/concept coverage
 - quality-rubric.html with {metrics['quality_rubric_items']} prose tests for object, legal move, protected fact, failure condition, course anchor, and plain-language replacement
+- rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
 Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.

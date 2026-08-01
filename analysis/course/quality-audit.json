@@ -47,6 +47,11 @@
       "status": "met"
     },
     {
+      "requirement": "Rubric coverage by layer",
+      "evidence": "The Rubric Coverage page maps the six quality tests across 6 layers: lectures, concepts, themes, subthemes, method families, and source/quality pages.",
+      "status": "met"
+    },
+    {
       "requirement": "Connected course map",
       "evidence": "45 lecture examples link forward to concepts; every concept links back to lecture appearances, with appearance counts from 2 to 20.",
       "status": "met"
@@ -132,8 +137,9 @@
     "reader_checks": 11,
     "references": 7,
     "quality_rubric_items": 6,
+    "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 79
+    "html_pages_before_audit_page": 80
   }
 }

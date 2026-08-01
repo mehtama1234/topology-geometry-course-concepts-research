@@ -39,7 +39,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 79 generated HTML pages.
+- 80 generated HTML pages.
 - 15 lecture-spine entries.
 - 8 concept dependency paths.
 - 5 proof-move recipes.
@@ -67,8 +67,9 @@ The reader should be able to understand the course without prior math vocabulary
 - 2,339 method-family answer-guide words.
 - 7 references across course sources, primary papers, and standard texts.
 - 6 quality-rubric tests.
+- 6 rubric-coverage layer maps.
 - Four playground widgets.
-- Course synthesis, reader-checks, references, and quality-rubric pages.
+- Course synthesis, reader-checks, references, quality-rubric, and rubric-coverage pages.
 
 ## Required Gates
 

@@ -42,6 +42,7 @@ This repo is the source and generated static site for a first-principles compani
 - `reader-checks.html` — eleven common reasoning failure checks.
 - `references.html` — course, primary-paper, and standard-text links with source caveats and lecture/concept coverage.
 - `quality-rubric.html` — six first-principles prose tests for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.
+- `rubric-coverage.html` — maps the six prose tests across lectures, concepts, themes, subthemes, method families, and source/quality pages.
 - `quality-audit.html` — generated readiness evidence.
 - `source-audit.html` — caption/source caveats and per-lecture caption nuance.
 
@@ -93,6 +94,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - reader checks structure;
 - references layer structure and page content;
 - quality-rubric structure and page content;
+- rubric-coverage structure and page content;
 - broken local links;
 - banned vague phrases in generated HTML.
 
@@ -132,6 +134,7 @@ As of the current generated audit:
 - 5 proof-move recipes.
 - 11 reader checks.
 - 6 quality-rubric tests.
+- 6 rubric-coverage layer maps.
 
 ## Local Readiness Evidence
 

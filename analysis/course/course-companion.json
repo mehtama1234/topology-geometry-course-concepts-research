@@ -5800,6 +5800,86 @@
       "repair": "After each important word, add a sentence beginning with the job it performs: it keeps track, blocks an escape, records a turn, carries signs, or lists possible states."
     }
   ],
+  "rubric_coverage": [
+    {
+      "layer": "Lectures",
+      "page": "lectures.html",
+      "coverage": {
+        "object-before-name": "lecture spine object field, lecture first-principles field, concrete examples",
+        "legal-move": "lecture spine legal_move field, math_move field, slow walkthrough",
+        "protected-fact": "lecture spine surviving_fact field, reader test, answer guide",
+        "failure-condition": "source checkpoint, caption nuance, source-faithfulness caveat",
+        "course-anchor": "transcript anchors, three lecture-grounded examples, source lens",
+        "plain-language-replacement": "plain_reading, first_principles, slow walkthrough"
+      },
+      "reader_test": "Can a reader open any lecture page and answer what object is being used, what move is allowed, what survives, what would overread the source, and which course example supports the claim?"
+    },
+    {
+      "layer": "Concepts",
+      "page": "concepts.html",
+      "coverage": {
+        "object-before-name": "workup object field and first-principles section",
+        "legal-move": "workup operation field and operation self-check",
+        "protected-fact": "workup protected field and protected-fact self-check",
+        "failure-condition": "workup breaks_if field, beginner trap, failure self-check",
+        "course-anchor": "anchor course_moment field, where-it-appears lecture cards, further source trail",
+        "plain-language-replacement": "concept essay, first-principles field, principle-behind-it field"
+      },
+      "reader_test": "Can a reader use a concept page without prior vocabulary by naming the object, operation, protected fact, failure case, course moment, and everyday role of the term?"
+    },
+    {
+      "layer": "Themes",
+      "page": "themes.html",
+      "coverage": {
+        "object-before-name": "theme problem and habit fields",
+        "legal-move": "theme lens changes_problem field",
+        "protected-fact": "theme lens notices field and test answer",
+        "failure-condition": "theme lens ignores field and important-detail field",
+        "course-anchor": "theme lecture thread, course arc field, and related concept cards",
+        "plain-language-replacement": "theme essay, why-the-math-matters field, answer guide"
+      },
+      "reader_test": "Can a reader carry the same course habit from one lecture to another while saying what the theme notices, ignores, changes, and tests?"
+    },
+    {
+      "layer": "Subthemes",
+      "page": "subthemes.html",
+      "coverage": {
+        "object-before-name": "subtheme problem and look-for routine",
+        "legal-move": "ask and use routine fields",
+        "protected-fact": "first-principles bridge and reader test",
+        "failure-condition": "mistake routine and mistake answer",
+        "course-anchor": "bridge course_moment field tied to the lecture where the routine appears",
+        "plain-language-replacement": "subtheme essay, first-principles field, answer guide"
+      },
+      "reader_test": "Can a reader apply the routine on a live page by pointing to what to look for, what to ask, when to use it, and what mistake it prevents?"
+    },
+    {
+      "layer": "Method Families",
+      "page": "families.html",
+      "coverage": {
+        "object-before-name": "contract input field and human-problem field",
+        "legal-move": "contract action field and playbook move field",
+        "protected-fact": "contract protected-evidence field and playbook payoff",
+        "failure-condition": "contract failure_test, playbook failure, failure-mode field",
+        "course-anchor": "course_examples field and related concepts",
+        "plain-language-replacement": "method essay, purpose field, answer guide"
+      },
+      "reader_test": "Can a reader explain the method as input, action, protected evidence, output, and failure test before using the method name?"
+    },
+    {
+      "layer": "Source And Quality Pages",
+      "page": "quality-rubric.html",
+      "coverage": {
+        "object-before-name": "quality rubric object-before-name test and source-trail cards",
+        "legal-move": "quality rubric legal-move test and proof-move recipes",
+        "protected-fact": "quality rubric protected-fact test and formula reader",
+        "failure-condition": "quality rubric failure-condition test, source audit caveats, reader checks",
+        "course-anchor": "quality rubric course-anchor test, references page, source audit",
+        "plain-language-replacement": "quality rubric plain-language-replacement test, reader checks, formula reader"
+      },
+      "reader_test": "Can a reviewer use the companion itself to identify a thin paragraph and name the missing repair without inventing a new standard?"
+    }
+  ],
   "missing_caption_ids": [
     "nx1XOlezuvk"
   ],
@@ -5859,6 +5939,11 @@
       {
         "requirement": "First-principles quality rubric",
         "evidence": "The Quality Rubric page gives 6 enforced prose tests: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.",
+        "status": "met"
+      },
+      {
+        "requirement": "Rubric coverage by layer",
+        "evidence": "The Rubric Coverage page maps the six quality tests across 6 layers: lectures, concepts, themes, subthemes, method families, and source/quality pages.",
         "status": "met"
       },
       {
@@ -5947,9 +6032,10 @@
       "reader_checks": 11,
       "references": 7,
       "quality_rubric_items": 6,
+      "rubric_coverage_layers": 6,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 79
+      "html_pages_before_audit_page": 80
     }
   }
 }

@@ -16,7 +16,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1 video currently reports no captions through `yt-dlp`: `nx1XOlezuvk`.
 - Raw captions live in `raw-material/youtube/captions/`.
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
-- 79 generated HTML pages in `site/`.
+- 80 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
 - 15 lecture-spine entries that name the object, question, legal move, surviving fact, and later use for every lecture.
 - 5,333 lecture essay words, with every lecture essay now clearing the 300-word validator floor.
@@ -44,7 +44,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 727 method-contract words across input, action, protected evidence, output, and failure tests.
 - 711 method-playbook words across setup, move, payoff, failure, and reader-test fields.
 - 2,339 method-family answer-guide words showing what strong method explanations must include.
-- A course-level synthesis page, a reader-checks page, a references page with 7 course/paper/text links, a six-test quality rubric, a quality audit, and a four-widget interactive math playground.
+- A course-level synthesis page, a reader-checks page, a references page with 7 course/paper/text links, a six-test quality rubric, a six-layer rubric coverage audit, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces
 
@@ -62,6 +62,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/reader-checks.html` — eleven common reasoning failure checks.
 - `site/references.html` — course, primary-paper, and standard-text links with lecture coverage, concept coverage, and source caveats.
 - `site/quality-rubric.html` — six first-principles prose tests for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.
+- `site/rubric-coverage.html` — maps the six prose tests across lectures, concepts, themes, subthemes, method families, and source/quality pages.
 - `site/quality-audit.html` and `site/source-audit.html` — current validation evidence, source caveats, and per-lecture caption nuance.
 
 ## Readiness Docs
@@ -93,7 +94,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 `scripts/validate_all.py` enforces the current quality shape:
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
-- Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, references, quality rubric, playground, audits, lectures, concepts, themes, subthemes, and families.
+- Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, references, quality rubric, rubric coverage, playground, audits, lectures, concepts, themes, subthemes, and families.
 - Minimum essay depth for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, concept-self-check, theme, theme-lens, theme-answer-guide, subtheme, subtheme-routine, subtheme-bridge, subtheme-answer-guide, method-family, method-contract, method-playbook, method-family-answer-guide, and math-why layers.
 - Lecture Deepening sections on every lecture page.
 - Source-lens sections on every lecture page.
@@ -118,6 +119,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 - Proof-move recipes with enough steps, explanations, failure modes, and examples.
 - References layer with course, primary-paper, and standard-text links plus source caveats.
 - Quality Rubric page with six enforced first-principles prose tests.
+- Rubric Coverage page with six layer maps and per-layer reader tests.
 - At least three concrete lecture examples per lecture.
 - Concept/theme/subtheme/family id integrity.
 - No broken local links.

@@ -70,6 +70,19 @@ def main():
             if len(words(item.get(field))) < 8:
                 fail(f"quality rubric {item.get('id')} {field} too thin")
 
+    rubric_coverage = data.get("rubric_coverage") or []
+    if len(rubric_coverage) < 6:
+        fail("rubric coverage needs six layer maps")
+    for row in rubric_coverage:
+        coverage = row.get("coverage") or {}
+        if set(coverage) != expected_rubric_ids:
+            fail(f"rubric coverage {row.get('layer')} does not cover all rubric ids")
+        if len(words(row.get("reader_test"))) < 20:
+            fail(f"rubric coverage {row.get('layer')} reader test too thin")
+        for rubric_id, evidence in coverage.items():
+            if len(words(evidence)) < 5:
+                fail(f"rubric coverage {row.get('layer')} {rubric_id} too thin")
+
     math_why = data.get("math_why") or {}
     for field in ["big_picture", "first_principles", "important_detail", "principle", "concepts_matter", "reader_path"]:
         if len(words(math_why.get(field))) < 45:
@@ -322,7 +335,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "references.html", "quality-rubric.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -406,6 +419,14 @@ def main():
         fail("quality rubric page needs six cards")
     if len(words(re.sub(r"<[^>]+>", " ", quality_rubric_page))) < 650:
         fail("quality rubric page too thin")
+    rubric_coverage_page = (SITE / "rubric-coverage.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Rubric Coverage", "How To Read This Coverage", "Reviewer Rule", "Reader test:", "Name the object before the term", "Name the legal move", "Name what survives", "Say what would break the claim", "Tie the idea to a course moment", "Replace formal words with everyday sentences"]:
+        if phrase not in rubric_coverage_page:
+            fail(f"rubric coverage page missing phrase: {phrase}")
+    if rubric_coverage_page.count("<article") < 6:
+        fail("rubric coverage page needs six cards")
+    if len(words(re.sub(r"<[^>]+>", " ", rubric_coverage_page))) < 950:
+        fail("rubric coverage page too thin")
     source_audit = (SITE / "source-audit.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Caption Nuance By Lecture", "Caption risk:", "Safe reading:", "Verify:", "Source checkpoint:", "Caption support:", "Course inference:", "Caveat:"]:
         if phrase not in source_audit:
