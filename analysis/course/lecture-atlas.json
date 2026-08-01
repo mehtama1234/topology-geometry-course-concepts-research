@@ -88,7 +88,7 @@
         "payoff": "The reader learns the course's first durable lesson: local sameness does not guarantee global sameness, and a physical test can expose the difference in a way definitions alone would hide."
       },
       "source_lens": [
-        "Read the Mobius-strip words as evidence about a gluing rule. The important source move is not that paper is surprising; it is that following, coloring, or cutting the strip tests whether a local side choice survives one full trip around the surface. That makes the paper model a first-principles experiment about local information meeting a whole-object constraint.",
+        "Read the Mobius-strip words as evidence about a gluing rule. The source move is not paper surprise; it is the following, coloring, or cutting test that asks whether a local side choice survives one full trip around the surface. That makes the paper model a first-principles experiment about local information meeting a whole-object constraint.",
         "The anchor words should be held together. Twist and glue explain how the object is made. One side versus two sides explains what the whole object remembers. Cutting along the center is the controlled operation that makes that memory visible. The later course keeps this pattern: make the object honestly, choose a legal operation, and ask what survives the full journey."
       ],
       "source_checkpoint": {
@@ -793,7 +793,7 @@
       },
       "source_lens": [
         "Read submanifold, obstacles, dimensions, and intersection as a question about room. The source material is preparing the reader to separate a meeting caused by a cramped space from a meeting caused by a careless drawing. Dimension is being used as a count of available freedom, not as an abstract tag.",
-        "The important source move is ordinary position. Before counting intersections, the objects must be placed so meetings are clean enough to inspect. Dimension then tells whether avoidance is expected or whether meeting carries evidence. This is the setup that makes signed intersection number honest: the later count only works after the meetings are ordinary enough to assign meaning."
+        "The source move is ordinary position. Before counting intersections, the objects must be placed so meetings are clean enough to inspect. Dimension then tells whether avoidance is expected or whether meeting carries evidence. This is the setup that makes signed intersection number honest: the later count only works after the meetings are ordinary enough to assign meaning."
       ],
       "source_checkpoint": {
         "trust": "Trust dimension and ordinary-position language as preparation for deciding whether meetings are accidental or forced. The source is building the right conditions for later counting, where each meeting must be clean enough to inspect.",
@@ -1213,7 +1213,7 @@
       },
       "source_lens": [
         "Read graph of a mapping, diagonal, and fixed points as the translation of a rule into a meeting problem. Because one middle caption is missing, the source lens must stay modest and lean on the available surrounding lecture parts. The safe claim is the conversion itself, not every theorem detail that may have appeared in the missing segment.",
-        "The important source move is the graph. A map becomes a geometric object in a larger space. The diagonal records self-agreement. Their meeting is not an analogy; it is the fixed point written in a form that intersection reasoning can inspect. That translation explains why fixed points belong after intersection number in the course chain."
+        "The source move is the graph. A map becomes a geometric object in a larger space. The diagonal records self-agreement. Their meeting is not an analogy; it is the fixed point written in a form that intersection reasoning can inspect. That translation explains why fixed points belong after intersection number in the course chain."
       ],
       "source_checkpoint": {
         "trust": "Trust the available graph-and-diagonal spine, while keeping the missing middle caption visible as a source limit. The supported move is the translation from a rule to its graph and from self-agreement to the diagonal.",
