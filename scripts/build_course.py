@@ -4454,18 +4454,13 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
         ])
         source_close = varied((number, "drill-source-close"), [
             "Keep the lecture demonstration and source caveat visible while using that support.",
-            "Use the source family only after the course example has supplied the object and protected fact.",
-            "Do not let the source family replace the work done by the recovered lecture evidence.",
+            "Use source support only after the course example has supplied the object and protected fact.",
+            "Do not let the source layer replace the work done by the recovered lecture evidence.",
             "Let the source broaden the claim only after the classroom move has been reconstructed.",
         ])
         source_family_label = "the course source layer" if bridge["source_family"] == "Course spine" else bridge["source_family"]
-        source_step = varied((number, bridge["source_family"], "drill-source-step"), [
-            f"Attach the source family carefully: {source_family_label} supports the broader source line after the lecture's object and protected fact are clear. {source_close}",
-            f"Add the source family last: {source_family_label} can widen the mathematical setting, but it should answer to the reconstructed course move. {source_close}",
-            f"Use {source_family_label} as background support, then say exactly which lecture claim it can carry. {source_close}",
-            f"Bring in {source_family_label} only after the drill has rebuilt the classroom evidence. {source_close}",
-        ])
         object_text = spine["object"].rstrip(".")
+        source_step = lecture_drill_source_step(number, spine, source_family_label, source_close)
         self_check = lecture_drill_self_check(number, spine, source_family_label)
         source_check = lecture_drill_source_check(number, spine, bridge, source_family_label)
         common_failure = lecture_drill_common_failure(number, spine, examples)
@@ -4516,6 +4511,20 @@ def lecture_drill_self_check(number, spine, source_family_label):
         f"A strong reconstruction should sound like a route, not a topic list. It begins with the object: {object_text}; passes through the move: {legal_move}; protects this fact: {surviving}; and only then uses {source_family_label} as background.",
     ]
     return varied((number, source_family_label, "drill-self-check"), options)
+
+
+def lecture_drill_source_step(number, spine, source_family_label, source_close):
+    object_text = spine["object"].rstrip(".")
+    legal_move = spine["legal_move"].rstrip(".")
+    surviving = spine["surviving_fact"].rstrip(".")
+    source_subject = "The course source layer" if source_family_label == "the course source layer" else source_family_label
+    options = [
+        f"Use {source_family_label} only after the drill has rebuilt the lecture object: {object_text}; the allowed move: {legal_move}; and the protected fact: {surviving}. {source_close}",
+        f"Attach {source_family_label} as background for the source boundary, not as a replacement proof. The lecture claim still rests on the move: {legal_move}; and the fact: {surviving}. {source_close}",
+        f"Let {source_family_label} widen the setting only after the classroom evidence is clear: object: {object_text}; move: {legal_move}; protected fact: {surviving}. {source_close}",
+        f"Name the source role last. {source_subject} can support the broader mathematical line, but the sentence must still return to the lecture object and this protected fact: {surviving}. {source_close}",
+    ]
+    return varied((number, source_family_label, "drill-source-step-specific"), options)
 
 
 def lecture_drill_source_check(number, spine, bridge, source_family_label):
