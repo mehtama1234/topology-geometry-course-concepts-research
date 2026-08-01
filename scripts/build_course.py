@@ -1424,6 +1424,7 @@ def main():
     write_json(ANALYSIS / "math-why.json", math_why)
     write_json(ANALYSIS / "course-companion.json", data)
     write_json(ANALYSIS / "quality-audit.json", data["quality_audit"])
+    metrics = data["quality_audit"]["metrics"]
 
     (AUDITS / "source-recovery-report.md").write_text(f"""# Source Recovery Report
 
@@ -1448,7 +1449,9 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - explicit source coverage and missing-caption audit
 
-The remaining depth gap is now narrower: lift the theme and subtheme essays beyond minimum acceptable depth and add a final human-read pass for phrasing that still feels compressed. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
+
+The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
     qa_md = ["# Quality Audit", "", data["quality_audit"]["summary"], "", "## Requirement Evidence"]
     for item in data["quality_audit"]["requirements"]:

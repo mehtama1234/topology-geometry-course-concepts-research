@@ -10,4 +10,6 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - explicit source coverage and missing-caption audit
 
-The remaining depth gap is now narrower: lift the theme and subtheme essays beyond minimum acceptable depth and add a final human-read pass for phrasing that still feels compressed. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
+Current enforced essay totals: 3855 lecture essay words, 3207 concept essay words, 1278 theme essay words, 1500 subtheme essay words, and 824 method-family essay words. The validator requires every lecture essay to clear 230 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
+
+The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
