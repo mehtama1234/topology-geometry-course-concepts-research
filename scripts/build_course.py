@@ -4478,10 +4478,11 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             "The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
         ])
         source_check = lecture_drill_source_check(number, spine, bridge, source_family_label)
+        object_text = spine["object"].rstrip(".")
         drills.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
-            "start_from": f"Start from {examples[0]['title']}. {start_guard} The object is {spine['object']} and the plain question is this: {spine['plain_question']}",
+            "start_from": f"Start from {examples[0]['title']}. {start_guard} Object: {object_text}. Plain question: {spine['plain_question']}",
             "rebuild_steps": [
                 f"Name the object in ordinary words: {spine['object']} {object_close}",
                 f"State the allowed move: {spine['legal_move']} {illegal_close}",

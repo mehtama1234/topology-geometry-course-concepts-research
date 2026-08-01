@@ -33,7 +33,7 @@
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7406 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7316 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
@@ -191,7 +191,7 @@
     "lecture_source_bridge_words": 5234,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 7406,
+    "lecture_reconstruction_words": 7316,
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 1734,
     "lecture_reader_test_words": 2734,
