@@ -1,6 +1,6 @@
 # Quality Audit
 
-The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.
+The companion has a visible depth structure across the main reader-facing layers, and this audit records the evidence that should be checked before calling a page ready. The explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.
 
 ## Requirement Evidence
 - **Own repo and folder** (met): Standalone git repo at topology-geometry-course-concepts-research on main.

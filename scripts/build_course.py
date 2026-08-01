@@ -4808,7 +4808,7 @@ def build_quality_audit(data):
         },
     ]
     return {
-        "summary": "The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
+        "summary": "The companion has a visible depth structure across the main reader-facing layers, and this audit records the evidence that should be checked before calling a page ready. The explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
         "requirements": requirements,
         "metrics": {
             "videos": stats["videos"],
@@ -4884,6 +4884,45 @@ def build_quality_audit(data):
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
         },
     }
+
+
+def quality_metric_cards(metrics):
+    cards = [
+        {
+            "title": "Source Footing",
+            "meta": "course evidence",
+            "text": f"{metrics['videos']} videos are indexed and {metrics['captioned_videos']} caption files are recovered. The missing-caption case remains named instead of hidden: {', '.join(metrics['missing_captions']) or 'none'}. This matters because a deep companion has to say what evidence it has before it asks the reader to trust an explanation.",
+        },
+        {
+            "title": "Lecture Depth",
+            "meta": "15 lecture pages",
+            "text": f"The lecture layer is not only a list of videos. It now carries {metrics['lecture_essay_words']} essay words, {metrics['lecture_deepening_words']} deepening words, {metrics['lecture_walkthrough_words']} walkthrough words, {metrics['lecture_reader_test_words']} reader-test words, and {metrics['lecture_answer_guide_words']} answer-guide words. Those sections force each lecture to name the object, allowed move, surviving fact, source caveat, and reason the answer works.",
+        },
+        {
+            "title": "Concept And Course Map",
+            "meta": "ideas across pages",
+            "text": f"The concept layer has {metrics['concept_essay_words']} essay words, {metrics['concept_workup_words']} workup words, {metrics['concept_anchor_words']} anchor words, and {metrics['concept_self_check_words']} self-check words. Every concept links back to course appearances, with {metrics['concept_appearances_min']} to {metrics['concept_appearances_max']} examples per concept, so ideas are tested against lecture moments rather than floating as glossary entries.",
+        },
+        {
+            "title": "Practice And Repair",
+            "meta": "reader checks",
+            "text": f"The companion includes {metrics['transfer_lab_cases']} transfer cases, {metrics['repair_clinic_cases']} repair-clinic cases, {metrics['oral_exam_prompts']} oral-exam prompts, {metrics['change_ledger_rows']} change-ledger rows, {metrics['assumption_ledger_rows']} assumption-ledger rows, {metrics['counterexample_gallery_rows']} counterexample cases, and {metrics['weak_claim_repair_rows']} weak-claim repairs. These pages make the reader practice the central habit: say what changes, what survives, what breaks, and what conclusion is actually earned.",
+        },
+        {
+            "title": "Source And Paper Trail",
+            "meta": "reference discipline",
+            "text": f"There are {metrics['references']} references, {metrics['source_readers']} source-reader entries, {metrics['paper_family_ledger_rows']} paper-family ledger rows, {metrics['lecture_source_bridges']} lecture-source bridges, and {metrics['source_nuance_repairs']} source-nuance repair notes. This layer separates course evidence, background source support, and overclaim boundaries so citations do not become decorative authority.",
+        },
+        {
+            "title": "Rubric And Tools",
+            "meta": "quality gates",
+            "text": f"The site carries {metrics['quality_rubric_items']} prose tests, {metrics['rubric_coverage_layers']} coverage layers, {metrics['proof_moves']} proof-move recipes, {metrics['theorem_use_contracts']} theorem-use contracts, {metrics['concept_contrasts']} concept contrasts, {metrics['term_translations']} term translations, and {metrics['playground_widgets']} playground widgets. These pieces turn the writing standard into checks a reader can apply on a real page.",
+        },
+    ]
+    return "".join(
+        f'<article class="card"><div class="meta">{esc(row["meta"])}</div><h3>{esc(row["title"])}</h3><p>{esc(row["text"])}</p></article>'
+        for row in cards
+    )
 
 
 def build_site(data):
@@ -5882,7 +5921,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['transfer_lab_cases']} transfer-lab cases, {qa_metrics['repair_clinic_cases']} repair-clinic cases, {qa_metrics['oral_exam_prompts']} oral-exam prompts, {qa_metrics['change_ledger_rows']} change-ledger rows, {qa_metrics['assumption_ledger_rows']} assumption-ledger rows, {qa_metrics['counterexample_gallery_rows']} counterexample rows, {qa_metrics['weak_claim_repair_rows']} weak-claim repair rows, {qa_metrics['paper_family_ledger_rows']} paper-family rows, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['concept_contrasts']} concept contrast pairs, {qa_metrics['source_nuance_repairs']} source nuance repair notes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['source_nuance_repair_words']} source-nuance repair words, {qa_metrics['transfer_lab_words']} transfer-lab words, {qa_metrics['repair_clinic_words']} repair-clinic words, {qa_metrics['oral_exam_words']} oral-exam words, {qa_metrics['change_ledger_words']} change-ledger words, {qa_metrics['assumption_ledger_words']} assumption-ledger words, {qa_metrics['counterexample_gallery_words']} counterexample words, {qa_metrics['weak_claim_repair_words']} weak-claim repair words, {qa_metrics['paper_family_ledger_words']} paper-family words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['concept_contrast_words']} concept-contrast words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>How To Read This Audit</h2><p>The counts below are not the goal by themselves. They are evidence that the site has enough places where a reader can check the real standard: object before term, legal move before conclusion, protected fact before theorem name, and caveat before source claim. If a later page becomes shallow, this audit should point to the layer that needs repair.</p></section><h2>Current Metrics</h2><div class="grid two">{quality_metric_cards(qa_metrics)}</div><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
