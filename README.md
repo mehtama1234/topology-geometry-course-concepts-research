@@ -35,8 +35,8 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,110 subtheme routine words across look-for, ask, use, and mistake fields.
 - 985 subtheme bridge words tying recurring moves to course moments, thinking shifts, and reader tests.
 - 1,525 method-family essay words, with every method-family essay now clearing the 285-word validator floor.
-- 493 method-contract words across input, action, protected evidence, output, and failure tests.
-- 540 method-playbook words across setup, move, payoff, failure, and reader-test fields.
+- 727 method-contract words across input, action, protected evidence, output, and failure tests.
+- 711 method-playbook words across setup, move, payoff, failure, and reader-test fields.
 - A course-level synthesis page, a reader-checks page, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces

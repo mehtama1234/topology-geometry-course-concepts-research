@@ -55,8 +55,8 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,110 subtheme routine words.
 - 985 subtheme bridge words.
 - 1,525 method-family essay words.
-- 493 method-contract words.
-- 540 method-playbook words.
+- 727 method-contract words.
+- 711 method-playbook words.
 - 4 playground widgets.
 - 8 synthesis sections.
 - 8 concept dependency paths.

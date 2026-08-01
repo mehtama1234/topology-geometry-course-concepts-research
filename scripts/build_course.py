@@ -1319,38 +1319,38 @@ FAMILY_DEPTH = {
 
 FAMILY_CONTRACTS = {
     "deformation-family": {
-        "input": "A hard picture whose exact drawing is less important than a route, boundary, side behavior, or count it carries.",
-        "action": "State the legal moves, move the object through only those moves, and replace the hard picture by an easier one.",
-        "evidence": "The protected evidence is the fact that survives the whole motion: same endpoints, same boundary data, same route relation, or same invariant.",
-        "output": "The output is a simpler picture that can answer the original question because the legal path to it preserved the question.",
-        "failure_test": "Reject the argument if it cuts, glues, passes through forbidden matter, moves fixed data, or changes the meaning of sameness.",
+        "input": "A hard picture whose exact drawing is less important than a route, boundary, side behavior, or count it carries. The input must include the data that are not allowed to move.",
+        "action": "State the legal moves, move the object through only those moves, and replace the hard picture by an easier one. Each move has to preserve the named question.",
+        "evidence": "The protected evidence is the fact that survives the whole motion: same endpoints, same boundary data, same route relation, or same invariant. That evidence is why the final picture can speak for the first.",
+        "output": "The output is a simpler picture that can answer the original question because the legal path to it preserved the question. The result is the original problem seen in a readable form.",
+        "failure_test": "Reject the argument if it cuts, glues, passes through forbidden matter, moves fixed data, or changes the meaning of sameness. One illegal step disconnects the final picture from the starting problem.",
     },
     "counting-family": {
-        "input": "A situation where visible local events change too easily: cells split, crossings appear, defects move, or raw counts fluctuate.",
-        "action": "Design a count that ignores harmless changes by cancellation, alternating terms, parity, or signs with geometric meaning.",
-        "evidence": "The protected evidence is the total that legal redrawings cannot change, even though individual local events may appear or disappear.",
-        "output": "The output is a number or parity fact that can prove impossibility, force existence, or compare two legally related pictures.",
-        "failure_test": "Reject the argument if the count changes under a legal harmless move or if signs are assigned without a rule that can be checked.",
+        "input": "A situation where visible local events change too easily: cells split, crossings appear, defects move, or raw counts fluctuate. The input needs a local event that can be inspected.",
+        "action": "Design a count that ignores harmless changes by cancellation, alternating terms, parity, or signs with geometric meaning. The design must match the legal local changes.",
+        "evidence": "The protected evidence is the total that legal redrawings cannot change, even though individual local events may appear or disappear. The total remembers forced structure rather than clutter.",
+        "output": "The output is a number or parity fact that can prove impossibility, force existence, or compare two legally related pictures. One honest computation then applies across all legal versions.",
+        "failure_test": "Reject the argument if the count changes under a legal harmless move or if signs are assigned without a rule that can be checked. A count earns trust only by surviving the allowed changes.",
     },
     "surface-family": {
-        "input": "A surface whose small patches look manageable but whose complete shape may carry holes, boundary behavior, handles, or side reversal.",
-        "action": "Cut the surface into pieces, track boundary and orientation data, and glue the account back into a whole-surface statement.",
-        "evidence": "The protected evidence is the global surface account: Euler characteristic, orientability, boundary behavior, or a total controlled by the surface.",
-        "output": "The output is a whole-surface conclusion that local inspection alone could not justify.",
-        "failure_test": "Reject the argument if it assumes every local choice glues globally, ignores boundary terms, or changes the surface while counting.",
+        "input": "A surface whose small patches look manageable but whose complete shape may carry holes, boundary behavior, handles, or side reversal. The input must include the whole carrier surface.",
+        "action": "Cut the surface into pieces, track boundary and orientation data, and glue the account back into a whole-surface statement. The pieces are useful only when recombined honestly.",
+        "evidence": "The protected evidence is the global surface account: Euler characteristic, orientability, boundary behavior, or a total controlled by the surface. This evidence belongs to the whole surface, not one patch.",
+        "output": "The output is a whole-surface conclusion that local inspection alone could not justify. It says what every local choice must obey when the surface is completed.",
+        "failure_test": "Reject the argument if it assumes every local choice glues globally, ignores boundary terms, or changes the surface while counting. Those errors replace the real surface with an easier one.",
     },
     "embedding-family": {
-        "input": "An object with required connections or loop relations that must live inside a chosen surface or surrounding space.",
-        "action": "Separate accidental crossings from forced ones by using allowed motion, surface room, over-under data, and route information.",
-        "evidence": "The protected evidence is a relation that every legal placement must respect: linking, winding, unavoidable crossing, or unavailable route room.",
-        "output": "The output is either a legal placement or a proof that no legal placement can avoid the obstruction.",
-        "failure_test": "Reject the argument if it treats one failed drawing as impossibility or forgets data needed to distinguish crossings in space.",
+        "input": "An object with required connections or loop relations that must live inside a chosen surface or surrounding space. The input includes both the thing placed and the room that receives it.",
+        "action": "Separate accidental crossings from forced ones by using allowed motion, surface room, over-under data, and route information. The action tests all legal placements, not one drawing.",
+        "evidence": "The protected evidence is a relation that every legal placement must respect: linking, winding, unavoidable crossing, or unavailable route room. It survives because legal motion cannot erase it.",
+        "output": "The output is either a legal placement or a proof that no legal placement can avoid the obstruction. The conclusion is about the placement problem itself.",
+        "failure_test": "Reject the argument if it treats one failed drawing as impossibility or forgets data needed to distinguish crossings in space. A flat sketch can lose the relation being proved.",
     },
     "motion-family": {
-        "input": "A physical or dynamical situation whose direct motion is too complicated to follow point by point.",
-        "action": "Build the space of possible states, translate motion into paths or rules, and apply fixed-point, index, or obstruction reasoning there.",
-        "evidence": "The protected evidence is the shape of possibility: a barrier, hole, forced self-agreement, index total, or missing legal path.",
-        "output": "The output is a constraint on the original motion, such as an unavoidable state, blocked motion, equilibrium, or required defect.",
+        "input": "A physical or dynamical situation whose direct motion is too complicated to follow point by point. The input must be translated into complete states, not vague physical impressions.",
+        "action": "Build the space of possible states, translate motion into paths or rules, and apply fixed-point, index, or obstruction reasoning there. The action moves from behavior to the shape of possibility.",
+        "evidence": "The protected evidence is the shape of possibility: a barrier, hole, forced self-agreement, index total, or missing legal path. That evidence constrains behavior without solving every trajectory.",
+        "output": "The output is a constraint on the original motion, such as an unavoidable state, blocked motion, equilibrium, or required defect. The conclusion must translate back to the physical setup.",
         "failure_test": "Reject the argument if the state space leaves out a real freedom, adds a false barrier, or cannot translate the conclusion back to the physical setup.",
     },
 }
@@ -1398,38 +1398,38 @@ FAMILY_ESSAYS = {
 FAMILY_PLAYBOOKS = {
     "deformation-family": {
         "setup": "Start with the original object, not the prettier target picture. Mark the fixed data: endpoints, boundary pieces, obstacles, gluing rules, side choices, and the question being protected.",
-        "move": "Move the object continuously through only the allowed changes, checking after each kind of move that the protected fact has not changed.",
-        "payoff": "The final simpler picture answers the original problem because the legal route to it carried the same question all the way across.",
-        "failure": "The method fails when the easy picture is reached by crossing through a forbidden object, moving fixed data, or silently changing what sameness means.",
-        "reader_test": "Can the reader describe the full legal route, not only the before-and-after pictures?",
+        "move": "Move the object continuously through only the allowed changes, checking after each kind of move that the protected fact has not changed. The route is part of the proof.",
+        "payoff": "The final simpler picture answers the original problem because the legal route to it carried the same question all the way across. The simplified picture is evidence only through that route.",
+        "failure": "The method fails when the easy picture is reached by crossing through a forbidden object, moving fixed data, or silently changing what sameness means. Then the final picture answers a different question.",
+        "reader_test": "Can the reader describe the full legal route, not only the before-and-after pictures, and name what fact was preserved along the route at every step?",
     },
     "counting-family": {
-        "setup": "Start by listing the local events that may change under motion: cells split, crossings appear, turns shift, or defects move.",
-        "move": "Choose a count whose allowed changes cancel by design, using alternating terms, parity, or signs that come from the geometry of the situation.",
-        "payoff": "Once the protected total is known in one honest version, every legally related version must obey it, so impossibility or forced existence can follow.",
-        "failure": "The method fails when the count changes under a harmless legal redraw or when signs are assigned without a checkable direction rule.",
-        "reader_test": "Can the reader explain one local change and why the chosen count stays fixed through that change?",
+        "setup": "Start by listing the local events that may change under motion: cells split, crossings appear, turns shift, or defects move. The list tells the count what it must survive.",
+        "move": "Choose a count whose allowed changes cancel by design, using alternating terms, parity, or signs that come from the geometry of the situation. Then test the count on the basic local changes.",
+        "payoff": "Once the protected total is known in one honest version, every legally related version must obey it, so impossibility or forced existence can follow without checking every drawing.",
+        "failure": "The method fails when the count changes under a harmless legal redraw or when signs are assigned without a checkable direction rule. Then the arithmetic follows the picture too closely.",
+        "reader_test": "Can the reader explain one local change and why the chosen count stays fixed through that change before using the count as evidence for the whole problem?",
     },
     "surface-family": {
-        "setup": "Start by naming the whole surface and its edge behavior: boundary, handles, crosscaps, holes, orientation, and any gluing instructions.",
-        "move": "Break the surface into manageable pieces, track local information on the pieces, then glue the account back together without losing global restrictions.",
-        "payoff": "The conclusion belongs to the whole surface, not to one patch, one drawing, or one chosen decomposition.",
-        "failure": "The method fails when local ordinariness is mistaken for global simplicity or when boundary and orientation data are dropped from the account.",
-        "reader_test": "Can the reader point to the full trip, full gluing, or full sum where the global surface constraint appears?",
+        "setup": "Start by naming the whole surface and its edge behavior: boundary, handles, crosscaps, holes, orientation, and any gluing instructions. The carrier surface is part of the data.",
+        "move": "Break the surface into manageable pieces, track local information on the pieces, then glue the account back together without losing global restrictions. The recombination is where the surface speaks.",
+        "payoff": "The conclusion belongs to the whole surface, not to one patch, one drawing, or one chosen decomposition. It explains what local choices must do when completed.",
+        "failure": "The method fails when local ordinariness is mistaken for global simplicity or when boundary and orientation data are dropped from the account. Small-patch evidence cannot replace the whole surface.",
+        "reader_test": "Can the reader point to the full trip, full gluing, or full sum where the global surface constraint appears, and state what local view missed?",
     },
     "embedding-family": {
         "setup": "Start by separating the required object from the surrounding room: which points connect, which loops link, which crossings are forbidden, and what surface or space carries the placement.",
-        "move": "Try legal placements while tracking route relations, over-under information, crossings, and winding that cannot be erased by allowed motion.",
-        "payoff": "The result is either a legal placement or a proof that every legal placement must encounter the same obstruction.",
-        "failure": "The method fails when one bad drawing is treated as proof, or when spatial information such as over-under order is lost in a flat picture.",
-        "reader_test": "Can the reader say why every legal attempt is blocked, rather than only why one attempted drawing failed?",
+        "move": "Try legal placements while tracking route relations, over-under information, crossings, and winding that cannot be erased by allowed motion. The move tests the placement relation, not drawing skill.",
+        "payoff": "The result is either a legal placement or a proof that every legal placement must encounter the same obstruction. A real obstruction defeats all legal attempts.",
+        "failure": "The method fails when one bad drawing is treated as proof, or when spatial information such as over-under order is lost in a flat picture. The missing data may be the whole point.",
+        "reader_test": "Can the reader say why every legal attempt is blocked, rather than only why one attempted drawing failed, and name the relation that survives redrawings?",
     },
     "motion-family": {
-        "setup": "Start by listing what information describes one complete state: positions, angles, boundary conditions, forbidden collisions, and any rule acting on states.",
-        "move": "Turn those states into a space, read motion as paths or maps, and then apply deformation, fixed-point, index, or obstruction reasoning inside that state space.",
-        "payoff": "The original system inherits the conclusion because the state space records the real freedoms and restrictions of the physical or dynamical problem.",
+        "setup": "Start by listing what information describes one complete state: positions, angles, boundary conditions, forbidden collisions, and any rule acting on states. One point should mean one possible situation.",
+        "move": "Turn those states into a space, read motion as paths or maps, and then apply deformation, fixed-point, index, or obstruction reasoning inside that state space. The proof happens in the model.",
+        "payoff": "The original system inherits the conclusion because the state space records the real freedoms and restrictions of the physical or dynamical problem. The result is behavioral, not only geometric.",
         "failure": "The method fails when the state space omits a real freedom, adds a false wall, or cannot translate its conclusion back to the original motion.",
-        "reader_test": "Can the reader name the state space, the forbidden states, the rule or path, and the topological feature forcing behavior?",
+        "reader_test": "Can the reader name the state space, the forbidden states, the rule or path, and the topological feature forcing behavior in the original system being modeled?",
     },
 }
 
@@ -3302,7 +3302,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, and every method-playbook field to clear 25 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
