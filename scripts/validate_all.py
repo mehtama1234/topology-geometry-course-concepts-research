@@ -78,6 +78,10 @@ def main():
         theme_essay_words = sum(len(words(p)) for p in theme.get("essay") or [])
         if theme_essay_words < 190:
             fail(f"theme {theme['id']} essay too thin")
+        lens = theme.get("lens") or {}
+        for field in ["notices", "ignores", "changes_problem", "reader_test"]:
+            if len(words(lens.get(field))) < 12:
+                fail(f"theme {theme['id']} lens {field} too thin")
 
     for subtheme in data["subthemes"]:
         depth = subtheme.get("depth") or {}
@@ -327,8 +331,13 @@ def main():
             if phrase not in lecture_html:
                 fail(f"lecture page missing walkthrough phrase {phrase}: {lecture_name}")
     for theme in data["themes"]:
-        if f"theme-{theme['id']}.html" not in names:
+        theme_name = f"theme-{theme['id']}.html"
+        if theme_name not in names:
             fail(f"missing theme page {theme['id']}")
+        theme_html = (SITE / theme_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["Theme Lens", "Notices:", "Ignores:", "Changes the problem:", "Reader test:"]:
+            if phrase not in theme_html:
+                fail(f"theme page missing lens phrase {phrase}: {theme_name}")
     for subtheme in data["subthemes"]:
         subtheme_name = f"subtheme-{subtheme['id']}.html"
         if subtheme_name not in names:

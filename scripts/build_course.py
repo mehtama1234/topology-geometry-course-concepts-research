@@ -142,6 +142,46 @@ THEME_ESSAYS = {
 }
 
 
+THEME_LENSES = {
+    "see-by-deforming": {
+        "notices": "This lens notices which parts of a picture are free to move and which parts must stay tied to the original question.",
+        "ignores": "It ignores exact length, angle, and visual neatness when those details are not part of the protected question.",
+        "changes_problem": "It changes a problem from staring at one hard drawing into following a legal path toward a drawing whose structure is easier to inspect.",
+        "reader_test": "Can the reader name the legal moves and the fact that survives before trusting the simplified picture?",
+    },
+    "count-what-survives": {
+        "notices": "This lens notices the part of a changing picture that can be recorded as stable evidence: a hole count, signed total, parity, or index sum.",
+        "ignores": "It ignores raw visible clutter when that clutter can appear or disappear under harmless legal changes.",
+        "changes_problem": "It changes a problem from trying every possible drawing into building a count that every legal drawing must obey.",
+        "reader_test": "Can the reader say why the chosen count survives the allowed moves rather than only computing it once?",
+    },
+    "local-to-global": {
+        "notices": "This lens notices when many locally possible choices must be made compatible across a whole surface, loop, field, or state space.",
+        "ignores": "It ignores the false comfort that comes from checking only one small patch and assuming the whole object behaves the same way.",
+        "changes_problem": "It changes a problem from asking whether each piece works alone into asking whether all pieces can be glued into one consistent whole.",
+        "reader_test": "Can the reader identify the full journey, full sum, or full gluing step where the global obstruction appears?",
+    },
+    "generic-before-exception": {
+        "notices": "This lens notices fragile coincidences such as tangencies, triple meetings, perfect alignments, and non-isolated defects.",
+        "ignores": "It ignores accidental exactness when that exactness would disappear under a tiny legal nudge.",
+        "changes_problem": "It changes a problem from analyzing a brittle special picture into understanding ordinary cases and the controlled transitions between them.",
+        "reader_test": "Can the reader explain what ordinary picture appears just before and just after the exceptional moment?",
+    },
+    "pictures-to-proofs": {
+        "notices": "This lens notices whether a picture states the mathematical contract: objects, allowed moves, forbidden moves, signs, boundaries, and protected evidence.",
+        "ignores": "It ignores visual appeal when the drawing does not say what fact survives or what conclusion follows.",
+        "changes_problem": "It changes a problem from remembering a diagram into auditing the reason carried by that diagram.",
+        "reader_test": "Can the reader point to the exact part of the picture that prevents the forbidden outcome or forces the desired one?",
+    },
+    "shape-as-machine": {
+        "notices": "This lens notices how the shape of a space permits routes, blocks routes, forces self-agreement, or demands defects.",
+        "ignores": "It ignores unnecessary point-by-point prediction when a whole-space constraint already forces the kind of behavior being asked about.",
+        "changes_problem": "It changes a problem from solving every motion detail into understanding the shape of possible states and the constraints that shape imposes.",
+        "reader_test": "Can the reader name the state space or domain, the rule acting on it, and the topological feature that forces behavior?",
+    },
+}
+
+
 SUBTHEMES = [
     ("allowed-moves", "Allowed moves", "First decide what changes are legal. Without that rule, no invariant means anything."),
     ("invariant-receipts", "Invariant receipts", "An invariant is a receipt for what survived the trip from one picture to another."),
@@ -2046,6 +2086,7 @@ def build_quality_audit(data):
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
+    theme_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", t["lens"][field])) for field in ["notices", "ignores", "changes_problem", "reader_test"]) for t in data["themes"])
     subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
     subtheme_routine_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", s["routine"][field])) for field in ["look_for", "ask", "use", "mistake"]) for s in data["subthemes"])
     family_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in f["essay"]) for f in data["families"])
@@ -2139,6 +2180,7 @@ def build_quality_audit(data):
             "concept_essay_words": concept_essay_words,
             "concept_workup_words": concept_workup_words,
             "theme_essay_words": theme_essay_words,
+            "theme_lens_words": theme_lens_words,
             "subtheme_essay_words": subtheme_essay_words,
             "subtheme_routine_words": subtheme_routine_words,
             "family_essay_words": family_essay_words,
@@ -2519,7 +2561,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     for t in data["themes"]:
         related = [c for c in data["concepts"] if c["theme"] == t["id"]]
         lecture_links = "".join(f'<a class="pill" href="lecture-{n:02d}.html">Lecture {n:02d}</a>' for n in t["depth"]["lectures"])
-        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class="lecture"><h2>Theme Essay</h2>{paragraph_block(t['essay'])}</section><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        lens = t["lens"]
+        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class="lecture"><h2>Theme Essay</h2>{paragraph_block(t['essay'])}</section><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><section class="lecture"><h2>Theme Lens</h2><p><b>Notices:</b> {esc(lens['notices'])}</p><p><b>Ignores:</b> {esc(lens['ignores'])}</p><p><b>Changes the problem:</b> {esc(lens['changes_problem'])}</p><p><b>Reader test:</b> {esc(lens['reader_test'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("theme", t["id"])).write_text(page(t["title"], body, "Themes"), encoding="utf-8")
 
     body = "<h1>Subthemes</h1><p class='lead'>Subthemes are the smaller recurring moves inside the larger course habits: the contracts, counts, signs, boundaries, and modeling choices that make the arguments work.</p><div class='grid'>" + "".join(card(s["title"], s["depth"]["problem"], slug_page("subtheme", s["id"]), "Subtheme") for s in data["subthemes"]) + "</div>"
@@ -2546,7 +2589,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -2623,6 +2666,7 @@ def main():
         enriched = dict(theme)
         enriched["depth"] = THEME_DEPTH[theme["id"]]
         enriched["essay"] = THEME_ESSAYS[theme["id"]]
+        enriched["lens"] = THEME_LENSES[theme["id"]]
         themes.append(enriched)
     subthemes = []
     for i, t, p in SUBTHEMES:
@@ -2720,6 +2764,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
 - {metrics['concept_workup_words']} concept workup words across object, operation, protected-fact, and failure-test fields
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
+- {metrics['theme_lens_words']} theme lens words across notices, ignores, problem-change, and reader-test fields
 - 10 expanded subtheme pages with essay, first-principles, and course-role sections
 - {metrics['subtheme_routine_words']} subtheme routine words across look-for, ask, use, and mistake fields
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
@@ -2731,7 +2776,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['family_essay_words']} method-family essay words, and {metrics['family_contract_words']} method-contract words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every method-family essay to clear 130 words, and every method-contract field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['family_essay_words']} method-family essay words, and {metrics['family_contract_words']} method-contract words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every method-family essay to clear 130 words, and every method-contract field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

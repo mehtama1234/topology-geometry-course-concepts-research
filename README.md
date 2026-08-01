@@ -24,6 +24,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,090 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - 1,781 concept workup words across object, operation, protected fact, and failure tests.
+- 466 theme lens words across notices, ignored distractions, problem changes, and reader tests.
 - 858 subtheme routine words across look-for, ask, use, and mistake fields.
 - 493 method-contract words across input, action, protected evidence, output, and failure tests.
 - A course-level synthesis page, a reader-checks page, a quality audit, and a four-widget interactive math playground.
@@ -34,7 +35,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/lectures.html` and `site/lecture-*.html` — 15 lecture explainers with slow walkthroughs and caption nuance.
 - `site/lecture-spine.html` — one reasoning path through all lectures from object to later use.
 - `site/concepts.html` and `site/concept-*.html` — concept atlas with reverse lecture links and work-from-scratch blocks.
-- `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps, with subtheme reading routines and method contracts.
+- `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps, with theme lenses, subtheme reading routines, and method contracts.
 - `site/the-math-why.html` — first-principles mathematical synthesis.
 - `site/course-synthesis.html` — dependency spine across the whole course.
 - `site/concept-dependencies.html` — eight prerequisite paths from early concepts to later theorem-level ideas.
@@ -74,11 +75,12 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
 - Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
-- Minimum essay depth for lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, theme, subtheme, subtheme-routine, method-family, method-contract, and math-why layers.
+- Minimum essay depth for lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, theme, theme-lens, subtheme, subtheme-routine, method-family, method-contract, and math-why layers.
 - Source-lens sections on every lecture page.
 - Slow Walkthrough sections on every lecture page.
 - Caption Nuance sections on every lecture page and source-audit cards for every lecture.
 - Work It From Scratch sections on every concept page.
+- Theme Lens sections on every theme page.
 - Reading Routine sections on every subtheme page.
 - Method Contract sections on every method-family page.
 - Lecture-spine entries for all 15 lectures.
