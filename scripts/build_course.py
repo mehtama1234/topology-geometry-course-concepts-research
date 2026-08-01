@@ -4465,14 +4465,9 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             f"Use {source_family_label} as background support, then say exactly which lecture claim it can carry. {source_close}",
             f"Bring in {source_family_label} only after the drill has rebuilt the classroom evidence. {source_close}",
         ])
-        self_check = varied((number, "drill-self"), [
-            "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
-            "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
-            "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
-            "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
-        ])
-        source_check = lecture_drill_source_check(number, spine, bridge, source_family_label)
         object_text = spine["object"].rstrip(".")
+        self_check = lecture_drill_self_check(number, spine, source_family_label)
+        source_check = lecture_drill_source_check(number, spine, bridge, source_family_label)
         common_failure = lecture_drill_common_failure(number, spine, examples)
         drills.append({
             "lecture": number,
@@ -4507,6 +4502,20 @@ def lecture_drill_common_failure(number, spine, examples):
         f"The common overreach is to move straight from the demonstration to a source or theorem name. The lecture needs one more step first: connect the allowed move, {legal_move}, to the protected fact: {surviving}. Then connect that result forward: {why_later}",
     ]
     return varied((number, "drill-common-failure"), options)
+
+
+def lecture_drill_self_check(number, spine, source_family_label):
+    object_text = spine["object"].rstrip(".")
+    legal_move = spine["legal_move"].rstrip(".")
+    surviving = spine["surviving_fact"].rstrip(".")
+    why_later = spine["why_later"]
+    options = [
+        f"The answer is ready only if the reader can rebuild this chain without a vocabulary shortcut: object: {object_text}; move: {legal_move}; protected fact: {surviving}; later use: {why_later}",
+        f"Close the page and try the reconstruction from memory. A complete answer should recover the lecture object, the allowed move, and this surviving fact: {surviving}. Bring in {source_family_label} only after those pieces are clear.",
+        f"The self-check is whether the explanation still works after the theorem name is removed. It should name the object: {object_text}; explain the move: {legal_move}; and show why this fact survives: {surviving}.",
+        f"A strong reconstruction should sound like a route, not a topic list. It begins with the object: {object_text}; passes through the move: {legal_move}; protects this fact: {surviving}; and only then uses {source_family_label} as background.",
+    ]
+    return varied((number, source_family_label, "drill-self-check"), options)
 
 
 def lecture_drill_source_check(number, spine, bridge, source_family_label):
