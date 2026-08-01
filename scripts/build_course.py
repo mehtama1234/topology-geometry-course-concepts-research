@@ -1084,6 +1084,7 @@ def page(title, body, current=""):
         ("the-math-why.html", "The Math Why"),
         ("math-playground.html", "Playground"),
         ("course-synthesis.html", "Synthesis"),
+        ("reader-checks.html", "Reader Checks"),
         ("quality-audit.html", "Quality Audit"),
         ("source-audit.html", "Source Audit"),
     ]
@@ -1174,6 +1175,11 @@ def build_quality_audit(data):
             "evidence": "The Course Synthesis page connects the lecture sequence, proof families, mathematical objects, operations, failure modes, and reader questions in one first-principles path.",
             "status": "met",
         },
+        {
+            "requirement": "Reader checks for common failure modes",
+            "evidence": "The Reader Checks page gathers course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, and method families.",
+            "status": "met",
+        },
     ]
     return {
         "summary": "The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
@@ -1191,6 +1197,7 @@ def build_quality_audit(data):
             "family_essay_words": family_essay_words,
             "playground_widgets": 4,
             "synthesis_sections": 8,
+            "reader_checks": 10,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -1254,6 +1261,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <div class="grid two">
 {card('Math Playground', 'Four small canvas models let the reader adjust cuts, signed pairs, fixed-point graphs, and vector-field turning. The controls make the course principles visible without assuming prior notation.', 'math-playground.html', 'Playground')}
 {card('Course Synthesis', 'A single first-principles path through the whole course: hard situation, mathematical object, operation, reason, and what becomes possible.', 'course-synthesis.html', 'Synthesis')}
+{card('Reader Checks', 'Ten checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, and careless models.', 'reader-checks.html', 'Checks')}
 </div>
 """
     (SITE / "index.html").write_text(page("Topology & Geometry Course Companion", body, "Course"), encoding="utf-8")
@@ -1359,6 +1367,34 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 """
     (SITE / "course-synthesis.html").write_text(page("Course Synthesis", deep_body, "Synthesis"), encoding="utf-8")
 
+    check_rows = [
+        ("The drawing is being treated as the object", "A square with edge labels, a graph of a map, or a configuration space is a code for relationships. The ink is not the final object.", "The same visible drawing can describe different spaces when the edge rule changes, so the rule has to be read before the picture can be trusted.", "What rule does this picture represent, and what relationships must survive if I redraw it?", "lecture-04.html", "Read Lecture 04"),
+        ("The allowed motion is not stated", "A deformation can only prove something after the legal moves are named. Cutting, crossing through, moving endpoints, or dropping a boundary can change the problem.", "The whole proof rests on the promise that the motion preserves the question. Without that promise, a simpler picture may solve a different problem.", "Which motion is legal here, and which feature is being protected while the picture moves?", "family-deformation-family.html", "Open deformation family"),
+        ("A raw count is trusted too early", "Visible crossings, cells, or defects may change under harmless redrawings. The useful count is the one designed to survive those changes.", "Euler characteristic, intersection number, parity, and index all work because fake changes cancel. The raw number usually does not have that protection.", "What local change can happen, and does the proposed count stay fixed when it happens?", "family-counting-family.html", "Open counting family"),
+        ("Local evidence is mistaken for global evidence", "Every small patch of a Mobius strip looks ordinary. Every small patch of a sphere can carry an arrow. The whole object may still refuse a consistent choice.", "Topology often begins exactly where local inspection stops. The obstruction may appear only after a full trip, a full sum, or a full gluing.", "Can the local choice be carried around the whole object without contradiction?", "theme-local-to-global.html", "Open local-to-global theme"),
+        ("Signs are used without checking orientation", "Plus and minus signs must come from a direction rule. Without orientation or a local sign convention, signed arithmetic may not be defined.", "A sign is not a decoration attached to a count. It records how objects meet or how arrows turn inside a setting where direction has meaning.", "What gives the sign its meaning in this space?", "concept-boundary-orientation.html", "Open boundary and orientation"),
+        ("A failed drawing is treated as impossibility", "One bad attempt does not prove no legal drawing exists. A topological obstruction has to defeat every legal attempt.", "This is the difference between drawing skill and proof. The proof must name a protected fact that no redraw can remove.", "What fact survives all attempts, and why does it block the desired drawing?", "family-embedding-family.html", "Open embedding family"),
+        ("The exceptional case is studied before the ordinary case", "Tangencies, triple meetings, and non-isolated defects can hide the stable mechanism. The clean case should be understood first.", "Ordinary clean cases allow isolated crossings, signs, and indices to be assigned. The exceptional moment is then used to explain how ordinary cases change.", "What happens after a tiny legal nudge, and what changes only at the singular moment?", "theme-generic-before-exception.html", "Open ordinary-case theme"),
+        ("The theorem is pasted onto the wrong model", "Applications need an honest state space, rule, boundary, and protected quantity. If the model has the wrong freedoms or barriers, the conclusion may describe the model but not the situation.", "The topological theorem only sees the model. If the model omits a real motion or adds a false wall, the conclusion can be mathematically correct and physically irrelevant.", "Does the mathematical space contain exactly the states and forbidden moves in the original problem?", "family-motion-family.html", "Open motion family"),
+        ("A fixed point is expected to be computed", "Fixed-point theorems often prove existence without naming the point. That is not a weakness when the goal is to prove that escape is impossible.", "The course repeatedly values forced existence. Knowing that a point, meeting, or defect must exist can be the central answer even when its exact location is unavailable.", "Is the page proving where the point is, or proving that some point must exist?", "concept-fixed-points.html", "Open fixed points"),
+        ("A term is remembered without its job", "Names such as manifold, quotient, index, and invariant matter only when they explain what can move, what is counted, or what is forced.", "A name should compress a working idea, not replace it. If the action behind the word is unclear, the reader has vocabulary without understanding.", "What work does this word perform in the argument?", "subtheme-models-not-labels.html", "Open models, not labels"),
+    ]
+    checks_html = "".join(
+        f"""<article class="card"><div class="meta">Reader check</div><h3>{esc(title)}</h3><p><b>What goes wrong:</b> {esc(problem)}</p><p><b>Why it matters:</b> {esc(why)}</p><p><b>Ask instead:</b> {esc(question)}</p><a class="arrow" href="{href}">{esc(label)}</a></article>"""
+        for title, problem, why, question, href, label in check_rows
+    )
+    checks_body = f"""
+<h1>Reader Checks</h1>
+<p class="lead">Use these checks when a page feels easy for the wrong reason. Each one turns a common confusion into a concrete question about legal moves, protected evidence, whole-shape structure, or modeling.</p>
+<section class="lecture">
+  <h2>How To Use This Page</h2>
+  <p>Do not memorize these as warnings. Use them as a reading routine. When a proof moves a picture, ask what motion is legal. When a proof counts something, ask why the count survives. When a proof uses signs, ask where the signs come from. When a physical example appears, ask what mathematical space represents the possible states.</p>
+  <p>The goal is to make each page harder to misunderstand. A first-principles explanation should let the reader audit the move, not only remember the conclusion.</p>
+</section>
+<div class="grid two">{checks_html}</div>
+"""
+    (SITE / "reader-checks.html").write_text(page("Reader Checks", checks_body, "Reader Checks"), encoding="utf-8")
+
     video_links = "".join(f'<a href="{esc(v["youtube_url"])}">{v["index"]:02d}. {esc(v["title"])}</a>' for v in data["videos"])
     body = f"<h1>Video Links</h1><p class='lead'>Every individual YouTube item in playlist order.</p><div class='video-list'>{video_links}</div>"
     (SITE / "videos.html").write_text(page("Video Links", body, "Videos"), encoding="utf-8")
@@ -1439,7 +1475,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1589,6 +1625,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
+- reader-checks.html with ten concrete checks for common reasoning failures
 - explicit source coverage and missing-caption audit
 
 Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.

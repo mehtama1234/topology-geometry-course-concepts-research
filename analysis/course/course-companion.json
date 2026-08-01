@@ -3371,6 +3371,11 @@
         "requirement": "Course-level synthesis",
         "evidence": "The Course Synthesis page connects the lecture sequence, proof families, mathematical objects, operations, failure modes, and reader questions in one first-principles path.",
         "status": "met"
+      },
+      {
+        "requirement": "Reader checks for common failure modes",
+        "evidence": "The Reader Checks page gathers course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, and method families.",
+        "status": "met"
       }
     ],
     "metrics": {
@@ -3388,9 +3393,10 @@
       "family_essay_words": 824,
       "playground_widgets": 4,
       "synthesis_sections": 8,
+      "reader_checks": 10,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 63
+      "html_pages_before_audit_page": 65
     }
   }
 }

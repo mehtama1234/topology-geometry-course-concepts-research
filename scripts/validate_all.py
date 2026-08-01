@@ -163,10 +163,10 @@ def main():
             fail(f"family {family['id']} references unknown concept ids: {missing}")
 
     html_files = sorted(SITE.glob("*.html"))
-    if len(html_files) < 64:
-        fail(f"expected at least 64 html pages after synthesis pass, got {len(html_files)}")
+    if len(html_files) < 65:
+        fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -189,6 +189,14 @@ def main():
         fail("course synthesis needs dependency, family, and lecture cards")
     if len(words(re.sub(r"<[^>]+>", " ", deep_dive))) < 900:
         fail("course synthesis too thin")
+    reader_checks = (SITE / "reader-checks.html").read_text(encoding="utf-8", errors="ignore")
+    if reader_checks.count("Reader check") < 10:
+        fail("reader checks page needs ten checks")
+    for phrase in ["What goes wrong", "Ask instead", "legal moves", "protected evidence"]:
+        if phrase not in reader_checks:
+            fail(f"reader checks page missing phrase: {phrase}")
+    if len(words(re.sub(r"<[^>]+>", " ", reader_checks))) < 700:
+        fail("reader checks page too thin")
     for concept in data["concepts"]:
         if f"concept-{concept['id']}.html" not in names:
             fail(f"missing concept page {concept['id']}")

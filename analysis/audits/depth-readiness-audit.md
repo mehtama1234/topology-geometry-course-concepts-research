@@ -10,6 +10,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
+- reader-checks.html with ten concrete checks for common reasoning failures
 - explicit source coverage and missing-caption audit
 
 Current enforced essay totals: 3855 lecture essay words, 3207 concept essay words, 1278 theme essay words, 1500 subtheme essay words, and 824 method-family essay words. The validator requires every lecture essay to clear 230 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
