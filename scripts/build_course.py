@@ -4167,10 +4167,24 @@ def build_lecture_answer_guide(lecture, spine_row):
         "The shortcut is illegal because it discards the rule the lecture is testing.",
         "The reader should see why the shortcut breaks the contract of the lecture.",
     ])
+    surviving_fact = spine_row["surviving_fact"].rstrip(".")
+    why_strong_open = varied((number, "answer-why-open"), [
+        "A strong answer is not a longer list of topics. It is strong because it separates the carrier, the allowed change, and the fact that survives.",
+        "This answer works when the reader can see the chain from the course example to the conclusion without leaning on a theorem title.",
+        "The test is whether the answer would still make sense if all formal labels were hidden and only the object, rule, and surviving evidence remained.",
+        "The point of the guide is to make the proof habit visible: choose the right thing to watch, state the rule of motion, then say what the motion cannot erase.",
+    ])
+    why_strong_close = varied((number, "answer-why-close"), [
+        f"In this lecture, '{examples[1]['title']}' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted.",
+        f"The anchor '{examples[2]['title']}' should make the later use feel earned, not announced.",
+        f"The concrete moment '{examples[0]['title']}' keeps the answer grounded in the course instead of drifting into a general textbook summary.",
+        f"That is why the answer must end with a limit as well as a payoff. The surviving fact is: {surviving_fact}. It tells the reader what is forced, not every extra thing one might wish to know.",
+    ])
     return {
         "object_answer": f"{varied((number, 'object'), ['Start with the object:', 'First name what is being reasoned about:', 'The answer begins by identifying', 'Make the carrier of the reasoning explicit:'])} {spine_row['object']} {data_close} Use '{examples[0]['title']}' as a concrete anchor. {object_close}",
         "move_answer": f"{varied((number, 'move'), ['Name the permitted move:', 'The legal action is', 'The proof move to state is', 'Put the allowed change in plain words:'])} {spine_row['legal_move']} {illegal_shortcut} {shortcut_close}",
         "conclusion_answer": f"{varied((number, 'conclusion'), ['Protect this surviving fact:', 'The evidence to keep is', 'The conclusion rests on this fact:', 'Carry this fact through the explanation:'])} {spine_row['surviving_fact']} {conclusion_close} Connect forward to the later need: {spine_row['why_later']}",
+        "why_strong": f"{why_strong_open} {why_strong_close}",
     }
 
 
@@ -4592,7 +4606,7 @@ def build_quality_audit(data):
     lecture_source_bridge_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["course_demonstration", "mathematical_bridge", "how_source_extends", "overread_warning", "reader_question"]) for row in data["lecture_source_bridges"])
     lecture_reconstruction_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", step)) for step in row["rebuild_steps"]) + sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["start_from", "self_check", "common_failure", "source_check"]) for row in data["lecture_reconstruction_drills"])
     lecture_reader_test_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["reader_test"][field])) for field in ["explain_object", "test_allowed_move", "protect_conclusion"]) for l in data["lectures"])
-    lecture_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["answer_guide"][field])) for field in ["object_answer", "move_answer", "conclusion_answer"]) for l in data["lectures"])
+    lecture_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["answer_guide"][field])) for field in ["object_answer", "move_answer", "conclusion_answer", "why_strong"]) for l in data["lectures"])
     theorem_contract_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["use_when", "object_needed", "allowed_move", "protected_evidence", "conclusion_it_can_force", "breaks_if", "everyday_test"]) for row in data["theorem_use_contracts"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
@@ -5763,6 +5777,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <p><b>Object answer:</b> {esc(answer_guide['object_answer'])}</p>
   <p><b>Move answer:</b> {esc(answer_guide['move_answer'])}</p>
   <p><b>Conclusion answer:</b> {esc(answer_guide['conclusion_answer'])}</p>
+  <p><b>Why this answer works:</b> {esc(answer_guide['why_strong'])}</p>
 </section>
 <section class="panel">
   <h2>First Principles</h2>

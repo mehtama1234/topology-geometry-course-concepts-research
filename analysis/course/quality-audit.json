@@ -28,7 +28,7 @@
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture page now includes a three-part reader test and answer guide for explaining the object, checking the allowed move, and protecting the conclusion, with 2734 reader-test words and 2731 answer-guide words.",
+      "evidence": "Each lecture page now includes a three-part reader test and answer guide for explaining the object, checking the allowed move, and protecting the conclusion, with 2734 reader-test words and 3536 answer-guide words.",
       "status": "met"
     },
     {
@@ -195,7 +195,7 @@
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 1734,
     "lecture_reader_test_words": 2734,
-    "lecture_answer_guide_words": 2731,
+    "lecture_answer_guide_words": 3536,
     "concept_essay_words": 7963,
     "concept_workup_words": 2746,
     "concept_anchor_words": 1965,
