@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 88.
+- HTML pages: 89.
 
 ## Main Reader Surfaces
 
@@ -37,6 +37,7 @@ This repo is the source and generated static site for a first-principles compani
 - `course-synthesis.html` — dependency spine and proof-family synthesis.
 - `concept-dependencies.html` — prerequisite paths from early concepts to later theorem-level ideas.
 - `transfer-lab.html` — eight everyday transfer cases that test object, allowed move, protected fact, wrong transfer, and course bridge.
+- `repair-clinic.html` — eight weak explanations diagnosed and rewritten into stronger first-principles versions.
 - `proof-moves.html` — five reusable first-principles proof recipes with steps, failure modes, and examples.
 - `formula-reader.html` — plain readings of central formulas and theorem statements.
 - `theorem-use-contracts.html` — eight use contracts for central results and methods, with required object, allowed move, protected evidence, conclusion, break condition, and everyday test.
@@ -80,6 +81,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - course synthesis structure;
 - concept dependency structure;
 - transfer-lab structure, required case set, field depth, and concept-link integrity;
+- repair-clinic structure, required case set, field depth, and concept-link integrity;
 - proof-move structure and length;
 - theorem-use-contract structure, required result set, field depth, and concept-link integrity;
 - concept-contrast structure, required contrast set, field depth, and concept-link integrity;
@@ -152,6 +154,8 @@ As of the current generated audit:
 - 8 concept dependency paths.
 - 8 transfer-lab cases.
 - 1,187 transfer-lab words.
+- 8 repair-clinic cases.
+- 1,136 repair-clinic words.
 - 5 proof-move recipes.
 - 8 theorem-use contracts.
 - 1,271 theorem-contract words.

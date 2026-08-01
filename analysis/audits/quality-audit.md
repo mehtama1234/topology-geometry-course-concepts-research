@@ -22,6 +22,7 @@ The companion now satisfies the requested depth shape across the main reader-fac
 - **Course-level synthesis** (met): The Course Synthesis page connects the lecture sequence, proof families, mathematical objects, operations, failure modes, and reader questions in one first-principles path.
 - **Concept dependency map** (met): The Concept Dependencies page gives 8 prerequisite paths that connect early ideas to later theorems and applications.
 - **First-principles transfer lab** (met): The Transfer Lab page gives 8 everyday transfer cases with situation, object, allowed move, protected fact, course bridge, wrong transfer, reader task, and concept links, with 1187 transfer words.
+- **Explanation repair clinic** (met): The Repair Clinic page gives 8 flawed explanations repaired into stronger first-principles versions, with 1136 repair-clinic words across flawed explanation, failure reason, repair move, strong version, reviewer test, and concept links.
 - **Proof-move recipes** (met): The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.
 - **Formula reader for mathematical statements** (met): The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.
 - **Theorem-use contracts** (met): The Theorem Use Contracts page gives 8 use contracts with required object, allowed move, protected evidence, conclusion, break condition, everyday test, and concept links, with 1271 theorem-contract words.

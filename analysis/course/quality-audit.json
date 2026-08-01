@@ -97,6 +97,11 @@
       "status": "met"
     },
     {
+      "requirement": "Explanation repair clinic",
+      "evidence": "The Repair Clinic page gives 8 flawed explanations repaired into stronger first-principles versions, with 1136 repair-clinic words across flawed explanation, failure reason, repair move, strong version, reviewer test, and concept links.",
+      "status": "met"
+    },
+    {
       "requirement": "Proof-move recipes",
       "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
       "status": "met"
@@ -181,6 +186,8 @@
     "dependency_paths": 8,
     "transfer_lab_cases": 8,
     "transfer_lab_words": 1187,
+    "repair_clinic_cases": 8,
+    "repair_clinic_words": 1136,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
     "theorem_contract_words": 1271,
@@ -196,6 +203,6 @@
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 88
+    "html_pages_before_audit_page": 89
   }
 }

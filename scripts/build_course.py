@@ -821,6 +821,82 @@ TRANSFER_LAB_CASES = [
 ]
 
 
+REPAIR_CLINIC_CASES = [
+    {
+        "title": "Mobius strip as a visual surprise",
+        "flawed_explanation": "The Mobius strip is surprising because it has one side, so topology is about weird shapes.",
+        "why_it_fails": "This sentence remembers the punchline but loses the method. It does not say what object is being tested, what motion or walk reveals the fact, or why local patches fail to show the whole behavior.",
+        "repair_move": "Replace the surprise with the walk-around account. Say what a mark or traveler does on the strip and what returns changed after one complete trip.",
+        "strong_version": "A Mobius strip matters because a local view of the paper does not reveal the whole-side behavior. When a mark is followed around the full strip, the route returns with side information that an ordinary band would not have. The course uses this to show why whole-shape facts can be invisible in small pieces.",
+        "reviewer_test": "Can the reader explain the one-side claim by describing a full trip around the strip rather than repeating the phrase?",
+        "concepts": ["topology-vs-geometry", "deformation", "manifold"],
+    },
+    {
+        "title": "Invariant as any number that stays useful",
+        "flawed_explanation": "An invariant is an important number we calculate from a shape, and it helps us compare examples.",
+        "why_it_fails": "This sounds plausible but avoids the main test. A number is not an invariant because it is useful once; it earns the role by surviving the allowed changes in the problem.",
+        "repair_move": "Name the legal move that threatens the count, then explain why the proposed number survives that move or how signs and cancellation repair the count.",
+        "strong_version": "An invariant is evidence designed to survive the moves the problem allows. If two crossings are born as an opposite pair, a raw crossing count changes, but a signed total can stay fixed. The invariant is useful because it carries the same information from one legal drawing to another.",
+        "reviewer_test": "Does the explanation say which allowed change tries to alter the number and why the chosen account survives?",
+        "concepts": ["invariant", "intersection-number", "parity"],
+    },
+    {
+        "title": "Quotient space as a square with arrows",
+        "flawed_explanation": "A quotient space is shown by drawing a square with arrows on the sides.",
+        "why_it_fails": "The sentence mistakes the code for the object. The arrows are not decoration on a square; they are instructions that decide which points become the same point in the finished space.",
+        "repair_move": "State the identification rule before reasoning from the picture. Then say what route, boundary, or side behavior changes after the rule is applied.",
+        "strong_version": "A quotient-space drawing is a set of instructions. The square is only a readable way to say which edge points are identified. After the identifications are made, some apparent borders may disappear and the routes on the finished surface may differ from routes on the flat drawing.",
+        "reviewer_test": "Can the reader say which points are being declared identical and what claim changes after that declaration?",
+        "concepts": ["quotient-space", "boundary-orientation", "manifold"],
+    },
+    {
+        "title": "Generic position as making the drawing nicer",
+        "flawed_explanation": "Generic position means we move the picture slightly so it looks nicer and avoids special cases.",
+        "why_it_fails": "This treats generic position as visual cleanup. The course uses the small move to create ordinary events that can be counted, signed, or isolated without hidden coincidences.",
+        "repair_move": "Say what accident is removed and what evidence becomes available afterward: clean crossings, separated events, isolated defects, or a defined sign rule.",
+        "strong_version": "Generic position is a way to replace a fragile exact accident with an ordinary case that can carry evidence. After a tiny legal nudge, crossings can be separated, defects can be isolated, and signs or counts can be assigned. The point is not a nicer picture; it is a picture whose events can be audited.",
+        "reviewer_test": "Does the explanation identify the removed accident and the count or sign rule that becomes possible?",
+        "concepts": ["generic-position", "intersection-number", "vector-field-index"],
+    },
+    {
+        "title": "Fixed point as a point that does not move",
+        "flawed_explanation": "A fixed point is a point that does not move, so fixed-point theorems tell us where something stays.",
+        "why_it_fails": "The first phrase is only a start, and the second phrase is too strong. The course needs a rule from a space to itself, and the theorem often proves existence without locating the point.",
+        "repair_move": "Name the domain and the rule, then translate the condition into self-agreement: the input and output are the same point.",
+        "strong_version": "A fixed point belongs to a rule that sends points of a space back into the same space. A point is fixed when the rule returns that exact point. The graph-and-diagonal picture turns this self-agreement into a meeting question, and a theorem may prove that some meeting exists without computing where it is.",
+        "reviewer_test": "Can the reader identify the rule, the space it maps into itself, and the difference between existence and location?",
+        "concepts": ["fixed-points", "brouwer-fixed-point", "intersection-number"],
+    },
+    {
+        "title": "Index as the number of equilibria",
+        "flawed_explanation": "The index counts how many equilibrium points a vector field has, so more equilibria means a larger index.",
+        "why_it_fails": "This collapses a signed local account into a raw count. Index is assigned around an isolated defect by watching how arrows turn, and different defects can contribute different signed amounts.",
+        "repair_move": "Replace the raw count with the walk-around test. Say what loop encloses the defect and how arrows turn during one full circuit.",
+        "strong_version": "Vector-field index is local signed evidence around one isolated defect. To read it, walk around a small loop containing that defect and watch how nearby arrows turn. Later, those local indices can be added and compared with a whole-surface number, but one index is not merely one equilibrium counted once.",
+        "reviewer_test": "Does the explanation separate the number of defects from the signed turning account around each defect?",
+        "concepts": ["vector-field-index", "equilibrium", "poincare-hopf"],
+    },
+    {
+        "title": "Configuration space as a diagram of the machine",
+        "flawed_explanation": "A configuration space is a picture of all the ways a machine can move.",
+        "why_it_fails": "The sentence gestures in the right direction but stays too loose. A configuration space is not just a picture; one point must represent one complete allowed state, and forbidden states must be removed.",
+        "repair_move": "State what one point of the space represents, which freedoms vary, and which states are excluded before using topology to reason about motion.",
+        "strong_version": "A configuration space records complete allowed states. For a moving system, one point might record every position or joint angle needed to describe the system at one instant. Collisions, blocked positions, or impossible choices must be removed, because paths in this space are supposed to represent real legal motions.",
+        "reviewer_test": "Can the reader say what one point represents and name at least one forbidden state that must not be included?",
+        "concepts": ["configuration-space", "product-space", "deformation"],
+    },
+    {
+        "title": "Poincare-Hopf as topology predicting motion",
+        "flawed_explanation": "Poincare-Hopf says topology predicts how a dynamical system moves, so the theorem tells us the motion path.",
+        "why_it_fails": "The sentence is too broad. The theorem compares the sum of local indices of isolated defects with the Euler characteristic of the same surface. It constrains defects; it does not solve the whole motion law.",
+        "repair_move": "Name the surface, the vector field, the isolated defects, the local indices, and the whole-surface number being compared.",
+        "strong_version": "Poincare-Hopf connects local failures of a vector field to the whole surface carrying that field. Each isolated defect has an index, and the sum of all those indices must match the Euler characteristic of the same surface. This can force defects or rule out some fields, but it does not compute every trajectory.",
+        "reviewer_test": "Does the explanation include both sides of the contract: all local indices and the Euler characteristic of the same surface?",
+        "concepts": ["poincare-hopf", "vector-field-index", "euler-characteristic"],
+    },
+]
+
+
 THEMES = [
     {
         "id": "see-by-deforming",
@@ -3330,6 +3406,7 @@ def page(title, body, current=""):
         ("course-synthesis.html", "Synthesis"),
         ("concept-dependencies.html", "Dependencies"),
         ("transfer-lab.html", "Transfer Lab"),
+        ("repair-clinic.html", "Repair Clinic"),
         ("proof-moves.html", "Proof Moves"),
         ("formula-reader.html", "Formula Reader"),
         ("theorem-use-contracts.html", "Theorem Contracts"),
@@ -3673,6 +3750,7 @@ def build_quality_audit(data):
     concept_contrast_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["confusion", "left_job", "right_job", "bridge", "failure_test", "reader_question"]) for row in data["concept_contrasts"])
     source_nuance_repair_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["caption_hazard", "safe_claim", "repair_move", "do_not_claim", "reviewer_question"]) for row in data["source_nuance_repairs"])
     transfer_lab_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["situation", "object", "allowed_move", "protected_fact", "course_bridge", "wrong_transfer", "reader_task"]) for row in data["transfer_lab_cases"])
+    repair_clinic_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["flawed_explanation", "why_it_fails", "repair_move", "strong_version", "reviewer_test"]) for row in data["repair_clinic_cases"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -3770,6 +3848,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Explanation repair clinic",
+            "evidence": f"The Repair Clinic page gives {len(data['repair_clinic_cases'])} flawed explanations repaired into stronger first-principles versions, with {repair_clinic_words} repair-clinic words across flawed explanation, failure reason, repair move, strong version, reviewer test, and concept links.",
+            "status": "met",
+        },
+        {
             "requirement": "Proof-move recipes",
             "evidence": f"The Proof Moves page gives {len(data['proof_moves'])} reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
             "status": "met",
@@ -3855,6 +3938,8 @@ def build_quality_audit(data):
             "dependency_paths": len(data["concept_dependencies"]),
             "transfer_lab_cases": len(data["transfer_lab_cases"]),
             "transfer_lab_words": transfer_lab_words,
+            "repair_clinic_cases": len(data["repair_clinic_cases"]),
+            "repair_clinic_words": repair_clinic_words,
             "proof_moves": len(data["proof_moves"]),
             "theorem_use_contracts": len(data["theorem_use_contracts"]),
             "theorem_contract_words": theorem_contract_words,
@@ -3934,6 +4019,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Lecture Spine', 'One dense path through all 15 lectures: object, plain question, legal move, surviving fact, and why the lecture is needed later.', 'lecture-spine.html', 'Spine')}
 {card('Concept Dependencies', 'Eight paths show what a reader should understand first, what later idea depends on it, and why the dependency matters.', 'concept-dependencies.html', 'Dependencies')}
 {card('Transfer Lab', 'Eight everyday cases ask the reader to transfer course ideas by naming the object, allowed move, protected fact, wrong transfer, and course bridge.', 'transfer-lab.html', 'Transfer')}
+{card('Repair Clinic', 'Eight weak explanations are diagnosed and rewritten into stronger first-principles versions with object, move, protected fact, and reviewer test visible.', 'repair-clinic.html', 'Repair')}
 {card('Proof Moves', 'Five reusable proof recipes show the steps: name the object, name legal moves, protect evidence, and use the conclusion without hiding the contract.', 'proof-moves.html', 'Moves')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Theorem Contracts', 'Eight contracts state when central course results may be used: required object, allowed move, protected evidence, conclusion, break condition, and everyday test.', 'theorem-use-contracts.html', 'Contracts')}
@@ -4117,6 +4203,29 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 """
     (SITE / "transfer-lab.html").write_text(page("Transfer Lab", transfer_body, "Transfer Lab"), encoding="utf-8")
+
+    repair_cards = "".join(
+        f"""<article class="card"><div class="meta">Repair case</div><h3>{esc(row['title'])}</h3><p><b>Flawed explanation:</b> {esc(row['flawed_explanation'])}</p><p><b>Why it fails:</b> {esc(row['why_it_fails'])}</p><p><b>Repair move:</b> {esc(row['repair_move'])}</p><p><b>Strong version:</b> {esc(row['strong_version'])}</p><p><b>Reviewer test:</b> {esc(row['reviewer_test'])}</p><p>{concept_pills(row['concepts'], data['concepts'])}</p></article>"""
+        for row in data["repair_clinic_cases"]
+    )
+    repair_body = f"""
+<h1>Repair Clinic</h1>
+<p class="lead">This page teaches the reviewer to hear the difference between fluent but shallow prose and a real first-principles explanation. Each case starts with a weak sentence, names the missing mathematical work, and rewrites the idea so a beginner can audit it.</p>
+<section class="lecture">
+  <h2>How To Use A Repair Case</h2>
+  <p>Read the flawed explanation first and ask why it feels acceptable. Most weak explanations contain a correct word or memorable phrase, but they skip the object, legal move, protected fact, source footing, or failure condition. The repair move names the missing obligation.</p>
+  <p>The strong version is not meant to sound formal. It is stronger because it says what is being studied, what is allowed to change, what survives, and what conclusion that survival can support. Use the reviewer test to decide whether the repaired sentence now carries the course idea.</p>
+</section>
+<div class="grid two">{repair_cards}</div>
+<section class="lecture">
+  <h2>The Repair Test</h2>
+  <p>A repair is finished only when the explanation can be checked by a reader who does not already know the formal term. If the reader can name the object, the move, the protected fact, and the failure condition in everyday language, the repair has done its job.</p>
+  <p>Use the clinic in two passes. First, mark the missing obligation: object, move, evidence, failure, course anchor, or everyday sentence. Second, rewrite only that missing part and leave the rest alone. A good repair is usually a precise added sentence, not a louder restatement of the same claim.</p>
+  <p>The strongest repairs also say what they refuse to prove. A fixed-point theorem may prove existence without location. Poincare-Hopf may constrain defects without solving paths. A quotient drawing may define a surface without being the surface itself.</p>
+  <p>If the refusal is missing, the repaired sentence may still overclaim even when every word sounds simple and friendly to the reader.</p>
+</section>
+"""
+    (SITE / "repair-clinic.html").write_text(page("Repair Clinic", repair_body, "Repair Clinic"), encoding="utf-8")
 
     proof_cards = "".join(
         f"""<article class="card"><div class="meta">{esc(row['name'])}</div><h3>{esc(row['problem'])}</h3><p><b>Steps:</b></p><ol>{''.join(f'<li>{esc(step)}</li>' for step in row['steps'])}</ol><p><b>Why it works:</b> {esc(row['why'])}</p><p><b>Failure mode:</b> {esc(row['failure'])}</p><p><b>Course example:</b> {esc(row['example'])}</p><p><b>Family:</b> <a class="pill" href="{slug_page('family', row['family'])}">{esc(row['family'])}</a></p></article>"""
@@ -4621,7 +4730,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['transfer_lab_cases']} transfer-lab cases, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['concept_contrasts']} concept contrast pairs, {qa_metrics['source_nuance_repairs']} source nuance repair notes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['source_nuance_repair_words']} source-nuance repair words, {qa_metrics['transfer_lab_words']} transfer-lab words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['concept_contrast_words']} concept-contrast words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['transfer_lab_cases']} transfer-lab cases, {qa_metrics['repair_clinic_cases']} repair-clinic cases, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['concept_contrasts']} concept contrast pairs, {qa_metrics['source_nuance_repairs']} source nuance repair notes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['source_nuance_repair_words']} source-nuance repair words, {qa_metrics['transfer_lab_words']} transfer-lab words, {qa_metrics['repair_clinic_words']} repair-clinic words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['concept_contrast_words']} concept-contrast words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -4799,6 +4908,7 @@ def main():
         "source_nuance_repairs": SOURCE_NUANCE_REPAIRS,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "transfer_lab_cases": TRANSFER_LAB_CASES,
+        "repair_clinic_cases": REPAIR_CLINIC_CASES,
         "proof_moves": PROOF_MOVES,
         "theorem_use_contracts": THEOREM_USE_CONTRACTS,
         "concept_contrasts": CONCEPT_CONTRASTS,
@@ -4835,6 +4945,7 @@ def main():
     write_json(ANALYSIS / "source-nuance-repairs.json", SOURCE_NUANCE_REPAIRS)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "transfer-lab.json", TRANSFER_LAB_CASES)
+    write_json(ANALYSIS / "repair-clinic.json", REPAIR_CLINIC_CASES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "theorem-use-contracts.json", THEOREM_USE_CONTRACTS)
     write_json(ANALYSIS / "concept-contrasts.json", CONCEPT_CONTRASTS)
@@ -4893,6 +5004,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - course-synthesis.html with the full dependency spine and proof-family synthesis
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
 - transfer-lab.html with {metrics['transfer_lab_cases']} everyday transfer cases and {metrics['transfer_lab_words']} transfer words
+- repair-clinic.html with {metrics['repair_clinic_cases']} flawed explanations repaired into first-principles versions and {metrics['repair_clinic_words']} repair-clinic words
 - proof-moves.html with {metrics['proof_moves']} reusable proof recipes
 - concept-contrasts.html with {metrics['concept_contrasts']} contrast pairs and {metrics['concept_contrast_words']} contrast words separating ideas readers often blur
 - source-nuance-repairs.html with {metrics['source_nuance_repairs']} lecture-specific source repair notes that state caption hazards, safe claims, repair moves, do-not-claim guards, and reviewer questions
@@ -4903,7 +5015,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every source-nuance repair field to clear 14 words, every transfer-lab field to clear 14 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every source-nuance repair field to clear 14 words, every transfer-lab field to clear 14 words, every repair-clinic field to clear 14 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
