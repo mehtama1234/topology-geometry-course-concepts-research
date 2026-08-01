@@ -33,7 +33,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples, self-check answer guides, subtheme pages include first-principles bridges, and method-family pages include playbooks. The concept self-check layer adds 9387 words across object, operation, protected-fact, and failure checks.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples and self-check answer guides; theme, subtheme, and method-family pages now include answer guides. These cross-course answer guides add 8604 words.",
       "status": "met"
     },
     {
@@ -111,12 +111,15 @@
     "concept_self_check_words": 9387,
     "theme_essay_words": 1963,
     "theme_lens_words": 803,
+    "theme_answer_guide_words": 2481,
     "subtheme_essay_words": 2761,
     "subtheme_routine_words": 1110,
     "subtheme_bridge_words": 985,
+    "subtheme_answer_guide_words": 3784,
     "family_essay_words": 1523,
     "family_contract_words": 727,
     "family_playbook_words": 711,
+    "family_answer_guide_words": 2339,
     "playground_widgets": 4,
     "synthesis_sections": 8,
     "dependency_paths": 8,

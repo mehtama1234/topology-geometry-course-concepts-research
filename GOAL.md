@@ -58,10 +58,13 @@ The reader should be able to understand the course without prior math vocabulary
 - 1,965 concept anchor words.
 - 9,387 concept self-check words.
 - 803 theme lens words.
+- 2,481 theme answer-guide words.
 - 1,110 subtheme routine words.
 - 985 subtheme bridge words.
+- 3,784 subtheme answer-guide words.
 - 727 method-contract words.
 - 711 method-playbook words.
+- 2,339 method-family answer-guide words.
 - 7 references across course sources, primary papers, and standard texts.
 - Four playground widgets.
 - Course synthesis, reader-checks, and references pages.

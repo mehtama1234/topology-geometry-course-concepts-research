@@ -35,12 +35,15 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 9,387 concept self-check words showing what strong answers must include for the object, operation, protected fact, and failure condition.
 - 1,963 theme essay words, with every theme essay now clearing the 300-word validator floor.
 - 803 theme lens words across notices, ignored distractions, problem changes, and reader tests.
+- 2,481 theme answer-guide words showing how to carry each theme across lectures.
 - 2,761 subtheme essay words, with every subtheme essay now clearing the 260-word validator floor.
 - 1,110 subtheme routine words across look-for, ask, use, and mistake fields.
 - 985 subtheme bridge words tying recurring moves to course moments, thinking shifts, and reader tests.
+- 3,784 subtheme answer-guide words showing how to apply each routine on a real page.
 - 1,523 method-family essay words, with every method-family essay now clearing the 285-word validator floor.
 - 727 method-contract words across input, action, protected evidence, output, and failure tests.
 - 711 method-playbook words across setup, move, payoff, failure, and reader-test fields.
+- 2,339 method-family answer-guide words showing what strong method explanations must include.
 - A course-level synthesis page, a reader-checks page, a references page with 7 course/paper/text links, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces
@@ -49,7 +52,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/lectures.html` and `site/lecture-*.html` — 15 lecture explainers with lecture deepening, slow walkthroughs, reader tests, answer guides, source checkpoints, source-faithfulness audits, and caption nuance.
 - `site/lecture-spine.html` — one reasoning path through all lectures from object to later use.
 - `site/concepts.html` and `site/concept-*.html` — concept atlas with reverse lecture links, anchor examples, work-from-scratch blocks, and self-check answer guides.
-- `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps, with theme lenses, subtheme bridges and reading routines, plus method playbooks and contracts.
+- `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps, with theme lenses and answer guides, subtheme bridges, reading routines and answer guides, plus method playbooks, contracts, and answer guides.
 - `site/the-math-why.html` — first-principles mathematical synthesis.
 - `site/course-synthesis.html` — dependency spine across the whole course.
 - `site/concept-dependencies.html` — eight prerequisite paths from early concepts to later theorem-level ideas.
@@ -90,7 +93,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
 - Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, references, playground, audits, lectures, concepts, themes, subthemes, and families.
-- Minimum essay depth for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, concept-self-check, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, method-family, method-contract, method-playbook, and math-why layers.
+- Minimum essay depth for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, concept-self-check, theme, theme-lens, theme-answer-guide, subtheme, subtheme-routine, subtheme-bridge, subtheme-answer-guide, method-family, method-contract, method-playbook, method-family-answer-guide, and math-why layers.
 - Lecture Deepening sections on every lecture page.
 - Source-lens sections on every lecture page.
 - Source Checkpoint sections on every lecture page.
@@ -103,10 +106,13 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 - Work It From Scratch sections on every concept page.
 - Can You Use It? self-check sections on every concept page.
 - Theme Lens sections on every theme page.
+- Can You Carry The Theme? answer-guide sections on every theme page.
 - First-Principles Bridge sections on every subtheme page.
 - Reading Routine sections on every subtheme page.
+- Can You Apply The Routine? answer-guide sections on every subtheme page.
 - Method Playbook sections on every method-family page.
 - Method Contract sections on every method-family page.
+- Can You Use This Method? answer-guide sections on every method-family page.
 - Lecture-spine entries for all 15 lectures.
 - Proof-move recipes with enough steps, explanations, failure modes, and examples.
 - References layer with course, primary-paper, and standard-text links plus source caveats.

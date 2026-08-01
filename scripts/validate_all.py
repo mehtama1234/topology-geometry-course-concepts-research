@@ -82,6 +82,10 @@ def main():
         for field in ["notices", "ignores", "changes_problem", "reader_test"]:
             if len(words(lens.get(field))) < 25:
                 fail(f"theme {theme['id']} lens {field} too thin")
+        answer_guide = theme.get("answer_guide") or {}
+        for field in ["notice_answer", "ignore_answer", "transfer_answer", "test_answer"]:
+            if len(words(answer_guide.get(field))) < 40:
+                fail(f"theme {theme['id']} answer guide {field} too thin")
 
     for subtheme in data["subthemes"]:
         depth = subtheme.get("depth") or {}
@@ -99,6 +103,10 @@ def main():
         for field in ["course_moment", "thinking_shift", "reader_test"]:
             if len(words(bridge.get(field))) < 25:
                 fail(f"subtheme {subtheme['id']} bridge {field} too thin")
+        answer_guide = subtheme.get("answer_guide") or {}
+        for field in ["look_answer", "ask_answer", "use_answer", "mistake_answer"]:
+            if len(words(answer_guide.get(field))) < 40:
+                fail(f"subtheme {subtheme['id']} answer guide {field} too thin")
 
     for family in data["families"]:
         depth = family.get("depth") or {}
@@ -116,6 +124,10 @@ def main():
         for field in ["setup", "move", "payoff", "failure", "reader_test"]:
             if len(words(playbook.get(field))) < 25:
                 fail(f"family {family['id']} playbook {field} too thin")
+        answer_guide = family.get("answer_guide") or {}
+        for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]:
+            if len(words(answer_guide.get(field))) < 40:
+                fail(f"family {family['id']} answer guide {field} too thin")
 
     theme_ids = {theme["id"] for theme in data["themes"]}
     subtheme_ids = {subtheme["id"] for subtheme in data["subthemes"]}
@@ -423,7 +435,7 @@ def main():
         if theme_name not in names:
             fail(f"missing theme page {theme['id']}")
         theme_html = (SITE / theme_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Theme Lens", "Notices:", "Ignores:", "Changes the problem:", "Reader test:"]:
+        for phrase in ["Theme Lens", "Notices:", "Ignores:", "Changes the problem:", "Reader test:", "Can You Carry The Theme?", "Notice answer:", "Ignore answer:", "Transfer answer:", "Test answer:"]:
             if phrase not in theme_html:
                 fail(f"theme page missing lens phrase {phrase}: {theme_name}")
     for subtheme in data["subthemes"]:
@@ -431,7 +443,7 @@ def main():
         if subtheme_name not in names:
             fail(f"missing subtheme page {subtheme['id']}")
         subtheme_html = (SITE / subtheme_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["First-Principles Bridge", "Course moment:", "Thinking shift:", "Reader test:", "Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:"]:
+        for phrase in ["First-Principles Bridge", "Course moment:", "Thinking shift:", "Reader test:", "Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:", "Can You Apply The Routine?", "Look answer:", "Ask answer:", "Use answer:", "Mistake answer:"]:
             if phrase not in subtheme_html:
                 fail(f"subtheme page missing subtheme phrase {phrase}: {subtheme_name}")
     for family in data["families"]:
@@ -439,7 +451,7 @@ def main():
         if family_name not in names:
             fail(f"missing family page {family['id']}")
         family_html = (SITE / family_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Method Playbook", "Setup:", "Move:", "Payoff:", "Failure:", "Reader test:", "Method Contract", "Input:", "Action:", "Protected evidence:", "Output:", "Failure test:"]:
+        for phrase in ["Method Playbook", "Setup:", "Move:", "Payoff:", "Failure:", "Reader test:", "Method Contract", "Input:", "Action:", "Protected evidence:", "Output:", "Failure test:", "Can You Use This Method?", "Input answer:", "Action answer:", "Evidence answer:", "Output answer:", "Failure answer:"]:
             if phrase not in family_html:
                 fail(f"family page missing family phrase {phrase}: {family_name}")
 
