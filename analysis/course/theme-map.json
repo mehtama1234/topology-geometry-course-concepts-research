@@ -19,7 +19,8 @@
     },
     "essay": [
       "Seeing by deformation is the course's most important habit because it changes what a problem is allowed to look like. A hard drawing may contain too many accidental details: a curve wiggles, a strip bends in space, a handle is drawn awkwardly, or a field has defects in inconvenient places. Deformation says that if the real question survives a legal motion, then the picture may be moved until the structure is easier to see. The proof is not the final pretty picture. The proof is the whole legal path from the original picture to the simpler one.",
-      "This theme starts with the Mobius strip and disk path puzzle, but it does not stay there. Surface classification uses deformation and surgery to reduce surfaces to standard pieces. Intersection number is meaningful because it survives deformation. Fixed-point theory uses graphs and diagonals that can be compared under motion. Vector-field index survives cleanup of an arrow pattern. The theme teaches disciplined flexibility: move freely only after deciding what cannot change."
+      "This theme starts with the Mobius strip and disk path puzzle, but it does not stay there. Surface classification uses deformation and surgery to reduce surfaces to standard pieces. Intersection number is meaningful because it survives deformation. Fixed-point theory uses graphs and diagonals that can be compared under motion. Vector-field index survives cleanup of an arrow pattern. The theme teaches disciplined flexibility: move freely only after deciding what cannot change.",
+      "The first-principles danger is changing the question while changing the picture. If an endpoint moves past another endpoint, if a curve crosses a forbidden obstacle, or if a boundary condition is silently dropped, the simplified object may no longer represent the original problem. Deformation is powerful because it is restricted. The restriction is what lets visual simplification become a valid reason."
     ]
   },
   {
@@ -44,7 +45,8 @@
     "essay": [
       "Counting what survives is the course's answer to unreliable pictures. A visible crossing count can change when curves move. A raw cell count can change when a surface is subdivided. A local arrow pattern can be redrawn. The course does not give up on counting; it designs better counts. Alternating signs, plus-minus intersections, parity, and index are all ways of making fake changes cancel while the real obstruction remains.",
       "The theme becomes richer as the course progresses. Euler characteristic is the first major stable count for surfaces. Intersection number turns meetings into signed evidence. Poincare-Hopf turns vector-field defects into a total controlled by the surface. The underlying first-principles idea is simple: if a number survives every allowed change, then it can prove impossibility, existence, or forced behavior. The hard work is choosing the right number.",
-      "A reader should leave this theme asking not 'what can I count?' but 'what count is protected by the rules of this problem?'"
+      "A reader should leave this theme asking not 'what can I count?' but 'what count is protected by the rules of this problem?'",
+      "This is also why signs and alternating terms are not formal decoration. They are repair mechanisms for counts that would otherwise be too brittle. The course repeatedly shows the same pattern: understand which local changes are fake, then build a count that makes those fake changes cancel. The surviving total is the mathematical evidence."
     ]
   },
   {
@@ -68,7 +70,8 @@
     },
     "essay": [
       "Local-to-global thinking is the reason the course begins with objects like the Mobius strip. Every small patch of the strip looks ordinary, yet the whole strip has one side. Every small patch of a sphere can carry a tangent arrow, yet a full nonzero arrow field on the sphere is impossible. Local evidence is necessary, but it is not sufficient. The global gluing of all local pieces can impose a condition no single patch reveals.",
-      "This theme threads through orientation, surface classification, Euler characteristic, Gauss-Bonnet-style total turning, vector-field index, and Poincare-Hopf. Each case asks how local facts add up. Sometimes the local facts are patches of a surface. Sometimes they are crossings. Sometimes they are arrow defects. The recurring lesson is that the whole object can have fewer choices than its pieces seem to have independently."
+      "This theme threads through orientation, surface classification, Euler characteristic, Gauss-Bonnet-style total turning, vector-field index, and Poincare-Hopf. Each case asks how local facts add up. Sometimes the local facts are patches of a surface. Sometimes they are crossings. Sometimes they are arrow defects. The recurring lesson is that the whole object can have fewer choices than its pieces seem to have independently.",
+      "For a beginner, the key is to stop asking only whether each small neighborhood looks possible. The harder question is whether all the local choices can be made consistently at once. A Mobius strip blocks a global side choice. A sphere blocks a global nonzero tangent field. A surface can demand a total count even when each small patch looks flexible."
     ]
   },
   {
@@ -91,7 +94,8 @@
     },
     "essay": [
       "Generic-before-exception is the course's way of keeping proofs honest around special accidents. A drawing with perfect tangency or a triple crossing may look interesting, but it may be unstable. A tiny perturbation can split the event into ordinary pieces. The course therefore studies the ordinary case first: clean intersections, isolated defects, and controlled pair creation or cancellation. This is not avoiding difficulty. It is exposing the stable mechanism.",
-      "Exceptional cases still matter, but they are best understood as boundaries between ordinary cases. When two intersections are born together, the singular moment is important because it explains why the signed count does not change. When equilibria are not isolated, the field must be cleaned up before index makes sense. This theme protects the reader from proving a theorem about a coincidence instead of proving a theorem about the shape."
+      "Exceptional cases still matter, but they are best understood as boundaries between ordinary cases. When two intersections are born together, the singular moment is important because it explains why the signed count does not change. When equilibria are not isolated, the field must be cleaned up before index makes sense. This theme protects the reader from proving a theorem about a coincidence instead of proving a theorem about the shape.",
+      "The mathematical principle is that stable events can be assigned stable evidence. A single clean crossing can receive a sign. An isolated defect can receive an index. A pair born at one instant can be analyzed by what exists just before and just after. The exception is not ignored; it is handled through the ordinary cases it connects."
     ]
   },
   {
@@ -117,7 +121,8 @@
     "essay": [
       "Pictures-to-proofs is the theme that makes Tokieda's course distinctive. The drawings and demonstrations are not illustrations pasted onto the mathematics afterward. They are often the place where the reasoning happens. A strip cut, a square with edge identifications, a handle slide, a graph meeting a diagonal, or a vector field around a defect can show the allowed moves and the protected quantity directly.",
       "A picture becomes proof-bearing only when it makes its rules visible. The reader must know which parts can move, which parts are fixed, what counts as crossing, how edges are glued, where signs come from, and what quantity survives. Otherwise the picture may be memorable but mathematically weak. By the final lecture, pictorial thinking names the course's real discipline: use pictures that carry constraints, not pictures that merely look suggestive.",
-      "This is why the course can stay plain without becoming shallow: the picture does real work when its constraints are explicit."
+      "This is why the course can stay plain without becoming shallow: the picture does real work when its constraints are explicit.",
+      "The first-principles test for any picture in the companion is whether a reader can audit it. What are the objects? What are the legal moves? What is being counted or protected? What conclusion follows if the picture is replaced by an equivalent one? A picture that answers those questions is part of the proof."
     ]
   },
   {
@@ -142,7 +147,8 @@
     "essay": [
       "Shape-as-machine is the theme that connects topology to behavior. A shape is not only something to classify; it can force motion, block motion, or guarantee a special state. A closed ball can force a fixed point. A sphere can force a vector-field defect. A configuration space can show that a physical motion is blocked because no legal path exists through the space of possibilities.",
       "This theme is why the course can move from paper strips to dynamical systems without changing its soul. The same proof engine keeps returning: identify the space, identify the rule or motion, decide the allowed changes, and find the protected obstruction. The shape then behaves like a machine of constraints. It does not compute every detail of motion, but it can make certain outcomes unavoidable.",
-      "The result is a practical kind of mathematics: understand the shape of possibility, and some behavior follows before calculation begins."
+      "The result is a practical kind of mathematics: understand the shape of possibility, and some behavior follows before calculation begins.",
+      "The important caution is that the machine is only as good as the space chosen to represent the situation. A configuration space must include the actual freedoms and exclude the actual forbidden states. A fixed-point theorem must apply to the right domain and rule. Once the model is honest, the shape can force behavior in a way direct calculation may not reveal."
     ]
   }
 ]
