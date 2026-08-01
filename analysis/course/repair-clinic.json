@@ -55,8 +55,8 @@
     "title": "Fixed point as a point that does not move",
     "flawed_explanation": "A fixed point is a point that does not move, so fixed-point theorems tell us where something stays.",
     "why_it_fails": "The first phrase is only a start, and the second phrase is too strong. The course needs a rule from a space to itself, and the theorem often proves existence without locating the point.",
-    "repair_move": "Name the domain and the rule, then translate the condition into self-agreement: the input and output are the same point.",
-    "strong_version": "A fixed point belongs to a rule that sends points of a space back into the same space. A point is fixed when the rule returns that exact point. The graph-and-diagonal picture turns this self-agreement into a meeting question, and a theorem may prove that some meeting exists without computing where it is.",
+    "repair_move": "Name the domain, target, and rule, then translate the condition into self-agreement: the input and output are the same point in the same space.",
+    "strong_version": "A fixed point belongs to a rule that sends points of a space back into that same space. A point is fixed when the rule returns that exact point. The graph-and-diagonal picture turns this self-agreement into a meeting question, and a theorem may prove that some meeting exists without computing where it is or showing it is unique.",
     "reviewer_test": "Can the reader identify the rule, the space it maps into itself, and the difference between existence and location?",
     "concepts": [
       "fixed-points",
@@ -94,8 +94,8 @@
     "title": "Poincare-Hopf as topology predicting motion",
     "flawed_explanation": "Poincare-Hopf says topology predicts how a dynamical system moves, so the theorem tells us the motion path.",
     "why_it_fails": "The sentence is too broad. The theorem compares the sum of local indices of isolated defects with the Euler characteristic of the same surface. It constrains defects; it does not solve the whole motion law.",
-    "repair_move": "Name the surface, the vector field, the isolated defects, the local indices, and the whole-surface number being compared.",
-    "strong_version": "Poincare-Hopf connects local failures of a vector field to the whole surface carrying that field. Each isolated defect has an index, and the sum of all those indices must match the Euler characteristic of the same surface. This can force defects or rule out some fields, but it does not compute every trajectory.",
+    "repair_move": "Name the surface, the vector field on that surface, every isolated defect, the local indices, and the Euler characteristic being compared.",
+    "strong_version": "Poincare-Hopf connects local failures of a vector field to the whole surface carrying that field. Each isolated defect has an index, and the sum of all those indices must match the Euler characteristic of the same surface. This can force defects or rule out some fields, but it does not compute every trajectory or describe how a particle moves between defects.",
     "reviewer_test": "Does the explanation include both sides of the contract: all local indices and the Euler characteristic of the same surface?",
     "concepts": [
       "poincare-hopf",

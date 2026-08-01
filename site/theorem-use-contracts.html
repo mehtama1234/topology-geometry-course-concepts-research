@@ -53,11 +53,11 @@
   <div class="meta">Use contract</div>
   <h3>Graph and diagonal fixed-point test</h3>
   <p><b>Use when:</b> Use it when a rule sends inputs to outputs and the question is whether some input is sent back to itself.</p>
-  <p><b>Object needed:</b> The object is the graph of the rule in input-output space, together with the diagonal that records self-agreement.</p>
-  <p><b>Allowed move:</b> The allowed move is to translate the rule into its graph without changing what input, output, or equality means.</p>
-  <p><b>Protected evidence:</b> The protected evidence is the exact equivalence between graph meeting diagonal and fixed point of the original rule.</p>
-  <p><b>Conclusion it can force:</b> It can turn a fixed-point question into an intersection question, letting earlier meeting and continuity reasoning become available.</p>
-  <p><b>Breaks if:</b> It breaks if the graph is drawn for the wrong rule, if the diagonal does not represent equality in the same space, or if the domain has been changed.</p>
+  <p><b>Object needed:</b> The object is a rule from a space back into that same space, its graph in input-output space, and the diagonal that records equality between input and output.</p>
+  <p><b>Allowed move:</b> The allowed move is to translate the rule into its graph without changing the domain, target, or meaning of equality.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the exact equivalence between graph meeting diagonal and self-agreement of the original rule.</p>
+  <p><b>Conclusion it can force:</b> It can turn a fixed-point question into an intersection question. By itself it identifies what a fixed point means; extra shape or continuity reasoning is needed to force existence.</p>
+  <p><b>Breaks if:</b> It breaks if the graph is drawn for the wrong rule, if the rule does not map the space back into itself, if the diagonal belongs to a different space, or if the domain has been changed.</p>
   <p><b>Everyday test:</b> Can the reader point to one graph point and say which input and output it records, then explain why diagonal meeting means self-agreement?</p>
   <p><a class="pill" href="concept-fixed-points.html">Fixed points</a><a class="pill" href="concept-duality.html">Dual pictures</a><a class="pill" href="concept-intersection-number.html">Intersection number</a></p>
 </article><article class="card">
@@ -66,9 +66,9 @@
   <p><b>Use when:</b> Use it when a continuous rule sends a closed filled ball back into itself and the goal is to prove that some point stays put.</p>
   <p><b>Object needed:</b> The object is the closed filled ball, including its interior and boundary, plus a self-map that never sends points outside the ball.</p>
   <p><b>Allowed move:</b> The allowed move is to use continuity and the filled shape&#x27;s boundary constraint to rule out a total escape from self-agreement.</p>
-  <p><b>Protected evidence:</b> The protected evidence is the no-escape structure of the closed ball under a continuous self-map.</p>
-  <p><b>Conclusion it can force:</b> It can force existence of at least one fixed point without computing where that point is.</p>
-  <p><b>Breaks if:</b> It breaks if the space is not the right closed filled shape, if the rule is not continuous, or if the rule sends points outside the domain.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the no-escape structure of a closed filled ball under a continuous self-map that stays inside the same ball.</p>
+  <p><b>Conclusion it can force:</b> It can force existence of at least one fixed point. It does not compute the point, say it is unique, or describe the path by which points move.</p>
+  <p><b>Breaks if:</b> It breaks if the space is not the right closed filled shape, if the boundary has been removed, if the rule is not continuous, or if the rule sends points outside the domain.</p>
   <p><b>Everyday test:</b> Can the reader state the space, the rule, the inside-itself condition, and why the theorem proves existence rather than location?</p>
   <p><a class="pill" href="concept-brouwer-fixed-point.html">Brouwer fixed-point theorem</a><a class="pill" href="concept-fixed-points.html">Fixed points</a><a class="pill" href="concept-topology-vs-geometry.html">Topology and geometry</a></p>
 </article><article class="card">
@@ -77,9 +77,9 @@
   <p><b>Use when:</b> Use it when an arrow field has isolated defects and the question needs a signed local account of how arrows turn around each defect.</p>
   <p><b>Object needed:</b> The object is a vector field on a surface or state space, with one isolated defect enclosed by a small loop that contains no other defect.</p>
   <p><b>Allowed move:</b> The allowed move is to clean or redraw the nearby arrow pattern while keeping the defect isolated and the surrounding loop meaningful.</p>
-  <p><b>Protected evidence:</b> The protected evidence is the signed turning of arrows during one trip around the defect.</p>
-  <p><b>Conclusion it can force:</b> It can turn a local failure of motion into countable evidence that can later be added across the whole surface.</p>
-  <p><b>Breaks if:</b> It breaks if the defect is not isolated, if another defect lies inside the loop, or if the surface carrying the arrows has been modeled incorrectly.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the signed turning of arrows during one trip around that one isolated defect.</p>
+  <p><b>Conclusion it can force:</b> It can turn a local failure of motion into countable evidence. It does not count how many equilibria exist, and it becomes global evidence only after all local indices are included.</p>
+  <p><b>Breaks if:</b> It breaks if the defect is not isolated, if another defect lies inside the loop, if the arrows are not tangent to the claimed surface, or if the surface carrying the arrows has been modeled incorrectly.</p>
   <p><b>Everyday test:</b> Can the reader walk around the defect in words and say how the arrows turn during one full trip?</p>
   <p><a class="pill" href="concept-vector-field-index.html">Vector field index</a><a class="pill" href="concept-equilibrium.html">Equilibrium</a><a class="pill" href="concept-generic-position.html">Generic position</a></p>
 </article><article class="card">
@@ -88,9 +88,9 @@
   <p><b>Use when:</b> Use it when every isolated vector-field defect on the right surface has been counted and the question concerns the total failure of the field.</p>
   <p><b>Object needed:</b> The object is the entire surface carrying the vector field, plus the complete list of isolated defects and their indices.</p>
   <p><b>Allowed move:</b> The allowed move is to add all local indices and compare that total with the Euler characteristic of the same surface.</p>
-  <p><b>Protected evidence:</b> The protected evidence is the equality between total local index and the surface&#x27;s Euler characteristic.</p>
-  <p><b>Conclusion it can force:</b> It can force defects, forbid a nowhere-zero field on some surfaces, or show that local motion failures answer to whole-surface structure.</p>
-  <p><b>Breaks if:</b> It breaks if one defect is omitted, if the field is not on the claimed surface, if boundary behavior is ignored, or if one equilibrium is treated as the whole theorem.</p>
+  <p><b>Protected evidence:</b> The protected evidence is the equality between the complete total local index and the Euler characteristic of that same surface.</p>
+  <p><b>Conclusion it can force:</b> It can force defects, forbid a nowhere-zero field on some surfaces, or show that local motion failures answer to whole-surface structure. It does not solve the differential equation or trace trajectories.</p>
+  <p><b>Breaks if:</b> It breaks if one defect is omitted, if the field is not on the claimed surface, if boundary behavior is ignored, if defects are not isolated, or if one equilibrium is treated as the whole theorem.</p>
   <p><b>Everyday test:</b> Can the reader name the surface, list every defect, add their signed indices, and say which Euler characteristic the total must match?</p>
   <p><a class="pill" href="concept-poincare-hopf.html">Poincare-Hopf theorem</a><a class="pill" href="concept-vector-field-index.html">Vector field index</a><a class="pill" href="concept-euler-characteristic.html">Euler characteristic</a></p>
 </article><article class="card">

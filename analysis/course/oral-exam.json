@@ -41,9 +41,9 @@
   {
     "title": "Read a theorem contract",
     "prompt": "Explain how to use a theorem name without letting the name replace the argument, including the assumptions that must be checked first.",
-    "strong_answer": "A strong answer starts with the theorem's contract. It names the object, checks the assumptions, states the allowed move or comparison, identifies the protected evidence, and gives only the conclusion the theorem can actually force.",
-    "must_include": "The answer must say what the theorem needs before it speaks and what stronger claim it does not prove.",
-    "common_failure": "A weak answer invokes Brouwer, Poincare-Hopf, or Euler characteristic as authority before naming the object and assumptions.",
+    "strong_answer": "A strong answer starts with the theorem's contract. It names the object, checks the assumptions, states the allowed move or comparison, identifies the protected evidence, and gives only the conclusion the theorem can actually force. For Brouwer, that means existence without location. For Poincare-Hopf, that means a total defect constraint without solved trajectories.",
+    "must_include": "The answer must say what the theorem needs before it speaks, what exact conclusion it gives, and what stronger claim remains unproved.",
+    "common_failure": "A weak answer invokes Brouwer, Poincare-Hopf, or Euler characteristic as authority before naming the object, assumptions, and conclusion limit.",
     "follow_up": "What would make this theorem application invalid even if the theorem itself is true, and which assumption would fail first?",
     "concepts": [
       "brouwer-fixed-point",

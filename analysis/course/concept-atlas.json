@@ -939,9 +939,9 @@
       "turning-and-curvature",
       "signs-and-cancellation"
     ],
-    "first_principles": "Put a little arrow at each point of a surface. Where the arrow pattern breaks down, you get a defect. The index is a signed count of how the arrows turn around that defect. This matters because a surface may allow the defects to move, but it may not allow the total defect count to disappear.",
-    "important_detail": "Defects can be moved or split, but their total signed effect can be fixed by the surface.",
-    "math_principle": "Local failures of a field are constrained by the whole space that carries the field.",
+    "first_principles": "Put a little arrow at each point of a surface. Where the arrow vanishes or the arrow pattern cannot be read as a normal direction, isolate that place and walk around a small loop enclosing it. The index records the signed turning of nearby arrows during that walk. It is not a count of how many defects are visible; it is a local account of how one defect behaves.",
+    "important_detail": "The defect must be isolated and the loop must contain only that defect. If two defects sit inside the same loop, or if the field fails along a whole curve, the single local index has not been separated cleanly enough.",
+    "math_principle": "A local failure of a field becomes usable evidence only after its surrounding arrow behavior is turned into a signed count that can be added with other local counts.",
     "depth": {
       "why_it_exists": "Vector-field index exists because solving a differential equation is often too much to ask. The index extracts a small but durable fact from the arrow pattern near an equilibrium: how the arrows turn around the failure point.",
       "beginner_trap": "The trap is to classify equilibria by appearance alone. The index is a signed turning count, and different-looking local pictures may have the same index while similar-looking pictures may behave differently under deformation.",
@@ -1032,9 +1032,9 @@
       "mechanisms-and-locks",
       "holes-and-boundaries"
     ],
-    "first_principles": "A fixed point is a place that ends up where it started after a motion or rule is applied. Some spaces force at least one fixed point for any rule of a certain kind. The idea matters because it proves existence without naming the point: the shape leaves no way for every point to avoid itself.",
-    "important_detail": "The claim depends on the shape of the space and the allowed kind of rule. Change either, and the guarantee may vanish.",
-    "math_principle": "The shape of all possible positions can force a solution to exist.",
+    "first_principles": "A fixed point belongs to a rule that takes points of one space and sends them back into that same space. A point is fixed when the rule returns that exact point. The course makes this checkable by drawing the graph of the rule and the diagonal of self-agreement. A fixed point is where those two objects meet.",
+    "important_detail": "The rule, domain, and target must be the same account. If outputs leave the space, if the rule jumps, or if the diagonal is drawn for a different space, the fixed-point sentence no longer asks the right question.",
+    "math_principle": "A rule can be turned into a geometric meeting problem, and the shape of the space can force self-agreement without telling the reader which point it is.",
     "depth": {
       "why_it_exists": "Fixed points exist as a concept because many problems ask whether a rule must leave something unchanged. Instead of finding the point, topology can sometimes prove that the shape of the space prevents all points from escaping themselves.",
       "beginner_trap": "The trap is to expect a fixed-point theorem to compute the fixed point. These theorems often prove existence only, which is already enough when exact computation is unavailable or when the rule is known only qualitatively.",
@@ -1663,9 +1663,9 @@
       "mechanisms-and-locks",
       "holes-and-boundaries"
     ],
-    "first_principles": "Brouwer's theorem says that a continuous rule sending a filled ball back into itself must leave at least one point unmoved. The everyday picture is stirring every point of a filled disk without tearing the rule or sending points outside. The whole filled shape gives no way for every point to escape its starting place at once.",
-    "important_detail": "The filled ball and its boundary are part of the claim. Change the space or remove the boundary and the guarantee can fail.",
-    "math_principle": "The shape of a domain can force self-agreement for every continuous rule of the right kind.",
+    "first_principles": "Brouwer's theorem is a fixed-point contract for a filled ball. The object is the whole closed ball, including its boundary. The rule is continuous and sends every point of that ball back into the same ball. Under those conditions, at least one point must be returned to itself. The theorem proves that some self-agreement exists; it does not give a recipe for finding the point.",
+    "important_detail": "The filled ball, the boundary, continuity, and the inside-itself rule are all part of the claim. Remove the boundary, change the space, let the rule jump, or let outputs leave the ball, and the guarantee can fail.",
+    "math_principle": "The shape of a closed filled domain can block a total escape from self-agreement for every continuous rule of the right kind.",
     "depth": {
       "why_it_exists": "Brouwer's theorem exists in the companion because it is the clearest place where shape forces existence without computation. A continuous self-map of a filled ball cannot move every point away from itself while staying inside the ball.",
       "beginner_trap": "The trap is to hear the theorem as a method for finding the fixed point. Its job is different: it proves that at least one point must exist. That existence claim is already strong when the rule is complicated or only qualitatively known.",
@@ -1779,9 +1779,9 @@
       "turning-and-curvature",
       "signs-and-cancellation"
     ],
-    "first_principles": "Poincare-Hopf says that the signed indices of all isolated vector-field defects add up to a number belonging to the surface itself. The plain meaning is that local failures of motion are not independent. The surface carrying the arrows demands a total.",
-    "important_detail": "The theorem counts clean isolated defects. If failures merge into a smeared region, the picture must be made ordinary enough before the count is trusted.",
-    "math_principle": "Whole-surface topology can control the total of local motion failures.",
+    "first_principles": "Poincare-Hopf compares two complete accounts of the same surface. One account comes from the vector field: isolate every defect, assign each one an index, and add all those signed local numbers. The other account comes from the surface itself: its Euler characteristic. The theorem says those two totals must match under the right conditions.",
+    "important_detail": "The theorem is not about one equilibrium and not about a path of motion. It needs the whole surface, the field on that surface, every isolated defect, the correct boundary behavior, and the Euler characteristic of that same surface.",
+    "math_principle": "Whole-surface topology can control the total of local motion failures because local index bookkeeping and surface bookkeeping are forced to agree.",
     "depth": {
       "why_it_exists": "Poincare-Hopf exists because the course needs a final exchange between shape and motion. It says that the sum of local vector-field indices is forced by Euler characteristic, so the surface can demand defects before the differential equation is solved.",
       "beginner_trap": "The trap is to treat the theorem as a slogan about the hairy ball. The real content is a signed account over every isolated defect. One local source or saddle is not enough; the total over the whole surface is the theorem.",

@@ -98,12 +98,12 @@
     },
     {
       "requirement": "Explanation repair clinic",
-      "evidence": "The Repair Clinic page gives 8 flawed explanations repaired into stronger first-principles versions, with 1136 repair-clinic words across flawed explanation, failure reason, repair move, strong version, reviewer test, and concept links.",
+      "evidence": "The Repair Clinic page gives 8 flawed explanations repaired into stronger first-principles versions, with 1155 repair-clinic words across flawed explanation, failure reason, repair move, strong version, reviewer test, and concept links.",
       "status": "met"
     },
     {
       "requirement": "Oral exam readiness",
-      "evidence": "The Oral Exam page gives 7 final readiness prompts with prompt, strong answer, must-include field, common failure, follow-up question, and concept links, with 875 oral-exam words.",
+      "evidence": "The Oral Exam page gives 7 final readiness prompts with prompt, strong answer, must-include field, common failure, follow-up question, and concept links, with 899 oral-exam words.",
       "status": "met"
     },
     {
@@ -138,7 +138,7 @@
     },
     {
       "requirement": "Theorem-use contracts",
-      "evidence": "The Theorem Use Contracts page gives 8 use contracts with required object, allowed move, protected evidence, conclusion, break condition, everyday test, and concept links, with 1271 theorem-contract words.",
+      "evidence": "The Theorem Use Contracts page gives 8 use contracts with required object, allowed move, protected evidence, conclusion, break condition, everyday test, and concept links, with 1368 theorem-contract words.",
       "status": "met"
     },
     {
@@ -217,9 +217,9 @@
     "transfer_lab_cases": 8,
     "transfer_lab_words": 1187,
     "repair_clinic_cases": 8,
-    "repair_clinic_words": 1136,
+    "repair_clinic_words": 1155,
     "oral_exam_prompts": 7,
-    "oral_exam_words": 875,
+    "oral_exam_words": 899,
     "change_ledger_rows": 10,
     "change_ledger_words": 1275,
     "assumption_ledger_rows": 10,
@@ -230,7 +230,7 @@
     "weak_claim_repair_words": 1174,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
-    "theorem_contract_words": 1271,
+    "theorem_contract_words": 1368,
     "concept_contrasts": 10,
     "concept_contrast_words": 1355,
     "reader_checks": 11,
