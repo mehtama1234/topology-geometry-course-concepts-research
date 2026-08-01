@@ -10,11 +10,11 @@
       "deformation",
       "invariant"
     ],
-    "reader_question": "What exact detail is topology keeping alive after the drawing has been changed?"
+    "reader_question": "What exact detail is topology keeping alive after the drawing has been changed, and which move would destroy that detail?"
   },
   {
     "term": "Geometry",
-    "everyday_sentence": "Geometry keeps measured information in view: length, angle, area, curvature, direction, and local bending.",
+    "everyday_sentence": "Geometry keeps measured information in view: length, angle, area, curvature, direction, and local bending at the place being inspected.",
     "job_in_argument": "Its job is to supply the local facts that topology later adds up or protects. The course often uses geometric measurements as the small evidence whose total is controlled by the whole shape.",
     "not_a_definition": "It is not the opposite of topology. In this course, geometry often prepares the measured pieces, while topology explains why the completed account has limited freedom.",
     "failure_if_misread": "If geometry is treated as mere measurement, the reader misses why curvature, direction, and local turning become evidence about the whole surface rather than isolated numbers.",
@@ -23,11 +23,11 @@
       "gauss-bonnet",
       "boundary-orientation"
     ],
-    "reader_question": "Which measured local fact is being kept, and what whole-shape claim will it support?"
+    "reader_question": "Which measured local fact is being kept, where is it measured, and what whole-shape claim will it support?"
   },
   {
     "term": "Invariant",
-    "everyday_sentence": "An invariant is a fact that stays the same while the allowed changes are made.",
+    "everyday_sentence": "An invariant is a fact chosen because it stays the same while the allowed changes in this problem are made.",
     "job_in_argument": "Its job is to give the proof a receipt. If the invariant differs between two situations, no chain of legal moves can connect them; if it survives every legal move, it can carry the conclusion across a simplified picture.",
     "not_a_definition": "It is not a complete description of the object. It is a deliberately chosen fact that survives the moves relevant to one question.",
     "failure_if_misread": "If a reader treats any stable-looking number as an invariant, they may use a count that changes under a legal redraw and then trust evidence that has already leaked away.",
@@ -36,7 +36,7 @@
       "euler-characteristic",
       "parity"
     ],
-    "reader_question": "Which allowed move has been checked, and why does this fact survive that move?"
+    "reader_question": "Which allowed move has been checked, what local event threatens the fact, and why does this fact survive that move?"
   },
   {
     "term": "Deformation",
@@ -49,7 +49,7 @@
       "knots-and-links",
       "winding-linking"
     ],
-    "reader_question": "What is allowed to move, and what would count as changing the problem instead of solving it?"
+    "reader_question": "What is allowed to move, what must stay fixed during the motion, and what would count as changing the problem instead of solving it?"
   },
   {
     "term": "Quotient space",
@@ -62,7 +62,7 @@
       "boundary-orientation",
       "manifold"
     ],
-    "reader_question": "Which points have been declared identical, and what route or boundary changes because of that declaration?"
+    "reader_question": "Which points have been declared identical, what route or boundary changes because of that declaration, and what flat-picture feature is no longer literal?"
   },
   {
     "term": "Product space",
@@ -75,7 +75,7 @@
       "configuration-space",
       "fixed-points"
     ],
-    "reader_question": "What are the separate choices, and does one point in the product really describe one complete state?"
+    "reader_question": "What are the separate choices, does one point in the product really describe one complete state, and which later restriction cuts that product down?"
   },
   {
     "term": "Manifold",
@@ -88,7 +88,7 @@
       "boundary-orientation",
       "poincare-hopf"
     ],
-    "reader_question": "What works in each small patch, and what still has to be checked around the whole shape?"
+    "reader_question": "What works in each small patch, what still has to be checked around the whole shape, and which full trip could reveal failure?"
   },
   {
     "term": "Generic position",
@@ -101,7 +101,7 @@
       "intersection-number",
       "vector-field-index"
     ],
-    "reader_question": "Which coincidence was removed, and why did the small move preserve the question?"
+    "reader_question": "Which coincidence was removed, what count or sign rule became readable afterward, and why did the small move preserve the question?"
   },
   {
     "term": "Orientation",
@@ -114,7 +114,7 @@
       "intersection-number",
       "gauss-bonnet"
     ],
-    "reader_question": "Where does the sign convention come from, and can it be carried consistently through the space being used?"
+    "reader_question": "Where does the sign convention come from, can it be carried consistently through the space being used, and where would it fail?"
   },
   {
     "term": "Euler characteristic",
@@ -127,7 +127,7 @@
       "triangulation",
       "poincare-hopf"
     ],
-    "reader_question": "What surface is being counted, and why does changing the breakup leave the alternating account fixed?"
+    "reader_question": "What surface is being counted, which cells changed during the redraw, and why does changing the breakup leave the alternating account fixed?"
   },
   {
     "term": "Parity",
@@ -140,7 +140,7 @@
       "intersection-number",
       "graph-planarity"
     ],
-    "reader_question": "Why do the allowed changes affect the count in pairs?"
+    "reader_question": "Why do the allowed changes affect the count in pairs, and what desired zero-count conclusion does oddness block?"
   },
   {
     "term": "Intersection number",
@@ -153,7 +153,7 @@
       "generic-position",
       "boundary-orientation"
     ],
-    "reader_question": "What gives each meeting its sign, and what legal motion could create a canceling pair?"
+    "reader_question": "What gives each meeting its sign, what legal motion could create a canceling pair, and why does the signed total survive?"
   },
   {
     "term": "Fixed point",
@@ -166,11 +166,11 @@
       "brouwer-fixed-point",
       "configuration-space"
     ],
-    "reader_question": "What is the space, what is the rule, and why can the rule not move every point away from itself?"
+    "reader_question": "What is the space, what is the rule, where do outputs land, and why can the rule not move every point away from itself?"
   },
   {
     "term": "Configuration space",
-    "everyday_sentence": "A configuration space is the shape made by listing every allowed state of a system.",
+    "everyday_sentence": "A configuration space is the shape made by listing every allowed state of a system after forbidden states are removed.",
     "job_in_argument": "Its job is to turn a motion problem into a route problem. Moving the system becomes walking through this space, while forbidden states become holes, walls, or missing regions.",
     "not_a_definition": "It is not a picture of the physical object itself. It is a picture of the object's possible states.",
     "failure_if_misread": "If the model forgets a real freedom or includes a forbidden state, paths in the configuration space may describe motions that the real system cannot perform.",
@@ -179,7 +179,7 @@
       "product-space",
       "fixed-points"
     ],
-    "reader_question": "What data describe one complete state, and which states have been removed as forbidden?"
+    "reader_question": "What data describe one complete state, which states have been removed as forbidden, and how does a path become a real motion?"
   },
   {
     "term": "Vector-field index",
@@ -192,7 +192,7 @@
       "equilibrium",
       "poincare-hopf"
     ],
-    "reader_question": "What loop surrounds the defect, and how do the arrows turn during one trip around it?"
+    "reader_question": "What loop surrounds the defect, how do the arrows turn during one trip around it, and what would make the defect account invalid?"
   },
   {
     "term": "Poincare-Hopf theorem",
@@ -205,6 +205,6 @@
       "vector-field-index",
       "euler-characteristic"
     ],
-    "reader_question": "What are all the defects, what is their signed total, and what surface number must that total match?"
+    "reader_question": "What are all the defects, what is their signed total, what surface number must that total match, and what conclusion is not being computed?"
   }
 ]

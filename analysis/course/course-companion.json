@@ -7033,7 +7033,7 @@
     },
     {
       "title": "Counting raw crossings overreads the picture",
-      "tempting_claim": "The drawing has two crossings, so the mathematical evidence should be the visible number two.",
+      "tempting_claim": "The drawing has two crossings, so the mathematical evidence should be the visible number two before any deformation or sign rule is checked.",
       "missing_condition": "The count needs a survival rule. Raw crossings can appear or disappear under legal motion unless signs, parity, or another protected account is being used. Counting what the eye sees once is not the same as counting what every legal drawing must respect.",
       "failure_scene": "A small legal nudge can create a pair of crossings or remove a pair without changing the problem being studied. The visible number changes, but the route relation or signed total may remain the same if the new crossings come with opposite contributions.",
       "why_it_breaks": "The raw number measured an accident of the drawing. It did not name the part of the count that survives the allowed changes. Without the survival rule, the count follows the sketch too closely to prove a topological claim.",
@@ -7046,7 +7046,7 @@
     },
     {
       "title": "Using signs without orientation",
-      "tempting_claim": "The plus crossings and minus crossings cancel, so the signed total proves the same conclusion.",
+      "tempting_claim": "The plus crossings and minus crossings cancel, so the signed total proves the same conclusion even if the sign rule has not been justified.",
       "missing_condition": "The signs need a shared direction rule. Orientation or boundary orientation must make plus and minus comparable across the object. A plus sign at one meeting and a minus sign at another are evidence only if the same convention tells both signs what they mean.",
       "failure_scene": "If each local sign is chosen independently, the symbols may cancel on paper while failing to describe one consistent mathematical account. The arithmetic may look balanced, but the balance belongs to the writer's labels rather than to the surface, curve, or field.",
       "why_it_breaks": "The addition used labels that did not belong to the same rulebook. A signed total has meaning only when the sign convention can be carried consistently. Without that condition, cancellation is decoration rather than protected evidence.",
@@ -7059,7 +7059,7 @@
     },
     {
       "title": "Applying Brouwer outside its contract",
-      "tempting_claim": "A continuous rule has a fixed point because Brouwer says continuous maps have fixed points.",
+      "tempting_claim": "A continuous rule has a fixed point because Brouwer says continuous maps have fixed points, regardless of the space, boundary, or target.",
       "missing_condition": "The rule must map the right kind of space back into itself and satisfy the theorem's setup. The domain, target, boundary, and continuity conditions matter. Brouwer is not a statement about every continuous formula; it is a statement about a self-map of a filled ball-type space under the right conditions.",
       "failure_scene": "A rule from an interval into a larger line can move every point outside the interval, so the diagonal comparison inside the original interval no longer applies. The graph may never meet the diagonal in the domain because the outputs have escaped the space where self-agreement was supposed to be tested.",
       "why_it_breaks": "The theorem was asked to speak about the wrong object. Self-agreement is a statement inside one space, not a reward for any continuous formula. If the rule does not return to the same allowed space, the fixed-point question has changed.",
@@ -7072,7 +7072,7 @@
     },
     {
       "title": "Leaving out one vector-field defect",
-      "tempting_claim": "The visible equilibria have total index zero, so the surface allows a defect-free field elsewhere.",
+      "tempting_claim": "The visible equilibria have total index zero, so the surface allows a defect-free field elsewhere without checking the complete surface account.",
       "missing_condition": "Every isolated defect on the relevant surface must be counted, and the field must satisfy the theorem's surface or boundary conditions. The theorem compares a complete defect ledger with the whole surface, not the defects that happened to be visible in one patch.",
       "failure_scene": "A drawing can hide a defect outside the pictured patch or at the boundary, making the visible total smaller than the true whole-surface account. The local picture may look balanced while the completed surface still demands another contribution.",
       "why_it_breaks": "Poincare-Hopf compares the complete local total with the whole surface. A partial list is not the theorem's local side. Leaving out one defect is like leaving out a face or edge in Euler characteristic: the arithmetic may be neat, but it is not the account the theorem uses.",
@@ -7085,7 +7085,7 @@
     },
     {
       "title": "Modeling motion with missing forbidden states",
-      "tempting_claim": "A path exists in the drawn state diagram, so the physical system can move that way.",
+      "tempting_claim": "A path exists in the drawn state diagram, so the physical system can move that way even before forbidden states are removed.",
       "missing_condition": "The configuration space must remove every forbidden state and record every freedom needed to describe one complete physical state. A state diagram is honest only if one point means one allowed physical situation.",
       "failure_scene": "If collision states remain in the diagram, a path may pass through a physical impossibility while looking continuous in the model. If a real rotation or contact choice is forgotten, the diagram may also create a false wall that blocks a motion the system can actually perform.",
       "why_it_breaks": "The topology was applied to the wrong state space. Paths in the model no longer correspond to legal motions of the original system. A theorem about that model may be mathematically correct and still say the wrong thing about the physical setup.",
@@ -7098,7 +7098,7 @@
     },
     {
       "title": "Changing the surface during a cell count",
-      "tempting_claim": "The Euler characteristic changed after redrawing the cells, so the surface number itself changed.",
+      "tempting_claim": "The Euler characteristic changed after redrawing the cells, so the surface number itself changed rather than the cell account being wrong.",
       "missing_condition": "Both cell accounts must describe the same surface. Refining or redrawing cells is allowed; changing the gluing, boundary, or surface type is not. Euler characteristic survives honest bookkeeping changes, not changes to the object being booked.",
       "failure_scene": "A careless diagram can drop a boundary edge or double-count a glued edge, producing a new number that belongs to the bookkeeping error. The page may look as though the surface number changed, but the actual change was in the ledger or in the surface rule.",
       "why_it_breaks": "The alternating count only survives valid changes in the cell account. It does not protect mistakes that change the surface being counted. If the gluing rule, boundary status, or surface type changes, the new count no longer has to match the old one.",
@@ -7111,7 +7111,7 @@
     },
     {
       "title": "Reading a source as stronger than it is",
-      "tempting_claim": "The reference is listed, so it proves the exact sentence on the lecture page.",
+      "tempting_claim": "The reference is listed, so it proves the exact sentence on the lecture page, including wording the lecture evidence may not support.",
       "missing_condition": "A source supports only the claim its evidence can actually carry: course identity, background family, formal theorem, visible lecture move, or recovered caption wording. Those support types are different, and a careful page must not blend them into one broad appeal to authority.",
       "failure_scene": "A background text may support vector-field index as a mathematical family without proving that Tokieda stated one exact sentence in one lecture. A recovered caption may support a phrase without supporting a full interpretive paragraph. A course record may prove provenance without proving a theorem step.",
       "why_it_breaks": "The citation was used as authority without naming the claim it supports. That turns a source trail into overclaiming. The reader can no longer tell whether the sentence rests on captions, visible demonstration, source-family background, or companion inference.",
@@ -7124,7 +7124,7 @@
     },
     {
       "title": "Treating a theorem as a procedure",
-      "tempting_claim": "The theorem proves existence, so it also tells us how to find the object or path.",
+      "tempting_claim": "The theorem proves existence, so it also tells us how to find the object or path and compute the missing details.",
       "missing_condition": "The theorem's conclusion must be read exactly. Some results force existence, parity, obstruction, or total count without giving a construction or location. A theorem may be strong enough to rule something out and still not tell the reader how to build the object.",
       "failure_scene": "A fixed-point theorem may prove that some point exists while giving no recipe for finding it, and Poincare-Hopf may constrain defects without solving trajectories. Treating either theorem as an algorithm asks it for a different kind of answer than the one it gives.",
       "why_it_breaks": "The answer asked the theorem for more than its contract provides. Existence, location, construction, and computation are different kinds of conclusions. When those conclusion types are blurred, a correct theorem use turns into an overclaim.",
@@ -7139,7 +7139,7 @@
   "weak_claim_repair_rows": [
     {
       "title": "Same shape means same answer",
-      "weak_claim": "These two pictures are the same topologically, so the answer is the same for the original problem.",
+      "weak_claim": "These two pictures are the same topologically, so the answer is the same for the original problem without naming which moves preserved the object.",
       "why_weak": "The sentence skips the object and the permission. A reader cannot tell whether the gluing rule, endpoint data, boundary order, or forbidden crossing rule survived the move. Same under what rule is the whole question; without that rule, the phrase same topologically can hide a changed problem.",
       "first_principles_repair": "Say what the object is first. Then say the picture was changed only by moves that keep the gluing rule, boundary data, and forbidden regions fixed, so the question being answered is still the original question. The repaired sentence should make the legal route visible before the simplified endpoint is trusted.",
       "detail_to_check": "Check one local move at a time and ask whether it changes the rule that defines the object, not whether the final drawing looks cleaner. If one step moves fixed data, crosses forbidden matter, or changes an identification rule, the final picture no longer speaks for the starting one.",
@@ -7152,7 +7152,7 @@
     },
     {
       "title": "The count is invariant",
-      "weak_claim": "This number is invariant, so it proves the obstruction and shows the desired motion cannot happen.",
+      "weak_claim": "This number is invariant, so it proves the obstruction and shows the desired motion cannot happen without checking the allowed local changes.",
       "why_weak": "The word invariant does all the work without naming the allowed changes or explaining why the number survives them. A reader can repeat the label while still not knowing why this count is allowed to travel from one drawing to another.",
       "first_principles_repair": "Name the moves the problem allows, then explain what happens to the count under each move. If new pieces appear in matched pairs, or if signed contributions cancel, say that plainly before using the number as evidence. The repair should also say what conclusion the surviving number is strong enough to force.",
       "detail_to_check": "Ask what event could change the raw count and what rule prevents that event from changing the protected count. If the answer cannot describe one threatening local event, the invariant claim is probably only a name.",
@@ -7165,11 +7165,11 @@
     },
     {
       "title": "The theorem applies",
-      "weak_claim": "By the theorem, the required point or obstruction exists, so the example has the conclusion we wanted.",
+      "weak_claim": "By the theorem, the required point or obstruction exists, so the example has the conclusion we wanted before the theorem's contract is checked.",
       "why_weak": "The sentence asks the theorem to speak before proving that the current object is the kind of object the theorem is about. It also hides the limit of the theorem's conclusion, so existence can slide into construction or a total count can slide into a solved motion path.",
       "first_principles_repair": "Before the theorem name, list the object, the rule or field on it, the needed condition, and the exact conclusion type. Then say whether the theorem gives existence, equality, parity, obstruction, or a count. The repaired sentence should make the theorem sound narrower but more trustworthy.",
       "detail_to_check": "Check that the rule maps the space back into itself, the field includes all defects, or the surface/count is the one named by the theorem. Then check the conclusion limit: what does the theorem not locate, compute, or construct?",
-      "where_to_use": "Use this repair on fixed-point, Brouwer, Poincare-Hopf, vector-field index, and theorem-contract pages.",
+      "where_to_use": "Use this repair on fixed-point, Brouwer, Poincare-Hopf, vector-field index, and theorem-contract pages whenever a theorem name appears before its object and conditions.",
       "concepts": [
         "brouwer-fixed-point",
         "poincare-hopf",
@@ -7178,7 +7178,7 @@
     },
     {
       "title": "The picture makes it clear",
-      "weak_claim": "The picture makes the conclusion obvious once the reader sees the drawing in the right way.",
+      "weak_claim": "The picture makes the conclusion obvious once the reader sees the drawing in the right way, even though the proof feature has not been named.",
       "why_weak": "A picture can suggest the right idea while still hiding the rule that makes the idea true. The reader needs to know what part of the picture is evidence and what part is only a helpful drawing. Without that distinction, a diagram becomes persuasion instead of proof.",
       "first_principles_repair": "Point to the exact feature being used: a side change, a forced crossing, a signed pair, a boundary order, a hole in a state space, or a whole-surface total. Then explain why that feature survives legal changes. The repair should say what the reader should watch if the picture is redrawn.",
       "detail_to_check": "Ask whether redrawing the picture, changing scale, or moving a curve legally would keep the named feature. If the feature disappears under a harmless redraw, it was probably a drawing artifact rather than mathematical evidence.",
@@ -7191,11 +7191,11 @@
     },
     {
       "title": "The model captures the motion",
-      "weak_claim": "The configuration space shows whether the system can move from one physical position to another.",
+      "weak_claim": "The configuration space shows whether the system can move from one physical position to another before one state and the forbidden states are named.",
       "why_weak": "The sentence skips the meaning of one point in the model and does not say which physical states were removed as impossible. It treats the diagram as if topology can inspect motion before the model has earned its connection to the physical system.",
       "first_principles_repair": "Say what one point of the configuration space records: every position, angle, choice, or relation needed for one allowed state. Then name the collision, boundary, or blocked states that have been removed. The repaired sentence should also state what kind of conclusion the model can support: a route exists, a route is blocked, or a special state is forced.",
       "detail_to_check": "Trace one physical motion and one path in the state space, and confirm that every intermediate point represents a legal physical state. Also check the reverse: every modeled path used in the proof should translate back to a motion the system could actually make.",
-      "where_to_use": "Use this repair on configuration-space, product-space, motion-family, and transfer-lab pages.",
+      "where_to_use": "Use this repair on configuration-space, product-space, motion-family, and transfer-lab pages whenever a physical story is turned into a path question.",
       "concepts": [
         "configuration-space",
         "product-space",
@@ -7204,11 +7204,11 @@
     },
     {
       "title": "Signs cancel",
-      "weak_claim": "The plus and minus terms cancel, so only the total matters for the final answer.",
+      "weak_claim": "The plus and minus terms cancel, so only the total matters for the final answer without explaining the shared sign convention.",
       "why_weak": "The sentence treats signs as if they were automatic labels. It does not explain where the shared direction rule comes from or why opposite signs are comparable. A plus and a minus can cancel only after the page earns a common sign convention.",
       "first_principles_repair": "Name the orientation rule, boundary direction, or local direction comparison that assigns signs. Then explain the local pair creation or cancellation event that keeps the signed total stable. The repaired sentence should make cancellation a checked event, not an arithmetic wish.",
       "detail_to_check": "Ask whether a plus sign in one place and a minus sign in another place were assigned by the same rulebook. If the rule cannot be carried across the object, the signed total may not be defined.",
-      "where_to_use": "Use this repair on boundary orientation, intersection number, vector-field index, and formula-reader pages.",
+      "where_to_use": "Use this repair on boundary orientation, intersection number, vector-field index, and formula-reader pages whenever cancellation is used as evidence.",
       "concepts": [
         "boundary-orientation",
         "intersection-number",
@@ -7217,11 +7217,11 @@
     },
     {
       "title": "Local behavior determines the whole surface",
-      "weak_claim": "The local pieces add up to the global conclusion, so the whole surface must obey the formula.",
+      "weak_claim": "The local pieces add up to the global conclusion, so the whole surface must obey the formula even before the complete account is checked.",
       "why_weak": "The sentence says local and global without explaining the bookkeeping bridge between small neighborhoods and the whole object. It names the direction of the argument but not the mechanism that carries local facts into a surface-wide conclusion.",
       "first_principles_repair": "Describe one local contribution first, such as a turn, defect index, angle shortage, or cell piece. Then explain the rule for adding all contributions across the whole surface and what total they must match. The repaired sentence should say why no isolated patch is enough by itself.",
       "detail_to_check": "Ask whether every local contribution is included exactly once and whether the surface used for the total is the same surface being studied. Missing a boundary term, hidden defect, or glued edge can make the global conclusion belong to the wrong object.",
-      "where_to_use": "Use this repair on Gauss-Bonnet, Poincare-Hopf, Euler characteristic, triangulation, and local-to-global theme pages.",
+      "where_to_use": "Use this repair on Gauss-Bonnet, Poincare-Hopf, Euler characteristic, triangulation, and local-to-global theme pages when local evidence is summed.",
       "concepts": [
         "gauss-bonnet",
         "poincare-hopf",
@@ -7230,7 +7230,7 @@
     },
     {
       "title": "The source supports this",
-      "weak_claim": "The listed source supports the explanation on this page and gives the reader enough authority.",
+      "weak_claim": "The listed source supports the explanation on this page and gives the reader enough authority without naming the exact supported claim.",
       "why_weak": "The sentence does not say what kind of support is being claimed: exact lecture wording, recovered caption evidence, course-arc inference, background theorem, or broader source family. A citation becomes shallow when it hides that difference.",
       "first_principles_repair": "Name the sentence being supported and the source role behind it. If the source supports only a background family or a formal theorem, weaken the page sentence so it does not pretend to be exact lecture evidence. The repaired sentence should say what the source can carry and what remains interpretation.",
       "detail_to_check": "Ask what stronger sentence would no longer be supported if the caption stayed missing or the source were only a background reference. If the answer is unclear, the support claim needs a narrower label.",
@@ -7243,7 +7243,7 @@
     },
     {
       "title": "This is just an example of the concept",
-      "weak_claim": "This example illustrates the concept and helps the reader see why the idea is useful.",
+      "weak_claim": "This example illustrates the concept and helps the reader see why the idea is useful without saying what the example lets them inspect.",
       "why_weak": "The sentence does not say what the example lets the reader inspect. A useful example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
       "first_principles_repair": "Say what the example makes visible. It may show one point in a state space, one legal deformation, one crossing pair, one glued boundary, one defect, or one source boundary. Then say what the reader should test. The repaired sentence should turn the example into an inspection task.",
       "detail_to_check": "Ask whether the example would still teach the idea if the formal concept name were removed from the paragraph. If not, the example is probably leaning on the name instead of showing the job.",
@@ -7256,11 +7256,11 @@
     },
     {
       "title": "The big picture is about shape",
-      "weak_claim": "The big picture is that topology studies shape and ignores geometry when solving these problems.",
+      "weak_claim": "The big picture is that topology studies shape and ignores geometry when solving these problems, regardless of which measured details still matter.",
       "why_weak": "The sentence is too broad and can mislead the reader into thinking size and angle never matter. The course is more precise: it chooses which facts should survive a chosen class of changes. Geometry and topology are levels of evidence, not slogans in a contest.",
       "first_principles_repair": "Say the course studies questions where the important fact survives bending, redrawing, cutting into valid cells, or moving through allowed states. Geometry is not thrown away; it is kept when the question needs it and set aside when it distracts from the surviving fact. The repaired sentence should name the protected fact, not only the word shape.",
       "detail_to_check": "Ask what the current question protects: side information, boundary order, a count, a path obstruction, a self-agreement point, or a whole-surface total. If that protected fact is not named, the big-picture sentence is too broad to teach.",
-      "where_to_use": "Use this repair on course-synthesis, math-why, topology-vs-geometry, themes, and first-viewport overview pages.",
+      "where_to_use": "Use this repair on course-synthesis, math-why, topology-vs-geometry, themes, and first-viewport overview pages where summary language can overreach.",
       "concepts": [
         "topology-vs-geometry",
         "invariant",
@@ -7641,11 +7641,11 @@
         "deformation",
         "invariant"
       ],
-      "reader_question": "What exact detail is topology keeping alive after the drawing has been changed?"
+      "reader_question": "What exact detail is topology keeping alive after the drawing has been changed, and which move would destroy that detail?"
     },
     {
       "term": "Geometry",
-      "everyday_sentence": "Geometry keeps measured information in view: length, angle, area, curvature, direction, and local bending.",
+      "everyday_sentence": "Geometry keeps measured information in view: length, angle, area, curvature, direction, and local bending at the place being inspected.",
       "job_in_argument": "Its job is to supply the local facts that topology later adds up or protects. The course often uses geometric measurements as the small evidence whose total is controlled by the whole shape.",
       "not_a_definition": "It is not the opposite of topology. In this course, geometry often prepares the measured pieces, while topology explains why the completed account has limited freedom.",
       "failure_if_misread": "If geometry is treated as mere measurement, the reader misses why curvature, direction, and local turning become evidence about the whole surface rather than isolated numbers.",
@@ -7654,11 +7654,11 @@
         "gauss-bonnet",
         "boundary-orientation"
       ],
-      "reader_question": "Which measured local fact is being kept, and what whole-shape claim will it support?"
+      "reader_question": "Which measured local fact is being kept, where is it measured, and what whole-shape claim will it support?"
     },
     {
       "term": "Invariant",
-      "everyday_sentence": "An invariant is a fact that stays the same while the allowed changes are made.",
+      "everyday_sentence": "An invariant is a fact chosen because it stays the same while the allowed changes in this problem are made.",
       "job_in_argument": "Its job is to give the proof a receipt. If the invariant differs between two situations, no chain of legal moves can connect them; if it survives every legal move, it can carry the conclusion across a simplified picture.",
       "not_a_definition": "It is not a complete description of the object. It is a deliberately chosen fact that survives the moves relevant to one question.",
       "failure_if_misread": "If a reader treats any stable-looking number as an invariant, they may use a count that changes under a legal redraw and then trust evidence that has already leaked away.",
@@ -7667,7 +7667,7 @@
         "euler-characteristic",
         "parity"
       ],
-      "reader_question": "Which allowed move has been checked, and why does this fact survive that move?"
+      "reader_question": "Which allowed move has been checked, what local event threatens the fact, and why does this fact survive that move?"
     },
     {
       "term": "Deformation",
@@ -7680,7 +7680,7 @@
         "knots-and-links",
         "winding-linking"
       ],
-      "reader_question": "What is allowed to move, and what would count as changing the problem instead of solving it?"
+      "reader_question": "What is allowed to move, what must stay fixed during the motion, and what would count as changing the problem instead of solving it?"
     },
     {
       "term": "Quotient space",
@@ -7693,7 +7693,7 @@
         "boundary-orientation",
         "manifold"
       ],
-      "reader_question": "Which points have been declared identical, and what route or boundary changes because of that declaration?"
+      "reader_question": "Which points have been declared identical, what route or boundary changes because of that declaration, and what flat-picture feature is no longer literal?"
     },
     {
       "term": "Product space",
@@ -7706,7 +7706,7 @@
         "configuration-space",
         "fixed-points"
       ],
-      "reader_question": "What are the separate choices, and does one point in the product really describe one complete state?"
+      "reader_question": "What are the separate choices, does one point in the product really describe one complete state, and which later restriction cuts that product down?"
     },
     {
       "term": "Manifold",
@@ -7719,7 +7719,7 @@
         "boundary-orientation",
         "poincare-hopf"
       ],
-      "reader_question": "What works in each small patch, and what still has to be checked around the whole shape?"
+      "reader_question": "What works in each small patch, what still has to be checked around the whole shape, and which full trip could reveal failure?"
     },
     {
       "term": "Generic position",
@@ -7732,7 +7732,7 @@
         "intersection-number",
         "vector-field-index"
       ],
-      "reader_question": "Which coincidence was removed, and why did the small move preserve the question?"
+      "reader_question": "Which coincidence was removed, what count or sign rule became readable afterward, and why did the small move preserve the question?"
     },
     {
       "term": "Orientation",
@@ -7745,7 +7745,7 @@
         "intersection-number",
         "gauss-bonnet"
       ],
-      "reader_question": "Where does the sign convention come from, and can it be carried consistently through the space being used?"
+      "reader_question": "Where does the sign convention come from, can it be carried consistently through the space being used, and where would it fail?"
     },
     {
       "term": "Euler characteristic",
@@ -7758,7 +7758,7 @@
         "triangulation",
         "poincare-hopf"
       ],
-      "reader_question": "What surface is being counted, and why does changing the breakup leave the alternating account fixed?"
+      "reader_question": "What surface is being counted, which cells changed during the redraw, and why does changing the breakup leave the alternating account fixed?"
     },
     {
       "term": "Parity",
@@ -7771,7 +7771,7 @@
         "intersection-number",
         "graph-planarity"
       ],
-      "reader_question": "Why do the allowed changes affect the count in pairs?"
+      "reader_question": "Why do the allowed changes affect the count in pairs, and what desired zero-count conclusion does oddness block?"
     },
     {
       "term": "Intersection number",
@@ -7784,7 +7784,7 @@
         "generic-position",
         "boundary-orientation"
       ],
-      "reader_question": "What gives each meeting its sign, and what legal motion could create a canceling pair?"
+      "reader_question": "What gives each meeting its sign, what legal motion could create a canceling pair, and why does the signed total survive?"
     },
     {
       "term": "Fixed point",
@@ -7797,11 +7797,11 @@
         "brouwer-fixed-point",
         "configuration-space"
       ],
-      "reader_question": "What is the space, what is the rule, and why can the rule not move every point away from itself?"
+      "reader_question": "What is the space, what is the rule, where do outputs land, and why can the rule not move every point away from itself?"
     },
     {
       "term": "Configuration space",
-      "everyday_sentence": "A configuration space is the shape made by listing every allowed state of a system.",
+      "everyday_sentence": "A configuration space is the shape made by listing every allowed state of a system after forbidden states are removed.",
       "job_in_argument": "Its job is to turn a motion problem into a route problem. Moving the system becomes walking through this space, while forbidden states become holes, walls, or missing regions.",
       "not_a_definition": "It is not a picture of the physical object itself. It is a picture of the object's possible states.",
       "failure_if_misread": "If the model forgets a real freedom or includes a forbidden state, paths in the configuration space may describe motions that the real system cannot perform.",
@@ -7810,7 +7810,7 @@
         "product-space",
         "fixed-points"
       ],
-      "reader_question": "What data describe one complete state, and which states have been removed as forbidden?"
+      "reader_question": "What data describe one complete state, which states have been removed as forbidden, and how does a path become a real motion?"
     },
     {
       "term": "Vector-field index",
@@ -7823,7 +7823,7 @@
         "equilibrium",
         "poincare-hopf"
       ],
-      "reader_question": "What loop surrounds the defect, and how do the arrows turn during one trip around it?"
+      "reader_question": "What loop surrounds the defect, how do the arrows turn during one trip around it, and what would make the defect account invalid?"
     },
     {
       "term": "Poincare-Hopf theorem",
@@ -7836,7 +7836,7 @@
         "vector-field-index",
         "euler-characteristic"
       ],
-      "reader_question": "What are all the defects, what is their signed total, and what surface number must that total match?"
+      "reader_question": "What are all the defects, what is their signed total, what surface number must that total match, and what conclusion is not being computed?"
     }
   ],
   "source_readers": [
@@ -8531,12 +8531,12 @@
       },
       {
         "requirement": "Counterexample gallery",
-        "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 1865 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
+        "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 1921 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
         "status": "met"
       },
       {
         "requirement": "Weak-claim repair layer",
-        "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1668 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
+        "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1775 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
         "status": "met"
       },
       {
@@ -8566,7 +8566,7 @@
       },
       {
         "requirement": "Plain-language term translation",
-        "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 1850 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
+        "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 1968 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
         "status": "met"
       },
       {
@@ -8638,9 +8638,9 @@
       "assumption_ledger_rows": 10,
       "assumption_ledger_words": 1835,
       "counterexample_gallery_rows": 10,
-      "counterexample_gallery_words": 1865,
+      "counterexample_gallery_words": 1921,
       "weak_claim_repair_rows": 10,
-      "weak_claim_repair_words": 1668,
+      "weak_claim_repair_words": 1775,
       "proof_moves": 5,
       "theorem_use_contracts": 8,
       "theorem_contract_words": 1368,
@@ -8648,7 +8648,7 @@
       "concept_contrast_words": 2261,
       "reader_checks": 11,
       "term_translations": 16,
-      "term_translation_words": 1850,
+      "term_translation_words": 1968,
       "source_readers": 7,
       "source_reader_words": 2032,
       "paper_family_ledger_rows": 7,
