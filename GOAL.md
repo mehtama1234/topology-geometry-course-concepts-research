@@ -48,6 +48,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 979 caption-nuance words.
 - 1,090 lecture source-lens words.
 - 1,781 concept workup words.
+- 858 subtheme routine words.
 - Four playground widgets.
 - Course synthesis and reader-checks pages.
 

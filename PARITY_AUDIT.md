@@ -16,7 +16,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, slow walkthrough, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
 | Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures | Met |
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, work-from-scratch blocks, and reverse lecture links | Met |
-| Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections | Met |
+| Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections; subthemes include reading routines | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
 | Concept dependency map | `site/concept-dependencies.html` gives eight prerequisite paths from early ideas to later theorem-level ideas | Met |
 | Proof moves | `site/proof-moves.html` gives five reusable first-principles proof recipes with steps, failure modes, and course examples | Met |
@@ -48,6 +48,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,781 concept workup words.
 - 1,278 theme essay words.
 - 1,500 subtheme essay words.
+- 858 subtheme routine words.
 - 824 method-family essay words.
 - 4 playground widgets.
 - 8 synthesis sections.
@@ -61,7 +62,7 @@ The validator checks:
 
 - expected video, lecture, caption, concept, theme, subtheme, family counts;
 - required generated pages;
-- depth floors for lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, theme, subtheme, family, and math-why prose;
+- depth floors for lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, theme, subtheme, subtheme-routine, family, and math-why prose;
 - at least three concrete examples per lecture;
 - lecture-spine structure and length;
 - concept/theme/subtheme/family id integrity;
@@ -72,6 +73,7 @@ The validator checks:
 - reader checks structure and length;
 - source-audit caption-nuance cards;
 - concept-page work-from-scratch sections;
+- subtheme-page reading-routine sections;
 - no broken local links;
 - banned vague phrases absent from generated HTML.
 

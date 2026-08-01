@@ -32,7 +32,7 @@ This repo is the source and generated static site for a first-principles compani
 - `lectures.html`, `lecture-*.html` — lecture explainers with slow walkthroughs and caption nuance.
 - `lecture-spine.html` — one reasoning path through all 15 lectures from object to later use.
 - `concepts.html`, `concept-*.html` — concept atlas, reverse lecture appearances, and work-from-scratch blocks.
-- `themes.html`, `subthemes.html`, `families.html` — recurring ideas and proof families.
+- `themes.html`, `subthemes.html`, `families.html` — recurring ideas, subtheme routines, and proof families.
 - `the-math-why.html` — core mathematical reason the course works.
 - `course-synthesis.html` — dependency spine and proof-family synthesis.
 - `concept-dependencies.html` — prerequisite paths from early concepts to later theorem-level ideas.
@@ -61,7 +61,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - exact expected video and lecture counts;
 - caption coverage and missing-caption caveat;
 - required page existence;
-- lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, theme, subtheme, family, and math-why depth floors;
+- lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, theme, subtheme, subtheme-routine, family, and math-why depth floors;
 - at least three concrete examples per lecture;
 - lecture-spine structure for all 15 lectures;
 - referential integrity across concepts, themes, subthemes, and families;
@@ -73,6 +73,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - slow-walkthrough sections on every lecture page;
 - caption-nuance sections on every lecture page and source-audit cards for every lecture;
 - work-from-scratch sections on every concept page;
+- reading-routine sections on every subtheme page;
 - reader checks structure;
 - broken local links;
 - banned vague phrases in generated HTML.
@@ -91,6 +92,7 @@ As of the current generated audit:
 - 1,781 concept workup words.
 - 1,278 theme essay words.
 - 1,500 subtheme essay words.
+- 858 subtheme routine words.
 - 824 method-family essay words.
 - 4 playground widgets.
 - 8 synthesis sections.

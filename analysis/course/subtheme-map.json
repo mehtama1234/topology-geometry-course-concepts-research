@@ -12,7 +12,13 @@
       "Allowed moves are the rulebook behind every deformation argument in the course. Before deciding that two pictures are equivalent, the reader has to know what is permitted: stretching, sliding, bending, cutting, gluing, crossing through, moving endpoints, or preserving boundaries. Changing the rulebook changes the problem. A knot is only knotted because cutting is forbidden; a disk path puzzle is only obstructed because paths may not cross.",
       "This subtheme is the first thing to inspect when a proof feels suspiciously easy. If the simplification used an illegal move, the argument may have solved a different problem. Tokieda's pictures work because they make the allowed motion visible enough for the reader to audit.",
       "The plain rule is: sameness is always sameness under some allowed changes. A curve may be the same up to bending, a surface may be the same up to deformation, and a vector field may be the same after cleaning isolated defects. Each statement gets its meaning from the permitted moves."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look first for the rulebook of the problem: which objects may move, which points or boundaries stay fixed, and which changes are forbidden.",
+      "ask": "Ask whether the proposed simplification uses only those allowed moves, or whether it quietly changes the original question.",
+      "use": "Use this routine before every deformation, surgery, knot, path, or vector-field cleanup argument. The allowed moves decide what sameness means.",
+      "mistake": "The mistake is accepting a cleaner picture before checking the motion that produced it. A clean drawing reached illegally is not evidence."
+    }
   },
   {
     "id": "invariant-receipts",
@@ -27,7 +33,13 @@
       "An invariant is a receipt for a journey through allowed changes. If a surface is deformed, a path is redrawn, or a vector field is cleaned up, the invariant records what survived. The receipt may be one-sidedness, an alternating cell count, a signed intersection number, or a total index. Its job is not to remember everything; its job is to remember the fact the proof needs.",
       "This is why invariants make deformation rigorous. Without a receipt, a transformed picture may only feel similar to the original. With a receipt, the reader can say exactly what was preserved and use that preserved fact to prove impossibility or forced existence.",
       "The course uses receipts in both directions. Matching receipts can justify carrying an answer from an easier picture back to a harder one. Different receipts can prove that no legal motion connects two situations. In both cases, the invariant turns visual change into accountable reasoning."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for the piece of evidence the argument carries through change: a count, side behavior, parity, signed total, or index sum.",
+      "ask": "Ask why that evidence survives the exact moves allowed in the problem, not merely why it looks stable in one drawing.",
+      "use": "Use the invariant as a receipt. If two situations have different receipts, no legal journey connects them; if the receipt is forced, an outcome may be unavoidable.",
+      "mistake": "The mistake is asking an invariant to remember everything. A good receipt may be partial and still strong enough to rule something out."
+    }
   },
   {
     "id": "holes-and-boundaries",
@@ -42,7 +54,13 @@
       "Holes and boundaries are route constraints. A hole is missing room, a blocked filling, or a place a loop can remember going around. A boundary is where the surface stops, and that stopping changes what can be glued, counted, or forced. These are not decorative marks in a drawing; they determine what paths and fields can do.",
       "The course uses this subtheme from Mobius-strip boundaries to Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become walls. When a proof depends on a surface's edge or missing region, this subtheme is doing the work.",
       "A beginner should treat holes and boundaries as instructions for motion. A loop may fail to shrink because a hole blocks the filling. A fixed-point theorem may need the boundary because the boundary traps possible escape. A configuration space may gain a hole because a physical collision is forbidden."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for missing regions, blocked fillings, actual edges, and places where a path or field must respect a stopping rule.",
+      "ask": "Ask whether a loop can be filled, whether a boundary adds a term, and whether removing or adding an edge changes the theorem's contract.",
+      "use": "Use holes and boundaries as route information. They explain why loops may not shrink, why escape may be blocked, and why counts may need edge terms.",
+      "mistake": "The mistake is treating holes and boundaries as visual decoration. They change which motions exist and which accounting rules are legal."
+    }
   },
   {
     "id": "curves-loops-knots",
@@ -57,7 +75,13 @@
       "Curves and loops are the course's simplest carriers of route memory. A loop can stretch without forgetting that it went around a hole. A knot can bend without becoming untied. A linked pair can move without separating. The exact drawing changes, but the route relation can remain locked by the allowed moves.",
       "This subtheme prepares the reader for more abstract paths later. A path in a configuration space is still a route, even if the space represents possible states rather than physical positions. The same question remains: what can this route become without breaking the rules?",
       "The detail is that the route belongs to a surrounding space. A loop in a plane, a loop on a torus, and a loop in a configuration space can have different freedoms. The course keeps asking whether the route can be pulled tight, moved away, or separated without crossing something forbidden."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for route memory: whether a path closes, goes around something, links another path, or carries over-under crossing data.",
+      "ask": "Ask what the surrounding space permits. Can the loop shrink, can strands pass through, and does the drawing record the needed spatial information?",
+      "use": "Use this routine whenever the course turns a drawn curve into evidence about route, linking, winding, or impossible untangling.",
+      "mistake": "The mistake is judging by visual tangledness. The protected question is what legal motion can remove, not how complicated the drawing appears."
+    }
   },
   {
     "id": "turning-and-curvature",
@@ -72,7 +96,13 @@
       "Turning and curvature begin as local geometric facts: an arrow turns, a curve bends, a surface curves near a point. The course cares about them because totals can become global evidence. Total turning, total curvature, and total index all express the idea that many small local changes may be forced to add up to a whole-shape constraint.",
       "This subtheme connects geometry to topology without erasing either side. The local measurement matters because its sum is not arbitrary. That is the same habit behind Gauss-Bonnet-style reasoning and vector-field index.",
       "The important mathematical move is summing local behavior only after knowing what the sum means. Turning around one defect gives an index. Curvature over a surface gives a total only after boundary and corner effects are handled. The local numbers matter because the whole object controls their combined account."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for local changes of direction: a curve turning, a surface bending, or arrows rotating around a defect.",
+      "ask": "Ask whether the local turning is being summed over the right object and whether boundary or corner terms belong in the account.",
+      "use": "Use turning and curvature to connect local measurements to whole-shape restrictions, especially in total-turning, index, and Gauss-Bonnet-style arguments.",
+      "mistake": "The mistake is stopping at one local bend. The course usually cares about a total whose value the whole object can constrain."
+    }
   },
   {
     "id": "signs-and-cancellation",
@@ -87,7 +117,13 @@
       "Signs are the course's way of making fake changes disappear. If two intersections are born together with opposite signs, the visible picture changes but the signed total does not. If defects can split into opposite contributions, the total can survive even while the local pattern changes. Cancellation is designed into the count.",
       "This subtheme is the bridge from parity to intersection number to index. It teaches that the right count is often not the raw count. The right count is the one whose allowed changes cancel cleanly. The sign is the extra memory that tells a real obstruction apart from a pair that appeared only because the picture passed through a temporary accident.",
       "Signs require a rule for direction. Without orientation or a local convention that can be checked, plus and minus would be arbitrary marks. The course uses signs only when they record how objects meet, turn, or pass through the surrounding space."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for pairs of events that can appear or disappear together: crossings, intersections, or defects with opposite contributions.",
+      "ask": "Ask where plus and minus signs come from, and whether legal changes really create canceling pairs rather than arbitrary arithmetic.",
+      "use": "Use signs to make a fragile raw count into stable evidence. Cancellation is the mechanism that lets the total survive redrawings.",
+      "mistake": "The mistake is assigning signs without a direction rule. Without a reason for plus and minus, cancellation has no mathematical force."
+    }
   },
   {
     "id": "surfaces-and-orientation",
@@ -102,7 +138,13 @@
       "Surfaces are the stage, and orientation is one of the rules that lets signs mean anything. A surface may have two sides, one side, a boundary, handles, or crosscaps. Locally these differences can be hidden. Globally they decide whether consistent direction, signed intersections, and vector-field bookkeeping are possible.",
       "This subtheme is why the Mobius strip is not a toy example. It shows that side information can fail globally. Later, whenever plus and minus signs appear, the reader should ask whether the surface supports those signs consistently. Orientation is the promise that a local choice can be carried around the whole object without contradiction.",
       "Surface classification uses the same concern in a broader way. Handles, crosscaps, and boundaries are not names attached after drawing; they are global features that decide what loops, cuts, fields, and counts can do. Orientation is one of the clearest tests of that global structure."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for the whole surface carrying the argument: its boundary, handles, side behavior, and whether a consistent direction can travel everywhere.",
+      "ask": "Ask whether local choices glue together globally. Can a side or orientation be carried around a full loop without contradiction?",
+      "use": "Use this routine before trusting signed intersections, vector-field indices, surface classification, or any argument that depends on plus and minus across a surface.",
+      "mistake": "The mistake is checking only a small patch. Every tiny neighborhood may look ordinary while the completed surface reverses a side or blocks a global choice."
+    }
   },
   {
     "id": "mechanisms-and-locks",
@@ -117,7 +159,13 @@
       "Mechanisms and locks describe the course's move from shape to behavior. A physical system may have many moving parts, but its possible states form a shape. If that shape has a wall, hole, disconnected region, or forced passage, the mechanism inherits the constraint. Topology can then say something before the detailed motion is solved.",
       "This subtheme appears in center-of-gravity reasoning, fixed points, configuration spaces, and late applications. It is the practical side of the course: understand the shape of possibility, and you can understand some behavior. The point is not to ignore physical details, but to choose a model where the allowed states reveal the obstruction clearly.",
       "The first-principles step is to replace time by possibility. Instead of asking where the system goes second by second, ask which states are possible at all and which paths connect them. If the state space blocks a path, the physical mechanism cannot perform the motion represented by that path."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for the space of possible states behind the physical setup: positions, angles, forbidden collisions, walls, and connected regions.",
+      "ask": "Ask which physical motion becomes a path or rule in that state space, and what topological feature blocks or forces behavior.",
+      "use": "Use this routine when the course moves from paper or surface examples into balance, fixed points, configuration spaces, and dynamics.",
+      "mistake": "The mistake is applying a theorem before the model is honest. A wrong state space gives a conclusion about the wrong physical problem."
+    }
   },
   {
     "id": "singular-moments",
@@ -132,7 +180,13 @@
       "A singular moment is an exceptional event between ordinary pictures. Two intersections are born, two cancel, a tangency appears, or a vector-field defect stops being isolated. The course does not ignore these moments. It uses them to understand how stable pictures change without changing the protected total.",
       "This subtheme keeps generic position honest. The ordinary case is studied first, but singular moments explain transitions between ordinary cases. That is why pair creation and cancellation are not nuisances; they reveal why the invariant survives. The exception is studied just long enough to prove that the count changes in a controlled way.",
       "The useful question is not whether singular moments occur. They often do during motion. The useful question is what they are allowed to change. If the event creates opposite signs or preserves parity, it cannot destroy the invariant the proof is using."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for special instants: tangencies, pair births, pair cancellations, triple meetings, or defects that stop being isolated.",
+      "ask": "Ask what ordinary pictures exist just before and just after the special instant, and what protected count changes or stays fixed.",
+      "use": "Use singular moments as transition evidence. They explain why ordinary cases can change without destroying a protected total.",
+      "mistake": "The mistake is either ignoring the special instant or treating it as the whole proof. Its role is to explain the passage between ordinary cases."
+    }
   },
   {
     "id": "models-not-labels",
@@ -147,6 +201,12 @@
       "Models-not-labels is the companion's guardrail against glossary thinking. A term matters only when it does work. Manifold means local space with gluing behavior. Deformation means legal motion. Index means signed turning around a defect. If a name does not help answer a question, the reader has not yet learned the idea.",
       "This subtheme is also a writing standard. The pages should not ask the reader to admire terminology. They should show what problem the concept solves, what detail makes it valid, and how it connects to the course's proof habits.",
       "The course is especially vulnerable to empty naming because topology words can sound abstract before their purpose is clear. The companion should always translate a name back into an action: build a space, move a picture, count a protected fact, compare two representations, or prove that a behavior is forced."
-    ]
+    ],
+    "routine": {
+      "look_for": "Look for the work a term performs: what object it names, what move it permits, what count it protects, or what conclusion it supports.",
+      "ask": "Ask whether the name has been translated into an everyday action before it is used in an argument.",
+      "use": "Use this routine whenever a page introduces a formal word. The word earns its place only by helping solve the problem.",
+      "mistake": "The mistake is collecting labels while missing the model. Knowing a term's name is not the same as knowing what it lets the proof do."
+    }
   }
 ]

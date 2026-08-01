@@ -87,6 +87,10 @@ def main():
         subtheme_essay_words = sum(len(words(p)) for p in subtheme.get("essay") or [])
         if subtheme_essay_words < 130:
             fail(f"subtheme {subtheme['id']} essay too thin")
+        routine = subtheme.get("routine") or {}
+        for field in ["look_for", "ask", "use", "mistake"]:
+            if len(words(routine.get(field))) < 12:
+                fail(f"subtheme {subtheme['id']} routine {field} too thin")
 
     for family in data["families"]:
         depth = family.get("depth") or {}
@@ -322,8 +326,13 @@ def main():
         if f"theme-{theme['id']}.html" not in names:
             fail(f"missing theme page {theme['id']}")
     for subtheme in data["subthemes"]:
-        if f"subtheme-{subtheme['id']}.html" not in names:
+        subtheme_name = f"subtheme-{subtheme['id']}.html"
+        if subtheme_name not in names:
             fail(f"missing subtheme page {subtheme['id']}")
+        subtheme_html = (SITE / subtheme_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:"]:
+            if phrase not in subtheme_html:
+                fail(f"subtheme page missing routine phrase {phrase}: {subtheme_name}")
     for family in data["families"]:
         if f"family-{family['id']}.html" not in names:
             fail(f"missing family page {family['id']}")

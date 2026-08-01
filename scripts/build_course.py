@@ -264,6 +264,70 @@ SUBTHEME_ESSAYS = {
 }
 
 
+SUBTHEME_ROUTINES = {
+    "allowed-moves": {
+        "look_for": "Look first for the rulebook of the problem: which objects may move, which points or boundaries stay fixed, and which changes are forbidden.",
+        "ask": "Ask whether the proposed simplification uses only those allowed moves, or whether it quietly changes the original question.",
+        "use": "Use this routine before every deformation, surgery, knot, path, or vector-field cleanup argument. The allowed moves decide what sameness means.",
+        "mistake": "The mistake is accepting a cleaner picture before checking the motion that produced it. A clean drawing reached illegally is not evidence.",
+    },
+    "invariant-receipts": {
+        "look_for": "Look for the piece of evidence the argument carries through change: a count, side behavior, parity, signed total, or index sum.",
+        "ask": "Ask why that evidence survives the exact moves allowed in the problem, not merely why it looks stable in one drawing.",
+        "use": "Use the invariant as a receipt. If two situations have different receipts, no legal journey connects them; if the receipt is forced, an outcome may be unavoidable.",
+        "mistake": "The mistake is asking an invariant to remember everything. A good receipt may be partial and still strong enough to rule something out.",
+    },
+    "holes-and-boundaries": {
+        "look_for": "Look for missing regions, blocked fillings, actual edges, and places where a path or field must respect a stopping rule.",
+        "ask": "Ask whether a loop can be filled, whether a boundary adds a term, and whether removing or adding an edge changes the theorem's contract.",
+        "use": "Use holes and boundaries as route information. They explain why loops may not shrink, why escape may be blocked, and why counts may need edge terms.",
+        "mistake": "The mistake is treating holes and boundaries as visual decoration. They change which motions exist and which accounting rules are legal.",
+    },
+    "curves-loops-knots": {
+        "look_for": "Look for route memory: whether a path closes, goes around something, links another path, or carries over-under crossing data.",
+        "ask": "Ask what the surrounding space permits. Can the loop shrink, can strands pass through, and does the drawing record the needed spatial information?",
+        "use": "Use this routine whenever the course turns a drawn curve into evidence about route, linking, winding, or impossible untangling.",
+        "mistake": "The mistake is judging by visual tangledness. The protected question is what legal motion can remove, not how complicated the drawing appears.",
+    },
+    "turning-and-curvature": {
+        "look_for": "Look for local changes of direction: a curve turning, a surface bending, or arrows rotating around a defect.",
+        "ask": "Ask whether the local turning is being summed over the right object and whether boundary or corner terms belong in the account.",
+        "use": "Use turning and curvature to connect local measurements to whole-shape restrictions, especially in total-turning, index, and Gauss-Bonnet-style arguments.",
+        "mistake": "The mistake is stopping at one local bend. The course usually cares about a total whose value the whole object can constrain.",
+    },
+    "signs-and-cancellation": {
+        "look_for": "Look for pairs of events that can appear or disappear together: crossings, intersections, or defects with opposite contributions.",
+        "ask": "Ask where plus and minus signs come from, and whether legal changes really create canceling pairs rather than arbitrary arithmetic.",
+        "use": "Use signs to make a fragile raw count into stable evidence. Cancellation is the mechanism that lets the total survive redrawings.",
+        "mistake": "The mistake is assigning signs without a direction rule. Without a reason for plus and minus, cancellation has no mathematical force.",
+    },
+    "surfaces-and-orientation": {
+        "look_for": "Look for the whole surface carrying the argument: its boundary, handles, side behavior, and whether a consistent direction can travel everywhere.",
+        "ask": "Ask whether local choices glue together globally. Can a side or orientation be carried around a full loop without contradiction?",
+        "use": "Use this routine before trusting signed intersections, vector-field indices, surface classification, or any argument that depends on plus and minus across a surface.",
+        "mistake": "The mistake is checking only a small patch. Every tiny neighborhood may look ordinary while the completed surface reverses a side or blocks a global choice.",
+    },
+    "mechanisms-and-locks": {
+        "look_for": "Look for the space of possible states behind the physical setup: positions, angles, forbidden collisions, walls, and connected regions.",
+        "ask": "Ask which physical motion becomes a path or rule in that state space, and what topological feature blocks or forces behavior.",
+        "use": "Use this routine when the course moves from paper or surface examples into balance, fixed points, configuration spaces, and dynamics.",
+        "mistake": "The mistake is applying a theorem before the model is honest. A wrong state space gives a conclusion about the wrong physical problem.",
+    },
+    "singular-moments": {
+        "look_for": "Look for special instants: tangencies, pair births, pair cancellations, triple meetings, or defects that stop being isolated.",
+        "ask": "Ask what ordinary pictures exist just before and just after the special instant, and what protected count changes or stays fixed.",
+        "use": "Use singular moments as transition evidence. They explain why ordinary cases can change without destroying a protected total.",
+        "mistake": "The mistake is either ignoring the special instant or treating it as the whole proof. Its role is to explain the passage between ordinary cases.",
+    },
+    "models-not-labels": {
+        "look_for": "Look for the work a term performs: what object it names, what move it permits, what count it protects, or what conclusion it supports.",
+        "ask": "Ask whether the name has been translated into an everyday action before it is used in an argument.",
+        "use": "Use this routine whenever a page introduces a formal word. The word earns its place only by helping solve the problem.",
+        "mistake": "The mistake is collecting labels while missing the model. Knowing a term's name is not the same as knowing what it lets the proof do.",
+    },
+}
+
+
 CONCEPTS = [
     {
         "id": "generic-position",
@@ -1944,6 +2008,7 @@ def build_quality_audit(data):
     concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
     subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
+    subtheme_routine_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", s["routine"][field])) for field in ["look_for", "ask", "use", "mistake"]) for s in data["subthemes"])
     family_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in f["essay"]) for f in data["families"])
     requirements = [
         {
@@ -2035,6 +2100,7 @@ def build_quality_audit(data):
             "concept_workup_words": concept_workup_words,
             "theme_essay_words": theme_essay_words,
             "subtheme_essay_words": subtheme_essay_words,
+            "subtheme_routine_words": subtheme_routine_words,
             "family_essay_words": family_essay_words,
             "playground_widgets": 4,
             "synthesis_sections": 8,
@@ -2419,7 +2485,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     (SITE / "subthemes.html").write_text(page("Subthemes", body, "Subthemes"), encoding="utf-8")
     for s in data["subthemes"]:
         related = [c for c in data["concepts"] if s["id"] in c["subthemes"]]
-        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class="lecture"><h2>Subtheme Essay</h2>{paragraph_block(s['essay'])}</section><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        routine = s["routine"]
+        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class="lecture"><h2>Subtheme Essay</h2>{paragraph_block(s['essay'])}</section><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><section class="lecture"><h2>Reading Routine</h2><p><b>Look for:</b> {esc(routine['look_for'])}</p><p><b>Ask:</b> {esc(routine['ask'])}</p><p><b>Use:</b> {esc(routine['use'])}</p><p><b>Mistake:</b> {esc(routine['mistake'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("subtheme", s["id"])).write_text(page(s["title"], body, "Subthemes"), encoding="utf-8")
 
     body = "<h1>Method Families</h1><p class='lead'>Method families explain how the course turns pictures into reasons. They are the reusable proof moves beneath the lectures.</p><div class='grid two'>" + "".join(card(f["title"], f["depth"]["human_problem"], slug_page("family", f["id"]), f["purpose"]) for f in data["families"]) + "</div>"
@@ -2437,7 +2504,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -2517,7 +2584,7 @@ def main():
         themes.append(enriched)
     subthemes = []
     for i, t, p in SUBTHEMES:
-        subthemes.append({"id": i, "title": t, "plain": p, "depth": SUBTHEME_DEPTH[i], "essay": SUBTHEME_ESSAYS[i]})
+        subthemes.append({"id": i, "title": t, "plain": p, "depth": SUBTHEME_DEPTH[i], "essay": SUBTHEME_ESSAYS[i], "routine": SUBTHEME_ROUTINES[i]})
     concepts = []
     for concept in CONCEPTS:
         enriched = dict(concept)
@@ -2611,6 +2678,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {metrics['concept_workup_words']} concept workup words across object, operation, protected-fact, and failure-test fields
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
 - 10 expanded subtheme pages with essay, first-principles, and course-role sections
+- {metrics['subtheme_routine_words']} subtheme routine words across look-for, ask, use, and mistake fields
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
@@ -2619,7 +2687,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, and every method-family essay to clear 130 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
