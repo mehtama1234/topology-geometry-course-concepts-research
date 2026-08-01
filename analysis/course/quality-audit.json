@@ -13,7 +13,7 @@
     },
     {
       "requirement": "Hand-written lecture depth",
-      "evidence": "15 lecture explainers with full essay sections, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+      "evidence": "15 lecture explainers with full essay sections, slow walkthroughs, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
       "status": "met"
     },
     {
@@ -82,6 +82,7 @@
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
     "lecture_essay_words": 3855,
+    "lecture_walkthrough_words": 1986,
     "lecture_source_lens_words": 1090,
     "concept_essay_words": 4830,
     "theme_essay_words": 1278,

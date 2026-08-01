@@ -29,7 +29,7 @@ This repo is the source and generated static site for a first-principles compani
 
 - `index.html` — entry point and source state.
 - `videos.html` — all individual YouTube links.
-- `lectures.html`, `lecture-*.html` — lecture explainers.
+- `lectures.html`, `lecture-*.html` — lecture explainers with slow walkthroughs.
 - `lecture-spine.html` — one reasoning path through all 15 lectures from object to later use.
 - `concepts.html`, `concept-*.html` — concept atlas and reverse lecture appearances.
 - `themes.html`, `subthemes.html`, `families.html` — recurring ideas and proof families.
@@ -61,7 +61,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - exact expected video and lecture counts;
 - caption coverage and missing-caption caveat;
 - required page existence;
-- lecture, source-lens, concept, theme, subtheme, family, and math-why depth floors;
+- lecture, lecture-walkthrough, source-lens, concept, theme, subtheme, family, and math-why depth floors;
 - at least three concrete examples per lecture;
 - lecture-spine structure for all 15 lectures;
 - referential integrity across concepts, themes, subthemes, and families;
@@ -70,6 +70,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - concept dependency structure;
 - proof-move structure and length;
 - source-lens sections on every lecture page;
+- slow-walkthrough sections on every lecture page;
 - reader checks structure;
 - broken local links;
 - banned vague phrases in generated HTML.
@@ -81,6 +82,7 @@ As of the current generated audit:
 - 45 lecture examples.
 - 15 lecture-spine entries.
 - 3,855 lecture essay words.
+- 1,986 lecture walkthrough words.
 - 1,090 lecture source-lens words.
 - 4,830 concept essay words.
 - 1,278 theme essay words.

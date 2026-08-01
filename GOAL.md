@@ -44,6 +44,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 8 concept dependency paths.
 - 5 proof-move recipes.
 - 45 lecture-grounded examples.
+- 1,986 lecture walkthrough words.
 - 1,090 lecture source-lens words.
 - Four playground widgets.
 - Course synthesis and reader-checks pages.

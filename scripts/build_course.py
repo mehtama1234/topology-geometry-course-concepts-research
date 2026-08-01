@@ -1369,6 +1369,85 @@ LECTURE_SPINE = [
 ]
 
 
+LECTURE_WALKTHROUGHS = {
+    1: {
+        "start_here": "Start with the plain act of making the strip. A rectangle by itself has two long sides and two short ends. The surprise enters when the ends are glued after one half-turn. That gluing instruction means a traveler who follows the surface all the way around comes back with the local sense of side reversed.",
+        "payoff": "The mathematical payoff is the difference between small evidence and whole-object evidence. Every tiny patch of the strip looks like an ordinary two-sided strip, so local inspection cannot settle the question. The full trip around the object is the test, and that test reveals a global rule.",
+        "reader_check": "Do not remember this lecture as only a surprising paper example. Ask what rule made the object, what local observation fails to detect, and what full journey reveals. If those three answers are clear, the Mobius strip becomes the first model for later orientation and vector-field obstructions.",
+    },
+    2: {
+        "start_here": "Start with curves in a disk and boundary points that are not free to wander. The curves may look messy, but the proof does not care about their exact wiggles. It cares about whether the curves can be redrawn under legal motion while the endpoints and no-crossing rule stay fixed.",
+        "payoff": "The mathematical payoff is that a picture can be simplified without losing its force. Deformation becomes valid only because the question is protected during the motion. This is the first time the course turns a visual cleanup into a proof rather than a preference for a neater drawing.",
+        "reader_check": "Before accepting any deformation argument, ask what stayed fixed. Were endpoints preserved? Were forbidden crossings avoided? Was a boundary condition quietly changed? If the answer is not explicit, the drawing may have changed the problem instead of solving it.",
+    },
+    3: {
+        "start_here": "Start by treating spaces as things that can be built from instructions. A product says two choices vary together. A quotient says different-looking points are declared the same. Surgery says a controlled piece is removed and another controlled piece is attached along a stated boundary rule.",
+        "payoff": "The mathematical payoff is honest modeling. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they are construction rules that decide routes, boundaries, holes, and local neighborhoods.",
+        "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction is vague, any theorem applied to that space is standing on weak ground.",
+    },
+    4: {
+        "start_here": "Start with a square on paper, then stop treating the ink as the finished object. Edge labels are instructions for travel. If the left edge is glued to the right edge, a path leaving one side re-enters from the other. If an edge is reversed, direction changes during the return.",
+        "payoff": "The mathematical payoff is quotient thinking in everyday form. The same square drawing can describe different spaces because the identification rule, not the visual outline, decides the object. This prepares the reader to see maps, surfaces, and state spaces as rule-built objects.",
+        "reader_check": "Ask whether an apparent boundary is really a boundary in the finished space. Ask where a traveler goes after crossing a labeled edge. Ask whether direction is preserved. Those questions keep the drawing from being mistaken for the mathematical object.",
+    },
+    5: {
+        "start_here": "Start with the problem of recognizing a surface after it has been bent, stretched, cut, and reassembled under legal rules. The visual drawing may change dramatically. Classification asks which durable features remain: boundary components, handles, crosscaps, and whether a consistent side choice survives everywhere.",
+        "payoff": "The mathematical payoff is that surfaces can be sorted by what survives simplification, not by how they happen to be drawn. This gives later counts a stage. Euler characteristic, orientation, and vector-field index matter because they belong to the surface, not to one picture of it.",
+        "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface is useful only after the preserved features have been identified.",
+    },
+    6: {
+        "start_here": "Start with the everyday idea of room. Two objects may avoid each other if the surrounding space gives them enough directions to move. In cramped settings, meeting may be forced. The lecture cleans the objects into ordinary position so accidental contacts do not obscure the real room-counting question.",
+        "payoff": "The mathematical payoff is preparation for intersection theory. A meeting should not be counted until the picture is clean enough to make meetings separate and inspectable. Once that ordinary position is reached, dimension and placement can say whether intersections are accidental, avoidable, or evidence-bearing.",
+        "reader_check": "Ask whether the meeting survives after tiny legal motion. If it disappears because the original drawing was too special, it was probably an accident. If clean meetings remain under the allowed setup, the course can begin assigning signs and using them as evidence.",
+    },
+    7: {
+        "start_here": "Start with a physical balance condition that changes continuously. The point is not to compute the exact balance location first. The point is to notice that a condition moving from one side of a requirement to another cannot jump over the special state if the change is continuous.",
+        "payoff": "The mathematical payoff is forced existence. The course begins turning demonstrations into statements of the form: some special state must occur even if we cannot name it directly. That habit leads to fixed points, equilibria, and state-space arguments where shape blocks total avoidance.",
+        "reader_check": "Ask what is changing continuously and what event it cannot skip. If the motion could jump, the existence claim may fail. If the setup stays continuous and the endpoints force opposite behavior, the special state is not guessed; it is forced.",
+    },
+    8: {
+        "start_here": "Start with a weakness in raw counting. If two curves move, the visible number of crossings can change. A pair can appear or disappear. The lecture repairs the count by assigning signs to clean intersections, so harmless pair changes contribute plus one and minus one together.",
+        "payoff": "The mathematical payoff is protected arithmetic. The signed total is not just a number read from one drawing; it is a number designed to survive legal deformation. This is why orientation and pair creation matter. They explain why the count deserves trust.",
+        "reader_check": "Ask where the signs came from and what happens when a pair is born. If plus and minus are arbitrary labels, the argument has no force. If the signs come from orientation and pairs cancel, the count can carry proof evidence.",
+    },
+    9: {
+        "start_here": "Start with a rule that sends each input somewhere. The equation for a fixed point can look invisible because it lives inside the rule. The lecture makes it visible by drawing the graph of the rule and comparing it with the diagonal, the set of input-output pairs where both entries agree.",
+        "payoff": "The mathematical payoff is translation. A fixed point becomes an intersection problem, so earlier ideas about clean meetings and protected counts become relevant. The source caveat matters here because one middle caption is missing, but the graph-diagonal conversion remains the reliable spine.",
+        "reader_check": "Ask what point in the graph means and what point on the diagonal means. Their meeting is not a loose picture for self-agreement; it is exactly the statement that the rule sends some input back to itself.",
+    },
+    10: {
+        "start_here": "Start with a filled disk or ball and a continuous rule that sends every point back into that same filled object. Brouwer says at least one point must land where it began. The theorem is not trying to find the point; it rules out the possibility that every point escapes itself.",
+        "payoff": "The mathematical payoff is existence from shape. The filled interior, boundary, and continuity of the rule work together. If any of those pieces is changed, the conclusion may fail. This makes the theorem a disciplined statement, not a slogan about all motion.",
+        "reader_check": "Ask whether the space is the right closed filled shape, whether the rule stays inside it, and whether nearby points move to nearby outputs. If those conditions are not present, invoking Brouwer may be using a theorem outside its contract.",
+    },
+    11: {
+        "start_here": "Start with arrows rather than paths. A vector field tells each point which way motion wants to go. Solving every path may be hard, but the places where the arrow vanishes are visible failures of motion. The nearby arrows then tell how that failure is shaped.",
+        "payoff": "The mathematical payoff is understanding motion through local defects. An equilibrium is not only a location where motion stops. It has surrounding behavior, and that behavior can be counted through turning. This opens a route from dynamics back to topology.",
+        "reader_check": "Ask what the nearby arrows do when you walk around the equilibrium. Do they turn once, turn the other way, or fail to give a clean isolated pattern? The index belongs to that surrounding behavior, not merely to the dot.",
+    },
+    12: {
+        "start_here": "Start by isolating the defects of a vector field. Each defect has nearby arrows circling it in some pattern, and that pattern receives a signed index. The lecture then asks what happens when all those local signed counts are added over the whole surface.",
+        "payoff": "The mathematical payoff is the move from local dynamics to global bookkeeping. Individual defects can move, split, or cancel under controlled changes, but the total signed index is not free. It is constrained by the surface that carries the arrows.",
+        "reader_check": "Ask whether the defects are isolated and whether the total, not one favorite defect, is being counted. If the argument focuses only on a single equilibrium, it has missed the whole-surface nature of the theorem being prepared.",
+    },
+    13: {
+        "start_here": "Start with Poincare-Hopf as a balance sheet. On one side are all the local indices of isolated vector-field defects. On the other side is Euler characteristic, a number belonging to the surface. The theorem says these two accounts must match.",
+        "payoff": "The mathematical payoff is that topology predicts something about motion before the differential equation is solved. A sphere demands a different total defect from a torus. The hairy-ball idea is a visible case, but the deeper point is the enforced equality between local failures and whole-surface shape.",
+        "reader_check": "Ask what surface carries the field and whether every defect has been included in the sum. Poincare-Hopf is not about admiring one dramatic singularity. It is about the total account forced by the complete surface.",
+    },
+    14: {
+        "start_here": "Start with an application by refusing to apply a theorem too early. First name the possible states of the system. Then say which states are forbidden, which boundaries matter, and what continuous rule or motion acts on that space. Only then does topology have a correct object to study.",
+        "payoff": "The mathematical payoff is disciplined transfer from pure examples to physical systems. Holes, barriers, fixed points, and index totals can constrain real behavior, but only when the model represents the real freedoms and exclusions. The modeling step is part of the proof.",
+        "reader_check": "Ask whether the state space includes all needed degrees of freedom and excludes only genuinely forbidden states. Also ask which physical conclusion the topological statement translates back into. A beautiful theorem applied to the wrong model gives a beautiful answer to the wrong question.",
+    },
+    15: {
+        "start_here": "Start by reading the final lecture as a map of habits, not a list of topics. The same pattern has appeared repeatedly: build the right object, specify legal motion, identify protected evidence, and use that evidence to force a conclusion that the original picture hid.",
+        "payoff": "The mathematical payoff is a portable way to think. Mobius strips, surface classification, intersections, fixed points, vector fields, and applications are different settings for the same discipline. Pictorial thinking is deep here because the pictures carry rules and preserved facts.",
+        "reader_check": "For any page in the companion, ask four questions: what object was made, what move was legal, what fact survived, and what conclusion became forced? If a page cannot answer those, it is not yet at the course's standard.",
+    },
+}
+
+
 CONCEPT_DEPENDENCIES = [
     {
         "stage": "From local patch evidence to whole-surface behavior",
@@ -1616,6 +1695,7 @@ def build_quality_audit(data):
     concept_max = max(len(c["appearances"]) for c in data["concepts"])
     lecture_examples = sum(len(l["deep"]["examples"]) for l in data["lectures"])
     lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
+    lecture_walkthrough_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["walkthrough"][field])) for field in ["start_here", "payoff", "reader_check"]) for l in data["lectures"])
     lecture_source_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["source_lens"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
@@ -1634,7 +1714,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written lecture depth",
-            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, slow walkthroughs, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
             "status": "met",
         },
         {
@@ -1704,6 +1784,7 @@ def build_quality_audit(data):
             "lecture_examples": lecture_examples,
             "lecture_spine_entries": len(data["lecture_spine"]),
             "lecture_essay_words": lecture_essay_words,
+            "lecture_walkthrough_words": lecture_walkthrough_words,
             "lecture_source_lens_words": lecture_source_lens_words,
             "concept_essay_words": concept_essay_words,
             "theme_essay_words": theme_essay_words,
@@ -2019,6 +2100,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         vids = " ".join(f'<a class="pill" href="{esc(v["youtube_url"])}">Part {v["part"]}</a>' for v in l["videos"])
         miss = " warn" if l["missing_caption_ids"] else ""
         href = f"lecture-{l['lecture']:02d}.html"
+        walk = l["deep"]["walkthrough"]
         lecture_html += f"""<section class="lecture{miss}"><h2>Lecture {l['lecture']:02d}: {esc(l['deep']['title'])}</h2><p>{esc(l['deep']['problem'])}</p><p>{esc(l['deep']['first_principles'])}</p><div>{vids}</div><p><a class="arrow" href="{href}">Open lecture explainer</a></p><p class="evidence">Transcript words: {l['transcript_words']}. Missing captions: {', '.join(l['missing_caption_ids']) or 'none'}.</p></section>"""
         lecture_body = f"""
 <h1>Lecture {l['lecture']:02d}: {esc(l['deep']['title'])}</h1>
@@ -2026,6 +2108,12 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Lecture Essay</h2>
   {paragraph_block(l['deep']['essay'])}
+</section>
+<section class="lecture">
+  <h2>Slow Walkthrough</h2>
+  <p><b>Start here:</b> {esc(walk['start_here'])}</p>
+  <p><b>Mathematical payoff:</b> {esc(walk['payoff'])}</p>
+  <p><b>Reader check:</b> {esc(walk['reader_check'])}</p>
 </section>
 <section class="panel">
   <h2>First Principles</h2>
@@ -2094,7 +2182,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -2141,6 +2229,7 @@ def main():
         deep["examples"] = LECTURE_EXAMPLES[number]
         deep["essay"] = LECTURE_ESSAYS[number]
         deep["source_lens"] = LECTURE_SOURCE_LENS[number]
+        deep["walkthrough"] = LECTURE_WALKTHROUGHS[number]
         lectures.append({
             "lecture": number,
             "videos": [v for v, _ in items],
@@ -2245,6 +2334,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 
 - 15 hand-authored lecture explainers from 35 videos
 - lecture-spine.html with {metrics['lecture_spine_entries']} lecture-by-lecture reasoning entries
+- {metrics['lecture_walkthrough_words']} slow-walkthrough words across lecture pages, explaining each lecture from object to payoff to reader check
 - {metrics['lecture_source_lens_words']} source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
@@ -2258,7 +2348,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage and missing-caption audit
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

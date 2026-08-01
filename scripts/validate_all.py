@@ -146,6 +146,10 @@ def main():
             fail(f"lecture {lecture['lecture']} needs source lens paragraphs")
         if sum(len(words(p)) for p in source_lens) < 60:
             fail(f"lecture {lecture['lecture']} source lens too thin")
+        walkthrough = deep.get("walkthrough") or {}
+        for field in ["start_here", "payoff", "reader_check"]:
+            if len(words(walkthrough.get(field))) < 35:
+                fail(f"lecture {lecture['lecture']} walkthrough {field} too thin")
         essay_words = sum(len(words(p)) for p in deep.get("essay") or [])
         if essay_words < 230:
             fail(f"lecture {lecture['lecture']} essay too thin")
@@ -285,6 +289,9 @@ def main():
         lecture_html = (SITE / lecture_name).read_text(encoding="utf-8", errors="ignore")
         if "Source Lens" not in lecture_html:
             fail(f"lecture page missing source lens: {lecture_name}")
+        for phrase in ["Slow Walkthrough", "Start here:", "Mathematical payoff:", "Reader check:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing walkthrough phrase {phrase}: {lecture_name}")
     for theme in data["themes"]:
         if f"theme-{theme['id']}.html" not in names:
             fail(f"missing theme page {theme['id']}")
