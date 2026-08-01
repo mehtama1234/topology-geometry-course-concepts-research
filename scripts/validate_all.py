@@ -76,7 +76,7 @@ def main():
         if len(depth.get("lectures") or []) < 4:
             fail(f"theme {theme['id']} needs lecture thread")
         theme_essay_words = sum(len(words(p)) for p in theme.get("essay") or [])
-        if theme_essay_words < 190:
+        if theme_essay_words < 300:
             fail(f"theme {theme['id']} essay too thin")
         lens = theme.get("lens") or {}
         for field in ["notices", "ignores", "changes_problem", "reader_test"]:

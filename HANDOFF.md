@@ -100,7 +100,7 @@ As of the current generated audit:
 - 7,741 concept essay words.
 - 1,781 concept workup words.
 - 1,641 concept anchor words.
-- 1,278 theme essay words.
+- 1,964 theme essay words.
 - 466 theme lens words.
 - 2,761 subtheme essay words.
 - 858 subtheme routine words.
