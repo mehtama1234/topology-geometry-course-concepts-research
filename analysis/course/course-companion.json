@@ -1,5 +1,5 @@
 {
-  "course_goal": "Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and familiar teaching cliches. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve.",
+  "course_goal": "Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and stock teaching phrases. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve.",
   "playlist": {
     "title": "Topology & Geometry by Dr Tadashi Tokieda",
     "url": "https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF5woAbrzJ",
@@ -8431,52 +8431,52 @@
       },
       {
         "requirement": "Lecture source-faithfulness audit",
-        "evidence": "Each lecture page now includes caption support, course-inference, and caveat fields that distinguish recovered-caption evidence from course-arc interpretation, with 2520 total source-faithfulness words.",
+        "evidence": "Each lecture separates caption support from course-arc inference and caveat. That keeps a reader from mistaking a useful interpretation for a direct transcript claim, with 2520 words devoted to source-faithfulness checks.",
         "status": "met"
       },
       {
         "requirement": "Lecture-to-source bridge",
-        "evidence": "The Lecture Source Bridges page gives 15 lecture-level bridges from concrete demonstrations to source families, with 4028 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+        "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 4028 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
         "status": "met"
       },
       {
         "requirement": "Lecture reader testing",
-        "evidence": "Each lecture page now includes a three-part reader test and answer guide for explaining the object, checking the allowed move, and protecting the conclusion, with 2734 reader-test words and 3536 answer-guide words.",
+        "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, and then compare against an answer guide. The 2734 reader-test words and 3536 answer-guide words turn lecture understanding into an auditable task.",
         "status": "met"
       },
       {
         "requirement": "Lecture reconstruction practice",
-        "evidence": "The Lecture Reconstruction Drills page gives 15 lecture drills that rebuild each lecture from starting example to object, legal move, surviving fact, later use, source family, self-check, common failure, and source check, with 6207 reconstruction words.",
+        "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 6207 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
         "status": "met"
       },
       {
         "requirement": "Source-nuance repair layer",
-        "evidence": "The Source Nuance Repairs page gives 15 lecture-specific repair notes with caption hazard, safe claim, repair move, do-not-claim guard, reviewer question, and concept links, with 1734 repair words.",
+        "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links. The 1734 repair words make source caution usable on actual lecture sentences.",
         "status": "met"
       },
       {
         "requirement": "Lecture-by-lecture reasoning spine",
-        "evidence": "The Lecture Spine page gives 15 lecture entries that name the object, plain question, legal move, surviving fact, and later use.",
+        "evidence": "15 lecture-spine entries name the object, plain question, legal move, surviving fact, and later use. The spine shows the course order as a chain of reasoning instead of a sequence of titles.",
         "status": "met"
       },
       {
         "requirement": "Hand-written concepts, themes, subthemes, and method families",
-        "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples and self-check answer guides; theme, subtheme, and method-family pages now include answer guides. These cross-course answer guides add 8047 words.",
+        "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 8047 words.",
         "status": "met"
       },
       {
         "requirement": "First-principles plain language",
-        "evidence": "Validation enforces minimum depth across all explanatory layers and bans common vague/cliche phrases; pages explain why ideas exist and what detail matters.",
+        "evidence": "Validation enforces minimum depth across all explanatory layers and blocks vague stock phrases; pages explain why ideas exist and what detail matters.",
         "status": "met"
       },
       {
         "requirement": "First-principles quality rubric",
-        "evidence": "The Quality Rubric page gives 6 enforced prose tests: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.",
+        "evidence": "6 prose tests enforce the writing standard: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement. The rubric tells a reviewer what to repair when a paragraph sounds smooth but does not explain the mathematics.",
         "status": "met"
       },
       {
         "requirement": "Rubric coverage by layer",
-        "evidence": "The Rubric Coverage page maps the six quality tests across 6 layers: lectures, concepts, themes, subthemes, method families, and source/quality pages.",
+        "evidence": "The six quality tests are mapped across 6 layers: lectures, concepts, themes, subthemes, method families, and source/quality pages. That map tells where a failure belongs instead of letting a weak paragraph hide inside site-wide complexity.",
         "status": "met"
       },
       {
@@ -8501,62 +8501,62 @@
       },
       {
         "requirement": "Concept dependency map",
-        "evidence": "The Concept Dependencies page gives 8 prerequisite paths that connect early ideas to later theorems and applications.",
+        "evidence": "8 dependency paths show why later theorems need earlier habits: legal motion, constructed spaces, orientation, protected counts, and state modeling. This prevents the course from reading as a flat list of topics.",
         "status": "met"
       },
       {
         "requirement": "First-principles transfer lab",
-        "evidence": "The Transfer Lab page gives 8 everyday transfer cases with situation, object, allowed move, protected fact, course bridge, wrong transfer, reader task, and concept links, with 1187 transfer words.",
+        "evidence": "8 transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 1187 transfer words test whether the mathematics has become a usable way to think.",
         "status": "met"
       },
       {
         "requirement": "Explanation repair clinic",
-        "evidence": "The Repair Clinic page gives 8 flawed explanations repaired into stronger first-principles versions, with 1155 repair-clinic words across flawed explanation, failure reason, repair move, strong version, reviewer test, and concept links.",
+        "evidence": "8 repair-clinic cases start with explanations that sound fluent but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1155 repair-clinic words make the no-filler standard concrete.",
         "status": "met"
       },
       {
         "requirement": "Oral exam readiness",
-        "evidence": "The Oral Exam page gives 7 final readiness prompts with prompt, strong answer, must-include field, common failure, follow-up question, and concept links, with 899 oral-exam words.",
+        "evidence": "7 oral-exam prompts ask for explanations that can survive follow-up questions. The prompt, strong-answer, must-include, common-failure, and follow-up fields use 899 words to test whether the reader can connect the course without hiding behind topic names.",
         "status": "met"
       },
       {
         "requirement": "Change ledger",
-        "evidence": "The Change Ledger page gives 10 change-versus-survival cases with object, legal change, protected fact, why it matters, false move, reader test, and concept links, with 1275 change-ledger words.",
+        "evidence": "10 change-ledger cases separate legal change from false motion. The 1275 words ask the reader to say what object changed, what fact survived, why the survival matters, and which tempting move would solve a different problem.",
         "status": "met"
       },
       {
         "requirement": "Assumption ledger",
-        "evidence": "The Assumption Ledger page gives 10 hidden-assumption cases with claim, assumption, why needed, plain check, break condition, course place, and concept links, with 1363 assumption-ledger words.",
+        "evidence": "10 assumption-ledger cases expose the quiet conditions behind course claims. The 1363 words name the assumption, why it is needed, how to check it plainly, and where the argument breaks if the condition is missing.",
         "status": "met"
       },
       {
         "requirement": "Counterexample gallery",
-        "evidence": "The Counterexample Gallery page gives 10 tempting false claims with missing condition, failure scene, why it breaks, repair, and concept links, with 1053 counterexample words.",
+        "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 1053 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
         "status": "met"
       },
       {
         "requirement": "Weak-claim repair layer",
-        "evidence": "The Weak Claim Repairs page gives 10 shallow course sentences rewritten into first-principles explanations with diagnosis, repair, detail check, where-to-use field, and concept links, with 1174 repair words.",
+        "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1174 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
         "status": "met"
       },
       {
         "requirement": "Proof-move recipes",
-        "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
+        "evidence": "5 proof-move recipes turn repeated course habits into steps: set up the object, perform the legal move, protect the evidence, and state the limited conclusion. Each recipe includes why it works, how it fails, and a course example.",
         "status": "met"
       },
       {
         "requirement": "Formula reader for mathematical statements",
-        "evidence": "The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.",
+        "evidence": "The Formula Reader turns seven central statements into plain readings: what object the formula speaks about, what operation produced the terms, why the quantity survives, what conclusion it can force, and what check prevents symbol-copying.",
         "status": "met"
       },
       {
         "requirement": "Theorem-use contracts",
-        "evidence": "The Theorem Use Contracts page gives 8 use contracts with required object, allowed move, protected evidence, conclusion, break condition, everyday test, and concept links, with 1368 theorem-contract words.",
+        "evidence": "8 theorem-use contracts state when a theorem is allowed to speak. The 1368 words require the object, allowed move, protected evidence, conclusion, break condition, and everyday test before a theorem name can carry weight.",
         "status": "met"
       },
       {
         "requirement": "Concept contrast reading",
-        "evidence": "The Concept Contrasts page gives 10 contrast pairs for ideas readers often blur, with 1355 words across confusion, left job, right job, bridge, failure test, reader question, and concept-link fields.",
+        "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 1355 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
         "status": "met"
       },
       {
@@ -8566,22 +8566,22 @@
       },
       {
         "requirement": "Plain-language term translation",
-        "evidence": "The Term Translator page rewrites 16 formal course words as everyday sentences, jobs in an argument, non-definition warnings, failure conditions, reader questions, and concept links, with 1850 total term-translation words.",
+        "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 1850 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
         "status": "met"
       },
       {
         "requirement": "References and paper trail",
-        "evidence": "The References page gives 7 course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
+        "evidence": "7 course, primary-paper, and standard-textbook sources are linked with lecture coverage, concept coverage, plain use notes, and source caveats. Lecture and concept pages carry their own source trails so references support claims without becoming unearned authority.",
         "status": "met"
       },
       {
         "requirement": "First-principles paper and source reading",
-        "evidence": "The Paper Source Reader page explains all 7 sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with 1410 source-reader words.",
+        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 1410 source-reader words keep paper reading tied to first-principles course questions.",
         "status": "met"
       },
       {
         "requirement": "Paper family ledger",
-        "evidence": "The Paper Family Ledger page gives 7 paper/source family contracts with problem, object, allowed reading, protected idea, course bridge, overclaim boundary, reader test, and concept links, with 1263 paper-family words.",
+        "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 1263 words make the paper layer usable without letting it drown the course explanation.",
         "status": "met"
       }
     ],

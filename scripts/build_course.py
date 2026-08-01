@@ -16,7 +16,7 @@ SITE = ROOT / "site"
 PLAYLIST_URL = "https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF5woAbrzJ"
 
 
-COURSE_GOAL = """Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and familiar teaching cliches. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve."""
+COURSE_GOAL = """Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and stock teaching phrases. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve."""
 
 
 QUALITY_RUBRIC = [
@@ -4653,52 +4653,52 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Lecture source-faithfulness audit",
-            "evidence": f"Each lecture page now includes caption support, course-inference, and caveat fields that distinguish recovered-caption evidence from course-arc interpretation, with {lecture_source_faithfulness_words} total source-faithfulness words.",
+            "evidence": f"Each lecture separates caption support from course-arc inference and caveat. That keeps a reader from mistaking a useful interpretation for a direct transcript claim, with {lecture_source_faithfulness_words} words devoted to source-faithfulness checks.",
             "status": "met",
         },
         {
             "requirement": "Lecture-to-source bridge",
-            "evidence": f"The Lecture Source Bridges page gives {len(data['lecture_source_bridges'])} lecture-level bridges from concrete demonstrations to source families, with {lecture_source_bridge_words} words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+            "evidence": f"{len(data['lecture_source_bridges'])} lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has {lecture_source_bridge_words} words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
             "status": "met",
         },
         {
             "requirement": "Lecture reader testing",
-            "evidence": f"Each lecture page now includes a three-part reader test and answer guide for explaining the object, checking the allowed move, and protecting the conclusion, with {lecture_reader_test_words} reader-test words and {lecture_answer_guide_words} answer-guide words.",
+            "evidence": f"Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, and then compare against an answer guide. The {lecture_reader_test_words} reader-test words and {lecture_answer_guide_words} answer-guide words turn lecture understanding into an auditable task.",
             "status": "met",
         },
         {
             "requirement": "Lecture reconstruction practice",
-            "evidence": f"The Lecture Reconstruction Drills page gives {len(data['lecture_reconstruction_drills'])} lecture drills that rebuild each lecture from starting example to object, legal move, surviving fact, later use, source family, self-check, common failure, and source check, with {lecture_reconstruction_words} reconstruction words.",
+            "evidence": f"{len(data['lecture_reconstruction_drills'])} reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The {lecture_reconstruction_words} reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
             "status": "met",
         },
         {
             "requirement": "Source-nuance repair layer",
-            "evidence": f"The Source Nuance Repairs page gives {len(data['source_nuance_repairs'])} lecture-specific repair notes with caption hazard, safe claim, repair move, do-not-claim guard, reviewer question, and concept links, with {source_nuance_repair_words} repair words.",
+            "evidence": f"{len(data['source_nuance_repairs'])} source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links. The {source_nuance_repair_words} repair words make source caution usable on actual lecture sentences.",
             "status": "met",
         },
         {
             "requirement": "Lecture-by-lecture reasoning spine",
-            "evidence": f"The Lecture Spine page gives {len(data['lecture_spine'])} lecture entries that name the object, plain question, legal move, surviving fact, and later use.",
+            "evidence": f"{len(data['lecture_spine'])} lecture-spine entries name the object, plain question, legal move, surviving fact, and later use. The spine shows the course order as a chain of reasoning instead of a sequence of titles.",
             "status": "met",
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples and self-check answer guides; theme, subtheme, and method-family pages now include answer guides. These cross-course answer guides add {theme_answer_guide_words + subtheme_answer_guide_words + family_answer_guide_words} words.",
+            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add {theme_answer_guide_words + subtheme_answer_guide_words + family_answer_guide_words} words.",
             "status": "met",
         },
         {
             "requirement": "First-principles plain language",
-            "evidence": "Validation enforces minimum depth across all explanatory layers and bans common vague/cliche phrases; pages explain why ideas exist and what detail matters.",
+            "evidence": "Validation enforces minimum depth across all explanatory layers and blocks vague stock phrases; pages explain why ideas exist and what detail matters.",
             "status": "met",
         },
         {
             "requirement": "First-principles quality rubric",
-            "evidence": f"The Quality Rubric page gives {len(data['quality_rubric'])} enforced prose tests: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.",
+            "evidence": f"{len(data['quality_rubric'])} prose tests enforce the writing standard: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement. The rubric tells a reviewer what to repair when a paragraph sounds smooth but does not explain the mathematics.",
             "status": "met",
         },
         {
             "requirement": "Rubric coverage by layer",
-            "evidence": f"The Rubric Coverage page maps the six quality tests across {len(data['rubric_coverage'])} layers: lectures, concepts, themes, subthemes, method families, and source/quality pages.",
+            "evidence": f"The six quality tests are mapped across {len(data['rubric_coverage'])} layers: lectures, concepts, themes, subthemes, method families, and source/quality pages. That map tells where a failure belongs instead of letting a weak paragraph hide inside site-wide complexity.",
             "status": "met",
         },
         {
@@ -4723,62 +4723,62 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Concept dependency map",
-            "evidence": f"The Concept Dependencies page gives {len(data['concept_dependencies'])} prerequisite paths that connect early ideas to later theorems and applications.",
+            "evidence": f"{len(data['concept_dependencies'])} dependency paths show why later theorems need earlier habits: legal motion, constructed spaces, orientation, protected counts, and state modeling. This prevents the course from reading as a flat list of topics.",
             "status": "met",
         },
         {
             "requirement": "First-principles transfer lab",
-            "evidence": f"The Transfer Lab page gives {len(data['transfer_lab_cases'])} everyday transfer cases with situation, object, allowed move, protected fact, course bridge, wrong transfer, reader task, and concept links, with {transfer_lab_words} transfer words.",
+            "evidence": f"{len(data['transfer_lab_cases'])} transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The {transfer_lab_words} transfer words test whether the mathematics has become a usable way to think.",
             "status": "met",
         },
         {
             "requirement": "Explanation repair clinic",
-            "evidence": f"The Repair Clinic page gives {len(data['repair_clinic_cases'])} flawed explanations repaired into stronger first-principles versions, with {repair_clinic_words} repair-clinic words across flawed explanation, failure reason, repair move, strong version, reviewer test, and concept links.",
+            "evidence": f"{len(data['repair_clinic_cases'])} repair-clinic cases start with explanations that sound fluent but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The {repair_clinic_words} repair-clinic words make the no-filler standard concrete.",
             "status": "met",
         },
         {
             "requirement": "Oral exam readiness",
-            "evidence": f"The Oral Exam page gives {len(data['oral_exam_prompts'])} final readiness prompts with prompt, strong answer, must-include field, common failure, follow-up question, and concept links, with {oral_exam_words} oral-exam words.",
+            "evidence": f"{len(data['oral_exam_prompts'])} oral-exam prompts ask for explanations that can survive follow-up questions. The prompt, strong-answer, must-include, common-failure, and follow-up fields use {oral_exam_words} words to test whether the reader can connect the course without hiding behind topic names.",
             "status": "met",
         },
         {
             "requirement": "Change ledger",
-            "evidence": f"The Change Ledger page gives {len(data['change_ledger_rows'])} change-versus-survival cases with object, legal change, protected fact, why it matters, false move, reader test, and concept links, with {change_ledger_words} change-ledger words.",
+            "evidence": f"{len(data['change_ledger_rows'])} change-ledger cases separate legal change from false motion. The {change_ledger_words} words ask the reader to say what object changed, what fact survived, why the survival matters, and which tempting move would solve a different problem.",
             "status": "met",
         },
         {
             "requirement": "Assumption ledger",
-            "evidence": f"The Assumption Ledger page gives {len(data['assumption_ledger_rows'])} hidden-assumption cases with claim, assumption, why needed, plain check, break condition, course place, and concept links, with {assumption_ledger_words} assumption-ledger words.",
+            "evidence": f"{len(data['assumption_ledger_rows'])} assumption-ledger cases expose the quiet conditions behind course claims. The {assumption_ledger_words} words name the assumption, why it is needed, how to check it plainly, and where the argument breaks if the condition is missing.",
             "status": "met",
         },
         {
             "requirement": "Counterexample gallery",
-            "evidence": f"The Counterexample Gallery page gives {len(data['counterexample_gallery_rows'])} tempting false claims with missing condition, failure scene, why it breaks, repair, and concept links, with {counterexample_gallery_words} counterexample words.",
+            "evidence": f"{len(data['counterexample_gallery_rows'])} counterexample cases show how a tempting sentence fails when a condition is missing. The {counterexample_gallery_words} words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
             "status": "met",
         },
         {
             "requirement": "Weak-claim repair layer",
-            "evidence": f"The Weak Claim Repairs page gives {len(data['weak_claim_repair_rows'])} shallow course sentences rewritten into first-principles explanations with diagnosis, repair, detail check, where-to-use field, and concept links, with {weak_claim_repair_words} repair words.",
+            "evidence": f"{len(data['weak_claim_repair_rows'])} weak course sentences are diagnosed and rewritten into first-principles versions. The {weak_claim_repair_words} repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
             "status": "met",
         },
         {
             "requirement": "Proof-move recipes",
-            "evidence": f"The Proof Moves page gives {len(data['proof_moves'])} reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
+            "evidence": f"{len(data['proof_moves'])} proof-move recipes turn repeated course habits into steps: set up the object, perform the legal move, protect the evidence, and state the limited conclusion. Each recipe includes why it works, how it fails, and a course example.",
             "status": "met",
         },
         {
             "requirement": "Formula reader for mathematical statements",
-            "evidence": "The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.",
+            "evidence": "The Formula Reader turns seven central statements into plain readings: what object the formula speaks about, what operation produced the terms, why the quantity survives, what conclusion it can force, and what check prevents symbol-copying.",
             "status": "met",
         },
         {
             "requirement": "Theorem-use contracts",
-            "evidence": f"The Theorem Use Contracts page gives {len(data['theorem_use_contracts'])} use contracts with required object, allowed move, protected evidence, conclusion, break condition, everyday test, and concept links, with {theorem_contract_words} theorem-contract words.",
+            "evidence": f"{len(data['theorem_use_contracts'])} theorem-use contracts state when a theorem is allowed to speak. The {theorem_contract_words} words require the object, allowed move, protected evidence, conclusion, break condition, and everyday test before a theorem name can carry weight.",
             "status": "met",
         },
         {
             "requirement": "Concept contrast reading",
-            "evidence": f"The Concept Contrasts page gives {len(data['concept_contrasts'])} contrast pairs for ideas readers often blur, with {concept_contrast_words} words across confusion, left job, right job, bridge, failure test, reader question, and concept-link fields.",
+            "evidence": f"{len(data['concept_contrasts'])} contrast pairs separate neighboring ideas that readers often blur. The {concept_contrast_words} words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
             "status": "met",
         },
         {
@@ -4788,22 +4788,22 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Plain-language term translation",
-            "evidence": f"The Term Translator page rewrites {len(data['term_translations'])} formal course words as everyday sentences, jobs in an argument, non-definition warnings, failure conditions, reader questions, and concept links, with {term_translation_words} total term-translation words.",
+            "evidence": f"{len(data['term_translations'])} formal course words are translated into everyday sentences only after their job in an argument is named. The {term_translation_words} term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
             "status": "met",
         },
         {
             "requirement": "References and paper trail",
-            "evidence": f"The References page gives {len(data['references'])} course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
+            "evidence": f"{len(data['references'])} course, primary-paper, and standard-textbook sources are linked with lecture coverage, concept coverage, plain use notes, and source caveats. Lecture and concept pages carry their own source trails so references support claims without becoming unearned authority.",
             "status": "met",
         },
         {
             "requirement": "First-principles paper and source reading",
-            "evidence": f"The Paper Source Reader page explains all {len(data['source_readers'])} sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with {source_reader_words} source-reader words.",
+            "evidence": f"{len(data['source_readers'])} source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The {source_reader_words} source-reader words keep paper reading tied to first-principles course questions.",
             "status": "met",
         },
         {
             "requirement": "Paper family ledger",
-            "evidence": f"The Paper Family Ledger page gives {len(data['paper_family_ledger_rows'])} paper/source family contracts with problem, object, allowed reading, protected idea, course bridge, overclaim boundary, reader test, and concept links, with {paper_family_ledger_words} paper-family words.",
+            "evidence": f"{len(data['paper_family_ledger_rows'])} paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The {paper_family_ledger_words} words make the paper layer usable without letting it drown the course explanation.",
             "status": "met",
         },
     ]
