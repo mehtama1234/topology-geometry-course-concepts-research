@@ -4154,11 +4154,41 @@ def build_concept_self_check(concept):
     cid = concept["id"]
     protected = plain_fragment(work["protected"], ["The protected fact is", "The protected fact"])
     failure = plain_fragment(work["breaks_if"], ["It breaks if", "It breaks when", "The idea breaks if"])
+    object_close = varied((cid, "object-close"), [
+        "At that point the theorem name is a label for work already visible on the page.",
+        "The name should arrive after the reader can already point to the carrier of the argument.",
+        "This prevents the page from asking a formal word to do the job of an explanation.",
+        "The reader should be able to point to the working object before any formal name is trusted.",
+    ])
+    operation_close = varied((cid, "operation-close"), [
+        "Without that permission, the move may be replacing the problem instead of solving it.",
+        "The legal move is part of the proof, not a side condition to check after the fact.",
+        "This is where many weak explanations fail: they show the simpler picture but not the permitted route to it.",
+        "The page should make the permission visible before asking the reader to trust the outcome.",
+    ])
+    legal_check = varied((cid, "legal-check"), [
+        "Say why this move is allowed in the problem at hand.",
+        "Name the rule that makes this operation legitimate here.",
+        "Explain what fixed data, boundary rule, or model condition the operation preserves.",
+        "State why the operation keeps the original question intact.",
+    ])
+    protected_close = varied((cid, "protected-close"), [
+        "That is the mathematical core: the conclusion only has force if the evidence survives the allowed move.",
+        "The proof lives in that survival, because the final picture speaks for the original only through carried evidence.",
+        "This is where the course turns a picture into an argument: the same evidence remains available after the legal change.",
+        "The protected evidence is what lets the reader move from an example to a conclusion without guessing.",
+    ])
+    failure_close = varied((cid, "failure-close"), [
+        "This check matters because the same words can become false when a hidden assumption changes.",
+        "The failure scene keeps the explanation honest about the boundary between a valid use and an overreach.",
+        "Naming the break point stops the concept from becoming a slogan that works only in the easy case.",
+        "The limit is part of the idea, because a theorem used outside its rulebook answers a different question.",
+    ])
     return {
-        "object_check": f"First say what the object is in ordinary words: {work['object']} Then anchor that object in the course moment: {anchor['course_moment']} The explanation should point to the thing being reasoned about before any theorem name appears.",
-        "operation_check": f"Next say what is allowed to happen to that object: {work['operation']} The answer also has to say why that move is legal here. Without that permission, the operation may be changing the problem instead of explaining it.",
-        "protected_check": f"Now name the evidence that must survive: {protected} Connect that evidence to the course principle: {anchor['principle']} This is the mathematical core, because the conclusion only has force if the evidence lives through the allowed move.",
-        "failure_check": f"Finally state when the idea reaches its limit: {failure} Also name the beginner mistake it avoids: {depth['beginner_trap']} This check matters because the same words can become false when a hidden assumption changes.",
+        "object_check": f"First say what the object is in ordinary words: {work['object']} Then anchor that object in the course moment: {anchor['course_moment']} {object_close}",
+        "operation_check": f"Next say what is allowed to happen to that object: {work['operation']} {legal_check} {operation_close}",
+        "protected_check": f"Now name the evidence that must survive: {protected} Connect that evidence to the course principle: {anchor['principle']} {protected_close}",
+        "failure_check": f"Finally state when the idea reaches its limit: {failure} Also name the beginner mistake it avoids: {depth['beginner_trap']} {failure_close}",
     }
 
 
