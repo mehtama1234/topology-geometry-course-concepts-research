@@ -112,6 +112,11 @@
       "status": "met"
     },
     {
+      "requirement": "Assumption ledger",
+      "evidence": "The Assumption Ledger page gives 10 hidden-assumption cases with claim, assumption, why needed, plain check, break condition, course place, and concept links, with 1363 assumption-ledger words.",
+      "status": "met"
+    },
+    {
       "requirement": "Proof-move recipes",
       "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
       "status": "met"
@@ -207,6 +212,8 @@
     "oral_exam_words": 875,
     "change_ledger_rows": 10,
     "change_ledger_words": 1275,
+    "assumption_ledger_rows": 10,
+    "assumption_ledger_words": 1363,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
     "theorem_contract_words": 1271,
@@ -224,6 +231,6 @@
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 92
+    "html_pages_before_audit_page": 93
   }
 }

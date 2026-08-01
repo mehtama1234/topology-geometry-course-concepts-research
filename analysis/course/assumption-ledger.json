@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Same object through a deformation",
+    "claim": "A simplified picture answers the original question because the simplification did not change what the question was asking about.",
+    "assumption": "Every step in the simplification keeps the same mathematical object for the purpose of the question: endpoints, gluing rules, obstacles, boundary behavior, and forbidden crossings stay under control.",
+    "why_needed": "Without this assumption, the proof may solve a cleaner but different problem. The course allows pictures to move only when the protected question survives the motion.",
+    "plain_check": "Can the reader point to the thing that moved and also name the part of the setup that was not allowed to change?",
+    "breaks_if": "It breaks if a route slides through an obstacle, a boundary endpoint moves freely, or a glued edge is treated as an ordinary edge.",
+    "course_place": "This assumption runs through knot, route, quotient, and surface arguments where a messy drawing is replaced by a cleaner one.",
+    "concepts": [
+      "deformation",
+      "quotient-space",
+      "knots-and-links"
+    ]
+  },
+  {
+    "title": "Boundary data is fixed",
+    "claim": "A crossing, route obstruction, or impossibility survives simplification because the boundary information defining the problem stayed fixed.",
+    "assumption": "The boundary order, marked points, endpoint positions, or side labels that define the problem remain fixed while the inside of the picture changes.",
+    "why_needed": "Many topological obstructions live in the boundary data. If the boundary can be rearranged, the obstruction may disappear because the problem itself has been changed.",
+    "plain_check": "Can the reader say which data live on the edge of the picture and why those data are part of the rulebook?",
+    "breaks_if": "It breaks if endpoints are swapped, boundary labels are ignored, or a path is allowed to leave the region it was supposed to stay inside.",
+    "course_place": "This assumption appears when crossings are forced by endpoint order and when boundary orientation gives signs their shared reference.",
+    "concepts": [
+      "boundary-orientation",
+      "intersection-number",
+      "graph-planarity"
+    ]
+  },
+  {
+    "title": "Continuity has not been lost",
+    "claim": "A rule, path, deformation, or motion cannot jump past the obstruction because every intermediate state must still be accounted for.",
+    "assumption": "The change happens without sudden jumps: nearby inputs remain nearby outputs, and a moving system passes through intermediate states rather than teleporting.",
+    "why_needed": "Continuity is the reason shape can force behavior. If jumps are allowed, a route can skip a wall, a fixed-point argument can avoid the diagonal, and a deformation can cross a forbidden event.",
+    "plain_check": "Can the reader describe what the intermediate states are and why the motion cannot skip from before to after in one step?",
+    "breaks_if": "It breaks if a map tears the space, a path jumps across a missing region, or a model lets the system pass through an impossible state.",
+    "course_place": "This assumption supports deformation, fixed-point, and configuration-space arguments whenever a path or rule is used as evidence.",
+    "concepts": [
+      "deformation",
+      "fixed-points",
+      "configuration-space"
+    ]
+  },
+  {
+    "title": "The counted meetings are ordinary",
+    "claim": "A signed count of intersections can be used as evidence because the meetings have been prepared one at a time.",
+    "assumption": "The objects meet cleanly rather than in a fragile coincidence such as tangency, overlap, or several events happening at exactly the same place.",
+    "why_needed": "Signs and cancellations need meetings that can be inspected one at a time. Ordinary position makes the local event simple enough to count and stable enough to survive small legal moves.",
+    "plain_check": "Can the reader isolate one meeting, assign its sign, and explain what nearby legal motion would do to it?",
+    "breaks_if": "It breaks if curves lie on top of each other, touch without crossing, or pass through a special accident that has not been separated into ordinary events.",
+    "course_place": "This assumption sits behind generic position, intersection number, and clean-meeting source families whenever crossings are counted.",
+    "concepts": [
+      "generic-position",
+      "intersection-number",
+      "boundary-orientation"
+    ]
+  },
+  {
+    "title": "Signs have a shared direction rule",
+    "claim": "Plus and minus contributions can be added and trusted because they use one shared direction rule across the object.",
+    "assumption": "The space, boundary, or local setup carries a consistent direction convention so that a plus sign in one place is comparable to a plus sign somewhere else.",
+    "why_needed": "Signed arithmetic only works when the signs belong to the same rulebook. Without a shared direction rule, the symbols may look precise while adding unrelated local choices.",
+    "plain_check": "Can the reader say where the direction convention comes from and whether it can be carried across the object being used?",
+    "breaks_if": "It breaks if orientation is assumed on a surface that does not support it, or if each crossing receives a sign from a private local choice.",
+    "course_place": "This assumption matters for boundary orientation, intersection number, turning counts, and index comparisons across one shared object.",
+    "concepts": [
+      "boundary-orientation",
+      "intersection-number",
+      "vector-field-index"
+    ]
+  },
+  {
+    "title": "All defects are included",
+    "claim": "A total index or Poincare-Hopf comparison constrains the field because all local defects belong to one complete account.",
+    "assumption": "Every isolated defect of the vector field on the relevant surface is counted, and the field satisfies the theorem's boundary or surface conditions.",
+    "why_needed": "A whole-surface theorem compares a complete local account with a whole-surface number. Leaving out one defect makes the local side no longer match the object being studied.",
+    "plain_check": "Can the reader list the surface, the field, every defect being counted, and the surface number the total is compared with?",
+    "breaks_if": "It breaks if a defect is hidden outside the drawing, if boundary behavior is ignored, or if the surface used for Euler characteristic is not the surface carrying the field.",
+    "course_place": "This assumption is central to vector-field index and Poincare-Hopf explanations whenever local defects are added globally.",
+    "concepts": [
+      "vector-field-index",
+      "poincare-hopf",
+      "euler-characteristic"
+    ]
+  },
+  {
+    "title": "One point records one full state",
+    "claim": "A configuration-space path represents a real physical motion because each point records one complete allowed state.",
+    "assumption": "Each point of the configuration space records all data needed for one complete allowed state, and every forbidden state has been removed.",
+    "why_needed": "A motion problem becomes topology only when the state space is faithful. Missing freedoms or missing obstacles make paths in the model lie about the physical system.",
+    "plain_check": "Can the reader say what one point records, what has been removed, and what a continuous path means in the original situation?",
+    "breaks_if": "It breaks if collisions are left inside the state space, if a necessary angle or position is not recorded, or if two different physical states are accidentally treated as one.",
+    "course_place": "This assumption supports configuration-space and product-space modeling in the later motion examples.",
+    "concepts": [
+      "configuration-space",
+      "product-space",
+      "deformation"
+    ]
+  },
+  {
+    "title": "The rule maps the space to itself",
+    "claim": "A fixed-point theorem or graph-and-diagonal argument can be used because the rule stays inside one space.",
+    "assumption": "The rule takes every allowed input point back into the same space, and the continuity and boundary conditions required by the argument are still true.",
+    "why_needed": "A fixed point is self-agreement inside one space. If the rule leaves the space or changes the setup, the diagonal comparison no longer asks the right question.",
+    "plain_check": "Can the reader name the space, name the rule, and explain why every output is still an allowed point of that same space?",
+    "breaks_if": "It breaks if outputs land outside the region, if the rule jumps, or if the boundary behavior used by the theorem has been changed.",
+    "course_place": "This assumption supports fixed-point pages, Brouwer contracts, and graph-and-diagonal explanations where self-agreement is forced.",
+    "concepts": [
+      "fixed-points",
+      "brouwer-fixed-point",
+      "configuration-space"
+    ]
+  },
+  {
+    "title": "A cell count describes the same surface",
+    "claim": "Euler characteristic survives changing the cell decomposition because the new cell account still describes the same surface.",
+    "assumption": "The vertices, edges, and faces form a valid account of the same surface before and after the cutting or refinement is changed.",
+    "why_needed": "Euler characteristic is a whole-surface ledger, not a reward for one drawing. The count survives because artificial internal bookkeeping changes cancel while the surface remains the same.",
+    "plain_check": "Can the reader say what surface is being counted and why the new cells still describe that surface?",
+    "breaks_if": "It breaks if a boundary is lost, a glued edge is counted twice incorrectly, or the drawing is changed into a different surface while keeping the old label.",
+    "course_place": "This assumption supports triangulation, Euler characteristic, surface classification, and Poincare-Hopf comparisons across the same surface.",
+    "concepts": [
+      "triangulation",
+      "euler-characteristic",
+      "manifold"
+    ]
+  },
+  {
+    "title": "The source supports exactly this claim",
+    "claim": "A paper, textbook, caption, or course record justifies a sentence in the companion because the evidence supports that exact sentence.",
+    "assumption": "The source evidence actually supports the sentence being written, and the sentence does not silently borrow stronger authority from a nearby reference.",
+    "why_needed": "Source discipline keeps plain language honest. A sentence can be simple and still overclaim if it treats a background paper, mirror listing, or auto-caption as stronger evidence than it is.",
+    "plain_check": "Can the reader name the exact sentence, the source evidence behind it, and the stronger sentence that should remain unsaid?",
+    "breaks_if": "It breaks if a recovered auto-caption is treated as exact lecture notes, or if a paper family is cited as proof that Tokieda stated a specific claim.",
+    "course_place": "This assumption supports source readers, source nuance repairs, paper-family ledgers, and lecture source-faithfulness audits.",
+    "concepts": [
+      "topology-vs-geometry",
+      "invariant",
+      "poincare-hopf"
+    ]
+  }
+]
