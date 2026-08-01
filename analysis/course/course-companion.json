@@ -1920,6 +1920,10 @@
         "beginner_trap": "The trap is to think ordinary position means ignoring difficult cases. It does not. It means solve the stable case first, then understand exceptional cases as limits or controlled moments where stable pictures change without destroying the question.",
         "course_role": "This idea is quiet but constant. It is behind clean intersections, pair creation and cancellation, isolated equilibria, and the move from messy physical examples to countable mathematical evidence. It gives the course permission to draw simple pictures without lying about the original problem."
       },
+      "essay": [
+        "Generic position is the course's way of refusing to build a proof on a coincidence. If two curves merely touch, if three intersections happen at exactly one point, or if an equilibrium is smeared into a whole line, the picture may be too delicate to reveal the stable reason. A tiny nudge could change it. The ordinary case is not the lazy case; it is the case that survives small disturbances and therefore can be counted cleanly.",
+        "The concept matters because many of Tokieda's arguments depend on clean events: isolated intersections, pairs being born or canceled, and defects that can be assigned an index. Generic position makes those events visible one at a time. After the stable case is understood, exceptional cases can be read as limits or transition moments. The beginner mistake is to think the exceptional picture is more honest because it looks more exact. Often it is less honest, because it hides the mechanism that persists under small motion."
+      ],
       "appearances": [
         {
           "lecture": 1,
@@ -1974,6 +1978,10 @@
         "beginner_trap": "The trap is to think any visual simplification is legal. A deformation cannot cut, glue, jump, pass through a forbidden obstacle, or move fixed endpoints past each other. The allowed moves are the proof, and changing those moves changes the claim.",
         "course_role": "Deformation is the course's main verb. It begins with strips and disk puzzles, then reappears in surface classification, intersection invariance, fixed-point theory, and vector-field index. Each later theorem asks what survives when the picture is moved honestly."
       },
+      "essay": [
+        "Deformation is the central verb of the course. It means changing a picture continuously while preserving the question being asked. A curve can be slid, a surface can be stretched, and a handle can be moved, but only under the rules of the problem. The point is not that exact shape is irrelevant in every situation. The point is that for many questions, exact shape is the wrong level of detail. What matters is what the object can become without cutting, gluing, jumping, or crossing a forbidden obstacle.",
+        "A deformation proof has a strict contract. First name the allowed moves. Then identify the fact that is supposed to survive those moves. Only then simplify the picture. This is why deformation appears from the disk path puzzle all the way to vector-field index: the course keeps replacing hard pictures by simpler ones while carrying protected information along the way. If the allowed moves are vague, the proof is vague. If the allowed moves are precise, the motion itself becomes the proof."
+      ],
       "appearances": [
         {
           "lecture": 1,
@@ -2038,6 +2046,10 @@
         "beginner_trap": "The trap is to expect one invariant to tell the whole story. Most invariants are partial witnesses. They are powerful because a single preserved difference can prove impossibility, even when it cannot classify every possible shape.",
         "course_role": "The course moves from physical invariants such as one-sidedness to numerical invariants such as intersection number, Euler characteristic, fixed-point counts, and total vector-field index. The recurring question is always which fact has enough memory to survive the allowed change."
       },
+      "essay": [
+        "An invariant is a memory device for a changing situation. When a shape bends, a path slides, or a field is cleaned up, most visible facts change. An invariant is the chosen fact that does not change under the allowed moves. It may be one-sidedness, Euler characteristic, a signed intersection number, parity, or the total index of a vector field. The invariant does not need to describe the whole object. It only needs to remember enough to answer the question.",
+        "The power of an invariant is often negative: it proves that something cannot happen. If two pictures have different protected counts, no legal deformation connects them. If a desired crossing-free drawing would require a count to change, the drawing is impossible. This is why invariants are not vocabulary decorations in the course. They are the receipts that let one picture speak for another. Without an invariant, deformation can feel persuasive but leave no evidence that the answer survived."
+      ],
       "appearances": [
         {
           "lecture": 1,
@@ -2121,6 +2133,10 @@
         "beginner_trap": "The trap is to treat topology as geometry with measurements removed. In this course, topology is not emptier than geometry; it is a different level of description chosen because it protects the facts that matter.",
         "course_role": "Tokieda constantly uses both. Drawings and physical objects give geometric intuition, while topological reasoning explains why the outcome survives changes in the drawing. The lectures are strongest when a measured-looking picture is converted into a route, boundary, count, or obstruction."
       },
+      "essay": [
+        "Topology and geometry are not enemies in this course. Geometry gives visible local behavior: bending, turning, angles, surfaces, arrows, and physical demonstrations. Topology asks which facts survive when those visible details are changed by legal motion. Geometry may notice how a strip bends in space. Topology notices that the Mobius strip has one side and one boundary component. Both kinds of seeing matter, but they answer different questions.",
+        "The distinction is practical. If a problem depends on exact length or curvature at a point, geometry is the right tool. If the problem depends on routes, holes, boundaries, or forced meetings, topology may be the cleaner level. Tokieda's course works by moving between the two: start with a physical or geometric picture, then extract the topological fact that survives. The reader should not think topology means throwing away meaning. It means keeping the meaning that the problem actually needs."
+      ],
       "appearances": [
         {
           "lecture": 1,
@@ -2185,6 +2201,10 @@
         "beginner_trap": "The trap is to memorize the formula without seeing the cancellation. The formula matters because it survives refinement and therefore belongs to the surface, not to one drawing of the surface or one chosen mesh of pieces.",
         "course_role": "It becomes the bridge from surface bookkeeping to dynamics. In Poincare-Hopf, Euler characteristic is the whole-surface number that local vector-field indices must add up to. That is why a cell count can predict something about motion."
       },
+      "essay": [
+        "Euler characteristic is surface bookkeeping designed to survive redrawing. If a surface is cut into vertices, edges, and faces, those individual counts depend on the chosen cuts. Add more cuts and the raw numbers change. The alternating combination is arranged so artificial internal changes cancel. That is why the final number belongs to the surface rather than to one particular mesh drawn on it.",
+        "This concept becomes much more than a formula. Early on, it helps classify and recognize surfaces. Later, in Poincare-Hopf, it becomes the number that a vector field's local indices must add up to. That is a remarkable conceptual bridge: a cell count from surface decomposition controls possible failures of motion. The first-principles lesson is that a carefully designed count can move across domains. It starts as surface accounting and ends as a constraint on dynamics."
+      ],
       "appearances": [
         {
           "lecture": 5,
@@ -2229,6 +2249,10 @@
         "beginner_trap": "The trap is to confuse the chosen triangulation with the surface itself. A different triangulation should give the same meaningful surface facts, or the count was not topological. The pieces are scaffolding for thought, not the object.",
         "course_role": "Triangulation supports Euler characteristic, surface classification, and the later comparison between cell counts and vector-field behavior. It is the finite bookkeeping device that lets smooth-looking surfaces enter exact arguments without pretending that smoothness has disappeared."
       },
+      "essay": [
+        "Triangulation is a way to make a continuous surface countable without pretending the surface is literally made of rigid triangles. A smooth surface has infinitely many points, which is too much for direct bookkeeping. Cutting it into simple cells gives a finite ledger. Once the ledger exists, the course can count vertices, edges, faces, and higher-dimensional pieces in a disciplined way.",
+        "The important detail is that the triangulation is scaffolding. A different triangulation should not change the topological conclusion. If the answer depends on the exact mesh, the count has not found a surface fact. This is why triangulation supports Euler characteristic and surface classification: it lets a soft object enter exact reasoning, while later cancellation proves that the reasoning did not depend on one arbitrary set of cuts."
+      ],
       "appearances": [
         {
           "lecture": 3,
@@ -2258,6 +2282,10 @@
         "beginner_trap": "The trap is to think a failed drawing proves impossibility. A bad drawing proves only that the drawer failed. A topological argument proves that every drawing must fail because the surface itself lacks the required room.",
         "course_role": "Graph thinking trains the reader to separate combinatorial demand from surface room, a separation that later appears in intersections and configuration spaces. It makes route constraints feel concrete before the course moves to manifolds and higher-dimensional examples."
       },
+      "essay": [
+        "Planar graph thinking asks whether a required pattern of connections can fit on a surface without forbidden crossings. The graph itself only records which dots must be joined. The surface supplies room, routes, and limitations. A failed drawing does not prove impossibility, because the drawer may have chosen a poor arrangement. A topological argument must show that every legal arrangement runs into the same obstruction.",
+        "This concept trains a habit used throughout the course: separate the demand from the room available for satisfying it. Disk path puzzles, intersections of submanifolds, knots, and configuration spaces all use versions of that separation. The question is not just what must connect to what. It is whether the surrounding space gives enough freedom for those connections to avoid each other. When it does not, crossings become evidence rather than mistakes."
+      ],
       "appearances": [
         {
           "lecture": 2,
@@ -2292,6 +2320,10 @@
         "beginner_trap": "The trap is to judge a knot by how tangled the drawing looks. A knot diagram is only meaningful when crossings record which strand passes over and which passes under. Without that record, the drawing has lost the spatial question.",
         "course_role": "They sharpen the idea of allowed moves. The same discipline later governs deformation of submanifolds, intersection counts, and paths in spaces of possible states. Knots make clear why passing through is not an innocent shortcut."
       },
+      "essay": [
+        "Knots and links matter because curves can remember how they sit in space. A loop may stretch, bend, and wiggle while still refusing to become a plain circle through legal motion. Linked loops may look movable, yet remain unable to separate without passing through each other. The visible tangle is not the whole story; the over-under and around-through relationships are the story.",
+        "Tokieda's strip-cutting demonstrations give a concrete version of this idea. Off-center cuts of a Mobius strip can produce pieces that stay linked. The final lecture returns to linked strip behavior. These examples teach the same rule that knot theory formalizes: passing through is not an innocent simplification. The legal moves determine whether an apparent tangle is removable or whether it records a real route constraint."
+      ],
       "appearances": [
         {
           "lecture": 1,
@@ -2321,6 +2353,11 @@
         "beginner_trap": "The trap is to treat winding as a visual impression. The course needs a signed count, because opposite turns can cancel and because the count must survive legal motion instead of depending on one drawing.",
         "course_role": "This idea connects loops and knots to intersection signs. It is one of the plainest examples of a count that records a relationship rather than a measurement. Later signed counts are more abstract, but they serve the same purpose."
       },
+      "essay": [
+        "Winding and linking are ways of counting a relationship rather than a size. A loop around a post can be pulled tighter or looser, but it still goes around the post unless it crosses the post or breaks. Two loops can be linked even when their exact shapes change. The stable fact is not length, roundness, or position. It is the aroundness relation.",
+        "The course needs signs because relationships can cancel. Opposite windings may add to zero. Opposite intersections may be born together and vanish together. Winding and linking therefore prepare the reader for signed intersection number and vector-field index. They make it intuitive that a count can measure a relation between objects, not just a property of one object by itself.",
+        "That is why linked strip demonstrations are not just curiosities. They train the eye to see a relationship that survives motion."
+      ],
       "appearances": [
         {
           "lecture": 1,
@@ -2355,6 +2392,10 @@
         "beginner_trap": "The trap is to check orientation only locally. Every small patch has two sides, but a trip around a Mobius-type surface can return with the side choice reversed. The obstruction is global, not local.",
         "course_role": "Orientation is required for signed intersection number and for many index arguments. Boundary issues also explain why some fixed-point statements need extra care. The course uses these details whenever a plus or minus sign is supposed to mean something."
       },
+      "essay": [
+        "Boundary and orientation are the details that make many later counts honest. A boundary is where a surface stops, and stopping changes the bookkeeping. Orientation asks whether a consistent sense of direction can be carried across the whole surface. On a Mobius-type surface, every small patch looks ordinary, but a full trip can reverse the side choice. That is a global obstruction.",
+        "Signed intersection number depends on orientation. Vector-field index depends on being able to interpret turning consistently. Fixed-point statements on balls depend on what the boundary does. These are not technical side conditions added to intimidate beginners. They are the facts that let plus and minus signs mean something. If orientation or boundary is ignored, the proof may count a quantity that is not actually defined."
+      ],
       "appearances": [
         {
           "lecture": 1,
@@ -2434,6 +2475,11 @@
         "beginner_trap": "The trap is to think curvature is only a point-by-point geometric measurement. The course cares about total curvature because totals can be protected by topology. The local measurement matters most when its sum is forced.",
         "course_role": "It belongs to the local-to-global theme. Even when the course later emphasizes vector fields, the same pattern remains: local contributions add up to a global demand. Gauss-Bonnet is the curvature version of that demand."
       },
+      "essay": [
+        "Gauss-Bonnet represents the course's local-to-global habit in geometric form. Curvature is local: it says how a surface bends near a point. But the total curvature, with boundary and corner terms when needed, can be tied to the surface's whole topology. Local bending is not free to add up to anything it wants.",
+        "Even when the course later emphasizes vector fields more than curvature, the same principle remains. Local contributions can be summed into a global constraint. The concept is therefore useful as a bridge: it helps a reader see why total turning, total curvature, total index, and Euler characteristic belong in the same family of ideas. The surface makes demands on the sum of local behavior.",
+        "The point is not to memorize a formula, but to recognize the pattern: small measured changes can be forced by whole-shape structure."
+      ],
       "appearances": [
         {
           "lecture": 11,
@@ -2463,6 +2509,11 @@
         "beginner_trap": "The trap is to classify equilibria by appearance alone. The index is a signed turning count, and different-looking local pictures may have the same index while similar-looking pictures may behave differently under deformation.",
         "course_role": "Index is the dynamics version of signed intersection. It lets Poincare-Hopf connect local equilibria to Euler characteristic. The concept proves that a local arrow defect can carry exactly the kind of signed information the earlier intersection theory taught us to trust."
       },
+      "essay": [
+        "Vector-field index is the dynamics version of signed counting. A vector field assigns an arrow to each point. Where the arrow vanishes, there is an equilibrium or defect. The index records how the nearby arrows turn around that defect. It is local evidence, but it is designed so it survives appropriate changes in the field.",
+        "The concept matters because it lets topology speak about differential equations without solving them. Sources, sinks, saddles, and other local patterns may move or change under deformation, but their signed total can be constrained by the surface. Poincare-Hopf is the payoff: the sum of local indices equals Euler characteristic. A fact about arrows becomes a fact about the shape carrying them.",
+        "This turns a hard analytic question into a topological one: not where every trajectory goes, but what failures the whole surface requires."
+      ],
       "appearances": [
         {
           "lecture": 8,
@@ -2517,6 +2568,10 @@
         "beginner_trap": "The trap is to expect a fixed-point theorem to compute the fixed point. These theorems often prove existence only, which is already powerful when exact computation is unavailable or when the rule is known only qualitatively.",
         "course_role": "Fixed points connect intersection theory to dynamics. The graph of a map meeting the diagonal becomes a reusable form for proving unavoidable states. The idea then reappears when equilibria are treated as unavoidable failures of a vector field."
       },
+      "essay": [
+        "A fixed point is a place that a rule sends back to itself. The concept is powerful because many problems care about existence, not explicit calculation. Brouwer's theorem, for example, says that a continuous self-map of a closed ball must have a fixed point. It does not tell us where the point is. It tells us that the shape gives all points no continuous way to avoid themselves at once.",
+        "The graph-and-diagonal picture explains why fixed points fit the course. The graph of a map records where points go. The diagonal records self-agreement. A fixed point is their intersection. This turns a rule into a geometric meeting problem, so earlier intersection ideas become relevant. Later, equilibria in vector fields play a similar role: special states forced by the shape and continuity of the system."
+      ],
       "appearances": [
         {
           "lecture": 7,
@@ -2576,6 +2631,11 @@
         "beginner_trap": "The trap is to think the configuration space is imaginary decoration. It is a real model of possibilities: if there is no path in that model, the physical motion cannot be performed legally. The abstraction is doing physical work.",
         "course_role": "This idea gathers the course's method into applications. It lets deformation, obstruction, fixed points, and topology of state spaces speak about mechanisms and motion. It is where the course's pictorial thinking becomes a way to reason about systems that move."
       },
+      "essay": [
+        "Configuration space is a change of viewpoint. Instead of watching a mechanism or moving system in ordinary space, list all possible states and treat each state as a point in a new space. Motion becomes a path through that space. Forbidden positions become holes or walls. A blocked physical motion becomes the absence of a legal path.",
+        "This concept is crucial for applications because it lets topology reason about behavior without tracking every physical detail. The state space may reveal constraints that are hard to see in the original object. Fixed points, barriers, forced passages, and connected components become statements about the shape of possibilities. The abstraction is not escape from reality; it is a cleaner model of what the system is allowed to do.",
+        "The hard part is modeling honestly: the state space must include the right freedoms and forbid the right impossible states."
+      ],
       "appearances": [
         {
           "lecture": 3,
@@ -2625,6 +2685,11 @@
         "beginner_trap": "The trap is to treat the dual picture as a new problem. It is a change of representation, and it is valid only when it preserves the relationships the original question depends on. Otherwise it is just a different drawing.",
         "course_role": "Duality supports pictorial thinking. It trains the reader to ask whether a different diagram can carry the same reason more clearly. This is central to the course's habit of solving by redrawing without changing the problem."
       },
+      "essay": [
+        "Duality means changing the picture so the useful structure becomes visible. Regions may become dots, shared borders may become edges, or a rule may become a graph in a product space. The new picture is not a new problem. It is another representation of the same relationships, chosen because it exposes a count, route, or obstruction that the first picture hid.",
+        "The course relies on this habit constantly. A square with edge labels represents a surface. A map becomes its graph. A fixed point becomes an intersection with the diagonal. A physical mechanism becomes a configuration space. Duality is therefore part of pictorial thinking: redraw the situation, but preserve the relationships that matter. If the redraw loses those relationships, it is only a different drawing, not a proof.",
+        "A good dual picture earns its place by making the protected fact easier to see without changing what must be proved."
+      ],
       "appearances": [
         {
           "lecture": 3,
@@ -2673,6 +2738,11 @@
         "beginner_trap": "The trap is to dismiss parity as crude. Crude is useful when the problem only needs an obstruction, and an odd count can prove that zero is impossible. The coarseness is the reason it survives.",
         "course_role": "Parity is the simplest surviving-count idea. It prepares the reader for richer signed counts, where cancellation is tracked with more information than odd or even. The course repeatedly upgrades this simple habit into finer bookkeeping."
       },
+      "essay": [
+        "Parity asks whether a count is even or odd. It is deliberately coarse, and that is why it can be powerful. If legal changes create or remove events in pairs, the exact count may change but the parity cannot. An odd count can prove that zero is impossible, which is often enough for an existence or obstruction argument.",
+        "The course uses richer signed counts later, but parity is the simplest version of the same survival idea. It teaches the reader not to demand more information than the problem needs. Sometimes the stable shadow of a number is more useful than the fragile exact number. This prepares the mind for intersection signs and index sums, where cancellation is tracked with finer detail.",
+        "The lesson is economical: keep only the part of the count that the allowed moves cannot destroy."
+      ],
       "appearances": [
         {
           "lecture": 6,
@@ -2825,7 +2895,7 @@
       },
       {
         "requirement": "Hand-written concepts, themes, subthemes, and method families",
-        "evidence": "16 concepts, 6 themes, 10 subthemes, and 5 method families all have validated depth fields.",
+        "evidence": "16 concepts with essay sections, 6 themes, 10 subthemes, and 5 method families all have validated depth fields.",
         "status": "met"
       },
       {
@@ -2853,6 +2923,7 @@
       ],
       "lecture_examples": 32,
       "lecture_essay_words": 3170,
+      "concept_essay_words": 2305,
       "concept_appearances_min": 2,
       "concept_appearances_max": 13,
       "html_pages_before_audit_page": 62

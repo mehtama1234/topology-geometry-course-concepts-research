@@ -405,6 +405,80 @@ CONCEPT_DEPTH = {
 }
 
 
+CONCEPT_ESSAYS = {
+    "generic-position": [
+        "Generic position is the course's way of refusing to build a proof on a coincidence. If two curves merely touch, if three intersections happen at exactly one point, or if an equilibrium is smeared into a whole line, the picture may be too delicate to reveal the stable reason. A tiny nudge could change it. The ordinary case is not the lazy case; it is the case that survives small disturbances and therefore can be counted cleanly.",
+        "The concept matters because many of Tokieda's arguments depend on clean events: isolated intersections, pairs being born or canceled, and defects that can be assigned an index. Generic position makes those events visible one at a time. After the stable case is understood, exceptional cases can be read as limits or transition moments. The beginner mistake is to think the exceptional picture is more honest because it looks more exact. Often it is less honest, because it hides the mechanism that persists under small motion.",
+    ],
+    "deformation": [
+        "Deformation is the central verb of the course. It means changing a picture continuously while preserving the question being asked. A curve can be slid, a surface can be stretched, and a handle can be moved, but only under the rules of the problem. The point is not that exact shape is irrelevant in every situation. The point is that for many questions, exact shape is the wrong level of detail. What matters is what the object can become without cutting, gluing, jumping, or crossing a forbidden obstacle.",
+        "A deformation proof has a strict contract. First name the allowed moves. Then identify the fact that is supposed to survive those moves. Only then simplify the picture. This is why deformation appears from the disk path puzzle all the way to vector-field index: the course keeps replacing hard pictures by simpler ones while carrying protected information along the way. If the allowed moves are vague, the proof is vague. If the allowed moves are precise, the motion itself becomes the proof.",
+    ],
+    "invariant": [
+        "An invariant is a memory device for a changing situation. When a shape bends, a path slides, or a field is cleaned up, most visible facts change. An invariant is the chosen fact that does not change under the allowed moves. It may be one-sidedness, Euler characteristic, a signed intersection number, parity, or the total index of a vector field. The invariant does not need to describe the whole object. It only needs to remember enough to answer the question.",
+        "The power of an invariant is often negative: it proves that something cannot happen. If two pictures have different protected counts, no legal deformation connects them. If a desired crossing-free drawing would require a count to change, the drawing is impossible. This is why invariants are not vocabulary decorations in the course. They are the receipts that let one picture speak for another. Without an invariant, deformation can feel persuasive but leave no evidence that the answer survived.",
+    ],
+    "topology-vs-geometry": [
+        "Topology and geometry are not enemies in this course. Geometry gives visible local behavior: bending, turning, angles, surfaces, arrows, and physical demonstrations. Topology asks which facts survive when those visible details are changed by legal motion. Geometry may notice how a strip bends in space. Topology notices that the Mobius strip has one side and one boundary component. Both kinds of seeing matter, but they answer different questions.",
+        "The distinction is practical. If a problem depends on exact length or curvature at a point, geometry is the right tool. If the problem depends on routes, holes, boundaries, or forced meetings, topology may be the cleaner level. Tokieda's course works by moving between the two: start with a physical or geometric picture, then extract the topological fact that survives. The reader should not think topology means throwing away meaning. It means keeping the meaning that the problem actually needs.",
+    ],
+    "euler-characteristic": [
+        "Euler characteristic is surface bookkeeping designed to survive redrawing. If a surface is cut into vertices, edges, and faces, those individual counts depend on the chosen cuts. Add more cuts and the raw numbers change. The alternating combination is arranged so artificial internal changes cancel. That is why the final number belongs to the surface rather than to one particular mesh drawn on it.",
+        "This concept becomes much more than a formula. Early on, it helps classify and recognize surfaces. Later, in Poincare-Hopf, it becomes the number that a vector field's local indices must add up to. That is a remarkable conceptual bridge: a cell count from surface decomposition controls possible failures of motion. The first-principles lesson is that a carefully designed count can move across domains. It starts as surface accounting and ends as a constraint on dynamics.",
+    ],
+    "triangulation": [
+        "Triangulation is a way to make a continuous surface countable without pretending the surface is literally made of rigid triangles. A smooth surface has infinitely many points, which is too much for direct bookkeeping. Cutting it into simple cells gives a finite ledger. Once the ledger exists, the course can count vertices, edges, faces, and higher-dimensional pieces in a disciplined way.",
+        "The important detail is that the triangulation is scaffolding. A different triangulation should not change the topological conclusion. If the answer depends on the exact mesh, the count has not found a surface fact. This is why triangulation supports Euler characteristic and surface classification: it lets a soft object enter exact reasoning, while later cancellation proves that the reasoning did not depend on one arbitrary set of cuts.",
+    ],
+    "graph-planarity": [
+        "Planar graph thinking asks whether a required pattern of connections can fit on a surface without forbidden crossings. The graph itself only records which dots must be joined. The surface supplies room, routes, and limitations. A failed drawing does not prove impossibility, because the drawer may have chosen a poor arrangement. A topological argument must show that every legal arrangement runs into the same obstruction.",
+        "This concept trains a habit used throughout the course: separate the demand from the room available for satisfying it. Disk path puzzles, intersections of submanifolds, knots, and configuration spaces all use versions of that separation. The question is not just what must connect to what. It is whether the surrounding space gives enough freedom for those connections to avoid each other. When it does not, crossings become evidence rather than mistakes.",
+    ],
+    "knots-and-links": [
+        "Knots and links matter because curves can remember how they sit in space. A loop may stretch, bend, and wiggle while still refusing to become a plain circle through legal motion. Linked loops may look movable, yet remain unable to separate without passing through each other. The visible tangle is not the whole story; the over-under and around-through relationships are the story.",
+        "Tokieda's strip-cutting demonstrations give a concrete version of this idea. Off-center cuts of a Mobius strip can produce pieces that stay linked. The final lecture returns to linked strip behavior. These examples teach the same rule that knot theory formalizes: passing through is not an innocent simplification. The legal moves determine whether an apparent tangle is removable or whether it records a real route constraint.",
+    ],
+    "winding-linking": [
+        "Winding and linking are ways of counting a relationship rather than a size. A loop around a post can be pulled tighter or looser, but it still goes around the post unless it crosses the post or breaks. Two loops can be linked even when their exact shapes change. The stable fact is not length, roundness, or position. It is the aroundness relation.",
+        "The course needs signs because relationships can cancel. Opposite windings may add to zero. Opposite intersections may be born together and vanish together. Winding and linking therefore prepare the reader for signed intersection number and vector-field index. They make it intuitive that a count can measure a relation between objects, not just a property of one object by itself.",
+        "That is why linked strip demonstrations are not just curiosities. They train the eye to see a relationship that survives motion.",
+    ],
+    "boundary-orientation": [
+        "Boundary and orientation are the details that make many later counts honest. A boundary is where a surface stops, and stopping changes the bookkeeping. Orientation asks whether a consistent sense of direction can be carried across the whole surface. On a Mobius-type surface, every small patch looks ordinary, but a full trip can reverse the side choice. That is a global obstruction.",
+        "Signed intersection number depends on orientation. Vector-field index depends on being able to interpret turning consistently. Fixed-point statements on balls depend on what the boundary does. These are not technical side conditions added to intimidate beginners. They are the facts that let plus and minus signs mean something. If orientation or boundary is ignored, the proof may count a quantity that is not actually defined.",
+    ],
+    "gauss-bonnet": [
+        "Gauss-Bonnet represents the course's local-to-global habit in geometric form. Curvature is local: it says how a surface bends near a point. But the total curvature, with boundary and corner terms when needed, can be tied to the surface's whole topology. Local bending is not free to add up to anything it wants.",
+        "Even when the course later emphasizes vector fields more than curvature, the same principle remains. Local contributions can be summed into a global constraint. The concept is therefore useful as a bridge: it helps a reader see why total turning, total curvature, total index, and Euler characteristic belong in the same family of ideas. The surface makes demands on the sum of local behavior.",
+        "The point is not to memorize a formula, but to recognize the pattern: small measured changes can be forced by whole-shape structure.",
+    ],
+    "vector-field-index": [
+        "Vector-field index is the dynamics version of signed counting. A vector field assigns an arrow to each point. Where the arrow vanishes, there is an equilibrium or defect. The index records how the nearby arrows turn around that defect. It is local evidence, but it is designed so it survives appropriate changes in the field.",
+        "The concept matters because it lets topology speak about differential equations without solving them. Sources, sinks, saddles, and other local patterns may move or change under deformation, but their signed total can be constrained by the surface. Poincare-Hopf is the payoff: the sum of local indices equals Euler characteristic. A fact about arrows becomes a fact about the shape carrying them.",
+        "This turns a hard analytic question into a topological one: not where every trajectory goes, but what failures the whole surface requires.",
+    ],
+    "fixed-points": [
+        "A fixed point is a place that a rule sends back to itself. The concept is powerful because many problems care about existence, not explicit calculation. Brouwer's theorem, for example, says that a continuous self-map of a closed ball must have a fixed point. It does not tell us where the point is. It tells us that the shape gives all points no continuous way to avoid themselves at once.",
+        "The graph-and-diagonal picture explains why fixed points fit the course. The graph of a map records where points go. The diagonal records self-agreement. A fixed point is their intersection. This turns a rule into a geometric meeting problem, so earlier intersection ideas become relevant. Later, equilibria in vector fields play a similar role: special states forced by the shape and continuity of the system.",
+    ],
+    "configuration-space": [
+        "Configuration space is a change of viewpoint. Instead of watching a mechanism or moving system in ordinary space, list all possible states and treat each state as a point in a new space. Motion becomes a path through that space. Forbidden positions become holes or walls. A blocked physical motion becomes the absence of a legal path.",
+        "This concept is crucial for applications because it lets topology reason about behavior without tracking every physical detail. The state space may reveal constraints that are hard to see in the original object. Fixed points, barriers, forced passages, and connected components become statements about the shape of possibilities. The abstraction is not escape from reality; it is a cleaner model of what the system is allowed to do.",
+        "The hard part is modeling honestly: the state space must include the right freedoms and forbid the right impossible states.",
+    ],
+    "duality": [
+        "Duality means changing the picture so the useful structure becomes visible. Regions may become dots, shared borders may become edges, or a rule may become a graph in a product space. The new picture is not a new problem. It is another representation of the same relationships, chosen because it exposes a count, route, or obstruction that the first picture hid.",
+        "The course relies on this habit constantly. A square with edge labels represents a surface. A map becomes its graph. A fixed point becomes an intersection with the diagonal. A physical mechanism becomes a configuration space. Duality is therefore part of pictorial thinking: redraw the situation, but preserve the relationships that matter. If the redraw loses those relationships, it is only a different drawing, not a proof.",
+        "A good dual picture earns its place by making the protected fact easier to see without changing what must be proved.",
+    ],
+    "parity": [
+        "Parity asks whether a count is even or odd. It is deliberately coarse, and that is why it can be powerful. If legal changes create or remove events in pairs, the exact count may change but the parity cannot. An odd count can prove that zero is impossible, which is often enough for an existence or obstruction argument.",
+        "The course uses richer signed counts later, but parity is the simplest version of the same survival idea. It teaches the reader not to demand more information than the problem needs. Sometimes the stable shadow of a number is more useful than the fragile exact number. This prepares the mind for intersection signs and index sums, where cancellation is tracked with finer detail.",
+        "The lesson is economical: keep only the part of the count that the allowed moves cannot destroy.",
+    ],
+}
+
+
 FAMILIES = [
     {
         "id": "deformation-family",
@@ -886,6 +960,7 @@ def build_quality_audit(data):
     concept_max = max(len(c["appearances"]) for c in data["concepts"])
     lecture_examples = sum(len(l["deep"]["examples"]) for l in data["lectures"])
     lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
+    concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -904,7 +979,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have validated depth fields.",
+            "evidence": f"{stats['concepts']} concepts with essay sections, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have validated depth fields.",
             "status": "met",
         },
         {
@@ -933,6 +1008,7 @@ def build_quality_audit(data):
             "missing_captions": data["missing_caption_ids"],
             "lecture_examples": lecture_examples,
             "lecture_essay_words": lecture_essay_words,
+            "concept_essay_words": concept_essay_words,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -1022,7 +1098,7 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
             f'<article class="card"><div class="meta">Lecture {a["lecture"]:02d}</div><h3>{esc(a["title"])}</h3><p>{esc(a["summary"])}</p><a class="arrow" href="lecture-{a["lecture"]:02d}.html">Open lecture</a></article>'
             for a in c["appearances"]
         )
-        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
+        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
     body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"
@@ -1055,7 +1131,7 @@ main{max-width:1180px;margin:0 auto;padding:28px 24px 56px}.hero{display:grid;gr
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_essay_words']} lecture essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['concept_essay_words']} concept essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1124,6 +1200,7 @@ def main():
     for concept in CONCEPTS:
         enriched = dict(concept)
         enriched["depth"] = CONCEPT_DEPTH[concept["id"]]
+        enriched["essay"] = CONCEPT_ESSAYS[concept["id"]]
         concepts.append(enriched)
     concept_appearances = {concept["id"]: [] for concept in concepts}
     for lecture in lectures:

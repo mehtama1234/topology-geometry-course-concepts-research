@@ -18,7 +18,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "16 concepts, 6 themes, 10 subthemes, and 5 method families all have validated depth fields.",
+      "evidence": "16 concepts with essay sections, 6 themes, 10 subthemes, and 5 method families all have validated depth fields.",
       "status": "met"
     },
     {
@@ -46,6 +46,7 @@
     ],
     "lecture_examples": 32,
     "lecture_essay_words": 3170,
+    "concept_essay_words": 2305,
     "concept_appearances_min": 2,
     "concept_appearances_max": 13,
     "html_pages_before_audit_page": 62
