@@ -5,7 +5,7 @@ The companion now satisfies the requested depth shape across the main reader-fac
 ## Requirement Evidence
 - **Own repo and folder** (met): Standalone git repo at topology-geometry-course-concepts-research on main.
 - **Recover all playlist links and source coverage** (met-with-caveat): 35 playlist videos indexed; 34 caption files recovered; missing caption preserved for nx1XOlezuvk.
-- **Hand-written lecture depth** (met): 15 lecture explainers with full essay sections, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.
+- **Hand-written lecture depth** (met): 15 lecture explainers with full essay sections, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.
 - **Lecture-by-lecture reasoning spine** (met): The Lecture Spine page gives 15 lecture entries that name the object, plain question, legal move, surviving fact, and later use.
 - **Hand-written concepts, themes, subthemes, and method families** (met): 24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples, subtheme pages include first-principles bridges, and method-family pages include playbooks.
 - **First-principles plain language** (met): Validation enforces minimum depth across all explanatory layers and bans common vague/cliche phrases; pages explain why ideas exist and what detail matters.

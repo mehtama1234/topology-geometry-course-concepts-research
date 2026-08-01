@@ -13,7 +13,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Own repo/folder | Local git repo at `topology-geometry-course-concepts-research` on `main` | Met |
 | Source coverage | 35 playlist videos indexed; 15 lecture groups; 34 caption files recovered; missing id `nx1XOlezuvk` preserved | Met with caveat |
 | Individual video links | `site/videos.html` lists every YouTube item in playlist order | Met |
-| Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, slow walkthrough, source checkpoint, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
+| Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, lecture deepening, slow walkthrough, source checkpoint, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
 | Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures | Met |
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, anchor examples, work-from-scratch blocks, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections; themes include lenses, subthemes include first-principles bridges and reading routines, and families include method playbooks and contracts | Met |
@@ -41,6 +41,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 3,855 lecture essay words.
+- 1,289 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 979 caption-nuance words.
 - 1,090 lecture source-lens words.
@@ -68,7 +69,7 @@ The validator checks:
 
 - expected video, lecture, caption, concept, theme, subtheme, family counts;
 - required generated pages;
-- depth floors for lecture, lecture-walkthrough, caption-nuance, source-lens, source-checkpoint, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why prose;
+- depth floors for lecture, lecture-deepening, lecture-walkthrough, caption-nuance, source-lens, source-checkpoint, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why prose;
 - at least three concrete examples per lecture;
 - lecture-spine structure and length;
 - concept/theme/subtheme/family id integrity;
@@ -78,6 +79,7 @@ The validator checks:
 - proof-move structure and length;
 - reader checks structure and length;
 - source-audit caption-nuance cards;
+- lecture-page deepening sections;
 - lecture-page source-checkpoint sections;
 - concept-page anchor-example sections;
 - concept-page work-from-scratch sections;

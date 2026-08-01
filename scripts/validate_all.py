@@ -167,6 +167,10 @@ def main():
         for field in ["problem", "first_principles", "math_move", "detail", "connection"]:
             if len(words(deep.get(field))) < 35:
                 fail(f"lecture {lecture['lecture']} deep {field} too thin")
+        deepening = deep.get("deepening") or {}
+        for field in ["what_is_really_happening", "why_it_is_hard", "key_move", "payoff"]:
+            if len(words(deepening.get(field))) < 14:
+                fail(f"lecture {lecture['lecture']} deepening {field} too thin")
         if len(deep.get("anchors") or []) < 4:
             fail(f"lecture {lecture['lecture']} needs transcript anchors")
         source_lens = deep.get("source_lens") or []
@@ -338,6 +342,9 @@ def main():
         if lecture_name not in names:
             fail(f"missing lecture page {lecture['lecture']:02d}")
         lecture_html = (SITE / lecture_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["Lecture Deepening", "What is really happening:", "Why it is hard:", "Key move:", "Payoff:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing deepening phrase {phrase}: {lecture_name}")
         if "Source Lens" not in lecture_html:
             fail(f"lecture page missing source lens: {lecture_name}")
         for phrase in ["Source Checkpoint", "Trust:", "Do not overread:", "Math question:"]:

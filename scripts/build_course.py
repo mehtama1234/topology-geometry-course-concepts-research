@@ -2035,6 +2035,100 @@ LECTURE_WALKTHROUGHS = {
 }
 
 
+LECTURE_DEEPENING = {
+    1: {
+        "what_is_really_happening": "The lecture is replacing the question 'what does the strip look like?' with 'what does a full journey through the strip do to local side information?'",
+        "why_it_is_hard": "A beginner can inspect many small patches and see only ordinary paper, so the global reversal feels like a surprise rather than a rule-made consequence.",
+        "key_move": "Treat the twist as an instruction for gluing the ends, then test that instruction by following, coloring, and cutting paths that travel around the whole strip.",
+        "payoff": "The reader learns the course's first durable lesson: local sameness does not guarantee global sameness, and a physical test can expose the difference.",
+    },
+    2: {
+        "what_is_really_happening": "The lecture turns drawing into proof by asking which path changes are legal while boundary order and no-crossing conditions stay fixed.",
+        "why_it_is_hard": "It is tempting to trust a drawing that looks cleaner, but the proof depends on the motion that produced the drawing, not on the drawing's appearance.",
+        "key_move": "State the fixed boundary data, then deform the interior curves only through moves that keep endpoints and forbidden crossings under control.",
+        "payoff": "The reader learns how a simplified picture can answer the original problem without secretly solving a different boundary puzzle.",
+    },
+    3: {
+        "what_is_really_happening": "The lecture gives the construction tools that let later arguments talk about spaces made from choices, identifications, local patches, and replacement operations.",
+        "why_it_is_hard": "Words such as product, quotient, surgery, and manifold can sound like labels, when here they are actions that build the object under study.",
+        "key_move": "Read each construction by asking what choices are added, what points become the same, what local piece is replaced, and what neighborhoods remain ordinary.",
+        "payoff": "The reader can later test whether a theorem is being applied to the right space, because the space's construction rules are visible.",
+    },
+    4: {
+        "what_is_really_happening": "The lecture teaches that a flat drawing can be a code for a different space once its edges are identified by rules.",
+        "why_it_is_hard": "A beginner naturally trusts the visible square, but the actual surface is determined by where travelers go after crossing labeled edges.",
+        "key_move": "Stop reading the boundary as a wall until the edge rule has been checked, including whether direction is preserved or reversed.",
+        "payoff": "The reader gains the habit needed for quotient spaces, orientation, and any later argument where the object is defined by a rule rather than by appearance.",
+    },
+    5: {
+        "what_is_really_happening": "The lecture turns surfaces into classifiable objects by tracking handles, boundaries, side reversal, and the operations that preserve those features.",
+        "why_it_is_hard": "Surface names can sound like a taxonomy of pictures, but classification is really about durable evidence under legal cutting, gluing, and simplification.",
+        "key_move": "Follow the controlled surface operations and ask which global features survive: orientability, boundary behavior, handles, crosscaps, and Euler-style bookkeeping.",
+        "payoff": "The reader sees why later counts and signs need a surface type beneath them; the surface is the stage that gives those later statements force.",
+    },
+    6: {
+        "what_is_really_happening": "The lecture separates accidental meetings from forced meetings by using ordinary position and the amount of room supplied by the surrounding space.",
+        "why_it_is_hard": "A visible crossing can feel like evidence immediately, but before signs or counts are trusted the meeting must be cleaned and tested for stability.",
+        "key_move": "Move objects slightly into ordinary position, then ask whether dimension and placement allow the meeting to be removed or make it unavoidable.",
+        "payoff": "The reader is prepared for intersection number because only clean, evidence-bearing meetings deserve to be counted.",
+    },
+    7: {
+        "what_is_really_happening": "The lecture uses a physical balancing event to introduce forced existence without requiring a formula for the point where it occurs.",
+        "why_it_is_hard": "The demonstration can distract from the mathematical structure: a continuous condition is changing and cannot skip the state being asked for.",
+        "key_move": "Name the quantity that changes continuously and the event that lies between the starting and ending behavior.",
+        "payoff": "The reader learns why topology can prove that a special state exists even when the exact state is not computed.",
+    },
+    8: {
+        "what_is_really_happening": "The lecture turns raw crossings into protected arithmetic by assigning signs that make harmless birth and cancellation events add to zero.",
+        "why_it_is_hard": "A beginner may count visible crossings and miss why that count is fragile; the stable evidence is the signed total, not the raw number.",
+        "key_move": "Use orientation to justify plus and minus signs, then check what happens when a positive-negative pair appears or disappears during legal motion.",
+        "payoff": "The reader learns the central pattern of designed counting: choose arithmetic that forgets fake changes and remembers the obstruction.",
+    },
+    9: {
+        "what_is_really_happening": "The lecture turns a fixed-point equation into a geometric meeting between a map's graph and the diagonal of self-agreement.",
+        "why_it_is_hard": "A rule can feel invisible compared with a surface or curve, and one missing caption means the page must lean on the reliable graph-diagonal spine.",
+        "key_move": "Represent the rule by all input-output pairs, then compare that graph with the diagonal where input and output are equal.",
+        "payoff": "The reader sees fixed points as intersections, which connects the theorem language back to the course's earlier deformation and counting tools.",
+    },
+    10: {
+        "what_is_really_happening": "The lecture uses the shape of a closed filled ball to rule out a continuous escape plan for every point at once.",
+        "why_it_is_hard": "The theorem proves existence without locating the point, so it can feel weaker than computation even though it answers a different kind of question.",
+        "key_move": "Keep the domain closed and filled, keep the rule inside the domain, and use continuity to block a total avoidance of self-agreement.",
+        "payoff": "The reader learns how the shape of a space can force a solution before any formula for that solution is available.",
+    },
+    11: {
+        "what_is_really_happening": "The lecture changes dynamics from solving paths to reading the arrow pattern and the places where that pattern fails.",
+        "why_it_is_hard": "A beginner may treat an equilibrium as just a named point, but the useful evidence is how nearby arrows turn around it.",
+        "key_move": "Inspect a small loop around each vanishing arrow and record the local turning behavior rather than trying to solve every trajectory.",
+        "payoff": "The reader sees how motion can be studied topologically: defects in an arrow field become countable evidence.",
+    },
+    12: {
+        "what_is_really_happening": "The lecture asks what all local vector-field defects know together when their signed indices are added over the full surface.",
+        "why_it_is_hard": "It is easy to focus on one source, sink, or saddle and miss that the important object is the total over every isolated defect.",
+        "key_move": "Clean the field to isolated defects, assign each local index, then compare the sum with the surface carrying the field.",
+        "payoff": "The reader sees Euler characteristic becoming a demand on motion, not only a surface bookkeeping number.",
+    },
+    13: {
+        "what_is_really_happening": "The lecture uses Poincare-Hopf as a working equality between whole-surface topology and total local vector-field failure.",
+        "why_it_is_hard": "The hairy-ball example is memorable, but it can hide the deeper statement about adding every isolated defect with signs.",
+        "key_move": "Read the theorem as a complete account: surface first, all defects second, signed sum third, Euler characteristic as the required total.",
+        "payoff": "The reader can use topology to predict motion failures or use observed failures to infer information about the surface.",
+    },
+    14: {
+        "what_is_really_happening": "The lecture tests whether the course's proof tools survive honest translation into applications and moving systems.",
+        "why_it_is_hard": "Applications can sound convincing too early; the theorem only sees the model, so an inaccurate state space gives an inaccurate physical conclusion.",
+        "key_move": "Build the state space carefully, name forbidden states and allowed motions, then translate the topological conclusion back to the original system.",
+        "payoff": "The reader learns that modeling is part of the proof, not a story added before the mathematics begins.",
+    },
+    15: {
+        "what_is_really_happening": "The final lecture gathers the course as one reasoning habit rather than a list of separate demonstrations and theorem names.",
+        "why_it_is_hard": "Review lectures can encourage memorizing topics in order, but the deeper value is seeing the same proof engine move across different objects.",
+        "key_move": "Read each topic as a four-part account: object, legal move, surviving fact, and conclusion forced by that fact.",
+        "payoff": "The reader leaves with a portable method for reading the whole companion and for testing whether any page has reached first-principles depth.",
+    },
+}
+
+
 LECTURE_CAPTION_NUANCE = {
     1: {
         "terms": ["Mobius", "one side", "twist", "cut"],
@@ -2376,6 +2470,7 @@ def build_quality_audit(data):
     concept_max = max(len(c["appearances"]) for c in data["concepts"])
     lecture_examples = sum(len(l["deep"]["examples"]) for l in data["lectures"])
     lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
+    lecture_deepening_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["deepening"][field])) for field in ["what_is_really_happening", "why_it_is_hard", "key_move", "payoff"]) for l in data["lectures"])
     lecture_walkthrough_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["walkthrough"][field])) for field in ["start_here", "payoff", "reader_check"]) for l in data["lectures"])
     lecture_source_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["source_lens"]) for l in data["lectures"])
     lecture_source_checkpoint_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["source_checkpoint"][field])) for field in ["trust", "do_not_overread", "math_question"]) for l in data["lectures"])
@@ -2404,7 +2499,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written lecture depth",
-            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
             "status": "met",
         },
         {
@@ -2474,6 +2569,7 @@ def build_quality_audit(data):
             "lecture_examples": lecture_examples,
             "lecture_spine_entries": len(data["lecture_spine"]),
             "lecture_essay_words": lecture_essay_words,
+            "lecture_deepening_words": lecture_deepening_words,
             "lecture_walkthrough_words": lecture_walkthrough_words,
             "lecture_source_lens_words": lecture_source_lens_words,
             "lecture_source_checkpoint_words": lecture_source_checkpoint_words,
@@ -2810,6 +2906,13 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   {paragraph_block(l['deep']['essay'])}
 </section>
 <section class="lecture">
+  <h2>Lecture Deepening</h2>
+  <p><b>What is really happening:</b> {esc(l['deep']['deepening']['what_is_really_happening'])}</p>
+  <p><b>Why it is hard:</b> {esc(l['deep']['deepening']['why_it_is_hard'])}</p>
+  <p><b>Key move:</b> {esc(l['deep']['deepening']['key_move'])}</p>
+  <p><b>Payoff:</b> {esc(l['deep']['deepening']['payoff'])}</p>
+</section>
+<section class="lecture">
   <h2>Slow Walkthrough</h2>
   <p><b>Start here:</b> {esc(walk['start_here'])}</p>
   <p><b>Mathematical payoff:</b> {esc(walk['payoff'])}</p>
@@ -2902,7 +3005,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -2961,6 +3064,7 @@ def main():
         deep = dict(LECTURE_DEPTH[number])
         deep["examples"] = LECTURE_EXAMPLES[number]
         deep["essay"] = LECTURE_ESSAYS[number]
+        deep["deepening"] = LECTURE_DEEPENING[number]
         deep["source_lens"] = LECTURE_SOURCE_LENS[number]
         deep["source_checkpoint"] = LECTURE_SOURCE_CHECKPOINTS[number]
         deep["walkthrough"] = LECTURE_WALKTHROUGHS[number]
@@ -3074,6 +3178,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 
 - 15 hand-authored lecture explainers from 35 videos
 - lecture-spine.html with {metrics['lecture_spine_entries']} lecture-by-lecture reasoning entries
+- {metrics['lecture_deepening_words']} lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields
 - {metrics['lecture_walkthrough_words']} slow-walkthrough words across lecture pages, explaining each lecture from object to payoff to reader check
 - {metrics['lecture_caption_nuance_words']} caption-nuance words across lecture pages and source audit, explaining risky transcript terms and safe readings
 - {metrics['lecture_source_lens_words']} source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
@@ -3097,7 +3202,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every lecture source-checkpoint field to clear 12 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 130 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 230 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every lecture source-checkpoint field to clear 12 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 130 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
