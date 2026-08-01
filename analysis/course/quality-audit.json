@@ -22,6 +22,11 @@
       "status": "met"
     },
     {
+      "requirement": "Lecture reader testing",
+      "evidence": "Each lecture page now includes a three-part reader test for explaining the object, checking the allowed move, and protecting the conclusion, with 2805 total reader-test words.",
+      "status": "met"
+    },
+    {
       "requirement": "Lecture-by-lecture reasoning spine",
       "evidence": "The Lecture Spine page gives 15 lecture entries that name the object, plain question, legal move, surviving fact, and later use.",
       "status": "met"
@@ -98,6 +103,7 @@
     "lecture_source_checkpoint_words": 1532,
     "lecture_caption_nuance_words": 1492,
     "lecture_source_faithfulness_words": 2109,
+    "lecture_reader_test_words": 2805,
     "concept_essay_words": 7732,
     "concept_workup_words": 2746,
     "concept_anchor_words": 1965,

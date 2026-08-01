@@ -29,7 +29,7 @@ This repo is the source and generated static site for a first-principles compani
 
 - `index.html` — entry point and source state.
 - `videos.html` — all individual YouTube links.
-- `lectures.html`, `lecture-*.html` — lecture explainers with lecture deepening, slow walkthroughs, source checkpoints, source-faithfulness audits, and caption nuance.
+- `lectures.html`, `lecture-*.html` — lecture explainers with lecture deepening, slow walkthroughs, reader tests, source checkpoints, source-faithfulness audits, and caption nuance.
 - `lecture-spine.html` — one reasoning path through all 15 lectures from object to later use.
 - `concepts.html`, `concept-*.html` — concept atlas, reverse lecture appearances, anchor examples, and work-from-scratch blocks.
 - `themes.html`, `subthemes.html`, `families.html` — recurring ideas, theme lenses, subtheme bridges and routines, proof families, method playbooks, and method contracts.
@@ -62,7 +62,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - exact expected video and lecture counts;
 - caption coverage and missing-caption caveat;
 - required page existence;
-- lecture, lecture-deepening, lecture-walkthrough, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why depth floors;
+- lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why depth floors;
 - at least three concrete examples per lecture;
 - lecture-spine structure for all 15 lectures;
 - referential integrity across concepts, themes, subthemes, and families;
@@ -75,6 +75,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - source-checkpoint sections on every lecture page;
 - source-faithfulness audit sections on every lecture page;
 - slow-walkthrough sections on every lecture page;
+- can-you-explain-it reader-test sections on every lecture page;
 - caption-nuance sections on every lecture page and source-audit cards for every lecture, including caption support, course inference, and caveat fields;
 - anchor-example sections on every concept page;
 - work-from-scratch sections on every concept page;
@@ -97,6 +98,7 @@ As of the current generated audit:
 - 5,333 lecture essay words.
 - 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
+- 2,805 lecture reader-test words.
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.

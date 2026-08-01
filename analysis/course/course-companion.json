@@ -580,6 +580,11 @@
           "caption_support": "The recovered captions support the page through anchors such as Mobius strip, twist and glue, cutting along the center, one side versus two sides, and through concrete course moments such as Cutting an ordinary band versus a Mobius band; One side is a global fact; Off-center cuts create linked pieces. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is A strip made by gluing its ends after a half-turn. rather than only a picture on the board. Your answer should use the concrete moment 'Cutting an ordinary band versus a Mobius band' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Follow, mark, or cut the strip without pretending the glued edge rule has disappeared. Then name one move that would change the problem instead of solving it. Use 'One side is a global fact' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: A full trip around the strip reverses the local side choice instead of returning it unchanged. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Off-center cuts create linked pieces' to connect the protected evidence to the later course arc: This is the first warning against local-only thinking. Later orientation, manifolds, vector fields, and surface classification all use the same gap between small-patch behavior and whole-object behavior."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -715,6 +720,11 @@
           "caption_support": "The recovered captions support the page through anchors such as deformation, disk, boundary points, curves that do not intersect, and through concrete course moments such as Connecting boundary pairs in a disk; Deformation as proof of impossibility; Endpoint order carries the obstruction. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is Curves inside a disk with boundary points held in their circular order. rather than only a picture on the board. Your answer should use the concrete moment 'Connecting boundary pairs in a disk' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Slide and bend curves while keeping endpoints fixed in order and while preventing forbidden crossings. Then name one move that would change the problem instead of solving it. Use 'Deformation as proof of impossibility' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: Boundary order and the no-crossing rule survive the redraw, so an unavoidable crossing belongs to the original setup. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Endpoint order carries the obstruction' to connect the protected evidence to the later course arc: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -854,6 +864,11 @@
           "caption_support": "The recovered captions support the page through anchors such as balls and spheres, product, quotient, surgery, and through concrete course moments such as Products make spaces from independent choices; Quotients turn edge instructions into spaces; Surgery treats construction as reasoning. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is Spaces built from choices, identifications, local patches, and controlled replacements. rather than only a picture on the board. Your answer should use the concrete moment 'Products make spaces from independent choices' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Build by product, quotient, manifold charts, or surgery while keeping the construction rule visible. Then name one move that would change the problem instead of solving it. Use 'Quotients turn edge instructions into spaces' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: The rule of construction decides the routes, holes, sides, and local neighborhoods available in the finished space. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Surgery treats construction as reasoning' to connect the protected evidence to the later course arc: Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -979,6 +994,11 @@
           "caption_support": "The recovered captions support the page through anchors such as square, product, quotient, manifolds, and through concrete course moments such as A square is not the space until its edges are read; Reversing an edge changes the global surface; A route can leave the drawing and keep going. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is A square whose marked edges are read as travel instructions for a finished surface. rather than only a picture on the board. Your answer should use the concrete moment 'A square is not the space until its edges are read' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Read each edge identification as part of the object, including whether direction is preserved or reversed. Then name one move that would change the problem instead of solving it. Use 'Reversing an edge changes the global surface' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: The gluing rule determines whether paths close, whether sides remain consistent, and whether the drawn boundary is a true boundary. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'A route can leave the drawing and keep going' to connect the protected evidence to the later course arc: This is the plain entrance to quotient thinking. It prepares the reader for manifolds and for later situations where a rule, not visual appearance, defines the mathematical object."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1104,6 +1124,11 @@
           "caption_support": "The recovered captions support the page through anchors such as classification of surfaces, Mobius, orientable, non-orientable, and through concrete course moments such as Classification separates surfaces by durable parts; Surgery changes a surface by controlled cutting and gluing; Handles and crosscaps are durable building blocks. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is Surfaces broken into standard features such as handles, crosscaps, and boundary components. rather than only a picture on the board. Your answer should use the concrete moment 'Classification separates surfaces by durable parts' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Cut, glue, and simplify under controlled surface operations while tracking the features those operations preserve. Then name one move that would change the problem instead of solving it. Use 'Surgery changes a surface by controlled cutting and gluing' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: Orientability, boundary behavior, and durable surface pieces remain as the evidence used to classify the surface. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Handles and crosscaps are durable building blocks' to connect the protected evidence to the later course arc: This gives Euler characteristic and orientation a home. Later local counts only have force because they live on a surface whose global type has been understood."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1229,6 +1254,11 @@
           "caption_support": "The recovered captions support the page through anchors such as submanifold, moving inside a manifold, obstacles, dimensions, and through concrete course moments such as Moving an object inside a manifold; Forced meetings become evidence; Dimension measures available escape room. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is Subspaces placed inside a surrounding space with only so much room to avoid one another. rather than only a picture on the board. Your answer should use the concrete moment 'Moving an object inside a manifold' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Move objects into ordinary position so meetings are clean and separate, without changing the surrounding problem. Then name one move that would change the problem instead of solving it. Use 'Forced meetings become evidence' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: After accidental coincidences are removed, the remaining pattern of meetings can carry real information. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Dimension measures available escape room' to connect the protected evidence to the later course arc: This lecture supplies the discipline needed before signs can be assigned. Intersection number only works after meetings are clean enough to count honestly."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1352,6 +1382,11 @@
           "caption_support": "The recovered captions support the page through anchors such as center of gravity, continuous motion, intersection, existence, and through concrete course moments such as The center-of-gravity demonstration; Existence without a formula; A physical motion becomes an intersection question. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is A physical balance condition that changes continuously as the setup moves. rather than only a picture on the board. Your answer should use the concrete moment 'The center-of-gravity demonstration' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Track the changing condition continuously and ask whether it can pass from one side of a requirement to another without meeting it. Then name one move that would change the problem instead of solving it. Use 'Existence without a formula' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: Continuity prevents the condition from jumping over the balance state. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'A physical motion becomes an intersection question' to connect the protected evidence to the later course arc: This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1477,6 +1512,11 @@
           "caption_support": "The recovered captions support the page through anchors such as intersection number, orientation, positive or negative, isotopy invariant, and through concrete course moments such as Signed intersection number; Pair creation and cancellation; Orientation gives signs their meaning. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is Clean intersections between oriented objects, equipped with plus and minus signs. rather than only a picture on the board. Your answer should use the concrete moment 'Signed intersection number' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Assign signs using a consistent orientation rule and allow only deformations where pair creation is inspected. Then name one move that would change the problem instead of solving it. Use 'Pair creation and cancellation' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: Opposite-signed pairs can be born or die without changing the signed total. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Orientation gives signs their meaning' to connect the protected evidence to the later course arc: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1616,6 +1656,11 @@
           "caption_support": "The available captions support the lecture through anchors such as graph of a mapping, diagonal, fixed points, missing middle caption, and through concrete course moments such as The graph of a map meets the diagonal; Missing middle caption is kept visible; A rule becomes a shape that can be compared. The missing video id nx1XOlezuvk means this page must keep theorem-level claims tied to the recovered parts and avoid pretending the middle source is complete.",
           "course_inference": "The page uses the lecture sequence, the surrounding parts, and the course's repeated object-move-surviving-fact pattern to connect the recovered source to the broader explanation. Those connections are useful, but they should be read as structured course interpretation rather than direct transcript quotation from the missing segment.",
           "caveat": "Recheck any claim that depends on the absent caption before strengthening it. The safest audit question is: would this sentence still be justified by the recovered captions, the listed anchors, and the visible lecture examples if nx1XOlezuvk remained unavailable?"
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is The graph of a map compared with the diagonal of self-agreement. rather than only a picture on the board. Your answer should use the concrete moment 'The graph of a map meets the diagonal' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Translate the rule into its graph in input-output space and compare it with the diagonal without changing what equality means. Then name one move that would change the problem instead of solving it. Use 'Missing middle caption is kept visible' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: A meeting of graph and diagonal is exactly a fixed point of the original map. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'A rule becomes a shape that can be compared' to connect the protected evidence to the later course arc: This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1740,6 +1785,11 @@
           "caption_support": "The recovered captions support the page through anchors such as Brouwer fixed-point theorem, closed ball, boundary, continuous map, and through concrete course moments such as Brouwer on the closed ball; Boundary changes the theorem; No global escape from self-agreement. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is A continuous self-map of a closed ball, including its filled interior and boundary. rather than only a picture on the board. Your answer should use the concrete moment 'Brouwer on the closed ball' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Keep the domain filled, keep the boundary condition honest, and forbid jumps in the rule. Then name one move that would change the problem instead of solving it. Use 'Boundary changes the theorem' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: The ball gives no continuous escape plan that moves every point away from itself at once. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'No global escape from self-agreement' to connect the protected evidence to the later course arc: This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1878,6 +1928,11 @@
           "caption_support": "The recovered captions support the page through anchors such as dynamical systems, differential equations, vector field, equilibria, and through concrete course moments such as Vector fields replace solved trajectories; Equilibria are arrow-field failures; Local arrow patterns can be counted. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is A vector field, meaning an arrow assigned to each point of a surface or state space. rather than only a picture on the board. Your answer should use the concrete moment 'Vector fields replace solved trajectories' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Study the arrow pattern and isolate the points where the arrow vanishes. Then name one move that would change the problem instead of solving it. Use 'Equilibria are arrow-field failures' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: An equilibrium carries more information than its location; nearby arrows turn around it in a countable way. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Local arrow patterns can be counted' to connect the protected evidence to the later course arc: This shifts the course from fixed places to motion laws. It prepares index as the local evidence attached to a failure of motion."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -2003,6 +2058,11 @@
           "caption_support": "The recovered captions support the page through anchors such as index of a vector field, equilibria, Euler characteristic, Poincare-Hopf, and through concrete course moments such as Adding local indices; Poincare-Hopf as surface bookkeeping; Defects can move while the total stays fixed. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is Indices assigned to isolated vector-field defects by reading nearby arrow turning. rather than only a picture on the board. Your answer should use the concrete moment 'Adding local indices' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Clean the field to isolated defects, read the turning around each one, and add the signed local counts. Then name one move that would change the problem instead of solving it. Use 'Poincare-Hopf as surface bookkeeping' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: Defects may move or split, but the total signed index is constrained by the surface. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Defects can move while the total stays fixed' to connect the protected evidence to the later course arc: This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -2129,6 +2189,11 @@
           "caption_support": "The recovered captions support the page through anchors such as Poincare-Hopf theorem, index sum, Euler characteristic, hairy ball, and through concrete course moments such as Using Poincare-Hopf in both directions; The hairy-ball idea in plain form; Topology predicts a failure of motion. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is A vector field on a surface, with all isolated defects counted together. rather than only a picture on the board. Your answer should use the concrete moment 'Using Poincare-Hopf in both directions' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Use Poincare-Hopf only after the field is clean enough and the surface carrying it is the right one. Then name one move that would change the problem instead of solving it. Use 'The hairy-ball idea in plain form' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: The sum of local indices equals the Euler characteristic of the surface. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'Topology predicts a failure of motion' to connect the protected evidence to the later course arc: This gathers the course's main chain: surface bookkeeping, signs, local defects, and global constraint. The hairy-ball idea is one visible consequence, not the whole story."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -2251,6 +2316,11 @@
           "caption_support": "The recovered captions support the page through anchors such as applications, rotations in space, Poincare-Hopf, dynamical systems, and through concrete course moments such as Applications as honest translations; Rotations and dynamics share the same proof engine; The model must carry the real constraint. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is A physical or moving system translated into a space of possible states. rather than only a picture on the board. Your answer should use the concrete moment 'Applications as honest translations' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Choose the state space honestly, include the real freedoms, exclude the real forbidden states, and then apply the theorem to that model. Then name one move that would change the problem instead of solving it. Use 'Rotations and dynamics share the same proof engine' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: Barriers, holes, fixed points, and index totals in the state space become constraints on the original system. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'The model must carry the real constraint' to connect the protected evidence to the later course arc: This tests the whole course outside its cleanest surface examples. It shows that first-principles modeling is part of the mathematics, not a preliminary story."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -2391,6 +2461,11 @@
           "caption_support": "The recovered captions support the page through anchors such as table of contents, pictorial thinking, deformation, intersection, and through concrete course moments such as The table of contents becomes one argument; Pictures earn their role by carrying constraints; The final strip demonstration returns to linking. The page should keep returning to those source signals when it explains the lecture's object, allowed move, protected fact, and later use.",
           "course_inference": "The page also connects the lecture to earlier and later course ideas. That connection is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary.",
           "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Treat the source as evidence for the lecture's shape and examples, while checking any exact technical term against the video before making a sharper claim."
+        },
+        "reader_test": {
+          "explain_object": "In everyday language, explain why the lecture's main object is The whole course as a chain of picture-based reasoning moves. rather than only a picture on the board. Your answer should use the concrete moment 'The table of contents becomes one argument' and say what information the object carries before any theorem name is used.",
+          "test_allowed_move": "Name the allowed move in this lecture: Translate each situation into objects, allowed moves, protected evidence, and a conclusion that follows from that evidence. Then name one move that would change the problem instead of solving it. Use 'Pictures earn their role by carrying constraints' as the check that keeps the motion honest.",
+          "protect_conclusion": "State the surviving fact: The same reasoning pattern survives across settings: build the right picture, move it legally, count what survives, and let the shape force the answer. Then explain how that fact forces the lecture's payoff without relying on a slogan. Use 'The final strip demonstration returns to linking' to connect the protected evidence to the later course arc: This is the final reader standard for the companion. A page is deep enough only when the reader can say what object was made, what move was legal, what fact survived, and why that fact forces the conclusion."
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -5362,6 +5437,11 @@
         "status": "met"
       },
       {
+        "requirement": "Lecture reader testing",
+        "evidence": "Each lecture page now includes a three-part reader test for explaining the object, checking the allowed move, and protecting the conclusion, with 2805 total reader-test words.",
+        "status": "met"
+      },
+      {
         "requirement": "Lecture-by-lecture reasoning spine",
         "evidence": "The Lecture Spine page gives 15 lecture entries that name the object, plain question, legal move, surviving fact, and later use.",
         "status": "met"
@@ -5438,6 +5518,7 @@
       "lecture_source_checkpoint_words": 1532,
       "lecture_caption_nuance_words": 1492,
       "lecture_source_faithfulness_words": 2109,
+      "lecture_reader_test_words": 2805,
       "concept_essay_words": 7732,
       "concept_workup_words": 2746,
       "concept_anchor_words": 1965,
