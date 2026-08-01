@@ -4067,14 +4067,31 @@ def source_trail_cards(refs, seed, page_kind):
 def build_source_faithfulness(lecture):
     anchors = ", ".join(lecture["deep"]["anchors"][:4])
     examples = "; ".join(example["title"] for example in lecture["deep"]["examples"][:3])
+    number = lecture["lecture"]
     if lecture["missing_caption_ids"]:
         support = f"The available captions support the lecture through anchors such as {anchors}, and through concrete course moments such as {examples}. The missing video id {', '.join(lecture['missing_caption_ids'])} means transcript-level evidence is incomplete, so exact wording and theorem-transition claims must stay tied to recovered captions or visible demonstrations."
         inference = "The page uses the lecture sequence, the surrounding parts, and the course's repeated object-move-surviving-fact pattern to connect the recovered source to the broader explanation. Those connections are useful course-arc interpretation, not direct quotation from the missing segment and not proof that Tokieda used the same wording."
         caveat = f"Recheck any claim that depends on the absent caption before strengthening it. Label the claim as caption support, visible demonstration, course-arc inference, or background-source support. The safest audit question is: would this sentence still be justified if {', '.join(lecture['missing_caption_ids'])} remained unavailable?"
     else:
-        support = f"The recovered captions support the page through anchors such as {anchors}, and through concrete course moments such as {examples}. Treat those signals as evidence for the lecture's object, allowed move, protected fact, and later use, but do not treat the cleaned transcript as exact notes."
-        inference = "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is an interpretation of the course arc, so it must remain visibly tied to the lecture examples and not turn into a generic topology summary or a claim that Tokieda literally stated the companion's wording."
-        caveat = "Auto-captions can mishear names, symbols, and short mathematical words. Label exact-source support separately from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
+        support_tail = varied((number, "faith-support"), [
+            "Those anchors justify the page's reading of the lecture object, the allowed move, the protected fact, and the later use. They do not turn the cleaned transcript into official notes.",
+            "Use those signals as footing for the page's object-move-surviving-fact account. They support the mathematical reading, but they should not be treated as exact phrasing from the board or voice.",
+            "That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
+            "The examples are the main guardrail: they keep the page tied to what the lecture demonstrates rather than to a free-standing textbook account.",
+        ])
+        inference = varied((number, "faith-inference"), [
+            "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is course-arc interpretation, so it must stay tied to the examples and not become a general topology summary or a claim that Tokieda literally used the companion's wording.",
+            "The companion then adds a course-arc reading: how this lecture receives earlier habits and prepares later ones. That connection is useful, but it is still an interpretation built from sequence, examples, and repeated method, not a direct report of a transcript sentence.",
+            "The page uses the lecture's position in the sequence to explain why the idea matters later. That is a fair teaching bridge only when it remains visibly connected to the named course moments and does not borrow authority from the transcript for words the transcript does not supply.",
+            "Some sentences explain the lecture's role in the whole course rather than a single caption line. Those sentences should be read as course structure: the object, legal move, and surviving fact are being connected forward, not quoted as Tokieda's exact formulation.",
+        ])
+        caveat = varied((number, "faith-caveat"), [
+            "Auto-captions can mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim.",
+            "Recovered captions are good evidence for topics, examples, and rough phrasing, but they are not a final transcript. Before tightening a sentence, decide whether it rests on caption wording, a visible demonstration, a course-chain inference, or a background source.",
+            "The safest revision habit is to label the kind of support. If the claim needs exact terminology, recheck the video; if it only explains the course role, keep it framed as interpretation rather than as transcript evidence.",
+            "Caption evidence can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports.",
+        ])
+        support = f"The recovered captions support the page through anchors such as {anchors}, and through concrete course moments such as {examples}. {support_tail}"
     return {
         "caption_support": support,
         "course_inference": inference,
