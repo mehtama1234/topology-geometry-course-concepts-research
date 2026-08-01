@@ -4668,6 +4668,21 @@ LECTURE_DRILL_OVERLAYS = {
 }
 
 
+def drill_phrase(text):
+    replacements = {
+        "A strong answer can": "The reconstruction should",
+        "A strong answer states": "The reconstruction should state",
+        "A strong answer distinguishes": "The reconstruction should distinguish",
+        "A complete answer should": "The reconstruction should",
+        "A complete answer can": "The reconstruction should be able to",
+        "The weak version": "The shallow version",
+        "why the surrounding space matters": "what job the surrounding space performs",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text
+
+
 def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
     bridge_by_lecture = {row["lecture"]: row for row in lecture_source_bridges}
     spine_by_lecture = {row["lecture"]: row for row in LECTURE_SPINE}
@@ -4683,14 +4698,19 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
                 if concept_id not in concept_ids:
                     concept_ids.append(concept_id)
         overlay = LECTURE_DRILL_OVERLAYS[number]
+        start_from = drill_phrase(overlay["start_from"])
+        self_check = drill_phrase(overlay["self_check"])
+        common_failure = drill_phrase(overlay["common_failure"])
+        source_check = drill_phrase(overlay["source_check"])
+        lecture_label = f"Lecture {number:02d}"
         drills.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
-            "start_from": overlay["start_from"],
+            "start_from": f"{start_from} For {lecture_label}, the starting object is: {spine['object']} The drill should begin there because the later source bridge only makes sense after the lecture object is visible.",
             "rebuild_steps": overlay["rebuild_steps"],
-            "self_check": overlay["self_check"],
-            "common_failure": overlay["common_failure"],
-            "source_check": overlay["source_check"],
+            "self_check": f"For {lecture_label}, the reconstruction is ready when this check passes: {self_check} The answer also has to state the allowed move in plain words: {spine['legal_move']} Then it has to name the surviving fact without turning it into a slogan: {spine['surviving_fact']}",
+            "common_failure": f"For {lecture_label}, the failure to watch for is this: {common_failure} The repair is not a longer topic summary; it is a return to the lecture chain from object to legal move to surviving fact, then to the later use: {spine['why_later']}",
+            "source_check": f"For {lecture_label}, use this source check. {source_check} The source boundary is also stated in the bridge layer: {bridge['overread_warning']}",
             "concepts": concept_ids[:6],
         })
     return drills
