@@ -32,7 +32,7 @@ This repo is the source and generated static site for a first-principles compani
 - `lectures.html`, `lecture-*.html` — lecture explainers with slow walkthroughs and caption nuance.
 - `lecture-spine.html` — one reasoning path through all 15 lectures from object to later use.
 - `concepts.html`, `concept-*.html` — concept atlas, reverse lecture appearances, anchor examples, and work-from-scratch blocks.
-- `themes.html`, `subthemes.html`, `families.html` — recurring ideas, theme lenses, subtheme bridges and routines, proof families, and method contracts.
+- `themes.html`, `subthemes.html`, `families.html` — recurring ideas, theme lenses, subtheme bridges and routines, proof families, method playbooks, and method contracts.
 - `the-math-why.html` — core mathematical reason the course works.
 - `course-synthesis.html` — dependency spine and proof-family synthesis.
 - `concept-dependencies.html` — prerequisite paths from early concepts to later theorem-level ideas.
@@ -61,7 +61,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - exact expected video and lecture counts;
 - caption coverage and missing-caption caveat;
 - required page existence;
-- lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, and math-why depth floors;
+- lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why depth floors;
 - at least three concrete examples per lecture;
 - lecture-spine structure for all 15 lectures;
 - referential integrity across concepts, themes, subthemes, and families;
@@ -77,6 +77,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - theme-lens sections on every theme page;
 - first-principles-bridge sections on every subtheme page;
 - reading-routine sections on every subtheme page;
+- method-playbook sections on every family page;
 - method-contract sections on every family page;
 - reader checks structure;
 - broken local links;
@@ -102,6 +103,7 @@ As of the current generated audit:
 - 599 subtheme bridge words.
 - 824 method-family essay words.
 - 493 method-contract words.
+- 540 method-playbook words.
 - 4 playground widgets.
 - 8 synthesis sections.
 - 8 concept dependency paths.

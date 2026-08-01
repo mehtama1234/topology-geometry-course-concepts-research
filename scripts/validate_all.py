@@ -112,6 +112,10 @@ def main():
         for field in ["input", "action", "evidence", "output", "failure_test"]:
             if len(words(contract.get(field))) < 12:
                 fail(f"family {family['id']} contract {field} too thin")
+        playbook = family.get("playbook") or {}
+        for field in ["setup", "move", "payoff", "failure", "reader_test"]:
+            if len(words(playbook.get(field))) < 12:
+                fail(f"family {family['id']} playbook {field} too thin")
 
     theme_ids = {theme["id"] for theme in data["themes"]}
     subtheme_ids = {subtheme["id"] for subtheme in data["subthemes"]}
@@ -359,9 +363,9 @@ def main():
         if family_name not in names:
             fail(f"missing family page {family['id']}")
         family_html = (SITE / family_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Method Contract", "Input:", "Action:", "Protected evidence:", "Output:", "Failure test:"]:
+        for phrase in ["Method Playbook", "Setup:", "Move:", "Payoff:", "Failure:", "Reader test:", "Method Contract", "Input:", "Action:", "Protected evidence:", "Output:", "Failure test:"]:
             if phrase not in family_html:
-                fail(f"family page missing contract phrase {phrase}: {family_name}")
+                fail(f"family page missing family phrase {phrase}: {family_name}")
 
     corpus = "\n".join(p.read_text(encoding="utf-8", errors="ignore").lower() for p in html_files)
     for phrase in FORBIDDEN:

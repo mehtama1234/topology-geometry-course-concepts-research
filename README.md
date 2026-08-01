@@ -29,6 +29,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 858 subtheme routine words across look-for, ask, use, and mistake fields.
 - 599 subtheme bridge words tying recurring moves to course moments, thinking shifts, and reader tests.
 - 493 method-contract words across input, action, protected evidence, output, and failure tests.
+- 540 method-playbook words across setup, move, payoff, failure, and reader-test fields.
 - A course-level synthesis page, a reader-checks page, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces
@@ -37,7 +38,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/lectures.html` and `site/lecture-*.html` — 15 lecture explainers with slow walkthroughs and caption nuance.
 - `site/lecture-spine.html` — one reasoning path through all lectures from object to later use.
 - `site/concepts.html` and `site/concept-*.html` — concept atlas with reverse lecture links, anchor examples, and work-from-scratch blocks.
-- `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps, with theme lenses, subtheme bridges and reading routines, and method contracts.
+- `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps, with theme lenses, subtheme bridges and reading routines, plus method playbooks and contracts.
 - `site/the-math-why.html` — first-principles mathematical synthesis.
 - `site/course-synthesis.html` — dependency spine across the whole course.
 - `site/concept-dependencies.html` — eight prerequisite paths from early concepts to later theorem-level ideas.
@@ -77,7 +78,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
 - Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
-- Minimum essay depth for lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, method-family, method-contract, and math-why layers.
+- Minimum essay depth for lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, method-family, method-contract, method-playbook, and math-why layers.
 - Source-lens sections on every lecture page.
 - Slow Walkthrough sections on every lecture page.
 - Caption Nuance sections on every lecture page and source-audit cards for every lecture.
@@ -86,6 +87,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 - Theme Lens sections on every theme page.
 - First-Principles Bridge sections on every subtheme page.
 - Reading Routine sections on every subtheme page.
+- Method Playbook sections on every method-family page.
 - Method Contract sections on every method-family page.
 - Lecture-spine entries for all 15 lectures.
 - Proof-move recipes with enough steps, explanations, failure modes, and examples.

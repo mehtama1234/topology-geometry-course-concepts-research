@@ -1314,6 +1314,45 @@ FAMILY_ESSAYS = {
 }
 
 
+FAMILY_PLAYBOOKS = {
+    "deformation-family": {
+        "setup": "Start with the original object, not the prettier target picture. Mark the fixed data: endpoints, boundary pieces, obstacles, gluing rules, side choices, and the question being protected.",
+        "move": "Move the object continuously through only the allowed changes, checking after each kind of move that the protected fact has not changed.",
+        "payoff": "The final simpler picture answers the original problem because the legal route to it carried the same question all the way across.",
+        "failure": "The method fails when the easy picture is reached by crossing through a forbidden object, moving fixed data, or silently changing what sameness means.",
+        "reader_test": "Can the reader describe the full legal route, not only the before-and-after pictures?",
+    },
+    "counting-family": {
+        "setup": "Start by listing the local events that may change under motion: cells split, crossings appear, turns shift, or defects move.",
+        "move": "Choose a count whose allowed changes cancel by design, using alternating terms, parity, or signs that come from the geometry of the situation.",
+        "payoff": "Once the protected total is known in one honest version, every legally related version must obey it, so impossibility or forced existence can follow.",
+        "failure": "The method fails when the count changes under a harmless legal redraw or when signs are assigned without a checkable direction rule.",
+        "reader_test": "Can the reader explain one local change and why the chosen count stays fixed through that change?",
+    },
+    "surface-family": {
+        "setup": "Start by naming the whole surface and its edge behavior: boundary, handles, crosscaps, holes, orientation, and any gluing instructions.",
+        "move": "Break the surface into manageable pieces, track local information on the pieces, then glue the account back together without losing global restrictions.",
+        "payoff": "The conclusion belongs to the whole surface, not to one patch, one drawing, or one chosen decomposition.",
+        "failure": "The method fails when local ordinariness is mistaken for global simplicity or when boundary and orientation data are dropped from the account.",
+        "reader_test": "Can the reader point to the full trip, full gluing, or full sum where the global surface constraint appears?",
+    },
+    "embedding-family": {
+        "setup": "Start by separating the required object from the surrounding room: which points connect, which loops link, which crossings are forbidden, and what surface or space carries the placement.",
+        "move": "Try legal placements while tracking route relations, over-under information, crossings, and winding that cannot be erased by allowed motion.",
+        "payoff": "The result is either a legal placement or a proof that every legal placement must encounter the same obstruction.",
+        "failure": "The method fails when one bad drawing is treated as proof, or when spatial information such as over-under order is lost in a flat picture.",
+        "reader_test": "Can the reader say why every legal attempt is blocked, rather than only why one attempted drawing failed?",
+    },
+    "motion-family": {
+        "setup": "Start by listing what information describes one complete state: positions, angles, boundary conditions, forbidden collisions, and any rule acting on states.",
+        "move": "Turn those states into a space, read motion as paths or maps, and then apply deformation, fixed-point, index, or obstruction reasoning inside that state space.",
+        "payoff": "The original system inherits the conclusion because the state space records the real freedoms and restrictions of the physical or dynamical problem.",
+        "failure": "The method fails when the state space omits a real freedom, adds a false wall, or cannot translate its conclusion back to the original motion.",
+        "reader_test": "Can the reader name the state space, the forbidden states, the rule or path, and the topological feature forcing behavior?",
+    },
+}
+
+
 MATH_WHY = {
     "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. Exact length, exact angle, and exact placement often change too easily. Tokieda's course asks for a better handle: a count, a boundary, a hole, a turn, a sign, a fixed point, or a forced route. The reason these ideas matter is that they let a person prove something when direct measurement or direct solving is the wrong tool.",
     "first_principles": "Start with an object or motion that is too complicated to inspect directly. Decide which changes leave the real question unchanged. Move the object until the picture becomes simpler. Track the feature that did not change. If the simplified picture makes the answer clear, the original object inherits that answer. This is the common engine behind paper strips, surface classification, intersection number, fixed-point theorems, and vector-field index.",
@@ -2271,6 +2310,7 @@ def build_quality_audit(data):
     subtheme_bridge_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", s["bridge"][field])) for field in ["course_moment", "thinking_shift", "reader_test"]) for s in data["subthemes"])
     family_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in f["essay"]) for f in data["families"])
     family_contract_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["contract"][field])) for field in ["input", "action", "evidence", "output", "failure_test"]) for f in data["families"])
+    family_playbook_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["playbook"][field])) for field in ["setup", "move", "payoff", "failure", "reader_test"]) for f in data["families"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -2294,7 +2334,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples, and subtheme pages include first-principles bridges.",
+            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields; concept pages include anchor examples, subtheme pages include first-principles bridges, and method-family pages include playbooks.",
             "status": "met",
         },
         {
@@ -2367,6 +2407,7 @@ def build_quality_audit(data):
             "subtheme_bridge_words": subtheme_bridge_words,
             "family_essay_words": family_essay_words,
             "family_contract_words": family_contract_words,
+            "family_playbook_words": family_playbook_words,
             "playground_widgets": 4,
             "synthesis_sections": 8,
             "dependency_paths": len(data["concept_dependencies"]),
@@ -2762,7 +2803,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     for f in data["families"]:
         related = [c for c in data["concepts"] if c["id"] in f["concepts"]]
         contract = f["contract"]
-        body = f"""<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['depth']['human_problem'])}</p><section class="lecture"><h2>Method Essay</h2>{paragraph_block(f['essay'])}</section><section class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p><h2>First Principles</h2><p>{esc(f['depth']['first_principles'])}</p><h2>How It Works</h2><p>{esc(f['depth']['how_it_works'])}</p><h2>Course Examples</h2><p>{esc(f['depth']['course_examples'])}</p><h2>Failure Mode</h2><p>{esc(f['depth']['failure_mode'])}</p></section><section class="lecture"><h2>Method Contract</h2><p><b>Input:</b> {esc(contract['input'])}</p><p><b>Action:</b> {esc(contract['action'])}</p><p><b>Protected evidence:</b> {esc(contract['evidence'])}</p><p><b>Output:</b> {esc(contract['output'])}</p><p><b>Failure test:</b> {esc(contract['failure_test'])}</p></section><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        playbook = f["playbook"]
+        body = f"""<h1>{esc(f['title'])}</h1><p class='lead'>{esc(f['depth']['human_problem'])}</p><section class="lecture"><h2>Method Essay</h2>{paragraph_block(f['essay'])}</section><section class='panel'><h2>Purpose</h2><p>{esc(f['purpose'])}</p><h2>First Principles</h2><p>{esc(f['depth']['first_principles'])}</p><h2>How It Works</h2><p>{esc(f['depth']['how_it_works'])}</p><h2>Course Examples</h2><p>{esc(f['depth']['course_examples'])}</p><h2>Failure Mode</h2><p>{esc(f['depth']['failure_mode'])}</p></section><section class="lecture"><h2>Method Playbook</h2><p><b>Setup:</b> {esc(playbook['setup'])}</p><p><b>Move:</b> {esc(playbook['move'])}</p><p><b>Payoff:</b> {esc(playbook['payoff'])}</p><p><b>Failure:</b> {esc(playbook['failure'])}</p><p><b>Reader test:</b> {esc(playbook['reader_test'])}</p></section><section class="lecture"><h2>Method Contract</h2><p><b>Input:</b> {esc(contract['input'])}</p><p><b>Action:</b> {esc(contract['action'])}</p><p><b>Protected evidence:</b> {esc(contract['evidence'])}</p><p><b>Output:</b> {esc(contract['output'])}</p><p><b>Failure test:</b> {esc(contract['failure_test'])}</p></section><h2>Concepts in this family</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("family", f["id"])).write_text(page(f["title"], body, "Families"), encoding="utf-8")
 
     math_why = f"""<h1>The Math Why</h1><p class="lead">{esc(data['math_why']['big_picture'])}</p><section class="panel"><h2>First Principles</h2><p>{esc(data['math_why']['first_principles'])}</p><h2>Important Detail</h2><p>{esc(data['math_why']['important_detail'])}</p><h2>Principle Behind the Mathematics</h2><p>{esc(data['math_why']['principle'])}</p><h2>Why These Concepts Matter</h2><p>{esc(data['math_why']['concepts_matter'])}</p><h2>How To Read The Course</h2><p>{esc(data['math_why']['reader_path'])}</p></section>"""
@@ -2773,7 +2815,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -2881,6 +2923,7 @@ def main():
         enriched["depth"] = FAMILY_DEPTH[family["id"]]
         enriched["essay"] = FAMILY_ESSAYS[family["id"]]
         enriched["contract"] = FAMILY_CONTRACTS[family["id"]]
+        enriched["playbook"] = FAMILY_PLAYBOOKS[family["id"]]
         families.append(enriched)
     math_why = MATH_WHY
     data = {
@@ -2956,6 +2999,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {metrics['subtheme_bridge_words']} subtheme bridge words across course-moment, thinking-shift, and reader-test fields
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - {metrics['family_contract_words']} method-contract words across input, action, protected-evidence, output, and failure-test fields
+- {metrics['family_playbook_words']} method-playbook words across setup, move, payoff, failure, and reader-test fields
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
@@ -2963,7 +3007,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, and {metrics['family_contract_words']} method-contract words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 130 words, and every method-contract field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 14 words, every method-family essay to clear 130 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

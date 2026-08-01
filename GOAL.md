@@ -53,6 +53,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 858 subtheme routine words.
 - 599 subtheme bridge words.
 - 493 method-contract words.
+- 540 method-playbook words.
 - Four playground widgets.
 - Course synthesis and reader-checks pages.
 

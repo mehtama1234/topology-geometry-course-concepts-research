@@ -29,6 +29,13 @@
       "evidence": "The protected evidence is the fact that survives the whole motion: same endpoints, same boundary data, same route relation, or same invariant.",
       "output": "The output is a simpler picture that can answer the original question because the legal path to it preserved the question.",
       "failure_test": "Reject the argument if it cuts, glues, passes through forbidden matter, moves fixed data, or changes the meaning of sameness."
+    },
+    "playbook": {
+      "setup": "Start with the original object, not the prettier target picture. Mark the fixed data: endpoints, boundary pieces, obstacles, gluing rules, side choices, and the question being protected.",
+      "move": "Move the object continuously through only the allowed changes, checking after each kind of move that the protected fact has not changed.",
+      "payoff": "The final simpler picture answers the original problem because the legal route to it carried the same question all the way across.",
+      "failure": "The method fails when the easy picture is reached by crossing through a forbidden object, moving fixed data, or silently changing what sameness means.",
+      "reader_test": "Can the reader describe the full legal route, not only the before-and-after pictures?"
     }
   },
   {
@@ -62,6 +69,13 @@
       "evidence": "The protected evidence is the total that legal redrawings cannot change, even though individual local events may appear or disappear.",
       "output": "The output is a number or parity fact that can prove impossibility, force existence, or compare two legally related pictures.",
       "failure_test": "Reject the argument if the count changes under a legal harmless move or if signs are assigned without a rule that can be checked."
+    },
+    "playbook": {
+      "setup": "Start by listing the local events that may change under motion: cells split, crossings appear, turns shift, or defects move.",
+      "move": "Choose a count whose allowed changes cancel by design, using alternating terms, parity, or signs that come from the geometry of the situation.",
+      "payoff": "Once the protected total is known in one honest version, every legally related version must obey it, so impossibility or forced existence can follow.",
+      "failure": "The method fails when the count changes under a harmless legal redraw or when signs are assigned without a checkable direction rule.",
+      "reader_test": "Can the reader explain one local change and why the chosen count stays fixed through that change?"
     }
   },
   {
@@ -96,6 +110,13 @@
       "evidence": "The protected evidence is the global surface account: Euler characteristic, orientability, boundary behavior, or a total controlled by the surface.",
       "output": "The output is a whole-surface conclusion that local inspection alone could not justify.",
       "failure_test": "Reject the argument if it assumes every local choice glues globally, ignores boundary terms, or changes the surface while counting."
+    },
+    "playbook": {
+      "setup": "Start by naming the whole surface and its edge behavior: boundary, handles, crosscaps, holes, orientation, and any gluing instructions.",
+      "move": "Break the surface into manageable pieces, track local information on the pieces, then glue the account back together without losing global restrictions.",
+      "payoff": "The conclusion belongs to the whole surface, not to one patch, one drawing, or one chosen decomposition.",
+      "failure": "The method fails when local ordinariness is mistaken for global simplicity or when boundary and orientation data are dropped from the account.",
+      "reader_test": "Can the reader point to the full trip, full gluing, or full sum where the global surface constraint appears?"
     }
   },
   {
@@ -129,6 +150,13 @@
       "evidence": "The protected evidence is a relation that every legal placement must respect: linking, winding, unavoidable crossing, or unavailable route room.",
       "output": "The output is either a legal placement or a proof that no legal placement can avoid the obstruction.",
       "failure_test": "Reject the argument if it treats one failed drawing as impossibility or forgets data needed to distinguish crossings in space."
+    },
+    "playbook": {
+      "setup": "Start by separating the required object from the surrounding room: which points connect, which loops link, which crossings are forbidden, and what surface or space carries the placement.",
+      "move": "Try legal placements while tracking route relations, over-under information, crossings, and winding that cannot be erased by allowed motion.",
+      "payoff": "The result is either a legal placement or a proof that every legal placement must encounter the same obstruction.",
+      "failure": "The method fails when one bad drawing is treated as proof, or when spatial information such as over-under order is lost in a flat picture.",
+      "reader_test": "Can the reader say why every legal attempt is blocked, rather than only why one attempted drawing failed?"
     }
   },
   {
@@ -164,6 +192,13 @@
       "evidence": "The protected evidence is the shape of possibility: a barrier, hole, forced self-agreement, index total, or missing legal path.",
       "output": "The output is a constraint on the original motion, such as an unavoidable state, blocked motion, equilibrium, or required defect.",
       "failure_test": "Reject the argument if the state space leaves out a real freedom, adds a false barrier, or cannot translate the conclusion back to the physical setup."
+    },
+    "playbook": {
+      "setup": "Start by listing what information describes one complete state: positions, angles, boundary conditions, forbidden collisions, and any rule acting on states.",
+      "move": "Turn those states into a space, read motion as paths or maps, and then apply deformation, fixed-point, index, or obstruction reasoning inside that state space.",
+      "payoff": "The original system inherits the conclusion because the state space records the real freedoms and restrictions of the physical or dynamical problem.",
+      "failure": "The method fails when the state space omits a real freedom, adds a false wall, or cannot translate its conclusion back to the original motion.",
+      "reader_test": "Can the reader name the state space, the forbidden states, the rule or path, and the topological feature forcing behavior?"
     }
   }
 ]
