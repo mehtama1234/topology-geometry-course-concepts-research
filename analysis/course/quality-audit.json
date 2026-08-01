@@ -163,7 +163,7 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 1410 source-reader words keep paper reading tied to first-principles course questions.",
+      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 1412 source-reader words keep paper reading tied to first-principles course questions.",
       "status": "met"
     },
     {
@@ -237,7 +237,7 @@
     "term_translations": 16,
     "term_translation_words": 1850,
     "source_readers": 7,
-    "source_reader_words": 1410,
+    "source_reader_words": 1412,
     "paper_family_ledger_rows": 7,
     "paper_family_ledger_words": 1263,
     "references": 7,

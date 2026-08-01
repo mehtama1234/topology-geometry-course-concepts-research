@@ -161,7 +161,7 @@ SOURCE_READERS = [
         "reference": "tib-av-portal-course",
         "reader_problem": "The mirror source answers a source-control problem: how do we know the playlist belongs to a real course series rather than only to a loose upload list?",
         "object_to_watch": "The object here is the course record itself: title, speaker, institution, sequence, and series identity.",
-        "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source rather than drifting into a generic topology syllabus.",
+        "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source rather than drifting into a standard list of topology topics.",
         "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a provenance source, so it can answer who, what course, and what sequence. It cannot answer why a particular proof works or what exact mathematical claim a lecture makes.",
         "family": "Course provenance",
         "do_not_overread": "Do not infer extra theorem content from the mirror listing. It supports identity and access, not additional mathematical claims, proof order, or first-principles explanation.",
@@ -4011,6 +4011,14 @@ def concept_pills(concept_ids, concepts):
     return "".join(f'<a class="pill" href="{slug_page("concept", cid)}">{esc(by_id[cid]["title"])}</a>' for cid in concept_ids if cid in by_id)
 
 
+def sentence_start(text):
+    return text[:1].upper() + text[1:] if text else text
+
+
+def without_leading_label(text, label):
+    return text[len(label):].lstrip() if text.startswith(label) else text
+
+
 def reference_cards(refs):
     if not refs:
         return ""
@@ -4032,9 +4040,12 @@ def split_course_references(refs):
     return course_refs, support_refs
 
 
-def compact_course_reference_card(refs, seed, page_kind):
+def compact_course_reference_card(refs, seed, page_kind, context=None):
     if not refs:
         return ""
+    context = context or {}
+    topic = context.get("title", f"this {page_kind}")
+    topic_start = sentence_start(topic)
     mirror = next((ref for ref in refs if ref["id"] == "tib-av-portal-course"), None)
     mirror_text = varied((seed, "course-mirror-text"), [
         " The TIB record checks the series identity; it is not a separate proof source.",
@@ -4043,16 +4054,16 @@ def compact_course_reference_card(refs, seed, page_kind):
         " The TIB record confirms the course setting without adding claims about a particular proof step.",
     ]) if mirror else ""
     why = varied((seed, "course-reference-why"), [
-        f"The course videos are the authority for what this {page_kind} is explaining: the order of ideas, the demonstrations, and the level of plainness.{mirror_text}",
-        f"This {page_kind} is anchored in Tokieda's course rather than in a generic topology syllabus. The videos supply the teaching sequence and the concrete moves.{mirror_text}",
-        f"The companion starts from the course source because the mathematical point depends on how the lecture builds the object, changes it, and reads what survives.{mirror_text}",
-        f"The source trail begins with the course because it fixes the actual classroom route: picture first, legal move second, protected fact third.{mirror_text}",
+        f"The course videos are the authority for how {topic} is taught here: which object is put in front of the reader, what change is allowed, and what fact is kept alive through that change.{mirror_text}",
+        f"{topic_start} is anchored in Tokieda's course rather than in a standard list of topology topics. The videos supply the teaching order, the physical demonstration, and the point at which a plain picture becomes a mathematical claim.{mirror_text}",
+        f"The companion starts from the course source because the mathematical point depends on the lecture route: build the object, change it under stated rules, then read the piece of evidence that survives.{mirror_text}",
+        f"The course source keeps {topic} tied to the classroom route. Outside sources may deepen the formal family, but the first job is still to preserve what the lecture actually makes visible.{mirror_text}",
     ])
     careful = varied((seed, "course-reference-careful"), [
         "Captions are recovered rather than official notes, so exact wording should be checked against the video before any claim is sharpened.",
-        "Use the videos for course evidence, and keep paper or textbook references in their proper role as background support.",
-        "Do not turn a source link into extra authority. A claim about the lecture still needs caption evidence, a visible demonstration, or an explicitly named course-arc inference.",
-        "When the page makes an interpretive connection, read it as a course-arc explanation unless the wording says it is directly caption-supported.",
+        f"Use the videos to decide what the course actually shows about {topic}. Use papers and textbooks to explain the surrounding mathematics only after that course evidence is fixed.",
+        f"Do not let a source link make a claim sound stronger than it is. A claim about {topic} in the lecture still needs caption evidence, a visible demonstration, or a clearly marked link across course moments.",
+        f"When the page connects {topic} to a wider family, read that as interpretation unless the wording says the point is directly caption-supported.",
     ])
     links = "".join(f'<a class="arrow" href="{esc(ref["url"])}">{esc(ref["title"])}</a>' for ref in refs)
     return f"""<article class="card">
@@ -4064,67 +4075,81 @@ def compact_course_reference_card(refs, seed, page_kind):
 </article>"""
 
 
-def source_trail_cards(refs, seed, page_kind):
+def source_trail_cards(refs, seed, page_kind, context=None):
     course_refs, support_refs = split_course_references(refs)
-    return compact_course_reference_card(course_refs, seed, page_kind) + contextual_reference_cards(support_refs, seed, page_kind)
+    return compact_course_reference_card(course_refs, seed, page_kind, context) + contextual_reference_cards(support_refs, seed, page_kind, context)
 
 
-def source_trail_intro(seed, page_kind):
+def source_trail_intro(seed, page_kind, context=None):
+    context = context or {}
+    topic = context.get("title", f"this {page_kind}")
     if page_kind == "lecture":
         return varied((seed, "source-trail-intro"), [
-            "These references support the mathematical background for this lecture. They are not claims that the lecture cites each source directly.",
-            "Use these sources after the lecture's own object, move, and examples are clear. They back the surrounding mathematics, not exact lecture wording.",
-            "This trail separates the course evidence from the background sources that explain the wider mathematical family.",
-            "The lecture remains the first source for the course moment; the references below show where the broader ideas live.",
+            f"Use this trail after Lecture {context.get('lecture', '')}'s own demonstration is clear. The references explain the surrounding mathematics; they do not rewrite the lecture as if it cited each source line by line.",
+            "First pin down the lecture object, the allowed move, and the fact that survives. The sources below are for the wider mathematical family behind that route.",
+            "This trail keeps two jobs separate: the lecture supplies the course evidence, and the references show where the same kind of reasoning is developed more formally.",
+            "The lecture remains the first source for the course moment. The references below help only after the reader can already explain the demonstration in plain words.",
+        ])
+    if context:
+        object_text = context.get("workup", {}).get("object", "")
+        protected = without_leading_label(context.get("workup", {}).get("protected", ""), "The protected fact is")
+        principle = context.get("math_principle", "")
+        return varied((seed, "source-trail-intro"), [
+            f"The source trail for {topic} starts only after the course object is plain: {object_text} The references below deepen the family behind that object without replacing the lecture evidence.",
+            f"Read these sources as a second pass on {topic}. First hold onto the course's protected fact: {protected} Then use the sources to see how that kind of evidence is handled in the wider literature.",
+            f"{topic} is grounded above in course moments and self-checks. The sources below are useful because they check the same principle in a more formal setting: {principle}",
+            f"Use the cards below to widen {topic}, not to make a background source sound like lecture evidence. The course examples remain the proof of how this companion is using the idea.",
         ])
     return varied((seed, "source-trail-intro"), [
-        "These references support the broader mathematical background for this concept. The lecture examples above remain the first source for how the companion uses it.",
-        "Use this trail after the concept's course examples are clear. The sources deepen the surrounding mathematics without replacing the lecture evidence.",
-        "The concept is grounded above in course moments; these references show the source families behind that idea.",
+        "Use this trail only after the course example is clear. The references widen the mathematical family; they do not replace the lecture evidence.",
+        "The concept is grounded above in course moments. The cards below show where the same kind of object, move, or protected fact appears in broader sources.",
         "Read the cards below as background support for the concept, not as proof that one lecture used a particular source sentence.",
+        "The references are a second layer: first understand what the course made visible, then use the source trail to see the formal setting around it.",
     ])
 
 
-def contextual_reference_cards(refs, seed, page_kind):
+def contextual_reference_cards(refs, seed, page_kind, context=None):
     if not refs:
         return ""
     return "".join(
         f"""<article class="card">
   <div class="meta">{esc(ref['kind'])}</div>
   <h3>{esc(ref['title'])}</h3>
-  <p><b>Why it belongs:</b> {esc(contextual_reference_why(ref, seed, page_kind))}</p>
-  <p><b>Use carefully:</b> {esc(contextual_reference_care(ref, seed, page_kind))}</p>
+  <p><b>Why it belongs:</b> {esc(contextual_reference_why(ref, seed, page_kind, context))}</p>
+  <p><b>Use carefully:</b> {esc(contextual_reference_care(ref, seed, page_kind, context))}</p>
   <a class="arrow" href="{esc(ref['url'])}">Open source</a>
 </article>"""
         for ref in refs
     )
 
 
-def contextual_reference_why(ref, seed, page_kind):
+def contextual_reference_why(ref, seed, page_kind, context=None):
+    context = context or {}
+    topic = context.get("title", f"this {page_kind}")
     rid = ref["id"]
     options = {
         "poincare-analysis-situs": [
-            f"For this {page_kind}, use Poincare's source line as background for whole-space evidence: facts that survive change and then speak about the entire surface or space.",
-            f"This source belongs here because the {page_kind} uses the course's invariant habit, where local pictures are read as evidence about a whole space.",
+            f"For {topic}, use Poincare's source line as background for whole-space evidence: facts that survive change and then speak about the entire surface or space.",
+            f"This source belongs here because {topic} uses the course's invariant habit, where local pictures are read as evidence about a whole space.",
             f"It supports the historical family behind manifolds, Euler characteristic, duality, and Poincare-Hopf: a space can carry information no single patch reveals.",
         ],
         "hopf-vektorfelder": [
-            f"This {page_kind} reaches the vector-field-index thread: local arrow failures are assigned signed evidence and compared with the surface carrying them.",
-            f"Hopf's paper belongs as background when the {page_kind} turns isolated defects of a field into a whole-surface count.",
+            f"{topic} reaches the vector-field-index thread: local arrow failures are assigned signed evidence and compared with the surface carrying them.",
+            f"Hopf's paper belongs as background when {topic} turns isolated defects of a field into a whole-surface count.",
             f"It supports the source family where a field's local singularities are not separate accidents; their signed total is constrained by the manifold.",
         ],
         "hatcher-algebraic-topology": [
-            f"Hatcher is useful after the {page_kind}'s plain object and move are clear, because it gives the formal machinery behind quotient spaces, homotopy, homology, and invariants.",
-            f"This source backs the broader algebraic-topology family behind the {page_kind}: turning spaces and allowed changes into durable structure.",
+            f"Hatcher is useful after {topic}'s plain object and move are clear, because it gives the formal machinery behind quotient spaces, homotopy, homology, and invariants.",
+            f"This source backs the broader algebraic-topology family behind {topic}: turning spaces and allowed changes into durable structure.",
             f"It belongs as a next reference for readers who want the formal route behind the companion's everyday account of spaces, maps, and protected counts.",
         ],
         "milnor-differentiable-viewpoint": [
-            f"Milnor supports the {page_kind}'s bridge from pictures to smooth objects, degree-style reasoning, fixed points, and vector-field index.",
-            f"This source belongs when the {page_kind} needs a compact formal backup for manifolds, boundaries, maps, and local-to-global smooth reasoning.",
+            f"Milnor supports {topic}'s bridge from pictures to smooth objects, degree-style reasoning, fixed points, and vector-field index.",
+            f"This source belongs when {topic} needs a compact formal backup for manifolds, boundaries, maps, and local-to-global smooth reasoning.",
             f"It gives background for the differentiable-topology route behind the page, after the reader has already named the object and the allowed move plainly.",
         ],
         "guillemin-pollack-differential-topology": [
-            f"This source supports the {page_kind}'s clean-meeting discipline: prepare ordinary intersections before signs, counts, or local conclusions are trusted.",
+            f"This source supports {topic}'s clean-meeting discipline: prepare ordinary intersections before signs, counts, or local conclusions are trusted.",
             f"It belongs as background for generic position, transversality-style preparation, oriented intersections, and the local conditions that make counting honest.",
             f"Use it to see why the course's small nudges matter: the goal is not a nicer drawing, but events clean enough to carry signs and counts.",
         ],
@@ -4132,31 +4157,33 @@ def contextual_reference_why(ref, seed, page_kind):
     return varied((seed, rid, "context-why"), options.get(rid, [ref["why"]]))
 
 
-def contextual_reference_care(ref, seed, page_kind):
+def contextual_reference_care(ref, seed, page_kind, context=None):
+    context = context or {}
+    topic = context.get("title", f"this {page_kind}")
     rid = ref["id"]
     options = {
         "poincare-analysis-situs": [
-            f"Read it as background for the mathematical family, not as a transcript source for this {page_kind}. Let the course example explain the idea before the historical source deepens it.",
-            f"Do not import the paper's notation into the {page_kind} before the everyday object, move, and protected fact are visible.",
-            f"It can support the broader source trail, but it should not be used to claim Tokieda cited a passage or followed the same proof order.",
+            f"Read it as background for the mathematical family, not as a transcript source for {topic}. Let the course example explain the idea before the historical source deepens it.",
+            f"Do not import the paper's notation into {topic} before the everyday object, move, and protected fact are visible.",
+            f"Use it to understand the older source family behind {topic}; do not claim from this link alone that Tokieda cited a passage or followed the same proof order.",
         ],
         "hopf-vektorfelder": [
-            f"Use it after the {page_kind} has translated defects and index through the course examples. The paper is not a beginner replacement for that translation.",
+            f"Use it after {topic} has translated defects and index through the course examples. The paper is not a beginner replacement for that translation.",
             f"Do not let the technical source hide the simple audit: what field is on what space, which defects are isolated, and what signed total is being compared.",
             f"It supports the theorem family, not exact lecture wording. Keep transcript evidence and background-source support separate.",
         ],
         "hatcher-algebraic-topology": [
-            f"Use it as a next source, not as required reading for the {page_kind}. The page should remain understandable before algebraic machinery appears.",
+            f"Use it as a next source, not as required reading for {topic}. The page should remain understandable before algebraic machinery appears.",
             f"Do not let formal terms arrive before their job is clear in ordinary language: what object is built, what motion is allowed, and what evidence survives.",
             f"It is broader than the course route, so link it for formal depth without making the lecture or concept sound like a textbook summary.",
         ],
         "milnor-differentiable-viewpoint": [
-            f"Use it for formal backup only after the {page_kind} has named the course object and move. The source assumes more preparation than the companion.",
+            f"Use it for formal backup only after {topic} has named the course object and move. The source assumes more preparation than the companion.",
             f"Do not use Milnor's compact route as if it were the lecture's route unless the course evidence also supports that reading.",
-            f"Keep the reader's first foothold concrete: the surface, map, boundary, or vector field must be clear before this reference is useful.",
+            f"For {topic}, the surface, map, boundary, or vector field must already be clear before this reference is useful; otherwise the compact formal route will hide the plain idea.",
         ],
         "guillemin-pollack-differential-topology": [
-            f"Use it for background on clean setup, not as a reason to introduce formal vocabulary before the {page_kind} has explained the picture.",
+            f"Use it for background on clean setup, not as a reason to introduce formal vocabulary before {topic} has explained the picture.",
             f"Do not turn transversality language into a shortcut. The reader still needs to know what accident was removed and what count became trustworthy.",
             f"It belongs after the course idea is plain: clean meetings first, signs second, durable conclusion third.",
         ],
@@ -6092,8 +6119,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <p>{vids}</p>
 <section class="lecture">
   <h2>Further Source Trail</h2>
-  <p class="evidence">{esc(source_trail_intro(("lecture", l["lecture"]), "lecture"))}</p>
-  <div class="grid two">{source_trail_cards(lecture_refs, ("lecture", l["lecture"]), "lecture")}</div>
+  <p class="evidence">{esc(source_trail_intro(("lecture", l["lecture"]), "lecture", l))}</p>
+  <div class="grid two">{source_trail_cards(lecture_refs, ("lecture", l["lecture"]), "lecture", l)}</div>
 </section>
 <p class="evidence">Transcript words: {l['transcript_words']}. Missing captions: {', '.join(l['missing_caption_ids']) or 'none'}.</p>
 """
@@ -6111,7 +6138,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         anchor = c["anchor"]
         self_check = c["self_check"]
         concept_refs = [ref for ref in data["references"] if c["id"] in ref["concepts"]]
-        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><section class="lecture"><h2>Can You Use It?</h2><p><b>Object check:</b> {esc(self_check['object_check'])}</p><p><b>Operation check:</b> {esc(self_check['operation_check'])}</p><p><b>Protected fact check:</b> {esc(self_check['protected_check'])}</p><p><b>Failure check:</b> {esc(self_check['failure_check'])}</p></section><section class="lecture"><h2>Further Source Trail</h2><p class="evidence">{esc(source_trail_intro(("concept", c["id"]), "concept"))}</p><div class="grid two">{source_trail_cards(concept_refs, ("concept", c["id"]), "concept")}</div></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
+        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><section class="lecture"><h2>Can You Use It?</h2><p><b>Object check:</b> {esc(self_check['object_check'])}</p><p><b>Operation check:</b> {esc(self_check['operation_check'])}</p><p><b>Protected fact check:</b> {esc(self_check['protected_check'])}</p><p><b>Failure check:</b> {esc(self_check['failure_check'])}</p></section><section class="lecture"><h2>Further Source Trail</h2><p class="evidence">{esc(source_trail_intro(("concept", c["id"]), "concept", c))}</p><div class="grid two">{source_trail_cards(concept_refs, ("concept", c["id"]), "concept", c)}</div></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
     body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"

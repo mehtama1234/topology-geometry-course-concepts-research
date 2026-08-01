@@ -7859,7 +7859,7 @@
       "reference": "tib-av-portal-course",
       "reader_problem": "The mirror source answers a source-control problem: how do we know the playlist belongs to a real course series rather than only to a loose upload list?",
       "object_to_watch": "The object here is the course record itself: title, speaker, institution, sequence, and series identity.",
-      "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source rather than drifting into a generic topology syllabus.",
+      "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source rather than drifting into a standard list of topology topics.",
       "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a provenance source, so it can answer who, what course, and what sequence. It cannot answer why a particular proof works or what exact mathematical claim a lecture makes.",
       "family": "Course provenance",
       "do_not_overread": "Do not infer extra theorem content from the mirror listing. It supports identity and access, not additional mathematical claims, proof order, or first-principles explanation.",
@@ -8576,7 +8576,7 @@
       },
       {
         "requirement": "First-principles paper and source reading",
-        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 1410 source-reader words keep paper reading tied to first-principles course questions.",
+        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 1412 source-reader words keep paper reading tied to first-principles course questions.",
         "status": "met"
       },
       {
@@ -8650,7 +8650,7 @@
       "term_translations": 16,
       "term_translation_words": 1850,
       "source_readers": 7,
-      "source_reader_words": 1410,
+      "source_reader_words": 1412,
       "paper_family_ledger_rows": 7,
       "paper_family_ledger_words": 1263,
       "references": 7,
