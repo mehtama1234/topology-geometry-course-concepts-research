@@ -52,7 +52,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,964 theme essay words.
 - 803 theme lens words.
 - 2,761 subtheme essay words.
-- 858 subtheme routine words.
+- 1,110 subtheme routine words.
 - 985 subtheme bridge words.
 - 1,525 method-family essay words.
 - 493 method-contract words.

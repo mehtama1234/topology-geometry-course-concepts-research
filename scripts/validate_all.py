@@ -93,7 +93,7 @@ def main():
             fail(f"subtheme {subtheme['id']} essay too thin")
         routine = subtheme.get("routine") or {}
         for field in ["look_for", "ask", "use", "mistake"]:
-            if len(words(routine.get(field))) < 12:
+            if len(words(routine.get(field))) < 25:
                 fail(f"subtheme {subtheme['id']} routine {field} too thin")
         bridge = subtheme.get("bridge") or {}
         for field in ["course_moment", "thinking_shift", "reader_test"]:

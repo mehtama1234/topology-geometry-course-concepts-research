@@ -335,63 +335,63 @@ SUBTHEME_ESSAYS = {
 
 SUBTHEME_ROUTINES = {
     "allowed-moves": {
-        "look_for": "Look first for the rulebook of the problem: which objects may move, which points or boundaries stay fixed, and which changes are forbidden.",
-        "ask": "Ask whether the proposed simplification uses only those allowed moves, or whether it quietly changes the original question.",
-        "use": "Use this routine before every deformation, surgery, knot, path, or vector-field cleanup argument. The allowed moves decide what sameness means.",
-        "mistake": "The mistake is accepting a cleaner picture before checking the motion that produced it. A clean drawing reached illegally is not evidence.",
+        "look_for": "Look first for the rulebook of the problem: which objects may move, which points or boundaries stay fixed, and which changes are forbidden. The rulebook decides what counts as the same situation.",
+        "ask": "Ask whether the proposed simplification uses only those allowed moves, or whether it quietly changes the original question by moving fixed data, crossing a barrier, or dropping a condition.",
+        "use": "Use this routine before every deformation, surgery, knot, path, or vector-field cleanup argument. The allowed moves decide what sameness means and whether the simplified object still answers the starting problem.",
+        "mistake": "The mistake is accepting a cleaner picture before checking the motion that produced it. A clean drawing reached illegally is not evidence about the original mathematical question.",
     },
     "invariant-receipts": {
-        "look_for": "Look for the piece of evidence the argument carries through change: a count, side behavior, parity, signed total, or index sum.",
-        "ask": "Ask why that evidence survives the exact moves allowed in the problem, not merely why it looks stable in one drawing.",
-        "use": "Use the invariant as a receipt. If two situations have different receipts, no legal journey connects them; if the receipt is forced, an outcome may be unavoidable.",
-        "mistake": "The mistake is asking an invariant to remember everything. A good receipt may be partial and still strong enough to rule something out.",
+        "look_for": "Look for the piece of evidence the argument carries through change: a count, side behavior, parity, signed total, or index sum. It should be named before the picture starts moving.",
+        "ask": "Ask why that evidence survives the exact moves allowed in the problem, not merely why it looks stable in one drawing. The answer should mention the permitted changes.",
+        "use": "Use the invariant as a receipt. If two situations have different receipts, no legal journey connects them; if the receipt is forced, an outcome may be unavoidable even without a full classification.",
+        "mistake": "The mistake is asking an invariant to remember everything. A good receipt may be partial and still strong enough to rule something out or force existence.",
     },
     "holes-and-boundaries": {
-        "look_for": "Look for missing regions, blocked fillings, actual edges, and places where a path or field must respect a stopping rule.",
-        "ask": "Ask whether a loop can be filled, whether a boundary adds a term, and whether removing or adding an edge changes the theorem's contract.",
-        "use": "Use holes and boundaries as route information. They explain why loops may not shrink, why escape may be blocked, and why counts may need edge terms.",
-        "mistake": "The mistake is treating holes and boundaries as visual decoration. They change which motions exist and which accounting rules are legal.",
+        "look_for": "Look for missing regions, blocked fillings, actual edges, and places where a path or field must respect a stopping rule. These features change what motion is possible.",
+        "ask": "Ask whether a loop can be filled, whether a boundary adds a term, and whether removing or adding an edge changes the theorem's contract or the permitted escape routes.",
+        "use": "Use holes and boundaries as route information. They explain why loops may not shrink, why escape may be blocked, and why counts may need edge terms before a total is trusted.",
+        "mistake": "The mistake is treating holes and boundaries as visual decoration. They change which motions exist and which accounting rules are legal, so ignoring them changes the problem.",
     },
     "curves-loops-knots": {
-        "look_for": "Look for route memory: whether a path closes, goes around something, links another path, or carries over-under crossing data.",
-        "ask": "Ask what the surrounding space permits. Can the loop shrink, can strands pass through, and does the drawing record the needed spatial information?",
-        "use": "Use this routine whenever the course turns a drawn curve into evidence about route, linking, winding, or impossible untangling.",
-        "mistake": "The mistake is judging by visual tangledness. The protected question is what legal motion can remove, not how complicated the drawing appears.",
+        "look_for": "Look for route memory: whether a path closes, goes around something, links another path, or carries over-under crossing data. The curve matters through its placement in surrounding space.",
+        "ask": "Ask what the surrounding space permits. Can the loop shrink, can strands pass through, and does the drawing record the needed spatial information rather than only a flat shadow?",
+        "use": "Use this routine whenever the course turns a drawn curve into evidence about route, linking, winding, or impossible untangling. The answer depends on legal motion, not visual mess.",
+        "mistake": "The mistake is judging by visual tangledness. The protected question is what legal motion can remove, not how complicated the drawing appears on the page.",
     },
     "turning-and-curvature": {
-        "look_for": "Look for local changes of direction: a curve turning, a surface bending, or arrows rotating around a defect.",
-        "ask": "Ask whether the local turning is being summed over the right object and whether boundary or corner terms belong in the account.",
-        "use": "Use turning and curvature to connect local measurements to whole-shape restrictions, especially in total-turning, index, and Gauss-Bonnet-style arguments.",
-        "mistake": "The mistake is stopping at one local bend. The course usually cares about a total whose value the whole object can constrain.",
+        "look_for": "Look for local changes of direction: a curve turning, a surface bending, or arrows rotating around a defect. The local event should be headed toward a total.",
+        "ask": "Ask whether the local turning is being summed over the right object and whether boundary or corner terms belong in the account. Missing terms change the total.",
+        "use": "Use turning and curvature to connect local measurements to whole-shape restrictions, especially in total-turning, index, and Gauss-Bonnet-style arguments where local freedom still has to fit a global account.",
+        "mistake": "The mistake is stopping at one local bend. The course usually cares about a total whose value the whole object can constrain, not one isolated measurement.",
     },
     "signs-and-cancellation": {
-        "look_for": "Look for pairs of events that can appear or disappear together: crossings, intersections, or defects with opposite contributions.",
-        "ask": "Ask where plus and minus signs come from, and whether legal changes really create canceling pairs rather than arbitrary arithmetic.",
-        "use": "Use signs to make a fragile raw count into stable evidence. Cancellation is the mechanism that lets the total survive redrawings.",
-        "mistake": "The mistake is assigning signs without a direction rule. Without a reason for plus and minus, cancellation has no mathematical force.",
+        "look_for": "Look for pairs of events that can appear or disappear together: crossings, intersections, or defects with opposite contributions. The useful pattern is birth or cancellation in matched pairs.",
+        "ask": "Ask where plus and minus signs come from, and whether legal changes really create canceling pairs rather than arbitrary arithmetic. The sign rule must come from orientation or turning.",
+        "use": "Use signs to make a fragile raw count into stable evidence. Cancellation is the mechanism that lets the total survive redrawings while still recording forced events.",
+        "mistake": "The mistake is assigning signs without a direction rule. Without a reason for plus and minus, cancellation has no mathematical force and the total is decorative arithmetic.",
     },
     "surfaces-and-orientation": {
-        "look_for": "Look for the whole surface carrying the argument: its boundary, handles, side behavior, and whether a consistent direction can travel everywhere.",
-        "ask": "Ask whether local choices glue together globally. Can a side or orientation be carried around a full loop without contradiction?",
-        "use": "Use this routine before trusting signed intersections, vector-field indices, surface classification, or any argument that depends on plus and minus across a surface.",
+        "look_for": "Look for the whole surface carrying the argument: its boundary, handles, side behavior, and whether a consistent direction can travel everywhere. The carrier surface controls the sign rules.",
+        "ask": "Ask whether local choices glue together globally. Can a side or orientation be carried around a full loop without contradiction, and what happens at boundaries?",
+        "use": "Use this routine before trusting signed intersections, vector-field indices, surface classification, or any argument that depends on plus and minus across a surface. Orientation is a prerequisite for those signs.",
         "mistake": "The mistake is checking only a small patch. Every tiny neighborhood may look ordinary while the completed surface reverses a side or blocks a global choice.",
     },
     "mechanisms-and-locks": {
-        "look_for": "Look for the space of possible states behind the physical setup: positions, angles, forbidden collisions, walls, and connected regions.",
-        "ask": "Ask which physical motion becomes a path or rule in that state space, and what topological feature blocks or forces behavior.",
-        "use": "Use this routine when the course moves from paper or surface examples into balance, fixed points, configuration spaces, and dynamics.",
-        "mistake": "The mistake is applying a theorem before the model is honest. A wrong state space gives a conclusion about the wrong physical problem.",
+        "look_for": "Look for the space of possible states behind the physical setup: positions, angles, forbidden collisions, walls, and connected regions. The physical story must become a mathematical space.",
+        "ask": "Ask which physical motion becomes a path or rule in that state space, and what topological feature blocks or forces behavior. Also ask what states were excluded.",
+        "use": "Use this routine when the course moves from paper or surface examples into balance, fixed points, configuration spaces, and dynamics. It keeps applications from becoming loose analogies.",
+        "mistake": "The mistake is applying a theorem before the model is honest. A wrong state space gives a conclusion about the wrong physical problem, even if the theorem is true.",
     },
     "singular-moments": {
-        "look_for": "Look for special instants: tangencies, pair births, pair cancellations, triple meetings, or defects that stop being isolated.",
-        "ask": "Ask what ordinary pictures exist just before and just after the special instant, and what protected count changes or stays fixed.",
-        "use": "Use singular moments as transition evidence. They explain why ordinary cases can change without destroying a protected total.",
+        "look_for": "Look for special instants: tangencies, pair births, pair cancellations, triple meetings, or defects that stop being isolated. These are moments where ordinary evidence changes form.",
+        "ask": "Ask what ordinary pictures exist just before and just after the special instant, and what protected count changes or stays fixed across that passage of deformation.",
+        "use": "Use singular moments as transition evidence. They explain why ordinary cases can change without destroying a protected total, especially when pairs are born or cancel.",
         "mistake": "The mistake is either ignoring the special instant or treating it as the whole proof. Its role is to explain the passage between ordinary cases.",
     },
     "models-not-labels": {
-        "look_for": "Look for the work a term performs: what object it names, what move it permits, what count it protects, or what conclusion it supports.",
-        "ask": "Ask whether the name has been translated into an everyday action before it is used in an argument.",
-        "use": "Use this routine whenever a page introduces a formal word. The word earns its place only by helping solve the problem.",
+        "look_for": "Look for the work a term performs: what object it names, what move it permits, what count it protects, or what conclusion it supports. A term should do work.",
+        "ask": "Ask whether the name has been translated into an everyday action before it is used in an argument. If not, the reader has only a label.",
+        "use": "Use this routine whenever a page introduces a formal word. The word earns its place only by helping solve the problem, build the object, or protect evidence.",
         "mistake": "The mistake is collecting labels while missing the model. Knowing a term's name is not the same as knowing what it lets the proof do.",
     },
 }
@@ -3302,7 +3302,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 12 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 14 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 12 words, and every method-playbook field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

@@ -32,7 +32,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,964 theme essay words, with every theme essay now clearing the 300-word validator floor.
 - 803 theme lens words across notices, ignored distractions, problem changes, and reader tests.
 - 2,761 subtheme essay words, with every subtheme essay now clearing the 260-word validator floor.
-- 858 subtheme routine words across look-for, ask, use, and mistake fields.
+- 1,110 subtheme routine words across look-for, ask, use, and mistake fields.
 - 985 subtheme bridge words tying recurring moves to course moments, thinking shifts, and reader tests.
 - 1,525 method-family essay words, with every method-family essay now clearing the 285-word validator floor.
 - 493 method-contract words across input, action, protected evidence, output, and failure tests.
