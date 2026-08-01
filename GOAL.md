@@ -39,27 +39,28 @@ The reader should be able to understand the course without prior math vocabulary
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 77 generated HTML pages.
+- 78 generated HTML pages.
 - 15 lecture-spine entries.
 - 8 concept dependency paths.
 - 5 proof-move recipes.
 - 45 lecture-grounded examples.
-- 4,679 lecture essay words.
-- 1,289 lecture deepening words.
+- 5,333 lecture essay words.
+- 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
-- 979 caption-nuance words.
-- 1,090 lecture source-lens words.
-- 811 lecture source-checkpoint words.
-- 7,741 concept essay words.
-- 1,781 concept workup words.
-- 1,641 concept anchor words.
-- 466 theme lens words.
-- 858 subtheme routine words.
-- 599 subtheme bridge words.
-- 493 method-contract words.
-- 540 method-playbook words.
+- 1,492 caption-nuance words.
+- 1,645 lecture source-lens words.
+- 1,532 lecture source-checkpoint words.
+- 7,732 concept essay words.
+- 2,746 concept workup words.
+- 1,965 concept anchor words.
+- 803 theme lens words.
+- 1,110 subtheme routine words.
+- 985 subtheme bridge words.
+- 727 method-contract words.
+- 711 method-playbook words.
+- 7 references across course sources, primary papers, and standard texts.
 - Four playground widgets.
-- Course synthesis and reader-checks pages.
+- Course synthesis, reader-checks, and references pages.
 
 ## Required Gates
 

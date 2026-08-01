@@ -16,28 +16,28 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1 video currently reports no captions through `yt-dlp`: `nx1XOlezuvk`.
 - Raw captions live in `raw-material/youtube/captions/`.
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
-- 77 generated HTML pages in `site/`.
+- 78 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
 - 15 lecture-spine entries that name the object, question, legal move, surviving fact, and later use for every lecture.
-- 5,332 lecture essay words, with every lecture essay now clearing the 300-word validator floor.
+- 5,333 lecture essay words, with every lecture essay now clearing the 300-word validator floor.
 - 1,594 lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields, with every field now clearing the 25-word validator floor.
 - 1,986 lecture walkthrough words that slow each lecture down from starting object to mathematical payoff to reader check.
 - 1,492 caption-nuance words explaining risky auto-caption terms and safe mathematical readings by lecture.
 - 1,645 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - 1,532 lecture source-checkpoint words across trust, overread warning, and math-question fields.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
-- 7,741 concept essay words, with every concept essay now clearing the 290-word validator floor.
+- 7,732 concept essay words, with every concept essay now clearing the 290-word validator floor.
 - 2,746 concept workup words across object, operation, protected fact, and failure tests.
 - 1,965 concept anchor words tying every concept to a concrete course moment, principle, and reader question.
-- 1,964 theme essay words, with every theme essay now clearing the 300-word validator floor.
+- 1,963 theme essay words, with every theme essay now clearing the 300-word validator floor.
 - 803 theme lens words across notices, ignored distractions, problem changes, and reader tests.
 - 2,761 subtheme essay words, with every subtheme essay now clearing the 260-word validator floor.
 - 1,110 subtheme routine words across look-for, ask, use, and mistake fields.
 - 985 subtheme bridge words tying recurring moves to course moments, thinking shifts, and reader tests.
-- 1,525 method-family essay words, with every method-family essay now clearing the 285-word validator floor.
+- 1,523 method-family essay words, with every method-family essay now clearing the 285-word validator floor.
 - 727 method-contract words across input, action, protected evidence, output, and failure tests.
 - 711 method-playbook words across setup, move, payoff, failure, and reader-test fields.
-- A course-level synthesis page, a reader-checks page, a quality audit, and a four-widget interactive math playground.
+- A course-level synthesis page, a reader-checks page, a references page with 7 course/paper/text links, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces
 
@@ -53,6 +53,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/formula-reader.html` — plain readings of the course's central formulas and theorem statements.
 - `site/math-playground.html` — interactive widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.
 - `site/reader-checks.html` — eleven common reasoning failure checks.
+- `site/references.html` — course, primary-paper, and standard-text links with lecture coverage, concept coverage, and source caveats.
 - `site/quality-audit.html` and `site/source-audit.html` — current validation evidence, source caveats, and per-lecture caption nuance.
 
 ## Readiness Docs
@@ -84,7 +85,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 `scripts/validate_all.py` enforces the current quality shape:
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
-- Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
+- Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, references, playground, audits, lectures, concepts, themes, subthemes, and families.
 - Minimum essay depth for lecture, lecture-deepening, lecture-walkthrough, caption-nuance, source-lens, source-checkpoint, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, method-family, method-contract, method-playbook, and math-why layers.
 - Lecture Deepening sections on every lecture page.
 - Source-lens sections on every lecture page.
@@ -100,6 +101,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 - Method Contract sections on every method-family page.
 - Lecture-spine entries for all 15 lectures.
 - Proof-move recipes with enough steps, explanations, failure modes, and examples.
+- References layer with course, primary-paper, and standard-text links plus source caveats.
 - At least three concrete lecture examples per lecture.
 - Concept/theme/subtheme/family id integrity.
 - No broken local links.

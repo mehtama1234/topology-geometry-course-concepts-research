@@ -19,6 +19,80 @@ PLAYLIST_URL = "https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF
 COURSE_GOAL = """Build a source-backed companion for Tadashi Tokieda's Topology & Geometry course that treats the course as a way of thinking, not as a list of terms. For every lecture, theme, subtheme, and paper-style family of ideas, explain the point from first principles in plain everyday language. Start with the human problem: what can we know about a shape, motion, or constraint when exact measurement is the wrong tool? Then show the mathematical move: deform the object, keep track of what cannot change, count the right thing, and use that count to force a conclusion. Avoid assuming prior math knowledge. Avoid machine-learning, benchmark, causal-inference, optimization, and systems jargon. Avoid vague filler and familiar teaching cliches. The result should make the important mathematical principle feel necessary: what detail matters, why it matters, how it connects to the rest of the course, and what kind of problem it lets a person solve."""
 
 
+REFERENCES = [
+    {
+        "id": "tokieda-aims-course",
+        "title": "Topology & Geometry by Dr Tadashi Tokieda",
+        "kind": "course source",
+        "url": PLAYLIST_URL,
+        "lectures": list(range(1, 16)),
+        "concepts": ["deformation", "mobius-strip", "euler-characteristic", "intersection-number", "fixed-points", "vector-field-index", "poincare-hopf"],
+        "why": "This is the primary source for the companion. It fixes the order of ideas, the paper-strip demonstrations, the recurring pictorial method, and the level of explanation the site is trying to preserve.",
+        "use_carefully": "The playlist is supported here by auto-captions, not official lecture notes. One video still lacks recovered captions, so source claims must stay tied to available transcript evidence.",
+    },
+    {
+        "id": "tib-av-portal-course",
+        "title": "TIB AV-Portal series record for Topology & Geometry",
+        "kind": "course source mirror",
+        "url": "https://av.tib.eu/series/549",
+        "lectures": list(range(1, 16)),
+        "concepts": ["deformation", "quotient-space", "manifold", "fixed-points", "poincare-hopf"],
+        "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for the course identity beyond the YouTube playlist.",
+        "use_carefully": "Use it to verify the course source, not to infer extra mathematics. The lecture explanations still need to be grounded in the actual videos and recovered transcripts.",
+    },
+    {
+        "id": "poincare-analysis-situs",
+        "title": "Henri Poincare, Analysis Situs and its supplements",
+        "kind": "primary topology papers",
+        "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/poincare2009.pdf",
+        "lectures": [3, 4, 5, 12, 13, 15],
+        "concepts": ["manifold", "invariant", "euler-characteristic", "duality", "poincare-hopf"],
+        "why": "These papers are part of the historical source line for topology as a study of spaces by preserved structure. They support the course arc from surfaces and invariants toward whole-space bookkeeping.",
+        "use_carefully": "They are not beginner lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them as background for the mathematical family, not as a substitute for the course source.",
+    },
+    {
+        "id": "hopf-vektorfelder",
+        "title": "Heinz Hopf, Vektorfelder in n-dimensionalen Mannigfaltigkeiten",
+        "kind": "primary paper",
+        "url": "https://eudml.org/doc/159166",
+        "lectures": [11, 12, 13, 14],
+        "concepts": ["vector-field-index", "equilibrium", "euler-characteristic", "poincare-hopf"],
+        "why": "Hopf's paper is a primary reference for the vector-field-index thread behind Poincare-Hopf: local singularities of a field are added and compared with a number belonging to the whole manifold.",
+        "use_carefully": "The paper is technical and historically downstream from earlier surface intuition. The companion should translate the idea through the lecture examples before pointing readers to the paper.",
+    },
+    {
+        "id": "hatcher-algebraic-topology",
+        "title": "Allen Hatcher, Algebraic Topology",
+        "kind": "standard open textbook",
+        "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html",
+        "lectures": [3, 4, 5, 8, 9, 10, 15],
+        "concepts": ["quotient-space", "invariant", "euler-characteristic", "fixed-points", "duality"],
+        "why": "Hatcher gives a standard modern route into homotopy, homology, quotient spaces, and invariants. It is useful when a reader wants the formal machinery behind the companion's plain-language maps.",
+        "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it as a next reference, not as required reading for understanding a lecture page.",
+    },
+    {
+        "id": "milnor-differentiable-viewpoint",
+        "title": "John Milnor, Topology from the Differentiable Viewpoint",
+        "kind": "standard reference",
+        "url": "https://math.uchicago.edu/~may/REU2017/MilnorDiff.pdf",
+        "lectures": [6, 8, 10, 11, 12, 13],
+        "concepts": ["generic-position", "manifold", "fixed-points", "vector-field-index", "poincare-hopf"],
+        "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. They support the course's move from pictures to counts and indices.",
+        "use_carefully": "The text assumes more mathematical preparation than the companion. Use it for formal backup after the everyday explanation has already named the object and allowed move.",
+    },
+    {
+        "id": "guillemin-pollack-differential-topology",
+        "title": "Victor Guillemin and Alan Pollack, Differential Topology",
+        "kind": "standard reference",
+        "url": "https://web.math.ucsb.edu/~bigelow/books/guillemin_pollack.pdf",
+        "lectures": [6, 8, 11, 12, 13],
+        "concepts": ["generic-position", "manifold", "intersection-number", "vector-field-index", "gauss-bonnet"],
+        "why": "This reference supports generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. It helps explain why clean meetings are prepared before signs and counts are trusted.",
+        "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should not import its vocabulary before explaining the course idea plainly.",
+    },
+]
+
+
 THEMES = [
     {
         "id": "see-by-deforming",
@@ -2530,6 +2604,7 @@ def page(title, body, current=""):
         ("proof-moves.html", "Proof Moves"),
         ("formula-reader.html", "Formula Reader"),
         ("reader-checks.html", "Reader Checks"),
+        ("references.html", "References"),
         ("quality-audit.html", "Quality Audit"),
         ("source-audit.html", "Source Audit"),
     ]
@@ -2657,6 +2732,11 @@ def build_quality_audit(data):
             "evidence": "The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.",
             "status": "met",
         },
+        {
+            "requirement": "References and paper trail",
+            "evidence": f"The References page gives {len(data['references'])} course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats.",
+            "status": "met",
+        },
     ]
     return {
         "summary": "The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
@@ -2690,6 +2770,7 @@ def build_quality_audit(data):
             "dependency_paths": len(data["concept_dependencies"]),
             "proof_moves": len(data["proof_moves"]),
             "reader_checks": 11,
+            "references": len(data["references"]),
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
             "html_pages_before_audit_page": len(list(SITE.glob("*.html"))),
@@ -2758,6 +2839,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Proof Moves', 'Five reusable proof recipes show the steps: name the object, name legal moves, protect evidence, and use the conclusion without hiding the contract.', 'proof-moves.html', 'Moves')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
+{card('References', 'Course, primary-paper, and standard-text links for the main ideas, with notes on what each source supports and what claim would overread it.', 'references.html', 'Sources')}
 </div>
 """
     (SITE / "index.html").write_text(page("Topology & Geometry Course Companion", body, "Course"), encoding="utf-8")
@@ -2986,6 +3068,37 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 """
     (SITE / "reader-checks.html").write_text(page("Reader Checks", checks_body, "Reader Checks"), encoding="utf-8")
 
+    known_concepts = {c["id"]: c for c in data["concepts"]}
+    reference_cards = []
+    for ref in data["references"]:
+        lecture_links = " ".join(f'<a class="pill" href="lecture-{n:02d}.html">Lecture {n:02d}</a>' for n in ref["lectures"])
+        concept_links = " ".join(
+            f'<a class="pill" href="{slug_page("concept", cid)}">{esc(known_concepts[cid]["title"])}</a>' if cid in known_concepts else f'<span class="pill">{esc(cid)}</span>'
+            for cid in ref["concepts"]
+        )
+        reference_cards.append(
+            f"""<article class="card">
+  <div class="meta">{esc(ref['kind'])}</div>
+  <h3>{esc(ref['title'])}</h3>
+  <p><b>Why it belongs:</b> {esc(ref['why'])}</p>
+  <p><b>Use carefully:</b> {esc(ref['use_carefully'])}</p>
+  <p><b>Lecture coverage:</b> {lecture_links}</p>
+  <p><b>Concept coverage:</b> {concept_links}</p>
+  <a class="arrow" href="{esc(ref['url'])}">Open source</a>
+</article>"""
+        )
+    references_body = f"""
+<h1>References</h1>
+<p class="lead">This page is a paper and source trail for the companion. It separates the actual course source from background papers and standard references, so a reader can see what supports the course, what supports the broader mathematics, and where not to overclaim.</p>
+<section class="panel warn">
+  <h2>Source Caveat</h2>
+  <p>The lecture videos remain the source for what Tokieda teaches in this course. The primary papers and textbooks below support the mathematical family behind the ideas; they are not claims that a specific lecture cited a specific paper.</p>
+  <p>Use this page after reading a lecture or concept page. The companion should first explain the idea in everyday language, then this page can point to the formal or historical source layer.</p>
+</section>
+<div class="grid two">{''.join(reference_cards)}</div>
+"""
+    (SITE / "references.html").write_text(page("References", references_body, "References"), encoding="utf-8")
+
     video_links = "".join(f'<a href="{esc(v["youtube_url"])}">{v["index"]:02d}. {esc(v["title"])}</a>' for v in data["videos"])
     body = f"<h1>Video Links</h1><p class='lead'>Every individual YouTube item in playlist order.</p><div class='video-list'>{video_links}</div>"
     (SITE / "videos.html").write_text(page("Video Links", body, "Videos"), encoding="utf-8")
@@ -3105,7 +3218,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['references']} references, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -3232,6 +3345,7 @@ def main():
         "lecture_spine": LECTURE_SPINE,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
+        "references": REFERENCES,
     }
     missing = [v["id"] for v in videos if not v["caption_file"]]
     data["missing_caption_ids"] = missing
@@ -3257,6 +3371,7 @@ def main():
     write_json(ANALYSIS / "lecture-spine.json", LECTURE_SPINE)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
+    write_json(ANALYSIS / "references.json", REFERENCES)
     write_json(ANALYSIS / "course-companion.json", data)
     write_json(ANALYSIS / "quality-audit.json", data["quality_audit"])
     metrics = data["quality_audit"]["metrics"]
@@ -3300,6 +3415,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
 - proof-moves.html with {metrics['proof_moves']} reusable proof recipes
 - reader-checks.html with eleven concrete checks for common reasoning failures
+- references.html with {metrics['references']} course, primary-paper, and standard-text links, each with source caveats and lecture/concept coverage
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
 Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, and {metrics['family_playbook_words']} method-playbook words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, and every method-playbook field to clear 25 words.

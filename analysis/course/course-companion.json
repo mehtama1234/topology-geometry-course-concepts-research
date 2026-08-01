@@ -5042,6 +5042,186 @@
       "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory."
     }
   ],
+  "references": [
+    {
+      "id": "tokieda-aims-course",
+      "title": "Topology & Geometry by Dr Tadashi Tokieda",
+      "kind": "course source",
+      "url": "https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF5woAbrzJ",
+      "lectures": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "concepts": [
+        "deformation",
+        "mobius-strip",
+        "euler-characteristic",
+        "intersection-number",
+        "fixed-points",
+        "vector-field-index",
+        "poincare-hopf"
+      ],
+      "why": "This is the primary source for the companion. It fixes the order of ideas, the paper-strip demonstrations, the recurring pictorial method, and the level of explanation the site is trying to preserve.",
+      "use_carefully": "The playlist is supported here by auto-captions, not official lecture notes. One video still lacks recovered captions, so source claims must stay tied to available transcript evidence."
+    },
+    {
+      "id": "tib-av-portal-course",
+      "title": "TIB AV-Portal series record for Topology & Geometry",
+      "kind": "course source mirror",
+      "url": "https://av.tib.eu/series/549",
+      "lectures": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "concepts": [
+        "deformation",
+        "quotient-space",
+        "manifold",
+        "fixed-points",
+        "poincare-hopf"
+      ],
+      "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for the course identity beyond the YouTube playlist.",
+      "use_carefully": "Use it to verify the course source, not to infer extra mathematics. The lecture explanations still need to be grounded in the actual videos and recovered transcripts."
+    },
+    {
+      "id": "poincare-analysis-situs",
+      "title": "Henri Poincare, Analysis Situs and its supplements",
+      "kind": "primary topology papers",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/poincare2009.pdf",
+      "lectures": [
+        3,
+        4,
+        5,
+        12,
+        13,
+        15
+      ],
+      "concepts": [
+        "manifold",
+        "invariant",
+        "euler-characteristic",
+        "duality",
+        "poincare-hopf"
+      ],
+      "why": "These papers are part of the historical source line for topology as a study of spaces by preserved structure. They support the course arc from surfaces and invariants toward whole-space bookkeeping.",
+      "use_carefully": "They are not beginner lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them as background for the mathematical family, not as a substitute for the course source."
+    },
+    {
+      "id": "hopf-vektorfelder",
+      "title": "Heinz Hopf, Vektorfelder in n-dimensionalen Mannigfaltigkeiten",
+      "kind": "primary paper",
+      "url": "https://eudml.org/doc/159166",
+      "lectures": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "concepts": [
+        "vector-field-index",
+        "equilibrium",
+        "euler-characteristic",
+        "poincare-hopf"
+      ],
+      "why": "Hopf's paper is a primary reference for the vector-field-index thread behind Poincare-Hopf: local singularities of a field are added and compared with a number belonging to the whole manifold.",
+      "use_carefully": "The paper is technical and historically downstream from earlier surface intuition. The companion should translate the idea through the lecture examples before pointing readers to the paper."
+    },
+    {
+      "id": "hatcher-algebraic-topology",
+      "title": "Allen Hatcher, Algebraic Topology",
+      "kind": "standard open textbook",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html",
+      "lectures": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        15
+      ],
+      "concepts": [
+        "quotient-space",
+        "invariant",
+        "euler-characteristic",
+        "fixed-points",
+        "duality"
+      ],
+      "why": "Hatcher gives a standard modern route into homotopy, homology, quotient spaces, and invariants. It is useful when a reader wants the formal machinery behind the companion's plain-language maps.",
+      "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it as a next reference, not as required reading for understanding a lecture page."
+    },
+    {
+      "id": "milnor-differentiable-viewpoint",
+      "title": "John Milnor, Topology from the Differentiable Viewpoint",
+      "kind": "standard reference",
+      "url": "https://math.uchicago.edu/~may/REU2017/MilnorDiff.pdf",
+      "lectures": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "concepts": [
+        "generic-position",
+        "manifold",
+        "fixed-points",
+        "vector-field-index",
+        "poincare-hopf"
+      ],
+      "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. They support the course's move from pictures to counts and indices.",
+      "use_carefully": "The text assumes more mathematical preparation than the companion. Use it for formal backup after the everyday explanation has already named the object and allowed move."
+    },
+    {
+      "id": "guillemin-pollack-differential-topology",
+      "title": "Victor Guillemin and Alan Pollack, Differential Topology",
+      "kind": "standard reference",
+      "url": "https://web.math.ucsb.edu/~bigelow/books/guillemin_pollack.pdf",
+      "lectures": [
+        6,
+        8,
+        11,
+        12,
+        13
+      ],
+      "concepts": [
+        "generic-position",
+        "manifold",
+        "intersection-number",
+        "vector-field-index",
+        "gauss-bonnet"
+      ],
+      "why": "This reference supports generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. It helps explain why clean meetings are prepared before signs and counts are trusted.",
+      "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should not import its vocabulary before explaining the course idea plainly."
+    }
+  ],
   "missing_caption_ids": [
     "nx1XOlezuvk"
   ],
@@ -5127,6 +5307,11 @@
         "requirement": "Reader checks for common failure modes",
         "evidence": "The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.",
         "status": "met"
+      },
+      {
+        "requirement": "References and paper trail",
+        "evidence": "The References page gives 7 course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats.",
+        "status": "met"
       }
     ],
     "metrics": {
@@ -5160,9 +5345,10 @@
       "dependency_paths": 8,
       "proof_moves": 5,
       "reader_checks": 11,
+      "references": 7,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 77
+      "html_pages_before_audit_page": 78
     }
   }
 }

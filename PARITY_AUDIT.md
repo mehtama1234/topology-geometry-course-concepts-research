@@ -23,8 +23,9 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Formula reader | `site/formula-reader.html` translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks | Met |
 | Interactive learning | `site/math-playground.html` has four canvas widgets: Euler characteristic, signed cancellation, fixed points, vector-field index | Met |
 | Reader failure checks | `site/reader-checks.html` has eleven checks for common reasoning errors | Met |
+| References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats | Met |
 | Quality/source audits | `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; source audit includes 15 caption-nuance cards with source-checkpoint questions | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 77 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 78 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -37,24 +38,24 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 77 generated HTML pages.
+- 78 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
-- 5,332 lecture essay words.
+- 5,333 lecture essay words.
 - 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
-- 7,741 concept essay words.
+- 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
-- 1,964 theme essay words.
+- 1,963 theme essay words.
 - 803 theme lens words.
 - 2,761 subtheme essay words.
 - 1,110 subtheme routine words.
 - 985 subtheme bridge words.
-- 1,525 method-family essay words.
+- 1,523 method-family essay words.
 - 727 method-contract words.
 - 711 method-playbook words.
 - 4 playground widgets.
@@ -62,6 +63,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 8 concept dependency paths.
 - 5 proof-move recipes.
 - 11 reader checks.
+- 7 references.
 
 ## Validation Gates
 
@@ -78,6 +80,7 @@ The validator checks:
 - concept dependency structure and length;
 - proof-move structure and length;
 - reader checks structure and length;
+- references structure, reference page cards, and source-caveat wording;
 - source-audit caption-nuance cards;
 - lecture-page deepening sections;
 - lecture-page source-checkpoint sections;

@@ -249,11 +249,26 @@ def main():
             if len(words(row.get(field))) < 8:
                 fail(f"proof move {row.get('name')} {field} too thin")
 
+    references = data.get("references") or []
+    if len(references) < 7:
+        fail("references layer too small")
+    for row in references:
+        if not str(row.get("url", "")).startswith("https://"):
+            fail(f"reference missing https url: {row.get('id')}")
+        if len(words(row.get("why"))) < 25:
+            fail(f"reference why too thin: {row.get('id')}")
+        if len(words(row.get("use_carefully"))) < 20:
+            fail(f"reference caveat too thin: {row.get('id')}")
+        if len(row.get("lectures") or []) < 2:
+            fail(f"reference needs lecture coverage: {row.get('id')}")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"reference needs concept coverage: {row.get('id')}")
+
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "references.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -321,6 +336,14 @@ def main():
             fail(f"reader checks page missing phrase: {phrase}")
     if len(words(re.sub(r"<[^>]+>", " ", reader_checks))) < 700:
         fail("reader checks page too thin")
+    references_page = (SITE / "references.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["References", "Source Caveat", "Why it belongs", "Use carefully", "Lecture coverage", "Concept coverage"]:
+        if phrase not in references_page:
+            fail(f"references page missing phrase: {phrase}")
+    if references_page.count("<article") < 7:
+        fail("references page needs seven reference cards")
+    if len(words(re.sub(r"<[^>]+>", " ", references_page))) < 700:
+        fail("references page too thin")
     source_audit = (SITE / "source-audit.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Caption Nuance By Lecture", "Caption risk:", "Safe reading:", "Verify:", "Source checkpoint:"]:
         if phrase not in source_audit:

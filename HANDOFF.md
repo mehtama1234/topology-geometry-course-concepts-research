@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 77.
+- HTML pages: 78.
 
 ## Main Reader Surfaces
 
@@ -40,6 +40,7 @@ This repo is the source and generated static site for a first-principles compani
 - `formula-reader.html` — plain readings of central formulas and theorem statements.
 - `math-playground.html` — four interactive canvas widgets.
 - `reader-checks.html` — eleven common reasoning failure checks.
+- `references.html` — course, primary-paper, and standard-text links with source caveats and lecture/concept coverage.
 - `quality-audit.html` — generated readiness evidence.
 - `source-audit.html` — caption/source caveats and per-lecture caption nuance.
 
@@ -82,6 +83,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - method-playbook sections on every family page;
 - method-contract sections on every family page;
 - reader checks structure;
+- references layer structure and page content;
 - broken local links;
 - banned vague phrases in generated HTML.
 
@@ -91,21 +93,21 @@ As of the current generated audit:
 
 - 45 lecture examples.
 - 15 lecture-spine entries.
-- 5,332 lecture essay words.
+- 5,333 lecture essay words.
 - 1,594 lecture deepening words.
 - 1,986 lecture walkthrough words.
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
-- 7,741 concept essay words.
+- 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
-- 1,964 theme essay words.
+- 1,963 theme essay words.
 - 803 theme lens words.
 - 2,761 subtheme essay words.
 - 1,110 subtheme routine words.
 - 985 subtheme bridge words.
-- 1,525 method-family essay words.
+- 1,523 method-family essay words.
 - 727 method-contract words.
 - 711 method-playbook words.
 - 4 playground widgets.

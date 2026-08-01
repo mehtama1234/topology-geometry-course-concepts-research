@@ -17,3 +17,4 @@ The companion now satisfies the requested depth shape across the main reader-fac
 - **Proof-move recipes** (met): The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.
 - **Formula reader for mathematical statements** (met): The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.
 - **Reader checks for common failure modes** (met): The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.
+- **References and paper trail** (met): The References page gives 7 course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats.
