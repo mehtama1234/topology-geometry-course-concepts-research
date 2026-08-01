@@ -186,7 +186,7 @@ def main():
         if len(nuance.get("terms") or []) < 4:
             fail(f"lecture {lecture['lecture']} caption nuance needs four terms")
         for field in ["risk", "safe_reading", "verify_question"]:
-            if len(words(nuance.get(field))) < 12:
+            if len(words(nuance.get(field))) < 25:
                 fail(f"lecture {lecture['lecture']} caption nuance {field} too thin")
         walkthrough = deep.get("walkthrough") or {}
         for field in ["start_here", "payoff", "reader_check"]:
