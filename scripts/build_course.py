@@ -1448,6 +1448,100 @@ LECTURE_WALKTHROUGHS = {
 }
 
 
+LECTURE_CAPTION_NUANCE = {
+    1: {
+        "terms": ["Mobius", "one side", "twist", "cut"],
+        "risk": "Auto-captions can make the paper construction sound like a surprising object name rather than a gluing rule. The important evidence is the sequence of making, following, and cutting the strip.",
+        "safe_reading": "Treat every mention of side, twist, and cutting as evidence about whether a local side choice survives a full journey around the strip.",
+        "verify_question": "Can the explanation say what the gluing rule is before it says what the strip does?",
+    },
+    2: {
+        "terms": ["deformation", "curve", "disk", "intersect"],
+        "risk": "Caption words around drawing and moving can hide the boundary contract. If endpoints or forbidden crossings are not kept visible, the argument becomes easier than the actual lecture problem.",
+        "safe_reading": "Read deformation as legal motion of curves inside a disk while endpoint order and the no-crossing rule remain part of the data.",
+        "verify_question": "Can the explanation name the fixed boundary data before simplifying the drawing?",
+    },
+    3: {
+        "terms": ["product", "quotient", "surgery", "manifold"],
+        "risk": "Auto-captions may blur construction words into ordinary English. Product, quotient, surgery, and manifold are not labels for shapes already known; they say how a space is built or locally read.",
+        "safe_reading": "Read this lecture as a construction manual: combine choices, identify points, replace pieces, and check that local neighborhoods are ordinary enough for later arguments.",
+        "verify_question": "Can the explanation say what rule created the space and what routes or boundaries that rule changes?",
+    },
+    4: {
+        "terms": ["identify", "boundary", "edge", "orientation"],
+        "risk": "Caption text can make edge identifications sound like visual matching. The mathematical point is stronger: the labels state travel rules for the finished space.",
+        "safe_reading": "Read each edge word as an instruction for where a path goes after it leaves the square and whether direction is preserved or reversed.",
+        "verify_question": "Can the explanation distinguish the drawn square from the quotient space it encodes?",
+    },
+    5: {
+        "terms": ["classification", "orientable", "handle", "boundary"],
+        "risk": "Surface-family words can sound like naming by appearance. The source point is classification by durable features after legal cutting, gluing, and simplification.",
+        "safe_reading": "Read handles, crosscaps, boundaries, and orientability as evidence the surface retains under controlled surface operations.",
+        "verify_question": "Can the explanation say which surface feature survives the simplification rather than only naming the final family?",
+    },
+    6: {
+        "terms": ["dimension", "submanifold", "intersection", "generic"],
+        "risk": "Caption fragments around dimension can sound like informal room talk. The safe meaning is a rule for when clean meetings are expected after accidental coincidences are removed.",
+        "safe_reading": "Read ordinary position as a preparation step: move objects slightly so meetings become clean enough for dimension and later signs to matter.",
+        "verify_question": "Can the explanation say whether a meeting is accidental, avoidable, or forced after a small legal move?",
+    },
+    7: {
+        "terms": ["center of gravity", "continuous", "balance", "intersection"],
+        "risk": "Physical demonstration words can tempt the reader to focus on the apparatus and miss the mathematical structure. The key source idea is continuous change forcing a special state.",
+        "safe_reading": "Read balance as an existence argument: a continuously changing condition cannot jump past the state where the required equality occurs.",
+        "verify_question": "Can the explanation name what changes continuously and what event cannot be skipped?",
+    },
+    8: {
+        "terms": ["intersection number", "orientation", "positive", "negative"],
+        "risk": "Auto-captions can flatten plus and minus into ordinary arithmetic. The signs matter only because orientation gives them geometric meaning and pair creation explains cancellation.",
+        "safe_reading": "Read every signed crossing as local evidence whose value must be justified by orientation and whose stability must be checked under legal deformation.",
+        "verify_question": "Can the explanation say where the signs come from and why a born pair contributes zero in total?",
+    },
+    9: {
+        "terms": ["graph", "diagonal", "mapping", "fixed point"],
+        "risk": "This lecture has one missing middle caption, so any claim that depends on the absent part must stay modest. The available arc supports graph, diagonal, and fixed-point translation.",
+        "safe_reading": "Read the lecture through the reliable conversion: a map becomes its graph, the diagonal means self-agreement, and their meeting is a fixed point.",
+        "verify_question": "Can the explanation separate what is supported by available captions from what would need the missing middle video?",
+    },
+    10: {
+        "terms": ["Brouwer", "closed ball", "boundary", "continuous"],
+        "risk": "A caption can make the theorem sound broader than it is. The filled ball, self-map condition, boundary behavior, and continuity are not optional details.",
+        "safe_reading": "Read Brouwer as a contract: a continuous rule sends a closed filled ball into itself, and that exact setup forces at least one self-agreeing point.",
+        "verify_question": "Can the explanation state the domain and continuity assumptions before claiming a fixed point?",
+    },
+    11: {
+        "terms": ["vector field", "equilibrium", "differential equation", "index"],
+        "risk": "Caption text around dynamics may pull the reader toward solving trajectories. The lecture's source value is different: local arrow patterns can be read without solving every path.",
+        "safe_reading": "Read an equilibrium as a defect in an arrow field, then inspect nearby arrows to see the signed turning information it carries.",
+        "verify_question": "Can the explanation describe the arrows around the equilibrium, not only the point where the arrow vanishes?",
+    },
+    12: {
+        "terms": ["index", "Euler characteristic", "equilibria", "sum"],
+        "risk": "Auto-captions can obscure whether the theorem is local or global. The important point is not one defect but the sum of all isolated defect indices on the surface.",
+        "safe_reading": "Read index as local evidence that becomes meaningful when every isolated defect is included in the whole-surface total.",
+        "verify_question": "Can the explanation say what is being summed and what surface controls that sum?",
+    },
+    13: {
+        "terms": ["Poincare-Hopf", "hairy ball", "Euler characteristic", "index"],
+        "risk": "The memorable hairy-ball phrase can crowd out the theorem. The deeper source reading is the equality between total local index and Euler characteristic.",
+        "safe_reading": "Read the hairy-ball idea as one consequence of Poincare-Hopf, while keeping the full theorem as a statement about all isolated defects on the surface.",
+        "verify_question": "Can the explanation move from the visible sphere example back to the general index-sum account?",
+    },
+    14: {
+        "terms": ["application", "rotation", "state space", "dynamical system"],
+        "risk": "Application language can make the topology sound automatic. The source caution is that the model has to be chosen before a theorem can say anything about the physical system.",
+        "safe_reading": "Read each application by first naming the state space, the allowed motion, the forbidden states, and the protected topological evidence.",
+        "verify_question": "Can the explanation translate the theorem's conclusion back into the original physical setup without changing the model?",
+    },
+    15: {
+        "terms": ["pictorial thinking", "deformation", "intersection", "fixed point"],
+        "risk": "A final review can sound like a topic list if the captions are read too quickly. The course is reviewing one chain of reasoning across different objects.",
+        "safe_reading": "Read the final lecture as a dependency map: legal pictures support protected counts, protected counts support forced existence, and forced existence supports motion conclusions.",
+        "verify_question": "Can the explanation connect each reviewed topic to the object, move, preserved fact, and conclusion it uses?",
+    },
+}
+
+
 CONCEPT_DEPENDENCIES = [
     {
         "stage": "From local patch evidence to whole-surface behavior",
@@ -1697,6 +1791,7 @@ def build_quality_audit(data):
     lecture_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["essay"]) for l in data["lectures"])
     lecture_walkthrough_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["walkthrough"][field])) for field in ["start_here", "payoff", "reader_check"]) for l in data["lectures"])
     lecture_source_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["source_lens"]) for l in data["lectures"])
+    lecture_caption_nuance_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["caption_nuance"][field])) for field in ["risk", "safe_reading", "verify_question"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
     subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
@@ -1714,7 +1809,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written lecture depth",
-            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, slow walkthroughs, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+            "evidence": f"{stats['lectures']} lecture explainers with full essay sections, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
             "status": "met",
         },
         {
@@ -1786,6 +1881,7 @@ def build_quality_audit(data):
             "lecture_essay_words": lecture_essay_words,
             "lecture_walkthrough_words": lecture_walkthrough_words,
             "lecture_source_lens_words": lecture_source_lens_words,
+            "lecture_caption_nuance_words": lecture_caption_nuance_words,
             "concept_essay_words": concept_essay_words,
             "theme_essay_words": theme_essay_words,
             "subtheme_essay_words": subtheme_essay_words,
@@ -2101,6 +2197,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         miss = " warn" if l["missing_caption_ids"] else ""
         href = f"lecture-{l['lecture']:02d}.html"
         walk = l["deep"]["walkthrough"]
+        nuance = l["deep"]["caption_nuance"]
         lecture_html += f"""<section class="lecture{miss}"><h2>Lecture {l['lecture']:02d}: {esc(l['deep']['title'])}</h2><p>{esc(l['deep']['problem'])}</p><p>{esc(l['deep']['first_principles'])}</p><div>{vids}</div><p><a class="arrow" href="{href}">Open lecture explainer</a></p><p class="evidence">Transcript words: {l['transcript_words']}. Missing captions: {', '.join(l['missing_caption_ids']) or 'none'}.</p></section>"""
         lecture_body = f"""
 <h1>Lecture {l['lecture']:02d}: {esc(l['deep']['title'])}</h1>
@@ -2130,6 +2227,13 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Source Lens</h2>
   {paragraph_block(l['deep']['source_lens'])}
+</section>
+<section class="panel{' warn' if l['missing_caption_ids'] else ''}">
+  <h2>Caption Nuance</h2>
+  <p><b>Listen for:</b> {', '.join(esc(t) for t in nuance['terms'])}</p>
+  <p><b>Caption risk:</b> {esc(nuance['risk'])}</p>
+  <p><b>Safe reading:</b> {esc(nuance['safe_reading'])}</p>
+  <p><b>Verify:</b> {esc(nuance['verify_question'])}</p>
 </section>
 <h2>Concrete Course Moments</h2>
 <div class="grid two">
@@ -2182,10 +2286,22 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
-    audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
+    nuance_cards = "".join(
+        f"""<article class="card {'warn' if l['missing_caption_ids'] else ''}">
+  <div class="meta">Lecture {l['lecture']:02d}</div>
+  <h3>{esc(l['deep']['title'])}</h3>
+  <p><b>Listen for:</b> {', '.join(esc(t) for t in l['deep']['caption_nuance']['terms'])}</p>
+  <p><b>Caption risk:</b> {esc(l['deep']['caption_nuance']['risk'])}</p>
+  <p><b>Safe reading:</b> {esc(l['deep']['caption_nuance']['safe_reading'])}</p>
+  <p><b>Verify:</b> {esc(l['deep']['caption_nuance']['verify_question'])}</p>
+  <a class="arrow" href="lecture-{l['lecture']:02d}.html">Open lecture</a>
+</article>"""
+        for l in data["lectures"]
+    )
+    audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section><h2>Caption Nuance By Lecture</h2><div class="grid two">{nuance_cards}</div>"""
     (SITE / "source-audit.html").write_text(page("Source Audit", audit, "Source Audit"), encoding="utf-8")
 
 
@@ -2230,6 +2346,7 @@ def main():
         deep["essay"] = LECTURE_ESSAYS[number]
         deep["source_lens"] = LECTURE_SOURCE_LENS[number]
         deep["walkthrough"] = LECTURE_WALKTHROUGHS[number]
+        deep["caption_nuance"] = LECTURE_CAPTION_NUANCE[number]
         lectures.append({
             "lecture": number,
             "videos": [v for v, _ in items],
@@ -2335,6 +2452,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 15 hand-authored lecture explainers from 35 videos
 - lecture-spine.html with {metrics['lecture_spine_entries']} lecture-by-lecture reasoning entries
 - {metrics['lecture_walkthrough_words']} slow-walkthrough words across lecture pages, explaining each lecture from object to payoff to reader check
+- {metrics['lecture_caption_nuance_words']} caption-nuance words across lecture pages and source audit, explaining risky transcript terms and safe readings
 - {metrics['lecture_source_lens_words']} source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
@@ -2346,9 +2464,9 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
 - proof-moves.html with {metrics['proof_moves']} reusable proof recipes
 - reader-checks.html with eleven concrete checks for common reasoning failures
-- explicit source coverage and missing-caption audit
+- explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

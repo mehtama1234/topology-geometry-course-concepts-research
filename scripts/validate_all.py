@@ -146,6 +146,12 @@ def main():
             fail(f"lecture {lecture['lecture']} needs source lens paragraphs")
         if sum(len(words(p)) for p in source_lens) < 60:
             fail(f"lecture {lecture['lecture']} source lens too thin")
+        nuance = deep.get("caption_nuance") or {}
+        if len(nuance.get("terms") or []) < 4:
+            fail(f"lecture {lecture['lecture']} caption nuance needs four terms")
+        for field in ["risk", "safe_reading", "verify_question"]:
+            if len(words(nuance.get(field))) < 12:
+                fail(f"lecture {lecture['lecture']} caption nuance {field} too thin")
         walkthrough = deep.get("walkthrough") or {}
         for field in ["start_here", "payoff", "reader_check"]:
             if len(words(walkthrough.get(field))) < 35:
@@ -279,6 +285,14 @@ def main():
             fail(f"reader checks page missing phrase: {phrase}")
     if len(words(re.sub(r"<[^>]+>", " ", reader_checks))) < 700:
         fail("reader checks page too thin")
+    source_audit = (SITE / "source-audit.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Caption Nuance By Lecture", "Caption risk:", "Safe reading:", "Verify:"]:
+        if phrase not in source_audit:
+            fail(f"source audit missing caption nuance phrase: {phrase}")
+    if source_audit.count("<article") < 15:
+        fail("source audit needs fifteen caption nuance cards")
+    if len(words(re.sub(r"<[^>]+>", " ", source_audit))) < 1400:
+        fail("source audit caption nuance too thin")
     for concept in data["concepts"]:
         if f"concept-{concept['id']}.html" not in names:
             fail(f"missing concept page {concept['id']}")
@@ -289,6 +303,9 @@ def main():
         lecture_html = (SITE / lecture_name).read_text(encoding="utf-8", errors="ignore")
         if "Source Lens" not in lecture_html:
             fail(f"lecture page missing source lens: {lecture_name}")
+        for phrase in ["Caption Nuance", "Caption risk:", "Safe reading:", "Verify:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing caption nuance phrase {phrase}: {lecture_name}")
         for phrase in ["Slow Walkthrough", "Start here:", "Mathematical payoff:", "Reader check:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing walkthrough phrase {phrase}: {lecture_name}")

@@ -552,6 +552,17 @@
           "start_here": "Start with the plain act of making the strip. A rectangle by itself has two long sides and two short ends. The surprise enters when the ends are glued after one half-turn. That gluing instruction means a traveler who follows the surface all the way around comes back with the local sense of side reversed.",
           "payoff": "The mathematical payoff is the difference between small evidence and whole-object evidence. Every tiny patch of the strip looks like an ordinary two-sided strip, so local inspection cannot settle the question. The full trip around the object is the test, and that test reveals a global rule.",
           "reader_check": "Do not remember this lecture as only a surprising paper example. Ask what rule made the object, what local observation fails to detect, and what full journey reveals. If those three answers are clear, the Mobius strip becomes the first model for later orientation and vector-field obstructions."
+        },
+        "caption_nuance": {
+          "terms": [
+            "Mobius",
+            "one side",
+            "twist",
+            "cut"
+          ],
+          "risk": "Auto-captions can make the paper construction sound like a surprising object name rather than a gluing rule. The important evidence is the sequence of making, following, and cutting the strip.",
+          "safe_reading": "Treat every mention of side, twist, and cutting as evidence about whether a local side choice survives a full journey around the strip.",
+          "verify_question": "Can the explanation say what the gluing rule is before it says what the strip does?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -658,6 +669,17 @@
           "start_here": "Start with curves in a disk and boundary points that are not free to wander. The curves may look messy, but the proof does not care about their exact wiggles. It cares about whether the curves can be redrawn under legal motion while the endpoints and no-crossing rule stay fixed.",
           "payoff": "The mathematical payoff is that a picture can be simplified without losing its force. Deformation becomes valid only because the question is protected during the motion. This is the first time the course turns a visual cleanup into a proof rather than a preference for a neater drawing.",
           "reader_check": "Before accepting any deformation argument, ask what stayed fixed. Were endpoints preserved? Were forbidden crossings avoided? Was a boundary condition quietly changed? If the answer is not explicit, the drawing may have changed the problem instead of solving it."
+        },
+        "caption_nuance": {
+          "terms": [
+            "deformation",
+            "curve",
+            "disk",
+            "intersect"
+          ],
+          "risk": "Caption words around drawing and moving can hide the boundary contract. If endpoints or forbidden crossings are not kept visible, the argument becomes easier than the actual lecture problem.",
+          "safe_reading": "Read deformation as legal motion of curves inside a disk while endpoint order and the no-crossing rule remain part of the data.",
+          "verify_question": "Can the explanation name the fixed boundary data before simplifying the drawing?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -768,6 +790,17 @@
           "start_here": "Start by treating spaces as things that can be built from instructions. A product says two choices vary together. A quotient says different-looking points are declared the same. Surgery says a controlled piece is removed and another controlled piece is attached along a stated boundary rule.",
           "payoff": "The mathematical payoff is honest modeling. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they are construction rules that decide routes, boundaries, holes, and local neighborhoods.",
           "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction is vague, any theorem applied to that space is standing on weak ground."
+        },
+        "caption_nuance": {
+          "terms": [
+            "product",
+            "quotient",
+            "surgery",
+            "manifold"
+          ],
+          "risk": "Auto-captions may blur construction words into ordinary English. Product, quotient, surgery, and manifold are not labels for shapes already known; they say how a space is built or locally read.",
+          "safe_reading": "Read this lecture as a construction manual: combine choices, identify points, replace pieces, and check that local neighborhoods are ordinary enough for later arguments.",
+          "verify_question": "Can the explanation say what rule created the space and what routes or boundaries that rule changes?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -864,6 +897,17 @@
           "start_here": "Start with a square on paper, then stop treating the ink as the finished object. Edge labels are instructions for travel. If the left edge is glued to the right edge, a path leaving one side re-enters from the other. If an edge is reversed, direction changes during the return.",
           "payoff": "The mathematical payoff is quotient thinking in everyday form. The same square drawing can describe different spaces because the identification rule, not the visual outline, decides the object. This prepares the reader to see maps, surfaces, and state spaces as rule-built objects.",
           "reader_check": "Ask whether an apparent boundary is really a boundary in the finished space. Ask where a traveler goes after crossing a labeled edge. Ask whether direction is preserved. Those questions keep the drawing from being mistaken for the mathematical object."
+        },
+        "caption_nuance": {
+          "terms": [
+            "identify",
+            "boundary",
+            "edge",
+            "orientation"
+          ],
+          "risk": "Caption text can make edge identifications sound like visual matching. The mathematical point is stronger: the labels state travel rules for the finished space.",
+          "safe_reading": "Read each edge word as an instruction for where a path goes after it leaves the square and whether direction is preserved or reversed.",
+          "verify_question": "Can the explanation distinguish the drawn square from the quotient space it encodes?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -961,6 +1005,17 @@
           "start_here": "Start with the problem of recognizing a surface after it has been bent, stretched, cut, and reassembled under legal rules. The visual drawing may change dramatically. Classification asks which durable features remain: boundary components, handles, crosscaps, and whether a consistent side choice survives everywhere.",
           "payoff": "The mathematical payoff is that surfaces can be sorted by what survives simplification, not by how they happen to be drawn. This gives later counts a stage. Euler characteristic, orientation, and vector-field index matter because they belong to the surface, not to one picture of it.",
           "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface is useful only after the preserved features have been identified."
+        },
+        "caption_nuance": {
+          "terms": [
+            "classification",
+            "orientable",
+            "handle",
+            "boundary"
+          ],
+          "risk": "Surface-family words can sound like naming by appearance. The source point is classification by durable features after legal cutting, gluing, and simplification.",
+          "safe_reading": "Read handles, crosscaps, boundaries, and orientability as evidence the surface retains under controlled surface operations.",
+          "verify_question": "Can the explanation say which surface feature survives the simplification rather than only naming the final family?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1058,6 +1113,17 @@
           "start_here": "Start with the everyday idea of room. Two objects may avoid each other if the surrounding space gives them enough directions to move. In cramped settings, meeting may be forced. The lecture cleans the objects into ordinary position so accidental contacts do not obscure the real room-counting question.",
           "payoff": "The mathematical payoff is preparation for intersection theory. A meeting should not be counted until the picture is clean enough to make meetings separate and inspectable. Once that ordinary position is reached, dimension and placement can say whether intersections are accidental, avoidable, or evidence-bearing.",
           "reader_check": "Ask whether the meeting survives after tiny legal motion. If it disappears because the original drawing was too special, it was probably an accident. If clean meetings remain under the allowed setup, the course can begin assigning signs and using them as evidence."
+        },
+        "caption_nuance": {
+          "terms": [
+            "dimension",
+            "submanifold",
+            "intersection",
+            "generic"
+          ],
+          "risk": "Caption fragments around dimension can sound like informal room talk. The safe meaning is a rule for when clean meetings are expected after accidental coincidences are removed.",
+          "safe_reading": "Read ordinary position as a preparation step: move objects slightly so meetings become clean enough for dimension and later signs to matter.",
+          "verify_question": "Can the explanation say whether a meeting is accidental, avoidable, or forced after a small legal move?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1153,6 +1219,17 @@
           "start_here": "Start with a physical balance condition that changes continuously. The point is not to compute the exact balance location first. The point is to notice that a condition moving from one side of a requirement to another cannot jump over the special state if the change is continuous.",
           "payoff": "The mathematical payoff is forced existence. The course begins turning demonstrations into statements of the form: some special state must occur even if we cannot name it directly. That habit leads to fixed points, equilibria, and state-space arguments where shape blocks total avoidance.",
           "reader_check": "Ask what is changing continuously and what event it cannot skip. If the motion could jump, the existence claim may fail. If the setup stays continuous and the endpoints force opposite behavior, the special state is not guessed; it is forced."
+        },
+        "caption_nuance": {
+          "terms": [
+            "center of gravity",
+            "continuous",
+            "balance",
+            "intersection"
+          ],
+          "risk": "Physical demonstration words can tempt the reader to focus on the apparatus and miss the mathematical structure. The key source idea is continuous change forcing a special state.",
+          "safe_reading": "Read balance as an existence argument: a continuously changing condition cannot jump past the state where the required equality occurs.",
+          "verify_question": "Can the explanation name what changes continuously and what event cannot be skipped?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1250,6 +1327,17 @@
           "start_here": "Start with a weakness in raw counting. If two curves move, the visible number of crossings can change. A pair can appear or disappear. The lecture repairs the count by assigning signs to clean intersections, so harmless pair changes contribute plus one and minus one together.",
           "payoff": "The mathematical payoff is protected arithmetic. The signed total is not just a number read from one drawing; it is a number designed to survive legal deformation. This is why orientation and pair creation matter. They explain why the count deserves trust.",
           "reader_check": "Ask where the signs came from and what happens when a pair is born. If plus and minus are arbitrary labels, the argument has no force. If the signs come from orientation and pairs cancel, the count can carry proof evidence."
+        },
+        "caption_nuance": {
+          "terms": [
+            "intersection number",
+            "orientation",
+            "positive",
+            "negative"
+          ],
+          "risk": "Auto-captions can flatten plus and minus into ordinary arithmetic. The signs matter only because orientation gives them geometric meaning and pair creation explains cancellation.",
+          "safe_reading": "Read every signed crossing as local evidence whose value must be justified by orientation and whose stability must be checked under legal deformation.",
+          "verify_question": "Can the explanation say where the signs come from and why a born pair contributes zero in total?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1360,6 +1448,17 @@
           "start_here": "Start with a rule that sends each input somewhere. The equation for a fixed point can look invisible because it lives inside the rule. The lecture makes it visible by drawing the graph of the rule and comparing it with the diagonal, the set of input-output pairs where both entries agree.",
           "payoff": "The mathematical payoff is translation. A fixed point becomes an intersection problem, so earlier ideas about clean meetings and protected counts become relevant. The source caveat matters here because one middle caption is missing, but the graph-diagonal conversion remains the reliable spine.",
           "reader_check": "Ask what point in the graph means and what point on the diagonal means. Their meeting is not a loose picture for self-agreement; it is exactly the statement that the rule sends some input back to itself."
+        },
+        "caption_nuance": {
+          "terms": [
+            "graph",
+            "diagonal",
+            "mapping",
+            "fixed point"
+          ],
+          "risk": "This lecture has one missing middle caption, so any claim that depends on the absent part must stay modest. The available arc supports graph, diagonal, and fixed-point translation.",
+          "safe_reading": "Read the lecture through the reliable conversion: a map becomes its graph, the diagonal means self-agreement, and their meeting is a fixed point.",
+          "verify_question": "Can the explanation separate what is supported by available captions from what would need the missing middle video?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1456,6 +1555,17 @@
           "start_here": "Start with a filled disk or ball and a continuous rule that sends every point back into that same filled object. Brouwer says at least one point must land where it began. The theorem is not trying to find the point; it rules out the possibility that every point escapes itself.",
           "payoff": "The mathematical payoff is existence from shape. The filled interior, boundary, and continuity of the rule work together. If any of those pieces is changed, the conclusion may fail. This makes the theorem a disciplined statement, not a slogan about all motion.",
           "reader_check": "Ask whether the space is the right closed filled shape, whether the rule stays inside it, and whether nearby points move to nearby outputs. If those conditions are not present, invoking Brouwer may be using a theorem outside its contract."
+        },
+        "caption_nuance": {
+          "terms": [
+            "Brouwer",
+            "closed ball",
+            "boundary",
+            "continuous"
+          ],
+          "risk": "A caption can make the theorem sound broader than it is. The filled ball, self-map condition, boundary behavior, and continuity are not optional details.",
+          "safe_reading": "Read Brouwer as a contract: a continuous rule sends a closed filled ball into itself, and that exact setup forces at least one self-agreeing point.",
+          "verify_question": "Can the explanation state the domain and continuity assumptions before claiming a fixed point?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1566,6 +1676,17 @@
           "start_here": "Start with arrows rather than paths. A vector field tells each point which way motion wants to go. Solving every path may be hard, but the places where the arrow vanishes are visible failures of motion. The nearby arrows then tell how that failure is shaped.",
           "payoff": "The mathematical payoff is understanding motion through local defects. An equilibrium is not only a location where motion stops. It has surrounding behavior, and that behavior can be counted through turning. This opens a route from dynamics back to topology.",
           "reader_check": "Ask what the nearby arrows do when you walk around the equilibrium. Do they turn once, turn the other way, or fail to give a clean isolated pattern? The index belongs to that surrounding behavior, not merely to the dot."
+        },
+        "caption_nuance": {
+          "terms": [
+            "vector field",
+            "equilibrium",
+            "differential equation",
+            "index"
+          ],
+          "risk": "Caption text around dynamics may pull the reader toward solving trajectories. The lecture's source value is different: local arrow patterns can be read without solving every path.",
+          "safe_reading": "Read an equilibrium as a defect in an arrow field, then inspect nearby arrows to see the signed turning information it carries.",
+          "verify_question": "Can the explanation describe the arrows around the equilibrium, not only the point where the arrow vanishes?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1663,6 +1784,17 @@
           "start_here": "Start by isolating the defects of a vector field. Each defect has nearby arrows circling it in some pattern, and that pattern receives a signed index. The lecture then asks what happens when all those local signed counts are added over the whole surface.",
           "payoff": "The mathematical payoff is the move from local dynamics to global bookkeeping. Individual defects can move, split, or cancel under controlled changes, but the total signed index is not free. It is constrained by the surface that carries the arrows.",
           "reader_check": "Ask whether the defects are isolated and whether the total, not one favorite defect, is being counted. If the argument focuses only on a single equilibrium, it has missed the whole-surface nature of the theorem being prepared."
+        },
+        "caption_nuance": {
+          "terms": [
+            "index",
+            "Euler characteristic",
+            "equilibria",
+            "sum"
+          ],
+          "risk": "Auto-captions can obscure whether the theorem is local or global. The important point is not one defect but the sum of all isolated defect indices on the surface.",
+          "safe_reading": "Read index as local evidence that becomes meaningful when every isolated defect is included in the whole-surface total.",
+          "verify_question": "Can the explanation say what is being summed and what surface controls that sum?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1761,6 +1893,17 @@
           "start_here": "Start with Poincare-Hopf as a balance sheet. On one side are all the local indices of isolated vector-field defects. On the other side is Euler characteristic, a number belonging to the surface. The theorem says these two accounts must match.",
           "payoff": "The mathematical payoff is that topology predicts something about motion before the differential equation is solved. A sphere demands a different total defect from a torus. The hairy-ball idea is a visible case, but the deeper point is the enforced equality between local failures and whole-surface shape.",
           "reader_check": "Ask what surface carries the field and whether every defect has been included in the sum. Poincare-Hopf is not about admiring one dramatic singularity. It is about the total account forced by the complete surface."
+        },
+        "caption_nuance": {
+          "terms": [
+            "Poincare-Hopf",
+            "hairy ball",
+            "Euler characteristic",
+            "index"
+          ],
+          "risk": "The memorable hairy-ball phrase can crowd out the theorem. The deeper source reading is the equality between total local index and Euler characteristic.",
+          "safe_reading": "Read the hairy-ball idea as one consequence of Poincare-Hopf, while keeping the full theorem as a statement about all isolated defects on the surface.",
+          "verify_question": "Can the explanation move from the visible sphere example back to the general index-sum account?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1855,6 +1998,17 @@
           "start_here": "Start with an application by refusing to apply a theorem too early. First name the possible states of the system. Then say which states are forbidden, which boundaries matter, and what continuous rule or motion acts on that space. Only then does topology have a correct object to study.",
           "payoff": "The mathematical payoff is disciplined transfer from pure examples to physical systems. Holes, barriers, fixed points, and index totals can constrain real behavior, but only when the model represents the real freedoms and exclusions. The modeling step is part of the proof.",
           "reader_check": "Ask whether the state space includes all needed degrees of freedom and excludes only genuinely forbidden states. Also ask which physical conclusion the topological statement translates back into. A beautiful theorem applied to the wrong model gives a beautiful answer to the wrong question."
+        },
+        "caption_nuance": {
+          "terms": [
+            "application",
+            "rotation",
+            "state space",
+            "dynamical system"
+          ],
+          "risk": "Application language can make the topology sound automatic. The source caution is that the model has to be chosen before a theorem can say anything about the physical system.",
+          "safe_reading": "Read each application by first naming the state space, the allowed motion, the forbidden states, and the protected topological evidence.",
+          "verify_question": "Can the explanation translate the theorem's conclusion back into the original physical setup without changing the model?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -1967,6 +2121,17 @@
           "start_here": "Start by reading the final lecture as a map of habits, not a list of topics. The same pattern has appeared repeatedly: build the right object, specify legal motion, identify protected evidence, and use that evidence to force a conclusion that the original picture hid.",
           "payoff": "The mathematical payoff is a portable way to think. Mobius strips, surface classification, intersections, fixed points, vector fields, and applications are different settings for the same discipline. Pictorial thinking is deep here because the pictures carry rules and preserved facts.",
           "reader_check": "For any page in the companion, ask four questions: what object was made, what move was legal, what fact survived, and what conclusion became forced? If a page cannot answer those, it is not yet at the course's standard."
+        },
+        "caption_nuance": {
+          "terms": [
+            "pictorial thinking",
+            "deformation",
+            "intersection",
+            "fixed point"
+          ],
+          "risk": "A final review can sound like a topic list if the captions are read too quickly. The course is reviewing one chain of reasoning across different objects.",
+          "safe_reading": "Read the final lecture as a dependency map: legal pictures support protected counts, protected counts support forced existence, and forced existence supports motion conclusions.",
+          "verify_question": "Can the explanation connect each reviewed topic to the object, move, preserved fact, and conclusion it uses?"
         }
       },
       "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
@@ -4160,7 +4325,7 @@
       },
       {
         "requirement": "Hand-written lecture depth",
-        "evidence": "15 lecture explainers with full essay sections, slow walkthroughs, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+        "evidence": "15 lecture explainers with full essay sections, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
         "status": "met"
       },
       {
@@ -4231,6 +4396,7 @@
       "lecture_essay_words": 3855,
       "lecture_walkthrough_words": 1986,
       "lecture_source_lens_words": 1090,
+      "lecture_caption_nuance_words": 979,
       "concept_essay_words": 4830,
       "theme_essay_words": 1278,
       "subtheme_essay_words": 1500,

@@ -29,7 +29,7 @@ This repo is the source and generated static site for a first-principles compani
 
 - `index.html` — entry point and source state.
 - `videos.html` — all individual YouTube links.
-- `lectures.html`, `lecture-*.html` — lecture explainers with slow walkthroughs.
+- `lectures.html`, `lecture-*.html` — lecture explainers with slow walkthroughs and caption nuance.
 - `lecture-spine.html` — one reasoning path through all 15 lectures from object to later use.
 - `concepts.html`, `concept-*.html` — concept atlas and reverse lecture appearances.
 - `themes.html`, `subthemes.html`, `families.html` — recurring ideas and proof families.
@@ -41,7 +41,7 @@ This repo is the source and generated static site for a first-principles compani
 - `math-playground.html` — four interactive canvas widgets.
 - `reader-checks.html` — eleven common reasoning failure checks.
 - `quality-audit.html` — generated readiness evidence.
-- `source-audit.html` — caption/source caveats.
+- `source-audit.html` — caption/source caveats and per-lecture caption nuance.
 
 ## Build And Validation
 
@@ -61,7 +61,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - exact expected video and lecture counts;
 - caption coverage and missing-caption caveat;
 - required page existence;
-- lecture, lecture-walkthrough, source-lens, concept, theme, subtheme, family, and math-why depth floors;
+- lecture, lecture-walkthrough, caption-nuance, source-lens, concept, theme, subtheme, family, and math-why depth floors;
 - at least three concrete examples per lecture;
 - lecture-spine structure for all 15 lectures;
 - referential integrity across concepts, themes, subthemes, and families;
@@ -71,6 +71,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - proof-move structure and length;
 - source-lens sections on every lecture page;
 - slow-walkthrough sections on every lecture page;
+- caption-nuance sections on every lecture page and source-audit cards for every lecture;
 - reader checks structure;
 - broken local links;
 - banned vague phrases in generated HTML.
@@ -83,6 +84,7 @@ As of the current generated audit:
 - 15 lecture-spine entries.
 - 3,855 lecture essay words.
 - 1,986 lecture walkthrough words.
+- 979 caption-nuance words.
 - 1,090 lecture source-lens words.
 - 4,830 concept essay words.
 - 1,278 theme essay words.
