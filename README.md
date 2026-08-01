@@ -16,7 +16,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1 video currently reports no captions through `yt-dlp`: `nx1XOlezuvk`.
 - Raw captions live in `raw-material/youtube/captions/`.
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
-- 74 generated HTML pages in `site/`.
+- 75 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
 - 1,090 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
@@ -30,6 +30,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps.
 - `site/the-math-why.html` — first-principles mathematical synthesis.
 - `site/course-synthesis.html` — dependency spine across the whole course.
+- `site/concept-dependencies.html` — eight prerequisite paths from early concepts to later theorem-level ideas.
 - `site/formula-reader.html` — plain readings of the course's central formulas and theorem statements.
 - `site/math-playground.html` — interactive widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.
 - `site/reader-checks.html` — eleven common reasoning failure checks.
@@ -64,7 +65,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 `scripts/validate_all.py` enforces the current quality shape:
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
-- Required generated pages, including synthesis, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
+- Required generated pages, including synthesis, concept dependencies, formula reader, reader checks, playground, audits, lectures, concepts, themes, subthemes, and families.
 - Minimum essay depth for lecture, source-lens, concept, theme, subtheme, method-family, and math-why layers.
 - Source-lens sections on every lecture page.
 - At least three concrete lecture examples per lecture.

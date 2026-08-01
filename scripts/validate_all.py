@@ -167,11 +167,23 @@ def main():
         if missing:
             fail(f"family {family['id']} references unknown concept ids: {missing}")
 
+    dependencies = data.get("concept_dependencies") or []
+    if len(dependencies) < 8:
+        fail("concept dependencies too small")
+    for row in dependencies:
+        ids = set(row.get("before") or []) | set(row.get("after") or [])
+        missing = sorted(ids - concept_ids)
+        if missing:
+            fail(f"concept dependency references unknown concept ids: {missing}")
+        for field in ["stage", "plain", "why", "reader_check"]:
+            if len(words(row.get(field))) < 8:
+                fail(f"concept dependency {row.get('stage')} {field} too thin")
+
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "formula-reader.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "formula-reader.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -194,6 +206,14 @@ def main():
         fail("course synthesis needs dependency, family, and lecture cards")
     if len(words(re.sub(r"<[^>]+>", " ", deep_dive))) < 900:
         fail("course synthesis too thin")
+    dependency_page = (SITE / "concept-dependencies.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Concept Dependencies", "Understand first", "Then read", "Why this dependency matters", "Reader check"]:
+        if phrase not in dependency_page:
+            fail(f"concept dependencies page missing phrase: {phrase}")
+    if dependency_page.count("<article") < 8:
+        fail("concept dependencies page needs eight dependency cards")
+    if len(words(re.sub(r"<[^>]+>", " ", dependency_page))) < 850:
+        fail("concept dependencies page too thin")
     formula_reader = (SITE / "formula-reader.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Formula Reader", "Plain reading", "Why it survives", "What it can force", "Reader check"]:
         if phrase not in formula_reader:

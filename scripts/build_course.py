@@ -1245,6 +1245,74 @@ LECTURE_SOURCE_LENS = {
 }
 
 
+CONCEPT_DEPENDENCIES = [
+    {
+        "stage": "From local patch evidence to whole-surface behavior",
+        "before": ["topology-vs-geometry", "boundary-orientation"],
+        "after": ["manifold", "quotient-space"],
+        "plain": "A small patch can look ordinary while the whole surface changes what routes and sides mean.",
+        "why": "This is the first dependency in the course. Before a reader can trust later surface arguments, they need to see that local evidence is not enough. Quotient rules and manifold language give that local-versus-global gap a precise form.",
+        "reader_check": "Can I say what is locally ordinary, and what whole-surface fact is still undecided?",
+    },
+    {
+        "stage": "From legal motion to protected mathematical evidence in proof",
+        "before": ["deformation", "generic-position"],
+        "after": ["invariant", "parity"],
+        "plain": "A picture may move, but the proof needs a fact that moves with it unchanged.",
+        "why": "Deformation by itself is only motion. Generic position cleans the picture enough to inspect it. Invariant and parity add evidence: something survives the motion and can rule out a desired ending.",
+        "reader_check": "What exact move is legal, and what fact is still true after that move?",
+    },
+    {
+        "stage": "From built spaces to durable surface classification rules",
+        "before": ["product-space", "quotient-space", "surgery"],
+        "after": ["manifold", "boundary-orientation", "euler-characteristic"],
+        "plain": "A space built from choices, identifications, or replacements can be sorted by durable surface features.",
+        "why": "Products make choice-spaces, quotients make sameness rules, and surgery changes a surface under boundary control. Those operations prepare the reader to count faces, track orientation, and name the surface by what survives simplification.",
+        "reader_check": "What construction rule made this space, and which surface features did that rule create or preserve?",
+    },
+    {
+        "stage": "From surface ledger to stable whole-shape number",
+        "before": ["triangulation", "euler-characteristic"],
+        "after": ["gauss-bonnet", "poincare-hopf"],
+        "plain": "A surface count first looks like bookkeeping, then becomes a number that can control geometry and motion.",
+        "why": "Triangulation makes a soft surface finite enough to count. Euler characteristic shows that the final account does not belong to one mesh. Later, Gauss-Bonnet and Poincare-Hopf use that same whole-surface number to constrain turning and vector-field defects.",
+        "reader_check": "Is this number attached to one drawing, or to the surface after redrawings and refinements?",
+    },
+    {
+        "stage": "From clean meetings to signed obstruction under deformation",
+        "before": ["generic-position", "boundary-orientation", "winding-linking"],
+        "after": ["intersection-number", "fixed-points"],
+        "plain": "Clean meetings can be assigned signs, and the signed total can force a later meeting to exist.",
+        "why": "Generic position separates meetings. Orientation gives signs meaning. Winding and linking train the idea of a stable relation. Intersection number combines these into a count that survives legal motion, then fixed-point theory uses meetings between graph and diagonal.",
+        "reader_check": "Are the meetings clean, and do the signs come from a real direction rule?",
+    },
+    {
+        "stage": "From a rule to forced self-agreement inside space",
+        "before": ["product-space", "duality", "intersection-number"],
+        "after": ["fixed-points", "brouwer-fixed-point"],
+        "plain": "A rule becomes a shape in a larger space; self-agreement becomes a meeting with the diagonal.",
+        "why": "Product space holds input and output together. Duality allows the rule to be redrawn as a graph. Intersection number explains why a graph may be unable to avoid the diagonal. Brouwer is the closed-ball version where the space itself blocks total escape.",
+        "reader_check": "What is the graph, what is the diagonal, and why would their meeting mean a fixed point?",
+    },
+    {
+        "stage": "From arrow-field failure to signed index around defects",
+        "before": ["fixed-points", "equilibrium", "generic-position"],
+        "after": ["vector-field-index", "poincare-hopf"],
+        "plain": "A place where motion stops can be read by how nearby arrows turn around it.",
+        "why": "Fixed points teach forced special states. Equilibrium turns that idea into a failure of an arrow field. Generic position keeps failures isolated. Vector-field index makes each failure countable, and Poincare-Hopf adds those counts over the whole surface.",
+        "reader_check": "Is the defect isolated, and what do the arrows do on a small loop around it?",
+    },
+    {
+        "stage": "From state-space model to physical application constraints",
+        "before": ["configuration-space", "fixed-points", "poincare-hopf"],
+        "after": ["duality", "invariant", "vector-field-index"],
+        "plain": "A physical problem becomes usable only after its possible states are turned into the right mathematical space.",
+        "why": "Configuration space lists the possible states. Fixed points and Poincare-Hopf supply forced-behavior tools. Duality and invariants keep the translation honest by asking whether the new picture still means the original physical question.",
+        "reader_check": "Does the state space include the real freedoms and exclude the real forbidden states?",
+    },
+]
+
+
 def clean_vtt(path):
     seen = []
     out = []
@@ -1300,6 +1368,7 @@ def page(title, body, current=""):
         ("the-math-why.html", "The Math Why"),
         ("math-playground.html", "Playground"),
         ("course-synthesis.html", "Synthesis"),
+        ("concept-dependencies.html", "Dependencies"),
         ("formula-reader.html", "Formula Reader"),
         ("reader-checks.html", "Reader Checks"),
         ("quality-audit.html", "Quality Audit"),
@@ -1394,6 +1463,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Concept dependency map",
+            "evidence": f"The Concept Dependencies page gives {len(data['concept_dependencies'])} prerequisite paths that connect early ideas to later theorems and applications.",
+            "status": "met",
+        },
+        {
             "requirement": "Formula reader for mathematical statements",
             "evidence": "The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.",
             "status": "met",
@@ -1421,6 +1495,7 @@ def build_quality_audit(data):
             "family_essay_words": family_essay_words,
             "playground_widgets": 4,
             "synthesis_sections": 8,
+            "dependency_paths": len(data["concept_dependencies"]),
             "reader_checks": 11,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
@@ -1485,6 +1560,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <div class="grid two">
 {card('Math Playground', 'Four small canvas models let the reader adjust cuts, signed pairs, fixed-point graphs, and vector-field turning. The controls make the course principles visible without assuming prior notation.', 'math-playground.html', 'Playground')}
 {card('Course Synthesis', 'A single first-principles path through the whole course: hard situation, mathematical object, operation, reason, and what becomes possible.', 'course-synthesis.html', 'Synthesis')}
+{card('Concept Dependencies', 'Eight paths show what a reader should understand first, what later idea depends on it, and why the dependency matters.', 'concept-dependencies.html', 'Dependencies')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 </div>
@@ -1591,6 +1667,22 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 """
     (SITE / "course-synthesis.html").write_text(page("Course Synthesis", deep_body, "Synthesis"), encoding="utf-8")
+
+    dependency_cards = "".join(
+        f"""<article class="card"><div class="meta">{esc(row['stage'])}</div><h3>{esc(row['plain'])}</h3><p><b>Understand first:</b> {concept_pills(row['before'], data['concepts'])}</p><p><b>Then read:</b> {concept_pills(row['after'], data['concepts'])}</p><p><b>Why this dependency matters:</b> {esc(row['why'])}</p><p><b>Reader check:</b> {esc(row['reader_check'])}</p></article>"""
+        for row in data["concept_dependencies"]
+    )
+    dependency_body = f"""
+<h1>Concept Dependencies</h1>
+<p class="lead">This page is a reading order for the course ideas. It shows which earlier concepts carry the load for later theorem-level ideas, and what question proves that the dependency has been understood.</p>
+<section class="lecture">
+  <h2>How To Use This Map</h2>
+  <p>Do not read the course as a flat list of terms. Later ideas rely on earlier agreements: what counts as the same space, which motions are legal, why signs mean anything, and how local data can add to a whole-surface demand. If a later theorem feels sudden, walk backward through the dependency row that supports it.</p>
+  <p>The right test is not whether a name is familiar. The test is whether the reader can say what the earlier idea lets the later idea do. A quotient lets edge labels become a surface. Orientation lets signs become evidence. Euler characteristic lets Poincare-Hopf speak about motion.</p>
+</section>
+<div class="grid two">{dependency_cards}</div>
+"""
+    (SITE / "concept-dependencies.html").write_text(page("Concept Dependencies", dependency_body, "Dependencies"), encoding="utf-8")
 
     formula_rows = [
         ("Euler characteristic", "chi = vertices - edges + faces", "Take a surface that has been divided into pieces. Count corner points, subtract edge pieces, then add face pieces.", "When a face is split by a new edge, both the edge count and face count change. The alternating account absorbs that artificial choice.", "The final number belongs to the surface type, not to one chosen drawing or mesh.", "Before using the number, ask what surface is being counted and whether boundaries or different kinds of cells have been accounted for.", "concept-euler-characteristic.html"),
@@ -1735,7 +1827,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1837,6 +1929,7 @@ def main():
         "concepts": concepts,
         "families": families,
         "math_why": math_why,
+        "concept_dependencies": CONCEPT_DEPENDENCIES,
     }
     missing = [v["id"] for v in videos if not v["caption_file"]]
     data["missing_caption_ids"] = missing
@@ -1859,6 +1952,7 @@ def main():
     write_json(ANALYSIS / "subtheme-map.json", subthemes)
     write_json(ANALYSIS / "family-map.json", families)
     write_json(ANALYSIS / "math-why.json", math_why)
+    write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "course-companion.json", data)
     write_json(ANALYSIS / "quality-audit.json", data["quality_audit"])
     metrics = data["quality_audit"]["metrics"]
@@ -1887,6 +1981,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
+- concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage and missing-caption audit
 

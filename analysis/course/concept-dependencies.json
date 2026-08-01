@@ -1,0 +1,121 @@
+[
+  {
+    "stage": "From local patch evidence to whole-surface behavior",
+    "before": [
+      "topology-vs-geometry",
+      "boundary-orientation"
+    ],
+    "after": [
+      "manifold",
+      "quotient-space"
+    ],
+    "plain": "A small patch can look ordinary while the whole surface changes what routes and sides mean.",
+    "why": "This is the first dependency in the course. Before a reader can trust later surface arguments, they need to see that local evidence is not enough. Quotient rules and manifold language give that local-versus-global gap a precise form.",
+    "reader_check": "Can I say what is locally ordinary, and what whole-surface fact is still undecided?"
+  },
+  {
+    "stage": "From legal motion to protected mathematical evidence in proof",
+    "before": [
+      "deformation",
+      "generic-position"
+    ],
+    "after": [
+      "invariant",
+      "parity"
+    ],
+    "plain": "A picture may move, but the proof needs a fact that moves with it unchanged.",
+    "why": "Deformation by itself is only motion. Generic position cleans the picture enough to inspect it. Invariant and parity add evidence: something survives the motion and can rule out a desired ending.",
+    "reader_check": "What exact move is legal, and what fact is still true after that move?"
+  },
+  {
+    "stage": "From built spaces to durable surface classification rules",
+    "before": [
+      "product-space",
+      "quotient-space",
+      "surgery"
+    ],
+    "after": [
+      "manifold",
+      "boundary-orientation",
+      "euler-characteristic"
+    ],
+    "plain": "A space built from choices, identifications, or replacements can be sorted by durable surface features.",
+    "why": "Products make choice-spaces, quotients make sameness rules, and surgery changes a surface under boundary control. Those operations prepare the reader to count faces, track orientation, and name the surface by what survives simplification.",
+    "reader_check": "What construction rule made this space, and which surface features did that rule create or preserve?"
+  },
+  {
+    "stage": "From surface ledger to stable whole-shape number",
+    "before": [
+      "triangulation",
+      "euler-characteristic"
+    ],
+    "after": [
+      "gauss-bonnet",
+      "poincare-hopf"
+    ],
+    "plain": "A surface count first looks like bookkeeping, then becomes a number that can control geometry and motion.",
+    "why": "Triangulation makes a soft surface finite enough to count. Euler characteristic shows that the final account does not belong to one mesh. Later, Gauss-Bonnet and Poincare-Hopf use that same whole-surface number to constrain turning and vector-field defects.",
+    "reader_check": "Is this number attached to one drawing, or to the surface after redrawings and refinements?"
+  },
+  {
+    "stage": "From clean meetings to signed obstruction under deformation",
+    "before": [
+      "generic-position",
+      "boundary-orientation",
+      "winding-linking"
+    ],
+    "after": [
+      "intersection-number",
+      "fixed-points"
+    ],
+    "plain": "Clean meetings can be assigned signs, and the signed total can force a later meeting to exist.",
+    "why": "Generic position separates meetings. Orientation gives signs meaning. Winding and linking train the idea of a stable relation. Intersection number combines these into a count that survives legal motion, then fixed-point theory uses meetings between graph and diagonal.",
+    "reader_check": "Are the meetings clean, and do the signs come from a real direction rule?"
+  },
+  {
+    "stage": "From a rule to forced self-agreement inside space",
+    "before": [
+      "product-space",
+      "duality",
+      "intersection-number"
+    ],
+    "after": [
+      "fixed-points",
+      "brouwer-fixed-point"
+    ],
+    "plain": "A rule becomes a shape in a larger space; self-agreement becomes a meeting with the diagonal.",
+    "why": "Product space holds input and output together. Duality allows the rule to be redrawn as a graph. Intersection number explains why a graph may be unable to avoid the diagonal. Brouwer is the closed-ball version where the space itself blocks total escape.",
+    "reader_check": "What is the graph, what is the diagonal, and why would their meeting mean a fixed point?"
+  },
+  {
+    "stage": "From arrow-field failure to signed index around defects",
+    "before": [
+      "fixed-points",
+      "equilibrium",
+      "generic-position"
+    ],
+    "after": [
+      "vector-field-index",
+      "poincare-hopf"
+    ],
+    "plain": "A place where motion stops can be read by how nearby arrows turn around it.",
+    "why": "Fixed points teach forced special states. Equilibrium turns that idea into a failure of an arrow field. Generic position keeps failures isolated. Vector-field index makes each failure countable, and Poincare-Hopf adds those counts over the whole surface.",
+    "reader_check": "Is the defect isolated, and what do the arrows do on a small loop around it?"
+  },
+  {
+    "stage": "From state-space model to physical application constraints",
+    "before": [
+      "configuration-space",
+      "fixed-points",
+      "poincare-hopf"
+    ],
+    "after": [
+      "duality",
+      "invariant",
+      "vector-field-index"
+    ],
+    "plain": "A physical problem becomes usable only after its possible states are turned into the right mathematical space.",
+    "why": "Configuration space lists the possible states. Fixed points and Poincare-Hopf supply forced-behavior tools. Duality and invariants keep the translation honest by asking whether the new picture still means the original physical question.",
+    "reader_check": "Does the state space include the real freedoms and exclude the real forbidden states?"
+  }
+]

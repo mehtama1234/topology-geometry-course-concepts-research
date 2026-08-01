@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 74.
+- HTML pages: 75.
 
 ## Main Reader Surfaces
 
@@ -34,6 +34,7 @@ This repo is the source and generated static site for a first-principles compani
 - `themes.html`, `subthemes.html`, `families.html` — recurring ideas and proof families.
 - `the-math-why.html` — core mathematical reason the course works.
 - `course-synthesis.html` — dependency spine and proof-family synthesis.
+- `concept-dependencies.html` — prerequisite paths from early concepts to later theorem-level ideas.
 - `formula-reader.html` — plain readings of central formulas and theorem statements.
 - `math-playground.html` — four interactive canvas widgets.
 - `reader-checks.html` — eleven common reasoning failure checks.
@@ -63,6 +64,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - referential integrity across concepts, themes, subthemes, and families;
 - playground page and four widget renderers;
 - course synthesis structure;
+- concept dependency structure;
 - source-lens sections on every lecture page;
 - reader checks structure;
 - broken local links;
@@ -81,6 +83,7 @@ As of the current generated audit:
 - 824 method-family essay words.
 - 4 playground widgets.
 - 8 synthesis sections.
+- 8 concept dependency paths.
 - 11 reader checks.
 
 ## Local Readiness Evidence
