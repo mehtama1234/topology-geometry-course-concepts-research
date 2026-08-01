@@ -4317,16 +4317,17 @@ def build_lecture_source_bridges(lectures, references, source_readers):
         primary = support_refs[0] if support_refs else lecture_refs[0]
         source_reader = source_by_ref[primary["id"]]
         examples = lecture["deep"]["examples"]
+        object_text = spine["object"].rstrip(".")
         concepts = []
         for ref in lecture_refs:
             for concept_id in ref["concepts"]:
                 if concept_id not in concepts:
                     concepts.append(concept_id)
         evidence_close = varied((number, "bridge-evidence"), [
-            "Those examples are the first evidence; the outside source enters only after the lecture object is clear.",
+            "Those examples are the first evidence; the source layer enters only after the lecture object is clear.",
             "Use those moments to keep the bridge grounded before any reference broadens the picture.",
             "The source trail should begin with what the lecture actually makes visible.",
-            "The outside reading should answer to these demonstrations, not replace them.",
+            "The source reading should answer to these demonstrations, not replace them.",
         ])
         bridge_open = varied((number, "bridge-open"), [
             "The bridge to the source family is concrete:",
@@ -4340,25 +4341,42 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             "It should sharpen the source layer only after the course example has done the first explanatory work.",
             "The reference belongs behind the lecture claim, not in front of the beginner's explanation.",
         ])
+        source_bridge = lecture_source_family_bridge(number, spine, source_reader)
         warning_open = varied((number, "warning-open"), [
             "Keep the claim boundary visible.",
             "Do not let the reference take over the lecture.",
             "Use the source as support, not substitution.",
-            "The outside source cannot do the classroom evidence work.",
+            "The reference cannot do the classroom evidence work.",
         ])
         bridges.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
             "references": [ref["id"] for ref in lecture_refs],
             "source_family": source_reader["family"],
-            "course_demonstration": f"The lecture works from {spine['object']} and uses concrete moments such as {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}. {evidence_close}",
+            "course_demonstration": f"The lecture works from {object_text} and uses concrete moments such as {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}. {evidence_close}",
             "mathematical_bridge": f"{bridge_open} {spine['plain_question']} The legal move is this: {spine['legal_move']} The fact carried forward is this: {spine['surviving_fact']}",
-            "how_source_extends": f"The supporting source family, {source_reader['family']}, helps because it answers this problem: {source_reader['reader_problem']} {source_close}",
+            "how_source_extends": f"{source_bridge} {source_close}",
             "overread_warning": f"{warning_open} The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: {spine['why_later']}",
             "reader_question": f"Can the reader explain Lecture {number:02d} from the demonstration to the source family by naming the object, the legal move, the surviving fact, and the exact source claim that is being used?",
             "concepts": concepts[:6],
         })
     return bridges
+
+
+def lecture_source_family_bridge(number, spine, source_reader):
+    family = source_reader["family"]
+    family_label = "the course source layer" if family == "Course spine" else family
+    family_subject = "The course source layer" if family == "Course spine" else family
+    object_text = spine["object"].rstrip(".")
+    surviving = spine["surviving_fact"].rstrip(".")
+    problem = source_reader["reader_problem"]
+    options = [
+        f"{family_subject} widens the lecture's question without changing its starting point: {problem} Here the question begins with {object_text}. The fact that must survive is: {surviving}.",
+        f"Read {family_label} as background for the lecture's working contract. The lecture first names {object_text}; the source layer then shows why the protected fact matters beyond this one demonstration: {surviving}.",
+        f"{family_subject} gives a larger home for the lecture's protected fact. Keep the beginner foothold in {object_text}, then use the source to ask why this kind of surviving evidence matters: {surviving}.",
+        f"{family_subject} should be read through the lecture's own object and survival check. It broadens the source question, but the bridge still begins with {object_text} and with the fact the lecture protects: {surviving}.",
+    ]
+    return varied((number, family, "source-family-bridge"), options)
 
 
 def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
@@ -4411,6 +4429,13 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             "Do not let the source family replace the work done by the recovered lecture evidence.",
             "Let the source broaden the claim only after the classroom move has been reconstructed.",
         ])
+        source_family_label = "the course source layer" if bridge["source_family"] == "Course spine" else bridge["source_family"]
+        source_step = varied((number, bridge["source_family"], "drill-source-step"), [
+            f"Attach the source family carefully: {source_family_label} supports the broader source line after the lecture's object and protected fact are clear. {source_close}",
+            f"Add the source family last: {source_family_label} can widen the mathematical setting, but it should answer to the reconstructed course move. {source_close}",
+            f"Use {source_family_label} as background support, then say exactly which lecture claim it can carry. {source_close}",
+            f"Bring in {source_family_label} only after the drill has rebuilt the classroom evidence. {source_close}",
+        ])
         self_check = varied((number, "drill-self"), [
             "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
             "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
@@ -4439,7 +4464,7 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
                 f"Protect the surviving fact: {spine['surviving_fact']} {survive_close}",
                 f"Use a second lecture moment, {examples[1]['title']}, to show the same rule at work in a concrete case rather than only in a general sentence.",
                 f"Connect forward: {spine['why_later']} {forward_close}",
-                f"Attach the source family carefully: {bridge['source_family']} can support the broader idea. {source_close}",
+                source_step,
             ],
             "self_check": self_check,
             "common_failure": f"The common failure is to jump from {examples[0]['title']} straight to a theorem or source name. {common_failure_close}",

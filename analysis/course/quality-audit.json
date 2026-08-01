@@ -23,7 +23,7 @@
     },
     {
       "requirement": "Lecture-to-source bridge",
-      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 4028 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 4448 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
       "status": "met"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 6207 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 6289 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
@@ -188,10 +188,10 @@
     "lecture_source_checkpoint_words": 1532,
     "lecture_caption_nuance_words": 1492,
     "lecture_source_faithfulness_words": 2374,
-    "lecture_source_bridge_words": 4028,
+    "lecture_source_bridge_words": 4448,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 6207,
+    "lecture_reconstruction_words": 6289,
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 1734,
     "lecture_reader_test_words": 2734,

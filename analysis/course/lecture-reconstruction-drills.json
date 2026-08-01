@@ -9,7 +9,7 @@
       "Protect the surviving fact: A full trip around the strip reverses the local side choice instead of returning it unchanged. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, One side is a global fact, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This is the first warning against local-only thinking. Later orientation, manifolds, vector fields, and surface classification all use the same gap between small-patch behavior and whole-object behavior. This should show why the lecture is needed later in the course.",
-      "Attach the source family carefully: Course spine can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
+      "Attach the source family carefully: the course source layer supports the broader source line after the lecture's object and protected fact are clear. Keep the lecture demonstration and source caveat visible while using that support."
     ],
     "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from Cutting an ordinary band versus a Mobius band straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
@@ -33,7 +33,7 @@
       "Protect the surviving fact: Boundary order and the no-crossing rule survive the redraw, so an unavoidable crossing belongs to the original setup. Explain why this fact remains available after the allowed move.",
       "Use a second lecture moment, Deformation as proof of impossibility, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question. The forward link should make the lecture feel like a tool the later course reuses.",
-      "Attach the source family carefully: Course spine can support the broader idea. Use the source family only after the course example has supplied the object and protected fact."
+      "Add the source family last: the course source layer can widen the mathematical setting, but it should answer to the reconstructed course move. Use the source family only after the course example has supplied the object and protected fact."
     ],
     "self_check": "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
     "common_failure": "The common failure is to jump from Connecting boundary pairs in a disk straight to a theorem or source name. The missing middle is the proof: what was allowed to move and what evidence survived.",
@@ -57,11 +57,11 @@
       "Protect the surviving fact: The rule of construction decides the routes, holes, sides, and local neighborhoods available in the finished space. Say why the legal motion carries this fact instead of destroying it.",
       "Use a second lecture moment, Quotients turn edge instructions into spaces, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery. The point is to show what later argument would be weaker without this lecture.",
-      "Attach the source family carefully: Whole-space invariants can support the broader idea. Do not let the source family replace the work done by the recovered lecture evidence."
+      "Add the source family last: Whole-space invariants can widen the mathematical setting, but it should answer to the reconstructed course move. Do not let the source family replace the work done by the recovered lecture evidence."
     ],
     "self_check": "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
     "common_failure": "The common failure is to jump from Products make spaces from independent choices straight to a theorem or source name. A theorem name cannot replace the route from concrete setup to protected evidence.",
-    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 03, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The outside source cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery.",
+    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 03, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The reference cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: Later theorems are only as honest as the spaces they act on. This lecture gives the raw building tools for configuration spaces, graphs of maps, quotient surfaces, and surface surgery.",
     "concepts": [
       "configuration-space",
       "topology-vs-geometry",
@@ -81,7 +81,7 @@
       "Protect the surviving fact: The gluing rule determines whether paths close, whether sides remain consistent, and whether the drawn boundary is a true boundary. Connect the allowed move to the evidence that still survives afterward.",
       "Use a second lecture moment, Reversing an edge changes the global surface, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This is the plain entrance to quotient thinking. It prepares the reader for manifolds and for later situations where a rule, not visual appearance, defines the mathematical object. Name the later need so the lecture does not read as an isolated demonstration.",
-      "Attach the source family carefully: Whole-space invariants can support the broader idea. Let the source broaden the claim only after the classroom move has been reconstructed."
+      "Use Whole-space invariants as background support, then say exactly which lecture claim it can carry. Let the source broaden the claim only after the classroom move has been reconstructed."
     ],
     "self_check": "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
     "common_failure": "The common failure is to jump from A square is not the space until its edges are read straight to a theorem or source name. The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
@@ -105,7 +105,7 @@
       "Protect the surviving fact: Orientability, boundary behavior, and durable surface pieces remain as the evidence used to classify the surface. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, Surgery changes a surface by controlled cutting and gluing, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This gives Euler characteristic and orientation a home. Later local counts only have force because they live on a surface whose global type has been understood. This should show why the lecture is needed later in the course.",
-      "Attach the source family carefully: Whole-space invariants can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
+      "Bring in Whole-space invariants only after the drill has rebuilt the classroom evidence. Keep the lecture demonstration and source caveat visible while using that support."
     ],
     "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from Classification separates surfaces by durable parts straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
@@ -129,7 +129,7 @@
       "Protect the surviving fact: After accidental coincidences are removed, the remaining pattern of meetings can carry real information. Explain why this fact remains available after the allowed move.",
       "Use a second lecture moment, Forced meetings become evidence, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This lecture supplies the discipline needed before signs can be assigned. Intersection number only works after meetings are clean enough to count honestly. The forward link should make the lecture feel like a tool the later course reuses.",
-      "Attach the source family carefully: Differentiable topology bridge can support the broader idea. Use the source family only after the course example has supplied the object and protected fact."
+      "Bring in Differentiable topology bridge only after the drill has rebuilt the classroom evidence. Use the source family only after the course example has supplied the object and protected fact."
     ],
     "self_check": "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
     "common_failure": "The common failure is to jump from Moving an object inside a manifold straight to a theorem or source name. The missing middle is the proof: what was allowed to move and what evidence survived.",
@@ -153,11 +153,11 @@
       "Protect the surviving fact: Continuity prevents the condition from jumping over the balance state. Say why the legal motion carries this fact instead of destroying it.",
       "Use a second lecture moment, Existence without a formula, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers. The point is to show what later argument would be weaker without this lecture.",
-      "Attach the source family carefully: Course spine can support the broader idea. Do not let the source family replace the work done by the recovered lecture evidence."
+      "Use the course source layer as background support, then say exactly which lecture claim it can carry. Do not let the source family replace the work done by the recovered lecture evidence."
     ],
     "self_check": "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
     "common_failure": "The common failure is to jump from The center-of-gravity demonstration straight to a theorem or source name. A theorem name cannot replace the route from concrete setup to protected evidence.",
-    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 07, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The outside source cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers.",
+    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 07, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The reference cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the physical doorway into existence proofs. It prepares fixed points, intersections with the diagonal, and equilibria as forced special states rather than computed answers.",
     "concepts": [
       "fixed-points",
       "configuration-space",
@@ -177,7 +177,7 @@
       "Protect the surviving fact: Opposite-signed pairs can be born or die without changing the signed total. Connect the allowed move to the evidence that still survives afterward.",
       "Use a second lecture moment, Pair creation and cancellation, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled. Name the later need so the lecture does not read as an isolated demonstration.",
-      "Attach the source family carefully: Algebraic topology background can support the broader idea. Let the source broaden the claim only after the classroom move has been reconstructed."
+      "Use Algebraic topology background as background support, then say exactly which lecture claim it can carry. Let the source broaden the claim only after the classroom move has been reconstructed."
     ],
     "self_check": "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
     "common_failure": "The common failure is to jump from Signed intersection number straight to a theorem or source name. The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
@@ -201,7 +201,7 @@
       "Protect the surviving fact: A meeting of graph and diagonal is exactly a fixed point of the original map. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, Missing middle caption is kept visible, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra. This should show why the lecture is needed later in the course.",
-      "Attach the source family carefully: Algebraic topology background can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
+      "Bring in Algebraic topology background only after the drill has rebuilt the classroom evidence. Keep the lecture demonstration and source caveat visible while using that support."
     ],
     "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from The graph of a map meets the diagonal straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
@@ -225,7 +225,7 @@
       "Protect the surviving fact: The ball gives no continuous escape plan that moves every point away from itself at once. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, Boundary changes the theorem, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule. This should show why the lecture is needed later in the course.",
-      "Attach the source family carefully: Algebraic topology background can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
+      "Bring in Algebraic topology background only after the drill has rebuilt the classroom evidence. Keep the lecture demonstration and source caveat visible while using that support."
     ],
     "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from Brouwer on the closed ball straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
@@ -249,7 +249,7 @@
       "Protect the surviving fact: An equilibrium carries more information than its location; nearby arrows turn around it in a countable way. Explain why this fact remains available after the allowed move.",
       "Use a second lecture moment, Equilibria are arrow-field failures, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This shifts the course from fixed places to motion laws. It prepares index as the local evidence attached to a failure of motion. The forward link should make the lecture feel like a tool the later course reuses.",
-      "Attach the source family carefully: Vector-field index can support the broader idea. Use the source family only after the course example has supplied the object and protected fact."
+      "Add the source family last: Vector-field index can widen the mathematical setting, but it should answer to the reconstructed course move. Use the source family only after the course example has supplied the object and protected fact."
     ],
     "self_check": "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
     "common_failure": "The common failure is to jump from Vector fields replace solved trajectories straight to a theorem or source name. The missing middle is the proof: what was allowed to move and what evidence survived.",
@@ -273,11 +273,11 @@
       "Protect the surviving fact: Defects may move or split, but the total signed index is constrained by the surface. Say why the legal motion carries this fact instead of destroying it.",
       "Use a second lecture moment, Poincare-Hopf as surface bookkeeping, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion. The point is to show what later argument would be weaker without this lecture.",
-      "Attach the source family carefully: Whole-space invariants can support the broader idea. Do not let the source family replace the work done by the recovered lecture evidence."
+      "Add the source family last: Whole-space invariants can widen the mathematical setting, but it should answer to the reconstructed course move. Do not let the source family replace the work done by the recovered lecture evidence."
     ],
     "self_check": "A good reconstruction can be spoken in this order: object, move, surviving fact, example, later use, source family. If one part is missing, the reader is probably remembering a label instead of rebuilding the argument.",
     "common_failure": "The common failure is to jump from Adding local indices straight to a theorem or source name. A theorem name cannot replace the route from concrete setup to protected evidence.",
-    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 12, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The outside source cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion.",
+    "source_check": "Use this source check before strengthening a sentence: does the source support the family of ideas behind Lecture 12, or am I claiming more than the lecture evidence and recovered captions justify? The bridge warning says: The reference cannot do the classroom evidence work. The source can support the family of ideas, but the course claim should still return to the lecture examples, the recovered-caption caveat, and this later-use reason: This is the immediate bridge from local dynamics to Poincare-Hopf. It shows why the whole surface, not one defect, controls the conclusion.",
     "concepts": [
       "vector-field-index",
       "euler-characteristic",
@@ -297,7 +297,7 @@
       "Protect the surviving fact: The sum of local indices equals the Euler characteristic of the surface. Connect the allowed move to the evidence that still survives afterward.",
       "Use a second lecture moment, The hairy-ball idea in plain form, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This gathers the course's main chain: surface bookkeeping, signs, local defects, and global constraint. The hairy-ball idea is one visible consequence, not the whole story. Name the later need so the lecture does not read as an isolated demonstration.",
-      "Attach the source family carefully: Whole-space invariants can support the broader idea. Let the source broaden the claim only after the classroom move has been reconstructed."
+      "Use Whole-space invariants as background support, then say exactly which lecture claim it can carry. Let the source broaden the claim only after the classroom move has been reconstructed."
     ],
     "self_check": "The drill is ready when the reader can rebuild the argument without vocabulary doing the work: first object, then permitted move, then protected evidence, then later use.",
     "common_failure": "The common failure is to jump from Using Poincare-Hopf in both directions straight to a theorem or source name. The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
@@ -321,7 +321,7 @@
       "Protect the surviving fact: Barriers, holes, fixed points, and index totals in the state space become constraints on the original system. Make the survival check explicit before using the fact as proof evidence.",
       "Use a second lecture moment, Rotations and dynamics share the same proof engine, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This tests the whole course outside its cleanest surface examples. It shows that first-principles modeling is part of the mathematics, not a preliminary story. This should show why the lecture is needed later in the course.",
-      "Attach the source family carefully: Vector-field index can support the broader idea. Keep the lecture demonstration and source caveat visible while using that support."
+      "Attach the source family carefully: Vector-field index supports the broader source line after the lecture's object and protected fact are clear. Keep the lecture demonstration and source caveat visible while using that support."
     ],
     "self_check": "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
     "common_failure": "The common failure is to jump from Applications as honest translations straight to a theorem or source name. That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
@@ -345,7 +345,7 @@
       "Protect the surviving fact: The same reasoning pattern survives across settings: build the right picture, move it legally, count what survives, and let the shape force the answer. Explain why this fact remains available after the allowed move.",
       "Use a second lecture moment, Pictures earn their role by carrying constraints, to show the same rule at work in a concrete case rather than only in a general sentence.",
       "Connect forward: This is the final reader standard for the companion. A page is deep enough only when the reader can say what object was made, what move was legal, what fact survived, and why that fact forces the conclusion. The forward link should make the lecture feel like a tool the later course reuses.",
-      "Attach the source family carefully: Whole-space invariants can support the broader idea. Use the source family only after the course example has supplied the object and protected fact."
+      "Attach the source family carefully: Whole-space invariants supports the broader source line after the lecture's object and protected fact are clear. Use the source family only after the course example has supplied the object and protected fact."
     ],
     "self_check": "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
     "common_failure": "The common failure is to jump from The table of contents becomes one argument straight to a theorem or source name. The missing middle is the proof: what was allowed to move and what evidence survived.",
