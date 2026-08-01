@@ -3,7 +3,7 @@
     "lecture": 1,
     "caption_hazard": "The first lecture uses paper, color, cutting, and side language. Captions can make that sound like a craft instruction rather than a claim about what a full trip around the strip preserves.",
     "safe_claim": "The supported claim is that the Mobius strip makes the course method visible: build the object by a gluing rule, follow information all the way around it, and notice that the completed surface can contradict what every small patch seemed to promise.",
-    "repair_move": "If a sentence says only that the strip has one side, add the walk-around test: the reader should imagine carrying a mark around the strip and returning changed.",
+    "repair_move": "If a sentence says only that the strip has one side, add the walk-around test: carry a mark around the strip and watch it return changed.",
     "do_not_claim": "Do not claim that all later topology ignores measurement. The first lecture separates side behavior from exact shape; it does not make geometry irrelevant.",
     "reviewer_question": "Can the reader describe the traveler or mark making one full trip, say what side information returns changed, and explain why a small flat patch could not have exposed that whole-surface behavior?",
     "concepts": [

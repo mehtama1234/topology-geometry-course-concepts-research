@@ -42,7 +42,7 @@
     "title": "The picture makes it clear",
     "weak_claim": "The picture settles the conclusion once the reader sees the drawing in the right way, even though the proof feature has not been named.",
     "why_weak": "A picture can suggest the right idea while still hiding the rule that makes the idea true. The reader needs to know what part of the picture is evidence and what part is only a helpful drawing. Without that distinction, a diagram becomes persuasion instead of proof.",
-    "first_principles_repair": "Point to the exact feature being used: a side change, a forced crossing, a signed pair, a boundary order, a hole in a state space, or a whole-surface total. Then explain why that feature survives legal changes. The repair should say what the reader should watch if the picture is redrawn.",
+    "first_principles_repair": "Point to the exact feature being used: a side change, a forced crossing, a signed pair, a boundary order, a hole in a state space, or a whole-surface total. Then explain why that feature survives legal changes. The repair has to say what to watch if the picture is redrawn.",
     "detail_to_check": "Ask whether redrawing the picture, changing scale, or moving a curve legally would keep the named feature. If the feature disappears under a harmless redraw, it was probably a drawing artifact rather than mathematical evidence.",
     "where_to_use": "Use this repair on lecture pages where a demonstration carries the explanation from a concrete object into a mathematical claim.",
     "concepts": [
@@ -107,7 +107,7 @@
     "title": "This is just an example of the concept",
     "weak_claim": "This example names the concept but does not say what the example lets the reader inspect.",
     "why_weak": "The sentence does not say what the example lets the reader inspect. A working example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
-    "first_principles_repair": "Say what the example makes visible. It may show one point in a state space, one legal deformation, one crossing pair, one glued boundary, one defect, or one source boundary. Then say what the reader should test. The repaired sentence should turn the example into an inspection task.",
+    "first_principles_repair": "Say what the example makes visible. It may show one point in a state space, one legal deformation, one crossing pair, one glued boundary, one defect, or one source boundary. Then state the test. The repaired sentence has to turn the example into an inspection task.",
     "detail_to_check": "Ask whether the example would still teach the idea if the formal concept name were removed from the paragraph. If not, the example is probably leaning on the name instead of showing the job.",
     "where_to_use": "Use this repair on concept pages, theme pages, subtheme pages, and lecture examples that currently rely too much on naming.",
     "concepts": [

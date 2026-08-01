@@ -40,7 +40,7 @@
     "protected_idea": "The protected idea is that a space can carry evidence that survives continuous change and cannot be seen from one small local patch. This is the reason Euler characteristic and later index totals can speak about the whole surface instead of about the drawing style.",
     "course_bridge": "It supports the companion's path from surface bookkeeping to Euler characteristic, duality, and later whole-surface constraints on fields. The course bridge is the repeated move from local pieces to a completed account whose total cannot be chosen freely.",
     "overclaim": "Do not ask a beginner to start with the original paper's notation, and do not use the source to prove exact Tokieda wording before the course object and protected fact have been explained plainly.",
-    "reader_test": "Can the reader name the whole-space fact being protected, the lecture conclusion that depends on it, and the claim boundary between historical background and lecture evidence? The answer should explain why one local drawing would be too weak.",
+    "reader_test": "Can the reader name the whole-space fact being protected, the lecture conclusion that depends on it, and the claim boundary between historical background and lecture evidence? Explain why one local drawing would be too weak.",
     "concepts": [
       "manifold",
       "invariant",

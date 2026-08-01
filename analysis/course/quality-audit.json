@@ -33,12 +33,12 @@
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7160 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7150 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
       "requirement": "Source-nuance repair layer",
-      "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links. The 2190 repair words make source caution usable on actual lecture sentences.",
+      "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links. The 2188 repair words make source caution usable on actual lecture sentences.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 9746 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 9698 words.",
       "status": "met"
     },
     {
@@ -103,7 +103,7 @@
     },
     {
       "requirement": "Oral exam readiness",
-      "evidence": "7 oral-exam prompts ask for explanations that can survive follow-up questions. The prompt, strong-answer, must-include, common-failure, and follow-up fields use 1570 words to test whether the reader can connect the course without hiding behind topic names.",
+      "evidence": "7 oral-exam prompts ask for explanations that can survive follow-up questions. The prompt, strong-answer, must-include, common-failure, and follow-up fields use 1551 words to test whether the reader can connect the course without hiding behind topic names.",
       "status": "met"
     },
     {
@@ -123,7 +123,7 @@
     },
     {
       "requirement": "Weak-claim repair layer",
-      "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1770 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
+      "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1767 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
       "status": "met"
     },
     {
@@ -163,12 +163,12 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2034 source-reader words keep paper reading tied to first-principles course questions.",
+      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2015 source-reader words keep paper reading tied to first-principles course questions.",
       "status": "met"
     },
     {
       "requirement": "Paper family ledger",
-      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2018 words make the paper layer usable without letting it drown the course explanation.",
+      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2015 words make the paper layer usable without letting it drown the course explanation.",
       "status": "met"
     }
   ],
@@ -181,36 +181,36 @@
     ],
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
-    "lecture_essay_words": 5595,
+    "lecture_essay_words": 5576,
     "lecture_deepening_words": 1595,
     "lecture_walkthrough_words": 1987,
-    "lecture_source_lens_words": 1640,
+    "lecture_source_lens_words": 1637,
     "lecture_source_checkpoint_words": 1532,
     "lecture_caption_nuance_words": 1492,
     "lecture_source_faithfulness_words": 2449,
     "lecture_source_bridge_words": 5817,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 7160,
+    "lecture_reconstruction_words": 7150,
     "source_nuance_repairs": 15,
-    "source_nuance_repair_words": 2190,
+    "source_nuance_repair_words": 2188,
     "lecture_reader_test_words": 2752,
     "lecture_answer_guide_words": 3552,
-    "concept_essay_words": 7954,
+    "concept_essay_words": 7938,
     "concept_workup_words": 2746,
     "concept_anchor_words": 1965,
-    "concept_self_check_words": 8485,
+    "concept_self_check_words": 8447,
     "theme_essay_words": 1961,
     "theme_lens_words": 920,
-    "theme_answer_guide_words": 2547,
-    "subtheme_essay_words": 3011,
-    "subtheme_routine_words": 1431,
+    "theme_answer_guide_words": 2521,
+    "subtheme_essay_words": 3001,
+    "subtheme_routine_words": 1428,
     "subtheme_bridge_words": 1272,
-    "subtheme_answer_guide_words": 4291,
-    "family_essay_words": 1662,
+    "subtheme_answer_guide_words": 4273,
+    "family_essay_words": 1655,
     "family_contract_words": 1132,
     "family_playbook_words": 1086,
-    "family_answer_guide_words": 2908,
+    "family_answer_guide_words": 2904,
     "playground_widgets": 4,
     "synthesis_sections": 8,
     "dependency_paths": 8,
@@ -219,7 +219,7 @@
     "repair_clinic_cases": 8,
     "repair_clinic_words": 1654,
     "oral_exam_prompts": 7,
-    "oral_exam_words": 1570,
+    "oral_exam_words": 1551,
     "change_ledger_rows": 10,
     "change_ledger_words": 2019,
     "assumption_ledger_rows": 10,
@@ -227,7 +227,7 @@
     "counterexample_gallery_rows": 10,
     "counterexample_gallery_words": 1921,
     "weak_claim_repair_rows": 10,
-    "weak_claim_repair_words": 1770,
+    "weak_claim_repair_words": 1767,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
     "theorem_contract_words": 1530,
@@ -237,9 +237,9 @@
     "term_translations": 16,
     "term_translation_words": 1968,
     "source_readers": 7,
-    "source_reader_words": 2034,
+    "source_reader_words": 2015,
     "paper_family_ledger_rows": 7,
-    "paper_family_ledger_words": 2018,
+    "paper_family_ledger_words": 2015,
     "references": 7,
     "quality_rubric_items": 6,
     "rubric_coverage_layers": 6,

@@ -974,8 +974,18 @@ def main():
     for phrase in FORBIDDEN:
         if re.search(rf"\b{re.escape(phrase)}\b", corpus):
             fail(f"forbidden phrase found: {phrase}")
-    if corpus.count("a strong answer") > 25:
-        fail("generated prose repeats 'a strong answer' too often")
+    stale_rubric_phrases = [
+        "the answer should",
+        "the reader should",
+        "a good answer",
+        "a strong answer",
+        "in everyday language, explain",
+        "name the allowed move",
+        "the recovered captions support",
+    ]
+    for phrase in stale_rubric_phrases:
+        if phrase in corpus:
+            fail(f"stale rubric phrase found: {phrase}")
 
     for path in html_files:
         text = path.read_text(encoding="utf-8", errors="ignore")

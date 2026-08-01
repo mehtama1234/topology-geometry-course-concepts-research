@@ -22,7 +22,7 @@
     "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a provenance source, so it can answer who, what course, and what sequence. It cannot answer why a particular proof works, what exact mathematical claim a lecture makes, or how a missing caption should be filled.",
     "family": "Course provenance",
     "do_not_overread": "Do not infer extra theorem content from the mirror listing. It verifies identity and access, not additional mathematical claims, proof order, hidden caption content, or first-principles explanation.",
-    "reader_question": "What does this source verify about the course identity, and what mathematical claim still needs evidence from captions, visible demonstrations, or a real background reference? The answer should keep identity evidence and mathematical evidence in different boxes.",
+    "reader_question": "What does this source verify about the course identity, and what mathematical claim still needs evidence from captions, visible demonstrations, or a real background reference? Keep identity evidence and mathematical evidence in different boxes.",
     "concepts": [
       "topology-vs-geometry",
       "deformation",
@@ -37,7 +37,7 @@
     "how_to_read": "Read this source as historical and conceptual background after the companion has explained the lecture objects. Translate the formal history into the course's everyday test: what whole object is being protected, which changes are allowed, and what fact remains after those changes? It can support the whole-space-invariant family, but it should not be used as proof that a specific lecture used one exact statement, notation, or proof order.",
     "family": "Whole-space invariants",
     "do_not_overread": "Do not claim Tokieda cites a specific passage or that this source proves the wording of a companion paragraph. Use it as background for the mathematical family behind the course's invariant and manifold thread.",
-    "reader_question": "What feature of the whole space is being protected across allowed changes, what conclusion depends on that protected feature, and what exact lecture wording remains unsupported? The reader should be able to answer without beginning from the historical name.",
+    "reader_question": "What feature of the whole space is being protected across allowed changes, what conclusion depends on that protected feature, and what exact lecture wording remains unsupported? Start from the protected feature, not from the historical name.",
     "concepts": [
       "manifold",
       "invariant",
@@ -52,7 +52,7 @@
     "how_to_read": "Read it through the lecture picture first: walk around each defect, count how arrows turn, add the local counts, then compare the sum with the surface. The paper family supports that theorem family; it does not by itself verify any one caption sentence or compute a motion path. Keep the claim modest: it can force existence or a total count under the right setup, not solve the differential equation.",
     "family": "Vector-field index",
     "do_not_overread": "Do not reduce the theorem to a familiar slogan about hair on a sphere, and do not say it solves the dynamics. The paper family concerns a signed total over all isolated defects on the right kind of space.",
-    "reader_question": "Which defects are being counted, what sign does each one carry, what whole-surface number controls the total, and which stronger motion claim is not supported? A good answer names the surface and all defects before mentioning the theorem.",
+    "reader_question": "Which defects are being counted, what sign does each one carry, what whole-surface number controls the total, and which stronger motion claim is not supported? Name the surface and all defects before mentioning the theorem.",
     "concepts": [
       "vector-field-index",
       "equilibrium",
@@ -67,7 +67,7 @@
     "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives? A quotient should become an identification rule, a homotopy should become legal motion, and a homology-style count should become protected evidence. Treat it as broader machinery support, not as evidence for a specific classroom sentence.",
     "family": "Algebraic topology background",
     "do_not_overread": "Do not import the text's full abstraction into the course pages or imply the lectures follow this book's order. The companion should stay grounded in Tokieda's demonstrations and use Hatcher only for broader mathematical support after the everyday object and protected fact are visible.",
-    "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course, and what would be lost if that construction were named before its job was explained? The answer should translate the formal word into a plain action in the argument.",
+    "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course, and what would be lost if that construction were named before its job was explained? Translate the formal word into a plain action in the argument.",
     "concepts": [
       "quotient-space",
       "product-space",
@@ -82,7 +82,7 @@
     "how_to_read": "Read it after the term translator and formula reader. Whenever the notes use a formal word, translate it into the job it performs: preparing clean meetings, assigning signs, or forcing a whole-space count. Use it to strengthen the formal background, not to replace the course's plain-language contract or to make beginners climb through prerequisites before they understand the object.",
     "family": "Differentiable topology bridge",
     "do_not_overread": "Do not assume the companion's reader has Milnor's prerequisites, and do not present Milnor's formal route as the lecture's route unless the lecture evidence says so. Explain the course idea first and use this source as formal backup.",
-    "reader_question": "What local smooth condition is being prepared so that a global topological count can be trusted, and which part is formal background rather than course evidence? The answer should say what the local condition lets the proof count or force.",
+    "reader_question": "What local smooth condition is being prepared so that a global topological count can be trusted, and which part is formal background rather than course evidence? Say what the local condition lets the proof count or force.",
     "concepts": [
       "generic-position",
       "fixed-points",
@@ -97,7 +97,7 @@
     "how_to_read": "Use it to support the ordinary-case habit behind generic position and intersection number. Keep translating formal statements into the course's concrete test: what moved, what became clean, what orientation rule made signs meaningful, and why the signed count survived. It supports sign and transversality background, not exact wording from the videos.",
     "family": "Clean intersections and signs",
     "do_not_overread": "Do not let the formal setting erase the lecture picture or turn the companion into a textbook summary. The course's explanation still begins with visible meetings, signs, and legal nudges, then uses the reference to justify why that preparation is mathematically respectable.",
-    "reader_question": "What coincidence was removed, what sign rule became available, why does the signed total survive the allowed move, and which part is formal support rather than lecture evidence? The answer should make the count deserve trust before it names the reference.",
+    "reader_question": "What coincidence was removed, what sign rule became available, why does the signed total survive the allowed move, and which part is formal support rather than lecture evidence? Make the count deserve trust before naming the reference.",
     "concepts": [
       "generic-position",
       "intersection-number",
