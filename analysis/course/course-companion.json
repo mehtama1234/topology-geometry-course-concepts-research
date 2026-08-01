@@ -5752,6 +5752,113 @@
       "reader_question": "What are all the defects, what is their signed total, and what surface number must that total match?"
     }
   ],
+  "source_readers": [
+    {
+      "reference": "tokieda-aims-course",
+      "reader_problem": "The course source answers the starting problem: how can a person reason about shape when exact measurement is not the right evidence?",
+      "object_to_watch": "Watch the physical or drawn object first: a strip, route, surface, graph, arrow field, or state space. The object carries the rulebook before any theorem name appears.",
+      "first_principles_bridge": "The lectures keep converting a visible situation into a protected account. A strip becomes a gluing rule, a failed drawing becomes a boundary-order obstruction, a moving system becomes a space of possible states.",
+      "how_to_read": "Read the videos as the primary sequence of ideas. Start from the demonstration, name the allowed motion, then ask what fact survives that motion. The transcript supports the reading, but the demonstrations carry much of the mathematical force.",
+      "family": "Course spine",
+      "do_not_overread": "Do not treat auto-caption wording as exact lecture notes. Use the recovered captions as evidence for the course arc while keeping the missing-caption caveat visible.",
+      "reader_question": "What object is Tokieda manipulating, what move is legal, and what fact survives that move?",
+      "concepts": [
+        "deformation",
+        "invariant",
+        "configuration-space"
+      ]
+    },
+    {
+      "reference": "tib-av-portal-course",
+      "reader_problem": "The mirror source answers a source-control problem: how do we know the playlist belongs to a real course series rather than only to a loose upload list?",
+      "object_to_watch": "The object here is the course record itself: title, speaker, institution, sequence, and series identity.",
+      "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source.",
+      "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a support beam for provenance, not a substitute for watching the videos.",
+      "family": "Course provenance",
+      "do_not_overread": "Do not infer extra theorem content from the mirror listing. It supports identity and access, not additional mathematical claims.",
+      "reader_question": "What does this source verify about the course, and what does it not verify about a specific mathematical step?",
+      "concepts": [
+        "topology-vs-geometry",
+        "deformation",
+        "manifold"
+      ]
+    },
+    {
+      "reference": "poincare-analysis-situs",
+      "reader_problem": "Poincare's source line answers a whole-space question: what can be known about a space from facts that survive continuous change?",
+      "object_to_watch": "Watch the space as a whole object, not one drawing of it. Manifolds, holes, cycles, and preserved accounts matter because they remain meaningful after the picture is redrawn.",
+      "first_principles_bridge": "The course's surface bookkeeping and invariant habits sit in this source family. Euler characteristic, dual pictures, and Poincare-Hopf all depend on the idea that a whole space can carry evidence no single local patch reveals.",
+      "how_to_read": "Read this source as historical and conceptual background after the companion has explained the lecture objects. The useful beginner question is not the original notation; it is why preserved structure became the right way to study spaces.",
+      "family": "Whole-space invariants",
+      "do_not_overread": "Do not claim Tokieda cites a specific passage. Use the source as background for the mathematical family behind the course's invariant and manifold thread.",
+      "reader_question": "What feature of the whole space is being protected across allowed changes, and what conclusion depends on that protected feature?",
+      "concepts": [
+        "manifold",
+        "invariant",
+        "euler-characteristic"
+      ]
+    },
+    {
+      "reference": "hopf-vektorfelder",
+      "reader_problem": "Hopf's paper family answers a motion question: how can local failures of an arrow field be forced by the shape carrying the arrows?",
+      "object_to_watch": "Watch an arrow field on a surface and the isolated places where the field breaks down. The local object is a small loop around a defect; the global object is the entire surface.",
+      "first_principles_bridge": "The course reaches this family after teaching signed counts and Euler characteristic. A source, sink, or saddle is not only a picture; it has an index, and the indices must be compared with the surface's own count.",
+      "how_to_read": "Read it through the lecture picture first: walk around each defect, count how arrows turn, add the local counts, then compare the sum with the surface. Only after that should the formal paper be used.",
+      "family": "Vector-field index",
+      "do_not_overread": "Do not reduce the theorem to a familiar slogan about hair on a sphere. The paper family concerns a signed total over all isolated defects on the right kind of space.",
+      "reader_question": "Which defects are being counted, what sign does each one carry, and what whole-surface number controls the total?",
+      "concepts": [
+        "vector-field-index",
+        "equilibrium",
+        "poincare-hopf"
+      ]
+    },
+    {
+      "reference": "hatcher-algebraic-topology",
+      "reader_problem": "Hatcher's text answers the machinery question: how can holes, loops, gluing, and deformation be organized into repeatable tools?",
+      "object_to_watch": "Watch the spaces and maps, especially quotient spaces, product spaces, loops, cells, and homotopy-style deformations. These objects record allowed movement and preserved structure.",
+      "first_principles_bridge": "The course uses pictures before formal machinery. Hatcher supplies a broader language for the same habit: replace accidental geometry by route, gluing, and invariant information that survives allowed changes.",
+      "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives?",
+      "family": "Algebraic topology background",
+      "do_not_overread": "Do not import the text's full abstraction into the course pages. The companion should stay grounded in Tokieda's demonstrations and use Hatcher only for broader mathematical support.",
+      "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course?",
+      "concepts": [
+        "quotient-space",
+        "product-space",
+        "invariant"
+      ]
+    },
+    {
+      "reference": "milnor-differentiable-viewpoint",
+      "reader_problem": "Milnor's notes answer the bridge question: how do smooth local pictures produce topological conclusions about fixed points, degree, and vector fields?",
+      "object_to_watch": "Watch smooth manifolds, maps, regular values, boundaries, and vector fields. The important object is often local and smooth, but the conclusion belongs to the whole space.",
+      "first_principles_bridge": "The course repeatedly prepares a clean ordinary case, assigns signs or indices, and then reads a global conclusion. Milnor gives a compact formal route through that same local-to-global movement.",
+      "how_to_read": "Read it after the term translator and formula reader. Whenever the notes use a formal word, translate it into the job it performs: preparing clean meetings, assigning signs, or forcing a whole-space count.",
+      "family": "Differentiable topology bridge",
+      "do_not_overread": "Do not assume the companion's reader has Milnor's prerequisites. The site should explain the course idea first and use this source as formal backup.",
+      "reader_question": "What local smooth condition is being prepared so that a global topological count can be trusted?",
+      "concepts": [
+        "generic-position",
+        "fixed-points",
+        "vector-field-index"
+      ]
+    },
+    {
+      "reference": "guillemin-pollack-differential-topology",
+      "reader_problem": "Guillemin and Pollack answer the clean-meeting question: how can intersections, signs, and ordinary positions be made reliable enough to count?",
+      "object_to_watch": "Watch maps, submanifolds, clean intersections, orientations, and the small moves that remove fragile coincidences.",
+      "first_principles_bridge": "The course's intersection-number thread needs this family of ideas. Before signs can be added, meetings must be clean; before counts can survive, accidental cases must be understood as controlled changes.",
+      "how_to_read": "Use it to support the ordinary-case habit behind generic position and intersection number. Keep translating formal statements into the course's concrete test: what moved, what became clean, and why the count survived.",
+      "family": "Clean intersections and signs",
+      "do_not_overread": "Do not let the formal setting erase the lecture picture. The course's explanation still begins with visible meetings, signs, and legal nudges.",
+      "reader_question": "What coincidence was removed, what sign rule became available, and why does the signed total survive the allowed move?",
+      "concepts": [
+        "generic-position",
+        "intersection-number",
+        "boundary-orientation"
+      ]
+    }
+  ],
   "references": [
     {
       "id": "tokieda-aims-course",
@@ -6205,6 +6312,11 @@
         "requirement": "References and paper trail",
         "evidence": "The References page gives 7 course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
         "status": "met"
+      },
+      {
+        "requirement": "First-principles paper and source reading",
+        "evidence": "The Paper Source Reader page explains all 7 sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with 1095 source-reader words.",
+        "status": "met"
       }
     ],
     "metrics": {
@@ -6247,12 +6359,14 @@
       "reader_checks": 11,
       "term_translations": 16,
       "term_translation_words": 1850,
+      "source_readers": 7,
+      "source_reader_words": 1095,
       "references": 7,
       "quality_rubric_items": 6,
       "rubric_coverage_layers": 6,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 81
+      "html_pages_before_audit_page": 82
     }
   }
 }

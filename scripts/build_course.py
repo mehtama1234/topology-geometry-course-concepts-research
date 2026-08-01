@@ -145,6 +145,87 @@ REFERENCES = [
 ]
 
 
+SOURCE_READERS = [
+    {
+        "reference": "tokieda-aims-course",
+        "reader_problem": "The course source answers the starting problem: how can a person reason about shape when exact measurement is not the right evidence?",
+        "object_to_watch": "Watch the physical or drawn object first: a strip, route, surface, graph, arrow field, or state space. The object carries the rulebook before any theorem name appears.",
+        "first_principles_bridge": "The lectures keep converting a visible situation into a protected account. A strip becomes a gluing rule, a failed drawing becomes a boundary-order obstruction, a moving system becomes a space of possible states.",
+        "how_to_read": "Read the videos as the primary sequence of ideas. Start from the demonstration, name the allowed motion, then ask what fact survives that motion. The transcript supports the reading, but the demonstrations carry much of the mathematical force.",
+        "family": "Course spine",
+        "do_not_overread": "Do not treat auto-caption wording as exact lecture notes. Use the recovered captions as evidence for the course arc while keeping the missing-caption caveat visible.",
+        "reader_question": "What object is Tokieda manipulating, what move is legal, and what fact survives that move?",
+        "concepts": ["deformation", "invariant", "configuration-space"],
+    },
+    {
+        "reference": "tib-av-portal-course",
+        "reader_problem": "The mirror source answers a source-control problem: how do we know the playlist belongs to a real course series rather than only to a loose upload list?",
+        "object_to_watch": "The object here is the course record itself: title, speaker, institution, sequence, and series identity.",
+        "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source.",
+        "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a support beam for provenance, not a substitute for watching the videos.",
+        "family": "Course provenance",
+        "do_not_overread": "Do not infer extra theorem content from the mirror listing. It supports identity and access, not additional mathematical claims.",
+        "reader_question": "What does this source verify about the course, and what does it not verify about a specific mathematical step?",
+        "concepts": ["topology-vs-geometry", "deformation", "manifold"],
+    },
+    {
+        "reference": "poincare-analysis-situs",
+        "reader_problem": "Poincare's source line answers a whole-space question: what can be known about a space from facts that survive continuous change?",
+        "object_to_watch": "Watch the space as a whole object, not one drawing of it. Manifolds, holes, cycles, and preserved accounts matter because they remain meaningful after the picture is redrawn.",
+        "first_principles_bridge": "The course's surface bookkeeping and invariant habits sit in this source family. Euler characteristic, dual pictures, and Poincare-Hopf all depend on the idea that a whole space can carry evidence no single local patch reveals.",
+        "how_to_read": "Read this source as historical and conceptual background after the companion has explained the lecture objects. The useful beginner question is not the original notation; it is why preserved structure became the right way to study spaces.",
+        "family": "Whole-space invariants",
+        "do_not_overread": "Do not claim Tokieda cites a specific passage. Use the source as background for the mathematical family behind the course's invariant and manifold thread.",
+        "reader_question": "What feature of the whole space is being protected across allowed changes, and what conclusion depends on that protected feature?",
+        "concepts": ["manifold", "invariant", "euler-characteristic"],
+    },
+    {
+        "reference": "hopf-vektorfelder",
+        "reader_problem": "Hopf's paper family answers a motion question: how can local failures of an arrow field be forced by the shape carrying the arrows?",
+        "object_to_watch": "Watch an arrow field on a surface and the isolated places where the field breaks down. The local object is a small loop around a defect; the global object is the entire surface.",
+        "first_principles_bridge": "The course reaches this family after teaching signed counts and Euler characteristic. A source, sink, or saddle is not only a picture; it has an index, and the indices must be compared with the surface's own count.",
+        "how_to_read": "Read it through the lecture picture first: walk around each defect, count how arrows turn, add the local counts, then compare the sum with the surface. Only after that should the formal paper be used.",
+        "family": "Vector-field index",
+        "do_not_overread": "Do not reduce the theorem to a familiar slogan about hair on a sphere. The paper family concerns a signed total over all isolated defects on the right kind of space.",
+        "reader_question": "Which defects are being counted, what sign does each one carry, and what whole-surface number controls the total?",
+        "concepts": ["vector-field-index", "equilibrium", "poincare-hopf"],
+    },
+    {
+        "reference": "hatcher-algebraic-topology",
+        "reader_problem": "Hatcher's text answers the machinery question: how can holes, loops, gluing, and deformation be organized into repeatable tools?",
+        "object_to_watch": "Watch the spaces and maps, especially quotient spaces, product spaces, loops, cells, and homotopy-style deformations. These objects record allowed movement and preserved structure.",
+        "first_principles_bridge": "The course uses pictures before formal machinery. Hatcher supplies a broader language for the same habit: replace accidental geometry by route, gluing, and invariant information that survives allowed changes.",
+        "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives?",
+        "family": "Algebraic topology background",
+        "do_not_overread": "Do not import the text's full abstraction into the course pages. The companion should stay grounded in Tokieda's demonstrations and use Hatcher only for broader mathematical support.",
+        "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course?",
+        "concepts": ["quotient-space", "product-space", "invariant"],
+    },
+    {
+        "reference": "milnor-differentiable-viewpoint",
+        "reader_problem": "Milnor's notes answer the bridge question: how do smooth local pictures produce topological conclusions about fixed points, degree, and vector fields?",
+        "object_to_watch": "Watch smooth manifolds, maps, regular values, boundaries, and vector fields. The important object is often local and smooth, but the conclusion belongs to the whole space.",
+        "first_principles_bridge": "The course repeatedly prepares a clean ordinary case, assigns signs or indices, and then reads a global conclusion. Milnor gives a compact formal route through that same local-to-global movement.",
+        "how_to_read": "Read it after the term translator and formula reader. Whenever the notes use a formal word, translate it into the job it performs: preparing clean meetings, assigning signs, or forcing a whole-space count.",
+        "family": "Differentiable topology bridge",
+        "do_not_overread": "Do not assume the companion's reader has Milnor's prerequisites. The site should explain the course idea first and use this source as formal backup.",
+        "reader_question": "What local smooth condition is being prepared so that a global topological count can be trusted?",
+        "concepts": ["generic-position", "fixed-points", "vector-field-index"],
+    },
+    {
+        "reference": "guillemin-pollack-differential-topology",
+        "reader_problem": "Guillemin and Pollack answer the clean-meeting question: how can intersections, signs, and ordinary positions be made reliable enough to count?",
+        "object_to_watch": "Watch maps, submanifolds, clean intersections, orientations, and the small moves that remove fragile coincidences.",
+        "first_principles_bridge": "The course's intersection-number thread needs this family of ideas. Before signs can be added, meetings must be clean; before counts can survive, accidental cases must be understood as controlled changes.",
+        "how_to_read": "Use it to support the ordinary-case habit behind generic position and intersection number. Keep translating formal statements into the course's concrete test: what moved, what became clean, and why the count survived.",
+        "family": "Clean intersections and signs",
+        "do_not_overread": "Do not let the formal setting erase the lecture picture. The course's explanation still begins with visible meetings, signs, and legal nudges.",
+        "reader_question": "What coincidence was removed, what sign rule became available, and why does the signed total survive the allowed move?",
+        "concepts": ["generic-position", "intersection-number", "boundary-orientation"],
+    },
+]
+
+
 TERM_TRANSLATIONS = [
     {
         "term": "Topology",
@@ -2805,6 +2886,7 @@ def page(title, body, current=""):
         ("formula-reader.html", "Formula Reader"),
         ("reader-checks.html", "Reader Checks"),
         ("term-translator.html", "Term Translator"),
+        ("paper-source-reader.html", "Paper Source Reader"),
         ("references.html", "References"),
         ("quality-rubric.html", "Quality Rubric"),
         ("rubric-coverage.html", "Rubric Coverage"),
@@ -3065,6 +3147,7 @@ def build_quality_audit(data):
     family_playbook_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["playbook"][field])) for field in ["setup", "move", "payoff", "failure", "reader_test"]) for f in data["families"])
     family_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["answer_guide"][field])) for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]) for f in data["families"])
     term_translation_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["everyday_sentence", "job_in_argument", "not_a_definition", "failure_if_misread", "reader_question"]) for row in data["term_translations"])
+    source_reader_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["reader_problem", "object_to_watch", "first_principles_bridge", "how_to_read", "do_not_overread", "reader_question"]) for row in data["source_readers"])
     requirements = [
         {
             "requirement": "Own repo and folder",
@@ -3166,6 +3249,11 @@ def build_quality_audit(data):
             "evidence": f"The References page gives {len(data['references'])} course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
             "status": "met",
         },
+        {
+            "requirement": "First-principles paper and source reading",
+            "evidence": f"The Paper Source Reader page explains all {len(data['source_readers'])} sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with {source_reader_words} source-reader words.",
+            "status": "met",
+        },
     ]
     return {
         "summary": "The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
@@ -3208,6 +3296,8 @@ def build_quality_audit(data):
             "reader_checks": 11,
             "term_translations": len(data["term_translations"]),
             "term_translation_words": term_translation_words,
+            "source_readers": len(data["source_readers"]),
+            "source_reader_words": source_reader_words,
             "references": len(data["references"]),
             "quality_rubric_items": len(data["quality_rubric"]),
             "rubric_coverage_layers": len(data["rubric_coverage"]),
@@ -3280,6 +3370,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 {card('Term Translator', 'Sixteen formal course words translated into the job they perform in an argument, with failure tests and concept links for each one.', 'term-translator.html', 'Terms')}
+{card('Paper Source Reader', 'A first-principles guide to the course source, primary papers, and standard references: what problem each source family answers and how to read it without overclaiming.', 'paper-source-reader.html', 'Sources')}
 {card('References', 'Course, primary-paper, and standard-text links for the main ideas, with notes on what each source supports and what claim would overread it.', 'references.html', 'Sources')}
 {card('Quality Rubric', 'Six first-principles tests keep long prose honest: object, legal move, surviving evidence, failure condition, course anchor, and everyday-language replacement.', 'quality-rubric.html', 'Rubric')}
 {card('Rubric Coverage', 'A layer-by-layer audit maps the six quality tests onto lectures, concepts, themes, subthemes, method families, source pages, and review checks.', 'rubric-coverage.html', 'Coverage')}
@@ -3542,6 +3633,40 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     (SITE / "term-translator.html").write_text(page("Term Translator", terms_body, "Term Translator"), encoding="utf-8")
 
     known_concepts = {c["id"]: c for c in data["concepts"]}
+    refs_by_id = {ref["id"]: ref for ref in data["references"]}
+    source_reader_cards = []
+    for row in data["source_readers"]:
+        ref = refs_by_id[row["reference"]]
+        source_reader_cards.append(
+            f"""<article class="card">
+  <div class="meta">{esc(row['family'])}</div>
+  <h3>{esc(ref['title'])}</h3>
+  <p><b>Reader problem:</b> {esc(row['reader_problem'])}</p>
+  <p><b>Object to watch:</b> {esc(row['object_to_watch'])}</p>
+  <p><b>First-principles bridge:</b> {esc(row['first_principles_bridge'])}</p>
+  <p><b>How to read:</b> {esc(row['how_to_read'])}</p>
+  <p><b>Do not overread:</b> {esc(row['do_not_overread'])}</p>
+  <p><b>Reader question:</b> {esc(row['reader_question'])}</p>
+  <p>{concept_pills(row['concepts'], data['concepts'])}</p>
+  <a class="arrow" href="{esc(ref['url'])}">Open source</a>
+</article>"""
+        )
+    source_reader_body = f"""
+<h1>Paper Source Reader</h1>
+<p class="lead">This page explains how to read the course source, primary papers, and standard references without turning them into unexplained authority. Each source is treated as a family of ideas: the problem it answers, the object it watches, the bridge back to the course, and the claim it does not support by itself.</p>
+<section class="lecture">
+  <h2>How To Use This Page</h2>
+  <p>Start with the lecture or concept page, then come here to see what the source family contributes. A paper can support the history of an idea, the formal background for a theorem, or the broader machinery behind a course move. Those are different jobs. Keeping them separate prevents the source list from becoming a wall of names.</p>
+  <p>The reader question on each card is the check. If the question cannot be answered in everyday language, return to the lecture, term translator, or formula reader before treating the source as evidence.</p>
+</section>
+<div class="grid two">{''.join(source_reader_cards)}</div>
+<section class="lecture">
+  <h2>Course-To-Paper Test</h2>
+  <p>A source belongs only when it helps explain a concrete course move. The course may bend a strip, glue a square, count cells, assign signs, compare a graph with a diagonal, or walk around an arrow-field defect. The paper or text should clarify that move, not replace it. If a source cannot be tied back to an object, legal move, protected fact, or failure condition, it is not doing useful work here.</p>
+</section>
+"""
+    (SITE / "paper-source-reader.html").write_text(page("Paper Source Reader", source_reader_body, "Paper Source Reader"), encoding="utf-8")
+
     global_reference_cards = []
     for ref in data["references"]:
         lecture_links = " ".join(f'<a class="pill" href="lecture-{n:02d}.html">Lecture {n:02d}</a>' for n in ref["lectures"])
@@ -3910,6 +4035,7 @@ def main():
         "concept_dependencies": CONCEPT_DEPENDENCIES,
         "proof_moves": PROOF_MOVES,
         "term_translations": TERM_TRANSLATIONS,
+        "source_readers": SOURCE_READERS,
         "references": REFERENCES,
         "quality_rubric": QUALITY_RUBRIC,
         "rubric_coverage": RUBRIC_COVERAGE,
@@ -3939,6 +4065,7 @@ def main():
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "term-translations.json", TERM_TRANSLATIONS)
+    write_json(ANALYSIS / "source-readers.json", SOURCE_READERS)
     write_json(ANALYSIS / "references.json", REFERENCES)
     write_json(ANALYSIS / "quality-rubric.json", QUALITY_RUBRIC)
     write_json(ANALYSIS / "rubric-coverage.json", RUBRIC_COVERAGE)

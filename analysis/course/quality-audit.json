@@ -100,6 +100,11 @@
       "requirement": "References and paper trail",
       "evidence": "The References page gives 7 course, primary-paper, and standard-textbook links with lecture coverage, concept coverage, plain-language use notes, and source caveats; lecture and concept pages now show their own further source-trail sections.",
       "status": "met"
+    },
+    {
+      "requirement": "First-principles paper and source reading",
+      "evidence": "The Paper Source Reader page explains all 7 sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with 1095 source-reader words.",
+      "status": "met"
     }
   ],
   "metrics": {
@@ -142,11 +147,13 @@
     "reader_checks": 11,
     "term_translations": 16,
     "term_translation_words": 1850,
+    "source_readers": 7,
+    "source_reader_words": 1095,
     "references": 7,
     "quality_rubric_items": 6,
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 81
+    "html_pages_before_audit_page": 82
   }
 }

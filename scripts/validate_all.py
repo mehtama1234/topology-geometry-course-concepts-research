@@ -347,6 +347,7 @@ def main():
     references = data.get("references") or []
     if len(references) < 7:
         fail("references layer too small")
+    reference_ids = {row.get("id") for row in references}
     referenced_concepts = set()
     for row in references:
         if not str(row.get("url", "")).startswith("https://"):
@@ -367,11 +368,28 @@ def main():
     if uncovered_concepts:
         fail(f"concepts missing reference coverage: {uncovered_concepts}")
 
+    source_readers = data.get("source_readers") or []
+    if len(source_readers) != len(references):
+        fail("source reader layer must cover every reference")
+    if {row.get("reference") for row in source_readers} != reference_ids:
+        fail("source reader references do not match reference ids")
+    for row in source_readers:
+        for field in ["reader_problem", "object_to_watch", "first_principles_bridge", "how_to_read", "do_not_overread", "reader_question"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"source reader {row.get('reference')} {field} too thin")
+        if len(words(row.get("family"))) < 2:
+            fail(f"source reader {row.get('reference')} family too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"source reader {row.get('reference')} needs three concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"source reader {row.get('reference')} references unknown concept ids: {missing}")
+
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "term-translator.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -447,6 +465,14 @@ def main():
         fail("term translator needs sixteen term cards")
     if len(words(re.sub(r"<[^>]+>", " ", term_translator))) < 1200:
         fail("term translator too thin")
+    paper_source_reader = (SITE / "paper-source-reader.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Paper Source Reader", "Reader problem:", "Object to watch:", "First-principles bridge:", "How to read:", "Do not overread:", "Reader question:", "Course-To-Paper Test"]:
+        if phrase not in paper_source_reader:
+            fail(f"paper source reader missing phrase: {phrase}")
+    if paper_source_reader.count("<article") < 7:
+        fail("paper source reader needs seven source cards")
+    if len(words(re.sub(r"<[^>]+>", " ", paper_source_reader))) < 1200:
+        fail("paper source reader too thin")
     references_page = (SITE / "references.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["References", "Source Caveat", "Why it belongs", "Use carefully", "Lecture coverage", "Concept coverage"]:
         if phrase not in references_page:

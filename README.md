@@ -16,7 +16,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1 video currently reports no captions through `yt-dlp`: `nx1XOlezuvk`.
 - Raw captions live in `raw-material/youtube/captions/`.
 - Cleaned transcripts live in `raw-material/youtube/transcripts/`.
-- 81 generated HTML pages in `site/`.
+- 82 generated HTML pages in `site/`.
 - 45 lecture-grounded examples, exactly three per lecture.
 - 15 lecture-spine entries that name the object, question, legal move, surviving fact, and later use for every lecture.
 - 5,333 lecture essay words, with every lecture essay now clearing the 300-word validator floor.
@@ -45,7 +45,8 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 711 method-playbook words across setup, move, payoff, failure, and reader-test fields.
 - 2,258 method-family answer-guide words showing what strong method explanations must include.
 - 16 term translations with 1,850 words translating formal course words into everyday sentences, argument jobs, failure tests, reader questions, and concept links.
-- A course-level synthesis page, a reader-checks page, a term-translator page, a references page with 7 course/paper/text links, a six-test quality rubric, a six-layer rubric coverage audit, a quality audit, and a four-widget interactive math playground.
+- 7 paper/source reader cards with 1,095 words explaining source families from first principles.
+- A course-level synthesis page, a reader-checks page, a term-translator page, a paper-source-reader page, a references page with 7 course/paper/text links, a six-test quality rubric, a six-layer rubric coverage audit, a quality audit, and a four-widget interactive math playground.
 
 ## Reader Surfaces
 
@@ -62,6 +63,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - `site/math-playground.html` — interactive widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.
 - `site/reader-checks.html` — eleven common reasoning failure checks.
 - `site/term-translator.html` — formal course words translated into everyday sentences, jobs in an argument, failure tests, reader questions, and concept links.
+- `site/paper-source-reader.html` — first-principles guide to the course source, primary papers, and standard references.
 - `site/references.html` — course, primary-paper, and standard-text links with lecture coverage, concept coverage, and source caveats.
 - `site/quality-rubric.html` — six first-principles prose tests for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.
 - `site/rubric-coverage.html` — maps the six prose tests across lectures, concepts, themes, subthemes, method families, and source/quality pages.
@@ -96,7 +98,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 `scripts/validate_all.py` enforces the current quality shape:
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
-- Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, term translator, references, quality rubric, rubric coverage, playground, audits, lectures, concepts, themes, subthemes, and families.
+- Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, term translator, paper source reader, references, quality rubric, rubric coverage, playground, audits, lectures, concepts, themes, subthemes, and families.
 - Minimum essay depth for lecture, lecture-deepening, lecture-walkthrough, lecture-reader-test, lecture-answer-guide, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, concept-self-check, theme, theme-lens, theme-answer-guide, subtheme, subtheme-routine, subtheme-bridge, subtheme-answer-guide, method-family, method-contract, method-playbook, method-family-answer-guide, and math-why layers.
 - Lecture Deepening sections on every lecture page.
 - Source-lens sections on every lecture page.
@@ -121,6 +123,7 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 - Proof-move recipes with enough steps, explanations, failure modes, and examples.
 - References layer with course, primary-paper, and standard-text links plus source caveats.
 - Term translator layer with 16 required formal words, field depth checks, and concept-link integrity.
+- Paper source reader layer with source-family explanations, required field depth, reference coverage, and concept-link integrity.
 - Quality Rubric page with six enforced first-principles prose tests.
 - Rubric Coverage page with six layer maps and per-layer reader tests.
 - At least three concrete lecture examples per lecture.

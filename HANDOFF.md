@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 81.
+- HTML pages: 82.
 
 ## Main Reader Surfaces
 
@@ -41,6 +41,7 @@ This repo is the source and generated static site for a first-principles compani
 - `math-playground.html` — four interactive canvas widgets.
 - `reader-checks.html` — eleven common reasoning failure checks.
 - `term-translator.html` — 16 formal course words translated into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links.
+- `paper-source-reader.html` — seven course/paper/text sources explained as first-principles source families with reading questions and overread warnings.
 - `references.html` — course, primary-paper, and standard-text links with source caveats and lecture/concept coverage.
 - `quality-rubric.html` — six first-principles prose tests for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.
 - `rubric-coverage.html` — maps the six prose tests across lectures, concepts, themes, subthemes, method families, and source/quality pages.
@@ -94,6 +95,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - can-you-use-this-method answer-guide sections on every family page;
 - reader checks structure;
 - term-translator structure, field depth, required term set, and concept-link integrity;
+- paper-source-reader structure, field depth, full reference coverage, and concept-link integrity;
 - references layer structure and page content;
 - quality-rubric structure and page content;
 - rubric-coverage structure and page content;
@@ -137,6 +139,8 @@ As of the current generated audit:
 - 11 reader checks.
 - 16 term translations.
 - 1,850 term-translation words.
+- 7 paper/source reader cards.
+- 1,095 source-reader words.
 - 7 references.
 - 6 quality-rubric tests.
 - 6 rubric-coverage layer maps.
