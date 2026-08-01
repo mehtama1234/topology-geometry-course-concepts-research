@@ -1582,40 +1582,40 @@ THEME_ESSAYS = {
 
 THEME_LENSES = {
     "see-by-deforming": {
-        "notices": "This lens notices which parts of a picture are free to move and which parts must stay tied to the original question. It asks whether endpoints, boundaries, crossings, gluing rules, or state restrictions are being preserved while the visible shape changes.",
-        "ignores": "It ignores exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing is useful only if it comes from an allowed motion.",
-        "changes_problem": "It changes a problem from staring at one hard drawing into following a legal path toward a drawing whose structure is easier to inspect. The proof lives in the permission to move, not in the prettiness of the final picture.",
-        "reader_test": "Can the reader name the legal moves, the forbidden moves, and the fact that survives before trusting the simplified picture as evidence about the original problem?",
+        "notices": "This lens notices which parts of a picture are free to move and which parts must stay tied to the original question. It asks whether endpoints, boundaries, crossings, gluing rules, side behavior, or state restrictions are still present while the visible shape changes.",
+        "ignores": "It ignores exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing is useful only if it comes from an allowed motion that can be described from start to finish.",
+        "changes_problem": "It changes a problem from staring at one hard drawing into following a legal path toward a drawing whose structure is easier to inspect. The proof lives in the permitted journey: what moved, what could not move, and what fact survived the whole trip.",
+        "reader_test": "Can the reader name the legal moves, one tempting forbidden move, the fixed data, and the fact that survives before trusting the simplified picture as evidence about the original problem?",
     },
     "count-what-survives": {
-        "notices": "This lens notices the part of a changing picture that can be recorded as stable evidence: a hole count, signed total, parity, Euler characteristic, or index sum. It asks why this number is built to survive the permitted changes.",
-        "ignores": "It ignores raw visible clutter when that clutter can appear or disappear under harmless legal changes. A count that changes whenever the drawing is cleaned up is not yet mathematical evidence.",
-        "changes_problem": "It changes a problem from trying every possible drawing into building a count that every legal drawing must obey. Once the count is protected, one computation can speak for a whole family of drawings.",
-        "reader_test": "Can the reader say what is being counted, what local changes might threaten the count, and why the chosen count survives those changes rather than only being computed once?",
+        "notices": "This lens notices the part of a changing picture that can be recorded as stable evidence: a hole count, signed total, parity, Euler characteristic, or index sum. It asks what local move threatens the number and why the chosen account is built to survive that move.",
+        "ignores": "It ignores raw visible clutter when that clutter can appear or disappear under harmless legal changes. A count that changes whenever the drawing is cleaned up is only a count of one drawing, not evidence about all legal drawings.",
+        "changes_problem": "It changes a problem from trying every possible drawing into building a count that every legal drawing must obey. Once the count is protected, one computation can rule out a hoped-for outcome or force an event across a whole family of drawings.",
+        "reader_test": "Can the reader say what is being counted, what local changes might threaten the count, how cancellation or signs repair the threat, and what conclusion the protected count is allowed to force?",
     },
     "local-to-global": {
-        "notices": "This lens notices when many locally possible choices must be made compatible across a whole surface, loop, field, or state space. It watches the moment when a choice has to return after a full trip or fit into a complete sum.",
-        "ignores": "It ignores the false comfort that comes from checking only one small patch and assuming the whole object behaves the same way. Local success is only a start; the whole object may still refuse consistency.",
-        "changes_problem": "It changes a problem from asking whether each piece works alone into asking whether all pieces can be joined into one consistent whole. The obstruction often appears only when the last piece must match the first.",
-        "reader_test": "Can the reader identify the full journey, full sum, or full gluing step where the global obstruction appears, and explain why no isolated patch could have detected it?",
+        "notices": "This lens notices when many locally possible choices must be made compatible across a whole surface, loop, field, or state space. It watches the moment when a choice must return after a full trip, match a glued edge, or fit into a complete sum.",
+        "ignores": "It ignores the comfort of checking one small patch and assuming the whole object behaves the same way. Local success is only a start; the completed object may still refuse a shared side choice, shared sign rule, nonzero field, or legal route.",
+        "changes_problem": "It changes a problem from asking whether each piece works alone into asking whether all pieces can be joined into one consistent whole. The obstruction often appears only when the last patch must match the first, or when all local counts are added.",
+        "reader_test": "Can the reader identify the full journey, full sum, or full gluing step where the global obstruction appears, and explain why no isolated patch could have detected that obstruction?",
     },
     "generic-before-exception": {
-        "notices": "This lens notices fragile coincidences such as tangencies, triple meetings, perfect alignments, and non-isolated defects. It asks whether the picture shows ordinary evidence or a compressed special event that needs to be separated.",
-        "ignores": "It ignores accidental exactness when that exactness would disappear under a tiny legal nudge. The special picture is not useless, but it must be read as a boundary between ordinary pictures.",
-        "changes_problem": "It changes a problem from analyzing a brittle special picture into understanding ordinary cases and the controlled transitions between them. The proof studies exceptions only enough to know how stable evidence changes or stays fixed.",
-        "reader_test": "Can the reader explain what ordinary picture appears just before and just after the exceptional moment, and what protected count or relation survives across that moment?",
+        "notices": "This lens notices fragile coincidences such as tangencies, triple meetings, exact alignments, and non-isolated defects. It asks whether the picture shows ordinary evidence or a compressed special event that needs to be separated into readable nearby events.",
+        "ignores": "It ignores accidental exactness when that exactness would disappear under a tiny legal nudge. The special picture is not useless, but it must be read through the ordinary pictures just before and just after it.",
+        "changes_problem": "It changes a problem from analyzing a brittle special picture into understanding ordinary cases and the controlled transitions between them. The proof studies the exception by asking what appears, what disappears, and what stable evidence remains across the transition.",
+        "reader_test": "Can the reader explain what ordinary picture appears just before and just after the exceptional moment, what event was compressed in the special picture, and what protected count or relation survives across that moment?",
     },
     "pictures-to-proofs": {
-        "notices": "This lens notices whether a picture states the mathematical contract: objects, allowed moves, forbidden moves, signs, boundaries, and protected evidence. It treats a diagram as a claim that must say exactly what it is preserving.",
-        "ignores": "It ignores visual appeal when the drawing does not say what fact survives or what conclusion follows. A memorable diagram is weak if the reader cannot locate the rule that gives it force.",
-        "changes_problem": "It changes a problem from remembering a diagram into auditing the reason carried by that diagram. The drawing becomes a proof only when its parts support a conclusion that every legal version must obey.",
-        "reader_test": "Can the reader point to the exact part of the picture that prevents the forbidden outcome or forces the desired one, and name the rule that makes that part valid evidence?",
+        "notices": "This lens notices whether a picture states the mathematical contract: objects, allowed moves, forbidden moves, signs, boundaries, identifications, and protected evidence. It treats a diagram as a claim that must say exactly what it is preserving and what conclusion it is allowed to support.",
+        "ignores": "It ignores visual appeal when the drawing does not say what fact survives or what conclusion follows. A memorable diagram is weak if the reader cannot locate the rule, boundary, sign, or forbidden move that gives it force.",
+        "changes_problem": "It changes a problem from remembering a diagram into auditing the reason carried by that diagram. The drawing becomes proof-bearing only when its parts support a conclusion that every legal version must obey.",
+        "reader_test": "Can the reader point to the exact part of the picture that prevents the forbidden outcome or forces the desired one, name the rule that makes that part valid evidence, and state what the picture does not prove?",
     },
     "shape-as-machine": {
-        "notices": "This lens notices how the shape of a space permits routes, blocks routes, forces self-agreement, or demands defects. It asks what the space of possibilities allows before trying to compute one exact motion.",
-        "ignores": "It ignores unnecessary point-by-point prediction when a whole-space constraint already forces the kind of behavior being asked about. Exact paths may be unknown while existence, obstruction, or defect counts are still forced.",
-        "changes_problem": "It changes a problem from solving every motion detail into understanding the shape of possible states and the constraints that shape imposes. The object under study becomes the space of possible positions, not only one physical position.",
-        "reader_test": "Can the reader name the state space or domain, the rule acting on it, the forbidden states, and the topological feature that forces the claimed behavior?",
+        "notices": "This lens notices how the shape of a space permits routes, blocks routes, forces self-agreement, or demands defects. It asks what the space of possibilities allows before trying to compute one exact motion or solve one exact equation.",
+        "ignores": "It ignores unnecessary point-by-point prediction when a whole-space constraint already forces the kind of behavior being asked about. Exact paths may be unknown while existence, obstruction, or defect totals are still forced.",
+        "changes_problem": "It changes a problem from solving every motion detail into understanding the shape of possible states and the constraints that shape imposes. The object under study becomes the space of allowed positions or rules, not only one physical pose.",
+        "reader_test": "Can the reader name the state space or domain, what one point represents, the rule or path acting on it, the forbidden states, and the topological feature that forces the claimed behavior?",
     },
 }
 
@@ -4697,7 +4697,7 @@ def build_theme_answer_guide(theme):
     ])
     test_close = varied((tid, "test-close"), [
         f"That detail keeps the theme from becoming only a broad summary.",
-        f"That detail separates a useful use of the theme from a vague summary.",
+        f"That detail separates a useful use of the theme from a summary that has no checkable claim.",
         f"Without that detail, {title} would sound fluent while failing to control a real argument.",
         f"The important detail is where {title} becomes checkable.",
     ])
