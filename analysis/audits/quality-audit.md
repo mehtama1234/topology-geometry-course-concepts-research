@@ -13,5 +13,6 @@ The companion now satisfies the requested depth shape across the main reader-fac
 - **Interactive first-principles playground** (met): The Math Playground page has four canvas widgets for Euler characteristic, signed cancellation, fixed points, and vector-field index.
 - **Course-level synthesis** (met): The Course Synthesis page connects the lecture sequence, proof families, mathematical objects, operations, failure modes, and reader questions in one first-principles path.
 - **Concept dependency map** (met): The Concept Dependencies page gives 8 prerequisite paths that connect early ideas to later theorems and applications.
+- **Proof-move recipes** (met): The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.
 - **Formula reader for mathematical statements** (met): The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.
 - **Reader checks for common failure modes** (met): The Reader Checks page gathers eleven course-wide mistakes and gives concrete replacement questions linked to lectures, concepts, method families, and the formula reader.

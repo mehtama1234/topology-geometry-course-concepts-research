@@ -52,6 +52,11 @@
       "status": "met"
     },
     {
+      "requirement": "Proof-move recipes",
+      "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
+      "status": "met"
+    },
+    {
       "requirement": "Formula reader for mathematical statements",
       "evidence": "The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.",
       "status": "met"
@@ -79,9 +84,10 @@
     "playground_widgets": 4,
     "synthesis_sections": 8,
     "dependency_paths": 8,
+    "proof_moves": 5,
     "reader_checks": 11,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 75
+    "html_pages_before_audit_page": 76
   }
 }

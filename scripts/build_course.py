@@ -1313,6 +1313,85 @@ CONCEPT_DEPENDENCIES = [
 ]
 
 
+PROOF_MOVES = [
+    {
+        "name": "Deform a picture without changing the original question",
+        "family": "deformation-family",
+        "problem": "The first drawing is too tangled to reason from directly.",
+        "steps": [
+            "Name the object that is allowed to move.",
+            "Name the forbidden moves: passing through, breaking, gluing, moving endpoints, or dropping a boundary.",
+            "Move the picture only through legal changes.",
+            "State the fact that survived the whole motion.",
+            "Use the simpler final picture to answer the original question.",
+        ],
+        "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest.",
+        "failure": "The usual failure is simplifying first and justifying later. If the legal moves are not named before the motion, the proof may have solved a different problem.",
+        "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction.",
+    },
+    {
+        "name": "Build a count that survives legal redrawings by cancellation",
+        "family": "counting-family",
+        "problem": "The visible number of pieces, crossings, or defects changes when the picture is cleaned up.",
+        "steps": [
+            "Decide which local events matter.",
+            "Watch how those events can appear or disappear under legal motion.",
+            "Choose an account where harmless changes cancel.",
+            "Check the account on a simple version of the object.",
+            "Use the protected total to force existence or impossibility.",
+        ],
+        "why": "A useful count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because fake changes do not alter the protected account.",
+        "failure": "The raw count is often the wrong count. If the proof does not explain why the number survives, the number is only a measurement of one drawing.",
+        "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero.",
+    },
+    {
+        "name": "Translate an invisible rule into a comparable shape",
+        "family": "motion-family",
+        "problem": "A map or motion law feels invisible because it is an instruction rather than a drawn object.",
+        "steps": [
+            "List the input space and output space.",
+            "Draw or describe the graph that records input and output together.",
+            "Identify the comparison object, such as the diagonal of self-agreement.",
+            "Turn the desired conclusion into a meeting or avoidance question.",
+            "Apply the earlier count, obstruction, or fixed-point idea.",
+        ],
+        "why": "The proof works because the rule becomes an object that can be moved, compared, and counted. A fixed point is no longer hidden inside notation; it is a meeting with the diagonal.",
+        "failure": "The translation fails if the graph no longer represents the original rule or if the diagonal does not represent the desired self-agreement.",
+        "example": "Fixed-point lectures turn f(x) = x into the graph of f meeting the diagonal.",
+    },
+    {
+        "name": "Read local defects as evidence about the whole surface",
+        "family": "surface-family",
+        "problem": "A vector field may have several local failures, and each one looks adjustable in isolation.",
+        "steps": [
+            "Clean the field so the defects are isolated.",
+            "Walk around each defect with a small loop.",
+            "Record how the nearby arrows turn.",
+            "Add the signed local indices.",
+            "Compare the total with the surface's Euler characteristic.",
+        ],
+        "why": "The proof works because isolated local defects can move or cancel in controlled ways, but their total is tied to the surface that carries the field.",
+        "failure": "The theorem is misread when one equilibrium is treated as the whole story. Poincare-Hopf is about the total over the complete surface.",
+        "example": "The hairy-ball idea is the plain case: a sphere cannot carry a continuous nonzero tangent arrow field everywhere.",
+    },
+    {
+        "name": "Model physical motion as a space of possible states",
+        "family": "motion-family",
+        "problem": "A physical setup has too many details to track directly over time.",
+        "steps": [
+            "Say what information describes one complete state.",
+            "Treat every possible state as a point in a new space.",
+            "Remove forbidden states or mark boundary restrictions.",
+            "Translate motion into paths or rules on that state space.",
+            "Use holes, barriers, fixed points, or indices to constrain the original system.",
+        ],
+        "why": "The proof works only if the state space carries the real freedoms and real exclusions of the physical problem. Topology then reasons about the shape of possibility.",
+        "failure": "A careless state space can prove a true theorem about the wrong model. The physical conclusion is only as good as the translation.",
+        "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory.",
+    },
+]
+
+
 def clean_vtt(path):
     seen = []
     out = []
@@ -1369,6 +1448,7 @@ def page(title, body, current=""):
         ("math-playground.html", "Playground"),
         ("course-synthesis.html", "Synthesis"),
         ("concept-dependencies.html", "Dependencies"),
+        ("proof-moves.html", "Proof Moves"),
         ("formula-reader.html", "Formula Reader"),
         ("reader-checks.html", "Reader Checks"),
         ("quality-audit.html", "Quality Audit"),
@@ -1468,6 +1548,11 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
+            "requirement": "Proof-move recipes",
+            "evidence": f"The Proof Moves page gives {len(data['proof_moves'])} reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
+            "status": "met",
+        },
+        {
             "requirement": "Formula reader for mathematical statements",
             "evidence": "The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.",
             "status": "met",
@@ -1496,6 +1581,7 @@ def build_quality_audit(data):
             "playground_widgets": 4,
             "synthesis_sections": 8,
             "dependency_paths": len(data["concept_dependencies"]),
+            "proof_moves": len(data["proof_moves"]),
             "reader_checks": 11,
             "concept_appearances_min": concept_min,
             "concept_appearances_max": concept_max,
@@ -1561,6 +1647,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Math Playground', 'Four small canvas models let the reader adjust cuts, signed pairs, fixed-point graphs, and vector-field turning. The controls make the course principles visible without assuming prior notation.', 'math-playground.html', 'Playground')}
 {card('Course Synthesis', 'A single first-principles path through the whole course: hard situation, mathematical object, operation, reason, and what becomes possible.', 'course-synthesis.html', 'Synthesis')}
 {card('Concept Dependencies', 'Eight paths show what a reader should understand first, what later idea depends on it, and why the dependency matters.', 'concept-dependencies.html', 'Dependencies')}
+{card('Proof Moves', 'Five reusable proof recipes show the steps: name the object, name legal moves, protect evidence, and use the conclusion without hiding the contract.', 'proof-moves.html', 'Moves')}
 {card('Formula Reader', 'Plain readings of the course equations: what is counted, what is protected, why cancellation matters, and what kind of conclusion the equation can force.', 'formula-reader.html', 'Reader')}
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 </div>
@@ -1683,6 +1770,26 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <div class="grid two">{dependency_cards}</div>
 """
     (SITE / "concept-dependencies.html").write_text(page("Concept Dependencies", dependency_body, "Dependencies"), encoding="utf-8")
+
+    proof_cards = "".join(
+        f"""<article class="card"><div class="meta">{esc(row['name'])}</div><h3>{esc(row['problem'])}</h3><p><b>Steps:</b></p><ol>{''.join(f'<li>{esc(step)}</li>' for step in row['steps'])}</ol><p><b>Why it works:</b> {esc(row['why'])}</p><p><b>Failure mode:</b> {esc(row['failure'])}</p><p><b>Course example:</b> {esc(row['example'])}</p><p><b>Family:</b> <a class="pill" href="{slug_page('family', row['family'])}">{esc(row['family'])}</a></p></article>"""
+        for row in data["proof_moves"]
+    )
+    proof_body = f"""
+<h1>Proof Moves</h1>
+<p class="lead">These are the reusable moves beneath the lectures. Each recipe starts from the everyday problem, names the legal contract, explains why the move works, and names the failure that would make the proof invalid.</p>
+<section class="lecture">
+  <h2>How To Use These Recipes</h2>
+  <p>When a page feels compressed, find the proof move it is using. Do not start with the theorem name. Start with the action: move a picture, build a count, translate a rule, add local defects, or model possible states. Then ask what detail makes the action legal.</p>
+  <p>The course becomes easier when every proof is read as a sequence of obligations. What is the object? What may change? What must survive? What count or comparison is protected? What conclusion follows because the protected evidence cannot be removed?</p>
+</section>
+<div class="grid two">{proof_cards}</div>
+<section class="lecture">
+  <h2>Audit Question</h2>
+  <p>After reading any proof in the course, ask which recipe was used and where the proof paid its debt. A deformation proof pays its debt by naming legal motion. A counting proof pays its debt by explaining cancellation. A fixed-point proof pays its debt by translating the rule into a graph-and-diagonal meeting. A dynamics proof pays its debt by showing why local defects can be added over the whole surface.</p>
+</section>
+"""
+    (SITE / "proof-moves.html").write_text(page("Proof Moves", proof_body, "Proof Moves"), encoding="utf-8")
 
     formula_rows = [
         ("Euler characteristic", "chi = vertices - edges + faces", "Take a surface that has been divided into pieces. Count corner points, subtract edge pieces, then add face pieces.", "When a face is split by a new edge, both the edge count and face count change. The alternating account absorbs that artificial choice.", "The final number belongs to the surface type, not to one chosen drawing or mesh.", "Before using the number, ask what surface is being counted and whether boundaries or different kinds of cells have been accounted for.", "concept-euler-characteristic.html"),
@@ -1827,7 +1934,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     audit = f"""<h1>Source Audit</h1><section class="panel {'warn' if stats['missing_captions'] else ''}"><p>{stats['captioned_videos']} of {stats['videos']} playlist videos have recovered English auto-captions. Missing: {', '.join(data['missing_caption_ids']) or 'none'}.</p><p>The companion uses captions as raw source material, but the narrative is hand-authored from the course arc and checked against available transcript coverage. Auto-captions can mishear names, symbols, and short mathematical words.</p></section>"""
@@ -1930,6 +2037,7 @@ def main():
         "families": families,
         "math_why": math_why,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
+        "proof_moves": PROOF_MOVES,
     }
     missing = [v["id"] for v in videos if not v["caption_file"]]
     data["missing_caption_ids"] = missing
@@ -1953,6 +2061,7 @@ def main():
     write_json(ANALYSIS / "family-map.json", families)
     write_json(ANALYSIS / "math-why.json", math_why)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
+    write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "course-companion.json", data)
     write_json(ANALYSIS / "quality-audit.json", data["quality_audit"])
     metrics = data["quality_audit"]["metrics"]
@@ -1982,6 +2091,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
+- proof-moves.html with {metrics['proof_moves']} reusable proof recipes
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage and missing-caption audit
 

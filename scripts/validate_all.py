@@ -179,11 +179,24 @@ def main():
             if len(words(row.get(field))) < 8:
                 fail(f"concept dependency {row.get('stage')} {field} too thin")
 
+    family_ids = {family["id"] for family in data["families"]}
+    proof_moves = data.get("proof_moves") or []
+    if len(proof_moves) < 5:
+        fail("proof moves too small")
+    for row in proof_moves:
+        if row.get("family") not in family_ids:
+            fail(f"proof move references unknown family id: {row.get('family')}")
+        if len(row.get("steps") or []) < 5:
+            fail(f"proof move needs five steps: {row.get('name')}")
+        for field in ["name", "problem", "why", "failure", "example"]:
+            if len(words(row.get(field))) < 8:
+                fail(f"proof move {row.get('name')} {field} too thin")
+
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "formula-reader.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "reader-checks.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -214,6 +227,16 @@ def main():
         fail("concept dependencies page needs eight dependency cards")
     if len(words(re.sub(r"<[^>]+>", " ", dependency_page))) < 850:
         fail("concept dependencies page too thin")
+    proof_page = (SITE / "proof-moves.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Proof Moves", "Steps", "Why it works", "Failure mode", "Course example"]:
+        if phrase not in proof_page:
+            fail(f"proof moves page missing phrase: {phrase}")
+    if proof_page.count("<article") < 5:
+        fail("proof moves page needs five proof cards")
+    if proof_page.count("<li>") < 25:
+        fail("proof moves page needs twenty-five proof steps")
+    if len(words(re.sub(r"<[^>]+>", " ", proof_page))) < 900:
+        fail("proof moves page too thin")
     formula_reader = (SITE / "formula-reader.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Formula Reader", "Plain reading", "Why it survives", "What it can force", "Reader check"]:
         if phrase not in formula_reader:

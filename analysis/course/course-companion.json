@@ -3858,6 +3858,83 @@
       "reader_check": "Does the state space include the real freedoms and exclude the real forbidden states?"
     }
   ],
+  "proof_moves": [
+    {
+      "name": "Deform a picture without changing the original question",
+      "family": "deformation-family",
+      "problem": "The first drawing is too tangled to reason from directly.",
+      "steps": [
+        "Name the object that is allowed to move.",
+        "Name the forbidden moves: passing through, breaking, gluing, moving endpoints, or dropping a boundary.",
+        "Move the picture only through legal changes.",
+        "State the fact that survived the whole motion.",
+        "Use the simpler final picture to answer the original question."
+      ],
+      "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest.",
+      "failure": "The usual failure is simplifying first and justifying later. If the legal moves are not named before the motion, the proof may have solved a different problem.",
+      "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction."
+    },
+    {
+      "name": "Build a count that survives legal redrawings by cancellation",
+      "family": "counting-family",
+      "problem": "The visible number of pieces, crossings, or defects changes when the picture is cleaned up.",
+      "steps": [
+        "Decide which local events matter.",
+        "Watch how those events can appear or disappear under legal motion.",
+        "Choose an account where harmless changes cancel.",
+        "Check the account on a simple version of the object.",
+        "Use the protected total to force existence or impossibility."
+      ],
+      "why": "A useful count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because fake changes do not alter the protected account.",
+      "failure": "The raw count is often the wrong count. If the proof does not explain why the number survives, the number is only a measurement of one drawing.",
+      "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero."
+    },
+    {
+      "name": "Translate an invisible rule into a comparable shape",
+      "family": "motion-family",
+      "problem": "A map or motion law feels invisible because it is an instruction rather than a drawn object.",
+      "steps": [
+        "List the input space and output space.",
+        "Draw or describe the graph that records input and output together.",
+        "Identify the comparison object, such as the diagonal of self-agreement.",
+        "Turn the desired conclusion into a meeting or avoidance question.",
+        "Apply the earlier count, obstruction, or fixed-point idea."
+      ],
+      "why": "The proof works because the rule becomes an object that can be moved, compared, and counted. A fixed point is no longer hidden inside notation; it is a meeting with the diagonal.",
+      "failure": "The translation fails if the graph no longer represents the original rule or if the diagonal does not represent the desired self-agreement.",
+      "example": "Fixed-point lectures turn f(x) = x into the graph of f meeting the diagonal."
+    },
+    {
+      "name": "Read local defects as evidence about the whole surface",
+      "family": "surface-family",
+      "problem": "A vector field may have several local failures, and each one looks adjustable in isolation.",
+      "steps": [
+        "Clean the field so the defects are isolated.",
+        "Walk around each defect with a small loop.",
+        "Record how the nearby arrows turn.",
+        "Add the signed local indices.",
+        "Compare the total with the surface's Euler characteristic."
+      ],
+      "why": "The proof works because isolated local defects can move or cancel in controlled ways, but their total is tied to the surface that carries the field.",
+      "failure": "The theorem is misread when one equilibrium is treated as the whole story. Poincare-Hopf is about the total over the complete surface.",
+      "example": "The hairy-ball idea is the plain case: a sphere cannot carry a continuous nonzero tangent arrow field everywhere."
+    },
+    {
+      "name": "Model physical motion as a space of possible states",
+      "family": "motion-family",
+      "problem": "A physical setup has too many details to track directly over time.",
+      "steps": [
+        "Say what information describes one complete state.",
+        "Treat every possible state as a point in a new space.",
+        "Remove forbidden states or mark boundary restrictions.",
+        "Translate motion into paths or rules on that state space.",
+        "Use holes, barriers, fixed points, or indices to constrain the original system."
+      ],
+      "why": "The proof works only if the state space carries the real freedoms and real exclusions of the physical problem. Topology then reasons about the shape of possibility.",
+      "failure": "A careless state space can prove a true theorem about the wrong model. The physical conclusion is only as good as the translation.",
+      "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory."
+    }
+  ],
   "missing_caption_ids": [
     "nx1XOlezuvk"
   ],
@@ -3925,6 +4002,11 @@
         "status": "met"
       },
       {
+        "requirement": "Proof-move recipes",
+        "evidence": "The Proof Moves page gives 5 reusable proof recipes with steps, why-they-work explanations, failure modes, and examples.",
+        "status": "met"
+      },
+      {
         "requirement": "Formula reader for mathematical statements",
         "evidence": "The Formula Reader page translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks.",
         "status": "met"
@@ -3952,10 +4034,11 @@
       "playground_widgets": 4,
       "synthesis_sections": 8,
       "dependency_paths": 8,
+      "proof_moves": 5,
       "reader_checks": 11,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 75
+      "html_pages_before_audit_page": 76
     }
   }
 }

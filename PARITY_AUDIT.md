@@ -18,11 +18,12 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
 | Concept dependency map | `site/concept-dependencies.html` gives eight prerequisite paths from early ideas to later theorem-level ideas | Met |
+| Proof moves | `site/proof-moves.html` gives five reusable first-principles proof recipes with steps, failure modes, and course examples | Met |
 | Formula reader | `site/formula-reader.html` translates seven central statements into plain readings, survival reasons, forced conclusions, and reader checks | Met |
 | Interactive learning | `site/math-playground.html` has four canvas widgets: Euler characteristic, signed cancellation, fixed points, vector-field index | Met |
 | Reader failure checks | `site/reader-checks.html` has eleven checks for common reasoning errors | Met |
 | Quality/source audits | `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md` | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 75 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 76 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -35,7 +36,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 75 generated HTML pages.
+- 76 generated HTML pages.
 - 45 lecture-grounded examples.
 - 3,855 lecture essay words.
 - 1,090 lecture source-lens words.
@@ -46,6 +47,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 4 playground widgets.
 - 8 synthesis sections.
 - 8 concept dependency paths.
+- 5 proof-move recipes.
 - 11 reader checks.
 
 ## Validation Gates
@@ -60,6 +62,7 @@ The validator checks:
 - playground widget structure and JS renderer names;
 - course synthesis sections and length;
 - concept dependency structure and length;
+- proof-move structure and length;
 - reader checks structure and length;
 - no broken local links;
 - banned vague phrases absent from generated HTML.

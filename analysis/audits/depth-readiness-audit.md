@@ -12,6 +12,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine and proof-family synthesis
 - concept-dependencies.html with 8 prerequisite paths linking early ideas to later theorem-level ideas
+- proof-moves.html with 5 reusable proof recipes
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage and missing-caption audit
 
