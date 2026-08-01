@@ -140,8 +140,8 @@ def main():
         if essay_words < 180:
             fail(f"lecture {lecture['lecture']} essay too thin")
         examples = deep.get("examples") or []
-        if len(examples) < 2:
-            fail(f"lecture {lecture['lecture']} needs at least two concrete examples")
+        if len(examples) < 3:
+            fail(f"lecture {lecture['lecture']} needs at least three concrete examples")
         concept_ids = {c["id"] for c in data["concepts"]}
         for example in examples:
             if len(words(example.get("text"))) < 25:

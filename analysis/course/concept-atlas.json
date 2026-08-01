@@ -37,6 +37,11 @@
         "summary": "The lecture asks whether a sub-object can be moved around obstacles inside a larger space. The answer depends on dimension: enough room can turn collision into avoidance."
       },
       {
+        "lecture": 6,
+        "title": "Dimension measures available escape room",
+        "summary": "The lecture turns the physical feeling of room into a mathematical test. If the surrounding space has enough independent directions, objects can often avoid meeting; when it does not, intersections become meaningful."
+      },
+      {
         "lecture": 7,
         "title": "Existence without a formula",
         "summary": "The lecture turns a hands-on balancing fact into the idea that some special point or event can be forced even when no explicit formula for it is available."
@@ -96,9 +101,19 @@
         "summary": "The lecture uses legal motion to simplify paths. If the simplified situation still forces a crossing, the original problem could not have had a legal crossing-free solution."
       },
       {
+        "lecture": 2,
+        "title": "Endpoint order carries the obstruction",
+        "summary": "The boundary points are not movable labels. Their circular order is part of the problem, and deformation is allowed to clean the interior curves only while preserving that boundary order."
+      },
+      {
         "lecture": 3,
         "title": "Quotients turn edge instructions into spaces",
         "summary": "When edges or points are identified, a flat drawing becomes a code for a new space. The same square can describe different worlds depending on the gluing rule."
+      },
+      {
+        "lecture": 3,
+        "title": "Surgery treats construction as reasoning",
+        "summary": "Removing a simple piece and gluing another one back is a way to change the space under controlled rules. The operation matters because it tracks what feature has been changed and what feature is meant to survive."
       },
       {
         "lecture": 4,
@@ -119,6 +134,16 @@
         "lecture": 7,
         "title": "The center-of-gravity demonstration",
         "summary": "Sliding two hands inward under an object creates a physical example of a forced state. Continuity makes the balancing event unavoidable because the relevant condition changes steadily rather than jumping past the answer."
+      },
+      {
+        "lecture": 10,
+        "title": "No global escape from self-agreement",
+        "summary": "The theorem can be understood as ruling out a continuous way for every point of the ball to avoid itself at once. The shape of the filled ball blocks that escape."
+      },
+      {
+        "lecture": 12,
+        "title": "Defects can move while the total stays fixed",
+        "summary": "The lecture's global index idea allows local equilibria to shift, split, or cancel in controlled ways. What survives is the total signed count demanded by the surface."
       },
       {
         "lecture": 15,
@@ -160,6 +185,16 @@
         "summary": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing."
       },
       {
+        "lecture": 2,
+        "title": "Endpoint order carries the obstruction",
+        "summary": "The boundary points are not movable labels. Their circular order is part of the problem, and deformation is allowed to clean the interior curves only while preserving that boundary order."
+      },
+      {
+        "lecture": 3,
+        "title": "Surgery treats construction as reasoning",
+        "summary": "Removing a simple piece and gluing another one back is a way to change the space under controlled rules. The operation matters because it tracks what feature has been changed and what feature is meant to survive."
+      },
+      {
         "lecture": 4,
         "title": "Reversing an edge changes the global surface",
         "summary": "Changing a gluing direction can turn an ordinary two-sided behavior into a one-sided one. The local patches remain simple, but the whole route structure changes."
@@ -168,6 +203,11 @@
         "lecture": 5,
         "title": "Surgery changes a surface by controlled cutting and gluing",
         "summary": "The surface operations are not arbitrary cutting. They are controlled replacements that help reduce surfaces to standard forms while tracking what has changed and what surface information remains protected."
+      },
+      {
+        "lecture": 5,
+        "title": "Handles and crosscaps are durable building blocks",
+        "summary": "The lecture's classification viewpoint treats handles, crosscaps, and boundaries as parts that remain meaningful after simplification. The surface is understood by the pieces that cannot be wished away by a different drawing."
       },
       {
         "lecture": 6,
@@ -185,6 +225,11 @@
         "summary": "When a positive and a negative intersection appear together, the picture changes but the signed total does not. This is the cleanest example of designed cancellation."
       },
       {
+        "lecture": 8,
+        "title": "Orientation gives signs their meaning",
+        "summary": "A signed intersection count only works after the surrounding surface or space supports a consistent direction choice. The plus or minus sign is geometric information, not an arbitrary label added after counting."
+      },
+      {
         "lecture": 9,
         "title": "Missing middle caption is kept visible",
         "summary": "The middle video of this lecture has no recovered captions, so the explanation leans on the available surrounding parts and preserves the source gap in the audit."
@@ -193,6 +238,11 @@
         "lecture": 10,
         "title": "Boundary changes the theorem",
         "summary": "The closed ball includes its boundary, and that boundary is part of why the statement has force. Removing or changing the boundary can change the conclusion."
+      },
+      {
+        "lecture": 10,
+        "title": "No global escape from self-agreement",
+        "summary": "The theorem can be understood as ruling out a continuous way for every point of the ball to avoid itself at once. The shape of the filled ball blocks that escape."
       },
       {
         "lecture": 11,
@@ -205,9 +255,19 @@
         "summary": "Local arrow failures add up to Euler characteristic. This converts the earlier cell-counting idea into a statement about possible motion and shows why surface topology controls vector fields."
       },
       {
+        "lecture": 12,
+        "title": "Defects can move while the total stays fixed",
+        "summary": "The lecture's global index idea allows local equilibria to shift, split, or cancel in controlled ways. What survives is the total signed count demanded by the surface."
+      },
+      {
         "lecture": 14,
         "title": "Applications as honest translations",
         "summary": "The late applications work by translating a physical or rotational situation into a space, a rule, and a protected obstruction. The theorem applies only after that translation is correct."
+      },
+      {
+        "lecture": 14,
+        "title": "The model must carry the real constraint",
+        "summary": "An application succeeds only when the chosen space, allowed motion, and protected count match the physical situation. A theorem applied to the wrong model proves a true statement about the wrong object."
       },
       {
         "lecture": 15,
@@ -263,6 +323,11 @@
         "summary": "The surface operations are not arbitrary cutting. They are controlled replacements that help reduce surfaces to standard forms while tracking what has changed and what surface information remains protected."
       },
       {
+        "lecture": 6,
+        "title": "Dimension measures available escape room",
+        "summary": "The lecture turns the physical feeling of room into a mathematical test. If the surrounding space has enough independent directions, objects can often avoid meeting; when it does not, intersections become meaningful."
+      },
+      {
         "lecture": 10,
         "title": "Brouwer on the closed ball",
         "summary": "The lecture's fixed-point theorem says a continuous self-map of a closed ball must leave some point fixed. The point is forced by the shape, not found by calculation."
@@ -271,6 +336,11 @@
         "lecture": 13,
         "title": "The hairy-ball idea in plain form",
         "summary": "On a sphere, a continuous tangent arrow pattern cannot avoid defects everywhere. Something must fail because the whole surface does not allow all local choices to agree."
+      },
+      {
+        "lecture": 14,
+        "title": "The model must carry the real constraint",
+        "summary": "An application succeeds only when the chosen space, allowed motion, and protected count match the physical situation. A theorem applied to the wrong model proves a true statement about the wrong object."
       },
       {
         "lecture": 15,
@@ -312,6 +382,11 @@
         "summary": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries matter because they survive the allowed simplifications and therefore describe the surface beyond one drawing."
       },
       {
+        "lecture": 5,
+        "title": "Handles and crosscaps are durable building blocks",
+        "summary": "The lecture's classification viewpoint treats handles, crosscaps, and boundaries as parts that remain meaningful after simplification. The surface is understood by the pieces that cannot be wished away by a different drawing."
+      },
+      {
         "lecture": 12,
         "title": "Adding local indices",
         "summary": "The lecture asks what all local vector-field indices know together. The sum is not arbitrary; it is tied to the surface carrying the field."
@@ -325,6 +400,11 @@
         "lecture": 13,
         "title": "Using Poincare-Hopf in both directions",
         "summary": "The theorem can predict forced equilibria from topology, or use known equilibria to reveal something about the surface. It is a bridge between shape and motion."
+      },
+      {
+        "lecture": 13,
+        "title": "Topology predicts a failure of motion",
+        "summary": "The point of Poincare-Hopf is not only to count existing equilibria. It can prove that some defect must be present before the exact vector field is solved."
       },
       {
         "lecture": 15,
@@ -359,6 +439,11 @@
         "lecture": 3,
         "title": "Products make spaces from independent choices",
         "summary": "The lecture builds cubes and related spaces by taking products of intervals. The plain idea is that two or more choices vary at once, and the resulting state-space has its own shape."
+      },
+      {
+        "lecture": 3,
+        "title": "Surgery treats construction as reasoning",
+        "summary": "Removing a simple piece and gluing another one back is a way to change the space under controlled rules. The operation matters because it tracks what feature has been changed and what feature is meant to survive."
       },
       {
         "lecture": 5,
@@ -398,6 +483,11 @@
         "lecture": 6,
         "title": "Moving an object inside a manifold",
         "summary": "The lecture asks whether a sub-object can be moved around obstacles inside a larger space. The answer depends on dimension: enough room can turn collision into avoidance."
+      },
+      {
+        "lecture": 6,
+        "title": "Dimension measures available escape room",
+        "summary": "The lecture turns the physical feeling of room into a mathematical test. If the surrounding space has enough independent directions, objects can often avoid meeting; when it does not, intersections become meaningful."
       },
       {
         "lecture": 9,
@@ -469,6 +559,11 @@
         "summary": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other."
       },
       {
+        "lecture": 4,
+        "title": "A route can leave the drawing and keep going",
+        "summary": "Edge identification teaches that a path reaching the side of the drawn square has not necessarily stopped. The boundary rule decides where that path re-enters and what loop it has traced in the actual surface."
+      },
+      {
         "lecture": 6,
         "title": "Forced meetings become evidence",
         "summary": "When an intersection cannot be removed by legal motion, it stops being a drawing accident and becomes information about the surrounding space. The lecture prepares the later signed count by separating removable crossings from forced ones."
@@ -477,6 +572,11 @@
         "lecture": 8,
         "title": "Signed intersection number",
         "summary": "The lecture counts intersections with plus and minus signs. The signs let newly born opposite pairs cancel, so the total remembers more than the visible crossing count."
+      },
+      {
+        "lecture": 8,
+        "title": "Orientation gives signs their meaning",
+        "summary": "A signed intersection count only works after the surrounding surface or space supports a consistent direction choice. The plus or minus sign is geometric information, not an arbitrary label added after counting."
       }
     ]
   },
@@ -518,6 +618,11 @@
         "summary": "When the cut is moved away from the center line, the resulting strips can stay linked rather than falling apart. The point is that the route around the twisted band remembers how the pieces pass around each other."
       },
       {
+        "lecture": 2,
+        "title": "Endpoint order carries the obstruction",
+        "summary": "The boundary points are not movable labels. Their circular order is part of the problem, and deformation is allowed to clean the interior curves only while preserving that boundary order."
+      },
+      {
         "lecture": 3,
         "title": "Quotients turn edge instructions into spaces",
         "summary": "When edges or points are identified, a flat drawing becomes a code for a new space. The same square can describe different worlds depending on the gluing rule."
@@ -533,14 +638,29 @@
         "summary": "Changing a gluing direction can turn an ordinary two-sided behavior into a one-sided one. The local patches remain simple, but the whole route structure changes."
       },
       {
+        "lecture": 4,
+        "title": "A route can leave the drawing and keep going",
+        "summary": "Edge identification teaches that a path reaching the side of the drawn square has not necessarily stopped. The boundary rule decides where that path re-enters and what loop it has traced in the actual surface."
+      },
+      {
         "lecture": 5,
         "title": "Classification separates surfaces by durable parts",
         "summary": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries matter because they survive the allowed simplifications and therefore describe the surface beyond one drawing."
       },
       {
+        "lecture": 5,
+        "title": "Handles and crosscaps are durable building blocks",
+        "summary": "The lecture's classification viewpoint treats handles, crosscaps, and boundaries as parts that remain meaningful after simplification. The surface is understood by the pieces that cannot be wished away by a different drawing."
+      },
+      {
         "lecture": 8,
         "title": "Signed intersection number",
         "summary": "The lecture counts intersections with plus and minus signs. The signs let newly born opposite pairs cancel, so the total remembers more than the visible crossing count."
+      },
+      {
+        "lecture": 8,
+        "title": "Orientation gives signs their meaning",
+        "summary": "A signed intersection count only works after the surrounding surface or space supports a consistent direction choice. The plus or minus sign is geometric information, not an arbitrary label added after counting."
       },
       {
         "lecture": 10,
@@ -551,6 +671,11 @@
         "lecture": 10,
         "title": "Boundary changes the theorem",
         "summary": "The closed ball includes its boundary, and that boundary is part of why the statement has force. Removing or changing the boundary can change the conclusion."
+      },
+      {
+        "lecture": 11,
+        "title": "Local arrow patterns can be counted",
+        "summary": "A source, sink, and saddle are not only dynamical pictures. Around each defect the arrows turn in a characteristic way, and that turning can be assigned a signed index."
       },
       {
         "lecture": 12,
@@ -638,9 +763,19 @@
         "summary": "An equilibrium is where the arrow vanishes. The index records how nearby arrows turn around that failure, turning local dynamics into signed evidence that can later be added over the whole surface."
       },
       {
+        "lecture": 11,
+        "title": "Local arrow patterns can be counted",
+        "summary": "A source, sink, and saddle are not only dynamical pictures. Around each defect the arrows turn in a characteristic way, and that turning can be assigned a signed index."
+      },
+      {
         "lecture": 12,
         "title": "Adding local indices",
         "summary": "The lecture asks what all local vector-field indices know together. The sum is not arbitrary; it is tied to the surface carrying the field."
+      },
+      {
+        "lecture": 12,
+        "title": "Defects can move while the total stays fixed",
+        "summary": "The lecture's global index idea allows local equilibria to shift, split, or cancel in controlled ways. What survives is the total signed count demanded by the surface."
       },
       {
         "lecture": 13,
@@ -651,6 +786,11 @@
         "lecture": 13,
         "title": "The hairy-ball idea in plain form",
         "summary": "On a sphere, a continuous tangent arrow pattern cannot avoid defects everywhere. Something must fail because the whole surface does not allow all local choices to agree."
+      },
+      {
+        "lecture": 13,
+        "title": "Topology predicts a failure of motion",
+        "summary": "The point of Poincare-Hopf is not only to count existing equilibria. It can prove that some defect must be present before the exact vector field is solved."
       },
       {
         "lecture": 14,
@@ -692,6 +832,11 @@
         "summary": "The lecture turns a hands-on balancing fact into the idea that some special point or event can be forced even when no explicit formula for it is available."
       },
       {
+        "lecture": 7,
+        "title": "A physical motion becomes an intersection question",
+        "summary": "The balancing setup can be read as two continuously changing conditions that must meet. That translation is the bridge from a demonstration with hands to the later formal language of intersections."
+      },
+      {
         "lecture": 9,
         "title": "The graph of a map meets the diagonal",
         "summary": "The lecture treats a fixed point as an intersection: the graph records where points go, and the diagonal records points that stay where they started."
@@ -702,9 +847,19 @@
         "summary": "The middle video of this lecture has no recovered captions, so the explanation leans on the available surrounding parts and preserves the source gap in the audit."
       },
       {
+        "lecture": 9,
+        "title": "A rule becomes a shape that can be compared",
+        "summary": "Representing a map by its graph turns an invisible instruction into an object in a larger space. Once it is drawn that way, fixed points become meetings with the diagonal."
+      },
+      {
         "lecture": 10,
         "title": "Brouwer on the closed ball",
         "summary": "The lecture's fixed-point theorem says a continuous self-map of a closed ball must leave some point fixed. The point is forced by the shape, not found by calculation."
+      },
+      {
+        "lecture": 10,
+        "title": "No global escape from self-agreement",
+        "summary": "The theorem can be understood as ruling out a continuous way for every point of the ball to avoid itself at once. The shape of the filled ball blocks that escape."
       },
       {
         "lecture": 11,
@@ -715,6 +870,11 @@
         "lecture": 13,
         "title": "Using Poincare-Hopf in both directions",
         "summary": "The theorem can predict forced equilibria from topology, or use known equilibria to reveal something about the surface. It is a bridge between shape and motion."
+      },
+      {
+        "lecture": 13,
+        "title": "Topology predicts a failure of motion",
+        "summary": "The point of Poincare-Hopf is not only to count existing equilibria. It can prove that some defect must be present before the exact vector field is solved."
       },
       {
         "lecture": 14,
@@ -757,6 +917,16 @@
         "summary": "Sliding two hands inward under an object creates a physical example of a forced state. Continuity makes the balancing event unavoidable because the relevant condition changes steadily rather than jumping past the answer."
       },
       {
+        "lecture": 7,
+        "title": "A physical motion becomes an intersection question",
+        "summary": "The balancing setup can be read as two continuously changing conditions that must meet. That translation is the bridge from a demonstration with hands to the later formal language of intersections."
+      },
+      {
+        "lecture": 9,
+        "title": "A rule becomes a shape that can be compared",
+        "summary": "Representing a map by its graph turns an invisible instruction into an object in a larger space. Once it is drawn that way, fixed points become meetings with the diagonal."
+      },
+      {
         "lecture": 10,
         "title": "Boundary changes the theorem",
         "summary": "The closed ball includes its boundary, and that boundary is part of why the statement has force. Removing or changing the boundary can change the conclusion."
@@ -775,6 +945,11 @@
         "lecture": 14,
         "title": "Rotations and dynamics share the same proof engine",
         "summary": "Rotations in space and dynamical examples look different, but both can be read through fixed points, vector fields, indices, or deformation-protected counts once the right space and rule are identified."
+      },
+      {
+        "lecture": 14,
+        "title": "The model must carry the real constraint",
+        "summary": "An application succeeds only when the chosen space, allowed motion, and protected count match the physical situation. A theorem applied to the wrong model proves a true statement about the wrong object."
       }
     ]
   },
@@ -812,9 +987,24 @@
         "summary": "The lecture returns to squares with edge identifications. The useful lesson is that the visible square is a set of instructions for travel, not the final surface itself."
       },
       {
+        "lecture": 4,
+        "title": "A route can leave the drawing and keep going",
+        "summary": "Edge identification teaches that a path reaching the side of the drawn square has not necessarily stopped. The boundary rule decides where that path re-enters and what loop it has traced in the actual surface."
+      },
+      {
+        "lecture": 7,
+        "title": "A physical motion becomes an intersection question",
+        "summary": "The balancing setup can be read as two continuously changing conditions that must meet. That translation is the bridge from a demonstration with hands to the later formal language of intersections."
+      },
+      {
         "lecture": 9,
         "title": "The graph of a map meets the diagonal",
         "summary": "The lecture treats a fixed point as an intersection: the graph records where points go, and the diagonal records points that stay where they started."
+      },
+      {
+        "lecture": 9,
+        "title": "A rule becomes a shape that can be compared",
+        "summary": "Representing a map by its graph turns an invisible instruction into an object in a larger space. Once it is drawn that way, fixed points become meetings with the diagonal."
       },
       {
         "lecture": 14,
@@ -864,6 +1054,11 @@
         "lecture": 8,
         "title": "Signed intersection number",
         "summary": "The lecture counts intersections with plus and minus signs. The signs let newly born opposite pairs cancel, so the total remembers more than the visible crossing count."
+      },
+      {
+        "lecture": 11,
+        "title": "Local arrow patterns can be counted",
+        "summary": "A source, sink, and saddle are not only dynamical pictures. Around each defect the arrows turn in a characteristic way, and that turning can be assigned a signed index."
       }
     ]
   }

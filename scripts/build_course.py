@@ -854,54 +854,67 @@ LECTURE_EXAMPLES = {
     2: [
         {"title": "Connecting boundary pairs in a disk", "text": "The disk path puzzle asks whether several paired boundary points can be joined without intersections. The important evidence is the order of the endpoints and the no-crossing rule, not the prettiness of one attempted drawing.", "concepts": ["deformation", "graph-planarity", "invariant"]},
         {"title": "Deformation as proof of impossibility", "text": "The lecture uses legal motion to simplify paths. If the simplified situation still forces a crossing, the original problem could not have had a legal crossing-free solution.", "concepts": ["deformation", "topology-vs-geometry", "generic-position"]},
+        {"title": "Endpoint order carries the obstruction", "text": "The boundary points are not movable labels. Their circular order is part of the problem, and deformation is allowed to clean the interior curves only while preserving that boundary order.", "concepts": ["boundary-orientation", "invariant", "deformation"]},
     ],
     3: [
         {"title": "Products make spaces from independent choices", "text": "The lecture builds cubes and related spaces by taking products of intervals. The plain idea is that two or more choices vary at once, and the resulting state-space has its own shape.", "concepts": ["configuration-space", "topology-vs-geometry", "triangulation"]},
         {"title": "Quotients turn edge instructions into spaces", "text": "When edges or points are identified, a flat drawing becomes a code for a new space. The same square can describe different worlds depending on the gluing rule.", "concepts": ["duality", "boundary-orientation", "deformation"]},
+        {"title": "Surgery treats construction as reasoning", "text": "Removing a simple piece and gluing another one back is a way to change the space under controlled rules. The operation matters because it tracks what feature has been changed and what feature is meant to survive.", "concepts": ["deformation", "triangulation", "invariant"]},
     ],
     4: [
         {"title": "A square is not the space until its edges are read", "text": "The lecture returns to squares with edge identifications. The useful lesson is that the visible square is a set of instructions for travel, not the final surface itself.", "concepts": ["duality", "boundary-orientation", "topology-vs-geometry"]},
         {"title": "Reversing an edge changes the global surface", "text": "Changing a gluing direction can turn an ordinary two-sided behavior into a one-sided one. The local patches remain simple, but the whole route structure changes.", "concepts": ["boundary-orientation", "invariant", "deformation"]},
+        {"title": "A route can leave the drawing and keep going", "text": "Edge identification teaches that a path reaching the side of the drawn square has not necessarily stopped. The boundary rule decides where that path re-enters and what loop it has traced in the actual surface.", "concepts": ["duality", "winding-linking", "boundary-orientation"]},
     ],
     5: [
         {"title": "Classification separates surfaces by durable parts", "text": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries matter because they survive the allowed simplifications and therefore describe the surface beyond one drawing.", "concepts": ["euler-characteristic", "boundary-orientation", "triangulation"]},
         {"title": "Surgery changes a surface by controlled cutting and gluing", "text": "The surface operations are not arbitrary cutting. They are controlled replacements that help reduce surfaces to standard forms while tracking what has changed and what surface information remains protected.", "concepts": ["deformation", "topology-vs-geometry", "invariant"]},
+        {"title": "Handles and crosscaps are durable building blocks", "text": "The lecture's classification viewpoint treats handles, crosscaps, and boundaries as parts that remain meaningful after simplification. The surface is understood by the pieces that cannot be wished away by a different drawing.", "concepts": ["boundary-orientation", "euler-characteristic", "invariant"]},
     ],
     6: [
         {"title": "Moving an object inside a manifold", "text": "The lecture asks whether a sub-object can be moved around obstacles inside a larger space. The answer depends on dimension: enough room can turn collision into avoidance.", "concepts": ["generic-position", "deformation", "graph-planarity"]},
         {"title": "Forced meetings become evidence", "text": "When an intersection cannot be removed by legal motion, it stops being a drawing accident and becomes information about the surrounding space. The lecture prepares the later signed count by separating removable crossings from forced ones.", "concepts": ["invariant", "winding-linking", "parity"]},
+        {"title": "Dimension measures available escape room", "text": "The lecture turns the physical feeling of room into a mathematical test. If the surrounding space has enough independent directions, objects can often avoid meeting; when it does not, intersections become meaningful.", "concepts": ["generic-position", "topology-vs-geometry", "graph-planarity"]},
     ],
     7: [
         {"title": "The center-of-gravity demonstration", "text": "Sliding two hands inward under an object creates a physical example of a forced state. Continuity makes the balancing event unavoidable because the relevant condition changes steadily rather than jumping past the answer.", "concepts": ["fixed-points", "configuration-space", "deformation"]},
         {"title": "Existence without a formula", "text": "The lecture turns a hands-on balancing fact into the idea that some special point or event can be forced even when no explicit formula for it is available.", "concepts": ["fixed-points", "invariant", "generic-position"]},
+        {"title": "A physical motion becomes an intersection question", "text": "The balancing setup can be read as two continuously changing conditions that must meet. That translation is the bridge from a demonstration with hands to the later formal language of intersections.", "concepts": ["duality", "fixed-points", "configuration-space"]},
     ],
     8: [
         {"title": "Signed intersection number", "text": "The lecture counts intersections with plus and minus signs. The signs let newly born opposite pairs cancel, so the total remembers more than the visible crossing count.", "concepts": ["winding-linking", "boundary-orientation", "parity"]},
         {"title": "Pair creation and cancellation", "text": "When a positive and a negative intersection appear together, the picture changes but the signed total does not. This is the cleanest example of designed cancellation.", "concepts": ["generic-position", "invariant", "vector-field-index"]},
+        {"title": "Orientation gives signs their meaning", "text": "A signed intersection count only works after the surrounding surface or space supports a consistent direction choice. The plus or minus sign is geometric information, not an arbitrary label added after counting.", "concepts": ["boundary-orientation", "winding-linking", "invariant"]},
     ],
     9: [
         {"title": "The graph of a map meets the diagonal", "text": "The lecture treats a fixed point as an intersection: the graph records where points go, and the diagonal records points that stay where they started.", "concepts": ["fixed-points", "duality", "graph-planarity"]},
         {"title": "Missing middle caption is kept visible", "text": "The middle video of this lecture has no recovered captions, so the explanation leans on the available surrounding parts and preserves the source gap in the audit.", "concepts": ["invariant", "generic-position", "fixed-points"]},
+        {"title": "A rule becomes a shape that can be compared", "text": "Representing a map by its graph turns an invisible instruction into an object in a larger space. Once it is drawn that way, fixed points become meetings with the diagonal.", "concepts": ["duality", "fixed-points", "configuration-space"]},
     ],
     10: [
         {"title": "Brouwer on the closed ball", "text": "The lecture's fixed-point theorem says a continuous self-map of a closed ball must leave some point fixed. The point is forced by the shape, not found by calculation.", "concepts": ["fixed-points", "boundary-orientation", "topology-vs-geometry"]},
         {"title": "Boundary changes the theorem", "text": "The closed ball includes its boundary, and that boundary is part of why the statement has force. Removing or changing the boundary can change the conclusion.", "concepts": ["boundary-orientation", "configuration-space", "invariant"]},
+        {"title": "No global escape from self-agreement", "text": "The theorem can be understood as ruling out a continuous way for every point of the ball to avoid itself at once. The shape of the filled ball blocks that escape.", "concepts": ["fixed-points", "deformation", "invariant"]},
     ],
     11: [
         {"title": "Vector fields replace solved trajectories", "text": "The lecture starts the dynamics chapter by asking what can be known without solving a differential equation. A vector field gives an arrow pattern whose defects can be studied topologically.", "concepts": ["vector-field-index", "fixed-points", "configuration-space"]},
         {"title": "Equilibria are arrow-field failures", "text": "An equilibrium is where the arrow vanishes. The index records how nearby arrows turn around that failure, turning local dynamics into signed evidence that can later be added over the whole surface.", "concepts": ["vector-field-index", "gauss-bonnet", "invariant"]},
+        {"title": "Local arrow patterns can be counted", "text": "A source, sink, and saddle are not only dynamical pictures. Around each defect the arrows turn in a characteristic way, and that turning can be assigned a signed index.", "concepts": ["vector-field-index", "parity", "boundary-orientation"]},
     ],
     12: [
         {"title": "Adding local indices", "text": "The lecture asks what all local vector-field indices know together. The sum is not arbitrary; it is tied to the surface carrying the field.", "concepts": ["vector-field-index", "euler-characteristic", "boundary-orientation"]},
         {"title": "Poincare-Hopf as surface bookkeeping", "text": "Local arrow failures add up to Euler characteristic. This converts the earlier cell-counting idea into a statement about possible motion and shows why surface topology controls vector fields.", "concepts": ["euler-characteristic", "gauss-bonnet", "invariant"]},
+        {"title": "Defects can move while the total stays fixed", "text": "The lecture's global index idea allows local equilibria to shift, split, or cancel in controlled ways. What survives is the total signed count demanded by the surface.", "concepts": ["vector-field-index", "deformation", "invariant"]},
     ],
     13: [
         {"title": "Using Poincare-Hopf in both directions", "text": "The theorem can predict forced equilibria from topology, or use known equilibria to reveal something about the surface. It is a bridge between shape and motion.", "concepts": ["vector-field-index", "euler-characteristic", "fixed-points"]},
         {"title": "The hairy-ball idea in plain form", "text": "On a sphere, a continuous tangent arrow pattern cannot avoid defects everywhere. Something must fail because the whole surface does not allow all local choices to agree.", "concepts": ["boundary-orientation", "vector-field-index", "topology-vs-geometry"]},
+        {"title": "Topology predicts a failure of motion", "text": "The point of Poincare-Hopf is not only to count existing equilibria. It can prove that some defect must be present before the exact vector field is solved.", "concepts": ["vector-field-index", "euler-characteristic", "fixed-points"]},
     ],
     14: [
         {"title": "Applications as honest translations", "text": "The late applications work by translating a physical or rotational situation into a space, a rule, and a protected obstruction. The theorem applies only after that translation is correct.", "concepts": ["configuration-space", "fixed-points", "invariant"]},
         {"title": "Rotations and dynamics share the same proof engine", "text": "Rotations in space and dynamical examples look different, but both can be read through fixed points, vector fields, indices, or deformation-protected counts once the right space and rule are identified.", "concepts": ["vector-field-index", "configuration-space", "duality"]},
+        {"title": "The model must carry the real constraint", "text": "An application succeeds only when the chosen space, allowed motion, and protected count match the physical situation. A theorem applied to the wrong model proves a true statement about the wrong object.", "concepts": ["configuration-space", "topology-vs-geometry", "invariant"]},
     ],
     15: [
         {"title": "The table of contents becomes one argument", "text": "The final review names the course as pictorial thinking. Paper strips, deformation, manifolds, intersections, fixed points, and vector fields form one chain rather than separate topics.", "concepts": ["deformation", "invariant", "topology-vs-geometry"]},
@@ -1399,13 +1412,14 @@ def main():
 This repo now has a transcript-backed depth pass across the lecture, concept, theme, subtheme, and method-family layers. The first shallow layer has been replaced across the main explanatory surfaces:
 
 - 15 hand-authored lecture explainers from 35 videos
-- 16 expanded concept pages with why-it-exists, beginner-trap, and course-role sections
+- 45 lecture-grounded examples, three per lecture, each bridged to concepts
+- 16 expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
-- 10 expanded subtheme pages with first-principles and course-role sections
-- 5 expanded method-family pages with human-problem, how-it-works, examples, and failure-mode sections
+- 10 expanded subtheme pages with essay, first-principles, and course-role sections
+- 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - explicit source coverage and missing-caption audit
 
-The next depth pass should add more concrete transcript examples inside each lecture page and tighten the lecture-to-concept cross-links so every major idea points to the specific lecture moments where it appears.
+The remaining depth gap is now narrower: lift the theme and subtheme essays beyond minimum acceptable depth and add a final human-read pass for phrasing that still feels compressed. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
     qa_md = ["# Quality Audit", "", data["quality_audit"]["summary"], "", "## Requirement Evidence"]
     for item in data["quality_audit"]["requirements"]:

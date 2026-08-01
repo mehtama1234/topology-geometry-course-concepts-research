@@ -160,6 +160,15 @@
             "topology-vs-geometry",
             "generic-position"
           ]
+        },
+        {
+          "title": "Endpoint order carries the obstruction",
+          "text": "The boundary points are not movable labels. Their circular order is part of the problem, and deformation is allowed to clean the interior curves only while preserving that boundary order.",
+          "concepts": [
+            "boundary-orientation",
+            "invariant",
+            "deformation"
+          ]
         }
       ],
       "essay": [
@@ -248,6 +257,15 @@
             "boundary-orientation",
             "deformation"
           ]
+        },
+        {
+          "title": "Surgery treats construction as reasoning",
+          "text": "Removing a simple piece and gluing another one back is a way to change the space under controlled rules. The operation matters because it tracks what feature has been changed and what feature is meant to survive.",
+          "concepts": [
+            "deformation",
+            "triangulation",
+            "invariant"
+          ]
         }
       ],
       "essay": [
@@ -323,6 +341,15 @@
             "invariant",
             "deformation"
           ]
+        },
+        {
+          "title": "A route can leave the drawing and keep going",
+          "text": "Edge identification teaches that a path reaching the side of the drawn square has not necessarily stopped. The boundary rule decides where that path re-enters and what loop it has traced in the actual surface.",
+          "concepts": [
+            "duality",
+            "winding-linking",
+            "boundary-orientation"
+          ]
         }
       ],
       "essay": [
@@ -397,6 +424,15 @@
           "concepts": [
             "deformation",
             "topology-vs-geometry",
+            "invariant"
+          ]
+        },
+        {
+          "title": "Handles and crosscaps are durable building blocks",
+          "text": "The lecture's classification viewpoint treats handles, crosscaps, and boundaries as parts that remain meaningful after simplification. The surface is understood by the pieces that cannot be wished away by a different drawing.",
+          "concepts": [
+            "boundary-orientation",
+            "euler-characteristic",
             "invariant"
           ]
         }
@@ -475,6 +511,15 @@
             "winding-linking",
             "parity"
           ]
+        },
+        {
+          "title": "Dimension measures available escape room",
+          "text": "The lecture turns the physical feeling of room into a mathematical test. If the surrounding space has enough independent directions, objects can often avoid meeting; when it does not, intersections become meaningful.",
+          "concepts": [
+            "generic-position",
+            "topology-vs-geometry",
+            "graph-planarity"
+          ]
         }
       ],
       "essay": [
@@ -549,6 +594,15 @@
             "fixed-points",
             "invariant",
             "generic-position"
+          ]
+        },
+        {
+          "title": "A physical motion becomes an intersection question",
+          "text": "The balancing setup can be read as two continuously changing conditions that must meet. That translation is the bridge from a demonstration with hands to the later formal language of intersections.",
+          "concepts": [
+            "duality",
+            "fixed-points",
+            "configuration-space"
           ]
         }
       ],
@@ -625,6 +679,15 @@
             "generic-position",
             "invariant",
             "vector-field-index"
+          ]
+        },
+        {
+          "title": "Orientation gives signs their meaning",
+          "text": "A signed intersection count only works after the surrounding surface or space supports a consistent direction choice. The plus or minus sign is geometric information, not an arbitrary label added after counting.",
+          "concepts": [
+            "boundary-orientation",
+            "winding-linking",
+            "invariant"
           ]
         }
       ],
@@ -716,6 +779,15 @@
             "generic-position",
             "fixed-points"
           ]
+        },
+        {
+          "title": "A rule becomes a shape that can be compared",
+          "text": "Representing a map by its graph turns an invisible instruction into an object in a larger space. Once it is drawn that way, fixed points become meetings with the diagonal.",
+          "concepts": [
+            "duality",
+            "fixed-points",
+            "configuration-space"
+          ]
         }
       ],
       "essay": [
@@ -789,6 +861,15 @@
           "concepts": [
             "boundary-orientation",
             "configuration-space",
+            "invariant"
+          ]
+        },
+        {
+          "title": "No global escape from self-agreement",
+          "text": "The theorem can be understood as ruling out a continuous way for every point of the ball to avoid itself at once. The shape of the filled ball blocks that escape.",
+          "concepts": [
+            "fixed-points",
+            "deformation",
             "invariant"
           ]
         }
@@ -880,6 +961,15 @@
             "gauss-bonnet",
             "invariant"
           ]
+        },
+        {
+          "title": "Local arrow patterns can be counted",
+          "text": "A source, sink, and saddle are not only dynamical pictures. Around each defect the arrows turn in a characteristic way, and that turning can be assigned a signed index.",
+          "concepts": [
+            "vector-field-index",
+            "parity",
+            "boundary-orientation"
+          ]
         }
       ],
       "essay": [
@@ -953,6 +1043,15 @@
           "concepts": [
             "euler-characteristic",
             "gauss-bonnet",
+            "invariant"
+          ]
+        },
+        {
+          "title": "Defects can move while the total stays fixed",
+          "text": "The lecture's global index idea allows local equilibria to shift, split, or cancel in controlled ways. What survives is the total signed count demanded by the surface.",
+          "concepts": [
+            "vector-field-index",
+            "deformation",
             "invariant"
           ]
         }
@@ -1031,6 +1130,15 @@
             "vector-field-index",
             "topology-vs-geometry"
           ]
+        },
+        {
+          "title": "Topology predicts a failure of motion",
+          "text": "The point of Poincare-Hopf is not only to count existing equilibria. It can prove that some defect must be present before the exact vector field is solved.",
+          "concepts": [
+            "vector-field-index",
+            "euler-characteristic",
+            "fixed-points"
+          ]
         }
       ],
       "essay": [
@@ -1105,6 +1213,15 @@
             "vector-field-index",
             "configuration-space",
             "duality"
+          ]
+        },
+        {
+          "title": "The model must carry the real constraint",
+          "text": "An application succeeds only when the chosen space, allowed motion, and protected count match the physical situation. A theorem applied to the wrong model proves a true statement about the wrong object.",
+          "concepts": [
+            "configuration-space",
+            "topology-vs-geometry",
+            "invariant"
           ]
         }
       ],

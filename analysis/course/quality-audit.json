@@ -28,7 +28,7 @@
     },
     {
       "requirement": "Connected course map",
-      "evidence": "32 lecture examples link forward to concepts; every concept links back to lecture appearances, with appearance counts from 2 to 13.",
+      "evidence": "45 lecture examples link forward to concepts; every concept links back to lecture appearances, with appearance counts from 2 to 20.",
       "status": "met"
     },
     {
@@ -44,14 +44,14 @@
     "missing_captions": [
       "nx1XOlezuvk"
     ],
-    "lecture_examples": 32,
+    "lecture_examples": 45,
     "lecture_essay_words": 3170,
     "concept_essay_words": 3207,
     "theme_essay_words": 924,
     "subtheme_essay_words": 1026,
     "family_essay_words": 824,
     "concept_appearances_min": 2,
-    "concept_appearances_max": 13,
+    "concept_appearances_max": 20,
     "html_pages_before_audit_page": 62
   }
 }
