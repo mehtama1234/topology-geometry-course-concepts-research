@@ -4454,6 +4454,8 @@ def build_concept_self_check(concept):
     anchor = concept["anchor"]
     depth = concept["depth"]
     cid = concept["id"]
+    title = concept["title"]
+    role = depth["course_role"]
     protected = plain_fragment(work["protected"], ["The protected fact is", "The protected fact"])
     failure = plain_fragment(work["breaks_if"], ["It breaks if", "It breaks when", "The idea breaks if"])
     object_close = varied((cid, "object-close"), [
@@ -4461,30 +4463,50 @@ def build_concept_self_check(concept):
         "The name should arrive after the reader can already point to the carrier of the argument.",
         "This prevents the page from asking a formal word to do the job of an explanation.",
         "The reader should be able to point to the working object before any formal name is trusted.",
+        f"For {title}, the first proof of understanding is being able to say what is being watched before saying what it is called.",
+        "If the object is vague, every later count, motion, theorem, or source claim is floating.",
+        "A good answer makes the object inspectable enough that another reader could draw it, model it, or test it.",
+        "The formal word should shorten the explanation only after the object has already been made visible.",
     ])
     operation_close = varied((cid, "operation-close"), [
         "Without that permission, the move may be replacing the problem instead of solving it.",
         "The legal move is part of the proof, not a side condition to check after the fact.",
         "This is where many weak explanations fail: they show the simpler picture but not the permitted route to it.",
         "The page should make the permission visible before asking the reader to trust the outcome.",
+        "The reader should be able to say which nearby shortcut would change the question.",
+        "This is the step that turns a suggestive picture into an argument someone else can audit.",
+        "The move is honest only if the same question is still being answered after the operation.",
+        "If the rule of motion is missing, the conclusion may belong to the cleaned-up object rather than to the original one.",
     ])
     legal_check = varied((cid, "legal-check"), [
         "Say why this move is allowed in the problem at hand.",
         "Name the rule that makes this operation legitimate here.",
         "Explain what fixed data, boundary rule, or model condition the operation preserves.",
         "State why the operation keeps the original question intact.",
+        "Point to the feature that is not allowed to change while the operation is performed.",
+        "State the permission in words a beginner could check on the example.",
+        "Say what would count as cheating during this operation.",
+        "Tie the permission back to the course moment, not only to the formal definition.",
     ])
     protected_close = varied((cid, "protected-close"), [
         "That is the mathematical core: the conclusion only has force if the evidence survives the allowed move.",
         "The proof lives in that survival, because the final picture speaks for the original only through carried evidence.",
         "This is where the course turns a picture into an argument: the same evidence remains available after the legal change.",
         "The protected evidence is what lets the reader move from an example to a conclusion without guessing.",
+        f"For {title}, this is the part that does the mathematical work; without it, the page has only a description.",
+        "The reader should be able to say why this fact, and not a visible accident of the drawing, earns the conclusion.",
+        "This carried evidence is the receipt that lets the course reuse the idea later.",
+        f"Connect this survival to the course role: {role}",
     ])
     failure_close = varied((cid, "failure-close"), [
         "This check matters because the same words can become false when a hidden assumption changes.",
         "The failure scene keeps the explanation honest about the boundary between a valid use and an overreach.",
         "Naming the break point stops the concept from becoming a slogan that works only in the easy case.",
         "The limit is part of the idea, because a theorem used outside its rulebook answers a different question.",
+        "A strong explanation includes this boundary so the reader knows what not to claim.",
+        "The break point is not a warning after the fact; it is part of the meaning of the concept.",
+        "This is where the reader learns whether the idea is being used carefully or only being named.",
+        "If the failure condition is missing, the explanation may sound clear while silently proving too much.",
     ])
     return {
         "object_check": f"First say what the object is in ordinary words: {work['object']} Then anchor that object in the course moment: {anchor['course_moment']} {object_close}",
