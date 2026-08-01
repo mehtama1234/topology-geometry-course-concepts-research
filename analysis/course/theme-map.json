@@ -2,8 +2,8 @@
   {
     "id": "see-by-deforming",
     "title": "See by bending without tearing",
-    "plain": "The course keeps asking what remains true after a shape is stretched, nudged, or redrawn. The point is not that exact shape is unimportant. The point is that many hard questions become visible only after you stop worshiping exact size and angle.",
-    "why_math_matters": "A deformation is a promise: every step changes the picture, but not the chosen kind of truth. Once that promise is clear, a messy object can be replaced by a simpler one without losing the answer.",
+    "plain": "The course keeps asking what remains true after a shape is stretched, nudged, or redrawn. Exact size and angle are not thrown away; they are set aside only when the question is about a route, boundary, gluing rule, or count that survives the allowed motion.",
+    "why_math_matters": "A deformation is a promise with a rulebook. Every step may change the visible picture, but endpoints, glued edges, forbidden crossings, or the protected count must stay under control. Once that promise is checkable, a messy object can be replaced by a simpler one without changing the question.",
     "depth": {
       "problem": "This theme answers the course's most basic question: how can a person solve a shape problem without measuring every detail? Tokieda's answer is to move the picture by legal changes until the answer is easier to see. The movement is useful only because it protects the feature being asked about.",
       "habit": "The habit is to ask, before doing any calculation, which parts of the picture are allowed to move and which facts must remain fixed. Once that rule is clear, deformation becomes a way of reasoning, not a way of decorating the drawing.",
@@ -40,8 +40,8 @@
   {
     "id": "count-what-survives",
     "title": "Count the thing that cannot disappear",
-    "plain": "Many arguments in the lectures replace a complicated picture with a stubborn count: holes, crossings, turns, regions, signs, or boundary pieces. The count is valuable only when it survives allowed changes.",
-    "why_math_matters": "A good count turns a drawing into evidence. If the count would have to change for the desired outcome, the desired outcome is impossible under the allowed moves.",
+    "plain": "Many arguments in the lectures replace a complicated picture with a stubborn count: holes, crossings, turns, regions, signs, or boundary pieces. The count is valuable only after the page explains which moves threaten it and why the chosen count survives those moves.",
+    "why_math_matters": "A good count turns a drawing into evidence because it has been built to survive the problem's legal changes. If every legal drawing carries the same signed total, parity, or alternating account, then one computation can rule out an entire family of hoped-for outcomes.",
     "depth": {
       "problem": "Many pictures change too much to trust what the eye sees at one moment. The course therefore looks for a count that survives the legal changes: number of sides, holes, crossings with signs, cells in an alternating sum, or indices of arrow-field defects.",
       "habit": "The habit is to count only after deciding why the count should survive. A raw number of visible crossings is usually fragile. A signed or alternating count can be stable because fake changes cancel in pairs while the real obstruction remains.",

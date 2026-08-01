@@ -500,9 +500,9 @@
       "deep": {
         "title": "The Mobius strip reveals the course's central problem",
         "problem": "The course begins with a strip of paper because the strip makes the central promise visible before any vocabulary arrives. A normal loop of paper has two sides. A Mobius strip has one side. If you cut them, color them, or walk along them, they answer differently. The problem is: how can a small twist change the whole behavior of a surface when every tiny patch still looks like ordinary paper?",
-        "first_principles": "A beginner is tempted to think a surface is understood by looking at a small piece of it. Tokieda starts by breaking that habit. Every small patch of the Mobius strip looks harmless, but a full trip around it changes what side you think you are on. The important lesson is that a whole object can carry information that no tiny patch reveals by itself.",
+        "first_principles": "A beginner is tempted to think a surface is understood by looking at a small piece of it. Tokieda starts by breaking that habit. Every small patch of the Mobius strip looks harmless, but a full trip around it changes what side you think you are on. The important lesson is not merely that the strip is surprising. It is that the end-gluing rule is followed consistently around the whole object, and that rule carries information no tiny patch reveals by itself.",
         "math_move": "Use a physical object as a proof object. Cut the strip, follow a line, and compare what happens with and without the twist. The act of cutting is not entertainment added after the mathematics; it is a controlled test of how the surface is connected.",
-        "detail": "The twist is not measured by its exact angle in a geometric sense. What matters is the gluing rule at the ends. Glue without reversal and you get an ordinary band. Glue after reversal and the global surface changes.",
+        "detail": "The twist is not measured by its exact angle in a geometric sense. What matters is the gluing rule at the ends: which edge points become the same points and whether the side direction is reversed. Glue without reversal and a full trip returns to the same side. Glue after reversal and the same trip returns to the opposite side, so the global surface has changed.",
         "connection": "This opening prepares the rest of the course: local appearance is not enough, allowed operations matter, and a visible experiment can carry a mathematical reason. The later theorems will look more formal, but they keep returning to this same lesson: the whole object may remember something that a small local view cannot see.",
         "anchors": [
           "Mobius strip",
@@ -1463,9 +1463,9 @@
       "deep": {
         "title": "Intersection number is a count with memory",
         "problem": "The lecture states one of the course's main theorems: a signed count of intersections does not change under deformation. The problem is to count meetings in a way that ignores accidental births and deaths but remembers forced structure.",
-        "first_principles": "If two curves or surfaces meet, some meetings may appear or disappear when the picture moves. But they often appear in opposite-signed pairs. Counting with signs makes those fake changes cancel. What remains is not the number of visible crossings in one drawing; it is the part of the crossing information that the drawing cannot get rid of.",
+        "first_principles": "If two curves or surfaces meet, some meetings may appear or disappear when the picture moves. A raw crossing count therefore cannot be trusted just because it is visible. The lecture repairs that weak count by asking how meetings are born and die under legal deformation. When the only harmless changes create opposite-signed pairs, counting with signs makes those fake changes cancel. What remains is the part of the crossing information that every legal drawing has to carry.",
         "math_move": "Assign plus or minus signs to intersections using orientation, then add them. Pair creation and cancellation change the visible picture but leave the signed total unchanged. This is the point where a picture becomes arithmetic without losing the geometry that made the count meaningful.",
-        "detail": "Orientation is not ornamental here. Without signs, two opposite intersections look like two events. With signs, they cancel and reveal why the total survives deformation. The sign records how the two pieces meet inside the surrounding oriented space.",
+        "detail": "Orientation is not ornamental here. Without a shared direction rule, plus and minus are private labels and their sum has no force. With orientation, the sign records how the two pieces meet inside the surrounding oriented space, so a positive-negative birth changes the visible picture but not the signed total.",
         "connection": "This is the hinge between early topology and later fixed-point and vector-field arguments. The same signed-count idea will reappear as index. Once you have learned to count intersections with signs, it is natural to count arrow-field defects with signs too.",
         "anchors": [
           "intersection number",
@@ -2300,9 +2300,9 @@
       "deep": {
         "title": "Applications show the same method in new settings",
         "problem": "The late applications ask why rotations, physical motion, and dynamical examples keep obeying topological restrictions. The problem is to see the common structure rather than treat each example as an isolated demonstration. Each example has to be translated into a space, a rule on that space, and a protected quantity.",
-        "first_principles": "A rotation, a flow, or a physical process gives a rule for moving points or states. The rule may be complicated, but the space of possible states may have simple topological demands. If the space has the wrong kind of hole, boundary, or total index, some behavior is forced.",
+        "first_principles": "A rotation, a flow, or a physical process gives a rule for moving points or states. The rule may be complicated, but topology sees only the model built from it: the space of possible states, the forbidden states removed from that space, and the allowed continuous motions inside it. If that state space has a hole, boundary, split region, or required total index, some behavior can be forced. If the model forgets a freedom or keeps an impossible state, the theorem is answering the wrong problem.",
         "math_move": "Translate each application into one of the course's established forms: a fixed-point question, a vector-field question, an index count, or a deformation-invariant obstruction. Once the translation is made, the application inherits the force of the earlier theorem instead of needing a brand-new argument.",
-        "detail": "Applications are convincing only when the translation is honest. One must identify the space, the allowed motion, and the quantity being preserved. If any of those three pieces is wrong, the topological theorem may no longer apply.",
+        "detail": "Applications are convincing only when the translation is honest. One must identify what one point of the state space records, which states have been removed, what continuous motion means in the original system, and which quantity or theorem contract is being protected. If any of those pieces is wrong, the topological theorem may no longer apply.",
         "connection": "This lecture proves that the course has been building a reusable method, not a pile of isolated theorems. It also prepares the final review, where the table of contents can be read as one connected method of thought.",
         "anchors": [
           "applications",
@@ -2550,8 +2550,8 @@
     {
       "id": "see-by-deforming",
       "title": "See by bending without tearing",
-      "plain": "The course keeps asking what remains true after a shape is stretched, nudged, or redrawn. The point is not that exact shape is unimportant. The point is that many hard questions become visible only after you stop worshiping exact size and angle.",
-      "why_math_matters": "A deformation is a promise: every step changes the picture, but not the chosen kind of truth. Once that promise is clear, a messy object can be replaced by a simpler one without losing the answer.",
+      "plain": "The course keeps asking what remains true after a shape is stretched, nudged, or redrawn. Exact size and angle are not thrown away; they are set aside only when the question is about a route, boundary, gluing rule, or count that survives the allowed motion.",
+      "why_math_matters": "A deformation is a promise with a rulebook. Every step may change the visible picture, but endpoints, glued edges, forbidden crossings, or the protected count must stay under control. Once that promise is checkable, a messy object can be replaced by a simpler one without changing the question.",
       "depth": {
         "problem": "This theme answers the course's most basic question: how can a person solve a shape problem without measuring every detail? Tokieda's answer is to move the picture by legal changes until the answer is easier to see. The movement is useful only because it protects the feature being asked about.",
         "habit": "The habit is to ask, before doing any calculation, which parts of the picture are allowed to move and which facts must remain fixed. Once that rule is clear, deformation becomes a way of reasoning, not a way of decorating the drawing.",
@@ -2588,8 +2588,8 @@
     {
       "id": "count-what-survives",
       "title": "Count the thing that cannot disappear",
-      "plain": "Many arguments in the lectures replace a complicated picture with a stubborn count: holes, crossings, turns, regions, signs, or boundary pieces. The count is valuable only when it survives allowed changes.",
-      "why_math_matters": "A good count turns a drawing into evidence. If the count would have to change for the desired outcome, the desired outcome is impossible under the allowed moves.",
+      "plain": "Many arguments in the lectures replace a complicated picture with a stubborn count: holes, crossings, turns, regions, signs, or boundary pieces. The count is valuable only after the page explains which moves threaten it and why the chosen count survives those moves.",
+      "why_math_matters": "A good count turns a drawing into evidence because it has been built to survive the problem's legal changes. If every legal drawing carries the same signed total, parity, or alternating account, then one computation can rule out an entire family of hoped-for outcomes.",
       "depth": {
         "problem": "Many pictures change too much to trust what the eye sees at one moment. The course therefore looks for a count that survives the legal changes: number of sides, holes, crossings with signs, cells in an alternating sum, or indices of arrow-field defects.",
         "habit": "The habit is to count only after deciding why the count should survive. A raw number of visible crossings is usually fragile. A signed or alternating count can be stable because fake changes cancel in pairs while the real obstruction remains.",
@@ -3323,9 +3323,9 @@
         "invariant-receipts",
         "signs-and-cancellation"
       ],
-      "first_principles": "An invariant is something you check before and after an allowed change. If it is the same, it can certify that two pictures may belong to the same world. If it differs, the pictures cannot be connected by the allowed moves.",
-      "important_detail": "An invariant does not need to describe everything. It only needs to catch the difference that matters for the question.",
-      "math_principle": "A preserved quantity can turn impossibility into a short argument.",
+      "first_principles": "An invariant is a fact chosen to survive the exact changes the problem allows. First name the allowed changes: bend the strip, redraw the curve, refine the cells, move the arrows, or deform the map. Then check the fact before and after those changes. If the fact differs, no legal path of changes connects the two situations.",
+      "important_detail": "An invariant is not any useful-looking number. It earns the name only after the page explains why the allowed moves cannot change it, or why any changes happen in cancelling pairs.",
+      "math_principle": "A protected fact can turn impossibility into a short argument because it speaks for every legal version of the picture, not only the one currently drawn.",
       "depth": {
         "why_it_exists": "An invariant exists to give memory to a changing picture. When a shape bends or a map moves, most visible details change. The invariant is the part chosen carefully enough that it does not change under the allowed motion.",
         "beginner_trap": "The trap is to expect one invariant to tell the whole story. Most invariants are partial witnesses. A single preserved difference can prove impossibility, even when it cannot classify every possible shape or explain every similarity.",
@@ -3465,9 +3465,9 @@
       "subthemes": [
         "models-not-labels"
       ],
-      "first_principles": "Geometry cares about measured shape: distance, angle, area, curvature. Topology cares about connectedness, holes, boundary, and what survives bending. The course needs both because some questions depend on exact bending while others depend only on the routes and obstructions inside the shape.",
-      "important_detail": "The distinction is not a wall. Geometry often produces the local measurements, while topology explains why their total has no freedom.",
-      "math_principle": "Choose the level of description that keeps the real constraint and discards the distracting details.",
+      "first_principles": "Geometry asks questions where measurement matters: distance, angle, area, curvature, and exact local bending. Topology asks questions where the answer should survive a stated kind of change: whether a route is blocked, whether a side reverses, whether a boundary order forces a crossing, or whether a count survives redrawing. The course needs both because the same picture may supply local geometric evidence and a whole-shape topological constraint.",
+      "important_detail": "The distinction is a choice about the current question, not a wall between subjects. Geometry often gives the local quantity; topology asks whether the completed object forces the total, route, side behavior, or obstruction.",
+      "math_principle": "Choose the level of description by naming the constraint that must survive, then keep any measurement that feeds that constraint and discard only the details the question does not use.",
       "depth": {
         "why_it_exists": "The distinction exists because not every question needs the same kind of information. Geometry asks how much, how long, how curved, or at what angle. Topology asks how connected, how many holes, which routes are blocked, and what survives bending.",
         "beginner_trap": "The trap is to treat topology as geometry with measurements removed. In this course, topology is not emptier than geometry; it is a different level of description chosen because it protects the facts that matter.",
@@ -4260,9 +4260,9 @@
         "mechanisms-and-locks",
         "models-not-labels"
       ],
-      "first_principles": "Instead of watching a mechanism directly, list every possible position it can take. That list becomes a new shape. Questions about motion become questions about paths inside that shape. If a path is blocked, split, or forced through a narrow passage, the mechanism inherits that restriction from its space of possibilities.",
-      "important_detail": "Forbidden positions are holes or walls in this new shape. They are often the reason a motion is impossible.",
-      "math_principle": "A moving system can be understood by studying the shape of its possible states.",
+      "first_principles": "Instead of watching a mechanism directly, build a new shape whose points record complete possible states. One point might record several positions, angles, labels, or choices at once. A physical motion is then a path through this state space, but only if every intermediate point still records an allowed physical state. If the remaining state space has a wall, hole, split region, or forced passage, the mechanism inherits that restriction.",
+      "important_detail": "The model must record every freedom the motion uses and remove every forbidden state. If collisions, missing angles, or boundary restrictions are mishandled, a path in the model may no longer be a legal physical motion.",
+      "math_principle": "A moving system can be understood by studying the shape of its possible states, provided one point in that shape faithfully records one complete allowed state.",
       "depth": {
         "why_it_exists": "Configuration space exists because a moving system may be hard to understand in ordinary physical space. By listing every possible state as a point in a new space, motion becomes a path and constraints become holes or walls.",
         "beginner_trap": "The trap is to think the configuration space is imaginary decoration. It is a real model of possibilities: if there is no path in that model, the physical motion cannot be performed legally. The abstraction is doing physical work.",
@@ -5215,12 +5215,12 @@
     }
   ],
   "math_why": {
-    "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. Exact length, exact angle, and exact placement often change too easily. Tokieda's course asks for a better handle: a count, a boundary, a hole, a turn, a sign, a fixed point, or a forced route. The reason these ideas matter is that they let a person prove something when direct measurement or direct solving is the wrong tool.",
-    "first_principles": "Start with an object or motion that is too complicated to inspect directly. Decide which changes leave the real question unchanged. Move the object until the picture becomes simpler. Track the feature that did not change. If the simplified picture makes the answer clear, the original object inherits that answer. This is the common engine behind paper strips, surface classification, intersection number, fixed-point theorems, and vector-field index.",
-    "important_detail": "The allowed changes are the whole contract. A result is only as strong as the promise that the change did not cut, glue, pass through, erase a boundary, reverse a side, or create a forbidden coincidence. This is why the course spends so much time on ordinary position, orientation, boundaries, and signs. Those details are not formal decoration; they are what keep the reasoning honest.",
-    "principle": "Topology and geometry become decisive when local details are organized so that the whole shape has fewer choices than it appears to have. Local patches may look free. Local arrows may look adjustable. Local crossings may look removable. But the whole object can force a side reversal, a nonzero count, a fixed point, or a defect. The mathematical principle is that global structure can turn many small freedoms into one unavoidable conclusion.",
-    "concepts_matter": "The important concepts matter because each one protects a different kind of evidence. Deformation protects the question while the picture moves. Invariants remember what survived. Euler characteristic turns a surface into stable bookkeeping. Intersection number records meetings with signs. Fixed points turn rules into forced self-agreement. Vector-field index turns local arrow failures into a count that the whole surface controls.",
-    "reader_path": "A reader should not learn this course as a vocabulary list. The path is: first see a physical surprise, then ask what kind of fact survived, then name the allowed motion, then build a count or obstruction, then use that obstruction to force an answer. This is why the companion links lectures, concepts, themes, subthemes, and method families in both directions."
+    "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. Exact length, exact angle, and exact placement often change too easily for the question being asked. Tokieda's course asks for a better handle: a gluing rule, boundary order, hole, signed meeting, fixed point, state-space path, or total index. These ideas matter because they let a person prove something when direct measurement or direct solving is the wrong tool.",
+    "first_principles": "Start with an object or motion that is too complicated to inspect directly. Name the object before naming the technique: a strip is a strip with an end-gluing rule, a map is a rule from one space back into that same space, and a mechanism is a space of allowed states. Then decide which changes leave the real question unchanged. Move the object only under that contract, track the feature that did not change, and let the simplified picture answer the original question.",
+    "important_detail": "The allowed changes are the whole contract. A result is only as strong as the promise that the change did not cut, glue, pass through a forbidden object, erase a boundary, reverse a side rule, omit a state variable, or invent a sign convention. This is why the course spends so much time on ordinary position, orientation, boundaries, and signs. Those details are the checks that keep a short explanation from silently changing the problem.",
+    "principle": "Topology and geometry become decisive when local details are organized so that the whole shape has fewer choices than it appears to have. Local patches may look free. Local arrows may look adjustable. Local crossings may look removable. But the completed object can force a side reversal, a nonzero count, a fixed point, or a defect. The mathematical principle is that a named object plus a named rule of change can turn many small freedoms into one unavoidable conclusion.",
+    "concepts_matter": "The important concepts matter because each one protects a different kind of evidence. Deformation protects the question while the picture moves. Invariants remember exactly what survived the permitted moves. Euler characteristic turns a surface into stable bookkeeping. Intersection number records meetings only after signs share an orientation rule. Fixed points turn rules into forced self-agreement inside one space. Configuration space turns motion into paths through allowed states. Vector-field index turns local arrow failures into a count that the whole surface controls.",
+    "reader_path": "A reader should not learn this course as a vocabulary list. The path is: first see a physical surprise, then name the object, then name the legal motion, then ask what fact survives that motion, then build a count or obstruction, then state exactly what kind of conclusion follows. This is why the companion links lectures, concepts, themes, subthemes, and method families in both directions."
   },
   "lecture_spine": [
     {

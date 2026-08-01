@@ -198,9 +198,9 @@
       "invariant-receipts",
       "signs-and-cancellation"
     ],
-    "first_principles": "An invariant is something you check before and after an allowed change. If it is the same, it can certify that two pictures may belong to the same world. If it differs, the pictures cannot be connected by the allowed moves.",
-    "important_detail": "An invariant does not need to describe everything. It only needs to catch the difference that matters for the question.",
-    "math_principle": "A preserved quantity can turn impossibility into a short argument.",
+    "first_principles": "An invariant is a fact chosen to survive the exact changes the problem allows. First name the allowed changes: bend the strip, redraw the curve, refine the cells, move the arrows, or deform the map. Then check the fact before and after those changes. If the fact differs, no legal path of changes connects the two situations.",
+    "important_detail": "An invariant is not any useful-looking number. It earns the name only after the page explains why the allowed moves cannot change it, or why any changes happen in cancelling pairs.",
+    "math_principle": "A protected fact can turn impossibility into a short argument because it speaks for every legal version of the picture, not only the one currently drawn.",
     "depth": {
       "why_it_exists": "An invariant exists to give memory to a changing picture. When a shape bends or a map moves, most visible details change. The invariant is the part chosen carefully enough that it does not change under the allowed motion.",
       "beginner_trap": "The trap is to expect one invariant to tell the whole story. Most invariants are partial witnesses. A single preserved difference can prove impossibility, even when it cannot classify every possible shape or explain every similarity.",
@@ -340,9 +340,9 @@
     "subthemes": [
       "models-not-labels"
     ],
-    "first_principles": "Geometry cares about measured shape: distance, angle, area, curvature. Topology cares about connectedness, holes, boundary, and what survives bending. The course needs both because some questions depend on exact bending while others depend only on the routes and obstructions inside the shape.",
-    "important_detail": "The distinction is not a wall. Geometry often produces the local measurements, while topology explains why their total has no freedom.",
-    "math_principle": "Choose the level of description that keeps the real constraint and discards the distracting details.",
+    "first_principles": "Geometry asks questions where measurement matters: distance, angle, area, curvature, and exact local bending. Topology asks questions where the answer should survive a stated kind of change: whether a route is blocked, whether a side reverses, whether a boundary order forces a crossing, or whether a count survives redrawing. The course needs both because the same picture may supply local geometric evidence and a whole-shape topological constraint.",
+    "important_detail": "The distinction is a choice about the current question, not a wall between subjects. Geometry often gives the local quantity; topology asks whether the completed object forces the total, route, side behavior, or obstruction.",
+    "math_principle": "Choose the level of description by naming the constraint that must survive, then keep any measurement that feeds that constraint and discard only the details the question does not use.",
     "depth": {
       "why_it_exists": "The distinction exists because not every question needs the same kind of information. Geometry asks how much, how long, how curved, or at what angle. Topology asks how connected, how many holes, which routes are blocked, and what survives bending.",
       "beginner_trap": "The trap is to treat topology as geometry with measurements removed. In this course, topology is not emptier than geometry; it is a different level of description chosen because it protects the facts that matter.",
@@ -1135,9 +1135,9 @@
       "mechanisms-and-locks",
       "models-not-labels"
     ],
-    "first_principles": "Instead of watching a mechanism directly, list every possible position it can take. That list becomes a new shape. Questions about motion become questions about paths inside that shape. If a path is blocked, split, or forced through a narrow passage, the mechanism inherits that restriction from its space of possibilities.",
-    "important_detail": "Forbidden positions are holes or walls in this new shape. They are often the reason a motion is impossible.",
-    "math_principle": "A moving system can be understood by studying the shape of its possible states.",
+    "first_principles": "Instead of watching a mechanism directly, build a new shape whose points record complete possible states. One point might record several positions, angles, labels, or choices at once. A physical motion is then a path through this state space, but only if every intermediate point still records an allowed physical state. If the remaining state space has a wall, hole, split region, or forced passage, the mechanism inherits that restriction.",
+    "important_detail": "The model must record every freedom the motion uses and remove every forbidden state. If collisions, missing angles, or boundary restrictions are mishandled, a path in the model may no longer be a legal physical motion.",
+    "math_principle": "A moving system can be understood by studying the shape of its possible states, provided one point in that shape faithfully records one complete allowed state.",
     "depth": {
       "why_it_exists": "Configuration space exists because a moving system may be hard to understand in ordinary physical space. By listing every possible state as a point in a new space, motion becomes a path and constraints become holes or walls.",
       "beginner_trap": "The trap is to think the configuration space is imaginary decoration. It is a real model of possibilities: if there is no path in that model, the physical motion cannot be performed legally. The abstraction is doing physical work.",
