@@ -13,7 +13,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Own repo/folder | Local git repo at `topology-geometry-course-concepts-research` on `main` | Met |
 | Source coverage | 35 playlist videos indexed; 15 lecture groups; 34 caption files recovered; missing id `nx1XOlezuvk` preserved | Met with caveat |
 | Individual video links | `site/videos.html` lists every YouTube item in playlist order | Met |
-| Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, lecture deepening, slow walkthrough, source checkpoint, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
+| Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, lecture deepening, slow walkthrough, source checkpoint, source-faithfulness audit, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
 | Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures | Met |
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, anchor examples, work-from-scratch blocks, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections; themes include lenses, subthemes include first-principles bridges and reading routines, and families include method playbooks and contracts | Met |
@@ -24,7 +24,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Interactive learning | `site/math-playground.html` has four canvas widgets: Euler characteristic, signed cancellation, fixed points, vector-field index | Met |
 | Reader failure checks | `site/reader-checks.html` has eleven checks for common reasoning errors | Met |
 | References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats | Met |
-| Quality/source audits | `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; source audit includes 15 caption-nuance cards with source-checkpoint questions | Met |
+| Quality/source audits | `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
 | Validation | `python3 scripts/validate_all.py` passes with 78 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
@@ -47,6 +47,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
+- 2,109 lecture source-faithfulness words.
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
@@ -71,7 +72,7 @@ The validator checks:
 
 - expected video, lecture, caption, concept, theme, subtheme, family counts;
 - required generated pages;
-- depth floors for lecture, lecture-deepening, lecture-walkthrough, caption-nuance, source-lens, source-checkpoint, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why prose;
+- depth floors for lecture, lecture-deepening, lecture-walkthrough, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, family, method-contract, method-playbook, and math-why prose;
 - at least three concrete examples per lecture;
 - lecture-spine structure and length;
 - concept/theme/subtheme/family id integrity;
@@ -81,9 +82,10 @@ The validator checks:
 - proof-move structure and length;
 - reader checks structure and length;
 - references structure, reference page cards, and source-caveat wording;
-- source-audit caption-nuance cards;
+- source-audit caption-nuance cards and source-faithfulness fields;
 - lecture-page deepening sections;
 - lecture-page source-checkpoint sections;
+- lecture-page source-faithfulness audit sections;
 - concept-page anchor-example sections;
 - concept-page work-from-scratch sections;
 - theme-page lens sections;

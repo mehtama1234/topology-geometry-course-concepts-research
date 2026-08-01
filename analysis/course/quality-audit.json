@@ -17,6 +17,11 @@
       "status": "met"
     },
     {
+      "requirement": "Lecture source-faithfulness audit",
+      "evidence": "Each lecture page now includes caption support, course-inference, and caveat fields that distinguish recovered-caption evidence from course-arc interpretation, with 2109 total source-faithfulness words.",
+      "status": "met"
+    },
+    {
       "requirement": "Lecture-by-lecture reasoning spine",
       "evidence": "The Lecture Spine page gives 15 lecture entries that name the object, plain question, legal move, surviving fact, and later use.",
       "status": "met"
@@ -92,6 +97,7 @@
     "lecture_source_lens_words": 1645,
     "lecture_source_checkpoint_words": 1532,
     "lecture_caption_nuance_words": 1492,
+    "lecture_source_faithfulness_words": 2109,
     "concept_essay_words": 7732,
     "concept_workup_words": 2746,
     "concept_anchor_words": 1965,

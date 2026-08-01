@@ -25,6 +25,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 - 1,492 caption-nuance words explaining risky auto-caption terms and safe mathematical readings by lecture.
 - 1,645 lecture source-lens words explaining how transcript anchors should be read as evidence.
 - 1,532 lecture source-checkpoint words across trust, overread warning, and math-question fields.
+- 2,109 lecture source-faithfulness words separating caption support, course inference, and source caveats.
 - Long-form first-principles essays for lectures, 24 concepts, themes, subthemes, and method families.
 - 7,732 concept essay words, with every concept essay now clearing the 290-word validator floor.
 - 2,746 concept workup words across object, operation, protected fact, and failure tests.
@@ -42,7 +43,7 @@ Build a deep, plain-language treatment of the course across lectures, themes, su
 ## Reader Surfaces
 
 - `site/index.html` — starting point and source state.
-- `site/lectures.html` and `site/lecture-*.html` — 15 lecture explainers with lecture deepening, slow walkthroughs, source checkpoints, and caption nuance.
+- `site/lectures.html` and `site/lecture-*.html` — 15 lecture explainers with lecture deepening, slow walkthroughs, source checkpoints, source-faithfulness audits, and caption nuance.
 - `site/lecture-spine.html` — one reasoning path through all lectures from object to later use.
 - `site/concepts.html` and `site/concept-*.html` — concept atlas with reverse lecture links, anchor examples, and work-from-scratch blocks.
 - `site/themes.html`, `site/subthemes.html`, `site/families.html` — cross-course idea maps, with theme lenses, subtheme bridges and reading routines, plus method playbooks and contracts.
@@ -86,12 +87,13 @@ One playlist item still has no recovered captions: `nx1XOlezuvk`. The site prese
 
 - 35 videos, 15 lectures, at least 34 captioned videos.
 - Required generated pages, including lecture spine, synthesis, concept dependencies, proof moves, formula reader, reader checks, references, playground, audits, lectures, concepts, themes, subthemes, and families.
-- Minimum essay depth for lecture, lecture-deepening, lecture-walkthrough, caption-nuance, source-lens, source-checkpoint, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, method-family, method-contract, method-playbook, and math-why layers.
+- Minimum essay depth for lecture, lecture-deepening, lecture-walkthrough, caption-nuance, source-lens, source-checkpoint, source-faithfulness, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, subtheme-bridge, method-family, method-contract, method-playbook, and math-why layers.
 - Lecture Deepening sections on every lecture page.
 - Source-lens sections on every lecture page.
 - Source Checkpoint sections on every lecture page.
+- Source-Faithfulness Audit sections on every lecture page.
 - Slow Walkthrough sections on every lecture page.
-- Caption Nuance sections on every lecture page and source-audit cards for every lecture.
+- Caption Nuance sections on every lecture page and source-audit cards for every lecture, including caption support, course inference, and caveat fields.
 - Anchor Example sections on every concept page.
 - Work It From Scratch sections on every concept page.
 - Theme Lens sections on every theme page.

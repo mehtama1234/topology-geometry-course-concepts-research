@@ -182,6 +182,10 @@ def main():
         for field in ["trust", "do_not_overread", "math_question"]:
             if len(words(source_checkpoint.get(field))) < 25:
                 fail(f"lecture {lecture['lecture']} source checkpoint {field} too thin")
+        source_faithfulness = deep.get("source_faithfulness") or {}
+        for field in ["caption_support", "course_inference", "caveat"]:
+            if len(words(source_faithfulness.get(field))) < 35:
+                fail(f"lecture {lecture['lecture']} source faithfulness {field} too thin")
         nuance = deep.get("caption_nuance") or {}
         if len(nuance.get("terms") or []) < 4:
             fail(f"lecture {lecture['lecture']} caption nuance needs four terms")
@@ -353,7 +357,7 @@ def main():
     if len(words(re.sub(r"<[^>]+>", " ", references_page))) < 700:
         fail("references page too thin")
     source_audit = (SITE / "source-audit.html").read_text(encoding="utf-8", errors="ignore")
-    for phrase in ["Caption Nuance By Lecture", "Caption risk:", "Safe reading:", "Verify:", "Source checkpoint:"]:
+    for phrase in ["Caption Nuance By Lecture", "Caption risk:", "Safe reading:", "Verify:", "Source checkpoint:", "Caption support:", "Course inference:", "Caveat:"]:
         if phrase not in source_audit:
             fail(f"source audit missing caption nuance phrase: {phrase}")
     if source_audit.count("<article") < 15:
@@ -384,6 +388,9 @@ def main():
         for phrase in ["Source Checkpoint", "Trust:", "Do not overread:", "Math question:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing source checkpoint phrase {phrase}: {lecture_name}")
+        for phrase in ["Source-Faithfulness Audit", "Caption support:", "Course inference:", "Caveat:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing source faithfulness phrase {phrase}: {lecture_name}")
         for phrase in ["Caption Nuance", "Caption risk:", "Safe reading:", "Verify:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing caption nuance phrase {phrase}: {lecture_name}")

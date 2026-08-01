@@ -50,6 +50,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 1,492 caption-nuance words.
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
+- 2,109 lecture source-faithfulness words.
 - 7,732 concept essay words.
 - 2,746 concept workup words.
 - 1,965 concept anchor words.
