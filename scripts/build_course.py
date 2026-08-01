@@ -860,6 +860,130 @@ CONCEPT_WORKUPS = {
 }
 
 
+CONCEPT_ANCHORS = {
+    "generic-position": {
+        "course_moment": "In the intersection lectures, a messy meeting is first nudged into clean separate meetings. That small cleanup is not cosmetic. It is what lets each meeting receive a sign or be paired with another meeting.",
+        "principle": "A proof should count ordinary events whose behavior survives small legal motion, because accidental coincidences can hide the event that actually carries evidence.",
+        "reader_question": "If the picture is nudged a little, which events remain readable, and which exact coincidences were only making the drawing harder to audit?",
+    },
+    "deformation": {
+        "course_moment": "The disk path puzzle asks whether boundary pairs can be joined without crossings. The useful move is to slide and smooth paths while keeping endpoint order and the no-crossing rule intact.",
+        "principle": "A picture can be simplified only after the allowed motion and the protected fact have both been named.",
+        "reader_question": "What did the motion preserve, and would the answer change if an endpoint moved past another endpoint or a path crossed a forbidden obstacle?",
+    },
+    "invariant": {
+        "course_moment": "The Mobius strip keeps one-sided behavior while it bends, and signed intersections keep a total while pairs appear or vanish. Both are receipts for what survived a legal change.",
+        "principle": "The useful fact is not the one most visible in the drawing; it is the one that remains fixed under the moves the problem allows.",
+        "reader_question": "What fact is being carried from the original picture to the simplified one, and why is that fact allowed to speak for both pictures?",
+    },
+    "topology-vs-geometry": {
+        "course_moment": "A paper strip has lengths and bends, but the Mobius lesson depends on the end-gluing rule. A vector field has arrow sizes, but the index lesson depends on how nearby directions turn.",
+        "principle": "The right description is the one that keeps the constraint the question needs and leaves aside details that can change without changing the answer.",
+        "reader_question": "Is the problem asking about measurement, or is it asking about routes, gluing, sides, holes, signs, or forced agreement?",
+    },
+    "euler-characteristic": {
+        "course_moment": "When a surface is divided into vertices, edges, and faces, extra internal cuts change the raw counts. The alternating total is built so those artificial changes cancel.",
+        "principle": "A count earns trust when it forgets the chosen bookkeeping device and remembers the surface being booked.",
+        "reader_question": "Which changes came only from the chosen decomposition, and how does the alternating count cancel those changes?",
+    },
+    "triangulation": {
+        "course_moment": "Surface classification needs a smooth object to become countable. Triangulation supplies a finite ledger, then later checks that the answer does not belong only to that one ledger.",
+        "principle": "A finite drawing can support a proof when the final fact survives replacing one finite drawing by another.",
+        "reader_question": "Which part of the argument uses the chosen pieces, and which part proves the conclusion belongs to the surface instead?",
+    },
+    "graph-planarity": {
+        "course_moment": "The boundary-pair disk problem is not settled by one failed drawing. The obstruction must show that every legal drawing of the required connections runs into the same shortage of room.",
+        "principle": "A connection demand and a surface's available room must be judged together; drawing failure is not yet mathematical impossibility.",
+        "reader_question": "What required connections are fixed, what surface carries them, and what protected fact blocks all crossing-free attempts?",
+    },
+    "knots-and-links": {
+        "course_moment": "Off-center Mobius cuts can leave pieces linked. The important event is not that the strips look tangled, but that separating them would require a forbidden pass-through.",
+        "principle": "A loop in space carries embedding information: how it sits inside surrounding room matters even when its exact shape changes.",
+        "reader_question": "What motion is allowed for the loops, and where would an attempted simplification secretly pass one strand through another?",
+    },
+    "winding-linking": {
+        "course_moment": "A route around a hole or another loop may stretch and wiggle while still going around. Later signed counts refine this by letting opposite turns cancel.",
+        "principle": "Some counts record a relationship between objects, not a size of one object; the relationship survives until a forbidden crossing or break occurs.",
+        "reader_question": "What is being gone around, what direction is recorded, and what legal move would be needed to change that aroundness?",
+    },
+    "boundary-orientation": {
+        "course_moment": "The Mobius strip shows that every small patch can look two-sided while a full trip reverses the side choice. Signed intersections later require that this reversal not happen.",
+        "principle": "Local direction choices matter only if they can be carried consistently through the whole object and across any boundary terms.",
+        "reader_question": "Can the chosen side or direction travel all the way around and come back agreeing with itself?",
+    },
+    "gauss-bonnet": {
+        "course_moment": "The course's local-to-global habit appears when local bending or turning is summed and compared with a whole-surface number, instead of being treated as isolated measurements.",
+        "principle": "Local geometric contributions can be free one by one while their total is constrained by the shape carrying them.",
+        "reader_question": "What local quantities are being added, and what boundary or corner terms must be included before the total can be trusted?",
+    },
+    "vector-field-index": {
+        "course_moment": "Around a source, sink, or saddle, nearby arrows turn in a pattern that can be read on a small loop. That turning becomes a signed local count.",
+        "principle": "A failure of motion can carry evidence through the behavior around it, not only through the dot where the arrow vanishes.",
+        "reader_question": "If you walk once around the defect, how do the arrows turn, and why does that local count survive cleanup of the field?",
+    },
+    "fixed-points": {
+        "course_moment": "The graph of a map and the diagonal turn the question f(x) = x into a meeting problem. A fixed point is no longer hidden inside a rule; it is a visible intersection.",
+        "principle": "A rule can be made into a shape, and self-agreement can be tested by comparing that shape with the diagonal.",
+        "reader_question": "What is the graph recording, what is the diagonal recording, and why does their meeting mean the original rule fixes a point?",
+    },
+    "configuration-space": {
+        "course_moment": "In applications, a physical motion is replaced by the space of all possible states. Legal motion becomes a path, and forbidden states become missing regions or walls.",
+        "principle": "A hard motion problem can become a shape-of-possibilities problem when every allowed state is represented honestly.",
+        "reader_question": "What data describe one complete state, what states are forbidden, and what path in the state space would perform the motion?",
+    },
+    "duality": {
+        "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question.",
+        "principle": "Changing representation is valid when the relationships needed by the proof can be read both before and after the change.",
+        "reader_question": "After solving the new picture, how does the conclusion translate back to the original object or question?",
+    },
+    "parity": {
+        "course_moment": "When legal changes create or remove events two at a time, the exact number may change while oddness or evenness stays fixed.",
+        "principle": "A coarse count can be strong if the problem only needs to know whether zero is possible.",
+        "reader_question": "Can every legal change alter this count only by pairs, and does the protected odd or even value block the desired outcome?",
+    },
+    "product-space": {
+        "course_moment": "A graph of a map records input and output together; a configuration space records several freedoms together. Product thinking supplies the larger room where those combined choices live.",
+        "principle": "Independent choices form a space of combined states, and later constraints carve the actual problem out of that space.",
+        "reader_question": "Which choices vary independently, and which equations, boundaries, or forbidden states reduce the product to the space the problem really uses?",
+    },
+    "quotient-space": {
+        "course_moment": "A square with edge labels can describe a cylinder, torus, or Mobius-type surface. The drawn boundary is not final until the identification rule has been read.",
+        "principle": "A space can be made by declaring points to be the same; the rule of sameness controls travel more than the visible drawing does.",
+        "reader_question": "When a traveler reaches a labeled edge, where do they re-enter, and does their direction or side choice return changed?",
+    },
+    "surgery": {
+        "course_moment": "Surface classification uses controlled removal and attachment to expose handles, crosscaps, and boundaries. The operation has to say exactly what boundary is left and how the replacement is glued.",
+        "principle": "Changing a space locally can reveal global structure only when the local replacement is accounted for exactly.",
+        "reader_question": "What piece was removed, what boundary did it leave, what was attached, and which global feature changed as a result?",
+    },
+    "manifold": {
+        "course_moment": "A sphere, torus, and Mobius band all look ordinary close up, yet they differ in loops, side behavior, and vector-field demands.",
+        "principle": "Local ordinariness lets the course draw and count small events, while global shape decides whether those local choices can agree everywhere.",
+        "reader_question": "Which part of the reasoning uses ordinary local neighborhoods, and where does the whole space add a constraint the local view cannot see?",
+    },
+    "intersection-number": {
+        "course_moment": "Lecture 8 counts clean meetings with signs so that a positive and negative pair can appear or vanish without changing the total.",
+        "principle": "The count is protected because local birth and cancellation rules have been built into the arithmetic.",
+        "reader_question": "Where do the signs come from, and why does a newly born pair contribute zero to the total evidence?",
+    },
+    "brouwer-fixed-point": {
+        "course_moment": "For a continuous self-map of a filled ball, Brouwer says at least one point cannot escape itself. The course reads this as shape forcing existence without giving a formula for the point.",
+        "principle": "The filled domain and the continuity of the rule can block a global escape plan for all points at once.",
+        "reader_question": "What would it mean for every point to avoid itself, and why do the filled ball and its boundary make that avoidance impossible?",
+    },
+    "equilibrium": {
+        "course_moment": "In the dynamics lectures, an equilibrium is where the arrow vanishes, but the useful evidence is how nearby arrows turn around that vanishing point.",
+        "principle": "A stopped state matters mathematically when its surrounding arrow pattern can be counted and compared with the whole surface.",
+        "reader_question": "What does the arrow field do around the equilibrium, and what signed evidence does that local pattern contribute?",
+    },
+    "poincare-hopf": {
+        "course_moment": "Poincare-Hopf adds every isolated vector-field index and compares the sum with Euler characteristic. Local motion failures must answer to the surface carrying them.",
+        "principle": "The whole surface controls the total of local defects, so dynamics can be constrained before individual trajectories are solved.",
+        "reader_question": "Have all defects been counted with signs, and what total does the underlying surface require?",
+    },
+}
+
+
 CONCEPT_ESSAYS = {
     "generic-position": [
         "Generic position is the course's way of refusing to build a proof on a coincidence. If two curves merely touch, if three intersections happen at exactly one point, or if an equilibrium is smeared into a whole line, the picture may be too delicate to reveal the stable reason. A tiny nudge could change it. The ordinary case is not the lazy case; it is the case that survives small disturbances and therefore can be counted cleanly.",
@@ -2085,6 +2209,7 @@ def build_quality_audit(data):
     lecture_caption_nuance_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["caption_nuance"][field])) for field in ["risk", "safe_reading", "verify_question"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
+    concept_anchor_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["anchor"][field])) for field in ["course_moment", "principle", "reader_question"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
     theme_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", t["lens"][field])) for field in ["notices", "ignores", "changes_problem", "reader_test"]) for t in data["themes"])
     subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
@@ -2114,7 +2239,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields; concept pages also include work-from-scratch blocks.",
+            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields; concept pages also include anchor examples and work-from-scratch blocks.",
             "status": "met",
         },
         {
@@ -2179,6 +2304,7 @@ def build_quality_audit(data):
             "lecture_caption_nuance_words": lecture_caption_nuance_words,
             "concept_essay_words": concept_essay_words,
             "concept_workup_words": concept_workup_words,
+            "concept_anchor_words": concept_anchor_words,
             "theme_essay_words": theme_essay_words,
             "theme_lens_words": theme_lens_words,
             "subtheme_essay_words": subtheme_essay_words,
@@ -2553,7 +2679,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
             for a in c["appearances"]
         )
         work = c["workup"]
-        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
+        anchor = c["anchor"]
+        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
     body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"
@@ -2589,7 +2716,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -2677,6 +2804,7 @@ def main():
         enriched["depth"] = CONCEPT_DEPTH[concept["id"]]
         enriched["essay"] = CONCEPT_ESSAYS[concept["id"]]
         enriched["workup"] = CONCEPT_WORKUPS[concept["id"]]
+        enriched["anchor"] = CONCEPT_ANCHORS[concept["id"]]
         concepts.append(enriched)
     concept_appearances = {concept["id"]: [] for concept in concepts}
     for lecture in lectures:
@@ -2763,6 +2891,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
 - {metrics['concept_workup_words']} concept workup words across object, operation, protected-fact, and failure-test fields
+- {metrics['concept_anchor_words']} concept anchor words across course-moment, principle, and reader-question fields
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
 - {metrics['theme_lens_words']} theme lens words across notices, ignores, problem-change, and reader-test fields
 - 10 expanded subtheme pages with essay, first-principles, and course-role sections
@@ -2776,7 +2905,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['family_essay_words']} method-family essay words, and {metrics['family_contract_words']} method-contract words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every method-family essay to clear 130 words, and every method-contract field to clear 12 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['family_essay_words']} method-family essay words, and {metrics['family_contract_words']} method-contract words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every concept anchor field to clear 14 words, every theme essay to clear 190 words, every theme lens field to clear 12 words, every subtheme essay to clear 130 words, every subtheme routine field to clear 12 words, every method-family essay to clear 130 words, and every method-contract field to clear 12 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

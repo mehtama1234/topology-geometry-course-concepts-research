@@ -136,6 +136,10 @@ def main():
         for field in ["object", "operation", "protected", "breaks_if"]:
             if len(words(workup.get(field))) < 12:
                 fail(f"concept {concept['id']} workup {field} too thin")
+        anchor = concept.get("anchor") or {}
+        for field in ["course_moment", "principle", "reader_question"]:
+            if len(words(anchor.get(field))) < 14:
+                fail(f"concept {concept['id']} anchor {field} too thin")
         appearances = concept.get("appearances") or []
         if len(appearances) < 2:
             fail(f"concept {concept['id']} needs at least two lecture appearances")
@@ -314,9 +318,9 @@ def main():
         if concept_name not in names:
             fail(f"missing concept page {concept['id']}")
         concept_html = (SITE / concept_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Work It From Scratch", "Object:", "Operation:", "Protected fact:", "Breaks if:"]:
+        for phrase in ["Anchor Example", "Course moment:", "Principle:", "Reader question:", "Work It From Scratch", "Object:", "Operation:", "Protected fact:", "Breaks if:"]:
             if phrase not in concept_html:
-                fail(f"concept page missing workup phrase {phrase}: {concept_name}")
+                fail(f"concept page missing concept phrase {phrase}: {concept_name}")
     for lecture in data["lectures"]:
         lecture_name = f"lecture-{lecture['lecture']:02d}.html"
         if lecture_name not in names:

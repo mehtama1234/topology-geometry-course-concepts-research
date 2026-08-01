@@ -31,7 +31,7 @@ This repo is the source and generated static site for a first-principles compani
 - `videos.html` — all individual YouTube links.
 - `lectures.html`, `lecture-*.html` — lecture explainers with slow walkthroughs and caption nuance.
 - `lecture-spine.html` — one reasoning path through all 15 lectures from object to later use.
-- `concepts.html`, `concept-*.html` — concept atlas, reverse lecture appearances, and work-from-scratch blocks.
+- `concepts.html`, `concept-*.html` — concept atlas, reverse lecture appearances, anchor examples, and work-from-scratch blocks.
 - `themes.html`, `subthemes.html`, `families.html` — recurring ideas, theme lenses, subtheme routines, proof families, and method contracts.
 - `the-math-why.html` — core mathematical reason the course works.
 - `course-synthesis.html` — dependency spine and proof-family synthesis.
@@ -61,7 +61,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - exact expected video and lecture counts;
 - caption coverage and missing-caption caveat;
 - required page existence;
-- lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, theme, theme-lens, subtheme, subtheme-routine, family, method-contract, and math-why depth floors;
+- lecture, lecture-walkthrough, caption-nuance, source-lens, concept, concept-workup, concept-anchor, theme, theme-lens, subtheme, subtheme-routine, family, method-contract, and math-why depth floors;
 - at least three concrete examples per lecture;
 - lecture-spine structure for all 15 lectures;
 - referential integrity across concepts, themes, subthemes, and families;
@@ -72,6 +72,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - source-lens sections on every lecture page;
 - slow-walkthrough sections on every lecture page;
 - caption-nuance sections on every lecture page and source-audit cards for every lecture;
+- anchor-example sections on every concept page;
 - work-from-scratch sections on every concept page;
 - theme-lens sections on every theme page;
 - reading-routine sections on every subtheme page;
@@ -92,6 +93,7 @@ As of the current generated audit:
 - 1,090 lecture source-lens words.
 - 4,830 concept essay words.
 - 1,781 concept workup words.
+- 1,641 concept anchor words.
 - 1,278 theme essay words.
 - 466 theme lens words.
 - 1,500 subtheme essay words.
