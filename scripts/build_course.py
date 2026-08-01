@@ -608,6 +608,154 @@ CONCEPT_DEPTH = {
 }
 
 
+CONCEPT_WORKUPS = {
+    "generic-position": {
+        "object": "A drawing or configuration that may contain accidental alignments, tangencies, or multiple events happening at the same place.",
+        "operation": "Move it a very small amount while preserving the actual question, so fragile coincidences separate into ordinary events.",
+        "protected": "The protected fact is the answer to the original problem, not the exact accidental arrangement that made the first drawing hard to read.",
+        "breaks_if": "It breaks if the small move changes the object being studied, crosses a forbidden boundary, or removes a condition the problem required.",
+    },
+    "deformation": {
+        "object": "A curve, surface, field, or diagram whose exact shape is less important than what it can become under allowed motion.",
+        "operation": "Bend, slide, stretch, or redraw continuously while keeping forbidden moves out of the argument.",
+        "protected": "The protected fact is the feature the question is really about: route order, side behavior, crossing obstruction, or total count.",
+        "breaks_if": "It breaks if the simplification uses a move the original problem did not permit, such as passing through an obstacle or moving fixed data.",
+    },
+    "invariant": {
+        "object": "A changing situation where many visible details vary while one chosen piece of evidence is meant to stay fixed.",
+        "operation": "Check the evidence before and after every allowed move, and keep only the part that survives those moves.",
+        "protected": "The protected fact is the stored memory of the problem: a side count, hole count, parity, signed meeting count, or total index.",
+        "breaks_if": "It breaks if the chosen quantity changes under a harmless legal redraw, or if it remembers details unrelated to the question.",
+    },
+    "topology-vs-geometry": {
+        "object": "A shape or motion that can be described either by measurements or by route, boundary, and connection facts.",
+        "operation": "Choose the level of description that keeps the real constraint while discarding details that can legally vary.",
+        "protected": "The protected fact is whichever feature the problem depends on: measured bending for geometry, or surviving arrangement for topology.",
+        "breaks_if": "It breaks if a topological argument throws away a needed measurement, or if a geometric description hides a whole-shape obstruction.",
+    },
+    "euler-characteristic": {
+        "object": "A surface divided into vertices, edges, and faces by a chosen decomposition.",
+        "operation": "Count vertices, subtract edges, add faces, and check that refinements only add canceling bookkeeping terms.",
+        "protected": "The protected fact is the alternating total attached to the surface rather than to the particular mesh drawn on it.",
+        "breaks_if": "It breaks if boundaries, identifications, or cell choices are counted inconsistently, because then cancellation no longer records the surface honestly.",
+    },
+    "triangulation": {
+        "object": "A continuous surface that is too slippery to count directly but can be divided into manageable finite pieces.",
+        "operation": "Replace the surface by a finite ledger of cells or triangles, then compare what happens when that ledger is refined.",
+        "protected": "The protected fact is the surface information that survives after the chosen pieces are redrawn, split, or merged legally.",
+        "breaks_if": "It breaks if the pieces are treated as the surface itself, or if the count depends on one arbitrary decomposition.",
+    },
+    "graph-planarity": {
+        "object": "A set of required connections between vertices, placed on a surface with limited room for routes.",
+        "operation": "Try to embed the connections without forbidden crossings, while using surface bookkeeping to decide whether every attempt must fail.",
+        "protected": "The protected fact is the connection demand together with the surface room available for carrying those connections.",
+        "breaks_if": "It breaks if one failed drawing is mistaken for proof, or if the surface is silently changed to give extra routes.",
+    },
+    "knots-and-links": {
+        "object": "A closed loop or several loops sitting in space, with over-under information at crossings when drawn on a page.",
+        "operation": "Move the loops by legal ambient motion while forbidding cuts, breaks, and strands passing through each other.",
+        "protected": "The protected fact is the embedding relation: whether the loop can become a plain circle or whether loops remain linked.",
+        "breaks_if": "It breaks if the flat drawing forgets over-under data, or if the argument lets strands pass through each other.",
+    },
+    "winding-linking": {
+        "object": "A loop or pair of loops whose route may go around a hole, post, point, or another loop.",
+        "operation": "Track the aroundness with direction, so opposite turns or crossings can cancel when the motion changes the picture.",
+        "protected": "The protected fact is the signed relationship of going around, not the length, roundness, or visual neatness of the loop.",
+        "breaks_if": "It breaks if direction is ignored, because opposite windings can look similar while canceling in the actual count.",
+    },
+    "boundary-orientation": {
+        "object": "A surface with possible edges and a possible global choice of consistent direction or side.",
+        "operation": "Carry a local direction choice around the whole surface and account for any boundary terms separately.",
+        "protected": "The protected fact is whether local signs and side choices can be made consistently over the complete surface.",
+        "breaks_if": "It breaks if local two-sidedness is mistaken for global orientability, or if boundary contributions are left out of the account.",
+    },
+    "gauss-bonnet": {
+        "object": "A surface or region whose local bending, boundary turning, and corner behavior can be measured and summed.",
+        "operation": "Add the local geometric contributions with the necessary boundary and corner terms, then compare the total to whole-surface topology.",
+        "protected": "The protected fact is the total account, which can be constrained by the surface even when local bending changes.",
+        "breaks_if": "It breaks if edge or corner terms are ignored, because then the total no longer balances the actual geometric object.",
+    },
+    "vector-field-index": {
+        "object": "An arrow field on a surface with isolated places where the arrow pattern fails or vanishes.",
+        "operation": "Walk around each defect on a small loop and count how the nearby arrows turn.",
+        "protected": "The protected fact is the signed local turning count, which can move with the defect and enter a global sum.",
+        "breaks_if": "It breaks if the defect is not isolated, or if the surrounding arrow direction is not read consistently around the loop.",
+    },
+    "fixed-points": {
+        "object": "A rule that sends points of a space to points, together with the question of whether some point returns to itself.",
+        "operation": "Translate the rule into a graph and compare it with the diagonal where input and output agree.",
+        "protected": "The protected fact is self-agreement: a graph-diagonal meeting means the original rule has a fixed point.",
+        "breaks_if": "It breaks if the graph no longer represents the rule, or if the space and continuity assumptions are not the ones the theorem needs.",
+    },
+    "configuration-space": {
+        "object": "The full list of possible states of a mechanism, physical setup, or moving system.",
+        "operation": "Represent each state as a point, remove forbidden states, and read motion as paths through the resulting space.",
+        "protected": "The protected fact is the shape of possibility: holes, walls, components, and forced passages in the state space.",
+        "breaks_if": "It breaks if the model omits a real freedom, adds a false restriction, or forgets a boundary condition from the physical problem.",
+    },
+    "duality": {
+        "object": "A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules.",
+        "operation": "Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph.",
+        "protected": "The protected fact is the meaning that survives translation between the original picture and the dual picture.",
+        "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left vague.",
+    },
+    "parity": {
+        "object": "A count whose exact value may change while its evenness or oddness is expected to survive.",
+        "operation": "Forget all information except odd or even, then check that every legal change alters the raw count by pairs.",
+        "protected": "The protected fact is parity, which can prove zero impossible when an odd count must remain odd.",
+        "breaks_if": "It breaks if a legal move can change the count by one, because then oddness and evenness are not protected.",
+    },
+    "product-space": {
+        "object": "Several independent choices that must be recorded together as one combined state or point.",
+        "operation": "Let each choice vary and treat the combined choices as a new space with its own routes and boundaries.",
+        "protected": "The protected fact is independence: each coordinate keeps its freedom until the actual problem imposes a constraint.",
+        "breaks_if": "It breaks if dependent choices are treated as independent, because the product then contains states the problem never allowed.",
+    },
+    "quotient-space": {
+        "object": "A drawn shape together with a rule declaring certain points, edges, or exits to be the same.",
+        "operation": "Apply the identification rule and read travel, loops, sides, and boundaries in the resulting space rather than in the drawing.",
+        "protected": "The protected fact is rule-made sameness: points that look separate on the page may be identical in the space.",
+        "breaks_if": "It breaks if the drawing is read literally after identifications have changed what counts as a point or boundary.",
+    },
+    "surgery": {
+        "object": "A surface or space with a controlled part that can be removed and replaced along a stated boundary.",
+        "operation": "Remove the chosen piece, keep track of the exposed boundary, and attach the replacement by a specified rule.",
+        "protected": "The protected fact is the bookkeeping of what the local replacement changed and what global feature it was meant to reveal.",
+        "breaks_if": "It breaks if the removed piece, boundary, or gluing rule is vague, because then the operation is not auditable.",
+    },
+    "manifold": {
+        "object": "A space that looks like ordinary room when inspected close up, even if its whole shape is unfamiliar.",
+        "operation": "Use local ordinary neighborhoods for drawing curves, maps, and fields, then check what global gluing does to them.",
+        "protected": "The protected fact is the gap between local simplicity and global constraint, which lets the course reason patch by patch without stopping there.",
+        "breaks_if": "It breaks if local ordinariness is used to conclude global simplicity, because holes, side reversal, and total counts can be invisible locally.",
+    },
+    "intersection-number": {
+        "object": "Clean meetings between oriented curves, surfaces, or subspaces inside a surrounding space where direction has meaning.",
+        "operation": "Assign each meeting a sign from the orientation rule and add the signs rather than the raw number of meetings.",
+        "protected": "The protected fact is the signed total, which survives legal deformation when newly born pairs cancel.",
+        "breaks_if": "It breaks if meetings are not clean or signs are not justified, because then cancellation is not trustworthy evidence.",
+    },
+    "brouwer-fixed-point": {
+        "object": "A continuous rule sending every point of a closed filled ball back into that same filled ball.",
+        "operation": "Assume every point avoids itself and read that attempted escape against the filled shape and its boundary.",
+        "protected": "The protected fact is forced self-agreement: the ball gives no continuous way for all points to escape themselves.",
+        "breaks_if": "It breaks if the space is not the right closed filled object, or if the rule jumps or leaves the domain.",
+    },
+    "equilibrium": {
+        "object": "A state in a vector field where the motion arrow vanishes and nearby arrows show the local pattern.",
+        "operation": "Inspect the arrows around the vanishing point and read their turning as local evidence.",
+        "protected": "The protected fact is the signed behavior around the equilibrium, not merely the fact that the dot is present.",
+        "breaks_if": "It breaks if the surrounding arrow pattern is ignored, because topology uses the local turning rather than the label of the equilibrium.",
+    },
+    "poincare-hopf": {
+        "object": "A vector field on a surface with all isolated defects included in one account.",
+        "operation": "Add the signed indices of every defect and compare the sum with Euler characteristic.",
+        "protected": "The protected fact is the equality between total local defect count and the whole-surface number.",
+        "breaks_if": "It breaks if any defect is omitted, if defects are not isolated, or if the surface carrying the field is changed.",
+    },
+}
+
+
 CONCEPT_ESSAYS = {
     "generic-position": [
         "Generic position is the course's way of refusing to build a proof on a coincidence. If two curves merely touch, if three intersections happen at exactly one point, or if an equilibrium is smeared into a whole line, the picture may be too delicate to reveal the stable reason. A tiny nudge could change it. The ordinary case is not the lazy case; it is the case that survives small disturbances and therefore can be counted cleanly.",
@@ -1793,6 +1941,7 @@ def build_quality_audit(data):
     lecture_source_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in l["deep"]["source_lens"]) for l in data["lectures"])
     lecture_caption_nuance_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["caption_nuance"][field])) for field in ["risk", "safe_reading", "verify_question"]) for l in data["lectures"])
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
+    concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
     subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
     family_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in f["essay"]) for f in data["families"])
@@ -1819,7 +1968,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields.",
+            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families all have essay sections plus validated first-principles depth fields; concept pages also include work-from-scratch blocks.",
             "status": "met",
         },
         {
@@ -1883,6 +2032,7 @@ def build_quality_audit(data):
             "lecture_source_lens_words": lecture_source_lens_words,
             "lecture_caption_nuance_words": lecture_caption_nuance_words,
             "concept_essay_words": concept_essay_words,
+            "concept_workup_words": concept_workup_words,
             "theme_essay_words": theme_essay_words,
             "subtheme_essay_words": subtheme_essay_words,
             "family_essay_words": family_essay_words,
@@ -2253,7 +2403,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
             f'<article class="card"><div class="meta">Lecture {a["lecture"]:02d}</div><h3>{esc(a["title"])}</h3><p>{esc(a["summary"])}</p><a class="arrow" href="lecture-{a["lecture"]:02d}.html">Open lecture</a></article>'
             for a in c["appearances"]
         )
-        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
+        work = c["workup"]
+        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Beginner Trap</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
     body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"
@@ -2286,7 +2437,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['family_essay_words']} method-family essay words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -2372,6 +2523,7 @@ def main():
         enriched = dict(concept)
         enriched["depth"] = CONCEPT_DEPTH[concept["id"]]
         enriched["essay"] = CONCEPT_ESSAYS[concept["id"]]
+        enriched["workup"] = CONCEPT_WORKUPS[concept["id"]]
         concepts.append(enriched)
     concept_appearances = {concept["id"]: [] for concept in concepts}
     for lecture in lectures:
@@ -2456,6 +2608,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {metrics['lecture_source_lens_words']} source-lens words across lecture pages, explaining how transcript anchors should be read as evidence
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
+- {metrics['concept_workup_words']} concept workup words across object, operation, protected-fact, and failure-test fields
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
 - 10 expanded subtheme pages with essay, first-principles, and course-role sections
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
@@ -2466,7 +2619,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - explicit source coverage, missing-caption audit, and per-lecture caption-nuance cards
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['theme_essay_words']} theme essay words, {metrics['subtheme_essay_words']} subtheme essay words, and {metrics['family_essay_words']} method-family essay words. The validator requires every lecture essay to clear 230 words, every lecture walkthrough field to clear 35 words, every lecture caption-nuance field to clear 12 words, every lecture source lens to clear 60 words, every concept essay to clear 180 words, every concept workup field to clear 12 words, every theme essay to clear 190 words, every subtheme essay to clear 130 words, and every method-family essay to clear 130 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

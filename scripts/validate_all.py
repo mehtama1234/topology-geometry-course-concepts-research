@@ -120,6 +120,10 @@ def main():
         concept_essay_words = sum(len(words(p)) for p in concept.get("essay") or [])
         if concept_essay_words < 180:
             fail(f"concept {concept['id']} essay too thin")
+        workup = concept.get("workup") or {}
+        for field in ["object", "operation", "protected", "breaks_if"]:
+            if len(words(workup.get(field))) < 12:
+                fail(f"concept {concept['id']} workup {field} too thin")
         appearances = concept.get("appearances") or []
         if len(appearances) < 2:
             fail(f"concept {concept['id']} needs at least two lecture appearances")
@@ -294,8 +298,13 @@ def main():
     if len(words(re.sub(r"<[^>]+>", " ", source_audit))) < 1400:
         fail("source audit caption nuance too thin")
     for concept in data["concepts"]:
-        if f"concept-{concept['id']}.html" not in names:
+        concept_name = f"concept-{concept['id']}.html"
+        if concept_name not in names:
             fail(f"missing concept page {concept['id']}")
+        concept_html = (SITE / concept_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["Work It From Scratch", "Object:", "Operation:", "Protected fact:", "Breaks if:"]:
+            if phrase not in concept_html:
+                fail(f"concept page missing workup phrase {phrase}: {concept_name}")
     for lecture in data["lectures"]:
         lecture_name = f"lecture-{lecture['lecture']:02d}.html"
         if lecture_name not in names:

@@ -23,7 +23,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families all have essay sections plus validated first-principles depth fields; concept pages also include work-from-scratch blocks.",
       "status": "met"
     },
     {
@@ -86,6 +86,7 @@
     "lecture_source_lens_words": 1090,
     "lecture_caption_nuance_words": 979,
     "concept_essay_words": 4830,
+    "concept_workup_words": 1781,
     "theme_essay_words": 1278,
     "subtheme_essay_words": 1500,
     "family_essay_words": 824,
