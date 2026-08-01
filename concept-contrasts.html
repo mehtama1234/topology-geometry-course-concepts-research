@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concept Contrasts</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand">Topology & Geometry</div><nav><a class="" href="index.html">Course</a><a class="" href="videos.html">Videos</a><a class="" href="lectures.html">Lectures</a><a class="" href="lecture-spine.html">Lecture Spine</a><a class="" href="concepts.html">Concepts</a><a class="" href="themes.html">Themes</a><a class="" href="subthemes.html">Subthemes</a><a class="" href="families.html">Families</a><a class="" href="the-math-why.html">The Math Why</a><a class="" href="math-playground.html">Playground</a><a class="" href="course-synthesis.html">Synthesis</a><a class="" href="concept-dependencies.html">Dependencies</a><a class="" href="proof-moves.html">Proof Moves</a><a class="" href="formula-reader.html">Formula Reader</a><a class="" href="theorem-use-contracts.html">Theorem Contracts</a><a class="active" href="concept-contrasts.html">Concept Contrasts</a><a class="" href="reader-checks.html">Reader Checks</a><a class="" href="term-translator.html">Term Translator</a><a class="" href="paper-source-reader.html">Paper Source Reader</a><a class="" href="lecture-source-bridges.html">Lecture Source Bridges</a><a class="" href="lecture-reconstruction-drills.html">Reconstruction Drills</a><a class="" href="references.html">References</a><a class="" href="quality-rubric.html">Quality Rubric</a><a class="" href="rubric-coverage.html">Rubric Coverage</a><a class="" href="quality-audit.html">Quality Audit</a><a class="" href="source-audit.html">Source Audit</a></nav></header>
+  <main>
+<h1>Concept Contrasts</h1>
+<p class="lead">This page separates neighboring ideas that are easy to blend together. A contrast is not a dictionary entry. It says what each idea is responsible for, how the two ideas meet in a course argument, and what mistake appears when their jobs are merged.</p>
+<section class="lecture">
+  <h2>How To Use A Contrast</h2>
+  <p>Read the confusion line first. Then read the left job and right job as two different pieces of work inside a proof or model. The bridge tells how the course can use both ideas in the same argument without making them interchangeable.</p>
+  <p>The failure test is the important part for revision. When a lecture page, concept page, or source note feels fluent but thin, ask whether it has merged two jobs that should remain separate. Repair the sentence by naming the object, the protected fact, and the exact role of each side.</p>
+</section>
+<div class="grid two"><article class="card">
+  <div class="meta">Topology / Geometry</div>
+  <h3>Topology versus geometry</h3>
+  <p><b>Confusion:</b> A reader can think the course is choosing one and rejecting the other. That misses how the lectures use measured local facts and whole-shape facts together.</p>
+  <p><b>Left job:</b> Topology asks what survives when exact measurement is allowed to change: routes, holes, boundaries, side behavior, fixed points, and total constraints.</p>
+  <p><b>Right job:</b> Geometry keeps measured local information in view: length, angle, direction, curvature, and local bending. Those facts often become the pieces that a topological account adds up.</p>
+  <p><b>Bridge:</b> The course often starts geometrically and ends topologically. A local arrow turns, a curve meets another curve, or a surface bends; then the whole shape restricts the total account.</p>
+  <p><b>Failure test:</b> If the explanation says measurement never matters, it has lost geometry. If it says only measurement matters, it has lost the reason whole-shape constraints can force an answer.</p>
+  <p><b>Reader question:</b> Which local measured fact is present, and which whole-shape fact controls what that local evidence can do?</p>
+  <p><a class="pill" href="concept-topology-vs-geometry.html">Topology and geometry</a><a class="pill" href="concept-gauss-bonnet.html">Gauss-Bonnet as total turning</a><a class="pill" href="concept-euler-characteristic.html">Euler characteristic</a></p>
+</article><article class="card">
+  <div class="meta">Invariant / Raw count</div>
+  <h3>Invariant versus raw count</h3>
+  <p><b>Confusion:</b> A visible number can look like evidence just because it is easy to count. The course repeatedly shows that easy counts may change under harmless redrawings.</p>
+  <p><b>Left job:</b> An invariant is chosen because it survives the allowed moves. It carries the answer from one version of the picture to another.</p>
+  <p><b>Right job:</b> A raw count is simply what the eye sees in one drawing: crossings, cells, regions, or defects before the legal changes have been tested.</p>
+  <p><b>Bridge:</b> The raw count becomes useful only after it is repaired. Alternating signs, parity, or plus-minus cancellation can turn an unstable count into protected evidence.</p>
+  <p><b>Failure test:</b> If the count changes during a legal move and the explanation has no cancellation rule, the count is not yet an invariant.</p>
+  <p><b>Reader question:</b> What local change threatens the count, and what part of the count survives that change?</p>
+  <p><a class="pill" href="concept-invariant.html">Invariant</a><a class="pill" href="concept-parity.html">Parity</a><a class="pill" href="concept-intersection-number.html">Intersection number</a></p>
+</article><article class="card">
+  <div class="meta">Deformation / Illegal shortcut</div>
+  <h3>Deformation versus illegal shortcut</h3>
+  <p><b>Confusion:</b> A cleaner drawing can feel like progress even when the cleanup changed the problem. This is the main danger in visual topology.</p>
+  <p><b>Left job:</b> A deformation is a continuous legal change that preserves the question being asked. It lets an easier picture speak for the harder one.</p>
+  <p><b>Right job:</b> An illegal shortcut cuts, crosses, jumps, moves fixed data, drops a boundary, or changes the state space while pretending the answer is still about the original problem.</p>
+  <p><b>Bridge:</b> The difference is the rulebook. The same visible motion may be legal in one problem and forbidden in another, so the allowed move has to be named before the simplification is trusted.</p>
+  <p><b>Failure test:</b> If a curve passes through a forbidden obstacle or an endpoint quietly changes order, the proof has solved a different problem.</p>
+  <p><b>Reader question:</b> What changed during the motion, and what exact feature was protected at every step?</p>
+  <p><a class="pill" href="concept-deformation.html">Deformation</a><a class="pill" href="concept-knots-and-links.html">Knots and links</a><a class="pill" href="concept-winding-linking.html">Winding and linking</a></p>
+</article><article class="card">
+  <div class="meta">Quotient space / Drawing</div>
+  <h3>Quotient space versus drawing</h3>
+  <p><b>Confusion:</b> A square with arrows can be mistaken for a square. In the course, the arrows are instructions for what the finished space actually is.</p>
+  <p><b>Left job:</b> A quotient space declares certain points to be the same point. That declaration creates the routes, neighborhoods, and side behavior of the finished object.</p>
+  <p><b>Right job:</b> A drawing is only a readable code for the rule. Its visible boundary or flat outline may not be a true boundary or shape in the completed space.</p>
+  <p><b>Bridge:</b> Read the rule before reading the picture. Once the identifications are applied, travel, orientation, and boundary behavior may change.</p>
+  <p><b>Failure test:</b> If the explanation reasons on the unglued drawing after the identification rule has been stated, it is using the wrong object.</p>
+  <p><b>Reader question:</b> Which points have been identified, and what path or boundary behavior changes after that identification?</p>
+  <p><a class="pill" href="concept-quotient-space.html">Quotient space</a><a class="pill" href="concept-boundary-orientation.html">Boundary and orientation</a><a class="pill" href="concept-manifold.html">Manifold</a></p>
+</article><article class="card">
+  <div class="meta">Product space / Configuration space</div>
+  <h3>Product space versus configuration space</h3>
+  <p><b>Confusion:</b> Both can sound like spaces of choices. The distinction matters because one records independent choices, while the other must represent the actual allowed states of a system.</p>
+  <p><b>Left job:</b> A product space keeps separate choices together. One point records a tuple of choices before any later constraints are imposed.</p>
+  <p><b>Right job:</b> A configuration space records complete allowed states of a system. It may start from product choices, but then forbidden states, walls, or equations must be removed or imposed.</p>
+  <p><b>Bridge:</b> Many models start with a product and become a configuration space only after the real restrictions are added. The topology speaks about the restricted state space, not the larger wishful one.</p>
+  <p><b>Failure test:</b> If the model includes collisions or impossible positions because it stopped at the product, it may erase the obstruction the application depends on.</p>
+  <p><b>Reader question:</b> Which choices vary independently, and which states must be removed before the model represents the real system?</p>
+  <p><a class="pill" href="concept-product-space.html">Product space</a><a class="pill" href="concept-configuration-space.html">Configuration space</a><a class="pill" href="concept-fixed-points.html">Fixed points</a></p>
+</article><article class="card">
+  <div class="meta">Generic position / Special accident</div>
+  <h3>Generic position versus special accident</h3>
+  <p><b>Confusion:</b> A special drawing can look more informative because it has tangencies, perfect alignments, or multiple events at once. The course often moves away from that drawing to see the stable behavior.</p>
+  <p><b>Left job:</b> Generic position gives a clean ordinary case where meetings are separated, defects are isolated, and signs or counts can be assigned.</p>
+  <p><b>Right job:</b> A special accident is a fragile coincidence. It may mark a transition, but it can hide the ordinary events on either side.</p>
+  <p><b>Bridge:</b> Study the ordinary case first, then use the special accident as the moment where ordinary events are born, die, or change in controlled pairs.</p>
+  <p><b>Failure test:</b> If the small nudge changes the protected fact, generic position has been misused. If no nudge is made, the count may not be defined.</p>
+  <p><b>Reader question:</b> What accident was removed, and what ordinary count or sign rule became available afterward?</p>
+  <p><a class="pill" href="concept-generic-position.html">Generic position</a><a class="pill" href="concept-intersection-number.html">Intersection number</a><a class="pill" href="concept-vector-field-index.html">Vector field index</a></p>
+</article><article class="card">
+  <div class="meta">Fixed point / Equilibrium</div>
+  <h3>Fixed point versus equilibrium</h3>
+  <p><b>Confusion:</b> Both sound like something staying put. The course uses them differently: one belongs to a rule sending points to points, the other belongs to an arrow field or motion law.</p>
+  <p><b>Left job:</b> A fixed point is an input that a rule sends back to itself. The graph-and-diagonal picture turns self-agreement into an intersection.</p>
+  <p><b>Right job:</b> An equilibrium is a place where an arrow field vanishes. Nearby arrows show how motion fails around that place.</p>
+  <p><b>Bridge:</b> Both are forced special states, but their evidence differs. Fixed points use self-agreement of a map; equilibria use local arrow behavior and index.</p>
+  <p><b>Failure test:</b> If the explanation uses fixed-point language for a vector-field defect without naming the arrow field, or uses equilibrium language for a map without a motion law, the object has been blurred.</p>
+  <p><b>Reader question:</b> Is the course studying a rule that returns points, or an arrow field whose arrows vanish?</p>
+  <p><a class="pill" href="concept-fixed-points.html">Fixed points</a><a class="pill" href="concept-equilibrium.html">Equilibrium</a><a class="pill" href="concept-vector-field-index.html">Vector field index</a></p>
+</article><article class="card">
+  <div class="meta">Vector-field index / Euler characteristic</div>
+  <h3>Vector-field index versus Euler characteristic</h3>
+  <p><b>Confusion:</b> Both are numbers in Poincare-Hopf, but they live on different sides of the account.</p>
+  <p><b>Left job:</b> Vector-field index is local evidence. It counts how arrows turn around one isolated defect.</p>
+  <p><b>Right job:</b> Euler characteristic is whole-surface evidence. It comes from the surface&#x27;s global bookkeeping, independent of one arrow pattern.</p>
+  <p><b>Bridge:</b> Poincare-Hopf connects them by adding every local index and comparing the total to the Euler characteristic of the same surface.</p>
+  <p><b>Failure test:</b> If one defect is compared directly to Euler characteristic, or if the surface in the index account is not the surface whose Euler characteristic is used, the theorem has been misread.</p>
+  <p><b>Reader question:</b> Which local indices are being added, and which whole surface supplies the Euler characteristic they must match?</p>
+  <p><a class="pill" href="concept-vector-field-index.html">Vector field index</a><a class="pill" href="concept-euler-characteristic.html">Euler characteristic</a><a class="pill" href="concept-poincare-hopf.html">Poincare-Hopf theorem</a></p>
+</article><article class="card">
+  <div class="meta">Boundary / Hole</div>
+  <h3>Boundary versus hole</h3>
+  <p><b>Confusion:</b> Both can feel like missing space in a drawing, but they affect arguments in different ways.</p>
+  <p><b>Left job:</b> A boundary is where the surface stops or where extra edge behavior must be counted. It can add conditions or terms to the argument.</p>
+  <p><b>Right job:</b> A hole is an absent region or blocked filling. It can prevent a loop from shrinking or a path from escaping.</p>
+  <p><b>Bridge:</b> Both change what routes and counts are legal. The reader has to ask whether the issue is an edge that contributes data or a missing region that blocks a move.</p>
+  <p><b>Failure test:</b> If an edge is ignored as though the surface had no boundary, or if a hole is treated like a removable drawing feature, the proof can lose the obstruction.</p>
+  <p><b>Reader question:</b> Is the argument using an edge condition, a missing filling region, or both at the same time?</p>
+  <p><a class="pill" href="concept-boundary-orientation.html">Boundary and orientation</a><a class="pill" href="concept-winding-linking.html">Winding and linking</a><a class="pill" href="concept-configuration-space.html">Configuration space</a></p>
+</article><article class="card">
+  <div class="meta">Source support / Source overclaim</div>
+  <h3>Source support versus source overclaim</h3>
+  <p><b>Confusion:</b> A reference can support a family of ideas without proving every sentence on a course page.</p>
+  <p><b>Left job:</b> Source support ties a course move to the course videos, a primary-paper family, or a standard reference for the background mathematics.</p>
+  <p><b>Right job:</b> Source overclaim treats a reference as if it directly proves a lecture interpretation, exact wording, or stronger theorem use that the available source evidence does not justify.</p>
+  <p><b>Bridge:</b> The companion should move from lecture evidence to source family carefully: course demonstration first, source support second, caveat always visible.</p>
+  <p><b>Failure test:</b> If a sentence would become false or too strong when the auto-caption caveat is remembered, it is probably overclaiming.</p>
+  <p><b>Reader question:</b> What exact claim does the source support, and what stronger claim should remain unsaid?</p>
+  <p><a class="pill" href="concept-topology-vs-geometry.html">Topology and geometry</a><a class="pill" href="concept-invariant.html">Invariant</a><a class="pill" href="concept-poincare-hopf.html">Poincare-Hopf theorem</a></p>
+</article></div>
+<section class="lecture">
+  <h2>The Separation Test</h2>
+  <p>For any two course ideas, ask whether replacing one word with the other would change the object, the allowed move, the protected evidence, or the conclusion. If nothing changes, the explanation is probably too vague. If the change is visible in everyday language, the contrast is doing useful work.</p>
+</section>
+</main>
+</body>
+</html>
