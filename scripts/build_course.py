@@ -4471,14 +4471,9 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             "A complete answer should sound like a chain of reasons, not a list of titles. The source family belongs at the end, after the lecture evidence is clear.",
             "The reader should be able to close the page and still reconstruct the lecture from the concrete setup to the source boundary, including the legal move and protected evidence.",
         ])
-        common_failure_close = varied((number, "drill-failure"), [
-            "That skips the legal move and the surviving fact, which are the actual mathematical work of the lecture.",
-            "The missing middle is the proof: what was allowed to move and what evidence survived.",
-            "A theorem name cannot replace the route from concrete setup to protected evidence.",
-            "The lecture becomes shallow when the memorable example is not connected to the move that makes it mathematical.",
-        ])
         source_check = lecture_drill_source_check(number, spine, bridge, source_family_label)
         object_text = spine["object"].rstrip(".")
+        common_failure = lecture_drill_common_failure(number, spine, examples)
         drills.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
@@ -4492,11 +4487,26 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
                 source_step,
             ],
             "self_check": self_check,
-            "common_failure": f"The common failure is to jump from {examples[0]['title']} straight to a theorem or source name. {common_failure_close}",
+            "common_failure": common_failure,
             "source_check": source_check,
             "concepts": concept_ids[:6],
         })
     return drills
+
+
+def lecture_drill_common_failure(number, spine, examples):
+    object_text = spine["object"].rstrip(".")
+    legal_move = spine["legal_move"].rstrip(".")
+    surviving = spine["surviving_fact"].rstrip(".")
+    why_later = spine["why_later"]
+    example_title = examples[0]["title"]
+    options = [
+        f"A weak reconstruction starts with {example_title} and then names a theorem before rebuilding the lecture object: {object_text}. The repair is to state the allowed move: {legal_move}; and only then use the protected fact: {surviving}.",
+        f"The failure is to remember the example but skip the rulebook. For Lecture {number:02d}, the missing rule is not decorative: {legal_move}. Without that rule, this surviving fact has not been earned: {surviving}.",
+        f"The shallow version treats {example_title} as a memorable illustration. The stronger version explains what the example makes testable: object: {object_text}; move: {legal_move}; protected fact: {surviving}.",
+        f"The common overreach is to move straight from the demonstration to a source or theorem name. The lecture needs one more step first: connect the allowed move, {legal_move}, to the protected fact: {surviving}. Then connect that result forward: {why_later}",
+    ]
+    return varied((number, "drill-common-failure"), options)
 
 
 def lecture_drill_source_check(number, spine, bridge, source_family_label):
