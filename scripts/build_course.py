@@ -4049,10 +4049,35 @@ def build_lecture_reader_test(lecture, spine_row):
     first_example = examples[0]["title"]
     second_example = examples[1]["title"]
     third_example = examples[2]["title"]
+    number = lecture["lecture"]
+    object_close = varied((number, "reader-object-close"), [
+        "Say what information that object carries before any theorem name is used.",
+        "Name the data the object keeps track of before using course vocabulary.",
+        "Explain what the object records while the example is still concrete.",
+        "Make clear what the lecture is reasoning about before naming the formal idea.",
+    ])
+    picture_warning = varied((number, "reader-picture-warning"), [
+        "Do not treat it as just a board picture.",
+        "Do not reduce it to the drawing on the board.",
+        "Treat the picture as a record of rules and data, not as decoration.",
+        "Keep the object separate from the chalk drawing used to show it.",
+    ])
+    move_close = varied((number, "reader-move-close"), [
+        "Name one nearby move that would quietly change the problem instead of solving it.",
+        "Also name a tempting shortcut that would break the rulebook.",
+        "Say which nearby simplification would no longer answer the original question.",
+        "State the forbidden move that would make the conclusion untrustworthy.",
+    ])
+    conclusion_close = varied((number, "reader-conclusion-close"), [
+        "Explain how that fact reaches the lecture's payoff without relying on a slogan.",
+        "Use that fact to reach the payoff in ordinary words, not by repeating a theorem label.",
+        "Show how the protected evidence makes the conclusion unavoidable or limited.",
+        "Carry the surviving fact all the way to the payoff so the final claim has a reason.",
+    ])
     return {
-        "explain_object": f"In everyday language, explain why the lecture's main object is {spine_row['object']} rather than only a picture on the board. Your answer should use the concrete moment '{first_example}' and say what information the object carries before any theorem name is used.",
-        "test_allowed_move": f"Name the allowed move in this lecture: {spine_row['legal_move']} Then name one move that would change the problem instead of solving it. Use '{second_example}' as the check that keeps the motion honest.",
-        "protect_conclusion": f"State the surviving fact: {spine_row['surviving_fact']} Then explain how that fact forces the lecture's payoff without relying on a slogan. Use '{third_example}' to connect the protected evidence to the later course arc: {spine_row['why_later']}",
+        "explain_object": f"In everyday language, explain the lecture's main object: {spine_row['object']} {picture_warning} Use the concrete moment '{first_example}'. {object_close}",
+        "test_allowed_move": f"Name the allowed move in this lecture: {spine_row['legal_move']} {move_close} Use '{second_example}' as the check that keeps the motion honest.",
+        "protect_conclusion": f"State the surviving fact: {spine_row['surviving_fact']} {conclusion_close} Use '{third_example}' to connect the protected evidence to the later course arc: {spine_row['why_later']}",
     }
 
 
@@ -4074,10 +4099,40 @@ def plain_fragment(text, prefixes):
 def build_lecture_answer_guide(lecture, spine_row):
     examples = lecture["deep"]["examples"]
     number = lecture["lecture"]
+    object_close = varied((number, "answer-object-close"), [
+        "Use the anchor to keep the explanation tied to a real course moment instead of a memorized term.",
+        "The answer should make the object do work before the title of the concept appears.",
+        "This keeps the reader focused on the carrier of the reasoning, not only the name of the topic.",
+        "The concrete anchor should show what the object records and why the lecture needed it.",
+    ])
+    illegal_shortcut = varied((number, "answer-illegal-shortcut"), [
+        "Name an illegal shortcut: dropping boundary data, changing the carrier space, inventing extra room, removing a required sign rule, or forgetting the source caveat.",
+        "Then name the forbidden shortcut: moving fixed data, changing the model, erasing a sign rule, or making a source claim stronger than the captions allow.",
+        "Say what would break the problem, such as crossing a forbidden object, changing the surface, ignoring a boundary, or treating a caveat as settled evidence.",
+        "Include one way the explanation could cheat: changing the state space, losing orientation data, moving fixed endpoints, or using the source trail as if it were lecture wording.",
+    ])
+    conclusion_close = varied((number, "answer-conclusion-close"), [
+        "Then use that protected fact to explain the consequence in plain language.",
+        "Carry that evidence into the conclusion before naming the later theorem or method.",
+        "Say what the evidence forces and what it does not promise to compute.",
+        "Make the payoff follow from the protected fact, not from the reader's trust in a title.",
+    ])
+    data_close = varied((number, "answer-data-close"), [
+        "Say what data it carries in this lecture.",
+        "Name the information it carries for this argument.",
+        "Explain what the lecture needs this object to record.",
+        "State which part of the setup the object preserves for reasoning.",
+    ])
+    shortcut_close = varied((number, "answer-shortcut-close"), [
+        "That shortcut would change the problem rather than solve it.",
+        "That move would make the easier conclusion belong to a different problem.",
+        "The shortcut is illegal because it discards the rule the lecture is testing.",
+        "The reader should see why the shortcut breaks the contract of the lecture.",
+    ])
     return {
-        "object_answer": f"{varied((number, 'object'), ['Start with the object:', 'First name what is being reasoned about:', 'The answer begins by identifying', 'Make the carrier of the reasoning explicit:'])} {spine_row['object']} Then explain what data it carries in the lecture. Use '{examples[0]['title']}' as a concrete anchor and avoid treating the object as a loose drawing or a memorized term.",
-        "move_answer": f"{varied((number, 'move'), ['Name the permitted move:', 'The legal action is', 'The proof move to state is', 'Put the allowed change in plain words:'])} {spine_row['legal_move']} Also name an illegal shortcut: any motion that drops boundary data, changes the carrier space, invents extra room, removes a required sign rule, or forgets the source caveat would change the problem rather than solve it.",
-        "conclusion_answer": f"{varied((number, 'conclusion'), ['Protect this surviving fact:', 'The evidence to keep is', 'The conclusion rests on this fact:', 'Carry this fact through the explanation:'])} {spine_row['surviving_fact']} Then use that protected fact to explain the consequence in plain language and connect forward to the later need: {spine_row['why_later']}",
+        "object_answer": f"{varied((number, 'object'), ['Start with the object:', 'First name what is being reasoned about:', 'The answer begins by identifying', 'Make the carrier of the reasoning explicit:'])} {spine_row['object']} {data_close} Use '{examples[0]['title']}' as a concrete anchor. {object_close}",
+        "move_answer": f"{varied((number, 'move'), ['Name the permitted move:', 'The legal action is', 'The proof move to state is', 'Put the allowed change in plain words:'])} {spine_row['legal_move']} {illegal_shortcut} {shortcut_close}",
+        "conclusion_answer": f"{varied((number, 'conclusion'), ['Protect this surviving fact:', 'The evidence to keep is', 'The conclusion rests on this fact:', 'Carry this fact through the explanation:'])} {spine_row['surviving_fact']} {conclusion_close} Connect forward to the later need: {spine_row['why_later']}",
     }
 
 
