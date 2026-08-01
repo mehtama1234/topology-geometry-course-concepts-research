@@ -4,7 +4,7 @@ This audit compares the topology companion against the concrete readiness shape 
 
 ## Verdict
 
-The local repo now meets the structural and validation standard for a robotics-quality companion. The remaining caveat is source nuance: one playlist video has no recovered captions, and all recovered captions are auto-captions rather than authoritative lecture notes.
+The local repo now meets the structural and validation standard for a robotics-quality companion. The remaining caveat is human source verification: one playlist video has no recovered captions, and all recovered captions are auto-captions rather than authoritative lecture notes.
 
 ## Evidence Matrix
 
@@ -15,6 +15,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Individual video links | `site/videos.html` lists every YouTube item in playlist order | Met |
 | Lecture explainers | `site/lecture-01.html` through `site/lecture-15.html`; each has essay, lecture deepening, slow walkthrough, reader test, answer guide, source checkpoint, source-faithfulness audit, caption nuance, first principles, mathematical move, detail, connection, anchors, source-lens paragraphs, and three examples | Met |
 | Lecture reasoning spine | `site/lecture-spine.html` gives one object-question-move-surviving-fact-later-use entry for each of the 15 lectures; `site/lecture-source-bridges.html` connects each lecture demonstration to its source family and overread warning; `site/lecture-reconstruction-drills.html` makes the reader rebuild each lecture from concrete example to source check | Met |
+| Source nuance repairs | `site/source-nuance-repairs.html` gives 15 lecture-specific repair notes for caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links | Met |
 | Concepts | 24 concept pages with long-form essays, first principles, important detail, principle, beginner check, course role, anchor examples, work-from-scratch blocks, self-check answer guides, and reverse lecture links | Met |
 | Themes/subthemes/families | 6 themes, 10 subthemes, 5 method families, each with essay/depth sections; themes include lenses and answer guides, subthemes include first-principles bridges, reading routines and answer guides, and families include method playbooks, contracts, and answer guides | Met |
 | Mathematical synthesis | `site/the-math-why.html` and `site/course-synthesis.html` explain the course engine and dependency spine | Met |
@@ -27,7 +28,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Term translator | `site/term-translator.html` translates 16 formal course words into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links | Met |
 | References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats; `site/paper-source-reader.html` explains each source family from first principles | Met |
 | Quality/source audits | `site/quality-rubric.html`, `site/rubric-coverage.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, rubric coverage maps those tests across six layers, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 86 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 87 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -40,7 +41,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 86 generated HTML pages.
+- 87 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 5,333 lecture essay words.
@@ -52,6 +53,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
 - 2,109 lecture source-faithfulness words.
+- 1,734 source-nuance repair words.
 - 4,206 lecture-source bridge words.
 - 6,460 lecture reconstruction words.
 - 7,732 concept essay words.
@@ -82,6 +84,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,850 term-translation words.
 - 7 paper/source reader cards.
 - 1,095 source-reader words.
+- 15 source-nuance repair notes.
 - 7 references.
 - 6 quality-rubric tests.
 - 6 rubric-coverage layer maps.
@@ -97,6 +100,7 @@ The validator checks:
 - lecture-spine structure and length;
 - lecture-source bridge structure, field depth, reference integrity, and concept-link integrity;
 - lecture reconstruction drill structure, ninety rebuild steps, field depth, and concept-link integrity;
+- source nuance repair structure, field depth, and concept-link integrity;
 - concept/theme/subtheme/family id integrity;
 - playground widget structure and JS renderer names;
 - course synthesis sections and length;
@@ -132,6 +136,6 @@ The validator checks:
 
 ## Residual Risk
 
-The project is locally ready, but it is not a verified public deployment. This local repo has no configured git remote. The remaining content risk is lecture-source nuance: auto-captions can mishear mathematical words, and `nx1XOlezuvk` has no recovered captions.
+The project is locally ready, but it is not a verified public deployment. This local repo has no configured git remote. The remaining content risk is human source verification: auto-captions can mishear mathematical words, and `nx1XOlezuvk` has no recovered captions.
 
 Future work should focus on a human source pass against the original videos, especially lecture 9, rather than adding more structural scaffolding.

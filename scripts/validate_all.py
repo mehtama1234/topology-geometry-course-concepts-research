@@ -477,11 +477,26 @@ def main():
         if len(row.get("concepts") or []) < 3:
             fail(f"lecture reconstruction drill {row.get('lecture')} needs concept links")
 
+    source_nuance_repairs = data.get("source_nuance_repairs") or []
+    if len(source_nuance_repairs) != 15:
+        fail("source nuance repairs need exactly fifteen lecture notes")
+    if {row.get("lecture") for row in source_nuance_repairs} != lecture_numbers:
+        fail("source nuance repairs do not match lecture numbers")
+    for row in source_nuance_repairs:
+        for field in ["caption_hazard", "safe_claim", "repair_move", "do_not_claim", "reviewer_question"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"source nuance repair {row.get('lecture')} {field} too thin")
+        unknown_concepts = sorted(set(row.get("concepts") or []) - concept_ids)
+        if unknown_concepts:
+            fail(f"source nuance repair {row.get('lecture')} unknown concepts: {unknown_concepts}")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"source nuance repair {row.get('lecture')} needs concept links")
+
     html_files = sorted(SITE.glob("*.html"))
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -599,6 +614,14 @@ def main():
         fail("lecture reconstruction drills page needs ninety rebuild steps")
     if len(words(re.sub(r"<[^>]+>", " ", lecture_reconstruction_page))) < 3600:
         fail("lecture reconstruction drills page too thin")
+    source_nuance_repairs_page = (SITE / "source-nuance-repairs.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Source Nuance Repairs", "Caption hazard:", "Safe claim:", "Repair move:", "Do not claim:", "Reviewer question:", "The Source Repair Test"]:
+        if phrase not in source_nuance_repairs_page:
+            fail(f"source nuance repairs page missing phrase: {phrase}")
+    if source_nuance_repairs_page.count("<article") < 15:
+        fail("source nuance repairs page needs fifteen cards")
+    if len(words(re.sub(r"<[^>]+>", " ", source_nuance_repairs_page))) < 2400:
+        fail("source nuance repairs page too thin")
     references_page = (SITE / "references.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["References", "Source Caveat", "Why it belongs", "Use carefully", "Lecture coverage", "Concept coverage"]:
         if phrase not in references_page:

@@ -37,6 +37,11 @@
       "status": "met"
     },
     {
+      "requirement": "Source-nuance repair layer",
+      "evidence": "The Source Nuance Repairs page gives 15 lecture-specific repair notes with caption hazard, safe claim, repair move, do-not-claim guard, reviewer question, and concept links, with 1734 repair words.",
+      "status": "met"
+    },
+    {
       "requirement": "Lecture-by-lecture reasoning spine",
       "evidence": "The Lecture Spine page gives 15 lecture entries that name the object, plain question, legal move, surviving fact, and later use.",
       "status": "met"
@@ -147,6 +152,8 @@
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
     "lecture_reconstruction_words": 6460,
+    "source_nuance_repairs": 15,
+    "source_nuance_repair_words": 1734,
     "lecture_reader_test_words": 2805,
     "lecture_answer_guide_words": 2657,
     "concept_essay_words": 7732,
@@ -182,6 +189,6 @@
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 86
+    "html_pages_before_audit_page": 87
   }
 }

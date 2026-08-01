@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 86.
+- HTML pages: 87.
 
 ## Main Reader Surfaces
 
@@ -46,6 +46,7 @@ This repo is the source and generated static site for a first-principles compani
 - `paper-source-reader.html` — seven course/paper/text sources explained as first-principles source families with reading questions and overread warnings.
 - `lecture-source-bridges.html` — 15 lecture-level bridges from concrete demonstrations to source families, with overread warnings and reader questions.
 - `lecture-reconstruction-drills.html` — 15 lecture rebuild drills with six steps each, self-checks, common failures, source checks, and concept links.
+- `source-nuance-repairs.html` — 15 lecture-specific repair notes for caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links.
 - `references.html` — course, primary-paper, and standard-text links with source caveats and lecture/concept coverage.
 - `quality-rubric.html` — six first-principles prose tests for object, legal move, protected fact, failure condition, course anchor, and everyday-language replacement.
 - `rubric-coverage.html` — maps the six prose tests across lectures, concepts, themes, subthemes, method families, and source/quality pages.
@@ -86,6 +87,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - source-faithfulness audit sections on every lecture page;
 - lecture-source-bridges structure, field depth, reference integrity, and concept-link integrity;
 - lecture-reconstruction-drills structure, six-step coverage, field depth, and concept-link integrity;
+- source-nuance-repairs structure, field depth, and concept-link integrity;
 - slow-walkthrough sections on every lecture page;
 - can-you-explain-it reader-test sections on every lecture page;
 - answer-guide sections on every lecture page;
@@ -125,6 +127,7 @@ As of the current generated audit:
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
 - 2,109 lecture source-faithfulness words.
+- 1,734 source-nuance repair words.
 - 4,206 lecture-source bridge words.
 - 6,460 lecture reconstruction words.
 - 7,732 concept essay words.
@@ -155,6 +158,7 @@ As of the current generated audit:
 - 1,850 term-translation words.
 - 7 paper/source reader cards.
 - 1,095 source-reader words.
+- 15 source-nuance repair notes.
 - 7 references.
 - 6 quality-rubric tests.
 - 6 rubric-coverage layer maps.
@@ -181,4 +185,4 @@ As of the current generated audit:
 
 ## Suggested Next Work
 
-The structure is now strong. The highest-value future work is a source-nuance pass against original lecture videos, especially any point where auto-captions may have garbled mathematical terminology.
+The structure is now strong and includes source-repair notes. The highest-value future work is still a human source pass against original lecture videos, especially any point where auto-captions may have garbled mathematical terminology.

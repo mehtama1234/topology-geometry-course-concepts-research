@@ -39,7 +39,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 86 generated HTML pages.
+- 87 generated HTML pages.
 - 15 lecture-spine entries.
 - 8 concept dependency paths.
 - 5 proof-move recipes.
@@ -53,6 +53,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 1,645 lecture source-lens words.
 - 1,532 lecture source-checkpoint words.
 - 2,109 lecture source-faithfulness words.
+- 1,734 source-nuance repair words.
 - 4,206 lecture-source bridge words.
 - 6,460 lecture reconstruction words.
 - 8 theorem-use contracts.
@@ -75,11 +76,12 @@ The reader should be able to understand the course without prior math vocabulary
 - 1,850 term-translation words.
 - 7 paper/source reader cards.
 - 1,095 source-reader words.
+- 15 source-nuance repair notes.
 - 7 references across course sources, primary papers, and standard texts.
 - 6 quality-rubric tests.
 - 6 rubric-coverage layer maps.
 - Four playground widgets.
-- Course synthesis, reader-checks, term-translator, theorem-use-contracts, concept-contrasts, paper-source-reader, lecture-source-bridges, lecture-reconstruction-drills, references, quality-rubric, and rubric-coverage pages.
+- Course synthesis, reader-checks, term-translator, theorem-use-contracts, concept-contrasts, paper-source-reader, lecture-source-bridges, lecture-reconstruction-drills, source-nuance-repairs, references, quality-rubric, and rubric-coverage pages.
 
 ## Required Gates
 
@@ -94,4 +96,4 @@ The validator must pass before claiming readiness.
 
 ## Remaining Human Risk
 
-The main remaining risk is not structure. It is source nuance: auto-captions can mishear mathematics, and one video lacks recovered captions. Future improvement should be a human-read pass against the original lectures, especially around lecture 9's missing middle caption.
+The main remaining risk is not structure. The repo now has lecture-specific source-repair notes, but auto-captions can still mishear mathematics and one video lacks recovered captions. Future improvement should be a human-read pass against the original lectures, especially around lecture 9's missing middle caption.
