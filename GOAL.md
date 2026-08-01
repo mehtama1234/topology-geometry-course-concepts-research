@@ -39,7 +39,7 @@ The reader should be able to understand the course without prior math vocabulary
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 91 generated HTML pages.
+- 92 generated HTML pages.
 - 15 lecture-spine entries.
 - 8 concept dependency paths.
 - 5 proof-move recipes.
@@ -84,12 +84,14 @@ The reader should be able to understand the course without prior math vocabulary
 - 1,850 term-translation words.
 - 7 paper/source reader cards.
 - 1,095 source-reader words.
+- 7 paper-family ledger rows.
+- 1,005 paper-family words.
 - 15 source-nuance repair notes.
 - 7 references across course sources, primary papers, and standard texts.
 - 6 quality-rubric tests.
 - 6 rubric-coverage layer maps.
 - Four playground widgets.
-- Course synthesis, transfer-lab, repair-clinic, oral-exam, change-ledger, reader-checks, term-translator, theorem-use-contracts, concept-contrasts, paper-source-reader, lecture-source-bridges, lecture-reconstruction-drills, source-nuance-repairs, references, quality-rubric, and rubric-coverage pages.
+- Course synthesis, transfer-lab, repair-clinic, oral-exam, change-ledger, reader-checks, term-translator, theorem-use-contracts, concept-contrasts, paper-source-reader, paper-family-ledger, lecture-source-bridges, lecture-reconstruction-drills, source-nuance-repairs, references, quality-rubric, and rubric-coverage pages.
 
 ## Required Gates
 

@@ -528,6 +528,23 @@ def main():
         if missing:
             fail(f"source reader {row.get('reference')} references unknown concept ids: {missing}")
 
+    paper_family_ledger_rows = data.get("paper_family_ledger_rows") or []
+    if len(paper_family_ledger_rows) != len(references):
+        fail("paper family ledger must cover every reference")
+    if {row.get("reference") for row in paper_family_ledger_rows} != reference_ids:
+        fail("paper family ledger references do not match reference ids")
+    for row in paper_family_ledger_rows:
+        if len(words(row.get("family"))) < 2:
+            fail(f"paper family ledger {row.get('reference')} family too thin")
+        for field in ["problem", "object", "allowed_reading", "protected_idea", "course_bridge", "overclaim", "reader_test"]:
+            if len(words(row.get(field))) < 14:
+                fail(f"paper family ledger {row.get('reference')} {field} too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"paper family ledger {row.get('reference')} needs concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"paper family ledger {row.get('reference')} unknown concepts: {missing}")
+
     lecture_source_bridges = data.get("lecture_source_bridges") or []
     if len(lecture_source_bridges) != 15:
         fail("lecture source bridges need exactly fifteen lecture bridges")
@@ -589,7 +606,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "change-ledger.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "change-ledger.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "paper-family-ledger.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -721,6 +738,14 @@ def main():
         fail("paper source reader needs seven source cards")
     if len(words(re.sub(r"<[^>]+>", " ", paper_source_reader))) < 1200:
         fail("paper source reader too thin")
+    paper_family_ledger_page = (SITE / "paper-family-ledger.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Paper Family Ledger", "Problem:", "Object:", "Allowed reading:", "Protected idea:", "Course bridge:", "Overclaim boundary:", "Reader test:", "The Paper-Family Test"]:
+        if phrase not in paper_family_ledger_page:
+            fail(f"paper family ledger missing phrase: {phrase}")
+    if paper_family_ledger_page.count("<article") < 7:
+        fail("paper family ledger needs seven source cards")
+    if len(words(re.sub(r"<[^>]+>", " ", paper_family_ledger_page))) < 1650:
+        fail("paper family ledger too thin")
     lecture_source_bridges_page = (SITE / "lecture-source-bridges.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Lecture Source Bridges", "Course demonstration:", "Mathematical bridge:", "How the source extends it:", "Overread warning:", "Reader question:", "The Transfer Test"]:
         if phrase not in lecture_source_bridges_page:

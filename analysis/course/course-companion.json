@@ -7525,6 +7525,120 @@
       ]
     }
   ],
+  "paper_family_ledger_rows": [
+    {
+      "reference": "tokieda-aims-course",
+      "family": "Course spine",
+      "problem": "This family answers the teaching problem: how can a learner reason about shape before formal language is available?",
+      "object": "The object is the course sequence itself, moving from physical demonstrations to drawings, surfaces, fields, and state spaces.",
+      "allowed_reading": "Use the lecture order as evidence for how ideas depend on one another, while keeping auto-caption wording separate from visible demonstrations.",
+      "protected_idea": "The protected idea is the course habit: name the object, name the legal move, protect the surviving fact, and only then name the formal result.",
+      "course_bridge": "It anchors every page because the companion should explain Tokieda's demonstrations before importing later terminology or background source language.",
+      "overclaim": "Do not treat cleaned transcripts as exact notes or claim a precise wording when the evidence is only a recovered auto-caption or visible course motion.",
+      "reader_test": "Can the reader point to a lecture moment, name the object being manipulated, and separate caption support from course-arc inference?",
+      "concepts": [
+        "deformation",
+        "invariant",
+        "configuration-space"
+      ]
+    },
+    {
+      "reference": "tib-av-portal-course",
+      "family": "Course provenance",
+      "problem": "This family answers the identity problem: how do we know the videos belong to a real course series rather than an isolated playlist?",
+      "object": "The object is the public course record: speaker, title, institutional context, series identity, and stable access path.",
+      "allowed_reading": "Use it to support provenance and access, not to add mathematical details that are not present in the listing.",
+      "protected_idea": "The protected idea is source identity. A companion needs to know what course it is explaining before it can make careful claims about that course.",
+      "course_bridge": "It strengthens the source trail while leaving mathematical explanation inside the lecture, concept, source-reader, and paper-family pages.",
+      "overclaim": "Do not infer theorem statements, proof order, or lecture-specific wording from a catalog record whose job is mainly identification.",
+      "reader_test": "Can the reader say what this source verifies and what kind of mathematical claim must still come from the videos or supporting references?",
+      "concepts": [
+        "topology-vs-geometry",
+        "deformation",
+        "manifold"
+      ]
+    },
+    {
+      "reference": "poincare-analysis-situs",
+      "family": "Whole-space invariants",
+      "problem": "This family answers the whole-space problem: what can be known when exact drawing, size, and position are not the evidence that matters?",
+      "object": "The object is a space or manifold treated as a whole, with features such as holes, cycles, and surviving accounts.",
+      "allowed_reading": "Use it as historical and conceptual background for invariants, not as a claim that one lecture cites one exact passage.",
+      "protected_idea": "The protected idea is that a space can carry evidence that survives continuous change and cannot be seen from one small local patch.",
+      "course_bridge": "It supports the companion's path from surface bookkeeping to Euler characteristic, duality, and later whole-surface constraints on fields.",
+      "overclaim": "Do not ask a beginner to start with the original paper's notation before the course object and protected fact have been explained plainly.",
+      "reader_test": "Can the reader name the whole-space fact being protected and the lecture conclusion that depends on that protected fact?",
+      "concepts": [
+        "manifold",
+        "invariant",
+        "euler-characteristic"
+      ]
+    },
+    {
+      "reference": "hopf-vektorfelder",
+      "family": "Vector-field index",
+      "problem": "This family answers the defect problem: how can local failures of an arrow field be forced by the shape carrying the arrows?",
+      "object": "The object is a vector field on a surface, together with all isolated defects and the small loops used to read their turning.",
+      "allowed_reading": "Read it through the course's arrow pictures first: walk around a defect, count local turning, then add all defects on the same surface.",
+      "protected_idea": "The protected idea is the signed total of local indices, which is constrained by the Euler characteristic under the theorem's assumptions.",
+      "course_bridge": "It supports the transition from local equilibria to Poincare-Hopf, where the whole surface controls the total defect account.",
+      "overclaim": "Do not reduce the family to a slogan about hair on a sphere or pretend it computes every motion path of a system.",
+      "reader_test": "Can the reader name the field, list the defects being counted, and say what surface number controls the total?",
+      "concepts": [
+        "vector-field-index",
+        "equilibrium",
+        "poincare-hopf"
+      ]
+    },
+    {
+      "reference": "hatcher-algebraic-topology",
+      "family": "Algebraic topology background",
+      "problem": "This family answers the machinery problem: how can routes, gluing rules, holes, and deformations become repeatable tools?",
+      "object": "The object is a space with maps, quotient constructions, product constructions, cells, loops, and deformation relations.",
+      "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence.",
+      "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures.",
+      "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages.",
+      "overclaim": "Do not import the full abstraction into beginner-facing prose before the concrete route, gluing rule, or count has been named.",
+      "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, and what conclusion follows?",
+      "concepts": [
+        "quotient-space",
+        "product-space",
+        "invariant"
+      ]
+    },
+    {
+      "reference": "milnor-differentiable-viewpoint",
+      "family": "Differentiable topology bridge",
+      "problem": "This family answers the bridge problem: how do smooth local conditions create trustworthy whole-space topological conclusions?",
+      "object": "The object is a smooth manifold with maps, boundaries, regular values, fixed-point questions, degree-like counts, or vector fields.",
+      "allowed_reading": "Use it after translating its formal words into course jobs: prepare clean cases, assign signs, compare maps, and add local evidence.",
+      "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion.",
+      "course_bridge": "It supports generic position, fixed-point reasoning, boundary behavior, and vector-field index without forcing the companion to assume advanced prerequisites.",
+      "overclaim": "Do not treat the reference as required background for a lecture page; it is formal support after the everyday explanation has done its work.",
+      "reader_test": "Can the reader identify the local smooth condition and say which global count or existence claim it makes trustworthy?",
+      "concepts": [
+        "generic-position",
+        "fixed-points",
+        "vector-field-index"
+      ]
+    },
+    {
+      "reference": "guillemin-pollack-differential-topology",
+      "family": "Clean intersections and signs",
+      "problem": "This family answers the clean-meeting problem: how can intersections and signs be prepared carefully enough to count?",
+      "object": "The object is a map, submanifold, or pair of objects whose meetings need ordinary position and orientation before signs are meaningful.",
+      "allowed_reading": "Use it to support the course habit of moving fragile coincidences aside before trusting a signed count.",
+      "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges.",
+      "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic.",
+      "overclaim": "Do not let the formal setting erase the beginner's picture; the page should still begin with what moved and why the count survived.",
+      "reader_test": "Can the reader name the coincidence removed, the sign rule made available, and the legal move that preserves the signed total?",
+      "concepts": [
+        "generic-position",
+        "intersection-number",
+        "boundary-orientation"
+      ]
+    }
+  ],
   "references": [
     {
       "id": "tokieda-aims-course",
@@ -8028,6 +8142,11 @@
         "requirement": "First-principles paper and source reading",
         "evidence": "The Paper Source Reader page explains all 7 sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with 1095 source-reader words.",
         "status": "met"
+      },
+      {
+        "requirement": "Paper family ledger",
+        "evidence": "The Paper Family Ledger page gives 7 paper/source family contracts with problem, object, allowed reading, protected idea, course bridge, overclaim boundary, reader test, and concept links, with 1005 paper-family words.",
+        "status": "met"
       }
     ],
     "metrics": {
@@ -8090,12 +8209,14 @@
       "term_translation_words": 1850,
       "source_readers": 7,
       "source_reader_words": 1095,
+      "paper_family_ledger_rows": 7,
+      "paper_family_ledger_words": 1005,
       "references": 7,
       "quality_rubric_items": 6,
       "rubric_coverage_layers": 6,
       "concept_appearances_min": 2,
       "concept_appearances_max": 20,
-      "html_pages_before_audit_page": 91
+      "html_pages_before_audit_page": 92
     }
   }
 }

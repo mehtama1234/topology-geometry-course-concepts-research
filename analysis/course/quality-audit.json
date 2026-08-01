@@ -150,6 +150,11 @@
       "requirement": "First-principles paper and source reading",
       "evidence": "The Paper Source Reader page explains all 7 sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with 1095 source-reader words.",
       "status": "met"
+    },
+    {
+      "requirement": "Paper family ledger",
+      "evidence": "The Paper Family Ledger page gives 7 paper/source family contracts with problem, object, allowed reading, protected idea, course bridge, overclaim boundary, reader test, and concept links, with 1005 paper-family words.",
+      "status": "met"
     }
   ],
   "metrics": {
@@ -212,11 +217,13 @@
     "term_translation_words": 1850,
     "source_readers": 7,
     "source_reader_words": 1095,
+    "paper_family_ledger_rows": 7,
+    "paper_family_ledger_words": 1005,
     "references": 7,
     "quality_rubric_items": 6,
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,
-    "html_pages_before_audit_page": 91
+    "html_pages_before_audit_page": 92
   }
 }

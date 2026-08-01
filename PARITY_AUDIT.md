@@ -30,9 +30,9 @@ The local repo now meets the structural and validation standard for a robotics-q
 | Interactive learning | `site/math-playground.html` has four canvas widgets: Euler characteristic, signed cancellation, fixed points, vector-field index | Met |
 | Reader failure checks | `site/reader-checks.html` has eleven checks for common reasoning errors | Met |
 | Term translator | `site/term-translator.html` translates 16 formal course words into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links | Met |
-| References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats; `site/paper-source-reader.html` explains each source family from first principles | Met |
+| References and paper trail | `site/references.html` gives seven course, primary-paper, and standard-text links with lecture coverage, concept coverage, use notes, and source caveats; `site/paper-source-reader.html` explains each source family from first principles; `site/paper-family-ledger.html` states the paper-family contract for each source | Met |
 | Quality/source audits | `site/quality-rubric.html`, `site/rubric-coverage.html`, `site/quality-audit.html`, `site/source-audit.html`, `analysis/audits/*.md`; quality rubric includes six first-principles prose tests, rubric coverage maps those tests across six layers, and source audit includes 15 caption-nuance cards with source-checkpoint questions and source-faithfulness fields | Met |
-| Validation | `python3 scripts/validate_all.py` passes with 91 HTML pages | Met |
+| Validation | `python3 scripts/validate_all.py` passes with 92 HTML pages | Met |
 | Handoff | `README.md`, `GOAL.md`, `HANDOFF.md`, and this audit describe state, commands, risks, and next work | Met |
 
 ## Current Metrics
@@ -45,7 +45,7 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 6 themes.
 - 10 subthemes.
 - 5 method families.
-- 91 generated HTML pages.
+- 92 generated HTML pages.
 - 45 lecture-grounded examples.
 - 15 lecture-spine entries.
 - 5,333 lecture essay words.
@@ -96,6 +96,8 @@ The local repo now meets the structural and validation standard for a robotics-q
 - 1,850 term-translation words.
 - 7 paper/source reader cards.
 - 1,095 source-reader words.
+- 7 paper-family ledger rows.
+- 1,005 paper-family words.
 - 15 source-nuance repair notes.
 - 7 references.
 - 6 quality-rubric tests.
@@ -127,6 +129,7 @@ The validator checks:
 - reader checks structure and length;
 - term translator required term set, field depth, page structure, and concept-link integrity;
 - paper source reader source coverage, field depth, page structure, and concept-link integrity;
+- paper family ledger source coverage, field depth, page structure, reference integrity, and concept-link integrity;
 - references structure, reference page cards, and source-caveat wording;
 - quality-rubric structure and page content;
 - rubric-coverage structure and page content;

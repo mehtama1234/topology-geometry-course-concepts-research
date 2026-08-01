@@ -23,7 +23,7 @@ This repo is the source and generated static site for a first-principles compani
 - Lecture groups: 15.
 - Captioned videos: 34.
 - Missing caption id: `nx1XOlezuvk`.
-- HTML pages: 91.
+- HTML pages: 92.
 
 ## Main Reader Surfaces
 
@@ -48,6 +48,7 @@ This repo is the source and generated static site for a first-principles compani
 - `reader-checks.html` — eleven common reasoning failure checks.
 - `term-translator.html` — 16 formal course words translated into everyday sentences, argument jobs, non-definition warnings, failure tests, reader questions, and concept links.
 - `paper-source-reader.html` — seven course/paper/text sources explained as first-principles source families with reading questions and overread warnings.
+- `paper-family-ledger.html` — seven paper/source family contracts that name problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test.
 - `lecture-source-bridges.html` — 15 lecture-level bridges from concrete demonstrations to source families, with overread warnings and reader questions.
 - `lecture-reconstruction-drills.html` — 15 lecture rebuild drills with six steps each, self-checks, common failures, source checks, and concept links.
 - `source-nuance-repairs.html` — 15 lecture-specific repair notes for caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links.
@@ -114,6 +115,7 @@ The build regenerates JSON analysis files, markdown audits, CSS, JS, and all HTM
 - reader checks structure;
 - term-translator structure, field depth, required term set, and concept-link integrity;
 - paper-source-reader structure, field depth, full reference coverage, and concept-link integrity;
+- paper-family-ledger structure, field depth, full reference coverage, reference integrity, and concept-link integrity;
 - references layer structure and page content;
 - quality-rubric structure and page content;
 - rubric-coverage structure and page content;
@@ -174,6 +176,8 @@ As of the current generated audit:
 - 1,850 term-translation words.
 - 7 paper/source reader cards.
 - 1,095 source-reader words.
+- 7 paper-family ledger rows.
+- 1,005 paper-family words.
 - 15 source-nuance repair notes.
 - 7 references.
 - 6 quality-rubric tests.

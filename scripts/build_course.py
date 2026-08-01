@@ -226,6 +226,94 @@ SOURCE_READERS = [
 ]
 
 
+PAPER_FAMILY_LEDGER_ROWS = [
+    {
+        "reference": "tokieda-aims-course",
+        "family": "Course spine",
+        "problem": "This family answers the teaching problem: how can a learner reason about shape before formal language is available?",
+        "object": "The object is the course sequence itself, moving from physical demonstrations to drawings, surfaces, fields, and state spaces.",
+        "allowed_reading": "Use the lecture order as evidence for how ideas depend on one another, while keeping auto-caption wording separate from visible demonstrations.",
+        "protected_idea": "The protected idea is the course habit: name the object, name the legal move, protect the surviving fact, and only then name the formal result.",
+        "course_bridge": "It anchors every page because the companion should explain Tokieda's demonstrations before importing later terminology or background source language.",
+        "overclaim": "Do not treat cleaned transcripts as exact notes or claim a precise wording when the evidence is only a recovered auto-caption or visible course motion.",
+        "reader_test": "Can the reader point to a lecture moment, name the object being manipulated, and separate caption support from course-arc inference?",
+        "concepts": ["deformation", "invariant", "configuration-space"],
+    },
+    {
+        "reference": "tib-av-portal-course",
+        "family": "Course provenance",
+        "problem": "This family answers the identity problem: how do we know the videos belong to a real course series rather than an isolated playlist?",
+        "object": "The object is the public course record: speaker, title, institutional context, series identity, and stable access path.",
+        "allowed_reading": "Use it to support provenance and access, not to add mathematical details that are not present in the listing.",
+        "protected_idea": "The protected idea is source identity. A companion needs to know what course it is explaining before it can make careful claims about that course.",
+        "course_bridge": "It strengthens the source trail while leaving mathematical explanation inside the lecture, concept, source-reader, and paper-family pages.",
+        "overclaim": "Do not infer theorem statements, proof order, or lecture-specific wording from a catalog record whose job is mainly identification.",
+        "reader_test": "Can the reader say what this source verifies and what kind of mathematical claim must still come from the videos or supporting references?",
+        "concepts": ["topology-vs-geometry", "deformation", "manifold"],
+    },
+    {
+        "reference": "poincare-analysis-situs",
+        "family": "Whole-space invariants",
+        "problem": "This family answers the whole-space problem: what can be known when exact drawing, size, and position are not the evidence that matters?",
+        "object": "The object is a space or manifold treated as a whole, with features such as holes, cycles, and surviving accounts.",
+        "allowed_reading": "Use it as historical and conceptual background for invariants, not as a claim that one lecture cites one exact passage.",
+        "protected_idea": "The protected idea is that a space can carry evidence that survives continuous change and cannot be seen from one small local patch.",
+        "course_bridge": "It supports the companion's path from surface bookkeeping to Euler characteristic, duality, and later whole-surface constraints on fields.",
+        "overclaim": "Do not ask a beginner to start with the original paper's notation before the course object and protected fact have been explained plainly.",
+        "reader_test": "Can the reader name the whole-space fact being protected and the lecture conclusion that depends on that protected fact?",
+        "concepts": ["manifold", "invariant", "euler-characteristic"],
+    },
+    {
+        "reference": "hopf-vektorfelder",
+        "family": "Vector-field index",
+        "problem": "This family answers the defect problem: how can local failures of an arrow field be forced by the shape carrying the arrows?",
+        "object": "The object is a vector field on a surface, together with all isolated defects and the small loops used to read their turning.",
+        "allowed_reading": "Read it through the course's arrow pictures first: walk around a defect, count local turning, then add all defects on the same surface.",
+        "protected_idea": "The protected idea is the signed total of local indices, which is constrained by the Euler characteristic under the theorem's assumptions.",
+        "course_bridge": "It supports the transition from local equilibria to Poincare-Hopf, where the whole surface controls the total defect account.",
+        "overclaim": "Do not reduce the family to a slogan about hair on a sphere or pretend it computes every motion path of a system.",
+        "reader_test": "Can the reader name the field, list the defects being counted, and say what surface number controls the total?",
+        "concepts": ["vector-field-index", "equilibrium", "poincare-hopf"],
+    },
+    {
+        "reference": "hatcher-algebraic-topology",
+        "family": "Algebraic topology background",
+        "problem": "This family answers the machinery problem: how can routes, gluing rules, holes, and deformations become repeatable tools?",
+        "object": "The object is a space with maps, quotient constructions, product constructions, cells, loops, and deformation relations.",
+        "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence.",
+        "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures.",
+        "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages.",
+        "overclaim": "Do not import the full abstraction into beginner-facing prose before the concrete route, gluing rule, or count has been named.",
+        "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, and what conclusion follows?",
+        "concepts": ["quotient-space", "product-space", "invariant"],
+    },
+    {
+        "reference": "milnor-differentiable-viewpoint",
+        "family": "Differentiable topology bridge",
+        "problem": "This family answers the bridge problem: how do smooth local conditions create trustworthy whole-space topological conclusions?",
+        "object": "The object is a smooth manifold with maps, boundaries, regular values, fixed-point questions, degree-like counts, or vector fields.",
+        "allowed_reading": "Use it after translating its formal words into course jobs: prepare clean cases, assign signs, compare maps, and add local evidence.",
+        "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion.",
+        "course_bridge": "It supports generic position, fixed-point reasoning, boundary behavior, and vector-field index without forcing the companion to assume advanced prerequisites.",
+        "overclaim": "Do not treat the reference as required background for a lecture page; it is formal support after the everyday explanation has done its work.",
+        "reader_test": "Can the reader identify the local smooth condition and say which global count or existence claim it makes trustworthy?",
+        "concepts": ["generic-position", "fixed-points", "vector-field-index"],
+    },
+    {
+        "reference": "guillemin-pollack-differential-topology",
+        "family": "Clean intersections and signs",
+        "problem": "This family answers the clean-meeting problem: how can intersections and signs be prepared carefully enough to count?",
+        "object": "The object is a map, submanifold, or pair of objects whose meetings need ordinary position and orientation before signs are meaningful.",
+        "allowed_reading": "Use it to support the course habit of moving fragile coincidences aside before trusting a signed count.",
+        "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges.",
+        "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic.",
+        "overclaim": "Do not let the formal setting erase the beginner's picture; the page should still begin with what moved and why the count survived.",
+        "reader_test": "Can the reader name the coincidence removed, the sign rule made available, and the legal move that preserves the signed total?",
+        "concepts": ["generic-position", "intersection-number", "boundary-orientation"],
+    },
+]
+
+
 TERM_TRANSLATIONS = [
     {
         "term": "Topology",
@@ -3587,6 +3675,7 @@ def page(title, body, current=""):
         ("reader-checks.html", "Reader Checks"),
         ("term-translator.html", "Term Translator"),
         ("paper-source-reader.html", "Paper Source Reader"),
+        ("paper-family-ledger.html", "Paper Family Ledger"),
         ("lecture-source-bridges.html", "Lecture Source Bridges"),
         ("lecture-reconstruction-drills.html", "Reconstruction Drills"),
         ("source-nuance-repairs.html", "Source Nuance Repairs"),
@@ -3920,6 +4009,7 @@ def build_quality_audit(data):
     family_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["answer_guide"][field])) for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]) for f in data["families"])
     term_translation_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["everyday_sentence", "job_in_argument", "not_a_definition", "failure_if_misread", "reader_question"]) for row in data["term_translations"])
     source_reader_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["reader_problem", "object_to_watch", "first_principles_bridge", "how_to_read", "do_not_overread", "reader_question"]) for row in data["source_readers"])
+    paper_family_ledger_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["problem", "object", "allowed_reading", "protected_idea", "course_bridge", "overclaim", "reader_test"]) for row in data["paper_family_ledger_rows"])
     concept_contrast_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["confusion", "left_job", "right_job", "bridge", "failure_test", "reader_question"]) for row in data["concept_contrasts"])
     source_nuance_repair_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["caption_hazard", "safe_claim", "repair_move", "do_not_claim", "reviewer_question"]) for row in data["source_nuance_repairs"])
     transfer_lab_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["situation", "object", "allowed_move", "protected_fact", "course_bridge", "wrong_transfer", "reader_task"]) for row in data["transfer_lab_cases"])
@@ -4077,6 +4167,11 @@ def build_quality_audit(data):
             "evidence": f"The Paper Source Reader page explains all {len(data['source_readers'])} sources by problem, object to watch, first-principles bridge, reading method, overread warning, reader question, family, and concept links, with {source_reader_words} source-reader words.",
             "status": "met",
         },
+        {
+            "requirement": "Paper family ledger",
+            "evidence": f"The Paper Family Ledger page gives {len(data['paper_family_ledger_rows'])} paper/source family contracts with problem, object, allowed reading, protected idea, course bridge, overclaim boundary, reader test, and concept links, with {paper_family_ledger_words} paper-family words.",
+            "status": "met",
+        },
     ]
     return {
         "summary": "The companion now satisfies the requested depth shape across the main reader-facing layers. The only explicit source caveat is the one playlist item whose captions are not exposed by yt-dlp.",
@@ -4139,6 +4234,8 @@ def build_quality_audit(data):
             "term_translation_words": term_translation_words,
             "source_readers": len(data["source_readers"]),
             "source_reader_words": source_reader_words,
+            "paper_family_ledger_rows": len(data["paper_family_ledger_rows"]),
+            "paper_family_ledger_words": paper_family_ledger_words,
             "references": len(data["references"]),
             "quality_rubric_items": len(data["quality_rubric"]),
             "rubric_coverage_layers": len(data["rubric_coverage"]),
@@ -4218,6 +4315,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 {card('Reader Checks', 'Eleven checks for the places readers most often lose the mathematics: illegal motion, weak counts, local-only reasoning, unsupported signs, careless models, and formulas read without their protected account.', 'reader-checks.html', 'Checks')}
 {card('Term Translator', 'Sixteen formal course words translated into the job they perform in an argument, with failure tests and concept links for each one.', 'term-translator.html', 'Terms')}
 {card('Paper Source Reader', 'A first-principles guide to the course source, primary papers, and standard references: what problem each source family answers and how to read it without overclaiming.', 'paper-source-reader.html', 'Sources')}
+{card('Paper Family Ledger', 'Seven paper and source families are explained by problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test.', 'paper-family-ledger.html', 'Sources')}
 {card('Lecture Source Bridges', 'Fifteen lecture-level bridges connect each demonstration to the source family it prepares, with the exact overread warning a reader should keep in view.', 'lecture-source-bridges.html', 'Bridges')}
 {card('Reconstruction Drills', 'Fifteen lecture drills make the reader rebuild the idea from a concrete example through object, legal move, surviving fact, later use, and source check.', 'lecture-reconstruction-drills.html', 'Practice')}
 {card('Source Nuance Repairs', 'Fifteen lecture-specific repair notes say what auto-captions can distort, what claim remains safe, and how to weaken or repair overstrong wording.', 'source-nuance-repairs.html', 'Source')}
@@ -4679,6 +4777,47 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 """
     (SITE / "paper-source-reader.html").write_text(page("Paper Source Reader", source_reader_body, "Paper Source Reader"), encoding="utf-8")
 
+    paper_family_cards = []
+    for row in data["paper_family_ledger_rows"]:
+        ref = refs_by_id[row["reference"]]
+        paper_family_cards.append(
+            f"""<article class="card">
+  <div class="meta">{esc(row['family'])}</div>
+  <h3>{esc(ref['title'])}</h3>
+  <p><b>Problem:</b> {esc(row['problem'])}</p>
+  <p><b>Object:</b> {esc(row['object'])}</p>
+  <p><b>Allowed reading:</b> {esc(row['allowed_reading'])}</p>
+  <p><b>Protected idea:</b> {esc(row['protected_idea'])}</p>
+  <p><b>Course bridge:</b> {esc(row['course_bridge'])}</p>
+  <p><b>Overclaim boundary:</b> {esc(row['overclaim'])}</p>
+  <p><b>Reader test:</b> {esc(row['reader_test'])}</p>
+  <p>{concept_pills(row['concepts'], data['concepts'])}</p>
+  <a class="arrow" href="{esc(ref['url'])}">Open source</a>
+</article>"""
+        )
+    paper_family_body = f"""
+<h1>Paper Family Ledger</h1>
+<p class="lead">This page treats every source as a paper family with a job. A source is useful only when the reader can say what problem it answers, what object it studies, what idea it protects, and what course move it clarifies.</p>
+<section class="lecture">
+  <h2>How To Use The Ledger</h2>
+  <p>Read this page after the paper source reader. The source reader explains how to approach each source. This ledger asks for the stricter mathematical contract: problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test.</p>
+  <p>The order matters. Do not begin with the title or the author's authority. Begin with the problem the family solves. Then name the object it studies and the course move it supports. Only after those are clear should the formal source name enter the explanation.</p>
+</section>
+<div class="grid two">{''.join(paper_family_cards)}</div>
+<section class="lecture">
+  <h2>The Paper-Family Test</h2>
+  <p>A paper family is doing work when it makes a course page more accountable. It may support a historical line, a formal theorem family, a modeling habit, a sign convention, or a source caveat. It is not doing work when it only makes the page look more scholarly.</p>
+  <p>For each source, the reader should be able to write two plain sentences. First: this family studies this kind of object because this kind of problem needs a stable account. Second: the course uses that account here, but the source does not prove this stronger claim. If those sentences cannot be written, the citation is not ready.</p>
+</section>
+<section class="lecture">
+  <h2>Repairing A Citation</h2>
+  <p>When a citation feels thin, do not add more source names. Add the missing contract. Say which course page needs help, what mathematical object the source family studies, and which protected idea crosses from the source family back into the course. Then say the limit of the claim.</p>
+  <p>A repaired citation should let a beginner learn something before opening the formal paper. The beginner should know whether the source helps with whole-space invariants, vector-field defects, clean intersections, formal machinery, course identity, or source provenance. If the source family cannot be named in everyday language, the page is still leaning on authority instead of explanation.</p>
+  <p>Give no credit for a citation that only says a topic is related. Give credit when it names the exact course claim the source can support and the stronger claim it cannot support.</p>
+</section>
+"""
+    (SITE / "paper-family-ledger.html").write_text(page("Paper Family Ledger", paper_family_body, "Paper Family Ledger"), encoding="utf-8")
+
     lecture_bridge_cards = []
     for row in data["lecture_source_bridges"]:
         ref_links = " ".join(
@@ -4975,7 +5114,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         for item in data["quality_audit"]["requirements"]
     )
     qa_metrics = data["quality_audit"]["metrics"]
-    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['transfer_lab_cases']} transfer-lab cases, {qa_metrics['repair_clinic_cases']} repair-clinic cases, {qa_metrics['oral_exam_prompts']} oral-exam prompts, {qa_metrics['change_ledger_rows']} change-ledger rows, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['concept_contrasts']} concept contrast pairs, {qa_metrics['source_nuance_repairs']} source nuance repair notes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['source_nuance_repair_words']} source-nuance repair words, {qa_metrics['transfer_lab_words']} transfer-lab words, {qa_metrics['repair_clinic_words']} repair-clinic words, {qa_metrics['oral_exam_words']} oral-exam words, {qa_metrics['change_ledger_words']} change-ledger words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['concept_contrast_words']} concept-contrast words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
+    qa_body = f"""<h1>Quality Audit</h1><p class="lead">{esc(data['quality_audit']['summary'])}</p><section class="panel"><h2>Current Metrics</h2><p>{qa_metrics['videos']} videos, {qa_metrics['lectures']} lectures, {qa_metrics['captioned_videos']} captioned videos, {len(qa_metrics['missing_captions'])} missing caption, {qa_metrics['lecture_examples']} lecture examples, {qa_metrics['lecture_spine_entries']} lecture-spine entries, {qa_metrics['playground_widgets']} playground widgets, {qa_metrics['synthesis_sections']} synthesis sections, {qa_metrics['dependency_paths']} dependency paths, {qa_metrics['transfer_lab_cases']} transfer-lab cases, {qa_metrics['repair_clinic_cases']} repair-clinic cases, {qa_metrics['oral_exam_prompts']} oral-exam prompts, {qa_metrics['change_ledger_rows']} change-ledger rows, {qa_metrics['paper_family_ledger_rows']} paper-family rows, {qa_metrics['proof_moves']} proof-move recipes, {qa_metrics['concept_contrasts']} concept contrast pairs, {qa_metrics['source_nuance_repairs']} source nuance repair notes, {qa_metrics['reader_checks']} reader checks, {qa_metrics['term_translations']} term translations, {qa_metrics['term_translation_words']} term-translation words, {qa_metrics['references']} references, {qa_metrics['quality_rubric_items']} quality-rubric tests, {qa_metrics['rubric_coverage_layers']} rubric-coverage layers, {qa_metrics['lecture_essay_words']} lecture essay words, {qa_metrics['lecture_deepening_words']} lecture deepening words, {qa_metrics['lecture_walkthrough_words']} lecture walkthrough words, {qa_metrics['lecture_reader_test_words']} lecture reader-test words, {qa_metrics['lecture_answer_guide_words']} lecture answer-guide words, {qa_metrics['lecture_caption_nuance_words']} caption-nuance words, {qa_metrics['lecture_source_lens_words']} source-lens words, {qa_metrics['lecture_source_checkpoint_words']} source-checkpoint words, {qa_metrics['lecture_source_faithfulness_words']} source-faithfulness words, {qa_metrics['source_nuance_repair_words']} source-nuance repair words, {qa_metrics['transfer_lab_words']} transfer-lab words, {qa_metrics['repair_clinic_words']} repair-clinic words, {qa_metrics['oral_exam_words']} oral-exam words, {qa_metrics['change_ledger_words']} change-ledger words, {qa_metrics['paper_family_ledger_words']} paper-family words, {qa_metrics['concept_essay_words']} concept essay words, {qa_metrics['concept_workup_words']} concept workup words, {qa_metrics['concept_anchor_words']} concept anchor words, {qa_metrics['concept_self_check_words']} concept self-check words, {qa_metrics['concept_contrast_words']} concept-contrast words, {qa_metrics['theme_essay_words']} theme essay words, {qa_metrics['theme_lens_words']} theme lens words, {qa_metrics['theme_answer_guide_words']} theme answer-guide words, {qa_metrics['subtheme_essay_words']} subtheme essay words, {qa_metrics['subtheme_routine_words']} subtheme routine words, {qa_metrics['subtheme_bridge_words']} subtheme bridge words, {qa_metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {qa_metrics['family_essay_words']} method-family essay words, {qa_metrics['family_contract_words']} method-contract words, {qa_metrics['family_playbook_words']} method-playbook words, {qa_metrics['family_answer_guide_words']} method-family answer-guide words, concept appearance coverage from {qa_metrics['concept_appearances_min']} to {qa_metrics['concept_appearances_max']} examples per concept.</p></section><h2>Requirement Evidence</h2><div class="grid two">{qa_rows}</div>"""
     (SITE / "quality-audit.html").write_text(page("Quality Audit", qa_body, "Quality Audit"), encoding="utf-8")
 
     nuance_cards = "".join(
@@ -5161,6 +5300,7 @@ def main():
         "concept_contrasts": CONCEPT_CONTRASTS,
         "term_translations": TERM_TRANSLATIONS,
         "source_readers": SOURCE_READERS,
+        "paper_family_ledger_rows": PAPER_FAMILY_LEDGER_ROWS,
         "references": REFERENCES,
         "quality_rubric": QUALITY_RUBRIC,
         "rubric_coverage": RUBRIC_COVERAGE,
@@ -5200,6 +5340,7 @@ def main():
     write_json(ANALYSIS / "concept-contrasts.json", CONCEPT_CONTRASTS)
     write_json(ANALYSIS / "term-translations.json", TERM_TRANSLATIONS)
     write_json(ANALYSIS / "source-readers.json", SOURCE_READERS)
+    write_json(ANALYSIS / "paper-family-ledger.json", PAPER_FAMILY_LEDGER_ROWS)
     write_json(ANALYSIS / "references.json", REFERENCES)
     write_json(ANALYSIS / "quality-rubric.json", QUALITY_RUBRIC)
     write_json(ANALYSIS / "rubric-coverage.json", RUBRIC_COVERAGE)
@@ -5261,12 +5402,13 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - source-nuance-repairs.html with {metrics['source_nuance_repairs']} lecture-specific source repair notes that state caption hazards, safe claims, repair moves, do-not-claim guards, and reviewer questions
 - reader-checks.html with eleven concrete checks for common reasoning failures
 - term-translator.html with {metrics['term_translations']} formal course words translated into everyday sentences, argument jobs, failure tests, reader questions, and concept links
+- paper-family-ledger.html with {metrics['paper_family_ledger_rows']} paper/source family contracts and {metrics['paper_family_ledger_words']} paper-family words
 - references.html with {metrics['references']} course, primary-paper, and standard-text links, each with source caveats and lecture/concept coverage
 - quality-rubric.html with {metrics['quality_rubric_items']} prose tests for object, legal move, protected fact, failure condition, course anchor, and plain-language replacement
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every source-nuance repair field to clear 14 words, every transfer-lab field to clear 14 words, every repair-clinic field to clear 14 words, every oral-exam field to clear 14 words, every change-ledger field to clear 14 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 25 words, every lecture walkthrough field to clear 35 words, every lecture reader-test field to clear 35 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every source-nuance repair field to clear 14 words, every transfer-lab field to clear 14 words, every repair-clinic field to clear 14 words, every oral-exam field to clear 14 words, every change-ledger field to clear 14 words, every paper-family field to clear 14 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
