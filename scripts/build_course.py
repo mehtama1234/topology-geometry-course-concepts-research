@@ -4280,7 +4280,7 @@ def build_lecture_reader_test(lecture, spine_row):
     ])
     move_close = varied((number, "reader-move-close"), [
         "Name one nearby move that would quietly change the problem instead of solving it.",
-        "Also name a tempting shortcut that would break the rulebook.",
+        "Also name the shortcut that would make the original problem disappear.",
         "Say which nearby simplification would no longer answer the original question.",
         "State the forbidden move that would make the conclusion untrustworthy.",
     ])
@@ -4987,13 +4987,13 @@ def build_concept_self_check(concept):
         "If the same fact would not survive the legal change, the concept has only been named, not used.",
     ])
     failure_close = varied((cid, "failure-close"), [
-        f"The failure case is part of {title}: it tells the reader which changed assumption destroys the claim.",
-        "The limit should be concrete enough that the reader can recognize a bad use in a new example.",
+        f"The failure case is part of {title}: it identifies the changed assumption that destroys the claim.",
+        "The limit should be concrete enough to expose the same false move in a new example.",
         "Naming the break point keeps the concept tied to its rulebook instead of letting it make claims beyond its conditions.",
         "The warning belongs inside the explanation because changing the rule often changes the answer.",
         "The explanation should name both where the idea works and which tempting nearby use would be false.",
-        f"For {title}, the failure mode is not a side note; it is the fastest way to see which detail the concept protects.",
-        "The break point should make the hypothesis feel necessary rather than ceremonial.",
+        f"For {title}, the failure mode names the detail that carries the concept's force.",
+        "The break point should make the hypothesis feel like working machinery, not ceremony.",
         "If the failure condition is missing, the explanation may sound clear while quietly claiming too much.",
     ])
     object_prompt = varied((cid, "object-check-prompt"), [
@@ -5040,16 +5040,16 @@ def build_concept_self_check(concept):
     ])
     failure_prompt = varied((cid, "failure-check-prompt"), [
         f"Say where the idea fails before trusting the conclusion: {failure} Then name the shortcut it prevents: {beginner_trap} {failure_close}",
-        f"Test the edge of the claim: {failure} The trap to avoid is this: {beginner_trap} {failure_close}",
+        f"Test the edge of the claim: {failure} The false move is this: {beginner_trap} {failure_close}",
         f"Say which changed condition breaks the argument: {failure} Then use the failure mode as a condition check: {beginner_trap} {failure_close}",
-        f"Close by naming the bad use: {failure} The common first mistake is: {beginner_trap} {failure_close}",
-        f"State the condition that would make the claim stop working: {failure} Then connect that break to the tempting shortcut: {beginner_trap} {failure_close}",
+        f"Close by naming the bad use: {failure} The false reading is: {beginner_trap} {failure_close}",
+        f"State the condition that would make the claim stop working: {failure} Then connect that break to the false shortcut: {beginner_trap} {failure_close}",
         f"Give the reader a failure scene: {failure} The failure mode explains why that scene is tempting: {beginner_trap} {failure_close}",
-        f"Name the nearest false use of the idea: {failure} Then state the trap it exposes: {beginner_trap} {failure_close}",
+        f"Name the nearest false use of the idea: {failure} Then state the shortcut it exposes: {beginner_trap} {failure_close}",
         f"Check the boundary of the concept: {failure} The failure mode marks the shortcut that crosses that boundary: {beginner_trap} {failure_close}",
-        f"Say what assumption cannot be dropped: {failure} Then show how the tempting shortcut drops or blurs it: {beginner_trap} {failure_close}",
-        f"Describe the bad version of the argument: {failure} The trap names why that bad version can sound plausible: {beginner_trap} {failure_close}",
-        f"Make the break point visible: {failure} Then use the trap to explain what detail the reader must protect: {beginner_trap} {failure_close}",
+        f"Say what assumption cannot be dropped: {failure} Then show how the false shortcut drops or blurs it: {beginner_trap} {failure_close}",
+        f"Describe the false version of the argument: {failure} Then say why that version can sound plausible: {beginner_trap} {failure_close}",
+        f"Make the break point visible: {failure} Then state the detail that must be protected: {beginner_trap} {failure_close}",
         f"End with the limit of the claim: {failure} The failure mode shows what happens when that limit is ignored: {beginner_trap} {failure_close}",
     ])
     object_intro = varied((cid, "concept-object-intro"), [
@@ -5071,7 +5071,7 @@ def build_concept_self_check(concept):
         f"{title} carries force only through the fact that survives.",
     ])
     failure_intro = varied((cid, "concept-failure-intro"), [
-        f"{title} also needs a visible failure case.",
+        f"{title} also needs a concrete failure case.",
         f"The bad use of {title} shows which condition was doing work.",
         f"Test {title} at the nearest place it can break.",
         f"{title}: name the tempting false use.",

@@ -551,7 +551,7 @@
       },
       "reader_test": {
         "explain_object": "Make the working object in \"Gluing rules make new worlds\" explicit: A square whose marked edges are read as travel instructions for a finished surface. Treat the picture as a record of rules and data, not as decoration. Name the data the object keeps track of before using course vocabulary.",
-        "test_allowed_move": "Describe the action in 'Reversing an edge changes the global surface' that leaves the same problem in place: Read each edge identification as part of the object, including whether direction is preserved or reversed. Also name a tempting shortcut that would break the rulebook. That check keeps the move tied to the original lecture problem.",
+        "test_allowed_move": "Describe the action in 'Reversing an edge changes the global surface' that leaves the same problem in place: Read each edge identification as part of the object, including whether direction is preserved or reversed. Also name the shortcut that would make the original problem disappear. That check keeps the move tied to the original lecture problem.",
         "protect_conclusion": "Make the conclusion in \"Gluing rules make new worlds\" rest on this fact: The gluing rule determines whether paths close, whether sides remain consistent, and whether the drawn boundary is a true boundary. Carry the surviving fact all the way to the payoff so the final claim has a reason. Connect that protected evidence to the later course arc: This is the plain entrance to quotient thinking. It prepares the reader for manifolds and for later situations where a rule, not visual appearance, defines the mathematical object."
       },
       "answer_guide": {
@@ -1093,7 +1093,7 @@
       },
       "reader_test": {
         "explain_object": "Rebuild \"Intersection number is a count with memory\" from the carrier of the claim: Clean intersections between oriented objects, equipped with plus and minus signs. Treat the picture as a record of rules and data, not as decoration. Name the data the object keeps track of before using course vocabulary.",
-        "test_allowed_move": "In 'Pair creation and cancellation', name the legal motion or construction: Assign signs using a consistent orientation rule and allow only deformations where pair creation is inspected. Also name a tempting shortcut that would break the rulebook. That check keeps the move tied to the original lecture problem.",
+        "test_allowed_move": "In 'Pair creation and cancellation', name the legal motion or construction: Assign signs using a consistent orientation rule and allow only deformations where pair creation is inspected. Also name the shortcut that would make the original problem disappear. That check keeps the move tied to the original lecture problem.",
         "protect_conclusion": "Let 'Orientation gives signs their meaning' keep this evidence visible after the move: Opposite-signed pairs can be born or die without changing the signed total. Carry the surviving fact all the way to the payoff so the final claim has a reason. Connect that protected evidence to the later course arc: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled."
       },
       "answer_guide": {
@@ -1800,7 +1800,7 @@
       },
       "reader_test": {
         "explain_object": "Make the working object in \"Poincare-Hopf turns topology into a prediction about motion\" explicit: A vector field on a surface, with all isolated defects counted together. Treat the picture as a record of rules and data, not as decoration. Name the data the object keeps track of before using course vocabulary.",
-        "test_allowed_move": "Describe the action in 'The hairy-ball idea in plain form' that leaves the same problem in place: Use Poincare-Hopf only after the field is clean enough and the surface carrying it is the right one. Also name a tempting shortcut that would break the rulebook. That check keeps the move tied to the original lecture problem.",
+        "test_allowed_move": "Describe the action in 'The hairy-ball idea in plain form' that leaves the same problem in place: Use Poincare-Hopf only after the field is clean enough and the surface carrying it is the right one. Also name the shortcut that would make the original problem disappear. That check keeps the move tied to the original lecture problem.",
         "protect_conclusion": "Make the conclusion in \"Poincare-Hopf turns topology into a prediction about motion\" rest on this fact: The sum of local indices equals the Euler characteristic of the surface. Carry the surviving fact all the way to the payoff so the final claim has a reason. Connect that protected evidence to the later course arc: This gathers the course's main chain: surface bookkeeping, signs, local defects, and global constraint. The hairy-ball idea is one visible consequence, not the whole story."
       },
       "answer_guide": {
