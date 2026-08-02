@@ -492,7 +492,7 @@ def main():
         fail("repair clinic cases do not match required case set")
     for row in repair_clinic_cases:
         for field in ["flawed_explanation", "why_it_fails", "repair_move", "strong_version", "reviewer_test"]:
-            if len(words(row.get(field))) < 30:
+            if len(words(row.get(field))) < 65:
                 fail(f"repair clinic {row.get('title')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"repair clinic {row.get('title')} needs concept links")
