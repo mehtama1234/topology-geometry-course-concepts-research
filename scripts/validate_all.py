@@ -331,6 +331,10 @@ def main():
         for field in ["start_here", "payoff", "reader_check"]:
             if len(words(walkthrough.get(field))) < 40:
                 fail(f"lecture {lecture['lecture']} walkthrough {field} too thin")
+        application_bridge = deep.get("application_bridge") or {}
+        for field in ["outside_problem", "topology_bridge", "protected_fact", "where_it_matters", "honest_limit"]:
+            if len(words(application_bridge.get(field))) < 40:
+                fail(f"lecture {lecture['lecture']} application bridge {field} too thin")
         reader_test = deep.get("reader_test") or {}
         for field in ["explain_object", "test_allowed_move", "protect_conclusion"]:
             if len(words(reader_test.get(field))) < 45:
@@ -1021,6 +1025,9 @@ def main():
         for phrase in ["Slow Walkthrough", "Start here:", "Mathematical payoff:", "Reader check:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing walkthrough phrase {phrase}: {lecture_name}")
+        for phrase in ["Why This Matters Beyond The Lecture", "Outside problem:", "Topology bridge:", "Protected fact:", "Where it matters:", "Honest limit:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing application bridge phrase {phrase}: {lecture_name}")
         for phrase in ["Can You Explain It?", "Explain the object:", "Check the allowed move:", "Protect the conclusion:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing reader test phrase {phrase}: {lecture_name}")

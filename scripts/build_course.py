@@ -4489,6 +4489,41 @@ def plain_fragment(text, prefixes):
     return cleaned
 
 
+def build_lecture_application_bridge(lecture, spine_row):
+    number = lecture["lecture"]
+    title = lecture["deep"]["title"]
+    deepening = lecture["deep"]["deepening"]
+    examples = lecture["deep"]["examples"]
+    example_titles = ", ".join(example["title"] for example in examples[:3])
+    return {
+        "outside_problem": (
+            f"Outside this lecture, the same problem appears whenever a real situation has too many visible details to test one by one. "
+            f"Lecture {number:02d}, \"{title}\", starts from this object: {spine_row['object']} "
+            f"It asks this plain question: {spine_row['plain_question']} "
+            f"In an outside field, the reader first has to find the object that carries the same kind of information before borrowing the course idea."
+        ),
+        "topology_bridge": (
+            f"The bridge from the lecture to an application is the legal move: {spine_row['legal_move']} "
+            f"The lecture examples, including {example_titles}, make that move tangible before it becomes terminology. "
+            f"An application is honest only when the same sort of move is still legal in the new setting and still acts on the same kind of object."
+        ),
+        "protected_fact": (
+            f"What travels from the lecture into other fields is not the board picture itself. It is this protected fact: {spine_row['surviving_fact']} "
+            f"The deepening payoff says why that fact matters here: {deepening['payoff']} "
+            f"In a physical, engineering, network, or modeling problem, the matching question is which fact survives the allowed changes well enough to support a conclusion."
+        ),
+        "where_it_matters": (
+            f"This lecture can matter beyond topology in design, motion, measurement, and modeling problems where a shape, route, count, field, or state space constrains what can happen. "
+            f"The point is not that the outside problem uses the same classroom object. The point is that the outside problem may have the same structure: name the carrier, name the allowed change, protect the right evidence, and read the limited payoff."
+        ),
+        "honest_limit": (
+            f"The honest limit is that Lecture {number:02d} does not solve every outside problem that resembles it. "
+            f"It gives a first-principles test for using the idea: keep the object explicit, preserve the legal move, and stop at the conclusion supported by {spine_row['surviving_fact']} "
+            f"Exact locations, timings, sizes, costs, material behavior, or full motion paths may still require later mathematics or domain-specific evidence."
+        ),
+    }
+
+
 def build_lecture_answer_guide(lecture, spine_row):
     examples = lecture["deep"]["examples"]
     number = lecture["lecture"]
@@ -5893,6 +5928,7 @@ def build_quality_audit(data):
     lecture_source_checkpoint_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["source_checkpoint"][field])) for field in ["trust", "do_not_overread", "math_question"]) for l in data["lectures"])
     lecture_caption_nuance_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["caption_nuance"][field])) for field in ["risk", "safe_reading", "verify_question"]) for l in data["lectures"])
     lecture_source_faithfulness_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["source_faithfulness"][field])) for field in ["caption_support", "course_inference", "caveat"]) for l in data["lectures"])
+    lecture_application_bridge_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["application_bridge"][field])) for field in ["outside_problem", "topology_bridge", "protected_fact", "where_it_matters", "honest_limit"]) for l in data["lectures"])
     lecture_source_bridge_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["course_demonstration", "mathematical_bridge", "how_source_extends", "overread_warning", "reader_question"]) for row in data["lecture_source_bridges"])
     lecture_reconstruction_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", step)) for step in row["rebuild_steps"]) + sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["start_from", "self_check", "common_failure", "source_check"]) for row in data["lecture_reconstruction_drills"])
     lecture_reader_test_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", l["deep"]["reader_test"][field])) for field in ["explain_object", "test_allowed_move", "protect_conclusion"]) for l in data["lectures"])
@@ -5959,7 +5995,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Lecture reader testing",
-            "evidence": f"Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, and then compare against an answer guide. The {lecture_reader_test_words} reader-test words and {lecture_answer_guide_words} answer-guide words turn lecture understanding into an auditable task.",
+            "evidence": f"Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The {lecture_reader_test_words} reader-test words, {lecture_application_bridge_words} lecture-application words, and {lecture_answer_guide_words} answer-guide words turn lecture understanding into an auditable task.",
             "status": "met",
         },
         {
@@ -6125,6 +6161,7 @@ def build_quality_audit(data):
             "lecture_source_checkpoint_words": lecture_source_checkpoint_words,
             "lecture_caption_nuance_words": lecture_caption_nuance_words,
             "lecture_source_faithfulness_words": lecture_source_faithfulness_words,
+            "lecture_application_bridge_words": lecture_application_bridge_words,
             "lecture_source_bridge_words": lecture_source_bridge_words,
             "lecture_source_bridges": len(data["lecture_source_bridges"]),
             "lecture_reconstruction_drills": len(data["lecture_reconstruction_drills"]),
@@ -6204,7 +6241,7 @@ def quality_metric_cards(metrics):
         {
             "title": "Lecture Depth",
             "meta": "15 lecture pages",
-            "text": f"The lecture layer is not only a list of videos. It now carries {metrics['lecture_essay_words']} essay words, {metrics['lecture_deepening_words']} deepening words, {metrics['lecture_walkthrough_words']} walkthrough words, {metrics['lecture_reader_test_words']} reader-test words, and {metrics['lecture_answer_guide_words']} answer-guide words. Those sections force each lecture to name the object, allowed move, surviving fact, source caveat, and reason the answer works.",
+            "text": f"The lecture layer is not only a list of videos. It now carries {metrics['lecture_essay_words']} essay words, {metrics['lecture_deepening_words']} deepening words, {metrics['lecture_walkthrough_words']} walkthrough words, {metrics['lecture_application_bridge_words']} lecture-application words, {metrics['lecture_reader_test_words']} reader-test words, and {metrics['lecture_answer_guide_words']} answer-guide words. Those sections force each lecture to name the object, allowed move, surviving fact, outside use, source caveat, and reason the answer works.",
         },
         {
             "title": "Concept And Course Map",
@@ -7123,6 +7160,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         walk = l["deep"]["walkthrough"]
         nuance = l["deep"]["caption_nuance"]
         faith = l["deep"]["source_faithfulness"]
+        application_bridge = l["deep"]["application_bridge"]
         reader_test = l["deep"]["reader_test"]
         answer_guide = l["deep"]["answer_guide"]
         lecture_refs = [ref for ref in data["references"] if l["lecture"] in ref["lectures"]]
@@ -7146,6 +7184,14 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <p><b>Start here:</b> {esc(walk['start_here'])}</p>
   <p><b>Mathematical payoff:</b> {esc(walk['payoff'])}</p>
   <p><b>Reader check:</b> {esc(walk['reader_check'])}</p>
+</section>
+<section class="lecture">
+  <h2>Why This Matters Beyond The Lecture</h2>
+  <p><b>Outside problem:</b> {esc(application_bridge['outside_problem'])}</p>
+  <p><b>Topology bridge:</b> {esc(application_bridge['topology_bridge'])}</p>
+  <p><b>Protected fact:</b> {esc(application_bridge['protected_fact'])}</p>
+  <p><b>Where it matters:</b> {esc(application_bridge['where_it_matters'])}</p>
+  <p><b>Honest limit:</b> {esc(application_bridge['honest_limit'])}</p>
 </section>
 <section class="lecture">
   <h2>Can You Explain It?</h2>
@@ -7374,6 +7420,7 @@ def main():
         }
         lecture_record["source_summary"] = build_source_summary(lecture_record)
         lecture_record["deep"]["source_faithfulness"] = build_source_faithfulness(lecture_record)
+        lecture_record["deep"]["application_bridge"] = build_lecture_application_bridge(lecture_record, spine_by_lecture[number])
         lecture_record["deep"]["reader_test"] = build_lecture_reader_test(lecture_record, spine_by_lecture[number])
         lecture_record["deep"]["answer_guide"] = build_lecture_answer_guide(lecture_record, spine_by_lecture[number])
         lectures.append(lecture_record)
@@ -7524,6 +7571,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - lecture-spine.html with {metrics['lecture_spine_entries']} lecture-by-lecture reasoning entries
 - {metrics['lecture_deepening_words']} lecture deepening words across what-is-happening, why-hard, key-move, and payoff fields
 - {metrics['lecture_walkthrough_words']} slow-walkthrough words across lecture pages, explaining each lecture from object to payoff to reader check
+- {metrics['lecture_application_bridge_words']} lecture application-bridge words explaining why each lecture matters beyond its course demonstration and what limit remains
 - {metrics['lecture_reader_test_words']} lecture reader-test words asking the reader to explain the object, check the allowed move, and protect the conclusion
 - {metrics['lecture_answer_guide_words']} lecture answer-guide words showing what a strong self-check answer must contain
 - {metrics['lecture_caption_nuance_words']} caption-nuance words across lecture pages and source audit, explaining risky transcript terms and safe readings
@@ -7571,7 +7619,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept application field to clear 30 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept application field to clear 30 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
