@@ -652,7 +652,7 @@ def main():
         fail("theorem use contracts do not match required contract set")
     for row in theorem_contracts:
         for field in ["use_when", "object_needed", "allowed_move", "protected_evidence", "conclusion_it_can_force", "breaks_if", "everyday_test"]:
-            if len(words(row.get(field))) < 65:
+            if len(words(row.get(field))) < 85:
                 fail(f"theorem contract {row.get('name')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"theorem contract {row.get('name')} needs concept links")
