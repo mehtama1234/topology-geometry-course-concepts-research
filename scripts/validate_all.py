@@ -31,6 +31,8 @@ FORBIDDEN = [
     "zoo",
     "big picture",
     "big-picture",
+    "course habit",
+    "course habits",
 ]
 
 
@@ -1092,7 +1094,7 @@ def main():
         for phrase in ["First-Principles Long Essay", "Ordinary problem:", "Object on the page:", "Allowed change:", "Protected fact:", "Topology payoff:", "Outside use:", "Wrong use:"]:
             if phrase not in theme_html:
                 fail(f"theme page missing first-principles essay phrase {phrase}: {theme_name}")
-        for phrase in ["Theme Lens", "Notices:", "Ignores:", "Changes the problem:", "Reader test:", "Why This Theme Matters Beyond The Course", "Outside problem:", "Course habit:", "Where it matters:", "Honest limit:", "Can You Carry The Theme?", "Notice answer:", "Ignore answer:", "Transfer answer:", "Test answer:"]:
+        for phrase in ["Theme Lens", "Notices:", "Ignores:", "Changes the problem:", "Reader test:", "Why This Theme Matters Beyond The Course", "Outside problem:", "Course reading rule:", "Where it matters:", "Honest limit:", "Can You Carry The Theme?", "Notice answer:", "Ignore answer:", "Transfer answer:", "Test answer:"]:
             if phrase not in theme_html:
                 fail(f"theme page missing lens phrase {phrase}: {theme_name}")
     for subtheme in data["subthemes"]:
@@ -1103,7 +1105,7 @@ def main():
         for phrase in ["First-Principles Long Essay", "Ordinary problem:", "Object on the page:", "Allowed change:", "Protected fact:", "Topology payoff:", "Outside use:", "Wrong use:"]:
             if phrase not in subtheme_html:
                 fail(f"subtheme page missing first-principles essay phrase {phrase}: {subtheme_name}")
-        for phrase in ["First-Principles Bridge", "Course moment:", "Thinking shift:", "Reader test:", "Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:", "Why This Subtheme Matters Beyond The Course", "Outside problem:", "Course habit:", "Where it matters:", "Honest limit:", "Can You Apply The Routine?", "Look answer:", "Ask answer:", "Use answer:", "Mistake answer:"]:
+        for phrase in ["First-Principles Bridge", "Course moment:", "Thinking shift:", "Reader test:", "Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:", "Why This Subtheme Matters Beyond The Course", "Outside problem:", "Course reading rule:", "Where it matters:", "Honest limit:", "Can You Apply The Routine?", "Look answer:", "Ask answer:", "Use answer:", "Mistake answer:"]:
             if phrase not in subtheme_html:
                 fail(f"subtheme page missing subtheme phrase {phrase}: {subtheme_name}")
     for family in data["families"]:

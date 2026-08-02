@@ -253,7 +253,7 @@ def build_source_readers(rows):
             "The source becomes safer when its object is smaller than the whole subject.",
         ])
         bridge_close = varied((reference, "source-reader-bridge-close"), [
-            "The bridge has to translate the source back into the course habit: object, legal move, protected fact, and limit.",
+            "The bridge has to translate the source back into the course reading rule: object, legal move, protected fact, and limit.",
             "This bridge is not a claim that the lecture follows the source word for word.",
             "A useful bridge says which course move the source clarifies and which part remains companion interpretation.",
             "The bridge keeps formal background from burying the everyday reason the course idea matters.",
@@ -321,7 +321,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "problem": "This family answers the teaching problem: how can a learner reason about shape before formal language is available? The problem is not a shortage of definitions. The problem is that definitions arrive too late to help unless the reader has already seen what object is being changed, what rule controls the change, and what fact survives.",
         "object": "The object is the course sequence itself, moving from physical demonstrations to drawings, surfaces, fields, and state spaces. The sequence matters as an object because it shows dependence: later fixed-point and vector-field ideas reuse the earlier habit of legal motion plus protected evidence.",
         "allowed_reading": "Use the lecture order as evidence for how ideas depend on one another: paper-strip side behavior prepares orientation, deformation prepares intersection, and signed counts prepare fixed points and index. Keep auto-caption wording, visible demonstrations, and course-arc interpretation in separate buckets.",
-        "protected_idea": "The protected idea is the course habit: name the object, name the legal move, protect the surviving fact, and only then name the formal result. If that habit is lost, the companion becomes a list of topology words instead of an explanation of why the words became necessary.",
+        "protected_idea": "The protected idea is the course reading rule: name the object, name the legal move, protect the surviving fact, and only then name the formal result. If that rule is lost, the companion becomes a list of topology words instead of an explanation of why the words became necessary.",
         "course_bridge": "It anchors every page because the companion should explain Tokieda's demonstrations before importing later terminology or background source language. The bridge from course to paper always starts with the classroom object: a strip, surface, path, count, field, or state space.",
         "overclaim": "Do not treat cleaned transcripts as exact notes, claim precise wording from a paraphrase, or say a generated synthesis was spoken in the lecture when the evidence is only a recovered auto-caption or visible course motion. Mark synthesis as synthesis.",
         "reader_test": "Can the reader point to a lecture moment, name the object being manipulated, and label the sentence as caption support, visible demonstration, source-family support, or course-arc inference? If the reader cannot do that, the source family is being used as authority rather than evidence.",
@@ -392,7 +392,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "family": "Clean intersections and signs",
         "problem": "This family answers the clean-meeting problem: how can intersections and signs be prepared carefully enough to count? The plain danger is that a crossing in one drawing may be an accident, while a crossing prepared under the right rules can become evidence.",
         "object": "The object is a map, submanifold, or pair of objects whose meetings need ordinary position and orientation before signs are meaningful. The meeting itself is not enough; the proof also needs the rule that made the meeting clean and the direction data that made a sign possible.",
-        "allowed_reading": "Use it to support the course habit of moving fragile coincidences aside before trusting a signed count. It supports the sign-and-clean-meeting family, not exact wording from the videos or a shortcut around the visible course example and its rulebook.",
+        "allowed_reading": "Use it to support the course reading rule of moving fragile coincidences aside before trusting a signed count. It supports the sign-and-clean-meeting family, not exact wording from the videos or a shortcut around the visible course example and its rulebook.",
         "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges. The source contributes the preparation standard: the event must be ordinary enough and oriented enough before arithmetic deserves trust.",
         "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic. The bridge is the moment a visual meeting stops being a sketch detail and becomes a count that can survive legal nudges.",
         "overclaim": "Do not let the formal setting erase the course picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived under the allowed nudge.",
@@ -564,7 +564,7 @@ def build_term_translations(rows):
             "The term becomes useful only after it points to a thing the reader can move, count, compare, glue, or test.",
             "This is the first check against jargon: remove the term, and the sentence still has to explain the work.",
             "The plain meaning also prepares applications, because another field needs its own object and rule before borrowing the word.",
-            "The course habit is to make the ordinary job visible first, then let the formal name shorten later sentences.",
+            "The course reading rule is to make the ordinary job visible first, then let the formal name shorten later sentences.",
         ])
         job_close = varied((term, "term-job-close"), [
             "The job is not to decorate the paragraph; it is to carry one exact step in the argument.",
@@ -731,7 +731,7 @@ def build_theorem_use_contracts(rows):
             "This matters outside topology too, because a theorem can be true while the model it is applied to is the wrong model.",
             "The useful version says what the theorem is being asked to do before it names the theorem.",
             "The theorem belongs here only if its payoff matches the question and its assumptions can be checked in ordinary words.",
-            "This is the same course habit in theorem form: object first, permission second, conclusion last.",
+            "This is the same course reading rule in theorem form: object first, permission second, conclusion last.",
         ])
         object_close = varied((name, "theorem-object-close"), [
             "The object has to be visible enough that a reader can tell whether it satisfies the theorem's setup.",
@@ -962,7 +962,7 @@ def build_concept_contrasts(rows):
             "The left side earns its place only by doing this job in the argument, not by sounding like the broader topic.",
             "A reader can test the left side by asking what evidence would disappear if this job were missing.",
             "The left job has to be stated as an action: move, keep, count, compare, identify, or limit.",
-            "This keeps the word grounded in the course habit of object first and term second.",
+            "This keeps the word grounded in the course reading rule of object first and term second.",
             "The left side may connect to the right side later, but it first needs its own contract.",
             "The useful version names what the left side protects and what conclusion that protected fact can support.",
             "In another field, this side can travel only when the new setting rebuilds the same kind of work.",
@@ -1311,7 +1311,7 @@ TRANSFER_LAB_CASES = [
         "object": "The object is not the pavement drawing alone. It is the plaza with the fenced region removed and the two paths inside the remaining space. The fence changes the space because it creates a place the path is not allowed to cross.",
         "allowed_move": "The allowed move is to slide a route through open walking space while keeping its endpoints at the gates and never crossing the fence. The path may wiggle, shorten, or lengthen, but the endpoints and forbidden region define the same route problem.",
         "protected_fact": "The protected fact is whether the route winds around the missing region. A fenced hole can block one path from being changed into the other because any attempted slide would have to cross the fence or move an endpoint.",
-        "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region changes which deformations are legal. The course habit is to read the obstacle as part of the object, not as background ink in the drawing.",
+        "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region changes which deformations are legal. The course reading rule is to read the obstacle as part of the object, not as background ink in the drawing.",
         "wrong_transfer": "A weak answer says both paths are only lines between the same gates. That ignores the obstacle that makes the state space different and treats endpoint agreement as enough by itself.",
         "reader_task": "Decide whether one route can be deformed into the other while respecting the fence, say what the fence contributes to the proof, and name the illegal shortcut that would make the routes look equivalent.",
         "concepts": ["deformation", "winding-linking", "configuration-space"],
@@ -1355,7 +1355,7 @@ TRANSFER_LAB_CASES = [
         "object": "The object is the finished surface created by the taping rule, not the flat sheet before the rule is applied. The arrows and tape are instructions for sameness, so the completed object may have fewer boundaries than the drawing suggests.",
         "allowed_move": "The allowed move is to reason after the edge identifications have been made, treating glued points as the same point. Redrawing the sheet is harmless only if the same identification rule is still being used.",
         "protected_fact": "The protected fact is the route and boundary behavior of the completed surface after the taped edges are treated as one. A path that looks like it hits an edge on paper may continue through the glued edge in the finished surface.",
-        "course_bridge": "This transfers quotient-space reading: the drawing is a code, and the gluing rule tells the reader what space the code describes. The course habit is to read the rule before trusting the picture.",
+        "course_bridge": "This transfers quotient-space reading: the drawing is a code, and the gluing rule tells the reader what space the code describes. The course reading rule is to read the rule before trusting the picture.",
         "wrong_transfer": "A weak answer counts the border of the flat sheet as a real boundary after the taping rule has already removed it. That reasons about the code instead of the finished object.",
         "reader_task": "Say which points become the same point, what boundary claim changes after the identification, and which feature of the flat drawing no longer deserves to be read literally afterward by the reader.",
         "concepts": ["quotient-space", "boundary-orientation", "manifold"],
@@ -1398,7 +1398,7 @@ def build_transfer_lab_cases(rows):
             "A reader can now ask what the example allows, what it forbids, and what fact is supposed to survive.",
             "That setup keeps the transfer honest: the outside problem has to carry the same kind of evidence the course used.",
             "The practical question is not whether the scene resembles a lecture, but whether it has the same object-move-evidence structure.",
-            "This gives the reader an everyday place to practice the course habit before trusting a broader application.",
+            "This gives the reader an everyday place to practice the course reading rule before trusting a broader application.",
             "The situation becomes mathematical only after the rule of motion or comparison is stated plainly.",
         ])
         object_close = varied((title, "transfer-object-close"), [
@@ -1424,7 +1424,7 @@ def build_transfer_lab_cases(rows):
         protected_close = varied((title, "transfer-protected-close"), [
             "This protected fact is why topology matters here: it can survive changes that ordinary measurement or one drawing would not survive.",
             "The conclusion gets its force from this surviving fact, not from the scene looking like a course example.",
-            "If this fact is not named, the transfer has no evidence to carry from the outside problem back to the course habit.",
+            "If this fact is not named, the transfer has no evidence to carry from the outside problem back to the course reading rule.",
             "The protected fact also marks the limit of the claim: the example proves only what that fact can support.",
             "This is the piece a reader can reuse in another field after rebuilding the object and allowed move.",
             "A good transfer lets this evidence, not the vocabulary, do the work.",
@@ -1605,7 +1605,7 @@ def build_repair_clinic_cases(rows):
             f"Use {concept_text} as a map of the repair, not as proof that the repaired claim is automatically true.",
             f"The strong version can now travel to another field only if that field rebuilds the same object, move, and evidence.",
             f"The concept names {concept_text} shorten the final account, but they do not replace the account.",
-            f"The repair keeps {concept_text} grounded in the visible course habit.",
+            f"The repair keeps {concept_text} grounded in the visible course reading rule.",
             f"The stronger sentence is still limited by the exact condition it names, even when {concept_text} appear relevant.",
         ])
         test_close = varied((title, "repair-clinic-test-close"), [
@@ -1724,7 +1724,7 @@ def build_oral_exam_prompts(rows):
             "The answer is strong when every formal word can be replaced by an everyday sentence that still explains the same work.",
             "It also states the limit: what the argument does not locate, compute, construct, prove from the source, or solve about the physical system.",
             "A complete answer names the object first and then lets the concept name shorten an explanation that already exists.",
-            "The strongest version connects the course habit to another field without pretending that the topology word automatically applies there.",
+            "The strongest version connects the course reading rule to another field without pretending that the topology word automatically applies there.",
             "It shows why the detail matters: removing that detail would make the conclusion unsupported or change the problem being answered.",
             "It earns breadth by staying exact, moving from one course example to a fresh setting through the same checked pattern.",
             "The response avoids broad slogans by naming the actual evidence that survives the allowed change.",
@@ -1736,7 +1736,7 @@ def build_oral_exam_prompts(rows):
             "The answer also needs one sentence saying what stronger claim remains unavailable after the reasoning is finished.",
             "Include the failure boundary in plain words: what one change, missing condition, or overread source would break the claim.",
             "The list is complete only when the listener can point to the evidence and say why it supports exactly that conclusion.",
-            "This requirement keeps the oral answer aligned with the course habit of checking before naming.",
+            "This requirement keeps the oral answer aligned with the course reading rule of checking before naming.",
             "The same pieces make the answer useful outside topology, because another field must rebuild the object, rule, and evidence.",
             "A term name alone does not count as inclusion unless the answer says what job that term performs in the argument.",
         ])
@@ -2374,7 +2374,7 @@ def build_weak_claim_repair_rows(rows):
             "The weakness is practical, not stylistic. It blocks the reader from knowing what to inspect next.",
             "A stronger explanation must tell the reader which detail carries the force of the argument and which detail is only background.",
             "The sentence becomes teachable only when the failure case is visible enough that the reader can avoid it later.",
-            "The course habit is to protect the claim by naming the object, the allowed move, the surviving evidence, and the limit.",
+            "The course reading rule is to protect the claim by naming the object, the allowed move, the surviving evidence, and the limit.",
             "Without that habit, the formal term becomes a shortcut around the hard part instead of a name for the hard part.",
         ])
         repair_close = varied((title, "weak-repair-close"), [
@@ -7279,7 +7279,7 @@ def build_concept_application(concept):
     ])
     topology_close = varied((cid, "concept-application-topology-close"), [
         "In topology, that discipline matters because the conclusion belongs to the made object, not to the first picture or phrase that suggested it.",
-        "This is the course habit in its shortest form: build the right object, allow only the right changes, then ask what evidence survives.",
+        "This is the course reading rule in its shortest form: build the right object, allow only the right changes, then ask what evidence survives.",
         "The topological step is useful because it turns a messy situation into a shape question without pretending that every detail disappeared.",
         "This keeps the method close to the course: a strip, route, field, map, count, or state space is checked before a claim is trusted.",
         "The topology use remains plain when the reader can say what one legal change does and what it is not allowed to disturb.",
@@ -7324,7 +7324,7 @@ def build_concept_application(concept):
             f" {outside_close}"
         ),
         "topology_application": (
-            f"The topological use of {title} starts by translating the outside situation into the course habit. Name the object as {work['object']} "
+            f"The topological use of {title} starts by translating the outside situation into the course reading rule. Name the object as {work['object']} "
             f"Then name the allowed action as {work['operation']} Only after those two parts are clear can the idea support a conclusion rather than act as a label."
             f" {topology_close}"
         ),
@@ -8058,7 +8058,7 @@ def build_theme_plain(theme):
         f"Plain use of {title}: ask what object is being watched, what change is allowed, what fact survives, and what bigger claim that survival can actually support.",
         f"The everyday value of {title} is that it gives the reader one question to carry across lectures instead of a pile of disconnected examples.",
         f"Outside topology, {title} matters when a model, route, count, or physical setup needs the same check: what structure remains reliable after the easy details change?",
-        f"Read {title} as a course habit, not a heading. It helps the reader see why a drawing, theorem, source, or application is being used at that point.",
+        f"Read {title} as a course reading rule, not a heading. It helps the reader see why a drawing, theorem, source, or application is being used at that point.",
         f"For {title}, the plain boundary is part of the meaning: the theme can guide attention only as far as the object, allowed move, and surviving evidence remain visible.",
         f"The course uses {title} to keep the broad idea concrete: each later page has to show the carrier, the legal change, the protected fact, and the claim limit.",
     ])
@@ -8083,7 +8083,7 @@ def build_theme_application(theme):
         "In practice, this stops a common overclaim where a diagram, model, or theorem name is trusted before its conditions are visible.",
         "The same habit works across fields only when the outside example rebuilds the course's evidence pattern instead of borrowing its vocabulary.",
         "This makes the bridge concrete enough for a beginner: the theme becomes a checklist, not an impressive label.",
-        "The course habit remains simple but strict; every use has to say what is being watched and what would break the claim.",
+        "The course reading rule remains simple but strict; every use has to say what is being watched and what would break the claim.",
         "That is why the theme can travel: it is a way to read a problem carefully before deciding what kind of mathematics may speak.",
     ])
     matters_close = varied((theme["id"], "theme-application-matters-close"), [
@@ -8166,7 +8166,7 @@ def build_theme_first_principles_essay(theme):
         f"The theme stays understandable when the reader can point to this surviving fact and say why it is enough for the claim, and why it is not enough for stronger claims.",
     ])
     payoff_close = varied((tid, "theme-fp-payoff-close"), [
-        f"The larger payoff is a course habit the reader can reuse: name the carrier, allow only honest changes, keep the evidence visible, and stop at the conclusion that evidence supports.",
+        f"The larger payoff is a course reading rule the reader can reuse: name the carrier, allow only honest changes, keep the evidence visible, and stop at the conclusion that evidence supports.",
         f"This is why {title} belongs at the theme level. It explains not only one proof, but a way the course repeatedly turns ordinary visual confusion into a controlled mathematical question.",
         f"The payoff is also practical outside topology. It gives a way to study structure before exact numbers, forces, timings, or computations are available, while still leaving those later details to the fields that need them.",
         f"For {title}, topology matters because it can make a whole-object statement from preserved structure, not because it replaces geometry, physics, computation, or measurement.",
@@ -8175,7 +8175,7 @@ def build_theme_first_principles_essay(theme):
     ])
     outside_close = varied((tid, "theme-fp-outside-close"), [
         f"The outside transfer is honest only when the new field rebuilds the same pieces: object, allowed change, protected evidence, and claim limit. Otherwise the theme becomes only a loose comparison.",
-        f"This matters because applications often fail when a useful course habit is copied without the condition that made it true. Plain language makes that missing condition easier to catch.",
+        f"This matters because applications often fail when a useful course reading rule is copied without the condition that made it true. Plain language makes that missing condition easier to catch.",
         f"In physics, robotics, engineering, computing, data, or design, {title} can help frame a problem before detailed methods take over, but it cannot supply the details those methods must compute.",
         f"The application value is not that everything becomes topology. The value is that the same check can reveal whether the model has kept the shape, route, count, or constraint that matters.",
         f"For {title}, outside use means translation with duties: say what the new carrier is, what change is allowed, what survives, and what the topological habit cannot decide.",
@@ -8322,7 +8322,7 @@ def build_subtheme_first_principles_essay(subtheme):
     wrong_close = varied((sid, "subtheme-fp-wrong-close"), [
         f"This failure case is part of the teaching, because it tells the reader which tempting shortcut would make the same words false in a nearby example.",
         f"A plain repair goes back to the missing piece: the object may be wrong, the move may be illegal, the protected fact may be absent, or the conclusion may be too strong.",
-        f"The wrong use matters beyond topology as well, because outside applications often fail by copying the course habit while dropping the condition that made it work.",
+        f"The wrong use matters beyond topology as well, because outside applications often fail by copying the course reading rule while dropping the condition that made it work.",
         f"For {title}, the boundary is not a warning tacked on at the end. It is how the reader knows exactly what the subtheme can and cannot support.",
         f"This makes the explanation more useful than a definition. The reader learns not only when to use the habit, but also when to stop and repair the claim.",
         f"The course needs this wrong-use field because first-principles understanding includes the nearby false version, the missing condition, and the weaker claim that remains true.",
@@ -8618,7 +8618,7 @@ def build_family_application(family):
         "surface-family": {
             "outside_problem": "Outside the course, surface bookkeeping matters when local pieces look ordinary but the whole carrier changes what can be done. A map, shell, fabric strip, sensor surface, or wrapped material may have local patches that seem simple while the completed object forces a side choice, boundary term, hole count, or twist.",
             "method_transfer": "The method transfers by keeping the whole carrier in view while working with pieces. In topology that means cutting, orienting, counting, and gluing a surface. In another field it means checking whether local measurements, labels, routes, or directions still agree after the pieces are put back together.",
-            "where_it_matters": "This matters in materials, graphics, geographic maps, surface sensors, manufacturing, and physical design where local instructions must cover a whole object. The course habit helps explain why a choice that works in every small neighborhood can still fail after a full trip around the object.",
+            "where_it_matters": "This matters in materials, graphics, geographic maps, surface sensors, manufacturing, and physical design where local instructions must cover a whole object. The course reading rule helps explain why a choice that works in every small neighborhood can still fail after a full trip around the object.",
             "honest_limit": "The limit is that surface bookkeeping depends on the actual surface and the actual gluing rule. If a boundary is ignored, a twist is forgotten, a hole is filled without permission, or a patch is treated as the whole object, the application explains the wrong carrier.",
         },
         "embedding-family": {
@@ -8630,7 +8630,7 @@ def build_family_application(family):
         "motion-family": {
             "outside_problem": "Outside the course, motion-through-state arguments matter when direct movement is too complicated to follow but the range of possible states can be described. A robot, mechanism, crowd, control system, game position, or physical object may be understood by studying the space of all allowed situations.",
             "method_transfer": "The method transfers by replacing time with possibility. In topology one point of the state space records a complete position, and motion becomes a path or rule. In another field the same habit asks what information makes one state complete, which states are forbidden, and what paths count as legal motion.",
-            "where_it_matters": "This matters in robotics, control, physics, planning, game search, and any model where barriers, required coincidences, stable positions, or missing routes shape behavior. The course habit helps explain why a system can be constrained before anyone computes its exact motion step by step.",
+            "where_it_matters": "This matters in robotics, control, physics, planning, game search, and any model where barriers, required coincidences, stable positions, or missing routes shape behavior. The course reading rule helps explain why a system can be constrained before anyone computes its exact motion step by step.",
             "honest_limit": "The limit is that the state space must tell the truth about the original system. If a real freedom is left out, a false wall is added, forbidden states are kept inside, or the final conclusion cannot be translated back, the topological result describes the model rather than the motion.",
         },
     }
@@ -8812,7 +8812,7 @@ RUBRIC_COVERAGE = [
             "course-anchor": "theme lecture thread, course arc field, and related concept cards",
             "plain-language-replacement": "theme essay, why-the-math-matters field, answer guide",
         },
-        "reader_test": "Can a reader carry the same course habit from one lecture to another while saying what the theme notices, ignores, changes, and tests?",
+        "reader_test": "Can a reader carry the same course reading rule from one lecture to another while saying what the theme notices, ignores, changes, and tests?",
     },
     {
         "layer": "Subthemes",
@@ -9016,7 +9016,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "First-principles transfer lab",
-            "evidence": f"{len(data['transfer_lab_cases'])} transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The {transfer_lab_words} transfer words test whether the mathematics has become a usable way to think.",
+            "evidence": f"{len(data['transfer_lab_cases'])} transfer cases ask the reader to move the course reading rule into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The {transfer_lab_words} transfer words test whether the mathematics has become a usable way to think.",
             "status": "met",
         },
         {
@@ -9051,7 +9051,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Proof-move recipes",
-            "evidence": f"{len(data['proof_moves'])} proof-move recipes turn repeated course habits into steps: set up the object, perform the legal move, protect the evidence, and state the limited conclusion. Each recipe includes why it works, how it fails, and a course example.",
+            "evidence": f"{len(data['proof_moves'])} proof-move recipes turn repeated course reading rules into steps: set up the object, perform the legal move, protect the evidence, and state the limited conclusion. Each recipe includes why it works, how it fails, and a course example.",
             "status": "met",
         },
         {
@@ -9208,7 +9208,7 @@ def quality_metric_cards(metrics):
         {
             "title": "Concept And Course Map",
             "meta": "ideas across pages",
-            "text": f"The concept layer has {metrics['concept_essay_words']} essay words, {metrics['concept_workup_words']} workup words, {metrics['concept_anchor_words']} anchor words, {metrics['concept_application_words']} outside-application words, and {metrics['concept_self_check_words']} self-check words. Theme and subtheme pages add {metrics['theme_application_words'] + metrics['subtheme_application_words']} application words for course habits. Every concept links back to course appearances, with {metrics['concept_appearances_min']} to {metrics['concept_appearances_max']} examples per concept, so ideas are tested against lecture moments rather than floating as glossary entries.",
+            "text": f"The concept layer has {metrics['concept_essay_words']} essay words, {metrics['concept_workup_words']} workup words, {metrics['concept_anchor_words']} anchor words, {metrics['concept_application_words']} outside-application words, and {metrics['concept_self_check_words']} self-check words. Theme and subtheme pages add {metrics['theme_application_words'] + metrics['subtheme_application_words']} application words for course reading rules. Every concept links back to course appearances, with {metrics['concept_appearances_min']} to {metrics['concept_appearances_max']} examples per concept, so ideas are tested against lecture moments rather than floating as glossary entries.",
         },
         {
             "title": "Practice And Repair",
@@ -9350,7 +9350,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>How To Use The Playground</h2>
   <p>Do not treat the canvas as a toy picture. For each widget, name four things before moving the slider: the object being modeled, the slider move that is legal, the evidence that should survive, and the failure that would make the model stop proving the claim.</p>
-  <p>The goal is to practice the course habit with your hands. If the drawing changes but the protected account stays fixed, say why. If the protected account would change under a different move, say which rule was broken.</p>
+  <p>The goal is to practice the course reading rule with your hands. If the drawing changes but the protected account stays fixed, say why. If the protected account would change under a different move, say which rule was broken.</p>
 </section>
 <section class="play-grid">
   <article class="play">
@@ -9595,7 +9595,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Repairing A Weak Answer</h2>
   <p>When an answer fails the ledger test, repair only the missing part. When the object is unclear, add one sentence that says what one point, route, field, cell, or glued edge represents. When the legal change is unclear, add one sentence naming the allowed motion and the forbidden shortcut. When the protected fact is unclear, add one sentence naming the count, side information, equality, path question, or source boundary that survives.</p>
-  <p>A repair should not become more formal just to sound safer. It should become more checkable. It has to point to the object, act out the allowed change, say what would break the argument, and name the conclusion that the protected fact can support. That is the course habit in its plainest form.</p>
+  <p>A repair should not become more formal just to sound safer. It should become more checkable. It has to point to the object, act out the allowed change, say what would break the argument, and name the conclusion that the protected fact can support. That is the course reading rule in its plainest form.</p>
   <p>Give no credit for a sentence that only says two pictures are the same, a count is invariant, a theorem applies, or a source supports the claim. Give credit when the sentence explains the permission behind that statement. The permission is the testable part.</p>
 </section>
 """
@@ -10253,10 +10253,10 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         answer = t["answer_guide"]
         application = t["application"]
         first_principles_essay = t["first_principles_essay"]
-        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class="lecture"><h2>Theme Essay</h2>{paragraph_block(t['essay'])}</section><section class="lecture"><h2>First-Principles Long Essay</h2><p><b>Ordinary problem:</b> {esc(first_principles_essay['ordinary_problem'])}</p><p><b>Object on the page:</b> {esc(first_principles_essay['object_on_page'])}</p><p><b>Allowed change:</b> {esc(first_principles_essay['allowed_change'])}</p><p><b>Protected fact:</b> {esc(first_principles_essay['protected_fact'])}</p><p><b>Topology payoff:</b> {esc(first_principles_essay['topology_payoff'])}</p><p><b>Outside use:</b> {esc(first_principles_essay['outside_use'])}</p><p><b>Wrong use:</b> {esc(first_principles_essay['wrong_use'])}</p></section><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><section class="lecture"><h2>Theme Lens</h2><p><b>Notices:</b> {esc(lens['notices'])}</p><p><b>Ignores:</b> {esc(lens['ignores'])}</p><p><b>Changes the problem:</b> {esc(lens['changes_problem'])}</p><p><b>Reader test:</b> {esc(lens['reader_test'])}</p></section><section class="lecture"><h2>Why This Theme Matters Beyond The Course</h2><p><b>Outside problem:</b> {esc(application['outside_problem'])}</p><p><b>Course habit:</b> {esc(application['course_habit'])}</p><p><b>Where it matters:</b> {esc(application['where_it_matters'])}</p><p><b>Honest limit:</b> {esc(application['honest_limit'])}</p></section><section class="lecture"><h2>Can You Carry The Theme?</h2><p><b>Notice answer:</b> {esc(answer['notice_answer'])}</p><p><b>Ignore answer:</b> {esc(answer['ignore_answer'])}</p><p><b>Transfer answer:</b> {esc(answer['transfer_answer'])}</p><p><b>Test answer:</b> {esc(answer['test_answer'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class="lecture"><h2>Theme Essay</h2>{paragraph_block(t['essay'])}</section><section class="lecture"><h2>First-Principles Long Essay</h2><p><b>Ordinary problem:</b> {esc(first_principles_essay['ordinary_problem'])}</p><p><b>Object on the page:</b> {esc(first_principles_essay['object_on_page'])}</p><p><b>Allowed change:</b> {esc(first_principles_essay['allowed_change'])}</p><p><b>Protected fact:</b> {esc(first_principles_essay['protected_fact'])}</p><p><b>Topology payoff:</b> {esc(first_principles_essay['topology_payoff'])}</p><p><b>Outside use:</b> {esc(first_principles_essay['outside_use'])}</p><p><b>Wrong use:</b> {esc(first_principles_essay['wrong_use'])}</p></section><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><section class="lecture"><h2>Theme Lens</h2><p><b>Notices:</b> {esc(lens['notices'])}</p><p><b>Ignores:</b> {esc(lens['ignores'])}</p><p><b>Changes the problem:</b> {esc(lens['changes_problem'])}</p><p><b>Reader test:</b> {esc(lens['reader_test'])}</p></section><section class="lecture"><h2>Why This Theme Matters Beyond The Course</h2><p><b>Outside problem:</b> {esc(application['outside_problem'])}</p><p><b>Course reading rule:</b> {esc(application['course_habit'])}</p><p><b>Where it matters:</b> {esc(application['where_it_matters'])}</p><p><b>Honest limit:</b> {esc(application['honest_limit'])}</p></section><section class="lecture"><h2>Can You Carry The Theme?</h2><p><b>Notice answer:</b> {esc(answer['notice_answer'])}</p><p><b>Ignore answer:</b> {esc(answer['ignore_answer'])}</p><p><b>Transfer answer:</b> {esc(answer['transfer_answer'])}</p><p><b>Test answer:</b> {esc(answer['test_answer'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("theme", t["id"])).write_text(page(t["title"], body, "Themes"), encoding="utf-8")
 
-    body = "<h1>Subthemes</h1><p class='lead'>Subthemes are the smaller recurring moves inside the larger course habits: the contracts, counts, signs, boundaries, and modeling choices that make the arguments work.</p><div class='grid'>" + "".join(card(s["title"], s["depth"]["problem"], slug_page("subtheme", s["id"]), "Subtheme") for s in data["subthemes"]) + "</div>"
+    body = "<h1>Subthemes</h1><p class='lead'>Subthemes are the smaller recurring moves inside the larger course reading rules: the contracts, counts, signs, boundaries, and modeling choices that make the arguments work.</p><div class='grid'>" + "".join(card(s["title"], s["depth"]["problem"], slug_page("subtheme", s["id"]), "Subtheme") for s in data["subthemes"]) + "</div>"
     (SITE / "subthemes.html").write_text(page("Subthemes", body, "Subthemes"), encoding="utf-8")
     for s in data["subthemes"]:
         related = [c for c in data["concepts"] if s["id"] in c["subthemes"]]
@@ -10265,7 +10265,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         answer = s["answer_guide"]
         application = s["application"]
         first_principles_essay = s["first_principles_essay"]
-        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class="lecture"><h2>Subtheme Essay</h2>{paragraph_block(s['essay'])}</section><section class="lecture"><h2>First-Principles Long Essay</h2><p><b>Ordinary problem:</b> {esc(first_principles_essay['ordinary_problem'])}</p><p><b>Object on the page:</b> {esc(first_principles_essay['object_on_page'])}</p><p><b>Allowed change:</b> {esc(first_principles_essay['allowed_change'])}</p><p><b>Protected fact:</b> {esc(first_principles_essay['protected_fact'])}</p><p><b>Topology payoff:</b> {esc(first_principles_essay['topology_payoff'])}</p><p><b>Outside use:</b> {esc(first_principles_essay['outside_use'])}</p><p><b>Wrong use:</b> {esc(first_principles_essay['wrong_use'])}</p></section><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><section class="lecture"><h2>First-Principles Bridge</h2><p><b>Course moment:</b> {esc(bridge['course_moment'])}</p><p><b>Thinking shift:</b> {esc(bridge['thinking_shift'])}</p><p><b>Reader test:</b> {esc(bridge['reader_test'])}</p></section><section class="lecture"><h2>Reading Routine</h2><p><b>Look for:</b> {esc(routine['look_for'])}</p><p><b>Ask:</b> {esc(routine['ask'])}</p><p><b>Use:</b> {esc(routine['use'])}</p><p><b>Mistake:</b> {esc(routine['mistake'])}</p></section><section class="lecture"><h2>Why This Subtheme Matters Beyond The Course</h2><p><b>Outside problem:</b> {esc(application['outside_problem'])}</p><p><b>Course habit:</b> {esc(application['course_habit'])}</p><p><b>Where it matters:</b> {esc(application['where_it_matters'])}</p><p><b>Honest limit:</b> {esc(application['honest_limit'])}</p></section><section class="lecture"><h2>Can You Apply The Routine?</h2><p><b>Look answer:</b> {esc(answer['look_answer'])}</p><p><b>Ask answer:</b> {esc(answer['ask_answer'])}</p><p><b>Use answer:</b> {esc(answer['use_answer'])}</p><p><b>Mistake answer:</b> {esc(answer['mistake_answer'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class="lecture"><h2>Subtheme Essay</h2>{paragraph_block(s['essay'])}</section><section class="lecture"><h2>First-Principles Long Essay</h2><p><b>Ordinary problem:</b> {esc(first_principles_essay['ordinary_problem'])}</p><p><b>Object on the page:</b> {esc(first_principles_essay['object_on_page'])}</p><p><b>Allowed change:</b> {esc(first_principles_essay['allowed_change'])}</p><p><b>Protected fact:</b> {esc(first_principles_essay['protected_fact'])}</p><p><b>Topology payoff:</b> {esc(first_principles_essay['topology_payoff'])}</p><p><b>Outside use:</b> {esc(first_principles_essay['outside_use'])}</p><p><b>Wrong use:</b> {esc(first_principles_essay['wrong_use'])}</p></section><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><section class="lecture"><h2>First-Principles Bridge</h2><p><b>Course moment:</b> {esc(bridge['course_moment'])}</p><p><b>Thinking shift:</b> {esc(bridge['thinking_shift'])}</p><p><b>Reader test:</b> {esc(bridge['reader_test'])}</p></section><section class="lecture"><h2>Reading Routine</h2><p><b>Look for:</b> {esc(routine['look_for'])}</p><p><b>Ask:</b> {esc(routine['ask'])}</p><p><b>Use:</b> {esc(routine['use'])}</p><p><b>Mistake:</b> {esc(routine['mistake'])}</p></section><section class="lecture"><h2>Why This Subtheme Matters Beyond The Course</h2><p><b>Outside problem:</b> {esc(application['outside_problem'])}</p><p><b>Course reading rule:</b> {esc(application['course_habit'])}</p><p><b>Where it matters:</b> {esc(application['where_it_matters'])}</p><p><b>Honest limit:</b> {esc(application['honest_limit'])}</p></section><section class="lecture"><h2>Can You Apply The Routine?</h2><p><b>Look answer:</b> {esc(answer['look_answer'])}</p><p><b>Ask answer:</b> {esc(answer['ask_answer'])}</p><p><b>Use answer:</b> {esc(answer['use_answer'])}</p><p><b>Mistake answer:</b> {esc(answer['mistake_answer'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("subtheme", s["id"])).write_text(page(s["title"], body, "Subthemes"), encoding="utf-8")
 
     body = "<h1>Method Families</h1><p class='lead'>Method families explain how the course turns pictures into reasons. They are the reusable proof moves beneath the lectures.</p><div class='grid two'>" + "".join(card(f["title"], f["depth"]["human_problem"], slug_page("family", f["id"]), f["purpose"]) for f in data["families"]) + "</div>"
@@ -10584,7 +10584,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - 6 expanded course theme pages with {metrics['theme_plain_words']} plain-summary words plus problem, habit, course-arc, and important-detail sections
 - {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words explaining ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use
 - {metrics['theme_lens_words']} theme lens words across notices, ignores, problem-change, and reader-test fields
-- {metrics['theme_application_words']} theme application words explaining why each course habit matters beyond the course and what limit remains
+- {metrics['theme_application_words']} theme application words explaining why each course reading rule matters beyond the course and what limit remains
 - {metrics['theme_answer_guide_words']} theme answer-guide words showing how to carry a theme across lectures
 - 10 expanded subtheme pages with {metrics['subtheme_plain_words']} plain-summary words plus essay, first-principles, and course-role sections
 - {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words explaining ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use
