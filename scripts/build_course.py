@@ -5318,38 +5318,38 @@ def build_family_answer_guide(family):
     human_problem = sentence_fragment(plain_fragment(depth["human_problem"], ["The human problem is"]))
     human_problem_reason = f"the course needs {human_problem}" if human_problem.startswith("to ") else human_problem
     input_close = varied((fid, "input-close"), [
-        f"{title} starts only after the reader knows what object or situation is being fed into it.",
+        f"{title} starts only after the object or situation is explicit.",
         f"That starting object decides whether {title} is answering the intended problem.",
-        f"If the input is unclear, every later step in {title} may be precise about the wrong thing.",
-        f"This family has no force until the starting object has been named plainly.",
+        f"If the input is unclear, every later step in {title} may be precise about the wrong problem.",
+        f"This proof family needs the starting object before any method claim can carry force.",
     ])
     action_close = varied((fid, "action-close"), [
         f"Describe the action before allowing {title} to carry the reasoning by name.",
-        f"The action is the part that does the work; the method title only names that move after it is visible.",
-        f"This keeps {title} from becoming a label for work the page has not shown.",
-        f"The operation has to be visible before the method title is trusted.",
+        f"The action carries the reasoning; the family name only shortens it after the move is visible.",
+        f"This keeps {title} tied to work the page has actually shown.",
+        f"The operation has to be visible before the family name is trusted.",
     ])
     evidence_close = varied((fid, "evidence-close"), [
         f"{title} works only if this evidence survives the allowed action and still answers the starting question.",
         f"That survival is what lets the final situation speak about the original one.",
-        f"The evidence is the part that does the mathematical work; without it, the action is only a transformation.",
+        f"The evidence does the mathematical work; without it, the action has not answered the starting problem.",
         f"That is how one cleaned-up, counted, or modeled situation can stand for the starting problem.",
     ])
     output_close = varied((fid, "output-close"), [
         f"Name the consequence this method has earned: what was proved, counted, blocked, or forced.",
-        f"State the output as a consequence, not as a restatement of the method name.",
+        f"State the output as a consequence, not as a restatement of the family name.",
         f"{title} succeeds only when the final claim returns to the problem it began with.",
-        f"The final sentence has to name the new constraint, comparison, or existence claim that has been earned.",
+        f"The result has to name the new constraint, comparison, or existence claim that has been earned.",
     ])
     failure_close = varied((fid, "family-failure-close"), [
         f"This guard prevents {title} from solving a different problem.",
-        f"The failure test shows the reader exactly where a tempting use stops being valid.",
+        f"The failure test marks exactly where a tempting use stops being valid.",
         f"That failure check is part of {title}, because the same action can be illegal under a different rulebook.",
-        f"{title} is not ready until the reader can say what would make it break.",
+        f"{title} needs a visible break condition before the proof family is safe to use.",
     ])
     input_prompt = varied((fid, "family-input-answer-prompt"), [
         f"For {title}, first name the situation being fed into the method: {contract['input']} The human problem is {human_problem} {input_close}",
-        f"Start the method from its object, not from its name: {contract['input']} That object answers this need: {human_problem_reason} {input_close}",
+        f"Start from the object, not from the method name: {contract['input']} That object answers this need: {human_problem_reason} {input_close}",
         f"Before using {title}, say what kind of situation it accepts: {contract['input']} This answers the human problem: {human_problem} {input_close}",
         f"Make the input inspectable before the method begins: {contract['input']} That input answers this need: {human_problem_reason} {input_close}",
     ])
@@ -5362,7 +5362,7 @@ def build_family_answer_guide(family):
     evidence_prompt = varied((fid, "family-evidence-answer-prompt"), [
         f"Name the evidence {title} must protect: {evidence} Then say what that evidence lets the argument do: {playbook['payoff']} {evidence_close}",
         f"After the action, ask what survived: {evidence} That survival gives this payoff: {playbook['payoff']} {evidence_close}",
-        f"The method earns trust by carrying this evidence: {evidence} That evidence supports this later move: {playbook['payoff']} {evidence_close}",
+        f"The method is trustworthy only when it carries this evidence: {evidence} That evidence supports this later move: {playbook['payoff']} {evidence_close}",
         f"Do not stop at the action; name the evidence it preserves: {evidence} The playbook payoff is: {playbook['payoff']} {evidence_close}",
     ])
     output_prompt = varied((fid, "family-output-answer-prompt"), [
@@ -5373,7 +5373,7 @@ def build_family_answer_guide(family):
     ])
     failure_prompt = varied((fid, "family-failure-answer-prompt"), [
         f"Finally test where {title} breaks: {failure} The playbook failure says the same risk this way: {playbook['failure']} {failure_close}",
-        f"Name the bad use before trusting the method: {failure} The playbook warning is: {playbook['failure']} {failure_close}",
+        f"Name the false use before trusting the method: {failure} The playbook warning is: {playbook['failure']} {failure_close}",
         f"Reject the method when this condition appears: {failure} That matches the playbook failure: {playbook['failure']} {failure_close}",
         f"End by naming what would make the argument fail: {failure} The method page describes that failure as: {playbook['failure']} {failure_close}",
     ])
@@ -5383,35 +5383,35 @@ def build_family_answer_guide(family):
             "action": "The method is the legal journey from the hard picture to the easier one.",
             "evidence": "The proof works only if the protected fact rides through every step.",
             "output": "The final picture speaks only because the whole route back to the original is legal.",
-            "failure": "The bad use is the illegal shortcut that makes the clean picture irrelevant.",
+            "failure": "The false use is the illegal shortcut that makes the clean picture irrelevant.",
         },
         "counting-family": {
             "input": "Start with a picture whose visible events are too easy to create or erase.",
             "action": "The method designs a count around the harmless local changes.",
             "evidence": "The protected evidence is the total that legal redrawings fail to change.",
             "output": "The result is a count strong enough to block, force, or compare outcomes.",
-            "failure": "The bad use appears when the count changes under a move the problem allows.",
+            "failure": "The false use appears when the count changes under a move the problem allows.",
         },
         "surface-family": {
             "input": "Start with the whole surface, not one ordinary-looking patch.",
             "action": "The method cuts, tracks, and reglues while keeping the surface account honest.",
             "evidence": "The protected evidence is the global account that survives local bookkeeping.",
             "output": "The result is a whole-surface constraint that local inspection could not supply.",
-            "failure": "The bad use treats local freedom as if it automatically glued into global freedom.",
+            "failure": "The false use treats local freedom as if it automatically glued into global freedom.",
         },
         "embedding-family": {
             "input": "Start with the object to be placed and the room it is allowed to occupy.",
             "action": "The method separates a poor drawing from a genuine placement obstruction.",
             "evidence": "The protected evidence is the route or relation every legal placement must respect.",
             "output": "The result is either a legal placement or a reason every legal placement fails.",
-            "failure": "The bad use mistakes one failed sketch for an impossibility proof.",
+            "failure": "The false use mistakes one failed sketch for an impossibility proof.",
         },
         "motion-family": {
             "input": "Start by translating the physical or dynamical situation into possible states.",
             "action": "The method turns motion into paths or rules inside that state space.",
             "evidence": "The protected evidence is the shape of possibility after forbidden states are removed.",
             "output": "The result returns as a constraint on the original motion.",
-            "failure": "The bad use starts with a state space that lies about the real freedoms.",
+            "failure": "The false use starts with a state space that lies about the real freedoms.",
         },
     }
     intro = family_intros[fid]
