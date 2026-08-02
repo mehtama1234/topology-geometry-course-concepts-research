@@ -144,7 +144,7 @@ def main():
 
     math_why = data.get("math_why") or {}
     for field in ["big_picture", "first_principles", "important_detail", "principle", "concepts_matter", "reader_path"]:
-        if len(words(math_why.get(field))) < 45:
+        if len(words(math_why.get(field))) < 90:
             fail(f"math_why {field} too thin")
 
     quality_audit = data.get("quality_audit") or {}
@@ -749,12 +749,12 @@ def main():
         if f"{widget}:" not in playground_js.read_text(encoding="utf-8", errors="ignore"):
             fail(f"playground.js missing renderer: {widget}")
     deep_dive = (SITE / "course-synthesis.html").read_text(encoding="utf-8", errors="ignore")
-    for phrase in ["Dependency Spine", "The One Engine", "Proof Families", "Lecture Spine", "How To Read Any Page"]:
+    for phrase in ["Dependency Spine", "The One Engine", "Proof Families", "Applications Beyond Topology", "Physics and motion", "Robotics and mechanisms", "Engineering constraints", "Modeling choices", "Computing and networks", "Lecture Spine", "How To Read Any Page"]:
         if phrase not in deep_dive:
             fail(f"course synthesis missing section: {phrase}")
-    if deep_dive.count("<article") < 25:
+    if deep_dive.count("<article") < 30:
         fail("course synthesis needs dependency, family, and lecture cards")
-    if len(words(re.sub(r"<[^>]+>", " ", deep_dive))) < 900:
+    if len(words(re.sub(r"<[^>]+>", " ", deep_dive))) < 1400:
         fail("course synthesis too thin")
     dependency_page = (SITE / "concept-dependencies.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Concept Dependencies", "Understand first", "Then read", "Why this dependency matters", "Reader check"]:
