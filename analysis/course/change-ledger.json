@@ -32,7 +32,7 @@
     "object": "The object is a pair of curves or sheets whose meetings are being counted after the picture has been put into ordinary position. Each meeting must be separate enough that the reader can inspect it by itself.",
     "legal_change": "The curves may move through legal deformations that create or remove simple meeting pairs, but the boundary conditions and direction rules must stay fixed. The motion is allowed to change the visible list of crossings without changing the accounting rule.",
     "protected_fact": "The protected fact is the signed total. A small legal motion can make two new meetings appear, but if one contributes plus and the other contributes minus, the useful total has not changed.",
-    "why_matters": "Raw crossing counts are too sensitive to small picture changes. Signed evidence is useful because it records the part of the meeting pattern that survives ordinary local accidents.",
+    "why_matters": "Raw crossing counts are too sensitive to small picture changes. Signed evidence records the part of the meeting pattern that survives ordinary local accidents: when a legal motion creates an opposite pair, the visible list changes while the net account stays fixed.",
     "false_move": "The false move is to count every visible crossing as the same kind of evidence and forget that the course count depends on signs, boundary rules, and the possibility of cancelling birth-death pairs.",
     "reader_test": "Can the reader isolate one local event, explain where the two crossings come from, assign the two signs using the shared rule, and say why the signed total stayed fixed?",
     "concepts": [

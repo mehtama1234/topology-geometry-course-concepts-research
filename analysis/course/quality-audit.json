@@ -33,12 +33,12 @@
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7290 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7284 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
       "requirement": "Source-nuance repair layer",
-      "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links. The 2188 repair words make source caution usable on actual lecture sentences.",
+      "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links. The 2185 repair words make source caution usable on actual lecture sentences.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 10746 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 10761 words.",
       "status": "met"
     },
     {
@@ -93,12 +93,12 @@
     },
     {
       "requirement": "First-principles transfer lab",
-      "evidence": "8 transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 1936 transfer words test whether the mathematics has become a usable way to think.",
+      "evidence": "8 transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 1933 transfer words test whether the mathematics has become a usable way to think.",
       "status": "met"
     },
     {
       "requirement": "Explanation repair clinic",
-      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1654 repair-clinic words make the no-filler standard concrete.",
+      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1649 repair-clinic words make the no-filler standard concrete.",
       "status": "met"
     },
     {
@@ -108,7 +108,7 @@
     },
     {
       "requirement": "Change ledger",
-      "evidence": "10 change-ledger cases separate legal change from false motion. The 2019 words ask the reader to say what object changed, what fact survived, why the survival matters, and which tempting move would solve a different problem.",
+      "evidence": "10 change-ledger cases separate legal change from false motion. The 2033 words ask the reader to say what object changed, what fact survived, why the survival matters, and which tempting move would solve a different problem.",
       "status": "met"
     },
     {
@@ -143,7 +143,7 @@
     },
     {
       "requirement": "Concept contrast reading",
-      "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 2261 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
+      "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 2264 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
       "status": "met"
     },
     {
@@ -163,12 +163,12 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2015 source-reader words keep paper reading tied to first-principles course questions.",
+      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2014 source-reader words keep paper reading tied to first-principles course questions.",
       "status": "met"
     },
     {
       "requirement": "Paper family ledger",
-      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2015 words make the paper layer usable without letting it drown the course explanation.",
+      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2021 words make the paper layer usable without letting it drown the course explanation.",
       "status": "met"
     }
   ],
@@ -181,47 +181,47 @@
     ],
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
-    "lecture_essay_words": 5562,
+    "lecture_essay_words": 5542,
     "lecture_deepening_words": 1595,
-    "lecture_walkthrough_words": 1987,
-    "lecture_source_lens_words": 1646,
+    "lecture_walkthrough_words": 1953,
+    "lecture_source_lens_words": 1643,
     "lecture_source_checkpoint_words": 1532,
-    "lecture_caption_nuance_words": 1492,
+    "lecture_caption_nuance_words": 1498,
     "lecture_source_faithfulness_words": 2465,
     "lecture_source_bridge_words": 5913,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 7290,
+    "lecture_reconstruction_words": 7284,
     "source_nuance_repairs": 15,
-    "source_nuance_repair_words": 2188,
+    "source_nuance_repair_words": 2185,
     "lecture_reader_test_words": 2752,
     "lecture_answer_guide_words": 3533,
-    "concept_essay_words": 7965,
-    "concept_workup_words": 2746,
+    "concept_essay_words": 7929,
+    "concept_workup_words": 2773,
     "concept_anchor_words": 1965,
-    "concept_self_check_words": 9392,
+    "concept_self_check_words": 9417,
     "theme_essay_words": 1954,
     "theme_lens_words": 920,
     "theme_answer_guide_words": 2853,
-    "subtheme_essay_words": 3033,
+    "subtheme_essay_words": 3036,
     "subtheme_routine_words": 1428,
-    "subtheme_bridge_words": 1275,
-    "subtheme_answer_guide_words": 4674,
+    "subtheme_bridge_words": 1287,
+    "subtheme_answer_guide_words": 4688,
     "family_essay_words": 1651,
     "family_contract_words": 1132,
     "family_playbook_words": 1086,
-    "family_answer_guide_words": 3219,
+    "family_answer_guide_words": 3220,
     "playground_widgets": 4,
     "synthesis_sections": 8,
     "dependency_paths": 8,
     "transfer_lab_cases": 8,
-    "transfer_lab_words": 1936,
+    "transfer_lab_words": 1933,
     "repair_clinic_cases": 8,
-    "repair_clinic_words": 1654,
+    "repair_clinic_words": 1649,
     "oral_exam_prompts": 7,
     "oral_exam_words": 1551,
     "change_ledger_rows": 10,
-    "change_ledger_words": 2019,
+    "change_ledger_words": 2033,
     "assumption_ledger_rows": 10,
     "assumption_ledger_words": 1835,
     "counterexample_gallery_rows": 10,
@@ -232,14 +232,14 @@
     "theorem_use_contracts": 8,
     "theorem_contract_words": 1530,
     "concept_contrasts": 10,
-    "concept_contrast_words": 2261,
+    "concept_contrast_words": 2264,
     "reader_checks": 11,
     "term_translations": 16,
     "term_translation_words": 1968,
     "source_readers": 7,
-    "source_reader_words": 2015,
+    "source_reader_words": 2014,
     "paper_family_ledger_rows": 7,
-    "paper_family_ledger_words": 2015,
+    "paper_family_ledger_words": 2021,
     "references": 7,
     "quality_rubric_items": 6,
     "rubric_coverage_layers": 6,

@@ -98,7 +98,7 @@
       },
       "walkthrough": {
         "start_here": "Start with the plain act of making the strip. A rectangle by itself has two long sides and two short ends. The surprise enters when the ends are glued after one half-turn. That gluing instruction means a traveler who follows the surface all the way around comes back with the local sense of side reversed.",
-        "payoff": "The mathematical payoff is the difference between small evidence and whole-object evidence. Every tiny patch of the strip looks like an ordinary two-sided strip, so local inspection cannot settle the question. The full trip around the object is the test, and that test reveals a global rule.",
+        "payoff": "The strip separates small evidence from whole-object evidence. Every tiny patch looks like an ordinary two-sided strip, so local inspection cannot settle the question. The full trip around the object is the test, and that test reveals a global rule.",
         "reader_check": "Do not remember this lecture as only a surprising paper example. Ask what rule made the object, what local observation fails to detect, and what full journey reveals. If those three answers are clear, the Mobius strip becomes the first model for later orientation and vector-field obstructions."
       },
       "caption_nuance": {
@@ -234,7 +234,7 @@
         "payoff": "The reader learns how a simplified picture can answer the original problem without secretly solving a different boundary puzzle or relying on drawing skill alone."
       },
       "source_lens": [
-        "Read the disk-path lecture as a proof about boundary order. The source language around deformation and curves that do not intersect matters because it fixes the contract before any drawing is simplified. The proof is not that one sketch looks impossible; it is that every legal sketch inherits the same boundary order problem.",
+        "Read the disk-path lecture as a proof about boundary order. The source language around deformation and curves that do not intersect fixes the contract before any drawing is simplified. The proof is not that one sketch looks impossible; it is that every legal sketch inherits the same boundary order problem.",
         "The anchor words prevent a common false proof. A disk by itself is not enough; the paired boundary points, their order, and the no-crossing rule are the data. Deformation is evidence only while those data stay unchanged. This becomes the course's rule for every later simplification: first state what cannot be disturbed, then simplify."
       ],
       "source_checkpoint": {
@@ -244,7 +244,7 @@
       },
       "walkthrough": {
         "start_here": "Start with curves in a disk and boundary points that are not free to wander. The curves may look messy, but the proof does not care about their exact wiggles. It cares about whether the curves can be redrawn under legal motion while the endpoints and no-crossing rule stay fixed.",
-        "payoff": "The mathematical payoff is that a picture can be simplified without losing its force. Deformation becomes valid only because the question is protected during the motion. This is the first time the course turns a visual cleanup into a proof rather than a preference for a neater drawing.",
+        "payoff": "A picture can be simplified without losing its force only when the question is protected during the motion. This is the first time the course turns visual cleanup into proof rather than a preference for a neater drawing.",
         "reader_check": "Before accepting any deformation argument, ask what stayed fixed. Were endpoints preserved? Were forbidden crossings avoided? Was a boundary condition quietly changed? If the answer is not explicit, the drawing may have changed the problem instead of solving it."
       },
       "caption_nuance": {
@@ -361,7 +361,7 @@
         },
         {
           "title": "Surgery treats construction as reasoning",
-          "text": "Removing a simple piece and gluing another one back is a way to change the space under controlled rules. The operation matters because it tracks what feature has been changed and what feature is meant to survive.",
+          "text": "Removing a simple piece and gluing another one back is a way to change the space under controlled rules. The operation keeps a ledger: what feature changed, what boundary rule was used, and what feature is meant to survive.",
           "concepts": [
             "deformation",
             "triangulation",
@@ -394,7 +394,7 @@
       },
       "walkthrough": {
         "start_here": "Start by treating spaces as things that can be built from instructions. A product says two choices vary together. A quotient says different-looking points are declared the same. Surgery says a controlled piece is removed and another controlled piece is attached along a stated boundary rule.",
-        "payoff": "The mathematical payoff is honest modeling. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they are construction rules that decide routes, boundaries, holes, and local neighborhoods.",
+        "payoff": "The construction rules keep the modeling honest. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they decide routes, boundaries, holes, and local neighborhoods.",
         "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction rule is unstated, any theorem applied to that space is standing on weak ground."
       },
       "caption_nuance": {
@@ -507,7 +507,7 @@
         }
       ],
       "essay": [
-        "Lecture 4 deepens the idea that gluing rules create worlds. The same visible patch can describe different spaces if its boundary is read differently. This matters because the mathematical object is not the ink on the page; it is the travel rule encoded by that ink. If leaving through one edge returns through another edge, then routes inside the square have a wraparound behavior. If an edge is reversed before it is glued, a trip through the surface can reverse the sense of side.",
+        "Lecture 4 deepens the idea that gluing rules create worlds. The same visible patch can describe different spaces if its boundary is read differently. The mathematical object is not the ink on the page; it is the travel rule encoded by that ink. If leaving through one edge returns through another edge, then routes inside the square have a wraparound behavior. If an edge is reversed before it is glued, a trip through the surface can reverse the sense of side.",
         "The beginner mistake is to treat the square as a container with four walls. In a gluing diagram the boundary may not be a wall at all. It may be a doorway. The label tells the traveler what happens at the doorway: which edge is reached, whether direction is kept, and whether left and right have been swapped. A flat square can therefore describe a world with no edge in the ordinary sense. The page is only a code for that world.",
         "This is why quotient constructions should be read through motion. Imagine a small traveler walking straight across the drawn patch. If the traveler crosses a labeled edge, the rule says where the next step begins. Repeating that experiment reveals loops that are invisible in the drawing. It also reveals whether a tiny arrow carried by the traveler returns pointing the same way or reversed. That is the everyday content behind orientation.",
         "This lecture is a quiet but important bridge. It prepares the reader for why orientation, boundary, and global consistency keep returning. A vector field on a sphere and a vector field on a torus do not differ merely by their drawing style. They differ because the underlying surface gives different routes for arrows and loops to follow. The course is teaching the reader to ask, for every picture, what rules the picture represents.",
@@ -530,7 +530,7 @@
       },
       "walkthrough": {
         "start_here": "Start with a square on paper, then stop treating the ink as the finished object. Edge labels are instructions for travel. If the left edge is glued to the right edge, a path leaving one side re-enters from the other. If an edge is reversed, direction changes during the return.",
-        "payoff": "The mathematical payoff is quotient thinking in everyday form. The same square drawing can describe different spaces because the identification rule, not the visual outline, decides the object. This prepares the reader to see maps, surfaces, and state spaces as rule-built objects.",
+        "payoff": "The same square drawing can describe different spaces because the identification rule, not the visual outline, decides the object. This is quotient thinking in everyday form, and it prepares the reader to see maps, surfaces, and state spaces as rule-built objects.",
         "reader_check": "Ask whether an apparent boundary is really a boundary in the finished space. Ask where a traveler goes after crossing a labeled edge. Ask whether direction is preserved. Those questions keep the drawing from being mistaken for the mathematical object."
       },
       "caption_nuance": {
@@ -614,7 +614,7 @@
       "examples": [
         {
           "title": "Classification separates surfaces by durable parts",
-          "text": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries matter because they survive the allowed simplifications and therefore describe the surface beyond one drawing.",
+          "text": "The lecture discusses orientable and non-orientable surface families. Handles, crosscaps, and boundaries survive the allowed simplifications, so they describe the surface beyond one drawing.",
           "concepts": [
             "euler-characteristic",
             "boundary-orientation",
@@ -666,7 +666,7 @@
       },
       "walkthrough": {
         "start_here": "Start with the problem of recognizing a surface after it has been bent, stretched, cut, and reassembled under legal rules. The visual drawing may change dramatically. Classification asks which durable features remain: boundary components, handles, crosscaps, and whether a consistent side choice survives everywhere.",
-        "payoff": "The mathematical payoff is that surfaces can be sorted by what survives simplification, not by how they happen to be drawn. This gives later counts a stage. Euler characteristic, orientation, and vector-field index matter because they belong to the surface, not to one picture of it.",
+        "payoff": "Surviving features let surfaces be sorted by what remains through simplification, not by how they happen to be drawn. This gives later counts a stage. Euler characteristic, orientation, and vector-field index belong to the surface, not to one picture of it.",
         "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface is useful only after the preserved features have been identified."
       },
       "caption_nuance": {
@@ -677,7 +677,7 @@
           "boundary"
         ],
         "risk": "Surface-family words can sound like naming by appearance. The source point is classification by durable features after legal surface operations, so the danger is accepting a family name without tracking handles, one-sided pieces, boundary, or side consistency.",
-        "safe_reading": "Read handles, crosscaps, boundaries, and orientability as evidence the surface retains under controlled surface operations. The classification matters because those features survive when the drawing is rearranged.",
+        "safe_reading": "Read handles, crosscaps, boundaries, and orientability as evidence the surface retains under controlled surface operations. Classification rests on those features because they survive when the drawing is rearranged.",
         "verify_question": "Can the explanation say which surface feature survives the simplification, how it is detected, and why naming the final family is not enough by itself?"
       },
       "source_faithfulness": {
@@ -780,7 +780,7 @@
       ],
       "essay": [
         "Lecture 6 begins the systematic study of moving submanifolds inside an ambient manifold. In everyday language, it asks whether two things have enough room to avoid each other. A point on a line has little room. A line in a plane may cross another line unless arranged specially. Objects in higher-dimensional spaces may have extra directions for escape. The lecture turns that spatial intuition into the idea of dimension overflow: when the objects are too large for the room they share, intersection becomes expected rather than accidental.",
-        "This matters because the course is preparing to count intersections. Before a count can mean anything, the reader must know the difference between a crossing caused by a clumsy drawing and a crossing forced by the surrounding space. Generic position removes fragile coincidences and leaves the ordinary case, where meetings happen cleanly. If a meeting can be removed by a legal motion, it should not be treated as evidence. If it cannot be removed, it becomes the raw material for intersection number.",
+        "The course is preparing to count intersections, so it first separates clumsy crossings from forced crossings. Before a count can mean anything, the reader must know whether a meeting was caused by a fragile drawing or by the surrounding space. Generic position removes fragile coincidences and leaves the ordinary case, where meetings happen cleanly. If a meeting can be removed by a legal motion, it should not be treated as evidence. If it cannot be removed, it becomes the raw material for intersection number.",
         "The plain-language moral is that space is a resource. If there is enough room, two objects can miss each other after a small adjustment. If there is not enough room, the attempted avoidance overflows into intersection. That is why dimension is not an abstract label here; it measures the amount of freedom available for avoiding obstacles.",
         "This lecture also sharpens the course's idea of an accident. A meeting in one drawing may vanish after a small legal move. A meeting that remains after every legal move carries information. Generic position is the method for telling those two cases apart before any count is trusted.",
         "The detail that protects the argument is cleanliness. A messy contact can hide several simpler events: a tangency, a triple meeting, or a whole interval of overlap. The lecture asks the reader to move the objects until ordinary meetings happen one at a time, because only then can the later arithmetic see what happened. Clean position is not polish. It is the condition that lets a local event be counted without confusing it with a stack of unresolved events."
@@ -802,7 +802,7 @@
       },
       "walkthrough": {
         "start_here": "Start with the everyday idea of room. Two objects may avoid each other if the surrounding space gives them enough directions to move. In cramped settings, meeting may be forced. The lecture cleans the objects into ordinary position so accidental contacts do not obscure the real room-counting question.",
-        "payoff": "The mathematical payoff is preparation for intersection theory. A meeting should not be counted until the picture is clean enough to make meetings separate and inspectable. Once that ordinary position is reached, dimension and placement can say whether intersections are accidental, avoidable, or evidence-bearing.",
+        "payoff": "This lecture prepares intersection theory by making meetings separate and inspectable before they are counted. Once ordinary position is reached, dimension and placement can say whether intersections are accidental, avoidable, or evidence-bearing, and the later signed count has events clear enough to audit.",
         "reader_check": "Ask whether the meeting survives after tiny legal motion. If it disappears because the original drawing was too special, it was probably an accident. If clean meetings remain under the allowed setup, the course can begin assigning signs and using them as evidence."
       },
       "caption_nuance": {
@@ -935,8 +935,8 @@
         "math_question": "What quantity changes continuously, what are the two sides of the condition, and why is the balancing event impossible to skip under that no-jump change?"
       },
       "walkthrough": {
-        "start_here": "Start with a physical balance condition that changes continuously. The point is not to compute the exact balance location first. The point is to notice that a condition moving from one side of a requirement to another cannot jump over the special state if the change is continuous.",
-        "payoff": "The mathematical payoff is forced existence. The course begins turning demonstrations into statements of the form: some special state must occur even if we cannot name it directly. That habit leads to fixed points, equilibria, and state-space arguments where shape blocks total avoidance.",
+        "start_here": "Start with a physical balance condition that changes continuously. Exact balance does not have to be computed first. A condition moving from one side of a requirement to another cannot jump over the special state if the change is continuous.",
+        "payoff": "The demonstration turns into a forced-existence statement: some special state must occur even if we cannot name it directly. That habit leads to fixed points, equilibria, and state-space arguments where shape blocks total avoidance without asking the reader to solve the system first.",
         "reader_check": "Ask what is changing continuously and what event it cannot skip. If the motion could jump, the existence claim may fail. If the setup stays continuous and the endpoints force opposite behavior, the special state is not guessed; it is forced."
       },
       "caption_nuance": {
@@ -1049,7 +1049,7 @@
         }
       ],
       "essay": [
-        "Lecture 8 is one of the course's central turning points. It introduces intersection number as a count with memory. Counting visible intersections is too fragile because intersections can appear or disappear when the picture is deformed. The key is to count with signs that come from the way the objects meet in an oriented setting. If a positive and a negative intersection are born together, the visible count changes by two, but the signed count changes by zero. The count has been designed so fake changes cancel.",
+        "Lecture 8 is one of the course's central turning points. It introduces intersection number as a count with memory. Counting visible intersections is too fragile because intersections can appear or disappear when the picture is deformed. Signs make the count remember direction inside an oriented setting. If a positive and a negative intersection are born together, the visible count changes by two, but the signed count changes by zero. The count has been designed so fake changes cancel.",
         "Orientation is the detail that makes this possible. Without orientation, the signs have no stable meaning. With orientation, an intersection records how two pieces meet inside the surrounding space. The lecture teaches the general method of protected arithmetic: identify local events, assign signs or alternating contributions, and add them so the total survives legal motion. Vector-field index later repeats the same pattern with arrow defects instead of crossings.",
         "The lecture is therefore a turning point from visual topology to numerical topology. The number is not a measurement of length or size. It is a record of unavoidable meeting. Once a reader understands why opposite pairs cancel, many later results become less mysterious: the course keeps designing counts so that accidental changes disappear and forced information remains.",
         "A sign is not chosen after the count to make the theorem work. It comes from how the objects meet inside an oriented setting. The sign is geometry turned into arithmetic, and that is why the resulting total can carry topological force. The explanation has to name the two objects, the surrounding space that gives the direction rule, and why a small legal deformation creates opposite signs rather than two identical contributions.",
@@ -1067,12 +1067,12 @@
       ],
       "source_checkpoint": {
         "trust": "Trust the signed crossing language only when orientation explains the plus and minus signs and pair creation has been accounted for. The source is protecting a designed total, not asking the reader to count every visible meeting equally.",
-        "do_not_overread": "Do not use the raw number of visible crossings as protected evidence, because legal motion can change that number. A count matters here only if the course has explained why the permitted changes leave it unchanged.",
+        "do_not_overread": "Do not use the raw number of visible crossings as protected evidence, because legal motion can change that number. A count can serve as evidence here only if the course has explained why the permitted changes leave it unchanged.",
         "math_question": "Why does a positive-negative pair contribute no net change to the signed total, and what orientation choice makes the signs meaningful rather than arbitrary labels?"
       },
       "walkthrough": {
         "start_here": "Start with a weakness in raw counting. If two curves move, the visible number of crossings can change. A pair can appear or disappear. The lecture repairs the count by assigning signs to clean intersections, so harmless pair changes contribute plus one and minus one together.",
-        "payoff": "The mathematical payoff is protected arithmetic. The signed total is not just a number read from one drawing; it is a number designed to survive legal deformation. This is why orientation and pair creation matter. They explain why the count deserves trust.",
+        "payoff": "The signed total is protected arithmetic, not a number read from one drawing. It is designed to survive legal deformation. Orientation and pair creation explain why the count deserves trust: the local accident changes the visible list, while the signed ledger stays put.",
         "reader_check": "Ask where the signs came from and what happens when a pair is born. If plus and minus are arbitrary labels, the argument has no force. If the signs come from orientation and pairs cancel, the count can carry proof evidence."
       },
       "caption_nuance": {
@@ -1222,7 +1222,7 @@
       },
       "walkthrough": {
         "start_here": "Start with a rule that sends each input somewhere. The equation for a fixed point can look invisible because it lives inside the rule. The lecture makes it visible by drawing the graph of the rule and comparing it with the diagonal, the set of input-output pairs where both entries agree.",
-        "payoff": "The mathematical payoff is translation. A fixed point becomes an intersection problem, so earlier ideas about clean meetings and protected counts become relevant. The source caveat matters here because one middle caption is missing, but the graph-diagonal conversion remains the reliable spine.",
+        "payoff": "A fixed point becomes an intersection problem, so earlier ideas about clean meetings and protected counts become relevant. One middle caption is missing, so the source caveat stays visible while the graph-diagonal conversion remains the reliable spine.",
         "reader_check": "Ask what point in the graph means and what point on the diagonal means. Their meeting is not a loose picture for self-agreement; it is exactly the statement that the rule sends some input back to itself."
       },
       "caption_nuance": {
@@ -1288,7 +1288,7 @@
     "duration_seconds": 3779,
     "transcript_words": 7156,
     "missing_caption_ids": [],
-    "plain_reading": "The course connects local turning and global conclusion: totals matter because tiny contributions have to fit the whole shape.",
+    "plain_reading": "The course connects local turning and global conclusion: tiny contributions have to fit the whole shape once they are collected in one total.",
     "deep": {
       "title": "Brouwer fixed point theorem: shape forces a point to stay",
       "problem": "The lecture centers on Brouwer's fixed-point theorem for a closed ball: every continuous self-map has a point that stays put. The problem is to understand why a soft shape can force a solution even when the map is arbitrary.",
@@ -1357,7 +1357,7 @@
       },
       "walkthrough": {
         "start_here": "Start with a filled disk or ball and a continuous rule that sends every point back into that same filled object. Brouwer says at least one point must land where it began. The theorem is not trying to find the point; it rules out the possibility that every point escapes itself.",
-        "payoff": "The mathematical payoff is existence from shape. The filled interior, boundary, and continuity of the rule work together. If any of those pieces is changed, the conclusion may fail. This makes the theorem a disciplined statement, not a slogan about all motion.",
+        "payoff": "Existence comes from the shape together with the rule. The filled interior, boundary, and continuity work together. If any of those pieces is changed, the conclusion may fail. This makes the theorem a disciplined statement, not a slogan about all motion.",
         "reader_check": "Ask whether the space is the right closed filled shape, whether the rule stays inside it, and whether nearby points move to nearby outputs. If those conditions are not present, invoking Brouwer may be using a theorem outside its contract."
       },
       "caption_nuance": {
@@ -1501,12 +1501,12 @@
       ],
       "source_checkpoint": {
         "trust": "Trust vector-field language as arrow-pattern evidence, especially the places where arrows vanish and nearby arrows turn. The source is shifting attention from solving every path to reading what the whole field cannot remove.",
-        "do_not_overread": "Do not confuse naming an equilibrium with understanding its topological evidence. The surrounding arrows matter because they record how the failure sits in the field, and that record is what index later counts.",
+        "do_not_overread": "Do not confuse naming an equilibrium with understanding its topological evidence. The surrounding arrows record how the failure sits in the field, and that record is what index later counts.",
         "math_question": "What does a small loop around the equilibrium see in the nearby arrow directions, and how could that turning survive a legal cleanup of the field?"
       },
       "walkthrough": {
         "start_here": "Start with arrows rather than paths. A vector field tells each point which way motion wants to go. Solving every path may be hard, but the places where the arrow vanishes are visible failures of motion. The nearby arrows then tell how that failure is shaped.",
-        "payoff": "The mathematical payoff is understanding motion through local defects. An equilibrium is not only a location where motion stops. It has surrounding behavior, and that behavior can be counted through turning. This opens a route from dynamics back to topology.",
+        "payoff": "An equilibrium is not only a location where motion stops. It has surrounding behavior, and that behavior can be counted through turning. This opens a route from dynamics back to topology, because the proof can read a local failure without solving every nearby path.",
         "reader_check": "Ask what the nearby arrows do when you walk around the equilibrium. Do they turn once, turn the other way, or fail to give a clean isolated pattern? The index belongs to that surrounding behavior, not merely to the dot."
       },
       "caption_nuance": {
@@ -1517,7 +1517,7 @@
           "index"
         ],
         "risk": "Caption text around dynamics may pull the reader toward solving trajectories. The lecture's source value is different: local arrow patterns can be read without solving every path, and equilibria can carry topological evidence through nearby turning.",
-        "safe_reading": "Read an equilibrium as a defect in an arrow field, then inspect nearby arrows to see the signed turning information it carries. The point is not only that the arrow vanishes, but how the surrounding arrows behave.",
+        "safe_reading": "Read an equilibrium as a defect in an arrow field, then inspect nearby arrows to see the signed turning information it carries. The vanished arrow is only the center of the evidence; the surrounding arrows show what kind of local failure occurred.",
         "verify_question": "Can the explanation describe the arrows around the equilibrium, say what turning they record, and avoid reducing the lecture to finding a trajectory formula alone?"
       },
       "source_faithfulness": {
@@ -1620,7 +1620,7 @@
       ],
       "essay": [
         "Lecture 12 asks what all the local indices know together. A vector field may have several equilibria: sources, sinks, saddles, and other local arrow patterns. Each has an index, but those indices are not independent. When the field lives on a surface, the sum of the local indices is tied to the Euler characteristic of that surface. Local failures of motion add up to a whole-shape number.",
-        "A useful first image is to walk around a tiny loop surrounding one defect and watch the nearby arrows. The arrows may turn once with the loop, turn the other way, or combine in a more complicated local pattern. The index records that turning. The point is not to memorize names such as source or saddle. The point is to notice that the field has failed to give a nonzero direction at the center, and the surrounding arrows leave evidence of how that failure behaves.",
+        "A useful first image is to walk around a tiny loop surrounding one defect and watch the nearby arrows. The arrows may turn once with the loop, turn the other way, or combine in a more complicated local pattern. The index records that turning. Names such as source or saddle are secondary; the field has failed to give a nonzero direction at the center, and the surrounding arrows leave evidence of how that failure behaves.",
         "The earlier surface bookkeeping now receives its dynamics job. Euler characteristic was not just a cell-counting curiosity. It becomes the number that controls the total defect of a vector field. The lecture therefore connects three layers of the course: surfaces can be decomposed and counted, vector fields can fail locally, and topology can force the total of those failures. Poincare-Hopf makes motion answer to shape by requiring the local defect account to match the whole-surface account.",
         "Local defects can move around without making the total free. A source can be shifted, a positive-negative pair can be created or canceled under the right circumstances, and a drawing can be cleaned up. But the total signed index is not free when the underlying surface is fixed. That is the same survival principle from intersection number, now expressed in the language of dynamics. The arithmetic was designed to ignore harmless local reshuffling and remember the whole-surface demand.",
         "For the reader, this lecture is the moment when Euler characteristic stops being only a surface label. It becomes a demand placed on motion. The same number obtained from cutting a surface into pieces now says how arrow-field defects must add up on that surface. That is the big conceptual turn: a number first learned from shape can later constrain every continuous choice of arrows on that shape."
@@ -1642,7 +1642,7 @@
       },
       "walkthrough": {
         "start_here": "Start by isolating the defects of a vector field. Each defect has nearby arrows circling it in some pattern, and that pattern receives a signed index. The lecture then asks what happens when all those local signed counts are added over the whole surface.",
-        "payoff": "The mathematical payoff is the move from local dynamics to global bookkeeping. Individual defects can move, split, or cancel under controlled changes, but the total signed index is not free. It is constrained by the surface that carries the arrows.",
+        "payoff": "Local dynamics becomes global bookkeeping. Individual defects can move, split, or cancel under controlled changes, but the total signed index is not free. It is constrained by the surface that carries the arrows, so every defect has to be counted inside one whole-surface account.",
         "reader_check": "Ask whether the defects are isolated and whether the total, not one favorite defect, is being counted. If the argument focuses only on a single equilibrium, it has missed the whole-surface nature of the theorem being prepared."
       },
       "caption_nuance": {
@@ -1779,7 +1779,7 @@
       },
       "walkthrough": {
         "start_here": "Start with Poincare-Hopf as a balance sheet. On one side are all the local indices of isolated vector-field defects. On the other side is Euler characteristic, a number belonging to the surface. The theorem says these two accounts must match.",
-        "payoff": "The mathematical payoff is that topology predicts something about motion before the differential equation is solved. A sphere demands a different total defect from a torus. The hairy-ball idea is a visible case, but the deeper point is the enforced equality between local failures and whole-surface shape.",
+        "payoff": "Topology can predict something about motion before the differential equation is solved. A sphere demands a different total defect from a torus. The hairy-ball idea is a visible case, but the deeper point is the enforced equality between local failures and whole-surface shape.",
         "reader_check": "Ask what surface carries the field and whether every defect has been included in the sum. Poincare-Hopf is not about admiring one dramatic singularity. It is about the total account forced by the complete surface."
       },
       "caption_nuance": {
@@ -1912,7 +1912,7 @@
       },
       "walkthrough": {
         "start_here": "Start with an application by refusing to apply a theorem too early. First name the possible states of the system. Then say which states are forbidden, which boundaries matter, and what continuous rule or motion acts on that space. Only then does topology have a correct object to study.",
-        "payoff": "The mathematical payoff is disciplined transfer from pure examples to physical systems. Holes, barriers, fixed points, and index totals can constrain real behavior, but only when the model represents the real freedoms and exclusions. The modeling step is part of the proof.",
+        "payoff": "Pure examples transfer to physical systems only through disciplined modeling. Holes, barriers, fixed points, and index totals can constrain real behavior, but only when the model represents the real freedoms and exclusions. The modeling step is part of the proof.",
         "reader_check": "Ask whether the state space includes all needed degrees of freedom and excludes only genuinely forbidden states. Also ask which physical conclusion the topological statement translates back into. A beautiful theorem applied to the wrong model gives a beautiful answer to the wrong question."
       },
       "caption_nuance": {
@@ -2022,7 +2022,7 @@
         },
         {
           "title": "Pictures earn their role by carrying constraints",
-          "text": "The course's pictures matter because they show what can move, what cannot move, and what count survives. That is why the final summary ties the visual style to mathematical force.",
+          "text": "The course's pictures show what can move, what cannot move, and what count survives. That is why the final summary ties the visual style to mathematical force.",
           "concepts": [
             "duality",
             "generic-position",
@@ -2063,7 +2063,7 @@
       },
       "walkthrough": {
         "start_here": "Start by reading the final lecture as a map of habits, not a list of topics. The same pattern has appeared repeatedly: build the right object, specify legal motion, identify protected evidence, and use that evidence to force a conclusion that the original picture hid.",
-        "payoff": "The mathematical payoff is a portable way to think. Mobius strips, surface classification, intersections, fixed points, vector fields, and applications are different settings for the same discipline. Pictorial thinking is deep here because the pictures carry rules and preserved facts.",
+        "payoff": "The course leaves the reader with a portable way to think. Mobius strips, surface classification, intersections, fixed points, vector fields, and applications are different settings for the same discipline. Pictorial thinking is deep here because the pictures carry rules and preserved facts.",
         "reader_check": "For any page in the companion, ask four questions: what object was made, what move was legal, what fact survived, and what conclusion became forced? If a page cannot answer those, it is not yet at the course's standard."
       },
       "caption_nuance": {

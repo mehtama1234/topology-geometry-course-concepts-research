@@ -26,7 +26,7 @@
   {
     "lecture": 2,
     "title": "Deformation as a way to solve, not decorate",
-    "start_from": "Start with marked boundary points on a disk and the demand that paths connect them without crossing. The point is not to draw a prettier routing picture; it is to prove no legal picture can do the job. The first concrete thing is: Curves inside a disk with boundary points held in their circular order. Before the source bridge for \"Deformation as a way to solve, not decorate\" can be read honestly, that object has to be visible.",
+    "start_from": "Start with marked boundary points on a disk and the demand that paths connect them without crossing. A prettier routing picture is not enough; the proof has to show that no legal picture can do the job. The first concrete thing is: Curves inside a disk with boundary points held in their circular order. Before the source bridge for \"Deformation as a way to solve, not decorate\" can be read honestly, that object has to be visible.",
     "rebuild_steps": [
       "Name the object as the disk together with boundary points in a fixed circular order. The order is data, not scenery.",
       "State the legal motion: slide and bend paths while endpoints stay fixed in order and paths do not pass through one another.",
@@ -146,7 +146,7 @@
   {
     "lecture": 7,
     "title": "Center of gravity and the birth of intersection thinking",
-    "start_from": "Start with the center-of-gravity demonstration as a continuous process. The point is to see why a special state must be crossed, not to admire the physical performance. Treat this as the carrier of the argument: A physical balance condition that changes continuously as the setup moves. Before the source bridge for \"Center of gravity and the birth of intersection thinking\" can be read honestly, that object has to be visible.",
+    "start_from": "Start with the center-of-gravity demonstration as a continuous process. The mathematical work is to see why a special state must be crossed. Treat this as the carrier of the argument: A physical balance condition that changes continuously as the setup moves. Before the source bridge for \"Center of gravity and the birth of intersection thinking\" can be read honestly, that object has to be visible.",
     "rebuild_steps": [
       "Name the changing quantity and the condition that counts as the desired meeting or balance.",
       "State the legal motion as gradual change. No jumping over the balance condition is allowed.",
