@@ -468,7 +468,7 @@ TERM_TRANSLATIONS = [
     },
     {
         "term": "Generic position",
-        "everyday_sentence": "Generic position means moving the picture away from fragile coincidences so meetings happen cleanly and one at a time. The small cleanup is useful because it makes counting, signs, and local defects readable without changing the protected question.",
+        "everyday_sentence": "Generic position means moving the picture away from fragile coincidences so meetings happen cleanly and one at a time. The small cleanup earns its role by making counting, signs, and local defects readable without changing the protected question.",
         "job_in_argument": "Its job is to create a case where counting and signs are honest. Once tangencies, triple meetings, and perfect alignments are removed by a tiny legal nudge, the stable behavior can be read without accidental clutter.",
         "not_a_definition": "It is not pretending special cases do not exist. It is a way to understand the ordinary case first, then explain special cases as controlled limits. The cleanup is legitimate only when the nudge is legal and the later count or sign still belongs to the starting problem.",
         "failure_if_misread": "If the nudge changes the protected fact, the proof has erased the hard part. If no nudge is made, the count or sign may be undefined. The cleanup has to sit between those failures: legal enough to preserve the question and ordinary enough to read.",
@@ -661,7 +661,7 @@ THEOREM_USE_CONTRACTS = [
     },
     {
         "name": "Graph and diagonal fixed-point test",
-        "use_when": "Use it when a rule sends inputs to outputs in the same setting and the question is whether some input is sent back to itself. This contract is useful because it replaces an invisible sentence, 'the rule returns this point,' with a visible meeting between two objects.",
+        "use_when": "Use it when a rule sends inputs to outputs in the same setting and the question is whether some input is sent back to itself. This contract replaces an invisible sentence, 'the rule returns this point,' with a visible meeting between two objects.",
         "object_needed": "The object is a rule from a space back into that same space, its graph in input-output space, and the diagonal that records equality between input and output. The same-space condition is not a technical ornament; without it, the diagonal would be comparing things that do not belong in one account.",
         "allowed_move": "The allowed move is to translate the rule into its graph without changing the domain, target, or meaning of equality between input and output. The graph is allowed to represent the rule only point by point: each graph point must still remember exactly which input produced which output.",
         "protected_evidence": "The protected evidence is the exact equivalence between graph meeting diagonal and self-agreement of the original rule, point by point in the same space. A diagonal meeting is not a metaphor; it is the statement that input and output coordinates have become the same record.",
@@ -809,7 +809,7 @@ def build_theorem_use_contracts(rows):
             f"{row['conclusion_it_can_force']} {conclusion_close} The theorem sentence leaves the reader knowing both the earned claim and the claim still unsaid. This keeps existence, obstruction, count, preparation, and computation from being blurred into one oversized promise."
         )
         new_row["breaks_if"] = (
-            f"{row['breaks_if']} {break_close} The repaired version names the missing condition in plain words before using the theorem again. The broken case is useful because it shows exactly which assumption was doing work."
+            f"{row['breaks_if']} {break_close} The repaired version names the missing condition in plain words before using the theorem again. The broken case shows exactly which assumption was doing work."
         )
         new_row["everyday_test"] = (
             f"{row['everyday_test']} {test_close} Use the linked concepts, {concept_text}, only after the test has made their work visible. The final check is whether a person can explain the contract without hiding behind the theorem name."
@@ -1443,7 +1443,7 @@ def build_transfer_lab_cases(rows):
         ])
         wrong_close = varied((title, "transfer-wrong-close"), [
             "The repair is to name the missing condition and weaken the claim until it matches the evidence.",
-            "That wrong move is useful because it shows exactly which shortcut the reader has to reject.",
+            "That wrong move names exactly which shortcut the reader has to reject.",
             "The page makes this failure visible before the example is used as evidence.",
             "A transfer fails at this point when resemblance replaces the object, allowed move, or protected fact.",
             "The corrected version goes back to the rule and asks what the outside case actually supports.",
@@ -1748,7 +1748,7 @@ def build_oral_exam_prompts(rows):
             "The weak version usually hides the everyday action that the formal word was supposed to name.",
             "It also fails to transfer, because another field cannot borrow the idea without knowing what condition made it valid.",
             "The fix is to slow down at the first unsupported leap and replace it with an object, rule, evidence, and limit.",
-            "The failure is useful because it tells the learner exactly what to repair before the answer becomes trustworthy.",
+            "The failure tells the learner exactly what to repair before the answer becomes trustworthy.",
         ])
         follow_close = varied((title, "oral-follow-close"), [
             "The follow-up is designed to force a second pass through the reasoning, using a changed condition or a new object.",
@@ -2123,7 +2123,7 @@ def build_assumption_ledger_rows(rows):
         ])
         breaks_close = varied((title, "assumption-breaks-close"), [
             "When that happens, the conclusion may sound familiar, but it no longer has the support that made it true.",
-            "The failure is useful because it shows exactly which quiet detail was doing the work.",
+            "The failure shows exactly which quiet detail was doing the work.",
             "This is the point where a broad slogan must be replaced by a smaller sentence that the evidence can actually carry.",
             "The broken case teaches the limit of the idea better than another correct example would.",
             "A reader can use the failure as a warning sign in topology, physics, motion planning, network models, or source reading.",
@@ -3065,7 +3065,7 @@ def build_subtheme_bridge(subtheme, bridge):
         "The bridge stays course-specific by returning to this problem:",
         "This moment earns its place by showing the subtheme problem directly:",
         "The page can use the course moment after it names this problem:",
-        "The anchor is useful because the reader can inspect this problem in it:",
+        "The anchor gives the reader this inspectable problem:",
         "The course example becomes evidence when it answers this problem:",
     ])
     moment_close = varied((sid, "subtheme-bridge-moment-close"), [
@@ -3077,7 +3077,7 @@ def build_subtheme_bridge(subtheme, bridge):
         "The course moment makes the subtheme testable instead of merely familiar.",
         "This prevents the bridge from becoming a summary that could belong anywhere.",
         "The reader can trace the claim back to a demonstrated object, move, or count.",
-        "The bridge remains useful because it has a visible course home.",
+        "The bridge remains tied to evidence because it has a visible course home.",
         "That is how the subtheme stays connected to the actual lecture path.",
     ])
     shift_intro = varied((sid, "subtheme-bridge-shift-intro"), [
@@ -5337,7 +5337,7 @@ LECTURE_DEEPENING = {
         "payoff": "The shape of a space can force a solution before any formula for that solution is available or needed. Brouwer is existence by blocked escape, with the conclusion earned by the filled domain, self-map rule, and no-jump condition.",
     },
     11: {
-        "what_is_really_happening": "The lecture changes dynamics from solving paths to reading the arrow pattern and the places where that pattern fails on the surface itself under inspection. The stopped point is useful because the surrounding arrows give it countable structure.",
+        "what_is_really_happening": "The lecture changes dynamics from solving paths to reading the arrow pattern and the places where that pattern fails on the surface itself under inspection. The stopped point has proof value because the surrounding arrows give it countable structure.",
         "why_it_is_hard": "An equilibrium can look like just a named point, but the useful evidence is how nearby arrows turn around it and what count that turning gives. The location alone is too thin; the surrounding arrow pattern carries the index information.",
         "key_move": "Inspect a small loop around each vanishing arrow and record the local turning behavior rather than trying to solve every trajectory in the field globally. The loop turns a local failure of motion into evidence that can be compared and later summed.",
         "payoff": "Motion becomes topological when defects in an arrow field become countable evidence that can later be summed over the surface. The lecture makes dynamics readable before trajectories are solved, because the arrow failure carries local structure.",
@@ -5716,7 +5716,7 @@ def build_proof_moves(rows):
             f"This makes the proof readable in plain words: the page changes something only after saying why the change still answers the starting question.",
             f"The same habit can travel outside topology when another field rebuilds the object, allowed change, evidence, and limit in its own material.",
             f"A reader can trust the move only when the surviving fact is named before the payoff, because that fact is what carries the conclusion.",
-            f"This is the first-principles spine of the {family}: the method is useful because it protects one piece of evidence while other details change.",
+            f"This is the first-principles spine of the {family}: the method protects one piece of evidence while other details change.",
         ])
         failure_close = varied((name, "proof-move-failure-close"), [
             f"The repair is to return to the missing part of the contract: object, allowed move, protected fact, conclusion, or failure condition.",
@@ -5730,7 +5730,7 @@ def build_proof_moves(rows):
             f"The example matters because it shows the object, the allowed action, the protected evidence, and the exact size of the payoff in one place.",
             f"The same pattern can be used in another lecture or outside field only after the new setting rebuilds the same obligations.",
             f"This example gives the reader a plain diagnostic: ask what changed, what survived, and what stronger claim remains outside the proof.",
-            f"The example is useful because it makes the nearby false proof visible, which is what lets the reader repair the move elsewhere.",
+            f"The example makes the nearby false proof visible, which is what lets the reader repair the move elsewhere.",
         ])
         item = dict(row)
         item["problem"] = f"{row['problem']} {problem_close}"
@@ -6350,7 +6350,7 @@ def build_lecture_application_bridge(lecture, spine_row):
     ])
     matters_close = varied((number, "lecture-application-matters-close"), [
         "The outside payoff may be a blocked route, a forced meeting, a stable count, a valid model, or a warning that the first picture cannot be trusted.",
-        "This is useful because many outside problems need a structural check before exact numbers, timing, or design choices are available.",
+        "This supplies the structural check many outside problems need before exact numbers, timing, or design choices are available.",
         "Beyond topology, the lecture earns use when it prevents a false shortcut or reveals the constraint that every later method has to respect.",
         "Other fields still add their own data, but the topological check says what kind of conclusion the shape of the problem can support.",
         "The application is strongest when it names both the useful conclusion and the evidence that keeps the conclusion narrow.",
@@ -6841,7 +6841,7 @@ def build_lecture_source_bridges(lectures, references, source_readers):
         ])
         source_extension = varied((number, "bridge-source-extension"), [
             f"{note['source_extension']} The broader source problem is this: {source_reader['reader_problem']}",
-            f"{note['source_extension']} The matching source family is useful because it asks this problem in a broader setting: {source_reader['reader_problem']}",
+            f"{note['source_extension']} The matching source family asks this problem in a broader setting: {source_reader['reader_problem']}",
             f"{note['source_extension']} Read the supporting family through this plain problem: {source_reader['reader_problem']}",
             f"{note['source_extension']} The background source should be used to sharpen this question, not to replace the lecture evidence: {source_reader['reader_problem']}",
             f"{note['source_extension']} The wider source family helps only when it keeps this underlying problem visible: {source_reader['reader_problem']}",
@@ -7280,7 +7280,7 @@ def build_concept_application(concept):
     topology_close = varied((cid, "concept-application-topology-close"), [
         "In topology, that discipline matters because the conclusion belongs to the made object, not to the first picture or phrase that suggested it.",
         "This is the course reading rule in its shortest form: build the right object, allow only the right changes, then ask what evidence survives.",
-        "The topological step is useful because it turns a messy situation into a shape question without pretending that every detail disappeared.",
+        "The topological step earns its role by turning a messy situation into a shape question without pretending that every detail disappeared.",
         "This keeps the method close to the course: a strip, route, field, map, count, or state space is checked before a claim is trusted.",
         "The topology use remains plain when the reader can say what one legal change does and what it is not allowed to disturb.",
         "A theorem or count can enter only after this model still answers the original question.",
@@ -7302,7 +7302,7 @@ def build_concept_application(concept):
         "The value is not a slogan about abstraction; it is the ability to rule out, force, or protect a conclusion with the right model.",
         "A reader can use the idea when the detailed numbers are hard but the allowed changes and blocked escapes are clear.",
         "This kind of guarantee matters in topology and outside it because it says which conclusions survive a change of picture or material.",
-        "The result may be modest, but it is useful because it names the part of the problem that cannot be wished away.",
+        "The result may be modest, but it names the part of the problem that cannot be wished away.",
         "The course trains this habit so the reader can ask for evidence before trusting a drawing, formula, source, or model.",
         "In everyday terms, the idea does work when it stops a false shortcut or reveals a forced feature hidden by the first view.",
         "The explanation is complete only when the reader can say what became known and why the evidence was strong enough.",
@@ -7314,7 +7314,7 @@ def build_concept_application(concept):
         "The same warning protects topology itself: a surviving shape fact is not automatically a recipe, location, design, or full explanation.",
         "The limit tells the reader where another field must take over after the topological constraint has done its work.",
         "A good transfer keeps the conclusion narrow enough that the outside problem can still check it.",
-        "The concept remains useful because its boundary is visible; the reader knows exactly what has and has not been proved.",
+        "The concept remains safe to use because its boundary is visible; the reader knows exactly what has and has not been proved.",
         "This final boundary keeps the course practical instead of turning every outside example into an overclaim.",
     ])
     return {
@@ -8079,7 +8079,7 @@ def build_theme_application(theme):
         "A plain outside problem also states the theme's job: it gives the reader a way to sort real constraints from distracting detail.",
     ])
     habit_close = varied((theme["id"], "theme-application-habit-close"), [
-        "The habit is useful because it can be repeated: find the carrier, name the allowed change, protect the evidence, and state the limit.",
+        "The rule works because it can be repeated: find the carrier, name the allowed change, protect the evidence, and state the limit.",
         "In practice, this stops a common overclaim where a diagram, model, or theorem name is trusted before its conditions are visible.",
         "The same habit works across fields only when the outside example rebuilds the course's evidence pattern instead of borrowing its vocabulary.",
         "This makes the bridge concrete enough for a beginner: the theme becomes a checklist, not an impressive label.",
@@ -8606,7 +8606,7 @@ def build_family_application(family):
         "deformation-family": {
             "outside_problem": "Outside the course, deformation arguments matter whenever a messy situation can be changed without changing the question. A road map, cable route, robot path, drawn diagram, or data shape may be simplified, but only after the fixed endpoints, barriers, attachments, and forbidden crossings have been named.",
             "method_transfer": "The method transfers by asking what is allowed to move and what must stay true during the motion. In topology that may be a path, loop, surface, or vector field. In another field it may be a plan, network, route, or design that can be adjusted without losing its promised job.",
-            "where_it_matters": "This matters in motion planning, drawing problems, circuit layout, route design, and any setting where exact shape is less important than connection and obstruction. The habit is useful because it separates a harmless change in appearance from a change that would answer a different problem.",
+            "where_it_matters": "This matters in motion planning, drawing problems, circuit layout, route design, and any setting where exact shape is less important than connection and obstruction. The rule separates a harmless change in appearance from a change that would answer a different problem.",
             "honest_limit": "The limit is that deformation does not permit every simplification. If the change cuts through an obstacle, moves a fixed endpoint, changes a boundary rule, or skips the middle states, the clean final picture no longer explains the original situation. The application works only when the legal route is visible.",
         },
         "counting-family": {
