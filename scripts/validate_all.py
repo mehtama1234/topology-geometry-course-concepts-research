@@ -384,7 +384,7 @@ def main():
             fail(f"lecture {lecture['lecture']} essay too thin")
         first_principles_essay = deep.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 105:
+            if len(words(first_principles_essay.get(field))) < 130:
                 fail(f"lecture {lecture['lecture']} first-principles essay {field} too thin")
         examples = deep.get("examples") or []
         if len(examples) < 3:
