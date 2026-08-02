@@ -234,6 +234,10 @@ def main():
         family_essay_words = sum(len(words(p)) for p in family.get("essay") or [])
         if family_essay_words < 285:
             fail(f"family {family['id']} essay too thin")
+        first_principles_essay = family.get("first_principles_essay") or {}
+        for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
+            if len(words(first_principles_essay.get(field))) < 60:
+                fail(f"family {family['id']} first-principles essay {field} too thin")
         contract = family.get("contract") or {}
         for field in ["input", "action", "evidence", "output", "failure_test"]:
             if len(words(contract.get(field))) < 25:
@@ -1095,6 +1099,9 @@ def main():
         if family_name not in names:
             fail(f"missing family page {family['id']}")
         family_html = (SITE / family_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["First-Principles Long Essay", "Ordinary problem:", "Object on the page:", "Allowed change:", "Protected fact:", "Topology payoff:", "Outside use:", "Wrong use:"]:
+            if phrase not in family_html:
+                fail(f"family page missing first-principles essay phrase {phrase}: {family_name}")
         for phrase in ["Method Playbook", "Setup:", "Move:", "Payoff:", "Failure:", "Reader test:", "Method Contract", "Input:", "Action:", "Protected evidence:", "Output:", "Failure test:", "Why This Method Matters Beyond The Course", "Outside problem:", "Method transfer:", "Where it matters:", "Honest limit:", "Can You Use This Method?", "Input answer:", "Action answer:", "Evidence answer:", "Output answer:", "Failure answer:"]:
             if phrase not in family_html:
                 fail(f"family page missing family phrase {phrase}: {family_name}")
