@@ -508,7 +508,7 @@ def main():
         fail("oral exam prompts do not match required prompt set")
     for row in oral_exam_prompts:
         for field in ["prompt", "strong_answer", "must_include", "common_failure", "follow_up"]:
-            if len(words(row.get(field))) < 14:
+            if len(words(row.get(field))) < 35:
                 fail(f"oral exam {row.get('title')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"oral exam {row.get('title')} needs concept links")

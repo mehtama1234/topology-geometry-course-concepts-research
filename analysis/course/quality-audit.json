@@ -108,7 +108,7 @@
     },
     {
       "requirement": "Oral exam readiness",
-      "evidence": "7 oral-exam prompts ask for explanations that can survive follow-up questions. The prompt, strong-answer, must-include, common-failure, and follow-up fields use 1551 words to test whether the reader can connect the course without hiding behind topic names.",
+      "evidence": "7 oral-exam prompts ask for explanations that can survive follow-up questions. The prompt, strong-answer, must-include, common-failure, and follow-up fields use 1898 words to test whether the reader can connect the course without hiding behind topic names.",
       "status": "met"
     },
     {
@@ -237,7 +237,7 @@
     "repair_clinic_cases": 8,
     "repair_clinic_words": 1792,
     "oral_exam_prompts": 7,
-    "oral_exam_words": 1551,
+    "oral_exam_words": 1898,
     "change_ledger_rows": 10,
     "change_ledger_words": 2081,
     "assumption_ledger_rows": 10,
