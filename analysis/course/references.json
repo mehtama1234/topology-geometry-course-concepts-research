@@ -46,8 +46,8 @@
       "graph-planarity",
       "gauss-bonnet"
     ],
-    "why": "This is the primary source for the companion. It fixes the order of ideas, the paper-strip demonstrations, the recurring pictorial method, and the level of explanation the site is trying to preserve.",
-    "use_carefully": "The playlist is supported here by auto-captions, not official lecture notes. One video still lacks recovered captions, so source claims must stay tied to available transcript evidence."
+    "why": "This is the primary source for the companion. It fixes the order of ideas, the paper-strip demonstrations, the recurring pictorial method, and the level of explanation the site is trying to preserve. Every lecture, concept, and proof habit has to return here first, because the site is explaining Tokieda's course rather than writing a free-standing topology textbook.",
+    "use_carefully": "The playlist is supported here by auto-captions, not official lecture notes. One video still lacks recovered captions, so source claims must stay tied to available transcript evidence. Use the captions to support lecture objects, examples, and sequence; do not treat them as exact polished wording or as proof that a generated synthesis was spoken verbatim."
   },
   {
     "id": "tib-av-portal-course",
@@ -82,8 +82,8 @@
       "configuration-space",
       "poincare-hopf"
     ],
-    "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for course identity: speaker, title, institutional host, series order, and access trail.",
-    "use_carefully": "Use it to verify identity and access, not to infer extra mathematics. A catalog record can say what course this is; it cannot supply theorem details, missing-caption content, proof order, or lecture-specific wording."
+    "why": "This records the same AIMS course as an institutional video series. It gives the companion a second source page for course identity: speaker, title, institutional host, series order, and access trail. That matters because the source map needs provenance before it can make careful claims about lectures, captions, and supporting references.",
+    "use_carefully": "Use it to verify identity and access, not to infer extra mathematics. A catalog record can say what course this is; it cannot supply theorem details, missing-caption content, proof order, or lecture-specific wording. Mathematical claims still need support from recovered captions, visible demonstrations, or a real mathematical reference."
   },
   {
     "id": "poincare-analysis-situs",
@@ -105,8 +105,8 @@
       "duality",
       "poincare-hopf"
     ],
-    "why": "These papers sit in the historical source line for topology as the study of spaces through preserved structure. For this companion, their job is to anchor the whole-space question: which facts belong to the completed carrier rather than to one drawing?",
-    "use_carefully": "They are not course lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them after the course object is plain: surface, allowed change, preserved account, and claim boundary."
+    "why": "These papers sit in the historical source line for topology as the study of spaces through preserved structure. For this companion, their job is to anchor the whole-space question: which facts belong to the completed carrier rather than to one drawing? They support the course's move from local pieces and drawings toward invariants, manifolds, and whole-surface accounts.",
+    "use_carefully": "They are not course lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them after the course object is plain: surface, allowed change, preserved account, and claim boundary. The page should translate their role back into everyday course jobs before any historical name or original notation appears."
   },
   {
     "id": "hopf-vektorfelder",
@@ -125,8 +125,8 @@
       "euler-characteristic",
       "poincare-hopf"
     ],
-    "why": "Hopf's paper is a primary reference for the vector-field-index thread behind Poincare-Hopf: local singularities of a field are added and compared with a number belonging to the whole manifold.",
-    "use_carefully": "The paper is technical and historically downstream from earlier surface intuition. The companion should first explain the arrow field, isolated defects, local turning, and same-surface total before pointing readers to the paper."
+    "why": "Hopf's paper is a primary reference for the vector-field-index thread behind Poincare-Hopf: local singularities of a field are added and compared with a number belonging to the whole manifold. It gives the source trail for the course's later idea that local failures of motion are not independent once the carrier surface is fixed.",
+    "use_carefully": "The paper is technical and historically downstream from earlier surface intuition. The companion should first explain the arrow field, isolated defects, local turning, and same-surface total before pointing readers to the paper. Do not let the reference turn the lecture page into a formal-paper summary or a slogan about one equilibrium."
   },
   {
     "id": "hatcher-algebraic-topology",
@@ -154,8 +154,8 @@
       "duality",
       "graph-planarity"
     ],
-    "why": "Hatcher gives a modern route into homotopy, homology, quotient spaces, and invariants. For this site, its job is to show how the course's plain actions become reusable tools: identify points, move paths legally, and protect counts.",
-    "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it only after the lecture page has already explained the route, gluing rule, deformation, or count in everyday terms."
+    "why": "Hatcher gives a modern route into homotopy, homology, quotient spaces, and invariants. For this site, its job is to show how the course's plain actions become reusable tools: identify points, move paths legally, and protect counts. It helps readers see the larger machinery behind the course without replacing the course's concrete demonstrations.",
+    "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it only after the lecture page has already explained the route, gluing rule, deformation, or count in everyday terms. Do not import its formal order into the companion unless the course page has already earned the relevant object and move."
   },
   {
     "id": "milnor-differentiable-viewpoint",
@@ -179,8 +179,8 @@
       "vector-field-index",
       "poincare-hopf"
     ],
-    "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. For this companion, they clarify why prepared local conditions can carry whole-space conclusions.",
-    "use_carefully": "The text assumes more mathematical preparation than the companion. Use it only after the everyday explanation has named the object, legal move, local condition, and global count or existence claim."
+    "why": "Milnor's notes connect manifolds, degree, fixed points, and vector-field ideas in a compact differentiable-topology setting. For this companion, they clarify why prepared local conditions can carry whole-space conclusions. They support the bridge from smooth local behavior to topological existence or counting claims without forcing the reader to start from formal prerequisites.",
+    "use_carefully": "The text assumes more mathematical preparation than the companion. Use it only after the everyday explanation has named the object, legal move, local condition, and global count or existence claim. Its role is formal backup for a prepared idea, not a substitute route that lets the page skip the plain-language setup."
   },
   {
     "id": "guillemin-pollack-differential-topology",
@@ -202,7 +202,7 @@
       "vector-field-index",
       "gauss-bonnet"
     ],
-    "why": "This reference explains generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. Its course-facing job is to justify the cleanup before signs are trusted.",
-    "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should first say what meeting was cleaned, what sign rule became available, and why the count survives."
+    "why": "This reference explains generic position, transversality-style thinking, intersection counts, and the route from local smooth data to global topological conclusions. Its course-facing job is to justify the cleanup before signs are trusted. It supports the moment when a visible meeting stops being a sketch feature and becomes evidence that can survive legal nudges.",
+    "use_carefully": "It belongs in the reference layer because it is more formal than the lecture treatment. The site should first say what meeting was cleaned, what sign rule became available, and why the count survives. Do not cite it as proof of exact classroom wording or let its formal language erase the course picture."
   }
 ]

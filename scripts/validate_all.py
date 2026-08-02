@@ -622,9 +622,9 @@ def main():
     for row in references:
         if not str(row.get("url", "")).startswith("https://"):
             fail(f"reference missing https url: {row.get('id')}")
-        if len(words(row.get("why"))) < 25:
+        if len(words(row.get("why"))) < 45:
             fail(f"reference why too thin: {row.get('id')}")
-        if len(words(row.get("use_carefully"))) < 20:
+        if len(words(row.get("use_carefully"))) < 45:
             fail(f"reference caveat too thin: {row.get('id')}")
         if len(row.get("lectures") or []) < 2:
             fail(f"reference needs lecture coverage: {row.get('id')}")
