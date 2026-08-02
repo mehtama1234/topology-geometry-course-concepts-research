@@ -8887,8 +8887,8 @@
       "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source rather than drifting into a standard list of topology topics. Provenance protects the boundary between this course and the larger subject.",
       "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a provenance source, so it can answer who, what course, and what sequence. It cannot answer why a particular proof works, what exact mathematical claim a lecture makes, or how a missing caption should be filled.",
       "family": "Course provenance",
-      "do_not_overread": "Do not infer extra theorem content from the mirror listing. It verifies identity and access, not additional mathematical claims, proof order, hidden caption content, or first-principles explanation.",
-      "reader_question": "What does this source verify about the course identity, and what mathematical claim still needs evidence from captions, visible demonstrations, or a real background reference? Keep identity evidence and mathematical evidence in different boxes.",
+      "do_not_overread": "Do not infer extra theorem content from the mirror listing. It verifies identity and access, not additional mathematical claims, proof order, hidden caption content, or first-principles explanation. Treat it as a directory record, not as a lecture transcript or theorem source.",
+      "reader_question": "What does this source verify about the course identity, and what mathematical claim still needs evidence from captions, visible demonstrations, or a real background reference? Keep identity evidence and mathematical evidence in different boxes, then say which later page must carry the mathematical claim.",
       "concepts": [
         "topology-vs-geometry",
         "deformation",
@@ -8902,7 +8902,7 @@
       "first_principles_bridge": "The course's surface bookkeeping and invariant habits sit in this source family. Euler characteristic, dual pictures, and Poincare-Hopf all depend on the idea that a whole space can carry evidence no single local patch reveals. From first principles, this is the move from looking at one place to asking what the entire carrier forces.",
       "how_to_read": "Read this source as historical and conceptual background after the companion has explained the lecture objects. Translate the formal history into the course's everyday test: what whole object is being protected, which changes are allowed, and what fact remains after those changes? It can support the whole-space-invariant family, but it should not be used as proof that a specific lecture used one exact statement, notation, or proof order.",
       "family": "Whole-space invariants",
-      "do_not_overread": "Do not claim Tokieda cites a specific passage or that this source proves the wording of a companion paragraph. Use it as background for the mathematical family behind the course's invariant and manifold thread.",
+      "do_not_overread": "Do not claim Tokieda cites a specific passage or that this source proves the wording of a companion paragraph. Use it as background for the mathematical family behind the course's invariant and manifold thread, while the lecture page remains responsible for its own course-specific evidence.",
       "reader_question": "What feature of the whole space is being protected across allowed changes, what conclusion depends on that protected feature, and what exact lecture wording remains unsupported? Start from the protected feature, not from the historical name.",
       "concepts": [
         "manifold",
@@ -9606,7 +9606,7 @@
       },
       {
         "requirement": "First-principles paper and source reading",
-        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2017 source-reader words keep paper reading tied to first-principles course questions.",
+        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2053 source-reader words keep paper reading tied to first-principles course questions.",
         "status": "met"
       },
       {
@@ -9694,7 +9694,7 @@
       "term_translations": 16,
       "term_translation_words": 3105,
       "source_readers": 7,
-      "source_reader_words": 2017,
+      "source_reader_words": 2053,
       "paper_family_ledger_rows": 7,
       "paper_family_ledger_words": 2016,
       "references": 7,
