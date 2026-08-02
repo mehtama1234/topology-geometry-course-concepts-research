@@ -66,9 +66,9 @@
   {
     "reference": "hatcher-algebraic-topology",
     "family": "Algebraic topology background",
-    "problem": "This family answers the machinery problem: how can routes, gluing rules, holes, and deformations become repeatable tools? The course already uses these jobs in pictures; the machinery source explains how to make those jobs stable enough to reuse beyond one example.",
+    "problem": "This family answers the organization problem: how can routes, gluing rules, holes, and deformations become repeatable tools? The course already uses these jobs in pictures; the source explains how to make those jobs stable enough to reuse beyond one example.",
     "object": "The object is a space with maps, quotient constructions, product constructions, cells, loops, and deformation relations. In everyday terms, the object is a rulebook for travel, identification, combination, and legal simplification.",
-    "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence. It can justify broader machinery, not a lecture-specific paraphrase unless the lecture source also supports it.",
+    "allowed_reading": "Use it after the course page is clear, translating formal tools back into object, legal move, and protected evidence. It can justify broader background structure, not a lecture-specific paraphrase unless the lecture source also supports it.",
     "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures: routes that cannot move away, gluing rules that define travel, and counts that survive legal deformation. The formality earns its place by protecting one of those jobs.",
     "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages. The bridge should always translate back to a course action: identify edges, combine choices, count pieces, or move without changing the protected fact.",
     "overclaim": "Do not import the full abstraction into plain course prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",

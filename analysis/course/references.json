@@ -154,7 +154,7 @@
       "duality",
       "graph-planarity"
     ],
-    "why": "Hatcher gives a modern route into homotopy, homology, quotient spaces, and invariants. For this site, its job is to show how the course's plain actions become reusable tools: identify points, move paths legally, and protect counts. It helps readers see the larger machinery behind the course without replacing the course's concrete demonstrations.",
+    "why": "Hatcher gives a modern route into homotopy, homology, quotient spaces, and invariants. For this site, its job is to show how the course's plain actions become reusable tools: identify points, move paths legally, and protect counts. It helps readers see the larger formal tools behind the course without replacing the course's concrete demonstrations.",
     "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it only after the lecture page has already explained the route, gluing rule, deformation, or count in everyday terms. Do not import its formal order into the companion unless the course page has already earned the relevant object and move."
   },
   {

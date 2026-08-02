@@ -1,8 +1,8 @@
 [
   {
     "title": "Mobius strip as a visual surprise",
-    "flawed_explanation": "The Mobius strip is surprising because it has one side, so topology is about strange-looking objects and memorable tricks rather than about the full trip that reveals a whole-surface fact.",
-    "why_it_fails": "This sentence remembers the punchline but loses the method. It does not say what object is being tested, what motion or walk reveals the fact, or why local patches fail to show the whole behavior. It also turns the course into a collection of surprising objects instead of a way to ask what survives a full journey around an object.",
+    "flawed_explanation": "The Mobius strip is surprising because it has one side, so topology is about unusual objects and remembered facts rather than about the full trip that reveals a whole-surface fact.",
+    "why_it_fails": "This sentence remembers the one-line result but loses the method. It does not say what object is being tested, what motion or walk reveals the fact, or why local patches fail to show the whole behavior. It also turns the course into a collection of surprising objects instead of a way to ask what survives a full journey around an object.",
     "repair_move": "Replace the surprise with the walk-around account. Say what a mark or traveler does on the strip and what returns changed after one complete trip. Then contrast that full-trip evidence with the local view, where every small patch still looks ordinary.",
     "strong_version": "A Mobius strip exposes a first problem: a local view of the paper does not reveal the whole-side behavior. When a mark is followed around the full strip, the route returns with side information that an ordinary band would not have. The course uses this to show why whole-shape facts can be invisible in small pieces, and why a topological explanation must name the completed object rather than only the part visible at one moment.",
     "reviewer_test": "Evidence test: explain the one-side claim by describing a full trip around the strip, naming what changes after the trip, and saying why a small local patch could not have shown that fact by itself.",

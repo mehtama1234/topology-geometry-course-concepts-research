@@ -1435,7 +1435,7 @@
         "first_principles": "If two hands slide inward under an object, they meet at a balancing point because the system has no way to jump over the balance condition. The mathematical habit is to watch a continuously changing situation and ask which event cannot be avoided.",
         "math_move": "Turn an existence question into an intersection question. One moving condition and another condition are represented as sets; if they must meet, the desired object or state exists. This changes the proof from searching for a point to showing that two organized pieces cannot avoid each other.",
         "detail": "The strength of the argument is continuity. If the motion could jump, vanish, or teleport, the forced meeting would not follow. The demonstration works because each small change in hand position produces a small change in the balancing condition.",
-        "connection": "This lecture bridges hands-on physical reasoning and the formal intersection machinery used in the following lecture. It also foreshadows fixed points and equilibria, where the same question returns in a new form: what state is forced to exist because a continuous rule cannot avoid it?",
+        "connection": "This lecture bridges hands-on physical reasoning and the formal intersection tools used in the following lecture. It also foreshadows fixed points and equilibria, where the same question returns in a new form: what state is forced to exist because a continuous rule cannot avoid it?",
         "anchors": [
           "center of gravity",
           "continuous motion",
@@ -1750,7 +1750,7 @@
         "title": "Fixed points as intersections with the diagonal",
         "problem": "The lecture studies maps from a space to itself. A fixed point is a point that the map sends back to itself. The problem is to prove that such a point exists without finding it directly.",
         "first_principles": "Start by naming the rule and the space it maps back into itself. Then draw the graph of the map: for each starting point, record where it goes. Also draw the diagonal: the set of pairs where the start and the end are the same. A fixed point is a meeting of these two objects, so self-agreement becomes something the reader can inspect.",
-        "math_move": "Translate fixed points into intersections between the graph of a map and the diagonal. Then use the earlier intersection machinery to decide when those meetings cannot all disappear. The map is no longer an invisible rule; it becomes a geometric object, but the translation is valid only when input, output, and equality all belong to the same space.",
+        "math_move": "Translate fixed points into intersections between the graph of a map and the diagonal. Then use the earlier intersection tools to decide when those meetings cannot all disappear. The map is no longer an invisible rule; it becomes a geometric object, but the translation is valid only when input, output, and equality all belong to the same space.",
         "detail": "The middle video for this lecture has no recovered captions, so this reading is grounded in the surrounding transcript and the course summary rather than a complete transcript for all parts. The site keeps that source gap visible because pretending full evidence would make the explainer less trustworthy.",
         "connection": "This lecture carries intersection theory into fixed-point theory. It sets up Brouwer and Lefschetz-style arguments in the next lecture. The course is now using the same signed-meeting idea to prove that a rule must leave some point unmoved.",
         "anchors": [
@@ -1943,7 +1943,7 @@
         ],
         "essay": [
           "Lecture 10 focuses on the Brouwer fixed-point theorem for the closed ball. In plain language, if every point of a filled disk or ball is moved continuously to another point inside the same filled shape, at least one point must end up where it started. The theorem does not tell us which point. Its strength is that it proves existence from the shape of the domain and the continuity of the rule.",
-          "The boundary is not a minor technicality. A closed ball includes its boundary, and the boundary helps trap the continuous rule. If every point tried to avoid itself, the resulting escape pattern would contradict the way the boundary and interior fit together. The attempted escape would have to assign every point a direction away from itself while staying compatible with nearby points and with the edge of the filled shape. This lecture shows the payoff of the earlier machinery: topology can prove that something exists without solving for it. That same payoff becomes essential in dynamics, where exact trajectories may be out of reach but forced equilibria can still be known.",
+          "The boundary is not a minor technicality. A closed ball includes its boundary, and the boundary helps trap the continuous rule. If every point tried to avoid itself, the resulting escape pattern would contradict the way the boundary and interior fit together. The attempted escape would have to assign every point a direction away from itself while staying compatible with nearby points and with the edge of the filled shape. This lecture shows the payoff of the earlier tools: topology can prove that something exists without solving for it. That same payoff becomes essential in dynamics, where exact trajectories may be out of reach but forced equilibria can still be known.",
           "The hard part is accepting that existence can be a geometric consequence. The theorem is not guessing that a fixed point probably exists. It says the whole filled shape leaves no continuous escape plan. The closed ball supplies the trap: it contains the interior and the boundary together, and a continuous rule must move nearby points in compatible ways while staying inside that same filled shape.",
           "The lecture also shows why changing the space changes the claim. A closed ball, an open ball, a circle, and a torus do not give a continuous map the same constraints. The theorem's force comes from the exact shape of the domain and the rule that points remain inside it. The hypotheses are the mechanism, not formal decoration: closed, filled, same space, inside itself, and no jumps are the pieces that block the escape plan.",
           "Brouwer turns fixed points from special coincidences into forced consequences. A map may move every visible point in a confusing way, but the whole filled shape limits the escape plan. That is the same pattern already seen in strips, surfaces, and intersections: local freedom exists, but the completed object blocks some global arrangements. The theorem is a clean form of that pattern."
@@ -2561,7 +2561,7 @@
           }
         ],
         "essay": [
-          "Lecture 14 turns the machinery toward applications. Rotations, physical systems, and dynamical examples can look unrelated, but the course asks the same modeling questions each time. What is the space? What is the rule or motion on that space? What changes are legal? What count, fixed point, index, or obstruction is protected? Without that translation, applying topology would be empty.",
+          "Lecture 14 turns the course tools toward applications. Rotations, physical systems, and dynamical examples can look unrelated, but the course asks the same modeling questions each time. What is the space? What is the rule or motion on that space? What changes are legal? What count, fixed point, index, or obstruction is protected? Without that translation, applying topology would be empty.",
           "The first-principles issue is that an application is never the raw physical object itself. It is a selected description of the object's possible states. For a rotation problem, the state might be an angle or an orientation. For a mechanical problem, it might be a position together with a constraint. For a dynamical problem, it might be the surface on which arrows describe motion. The topology applies to that state space, so building the state space is part of the proof.",
           "The value of the applications is that they show topology as a method for behavior, not only for static shapes. A physical system may have too many details to track directly, but the space of its possible states can have holes, walls, boundaries, or forced passages. Once a problem is honestly translated into that space, the earlier proof families apply. The course's demonstrations are therefore not isolated performances; they are examples of a reusable way to reason about constrained motion.",
           "This lecture also warns against careless application. A theorem cannot be pasted onto a physical story until the modeling has been done. The state space, boundary conditions, allowed motions, and protected quantity must be identified. Ask what information has been kept and what has been thrown away. If a supposedly harmless detail changes the state space, then it may change the conclusion.",
@@ -5773,7 +5773,7 @@
       "depth": {
         "why_it_exists": "Poincare-Hopf exists because the course needs a final exchange between shape and motion. It says that the sum of local vector-field indices is forced by Euler characteristic, so the surface can demand defects before the differential equation is solved.",
         "beginner_trap": "Poincare-Hopf is not a slogan about the hairy ball. The real content is a signed account over every isolated defect. One local source or saddle is not enough; the total over the whole surface is the theorem. The field must be cleaned into countable defects before the surface can demand the final sum.",
-        "course_role": "Poincare-Hopf gathers the course's main habits: surfaces, Euler characteristic, signed counts, generic cleanup, and dynamics. It is the late point where earlier bookkeeping becomes a statement about possible motion and about what every arrow field must fail to avoid. The theorem shows why the earlier surface counts were not isolated tricks: they were preparing a language for forced defects."
+        "course_role": "Poincare-Hopf gathers the course's main habits: surfaces, Euler characteristic, signed counts, generic cleanup, and dynamics. It is the late point where earlier bookkeeping becomes a statement about possible motion and about what every arrow field must fail to avoid. The theorem shows why the earlier surface counts were not separate examples: they were preparing a language for forced defects."
       },
       "essay": [
         "Poincare-Hopf is the moment when the course's earlier bookkeeping speaks directly about motion. A vector field on a surface may have several isolated defects. Each defect has an index, a signed count of how nearby arrows turn. The theorem says that when all these local indices are added, the sum is forced by Euler characteristic, a number belonging to the surface.",
@@ -6474,7 +6474,7 @@
       "source_family": "Algebraic topology background",
       "course_demonstration": "Keep the bridge grounded in Clean intersections between oriented objects, equipped with plus and minus signs. The moments Signed intersection number, Pair creation and cancellation, and Orientation gives signs their meaning show what the lecture actually makes visible before any outside reference is allowed to help.",
       "mathematical_bridge": "How can a count survive when crossings can appear or disappear during legal motion? Answer it by naming the permitted action first: Assign signs using a consistent orientation rule and allow only deformations where pair creation is inspected. Then name the evidence that action leaves in place: Opposite-signed pairs can be born or die without changing the signed total. Only then can a reference widen the mathematical family behind the lecture.",
-      "how_source_extends": "Signed intersection is a repaired count. Algebraic-topology sources may place the idea in a larger invariant family, but the lecture bridge has to show clean meetings, orientation, and opposite-signed pair cancellation. Read the supporting family through this plain problem: Hatcher's text answers the machinery question: how can holes, loops, gluing, and deformation be organized into repeatable tools? The course shows the need for that machinery in small, visible pieces: identify edges, keep routes legal, count cells, and compare situations that can be moved into one another.",
+      "how_source_extends": "Signed intersection is a repaired count. Algebraic-topology sources may place the idea in a larger invariant family, but the lecture bridge has to show clean meetings, orientation, and opposite-signed pair cancellation. Read the supporting family through this plain problem: Hatcher's text answers a larger organization question: how can holes, loops, gluing, and deformation be turned into repeatable tools? The course shows the need for those tools in small, visible pieces: identify edges, keep routes legal, count cells, and compare situations that can be moved into one another.",
       "overread_warning": "\"Intersection number is a count with memory\" overreaches when it calls the raw crossing count invariant or assigns plus and minus without a direction rule. The arithmetic counts only after the signs have earned their meaning. Keep the source claim narrow by naming the later job it actually supports: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled.",
       "reader_question": "Can the reader explain where the sign rule comes from, why a birth pair contributes zero net change, and which legal deformation leaves the signed total available as evidence? Also say why this lecture matters later: This is the counting engine for the second half of the course. Fixed points and vector-field index both reuse the idea that local events become evidence when cancellation is controlled.",
       "concepts": [
@@ -6497,7 +6497,7 @@
       "source_family": "Algebraic topology background",
       "course_demonstration": "The demonstration layer begins with The graph of a map compared with the diagonal of self-agreement. Use The graph of a map meets the diagonal, Missing middle caption is kept visible, and A rule becomes a shape that can be compared as the evidence trail: they show the object, the permitted change, and the claim that survives.",
       "mathematical_bridge": "How can the equation that says 'the output equals the input' become a visible geometric meeting? The source bridge should preserve this order: object, move, evidence, source. The move is: Translate the rule into its graph in input-output space and compare it with the diagonal without changing what equality means. The evidence is: A meeting of graph and diagonal is exactly a fixed point of the original map. A citation that skips either part is not yet doing course work.",
-      "how_source_extends": "The fixed-point bridge preserves the missing-caption caveat while explaining the reliable graph-diagonal translation. Algebraic-topology background can widen fixed-point language, but the lecture support is graph, diagonal, self-agreement, and controlled meeting. The background source should be used to sharpen this question, not to replace the lecture evidence: Hatcher's text answers the machinery question: how can holes, loops, gluing, and deformation be organized into repeatable tools? The course shows the need for that machinery in small, visible pieces: identify edges, keep routes legal, count cells, and compare situations that can be moved into one another.",
+      "how_source_extends": "The fixed-point bridge preserves the missing-caption caveat while explaining the reliable graph-diagonal translation. Algebraic-topology background can widen fixed-point language, but the lecture support is graph, diagonal, self-agreement, and controlled meeting. The background source should be used to sharpen this question, not to replace the lecture evidence: Hatcher's text answers a larger organization question: how can holes, loops, gluing, and deformation be turned into repeatable tools? The course shows the need for those tools in small, visible pieces: identify edges, keep routes legal, count cells, and compare situations that can be moved into one another.",
       "overread_warning": "\"Fixed points as intersections with the diagonal\" crosses its source boundary when it fills the unavailable middle caption with hidden theorem details. The bridge may explain the supported conversion, not invent transcript-level evidence. The honest version uses the later role as evidence of scope, not as extra authority: This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra.",
       "reader_question": "Can the reader justify the fixed-point claim from graph and diagonal alone, state which assumptions would be needed for a theorem, and mark any missing-caption inference as weaker evidence? Then connect the answer to the later course need: This converts rules into shapes. Brouwer and later dynamics become easier to read because existence can now be treated as forced intersection rather than hidden algebra.",
       "concepts": [
@@ -6521,7 +6521,7 @@
       "source_family": "Algebraic topology background",
       "course_demonstration": "The source trail has to answer to the lecture object first: A continuous self-map of a closed ball, including its filled interior and boundary. The usable course evidence appears in Brouwer on the closed ball, Boundary changes the theorem, and No global escape from self-agreement, not in a general memory of what topology usually says.",
       "mathematical_bridge": "Why can a filled shape force at least one point to stay put under every continuous rule of the right kind? The bridge is the working chain: allowed move, surviving fact, then source support. Here the allowed move is: Keep the domain filled, keep the boundary condition honest, and forbid jumps in the rule. The fact carried forward is: The ball gives no continuous escape plan that moves every point away from itself at once. A reference can extend the claim only after that chain is visible.",
-      "how_source_extends": "Brouwer enters as a contract on a particular space and rule. Formal background can explain the theorem family, but the lecture bridge must keep closed filled ball, self-map, continuity, and existence conclusion in one account. The matching source family is useful because it asks this problem in a broader setting: Hatcher's text answers the machinery question: how can holes, loops, gluing, and deformation be organized into repeatable tools? The course shows the need for that machinery in small, visible pieces: identify edges, keep routes legal, count cells, and compare situations that can be moved into one another.",
+      "how_source_extends": "Brouwer enters as a contract on a particular space and rule. Formal background can explain the theorem family, but the lecture bridge must keep closed filled ball, self-map, continuity, and existence conclusion in one account. The matching source family is useful because it asks this problem in a broader setting: Hatcher's text answers a larger organization question: how can holes, loops, gluing, and deformation be turned into repeatable tools? The course shows the need for those tools in small, visible pieces: identify edges, keep routes legal, count cells, and compare situations that can be moved into one another.",
       "overread_warning": "\"Brouwer fixed point theorem: shape forces a point to stay\" has a concrete source boundary: Brouwer should not become a promise for every motion, every space, or a computed location. Change the domain, let outputs leave, or allow jumps, and the claim changes. The repaired claim should say what this lecture prepares next: This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule.",
       "reader_question": "Can the reader name the closed filled domain, the rule back into that same domain, the no-jump condition, and the exact conclusion without claiming location or uniqueness? Then connect the answer to the later course need: This is the strongest plain example of shape forcing existence. It also teaches the necessary caution: the theorem depends on the exact space and the exact kind of rule.",
       "concepts": [
@@ -7549,8 +7549,8 @@
   "repair_clinic_cases": [
     {
       "title": "Mobius strip as a visual surprise",
-      "flawed_explanation": "The Mobius strip is surprising because it has one side, so topology is about strange-looking objects and memorable tricks rather than about the full trip that reveals a whole-surface fact.",
-      "why_it_fails": "This sentence remembers the punchline but loses the method. It does not say what object is being tested, what motion or walk reveals the fact, or why local patches fail to show the whole behavior. It also turns the course into a collection of surprising objects instead of a way to ask what survives a full journey around an object.",
+      "flawed_explanation": "The Mobius strip is surprising because it has one side, so topology is about unusual objects and remembered facts rather than about the full trip that reveals a whole-surface fact.",
+      "why_it_fails": "This sentence remembers the one-line result but loses the method. It does not say what object is being tested, what motion or walk reveals the fact, or why local patches fail to show the whole behavior. It also turns the course into a collection of surprising objects instead of a way to ask what survives a full journey around an object.",
       "repair_move": "Replace the surprise with the walk-around account. Say what a mark or traveler does on the strip and what returns changed after one complete trip. Then contrast that full-trip evidence with the local view, where every small patch still looks ordinary.",
       "strong_version": "A Mobius strip exposes a first problem: a local view of the paper does not reveal the whole-side behavior. When a mark is followed around the full strip, the route returns with side information that an ordinary band would not have. The course uses this to show why whole-shape facts can be invisible in small pieces, and why a topological explanation must name the completed object rather than only the part visible at one moment.",
       "reviewer_test": "Evidence test: explain the one-side claim by describing a full trip around the strip, naming what changes after the trip, and saying why a small local patch could not have shown that fact by itself.",
@@ -8644,7 +8644,7 @@
       "confusion": "A reference can support a family of ideas without proving every sentence on a course page. The danger is to treat citation as a blanket permission instead of asking what exact claim the source can carry.",
       "left_job": "Source support ties a course move to the course videos, a primary-paper family, or a standard reference for the background mathematics. Its job is limited: identify the course, support a broader theorem family, or clarify formal background after the lecture object is already plain.",
       "right_job": "Source overclaim treats a reference as if it directly proves a lecture interpretation, exact wording, or stronger theorem use that the available source evidence does not justify. It hides the difference between caption evidence, visible demonstration, course-arc inference, and background mathematics.",
-      "bridge": "The companion should move from lecture evidence to source family carefully: course demonstration first, source support second, caveat always visible. A good source sentence says whether it is supporting provenance, history, formal machinery, or a course-specific claim.",
+      "bridge": "The companion should move from lecture evidence to source family carefully: course demonstration first, source support second, caveat always visible. A useful source sentence says whether it is supporting provenance, history, formal theorem background, or a course-specific claim.",
       "failure_test": "If a sentence would become false or too strong when the auto-caption caveat is remembered, it is probably overclaiming. A repair weakens the claim or adds the missing label: caption support, visible demonstration, course inference, or background-source support.",
       "reader_question": "What exact claim does the source support, what stronger claim should remain unsaid, and what evidence type is doing the work?",
       "concepts": [
@@ -8927,10 +8927,10 @@
     },
     {
       "reference": "hatcher-algebraic-topology",
-      "reader_problem": "Hatcher's text answers the machinery question: how can holes, loops, gluing, and deformation be organized into repeatable tools? The course shows the need for that machinery in small, visible pieces: identify edges, keep routes legal, count cells, and compare situations that can be moved into one another.",
+      "reader_problem": "Hatcher's text answers a larger organization question: how can holes, loops, gluing, and deformation be turned into repeatable tools? The course shows the need for those tools in small, visible pieces: identify edges, keep routes legal, count cells, and compare situations that can be moved into one another.",
       "object_to_watch": "Watch the spaces and maps, especially quotient spaces, product spaces, loops, cells, and homotopy-style deformations. These objects record allowed movement and preserved structure. The plain object is not the notation; it is the rulebook that says which points are the same, which paths are legal, and which facts survive.",
-      "first_principles_bridge": "The course uses pictures before formal machinery. Hatcher supplies a broader language for the same habit: replace accidental geometry by route, gluing, and invariant information that survives allowed changes. The bridge is not the vocabulary itself; it is the job the vocabulary does for the proof.",
-      "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives? A quotient should become an identification rule, a homotopy should become legal motion, and a homology-style count should become protected evidence. Treat it as broader machinery support, not as evidence for a specific classroom sentence.",
+      "first_principles_bridge": "The course uses pictures before formal tools. Hatcher supplies a broader language for the same habit: replace accidental geometry by route, gluing, and invariant information that survives allowed changes. The bridge is not the vocabulary itself; it is the job the vocabulary does for the proof.",
+      "how_to_read": "Use it as a next-step reference after a lecture page is clear. Translate every formal construction back into the companion's questions: what is the object, what is allowed to move, and what survives? A quotient should become an identification rule, a homotopy should become legal motion, and a homology-style count should become protected evidence. Treat it as broader formal support, not as evidence for a specific classroom sentence.",
       "family": "Algebraic topology background",
       "do_not_overread": "Do not import the text's full abstraction into the course pages or imply the lectures follow this book's order. The companion should stay grounded in Tokieda's demonstrations and use Hatcher only for broader mathematical support after the everyday object and protected fact are visible.",
       "reader_question": "Which formal construction is just a careful version of a route, gluing rule, deformation, or preserved count already seen in the course, and what would be lost if that construction were named before its job was explained? Translate the formal word into a plain action in the argument.",
@@ -8944,7 +8944,7 @@
       "reference": "milnor-differentiable-viewpoint",
       "reader_problem": "Milnor's notes answer the bridge question: how do smooth local pictures produce topological conclusions about fixed points, degree, and vector fields? The everyday difficulty is that local motion can look like analysis, but the final answer may be a whole-space existence or counting statement.",
       "object_to_watch": "Watch smooth manifolds, maps, regular values, boundaries, and vector fields. The object to inspect is often a prepared local event: a clean preimage, a boundary condition, a regular value, or an isolated defect. The conclusion belongs to the whole space only after that local preparation is honest.",
-      "first_principles_bridge": "The course repeatedly prepares a clean ordinary case, assigns signs or indices, and then reads a global conclusion. Milnor gives a compact formal route through that same local-to-global movement. The bridge is not that the course suddenly requires smooth machinery; it is that the machinery explains why clean local evidence can add up to a topological conclusion.",
+      "first_principles_bridge": "The course repeatedly prepares a clean ordinary case, assigns signs or indices, and then reads a global conclusion. Milnor gives a compact formal route through that same local-to-global movement. The bridge is not that the course suddenly requires smooth technical tools; it is that those tools explain why clean local evidence can add up to a topological conclusion.",
       "how_to_read": "Read it after the term translator and formula reader. Whenever the notes use a formal word, translate it into the job it performs: preparing clean meetings, assigning signs, or forcing a whole-space count. Use it to strengthen the formal background, not to replace the course's plain-language contract or to make beginners climb through prerequisites before they understand the object.",
       "family": "Differentiable topology bridge",
       "do_not_overread": "Do not assume the companion's reader has Milnor's prerequisites, and do not present Milnor's formal route as the lecture's route unless the lecture evidence says so. Explain the course idea first and use this source as formal backup.",
@@ -9039,9 +9039,9 @@
     {
       "reference": "hatcher-algebraic-topology",
       "family": "Algebraic topology background",
-      "problem": "This family answers the machinery problem: how can routes, gluing rules, holes, and deformations become repeatable tools? The course already uses these jobs in pictures; the machinery source explains how to make those jobs stable enough to reuse beyond one example.",
+      "problem": "This family answers the organization problem: how can routes, gluing rules, holes, and deformations become repeatable tools? The course already uses these jobs in pictures; the source explains how to make those jobs stable enough to reuse beyond one example.",
       "object": "The object is a space with maps, quotient constructions, product constructions, cells, loops, and deformation relations. In everyday terms, the object is a rulebook for travel, identification, combination, and legal simplification.",
-      "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence. It can justify broader machinery, not a lecture-specific paraphrase unless the lecture source also supports it.",
+      "allowed_reading": "Use it after the course page is clear, translating formal tools back into object, legal move, and protected evidence. It can justify broader background structure, not a lecture-specific paraphrase unless the lecture source also supports it.",
       "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures: routes that cannot move away, gluing rules that define travel, and counts that survive legal deformation. The formality earns its place by protecting one of those jobs.",
       "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages. The bridge should always translate back to a course action: identify edges, combine choices, count pieces, or move without changing the protected fact.",
       "overclaim": "Do not import the full abstraction into plain course prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",
@@ -9241,7 +9241,7 @@
         "duality",
         "graph-planarity"
       ],
-      "why": "Hatcher gives a modern route into homotopy, homology, quotient spaces, and invariants. For this site, its job is to show how the course's plain actions become reusable tools: identify points, move paths legally, and protect counts. It helps readers see the larger machinery behind the course without replacing the course's concrete demonstrations.",
+      "why": "Hatcher gives a modern route into homotopy, homology, quotient spaces, and invariants. For this site, its job is to show how the course's plain actions become reusable tools: identify points, move paths legally, and protect counts. It helps readers see the larger formal tools behind the course without replacing the course's concrete demonstrations.",
       "use_carefully": "It is broader and more algebraic than Tokieda's course. Link it only after the lecture page has already explained the route, gluing rule, deformation, or count in everyday terms. Do not import its formal order into the companion unless the course page has already earned the relevant object and move."
     },
     {
@@ -9461,7 +9461,7 @@
       },
       {
         "requirement": "Lecture-to-source bridge",
-        "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 5650 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+        "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 5653 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
         "status": "met"
       },
       {
@@ -9541,7 +9541,7 @@
       },
       {
         "requirement": "Explanation repair clinic",
-        "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1791 repair-clinic words make the no-filler standard concrete.",
+        "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1792 repair-clinic words make the no-filler standard concrete.",
         "status": "met"
       },
       {
@@ -9586,7 +9586,7 @@
       },
       {
         "requirement": "Concept contrast reading",
-        "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 2269 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
+        "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 2270 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
         "status": "met"
       },
       {
@@ -9606,7 +9606,7 @@
       },
       {
         "requirement": "First-principles paper and source reading",
-        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2015 source-reader words keep paper reading tied to first-principles course questions.",
+        "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2017 source-reader words keep paper reading tied to first-principles course questions.",
         "status": "met"
       },
       {
@@ -9624,7 +9624,7 @@
       ],
       "lecture_examples": 45,
       "lecture_spine_entries": 15,
-      "lecture_essay_words": 5489,
+      "lecture_essay_words": 5490,
       "lecture_first_principles_essay_words": 14612,
       "lecture_deepening_words": 2309,
       "lecture_walkthrough_words": 2039,
@@ -9633,7 +9633,7 @@
       "lecture_caption_nuance_words": 1498,
       "lecture_source_faithfulness_words": 2462,
       "lecture_application_bridge_words": 6390,
-      "lecture_source_bridge_words": 5650,
+      "lecture_source_bridge_words": 5653,
       "lecture_source_bridges": 15,
       "lecture_reconstruction_drills": 15,
       "lecture_reconstruction_words": 7380,
@@ -9673,7 +9673,7 @@
       "transfer_lab_cases": 8,
       "transfer_lab_words": 2022,
       "repair_clinic_cases": 8,
-      "repair_clinic_words": 1791,
+      "repair_clinic_words": 1792,
       "oral_exam_prompts": 7,
       "oral_exam_words": 1551,
       "change_ledger_rows": 10,
@@ -9689,16 +9689,16 @@
       "theorem_use_contracts": 8,
       "theorem_contract_words": 2679,
       "concept_contrasts": 10,
-      "concept_contrast_words": 2269,
+      "concept_contrast_words": 2270,
       "reader_checks": 11,
       "term_translations": 16,
       "term_translation_words": 3103,
       "source_readers": 7,
-      "source_reader_words": 2015,
+      "source_reader_words": 2017,
       "paper_family_ledger_rows": 7,
       "paper_family_ledger_words": 2014,
       "references": 7,
-      "reference_words": 752,
+      "reference_words": 753,
       "quality_rubric_items": 6,
       "quality_rubric_words": 1105,
       "rubric_coverage_layers": 6,

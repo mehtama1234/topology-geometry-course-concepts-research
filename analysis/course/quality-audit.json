@@ -23,7 +23,7 @@
     },
     {
       "requirement": "Lecture-to-source bridge",
-      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 5650 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 5653 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
       "status": "met"
     },
     {
@@ -103,7 +103,7 @@
     },
     {
       "requirement": "Explanation repair clinic",
-      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1791 repair-clinic words make the no-filler standard concrete.",
+      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1792 repair-clinic words make the no-filler standard concrete.",
       "status": "met"
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "requirement": "Concept contrast reading",
-      "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 2269 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
+      "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 2270 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
       "status": "met"
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2015 source-reader words keep paper reading tied to first-principles course questions.",
+      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2017 source-reader words keep paper reading tied to first-principles course questions.",
       "status": "met"
     },
     {
@@ -186,7 +186,7 @@
     ],
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
-    "lecture_essay_words": 5489,
+    "lecture_essay_words": 5490,
     "lecture_first_principles_essay_words": 14612,
     "lecture_deepening_words": 2309,
     "lecture_walkthrough_words": 2039,
@@ -195,7 +195,7 @@
     "lecture_caption_nuance_words": 1498,
     "lecture_source_faithfulness_words": 2462,
     "lecture_application_bridge_words": 6390,
-    "lecture_source_bridge_words": 5650,
+    "lecture_source_bridge_words": 5653,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
     "lecture_reconstruction_words": 7380,
@@ -235,7 +235,7 @@
     "transfer_lab_cases": 8,
     "transfer_lab_words": 2022,
     "repair_clinic_cases": 8,
-    "repair_clinic_words": 1791,
+    "repair_clinic_words": 1792,
     "oral_exam_prompts": 7,
     "oral_exam_words": 1551,
     "change_ledger_rows": 10,
@@ -251,16 +251,16 @@
     "theorem_use_contracts": 8,
     "theorem_contract_words": 2679,
     "concept_contrasts": 10,
-    "concept_contrast_words": 2269,
+    "concept_contrast_words": 2270,
     "reader_checks": 11,
     "term_translations": 16,
     "term_translation_words": 3103,
     "source_readers": 7,
-    "source_reader_words": 2015,
+    "source_reader_words": 2017,
     "paper_family_ledger_rows": 7,
     "paper_family_ledger_words": 2014,
     "references": 7,
-    "reference_words": 752,
+    "reference_words": 753,
     "quality_rubric_items": 6,
     "quality_rubric_words": 1105,
     "rubric_coverage_layers": 6,

@@ -22,6 +22,7 @@ FORBIDDEN = [
     "magic",
     "clever",
     "trick",
+    "tricks",
     "interesting",
     "pretty",
     "zoo",
