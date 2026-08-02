@@ -93,7 +93,7 @@
     },
     {
       "requirement": "First-principles transfer lab",
-      "evidence": "8 transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 1933 transfer words test whether the mathematics has become a usable way to think.",
+      "evidence": "8 transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 2022 transfer words test whether the mathematics has become a usable way to think.",
       "status": "met"
     },
     {
@@ -216,7 +216,7 @@
     "synthesis_sections": 9,
     "dependency_paths": 8,
     "transfer_lab_cases": 8,
-    "transfer_lab_words": 1933,
+    "transfer_lab_words": 2022,
     "repair_clinic_cases": 8,
     "repair_clinic_words": 1637,
     "oral_exam_prompts": 7,
