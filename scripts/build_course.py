@@ -4290,6 +4290,22 @@ def build_lecture_reader_test(lecture, spine_row):
         "Show how the protected evidence makes the conclusion unavoidable or limited.",
         "Carry the surviving fact all the way to the payoff so the final claim has a reason.",
     ])
+    move_guard = varied((number, "reader-move-guard"), [
+        "The move must stay tied to the original lecture problem.",
+        "Without that check, the cleaner picture may answer a different question.",
+        "The move is useful only because the watched data remain in place.",
+        "This is where a visual simplification becomes a mathematical argument.",
+        "The permission for the move is part of the proof, not a side note.",
+        "The original question survives only if this rule survives every step.",
+    ])
+    arc_close = varied((number, "reader-arc-close"), [
+        f"Carry that protected evidence into the later course arc: {spine_row['why_later']}",
+        f"Use that evidence to explain the later need: {spine_row['why_later']}",
+        f"This is the reason the lecture can support later work: {spine_row['why_later']}",
+        f"The forward link is concrete, not thematic decoration: {spine_row['why_later']}",
+        f"The later lectures reuse exactly this protected fact: {spine_row['why_later']}",
+        f"That is what the next parts of the course borrow from this lecture: {spine_row['why_later']}",
+    ])
     object_open = varied((number, "reader-object-open"), [
         f"Use '{first_example}' to name the object in everyday words: {spine_row['object']}",
         f"Let '{first_example}' reveal what the lecture is acting on: {spine_row['object']}",
@@ -4316,8 +4332,8 @@ def build_lecture_reader_test(lecture, spine_row):
     ])
     return {
         "explain_object": f"{object_open} {picture_warning} {object_close}",
-        "test_allowed_move": f"{move_open} {move_close} That check keeps the move tied to the original lecture problem.",
-        "protect_conclusion": f"{conclusion_open} {conclusion_close} Connect that protected evidence to the later course arc: {spine_row['why_later']}",
+        "test_allowed_move": f"{move_open} {move_close} {move_guard}",
+        "protect_conclusion": f"{conclusion_open} {conclusion_close} {arc_close}",
     }
 
 
@@ -4346,17 +4362,36 @@ def build_lecture_answer_guide(lecture, spine_row):
         "This keeps the reader focused on the carrier of the reasoning, not only the name of the topic.",
         "The concrete anchor shows what the object records and why the lecture needed it.",
     ])
-    illegal_shortcut = varied((number, "answer-illegal-shortcut"), [
-        "Name an illegal shortcut: dropping boundary data, changing the carrier space, inventing extra room, removing a required sign rule, or forgetting the source caveat.",
-        "Then name the forbidden shortcut: moving fixed data, changing the model, erasing a sign rule, or making a source claim stronger than the captions allow.",
-        "Say what would break the problem, such as crossing a forbidden object, changing the surface, ignoring a boundary, or treating a caveat as settled evidence.",
-        "Include one way the explanation could cheat: changing the state space, losing orientation data, moving fixed endpoints, or using the source trail as if it were lecture wording.",
-    ])
+    illegal_shortcuts = {
+        1: "The shortcut to forbid is flattening the strip into an ordinary band while keeping the one-sided conclusion.",
+        2: "The shortcut to forbid is sliding an endpoint, swapping boundary order, or letting one route pass through another.",
+        3: "The shortcut to forbid is naming product, quotient, manifold, or surgery without saying which choices, identifications, patches, or replacements built the space.",
+        4: "The shortcut to forbid is reasoning from the unglued square as if its drawn edges were still ordinary edges in the finished surface.",
+        5: "The shortcut to forbid is treating a surface name as proof before handles, boundary pieces, and side behavior have been checked.",
+        6: "The shortcut to forbid is using a cleanup nudge that changes the placement question or erases a meeting the setup actually forces.",
+        7: "The shortcut to forbid is turning a continuity argument into a guess about where the balance point sits.",
+        8: "The shortcut to forbid is counting all crossings positively or assigning signs without a shared direction rule.",
+        9: "The shortcut to forbid is claiming a fixed point before the graph records the rule and the diagonal records self-agreement in the same space.",
+        10: "The shortcut to forbid is using Brouwer after changing the closed filled ball, the self-map condition, or the no-jump rule.",
+        11: "The shortcut to forbid is calling a zero of the field a fixed point without naming the motion law or reading the nearby arrows.",
+        12: "The shortcut to forbid is comparing one local index with Euler characteristic before every same-surface defect is in the account.",
+        13: "The shortcut to forbid is saying Poincare-Hopf solves the motion path instead of stating its total-index constraint.",
+        14: "The shortcut to forbid is letting a path in the model pass through a state the physical system could not occupy.",
+        15: "The shortcut to forbid is summarizing the course as pictorial intuition without naming the object, legal move, protected fact, and claim limit.",
+    }
     conclusion_close = varied((number, "answer-conclusion-close"), [
         "Then use that protected fact to explain the consequence in plain language.",
         "Carry that evidence into the conclusion before naming the later theorem or method.",
         "Say what the evidence forces and what it does not promise to compute.",
         "Make the payoff follow from the protected fact, not from the reader's trust in a title.",
+    ])
+    forward_close = varied((number, "answer-forward-close"), [
+        f"That is the piece later lectures reuse: {spine_row['why_later']}",
+        f"The later need is specific: {spine_row['why_later']}",
+        f"This lecture matters later because {spine_row['why_later']}",
+        f"The next uses depend on exactly this discipline: {spine_row['why_later']}",
+        f"Carry this forward as a working rule: {spine_row['why_later']}",
+        f"That protected detail becomes useful later in this way: {spine_row['why_later']}",
     ])
     data_close = varied((number, "answer-data-close"), [
         "Say what data it carries in this lecture.",
@@ -4369,6 +4404,8 @@ def build_lecture_answer_guide(lecture, spine_row):
         "That move would make the easier conclusion belong to a different problem.",
         "The shortcut is illegal because it discards the rule the lecture is testing.",
         "The shortcut must be visibly tied to the contract it breaks.",
+        "Once that shortcut is allowed, the final answer no longer belongs to the starting setup.",
+        "Naming the shortcut makes the proof boundary visible before the payoff is claimed.",
     ])
     surviving_fact = spine_row["surviving_fact"].rstrip(".")
     why_strong_close = varied((number, "answer-why-close"), [
@@ -4447,8 +4484,8 @@ def build_lecture_answer_guide(lecture, spine_row):
     }
     return {
         "object_answer": f"{object_openings[number]} {spine_row['object']} {data_close} Use '{examples[0]['title']}' as a concrete anchor. {object_close}",
-        "move_answer": f"{move_openings[number]} {spine_row['legal_move']} {illegal_shortcut} {shortcut_close}",
-        "conclusion_answer": f"{conclusion_openings[number]} {spine_row['surviving_fact']} {conclusion_close} Connect forward to the later need: {spine_row['why_later']}",
+        "move_answer": f"{move_openings[number]} {spine_row['legal_move']} {illegal_shortcuts[number]} {shortcut_close}",
+        "conclusion_answer": f"{conclusion_openings[number]} {spine_row['surviving_fact']} {conclusion_close} {forward_close}",
         "why_strong": f"{why_openings[number]} {why_strong_close}",
     }
 
