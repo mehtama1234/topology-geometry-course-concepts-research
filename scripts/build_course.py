@@ -5075,11 +5075,50 @@ def build_theme_answer_guide(theme):
         f"Ask whether the page has earned the theme: {lens['reader_test']} The earning detail is: {depth['important_detail']} {test_close}",
         f"Turn the theme into a reader test: {lens['reader_test']} The answer has to preserve this detail: {depth['important_detail']} {test_close}",
     ])
+    theme_intros = {
+        "see-by-deforming": {
+            "notice": "Start with the legal motion, not with the prettier drawing.",
+            "ignore": "Length, angle, and neatness stay outside the proof unless the question names them.",
+            "transfer": "The same disciplined freedom runs from paper strips to cleaned-up vector fields.",
+            "test": "The reader has to audit the whole motion before trusting the simplified picture.",
+        },
+        "count-what-survives": {
+            "notice": "Start with the part of the picture that can be counted after redrawings.",
+            "ignore": "Raw visual clutter is not evidence when legal motion can create or erase it.",
+            "transfer": "The same protected-account idea links Euler characteristic, signed intersections, and index.",
+            "test": "The count earns trust only after the page explains why local changes leave it alone.",
+        },
+        "local-to-global": {
+            "notice": "Start with the small local choice and the whole object that must accept all such choices.",
+            "ignore": "One successful patch is not enough when the completed surface may block agreement.",
+            "transfer": "The theme travels from Mobius side reversal to Poincare-Hopf because both test global compatibility.",
+            "test": "The reader has to find the full trip, full sum, or full gluing step where the obstruction appears.",
+        },
+        "generic-before-exception": {
+            "notice": "Start with the ordinary nearby picture where events can be separated and counted.",
+            "ignore": "The exact accidental drawing should not replace the stable cases on both sides of it.",
+            "transfer": "The same cleanup habit links disk paths, intersections, and vector-field defects.",
+            "test": "The page has to explain what the exceptional moment changes and what account survives it.",
+        },
+        "pictures-to-proofs": {
+            "notice": "Start with the constraint the picture makes visible.",
+            "ignore": "A memorable demonstration is not proof until it names the allowed move and protected fact.",
+            "transfer": "The theme carries from drawings to theorem use by making each picture state its proof job.",
+            "test": "The reader has to say what the picture proves that a bare label would hide.",
+        },
+        "shape-as-machine": {
+            "notice": "Start with the state space, route, or shape constraint that controls behavior.",
+            "ignore": "Physical detail is not enough unless it has been translated into the right mathematical model.",
+            "transfer": "The same modeling move links mechanisms, fixed points, configuration spaces, and vector fields.",
+            "test": "The page has to show which behavior the shape blocks or forces before any theorem name is used.",
+        },
+    }
+    intro = theme_intros[tid]
     return {
-        "notice_answer": f"For {title}, begin with the kind of evidence this theme trains the reader to see. {notice_prompt}",
-        "ignore_answer": f"For {title}, name the distracting detail the theme refuses to let carry the proof. {ignore_prompt}",
-        "transfer_answer": f"For {title}, connect early and late lectures through the same proof work. {transfer_prompt}",
-        "test_answer": f"For {title}, make the theme earn its place on the page. {test_prompt}",
+        "notice_answer": f"{intro['notice']} {notice_prompt}",
+        "ignore_answer": f"{intro['ignore']} {ignore_prompt}",
+        "transfer_answer": f"{intro['transfer']} {transfer_prompt}",
+        "test_answer": f"{intro['test']} {test_prompt}",
     }
 
 

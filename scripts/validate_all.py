@@ -988,6 +988,10 @@ def main():
         "the correction names what the page must check",
         "that question turns the subtheme into an inspection",
         "apply this routine only when it changes what the reader checks",
+        "begin with the kind of evidence this theme trains the reader to see",
+        "name the distracting detail the theme refuses to let carry the proof",
+        "connect early and late lectures through the same proof work",
+        "make the theme earn its place on the page",
     ]
     for phrase in stale_rubric_phrases:
         if phrase in corpus:
