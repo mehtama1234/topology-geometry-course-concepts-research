@@ -13,7 +13,7 @@
     },
     {
       "requirement": "Hand-written lecture depth",
-      "evidence": "15 lecture explainers with full essay sections, 25135 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+      "evidence": "15 lecture explainers with full essay sections, 25144 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40722 first-principles essay words; theme and subtheme pages add 30413 first-principles essay words and 12149 application words. Method-family pages add 10371 first-principles essay words and 4207 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21650 words, and concept applications add 20734 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40728 first-principles essay words; theme and subtheme pages add 30413 first-principles essay words and 12149 application words. Method-family pages add 10371 first-principles essay words and 4207 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21650 words, and concept applications add 20734 words.",
       "status": "met"
     },
     {
@@ -103,7 +103,7 @@
     },
     {
       "requirement": "Explanation repair clinic",
-      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 3514 repair-clinic words make the no-filler standard concrete.",
+      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 3508 repair-clinic words make the no-filler standard concrete.",
       "status": "met"
     },
     {
@@ -158,7 +158,7 @@
     },
     {
       "requirement": "Plain-language term translation",
-      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 5998 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
+      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 6000 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
       "status": "met"
     },
     {
@@ -187,9 +187,9 @@
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
     "lecture_essay_words": 5491,
-    "lecture_first_principles_essay_words": 25135,
+    "lecture_first_principles_essay_words": 25144,
     "lecture_deepening_words": 6626,
-    "lecture_walkthrough_words": 5191,
+    "lecture_walkthrough_words": 5195,
     "lecture_source_lens_words": 1643,
     "lecture_source_checkpoint_words": 4482,
     "lecture_caption_nuance_words": 4462,
@@ -205,7 +205,7 @@
     "lecture_reader_test_words": 5146,
     "lecture_answer_guide_words": 6136,
     "concept_essay_words": 7895,
-    "concept_first_principles_essay_words": 40722,
+    "concept_first_principles_essay_words": 40728,
     "concept_workup_words": 10524,
     "concept_anchor_words": 7088,
     "concept_application_words": 20734,
@@ -238,7 +238,7 @@
     "transfer_lab_cases": 8,
     "transfer_lab_words": 4200,
     "repair_clinic_cases": 8,
-    "repair_clinic_words": 3514,
+    "repair_clinic_words": 3508,
     "oral_exam_prompts": 7,
     "oral_exam_words": 3167,
     "change_ledger_rows": 10,
@@ -257,7 +257,7 @@
     "concept_contrast_words": 4455,
     "reader_checks": 11,
     "term_translations": 16,
-    "term_translation_words": 5998,
+    "term_translation_words": 6000,
     "source_readers": 7,
     "source_reader_words": 3472,
     "paper_family_ledger_rows": 7,

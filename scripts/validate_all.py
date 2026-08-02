@@ -53,6 +53,8 @@ FORBIDDEN = [
     "useful because",
     "useful only",
     "useful when",
+    "stays useful",
+    "becomes useful",
 ]
 
 
@@ -504,7 +506,7 @@ def main():
     repair_clinic_cases = data.get("repair_clinic_cases") or []
     required_repair_titles = {
         "Mobius strip as a visual surprise",
-        "Invariant as any number that stays useful",
+        "Invariant as any number that survives the allowed move",
         "Quotient space as a square with arrows",
         "Generic position as visual cleanup",
         "Fixed point as a point that does not move",

@@ -233,7 +233,7 @@ def build_source_readers(rows):
         reference = row["reference"]
         concept_text = ", ".join(row["concepts"])
         problem_close = varied((reference, "source-reader-problem-close"), [
-            "The reader problem has to be stated before the source name becomes useful, because the source can help only with a particular kind of question.",
+            "The reader problem has to be stated before the source name can help, because the source can help only with a particular kind of question.",
             "This keeps the citation tied to a need in the course instead of letting authority replace explanation.",
             "A plain problem sentence says what confusion, missing evidence, or formal background the source is meant to address.",
             "The source can be used only after the reader knows whether it supports course identity, historical background, theorem family, or lecture-specific evidence.",
@@ -557,7 +557,7 @@ def build_term_translations(rows):
         term = row["term"]
         concept_text = ", ".join(row["concepts"])
         everyday_close = varied((term, "term-everyday-close"), [
-            "The everyday sentence has to let a reader picture the job before the formal word becomes useful.",
+            "The everyday sentence has to let a reader picture the job before the formal word can shorten the explanation.",
             "This keeps the term from becoming a password: the reader can say what is present, what changes, and what has to stay true.",
             "The plain version matters because the course uses words as names for actions, not as substitutes for actions.",
             "A reader who has never studied the subject still needs to know what the term lets the proof inspect.",
@@ -1497,7 +1497,7 @@ REPAIR_CLINIC_CASES = [
         "concepts": ["topology-vs-geometry", "deformation", "manifold"],
     },
     {
-        "title": "Invariant as any number that stays useful",
+        "title": "Invariant as any number that survives the allowed move",
         "flawed_explanation": "An invariant is an important number we calculate from a shape, and it helps us compare examples whenever the number looks useful, appears in a formula, or seems stable in one drawing.",
         "why_it_fails": "This sounds plausible but avoids the main test. A number is not an invariant because it is useful once; it earns the role by surviving the allowed changes in the problem. The weak sentence also hides the difference between a raw visible count and a count that has been designed to ignore harmless changes.",
         "repair_move": "Name the legal move that threatens the count, then explain why the proposed number survives that move or how signs, parity, or cancellation repair the count. The repair includes one local event, such as a pair of crossings being born, so the reader can see the survival test happen.",
@@ -4482,7 +4482,7 @@ LECTURE_NOTES = {
     9: "The missing-caption middle part is treated carefully, but the surrounding lecture arc points to signs, crossings, and controlled changes.",
     10: "The course connects local turning and global conclusion: tiny contributions have to fit the whole shape once they are collected in one total.",
     11: "Vector-field and index-style reasoning appears as a way to count failures and show that some failures cannot be avoided.",
-    12: "Configuration-space thinking becomes useful: study all possible positions as a shape of its own, then read motion as a path through that shape.",
+    12: "Configuration-space thinking gains force here: study all possible positions as a shape of its own, then read motion as a path through that shape.",
     13: "Physical examples and mechanisms show that topology is not naming shapes; it is reasoning about constrained motion when the allowed positions have holes, walls, or forced passages.",
     14: "The late lectures consolidate the method across pictures, surfaces, mechanisms, and invariants, showing the same habit of thought in several different-looking problems.",
     15: "The course closes by tying the motto back together: deform the problem, protect the right fact, and let shape force the answer.",
@@ -5435,7 +5435,7 @@ def build_lecture_walkthrough(row, spine_row):
         "This middle step tells the reader why the simpler picture, count, theorem, or model still speaks about the starting object.",
         "A useful payoff names the exact evidence that survived rather than praising the method.",
         "The walkthrough stays honest by saying what changed, what stayed fixed, and what conclusion became available.",
-        "This is the step where the lecture becomes useful for later topology, not just for the first demonstration.",
+        "This is the step where the lecture gains later force in topology, not just a role in the first demonstration.",
         "The same payoff can transfer only after another field rebuilds the same object and protected evidence.",
     ])
     check_close = varied((lecture, "walkthrough-check-close"), [
@@ -6457,7 +6457,7 @@ def build_lecture_first_principles_essay(lecture, spine_row):
         f"The repair is to rebuild the lecture from the beginning: object, allowed move, protected fact, payoff, and limit. If one part is missing, the topic name is not enough.",
         f"This wrong use matters because lecture habits are easy to overcopy. A sentence that is true in one setting can become false after the carrier or surviving evidence changes.",
         f"For Lecture {number:02d}, the nearby false version teaches the boundary of the idea. It tells the reader what stronger claim must remain unsaid until more evidence is supplied.",
-        f"The course needs this limit so the lecture stays useful. Without it, the explanation may sound familiar while no longer answering the starting problem.",
+        f"The course needs this limit so the lecture stays tied to its evidence. Without it, the explanation may sound familiar while no longer answering the starting problem.",
         f"The same warning applies outside topology: a model can resemble the lecture example while missing the route, count, boundary, map, field, or state-space condition that carried the claim.",
         f"A plain explanation of Lecture {number:02d} ends by naming the bad transfer, because knowing where the idea stops is part of understanding why it works.",
     ])
@@ -6548,7 +6548,7 @@ def build_lecture_answer_guide(lecture, spine_row):
         f"The later role is specific: {later_role}",
         f"The next uses depend on exactly this discipline: {later_role}",
         f"Carry this forward as a working rule: {later_role}",
-        f"That protected detail becomes useful later in this way: {later_role}",
+        f"That protected detail gains later force in this way: {later_role}",
     ])
     data_close = varied((number, "answer-data-close"), [
         "Say what data it carries in this lecture, and why that data cannot be replaced by a topic name.",
@@ -7589,7 +7589,7 @@ def build_concept_first_principles_essay(concept):
         f"The repair is to rebuild the concept from the beginning: object, allowed move, protected fact, payoff, and limit. If one part is missing, the name is not enough.",
         f"This wrong use matters because concepts are easy to overcopy. A sentence that is true in one setting can become false after the carrier or surviving evidence changes.",
         f"For {title}, the nearby false version teaches the boundary of the idea. It tells the reader what stronger claim must remain unsaid until more evidence is supplied.",
-        f"The course needs this limit so the concept stays useful. Without it, the explanation may sound familiar while no longer answering the starting problem.",
+        f"The course needs this limit so the concept stays tied to its evidence. Without it, the explanation may sound familiar while no longer answering the starting problem.",
         f"The same warning applies outside topology: a model can resemble the course example while missing the route, count, boundary, map, or state-space condition that carried the claim.",
         f"A plain explanation of {title} ends by naming the bad transfer, because knowing where the idea stops is part of understanding why it works.",
     ])
@@ -8185,7 +8185,7 @@ def build_theme_first_principles_essay(theme):
         f"The repair is to return from the slogan to the contract: name the object, the permitted move, the protected fact, and the exact conclusion that follows.",
         f"This wrong use matters because theme-level claims are easy to overread. A theme can guide attention, but it cannot prove a claim after the evidence or condition has disappeared.",
         f"For {title}, the nearby false version is part of the lesson. It shows which condition was doing the work and which stronger sentence has to remain unsaid.",
-        f"The course needs this boundary so the theme-level claim stays useful. Without the boundary, the theme may sound meaningful while no longer telling the reader what to check.",
+        f"The course needs this boundary so the theme-level claim stays tied to evidence. Without the boundary, the theme may sound meaningful while no longer telling the reader what to check.",
         f"The same warning applies outside topology: a model can look like the course example while missing the route, boundary, count, or state-space condition that carried the original conclusion.",
         f"A plain explanation of {title} therefore ends with a limit, because knowing where the habit stops is part of knowing why it matters.",
     ])
@@ -8735,7 +8735,7 @@ def build_family_first_principles_essay(family):
         f"The repair is to rebuild the contract from the beginning: input, action, protected evidence, output, and failure test. If any part is missing, the method name is not enough.",
         f"This wrong use matters because proof families are easy to overcopy. A move that is legal in one setting can become false after the fixed data or surviving evidence changes.",
         f"For {title}, the nearby false version teaches the method's boundary. It tells the reader what stronger claim must remain unsaid until more evidence is supplied.",
-        f"The course needs this limit so the family stays useful. Without it, the proof habit may sound familiar while no longer answering the starting problem.",
+        f"The course needs this limit so the family stays tied to its evidence. Without it, the proof habit may sound familiar while no longer answering the starting problem.",
         f"The same warning applies outside topology: a model can resemble the course example while missing the route, count, boundary, placement rule, or state-space condition that carried the proof.",
         f"A plain explanation of {title} ends by naming the bad transfer, because knowing where the method stops is part of understanding why it works.",
     ])
