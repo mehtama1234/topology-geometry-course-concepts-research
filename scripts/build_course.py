@@ -4590,14 +4590,15 @@ def build_lecture_source_bridges(lectures, references, source_readers):
         note = LECTURE_SOURCE_BRIDGE_NOTES[number]
         boundary = note["claim_boundary"]
         overread_stem = plain_fragment(boundary, ["A source-backed sentence overreaches if"])
+        overread_clause = overread_stem[0].lower() + overread_stem[1:] if overread_stem else overread_stem
         if overread_stem != boundary:
             overread_sentence = varied((number, "bridge-overread-open"), [
-                f"\"{lecture['deep']['title']}\" overreaches when {overread_stem}",
-                f"\"{lecture['deep']['title']}\" crosses its source boundary when {overread_stem}",
+                f"\"{lecture['deep']['title']}\" overreaches when {overread_clause}",
+                f"\"{lecture['deep']['title']}\" crosses its source boundary when {overread_clause}",
                 f"\"{lecture['deep']['title']}\" cannot let the source trail do this: {overread_stem}",
-                f"\"{lecture['deep']['title']}\" makes the claim too strong when {overread_stem}",
-                f"\"{lecture['deep']['title']}\" has to avoid any sentence where {overread_stem}",
-                f"\"{lecture['deep']['title']}\" uses the source unsafely if the page says that {overread_stem}",
+                f"\"{lecture['deep']['title']}\" makes the claim too strong when {overread_clause}",
+                f"\"{lecture['deep']['title']}\" has to avoid any sentence where {overread_clause}",
+                f"\"{lecture['deep']['title']}\" uses the source unsafely if the page says that {overread_clause}",
             ])
         else:
             overread_sentence = varied((number, "bridge-boundary-open"), [
@@ -4607,11 +4608,12 @@ def build_lecture_source_bridges(lectures, references, source_readers):
                 f"\"{lecture['deep']['title']}\" stops the bridge here: {boundary}",
             ])
         repair_sentence = varied((number, "bridge-repair-close"), [
-            f"Repair the sentence by returning to the lecture's later role: {spine['why_later']}",
-            f"Bring the claim back to the later course job: {spine['why_later']}",
-            f"The safer version names the supported course role instead: {spine['why_later']}",
-            f"Use the later role as the limit on the source claim: {spine['why_later']}",
-            f"That keeps the source trail attached to what the lecture prepares next: {spine['why_later']}",
+            f"The repaired claim should say what this lecture prepares next: {spine['why_later']}",
+            f"Keep the source claim narrow by naming the later job it actually supports: {spine['why_later']}",
+            f"The honest version uses the later role as evidence of scope, not as extra authority: {spine['why_later']}",
+            f"Close the source claim by stating the specific later use it earns: {spine['why_later']}",
+            f"The source trail stays useful when it points back to this later course need: {spine['why_later']}",
+            f"The boundary is clearer when the sentence names exactly what the lecture prepares: {spine['why_later']}",
         ])
         reader_later = varied((number, "bridge-reader-later"), [
             f"Also say why this lecture matters later: {spine['why_later']}",
