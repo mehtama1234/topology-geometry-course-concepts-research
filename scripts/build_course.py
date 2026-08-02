@@ -5079,10 +5079,14 @@ def build_concept_self_check(concept):
         f"The object needs enough concrete detail to be sketched, moved, counted, or inspected for the part that carries the constraint.",
         f"Do not let the formal name hide the carrier of the idea; the page must first show the surface, route, field, map, count, or state space doing the work.",
         f"The course moment is the test case for {title}, not a caption placed beside a definition.",
-        f"Do not let a later theorem or source claim speak until this exact object has been named.",
-        f"The object statement already needs the rule or setting: boundary, gluing, forbidden crossing, orientation, field, map, or possible-state description.",
+        f"A later theorem or source claim can speak only after this exact object has been named.",
+        f"The object statement should already carry the relevant rule or setting: boundary, gluing, forbidden crossing, orientation, field, map, or possible-state description.",
         f"Before any symbolic shortcut appears, the explanation should say what someone could draw, carry around, count, compare, or act out.",
         f"The course example has to make the object visible enough to test whether a later source is talking about the same kind of thing.",
+        f"The first sentence should make clear what is being watched before {title} turns into shorthand.",
+        f"If the object is vague, the rest of the explanation can sound right while proving a different claim.",
+        f"The object has to be concrete enough that the reader can tell whether a later example is still the same kind of problem.",
+        f"Let the term arrive after the carrier is visible, not before.",
     ])
     operation_close = varied((cid, "operation-close"), [
         f"The test is whether the operation leaves the same {title} problem in place or quietly swaps in an easier one.",
@@ -5091,18 +5095,26 @@ def build_concept_self_check(concept):
         "The move has to be actable on the example, with the illegal shortcut named beside it.",
         "A clean picture supports the proof only if the route to that picture respects the original boundary, crossing, gluing, field, or state rule.",
         f"The operation has to explain what changes and what stays fixed while {title} is being used.",
-        "The example should show the permission in action before a definition is allowed to abbreviate it.",
+        "The example has to show the permission in action before a definition abbreviates it.",
         "If a nearby shortcut would change the answer, the check has to name that shortcut directly.",
+        "The move should be described so plainly that a reader can tell which attempted shortcut is illegal.",
+        "The operation is doing mathematical work only if it preserves the original question.",
+        "The action must keep the same object under the same rules, even if the picture becomes simpler.",
+        "The useful version names both the legal action and the move that would silently solve another problem.",
     ])
     legal_check = varied((cid, "legal-check"), [
         "Say which part of the setup gives permission for this move.",
         "Name the rule that is being preserved while the picture changes.",
-        "Name the fixed data, boundary behavior, direction rule, or model condition that survives the move.",
+        "Name the fixed data, boundary behavior, direction rule, or model condition the move must preserve.",
         "Say why the operation is still answering the original question.",
         "Point to the feature that the operation is not allowed to disturb.",
         "State the permission in words that can be checked on the course example.",
         "Name the shortcut that would count as cheating here.",
         "Tie the permission to the course moment before tying it to a formal definition.",
+        "Say what is allowed to move and what must stay part of the same problem.",
+        "Make the rule visible enough that the reader could reject an illegal redraw.",
+        "State the condition that lets this change simplify the picture without changing the claim.",
+        "Name the part of the setup that would make the operation false if it were dropped.",
     ])
     protected_close = varied((cid, "protected-close"), [
         f"For {title}, this surviving fact is the reason the example can teach more than one drawing.",
@@ -5112,7 +5124,11 @@ def build_concept_self_check(concept):
         "The protected fact explains why the final picture still speaks about the first picture.",
         "Name the evidence that remains after the allowed move, then say what conclusion that evidence can and cannot carry.",
         f"For this concept, the protected fact is the bridge from the course moment to the later use, not an extra sentence after the definition.",
-        "If that fact would disappear under the stated move, the explanation has changed the problem rather than used the concept.",
+        "If that fact disappears under the stated move, the explanation has changed the problem rather than used the concept.",
+        "The protected fact is the part that lets the explanation travel from example to conclusion.",
+        "Keep the surviving evidence close enough that the conclusion cannot float away from it.",
+        "A person using the idea has to be able to point to this fact after the picture, model, or count has changed.",
+        "This fact is what prevents the paragraph from becoming only a topic summary.",
     ])
     failure_close = varied((cid, "failure-close"), [
         f"The failure case is part of {title}: it identifies the changed assumption that destroys the claim.",
@@ -5121,8 +5137,12 @@ def build_concept_self_check(concept):
         "The warning belongs inside the explanation because changing the rule often changes the answer.",
         "The explanation has to name both where the idea works and which nearby use would be false.",
         f"For {title}, the failure mode points to the exact detail that made the original claim true.",
-        "The break point turns the hypothesis into working machinery, not ceremony.",
+        "The break point turns the hypothesis into a working part of the argument.",
         "If the failure condition is missing, the explanation may sound clear while quietly claiming too much.",
+        "The false case should make the hidden condition visible.",
+        "The boundary of the idea is part of the idea, because changing that boundary changes what can be concluded.",
+        "A good repair names the dropped condition and explains why the original conclusion needed it.",
+        "The failure scene should be specific enough to catch the same mistake in a different lecture.",
     ])
     object_prompt = varied((cid, "object-check-prompt"), [
         f"Start with the thing {title} is about: {work['object']} Then test it against the course moment: {anchor['course_moment']} {object_close}",
