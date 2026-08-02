@@ -4212,16 +4212,20 @@ def build_source_faithfulness(lecture):
             "The examples are the main guardrail: they keep the page tied to what the lecture demonstrates rather than to a free-standing textbook account.",
         ])
         inference = varied((number, "faith-inference"), [
-            "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is course-arc interpretation, so it must stay tied to the examples and not become a general topology summary or a claim that Tokieda literally used the companion's wording.",
-            "The companion then adds a course-arc reading: how this lecture receives earlier habits and prepares later ones. That connection is useful, but it is still an interpretation built from sequence, examples, and repeated method, not a direct report of a transcript sentence.",
-            "The page uses the lecture's position in the sequence to explain why the idea matters later. That is a fair teaching bridge only when it remains visibly connected to the named course moments and does not borrow authority from the transcript for words the transcript does not supply.",
-            "Some sentences explain the lecture's role in the whole course rather than a single caption line. Those sentences should be read as course structure: the object, legal move, and surviving fact are being connected forward, not quoted as Tokieda's exact formulation.",
+            f"For \"{title}\", the course-chain reading says which earlier proof habit the lecture uses and which later lecture depends on it. That placement is interpretation, so it must stay tied to the examples and not become a claim that Tokieda literally used the companion's wording.",
+            f"The broader reading for \"{title}\" is about dependency: how this lecture receives earlier habits and prepares later ones. That connection comes from sequence, examples, and repeated method, not from one transcript sentence.",
+            f"Use the position of \"{title}\" in the sequence to explain why the idea matters later. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
+            f"Some sentences on \"{title}\" explain course structure rather than a single caption line. Read them as forward connections among object, legal move, and surviving fact, not as Tokieda's exact formulation.",
+            f"The course arc around \"{title}\" is evidence of role, not exact wording. It can say how the lecture fits the larger method only after the caption anchors and demonstrations have been named.",
+            f"Treat the later-use claims for \"{title}\" as synthesis. They are built from lecture order, recurring proof work, and the named examples, so they should remain weaker than direct caption evidence and should not sound like recovered wording.",
         ])
         caveat = varied((number, "faith-caveat"), [
-            "Auto-captions can mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim.",
-            "Recovered captions are good evidence for topics, examples, and rough phrasing, but they are not a final transcript. Before tightening a sentence, decide whether it rests on caption wording, a visible demonstration, a course-chain inference, or a background source.",
-            "The safest revision habit is to label the kind of support. If the claim needs exact terminology, recheck the video; if it only explains the course role, keep it framed as interpretation rather than as transcript evidence.",
-            "Caption evidence can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports.",
+            f"For \"{title}\", auto-captions can still mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before sharpening the claim.",
+            f"Use recovered captions for \"{title}\" as evidence for topics, examples, and rough phrasing, not as a final transcript. Before tightening a sentence, decide whether it rests on caption wording, visible demonstration, course-chain inference, or background source.",
+            f"The revision habit for \"{title}\" is to label support. Exact terminology needs a video check; a course-role explanation should stay framed as interpretation rather than transcript evidence, and background references should not be treated as lecture wording.",
+            f"Caption evidence for \"{title}\" can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports.",
+            f"When \"{title}\" leans on source wording, keep the claim narrow. A caption anchor can support the lecture object or example without proving every later theorem-level sentence on the page, especially when that sentence depends on synthesis across lectures.",
+            f"Treat source support for \"{title}\" as layered: caption wording, visible demonstration, course-arc synthesis, and background reference are different kinds of evidence. Do not upgrade one layer into another when sharpening a claim.",
         ])
         support_open = varied((number, "faith-support-open"), [
             f"For \"{title}\", use these recovered caption anchors as the source footing: {anchors}. The concrete course moments are {examples}.",
@@ -4237,6 +4241,22 @@ def build_source_faithfulness(lecture):
         "course_inference": inference,
         "caveat": caveat,
     }
+
+
+def build_source_summary(lecture_record):
+    number = lecture_record["lecture"]
+    title = lecture_record["deep"]["title"]
+    missing = lecture_record["missing_caption_ids"]
+    if missing:
+        return f"\"{title}\" has recovered captions around one missing-caption gap: {', '.join(missing)}. Treat available captions as source footing, and keep claims depending on the gap visibly modest."
+    return varied((number, "source-summary"), [
+        f"\"{title}\" is backed by recovered auto-captions; use them for lecture anchors, visible examples, and rough phrasing rather than official transcript wording.",
+        f"The source base for \"{title}\" is recovered captions plus visible demonstrations. The page can use them for course evidence, but exact wording still needs video-level checking.",
+        f"Recovered captions support \"{title}\" as a lecture group. They ground objects, examples, and sequence while leaving exact phrasing below transcript certainty.",
+        f"For \"{title}\", caption recovery supplies the working source trail. The explanation should still separate caption evidence from broader course synthesis.",
+        f"\"{title}\" has caption-level support for its main course moments. Use that support to anchor the page, not to overstate every synthesized connection as spoken wording.",
+        f"The source trail for \"{title}\" begins with recovered auto-captions and visible course action. That is enough for the companion's reading, but not a license to invent exact lecture language.",
+    ])
 
 
 def build_lecture_reader_test(lecture, spine_row):
@@ -4473,6 +4493,38 @@ def build_lecture_source_bridges(lectures, references, source_readers):
                 if concept_id not in concepts:
                     concepts.append(concept_id)
         note = LECTURE_SOURCE_BRIDGE_NOTES[number]
+        boundary = note["claim_boundary"]
+        overread_stem = plain_fragment(boundary, ["A source-backed sentence overreaches if"])
+        if overread_stem != boundary:
+            overread_sentence = varied((number, "bridge-overread-open"), [
+                f"\"{lecture['deep']['title']}\" overreaches when {overread_stem}",
+                f"\"{lecture['deep']['title']}\" crosses its source boundary when {overread_stem}",
+                f"\"{lecture['deep']['title']}\" cannot let the source trail do this: {overread_stem}",
+                f"\"{lecture['deep']['title']}\" makes the claim too strong when {overread_stem}",
+                f"\"{lecture['deep']['title']}\" has to avoid any sentence where {overread_stem}",
+                f"\"{lecture['deep']['title']}\" uses the source unsafely if the page says that {overread_stem}",
+            ])
+        else:
+            overread_sentence = varied((number, "bridge-boundary-open"), [
+                f"\"{lecture['deep']['title']}\" keeps this source boundary visible: {boundary}",
+                f"\"{lecture['deep']['title']}\" has a concrete source boundary: {boundary}",
+                f"\"{lecture['deep']['title']}\" should not be read past this point: {boundary}",
+                f"\"{lecture['deep']['title']}\" stops the bridge here: {boundary}",
+            ])
+        repair_sentence = varied((number, "bridge-repair-close"), [
+            f"Repair the sentence by returning to the lecture's later role: {spine['why_later']}",
+            f"Bring the claim back to the later course job: {spine['why_later']}",
+            f"The safer version names the supported course role instead: {spine['why_later']}",
+            f"Use the later role as the limit on the source claim: {spine['why_later']}",
+            f"That keeps the source trail attached to what the lecture prepares next: {spine['why_later']}",
+        ])
+        reader_later = varied((number, "bridge-reader-later"), [
+            f"Also say why this lecture matters later: {spine['why_later']}",
+            f"Then connect the answer to the later course need: {spine['why_later']}",
+            f"The later-use check is: {spine['why_later']}",
+            f"Close by naming the next job this lecture prepares: {spine['why_later']}",
+            f"Keep the final sentence tied to this later role: {spine['why_later']}",
+        ])
         bridges.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
@@ -4481,8 +4533,8 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             "course_demonstration": f"The lecture works from {object_text} and uses concrete moments such as {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}. These are not ornaments around the source trail; they are the evidence the source trail has to answer to.",
             "mathematical_bridge": f"{spine['plain_question']} The bridge is not the title of the lecture; it is the path from legal move to surviving fact. The allowed move is: {spine['legal_move']} The fact carried forward is: {spine['surviving_fact']} A reference may widen that pattern only after this object, move, and surviving fact are visible.",
             "how_source_extends": f"{note['source_extension']} The source-family problem underneath this bridge is: {source_reader['reader_problem']}",
-            "overread_warning": f"{note['claim_boundary']} Repair the sentence by returning to the lecture's later role: {spine['why_later']}",
-            "reader_question": f"{note['reader_question']} A complete answer should also say why this lecture matters later: {spine['why_later']}",
+            "overread_warning": f"{overread_sentence} {repair_sentence}",
+            "reader_question": f"{note['reader_question']} {reader_later}",
             "concepts": concepts[:6],
         })
     return bridges
@@ -4499,7 +4551,7 @@ LECTURE_DRILL_OVERLAYS = {
             "Connect forward to orientation and manifolds: later pages keep asking whether a local choice can survive a complete trip around the object.",
             "Use course-source support only to anchor the lecture and sequence. Do not turn the paper demonstration into a claim that all topology is about surprising craft objects.",
         ],
-        "self_check": "A complete answer should let a beginner act out the full-trip test and say exactly what local side information fails to return unchanged.",
+        "self_check": "The reconstruction should let a beginner act out the full-trip test and say exactly what local side information fails to return unchanged.",
         "common_failure": "The weak version remembers that a Mobius strip has one side but never explains how the full trip detects that fact. Repair it by naming the gluing rule and the travel test.",
         "source_check": "Before strengthening a sentence, ask whether it is supported by the lecture object itself: strip, half-turn gluing, full trip, and side reversal. Anything beyond that belongs in background support, not as spoken lecture evidence.",
     },
@@ -4541,7 +4593,7 @@ LECTURE_DRILL_OVERLAYS = {
             "Connect forward to vector fields and intersections on manifolds: later local data live on the finished surface, not on the unglued code.",
             "Use source support to widen quotient language only after the reader can perform the gluing mentally.",
         ],
-        "self_check": "A complete answer should make the reader distrust the unglued square until the edge rule has been applied, because the apparent border may no longer be a border in the finished surface.",
+        "self_check": "The reconstruction should make the reader distrust the unglued square until the edge rule has been applied, because the apparent border may no longer be a border in the finished surface.",
         "common_failure": "The weak version counts borders and routes in the flat drawing after the rule has already changed the space. Repair it by applying the identifications first.",
         "source_check": "Check whether the claim is about the code on the page or the surface produced by the code. A source citation cannot blur that boundary.",
     },
@@ -4583,7 +4635,7 @@ LECTURE_DRILL_OVERLAYS = {
             "Connect forward to fixed points and equilibria, where the same existence-without-location habit returns.",
             "Use sources only after the physical continuity claim has been translated into a mathematical meeting claim.",
         ],
-        "self_check": "A complete answer should say what event is forced, why a jump would break the argument, and why the proof does not need to locate the event in advance.",
+        "self_check": "The reconstruction should say what event is forced, why a jump would break the argument, and why the proof does not need to locate the event in advance.",
         "common_failure": "The weak version retells the demonstration but never names the continuous condition that cannot be skipped, so the forced meeting sounds like a physical surprise rather than an argument.",
         "source_check": "Before widening the claim, check whether the lecture evidence supports continuity, forced meeting, or only the physical setup, and label the stronger statement if it comes from background support.",
     },
@@ -4611,7 +4663,7 @@ LECTURE_DRILL_OVERLAYS = {
             "Connect forward to Brouwer: the next lecture asks when the shape of the domain forces such a meeting.",
             "Use background sources for the fixed-point family without inventing details from the unavailable caption.",
         ],
-        "self_check": "A complete answer should let the reader point to one pair on the graph, one pair on the diagonal, and the equality that makes their meeting a fixed point.",
+        "self_check": "The reconstruction should let the reader point to one pair on the graph, one pair on the diagonal, and the equality that makes their meeting a fixed point.",
         "common_failure": "The weak version says a fixed point is where something does not move. The repair is to name the rule, the self-map condition, the graph, and the diagonal.",
         "source_check": "Because one caption is missing, any stronger theorem claim must be labeled as source-family support or course-arc interpretation, not recovered lecture wording.",
     },
@@ -4639,7 +4691,7 @@ LECTURE_DRILL_OVERLAYS = {
             "Connect forward to index sums and Poincare-Hopf: local arrow evidence will be added across the whole surface.",
             "Use dynamics sources without replacing the lecture's arrow-field reading by equation-solving language.",
         ],
-        "self_check": "A complete answer should say what an arrow records, what vanishing means, and what the surrounding arrows add beyond the location of the equilibrium.",
+        "self_check": "The reconstruction should say what an arrow records, what vanishing means, and what the surrounding arrows add beyond the location of the equilibrium.",
         "common_failure": "The weak version treats an equilibrium as a dot to count. The repair is to inspect the arrow pattern around the dot and ask what signed local behavior it records.",
         "source_check": "Check whether the source sentence preserves the difference between solving trajectories and extracting topological information from the field, because the lecture is using arrows before exact paths.",
     },
@@ -4707,7 +4759,6 @@ def drill_phrase(text):
         "The reconstruction can": "The reconstruction should",
         "The reconstruction states": "The reconstruction should state",
         "The reconstruction distinguishes": "The reconstruction should distinguish",
-        "A complete answer should": "The reconstruction should",
         "A complete answer can": "The reconstruction should be able to",
         "The weak version": "The shallow version",
         "why the surrounding space matters": "what job the surrounding space performs",
@@ -6711,8 +6762,8 @@ def main():
             "missing_caption_ids": missing,
             "plain_reading": LECTURE_NOTES.get(number, "Lecture reading pending."),
             "deep": deep,
-            "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed.",
         }
+        lecture_record["source_summary"] = build_source_summary(lecture_record)
         lecture_record["deep"]["source_faithfulness"] = build_source_faithfulness(lecture_record)
         lecture_record["deep"]["reader_test"] = build_lecture_reader_test(lecture_record, spine_by_lecture[number])
         lecture_record["deep"]["answer_guide"] = build_lecture_answer_guide(lecture_record, spine_by_lecture[number])

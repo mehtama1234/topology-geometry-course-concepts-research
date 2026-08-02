@@ -114,8 +114,8 @@
       },
       "source_faithfulness": {
         "caption_support": "The source trail for \"The Mobius strip reveals the course's central problem\" is strongest where the anchors Mobius strip, twist and glue, cutting along the center, one side versus two sides line up with course moments such as Cutting an ordinary band versus a Mobius band; One side is a global fact; Off-center cuts create linked pieces. That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
-        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is course-arc interpretation, so it must stay tied to the examples and not become a general topology summary or a claim that Tokieda literally used the companion's wording.",
-        "caveat": "Recovered captions are good evidence for topics, examples, and rough phrasing, but they are not a final transcript. Before tightening a sentence, decide whether it rests on caption wording, a visible demonstration, a course-chain inference, or a background source."
+        "course_inference": "Use the position of \"The Mobius strip reveals the course's central problem\" in the sequence to explain why the idea matters later. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
+        "caveat": "Treat source support for \"The Mobius strip reveals the course's central problem\" as layered: caption wording, visible demonstration, course-arc synthesis, and background reference are different kinds of evidence. Do not upgrade one layer into another when sharpening a claim."
       },
       "reader_test": {
         "explain_object": "Start from 'Cutting an ordinary band versus a Mobius band' and put the object into plain words: A strip made by gluing its ends after a half-turn. Keep the object separate from the chalk drawing used to show it. Explain what the object records while the example is still concrete.",
@@ -129,7 +129,7 @@
         "why_strong": "The guide is not a longer list of topics; it separates the carrier, the allowed change, and the fact that survives. In this lecture, 'One side is a global fact' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "\"The Mobius strip reveals the course's central problem\" has caption-level support for its main course moments. Use that support to anchor the page, not to overstate every synthesized connection as spoken wording."
   },
   {
     "lecture": 2,
@@ -260,8 +260,8 @@
       },
       "source_faithfulness": {
         "caption_support": "For \"Deformation as a way to solve, not decorate\", use these recovered caption anchors as the source footing: deformation, disk, boundary points, curves that do not intersect. The concrete course moments are Connecting boundary pairs in a disk; Deformation as proof of impossibility; Endpoint order carries the obstruction. The examples are the main guardrail: they keep the page tied to what the lecture demonstrates rather than to a free-standing textbook account.",
-        "course_inference": "The companion then adds a course-arc reading: how this lecture receives earlier habits and prepares later ones. That connection is useful, but it is still an interpretation built from sequence, examples, and repeated method, not a direct report of a transcript sentence.",
-        "caveat": "The safest revision habit is to label the kind of support. If the claim needs exact terminology, recheck the video; if it only explains the course role, keep it framed as interpretation rather than as transcript evidence."
+        "course_inference": "Some sentences on \"Deformation as a way to solve, not decorate\" explain course structure rather than a single caption line. Read them as forward connections among object, legal move, and surviving fact, not as Tokieda's exact formulation.",
+        "caveat": "For \"Deformation as a way to solve, not decorate\", auto-captions can still mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before sharpening the claim."
       },
       "reader_test": {
         "explain_object": "Rebuild \"Deformation as a way to solve, not decorate\" from the carrier of the claim: Curves inside a disk with boundary points held in their circular order. Do not treat it as just a board picture. Make clear what the lecture is reasoning about before naming the formal idea.",
@@ -275,7 +275,7 @@
         "why_strong": "This answer works when the reader can see the chain from the course example to the conclusion without leaning on a theorem title. The anchor 'Endpoint order carries the obstruction' should make the later use feel earned, not announced."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "The source trail for \"Deformation as a way to solve, not decorate\" begins with recovered auto-captions and visible course action. That is enough for the companion's reading, but not a license to invent exact lecture language."
   },
   {
     "lecture": 3,
@@ -410,8 +410,8 @@
       },
       "source_faithfulness": {
         "caption_support": "In \"Building spaces from simple pieces\", the caption trail gives these anchors: balls and spheres, product, quotient, surgery. The page also has to stay tied to course moments such as Products make spaces from independent choices; Quotients turn edge instructions into spaces; Surgery treats construction as reasoning. Those anchors justify the page's reading of the lecture object, the allowed move, the protected fact, and the later use. They do not turn the cleaned transcript into official notes.",
-        "course_inference": "The page uses the lecture's position in the sequence to explain why the idea matters later. That is a fair teaching bridge only when it remains visibly connected to the named course moments and does not borrow authority from the transcript for words the transcript does not supply.",
-        "caveat": "Caption evidence can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports."
+        "course_inference": "The course arc around \"Building spaces from simple pieces\" is evidence of role, not exact wording. It can say how the lecture fits the larger method only after the caption anchors and demonstrations have been named.",
+        "caveat": "Use recovered captions for \"Building spaces from simple pieces\" as evidence for topics, examples, and rough phrasing, not as a final transcript. Before tightening a sentence, decide whether it rests on caption wording, visible demonstration, course-chain inference, or background source."
       },
       "reader_test": {
         "explain_object": "Before the topic name appears, use 'Products make spaces from independent choices' to name what is being watched: Spaces built from choices, identifications, local patches, and controlled replacements. Do not reduce it to the drawing on the board. Say what information that object carries before any theorem name is used.",
@@ -425,7 +425,7 @@
         "why_strong": "The test is whether the answer would still make sense if all formal labels were hidden and only the object, rule, and surviving evidence remained. The concrete moment 'Products make spaces from independent choices' keeps the answer grounded in the course instead of drifting into a general textbook summary."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "\"Building spaces from simple pieces\" is backed by recovered auto-captions; use them for lecture anchors, visible examples, and rough phrasing rather than official transcript wording."
   },
   {
     "lecture": 4,
@@ -546,8 +546,8 @@
       },
       "source_faithfulness": {
         "caption_support": "Source support for \"Gluing rules make new worlds\" begins with the recovered anchors square, product, quotient, manifolds, then with visible course moments such as A square is not the space until its edges are read; Reversing an edge changes the global surface; A route can leave the drawing and keep going. Use those signals as footing for the page's object-move-surviving-fact account. They support the mathematical reading, but they should not be treated as exact phrasing from the board or voice.",
-        "course_inference": "Some sentences explain the lecture's role in the whole course rather than a single caption line. Those sentences should be read as course structure: the object, legal move, and surviving fact are being connected forward, not quoted as Tokieda's exact formulation.",
-        "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
+        "course_inference": "Treat the later-use claims for \"Gluing rules make new worlds\" as synthesis. They are built from lecture order, recurring proof work, and the named examples, so they should remain weaker than direct caption evidence and should not sound like recovered wording.",
+        "caveat": "The revision habit for \"Gluing rules make new worlds\" is to label support. Exact terminology needs a video check; a course-role explanation should stay framed as interpretation rather than transcript evidence, and background references should not be treated as lecture wording."
       },
       "reader_test": {
         "explain_object": "Make the working object in \"Gluing rules make new worlds\" explicit: A square whose marked edges are read as travel instructions for a finished surface. Treat the picture as a record of rules and data, not as decoration. Name the data the object keeps track of before using course vocabulary.",
@@ -561,7 +561,7 @@
         "why_strong": "The point of the guide is to make the proof habit visible: choose the right thing to watch, state the rule of motion, then say what the motion cannot erase. That is why the answer must end with a limit as well as a payoff. The surviving fact is: The gluing rule determines whether paths close, whether sides remain consistent, and whether the drawn boundary is a true boundary. It tells the reader what is forced, not every extra thing one might wish to know."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "The source base for \"Gluing rules make new worlds\" is recovered captions plus visible demonstrations. The page can use them for course evidence, but exact wording still needs video-level checking."
   },
   {
     "lecture": 5,
@@ -682,8 +682,8 @@
       },
       "source_faithfulness": {
         "caption_support": "\"Classifying surfaces by what survives cutting and gluing\" is grounded by caption anchors including classification of surfaces, Mobius, orientable, non-orientable, plus concrete course moments such as Classification separates surfaces by durable parts; Surgery changes a surface by controlled cutting and gluing; Handles and crosscaps are durable building blocks. That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
-        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is course-arc interpretation, so it must stay tied to the examples and not become a general topology summary or a claim that Tokieda literally used the companion's wording.",
-        "caveat": "Recovered captions are good evidence for topics, examples, and rough phrasing, but they are not a final transcript. Before tightening a sentence, decide whether it rests on caption wording, a visible demonstration, a course-chain inference, or a background source."
+        "course_inference": "For \"Classifying surfaces by what survives cutting and gluing\", the course-chain reading says which earlier proof habit the lecture uses and which later lecture depends on it. That placement is interpretation, so it must stay tied to the examples and not become a claim that Tokieda literally used the companion's wording.",
+        "caveat": "Caption evidence for \"Classifying surfaces by what survives cutting and gluing\" can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports."
       },
       "reader_test": {
         "explain_object": "Use 'Classification separates surfaces by durable parts' to name the object in everyday words: Surfaces broken into standard features such as handles, crosscaps, and boundary components. Keep the object separate from the chalk drawing used to show it. Explain what the object records while the example is still concrete.",
@@ -697,7 +697,7 @@
         "why_strong": "The answer has force when the reader can rebuild the argument from the classroom object, not from memory of the lecture title. In this lecture, 'Surgery changes a surface by controlled cutting and gluing' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "Recovered captions support \"Classifying surfaces by what survives cutting and gluing\" as a lecture group. They ground objects, examples, and sequence while leaving exact phrasing below transcript certainty."
   },
   {
     "lecture": 6,
@@ -818,8 +818,8 @@
       },
       "source_faithfulness": {
         "caption_support": "Treat submanifold, moving inside a manifold, obstacles, dimensions as caption-level support for \"Moving subspaces and meeting only when dimension forces it\", and use Moving an object inside a manifold; Forced meetings become evidence; Dimension measures available escape room as the demonstration-level support. The examples are the main guardrail: they keep the page tied to what the lecture demonstrates rather than to a free-standing textbook account.",
-        "course_inference": "The companion then adds a course-arc reading: how this lecture receives earlier habits and prepares later ones. That connection is useful, but it is still an interpretation built from sequence, examples, and repeated method, not a direct report of a transcript sentence.",
-        "caveat": "The safest revision habit is to label the kind of support. If the claim needs exact terminology, recheck the video; if it only explains the course role, keep it framed as interpretation rather than as transcript evidence."
+        "course_inference": "The broader reading for \"Moving subspaces and meeting only when dimension forces it\" is about dependency: how this lecture receives earlier habits and prepares later ones. That connection comes from sequence, examples, and repeated method, not from one transcript sentence.",
+        "caveat": "When \"Moving subspaces and meeting only when dimension forces it\" leans on source wording, keep the claim narrow. A caption anchor can support the lecture object or example without proving every later theorem-level sentence on the page, especially when that sentence depends on synthesis across lectures."
       },
       "reader_test": {
         "explain_object": "Let 'Moving an object inside a manifold' reveal what the lecture is acting on: Subspaces placed inside a surrounding space with only so much room to avoid one another. Do not treat it as just a board picture. Make clear what the lecture is reasoning about before naming the formal idea.",
@@ -833,7 +833,7 @@
         "why_strong": "Read the guide as a small proof contract: what is present, what may change, what must survive, and what conclusion that survival earns. The anchor 'Dimension measures available escape room' should make the later use feel earned, not announced."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "For \"Moving subspaces and meeting only when dimension forces it\", caption recovery supplies the working source trail. The explanation should still separate caption evidence from broader course synthesis."
   },
   {
     "lecture": 7,
@@ -952,8 +952,8 @@
       },
       "source_faithfulness": {
         "caption_support": "The source trail for \"Center of gravity and the birth of intersection thinking\" is strongest where the anchors center of gravity, continuous motion, intersection, existence line up with course moments such as The center-of-gravity demonstration; Existence without a formula; A physical motion becomes an intersection question. Those anchors justify the page's reading of the lecture object, the allowed move, the protected fact, and the later use. They do not turn the cleaned transcript into official notes.",
-        "course_inference": "The page uses the lecture's position in the sequence to explain why the idea matters later. That is a fair teaching bridge only when it remains visibly connected to the named course moments and does not borrow authority from the transcript for words the transcript does not supply.",
-        "caveat": "Caption evidence can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports."
+        "course_inference": "Use the position of \"Center of gravity and the birth of intersection thinking\" in the sequence to explain why the idea matters later. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
+        "caveat": "Treat source support for \"Center of gravity and the birth of intersection thinking\" as layered: caption wording, visible demonstration, course-arc synthesis, and background reference are different kinds of evidence. Do not upgrade one layer into another when sharpening a claim."
       },
       "reader_test": {
         "explain_object": "Start from 'The center-of-gravity demonstration' and put the object into plain words: A physical balance condition that changes continuously as the setup moves. Do not reduce it to the drawing on the board. Say what information that object carries before any theorem name is used.",
@@ -967,7 +967,7 @@
         "why_strong": "The guide works only if a beginner can test each sentence against the lecture scene instead of accepting a formal name as authority. The concrete moment 'The center-of-gravity demonstration' keeps the answer grounded in the course instead of drifting into a general textbook summary."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "\"Center of gravity and the birth of intersection thinking\" has caption-level support for its main course moments. Use that support to anchor the page, not to overstate every synthesized connection as spoken wording."
   },
   {
     "lecture": 8,
@@ -1088,8 +1088,8 @@
       },
       "source_faithfulness": {
         "caption_support": "For \"Intersection number is a count with memory\", use these recovered caption anchors as the source footing: intersection number, orientation, positive or negative, isotopy invariant. The concrete course moments are Signed intersection number; Pair creation and cancellation; Orientation gives signs their meaning. Use those signals as footing for the page's object-move-surviving-fact account. They support the mathematical reading, but they should not be treated as exact phrasing from the board or voice.",
-        "course_inference": "Some sentences explain the lecture's role in the whole course rather than a single caption line. Those sentences should be read as course structure: the object, legal move, and surviving fact are being connected forward, not quoted as Tokieda's exact formulation.",
-        "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
+        "course_inference": "Some sentences on \"Intersection number is a count with memory\" explain course structure rather than a single caption line. Read them as forward connections among object, legal move, and surviving fact, not as Tokieda's exact formulation.",
+        "caveat": "For \"Intersection number is a count with memory\", auto-captions can still mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before sharpening the claim."
       },
       "reader_test": {
         "explain_object": "Rebuild \"Intersection number is a count with memory\" from the carrier of the claim: Clean intersections between oriented objects, equipped with plus and minus signs. Treat the picture as a record of rules and data, not as decoration. Name the data the object keeps track of before using course vocabulary.",
@@ -1103,7 +1103,7 @@
         "why_strong": "The load-bearing detail has to stay exposed: the object, the permitted action, the surviving evidence, and the limit of the claim. That is why the answer must end with a limit as well as a payoff. The surviving fact is: Opposite-signed pairs can be born or die without changing the signed total. It tells the reader what is forced, not every extra thing one might wish to know."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "The source trail for \"Intersection number is a count with memory\" begins with recovered auto-captions and visible course action. That is enough for the companion's reading, but not a license to invent exact lecture language."
   },
   {
     "lecture": 9,
@@ -1253,7 +1253,7 @@
         "why_strong": "The guide is not a longer list of topics; it separates the carrier, the allowed change, and the fact that survives. In this lecture, 'Missing middle caption is kept visible' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "\"Fixed points as intersections with the diagonal\" has recovered captions around one missing-caption gap: nx1XOlezuvk. Treat available captions as source footing, and keep claims depending on the gap visibly modest."
   },
   {
     "lecture": 10,
@@ -1373,8 +1373,8 @@
       },
       "source_faithfulness": {
         "caption_support": "The source trail for \"Brouwer fixed point theorem: shape forces a point to stay\" is strongest where the anchors Brouwer fixed-point theorem, closed ball, boundary, continuous map line up with course moments such as Brouwer on the closed ball; Boundary changes the theorem; No global escape from self-agreement. That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
-        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is course-arc interpretation, so it must stay tied to the examples and not become a general topology summary or a claim that Tokieda literally used the companion's wording.",
-        "caveat": "Recovered captions are good evidence for topics, examples, and rough phrasing, but they are not a final transcript. Before tightening a sentence, decide whether it rests on caption wording, a visible demonstration, a course-chain inference, or a background source."
+        "course_inference": "Use the position of \"Brouwer fixed point theorem: shape forces a point to stay\" in the sequence to explain why the idea matters later. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
+        "caveat": "Treat source support for \"Brouwer fixed point theorem: shape forces a point to stay\" as layered: caption wording, visible demonstration, course-arc synthesis, and background reference are different kinds of evidence. Do not upgrade one layer into another when sharpening a claim."
       },
       "reader_test": {
         "explain_object": "Start from 'Brouwer on the closed ball' and put the object into plain words: A continuous self-map of a closed ball, including its filled interior and boundary. Keep the object separate from the chalk drawing used to show it. Explain what the object records while the example is still concrete.",
@@ -1388,7 +1388,7 @@
         "why_strong": "The guide is not a longer list of topics; it separates the carrier, the allowed change, and the fact that survives. In this lecture, 'Boundary changes the theorem' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "\"Brouwer fixed point theorem: shape forces a point to stay\" has caption-level support for its main course moments. Use that support to anchor the page, not to overstate every synthesized connection as spoken wording."
   },
   {
     "lecture": 11,
@@ -1522,8 +1522,8 @@
       },
       "source_faithfulness": {
         "caption_support": "For \"Vector fields: learning without solving the equations\", use these recovered caption anchors as the source footing: dynamical systems, differential equations, vector field, equilibria. The concrete course moments are Vector fields replace solved trajectories; Equilibria are arrow-field failures; Local arrow patterns can be counted. The examples are the main guardrail: they keep the page tied to what the lecture demonstrates rather than to a free-standing textbook account.",
-        "course_inference": "The companion then adds a course-arc reading: how this lecture receives earlier habits and prepares later ones. That connection is useful, but it is still an interpretation built from sequence, examples, and repeated method, not a direct report of a transcript sentence.",
-        "caveat": "The safest revision habit is to label the kind of support. If the claim needs exact terminology, recheck the video; if it only explains the course role, keep it framed as interpretation rather than as transcript evidence."
+        "course_inference": "Some sentences on \"Vector fields: learning without solving the equations\" explain course structure rather than a single caption line. Read them as forward connections among object, legal move, and surviving fact, not as Tokieda's exact formulation.",
+        "caveat": "For \"Vector fields: learning without solving the equations\", auto-captions can still mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before sharpening the claim."
       },
       "reader_test": {
         "explain_object": "Rebuild \"Vector fields: learning without solving the equations\" from the carrier of the claim: A vector field, meaning an arrow assigned to each point of a surface or state space. Do not treat it as just a board picture. Make clear what the lecture is reasoning about before naming the formal idea.",
@@ -1537,7 +1537,7 @@
         "why_strong": "This answer works when the reader can see the chain from the course example to the conclusion without leaning on a theorem title. The anchor 'Local arrow patterns can be counted' should make the later use feel earned, not announced."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "The source trail for \"Vector fields: learning without solving the equations\" begins with recovered auto-captions and visible course action. That is enough for the companion's reading, but not a license to invent exact lecture language."
   },
   {
     "lecture": 12,
@@ -1658,8 +1658,8 @@
       },
       "source_faithfulness": {
         "caption_support": "In \"Index becomes global bookkeeping\", the caption trail gives these anchors: index of a vector field, equilibria, Euler characteristic, Poincare-Hopf. The page also has to stay tied to course moments such as Adding local indices; Poincare-Hopf as surface bookkeeping; Defects can move while the total stays fixed. Those anchors justify the page's reading of the lecture object, the allowed move, the protected fact, and the later use. They do not turn the cleaned transcript into official notes.",
-        "course_inference": "The page uses the lecture's position in the sequence to explain why the idea matters later. That is a fair teaching bridge only when it remains visibly connected to the named course moments and does not borrow authority from the transcript for words the transcript does not supply.",
-        "caveat": "Caption evidence can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports."
+        "course_inference": "The course arc around \"Index becomes global bookkeeping\" is evidence of role, not exact wording. It can say how the lecture fits the larger method only after the caption anchors and demonstrations have been named.",
+        "caveat": "Use recovered captions for \"Index becomes global bookkeeping\" as evidence for topics, examples, and rough phrasing, not as a final transcript. Before tightening a sentence, decide whether it rests on caption wording, visible demonstration, course-chain inference, or background source."
       },
       "reader_test": {
         "explain_object": "Before the topic name appears, use 'Adding local indices' to name what is being watched: Indices assigned to isolated vector-field defects by reading nearby arrow turning. Do not reduce it to the drawing on the board. Say what information that object carries before any theorem name is used.",
@@ -1673,7 +1673,7 @@
         "why_strong": "The test is whether the answer would still make sense if all formal labels were hidden and only the object, rule, and surviving evidence remained. The concrete moment 'Adding local indices' keeps the answer grounded in the course instead of drifting into a general textbook summary."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "\"Index becomes global bookkeeping\" is backed by recovered auto-captions; use them for lecture anchors, visible examples, and rough phrasing rather than official transcript wording."
   },
   {
     "lecture": 13,
@@ -1795,8 +1795,8 @@
       },
       "source_faithfulness": {
         "caption_support": "Source support for \"Poincare-Hopf turns topology into a prediction about motion\" begins with the recovered anchors Poincare-Hopf theorem, index sum, Euler characteristic, hairy ball, then with visible course moments such as Using Poincare-Hopf in both directions; The hairy-ball idea in plain form; Topology predicts a failure of motion. Use those signals as footing for the page's object-move-surviving-fact account. They support the mathematical reading, but they should not be treated as exact phrasing from the board or voice.",
-        "course_inference": "Some sentences explain the lecture's role in the whole course rather than a single caption line. Those sentences should be read as course structure: the object, legal move, and surviving fact are being connected forward, not quoted as Tokieda's exact formulation.",
-        "caveat": "Auto-captions can mishear names, symbols, and short mathematical words. Keep exact-source support separate from course-arc inference and background-source support, and check any exact technical term against the video before making a sharper claim."
+        "course_inference": "Treat the later-use claims for \"Poincare-Hopf turns topology into a prediction about motion\" as synthesis. They are built from lecture order, recurring proof work, and the named examples, so they should remain weaker than direct caption evidence and should not sound like recovered wording.",
+        "caveat": "The revision habit for \"Poincare-Hopf turns topology into a prediction about motion\" is to label support. Exact terminology needs a video check; a course-role explanation should stay framed as interpretation rather than transcript evidence, and background references should not be treated as lecture wording."
       },
       "reader_test": {
         "explain_object": "Make the working object in \"Poincare-Hopf turns topology into a prediction about motion\" explicit: A vector field on a surface, with all isolated defects counted together. Treat the picture as a record of rules and data, not as decoration. Name the data the object keeps track of before using course vocabulary.",
@@ -1810,7 +1810,7 @@
         "why_strong": "The point of the guide is to make the proof habit visible: choose the right thing to watch, state the rule of motion, then say what the motion cannot erase. That is why the answer must end with a limit as well as a payoff. The surviving fact is: The sum of local indices equals the Euler characteristic of the surface. It tells the reader what is forced, not every extra thing one might wish to know."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "The source base for \"Poincare-Hopf turns topology into a prediction about motion\" is recovered captions plus visible demonstrations. The page can use them for course evidence, but exact wording still needs video-level checking."
   },
   {
     "lecture": 14,
@@ -1928,8 +1928,8 @@
       },
       "source_faithfulness": {
         "caption_support": "\"Applications show the same method in new settings\" is grounded by caption anchors including applications, rotations in space, Poincare-Hopf, dynamical systems, plus concrete course moments such as Applications as honest translations; Rotations and dynamics share the same proof engine; The model must carry the real constraint. That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
-        "course_inference": "The page also places the lecture inside the course chain: which earlier object or proof habit it uses, and which later lecture depends on it. That placement is course-arc interpretation, so it must stay tied to the examples and not become a general topology summary or a claim that Tokieda literally used the companion's wording.",
-        "caveat": "Recovered captions are good evidence for topics, examples, and rough phrasing, but they are not a final transcript. Before tightening a sentence, decide whether it rests on caption wording, a visible demonstration, a course-chain inference, or a background source."
+        "course_inference": "For \"Applications show the same method in new settings\", the course-chain reading says which earlier proof habit the lecture uses and which later lecture depends on it. That placement is interpretation, so it must stay tied to the examples and not become a claim that Tokieda literally used the companion's wording.",
+        "caveat": "Caption evidence for \"Applications show the same method in new settings\" can carry the shape of the lecture without carrying every exact word. Do not let a familiar term, a source link, or a cleaned caption line do more work than the available evidence supports."
       },
       "reader_test": {
         "explain_object": "Use 'Applications as honest translations' to name the object in everyday words: A physical or moving system translated into a space of possible states. Keep the object separate from the chalk drawing used to show it. Explain what the object records while the example is still concrete.",
@@ -1943,7 +1943,7 @@
         "why_strong": "The answer has force when the reader can rebuild the argument from the classroom object, not from memory of the lecture title. In this lecture, 'Rotations and dynamics share the same proof engine' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "Recovered captions support \"Applications show the same method in new settings\" as a lecture group. They ground objects, examples, and sequence while leaving exact phrasing below transcript certainty."
   },
   {
     "lecture": 15,
@@ -2079,8 +2079,8 @@
       },
       "source_faithfulness": {
         "caption_support": "Treat table of contents, pictorial thinking, deformation, intersection as caption-level support for \"The course as pictorial thinking\", and use The table of contents becomes one argument; Pictures earn their role by carrying constraints; The final strip demonstration returns to linking as the demonstration-level support. The examples are the main guardrail: they keep the page tied to what the lecture demonstrates rather than to a free-standing textbook account.",
-        "course_inference": "The companion then adds a course-arc reading: how this lecture receives earlier habits and prepares later ones. That connection is useful, but it is still an interpretation built from sequence, examples, and repeated method, not a direct report of a transcript sentence.",
-        "caveat": "The safest revision habit is to label the kind of support. If the claim needs exact terminology, recheck the video; if it only explains the course role, keep it framed as interpretation rather than as transcript evidence."
+        "course_inference": "The broader reading for \"The course as pictorial thinking\" is about dependency: how this lecture receives earlier habits and prepares later ones. That connection comes from sequence, examples, and repeated method, not from one transcript sentence.",
+        "caveat": "When \"The course as pictorial thinking\" leans on source wording, keep the claim narrow. A caption anchor can support the lecture object or example without proving every later theorem-level sentence on the page, especially when that sentence depends on synthesis across lectures."
       },
       "reader_test": {
         "explain_object": "Let 'The table of contents becomes one argument' reveal what the lecture is acting on: The whole course as a chain of picture-based reasoning moves. Do not treat it as just a board picture. Make clear what the lecture is reasoning about before naming the formal idea.",
@@ -2094,6 +2094,6 @@
         "why_strong": "Read the guide as a small proof contract: what is present, what may change, what must survive, and what conclusion that survival earns. The anchor 'The final strip demonstration returns to linking' should make the later use feel earned, not announced."
       }
     },
-    "source_summary": "This lecture group is backed by recovered auto-captions except where missing-caption ids are listed."
+    "source_summary": "For \"The course as pictorial thinking\", caption recovery supplies the working source trail. The explanation should still separate caption evidence from broader course synthesis."
   }
 ]
