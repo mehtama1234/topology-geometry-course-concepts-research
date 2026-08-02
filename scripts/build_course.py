@@ -4288,26 +4288,41 @@ def build_lecture_reader_test(lecture, spine_row):
     object_close = varied((number, "reader-object-close"), [
         "Say what information that object carries before any theorem name is used.",
         "Name the data the object keeps track of before using course vocabulary.",
-        "Explain what the object records while the example is still concrete.",
+        "Describe the information stored in the object while the example is still tangible.",
         "Make clear what the lecture is reasoning about before naming the formal idea.",
+        "State the object in a way that would let someone rebuild the demonstration.",
+        "Say what feature of the setup the later argument needs to remember.",
+        "Keep the explanation close to the concrete carrier before widening it.",
+        "Name what would be lost if the object were replaced by only a topic label.",
     ])
     picture_warning = varied((number, "reader-picture-warning"), [
         "Do not treat it as just a board picture.",
         "Do not reduce it to the drawing on the board.",
         "Treat the picture as a record of rules and data, not as decoration.",
-        "Keep the object separate from the chalk drawing used to show it.",
+        "Separate the object from the chalk drawing used to show it.",
+        "Read the picture as instructions plus evidence, not as the object itself.",
+        "The drawing is useful only after its rule, route, field, or state meaning is named.",
+        "Keep the visual aid from replacing the mathematical carrier.",
     ])
     move_close = varied((number, "reader-move-close"), [
         "Name one nearby move that would quietly change the problem instead of solving it.",
         "Also name the shortcut that would make the original problem disappear.",
-        "Say which nearby simplification would no longer answer the original question.",
+        "Identify the simplification that would answer a different question.",
         "State the forbidden move that would make the conclusion untrustworthy.",
+        "Point to the tempting move that would make the proof too easy by changing the rules.",
+        "Say which shortcut would erase the evidence the lecture is trying to protect.",
+        "Name the illegal cleanup before accepting the clean picture.",
+        "Mark the move that would turn the demonstration into a different problem.",
     ])
     conclusion_close = varied((number, "reader-conclusion-close"), [
-        "Explain how that fact reaches the lecture's payoff without relying on a slogan.",
+        "Show the route from that fact to the lecture's payoff without relying on a slogan.",
         "Use that fact to reach the payoff directly, not by repeating a theorem label.",
         "Show how the protected evidence makes the conclusion unavoidable or limited.",
         "Carry the surviving fact all the way to the payoff so the final claim has a reason.",
+        "Make the last sentence depend on the protected fact, not on the title of the lecture.",
+        "Say what the fact forces and where the conclusion has to stop.",
+        "Let the protected evidence decide the strength of the final claim.",
+        "Close the explanation by tying the payoff back to the fact that survived.",
     ])
     move_guard = varied((number, "reader-move-guard"), [
         "The move must stay tied to the original lecture problem.",
@@ -4400,9 +4415,13 @@ def build_lecture_answer_guide(lecture, spine_row):
     }
     conclusion_close = varied((number, "answer-conclusion-close"), [
         "Then use that protected fact to explain the consequence in plain language.",
-        "Carry that evidence into the conclusion before naming the later theorem or method.",
+        "Bring that evidence into the conclusion before naming the later theorem or method.",
         "Say what the evidence forces and what it does not promise to compute.",
         "Make the payoff follow from the protected fact, not from the reader's trust in a title.",
+        "Let the protected fact set the size of the conclusion.",
+        "State the payoff as something earned by the evidence, not by the topic name.",
+        "Use the evidence to say both what follows and what remains unproved.",
+        "Make the conclusion visibly depend on the fact the lecture protected.",
     ])
     forward_close = varied((number, "answer-forward-close"), [
         f"That is the piece later lectures reuse: {spine_row['why_later']}",
@@ -4415,8 +4434,12 @@ def build_lecture_answer_guide(lecture, spine_row):
     data_close = varied((number, "answer-data-close"), [
         "Say what data it carries in this lecture.",
         "Name the information it carries for this argument.",
-        "Explain what the lecture needs this object to record.",
+        "Explain what this lecture needs the object to record.",
         "State which part of the setup the object preserves for reasoning.",
+        "Say what would be missing if the object were replaced by a topic name.",
+        "Name the course data this object keeps available for the proof.",
+        "Make clear what the object lets the later move inspect.",
+        "State the part of the example that has to remain visible in the argument.",
     ])
     shortcut_close = varied((number, "answer-shortcut-close"), [
         "That shortcut would change the problem rather than solve it.",
