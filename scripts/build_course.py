@@ -1888,7 +1888,7 @@ CONCEPTS = [
         "subthemes": ["allowed-moves", "singular-moments"],
         "first_principles": "Imagine trying to understand a room while every chair is exactly lined up with every table edge. That neatness is a trap: tiny movements destroy it. Generic position means shifting the picture just enough that fragile coincidences are gone. Then crossings happen one at a time, contacts are clean, and the argument sees the structure rather than the accident.",
         "important_detail": "The shift must be small enough that it does not change the real question. It removes accidental equalities, not the object being studied.",
-        "math_principle": "Stable reasoning begins with a case that survives small disturbances.",
+        "math_principle": "Stable reasoning begins with a nearby case that survives small disturbances. The small move removes accidental coincidences while keeping the object and the question fixed.",
     },
     {
         "id": "deformation",
@@ -1897,7 +1897,7 @@ CONCEPTS = [
         "subthemes": ["allowed-moves", "invariant-receipts"],
         "first_principles": "A deformation is a continuous change, like bending a wire or stretching a rubber sheet, where nothing is cut, glued, or teleported. It lets you replace a hard picture by an easier picture while keeping the kind of truth you care about.",
         "important_detail": "The power is in the rulebook. If cutting is forbidden, a knot cannot simply be untied by passing a strand through another strand.",
-        "math_principle": "A controlled change preserves chosen facts and exposes which facts are truly structural.",
+        "math_principle": "A controlled change separates appearance from obligation. The visible shape may move, but the protected fact must travel through every allowed step.",
     },
     {
         "id": "invariant",
@@ -1924,7 +1924,7 @@ CONCEPTS = [
         "subthemes": ["holes-and-boundaries", "signs-and-cancellation"],
         "first_principles": "Break a surface into corners, edges, and pieces. Count corners, subtract edges, add pieces. The surprising part is that many different breakups give the same final number. That number is a compact way to remember how the surface is put together.",
         "important_detail": "The pieces can be changed, refined, or redrawn, but the alternating count is built so added internal boundaries cancel out.",
-        "math_principle": "A local accounting scheme can produce a global fingerprint of a surface.",
+        "math_principle": "A local accounting scheme becomes global only when artificial changes cancel. The alternating count keeps the surface information while ignoring the chosen breakup.",
     },
     {
         "id": "triangulation",
@@ -1933,7 +1933,7 @@ CONCEPTS = [
         "subthemes": ["holes-and-boundaries", "models-not-labels"],
         "first_principles": "To reason about a soft surface, cut it mentally into simple patches. Triangles are convenient because they are easy to count and glue, but the deeper move is to replace a slippery continuous object with a finite ledger. Once the surface is made of patches, the argument can ask what happens when patches are split, joined, or redrawn.",
         "important_detail": "The cuts are a tool, not the truth itself. A valid count must survive when the surface is cut in another acceptable way.",
-        "math_principle": "Complicated continuous objects can be studied through finite bookkeeping.",
+        "math_principle": "A continuous surface becomes usable when it is replaced by a finite ledger whose changes can be audited. The bookkeeping must survive refinement, or it describes the cutup instead of the surface.",
     },
     {
         "id": "graph-planarity",
@@ -1942,7 +1942,7 @@ CONCEPTS = [
         "subthemes": ["holes-and-boundaries", "mechanisms-and-locks"],
         "first_principles": "A graph is dots joined by lines. Asking whether it can be drawn on a page without unwanted crossings is really a question about available routes on a surface. The graph may be simple as a list of connections, but the page has limited room, and that room can force crossings no matter how patiently the drawing is rearranged.",
         "important_detail": "Crossings are not just ugly drawings. A crossing may signal that the page lacks enough room for the required connections.",
-        "math_principle": "Connectivity plus surface bookkeeping can forbid a drawing before anyone tries every drawing.",
+        "math_principle": "A graph drawing is constrained by both its required connections and the room supplied by the surface. Bookkeeping can prove that every legal drawing faces the same obstruction.",
     },
     {
         "id": "knots-and-links",
@@ -1951,7 +1951,7 @@ CONCEPTS = [
         "subthemes": ["curves-loops-knots", "allowed-moves"],
         "first_principles": "A knot is a closed loop in space. The question is not whether it looks tangled, but whether it can be moved into a simple circle without cutting it or passing it through itself. This turns untangling into a rule-governed problem: the loop may slide and bend freely, but it cannot cheat by breaking the space it lives in.",
         "important_detail": "A flat drawing hides over-under information. The drawing is evidence only when those crossings are recorded.",
-        "math_principle": "A path in space can carry information that survives all legal untangling moves.",
+        "math_principle": "A curve in space carries more than its visible shape. Legal untangling may change the drawing, but it cannot erase a route relation without crossing a forbidden move.",
     },
     {
         "id": "winding-linking",
@@ -1960,7 +1960,7 @@ CONCEPTS = [
         "subthemes": ["curves-loops-knots", "signs-and-cancellation"],
         "first_principles": "A loop can go around something. If it winds once around a post, pulling the loop tighter or looser does not remove that fact. Linking is the same stubbornness shared by two loops. The proof asks whether the route has trapped a relationship that legal motion cannot remove, not how long the loop is.",
         "important_detail": "Direction matters. Opposite windings can cancel, so the sign of a turn or crossing is part of the count.",
-        "math_principle": "Going around is a measurable relationship, not merely a visual impression.",
+        "math_principle": "Going around is a relationship that can be counted with direction. Stretching the loop changes the drawing, but not the signed relation unless the loop crosses the obstacle.",
     },
     {
         "id": "boundary-orientation",
@@ -1969,7 +1969,7 @@ CONCEPTS = [
         "subthemes": ["surfaces-and-orientation", "holes-and-boundaries"],
         "first_principles": "A boundary is where a surface stops. Orientation is the ability to choose a consistent sense of clockwise or outward across the surface. Some surfaces allow that choice everywhere; some betray it after one trip around.",
         "important_detail": "The trouble often appears only after a full loop. Locally everything can look ordinary while the whole surface refuses a consistent choice.",
-        "math_principle": "A global obstruction can be invisible in every small neighborhood.",
+        "math_principle": "A global obstruction can be invisible in every small neighborhood. The test is whether a local choice still agrees with itself after a full trip through the surface.",
     },
     {
         "id": "gauss-bonnet",
@@ -1978,7 +1978,7 @@ CONCEPTS = [
         "subthemes": ["turning-and-curvature", "holes-and-boundaries"],
         "first_principles": "Curvature tells how a surface bends near a point. Gauss-Bonnet is the deeper message that the total bending over a whole surface is tied to the surface's basic shape. Local bend is not free to add up to anything it likes.",
         "important_detail": "Boundaries and corners contribute too. Ignoring the edge of the surface breaks the accounting.",
-        "math_principle": "Local bending totals can be forced by global topology.",
+        "math_principle": "Local bending is free only locally. Once every bend, edge, and corner is included in one account, the whole surface can force the total.",
     },
     {
         "id": "vector-field-index",
@@ -2014,7 +2014,7 @@ CONCEPTS = [
         "subthemes": ["models-not-labels", "holes-and-boundaries"],
         "first_principles": "Sometimes a problem becomes easier when regions become dots and shared borders become lines, or when a surface is replaced by another bookkeeping picture. The same situation is being viewed through a different ledger. The value is that the second picture may make adjacency, separation, or counting visible when the first picture hides it.",
         "important_detail": "A dual picture works only if it preserves the relationships needed by the question.",
-        "math_principle": "Changing representation can reveal the invariant that was hidden in the original drawing.",
+        "math_principle": "Changing representation is useful when it preserves the relation being studied. The second picture can reveal adjacency, separation, or counting structure that the first picture hid.",
     },
     {
         "id": "parity",
@@ -2023,7 +2023,7 @@ CONCEPTS = [
         "subthemes": ["signs-and-cancellation"],
         "first_principles": "Parity asks whether a count is even or odd. It is a blunt tool, but sometimes blunt is exactly right: many changes create or remove events in pairs, so evenness or oddness cannot change. When the exact number is too fragile, the odd-or-even shadow of the number may be the part that survives.",
         "important_detail": "Parity deliberately forgets most details. That is strength when all allowed changes affect the count by twos.",
-        "math_principle": "A coarse count can be more stable than a detailed measurement.",
+        "math_principle": "A coarse count can be stronger than a detailed one when legal changes happen in pairs. Parity forgets most information so the odd-or-even obstruction can survive.",
     },
     {
         "id": "product-space",
@@ -2032,7 +2032,7 @@ CONCEPTS = [
         "subthemes": ["models-not-labels", "mechanisms-and-locks"],
         "first_principles": "A product space is what you get when two choices are made independently. If one choice is a point on a line and another choice is a point on a line, the combined choice fills a square. The course uses this move whenever the real object is a list of freedoms: one freedom for each coordinate, knob, point, or part of a mechanism. The new space is not a picture of the object in the room. It is the space of all allowed choices at once.",
         "important_detail": "The product keeps both freedoms. Forgetting one coordinate means studying a smaller problem than the one the lecture built.",
-        "math_principle": "Independent freedoms combine into a new space whose shape can be studied on its own.",
+        "math_principle": "Independent freedoms combine into a new space because one point can record all choices at once. That larger room is only honest while the freedoms really vary independently.",
     },
     {
         "id": "quotient-space",
@@ -2041,7 +2041,7 @@ CONCEPTS = [
         "subthemes": ["models-not-labels", "surfaces-and-orientation"],
         "first_principles": "A quotient space is made by declaring some points to be the same point. A square with opposite sides identified is no longer only a square on the page; it is an instruction for travel. When a path leaves one marked edge, the rule says where it re-enters and whether its direction has been reversed.",
         "important_detail": "The identification rule is part of the object. The same drawn square can make different spaces if the edge rules change.",
-        "math_principle": "Sameness can be built by a rule, and that rule changes routes, sides, and holes.",
+        "math_principle": "Sameness can be built by a rule rather than discovered by looking. Once points are identified, routes, sides, boundaries, and holes belong to the finished space, not the flat drawing.",
     },
     {
         "id": "surgery",
@@ -2050,7 +2050,7 @@ CONCEPTS = [
         "subthemes": ["allowed-moves", "surfaces-and-orientation"],
         "first_principles": "Surgery means removing a controlled piece of a space and attaching another controlled piece. The plain idea is repair by rule: do not stare at the whole surface at once; change one part while tracking exactly what feature has been changed and what feature is meant to stay meaningful.",
         "important_detail": "Surgery is not arbitrary damage. The boundary of the removed piece and the gluing rule for the replacement determine the new space.",
-        "math_principle": "A global surface can be understood through local replacement rules when the boundary bookkeeping is explicit.",
+        "math_principle": "A global surface can be understood by local replacement only when the exposed boundary is tracked. The replacement changes the space, so the gluing rule is part of the proof.",
     },
     {
         "id": "manifold",
@@ -2059,7 +2059,7 @@ CONCEPTS = [
         "subthemes": ["models-not-labels", "surfaces-and-orientation"],
         "first_principles": "A manifold is a space that looks ordinary when seen very close up, even if the whole space has a surprising shape. A surface of a ball, a torus, or a Mobius-type object can have simple small neighborhoods while the complete object carries holes, side reversal, or other global behavior.",
         "important_detail": "Local ordinariness does not settle the global question. The whole course depends on that gap.",
-        "math_principle": "A space can be locally simple and globally constrained at the same time.",
+        "math_principle": "A space can be locally ordinary and globally constrained at the same time. Local coordinates allow small arguments, but full trips reveal holes, side reversal, and compatibility failures.",
     },
     {
         "id": "intersection-number",
@@ -2068,7 +2068,7 @@ CONCEPTS = [
         "subthemes": ["signs-and-cancellation", "surfaces-and-orientation"],
         "first_principles": "Intersection number counts meetings with plus and minus signs. A raw count of crossings changes too easily: a small motion can create two meetings or remove two meetings. The signed count is designed so opposite meetings cancel, leaving the part of the meeting information that legal motion cannot erase.",
         "important_detail": "The signs must come from orientation. If plus and minus are assigned without a consistent direction rule, the count has no force.",
-        "math_principle": "Local meetings can become global evidence when signs make accidental pair changes cancel.",
+        "math_principle": "Local meetings become global evidence only after a sign rule explains pair creation and cancellation. The signed total survives legal motion when opposite local events offset each other.",
     },
     {
         "id": "brouwer-fixed-point",
@@ -2086,7 +2086,7 @@ CONCEPTS = [
         "subthemes": ["turning-and-curvature", "mechanisms-and-locks"],
         "first_principles": "An equilibrium is a state where the motion arrow vanishes. In everyday terms, the system has no immediate direction to move. The course cares about equilibria because they can be studied without solving every path: their local arrow patterns can carry signed information.",
         "important_detail": "An equilibrium is not only a dot in a drawing. What matters is how nearby arrows behave around it.",
-        "math_principle": "A local failure of motion can carry evidence about the whole space of motion.",
+        "math_principle": "A stopped state matters when the surrounding arrows carry a countable pattern. The zero is local, but its turning evidence can enter a whole-surface account.",
     },
     {
         "id": "poincare-hopf",
