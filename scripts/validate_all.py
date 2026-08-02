@@ -249,7 +249,7 @@ def main():
                 fail(f"family {family['id']} playbook {field} too thin")
         application = family.get("application") or {}
         for field in ["outside_problem", "method_transfer", "where_it_matters", "honest_limit"]:
-            if len(words(application.get(field))) < 40:
+            if len(words(application.get(field))) < 80:
                 fail(f"family {family['id']} application {field} too thin")
         answer_guide = family.get("answer_guide") or {}
         for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]:
