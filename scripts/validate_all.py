@@ -423,8 +423,10 @@ def main():
         missing = sorted(ids - concept_ids)
         if missing:
             fail(f"concept dependency references unknown concept ids: {missing}")
-        for field in ["stage", "plain", "why", "reader_check"]:
-            if len(words(row.get(field))) < 8:
+        if len(words(row.get("stage"))) < 8:
+            fail(f"concept dependency {row.get('stage')} stage too thin")
+        for field in ["plain", "why", "reader_check"]:
+            if len(words(row.get(field))) < 30:
                 fail(f"concept dependency {row.get('stage')} {field} too thin")
 
     application_spine_rows = data.get("application_spine_rows") or []
