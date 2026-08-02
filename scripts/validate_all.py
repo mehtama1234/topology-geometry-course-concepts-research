@@ -175,7 +175,7 @@ def main():
 
     math_why = data.get("math_why") or {}
     for field in ["big_picture", "first_principles", "important_detail", "principle", "concepts_matter", "reader_path"]:
-        if len(words(math_why.get(field))) < 90:
+        if len(words(math_why.get(field))) < 200:
             fail(f"math_why {field} too thin")
 
     quality_audit = data.get("quality_audit") or {}
