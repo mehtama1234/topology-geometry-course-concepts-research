@@ -158,7 +158,7 @@
     },
     {
       "requirement": "Plain-language term translation",
-      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 3105 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
+      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 5974 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
       "status": "met"
     },
     {
@@ -257,7 +257,7 @@
     "concept_contrast_words": 2422,
     "reader_checks": 11,
     "term_translations": 16,
-    "term_translation_words": 3105,
+    "term_translation_words": 5974,
     "source_readers": 7,
     "source_reader_words": 2053,
     "paper_family_ledger_rows": 7,

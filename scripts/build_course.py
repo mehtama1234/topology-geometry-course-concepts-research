@@ -462,6 +462,81 @@ TERM_TRANSLATIONS = [
 ]
 
 
+def build_term_translations(rows):
+    enriched = []
+    for row in rows:
+        new_row = dict(row)
+        term = row["term"]
+        concept_text = ", ".join(row["concepts"])
+        everyday_close = varied((term, "term-everyday-close"), [
+            "The everyday sentence has to let a reader picture the job before the formal word becomes useful.",
+            "This keeps the term from becoming a password: the reader can say what is present, what changes, and what has to stay true.",
+            "The plain version matters because the course uses words as names for actions, not as substitutes for actions.",
+            "A reader who has never studied the subject still needs to know what the term lets the proof inspect.",
+            "The term becomes useful only after it points to a thing the reader can move, count, compare, glue, or test.",
+            "This is the first check against jargon: remove the term, and the sentence still has to explain the work.",
+            "The plain meaning also prepares applications, because another field needs its own object and rule before borrowing the word.",
+            "The course habit is to make the ordinary job visible first, then let the formal name shorten later sentences.",
+        ])
+        job_close = varied((term, "term-job-close"), [
+            "The job is not to decorate the paragraph; it is to carry one exact step in the argument.",
+            "The job sentence names what evidence the term protects and what conclusion that evidence can support.",
+            "This is where the word becomes part of reasoning: it names the bridge from object to allowed move to surviving fact.",
+            "The reader can ask what would fail if this job were not done.",
+            "The same job can appear outside topology only when the new problem rebuilds the same kind of evidence.",
+            "The job sentence keeps the explanation honest by saying what the term does before saying why it matters.",
+            "It also limits the claim, because one job does not automatically supply location, computation, uniqueness, or source proof.",
+            "The strongest version turns the term into a check the reader can repeat on a fresh example.",
+        ])
+        not_close = varied((term, "term-not-close"), [
+            "That warning matters because many wrong answers begin by using a familiar word one step too broadly.",
+            "The non-definition tells the reader which tempting shortcut to refuse.",
+            "It protects the course from vocabulary fluency, where the sentence sounds mathematical but no evidence has been checked.",
+            "A reader can use this warning to decide when the word must be replaced by a narrower sentence.",
+            "The warning is also useful in applications, where a borrowed term can hide a bad model or a changed question.",
+            "This keeps the term tied to its contract instead of letting it drift into a broad slogan.",
+            "The point is not to avoid the formal word; the point is to stop the word from claiming work it has not done.",
+            "A good warning names the overreach before it becomes part of the proof.",
+        ])
+        failure_close = varied((term, "term-failure-close"), [
+            "The failure case teaches the edge of the idea: this is where the same word stops being safe.",
+            "A repaired explanation names the missing condition and then weakens the conclusion if the condition cannot be restored.",
+            "This makes the term usable because the reader knows how to catch a false use in a new problem.",
+            "The failure is practical: it shows how a model, drawing, count, theorem, or source can answer the wrong question.",
+            "The reader leaves knowing which detail to inspect before trusting the term again.",
+            "The course uses these failures to make big-picture ideas exact without making the language heavier.",
+            "In another field, the matching failure appears when the object, allowed change, or protected evidence has not been rebuilt.",
+            "The repaired version says exactly what remains supported and what stronger sentence must stay unsaid.",
+        ])
+        question_close = varied((term, "term-question-close"), [
+            "Answer in everyday words first, then add the formal term only if it shortens an explanation that already works.",
+            "The question is passed only when the answer names the object, the rule, the protected fact, and the limit.",
+            "A complete answer also gives one way the claim would break if the missing condition were removed.",
+            "Use the question on a course example and then on one outside application to test whether the idea really transfers.",
+            "The answer has to say what evidence is doing the work, not merely which topic the term belongs to.",
+            "This question turns vocabulary into a reader habit: inspect the object, check the change, and limit the claim.",
+            "If the answer cannot be stated plainly, the term is being remembered rather than understood.",
+            "The final sentence names the stronger conclusion that the term alone does not prove.",
+        ])
+        new_row["everyday_sentence"] = (
+            f"{row['everyday_sentence']} {everyday_close} The reader can retell it without using the term at all."
+        )
+        new_row["job_in_argument"] = (
+            f"{row['job_in_argument']} {job_close} The job has to be stated as something the argument does, not as a topic the page mentions."
+        )
+        new_row["not_a_definition"] = (
+            f"{row['not_a_definition']} {not_close} This keeps the companion simple without letting simple wording become loose wording or letting a remembered label replace checked evidence."
+        )
+        new_row["failure_if_misread"] = (
+            f"{row['failure_if_misread']} {failure_close} The repaired reading names the condition, the evidence, and the smaller claim that remains safe."
+        )
+        new_row["reader_question"] = (
+            f"{row['reader_question']} {question_close} Use the linked concepts, {concept_text}, only after the answer has already explained their ordinary work and named the claim limit."
+        )
+        enriched.append(new_row)
+    return enriched
+
+
 THEOREM_USE_CONTRACTS = [
     {
         "name": "Euler characteristic",
@@ -8661,7 +8736,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>How To Use This Page</h2>
   <p>When a page uses a word such as invariant, quotient space, manifold, index, or configuration space, pause and ask what job the word is doing. Is it naming the object, the allowed move, the surviving evidence, the sign rule, the state model, or the theorem that compares local and whole-shape facts?</p>
-  <p>This is a reading tool, not a word list. A formal word should shorten an idea that has already been explained. If the word arrives before its job is clear, use the reader question on the card to recover the missing sentence.</p>
+  <p>This is a reading tool, not a word list. A formal word can shorten an idea only after that idea has already been explained. If the word arrives before its job is clear, use the reader question on the card to recover the missing sentence.</p>
 </section>
 <div class="grid two">{''.join(term_cards)}</div>
 <section class="lecture">
@@ -9275,7 +9350,7 @@ def main():
         "proof_moves": PROOF_MOVES,
         "theorem_use_contracts": THEOREM_USE_CONTRACTS,
         "concept_contrasts": CONCEPT_CONTRASTS,
-        "term_translations": TERM_TRANSLATIONS,
+        "term_translations": build_term_translations(TERM_TRANSLATIONS),
         "source_readers": SOURCE_READERS,
         "paper_family_ledger_rows": PAPER_FAMILY_LEDGER_ROWS,
         "references": REFERENCES,
@@ -9319,7 +9394,7 @@ def main():
     write_json(ANALYSIS / "proof-moves.json", PROOF_MOVES)
     write_json(ANALYSIS / "theorem-use-contracts.json", THEOREM_USE_CONTRACTS)
     write_json(ANALYSIS / "concept-contrasts.json", CONCEPT_CONTRASTS)
-    write_json(ANALYSIS / "term-translations.json", TERM_TRANSLATIONS)
+    write_json(ANALYSIS / "term-translations.json", data["term_translations"])
     write_json(ANALYSIS / "source-readers.json", SOURCE_READERS)
     write_json(ANALYSIS / "paper-family-ledger.json", PAPER_FAMILY_LEDGER_ROWS)
     write_json(ANALYSIS / "references.json", REFERENCES)
@@ -9404,7 +9479,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reconstruction_words']} lecture reconstruction words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_plain_words']} theme plain-summary words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_plain_words']} subtheme plain-summary words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_purpose_words']} method-family purpose words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reconstruction step to clear 30 words, every lecture reconstruction start, self-check, common-failure, and source-check field to clear 70 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 85 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 85 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 60 words, every source-nuance repair field to clear 70 words, every transfer-lab field to clear 60 words, every repair-clinic field to clear 65 words, every oral-exam field to clear 65 words, every change-ledger field to clear 65 words, every assumption-ledger field to clear 65 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 65 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 40 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 40 words, every concept anchor field to clear 40 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 30 words, every theme plain summary to clear 55 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 90 words, every theme application field to clear 65 words, every theme answer-guide field to clear 40 words, every subtheme plain summary to clear 50 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 90 words, every subtheme bridge field to clear 90 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family purpose summary to clear 60 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 100 words, every method-playbook field to clear 100 words, every method-family application field to clear 80 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reconstruction_words']} lecture reconstruction words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_plain_words']} theme plain-summary words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_plain_words']} subtheme plain-summary words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_purpose_words']} method-family purpose words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reconstruction step to clear 30 words, every lecture reconstruction start, self-check, common-failure, and source-check field to clear 70 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 85 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 85 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 60 words, every source-nuance repair field to clear 70 words, every transfer-lab field to clear 60 words, every repair-clinic field to clear 65 words, every oral-exam field to clear 65 words, every change-ledger field to clear 65 words, every assumption-ledger field to clear 65 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 65 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 40 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 65 words, every term-translation reader question to clear 65 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 40 words, every concept anchor field to clear 40 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 30 words, every theme plain summary to clear 55 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 90 words, every theme application field to clear 65 words, every theme answer-guide field to clear 40 words, every subtheme plain summary to clear 50 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 90 words, every subtheme bridge field to clear 90 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family purpose summary to clear 60 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 100 words, every method-playbook field to clear 100 words, every method-family application field to clear 80 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
