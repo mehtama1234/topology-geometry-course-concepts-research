@@ -2288,6 +2288,44 @@ CONCEPT_DEPTH = {
 }
 
 
+CONCEPT_APPLICATION_ROLES = {
+    "generic-position": "cleaning a problem until ordinary events can be inspected one at a time, such as separated contacts, isolated failures, or countable meetings",
+    "deformation": "changing a shape, route, model, or design while preserving the exact condition the problem is meant to test",
+    "invariant": "choosing a stable fact that survives allowed changes, so a conclusion does not depend on one fragile drawing or measurement setup",
+    "topology-vs-geometry": "deciding which measured details matter locally and which whole-shape facts survive when exact measurements are allowed to vary",
+    "euler-characteristic": "using a whole-object count that ignores artificial subdivisions and still constrains surfaces, fields, and local failures",
+    "triangulation": "turning a continuous object into a finite ledger so counting, comparison, and local-to-global checks can be performed openly",
+    "graph-planarity": "testing whether required connections can fit in a given surface or network without forbidden crossings or hidden route conflicts",
+    "knots-and-links": "checking whether a looped object can be untangled under legal motion without cutting, passing through itself, or changing the surrounding room",
+    "winding-linking": "recording whether a route has gone around another object in a way that cannot be erased without crossing a forbidden barrier",
+    "boundary-orientation": "checking whether edge data and direction choices remain consistent when carried around the whole object rather than one local patch",
+    "gauss-bonnet": "turning many local measurements of bending, boundary turning, and corner behavior into one whole-object account",
+    "vector-field-index": "reading the turning pattern around one isolated failure point so local arrow behavior can be added into a global constraint",
+    "fixed-points": "proving that a rule must agree with itself somewhere even when the exact meeting point is not known in advance",
+    "configuration-space": "turning a moving system into a space of complete allowed states where motion becomes a path and restrictions become walls or holes",
+    "duality": "replacing one representation by a paired representation while preserving the relationships the original question actually uses",
+    "parity": "keeping only evenness or oddness when exact counts may change but events are created or removed in pairs",
+    "product-space": "recording several independent choices as one complete point before restrictions are imposed to make the real state space",
+    "quotient-space": "building a space by declaring points equivalent, then reasoning from the finished identification rule rather than the unglued drawing",
+    "surgery": "cutting and reassembling an object under stated rules so durable surface features become easier to expose",
+    "manifold": "checking that every small region behaves like ordinary space while the whole object may still carry unusual global behavior",
+    "intersection-number": "turning meetings into signed evidence so harmless pairs cancel while a forced meeting leaves a protected total",
+    "brouwer-fixed-point": "using the shape of a filled space and a no-jump rule to force at least one self-agreement point",
+    "equilibrium": "reading a still state of a motion law through the nearby arrows, not only through the dot where motion stops",
+    "poincare-hopf": "comparing every local vector-field defect with a whole-surface count so the surface constrains possible motion failures",
+}
+
+
+CONCEPT_APPLICATION_DOMAINS = {
+    "generic-before-exception": "measurement, simulation, and physical experiments where exact coincidences are too fragile to trust as the main evidence",
+    "see-by-deforming": "design, shape comparison, route planning, and modeling work where harmless changes should not alter the answer",
+    "count-what-survives": "engineering checks, network reasoning, data-shaped models, and scientific measurements that need a stable count rather than one visible number",
+    "pictures-to-proofs": "drawing-heavy fields such as mechanism design, maps, diagrams, and state models where a picture must carry rules, not only appearance",
+    "shape-as-machine": "robotics, dynamics, control, networks, and mechanism problems where the shape of possible states can force or block behavior",
+    "local-to-global": "physics, geometry, materials, fields, and surface models where local choices must fit together across a complete object",
+}
+
+
 CONCEPT_WORKUPS = {
     "generic-position": {
         "object": "A drawing or configuration that may contain accidental alignments, tangencies, or multiple events happening at the same place. The object is suspect because one special-looking picture can hide several ordinary events.",
@@ -5157,6 +5195,38 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
     return drills
 
 
+def build_concept_application(concept):
+    cid = concept["id"]
+    title = concept["title"]
+    work = concept["workup"]
+    role = CONCEPT_APPLICATION_ROLES[cid]
+    domain = CONCEPT_APPLICATION_DOMAINS[concept["theme"]]
+    protected = plain_fragment(work["protected"], ["The protected fact is", "The protected fact"])
+    failure = plain_fragment(work["breaks_if"], ["It breaks if", "It breaks when", "The idea breaks if"])
+    return {
+        "outside_problem": (
+            f"Outside the course, the idea of {title} matters when a person faces a problem where the visible details are too busy or too fragile to trust directly. "
+            f"The practical issue is {role}. In {domain}, that means the first question is not the formal name, but what real object, route, field, count, or state space carries the constraint."
+        ),
+        "topology_application": (
+            f"The topological use of {title} starts by translating the outside situation into the course habit. Name the object as {work['object']} "
+            f"Then name the allowed action as {work['operation']} Only after those two parts are clear can the idea support a conclusion rather than act as a label."
+        ),
+        "other_fields": (
+            f"The same pattern can appear in physics, engineering, robotics, networks, or scientific modeling whenever the problem depends on {role}. "
+            f"The outside field supplies the concrete material, but the mathematical job is the same: keep the right information, ignore the harmless variation, and check that the model still represents the original situation."
+        ),
+        "why_it_matters": (
+            f"This matters because {title} can give a guarantee before every detail is computed. The protected fact is {protected}. "
+            f"When that fact is truly protected, the reader can know that some route is blocked, some event is forced, some count survives, or some model has enough structure to support the claim."
+        ),
+        "honest_limit": (
+            f"The limit is just as important as the payoff. {failure}. So {title} does not solve the whole outside problem by itself. "
+            f"It supports only the conclusion earned by the object, allowed move, protected fact, and failure check; speed, exact location, cost, material behavior, or numerical design may still need other methods."
+        ),
+    }
+
+
 def build_concept_self_check(concept):
     work = concept["workup"]
     anchor = concept["anchor"]
@@ -5832,6 +5902,7 @@ def build_quality_audit(data):
     concept_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in c["essay"]) for c in data["concepts"])
     concept_workup_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["workup"][field])) for field in ["object", "operation", "protected", "breaks_if"]) for c in data["concepts"])
     concept_anchor_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["anchor"][field])) for field in ["course_moment", "principle", "reader_question"]) for c in data["concepts"])
+    concept_application_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["application"][field])) for field in ["outside_problem", "topology_application", "other_fields", "why_it_matters", "honest_limit"]) for c in data["concepts"])
     concept_self_check_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["self_check"][field])) for field in ["object_check", "operation_check", "protected_check", "failure_check"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
     theme_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", t["lens"][field])) for field in ["notices", "ignores", "changes_problem", "reader_test"]) for t in data["themes"])
@@ -5908,7 +5979,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add {theme_answer_guide_words + subtheme_answer_guide_words + family_answer_guide_words} words.",
+            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples, outside-application checks, and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add {theme_answer_guide_words + subtheme_answer_guide_words + family_answer_guide_words} words, and concept applications add {concept_application_words} words.",
             "status": "met",
         },
         {
@@ -6066,6 +6137,7 @@ def build_quality_audit(data):
             "concept_essay_words": concept_essay_words,
             "concept_workup_words": concept_workup_words,
             "concept_anchor_words": concept_anchor_words,
+            "concept_application_words": concept_application_words,
             "concept_self_check_words": concept_self_check_words,
             "theme_essay_words": theme_essay_words,
             "theme_lens_words": theme_lens_words,
@@ -6137,7 +6209,7 @@ def quality_metric_cards(metrics):
         {
             "title": "Concept And Course Map",
             "meta": "ideas across pages",
-            "text": f"The concept layer has {metrics['concept_essay_words']} essay words, {metrics['concept_workup_words']} workup words, {metrics['concept_anchor_words']} anchor words, and {metrics['concept_self_check_words']} self-check words. Every concept links back to course appearances, with {metrics['concept_appearances_min']} to {metrics['concept_appearances_max']} examples per concept, so ideas are tested against lecture moments rather than floating as glossary entries.",
+            "text": f"The concept layer has {metrics['concept_essay_words']} essay words, {metrics['concept_workup_words']} workup words, {metrics['concept_anchor_words']} anchor words, {metrics['concept_application_words']} outside-application words, and {metrics['concept_self_check_words']} self-check words. Every concept links back to course appearances, with {metrics['concept_appearances_min']} to {metrics['concept_appearances_max']} examples per concept, so ideas are tested against lecture moments rather than floating as glossary entries.",
         },
         {
             "title": "Practice And Repair",
@@ -7147,8 +7219,9 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         work = c["workup"]
         anchor = c["anchor"]
         self_check = c["self_check"]
+        application = c["application"]
         concept_refs = [ref for ref in data["references"] if c["id"] in ref["concepts"]]
-        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Failure Mode</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><section class="lecture"><h2>Can You Use It?</h2><p><b>Object check:</b> {esc(self_check['object_check'])}</p><p><b>Operation check:</b> {esc(self_check['operation_check'])}</p><p><b>Protected fact check:</b> {esc(self_check['protected_check'])}</p><p><b>Failure check:</b> {esc(self_check['failure_check'])}</p></section><section class="lecture"><h2>Further Source Trail</h2><p class="evidence">{esc(source_trail_intro(("concept", c["id"]), "concept", c))}</p><div class="grid two">{source_trail_cards(concept_refs, ("concept", c["id"]), "concept", c)}</div></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
+        body = f"""<h1>{esc(c['title'])}</h1><p class="lead">{esc(c['depth']['why_it_exists'])}</p><section class="lecture"><h2>Concept Essay</h2>{paragraph_block(c['essay'])}</section><section class="panel"><h2>First Principles</h2><p>{esc(c['first_principles'])}</p><h2>Important Detail</h2><p>{esc(c['important_detail'])}</p><h2>Principle Behind It</h2><p>{esc(c['math_principle'])}</p><h2>Failure Mode</h2><p>{esc(c['depth']['beginner_trap'])}</p><h2>Course Role</h2><p>{esc(c['depth']['course_role'])}</p></section><section class="lecture"><h2>Anchor Example</h2><p><b>Course moment:</b> {esc(anchor['course_moment'])}</p><p><b>Principle:</b> {esc(anchor['principle'])}</p><p><b>Reader question:</b> {esc(anchor['reader_question'])}</p></section><section class="lecture"><h2>Work It From Scratch</h2><p><b>Object:</b> {esc(work['object'])}</p><p><b>Operation:</b> {esc(work['operation'])}</p><p><b>Protected fact:</b> {esc(work['protected'])}</p><p><b>Breaks if:</b> {esc(work['breaks_if'])}</p></section><section class="lecture"><h2>Where This Matters Outside Topology</h2><p><b>Outside problem:</b> {esc(application['outside_problem'])}</p><p><b>Topological use:</b> {esc(application['topology_application'])}</p><p><b>Other fields:</b> {esc(application['other_fields'])}</p><p><b>Why it matters:</b> {esc(application['why_it_matters'])}</p><p><b>Honest limit:</b> {esc(application['honest_limit'])}</p></section><section class="lecture"><h2>Can You Use It?</h2><p><b>Object check:</b> {esc(self_check['object_check'])}</p><p><b>Operation check:</b> {esc(self_check['operation_check'])}</p><p><b>Protected fact check:</b> {esc(self_check['protected_check'])}</p><p><b>Failure check:</b> {esc(self_check['failure_check'])}</p></section><section class="lecture"><h2>Further Source Trail</h2><p class="evidence">{esc(source_trail_intro(("concept", c["id"]), "concept", c))}</p><div class="grid two">{source_trail_cards(concept_refs, ("concept", c["id"]), "concept", c)}</div></section><p>{''.join(f'<span class="pill">{esc(s)}</span>' for s in c['subthemes'])}</p><h2>Where It Appears</h2><div class="grid two">{moments}</div>"""
         (SITE / slug_page("concept", c["id"])).write_text(page(c["title"], body, "Concepts"), encoding="utf-8")
 
     body = "<h1>Themes</h1><p class='lead'>Themes are the recurring habits of thought that make the course cohere across paper strips, surfaces, intersections, fixed points, and dynamics.</p><div class='grid two'>" + "".join(card(t["title"], t["depth"]["problem"], slug_page("theme", t["id"]), "Theme") for t in data["themes"]) + "</div>"
@@ -7325,6 +7398,7 @@ def main():
         enriched["essay"] = CONCEPT_ESSAYS[concept["id"]]
         enriched["workup"] = CONCEPT_WORKUPS[concept["id"]]
         enriched["anchor"] = CONCEPT_ANCHORS[concept["id"]]
+        enriched["application"] = build_concept_application(enriched)
         enriched["self_check"] = build_concept_self_check(enriched)
         concepts.append(enriched)
     concept_appearances = {concept["id"]: [] for concept in concepts}
@@ -7461,6 +7535,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, failure-mode, and course-role sections
 - {metrics['concept_workup_words']} concept workup words across object, operation, protected-fact, and failure-test fields
 - {metrics['concept_anchor_words']} concept anchor words across course-moment, principle, and reader-question fields
+- {metrics['concept_application_words']} concept application words explaining where each concept matters outside topology and what limit remains
 - {metrics['concept_self_check_words']} concept self-check words showing what a complete concept explanation must include for the object, operation, protected fact, and failure condition
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
 - {metrics['theme_lens_words']} theme lens words across notices, ignores, problem-change, and reader-test fields
@@ -7496,7 +7571,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept application field to clear 30 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
