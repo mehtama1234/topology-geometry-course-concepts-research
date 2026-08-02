@@ -333,7 +333,7 @@ def main():
                 fail(f"lecture {lecture['lecture']} reader test {field} too thin")
         answer_guide = deep.get("answer_guide") or {}
         for field in ["object_answer", "move_answer", "conclusion_answer"]:
-            if len(words(answer_guide.get(field))) < 30:
+            if len(words(answer_guide.get(field))) < 50:
                 fail(f"lecture {lecture['lecture']} answer guide {field} too thin")
         essay_words = sum(len(words(p)) for p in deep.get("essay") or [])
         if essay_words < 300:

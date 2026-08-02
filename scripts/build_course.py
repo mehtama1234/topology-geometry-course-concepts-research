@@ -4390,11 +4390,16 @@ def build_lecture_answer_guide(lecture, spine_row):
     examples = lecture["deep"]["examples"]
     number = lecture["lecture"]
     lecture_label = f"Lecture {number:02d}"
+    later_role = spine_row["why_later"].strip()
+    if later_role.startswith("This lecture "):
+        later_role = f"{lecture_label} " + later_role[13:]
+    elif later_role.startswith("This "):
+        later_role = f"{lecture_label} " + later_role[5:]
     object_close = varied((number, "answer-object-close"), [
-        f"{lecture_label} uses the anchor to keep the explanation tied to a real course moment instead of a memorized term.",
-        "The object has to do work before the concept title appears.",
-        "This keeps the reader focused on the carrier of the reasoning, not only the name of the topic.",
-        f"{lecture_label}'s concrete anchor shows what the object records and why the lecture needed it.",
+        f"{lecture_label} uses the anchor to keep the explanation tied to a real course moment instead of a memorized term. {lecture_label} should say what the object lets the proof inspect.",
+        f"{lecture_label} has to make the object do work before the concept title appears. Its answer names what can be followed, moved, counted, compared, or tested on that object.",
+        "This keeps the reader focused on the carrier of the reasoning, not only the name of the topic. The object should make the later legal move possible to check.",
+        f"{lecture_label}'s concrete anchor shows what the object records and why the lecture needed it. {lecture_label} should connect that record to the proof's later evidence before moving to a theorem name.",
     ])
     illegal_shortcuts = {
         1: "The forbidden strip shortcut is flattening it into an ordinary band while keeping the one-sided conclusion.",
@@ -4424,22 +4429,22 @@ def build_lecture_answer_guide(lecture, spine_row):
         "Make the conclusion visibly depend on the fact the lecture protected.",
     ])
     forward_close = varied((number, "answer-forward-close"), [
-        f"That is the piece later lectures reuse: {spine_row['why_later']}",
-        f"The later need is specific: {spine_row['why_later']}",
-        f"This lecture matters later because {spine_row['why_later']}",
-        f"The next uses depend on exactly this discipline: {spine_row['why_later']}",
-        f"Carry this forward as a working rule: {spine_row['why_later']}",
-        f"That protected detail becomes useful later in this way: {spine_row['why_later']}",
+        f"That is the piece later lectures reuse: {later_role}",
+        f"The later need is specific: {later_role}",
+        f"The later role is specific: {later_role}",
+        f"The next uses depend on exactly this discipline: {later_role}",
+        f"Carry this forward as a working rule: {later_role}",
+        f"That protected detail becomes useful later in this way: {later_role}",
     ])
     data_close = varied((number, "answer-data-close"), [
-        "Say what data it carries in this lecture.",
-        "Name the information it carries for this argument.",
-        "Explain what this lecture needs the object to record.",
-        "State which part of the setup the object preserves for reasoning.",
-        "Say what would be missing if the object were replaced by a topic name.",
-        "Name the course data this object keeps available for the proof.",
-        "Make clear what the object lets the later move inspect.",
-        "State the part of the example that has to remain visible in the argument.",
+        "Say what data it carries in this lecture, and why that data cannot be replaced by a topic name.",
+        "Name the information it carries for this argument, then connect that information to the move the lecture will allow.",
+        "Explain what this lecture needs the object to record, including the route, boundary, state, sign, field, or gluing rule that later matters.",
+        "State which part of the setup the object preserves for reasoning, and what would break if that part were hidden.",
+        "Say what would be missing if the object were replaced by a topic name, especially the concrete feature that lets the proof start.",
+        "Name the course data this object keeps available for the proof, then say how the lecture example makes that data visible.",
+        "Make clear what the object lets the later move inspect, and why the move cannot be checked without that object.",
+        "State the part of the example that has to remain visible in the argument, not only the title of the example.",
     ])
     shortcut_close = varied((number, "answer-shortcut-close"), [
         "That shortcut would change the problem rather than solve it.",
@@ -7374,7 +7379,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 30 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every source-nuance repair field to clear 14 words, every transfer-lab field to clear 14 words, every repair-clinic field to clear 14 words, every oral-exam field to clear 14 words, every change-ledger field to clear 14 words, every assumption-ledger field to clear 14 words, every counterexample field to clear 14 words, every weak-claim repair field to clear 14 words, every paper-family field to clear 14 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every source-nuance repair field to clear 14 words, every transfer-lab field to clear 14 words, every repair-clinic field to clear 14 words, every oral-exam field to clear 14 words, every change-ledger field to clear 14 words, every assumption-ledger field to clear 14 words, every counterexample field to clear 14 words, every weak-claim repair field to clear 14 words, every paper-family field to clear 14 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
