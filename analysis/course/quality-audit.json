@@ -173,7 +173,7 @@
     },
     {
       "requirement": "Paper family ledger",
-      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2016 words make the paper layer usable without letting it drown the course explanation.",
+      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2153 words make the paper layer usable without letting it drown the course explanation.",
       "status": "met"
     }
   ],
@@ -258,7 +258,7 @@
     "source_readers": 7,
     "source_reader_words": 2053,
     "paper_family_ledger_rows": 7,
-    "paper_family_ledger_words": 2016,
+    "paper_family_ledger_words": 2153,
     "references": 7,
     "reference_words": 753,
     "quality_rubric_items": 6,

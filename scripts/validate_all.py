@@ -729,7 +729,7 @@ def main():
         if len(words(row.get("family"))) < 2:
             fail(f"paper family ledger {row.get('reference')} family too thin")
         for field in ["problem", "object", "allowed_reading", "protected_idea", "course_bridge", "overclaim", "reader_test"]:
-            if len(words(row.get(field))) < 14:
+            if len(words(row.get(field))) < 40:
                 fail(f"paper family ledger {row.get('reference')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"paper family ledger {row.get('reference')} needs concept links")
