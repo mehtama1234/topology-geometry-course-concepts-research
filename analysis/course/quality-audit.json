@@ -33,7 +33,7 @@
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7378 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7380 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
@@ -138,7 +138,7 @@
     },
     {
       "requirement": "Theorem-use contracts",
-      "evidence": "8 theorem-use contracts state when a theorem is allowed to speak. The 1530 words require the object, allowed move, protected evidence, conclusion, break condition, and everyday test before a theorem name can carry weight.",
+      "evidence": "8 theorem-use contracts state when a theorem is allowed to speak. The 2679 words require the object, allowed move, protected evidence, conclusion, break condition, and everyday test before a theorem name can carry weight.",
       "status": "met"
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "requirement": "Paper family ledger",
-      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2016 words make the paper layer usable without letting it drown the course explanation.",
+      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2014 words make the paper layer usable without letting it drown the course explanation.",
       "status": "met"
     }
   ],
@@ -191,7 +191,7 @@
     "lecture_source_bridge_words": 5650,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 7378,
+    "lecture_reconstruction_words": 7380,
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 2166,
     "lecture_reader_test_words": 3416,
@@ -230,7 +230,7 @@
     "weak_claim_repair_words": 1767,
     "proof_moves": 5,
     "theorem_use_contracts": 8,
-    "theorem_contract_words": 1530,
+    "theorem_contract_words": 2679,
     "concept_contrasts": 10,
     "concept_contrast_words": 2269,
     "reader_checks": 11,
@@ -239,7 +239,7 @@
     "source_readers": 7,
     "source_reader_words": 2015,
     "paper_family_ledger_rows": 7,
-    "paper_family_ledger_words": 2016,
+    "paper_family_ledger_words": 2014,
     "references": 7,
     "quality_rubric_items": 6,
     "rubric_coverage_layers": 6,

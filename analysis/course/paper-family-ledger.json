@@ -56,7 +56,7 @@
     "protected_idea": "The protected idea is the signed total of local indices, which is constrained by the Euler characteristic under the theorem's assumptions. The local pictures may differ, but the total cannot ignore the carrier surface.",
     "course_bridge": "It supports the transition from local equilibria to Poincare-Hopf, where the whole surface controls the total defect account. The course bridge is plain: walk around each defect, record its turning, add the records, and compare the sum with the surface.",
     "overclaim": "Do not reduce the family to a slogan about hair on a sphere, pretend it computes every motion path of a system, or cite it as proof of a caption sentence.",
-    "reader_test": "Can the reader name the field, list the defects being counted, say what surface number controls the total, and state what stronger dynamics claim is not supported? A correct answer should not pretend that an index theorem solves the motion path.",
+    "reader_test": "Can the reader name the field, list the defects being counted, say what surface number controls the total, and state what stronger dynamics claim is not supported? The response cannot pretend that an index theorem solves the motion path.",
     "concepts": [
       "vector-field-index",
       "equilibrium",
