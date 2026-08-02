@@ -181,7 +181,7 @@ def main():
                 fail(f"theme {theme['id']} lens {field} too thin")
         application = theme.get("application") or {}
         for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]:
-            if len(words(application.get(field))) < 40:
+            if len(words(application.get(field))) < 65:
                 fail(f"theme {theme['id']} application {field} too thin")
         answer_guide = theme.get("answer_guide") or {}
         for field in ["notice_answer", "ignore_answer", "transfer_answer", "test_answer"]:
