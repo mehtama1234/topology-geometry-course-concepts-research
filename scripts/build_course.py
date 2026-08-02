@@ -56,7 +56,7 @@ QUALITY_RUBRIC = [
         "id": "course-anchor",
         "title": "Tie the idea to a course moment",
         "test": "The page must connect the explanation to a lecture moment, source trail, example, or transcript-grounded anchor rather than floating as a general summary. The anchor should affect the explanation itself: it should show which object, move, or source limit is actually being used.",
-        "strong_answer": "A complete explanation lets the reader move from the page back to a lecture example or source note and see why that exact moment supports the claim. The course anchor is not decoration; it keeps the companion from becoming a generic topology summary detached from Tokieda's sequence.",
+        "strong_answer": "A complete explanation lets the reader move from the page back to a lecture example or source note and see why that exact moment supports the claim. The course anchor is evidence, not an add-on; it keeps the companion from becoming a generic topology summary detached from Tokieda's sequence.",
         "failure": "The writing fails when it could be pasted into any topology summary without changing a word. It also fails when the page names a lecture but does not use that lecture to explain the object, move, protected fact, or source boundary.",
         "repair": "Add the lecture number, example, or source caveat that makes the explanation belong to this course companion. Then connect the anchor to the reasoning: what did the lecture make visible, what did the source support, and what must not be claimed from that evidence?",
     },
@@ -293,7 +293,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "problem": "This family answers the bridge problem: how do smooth local conditions create trustworthy whole-space topological conclusions? The plain issue is that a local picture can only carry a global claim after the proof has prepared the local situation carefully enough to count or compare it.",
         "object": "The object is a smooth manifold with maps, boundaries, regular values, fixed-point questions, degree-like counts, or vector fields. The local event must be prepared so it is readable: clean enough for a sign, isolated enough for an index, or controlled enough to support a whole-space claim.",
         "allowed_reading": "Use it after translating its formal words into course jobs: prepare clean cases, assign signs, compare maps, and add local evidence. Treat it as formal backup for a family of moves, not as a substitute course transcript.",
-        "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion. Local smoothness is not decoration; it is the condition that lets the later topological bookkeeping be trusted.",
+        "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion. Local smoothness is not a side detail; it is the condition that lets the later topological bookkeeping be trusted.",
         "course_bridge": "It supports generic position, fixed-point reasoning, boundary behavior, and vector-field index without forcing the companion to assume advanced prerequisites. The course bridge is the habit of preparing an ordinary case before asking a count or existence theorem to do work.",
         "overclaim": "Do not treat the reference as required background for a lecture page, and do not use its proof path as evidence that the lecture followed the same path. It is formal support after the everyday explanation has done its work.",
         "reader_test": "Can the reader identify the local smooth condition, say which global count or existence claim it makes trustworthy, and separate formal support from lecture evidence? The response should state the local condition in everyday language first.",
@@ -354,7 +354,7 @@ TERM_TRANSLATIONS = [
     {
         "term": "Quotient space",
         "everyday_sentence": "A quotient space is made by declaring certain points to be the same point in the finished shape. The declaration is not a caption on the drawing; it changes what counts as a location, a route, a boundary, and a neighborhood.",
-        "job_in_argument": "Its job is to turn a construction rule into the actual space being studied. Edge labels, glued boundaries, and identified points are not decoration; they decide what routes and neighborhoods exist afterward.",
+        "job_in_argument": "Its job is to turn a construction rule into the actual space being studied. Edge labels, glued boundaries, and identified points are part of the rule; they decide what routes and neighborhoods exist afterward.",
         "not_a_definition": "It is not just a drawing with arrows on the sides. The arrows are instructions for which positions become identical in the new space. Reasoning on the unglued picture after the rule has been applied means reasoning about the wrong object.",
         "failure_if_misread": "If the identification rule is read loosely, a reader may reason on the unglued picture and prove a claim about the wrong surface. The missing step is to ask how travel, boundary, and neighborhood behavior changed after the declared sameness was applied.",
         "concepts": ["quotient-space", "boundary-orientation", "manifold"],
@@ -542,7 +542,7 @@ THEOREM_USE_CONTRACTS = [
     },
     {
         "name": "Configuration-space modeling",
-        "use_when": "Use it when a physical or moving system is too hard to inspect directly and the question can be asked as a route, barrier, fixed-point, or defect problem. The modeling step is not decoration; it decides what space the later theorem is actually allowed to see.",
+        "use_when": "Use it when a physical or moving system is too hard to inspect directly and the question can be asked as a route, barrier, fixed-point, or defect problem. The modeling step is part of the proof; it decides what space the later theorem is actually allowed to see.",
         "object_needed": "The object is the space of all allowed states, with enough coordinates to describe one complete state and with forbidden states removed before the theorem is used. A point in this space must mean one real state of the system, not a convenient drawing that forgets a constraint.",
         "allowed_move": "The allowed move is to translate physical motion into paths through the state space without adding false freedoms, omitting real freedoms, or removing real barriers. A continuous path in the model is meaningful only if it represents a motion the real system could actually perform.",
         "protected_evidence": "The protected evidence is the shape of possible states: connected regions, holes, walls, fixed points, or total index constraints inside the honest model after forbidden states are removed. The theorem later reads this modeled shape, so the model's missing states and allowed paths carry the argument.",
@@ -766,7 +766,7 @@ SOURCE_NUANCE_REPAIRS = [
         "caption_hazard": "Words such as product, quotient, surgery, and manifold can be misheard as labels for finished objects. The source risk is losing the making rule, which is where the mathematical meaning sits before any short formal name is useful.",
         "safe_claim": "The supported claim is that the lecture teaches space-making as a mathematical act. Independent choices make products, declared sameness makes quotients, local patches make manifolds, and controlled replacement makes surgery meaningful because each operation changes which routes and neighborhoods exist.",
         "repair_move": "If a sentence names a space, add how it was made. Say which choices are independent, which pieces are paired or glued, what was removed or thickened, and what a traveler is allowed to do afterward.",
-        "do_not_claim": "Do not let product, quotient, manifold, or surgery appear as unexplained vocabulary that merely decorates the paragraph. The independent choices, imposed identifications, local test, or replacement boundary must be visible before the formal word is allowed to shorten the sentence.",
+        "do_not_claim": "Do not let product, quotient, manifold, or surgery appear as unexplained vocabulary pasted onto the paragraph. The independent choices, imposed identifications, local test, or replacement boundary must be visible before the formal word is allowed to shorten the sentence.",
         "reviewer_question": "Evidence check: reconstruct the space from the rule alone by naming the choices, identifications, local patches, or replacement boundary before using product, quotient, manifold, or surgery as a shortcut for the completed construction.",
         "concepts": ["product-space", "quotient-space", "manifold"],
     },
@@ -808,7 +808,7 @@ SOURCE_NUANCE_REPAIRS = [
     },
     {
         "lecture": 8,
-        "caption_hazard": "Positive and negative intersection words can be copied as signs without explaining where signs come from. The source risk is arithmetic without orientation, where plus and minus look like decoration instead of evidence tied to local direction.",
+        "caption_hazard": "Positive and negative intersection words can be copied as signs without explaining where signs come from. The source risk is arithmetic without orientation, where plus and minus look like loose labels instead of evidence tied to local direction.",
         "safe_claim": "The supported claim is that the lecture repairs raw crossing counts by giving clean meetings signs. Pair events created or removed during legal motion then contribute no net change, so the signed total becomes the quantity worth protecting.",
         "repair_move": "When a page uses plus and minus intersections, add the shared orientation or local direction rule. Then show one birth or death event where the two signs cancel, so the arithmetic is tied to a visible motion.",
         "do_not_claim": "Do not call the raw number of crossings invariant or let sign language stand alone. The protected candidate is the signed total after the page has explained clean meetings, orientation, and why pair cancellation is allowed.",
@@ -899,7 +899,7 @@ TRANSFER_LAB_CASES = [
         "object": "The object is not the pavement drawing alone. It is the plaza with the fenced region removed and the two paths inside the remaining space. The fence changes the space because it creates a place the path is not allowed to cross.",
         "allowed_move": "The allowed move is to slide a route through open walking space while keeping its endpoints at the gates and never crossing the fence. The path may wiggle, shorten, or lengthen, but the endpoints and forbidden region define the same route problem.",
         "protected_fact": "The protected fact is whether the route winds around the missing region. A fenced hole can block one path from being changed into the other because any attempted slide would have to cross the fence or move an endpoint.",
-        "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region changes which deformations are legal. The course habit is to read the obstacle as part of the object, not as decoration in the drawing.",
+        "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region changes which deformations are legal. The course habit is to read the obstacle as part of the object, not as background ink in the drawing.",
         "wrong_transfer": "A weak answer says both paths are only lines between the same gates. That ignores the obstacle that makes the state space different and treats endpoint agreement as enough by itself.",
         "reader_task": "Decide whether one route can be deformed into the other while respecting the fence, say what the fence contributes to the proof, and name the illegal shortcut that would make the routes look equivalent.",
         "concepts": ["deformation", "winding-linking", "configuration-space"],
@@ -995,7 +995,7 @@ REPAIR_CLINIC_CASES = [
     {
         "title": "Quotient space as a square with arrows",
         "flawed_explanation": "A quotient space is shown by drawing a square with arrows on the sides, so the square picture itself can be read as the surface we care about before and after gluing.",
-        "why_it_fails": "The sentence mistakes the code for the object. The arrows are not decoration on a square; they are instructions that decide which points become the same point in the finished space. If the reader reasons from the flat square after the rule has been applied, they may count boundaries or routes that no longer exist.",
+        "why_it_fails": "The sentence mistakes the code for the object. The arrows are not marks on a square; they are instructions that decide which points become the same point in the finished space. If the reader reasons from the flat square after the rule has been applied, they may count boundaries or routes that no longer exist.",
         "repair_move": "State the identification rule before reasoning from the picture. Then say what route, boundary, or side behavior changes after the rule is applied. The repair makes the reader perform the gluing mentally before trusting any claim about the surface.",
         "strong_version": "A quotient-space drawing is a set of instructions. The square is only a readable way to say which edge points are identified. After the identifications are made, some apparent borders may disappear and the routes on the finished surface may differ from routes on the flat drawing. The mathematical object is the completed surface defined by the rule, not the ink before the rule is used.",
         "reviewer_test": "Evidence test: say which points are being declared identical, what apparent boundary changes after that declaration, and which claim would be wrong if the flat drawing were read literally after gluing.",
@@ -1228,13 +1228,13 @@ ASSUMPTION_LEDGER_ROWS = [
         "why_needed": "Without this assumption, the proof may solve a cleaner but different problem. The course allows pictures to move only when the question survives the whole motion, not merely when the last picture looks easier to read.",
         "plain_check": "Can the reader point to the part that moved, name the part that was not allowed to change, and describe one in-between moment to show the forbidden event never happened?",
         "breaks_if": "It breaks if a route slides through an obstacle, a boundary endpoint moves freely, a glued edge is treated as an ordinary edge, or a crossing is erased by letting one curve pass through another.",
-        "course_place": "This assumption runs through knot, route, quotient, and surface arguments where a messy drawing is replaced by a cleaner one. It is the check that turns redrawing into reasoning rather than decoration.",
+        "course_place": "This assumption runs through knot, route, quotient, and surface arguments where a messy drawing is replaced by a cleaner one. It is the check that turns redrawing into reasoning rather than a change of appearance.",
         "concepts": ["deformation", "quotient-space", "knots-and-links"],
     },
     {
         "title": "Boundary data is fixed",
         "claim": "A crossing, route obstruction, or impossibility survives simplification only when the boundary information that defines the problem stayed fixed throughout the motion, so the final drawing still answers the original edge question.",
-        "assumption": "The boundary order, marked points, endpoint positions, side labels, or edge directions remain fixed while the inside of the picture changes. The edge data are not decoration; they are part of the problem statement.",
+        "assumption": "The boundary order, marked points, endpoint positions, side labels, or edge directions remain fixed while the inside of the picture changes. The edge data are part of the problem statement, not optional marks.",
         "why_needed": "Many obstructions live in the boundary data. If the boundary can be rearranged, an apparent solution may only prove that a different boundary problem is easier, not that the original one was solved.",
         "plain_check": "Can the reader mark the data that live on the edge, say which of them must stay put, and explain why moving one of them would change the question being answered?",
         "breaks_if": "It breaks if endpoints are swapped, boundary labels are ignored, side directions are reversed without notice, or a path is allowed to leave the region it was supposed to stay inside.",
@@ -1268,7 +1268,7 @@ ASSUMPTION_LEDGER_ROWS = [
         "why_needed": "Signed arithmetic only works when the signs belong to the same rulebook. Without a shared direction rule, the symbols may look precise while adding unrelated local choices that cannot honestly cancel.",
         "plain_check": "Can the reader say where the direction convention comes from, carry it to the next meeting or defect, and notice whether the object blocks such a shared choice globally in practice?",
         "breaks_if": "It breaks if orientation is assumed on a surface that does not support it, if a boundary direction is changed halfway through, or if each crossing receives a sign from a private local choice.",
-        "course_place": "This assumption supports boundary orientation, intersection number, turning counts, and index comparisons across one shared object. It is what makes plus and minus evidence comparable rather than decorative marks on drawings.",
+        "course_place": "This assumption supports boundary orientation, intersection number, turning counts, and index comparisons across one shared object. It is what makes plus and minus evidence comparable rather than loose marks on drawings.",
         "concepts": ["boundary-orientation", "intersection-number", "vector-field-index"],
     },
     {
@@ -1357,7 +1357,7 @@ COUNTEREXAMPLE_GALLERY_ROWS = [
         "tempting_claim": "The plus crossings and minus crossings cancel on the page, so the signed total looks convincing even though no shared orientation rule has explained why those signs belong to one account.",
         "missing_condition": "The signs need a shared direction rule. Orientation or boundary orientation must make plus and minus comparable across the object. A plus sign at one meeting and a minus sign at another are evidence only if the same convention tells both signs what they mean.",
         "failure_scene": "If each local sign is chosen independently, the symbols may cancel on paper while failing to describe one consistent mathematical account. The arithmetic may look balanced, but the balance belongs to the writer's labels rather than to the surface, curve, or field.",
-        "why_it_breaks": "The addition used labels that did not belong to the same rulebook. A signed total has meaning only when the sign convention can be carried consistently. Without that condition, cancellation is decoration rather than protected evidence.",
+        "why_it_breaks": "The addition used labels that did not belong to the same rulebook. A signed total has meaning only when the sign convention can be carried consistently. Without that condition, cancellation is label arithmetic rather than protected evidence.",
         "repair": "Name the orientation source first. If the object cannot support the required direction rule, do not use signed cancellation as evidence. A repaired sentence says where the sign convention comes from and what local event it lets the proof count.",
         "concepts": ["boundary-orientation", "intersection-number", "vector-field-index"],
     },
@@ -1540,7 +1540,7 @@ THEMES = [
     {
         "id": "pictures-to-proofs",
         "title": "Make pictures carry reasons",
-        "plain": "The lectures use drawings heavily, but not as decoration. A drawing carries proof only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
+        "plain": "The lectures use drawings heavily, but a drawing has to do proof work. It carries proof only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
         "why_math_matters": "A proof can be a disciplined picture: the picture tells you what is allowed to move, what must stay fixed, and why no hidden step smuggles in a new assumption. The mathematics matters because the drawing becomes a public contract, not a private visual hunch.",
     },
     {
@@ -1555,7 +1555,7 @@ THEMES = [
 THEME_DEPTH = {
     "see-by-deforming": {
         "problem": "This theme answers the course's most basic question: how can a person solve a shape problem without measuring every detail? Tokieda's answer is to move the picture by legal changes until the answer is easier to see. The movement earns its force only when it protects the feature being asked about.",
-        "habit": "The habit is to ask, before doing any calculation, which parts of the picture are allowed to move and which facts must remain fixed. Once that rule is clear, deformation becomes a way of reasoning, not a way of decorating the drawing.",
+        "habit": "The habit is to ask, before doing any calculation, which parts of the picture are allowed to move and which facts must remain fixed. Once that rule is clear, deformation becomes a way of reasoning, not a way of making the drawing look better.",
         "course_arc": "The Mobius strip makes the need for global thinking visible. The disk-connection puzzle turns deformation into a proof method. Surface classification uses deformation to reduce complicated surfaces to standard parts. Intersection number, fixed points, and vector-field index later depend on the same promise: move the object, but keep the protected answer.",
         "important_detail": "The allowed moves carry the whole proof. If a path slips through another path, or a boundary point is quietly moved, the argument may have solved a different problem. This theme is therefore about disciplined freedom: move as much as possible, but only under rules that preserve the question.",
         "lectures": [1, 2, 5, 8, 15],
@@ -1611,7 +1611,7 @@ THEME_ESSAYS = {
         "From first principles, a protected count is built around the moves that might otherwise ruin it. If a surface is divided differently, the count must ignore the artificial extra pieces. If intersections are born as an opposite pair, the signed total must ignore that temporary visual change. If vector-field defects move, split, or cancel, the total index must record what the surface still demands. The count earns authority by surviving the exact legal changes in the problem.",
         "The theme gains more precise bookkeeping as the course progresses. Euler characteristic is the first major stable count for surfaces. Intersection number turns meetings into signed evidence. Poincare-Hopf turns vector-field defects into a total controlled by the surface. Parity is the simplest version, keeping only evenness or oddness when pairs are the only allowed change. These are not separate devices; they are one habit applied to different objects.",
         "A protected count can prove something without trying every drawing. If the protected total is nonzero, a crossing-free or defect-free outcome may be impossible. If the surface demands a total index, some local failure of motion must appear. A small arithmetic statement can speak for many pictures because it was designed to survive all legal redrawings.",
-        "The guiding question is not 'what can I count?' but 'what count is protected by the rules of this problem?' Signs and alternating terms are not formal decoration. They are repair mechanisms for counts that would otherwise be too brittle. The surviving total is the mathematical evidence.",
+        "The guiding question is not 'what can I count?' but 'what count is protected by the rules of this problem?' Signs and alternating terms are not extra formal symbols. They repair counts that would otherwise be too brittle. The surviving total is the mathematical evidence.",
     ],
     "local-to-global": [
         "Local-to-global thinking is the reason the course begins with objects like the Mobius strip. Every small patch of the strip looks ordinary, yet the whole strip has one side. Every small patch of a sphere can carry a tangent arrow, yet a full nonzero arrow field on the sphere is impossible. Local evidence is necessary, but it is not sufficient. The global gluing of all local pieces can impose a condition no single patch reveals.",
@@ -1687,7 +1687,7 @@ THEME_LENSES = {
 SUBTHEMES = [
     ("allowed-moves", "Allowed moves", "First decide what changes are legal. Without that rule, no invariant means anything."),
     ("invariant-receipts", "Invariant receipts", "An invariant is a receipt for what survived the trip from one picture to another."),
-    ("holes-and-boundaries", "Holes and boundaries", "Holes are not empty decoration; they are missing routes, blocked fillings, and accounting terms."),
+    ("holes-and-boundaries", "Holes and boundaries", "Holes are missing routes, blocked fillings, and accounting terms, not empty background."),
     ("curves-loops-knots", "Curves, loops, and knots", "A loop can carry memory of how it sits in space, even when its exact length and shape are forgotten."),
     ("turning-and-curvature", "Turning and curvature", "Curvature is a way of measuring how direction changes, and totals often matter more than point-by-point values."),
     ("signs-and-cancellation", "Signs and cancellation", "Opposite contributions can be born or die together while the total stays fixed."),
@@ -1710,7 +1710,7 @@ SUBTHEME_DEPTH = {
         "course_role": "This subtheme connects the Mobius strip to Euler characteristic, intersection number, and Poincare-Hopf. The object changes; the receipt proves what did not change, tells which differences are impossible to erase, and lets one picture speak for another without relying on resemblance. It is the reason a later formula can still feel tied to the early physical demonstrations.",
     },
     "holes-and-boundaries": {
-        "problem": "Holes and boundaries decide which routes exist and which counts must include edge terms. They are not visual decoration; they change what the surface can support and what motions are possible. A missing disk, a cut edge, or a forbidden state can become the whole reason a route is blocked.",
+        "problem": "Holes and boundaries decide which routes exist and which counts must include edge terms. They change what the surface can support and what motions are possible. A missing disk, a cut edge, or a forbidden state can become the whole reason a route is blocked.",
         "first_principles": "A boundary is where a surface stops. A hole is missing room or a blocked filling. Both change the way loops, paths, fields, and decompositions behave because they alter the available routes. The course treats those features as working parts of the problem, not as background scenery.",
         "course_role": "This subtheme is central in surface classification, Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become holes or walls in the space of possibilities itself. It connects early paper surfaces to late motion examples by making missing room mathematically visible.",
     },
@@ -1726,7 +1726,7 @@ SUBTHEME_DEPTH = {
     },
     "signs-and-cancellation": {
         "problem": "Many events appear and disappear during a deformation. Counting them all positively gives a fragile number. The course needs a way for fake changes to cancel while forced information remains. The subtheme asks which events are real evidence and which are paired noise created by the drawing.",
-        "first_principles": "Signs record direction or orientation. When two opposite events are born together, their signed contributions add to zero. The visible picture changes, but the signed total survives the allowed motion. The sign is not decoration; it is the instruction that tells cancellation when it is honest.",
+        "first_principles": "Signs record direction or orientation. When two opposite events are born together, their signed contributions add to zero. The visible picture changes, but the signed total survives the allowed motion. The sign is the instruction that tells when cancellation is honest.",
         "course_role": "This subtheme is central to intersection number and vector-field index. It is also the finer version of parity: not just even or odd, but plus and minus with geometric meaning. It teaches why the course can let local events appear and disappear while still trusting a global total.",
     },
     "surfaces-and-orientation": {
@@ -1768,7 +1768,7 @@ SUBTHEME_ESSAYS = {
         "The reader's check is whether the receipt is matched to the move. A raw crossing count may change when a harmless pair appears. A signed count may survive because the pair contributes plus one and minus one. A cell count may change when a surface is subdivided, while an alternating cell count stays fixed. A count that changes during a legal redraw is not an invariant for that problem. A count that survives every legal redraw can speak for all of them.",
     ],
     "holes-and-boundaries": [
-        "Holes and boundaries are route constraints. A hole is missing room, a blocked filling, or a place a loop can remember going around. A boundary is where the surface stops, and that stopping changes what can be attached, counted, or forced. These are not decorative marks in a drawing; they determine what paths, surfaces, maps, and fields can do.",
+        "Holes and boundaries are route constraints. A hole is missing room, a blocked filling, or a place a loop can remember going around. A boundary is where the surface stops, and that stopping changes what can be attached, counted, or forced. These marks determine what paths, surfaces, maps, and fields can do.",
         "From first principles, a hole says that some apparent shortcut is unavailable. A loop around a missing region may not shrink because the filling disk is absent. A linked curve may not separate because the forbidden passage would have to cross another curve. A configuration space may have a hole because a collision state has been removed. The missing part becomes part of the evidence.",
         "A boundary changes a proof in a different but related way. At an edge, motion and accounting change. A fixed-point theorem may rely on the boundary of a filled ball. A curvature total may require boundary terms. A surface classification argument has to track whether boundaries remain or are capped off. Ignoring the edge can change the theorem being used.",
         "The course uses this subtheme from Mobius-strip boundaries to Euler characteristic, fixed-point theorems on balls, and configuration spaces where forbidden states become walls. When a proof depends on a surface's edge or missing region, this subtheme is doing the work.",
@@ -1790,7 +1790,7 @@ SUBTHEME_ESSAYS = {
     ],
     "signs-and-cancellation": [
         "Signs are the course's way of making fake changes disappear. If two intersections are born together with opposite signs, the visible picture changes but the signed total does not. If defects can split into opposite contributions, the total can survive even while the local pattern changes. Cancellation is designed into the count.",
-        "From first principles, a sign records a local direction relationship. Two curves can meet in one orientation or the opposite orientation. Arrows can turn with or against a chosen direction around a defect. A plus or minus is not decoration; it records how the local event sits inside the surrounding oriented setting.",
+        "From first principles, a sign records a local direction relationship. Two curves can meet in one orientation or the opposite orientation. Arrows can turn with or against a chosen direction around a defect. A plus or minus records how the local event sits inside the surrounding oriented setting.",
         "This subtheme is the bridge from parity to intersection number to index. It teaches that the right count is often not the raw count. The right count is the one whose allowed changes cancel cleanly. The sign is the extra memory that tells a real obstruction apart from a pair that appeared only because the picture passed through a temporary accident.",
         "Cancellation is what turns a changing picture into stable evidence. A raw count may rise from zero to two and back again during a legal motion. A signed total can stay fixed because the pair contributes plus one and minus one. The arithmetic is simple, but the reason for the signs must come from geometry.",
         "Signs require a rule for direction. Without orientation or a local convention that can be checked, plus and minus would be arbitrary marks. The course uses signs only when they record how objects meet, turn, or pass through the surrounding space. Always ask where the sign came from and what legal event makes it cancel.",
@@ -1843,7 +1843,7 @@ SUBTHEME_ROUTINES = {
         "look_for": "Look for missing regions, blocked fillings, actual edges, and places where a path, map, field, or state must respect a stopping rule. Mark whether the feature is a true boundary of the object, a removed region, or only a mark in the drawing.",
         "ask": "Ask whether a loop can be filled, whether a boundary adds a term, whether a map must stay inside a region, and whether removing or adding an edge changes the theorem's contract or the permitted escape routes.",
         "use": "Use holes and boundaries as route information and accounting information. They explain why loops may not shrink, why escape may be blocked, why a fixed-point domain has a contract, and why counts may need edge terms before a total is trusted.",
-        "mistake": "The mistake is treating holes and boundaries as visual decoration. They change which motions exist, which fillings are available, and which accounting rules are legal, so ignoring them changes the problem.",
+        "mistake": "The mistake is treating holes and boundaries as background marks. They change which motions exist, which fillings are available, and which accounting rules are legal, so ignoring them changes the problem.",
     },
     "curves-loops-knots": {
         "look_for": "Look for route memory: whether a path closes, goes around something, links another path, carries over-under crossing data, or has endpoints fixed on a boundary. The curve matters through its placement in surrounding space.",
@@ -1861,7 +1861,7 @@ SUBTHEME_ROUTINES = {
         "look_for": "Look for pairs of events that can appear or disappear together: crossings, intersections, or defects with opposite contributions. The useful pattern is birth or cancellation in matched pairs, not a raw list of visible events.",
         "ask": "Ask where plus and minus signs come from, and whether legal changes really create canceling pairs rather than arbitrary arithmetic. The sign rule must come from orientation, turning, or another shared direction convention the page states.",
         "use": "Use signs to make a fragile raw count into stable evidence. Cancellation is the mechanism that lets the total survive redrawings while still recording forced events that cannot be paired away.",
-        "mistake": "The mistake is assigning signs without a direction rule. Without a reason for plus and minus, cancellation has no mathematical force and the total is decorative arithmetic rather than protected evidence.",
+        "mistake": "The mistake is assigning signs without a direction rule. Without a reason for plus and minus, cancellation has no mathematical force and the total is loose arithmetic rather than protected evidence.",
     },
     "surfaces-and-orientation": {
         "look_for": "Look for the whole surface carrying the argument: its boundary, handles, side behavior, gluing rules, and whether a consistent direction can travel everywhere. The carrier surface controls the sign rules.",
@@ -2232,7 +2232,7 @@ CONCEPT_DEPTH = {
     },
     "configuration-space": {
         "why_it_exists": "Configuration space exists because a moving system may be hard to understand in ordinary physical space. By listing every possible state as a point in a new space, motion becomes a path and constraints become holes or walls.",
-        "beginner_trap": "Configuration space is not imaginary decoration. It is a real model of possibilities: if there is no path in that model, the physical motion cannot be performed legally. The abstraction is doing physical work. Leaving out a state variable or forbidden collision can erase the obstacle the model was built to expose.",
+        "beginner_trap": "Configuration space is not an imaginary extra picture. It is a real model of possibilities: if there is no path in that model, the physical motion cannot be performed legally. The abstraction is doing physical work. Leaving out a state variable or forbidden collision can erase the obstacle the model was built to expose.",
         "course_role": "Configuration space gathers the course's method into applications. It lets deformation, obstruction, fixed points, and topology of state spaces speak about mechanisms and motion. It is where the course's pictorial thinking becomes a way to reason about systems that move, because every legal motion becomes a path and every forbidden collision becomes missing room.",
     },
     "duality": {
@@ -2252,7 +2252,7 @@ CONCEPT_DEPTH = {
     },
     "quotient-space": {
         "why_it_exists": "Quotient space exists because some spaces are best described by identification rules. A torus can be described by a square whose opposite sides are treated as the same passage. The visible drawing is ordinary; the rule changes the actual travel inside the space.",
-        "beginner_trap": "Looking only at the drawn shape misses the quotient rule. In quotient thinking, the labels are not decoration. They say which points are identical in the space being studied. A path that seems to hit an edge may continue through an identified edge, so the travel rule must be read before the picture is trusted.",
+        "beginner_trap": "Looking only at the drawn shape misses the quotient rule. In quotient thinking, the labels are instructions. They say which points are identical in the space being studied. A path that seems to hit an edge may continue through an identified edge, so the travel rule must be read before the picture is trusted.",
         "course_role": "Quotients explain cylinders, Mobius bands, tori, and later abstract spaces built from rules rather than physical models. They keep the course honest about what a diagram means before deformation, orientation, or vector fields are placed on it. They also train the reader to read travel rules, not just the visible square or strip.",
     },
     "surgery": {
@@ -2716,7 +2716,7 @@ CONCEPT_ESSAYS = {
     "invariant": [
         "An invariant is a memory device for a changing situation. When a shape bends, a path slides, or a field is cleaned up, most visible facts change. An invariant is the chosen fact that does not change under the allowed moves. It may be one-sidedness, Euler characteristic, a signed intersection number, parity, or the total index of a vector field. The invariant does not need to describe the whole object. It only needs to remember enough to answer the question.",
         "The first-principles need is trust during motion. If the course deforms a picture, the reader needs a receipt proving that the answer did not get lost during the motion. The invariant is that receipt. It says: while the drawing changed, this fact stayed fixed. The proof can then compare a hard version of the object with an easier version because both carry the same protected evidence.",
-        "The power of an invariant is often negative: it proves that something cannot happen. If two pictures have different protected counts, no legal deformation connects them. If a desired crossing-free drawing would require a count to change, the drawing is impossible. Invariants are not vocabulary decorations in the course. They are the evidence that tells the reader what survived the motion and what conclusion that survival can force.",
+        "The power of an invariant is often negative: it proves that something cannot happen. If two pictures have different protected counts, no legal deformation connects them. If a desired crossing-free drawing would require a count to change, the drawing is impossible. Invariants are not vocabulary labels in the course. They are the evidence that tells the reader what survived the motion and what conclusion that survival can force.",
         "A good invariant is matched to the allowed moves. One-sidedness fits Mobius-strip behavior because ordinary bending does not create a second side. Euler characteristic fits cell bookkeeping because changes in a division cancel in the alternating count. A signed intersection count fits moving intersections because opposite pairs cancel when the picture changes legally. The protected fact must be chosen for the exact motion being allowed.",
         "Not every number attached to a picture is an invariant. A raw crossing count is not protected if legal motion can create or remove a canceling pair. A length is not protected if the object can stretch. The invariant is the part of the evidence that the allowed moves cannot destroy.",
     ],
@@ -3105,7 +3105,7 @@ LECTURE_DEPTH = {
         "anchors": ["Mobius strip", "twist and glue", "cutting along the center", "one side versus two sides"],
     },
     2: {
-        "title": "Deformation as a way to solve, not decorate",
+        "title": "Deformation as a way to solve, not polish",
         "problem": "The lecture asks whether several pairs of boundary points in a disk can be connected without the connecting paths meeting. Drawn directly, the question looks like a routing puzzle. The deeper problem is how to prove impossibility without trying every possible drawing.",
         "first_principles": "If a drawing can be stretched, slid, or rounded without changing the question, then the exact drawing was never the main thing. What matters is the order of the points on the boundary and the rule that paths may not cross. Deformation lets us simplify the picture while protecting those facts.",
         "math_move": "Replace the drawing by a cleaner drawing through allowed motion. If any successful drawing existed, the cleaned-up version would still exist. When the clean version forces a crossing, the original problem is impossible too.",
@@ -3134,7 +3134,7 @@ LECTURE_DEPTH = {
     5: {
         "title": "Classifying surfaces by what survives cutting and gluing",
         "problem": "The lecture turns from examples to classification: what kinds of surfaces exist if we ignore exact size and focus on how they are connected? The problem is to avoid treating every drawing as a new species.",
-        "first_principles": "Surfaces can have handles, crosscaps, boundaries, and orientability. These are not decorative labels. A handle gives a route around and through. A crosscap reverses the sense of side after a trip. Classification says that, after enough legal cutting and reassembly, surfaces fall into families controlled by these features.",
+        "first_principles": "Surfaces can have handles, crosscaps, boundaries, and orientability. These labels name working features. A handle gives a route around and through. A crosscap reverses the sense of side after a trip. Classification says that, after enough legal cutting and reassembly, surfaces fall into families controlled by these features.",
         "math_move": "Use surgery and deformation to reduce a surface to standard parts. If the same basic pieces remain after all legal simplification, those pieces describe the surface's type. The proof idea is not to inspect every possible drawing, but to show that every drawing can be brought to a controlled normal form.",
         "detail": "Orientability is not about whether a drawing looks twisted. It asks whether a consistent sense of clockwise, or left side versus right side, can be carried around the entire surface without contradiction. A surface can look ordinary in every small patch and still reverse this choice after a long trip.",
         "connection": "Classification makes later counting meaningful. Euler characteristic, intersections, and vector-field index depend on the surface family, not on the exact drawing. Later formulas can speak about a sphere, torus, or non-orientable surface as a whole because classification has separated durable surface data from one picture of it.",
@@ -3190,7 +3190,7 @@ LECTURE_DEPTH = {
         "problem": "The final chapter starts with dynamical systems. The practical problem is that differential equations are often impossible to solve exactly, yet we still need to know how their solutions behave. The lecture asks what can be known from the shape of the arrow pattern before any explicit solution is written down.",
         "first_principles": "A vector field assigns a little arrow to each point, telling a particle which way it wants to move. An equilibrium is a place where the arrow vanishes. Instead of solving the whole motion, topology asks what the arrow pattern is forced to contain. The first object is the field on a surface, not a list of paths.",
         "math_move": "Replace exact solutions by qualitative information: equilibria, local arrow patterns, and the index around each isolated equilibrium. The index records how nearby arrows turn during a walk around one defect. This lets the course use topology where calculation would otherwise demand solving the whole differential equation.",
-        "detail": "The index is not a decorative label on an equilibrium. It is a signed local count, and signed local counts can be added across the whole surface. A source, a sink, and a saddle are different because the surrounding arrows turn in different signed ways.",
+        "detail": "The index is not a name attached to an equilibrium after the fact. It is a signed local count, and signed local counts can be added across the whole surface. A source, a sink, and a saddle are different because the surrounding arrows turn in different signed ways.",
         "connection": "This lecture imports the course's earlier signed-count habit into dynamics. Intersections become indices; forced intersections become forced equilibria. The course has moved from paper surfaces to motion, but the proof engine is still protected counting under allowed deformation.",
         "anchors": ["dynamical systems", "differential equations", "vector field", "equilibria", "index"],
     },
@@ -3341,7 +3341,7 @@ LECTURE_ESSAYS = {
         "The first-principles point is that sameness is created by the rule, not by visual resemblance. If two exits of a drawn square are declared to be the same passage, then a path leaving one side has not ended; it has re-entered the world somewhere else. That habit becomes essential later when maps, diagonals, and vector fields are also treated as objects whose behavior depends on the space carrying them. The rule is part of the object.",
     ],
     5: [
-        "Lecture 5 is where surfaces become classifiable objects rather than isolated examples. Handles, crosscaps, boundaries, and orientability are not decorative features. A handle supplies a route through and around. A crosscap, represented by Mobius-strip behavior, reverses side after a trip. A boundary changes the accounting at the edge. Classification says that once surfaces are simplified by legal cutting, gluing, and deformation, these durable parts determine the family of the surface.",
+        "Lecture 5 is where surfaces become classifiable objects rather than isolated examples. Handles, crosscaps, boundaries, and orientability are working features. A handle supplies a route through and around. A crosscap, represented by Mobius-strip behavior, reverses side after a trip. A boundary changes the accounting at the edge. Classification says that once surfaces are simplified by legal cutting, gluing, and deformation, these durable parts determine the family of the surface.",
         "The handle-sliding discussion makes classification operational. One does not simply declare that a mixed surface is equivalent to a standard form. One moves handles across one-sided regions and watches how the surface changes while preserving its topological type. This is arithmetic with surfaces: connected sums, handles, and Mobius strips become manipulable pieces. The lecture teaches that topology can classify objects not by measuring them, but by reducing them to stable building blocks whose presence cannot be hidden by a different drawing.",
         "This is also where the course starts to feel like a working language. A surface is no longer a single picture but a member of a family with operations. Once that is understood, later formulas have a home: Euler characteristic, intersection signs, and vector-field indices are not floating symbols. They are ways of reading information from a surface whose type has already been disciplined by classification.",
         "The first-principles point is that classification is not naming by appearance. It is naming by what survives all legal simplification. Two drawings can look different while carrying the same handles, boundaries, and orientation behavior; two similar-looking drawings can hide different global side structure.",
@@ -3379,7 +3379,7 @@ LECTURE_ESSAYS = {
         "Lecture 10 focuses on the Brouwer fixed-point theorem for the closed ball. In plain language, if every point of a filled disk or ball is moved continuously to another point inside the same filled shape, at least one point must end up where it started. The theorem does not tell us which point. Its strength is that it proves existence from the shape of the domain and the continuity of the rule.",
         "The boundary is not a minor technicality. A closed ball includes its boundary, and the boundary helps trap the continuous rule. If every point tried to avoid itself, the resulting escape pattern would contradict the way the boundary and interior fit together. The attempted escape would have to assign every point a direction away from itself while staying compatible with nearby points and with the edge of the filled shape. This lecture shows the payoff of the earlier tools: topology can prove that something exists without solving for it. That same payoff becomes essential in dynamics, where exact trajectories may be out of reach but forced equilibria can still be known.",
         "The hard part is accepting that existence can be a geometric consequence. The theorem is not guessing that a fixed point probably exists. It says the whole filled shape leaves no continuous escape plan. The closed ball supplies the trap: it contains the interior and the boundary together, and a continuous rule must move nearby points in compatible ways while staying inside that same filled shape.",
-        "The lecture also shows why changing the space changes the claim. A closed ball, an open ball, a circle, and a torus do not give a continuous map the same constraints. The theorem's force comes from the exact shape of the domain and the rule that points remain inside it. The hypotheses are the mechanism, not formal decoration: closed, filled, same space, inside itself, and no jumps are the pieces that block the escape plan.",
+        "The lecture also shows why changing the space changes the claim. A closed ball, an open ball, a circle, and a torus do not give a continuous map the same constraints. The theorem's force comes from the exact shape of the domain and the rule that points remain inside it. The hypotheses are the mechanism: closed, filled, same space, inside itself, and no jumps are the pieces that block the escape plan.",
         "Brouwer turns fixed points from special coincidences into forced consequences. A map may move every visible point in a confusing way, but the whole filled shape limits the escape plan. That is the same pattern already seen in strips, surfaces, and intersections: local freedom exists, but the completed object blocks some global arrangements. The theorem is a clean form of that pattern.",
     ],
     11: [
@@ -3411,7 +3411,7 @@ LECTURE_ESSAYS = {
         "Model first, theorem second. The shape used in the proof must be the shape of the actual possibilities. If the model omits a freedom, adds a false barrier, or forgets a boundary condition, the conclusion may no longer describe the physical system. When the translation is honest, topology can explain why a behavior is unavoidable even when the physical system itself looks messy.",
     ],
     15: [
-        "The final lecture reviews the course as pictorial thinking. In this course, a picture is not decoration. The Mobius strip, disk paths, edge identifications, handle slides, intersections, graphs of maps, diagonals, and vector fields all served as proof environments. The point of the course is to learn how to make a picture carry constraints: what may move, what may not move, what survives, and what conclusion is forced.",
+        "The final lecture reviews the course as pictorial thinking. In this course, a picture has to carry evidence. The Mobius strip, disk paths, edge identifications, handle slides, intersections, graphs of maps, diagonals, and vector fields all served as proof environments. The point of the course is to learn how to make a picture carry constraints: what may move, what may not move, what survives, and what conclusion is forced.",
         "Read backward, the course becomes one chain. Mobius strips teach global surprise. Deformation teaches legal simplification. Products, quotients, and surgery build spaces. Surface classification names durable parts. Intersection number turns meetings into signed evidence. Fixed points turn rules into forced self-agreement. Vector-field index and Poincare-Hopf turn motion into surface bookkeeping. The final demonstrations return to strips because the whole course has been about seeing more in a picture than its immediate appearance.",
         "The ready-state lesson is therefore not a list of theorems. It is a way of asking questions. What is allowed to move? What survives the motion? What count is designed to ignore fake changes? What whole-shape constraint forces the answer? If the reader can ask those questions across strips, surfaces, maps, and vector fields, then the course has done its work.",
         "The final lecture also explains why a companion should be organized by concepts, themes, subthemes, and method families rather than only by chronology. Chronology shows how the course unfolds. The concept map shows the reusable reasoning underneath that order. A reader needs both to see the course as one connected method. Otherwise the last lecture can sound like a tour of finished topics instead of a rehearsal of one habit: build the object, state the legal move, protect the evidence, and translate the conclusion back.",
@@ -3475,7 +3475,7 @@ LECTURE_SOURCE_LENS = {
     ],
     14: [
         "Read applications, rotations in space, Poincare-Hopf, and dynamical systems as a modeling lecture. The source material is testing whether earlier proof families can be carried into physical or moving systems without losing the real constraints. The mathematical object is the state space built from the problem, not the physical story by itself.",
-        "The source lens is model first, theorem second. Name the space of states, the rule or motion, the forbidden behavior, and the protected count. Only then can a topological theorem say something about the application. This protects the reader from treating applications as decorations; the model must preserve the freedoms and restrictions of the actual system.",
+        "The source lens is model first, theorem second. Name the space of states, the rule or motion, the forbidden behavior, and the protected count. Only then can a topological theorem say something about the application. This protects the reader from treating applications as examples pasted on at the end; the model must preserve the freedoms and restrictions of the actual system.",
     ],
     15: [
         "Read table of contents, pictorial thinking, deformation, intersection, fixed point, and vector field as a dependency chain. The final lecture is not a list of topics; it is a review of one reasoning habit as it changes setting. Each topic should be read by asking what object is made, what move is legal, and what evidence survives.",
@@ -3501,7 +3501,7 @@ LECTURE_SOURCE_CHECKPOINTS = {
         "math_question": "Which choices are being combined, which points are declared to be the same, and which local replacement changes the routes a traveler can take through the finished space?",
     },
     4: {
-        "trust": "Trust edge labels and arrows as travel instructions. They decide whether a path stops, re-enters somewhere else, or returns with its local direction changed, which means the labels are part of the mathematical object rather than decoration.",
+        "trust": "Trust edge labels and arrows as travel instructions. They decide whether a path stops, re-enters somewhere else, or returns with its local direction changed, which means the labels are part of the mathematical object rather than optional marks.",
         "do_not_overread": "Do not read the visible boundary of the drawn square as the boundary of the finished space without checking the identifications. A line that looks like an edge on the page may be a doorway in the actual surface.",
         "math_question": "Where does a traveler go after crossing a labeled edge, does the rule preserve or reverse orientation, and what full-loop behavior follows from repeating that rule?",
     },
@@ -3700,7 +3700,7 @@ LECTURE_WALKTHROUGHS = {
     },
     3: {
         "start_here": "Start by treating spaces as things that can be built from instructions. A product says two choices vary together. A quotient says different-looking points are declared the same. Surgery says a controlled piece is removed and another controlled piece is attached along a stated boundary rule.",
-        "payoff": "The construction rules keep the modeling honest. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary decorations; they decide routes, boundaries, holes, and local neighborhoods.",
+        "payoff": "The construction rules keep the modeling honest. Later theorems apply to spaces, so the reader must know what space has actually been built. Products, quotients, manifolds, and surgery are not vocabulary labels; they decide routes, boundaries, holes, and local neighborhoods.",
         "reader_check": "When a later page names a space, ask how that space was made. What choices were combined? What points were identified? What local piece was replaced? If the construction rule is unstated, any theorem applied to that space is standing on weak ground.",
     },
     4: {
@@ -4501,7 +4501,7 @@ def build_lecture_reader_test(lecture, spine_row):
     picture_warning = varied((number, "reader-picture-warning"), [
         "Do not treat it as just a board picture; say which rule or relation the picture is carrying.",
         "Do not reduce it to the drawing on the board; name what the drawing represents in the actual mathematical object.",
-        "Treat the picture as a record of rules and data, not as decoration, and say which part of that record later becomes evidence.",
+        "Treat the picture as a record of rules and data, and say which part of that record later becomes evidence.",
         "Separate the object from the chalk drawing used to show it, then translate the drawing back into the object, rule, or state being studied.",
         "Read the picture as instructions plus evidence, not as the object itself, and say what instruction a later proof must preserve.",
         "The drawing is useful only after its rule, route, field, or state meaning is named and tied to the lecture's concrete example.",
@@ -4539,7 +4539,7 @@ def build_lecture_reader_test(lecture, spine_row):
         f"Carry that protected evidence into the later course arc: {spine_row['why_later']}",
         f"Use that evidence to explain the later need: {spine_row['why_later']}",
         f"This is the reason the lecture can support later work: {spine_row['why_later']}",
-        f"The forward link is concrete, not thematic decoration: {spine_row['why_later']}",
+        f"The forward link is concrete, not only a theme label: {spine_row['why_later']}",
         f"The later lectures reuse exactly this protected fact: {spine_row['why_later']}",
         f"That is what the next parts of the course borrow from this lecture: {spine_row['why_later']}",
     ])
@@ -4647,7 +4647,7 @@ LECTURE_APPLICATION_CONTEXTS = {
         "outside_check": "the outside problem must say what one state means, which states are forbidden, and what conclusion the model can support",
     },
     15: {
-        "places": "technical explanation, diagram-heavy modeling, design review, and cross-field teaching where pictures must carry rules rather than decoration",
+        "places": "technical explanation, diagram-heavy modeling, design review, and cross-field teaching where pictures must carry rules rather than only visual appeal",
         "outside_check": "the outside problem must make the object, allowed move, protected fact, and failure condition visible in the picture",
     },
 }
@@ -5888,7 +5888,7 @@ SUBTHEME_APPLICATION_CONTEXTS = {
     "signs-and-cancellation": {
         "outside_setting": "In intersection checks, two meetings may appear during a redraw and then cancel because they carry opposite signs. In flow or field models, local sources, sinks, and saddles can contribute with different signs. In data summaries, a total with direction can be more stable than counting every visible event the same way.",
         "where": "collision accounting, field defects, oriented crossings, flow diagrams, and summaries where paired local events should cancel instead of inflating the evidence",
-        "limit": "It cannot use plus and minus as decoration. The sign has to come from a stated direction rule, orientation, or turning convention that the reader can check.",
+        "limit": "It cannot use plus and minus as loose labels. The sign has to come from a stated direction rule, orientation, or turning convention that the reader can check.",
     },
     "surfaces-and-orientation": {
         "outside_setting": "A paper band, physical sheet, shell, or state surface may look ordinary in small patches while the completed object has one side, a boundary, a handle, or no consistent direction choice. That global side behavior decides whether signed counts and boundary directions make sense.",
@@ -6062,7 +6062,7 @@ def build_subtheme_first_principles_essay(subtheme):
         "outside_use": (
             f"Outside the course, {title} matters when another field needs the same small check before using a model, drawing, count, route, or rule. "
             f"The application section says: {application['where_it_matters']} It also names the outside problem: {application['outside_problem']} "
-            f"The transfer is not decorative; it asks the same routine question on a different object."
+            f"The transfer is practical; it asks the same routine question on a different object."
         ),
         "wrong_use": (
             f"The wrong use of {title} is the mistake named by the routine: {routine['mistake']} "
@@ -7005,7 +7005,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Reader Drill</h2>
   <p>After moving a slider, answer one sentence: what changed in the picture, and what stayed fixed in the mathematical account? For Euler characteristic, the drawing ledger changes while the alternating total stays fixed. For signs, the raw number of meetings changes while the signed total stays fixed. For fixed points, the graph bends while self-agreement remains a meeting with the diagonal. For index, nearby arrows change while the loop test records local turning around the defect.</p>
-  <p>If that sentence cannot be said, the widget has become decoration. Reset the slider and name the object, legal move, protected evidence, and break condition before trying again.</p>
+  <p>If that sentence cannot be said, the widget is no longer doing mathematical work. Reset the slider and name the object, legal move, protected evidence, and break condition before trying again.</p>
 </section>
 <script src="assets/playground.js"></script>
 """
@@ -7175,7 +7175,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <p>Answer each prompt before opening the related concept pages. Begin with the object being studied, then state the permitted move or comparison, the protected fact, and the conclusion that follows. If the answer starts with a term and cannot unpack it, return to the term translator or repair clinic.</p>
   <p>The follow-up question is the stress test. It asks whether the reader can defend the explanation when a common shortcut is removed: a missing caption, a false model, an unstated theorem assumption, or a visual phrase that needs a proof contract.</p>
   <p>Use a slow spoken order. First say what one thing in the problem represents. Next say what may change without changing the question. Then say what fact stays put while the change happens. Only after those three parts are clear should a theorem, count, source, or formal word enter the answer.</p>
-  <p>If the answer needs a picture, the picture must be treated as evidence, not decoration. Point to the part of the picture that carries the object, the part that shows the allowed move, and the part that would break if the move were illegal. If those parts cannot be named, the picture is not yet doing mathematical work.</p>
+  <p>If the answer needs a picture, the picture must be treated as evidence. Point to the part of the picture that carries the object, the part that shows the allowed move, and the part that would break if the move were illegal. If those parts cannot be named, the picture is not yet doing mathematical work.</p>
 </section>
 <div class="grid two">{oral_cards}</div>
 <section class="lecture">
@@ -7271,7 +7271,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Repairing A Failed Claim</h2>
   <p>When a counterexample breaks a sentence, do not replace it with an untethered warning. Repair the sentence by naming the condition that was missing. If the problem changed at the boundary, say the boundary data must stay fixed. If a count failed, say which part of the count survives legal moves. If a model failed, say what one state records and which states are forbidden.</p>
-  <p>The repair should be smaller than a new explanation. A useful repair often begins with words like provided that, as long as, after checking, or for this same object. Those words are not decoration. They are the permission that lets the claim speak.</p>
+  <p>The repair should be smaller than a new explanation. A useful repair often begins with words like provided that, as long as, after checking, or for this same object. Those words give the permission that lets the claim speak.</p>
   <p>Use the repaired sentence on the matching lecture, concept, theorem contract, or source page. The original explanation should show exactly where the missing condition now belongs.</p>
 </section>
 <section class="lecture">
@@ -7447,7 +7447,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         ("The allowed motion is not stated", "A deformation can only prove something after the legal moves are named. Cutting, crossing through, moving endpoints, or dropping a boundary can change the problem.", "The whole proof rests on the promise that the motion preserves the question. Without that promise, a simpler picture may solve a different problem.", "Which motion is legal here, and which feature is being protected while the picture moves?", "family-deformation-family.html", "Open deformation family"),
         ("A raw count is trusted too early", "Visible crossings, cells, or defects may change under harmless redrawings. The useful count is the one designed to survive those changes.", "Euler characteristic, intersection number, parity, and index all work because fake changes cancel. The raw number usually does not have that protection.", "What local change can happen, and does the proposed count stay fixed when it happens?", "family-counting-family.html", "Open counting family"),
         ("Local evidence is mistaken for global evidence", "Every small patch of a Mobius strip looks ordinary. Every small patch of a sphere can carry an arrow. The whole object may still refuse a consistent choice.", "Topology often begins exactly where local inspection stops. The obstruction may appear only after a full trip, a full sum, or a full gluing.", "Can the local choice be carried around the whole object without contradiction?", "theme-local-to-global.html", "Open local-to-global theme"),
-        ("Signs are used without checking orientation", "Plus and minus signs must come from a direction rule. Without orientation or a local sign convention, signed arithmetic may not be defined.", "A sign is not a decoration attached to a count. It records how objects meet or how arrows turn inside a setting where direction has meaning.", "What gives the sign its meaning in this space?", "concept-boundary-orientation.html", "Open boundary and orientation"),
+        ("Signs are used without checking orientation", "Plus and minus signs must come from a direction rule. Without orientation or a local sign convention, signed arithmetic may not be defined.", "A sign records how objects meet or how arrows turn inside a setting where direction has meaning.", "What gives the sign its meaning in this space?", "concept-boundary-orientation.html", "Open boundary and orientation"),
         ("A failed drawing is treated as impossibility", "One bad attempt does not prove no legal drawing exists. A topological obstruction has to defeat every legal attempt.", "This is the difference between drawing skill and proof. The proof must name a protected fact that no redraw can remove.", "What fact survives all attempts, and why does it block the desired drawing?", "family-embedding-family.html", "Open embedding family"),
         ("The exceptional case is studied before the ordinary case", "Tangencies, triple meetings, and non-isolated defects can hide the stable mechanism. The clean case should be understood first.", "Ordinary clean cases allow isolated crossings, signs, and indices to be assigned. The exceptional moment is then used to explain how ordinary cases change.", "What happens after a tiny legal nudge, and what changes only at the singular moment?", "theme-generic-before-exception.html", "Open ordinary-case theme"),
         ("The theorem is pasted onto the wrong model", "Applications need an honest state space, rule, boundary, and protected quantity. If the model has the wrong freedoms or barriers, the conclusion may describe the model but not the situation.", "The topological theorem only sees the model. If the model omits a real motion or adds a false wall, the conclusion can be mathematically correct and physically irrelevant.", "Does the mathematical space contain exactly the states and forbidden moves in the original problem?", "family-motion-family.html", "Open motion family"),

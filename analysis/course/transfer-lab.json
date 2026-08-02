@@ -20,7 +20,7 @@
     "object": "The object is not the pavement drawing alone. It is the plaza with the fenced region removed and the two paths inside the remaining space. The fence changes the space because it creates a place the path is not allowed to cross.",
     "allowed_move": "The allowed move is to slide a route through open walking space while keeping its endpoints at the gates and never crossing the fence. The path may wiggle, shorten, or lengthen, but the endpoints and forbidden region define the same route problem.",
     "protected_fact": "The protected fact is whether the route winds around the missing region. A fenced hole can block one path from being changed into the other because any attempted slide would have to cross the fence or move an endpoint.",
-    "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region changes which deformations are legal. The course habit is to read the obstacle as part of the object, not as decoration in the drawing.",
+    "course_bridge": "This is the same first-principles move as loops on surfaces: the missing region changes which deformations are legal. The course habit is to read the obstacle as part of the object, not as background ink in the drawing.",
     "wrong_transfer": "A shallow response says both paths are only lines between the same gates. That ignores the obstacle that makes the state space different and treats endpoint agreement as enough by itself.",
     "reader_task": "Decide whether one route can be deformed into the other while respecting the fence, say what the fence contributes to the proof, and name the illegal shortcut that would make the routes look equivalent.",
     "concepts": [

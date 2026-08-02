@@ -6,7 +6,7 @@
     "why_needed": "Without this assumption, the proof may solve a cleaner but different problem. The course allows pictures to move only when the question survives the whole motion, not merely when the last picture looks easier to read.",
     "plain_check": "Can the reader point to the part that moved, name the part that was not allowed to change, and describe one in-between moment to show the forbidden event never happened?",
     "breaks_if": "It breaks if a route slides through an obstacle, a boundary endpoint moves freely, a glued edge is treated as an ordinary edge, or a crossing is erased by letting one curve pass through another.",
-    "course_place": "This assumption runs through knot, route, quotient, and surface arguments where a messy drawing is replaced by a cleaner one. It is the check that turns redrawing into reasoning rather than decoration.",
+    "course_place": "This assumption runs through knot, route, quotient, and surface arguments where a messy drawing is replaced by a cleaner one. It is the check that turns redrawing into reasoning rather than a change of appearance.",
     "concepts": [
       "deformation",
       "quotient-space",
@@ -16,7 +16,7 @@
   {
     "title": "Boundary data is fixed",
     "claim": "A crossing, route obstruction, or impossibility survives simplification only when the boundary information that defines the problem stayed fixed throughout the motion, so the final drawing still answers the original edge question.",
-    "assumption": "The boundary order, marked points, endpoint positions, side labels, or edge directions remain fixed while the inside of the picture changes. The edge data are not decoration; they are part of the problem statement.",
+    "assumption": "The boundary order, marked points, endpoint positions, side labels, or edge directions remain fixed while the inside of the picture changes. The edge data are part of the problem statement, not optional marks.",
     "why_needed": "Many obstructions live in the boundary data. If the boundary can be rearranged, an apparent solution may only prove that a different boundary problem is easier, not that the original one was solved.",
     "plain_check": "Can the reader mark the data that live on the edge, say which of them must stay put, and explain why moving one of them would change the question being answered?",
     "breaks_if": "It breaks if endpoints are swapped, boundary labels are ignored, side directions are reversed without notice, or a path is allowed to leave the region it was supposed to stay inside.",
@@ -62,7 +62,7 @@
     "why_needed": "Signed arithmetic only works when the signs belong to the same rulebook. Without a shared direction rule, the symbols may look precise while adding unrelated local choices that cannot honestly cancel.",
     "plain_check": "Can the reader say where the direction convention comes from, carry it to the next meeting or defect, and notice whether the object blocks such a shared choice globally in practice?",
     "breaks_if": "It breaks if orientation is assumed on a surface that does not support it, if a boundary direction is changed halfway through, or if each crossing receives a sign from a private local choice.",
-    "course_place": "This assumption supports boundary orientation, intersection number, turning counts, and index comparisons across one shared object. It is what makes plus and minus evidence comparable rather than decorative marks on drawings.",
+    "course_place": "This assumption supports boundary orientation, intersection number, turning counts, and index comparisons across one shared object. It is what makes plus and minus evidence comparable rather than loose marks on drawings.",
     "concepts": [
       "boundary-orientation",
       "intersection-number",

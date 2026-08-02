@@ -13,7 +13,7 @@
     },
     {
       "requirement": "Hand-written lecture depth",
-      "evidence": "15 lecture explainers with full essay sections, 15039 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+      "evidence": "15 lecture explainers with full essay sections, 15041 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
       "status": "met"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 3416 reader-test words, 6817 lecture-application words, and 3817 answer-guide words turn lecture understanding into an auditable task.",
+      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 3416 reader-test words, 6819 lecture-application words, and 3817 answer-guide words turn lecture understanding into an auditable task.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 22844 first-principles essay words; theme and subtheme pages add 17284 first-principles essay words and 7572 application words. Method-family pages add 5670 first-principles essay words and 2237 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 10946 words, and concept applications add 10583 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 22845 first-principles essay words; theme and subtheme pages add 17267 first-principles essay words and 7570 application words. Method-family pages add 5670 first-principles essay words and 2237 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 10941 words, and concept applications add 10583 words.",
       "status": "met"
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "requirement": "First-principles transfer lab",
-      "evidence": "8 transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 2022 transfer words test whether the mathematics has become a usable way to think.",
+      "evidence": "8 transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 2023 transfer words test whether the mathematics has become a usable way to think.",
       "status": "met"
     },
     {
@@ -118,12 +118,12 @@
     },
     {
       "requirement": "Assumption ledger",
-      "evidence": "10 assumption-ledger cases expose the quiet conditions behind course claims. The 2012 words name the assumption, why it is needed, how to check it plainly, and where the argument breaks if the condition is missing.",
+      "evidence": "10 assumption-ledger cases expose the quiet conditions behind course claims. The 2014 words name the assumption, why it is needed, how to check it plainly, and where the argument breaks if the condition is missing.",
       "status": "met"
     },
     {
       "requirement": "Counterexample gallery",
-      "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 2012 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
+      "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 2013 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
       "status": "met"
     },
     {
@@ -143,7 +143,7 @@
     },
     {
       "requirement": "Theorem-use contracts",
-      "evidence": "8 theorem-use contracts state when a theorem is allowed to speak. The 2679 words require the object, allowed move, protected evidence, conclusion, break condition, and everyday test before a theorem name can carry weight.",
+      "evidence": "8 theorem-use contracts state when a theorem is allowed to speak. The 2681 words require the object, allowed move, protected evidence, conclusion, break condition, and everyday test before a theorem name can carry weight.",
       "status": "met"
     },
     {
@@ -158,7 +158,7 @@
     },
     {
       "requirement": "Plain-language term translation",
-      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 3103 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
+      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 3105 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
       "status": "met"
     },
     {
@@ -173,7 +173,7 @@
     },
     {
       "requirement": "Paper family ledger",
-      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2014 words make the paper layer usable without letting it drown the course explanation.",
+      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2016 words make the paper layer usable without letting it drown the course explanation.",
       "status": "met"
     }
   ],
@@ -186,15 +186,15 @@
     ],
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
-    "lecture_essay_words": 5490,
-    "lecture_first_principles_essay_words": 15039,
+    "lecture_essay_words": 5487,
+    "lecture_first_principles_essay_words": 15041,
     "lecture_deepening_words": 2309,
     "lecture_walkthrough_words": 2039,
-    "lecture_source_lens_words": 1638,
-    "lecture_source_checkpoint_words": 1532,
+    "lecture_source_lens_words": 1643,
+    "lecture_source_checkpoint_words": 1533,
     "lecture_caption_nuance_words": 1498,
     "lecture_source_faithfulness_words": 2462,
-    "lecture_application_bridge_words": 6817,
+    "lecture_application_bridge_words": 6819,
     "lecture_source_bridge_words": 5653,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
@@ -205,22 +205,22 @@
     "lecture_reader_test_words": 3416,
     "lecture_answer_guide_words": 3817,
     "concept_essay_words": 7895,
-    "concept_first_principles_essay_words": 22844,
+    "concept_first_principles_essay_words": 22845,
     "concept_workup_words": 2773,
     "concept_anchor_words": 1969,
     "concept_application_words": 10583,
-    "concept_self_check_words": 10095,
-    "theme_essay_words": 1965,
-    "theme_first_principles_essay_words": 6233,
+    "concept_self_check_words": 10096,
+    "theme_essay_words": 1963,
+    "theme_first_principles_essay_words": 6235,
     "theme_lens_words": 923,
-    "theme_application_words": 2609,
+    "theme_application_words": 2611,
     "theme_answer_guide_words": 2902,
-    "subtheme_essay_words": 3024,
-    "subtheme_first_principles_essay_words": 11051,
+    "subtheme_essay_words": 3013,
+    "subtheme_first_principles_essay_words": 11032,
     "subtheme_routine_words": 1427,
     "subtheme_bridge_words": 1287,
-    "subtheme_application_words": 4963,
-    "subtheme_answer_guide_words": 4703,
+    "subtheme_application_words": 4959,
+    "subtheme_answer_guide_words": 4698,
     "family_essay_words": 1634,
     "family_first_principles_essay_words": 5670,
     "family_contract_words": 1133,
@@ -233,7 +233,7 @@
     "application_spine_rows": 6,
     "application_spine_words": 1663,
     "transfer_lab_cases": 8,
-    "transfer_lab_words": 2022,
+    "transfer_lab_words": 2023,
     "repair_clinic_cases": 8,
     "repair_clinic_words": 1792,
     "oral_exam_prompts": 7,
@@ -241,28 +241,28 @@
     "change_ledger_rows": 10,
     "change_ledger_words": 2081,
     "assumption_ledger_rows": 10,
-    "assumption_ledger_words": 2012,
+    "assumption_ledger_words": 2014,
     "counterexample_gallery_rows": 10,
-    "counterexample_gallery_words": 2012,
+    "counterexample_gallery_words": 2013,
     "weak_claim_repair_rows": 10,
     "weak_claim_repair_words": 1934,
     "proof_moves": 5,
     "proof_move_words": 1536,
     "theorem_use_contracts": 8,
-    "theorem_contract_words": 2679,
+    "theorem_contract_words": 2681,
     "concept_contrasts": 10,
     "concept_contrast_words": 2270,
     "reader_checks": 11,
     "term_translations": 16,
-    "term_translation_words": 3103,
+    "term_translation_words": 3105,
     "source_readers": 7,
     "source_reader_words": 2017,
     "paper_family_ledger_rows": 7,
-    "paper_family_ledger_words": 2014,
+    "paper_family_ledger_words": 2016,
     "references": 7,
     "reference_words": 753,
     "quality_rubric_items": 6,
-    "quality_rubric_words": 1105,
+    "quality_rubric_words": 1108,
     "rubric_coverage_layers": 6,
     "concept_appearances_min": 2,
     "concept_appearances_max": 20,

@@ -54,7 +54,7 @@
   {
     "term": "Quotient space",
     "everyday_sentence": "A quotient space is made by declaring certain points to be the same point in the finished shape. The declaration is not a caption on the drawing; it changes what counts as a location, a route, a boundary, and a neighborhood.",
-    "job_in_argument": "Its job is to turn a construction rule into the actual space being studied. Edge labels, glued boundaries, and identified points are not decoration; they decide what routes and neighborhoods exist afterward.",
+    "job_in_argument": "Its job is to turn a construction rule into the actual space being studied. Edge labels, glued boundaries, and identified points are part of the rule; they decide what routes and neighborhoods exist afterward.",
     "not_a_definition": "It is not just a drawing with arrows on the sides. The arrows are instructions for which positions become identical in the new space. Reasoning on the unglued picture after the rule has been applied means reasoning about the wrong object.",
     "failure_if_misread": "If the identification rule is read loosely, a reader may reason on the unglued picture and prove a claim about the wrong surface. The missing step is to ask how travel, boundary, and neighborhood behavior changed after the declared sameness was applied.",
     "concepts": [

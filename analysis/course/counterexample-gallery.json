@@ -43,7 +43,7 @@
     "tempting_claim": "The plus crossings and minus crossings cancel on the page, so the signed total looks convincing even though no shared orientation rule has explained why those signs belong to one account.",
     "missing_condition": "The signs need a shared direction rule. Orientation or boundary orientation must make plus and minus comparable across the object. A plus sign at one meeting and a minus sign at another are evidence only if the same convention tells both signs what they mean.",
     "failure_scene": "If each local sign is chosen independently, the symbols may cancel on paper while failing to describe one consistent mathematical account. The arithmetic may look balanced, but the balance belongs to the writer's labels rather than to the surface, curve, or field.",
-    "why_it_breaks": "The addition used labels that did not belong to the same rulebook. A signed total has meaning only when the sign convention can be carried consistently. Without that condition, cancellation is decoration rather than protected evidence.",
+    "why_it_breaks": "The addition used labels that did not belong to the same rulebook. A signed total has meaning only when the sign convention can be carried consistently. Without that condition, cancellation is label arithmetic rather than protected evidence.",
     "repair": "Name the orientation source first. If the object cannot support the required direction rule, do not use signed cancellation as evidence. A repaired sentence says where the sign convention comes from and what local event it lets the proof count.",
     "concepts": [
       "boundary-orientation",

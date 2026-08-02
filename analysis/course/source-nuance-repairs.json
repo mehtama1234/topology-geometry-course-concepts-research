@@ -30,7 +30,7 @@
     "caption_hazard": "Words such as product, quotient, surgery, and manifold can be misheard as labels for finished objects. The source risk is losing the making rule, which is where the mathematical meaning sits before any short formal name is useful.",
     "safe_claim": "The supported claim is that the lecture teaches space-making as a mathematical act. Independent choices make products, declared sameness makes quotients, local patches make manifolds, and controlled replacement makes surgery meaningful because each operation changes which routes and neighborhoods exist.",
     "repair_move": "If a sentence names a space, add how it was made. Say which choices are independent, which pieces are paired or glued, what was removed or thickened, and what a traveler is allowed to do afterward.",
-    "do_not_claim": "Do not let product, quotient, manifold, or surgery appear as unexplained vocabulary that merely decorates the paragraph. The independent choices, imposed identifications, local test, or replacement boundary must be visible before the formal word is allowed to shorten the sentence.",
+    "do_not_claim": "Do not let product, quotient, manifold, or surgery appear as unexplained vocabulary pasted onto the paragraph. The independent choices, imposed identifications, local test, or replacement boundary must be visible before the formal word is allowed to shorten the sentence.",
     "reviewer_question": "Evidence check: reconstruct the space from the rule alone by naming the choices, identifications, local patches, or replacement boundary before using product, quotient, manifold, or surgery as a shortcut for the completed construction.",
     "concepts": [
       "product-space",
@@ -92,7 +92,7 @@
   },
   {
     "lecture": 8,
-    "caption_hazard": "Positive and negative intersection words can be copied as signs without explaining where signs come from. The source risk is arithmetic without orientation, where plus and minus look like decoration instead of evidence tied to local direction.",
+    "caption_hazard": "Positive and negative intersection words can be copied as signs without explaining where signs come from. The source risk is arithmetic without orientation, where plus and minus look like loose labels instead of evidence tied to local direction.",
     "safe_claim": "The supported claim is that the lecture repairs raw crossing counts by giving clean meetings signs. Pair events created or removed during legal motion then contribute no net change, so the signed total becomes the quantity worth protecting.",
     "repair_move": "When a page uses plus and minus intersections, add the shared orientation or local direction rule. Then show one birth or death event where the two signs cancel, so the arithmetic is tied to a visible motion.",
     "do_not_claim": "Do not call the raw number of crossings invariant or let sign language stand alone. The protected candidate is the signed total after the page has explained clean meetings, orientation, and why pair cancellation is allowed.",

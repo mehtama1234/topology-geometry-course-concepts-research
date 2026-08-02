@@ -106,7 +106,7 @@
   },
   {
     "name": "Configuration-space modeling",
-    "use_when": "Use it when a physical or moving system is too hard to inspect directly and the question can be asked as a route, barrier, fixed-point, or defect problem. The modeling step is not decoration; it decides what space the later theorem is actually allowed to see.",
+    "use_when": "Use it when a physical or moving system is too hard to inspect directly and the question can be asked as a route, barrier, fixed-point, or defect problem. The modeling step is part of the proof; it decides what space the later theorem is actually allowed to see.",
     "object_needed": "The object is the space of all allowed states, with enough coordinates to describe one complete state and with forbidden states removed before the theorem is used. A point in this space must mean one real state of the system, not a convenient drawing that forgets a constraint.",
     "allowed_move": "The allowed move is to translate physical motion into paths through the state space without adding false freedoms, omitting real freedoms, or removing real barriers. A continuous path in the model is meaningful only if it represents a motion the real system could actually perform.",
     "protected_evidence": "The protected evidence is the shape of possible states: connected regions, holes, walls, fixed points, or total index constraints inside the honest model after forbidden states are removed. The theorem later reads this modeled shape, so the model's missing states and allowed paths carry the argument.",

@@ -35,7 +35,7 @@
     "id": "course-anchor",
     "title": "Tie the idea to a course moment",
     "test": "The page must connect the explanation to a lecture moment, source trail, example, or transcript-grounded anchor rather than floating as a general summary. The anchor should affect the explanation itself: it should show which object, move, or source limit is actually being used.",
-    "strong_answer": "A complete explanation lets the reader move from the page back to a lecture example or source note and see why that exact moment supports the claim. The course anchor is not decoration; it keeps the companion from becoming a generic topology summary detached from Tokieda's sequence.",
+    "strong_answer": "A complete explanation lets the reader move from the page back to a lecture example or source note and see why that exact moment supports the claim. The course anchor is evidence, not an add-on; it keeps the companion from becoming a generic topology summary detached from Tokieda's sequence.",
     "failure": "The writing fails when it could be pasted into any topology summary without changing a word. It also fails when the page names a lecture but does not use that lecture to explain the object, move, protected fact, or source boundary.",
     "repair": "Add the lecture number, example, or source caveat that makes the explanation belong to this course companion. Then connect the anchor to the reasoning: what did the lecture make visible, what did the source support, and what must not be claimed from that evidence?"
   },

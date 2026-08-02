@@ -23,7 +23,7 @@
   },
   {
     "lecture": 2,
-    "title": "Deformation as a way to solve, not decorate",
+    "title": "Deformation as a way to solve, not polish",
     "references": [
       "tokieda-aims-course",
       "tib-av-portal-course"
@@ -32,7 +32,7 @@
     "course_demonstration": "Keep the bridge grounded in Curves inside a disk with boundary points held in their circular order. The moments Connecting boundary pairs in a disk, Deformation as proof of impossibility, and Endpoint order carries the obstruction show what the lecture actually makes visible before any outside reference is allowed to help.",
     "mathematical_bridge": "When can a messy drawing be replaced by a cleaner one without changing the problem it was meant to answer? Answer it by naming the permitted action first: Slide and bend curves while keeping endpoints fixed in order and while preventing forbidden crossings. Then name the evidence that action leaves in place: Boundary order and the no-crossing rule survive the redraw, so an unavoidable crossing belongs to the original setup. Only then can a reference widen the mathematical family behind the lecture.",
     "how_source_extends": "The disk puzzle bridge reads the demonstration as boundary-order evidence. Wider topology language can explain deformation, but the lecture bridge starts with paired boundary points, fixed order, and paths that are not allowed to cross during cleanup. Read the supporting family through this plain problem: The course source answers the starting problem: how can a person reason about shape when exact measurement is not the right evidence? The human difficulty is that a picture is tempting but unreliable unless the reader knows which parts of the picture are allowed to change and which parts are carrying the conclusion.",
-    "overread_warning": "\"Deformation as a way to solve, not decorate\" should not be read past this point: The crowded sketch is not enough by itself, and a redraw that lets endpoints slide through one another has changed the problem. The course claim remains tied to the boundary data and to the legal redraw that preserves the no-crossing problem. Keep the source claim narrow by naming the later job it actually supports: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question.",
+    "overread_warning": "\"Deformation as a way to solve, not polish\" should not be read past this point: The crowded sketch is not enough by itself, and a redraw that lets endpoints slide through one another has changed the problem. The course claim remains tied to the boundary data and to the legal redraw that preserves the no-crossing problem. Keep the source claim narrow by naming the later job it actually supports: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question.",
     "reader_question": "Can the reader name the boundary points and their order, describe a legal path motion, identify the illegal crossing shortcut, and say what a source may add after those facts are already stated? Keep the final sentence tied to this later role: This lecture makes deformation into a proof method. Intersection number, fixed points, and vector-field cleanup all rely on this same contract: move the picture, but protect the question.",
     "concepts": [
       "topology-vs-geometry",
