@@ -4954,7 +4954,7 @@ def build_concept_self_check(concept):
     ])
     operation_prompt = varied((cid, "operation-check-prompt"), [
         f"Now say what is done to that object: {work['operation']} {legal_check} {operation_close}",
-        f"Next describe the allowed move without hiding behind terminology: {work['operation']} {legal_check} {operation_close}",
+        f"Describe the permitted operation without hiding behind terminology: {work['operation']} {legal_check} {operation_close}",
         f"Check the operation as a rule-governed action: {work['operation']} {legal_check} {operation_close}",
         f"Describe what changes in the picture, model, count, or field: {work['operation']} {legal_check} {operation_close}",
         f"Spell out the action before naming the method: {work['operation']} {legal_check} {operation_close}",
@@ -4995,10 +4995,10 @@ def build_concept_self_check(concept):
         f"End with the limit of the claim: {failure} The beginner trap shows what happens when that limit is ignored: {beginner_trap} {failure_close}",
     ])
     return {
-        "object_check": object_prompt,
-        "operation_check": operation_prompt,
-        "protected_check": protected_prompt,
-        "failure_check": failure_prompt,
+        "object_check": f"For {title}, start from its own carrier before the name does any work. {object_prompt}",
+        "operation_check": f"For {title}, turn the idea into a permitted action on the course example. {operation_prompt}",
+        "protected_check": f"For {title}, keep the surviving evidence in front of the conclusion. {protected_prompt}",
+        "failure_check": f"For {title}, make the nearest bad use visible. {failure_prompt}",
     }
 
 
