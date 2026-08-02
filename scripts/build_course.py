@@ -5044,7 +5044,7 @@ def build_concept_self_check(concept):
         f"The object needs enough concrete detail to be sketched, moved, counted, or inspected for the part that carries the constraint.",
         f"Do not let the formal name hide the carrier of the idea; the page must first show the surface, route, field, map, count, or state space doing the work.",
         f"The course moment is the test case for {title}, not a caption placed beside a definition.",
-        f"The object has to be visible before any theorem name appears, because the later conclusion has to belong to that object.",
+        f"Do not let a later theorem or source claim speak until this exact object has been named.",
         f"The object statement already needs the rule or setting: boundary, gluing, forbidden crossing, orientation, field, map, or possible-state description.",
         f"Before any symbolic shortcut appears, the explanation should say what someone could draw, carry around, count, compare, or act out.",
         f"The course example has to make the object visible enough to test whether a later source is talking about the same kind of thing.",
@@ -5056,13 +5056,13 @@ def build_concept_self_check(concept):
         "The move has to be actable on the example, with the illegal shortcut named beside it.",
         "A clean picture supports the proof only if the route to that picture respects the original boundary, crossing, gluing, field, or state rule.",
         f"The operation has to explain what changes and what stays fixed while {title} is being used.",
-        "The move has to be checkable on the course example, not imported as permission from a definition.",
+        "The example should show the permission in action before a definition is allowed to abbreviate it.",
         "If a nearby shortcut would change the answer, the check has to name that shortcut directly.",
     ])
     legal_check = varied((cid, "legal-check"), [
         "Say which part of the setup gives permission for this move.",
         "Name the rule that is being preserved while the picture changes.",
-        "Explain what fixed data, boundary behavior, or model condition stays in place.",
+        "Name the fixed data, boundary behavior, direction rule, or model condition that survives the move.",
         "Say why the operation is still answering the original question.",
         "Point to the feature that the operation is not allowed to disturb.",
         "State the permission in words that can be checked on the course example.",
@@ -5077,7 +5077,7 @@ def build_concept_self_check(concept):
         "The protected fact explains why the final picture still speaks about the first picture.",
         "Name the evidence that remains after the allowed move, then say what conclusion that evidence can and cannot carry.",
         f"For this concept, the protected fact is the bridge from the course moment to the later use, not an extra sentence after the definition.",
-        "If the same fact would not survive the legal change, the concept has only been named, not used.",
+        "If that fact would disappear under the stated move, the explanation has changed the problem rather than used the concept.",
     ])
     failure_close = varied((cid, "failure-close"), [
         f"The failure case is part of {title}: it identifies the changed assumption that destroys the claim.",
