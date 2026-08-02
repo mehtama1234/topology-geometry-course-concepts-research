@@ -468,7 +468,7 @@ def main():
         fail("change ledger rows do not match required case set")
     for row in change_ledger_rows:
         for field in ["object", "legal_change", "protected_fact", "why_matters", "false_move", "reader_test"]:
-            if len(words(row.get(field))) < 14:
+            if len(words(row.get(field))) < 30:
                 fail(f"change ledger {row.get('title')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"change ledger {row.get('title')} needs concept links")
