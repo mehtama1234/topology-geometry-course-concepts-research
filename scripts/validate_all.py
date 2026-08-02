@@ -329,7 +329,7 @@ def main():
                 fail(f"lecture {lecture['lecture']} walkthrough {field} too thin")
         reader_test = deep.get("reader_test") or {}
         for field in ["explain_object", "test_allowed_move", "protect_conclusion"]:
-            if len(words(reader_test.get(field))) < 35:
+            if len(words(reader_test.get(field))) < 45:
                 fail(f"lecture {lecture['lecture']} reader test {field} too thin")
         answer_guide = deep.get("answer_guide") or {}
         for field in ["object_answer", "move_answer", "conclusion_answer"]:
