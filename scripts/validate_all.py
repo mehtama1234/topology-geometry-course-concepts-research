@@ -496,7 +496,7 @@ def main():
         fail("transfer lab cases do not match required case set")
     for row in transfer_lab_cases:
         for field in ["situation", "object", "allowed_move", "protected_fact", "course_bridge", "wrong_transfer", "reader_task"]:
-            if len(words(row.get(field))) < 60:
+            if len(words(row.get(field))) < 80:
                 fail(f"transfer lab {row.get('title')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"transfer lab {row.get('title')} needs concept links")
