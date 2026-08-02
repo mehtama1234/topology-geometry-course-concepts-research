@@ -243,7 +243,7 @@ def main():
             fail(f"concept {concept['id']} references unknown subthemes: {unknown_subthemes}")
         if len(words(concept["first_principles"])) < 35:
             fail(f"concept first_principles too thin: {concept['id']}")
-        if len(words(concept["important_detail"])) < 12:
+        if len(words(concept["important_detail"])) < 20:
             fail(f"concept important_detail too thin: {concept['id']}")
         if len(words(concept["math_principle"])) < 18:
             fail(f"concept math_principle too thin: {concept['id']}")

@@ -1950,7 +1950,7 @@ CONCEPTS = [
         "theme": "shape-as-machine",
         "subthemes": ["curves-loops-knots", "allowed-moves"],
         "first_principles": "A knot is a closed loop in space. The question is not whether it looks tangled, but whether it can be moved into a simple circle without cutting it or passing it through itself. This turns untangling into a rule-governed problem: the loop may slide and bend freely, but it cannot cheat by breaking the space it lives in.",
-        "important_detail": "A flat drawing hides over-under information. The drawing is evidence only when those crossings are recorded.",
+        "important_detail": "A flat drawing hides over-under information. The drawing is evidence only when those crossings are recorded, because changing over-under order can change the knot without changing the ink on the page.",
         "math_principle": "A curve in space carries more than its visible shape. Legal untangling may change the drawing, but it cannot erase a route relation without crossing a forbidden move.",
     },
     {
@@ -1959,7 +1959,7 @@ CONCEPTS = [
         "theme": "count-what-survives",
         "subthemes": ["curves-loops-knots", "signs-and-cancellation"],
         "first_principles": "A loop can go around something. If it winds once around a post, pulling the loop tighter or looser does not remove that fact. Linking is the same stubbornness shared by two loops. The proof asks whether the route has trapped a relationship that legal motion cannot remove, not how long the loop is.",
-        "important_detail": "Direction matters. Opposite windings can cancel, so the sign of a turn or crossing is part of the count.",
+        "important_detail": "Direction matters. Opposite windings can cancel, so the sign of a turn or crossing is part of the count. A loop that goes around once one way is not the same evidence as a loop that goes around once the other way.",
         "math_principle": "Going around is a relationship that can be counted with direction. Stretching the loop changes the drawing, but not the signed relation unless the loop crosses the obstacle.",
     },
     {
@@ -1977,7 +1977,7 @@ CONCEPTS = [
         "theme": "local-to-global",
         "subthemes": ["turning-and-curvature", "holes-and-boundaries"],
         "first_principles": "Curvature tells how a surface bends near a point. Gauss-Bonnet is the deeper message that the total bending over a whole surface is tied to the surface's basic shape. Local bend is not free to add up to anything it likes.",
-        "important_detail": "Boundaries and corners contribute too. Ignoring the edge of the surface breaks the accounting.",
+        "important_detail": "Boundaries and corners contribute too. Ignoring the edge of the surface breaks the accounting, because part of the total turning may live on the boundary rather than in the interior curvature.",
         "math_principle": "Local bending is free only locally. Once every bend, edge, and corner is included in one account, the whole surface can force the total.",
     },
     {
@@ -2013,7 +2013,7 @@ CONCEPTS = [
         "theme": "pictures-to-proofs",
         "subthemes": ["models-not-labels", "holes-and-boundaries"],
         "first_principles": "Sometimes a problem becomes easier when regions become dots and shared borders become lines, or when a surface is replaced by another bookkeeping picture. The same situation is being viewed through a different ledger. The value is that the second picture may make adjacency, separation, or counting visible when the first picture hides it.",
-        "important_detail": "A dual picture works only if it preserves the relationships needed by the question.",
+        "important_detail": "A dual picture works only if it preserves the relationships needed by the question. If adjacency, separation, or crossing information is lost in the translation, the new diagram may be easier to read but no longer proves the same claim.",
         "math_principle": "Changing representation is useful when it preserves the relation being studied. The second picture can reveal adjacency, separation, or counting structure that the first picture hid.",
     },
     {
@@ -2022,7 +2022,7 @@ CONCEPTS = [
         "theme": "count-what-survives",
         "subthemes": ["signs-and-cancellation"],
         "first_principles": "Parity asks whether a count is even or odd. It is a blunt tool, but sometimes blunt is exactly right: many changes create or remove events in pairs, so evenness or oddness cannot change. When the exact number is too fragile, the odd-or-even shadow of the number may be the part that survives.",
-        "important_detail": "Parity deliberately forgets most details. That is strength when all allowed changes affect the count by twos.",
+        "important_detail": "Parity deliberately forgets most details. That is strength when all allowed changes affect the count by twos, but it fails when a legal move can change the count by one.",
         "math_principle": "A coarse count can be stronger than a detailed one when legal changes happen in pairs. Parity forgets most information so the odd-or-even obstruction can survive.",
     },
     {
@@ -2031,7 +2031,7 @@ CONCEPTS = [
         "theme": "shape-as-machine",
         "subthemes": ["models-not-labels", "mechanisms-and-locks"],
         "first_principles": "A product space is what you get when two choices are made independently. If one choice is a point on a line and another choice is a point on a line, the combined choice fills a square. The course uses this move whenever the real object is a list of freedoms: one freedom for each coordinate, knob, point, or part of a mechanism. The new space is not a picture of the object in the room. It is the space of all allowed choices at once.",
-        "important_detail": "The product keeps both freedoms. Forgetting one coordinate means studying a smaller problem than the one the lecture built.",
+        "important_detail": "The product keeps both freedoms. Forgetting one coordinate means studying a smaller problem than the one the lecture built, while pretending dependent choices are independent creates a larger room than the problem allows.",
         "math_principle": "Independent freedoms combine into a new space because one point can record all choices at once. That larger room is only honest while the freedoms really vary independently.",
     },
     {
@@ -2058,7 +2058,7 @@ CONCEPTS = [
         "theme": "local-to-global",
         "subthemes": ["models-not-labels", "surfaces-and-orientation"],
         "first_principles": "A manifold is a space that looks ordinary when seen very close up, even if the whole space has a surprising shape. A surface of a ball, a torus, or a Mobius-type object can have simple small neighborhoods while the complete object carries holes, side reversal, or other global behavior.",
-        "important_detail": "Local ordinariness does not settle the global question. The whole course depends on that gap.",
+        "important_detail": "Local ordinariness does not settle the global question. The whole course depends on that gap: every small patch may allow a choice that the completed surface refuses after a full trip.",
         "math_principle": "A space can be locally ordinary and globally constrained at the same time. Local coordinates allow small arguments, but full trips reveal holes, side reversal, and compatibility failures.",
     },
     {
@@ -2085,7 +2085,7 @@ CONCEPTS = [
         "theme": "shape-as-machine",
         "subthemes": ["turning-and-curvature", "mechanisms-and-locks"],
         "first_principles": "An equilibrium is a state where the motion arrow vanishes. In everyday terms, the system has no immediate direction to move. The course cares about equilibria because they can be studied without solving every path: their local arrow patterns can carry signed information.",
-        "important_detail": "An equilibrium is not only a dot in a drawing. What matters is how nearby arrows behave around it.",
+        "important_detail": "An equilibrium is not only a dot in a drawing. What matters is how nearby arrows behave around it, because that surrounding pattern decides the local index and the role the stopped point can play in a whole-surface total.",
         "math_principle": "A stopped state matters when the surrounding arrows carry a countable pattern. The zero is local, but its turning evidence can enter a whole-surface account.",
     },
     {
