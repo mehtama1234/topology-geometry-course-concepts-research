@@ -369,7 +369,7 @@ def main():
                 fail(f"lecture {lecture['lecture']} walkthrough {field} too thin")
         application_bridge = deep.get("application_bridge") or {}
         for field in ["outside_problem", "topology_bridge", "protected_fact", "where_it_matters", "honest_limit"]:
-            if len(words(application_bridge.get(field))) < 65:
+            if len(words(application_bridge.get(field))) < 105:
                 fail(f"lecture {lecture['lecture']} application bridge {field} too thin")
         reader_test = deep.get("reader_test") or {}
         for field in ["explain_object", "test_allowed_move", "protect_conclusion"]:
@@ -384,7 +384,7 @@ def main():
             fail(f"lecture {lecture['lecture']} essay too thin")
         first_principles_essay = deep.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 60:
+            if len(words(first_principles_essay.get(field))) < 105:
                 fail(f"lecture {lecture['lecture']} first-principles essay {field} too thin")
         examples = deep.get("examples") or []
         if len(examples) < 3:
