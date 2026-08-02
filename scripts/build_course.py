@@ -5355,14 +5355,14 @@ def build_theme_answer_guide(theme):
         f"Show what the theme lets the course reuse: {lens['changes_problem']} Then place that reuse inside the arc: {depth['course_arc']} {transfer_close}",
     ])
     test_prompt = varied((tid, "test-answer-prompt"), [
-        f"Test {title} with this question: {lens['reader_test']} Keep this detail in view: {depth['important_detail']} {test_close}",
-        f"The spoken check for {title} is: {lens['reader_test']} The detail that keeps the check honest is: {depth['important_detail']} {test_close}",
-        f"Audit {title} with this question: {lens['reader_test']} Include the detail that can break the claim: {depth['important_detail']} {test_close}",
-        f"Close by asking whether the theme is really being used: {lens['reader_test']} The answer must include this detail: {depth['important_detail']} {test_close}",
-        f"Make the reader answer this check before accepting the theme: {lens['reader_test']} Keep the fragile detail explicit: {depth['important_detail']} {test_close}",
-        f"Use this question to test the theme's claim boundary: {lens['reader_test']} The boundary depends on this detail: {depth['important_detail']} {test_close}",
-        f"Ask whether the page has earned the theme: {lens['reader_test']} The earning detail is: {depth['important_detail']} {test_close}",
-        f"Turn the theme into a reader test: {lens['reader_test']} The answer has to preserve this detail: {depth['important_detail']} {test_close}",
+        f"Put pressure on {title} by asking: {lens['reader_test']} The page then has to keep this exact condition alive: {depth['important_detail']} {test_close}",
+        f"Make {title} earn its conclusion with this ordinary question: {lens['reader_test']} The condition that decides the issue is: {depth['important_detail']} {test_close}",
+        f"Treat the theme as unfinished until this has been answered: {lens['reader_test']} The fragile part of the reasoning is: {depth['important_detail']} {test_close}",
+        f"Use the question as a gate on the claim, not as review vocabulary: {lens['reader_test']} The gate turns on this detail: {depth['important_detail']} {test_close}",
+        f"Before the theme can carry a conclusion, settle this: {lens['reader_test']} The settlement depends on this detail: {depth['important_detail']} {test_close}",
+        f"Force the page back to the object by asking: {lens['reader_test']} The object-level detail is: {depth['important_detail']} {test_close}",
+        f"Decide whether {title} is doing real work here by answering: {lens['reader_test']} The work depends on this condition: {depth['important_detail']} {test_close}",
+        f"Use the question to separate a real proof habit from a title: {lens['reader_test']} The separating detail is: {depth['important_detail']} {test_close}",
     ])
     theme_intros = {
         "see-by-deforming": {
@@ -5476,10 +5476,12 @@ def build_subtheme_answer_guide(subtheme):
         f"Apply the check where this condition is missing: {use} The first-principles reason is: {depth['first_principles']} {use_close}",
     ])
     mistake_prompt = varied((sid, "mistake-answer-prompt"), [
-        f"Name the {title} mistake directly: {mistake} Then answer the reader test: {bridge['reader_test']} {mistake_close}",
-        f"Name the false shortcut before accepting the routine: {mistake} The reader test is: {bridge['reader_test']} {mistake_close}",
-        f"Say what false reading {title} prevents: {mistake} Then use the test: {bridge['reader_test']} {mistake_close}",
-        f"End with the failure mode: {mistake} The check on that failure is: {bridge['reader_test']} {mistake_close}",
+        f"State the wrong move that would make {title} shallow: {mistake} Then bring the explanation back to this concrete question: {bridge['reader_test']} {mistake_close}",
+        f"Before trusting the routine, expose the shortcut it is meant to stop: {mistake} The proof has to answer this instead: {bridge['reader_test']} {mistake_close}",
+        f"Say what bad reading {title} blocks: {mistake} Replace that reading with this object-level question: {bridge['reader_test']} {mistake_close}",
+        f"Close the repair by naming the failure: {mistake} The claim is usable only after this is answered: {bridge['reader_test']} {mistake_close}",
+        f"Make the mistake concrete enough to reject later: {mistake} The replacement question is: {bridge['reader_test']} {mistake_close}",
+        f"Show where a loose explanation would go wrong: {mistake} Then make the page answer this: {bridge['reader_test']} {mistake_close}",
     ])
     look_intro = varied((sid, "look-answer-intro"), [
         f"{title} starts with visible evidence.",
@@ -5555,9 +5557,9 @@ def build_family_answer_guide(family):
         f"{title} needs a visible break condition before the proof family is safe to use.",
     ])
     input_prompt = varied((fid, "family-input-answer-prompt"), [
-        f"For {title}, first name the situation being fed into the method: {contract['input']} The human problem is {human_problem} {input_close}",
+        f"For {title}, first name the situation being fed into the method: {contract['input']} The need underneath is {human_problem} {input_close}",
         f"Start from the object, not from the method name: {contract['input']} That object answers this need: {human_problem_reason} {input_close}",
-        f"Before using {title}, say what kind of situation it accepts: {contract['input']} This answers the human problem: {human_problem} {input_close}",
+        f"Before using {title}, say what kind of situation it accepts: {contract['input']} This answers the ordinary need: {human_problem} {input_close}",
         f"Make the input inspectable before the method begins: {contract['input']} That input answers this need: {human_problem_reason} {input_close}",
     ])
     action_prompt = varied((fid, "family-action-answer-prompt"), [
@@ -5567,22 +5569,28 @@ def build_family_answer_guide(family):
         f"State the operation the family performs: {contract['action']} Then compare it with the playbook move: {playbook['move']} {action_close}",
     ])
     evidence_prompt = varied((fid, "family-evidence-answer-prompt"), [
-        f"Name the evidence {title} must protect: {evidence} Then say what that evidence lets the argument do: {playbook['payoff']} {evidence_close}",
-        f"After the action, ask what survived: {evidence} That survival gives this payoff: {playbook['payoff']} {evidence_close}",
-        f"The method is trustworthy only when it carries this evidence: {evidence} That evidence supports this later move: {playbook['payoff']} {evidence_close}",
-        f"Do not stop at the action; name the evidence it preserves: {evidence} The playbook payoff is: {playbook['payoff']} {evidence_close}",
+        f"Name the fact {title} has to carry through the work: {evidence} Then say what that fact lets the argument do: {playbook['payoff']} {evidence_close}",
+        f"After the action, identify what still remains true: {evidence} That survival supports this consequence: {playbook['payoff']} {evidence_close}",
+        f"The family is trustworthy only when this fact makes it through the move: {evidence} It supports this later step: {playbook['payoff']} {evidence_close}",
+        f"Do not stop at the action; name the fact it keeps intact: {evidence} The payoff is: {playbook['payoff']} {evidence_close}",
+        f"Track what the move was not allowed to lose: {evidence} That retained fact pays off this way: {playbook['payoff']} {evidence_close}",
+        f"Make the carried evidence visible in everyday terms: {evidence} The later conclusion uses it this way: {playbook['payoff']} {evidence_close}",
     ])
     output_prompt = varied((fid, "family-output-answer-prompt"), [
         f"Say what {title} produces at the end: {output} The method works this way: {depth['how_it_works']} {output_close}",
         f"State the final consequence in plain words: {output} Then tie it to the working mechanism: {depth['how_it_works']} {output_close}",
         f"The output of {title} has to be a claim about the original problem: {output} The reason the claim follows is: {depth['how_it_works']} {output_close}",
         f"Close the method by naming its earned result: {output} That result comes from this mechanism: {depth['how_it_works']} {output_close}",
+        f"Return to the starting problem and state what has changed: {output} The reason this follows is: {depth['how_it_works']} {output_close}",
+        f"Finish with the consequence the work has earned: {output} The mechanism behind it is: {depth['how_it_works']} {output_close}",
     ])
     failure_prompt = varied((fid, "family-failure-answer-prompt"), [
-        f"Finally test where {title} breaks: {failure} The playbook failure says the same risk this way: {playbook['failure']} {failure_close}",
-        f"Name the false use before trusting the method: {failure} The playbook warning is: {playbook['failure']} {failure_close}",
-        f"Reject the method when this condition appears: {failure} That matches the playbook failure: {playbook['failure']} {failure_close}",
+        f"Finally locate the place where {title} would stop applying: {failure} The same risk appears in the playbook as: {playbook['failure']} {failure_close}",
+        f"Name the bad use before trusting the method: {failure} The playbook warning is: {playbook['failure']} {failure_close}",
+        f"Set the method aside when this condition appears: {failure} That matches the playbook failure: {playbook['failure']} {failure_close}",
         f"End by naming what would make the argument fail: {failure} The method page describes that failure as: {playbook['failure']} {failure_close}",
+        f"Protect the method by naming its break point: {failure} The playbook gives the matching warning: {playbook['failure']} {failure_close}",
+        f"Say exactly what would disconnect the conclusion from the starting problem: {failure} The playbook names the risk this way: {playbook['failure']} {failure_close}",
     ])
     family_intros = {
         "deformation-family": {
@@ -5595,28 +5603,28 @@ def build_family_answer_guide(family):
         "counting-family": {
             "input": "Start with a picture whose visible events are too easy to create or erase.",
             "action": "The method designs a count around the harmless local changes.",
-            "evidence": "The protected evidence is the total that legal redrawings fail to change.",
+            "evidence": "The crucial fact is the total that legal redrawings fail to change.",
             "output": "The result is a count strong enough to block, force, or compare outcomes.",
             "failure": "The false use appears when the count changes under a move the problem allows.",
         },
         "surface-family": {
             "input": "Start with the whole surface, not one ordinary-looking patch.",
             "action": "The method cuts, tracks, and reglues while keeping the surface account honest.",
-            "evidence": "The protected evidence is the global account that survives local bookkeeping.",
+            "evidence": "The carried fact is the global account that survives local bookkeeping.",
             "output": "The result is a whole-surface constraint that local inspection could not supply.",
             "failure": "The false use treats local freedom as if it automatically glued into global freedom.",
         },
         "embedding-family": {
             "input": "Start with the object to be placed and the room it is allowed to occupy.",
             "action": "The method separates a poor drawing from a genuine placement obstruction.",
-            "evidence": "The protected evidence is the route or relation every legal placement must respect.",
+            "evidence": "The carried fact is the route or relation every legal placement must respect.",
             "output": "The result is either a legal placement or a reason every legal placement fails.",
             "failure": "The false use mistakes one failed sketch for an impossibility proof.",
         },
         "motion-family": {
             "input": "Start by translating the physical or dynamical situation into possible states.",
             "action": "The method turns motion into paths or rules inside that state space.",
-            "evidence": "The protected evidence is the shape of possibility after forbidden states are removed.",
+            "evidence": "The carried fact is the shape of possibility after forbidden states are removed.",
             "output": "The result returns as a constraint on the original motion.",
             "failure": "The false use starts with a state space that lies about the real freedoms.",
         },
