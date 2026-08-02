@@ -678,6 +678,70 @@ CONCEPT_CONTRASTS = [
 ]
 
 
+APPLICATION_SPINE_ROWS = [
+    {
+        "domain": "Physics and motion",
+        "plain_problem": "A moving system can have too many details to solve directly: exact forces, exact timing, exact path, and exact speed. The first useful question is often simpler and deeper: what states are possible, what states are forbidden, and what event cannot be avoided if the motion stays continuous?",
+        "topology_move": "Topology turns the physical story into a space of possibilities. One point records one complete state, a path records a legal motion through states, a wall records a forbidden state, and a fixed point or defect records an unavoidable event. The course move is to study the shape of possible behavior before solving the full motion.",
+        "outside_application": "In mechanics, fluids, and balance problems, this means a person can sometimes prove that some still point, defect, winding, or obstruction must exist before finding its exact location. The point is not that topology replaces equations. It says which outcome any honest equation must respect because the state space leaves no legal escape.",
+        "why_it_matters": "This matters because many real problems ask for a guarantee before they ask for a number. A bridge may need to know whether a mode of motion is possible. A spinning system may need to know whether a steady state must appear. Topology gives a plain kind of answer: under these rules, this event cannot be avoided.",
+        "wrong_reading": "The weak reading says topology predicts the whole motion. That is too strong. The course supports a narrower claim: once the state space, rule, and continuity condition are honest, topology can force existence, blockage, or a total count while leaving speed, location, and detailed path to other methods.",
+        "reader_test": "Name one complete state, name one allowed motion between states, name one forbidden state or boundary condition, and say whether the topological conclusion is existence, obstruction, or a protected total rather than a full physical solution.",
+        "concepts": ["configuration-space", "fixed-points", "poincare-hopf"],
+    },
+    {
+        "domain": "Robotics and mechanisms",
+        "plain_problem": "A machine with joints, arms, contacts, and obstacles can look like a pile of moving parts. The first-principles question is not only where the arm is now. It is what the whole set of possible positions looks like after the real limits and forbidden collisions are included.",
+        "topology_move": "The course move is configuration-space modeling. One point represents every needed joint angle or position at once. A path through that space represents a possible motion of the machine. Removed collision states become holes, walls, or separated regions that can block a motion even when the physical drawing looks close.",
+        "outside_application": "In robot planning, this lets a designer ask whether a motion route exists before choosing motors, timing, or detailed control. A blocked region in the configuration space can explain why a visible shortcut is impossible. A connected region can show that two poses are reachable from each other under the stated rules.",
+        "why_it_matters": "This matters because a machine can fail for shape reasons, not only for power or control reasons. If the model forgets one joint freedom, it may invent a lock. If it allows collisions, it may erase a real lock. Topology makes the modeling debt visible before a plan is trusted.",
+        "wrong_reading": "The weak reading says a configuration-space drawing is a diagram of the machine. The stronger course reading says it is the actual problem space: every point must mean a complete allowed state, and every path must translate back to a real legal motion.",
+        "reader_test": "Say what data one point records, which states are removed, what a path means physically, and what conclusion the state-space shape supports: reachability, blockage, forced meeting, or a warning that the model forgot a real constraint.",
+        "concepts": ["configuration-space", "product-space", "deformation"],
+    },
+    {
+        "domain": "Engineering constraints",
+        "plain_problem": "An engineered object often has to work while being bent, loaded, moved, or redrawn in many small ways. Exact dimensions matter for final design, but an early question can be: which feature survives all allowed changes, and which failure is forced by the shape or boundary conditions?",
+        "topology_move": "Topology separates measurement from constraint. It asks what may change without changing the problem, what must remain fixed at the boundary, what count or route survives, and what conclusion follows from that survival. This is the same habit behind deformation, invariants, signed counts, and fixed-point contracts.",
+        "outside_application": "In design, this can show why a crossing, defect, locked route, or balancing event cannot be removed by polishing the drawing. It can also show when a proposed simplification is illegal because it moves a fixed edge, passes through a forbidden state, or changes the object whose performance is being judged.",
+        "why_it_matters": "This matters because design mistakes often hide inside convenient simplifications. A drawing can be cleaner while the constraint has been changed. A count can be easy while not protected. A theorem can be true while aimed at the wrong object. The course trains the reader to catch that mismatch.",
+        "wrong_reading": "The weak reading says topology ignores size and therefore tells engineers only broad shape facts. The useful reading is more careful: topology identifies constraints that remain after allowed changes, while geometry, measurement, and material details still decide the final numerical design.",
+        "reader_test": "Name the object being designed, the allowed change, the fixed boundary or forbidden move, the protected fact, and the stronger engineering claim that topology alone does not prove without measurement or material information.",
+        "concepts": ["deformation", "invariant", "boundary-orientation"],
+    },
+    {
+        "domain": "Modeling choices",
+        "plain_problem": "Before a theorem can help, someone has to choose the model. The danger is that the model may leave out a real freedom, include a forbidden state, merge two different states, or preserve a visible feature that the real question does not care about.",
+        "topology_move": "The course treats modeling as a mathematical act. A quotient declares points the same. A product records several choices at once. A configuration space keeps only allowed complete states. A deformation chooses which changes count as the same problem. Each model must say what it keeps, what it removes, and why that choice preserves the question.",
+        "outside_application": "This applies to any field that turns a real situation into a space, graph, map, or set of states. The model may describe moving bodies, possible designs, data states, routes through a network, or choices under restrictions. The topological claim is only as honest as the translation into that model.",
+        "why_it_matters": "This matters because plain language can still overclaim if the model is wrong. A page may sound clear while treating a sketch as the object, a product as the restricted state space, or a source family as proof of a stronger sentence. Good modeling names the debt before the theorem speaks.",
+        "wrong_reading": "The weak reading says a model is helpful if it resembles the situation. The course standard is stricter: the model must preserve the allowed moves, forbidden moves, boundary data, and protected fact needed for the conclusion. Resemblance is not enough.",
+        "reader_test": "State what one point or region in the model means, what real details were kept, what details were left out, what restriction was imposed, and what would make a path or count in the model stop representing the original problem.",
+        "concepts": ["quotient-space", "product-space", "configuration-space"],
+    },
+    {
+        "domain": "Computing and networks",
+        "plain_problem": "A computing or network problem can involve many possible states, routes, dependencies, or failures. The first useful question may not be the exact best route. It may be whether a route exists, whether two states can be connected, whether a cycle blocks simplification, or whether a local rule can be made consistent everywhere.",
+        "topology_move": "The course move is to treat connections as shape. Nodes, edges, routes, cycles, regions, and forbidden states become objects that can be followed, counted, or compared under allowed changes. Planarity, parity, winding, and configuration-space thinking all ask what the connection pattern permits before exact weights or timings are chosen.",
+        "outside_application": "In computing and networks, this can help explain why a routing problem is blocked, why a graph cannot be drawn without crossings under the stated rules, why a dependency loop matters, or why a local consistency rule fails when carried around the whole system.",
+        "why_it_matters": "This matters because local checks can pass while the whole connection pattern still fails. Each small part may look compatible, but a loop, boundary, or global count can expose a contradiction. The course gives a way to ask the whole-system question in ordinary language.",
+        "wrong_reading": "The weak reading says topology is only about physical shapes, so network examples are metaphors. The stronger reading says the course studies allowed connection patterns. A route through possible states or a graph with forbidden crossings can be a real topological object once its rules are stated.",
+        "reader_test": "Name the nodes, routes, or states, say which changes preserve the problem, identify the global feature being tested, and separate a topological obstruction from a later numerical choice such as cost, time, or capacity.",
+        "concepts": ["graph-planarity", "parity", "configuration-space"],
+    },
+    {
+        "domain": "Scientific measurement",
+        "plain_problem": "Measurements can be noisy, local, or dependent on how an object is drawn. A scientist may still need to know which conclusion survives changes in scale, coordinates, sampling, or small deformation. The first-principles question is which fact belongs to the object rather than to one measurement setup.",
+        "topology_move": "Topology looks for facts that survive the allowed changes in observation. A hole, side behavior, parity, signed total, or index can remain meaningful when exact length, angle, or placement changes. Geometry supplies local measurements; topology asks when their combined account is forced by the whole object.",
+        "outside_application": "In physical observation and data-shaped models, this can distinguish a stable feature from a drawing artifact. A loop that cannot shrink, a defect that cannot vanish alone, or a total count that survives cleanup may matter more than the exact local coordinates used to describe it.",
+        "why_it_matters": "This matters because evidence should not depend on a fragile view of the object. If the conclusion disappears after a harmless redraw, it was not stable evidence. If it survives every allowed change, it can support a stronger claim about the system being studied.",
+        "wrong_reading": "The weak reading says topology ignores measurement because measurement is unreliable. The course gives a better reading: measurement can provide local evidence, but the page must say which total, obstruction, or survival rule turns those local observations into a trustworthy conclusion.",
+        "reader_test": "Name the measurement that may vary, the allowed change in viewpoint or drawing, the feature claimed to survive, and the reason that survival supports a conclusion about the object rather than about one chosen picture.",
+        "concepts": ["topology-vs-geometry", "invariant", "gauss-bonnet"],
+    },
+]
+
+
 SOURCE_NUANCE_REPAIRS = [
     {
         "lecture": 1,
@@ -3955,6 +4019,7 @@ def page(title, body, current=""):
         ("the-math-why.html", "The Math Why"),
         ("math-playground.html", "Playground"),
         ("course-synthesis.html", "Synthesis"),
+        ("application-spine.html", "Applications"),
         ("concept-dependencies.html", "Dependencies"),
         ("transfer-lab.html", "Transfer Lab"),
         ("repair-clinic.html", "Repair Clinic"),
@@ -5786,6 +5851,7 @@ def build_quality_audit(data):
     concept_contrast_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["confusion", "left_job", "right_job", "bridge", "failure_test", "reader_question"]) for row in data["concept_contrasts"])
     quality_rubric_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["test", "strong_answer", "failure", "repair"]) for row in data["quality_rubric"])
     source_nuance_repair_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["caption_hazard", "safe_claim", "repair_move", "do_not_claim", "reviewer_question"]) for row in data["source_nuance_repairs"])
+    application_spine_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["plain_problem", "topology_move", "outside_application", "why_it_matters", "wrong_reading", "reader_test"]) for row in data["application_spine_rows"])
     transfer_lab_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["situation", "object", "allowed_move", "protected_fact", "course_bridge", "wrong_transfer", "reader_task"]) for row in data["transfer_lab_cases"])
     repair_clinic_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["flawed_explanation", "why_it_fails", "repair_move", "strong_version", "reviewer_test"]) for row in data["repair_clinic_cases"])
     oral_exam_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", row[field])) for field in ["prompt", "strong_answer", "must_include", "common_failure", "follow_up"]) for row in data["oral_exam_prompts"])
@@ -5883,6 +5949,11 @@ def build_quality_audit(data):
         {
             "requirement": "Concept dependency map",
             "evidence": f"{len(data['concept_dependencies'])} dependency paths show why later theorems need earlier habits: legal motion, constructed spaces, orientation, protected counts, and state modeling. This prevents the course from reading as a flat list of topics.",
+            "status": "met",
+        },
+        {
+            "requirement": "Application spine beyond topology",
+            "evidence": f"{len(data['application_spine_rows'])} application-spine rows explain why topology matters in outside fields by naming the plain problem, topological move, outside use, honest payoff, wrong reading, and reader test. The {application_spine_words} application words keep applications tied to first principles rather than loose comparisons.",
             "status": "met",
         },
         {
@@ -6010,6 +6081,8 @@ def build_quality_audit(data):
             "playground_widgets": 4,
             "synthesis_sections": 9,
             "dependency_paths": len(data["concept_dependencies"]),
+            "application_spine_rows": len(data["application_spine_rows"]),
+            "application_spine_words": application_spine_words,
             "transfer_lab_cases": len(data["transfer_lab_cases"]),
             "transfer_lab_words": transfer_lab_words,
             "repair_clinic_cases": len(data["repair_clinic_cases"]),
@@ -6069,7 +6142,7 @@ def quality_metric_cards(metrics):
         {
             "title": "Practice And Repair",
             "meta": "reader checks",
-            "text": f"The companion includes {metrics['transfer_lab_cases']} transfer cases, {metrics['repair_clinic_cases']} repair-clinic cases, {metrics['oral_exam_prompts']} oral-exam prompts, {metrics['change_ledger_rows']} change-ledger rows, {metrics['assumption_ledger_rows']} assumption-ledger rows, {metrics['counterexample_gallery_rows']} counterexample cases, and {metrics['weak_claim_repair_rows']} weak-claim repairs. These pages make the reader practice the central habit: say what changes, what survives, what breaks, and what conclusion is actually earned.",
+            "text": f"The companion includes {metrics['application_spine_rows']} application-spine rows, {metrics['transfer_lab_cases']} transfer cases, {metrics['repair_clinic_cases']} repair-clinic cases, {metrics['oral_exam_prompts']} oral-exam prompts, {metrics['change_ledger_rows']} change-ledger rows, {metrics['assumption_ledger_rows']} assumption-ledger rows, {metrics['counterexample_gallery_rows']} counterexample cases, and {metrics['weak_claim_repair_rows']} weak-claim repairs. These pages make the reader practice the central habit: say what changes, what survives, what breaks, and what conclusion is actually earned.",
         },
         {
             "title": "Source And Paper Trail",
@@ -6144,6 +6217,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <div class="grid two">
 {card('Math Playground', 'Four small canvas models let the reader adjust cuts, signed pairs, fixed-point graphs, and vector-field turning. The controls make the course principles visible without assuming prior notation.', 'math-playground.html', 'Playground')}
 {card('Course Synthesis', 'A single first-principles path through the whole course: hard situation, mathematical object, operation, reason, and what becomes possible.', 'course-synthesis.html', 'Synthesis')}
+{card('Application Spine', 'Six outside-field applications explain why topology matters in physics, robotics, engineering, modeling, computing, and measurement without overclaiming what topology alone proves.', 'application-spine.html', 'Applications')}
 {card('Lecture Spine', 'One dense path through all 15 lectures: object, plain question, legal move, surviving fact, and why the lecture is needed later.', 'lecture-spine.html', 'Spine')}
 {card('Concept Dependencies', 'Eight paths show what must be understood first, what later idea depends on it, and why the dependency matters.', 'concept-dependencies.html', 'Dependencies')}
 {card('Transfer Lab', 'Eight everyday cases ask the reader to transfer course ideas by naming the object, allowed move, protected fact, wrong transfer, and course bridge.', 'transfer-lab.html', 'Transfer')}
@@ -6275,41 +6349,9 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         f"""<article class="card"><div class="meta">{esc(name)}</div><h3>{esc(move)}</h3><p><b>Mathematical object:</b> {esc(obj)}.</p><p><b>Course use:</b> {esc(use)}.</p></article>"""
         for name, move, obj, use in family_rows
     )
-    application_rows = [
-        (
-            "Physics and motion",
-            "A moving system may have too many exact paths to solve one by one.",
-            "Build the space of possible states, remove impossible states, and ask whether the remaining shape forces a route, a blocked route, an equilibrium, or a defect.",
-            "This is the course's late dynamical habit in everyday form: the shape of the allowed possibilities can say something before the full motion is solved.",
-        ),
-        (
-            "Robotics and mechanisms",
-            "A robot arm, linkage, or moving part is hard to understand from one drawing because one drawing shows only one position.",
-            "Let one point record one complete legal position, then read motion as a path through the allowed positions. Obstacles become missing regions, walls, or separated pieces in that state space.",
-            "Topology matters because a motion plan can fail for shape reasons, not because the planner has not tried hard enough.",
-        ),
-        (
-            "Engineering constraints",
-            "A design often has parts that may flex, slide, rotate, or reconnect, while other details must remain fixed.",
-            "Name the permitted changes and the protected quantity before simplifying the design. If the protected quantity survives every legal change, one test can rule out many possible designs at once.",
-            "This is the same reason deformation and invariants matter in the course: they separate harmless cleanup from a real change in the problem.",
-        ),
-        (
-            "Modeling choices",
-            "A model is useful only if it keeps the freedoms and restrictions that matter for the question.",
-            "Say what one state records, what has been left out, what has been forbidden, and what conclusion the model can honestly support.",
-            "Topology gives a plain audit for models: if the state space is wrong, the theorem may be correct while the answer describes the wrong world.",
-        ),
-        (
-            "Computing and networks",
-            "Search, routing, and network problems often depend on which paths are possible and which separations cannot be crossed.",
-            "Treat the possible choices as a space or graph, then look for connected regions, forced meetings, barriers, loops, and quantities that stay fixed under allowed changes.",
-            "The course's language helps here because it teaches the difference between a local option that looks open and a global obstruction that no local step can avoid.",
-        ),
-    ]
     application_html = "".join(
-        f"""<article class="card"><div class="meta">{esc(area)}</div><h3>{esc(problem)}</h3><p><b>Topological move:</b> {esc(move)}</p><p><b>Why this matters:</b> {esc(why)}</p></article>"""
-        for area, problem, move, why in application_rows
+        f"""<article class="card"><div class="meta">{esc(row['domain'])}</div><h3>{esc(row['plain_problem'])}</h3><p><b>Topological move:</b> {esc(row['topology_move'])}</p><p><b>Why this matters:</b> {esc(row['why_it_matters'])}</p><a class="arrow" href="application-spine.html">Open application spine</a></article>"""
+        for row in data["application_spine_rows"][:5]
     )
     lecture_spine = "".join(
         f"""<article class="card"><div class="meta">Lecture {l['lecture']:02d}</div><h3>{esc(l['deep']['title'])}</h3><p>{esc(l['deep']['connection'])}</p><a class="arrow" href="lecture-{l['lecture']:02d}.html">Open lecture</a></article>"""
@@ -6351,6 +6393,27 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 </section>
 """
     (SITE / "course-synthesis.html").write_text(page("Course Synthesis", deep_body, "Synthesis"), encoding="utf-8")
+
+    application_cards = "".join(
+        f"""<article class="card"><div class="meta">Application spine</div><h3>{esc(row['domain'])}</h3><p><b>Plain problem:</b> {esc(row['plain_problem'])}</p><p><b>Topology move:</b> {esc(row['topology_move'])}</p><p><b>Outside application:</b> {esc(row['outside_application'])}</p><p><b>Why it matters:</b> {esc(row['why_it_matters'])}</p><p><b>Wrong reading:</b> {esc(row['wrong_reading'])}</p><p><b>Reader test:</b> {esc(row['reader_test'])}</p><p>{concept_pills(row['concepts'], data['concepts'])}</p></article>"""
+        for row in data["application_spine_rows"]
+    )
+    application_body = f"""
+<h1>Application Spine</h1>
+<p class="lead">This page answers the plain question behind the whole course: why does topology matter outside the course examples? Each row starts from an everyday problem, names the topological move, then says what kind of outside claim the move can honestly support.</p>
+<section class="lecture">
+  <h2>How To Read An Application</h2>
+  <p>Do not begin by saying that topology appears everywhere. Begin with the problem that makes measurement, exact drawing, or direct computation insufficient. Then name the object, the allowed motion, the forbidden state, the protected fact, and the limited conclusion.</p>
+  <p>The outside field matters only after the translation is honest. A robot problem needs a real state space. A physics problem needs a rule or field on the right space. A network problem needs stated connection rules. A measurement problem needs an allowed change of viewpoint. Without that translation, the application is only a story.</p>
+</section>
+<div class="grid two">{application_cards}</div>
+<section class="lecture">
+  <h2>The Application Test</h2>
+  <p>A strong application answer has four parts. First, it says what one mathematical object represents in the outside field. Second, it says what changes are legal and what changes are forbidden. Third, it names the fact that survives those legal changes. Fourth, it states the limited payoff: existence, obstruction, reachability, consistency, or a protected total.</p>
+  <p>The answer is too strong if it claims to solve the whole outside problem. Topology may force a meeting, block a route, preserve a count, or expose a modeling error, but it usually does not give the full speed, cost, material design, control law, or numerical solution by itself.</p>
+</section>
+"""
+    (SITE / "application-spine.html").write_text(page("Application Spine", application_body, "Applications"), encoding="utf-8")
 
     dependency_cards = "".join(
         f"""<article class="card"><div class="meta">{esc(row['stage'])}</div><h3>{esc(row['plain'])}</h3><p><b>Understand first:</b> {concept_pills(row['before'], data['concepts'])}</p><p><b>Then read:</b> {concept_pills(row['after'], data['concepts'])}</p><p><b>Why this dependency matters:</b> {esc(row['why'])}</p><p><b>Reader check:</b> {esc(row['reader_check'])}</p></article>"""
@@ -7303,6 +7366,7 @@ def main():
         "lecture_reconstruction_drills": lecture_reconstruction_drills,
         "source_nuance_repairs": SOURCE_NUANCE_REPAIRS,
         "concept_dependencies": CONCEPT_DEPENDENCIES,
+        "application_spine_rows": normalize_practice_rows(APPLICATION_SPINE_ROWS),
         "transfer_lab_cases": normalize_practice_rows(TRANSFER_LAB_CASES),
         "repair_clinic_cases": normalize_practice_rows(REPAIR_CLINIC_CASES),
         "oral_exam_prompts": normalize_practice_rows(ORAL_EXAM_PROMPTS),
@@ -7346,6 +7410,7 @@ def main():
     write_json(ANALYSIS / "lecture-reconstruction-drills.json", lecture_reconstruction_drills)
     write_json(ANALYSIS / "source-nuance-repairs.json", SOURCE_NUANCE_REPAIRS)
     write_json(ANALYSIS / "concept-dependencies.json", CONCEPT_DEPENDENCIES)
+    write_json(ANALYSIS / "application-spine.json", data["application_spine_rows"])
     write_json(ANALYSIS / "transfer-lab.json", data["transfer_lab_cases"])
     write_json(ANALYSIS / "repair-clinic.json", data["repair_clinic_cases"])
     write_json(ANALYSIS / "oral-exam.json", data["oral_exam_prompts"])
@@ -7410,6 +7475,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {metrics['family_answer_guide_words']} method-family answer-guide words showing what a strong method explanation must include
 - math-playground.html with four interactive first-principles canvas widgets
 - course-synthesis.html with the full dependency spine, proof-family synthesis, and applications beyond topology
+- application-spine.html with {metrics['application_spine_rows']} outside-field application rows and {metrics['application_spine_words']} application-spine words
 - the-math-why.html with {metrics['math_why_words']} central first-principles words explaining why the course matters
 - concept-dependencies.html with {metrics['dependency_paths']} prerequisite paths linking early ideas to later theorem-level ideas
 - transfer-lab.html with {metrics['transfer_lab_cases']} everyday transfer cases and {metrics['transfer_lab_words']} transfer words
@@ -7430,7 +7496,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

@@ -383,6 +383,27 @@ def main():
             if len(words(row.get(field))) < 8:
                 fail(f"concept dependency {row.get('stage')} {field} too thin")
 
+    application_spine_rows = data.get("application_spine_rows") or []
+    required_application_domains = {
+        "Physics and motion",
+        "Robotics and mechanisms",
+        "Engineering constraints",
+        "Modeling choices",
+        "Computing and networks",
+        "Scientific measurement",
+    }
+    if {row.get("domain") for row in application_spine_rows} != required_application_domains:
+        fail("application spine rows do not match required domain set")
+    for row in application_spine_rows:
+        for field in ["plain_problem", "topology_move", "outside_application", "why_it_matters", "wrong_reading", "reader_test"]:
+            if len(words(row.get(field))) < 30:
+                fail(f"application spine {row.get('domain')} {field} too thin")
+        if len(row.get("concepts") or []) < 3:
+            fail(f"application spine {row.get('domain')} needs concept links")
+        missing = sorted(set(row.get("concepts") or []) - concept_ids)
+        if missing:
+            fail(f"application spine {row.get('domain')} unknown concepts: {missing}")
+
     transfer_lab_cases = data.get("transfer_lab_cases") or []
     required_transfer_titles = {
         "Rubber band around a mug handle",
@@ -733,7 +754,7 @@ def main():
     if len(html_files) < 65:
         fail(f"expected at least 65 html pages after reader-checks pass, got {len(html_files)}")
     names = {p.name for p in html_files}
-    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "change-ledger.html", "assumption-ledger.html", "counterexample-gallery.html", "weak-claim-repairs.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "paper-family-ledger.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
+    for page in ["index.html", "videos.html", "lectures.html", "lecture-spine.html", "concepts.html", "themes.html", "subthemes.html", "families.html", "the-math-why.html", "math-playground.html", "course-synthesis.html", "application-spine.html", "concept-dependencies.html", "transfer-lab.html", "repair-clinic.html", "oral-exam.html", "change-ledger.html", "assumption-ledger.html", "counterexample-gallery.html", "weak-claim-repairs.html", "proof-moves.html", "formula-reader.html", "theorem-use-contracts.html", "concept-contrasts.html", "reader-checks.html", "term-translator.html", "paper-source-reader.html", "paper-family-ledger.html", "lecture-source-bridges.html", "lecture-reconstruction-drills.html", "source-nuance-repairs.html", "references.html", "quality-rubric.html", "rubric-coverage.html", "quality-audit.html", "source-audit.html"]:
         if page not in names:
             fail(f"missing site page {page}")
     playground = SITE / "math-playground.html"
@@ -756,6 +777,14 @@ def main():
         fail("course synthesis needs dependency, family, and lecture cards")
     if len(words(re.sub(r"<[^>]+>", " ", deep_dive))) < 1400:
         fail("course synthesis too thin")
+    application_page = (SITE / "application-spine.html").read_text(encoding="utf-8", errors="ignore")
+    for phrase in ["Application Spine", "How To Read An Application", "The Application Test", "Physics and motion", "Robotics and mechanisms", "Engineering constraints", "Modeling choices", "Computing and networks", "Scientific measurement"]:
+        if phrase not in application_page:
+            fail(f"application spine page missing phrase: {phrase}")
+    if application_page.count("<article") < 6:
+        fail("application spine page needs six application cards")
+    if len(words(re.sub(r"<[^>]+>", " ", application_page))) < 1200:
+        fail("application spine page too thin")
     dependency_page = (SITE / "concept-dependencies.html").read_text(encoding="utf-8", errors="ignore")
     for phrase in ["Concept Dependencies", "Understand first", "Then read", "Why this dependency matters", "Reader check"]:
         if phrase not in dependency_page:

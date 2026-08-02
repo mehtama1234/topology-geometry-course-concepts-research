@@ -92,6 +92,11 @@
       "status": "met"
     },
     {
+      "requirement": "Application spine beyond topology",
+      "evidence": "6 application-spine rows explain why topology matters in outside fields by naming the plain problem, topological move, outside use, honest payoff, wrong reading, and reader test. The 1663 application words keep applications tied to first principles rather than loose comparisons.",
+      "status": "met"
+    },
+    {
       "requirement": "First-principles transfer lab",
       "evidence": "8 transfer cases ask the reader to move the course habit into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 2022 transfer words test whether the mathematics has become a usable way to think.",
       "status": "met"
@@ -215,6 +220,8 @@
     "playground_widgets": 4,
     "synthesis_sections": 9,
     "dependency_paths": 8,
+    "application_spine_rows": 6,
+    "application_spine_words": 1663,
     "transfer_lab_cases": 8,
     "transfer_lab_words": 2022,
     "repair_clinic_cases": 8,
