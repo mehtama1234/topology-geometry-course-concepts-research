@@ -174,6 +174,10 @@ def main():
         for field in ["notices", "ignores", "changes_problem", "reader_test"]:
             if len(words(lens.get(field))) < 25:
                 fail(f"theme {theme['id']} lens {field} too thin")
+        application = theme.get("application") or {}
+        for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]:
+            if len(words(application.get(field))) < 40:
+                fail(f"theme {theme['id']} application {field} too thin")
         answer_guide = theme.get("answer_guide") or {}
         for field in ["notice_answer", "ignore_answer", "transfer_answer", "test_answer"]:
             if len(words(answer_guide.get(field))) < 40:
@@ -199,6 +203,10 @@ def main():
         for field in ["course_moment", "thinking_shift", "reader_test"]:
             if len(words(bridge.get(field))) < 25:
                 fail(f"subtheme {subtheme['id']} bridge {field} too thin")
+        application = subtheme.get("application") or {}
+        for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]:
+            if len(words(application.get(field))) < 40:
+                fail(f"subtheme {subtheme['id']} application {field} too thin")
         answer_guide = subtheme.get("answer_guide") or {}
         for field in ["look_answer", "ask_answer", "use_answer", "mistake_answer"]:
             if len(words(answer_guide.get(field))) < 40:
@@ -1042,7 +1050,7 @@ def main():
         if theme_name not in names:
             fail(f"missing theme page {theme['id']}")
         theme_html = (SITE / theme_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Theme Lens", "Notices:", "Ignores:", "Changes the problem:", "Reader test:", "Can You Carry The Theme?", "Notice answer:", "Ignore answer:", "Transfer answer:", "Test answer:"]:
+        for phrase in ["Theme Lens", "Notices:", "Ignores:", "Changes the problem:", "Reader test:", "Why This Theme Matters Beyond The Course", "Outside problem:", "Course habit:", "Where it matters:", "Honest limit:", "Can You Carry The Theme?", "Notice answer:", "Ignore answer:", "Transfer answer:", "Test answer:"]:
             if phrase not in theme_html:
                 fail(f"theme page missing lens phrase {phrase}: {theme_name}")
     for subtheme in data["subthemes"]:
@@ -1050,7 +1058,7 @@ def main():
         if subtheme_name not in names:
             fail(f"missing subtheme page {subtheme['id']}")
         subtheme_html = (SITE / subtheme_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["First-Principles Bridge", "Course moment:", "Thinking shift:", "Reader test:", "Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:", "Can You Apply The Routine?", "Look answer:", "Ask answer:", "Use answer:", "Mistake answer:"]:
+        for phrase in ["First-Principles Bridge", "Course moment:", "Thinking shift:", "Reader test:", "Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:", "Why This Subtheme Matters Beyond The Course", "Outside problem:", "Course habit:", "Where it matters:", "Honest limit:", "Can You Apply The Routine?", "Look answer:", "Ask answer:", "Use answer:", "Mistake answer:"]:
             if phrase not in subtheme_html:
                 fail(f"subtheme page missing subtheme phrase {phrase}: {subtheme_name}")
     for family in data["families"]:

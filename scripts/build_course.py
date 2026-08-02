@@ -5598,6 +5598,55 @@ def build_theme_answer_guide(theme):
     }
 
 
+def build_theme_application(theme):
+    title = theme["title"]
+    depth = theme["depth"]
+    lens = theme["lens"]
+    return {
+        "outside_problem": (
+            f"Outside the course, the theme called {title} matters when a person faces a situation where the first visible description is too detailed, too local, or too accidental to answer the real question. "
+            f"The theme starts from this course problem: {depth['problem']} In another field, the same need appears when the reader must decide what to keep, what to ignore, and what kind of conclusion the structure can honestly support."
+        ),
+        "course_habit": (
+            f"The habit to carry is this: {depth['habit']} The theme lens states the same habit as a reader action: {lens['reader_test']} "
+            f"That is the application bridge. Do not ask whether the outside example looks like a Mobius strip, graph, field, or surface; ask whether it needs the same object, move, protected fact, and failure check."
+        ),
+        "where_it_matters": (
+            f"This matters in modeling, design, motion, measurement, networks, and physical reasoning because those fields also need claims that survive a change of view, drawing, state, or local detail. "
+            f"The theme helps a reader turn an outside story into a testable question: what is allowed to change, what remains accountable, and what would make the answer stop applying?"
+        ),
+        "honest_limit": (
+            f"The limit is that {title} is a habit of reasoning, not a complete outside-field solution. "
+            f"The important detail remains: {depth['important_detail']} If that detail is not checked, the page may sound broad while proving too much. The theme can force a limited conclusion only after the outside problem pays the same modeling and evidence debt."
+        ),
+    }
+
+
+def build_subtheme_application(subtheme):
+    title = subtheme["title"]
+    depth = subtheme["depth"]
+    routine = subtheme["routine"]
+    bridge = subtheme["bridge"]
+    return {
+        "outside_problem": (
+            f"Outside the course, the subtheme called {title} matters when a practical problem needs this smaller check before a larger claim can be trusted: {depth['problem']} "
+            f"The outside setting may be a mechanism, map, material, data-shaped model, path problem, or field, but the first-principles need is the same: identify the condition that makes the reasoning valid."
+        ),
+        "course_habit": (
+            f"The habit to carry is the reading routine. Look for this: {routine['look_for']} Then ask this: {routine['ask']} "
+            f"Those two sentences turn the subtheme into an application tool, because they tell the reader exactly what to inspect before moving from a course example to an outside use."
+        ),
+        "where_it_matters": (
+            f"This matters beyond topology when an outside problem depends on the same shift named in the bridge: {bridge['thinking_shift']} "
+            f"That shift can protect a design claim, a route claim, a state-space model, a signed count, or a local-to-global conclusion from becoming a loose analogy."
+        ),
+        "honest_limit": (
+            f"The limit is that {title} does not make an outside claim true by itself. "
+            f"The common failure remains: {routine['mistake']} A correct application must restore the missing condition, state what the subtheme permits or forbids, and stop at the conclusion that condition can support."
+        ),
+    }
+
+
 def build_subtheme_answer_guide(subtheme):
     routine = subtheme["routine"]
     bridge = subtheme["bridge"]
@@ -5942,10 +5991,12 @@ def build_quality_audit(data):
     concept_self_check_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", c["self_check"][field])) for field in ["object_check", "operation_check", "protected_check", "failure_check"]) for c in data["concepts"])
     theme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in t["essay"]) for t in data["themes"])
     theme_lens_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", t["lens"][field])) for field in ["notices", "ignores", "changes_problem", "reader_test"]) for t in data["themes"])
+    theme_application_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", t["application"][field])) for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]) for t in data["themes"])
     theme_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", t["answer_guide"][field])) for field in ["notice_answer", "ignore_answer", "transfer_answer", "test_answer"]) for t in data["themes"])
     subtheme_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in s["essay"]) for s in data["subthemes"])
     subtheme_routine_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", s["routine"][field])) for field in ["look_for", "ask", "use", "mistake"]) for s in data["subthemes"])
     subtheme_bridge_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", s["bridge"][field])) for field in ["course_moment", "thinking_shift", "reader_test"]) for s in data["subthemes"])
+    subtheme_application_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", s["application"][field])) for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]) for s in data["subthemes"])
     subtheme_answer_guide_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", s["answer_guide"][field])) for field in ["look_answer", "ask_answer", "use_answer", "mistake_answer"]) for s in data["subthemes"])
     family_essay_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", p)) for p in f["essay"]) for f in data["families"])
     family_contract_words = sum(sum(len(re.findall(r"[A-Za-z0-9']+", f["contract"][field])) for field in ["input", "action", "evidence", "output", "failure_test"]) for f in data["families"])
@@ -6015,7 +6066,7 @@ def build_quality_audit(data):
         },
         {
             "requirement": "Hand-written concepts, themes, subthemes, and method families",
-            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples, outside-application checks, and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add {theme_answer_guide_words + subtheme_answer_guide_words + family_answer_guide_words} words, and concept applications add {concept_application_words} words.",
+            "evidence": f"{stats['concepts']} concepts, {stats['themes']} themes, {stats['subthemes']} subthemes, and {stats['families']} method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples, outside-application checks, and self-checks; theme and subtheme pages now add {theme_application_words + subtheme_application_words} application words; method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add {theme_answer_guide_words + subtheme_answer_guide_words + family_answer_guide_words} words, and concept applications add {concept_application_words} words.",
             "status": "met",
         },
         {
@@ -6178,10 +6229,12 @@ def build_quality_audit(data):
             "concept_self_check_words": concept_self_check_words,
             "theme_essay_words": theme_essay_words,
             "theme_lens_words": theme_lens_words,
+            "theme_application_words": theme_application_words,
             "theme_answer_guide_words": theme_answer_guide_words,
             "subtheme_essay_words": subtheme_essay_words,
             "subtheme_routine_words": subtheme_routine_words,
             "subtheme_bridge_words": subtheme_bridge_words,
+            "subtheme_application_words": subtheme_application_words,
             "subtheme_answer_guide_words": subtheme_answer_guide_words,
             "family_essay_words": family_essay_words,
             "family_contract_words": family_contract_words,
@@ -6246,7 +6299,7 @@ def quality_metric_cards(metrics):
         {
             "title": "Concept And Course Map",
             "meta": "ideas across pages",
-            "text": f"The concept layer has {metrics['concept_essay_words']} essay words, {metrics['concept_workup_words']} workup words, {metrics['concept_anchor_words']} anchor words, {metrics['concept_application_words']} outside-application words, and {metrics['concept_self_check_words']} self-check words. Every concept links back to course appearances, with {metrics['concept_appearances_min']} to {metrics['concept_appearances_max']} examples per concept, so ideas are tested against lecture moments rather than floating as glossary entries.",
+            "text": f"The concept layer has {metrics['concept_essay_words']} essay words, {metrics['concept_workup_words']} workup words, {metrics['concept_anchor_words']} anchor words, {metrics['concept_application_words']} outside-application words, and {metrics['concept_self_check_words']} self-check words. Theme and subtheme pages add {metrics['theme_application_words'] + metrics['subtheme_application_words']} application words for course habits. Every concept links back to course appearances, with {metrics['concept_appearances_min']} to {metrics['concept_appearances_max']} examples per concept, so ideas are tested against lecture moments rather than floating as glossary entries.",
         },
         {
             "title": "Practice And Repair",
@@ -7277,7 +7330,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         lecture_links = "".join(f'<a class="pill" href="lecture-{n:02d}.html">Lecture {n:02d}</a>' for n in t["depth"]["lectures"])
         lens = t["lens"]
         answer = t["answer_guide"]
-        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class="lecture"><h2>Theme Essay</h2>{paragraph_block(t['essay'])}</section><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><section class="lecture"><h2>Theme Lens</h2><p><b>Notices:</b> {esc(lens['notices'])}</p><p><b>Ignores:</b> {esc(lens['ignores'])}</p><p><b>Changes the problem:</b> {esc(lens['changes_problem'])}</p><p><b>Reader test:</b> {esc(lens['reader_test'])}</p></section><section class="lecture"><h2>Can You Carry The Theme?</h2><p><b>Notice answer:</b> {esc(answer['notice_answer'])}</p><p><b>Ignore answer:</b> {esc(answer['ignore_answer'])}</p><p><b>Transfer answer:</b> {esc(answer['transfer_answer'])}</p><p><b>Test answer:</b> {esc(answer['test_answer'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        application = t["application"]
+        body = f"""<h1>{esc(t['title'])}</h1><p class='lead'>{esc(t['depth']['problem'])}</p><section class="lecture"><h2>Theme Essay</h2>{paragraph_block(t['essay'])}</section><section class='panel'><h2>The Habit</h2><p>{esc(t['depth']['habit'])}</p><h2>Course Arc</h2><p>{esc(t['depth']['course_arc'])}</p><h2>Important Detail</h2><p>{esc(t['depth']['important_detail'])}</p><h2>Why The Math Matters</h2><p>{esc(t['why_math_matters'])}</p></section><section class="lecture"><h2>Theme Lens</h2><p><b>Notices:</b> {esc(lens['notices'])}</p><p><b>Ignores:</b> {esc(lens['ignores'])}</p><p><b>Changes the problem:</b> {esc(lens['changes_problem'])}</p><p><b>Reader test:</b> {esc(lens['reader_test'])}</p></section><section class="lecture"><h2>Why This Theme Matters Beyond The Course</h2><p><b>Outside problem:</b> {esc(application['outside_problem'])}</p><p><b>Course habit:</b> {esc(application['course_habit'])}</p><p><b>Where it matters:</b> {esc(application['where_it_matters'])}</p><p><b>Honest limit:</b> {esc(application['honest_limit'])}</p></section><section class="lecture"><h2>Can You Carry The Theme?</h2><p><b>Notice answer:</b> {esc(answer['notice_answer'])}</p><p><b>Ignore answer:</b> {esc(answer['ignore_answer'])}</p><p><b>Transfer answer:</b> {esc(answer['transfer_answer'])}</p><p><b>Test answer:</b> {esc(answer['test_answer'])}</p></section><h2>Lecture Thread</h2><p>{lecture_links}</p><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("theme", t["id"])).write_text(page(t["title"], body, "Themes"), encoding="utf-8")
 
     body = "<h1>Subthemes</h1><p class='lead'>Subthemes are the smaller recurring moves inside the larger course habits: the contracts, counts, signs, boundaries, and modeling choices that make the arguments work.</p><div class='grid'>" + "".join(card(s["title"], s["depth"]["problem"], slug_page("subtheme", s["id"]), "Subtheme") for s in data["subthemes"]) + "</div>"
@@ -7287,7 +7341,8 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         routine = s["routine"]
         bridge = s["bridge"]
         answer = s["answer_guide"]
-        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class="lecture"><h2>Subtheme Essay</h2>{paragraph_block(s['essay'])}</section><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><section class="lecture"><h2>First-Principles Bridge</h2><p><b>Course moment:</b> {esc(bridge['course_moment'])}</p><p><b>Thinking shift:</b> {esc(bridge['thinking_shift'])}</p><p><b>Reader test:</b> {esc(bridge['reader_test'])}</p></section><section class="lecture"><h2>Reading Routine</h2><p><b>Look for:</b> {esc(routine['look_for'])}</p><p><b>Ask:</b> {esc(routine['ask'])}</p><p><b>Use:</b> {esc(routine['use'])}</p><p><b>Mistake:</b> {esc(routine['mistake'])}</p></section><section class="lecture"><h2>Can You Apply The Routine?</h2><p><b>Look answer:</b> {esc(answer['look_answer'])}</p><p><b>Ask answer:</b> {esc(answer['ask_answer'])}</p><p><b>Use answer:</b> {esc(answer['use_answer'])}</p><p><b>Mistake answer:</b> {esc(answer['mistake_answer'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
+        application = s["application"]
+        body = f"""<h1>{esc(s['title'])}</h1><p class='lead'>{esc(s['depth']['problem'])}</p><section class="lecture"><h2>Subtheme Essay</h2>{paragraph_block(s['essay'])}</section><section class='panel'><h2>First Principles</h2><p>{esc(s['depth']['first_principles'])}</p><h2>Course Role</h2><p>{esc(s['depth']['course_role'])}</p></section><section class="lecture"><h2>First-Principles Bridge</h2><p><b>Course moment:</b> {esc(bridge['course_moment'])}</p><p><b>Thinking shift:</b> {esc(bridge['thinking_shift'])}</p><p><b>Reader test:</b> {esc(bridge['reader_test'])}</p></section><section class="lecture"><h2>Reading Routine</h2><p><b>Look for:</b> {esc(routine['look_for'])}</p><p><b>Ask:</b> {esc(routine['ask'])}</p><p><b>Use:</b> {esc(routine['use'])}</p><p><b>Mistake:</b> {esc(routine['mistake'])}</p></section><section class="lecture"><h2>Why This Subtheme Matters Beyond The Course</h2><p><b>Outside problem:</b> {esc(application['outside_problem'])}</p><p><b>Course habit:</b> {esc(application['course_habit'])}</p><p><b>Where it matters:</b> {esc(application['where_it_matters'])}</p><p><b>Honest limit:</b> {esc(application['honest_limit'])}</p></section><section class="lecture"><h2>Can You Apply The Routine?</h2><p><b>Look answer:</b> {esc(answer['look_answer'])}</p><p><b>Ask answer:</b> {esc(answer['ask_answer'])}</p><p><b>Use answer:</b> {esc(answer['use_answer'])}</p><p><b>Mistake answer:</b> {esc(answer['mistake_answer'])}</p></section><h2>Related Concepts</h2><div class='grid'>{''.join(card(c['title'], c['depth']['why_it_exists'], slug_page('concept', c['id']), 'Concept') for c in related)}</div>"""
         (SITE / slug_page("subtheme", s["id"])).write_text(page(s["title"], body, "Subthemes"), encoding="utf-8")
 
     body = "<h1>Method Families</h1><p class='lead'>Method families explain how the course turns pictures into reasons. They are the reusable proof moves beneath the lectures.</p><div class='grid two'>" + "".join(card(f["title"], f["depth"]["human_problem"], slug_page("family", f["id"]), f["purpose"]) for f in data["families"]) + "</div>"
@@ -7431,11 +7486,13 @@ def main():
         enriched["depth"] = THEME_DEPTH[theme["id"]]
         enriched["essay"] = THEME_ESSAYS[theme["id"]]
         enriched["lens"] = THEME_LENSES[theme["id"]]
+        enriched["application"] = build_theme_application(enriched)
         enriched["answer_guide"] = build_theme_answer_guide(enriched)
         themes.append(enriched)
     subthemes = []
     for i, t, p in SUBTHEMES:
         subtheme = {"id": i, "title": t, "plain": p, "depth": SUBTHEME_DEPTH[i], "essay": SUBTHEME_ESSAYS[i], "routine": SUBTHEME_ROUTINES[i], "bridge": SUBTHEME_BRIDGES[i]}
+        subtheme["application"] = build_subtheme_application(subtheme)
         subtheme["answer_guide"] = build_subtheme_answer_guide(subtheme)
         subthemes.append(subtheme)
     concepts = []
@@ -7587,10 +7644,12 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {metrics['concept_self_check_words']} concept self-check words showing what a complete concept explanation must include for the object, operation, protected fact, and failure condition
 - 6 expanded course theme pages with problem, habit, course-arc, and important-detail sections
 - {metrics['theme_lens_words']} theme lens words across notices, ignores, problem-change, and reader-test fields
+- {metrics['theme_application_words']} theme application words explaining why each course habit matters beyond the course and what limit remains
 - {metrics['theme_answer_guide_words']} theme answer-guide words showing how to carry a theme across lectures
 - 10 expanded subtheme pages with essay, first-principles, and course-role sections
 - {metrics['subtheme_routine_words']} subtheme routine words across look-for, ask, use, and mistake fields
 - {metrics['subtheme_bridge_words']} subtheme bridge words across course-moment, thinking-shift, and reader-test fields
+- {metrics['subtheme_application_words']} subtheme application words explaining where each smaller routine matters outside topology and what false transfer to avoid
 - {metrics['subtheme_answer_guide_words']} subtheme answer-guide words showing how to apply the routine on a real page
 - 5 expanded method-family pages with essay, human-problem, how-it-works, examples, and failure-mode sections
 - {metrics['family_contract_words']} method-contract words across input, action, protected-evidence, output, and failure-test fields
@@ -7619,7 +7678,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept application field to clear 30 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept application field to clear 30 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme lens field to clear 25 words, every theme application field to clear 40 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme application field to clear 40 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
