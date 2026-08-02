@@ -351,7 +351,7 @@ def main():
             fail(f"lecture {lecture['lecture']} source lens too thin")
         source_checkpoint = deep.get("source_checkpoint") or {}
         for field in ["trust", "do_not_overread", "math_question"]:
-            if len(words(source_checkpoint.get(field))) < 25:
+            if len(words(source_checkpoint.get(field))) < 85:
                 fail(f"lecture {lecture['lecture']} source checkpoint {field} too thin")
         source_faithfulness = deep.get("source_faithfulness") or {}
         for field in ["caption_support", "course_inference", "caveat"]:
@@ -361,7 +361,7 @@ def main():
         if len(nuance.get("terms") or []) < 4:
             fail(f"lecture {lecture['lecture']} caption nuance needs four terms")
         for field in ["risk", "safe_reading", "verify_question"]:
-            if len(words(nuance.get(field))) < 25:
+            if len(words(nuance.get(field))) < 85:
                 fail(f"lecture {lecture['lecture']} caption nuance {field} too thin")
         walkthrough = deep.get("walkthrough") or {}
         for field in ["start_here", "payoff", "reader_check"]:
