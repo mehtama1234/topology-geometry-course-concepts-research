@@ -1819,8 +1819,8 @@ SUBTHEME_ROUTINES = {
     },
     "models-not-labels": {
         "look_for": "Look for the work a term performs: what object it names, what move it permits, what count it protects, what model it builds, or what conclusion it supports. A term should do work in the argument.",
-        "ask": "Ask whether the name has been translated into an everyday action before it is used in an argument. If not, the reader has only a label and cannot tell what would break if the term were removed.",
-        "use": "Use this routine whenever a page introduces a formal word. The word earns its place only by helping solve the problem, build the object, protect evidence, or limit the conclusion to what the model can support.",
+        "ask": "Ask whether the name has been translated into an everyday action before it is used in an argument. If not, the term is still detached from the object, move, count, or model condition that would make it useful.",
+        "use": "Use this routine whenever a page introduces a formal word. The word matters only by helping solve the problem, build the object, protect evidence, or limit the conclusion to what the model can support.",
         "mistake": "The mistake is collecting labels while missing the model. Knowing a term's name is not the same as knowing what it lets the proof do or what claim it prevents the page from overmaking.",
     },
 }
@@ -5215,27 +5215,27 @@ def build_subtheme_answer_guide(subtheme):
     use = plain_fragment(routine["use"], ["Use this routine whenever", "Use this routine before", "Use this routine when", "Use singular moments as", "Use"])
     mistake = sentence_fragment(plain_fragment(routine["mistake"], ["The mistake is", "The common wrong turn is"]))
     look_close = varied((sid, "look-close"), [
-        f"Point to the exact feature that changes the argument, not only the subtheme name.",
+        f"Point to the exact feature that changes the argument: the subtheme name is not evidence by itself.",
         f"That keeps {title} tied to evidence the lecture actually supplies: a boundary, sign, route, count, failure point, or state-space rule.",
         f"The boundary, sign, route, count, defect, or state-space rule has to appear before the subtheme name can carry weight.",
         f"The named detail has to carry work: protect a count, license a move, mark a boundary, or expose the point where the claim could fail.",
     ])
     ask_close = varied((sid, "ask-close"), [
-        f"The subtheme becomes an inspection of the proof itself.",
-        f"The question sends the reader back to the object, move, protected fact, or model instead of letting the title stand in for understanding.",
-        f"This is where the page has to settle the uncertainty: what is allowed, what survives, what is counted, or what is modeled.",
-        f"Expose the hidden rule or evidence that makes {title} necessary on this page.",
+        f"The answer has to inspect the proof itself.",
+        f"The question returns to the object, move, protected fact, or model instead of letting the title stand in for understanding.",
+        f"The uncertainty is concrete: what is allowed, what survives, what is counted, or what is modeled.",
+        f"Expose the hidden rule or evidence that makes {title} necessary here.",
     ])
     use_close = varied((sid, "use-close"), [
         f"The explanation has to name the specific problem {title} helps solve in the argument.",
-        f"The routine changes the account of the argument: what is now ruled out, forced, protected, or modeled.",
-        f"If the routine does not change what the reader checks on the page, the subtheme is only a label.",
-        f"{title} is doing real work only when it turns the live claim into a checkable object, move, protected fact, or model condition.",
+        f"The account has to say what is now ruled out, forced, protected, or modeled.",
+        f"If the check does not change the argument, the subtheme has only renamed the page.",
+        f"{title} matters when it turns the live claim into a checkable object, move, protected fact, or model condition.",
     ])
     mistake_close = varied((sid, "mistake-close"), [
         f"The repair must return to the missing object, move, count, sign rule, boundary condition, or model.",
         f"The correction is practical: return to the object, move, evidence, or model that the {title} mistake skipped.",
-        f"The reader test has to expose the false shortcut and the exact condition it skipped.",
+        f"The test has to expose the false shortcut and the exact condition it skipped.",
         f"Repair the explanation by naming the condition {title} needs before it can support the conclusion.",
     ])
     look_prompt = varied((sid, "look-answer-prompt"), [
@@ -5251,46 +5251,46 @@ def build_subtheme_answer_guide(subtheme):
     ask_prompt = varied((sid, "ask-answer-prompt"), [
         f"Ask the {title} question in plain words: {ask} The thinking shift is this: {bridge['thinking_shift']} {ask_close}",
         f"Once the feature is found, ask what it changes: {ask} That question produces this shift: {bridge['thinking_shift']} {ask_close}",
-        f"Turn the feature into a question, not a label: {ask} The point of the question is: {bridge['thinking_shift']} {ask_close}",
+        f"Turn the feature into a question, not a label: {ask} The point is: {bridge['thinking_shift']} {ask_close}",
         f"Use the question to test the argument: {ask} It moves the explanation this way: {bridge['thinking_shift']} {ask_close}",
         f"Ask what the located feature changes in the proof: {ask} The thinking shift is: {bridge['thinking_shift']} {ask_close}",
         f"Answer the working question: {ask} That answer creates this shift: {bridge['thinking_shift']} {ask_close}",
         f"Convert the subtheme into a checkable question: {ask} The resulting shift is: {bridge['thinking_shift']} {ask_close}",
-        f"Use the question to expose the proof obligation: {ask} Move toward this shift: {bridge['thinking_shift']} {ask_close}",
+        f"Use the question to expose the missing condition: {ask} Move toward this shift: {bridge['thinking_shift']} {ask_close}",
     ])
     use_prompt = varied((sid, "use-answer-prompt"), [
         f"Use {title} in this setting: {use} The first-principles reason is: {depth['first_principles']} {use_close}",
-        f"Apply {title} only where it changes the reading task: {use} The reason from first principles is: {depth['first_principles']} {use_close}",
+        f"Apply {title} only where it changes the argument: {use} The reason from first principles is: {depth['first_principles']} {use_close}",
         f"Put {title} to work here: {use} The plain reason underneath is: {depth['first_principles']} {use_close}",
-        f"Run the routine when the page needs this job done: {use} The first-principles account is: {depth['first_principles']} {use_close}",
+        f"Use this check when the page needs this job done: {use} The first-principles account is: {depth['first_principles']} {use_close}",
         f"Bring in {title} only for this job: {use} The first-principles account is: {depth['first_principles']} {use_close}",
         f"Let {title} do this specific work: {use} The reason from first principles is: {depth['first_principles']} {use_close}",
-        f"Use the routine as a tool for this case: {use} The plain reason underneath is: {depth['first_principles']} {use_close}",
-        f"Apply the routine where this check is missing: {use} The first-principles reason is: {depth['first_principles']} {use_close}",
+        f"Use this tool for this case: {use} The plain reason underneath is: {depth['first_principles']} {use_close}",
+        f"Apply the check where this condition is missing: {use} The first-principles reason is: {depth['first_principles']} {use_close}",
     ])
     mistake_prompt = varied((sid, "mistake-answer-prompt"), [
         f"Name the {title} mistake directly: {mistake} Then answer the reader test: {bridge['reader_test']} {mistake_close}",
         f"Name the false shortcut before accepting the routine: {mistake} The reader test is: {bridge['reader_test']} {mistake_close}",
-        f"Say what bad reading {title} prevents: {mistake} Then use the reader test: {bridge['reader_test']} {mistake_close}",
+        f"Say what false reading {title} prevents: {mistake} Then use the test: {bridge['reader_test']} {mistake_close}",
         f"End with the failure mode: {mistake} The check on that failure is: {bridge['reader_test']} {mistake_close}",
     ])
     look_intro = varied((sid, "look-answer-intro"), [
-        f"{title} starts with a visible job.",
+        f"{title} starts with visible evidence.",
         f"Start {title} from the evidence on the page.",
-        f"The first move for {title} is inspection.",
-        f"{title} has to attach to a concrete feature.",
+        f"First inspect the evidence for {title}.",
+        f"{title} attaches to a concrete feature.",
     ])
     ask_intro = varied((sid, "ask-answer-intro"), [
         f"The question behind {title} is practical.",
         f"{title} becomes useful when it asks a testable question.",
-        f"Turn {title} into a proof obligation.",
-        f"The page has to make {title} answer a live uncertainty.",
+        f"Turn {title} into a condition check.",
+        f"{title} has to answer a live uncertainty.",
     ])
     use_intro = varied((sid, "use-answer-intro"), [
-        f"Use {title} only where it changes the reading task.",
-        f"{title} earns its place when it changes what gets checked.",
-        f"The routine belongs where {title} does work.",
-        f"Bring in {title} when the argument needs this exact repair.",
+        f"Use {title} only where it changes the argument.",
+        f"{title} matters when it changes what gets checked.",
+        f"Use {title} where the argument needs this kind of evidence.",
+        f"Bring in {title} when the argument needs this exact condition.",
     ])
     mistake_intro = varied((sid, "mistake-answer-intro"), [
         f"{title} has a false shortcut that must be exposed first.",

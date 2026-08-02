@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 10743 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 10655 words.",
       "status": "met"
     },
     {
@@ -204,9 +204,9 @@
     "theme_lens_words": 923,
     "theme_answer_guide_words": 2856,
     "subtheme_essay_words": 3024,
-    "subtheme_routine_words": 1428,
+    "subtheme_routine_words": 1427,
     "subtheme_bridge_words": 1287,
-    "subtheme_answer_guide_words": 4668,
+    "subtheme_answer_guide_words": 4580,
     "family_essay_words": 1634,
     "family_contract_words": 1133,
     "family_playbook_words": 1086,
