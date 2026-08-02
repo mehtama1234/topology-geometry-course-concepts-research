@@ -340,7 +340,7 @@ def main():
                 fail(f"lecture {lecture['lecture']} deep {field} too thin")
         deepening = deep.get("deepening") or {}
         for field in ["what_is_really_happening", "why_it_is_hard", "key_move", "payoff"]:
-            if len(words(deepening.get(field))) < 30:
+            if len(words(deepening.get(field))) < 95:
                 fail(f"lecture {lecture['lecture']} deepening {field} too thin")
         if len(deep.get("anchors") or []) < 4:
             fail(f"lecture {lecture['lecture']} needs transcript anchors")
@@ -365,7 +365,7 @@ def main():
                 fail(f"lecture {lecture['lecture']} caption nuance {field} too thin")
         walkthrough = deep.get("walkthrough") or {}
         for field in ["start_here", "payoff", "reader_check"]:
-            if len(words(walkthrough.get(field))) < 40:
+            if len(words(walkthrough.get(field))) < 95:
                 fail(f"lecture {lecture['lecture']} walkthrough {field} too thin")
         application_bridge = deep.get("application_bridge") or {}
         for field in ["outside_problem", "topology_bridge", "protected_fact", "where_it_matters", "honest_limit"]:

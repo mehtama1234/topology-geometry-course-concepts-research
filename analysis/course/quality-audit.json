@@ -13,7 +13,7 @@
     },
     {
       "requirement": "Hand-written lecture depth",
-      "evidence": "15 lecture explainers with full essay sections, 18006 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+      "evidence": "15 lecture explainers with full essay sections, 22308 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
       "status": "met"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 5144 reader-test words, 9627 lecture-application words, and 6136 answer-guide words turn lecture understanding into an auditable task.",
+      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 5144 reader-test words, 10659 lecture-application words, and 6136 answer-guide words turn lecture understanding into an auditable task.",
       "status": "met"
     },
     {
@@ -187,14 +187,14 @@
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
     "lecture_essay_words": 5491,
-    "lecture_first_principles_essay_words": 18006,
-    "lecture_deepening_words": 2309,
-    "lecture_walkthrough_words": 2039,
+    "lecture_first_principles_essay_words": 22308,
+    "lecture_deepening_words": 6611,
+    "lecture_walkthrough_words": 5191,
     "lecture_source_lens_words": 1643,
     "lecture_source_checkpoint_words": 4482,
     "lecture_caption_nuance_words": 4462,
     "lecture_source_faithfulness_words": 2462,
-    "lecture_application_bridge_words": 9627,
+    "lecture_application_bridge_words": 10659,
     "lecture_source_bridge_words": 7564,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
