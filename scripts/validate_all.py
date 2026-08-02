@@ -29,6 +29,8 @@ FORBIDDEN = [
     "pretty",
     "simply",
     "zoo",
+    "big picture",
+    "big-picture",
 ]
 
 
@@ -608,7 +610,7 @@ def main():
         "Local behavior determines the whole surface",
         "The source supports this",
         "This is just an example of the concept",
-        "The big picture is about shape",
+        "Topology is only about shape",
     }
     if {row.get("title") for row in weak_claim_repair_rows} != required_weak_claim_titles:
         fail("weak claim repair rows do not match required case set")

@@ -592,7 +592,7 @@ def build_term_translations(rows):
             "This makes the term usable because the reader knows how to catch a false use in a new problem.",
             "The failure is practical: it shows how a model, drawing, count, theorem, or source can answer the wrong question.",
             "The reader leaves knowing which detail to inspect before trusting the term again.",
-            "The course uses these failures to make big-picture ideas exact without making the language heavier.",
+            "The course uses these failures to make broad ideas exact by naming the condition, evidence, and limit.",
             "In another field, the matching failure appears when the object, allowed change, or protected evidence has not been rebuilt.",
             "The repaired version says exactly what remains supported and what stronger sentence must stay unsaid.",
         ])
@@ -1718,7 +1718,7 @@ def build_oral_exam_prompts(rows):
             "Connect the topology case to one outside setting, such as motion, physical modeling, networks, or source reading, by naming the matching object and rule.",
             "The examiner is listening for a chain of reasons: what is present, what may change, what cannot change, and what follows.",
             "Make the explanation detailed enough that another reader could test it on a fresh example without copying the same words.",
-            "The prompt is meant to expose whether the big picture has become usable reasoning rather than remembered vocabulary.",
+            "The prompt is meant to expose whether the course-wide idea has become usable reasoning rather than remembered vocabulary.",
         ])
         strong_close = varied((title, "oral-strong-close"), [
             "The answer is strong when every formal word can be replaced by an everyday sentence that still explains the same work.",
@@ -1946,7 +1946,7 @@ def build_change_ledger_rows(rows):
             "The reader also has to say what stronger claim remains unearned: location, uniqueness, full motion, exact source wording, or a general rule for every case.",
             "This turns the ledger into a habit for reading new problems, not only a record of solved course examples.",
             "The same test applies outside topology when a model, picture, count, or source is being changed for convenience.",
-            "The test protects the big picture by forcing it to pass through one inspectable object and one named condition.",
+            "The test protects the broad claim by forcing it to pass through one inspectable object and one named condition.",
             "If the test cannot be answered, the page needs a narrower claim before the method is used.",
         ])
         new_row["object"] = (
@@ -2106,7 +2106,7 @@ def build_assumption_ledger_rows(rows):
             "The condition is the difference between understanding the method and repeating the method name.",
             "The same issue appears in applications when a physical model, data model, network, or source trail leaves out the condition that made the conclusion valid.",
             "The assumption protects the reader from using a good idea in a setting where its main support has disappeared.",
-            "This is why the ledger belongs near the big-picture pages: it explains what the big idea needs before it can do work.",
+            "This is why the ledger belongs near the broad course pages: it explains what the idea needs before it can do work.",
             "The course becomes easier to understand when every important claim carries its own failure boundary.",
             "A plain why sentence turns the assumption from a hidden technicality into the reason the argument can be trusted.",
             "The condition matters because it says which details are safe to ignore and which details are holding the proof together.",
@@ -2340,11 +2340,11 @@ WEAK_CLAIM_REPAIR_ROWS = [
         "concepts": ["topology-vs-geometry", "deformation", "invariant"],
     },
     {
-        "title": "The big picture is about shape",
-        "weak_claim": "The big picture is that topology studies shape and ignores geometry when solving these problems, regardless of which measured details, boundary rules, protected facts, or permitted changes still matter here.",
+        "title": "Topology is only about shape",
+        "weak_claim": "Topology studies only shape and ignores geometry when solving these problems, regardless of which measured details, boundary rules, protected facts, or permitted changes still matter here.",
         "why_weak": "The sentence is too broad and can mislead the reader into thinking size and angle never matter. The course is more precise: it chooses which facts survive a chosen class of changes. Geometry and topology are levels of evidence, not slogans in a contest.",
         "first_principles_repair": "Say the course studies questions where the important fact survives bending, redrawing, cutting into valid cells, or moving through allowed states. Geometry is not thrown away; it is kept when the question needs it and set aside when it distracts from the surviving fact. The repaired sentence names the protected fact, not only the word shape.",
-        "detail_to_check": "Ask what the current question protects: side information, boundary order, a count, a path obstruction, a self-agreement point, or a whole-surface total. If that protected fact is not named, the big-picture sentence is too broad to teach.",
+        "detail_to_check": "Ask what the current question protects: side information, boundary order, a count, a path obstruction, a self-agreement point, or a whole-surface total. If that protected fact is not named, the broad sentence is too vague to teach.",
         "where_to_use": "Use this repair on course-synthesis, math-why, topology-vs-geometry, themes, and first-viewport overview pages where summary language can overreach. It fits broad summaries that need explicit limits.",
         "concepts": ["topology-vs-geometry", "invariant", "manifold"],
     },
@@ -5133,7 +5133,7 @@ def build_lecture_spine(rows):
             "The row therefore explains why this lecture had to come before the later theorem, model, or application.",
             "A reader can use this line to see how an early paper-strip or drawing habit becomes a later existence or motion claim.",
             "This is also the bridge to outside fields: later applications borrow the habit only after rebuilding the same checks.",
-            "The line keeps the big picture detailed by saying exactly what later reasoning depends on.",
+            "The line keeps the course-wide reason detailed by saying exactly what later reasoning depends on.",
             "It also shows the limit of the lecture's payoff, so the reader knows what still needs future work.",
             "The lecture spine becomes a long essay in pieces: every row adds one reason the next row is possible.",
         ])
@@ -5171,7 +5171,7 @@ def build_lecture_spine(rows):
         ])
         later_finish = varied((lecture, "spine-later-finish"), [
             "That forward link explains why the lecture matters for topology and why the same habit can travel outside the course.",
-            "The later sentence keeps the big picture simple: one lecture earns a piece of evidence another lecture will need.",
+            "The later sentence keeps the course chain simple: one lecture earns a piece of evidence another lecture will need.",
             "It also names the application boundary, because the later use must rebuild the same checks in its own setting.",
             "This makes the whole course read as a chain of ordinary questions, not as a stack of specialized terms.",
             "A reader can use this line to explain why the lecture belongs in the course before memorizing any topic name.",
@@ -5402,7 +5402,7 @@ def build_lecture_deepening(row, spine_row):
         "This is why the lecture belongs in the course chain: the payoff becomes evidence a later page can reuse.",
         "The same payoff can matter outside topology only when the outside model protects the same kind of fact.",
         "A plain payoff sentence names both the useful conclusion and the reason it does not overreach.",
-        "This keeps the big picture detailed without turning the lecture into a slogan.",
+        "This keeps the course-wide reason detailed without turning the lecture into a slogan.",
     ])
     new_row["what_is_really_happening"] = (
         f"{row['what_is_really_happening']} The spine object is: {spine_row['object']} {happening_close} The sentence also names what the reader must watch before the lecture can support a claim."
@@ -7496,7 +7496,7 @@ def build_concept_anchor(concept):
     principle_finish = varied((cid, "anchor-principle-finish"), [
         f"Put in everyday words, the principle says what the course wants the reader to keep. It is the lesson that survives after the original picture changes, and that is why it can guide later topology and outside applications.",
         f"The principle matters because it turns one lecture scene into a reusable habit. It does not say every problem is the same; it says which part of the reasoning can be carried into a new setting.",
-        f"This is the big-picture claim in its careful form. It names the durable idea without pretending that the details disappear. That balance is what lets the concept help in other fields without becoming a vague comparison.",
+        f"This is the broad claim in its careful form. It names the durable idea without pretending that the details disappear. That balance is what lets the concept help in other fields without becoming a vague comparison.",
         f"The principle is the reader's portable tool. It gives a way to ask, in plain language, what stays the same, what can be ignored, and what would make the transfer false.",
         f"This keeps the course from becoming a list of special cases. The principle explains why a move from one lecture can matter again later, even when the drawing, source, or outside example looks different.",
         f"The plain value is that the principle tells the reader what to look for next time. In topology and elsewhere, understanding begins when the same underlying job can be seen under different surface details.",
@@ -8060,7 +8060,7 @@ def build_theme_plain(theme):
         f"Outside topology, {title} matters when a model, route, count, or physical setup needs the same check: what structure remains reliable after the easy details change?",
         f"Read {title} as a course habit, not a heading. It helps the reader see why a drawing, theorem, source, or application is being used at that point.",
         f"For {title}, the plain boundary is part of the meaning: the theme can guide attention only as far as the object, allowed move, and surviving evidence remain visible.",
-        f"The course uses {title} to keep the big picture concrete: each later page has to show the carrier, the legal change, the protected fact, and the claim limit.",
+        f"The course uses {title} to keep the broad idea concrete: each later page has to show the carrier, the legal change, the protected fact, and the claim limit.",
     ])
     return f"{theme['plain']} Theme role for {title}: {depth['course_arc']} {close}"
 
@@ -8146,7 +8146,7 @@ def build_theme_first_principles_essay(theme):
         f"This prevents {title} from becoming abstract too early. The theme can be general only because the page keeps returning to concrete carriers that can be drawn, moved, counted, compared, or modeled.",
         f"In outside use, the same object check matters because a field cannot borrow the topological habit until it names the thing whose structure, route, boundary, or possible state space is being judged.",
         f"The reader can test the theme by asking whether each lecture in the thread has the same kind of carrier or only shares a surface resemblance with the others.",
-        f"For {title}, naming the object keeps the big picture honest. It tells the reader what must remain present when the course moves from one example to another.",
+        f"For {title}, naming the object keeps the broad claim honest. It tells the reader what must remain present when the course moves from one example to another.",
         f"The theme object is the bridge between local examples and course-wide meaning. Without it, the theme would connect words rather than evidence.",
     ])
     allowed_close = varied((tid, "theme-fp-allowed-close"), [
@@ -8185,7 +8185,7 @@ def build_theme_first_principles_essay(theme):
         f"The repair is to return from the slogan to the contract: name the object, the permitted move, the protected fact, and the exact conclusion that follows.",
         f"This wrong use matters because broad themes are easy to overread. A theme can guide attention, but it cannot prove a claim after the evidence or condition has disappeared.",
         f"For {title}, the nearby false version is part of the lesson. It shows which condition was doing the work and which stronger sentence has to remain unsaid.",
-        f"The course needs this boundary so the big picture stays useful. Without the boundary, the theme may sound meaningful while no longer telling the reader what to check.",
+        f"The course needs this boundary so the broad theme stays useful. Without the boundary, the theme may sound meaningful while no longer telling the reader what to check.",
         f"The same warning applies outside topology: a model can look like the course example while missing the route, boundary, count, or state-space condition that carried the original conclusion.",
         f"A plain explanation of {title} therefore ends with a limit, because knowing where the habit stops is part of knowing why it matters.",
     ])
@@ -8990,7 +8990,7 @@ def build_quality_audit(data):
             "status": "met",
         },
         {
-            "requirement": "Big-picture mathematical synthesis",
+            "requirement": "Math-why engine with limits",
             "evidence": "The Math Why page explains the course engine: allowed changes, preserved facts, designed counts, and whole-shape constraints.",
             "status": "met",
         },
