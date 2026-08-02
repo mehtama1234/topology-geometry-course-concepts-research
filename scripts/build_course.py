@@ -5422,28 +5422,36 @@ def build_subtheme_answer_guide(subtheme):
     use = plain_fragment(routine["use"], ["Use this routine whenever", "Use this routine before", "Use this routine when", "Use singular moments as", "Use"])
     mistake = sentence_fragment(plain_fragment(routine["mistake"], ["The mistake is", "The common wrong turn is"]))
     look_close = varied((sid, "look-close"), [
-        f"Point to the exact feature that changes the argument: the subtheme name is not evidence by itself.",
-        f"That keeps {title} tied to evidence the lecture actually supplies: a boundary, sign, route, count, failure point, or state-space rule.",
-        f"The boundary, sign, route, count, defect, or state-space rule has to appear before the subtheme name can carry weight.",
-        f"The named detail has to carry work: protect a count, license a move, mark a boundary, or expose the point where the claim could fail.",
+        f"Point to the exact feature that changes the argument; the subtheme name is not evidence by itself.",
+        f"That keeps {title} tied to something the lecture actually shows, such as the place where a route, total, side choice, or model would change.",
+        f"For {title}, make the relevant feature visible before the subtheme name carries any weight.",
+        f"The named detail has to do work: keep a fact unchanged, allow a move, mark a limit, or reveal where the claim could fail.",
+        f"By the end of the sentence, the example should show where to look and why that spot matters.",
+        f"If the feature cannot be pointed to, {title} is still only a heading.",
     ])
     ask_close = varied((sid, "ask-close"), [
-        f"The answer has to inspect the proof itself.",
-        f"The question returns to the object, move, protected fact, or model instead of letting the title stand in for understanding.",
-        f"The uncertainty is concrete: what is allowed, what survives, what is counted, or what is modeled.",
-        f"Expose the hidden rule or evidence that makes {title} necessary here.",
+        f"The answer has to inspect the reasoning step, not the vocabulary.",
+        f"The question returns to the thing being used instead of letting the title stand in for understanding.",
+        f"The uncertainty is concrete: what is allowed here, what remains true, what is being counted, or what has been modeled.",
+        f"Expose the rule or evidence that makes {title} necessary here.",
+        f"{title} changes the next sentence of the proof; it does not merely define the term.",
+        f"The question should leave behind a checkable condition, not a slogan about the topic.",
     ])
     use_close = varied((sid, "use-close"), [
-        f"The explanation has to name the specific problem {title} helps solve in the argument.",
-        f"The account has to say what is now ruled out, forced, protected, or modeled.",
-        f"If the check does not change the argument, the subtheme has only renamed the page.",
-        f"{title} matters when it turns the live claim into a checkable object, move, protected fact, or model condition.",
+        f"{title} is useful only when the explanation names the specific problem it helps solve.",
+        f"The account has to say what the routine now rules out, forces, preserves, or turns into a model.",
+        f"If nothing in the argument changes, the subtheme has only renamed the page.",
+        f"{title} matters when it turns the live claim into a condition someone can inspect.",
+        f"Use it only when the page can say what would be missing without it.",
+        f"The payoff should be a changed claim, a blocked shortcut, or a newly visible condition.",
     ])
     mistake_close = varied((sid, "mistake-close"), [
-        f"The repair must return to the missing object, move, count, sign rule, boundary condition, or model.",
-        f"The correction is practical: return to the object, move, evidence, or model that the {title} mistake skipped.",
-        f"The test has to expose the false shortcut and the exact condition it skipped.",
-        f"Repair the explanation by naming the condition {title} needs before it can support the conclusion.",
+        f"The repair has to restore the missing condition before the conclusion is trusted.",
+        f"The correction is practical: return to the part of the example that the {title} mistake skipped.",
+        f"The test has to expose the shortcut and the exact condition it skipped.",
+        f"The fixed {title} explanation names the condition needed before the conclusion can stand.",
+        f"The fixed version should say what became visible after the mistake was removed.",
+        f"Do not leave the repair at warning level; name the rule that prevents the bad reading.",
     ])
     look_prompt = varied((sid, "look-answer-prompt"), [
         f"Start with the feature the page must make visible: {look} The course moment makes the search concrete: {bridge['course_moment']} {look_close}",
@@ -5480,7 +5488,7 @@ def build_subtheme_answer_guide(subtheme):
         f"Before trusting the routine, expose the shortcut it is meant to stop: {mistake} The proof has to answer this instead: {bridge['reader_test']} {mistake_close}",
         f"Say what bad reading {title} blocks: {mistake} Replace that reading with this object-level question: {bridge['reader_test']} {mistake_close}",
         f"Close the repair by naming the failure: {mistake} The claim is usable only after this is answered: {bridge['reader_test']} {mistake_close}",
-        f"Make the mistake concrete enough to reject later: {mistake} The replacement question is: {bridge['reader_test']} {mistake_close}",
+        f"In {title}, make the bad reading specific enough to reject later: {mistake} The {title} repair question is: {bridge['reader_test']} {mistake_close}",
         f"Show where a loose explanation would go wrong: {mistake} Then make the page answer this: {bridge['reader_test']} {mistake_close}",
     ])
     look_intro = varied((sid, "look-answer-intro"), [
