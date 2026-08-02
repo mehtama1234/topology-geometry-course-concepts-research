@@ -412,7 +412,7 @@ def main():
         fail("lecture spine does not match lecture numbers")
     for row in lecture_spine:
         for field in ["object", "plain_question", "legal_move", "surviving_fact", "why_later"]:
-            if len(words(row.get(field))) < 10:
+            if len(words(row.get(field))) < 30:
                 fail(f"lecture spine {row.get('lecture')} {field} too thin")
 
     dependencies = data.get("concept_dependencies") or []

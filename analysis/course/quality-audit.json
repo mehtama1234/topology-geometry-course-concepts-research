@@ -13,7 +13,7 @@
     },
     {
       "requirement": "Hand-written lecture depth",
-      "evidence": "15 lecture explainers with full essay sections, 15041 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+      "evidence": "15 lecture explainers with full essay sections, 17083 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
       "status": "met"
     },
     {
@@ -23,17 +23,17 @@
     },
     {
       "requirement": "Lecture-to-source bridge",
-      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 5653 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 7046 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
       "status": "met"
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 3416 reader-test words, 6819 lecture-application words, and 3817 answer-guide words turn lecture understanding into an auditable task.",
+      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 4408 reader-test words, 8137 lecture-application words, and 4857 answer-guide words turn lecture understanding into an auditable task.",
       "status": "met"
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7380 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 8533 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
@@ -187,23 +187,23 @@
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
     "lecture_essay_words": 5491,
-    "lecture_first_principles_essay_words": 15041,
+    "lecture_first_principles_essay_words": 17083,
     "lecture_deepening_words": 2309,
     "lecture_walkthrough_words": 2039,
     "lecture_source_lens_words": 1643,
     "lecture_source_checkpoint_words": 1533,
     "lecture_caption_nuance_words": 1498,
     "lecture_source_faithfulness_words": 2462,
-    "lecture_application_bridge_words": 6819,
-    "lecture_source_bridge_words": 5653,
+    "lecture_application_bridge_words": 8137,
+    "lecture_source_bridge_words": 7046,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 7380,
+    "lecture_reconstruction_words": 8533,
     "math_why_words": 628,
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 2775,
-    "lecture_reader_test_words": 3416,
-    "lecture_answer_guide_words": 3817,
+    "lecture_reader_test_words": 4408,
+    "lecture_answer_guide_words": 4857,
     "concept_essay_words": 7895,
     "concept_first_principles_essay_words": 22845,
     "concept_workup_words": 2773,
