@@ -4620,14 +4620,38 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             f"Close by naming the next job this lecture prepares: {spine['why_later']}",
             f"Keep the final sentence tied to this later role: {spine['why_later']}",
         ])
+        demonstration_sentence = varied((number, "bridge-demonstration"), [
+            f"The lecture starts from {object_text}. Its concrete evidence is not a list of topic labels; it is the sequence {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}, where the object is acted on and the claim boundary becomes visible.",
+            f"The source trail has to answer to the lecture object first: {object_text}. The usable course evidence appears in {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}, not in a general memory of what topology usually says.",
+            f"Keep the bridge grounded in {object_text}. The moments {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']} show what the lecture actually makes visible before any outside reference is allowed to help.",
+            f"The demonstration layer begins with {object_text}. Use {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']} as the evidence trail: they show the object, the permitted change, and the claim that survives.",
+            f"The lecture evidence is carried by {object_text}. The examples {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']} are the places where the abstract source family has to touch the actual course.",
+            f"Before citing support, rebuild the lecture from {object_text}. The course moments {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']} say what was demonstrated and what must remain cautious.",
+        ])
+        bridge_sentence = varied((number, "bridge-mathematical"), [
+            f"{spine['plain_question']} The bridge is the working chain: allowed move, surviving fact, then source support. Here the allowed move is: {spine['legal_move']} The fact carried forward is: {spine['surviving_fact']} A reference can extend the claim only after that chain is visible.",
+            f"{spine['plain_question']} Answer it by naming the permitted action first: {spine['legal_move']} Then name the evidence that action leaves in place: {spine['surviving_fact']} Only then can a reference widen the mathematical family behind the lecture.",
+            f"{spine['plain_question']} The source bridge should preserve this order: object, move, evidence, source. The move is: {spine['legal_move']} The evidence is: {spine['surviving_fact']} A citation that skips either part is not yet doing course work.",
+            f"{spine['plain_question']} The useful bridge is not vocabulary transfer. The permitted move is: {spine['legal_move']} The protected fact is: {spine['surviving_fact']} Background sources belong after that protection has been stated plainly.",
+            f"{spine['plain_question']} The lecture earns outside support through a specific contract: {spine['legal_move']} That contract protects this fact: {spine['surviving_fact']} The reference should clarify the contract, not replace it.",
+            f"{spine['plain_question']} Keep the source bridge narrow enough to check. First state the legal move: {spine['legal_move']} Then state the surviving fact: {spine['surviving_fact']} Only then connect the lecture to a broader source family.",
+        ])
+        source_extension = varied((number, "bridge-source-extension"), [
+            f"{note['source_extension']} The broader source problem is this: {source_reader['reader_problem']}",
+            f"{note['source_extension']} The matching source family is useful because it asks this problem in a broader setting: {source_reader['reader_problem']}",
+            f"{note['source_extension']} Read the supporting family through this plain problem: {source_reader['reader_problem']}",
+            f"{note['source_extension']} The background source should be used to sharpen this question, not to replace the lecture evidence: {source_reader['reader_problem']}",
+            f"{note['source_extension']} The wider source family helps only when it keeps this underlying problem visible: {source_reader['reader_problem']}",
+            f"{note['source_extension']} Its support role is to deepen this problem after the lecture object is clear: {source_reader['reader_problem']}",
+        ])
         bridges.append({
             "lecture": number,
             "title": lecture["deep"]["title"],
             "references": [ref["id"] for ref in lecture_refs],
             "source_family": source_reader["family"],
-            "course_demonstration": f"The lecture works from {object_text} and uses concrete moments such as {examples[0]['title']}, {examples[1]['title']}, and {examples[2]['title']}. These are not ornaments around the source trail; they are the evidence the source trail has to answer to.",
-            "mathematical_bridge": f"{spine['plain_question']} The bridge is not the title of the lecture; it is the path from legal move to surviving fact. The allowed move is: {spine['legal_move']} The fact carried forward is: {spine['surviving_fact']} A reference may widen that pattern only after this object, move, and surviving fact are visible.",
-            "how_source_extends": f"{note['source_extension']} The source-family problem underneath this bridge is: {source_reader['reader_problem']}",
+            "course_demonstration": demonstration_sentence,
+            "mathematical_bridge": bridge_sentence,
+            "how_source_extends": source_extension,
             "overread_warning": f"{overread_sentence} {repair_sentence}",
             "reader_question": f"{note['reader_question']} {reader_later}",
             "concepts": concepts[:6],
