@@ -90,7 +90,7 @@ def main():
         if len(words(item.get("title"))) < 3:
             fail(f"quality rubric {item.get('id')} title too thin")
         for field in ["test", "strong_answer", "failure", "repair"]:
-            if len(words(item.get(field))) < 8:
+            if len(words(item.get(field))) < 30:
                 fail(f"quality rubric {item.get('id')} {field} too thin")
 
     rubric_coverage = data.get("rubric_coverage") or []
@@ -932,7 +932,7 @@ def main():
     if len(words(re.sub(r"<[^>]+>", " ", references_page))) < 700:
         fail("references page too thin")
     quality_rubric_page = (SITE / "quality-rubric.html").read_text(encoding="utf-8", errors="ignore")
-    for phrase in ["Quality Rubric", "How To Use The Rubric", "Completion Test", "Test:", "Strong answer:", "Failure:", "Repair:"]:
+    for phrase in ["Quality Rubric", "How To Use The Rubric", "Completion Test", "Test:", "Complete answer:", "Failure:", "Repair:"]:
         if phrase not in quality_rubric_page:
             fail(f"quality rubric page missing phrase: {phrase}")
     if quality_rubric_page.count("<article") < 6:
