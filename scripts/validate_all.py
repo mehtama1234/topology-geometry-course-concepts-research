@@ -132,9 +132,9 @@ def main():
         fail("term translations do not match required first-principles term set")
     for row in term_translations:
         for field in ["everyday_sentence", "job_in_argument", "not_a_definition", "failure_if_misread"]:
-            if len(words(row.get(field))) < 14:
+            if len(words(row.get(field))) < 30:
                 fail(f"term translation {row.get('term')} {field} too thin")
-        if len(words(row.get("reader_question"))) < 8:
+        if len(words(row.get("reader_question"))) < 25:
             fail(f"term translation {row.get('term')} reader question too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"term translation {row.get('term')} needs three concept links")
