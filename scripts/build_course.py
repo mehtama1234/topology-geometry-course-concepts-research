@@ -4058,7 +4058,7 @@ def compact_course_reference_card(refs, seed, page_kind, context=None):
         " The TIB record confirms the course setting without adding claims about a particular proof step.",
     ]) if mirror else ""
     why = varied((seed, "course-reference-why"), [
-        f"The course videos are the authority for how {topic} is taught here: which object is put in front of the reader, what change is allowed, and what fact is kept alive through that change.{mirror_text}",
+        f"The course videos are the authority for this treatment of {topic}: which object is put in front of the reader, what change is allowed, and what fact is kept alive through that change.{mirror_text}",
         f"{topic_start} is anchored in Tokieda's course rather than in a standard list of topology topics. The videos supply the teaching order, the physical demonstration, and the point at which a plain picture becomes a mathematical claim.{mirror_text}",
         f"The companion starts from the course source because the mathematical point depends on the lecture route: build the object, change it under stated rules, then read the piece of evidence that survives.{mirror_text}",
         f"The course source keeps {topic} tied to the classroom route. Outside sources may deepen the formal family, but the first job is still to preserve what the lecture actually makes visible.{mirror_text}",
@@ -4953,7 +4953,7 @@ def build_concept_self_check(concept):
         f"The course moment is the test case for {title}, not a caption placed beside a definition.",
         f"The object has to be visible before any theorem name appears, because the later conclusion has to belong to that object.",
         f"The object statement already needs the rule or setting: boundary, gluing, forbidden crossing, orientation, field, map, or possible-state description.",
-        f"For this concept, understanding begins with what would be drawn or acted out before any symbolic shortcut appears.",
+        f"Before any symbolic shortcut appears, the explanation should say what someone could draw, carry around, count, compare, or act out.",
         f"The course example has to make the object visible enough to test whether a later source is talking about the same kind of thing.",
     ])
     operation_close = varied((cid, "operation-close"), [
@@ -4992,7 +4992,7 @@ def build_concept_self_check(concept):
         "Naming the break point keeps the concept tied to its rulebook instead of letting it make claims beyond its conditions.",
         "The warning belongs inside the explanation because changing the rule often changes the answer.",
         "The explanation has to name both where the idea works and which nearby use would be false.",
-        f"For {title}, the failure mode names the detail that carries the concept's force.",
+        f"For {title}, the failure mode points to the exact detail that made the original claim true.",
         "The break point turns the hypothesis into working machinery, not ceremony.",
         "If the failure condition is missing, the explanation may sound clear while quietly claiming too much.",
     ])
@@ -5053,28 +5053,36 @@ def build_concept_self_check(concept):
         f"End with the limit of the claim: {failure} The failure mode shows what happens when that limit is ignored: {beginner_trap} {failure_close}",
     ])
     object_intro = varied((cid, "concept-object-intro"), [
-        f"{title} starts with its carrier, not its name.",
-        f"The first check for {title} is the object it studies.",
-        f"Make {title} concrete before asking it to explain anything.",
-        f"{title} has to begin with something the reader can inspect.",
+        "Start from the thing that carries the claim.",
+        "First locate the object this idea is allowed to speak about.",
+        "Make the concept visible before using it as a reason.",
+        f"Begin with the surface, route, field, rule, count, or state space in front of the argument.",
+        f"Do not let the name {title} enter before the example has a concrete carrier.",
+        f"Put the relevant object into the sentence before the concept name starts doing work.",
     ])
     operation_intro = varied((cid, "concept-operation-intro"), [
-        f"{title}: name the action it performs on the example.",
-        f"The operation check turns {title} into something auditable.",
-        f"Use {title} by naming the permitted move first.",
-        f"The page has to show what {title} lets the reader do.",
+        "Next say what action the idea performs on that object.",
+        f"Turn {title} into a move that can be checked on the example.",
+        f"Use {title} only after the permitted move is explicit.",
+        "Show the work being done, not only the name given to the work.",
+        f"Make the allowed action concrete enough that the illegal shortcut is visible beside it.",
+        f"Describe the move that carries the argument from the hard picture to the usable evidence.",
     ])
     protected_intro = varied((cid, "concept-protected-intro"), [
-        f"{title} needs surviving evidence before it earns a conclusion.",
-        f"{title}: name the protected fact at the working core.",
-        f"{title}: keep the durable evidence in front.",
-        f"{title} carries force only through the fact that survives.",
+        "The conclusion is earned through evidence that survives the allowed change.",
+        f"Name the protected fact that makes {title} more than a label.",
+        "Keep the durable evidence in front when the idea is used.",
+        "The force comes from the fact that remains after the permitted move.",
+        f"Say what the argument still knows after the drawing, model, or count has changed.",
+        f"Before the payoff, identify the part of the setup that the legal move could not erase.",
     ])
     failure_intro = varied((cid, "concept-failure-intro"), [
-        f"{title} also needs a concrete failure case.",
-        f"The bad use of {title} shows which condition was doing work.",
-        f"Test {title} at the nearest place it can break.",
-        f"{title}: name the tempting false use.",
+        "Finish by naming the nearest way to misuse the idea.",
+        "The false use reveals which condition was doing real work.",
+        f"Test {title} where the argument would first break.",
+        "Name the tempting shortcut that would make the claim say too much.",
+        "State the condition that must not be dropped when the idea is reused.",
+        f"Give the concept a boundary by saying which similar-looking case it cannot handle.",
     ])
     return {
         "object_check": f"{object_intro} {object_prompt}",
