@@ -362,6 +362,10 @@ def main():
         essay_words = sum(len(words(p)) for p in deep.get("essay") or [])
         if essay_words < 300:
             fail(f"lecture {lecture['lecture']} essay too thin")
+        first_principles_essay = deep.get("first_principles_essay") or {}
+        for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
+            if len(words(first_principles_essay.get(field))) < 60:
+                fail(f"lecture {lecture['lecture']} first-principles essay {field} too thin")
         examples = deep.get("examples") or []
         if len(examples) < 3:
             fail(f"lecture {lecture['lecture']} needs at least three concrete examples")
@@ -1024,6 +1028,9 @@ def main():
         if lecture_name not in names:
             fail(f"missing lecture page {lecture['lecture']:02d}")
         lecture_html = (SITE / lecture_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["First-Principles Long Essay", "Ordinary problem:", "Object on the page:", "Allowed change:", "Protected fact:", "Topology payoff:", "Outside use:", "Wrong use:"]:
+            if phrase not in lecture_html:
+                fail(f"lecture page missing first-principles essay phrase {phrase}: {lecture_name}")
         for phrase in ["Lecture Deepening", "What is really happening:", "Why it is hard:", "Key move:", "Payoff:"]:
             if phrase not in lecture_html:
                 fail(f"lecture page missing deepening phrase {phrase}: {lecture_name}")
