@@ -770,10 +770,10 @@ def main():
         if len(row.get("rebuild_steps") or []) < 6:
             fail(f"lecture reconstruction drill {row.get('lecture')} needs six rebuild steps")
         for step in row.get("rebuild_steps") or []:
-            if len(words(step)) < 14:
+            if len(words(step)) < 30:
                 fail(f"lecture reconstruction drill {row.get('lecture')} step too thin")
         for field in ["start_from", "self_check", "common_failure", "source_check"]:
-            if len(words(row.get(field))) < 24:
+            if len(words(row.get(field))) < 70:
                 fail(f"lecture reconstruction drill {row.get('lecture')} {field} too thin")
         unknown_concepts = sorted(set(row.get("concepts") or []) - concept_ids)
         if unknown_concepts:
