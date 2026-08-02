@@ -721,7 +721,7 @@ def main():
         fail("source nuance repairs do not match lecture numbers")
     for row in source_nuance_repairs:
         for field in ["caption_hazard", "safe_claim", "repair_move", "do_not_claim", "reviewer_question"]:
-            if len(words(row.get(field))) < 14:
+            if len(words(row.get(field))) < 30:
                 fail(f"source nuance repair {row.get('lecture')} {field} too thin")
         unknown_concepts = sorted(set(row.get("concepts") or []) - concept_ids)
         if unknown_concepts:
