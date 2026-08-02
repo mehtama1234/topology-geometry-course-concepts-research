@@ -5303,36 +5303,48 @@ def build_theme_answer_guide(theme):
         f"State which object, route, count, field, or state space the theme is watching.",
         f"Name the concrete feature that must be tracked before the page is allowed to conclude anything.",
         f"{title} earns its place only when the reader can point to the proof feature it protects.",
+        f"Make the watched feature visible before {title} becomes the explanation.",
+        f"The theme starts to teach only after the example shows what remains under inspection.",
     ])
     ignore_close = varied((tid, "ignore-close"), [
         f"Explain why those details distract from the question this theme is meant to clarify.",
-        f"Say why leaving those details aside makes the claim sharper rather than weaker.",
+        f"For {title}, say why leaving those details aside makes the claim sharper rather than weaker.",
         "Name the discarded detail so the reader knows the page is ignoring it on purpose.",
         f"This keeps attention on the feature that lets the theme carry proof rather than on visual noise.",
+        f"The ignored detail works best when it is named as a limit of the claim, not hidden as if it never mattered.",
+        f"{title} is clearer when the page says exactly which familiar-looking detail is not doing proof work.",
     ])
     separation_close = varied((tid, "separation-close"), [
         f"Separate the visible story from the part that carries proof.",
-        "The page should separate the demonstration detail from the rule that makes the argument valid.",
+        f"Separate the {title} demonstration detail from the rule that makes the argument valid.",
         f"That distinction keeps the theme tied to a checkable object rather than to a remembered scene.",
-        f"The page has to leave the support-bearing part of the picture unmistakable.",
+        f"For {title}, leave the support-bearing part of the picture unmistakable.",
+        f"The useful boundary is the line between what helps a person see and what actually supports the claim.",
+        f"That split keeps the theme from turning a memorable picture into more evidence than it can carry.",
     ])
     transfer_close = varied((tid, "transfer-close"), [
         f"Show how the same object-move-surviving-fact pattern travels from early examples to later theorem-level uses.",
         f"This carries the theme across the course by naming the repeated work it does, not by repeating the title.",
-        f"Show which later proof would lose force without {title}.",
+        f"For {title}, name a later proof that would lose force without this habit.",
         f"{title} has depth only when it explains why distant lectures need the same kind of check.",
+        f"The transfer is real only when an early paper, path, surface, count, or field reappears as the same kind of reasoning job.",
+        f"The later lecture needs the habit itself, not merely a word that sounds related.",
     ])
     test_close = varied((tid, "test-close"), [
         f"That detail keeps the theme attached to a claim the reader can test.",
-        f"That detail separates a real use of the theme from a summary that has no checkable claim.",
+        f"For {title}, that detail separates a real use from a summary with no checkable claim.",
         f"Without that detail, {title} would not control the object, move, count, or model on the page.",
         f"That detail is where {title} becomes checkable.",
+        f"The detail is the part that lets a person reject the wrong use of the theme.",
+        f"That is the difference between using {title} and only naming it.",
     ])
     notice_prompt = varied((tid, "notice-answer-prompt"), [
-        f"Begin by naming what {title} asks the reader to notice: {notices} Tie that habit to the course problem: {depth['problem']} {notice_close}",
+        f"Begin by naming what {title} asks the reader to notice: {notices} Tie the habit to this course problem: {depth['problem']} {notice_close}",
         f"To carry the theme, first point to the evidence it watches: {notices} The course problem behind that watchfulness is: {depth['problem']} {notice_close}",
         f"Start with the proof feature this theme keeps visible: {notices} Then connect it to the reason the course needs the theme: {depth['problem']} {notice_close}",
         f"Name the page feature that activates the theme: {notices} Then tie it to the larger problem: {depth['problem']} {notice_close}",
+        f"Let the example show what {title} is watching: {notices} The course needs that watchfulness because: {depth['problem']} {notice_close}",
+        f"Open with the feature that would be easy to miss: {notices} Then say why the course keeps returning to it: {depth['problem']} {notice_close}",
     ])
     ignore_prompt = varied((tid, "ignore-answer-prompt"), [
         f"Say what this theme deliberately sets aside: {ignores} {ignore_close} {separation_close}",
