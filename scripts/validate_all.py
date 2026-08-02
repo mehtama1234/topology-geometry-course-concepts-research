@@ -297,7 +297,7 @@ def main():
             fail(f"concept {concept['id']} essay too thin")
         first_principles_essay = concept.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 50:
+            if len(words(first_principles_essay.get(field))) < 95:
                 fail(f"concept {concept['id']} first-principles essay {field} too thin")
         workup = concept.get("workup") or {}
         for field in ["object", "operation", "protected", "breaks_if"]:
@@ -309,7 +309,7 @@ def main():
                 fail(f"concept {concept['id']} anchor {field} too thin")
         application = concept.get("application") or {}
         for field in ["outside_problem", "topology_application", "other_fields", "why_it_matters", "honest_limit"]:
-            if len(words(application.get(field))) < 65:
+            if len(words(application.get(field))) < 95:
                 fail(f"concept {concept['id']} application {field} too thin")
         self_check = concept.get("self_check") or {}
         for field in ["object_check", "operation_check", "protected_check", "failure_check"]:
