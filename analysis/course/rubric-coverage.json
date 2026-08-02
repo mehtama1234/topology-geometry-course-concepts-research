@@ -19,7 +19,7 @@
       "object-before-name": "workup object field and first-principles section",
       "legal-move": "workup operation field and operation self-check",
       "protected-fact": "workup protected field and protected-fact self-check",
-      "failure-condition": "workup breaks_if field, beginner trap, failure self-check",
+      "failure-condition": "workup breaks_if field, failure mode, failure self-check",
       "course-anchor": "anchor course_moment field, where-it-appears lecture cards, further source trail",
       "plain-language-replacement": "concept essay, first-principles field, principle-behind-it field"
     },

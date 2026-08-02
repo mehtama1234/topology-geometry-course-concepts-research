@@ -30,7 +30,7 @@
     "caption_hazard": "Words such as product, quotient, surgery, and manifold can be misheard as labels for finished objects. The source risk is losing the construction rule that makes the object.",
     "safe_claim": "The supported claim is that the lecture teaches space-making as a mathematical act: independent choices make products, declared sameness makes quotients, local patches make manifolds, and controlled replacement makes surgery meaningful.",
     "repair_move": "If a sentence names a space, add how it was made: which pieces are paired, glued, removed, thickened, or treated as one point, and what routes that construction permits.",
-    "do_not_claim": "Do not let product or quotient appear as unexplained vocabulary. A beginner should see the independent choices recorded or the identifications imposed before the formal word is allowed to shorten the sentence.",
+    "do_not_claim": "Do not let product or quotient appear as unexplained vocabulary. The independent choices or imposed identifications need to be visible before the formal word is allowed to shorten the sentence.",
     "reviewer_question": "Can the reader reconstruct the space from the rule alone, naming the choices, identifications, local patches, or replacement boundary before relying on product, quotient, manifold, or surgery as a title?",
     "concepts": [
       "product-space",
