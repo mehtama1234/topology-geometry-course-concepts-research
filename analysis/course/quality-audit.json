@@ -23,7 +23,7 @@
     },
     {
       "requirement": "Lecture-to-source bridge",
-      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 7555 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 7559 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
       "status": "met"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 14084 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 14092 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40723 first-principles essay words; theme and subtheme pages add 30413 first-principles essay words and 12149 application words. Method-family pages add 10371 first-principles essay words and 4207 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21649 words, and concept applications add 20734 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40722 first-principles essay words; theme and subtheme pages add 30413 first-principles essay words and 12149 application words. Method-family pages add 10371 first-principles essay words and 4207 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21650 words, and concept applications add 20734 words.",
       "status": "met"
     },
     {
@@ -158,7 +158,7 @@
     },
     {
       "requirement": "Plain-language term translation",
-      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 5999 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
+      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 5998 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
       "status": "met"
     },
     {
@@ -195,17 +195,17 @@
     "lecture_caption_nuance_words": 4462,
     "lecture_source_faithfulness_words": 2477,
     "lecture_application_bridge_words": 10673,
-    "lecture_source_bridge_words": 7555,
+    "lecture_source_bridge_words": 7559,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 14084,
+    "lecture_reconstruction_words": 14092,
     "math_why_words": 628,
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 6424,
     "lecture_reader_test_words": 5146,
     "lecture_answer_guide_words": 6136,
     "concept_essay_words": 7895,
-    "concept_first_principles_essay_words": 40723,
+    "concept_first_principles_essay_words": 40722,
     "concept_workup_words": 10524,
     "concept_anchor_words": 7088,
     "concept_application_words": 20734,
@@ -222,12 +222,12 @@
     "subtheme_routine_words": 5184,
     "subtheme_bridge_words": 3392,
     "subtheme_application_words": 8563,
-    "subtheme_answer_guide_words": 10556,
+    "subtheme_answer_guide_words": 10557,
     "family_purpose_words": 326,
     "family_essay_words": 1634,
     "family_first_principles_essay_words": 10371,
     "family_contract_words": 3075,
-    "family_playbook_words": 3031,
+    "family_playbook_words": 3035,
     "family_application_words": 4207,
     "family_answer_guide_words": 6458,
     "playground_widgets": 4,
@@ -257,7 +257,7 @@
     "concept_contrast_words": 4455,
     "reader_checks": 11,
     "term_translations": 16,
-    "term_translation_words": 5999,
+    "term_translation_words": 5998,
     "source_readers": 7,
     "source_reader_words": 3472,
     "paper_family_ledger_rows": 7,

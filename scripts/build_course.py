@@ -495,7 +495,7 @@ TERM_TRANSLATIONS = [
     },
     {
         "term": "Parity",
-        "everyday_sentence": "Parity keeps only whether a count is even or odd, because that smaller fact can survive when the exact number changes. It is useful when legal moves create or remove events in pairs, so zero becomes impossible from an odd starting account.",
+        "everyday_sentence": "Parity keeps only whether a count is even or odd, because that smaller fact can survive when the exact number changes. It works when legal moves create or remove events in pairs, so zero becomes impossible from an odd starting account.",
         "job_in_argument": "Its job is to protect the part of a count that survives pair changes. When legal moves create or remove events two at a time, exact counts may shift but oddness or evenness remains.",
         "not_a_definition": "It is not a weaker explanation by default. It is the right explanation when the problem only needs to know whether zero is possible. The page still has to prove why the legal moves change the count two at a time rather than one at a time.",
         "failure_if_misread": "If legal moves can change the count by one, parity gives no protection. The odd-or-even claim then has no reason behind it. The page must show pair creation or pair cancellation before parity can block a zero-count conclusion.",
@@ -2082,7 +2082,7 @@ def build_assumption_ledger_rows(rows):
         title = row["title"]
         concept_text = ", ".join(row["concepts"])
         claim_close = varied((title, "assumption-claim-close"), [
-            "The claim is only useful when the reader can name the thing that stays the same while the picture, count, rule, or model changes.",
+            "The claim can be trusted when the reader can name the thing that stays the same while the picture, count, rule, or model changes.",
             "The plain point is that a conclusion belongs to the original problem only if the condition that defines that problem has not been traded away.",
             "This makes the assumption part of the claim, not a footnote after the claim has already been accepted.",
             "A first-principles version says what is being protected before it says what the theorem, drawing, or model gives back.",
@@ -3277,7 +3277,7 @@ CONCEPTS = [
         "subthemes": ["models-not-labels", "holes-and-boundaries"],
         "first_principles": "Sometimes a problem becomes easier when regions become dots and shared borders become lines, or when a surface is replaced by another bookkeeping picture. The same situation is being viewed through a different ledger. The value is that the second picture may make adjacency, separation, or counting visible when the first picture hides it.",
         "important_detail": "A dual picture works only if it preserves the relationships needed by the question. If adjacency, separation, or crossing information is lost in the translation, the new diagram may be easier to read but no longer proves the same claim.",
-        "math_principle": "Changing representation is useful when it preserves the relation being studied. The second picture can reveal adjacency, separation, or counting structure that the first picture hid.",
+        "math_principle": "Changing representation works when it preserves the relation being studied. The second picture can reveal adjacency, separation, or counting structure that the first picture hid.",
     },
     {
         "id": "parity",
@@ -4400,7 +4400,7 @@ def build_family_playbook(family, playbook):
         "The test passes only when the reader can rebuild the method without leaning on the family title.",
         "The answer shows what the method proves in this course and how the same rule can transfer carefully elsewhere.",
         "The reader test is meant to prove understanding by making the whole contract visible.",
-        "The field stays useful when it asks for the method's working parts, not only its name.",
+        "The field stays tied to evidence when it asks for the method's working parts, not only its name.",
     ])
     setup_intro = varied((fid, "family-playbook-setup-intro"), [
         "The setup begins from this human problem:",
@@ -6003,7 +6003,7 @@ def contextual_reference_why(ref, seed, page_kind, context=None):
             f"This source backs the broader algebraic-topology family behind {topic}: turning spaces and allowed changes into durable structure.",
             f"It belongs as a next reference for readers who want the formal route behind the companion's everyday account of spaces, maps, and protected counts.",
             f"Use Hatcher to see how {topic}'s plain object-and-move account becomes part of a reusable formal toolkit.",
-            f"This source is useful when {topic} needs the larger language of spaces, maps, quotients, and invariants after the course example is clear.",
+            f"This source can be used when {topic} needs the larger language of spaces, maps, quotients, and invariants after the course example is clear.",
         ],
         "milnor-differentiable-viewpoint": [
             f"Milnor supports {topic}'s bridge from pictures to smooth objects, degree-style reasoning, fixed points, and vector-field index.",
@@ -6016,7 +6016,7 @@ def contextual_reference_why(ref, seed, page_kind, context=None):
             f"This source supports {topic}'s clean-meeting discipline: prepare ordinary intersections before signs, counts, or local conclusions are trusted.",
             f"It belongs as background for generic position, transversality-style preparation, oriented intersections, and the local conditions that make counting honest.",
             f"Use it to see why the course's small nudges matter: the goal is not a cleaner drawing, but events organized enough to carry signs and counts.",
-            f"For {topic}, this source is useful when the course has to turn a messy contact into a meeting clean enough to count.",
+            f"For {topic}, this source applies when the course has to turn a messy contact into a meeting clean enough to count.",
             f"It gives {topic} a formal background for the cleanup step: remove accidental mess before asking a local event to carry evidence.",
         ],
     }
@@ -6813,7 +6813,7 @@ def build_lecture_source_bridges(lectures, references, source_readers):
             f"Keep the source claim narrow by naming the later job it actually supports: {spine['why_later']}",
             f"The honest version uses the later role as evidence of scope, not as extra authority: {spine['why_later']}",
             f"Close the source claim by stating the specific later use it earns: {spine['why_later']}",
-            f"The source trail stays useful when it points back to this later course need: {spine['why_later']}",
+            f"The source trail stays tied to evidence when it points back to this later course need: {spine['why_later']}",
             f"The boundary is clearer when the sentence names exactly what the lecture prepares: {spine['why_later']}",
         ])
         reader_later = varied((number, "bridge-reader-later"), [
@@ -8158,7 +8158,7 @@ def build_theme_first_principles_essay(theme):
         f"The allowed shift is also a boundary. It tells the reader why one transfer is valid while a nearby shortcut would erase the object, count, route, or condition that mattered.",
     ])
     protected_close = varied((tid, "theme-fp-protected-close"), [
-        f"The protected fact is the reason the theme can connect distant parts of the course. It is what lets one lecture teach a habit that remains useful when the next object looks different.",
+        f"The protected fact is the reason the theme can connect distant parts of the course. It is what lets one lecture teach a rule that still works when the next object looks different.",
         f"This is the evidence the reader carries forward. It may be a surviving route, total, boundary relation, local event, fixed point, index, or modeling condition that keeps the claim from floating.",
         f"For {title}, the protected fact turns the theme into a reason rather than a title. It tells what remains true after the course changes picture, language, or scale.",
         f"The same idea matters in applications: a useful model may change the surface form of a problem, but it must keep the constraint, relation, or total that justifies the conclusion.",
@@ -8315,7 +8315,7 @@ def build_subtheme_first_principles_essay(subtheme):
         f"The outside use remains honest only when the new field rebuilds the same pieces: object, allowed change, protected fact, and limit. Otherwise the course idea has only been borrowed as a metaphor.",
         f"This is why applications need plain language. A person using {title} outside topology has to say what the new object is and which part of the topological habit still applies.",
         f"The transfer can matter in physics, robotics, engineering, data, networks, or design, but the promise stays narrow: the subtheme gives a way to check structure before other tools fill in measurements.",
-        f"Outside the course, {title} is useful when it prevents a model from hiding the condition that made the result meaningful in the first place.",
+        f"Outside the course, {title} works when it prevents a model from hiding the condition that made the result meaningful in the first place.",
         f"The point is not that every outside problem becomes topology. The point is that the same careful reading habit can expose whether a model, route, or constraint has kept the fact it needs.",
         f"For {title}, application means translation with obligations. The new setting has to show the carrier, the permitted move, the evidence, and the boundary of the claim.",
     ])
@@ -8448,7 +8448,7 @@ def build_subtheme_answer_guide(subtheme):
     ])
     ask_intro = varied((sid, "ask-answer-intro"), [
         f"The question behind {title} is practical.",
-        f"{title} becomes useful when it asks a testable question.",
+        f"{title} earns its role when it asks a testable question.",
         f"Turn {title} into a condition check.",
         f"{title} has to answer a live uncertainty.",
     ])
@@ -9732,7 +9732,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     formula_rows = [
         ("Euler characteristic", "chi = vertices - edges + faces", "Take a completed surface that has been divided into pieces. Count corner points, subtract edge pieces, then add face pieces, while keeping boundary and gluing data attached to the same surface.", "When a face is split by a new edge, both the edge count and face count change. The alternating account absorbs that artificial choice because the added bookkeeping pieces cancel each other.", "The final number belongs to the surface type, not to one chosen drawing or mesh. Later it can constrain total vector-field index, but it does not describe every geometric feature.", "Before using the number, ask what surface is being counted, which cells changed during the redraw, and whether boundaries or different kinds of cells have been accounted for.", "concept-euler-characteristic.html"),
         ("Signed intersection number", "total = plus meetings - minus meetings", "Count each clean meeting between two oriented objects, but record whether the meeting agrees or disagrees with the direction rule of the surrounding space.", "A legal motion can create two new meetings at once. In the ordinary case they have opposite signs, so the signed total does not change even though the visible crossing count changed.", "If the protected total is nonzero, the objects cannot be pulled apart by legal motion. The formula can force some meeting to remain, not locate every meeting.", "Before trusting the signs, ask where orientation comes from, whether the meetings are clean enough to count, and what local event would create a canceling pair.", "concept-intersection-number.html"),
-        ("Parity", "only even or odd is kept", "Forget the exact number and keep only whether the number is even or odd. This is useful when the problem only needs to know whether zero can be reached.", "Some legal changes add or remove events two at a time. That can change the exact count while preserving oddness or evenness, so parity survives where a raw count would fail.", "An odd protected parity can prove that zero is impossible, even when the exact count is unknown. It gives an obstruction, not a full classification.", "Use parity only when the allowed moves really do change the count by pairs, and say what desired zero-count conclusion the odd value blocks.", "concept-parity.html"),
+        ("Parity", "only even or odd is kept", "Forget the exact number and keep only whether the number is even or odd. This works when the problem only needs to know whether zero can be reached.", "Some legal changes add or remove events two at a time. That can change the exact count while preserving oddness or evenness, so parity survives where a raw count would fail.", "An odd protected parity can prove that zero is impossible, even when the exact count is unknown. It gives an obstruction, not a full classification.", "Use parity only when the allowed moves really do change the count by pairs, and say what desired zero-count conclusion the odd value blocks.", "concept-parity.html"),
         ("Fixed point as graph meets diagonal", "fixed point means graph(f) meets diagonal", "Turn a rule into a shape by drawing all input-output pairs. The diagonal is the set where input and output agree inside the same input-output space.", "The equation f(x) = x becomes a meeting question. Earlier intersection reasoning can then decide whether that meeting can be avoided, provided the graph still records the original rule.", "A fixed-point theorem can prove that some point stays put without computing which point it is. The graph-diagonal translation explains the meaning; extra hypotheses force existence.", "Check the domain, target, boundary, and continuity of the rule before applying the theorem, and say why diagonal meeting means self-agreement for the original rule.", "concept-fixed-points.html"),
         ("Brouwer fixed point", "every continuous self-map of a closed ball has a fixed point", "Move every point of a closed filled ball somewhere inside the same filled ball, with nearby points still moving to nearby outputs and no point sent outside the domain.", "The filled shape and its boundary block a continuous escape plan in which every point avoids itself. The closed, same-space, no-jump conditions are the mechanism.", "Shape can force existence without a formula for the answer. The theorem gives at least one fixed point, not a location, uniqueness claim, or trajectory.", "The closed ball matters. Check the space, the boundary, the self-map condition, and continuity before using the theorem, because changing the space can change the claim.", "concept-brouwer-fixed-point.html"),
         ("Vector-field index", "index = signed turning around a defect", "Walk around a small loop enclosing one place where the arrow field vanishes. Watch how the nearby arrows turn during that walk and keep the defect isolated.", "The local arrow pattern can be moved or redrawn, but its signed turning survives allowed cleanup as long as the loop still encloses the same single defect.", "A local failure of motion becomes countable evidence. It becomes whole-surface evidence only after every local index on the same surface is included.", "Make sure the defect is isolated before assigning a single local index, and say what would go wrong if another defect slipped inside the loop.", "concept-vector-field-index.html"),
