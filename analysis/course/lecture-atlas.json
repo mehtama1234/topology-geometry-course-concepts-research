@@ -521,7 +521,7 @@
       },
       "source_lens": [
         "Read the square and boundary-identification anchors as instructions rather than pictures. The source point is that the same drawn square can become different spaces depending on which edges are treated as the same and whether direction is reversed. A boundary label is a travel rule, so it changes the possible routes inside the finished space.",
-        "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing is useful only after the identification rule has been read. Orientation and quotient space belong together because the way a traveler returns decides whether local direction choices can agree globally."
+        "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing can support the argument only after the identification rule has been read. Orientation and quotient space belong together because the way a traveler returns decides whether local direction choices can agree globally."
       ],
       "source_checkpoint": {
         "trust": "Trust edge labels and arrows as travel instructions. They decide whether a path stops, re-enters somewhere else, or returns with its local direction changed, which means the labels are part of the mathematical object rather than decoration.",
@@ -667,7 +667,7 @@
       "walkthrough": {
         "start_here": "Start with the problem of recognizing a surface after it has been bent, stretched, cut, and reassembled under legal rules. The visual drawing may change dramatically. Classification asks which durable features remain: boundary components, handles, crosscaps, and whether a consistent side choice survives everywhere.",
         "payoff": "Surviving features let surfaces be sorted by what remains through simplification, not by how they happen to be drawn. This gives later counts a stage. Euler characteristic, orientation, and vector-field index belong to the surface, not to one picture of it.",
-        "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface is useful only after the preserved features have been identified."
+        "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface can carry the argument only after the preserved features have been identified."
       },
       "caption_nuance": {
         "terms": [

@@ -2,7 +2,7 @@
   {
     "name": "Deform a picture without changing the original question",
     "family": "deformation-family",
-    "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing is useful only if the path to it respects the original rules.",
+    "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing answers the original problem only if the path to it respects the original rules.",
     "steps": [
       "Name the object that is allowed to move and the data attached to it, such as endpoints, boundary order, glued edges, or obstacles.",
       "Name the forbidden moves: passing through, breaking, gluing, moving endpoints, or dropping a boundary.",
@@ -10,7 +10,7 @@
       "State the fact that survived the whole motion and say why it still belongs to the original object.",
       "Use the simpler final picture to answer the original question, while naming the conclusion that the motion is strong enough to support."
     ],
-    "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest, and because the protected feature can be carried back to the starting picture.",
+    "why": "The proof works because each legal step preserves the question. The final picture speaks for the starting picture because the journey to it was honest and the protected feature can be carried back.",
     "failure": "The usual failure is simplifying first and justifying later. If endpoints move, a path crosses an obstacle, or a gluing rule changes before the motion is checked, the proof may have solved a different problem.",
     "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction. The cleaner drawing matters only because those boundary data stayed fixed during the motion."
   },

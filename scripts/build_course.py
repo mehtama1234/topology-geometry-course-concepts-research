@@ -281,7 +281,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "problem": "This family answers the machinery problem: how can routes, gluing rules, holes, and deformations become repeatable tools? The course already uses these jobs in pictures; the machinery source explains how to make those jobs stable enough to reuse beyond one example.",
         "object": "The object is a space with maps, quotient constructions, product constructions, cells, loops, and deformation relations. In everyday terms, the object is a rulebook for travel, identification, combination, and legal simplification.",
         "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence. It can justify broader machinery, not a lecture-specific paraphrase unless the lecture source also supports it.",
-        "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures: routes that cannot move away, gluing rules that define travel, and counts that survive legal deformation. The formality is useful only when it protects one of those jobs.",
+        "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures: routes that cannot move away, gluing rules that define travel, and counts that survive legal deformation. The formality earns its place by protecting one of those jobs.",
         "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages. The bridge should always translate back to a course action: identify edges, combine choices, count pieces, or move without changing the protected fact.",
         "overclaim": "Do not import the full abstraction into beginner-facing prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",
         "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, what evidence survives, and what conclusion follows? If the formal word cannot be turned into an action, it is not ready for beginner-facing prose.",
@@ -574,7 +574,7 @@ CONCEPT_CONTRASTS = [
         "confusion": "A visible number can look like evidence just because it is easy to count. The course repeatedly shows that easy counts may change under harmless redrawings, so the number by itself is not yet a reason.",
         "left_job": "An invariant is chosen because it survives the allowed moves. It carries the answer from one version of the picture to another. Its value comes from the survival proof, not from the fact that it is numerical.",
         "right_job": "A raw count is what the eye sees in one drawing: crossings, cells, regions, or defects before the legal changes have been tested. It may be a useful starting material, but it has not yet earned the right to speak for every legal version of the situation.",
-        "bridge": "The raw count becomes useful only after it is repaired. Alternating signs, parity, or plus-minus cancellation can turn an unstable count into protected evidence. The bridge is the local audit: show what happens when a harmless change creates, removes, or rearranges visible events.",
+        "bridge": "The raw count becomes evidence only after it is repaired. Alternating signs, parity, or plus-minus cancellation can turn an unstable count into protected evidence. The bridge is the local audit: show what happens when a harmless change creates, removes, or rearranges visible events.",
         "failure_test": "If the count changes during a legal move and the explanation has no cancellation rule, the count is not yet an invariant. A repaired explanation says exactly which local changes threaten the number and why the chosen account ignores or cancels those threats.",
         "reader_question": "What local change threatens the count, what part of the count survives that change, and why is that surviving part enough to force the conclusion?",
         "concepts": ["invariant", "parity", "intersection-number"],
@@ -1430,7 +1430,7 @@ WEAK_CLAIM_REPAIR_ROWS = [
     {
         "title": "This is just an example of the concept",
         "weak_claim": "This example names the concept but does not say what the example lets the reader inspect.",
-        "why_weak": "The sentence does not say what the example lets the reader inspect. A useful example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
+        "why_weak": "The sentence does not say what the example lets the reader inspect. A working example should expose the object, the allowed move, the protected fact, or the failure condition. If it only says the example is useful, the reader still does not know what to look at.",
         "first_principles_repair": "Say what the example makes visible. It may show one point in a state space, one legal deformation, one crossing pair, one glued boundary, one defect, or one source boundary. Then state the test. The repaired sentence has to turn the example into an inspection task.",
         "detail_to_check": "Ask whether the example would still teach the idea if the formal concept name were removed from the paragraph. If not, the example is probably leaning on the name instead of showing the job.",
         "where_to_use": "Use this repair on concept pages, theme pages, subtheme pages, and lecture examples that currently rely too much on naming.",
@@ -1476,7 +1476,7 @@ THEMES = [
     {
         "id": "pictures-to-proofs",
         "title": "Make pictures carry reasons",
-        "plain": "The lectures use drawings heavily, but not as decoration. A drawing is useful only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
+        "plain": "The lectures use drawings heavily, but not as decoration. A drawing carries proof only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
         "why_math_matters": "A proof can be a disciplined picture: the picture tells you what is allowed to move, what must stay fixed, and why no hidden step smuggles in a new assumption.",
     },
     {
@@ -1583,7 +1583,7 @@ THEME_ESSAYS = {
 THEME_LENSES = {
     "see-by-deforming": {
         "notices": "This lens notices which parts of a picture are free to move and which parts must stay tied to the original question. It asks whether endpoints, boundaries, crossings, gluing rules, side behavior, or state restrictions are still present while the visible shape changes.",
-        "ignores": "It ignores exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing is useful only if it comes from an allowed motion that can be described from start to finish.",
+        "ignores": "It ignores exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing can answer the original problem only if it comes from an allowed motion that can be described from start to finish.",
         "changes_problem": "It changes a problem from staring at one hard drawing into following a legal path toward a drawing whose structure is easier to inspect. The proof lives in the permitted journey: what moved, what could not move, and what fact survived the whole trip.",
         "reader_test": "Can the reader name the legal moves, one tempting forbidden move, the fixed data, and the fact that survives before trusting the simplified picture as evidence about the original problem?",
     },
@@ -1755,9 +1755,9 @@ SUBTHEME_ESSAYS = {
     "models-not-labels": [
         "Models-not-labels is the companion's check against glossary thinking. A term matters only when it does work. Manifold means local space with gluing behavior. Deformation means legal motion. Index means signed turning around a defect. Configuration space means possible complete states arranged so legal motion becomes a path. If a name does not help answer a question, the reader has not yet learned the idea.",
         "From first principles, a model is a chosen description of the situation. It keeps the information needed for the proof and leaves out information that does not affect the question. A square with edge labels is a model of a surface. A graph of a map is a model of an input-output rule. A configuration space is a model of possible states. The model must be judged by whether it preserves the right constraints.",
-        "This subtheme is also a writing standard. The pages should not ask the reader to admire terminology. They should show what problem the concept solves, what detail makes it valid, and how it connects to the course's proof habits. A definition is useful only after the reader knows what work the idea performs.",
+        "This subtheme is also a writing standard. The pages should not ask the reader to admire terminology. They should show what problem the concept solves, what detail makes it valid, and how it connects to the course's proof habits. A definition can shorten the explanation only after the reader knows what work the idea performs.",
         "The course is especially vulnerable to empty naming because topology words can sound abstract before their purpose is clear. The companion should always translate a name back into an action: build a space, move a picture, count a protected fact, compare two representations, or prove that a behavior is forced. A page is not deep because it lists the word's formal neighbors. It is deep when the reader can say what would break if the idea were removed.",
-        "The reader's check is to ask what the model leaves out and why that omission is allowed. If the model omits a real freedom, adds a false restriction, or forgets boundary data, the theorem may still be true but no longer about the intended situation. Names are useful only when the model earns them.",
+        "The reader's check is to ask what the model leaves out and why that omission is allowed. If the model omits a real freedom, adds a false restriction, or forgets boundary data, the theorem may still be true but no longer about the intended situation. Names can do work only after the model earns them.",
     ],
 }
 
@@ -2013,7 +2013,7 @@ CONCEPTS = [
         "theme": "pictures-to-proofs",
         "subthemes": ["models-not-labels", "holes-and-boundaries"],
         "first_principles": "Sometimes a problem becomes easier when regions become dots and shared borders become lines, or when a surface is replaced by another bookkeeping picture. The same situation is being viewed through a different ledger. The value is that the second picture may make adjacency, separation, or counting visible when the first picture hides it.",
-        "important_detail": "A dual picture is useful only if it preserves the relationships needed by the question.",
+        "important_detail": "A dual picture works only if it preserves the relationships needed by the question.",
         "math_principle": "Changing representation can reveal the invariant that was hidden in the original drawing.",
     },
     {
@@ -2400,7 +2400,7 @@ CONCEPT_ANCHORS = {
     },
     "triangulation": {
         "course_moment": "Surface classification needs a smooth object to become countable. Triangulation supplies a finite ledger, then later checks that the answer does not belong only to that one ledger.",
-        "principle": "A finite drawing can support a proof when the final fact survives replacing one finite drawing by another. The pieces are useful only if the result does not depend on that one choice.",
+        "principle": "A finite drawing can support a proof when the final fact survives replacing one finite drawing by another. The pieces support the argument only if the result does not depend on that one choice.",
         "reader_question": "Which part of the argument uses the chosen pieces, and which part proves the conclusion belongs to the surface instead of the particular triangulation used?",
     },
     "graph-planarity": {
@@ -2444,7 +2444,7 @@ CONCEPT_ANCHORS = {
         "reader_question": "What data describe one complete state, what states are forbidden, and what path in the state space would perform the motion without leaving the model?",
     },
     "duality": {
-        "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question.",
+        "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture preserves the old question while making a hidden relationship easier to inspect.",
         "principle": "Changing representation is valid when the relationships needed by the proof can be read both before and after the change. The new picture must preserve the old question.",
         "reader_question": "After solving the new picture, how does the conclusion translate back to the original object or question, and what preserved relationship made the translation valid?",
     },
@@ -2763,7 +2763,7 @@ FAMILY_CONTRACTS = {
     },
     "surface-family": {
         "input": "A surface whose small patches look manageable but whose completed shape may carry holes, boundary behavior, handles, crosscaps, or side reversal. The input must include the whole carrier surface and the rules for how its patches, edges, or cuts fit together.",
-        "action": "Cut the surface into pieces, track boundary and orientation data on those pieces, and glue the account back into a whole-surface statement. The pieces are useful only when the recombination is honest: shared edges must be matched correctly, boundary terms must not vanish by wish, and side choices must be checked after a full trip.",
+        "action": "Cut the surface into pieces, track boundary and orientation data on those pieces, and glue the account back into a whole-surface statement. The pieces support the proof only when the recombination is honest: shared edges must be matched correctly, boundary terms must not vanish by wish, and side choices must be checked after a full trip.",
         "evidence": "The protected evidence is the global surface account: Euler characteristic, orientability, boundary behavior, or a total controlled by the surface. This evidence belongs to the whole surface, not one patch, because the whole surface decides whether the local accounts can agree.",
         "output": "The output is a whole-surface conclusion that local inspection alone could not justify. It says what every local choice must obey when the surface is completed, such as whether a side choice returns reversed or whether a total count must match the surface.",
         "failure_test": "Reject the argument if it assumes every local choice glues globally, ignores boundary terms, counts before applying gluing rules, or changes the surface while keeping the old name. Those errors replace the real surface with an easier one.",
@@ -3233,7 +3233,7 @@ LECTURE_SOURCE_LENS = {
     ],
     4: [
         "Read the square and boundary-identification anchors as instructions rather than pictures. The source point is that the same drawn square can become different spaces depending on which edges are treated as the same and whether direction is reversed. A boundary label is a travel rule, so it changes the possible routes inside the finished space.",
-        "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing is useful only after the identification rule has been read. Orientation and quotient space belong together because the way a traveler returns decides whether local direction choices can agree globally.",
+        "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing can support the argument only after the identification rule has been read. Orientation and quotient space belong together because the way a traveler returns decides whether local direction choices can agree globally.",
     ],
     5: [
         "Read classification, orientable, non-orientable, Mobius, and surgery as a vocabulary for durable surface parts. The source arc is about reducing surfaces to pieces that survive legal simplification. The lecture is not asking the reader to memorize a catalog; it is showing which features remain after the surface is rearranged without changing its type.",
@@ -3509,7 +3509,7 @@ LECTURE_WALKTHROUGHS = {
     5: {
         "start_here": "Start with the problem of recognizing a surface after it has been bent, stretched, cut, and reassembled under legal rules. The visual drawing may change dramatically. Classification asks which durable features remain: boundary components, handles, crosscaps, and whether a consistent side choice survives everywhere.",
         "payoff": "Surviving features let surfaces be sorted by what remains through simplification, not by how they happen to be drawn. This gives later counts a stage. Euler characteristic, orientation, and vector-field index belong to the surface, not to one picture of it.",
-        "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface is useful only after the preserved features have been identified.",
+        "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface can carry the argument only after the preserved features have been identified.",
     },
     6: {
         "start_here": "Start with the everyday idea of room. Two objects may avoid each other if the surrounding space gives them enough directions to move. In cramped settings, meeting may be forced. The lecture cleans the objects into ordinary position so accidental contacts do not obscure the real room-counting question.",
@@ -3824,7 +3824,7 @@ PROOF_MOVES = [
     {
         "name": "Deform a picture without changing the original question",
         "family": "deformation-family",
-        "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing is useful only if the path to it respects the original rules.",
+        "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing answers the original problem only if the path to it respects the original rules.",
         "steps": [
             "Name the object that is allowed to move and the data attached to it, such as endpoints, boundary order, glued edges, or obstacles.",
             "Name the forbidden moves: passing through, breaking, gluing, moving endpoints, or dropping a boundary.",
@@ -3832,7 +3832,7 @@ PROOF_MOVES = [
             "State the fact that survived the whole motion and say why it still belongs to the original object.",
             "Use the simpler final picture to answer the original question, while naming the conclusion that the motion is strong enough to support.",
         ],
-        "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest, and because the protected feature can be carried back to the starting picture.",
+        "why": "The proof works because each legal step preserves the question. The final picture speaks for the starting picture because the journey to it was honest and the protected feature can be carried back.",
         "failure": "The usual failure is simplifying first and justifying later. If endpoints move, a path crosses an obstacle, or a gluing rule changes before the motion is checked, the proof may have solved a different problem.",
         "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction. The cleaner drawing matters only because those boundary data stayed fixed during the motion.",
     },
@@ -4841,7 +4841,7 @@ def practice_phrase(text):
         "an important number": "a number",
         "important numbers": "numbers",
         "A Mobius strip matters" + " because": "A Mobius strip exposes a first problem because",
-        "A useful example": "A working example",
+        "A useful" + " example": "A working example",
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
@@ -4961,7 +4961,7 @@ def build_concept_self_check(concept):
         "The allowed move is not paperwork; it is the reason a simpler picture can still answer the original question.",
         f"For {title}, the forbidden shortcut is as important as the permitted move, because the shortcut is exactly what can erase the evidence.",
         "The move has to be actable on the example, with the illegal shortcut named beside it.",
-        "A clean picture is useful only if the route to that picture respects the original boundary, crossing, gluing, field, or state rule.",
+        "A clean picture supports the proof only if the route to that picture respects the original boundary, crossing, gluing, field, or state rule.",
         f"The operation should explain what changes and what is kept fixed while {title} is being used.",
         "The move should sound like something that can be checked on the course example, not like a permission imported from a definition.",
         "If a nearby shortcut would change the answer, the check should name that shortcut in ordinary words.",
@@ -6183,7 +6183,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     )
     assumption_body = f"""
 <h1>Assumption Ledger</h1>
-<p class="lead">This page names the quiet conditions that let a mathematical sentence speak. A theorem, count, model, source claim, or deformation is useful only after its assumptions have been checked in plain language.</p>
+<p class="lead">This page names the quiet conditions that let a mathematical sentence speak. A theorem, count, model, source claim, or deformation can carry an argument only after its assumptions have been checked in plain language.</p>
 <section class="lecture">
   <h2>How To Use The Ledger</h2>
   <p>Start with the claim that sounds convincing. Then ask what has to be true for that claim to be allowed. The assumption may be that the same object survived a deformation, that boundary data stayed fixed, that a rule stayed continuous, that all defects were counted, or that the source evidence supports exactly the sentence being written.</p>
@@ -6324,7 +6324,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>How To Read A Formula Here</h2>
   <p>Start by asking what object the formula is talking about: a surface, a pair of meeting objects, a map, a vector field, or a space of possible states. Then ask what operation produced the numbers: splitting into pieces, assigning signs, walking around a defect, or comparing a graph with a diagonal. Finally ask why the number is allowed to speak after the picture changes. That last step is the mathematics.</p>
-  <p>A formula is useful only when it guards the right information. If the surface was modeled incorrectly, if the signs have no orientation, if the boundary was ignored, or if the defect is not isolated, the symbols may still be written down while the reason has failed.</p>
+  <p>A formula guards the argument only when it protects the right information. If the surface was modeled incorrectly, if the signs have no orientation, if the boundary was ignored, or if the defect is not isolated, the symbols may still be written down while the reason has failed.</p>
   <p>Read every formula as a contract with a limit. The contract says what account survives. The limit says what the formula does not give: exact geometry, a location of the fixed point, a trajectory, or permission to change the model.</p>
 </section>
 <div class="grid two">{formula_cards}</div>
@@ -6447,7 +6447,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         )
     terms_body = f"""
 <h1>Term Translator</h1>
-<p class="lead">This page turns loaded course words into the work they do inside an argument. Read the everyday sentence first, then the formal word. The word is useful only after the object, move, protected fact, and failure condition are visible.</p>
+<p class="lead">This page turns loaded course words into the work they do inside an argument. Read the everyday sentence first, then the formal word. The word can carry the argument only after the object, move, protected fact, and failure condition are visible.</p>
 <section class="lecture">
   <h2>How To Use This Page</h2>
   <p>When a page uses a word such as invariant, quotient space, manifold, index, or configuration space, pause and ask what job the word is doing. Is it naming the object, the allowed move, the surviving evidence, the sign rule, the state model, or the theorem that compares local and whole-shape facts?</p>
@@ -6517,7 +6517,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         )
     paper_family_body = f"""
 <h1>Paper Family Ledger</h1>
-<p class="lead">This page treats every source as a paper family with a job. A source is useful only when the reader can say what problem it answers, what object it studies, what idea it protects, and what course move it clarifies.</p>
+<p class="lead">This page treats every source as a paper family with a job. A source can support the companion only when the reader can say what problem it answers, what object it studies, what idea it protects, and what course move it clarifies.</p>
 <section class="lecture">
   <h2>How To Use The Ledger</h2>
   <p>Read this page after the paper source reader. The source reader explains how to approach each source. This ledger asks for the stricter mathematical contract: problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test.</p>

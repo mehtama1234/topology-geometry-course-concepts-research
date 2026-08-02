@@ -985,7 +985,7 @@
         },
         "source_lens": [
           "Read the square and boundary-identification anchors as instructions rather than pictures. The source point is that the same drawn square can become different spaces depending on which edges are treated as the same and whether direction is reversed. A boundary label is a travel rule, so it changes the possible routes inside the finished space.",
-          "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing is useful only after the identification rule has been read. Orientation and quotient space belong together because the way a traveler returns decides whether local direction choices can agree globally."
+          "This lecture should make later pages less abstract. When a map, field, or route lives on a manifold, its behavior is controlled by these hidden travel rules. The drawing can support the argument only after the identification rule has been read. Orientation and quotient space belong together because the way a traveler returns decides whether local direction choices can agree globally."
         ],
         "source_checkpoint": {
           "trust": "Trust edge labels and arrows as travel instructions. They decide whether a path stops, re-enters somewhere else, or returns with its local direction changed, which means the labels are part of the mathematical object rather than decoration.",
@@ -1131,7 +1131,7 @@
         "walkthrough": {
           "start_here": "Start with the problem of recognizing a surface after it has been bent, stretched, cut, and reassembled under legal rules. The visual drawing may change dramatically. Classification asks which durable features remain: boundary components, handles, crosscaps, and whether a consistent side choice survives everywhere.",
           "payoff": "Surviving features let surfaces be sorted by what remains through simplification, not by how they happen to be drawn. This gives later counts a stage. Euler characteristic, orientation, and vector-field index belong to the surface, not to one picture of it.",
-          "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface is useful only after the preserved features have been identified."
+          "reader_check": "When a surface is classified, ask what evidence is being preserved. Is the argument tracking holes, boundary, side reversal, or a controlled surgery move? A name for the surface can carry the argument only after the preserved features have been identified."
         },
         "caption_nuance": {
           "terms": [
@@ -2589,13 +2589,13 @@
       ],
       "lens": {
         "notices": "This lens notices which parts of a picture are free to move and which parts must stay tied to the original question. It asks whether endpoints, boundaries, crossings, gluing rules, side behavior, or state restrictions are still present while the visible shape changes.",
-        "ignores": "It ignores exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing is useful only if it comes from an allowed motion that can be described from start to finish.",
+        "ignores": "It ignores exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing can answer the original problem only if it comes from an allowed motion that can be described from start to finish.",
         "changes_problem": "It changes a problem from staring at one hard drawing into following a legal path toward a drawing whose structure is easier to inspect. The proof lives in the permitted journey: what moved, what could not move, and what fact survived the whole trip.",
         "reader_test": "Can the reader name the legal moves, one tempting forbidden move, the fixed data, and the fact that survives before trusting the simplified picture as evidence about the original problem?"
       },
       "answer_guide": {
         "notice_answer": "Start with the legal motion, not with the prettier drawing. Begin by naming what See by bending without tearing asks the reader to notice: Which parts of a picture are free to move and which parts must stay tied to the original question. It asks whether endpoints, boundaries, crossings, gluing rules, side behavior, or state restrictions are still present while the visible shape changes. Tie that habit to the course problem: This theme answers the course's most basic question: how can a person solve a shape problem without measuring every detail? Tokieda's answer is to move the picture by legal changes until the answer is easier to see. The movement earns its force only when it protects the feature being asked about. See by bending without tearing earns its place only when the reader can point to the proof feature it protects.",
-        "ignore_answer": "Length, angle, and neatness stay outside the proof unless the question names them. Say which tempting detail should not carry the argument: Exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing is useful only if it comes from an allowed motion that can be described from start to finish. Say why leaving those details aside makes the claim sharper rather than weaker. The page has to leave the support-bearing part of the picture unmistakable.",
+        "ignore_answer": "Length, angle, and neatness stay outside the proof unless the question names them. Say which tempting detail should not carry the argument: Exact length, angle, bend, and visual neatness when those details are not part of the protected question. A smoother drawing can answer the original problem only if it comes from an allowed motion that can be described from start to finish. Say why leaving those details aside makes the claim sharper rather than weaker. The page has to leave the support-bearing part of the picture unmistakable.",
         "transfer_answer": "The same disciplined freedom runs from paper strips to cleaned-up vector fields. Show what the theme lets the course reuse: It changes a problem from staring at one hard drawing into following a legal path toward a drawing whose structure is easier to inspect. The proof lives in the permitted journey: what moved, what could not move, and what fact survived the whole trip. Then place that reuse inside the arc: The Mobius strip makes the need for global thinking visible. The disk-connection puzzle turns deformation into a proof method. Surface classification uses deformation to reduce complicated surfaces to standard parts. Intersection number, fixed points, and vector-field index later depend on the same promise: move the object, but keep the protected answer. Show which later proof would lose force without See by bending without tearing.",
         "test_answer": "The reader has to audit the whole motion before trusting the simplified picture. Audit See by bending without tearing with this question: Can the reader name the legal moves, one tempting forbidden move, the fixed data, and the fact that survives before trusting the simplified picture as evidence about the original problem? Include the detail that can break the claim: The allowed moves carry the whole proof. If a path slips through another path, or a boundary point is quietly moved, the argument may have solved a different problem. This theme is therefore about disciplined freedom: move as much as possible, but only under rules that preserve the question. That detail separates a real use of the theme from a summary that has no checkable claim."
       }
@@ -2719,7 +2719,7 @@
     {
       "id": "pictures-to-proofs",
       "title": "Make pictures carry reasons",
-      "plain": "The lectures use drawings heavily, but not as decoration. A drawing is useful only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
+      "plain": "The lectures use drawings heavily, but not as decoration. A drawing carries proof only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
       "why_math_matters": "A proof can be a disciplined picture: the picture tells you what is allowed to move, what must stay fixed, and why no hidden step smuggles in a new assumption.",
       "depth": {
         "problem": "The course uses pictures constantly, but a picture by itself is not proof. This theme asks what makes a drawing mathematical evidence rather than a visual suggestion or a memory aid for something proved elsewhere by words alone in another form.",
@@ -3115,9 +3115,9 @@
       "essay": [
         "Models-not-labels is the companion's check against glossary thinking. A term matters only when it does work. Manifold means local space with gluing behavior. Deformation means legal motion. Index means signed turning around a defect. Configuration space means possible complete states arranged so legal motion becomes a path. If a name does not help answer a question, the reader has not yet learned the idea.",
         "From first principles, a model is a chosen description of the situation. It keeps the information needed for the proof and leaves out information that does not affect the question. A square with edge labels is a model of a surface. A graph of a map is a model of an input-output rule. A configuration space is a model of possible states. The model must be judged by whether it preserves the right constraints.",
-        "This subtheme is also a writing standard. The pages should not ask the reader to admire terminology. They should show what problem the concept solves, what detail makes it valid, and how it connects to the course's proof habits. A definition is useful only after the reader knows what work the idea performs.",
+        "This subtheme is also a writing standard. The pages should not ask the reader to admire terminology. They should show what problem the concept solves, what detail makes it valid, and how it connects to the course's proof habits. A definition can shorten the explanation only after the reader knows what work the idea performs.",
         "The course is especially vulnerable to empty naming because topology words can sound abstract before their purpose is clear. The companion should always translate a name back into an action: build a space, move a picture, count a protected fact, compare two representations, or prove that a behavior is forced. A page is not deep because it lists the word's formal neighbors. It is deep when the reader can say what would break if the idea were removed.",
-        "The reader's check is to ask what the model leaves out and why that omission is allowed. If the model omits a real freedom, adds a false restriction, or forgets boundary data, the theorem may still be true but no longer about the intended situation. Names are useful only when the model earns them."
+        "The reader's check is to ask what the model leaves out and why that omission is allowed. If the model omits a real freedom, adds a false restriction, or forgets boundary data, the theorem may still be true but no longer about the intended situation. Names can do work only after the model earns them."
       ],
       "routine": {
         "look_for": "Look for the work a term performs: what object it names, what move it permits, what count it protects, what model it builds, or what conclusion it supports. A term should do work in the argument.",
@@ -3175,7 +3175,7 @@
       },
       "self_check": {
         "object_check": "The first check for Generic position is the object it studies. Put the object on the table before using the concept name: A drawing or configuration that may contain accidental alignments, tangencies, or multiple events happening at the same place. The object is suspect because one special-looking picture can hide several ordinary events. The lecture anchor should show that object doing work: In the intersection lectures, a messy meeting is first nudged into clean separate meetings. That small cleanup is not cosmetic. It is what lets each meeting receive a sign or be paired with another meeting. Do not let the formal name hide the carrier of the idea; the page must first show the surface, route, field, map, count, or state space doing the work.",
-        "operation_check": "The page has to show what Generic position lets the reader do. Describe what changes in the picture, model, count, or field: Move it a very small amount while preserving the actual question, so fragile coincidences separate into ordinary events. The motion is allowed only when it keeps the original boundary data, objects, and restrictions intact. Say which part of the setup gives permission for this move. A clean picture is useful only if the route to that picture respects the original boundary, crossing, gluing, field, or state rule.",
+        "operation_check": "The page has to show what Generic position lets the reader do. Describe what changes in the picture, model, count, or field: Move it a very small amount while preserving the actual question, so fragile coincidences separate into ordinary events. The motion is allowed only when it keeps the original boundary data, objects, and restrictions intact. Say which part of the setup gives permission for this move. A clean picture supports the proof only if the route to that picture respects the original boundary, crossing, gluing, field, or state rule.",
         "protected_check": "Generic position needs surviving evidence before it earns a conclusion. Put the preserved evidence into one plain sentence: The answer to the original problem, not the exact accidental arrangement that made the first drawing hard to read. Cleanup should expose evidence without changing what is being proved. Then use the principle to say why it is enough: A proof should count ordinary events whose behavior survives small legal motion, because accidental coincidences can hide the event that actually carries evidence. The cleanup is part of making the evidence trustworthy. Name the evidence that remains after the allowed move, then say what conclusion that evidence can and cannot carry.",
         "failure_check": "Test Generic position at the nearest place it can break. Make the break point visible: The small move changes the object being studied, crosses a forbidden boundary, or removes a condition the problem required. Then the ordinary picture no longer answers the original question. Then use the trap to explain what detail the reader must protect: to think ordinary position means ignoring difficult cases. It does not. It means solve the stable case first, then understand exceptional cases as limits or controlled moments where stable pictures change without destroying the question. The warning belongs inside the explanation because changing the rule often changes the answer."
       },
@@ -3679,13 +3679,13 @@
       },
       "anchor": {
         "course_moment": "Surface classification needs a smooth object to become countable. Triangulation supplies a finite ledger, then later checks that the answer does not belong only to that one ledger.",
-        "principle": "A finite drawing can support a proof when the final fact survives replacing one finite drawing by another. The pieces are useful only if the result does not depend on that one choice.",
+        "principle": "A finite drawing can support a proof when the final fact survives replacing one finite drawing by another. The pieces support the argument only if the result does not depend on that one choice.",
         "reader_question": "Which part of the argument uses the chosen pieces, and which part proves the conclusion belongs to the surface instead of the particular triangulation used?"
       },
       "self_check": {
         "object_check": "Triangulation and cell decomposition has to begin with something the reader can inspect. Put the carrier of the idea into the reader's hands: A continuous surface that is too slippery to count directly but can be divided into manageable finite pieces. The division gives the reader handles for bookkeeping. The course moment tests that carrier in use: Surface classification needs a smooth object to become countable. Triangulation supplies a finite ledger, then later checks that the answer does not belong only to that one ledger. The object has to be visible before any theorem name appears, because the later conclusion has to belong to that object.",
         "operation_check": "The operation check turns Triangulation and cell decomposition into something auditable. Describe the permitted operation without hiding behind terminology: Replace the surface by a finite ledger of cells or triangles, then compare what happens when that ledger is refined. The operation makes counting possible without pretending the first ledger is sacred. Explain what fixed data, boundary behavior, or model condition stays in place. The move should sound like something that can be checked on the course example, not like a permission imported from a definition.",
-        "protected_check": "Triangulation and cell decomposition: keep the durable evidence in front. Separate the surviving fact from the drawing noise: The surface information that survives after the chosen pieces are redrawn, split, or merged legally. The proof must outlive the chosen triangulation. Then connect the survival to the course principle: A finite drawing can support a proof when the final fact survives replacing one finite drawing by another. The pieces are useful only if the result does not depend on that one choice. If the same fact would not survive the legal change, the concept has only been named, not used.",
+        "protected_check": "Triangulation and cell decomposition: keep the durable evidence in front. Separate the surviving fact from the drawing noise: The surface information that survives after the chosen pieces are redrawn, split, or merged legally. The proof must outlive the chosen triangulation. Then connect the survival to the course principle: A finite drawing can support a proof when the final fact survives replacing one finite drawing by another. The pieces support the argument only if the result does not depend on that one choice. If the same fact would not survive the legal change, the concept has only been named, not used.",
         "failure_check": "Triangulation and cell decomposition also needs a visible failure case. Say what assumption cannot be dropped: The pieces are treated as the surface itself, or if the count depends on one arbitrary decomposition. Then the argument proves something about the mesh, not the surface. Then show how the beginner trap drops or blurs it: to confuse the chosen triangulation with the surface itself. A different triangulation should give the same meaningful surface facts, or the count was not topological. The pieces are scaffolding for thought, not the object. For Triangulation and cell decomposition, the beginner trap is not a side note; it is the fastest way to see which detail the concept protects."
       },
       "appearances": [
@@ -4364,7 +4364,7 @@
         "holes-and-boundaries"
       ],
       "first_principles": "Sometimes a problem becomes easier when regions become dots and shared borders become lines, or when a surface is replaced by another bookkeeping picture. The same situation is being viewed through a different ledger. The value is that the second picture may make adjacency, separation, or counting visible when the first picture hides it.",
-      "important_detail": "A dual picture is useful only if it preserves the relationships needed by the question.",
+      "important_detail": "A dual picture works only if it preserves the relationships needed by the question.",
       "math_principle": "Changing representation can reveal the invariant that was hidden in the original drawing.",
       "depth": {
         "why_it_exists": "Duality exists because the first picture of a problem may hide the useful count. Turning regions into dots or borders into connections can reveal a structure that was present but hard to see in the original drawing.",
@@ -4385,12 +4385,12 @@
         "breaks_if": "It breaks if solving the new picture no longer answers the old question, or if the translation back is left unstated. A dual view must return with the original claim intact."
       },
       "anchor": {
-        "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question.",
+        "course_moment": "A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture preserves the old question while making a hidden relationship easier to inspect.",
         "principle": "Changing representation is valid when the relationships needed by the proof can be read both before and after the change. The new picture must preserve the old question.",
         "reader_question": "After solving the new picture, how does the conclusion translate back to the original object or question, and what preserved relationship made the translation valid?"
       },
       "self_check": {
-        "object_check": "Make Dual pictures concrete before asking it to explain anything. Name the carrier, not the label: A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules. The object needs another representation because the first one obscures the evidence. Then use the course moment to show where that carrier appears: A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture is useful only because it preserves the old question. The course example should make the object visible enough that the reader can tell whether a later source is talking about the same kind of thing.",
+        "object_check": "Make Dual pictures concrete before asking it to explain anything. Name the carrier, not the label: A problem whose first drawing hides the useful relationships among regions, boundaries, choices, or rules. The object needs another representation because the first one obscures the evidence. Then use the course moment to show where that carrier appears: A map becomes a graph, regions can become vertices, and an edge-labeled square becomes a travel rule. The new picture preserves the old question while making a hidden relationship easier to inspect. The course example should make the object visible enough that the reader can tell whether a later source is talking about the same kind of thing.",
         "operation_check": "Dual pictures: name the action it performs on the example. Spell out the action before naming the method: Redraw the same relationships in a different form, such as regions becoming vertices or a map becoming a graph. The operation is translation, not replacement of the problem. State the permission in words that can be checked on the course example. The allowed move is not paperwork; it is the reason a simpler picture can still answer the original question.",
         "protected_check": "Dual pictures: name the protected fact at the working core. Track the fact that travels through the legal move: The meaning that survives translation between the original picture and the dual picture. The new picture is valid only because it preserves the needed relationships. The principle says what that travel proves: Changing representation is valid when the relationships needed by the proof can be read both before and after the change. The new picture must preserve the old question. Separate this surviving fact from details such as neatness, length, position, or one convenient drawing.",
         "failure_check": "Dual pictures: name the tempting false use. End with the limit of the claim: Solving the new picture no longer answers the old question, or if the translation back is left unstated. A dual view must return with the original claim intact. The beginner trap shows what happens when that limit is ignored: to treat the dual picture as a new problem. It is a change of representation, and it is valid only when it preserves the relationships the original question depends on. Otherwise it is just a different drawing. The failure case is part of Dual pictures: it tells the reader which changed assumption destroys the claim."
@@ -5108,7 +5108,7 @@
       ],
       "contract": {
         "input": "A surface whose small patches look manageable but whose completed shape may carry holes, boundary behavior, handles, crosscaps, or side reversal. The input must include the whole carrier surface and the rules for how its patches, edges, or cuts fit together.",
-        "action": "Cut the surface into pieces, track boundary and orientation data on those pieces, and glue the account back into a whole-surface statement. The pieces are useful only when the recombination is honest: shared edges must be matched correctly, boundary terms must not vanish by wish, and side choices must be checked after a full trip.",
+        "action": "Cut the surface into pieces, track boundary and orientation data on those pieces, and glue the account back into a whole-surface statement. The pieces support the proof only when the recombination is honest: shared edges must be matched correctly, boundary terms must not vanish by wish, and side choices must be checked after a full trip.",
         "evidence": "The protected evidence is the global surface account: Euler characteristic, orientability, boundary behavior, or a total controlled by the surface. This evidence belongs to the whole surface, not one patch, because the whole surface decides whether the local accounts can agree.",
         "output": "The output is a whole-surface conclusion that local inspection alone could not justify. It says what every local choice must obey when the surface is completed, such as whether a side choice returns reversed or whether a total count must match the surface.",
         "failure_test": "Reject the argument if it assumes every local choice glues globally, ignores boundary terms, counts before applying gluing rules, or changes the surface while keeping the old name. Those errors replace the real surface with an easier one."
@@ -5122,7 +5122,7 @@
       },
       "answer_guide": {
         "input_answer": "Start with the whole surface, not one ordinary-looking patch. For Surface bookkeeping, first name the situation being fed into the method: A surface whose small patches look manageable but whose completed shape may carry holes, boundary behavior, handles, crosscaps, or side reversal. The input must include the whole carrier surface and the rules for how its patches, edges, or cuts fit together. The human problem is that surfaces look simple nearby but can behave differently as wholes. This family asks how patches, boundaries, holes, and orientation combine into whole-surface facts that local inspection alone misses completely. Surface bookkeeping starts only after the reader knows what object or situation is being fed into it.",
-        "action_answer": "The method cuts, tracks, and reglues while keeping the surface account honest. Use Surface bookkeeping as an action, not a label: Cut the surface into pieces, track boundary and orientation data on those pieces, and glue the account back into a whole-surface statement. The pieces are useful only when the recombination is honest: shared edges must be matched correctly, boundary terms must not vanish by wish, and side choices must be checked after a full trip. The playbook move makes the action checkable: Break the surface into manageable pieces, track local information on the pieces, then glue the account back together without losing global restrictions. The recombination is where the surface speaks, because that is where local choices must agree, reverse, cancel, or fail to extend. This keeps Surface bookkeeping from becoming a label for work the page has not shown.",
+        "action_answer": "The method cuts, tracks, and reglues while keeping the surface account honest. Use Surface bookkeeping as an action, not a label: Cut the surface into pieces, track boundary and orientation data on those pieces, and glue the account back into a whole-surface statement. The pieces support the proof only when the recombination is honest: shared edges must be matched correctly, boundary terms must not vanish by wish, and side choices must be checked after a full trip. The playbook move makes the action checkable: Break the surface into manageable pieces, track local information on the pieces, then glue the account back together without losing global restrictions. The recombination is where the surface speaks, because that is where local choices must agree, reverse, cancel, or fail to extend. This keeps Surface bookkeeping from becoming a label for work the page has not shown.",
         "evidence_answer": "The protected evidence is the global account that survives local bookkeeping. Do not stop at the action; name the evidence it preserves: The global surface account: Euler characteristic, orientability, boundary behavior, or a total controlled by the surface. This evidence belongs to the whole surface, not one patch, because the whole surface decides whether the local accounts can agree. The playbook payoff is: The conclusion belongs to the whole surface, not to one patch, one drawing, or one chosen decomposition. It explains what local choices must do when completed, such as which totals, side behaviors, route options, or boundary contributions cannot be avoided. That is how one cleaned-up, counted, or modeled situation can stand for the starting problem.",
         "output_answer": "The result is a whole-surface constraint that local inspection could not supply. State the final consequence in plain words: A whole-surface conclusion that local inspection alone could not justify. It says what every local choice must obey when the surface is completed, such as whether a side choice returns reversed or whether a total count must match the surface. Then tie it to the working mechanism: Surface bookkeeping uses decompositions, orientation choices, boundary terms, and cancellation. It is careful about what is local and what is global, because many surface obstructions appear only after a full trip around the object or a full sum over its pieces. State the output as a consequence, not as a restatement of the method name.",
         "failure_answer": "The bad use treats local freedom as if it automatically glued into global freedom. Finally test where Surface bookkeeping breaks: it assumes every local choice glues globally, ignores boundary terms, counts before applying gluing rules, or changes the surface while keeping the old name. Those errors replace the real surface with an easier one. The playbook failure says the same risk this way: The method fails when local ordinariness is mistaken for global simplicity, when boundary and orientation data are dropped, or when a cell count is made before the identifications are understood. Small-patch evidence cannot replace the whole surface or the rules that glue it together. Surface bookkeeping is not ready until the reader can say what would make it break."
@@ -7272,7 +7272,7 @@
     {
       "name": "Deform a picture without changing the original question",
       "family": "deformation-family",
-      "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing is useful only if the path to it respects the original rules.",
+      "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing answers the original problem only if the path to it respects the original rules.",
       "steps": [
         "Name the object that is allowed to move and the data attached to it, such as endpoints, boundary order, glued edges, or obstacles.",
         "Name the forbidden moves: passing through, breaking, gluing, moving endpoints, or dropping a boundary.",
@@ -7280,7 +7280,7 @@
         "State the fact that survived the whole motion and say why it still belongs to the original object.",
         "Use the simpler final picture to answer the original question, while naming the conclusion that the motion is strong enough to support."
       ],
-      "why": "The proof works because each legal step preserves the question. The final picture is useful only because the journey to it was honest, and because the protected feature can be carried back to the starting picture.",
+      "why": "The proof works because each legal step preserves the question. The final picture speaks for the starting picture because the journey to it was honest and the protected feature can be carried back.",
       "failure": "The usual failure is simplifying first and justifying later. If endpoints move, a path crosses an obstacle, or a gluing rule changes before the motion is checked, the proof may have solved a different problem.",
       "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction. The cleaner drawing matters only because those boundary data stayed fixed during the motion."
     },
@@ -7491,7 +7491,7 @@
       "confusion": "A visible number can look like evidence just because it is easy to count. The course repeatedly shows that easy counts may change under harmless redrawings, so the number by itself is not yet a reason.",
       "left_job": "An invariant is chosen because it survives the allowed moves. It carries the answer from one version of the picture to another. Its value comes from the survival proof, not from the fact that it is numerical.",
       "right_job": "A raw count is what the eye sees in one drawing: crossings, cells, regions, or defects before the legal changes have been tested. It may be a useful starting material, but it has not yet earned the right to speak for every legal version of the situation.",
-      "bridge": "The raw count becomes useful only after it is repaired. Alternating signs, parity, or plus-minus cancellation can turn an unstable count into protected evidence. The bridge is the local audit: show what happens when a harmless change creates, removes, or rearranges visible events.",
+      "bridge": "The raw count becomes evidence only after it is repaired. Alternating signs, parity, or plus-minus cancellation can turn an unstable count into protected evidence. The bridge is the local audit: show what happens when a harmless change creates, removes, or rearranges visible events.",
       "failure_test": "If the count changes during a legal move and the explanation has no cancellation rule, the count is not yet an invariant. A repaired explanation says exactly which local changes threaten the number and why the chosen account ignores or cancels those threats.",
       "reader_question": "What local change threatens the count, what part of the count survives that change, and why is that surviving part enough to force the conclusion?",
       "concepts": [
@@ -8017,7 +8017,7 @@
       "problem": "This family answers the machinery problem: how can routes, gluing rules, holes, and deformations become repeatable tools? The course already uses these jobs in pictures; the machinery source explains how to make those jobs stable enough to reuse beyond one example.",
       "object": "The object is a space with maps, quotient constructions, product constructions, cells, loops, and deformation relations. In everyday terms, the object is a rulebook for travel, identification, combination, and legal simplification.",
       "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence. It can justify broader machinery, not a lecture-specific paraphrase unless the lecture source also supports it.",
-      "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures: routes that cannot move away, gluing rules that define travel, and counts that survive legal deformation. The formality is useful only when it protects one of those jobs.",
+      "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures: routes that cannot move away, gluing rules that define travel, and counts that survive legal deformation. The formality earns its place by protecting one of those jobs.",
       "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages. The bridge should always translate back to a course action: identify edges, combine choices, count pieces, or move without changing the protected fact.",
       "overclaim": "Do not import the full abstraction into beginner-facing prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",
       "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, what evidence survives, and what conclusion follows? If the formal word cannot be turned into an action, it is not ready for beginner-facing prose.",
@@ -8461,7 +8461,7 @@
       },
       {
         "requirement": "Hand-written concepts, themes, subthemes, and method families",
-        "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 10761 words.",
+        "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages tie ideas to anchor examples and self-checks; theme, subtheme, and method-family pages add answer guides so the reader can use the idea, not only recognize its name. These cross-course answer guides add 10765 words.",
         "status": "met"
       },
       {
@@ -8581,7 +8581,7 @@
       },
       {
         "requirement": "Paper family ledger",
-        "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2021 words make the paper layer usable without letting it drown the course explanation.",
+        "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2020 words make the paper layer usable without letting it drown the course explanation.",
         "status": "met"
       }
     ],
@@ -8596,8 +8596,8 @@
       "lecture_spine_entries": 15,
       "lecture_essay_words": 5513,
       "lecture_deepening_words": 1595,
-      "lecture_walkthrough_words": 1953,
-      "lecture_source_lens_words": 1639,
+      "lecture_walkthrough_words": 1955,
+      "lecture_source_lens_words": 1641,
       "lecture_source_checkpoint_words": 1532,
       "lecture_caption_nuance_words": 1498,
       "lecture_source_faithfulness_words": 2465,
@@ -8611,19 +8611,19 @@
       "lecture_answer_guide_words": 3524,
       "concept_essay_words": 7920,
       "concept_workup_words": 2773,
-      "concept_anchor_words": 1965,
-      "concept_self_check_words": 9417,
+      "concept_anchor_words": 1969,
+      "concept_self_check_words": 9422,
       "theme_essay_words": 1973,
-      "theme_lens_words": 920,
-      "theme_answer_guide_words": 2853,
-      "subtheme_essay_words": 3024,
+      "theme_lens_words": 923,
+      "theme_answer_guide_words": 2856,
+      "subtheme_essay_words": 3027,
       "subtheme_routine_words": 1428,
       "subtheme_bridge_words": 1287,
       "subtheme_answer_guide_words": 4688,
       "family_essay_words": 1634,
-      "family_contract_words": 1132,
+      "family_contract_words": 1133,
       "family_playbook_words": 1086,
-      "family_answer_guide_words": 3220,
+      "family_answer_guide_words": 3221,
       "playground_widgets": 4,
       "synthesis_sections": 8,
       "dependency_paths": 8,
@@ -8652,7 +8652,7 @@
       "source_readers": 7,
       "source_reader_words": 2014,
       "paper_family_ledger_rows": 7,
-      "paper_family_ledger_words": 2021,
+      "paper_family_ledger_words": 2020,
       "references": 7,
       "quality_rubric_items": 6,
       "rubric_coverage_layers": 6,
