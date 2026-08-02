@@ -38,7 +38,7 @@
     },
     {
       "requirement": "Source-nuance repair layer",
-      "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, reviewer questions, and concept links. The 2183 repair words make source caution usable on actual lecture sentences.",
+      "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, evidence checks, and concept links. The 2166 repair words make source caution usable on actual lecture sentences.",
       "status": "met"
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "requirement": "First-principles quality rubric",
-      "evidence": "6 prose tests enforce the writing standard: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement. The rubric tells a reviewer what to repair when a paragraph sounds smooth but does not explain the mathematics.",
+      "evidence": "6 prose tests enforce the writing standard: object before term, legal move, protected fact, failure condition, course anchor, and everyday-language replacement. The rubric names what to repair when a paragraph sounds smooth but does not explain the mathematics.",
       "status": "met"
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "requirement": "Explanation repair clinic",
-      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1649 repair-clinic words make the no-filler standard concrete.",
+      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1637 repair-clinic words make the no-filler standard concrete.",
       "status": "met"
     },
     {
@@ -123,7 +123,7 @@
     },
     {
       "requirement": "Weak-claim repair layer",
-      "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1767 repair words show the missing detail, where the stronger sentence belongs, and what a reviewer should check before accepting it.",
+      "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1767 repair words show the missing detail, where the stronger sentence belongs, and what must be checked before accepting it.",
       "status": "met"
     },
     {
@@ -193,7 +193,7 @@
     "lecture_reconstruction_drills": 15,
     "lecture_reconstruction_words": 7275,
     "source_nuance_repairs": 15,
-    "source_nuance_repair_words": 2183,
+    "source_nuance_repair_words": 2166,
     "lecture_reader_test_words": 2747,
     "lecture_answer_guide_words": 3511,
     "concept_essay_words": 7895,
@@ -217,7 +217,7 @@
     "transfer_lab_cases": 8,
     "transfer_lab_words": 1933,
     "repair_clinic_cases": 8,
-    "repair_clinic_words": 1649,
+    "repair_clinic_words": 1637,
     "oral_exam_prompts": 7,
     "oral_exam_words": 1551,
     "change_ledger_rows": 10,

@@ -721,7 +721,7 @@ def main():
     if len(words(re.sub(r"<[^>]+>", " ", transfer_lab))) < 1700:
         fail("transfer lab page too thin")
     repair_clinic = (SITE / "repair-clinic.html").read_text(encoding="utf-8", errors="ignore")
-    for phrase in ["Repair Clinic", "Flawed explanation:", "Why it fails:", "Repair move:", "Strong version:", "Reviewer test:", "The Repair Test"]:
+    for phrase in ["Repair Clinic", "Flawed explanation:", "Why it fails:", "Repair move:", "Strong version:", "Evidence test:", "The Repair Test"]:
         if phrase not in repair_clinic:
             fail(f"repair clinic page missing phrase: {phrase}")
     if repair_clinic.count("<article") < 8:
@@ -864,7 +864,7 @@ def main():
     if len(words(re.sub(r"<[^>]+>", " ", lecture_reconstruction_page))) < 3600:
         fail("lecture reconstruction drills page too thin")
     source_nuance_repairs_page = (SITE / "source-nuance-repairs.html").read_text(encoding="utf-8", errors="ignore")
-    for phrase in ["Source Nuance Repairs", "Caption hazard:", "Safe claim:", "Repair move:", "Do not claim:", "Reviewer question:", "The Source Repair Test"]:
+    for phrase in ["Source Nuance Repairs", "Caption hazard:", "Safe claim:", "Repair move:", "Do not claim:", "Evidence check:", "The Source Repair Test"]:
         if phrase not in source_nuance_repairs_page:
             fail(f"source nuance repairs page missing phrase: {phrase}")
     if source_nuance_repairs_page.count("<article") < 15:
@@ -888,7 +888,7 @@ def main():
     if len(words(re.sub(r"<[^>]+>", " ", quality_rubric_page))) < 650:
         fail("quality rubric page too thin")
     rubric_coverage_page = (SITE / "rubric-coverage.html").read_text(encoding="utf-8", errors="ignore")
-    for phrase in ["Rubric Coverage", "How To Read This Coverage", "Reviewer Rule", "Reader test:", "Name the object before the term", "Name the legal move", "Name what survives", "Say what would break the claim", "Tie the idea to a course moment", "Replace formal words with everyday sentences"]:
+    for phrase in ["Rubric Coverage", "How To Read This Coverage", "Evidence Rule", "Reader test:", "Name the object before the term", "Name the legal move", "Name what survives", "Say what would break the claim", "Tie the idea to a course moment", "Replace formal words with everyday sentences"]:
         if phrase not in rubric_coverage_page:
             fail(f"rubric coverage page missing phrase: {phrase}")
     if rubric_coverage_page.count("<article") < 6:

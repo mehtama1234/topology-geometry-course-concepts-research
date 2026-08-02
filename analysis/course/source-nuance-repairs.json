@@ -5,7 +5,7 @@
     "safe_claim": "The supported claim is that the Mobius strip makes the course method visible: build the object by a gluing rule, follow information all the way around it, and notice that the completed surface can contradict what every small patch seemed to promise.",
     "repair_move": "If a sentence says only that the strip has one side, add the walk-around test: carry a mark around the strip and watch it return changed.",
     "do_not_claim": "Do not claim that all later topology ignores measurement. The first lecture separates side behavior from exact shape; it does not make geometry irrelevant.",
-    "reviewer_question": "Can the reader describe the traveler or mark making one full trip, say what side information returns changed, and explain why a small flat patch could not have exposed that whole-surface behavior?",
+    "reviewer_question": "Evidence check: name the traveler or mark, follow one full trip, state what side information returns changed, and say why no small flat patch could expose that whole-surface behavior.",
     "concepts": [
       "topology-vs-geometry",
       "deformation",
@@ -18,7 +18,7 @@
     "safe_claim": "The supported claim is that the lecture turns a routing puzzle into a rule-governed deformation problem: the endpoints, their circular order, and the no-crossing rule decide whether every legal drawing inherits the same obstruction.",
     "repair_move": "When a paragraph says a connection is impossible, add the protected feature that defeats every legal attempt, not only the failed picture shown first.",
     "do_not_claim": "Do not treat one crowded drawing as the proof. The proof needs a reason that survives any allowed redrawing of the paths while endpoints, endpoint order, and no-crossing rules stay fixed.",
-    "reviewer_question": "Does the explanation name the boundary data before the drawing, state how paths may move, and show why the forbidden crossing is forced by the setup rather than by one crowded sketch?",
+    "reviewer_question": "Evidence check: name the boundary data before the drawing, state how paths may move, and show why the forbidden crossing is forced by the setup rather than by one crowded sketch.",
     "concepts": [
       "deformation",
       "intersection-number",
@@ -31,7 +31,7 @@
     "safe_claim": "The supported claim is that the lecture teaches space-making as a mathematical act: independent choices make products, declared sameness makes quotients, local patches make manifolds, and controlled replacement makes surgery meaningful.",
     "repair_move": "If a sentence names a space, add how it was made: which pieces are paired, glued, removed, thickened, or treated as one point, and what routes that construction permits.",
     "do_not_claim": "Do not let product or quotient appear as unexplained vocabulary. The independent choices or imposed identifications need to be visible before the formal word is allowed to shorten the sentence.",
-    "reviewer_question": "Can the reader reconstruct the space from the rule alone, naming the choices, identifications, local patches, or replacement boundary before relying on product, quotient, manifold, or surgery as a title?",
+    "reviewer_question": "Evidence check: reconstruct the space from the rule alone by naming the choices, identifications, local patches, or replacement boundary before using product, quotient, manifold, or surgery as a shortcut.",
     "concepts": [
       "product-space",
       "quotient-space",
@@ -44,7 +44,7 @@
     "safe_claim": "The supported claim is that edge identifications are instructions for the finished surface: they decide where a traveler re-enters, whether an apparent border remains a border, and whether local direction survives a full loop.",
     "repair_move": "When a page reasons from a square, add a sentence that applies the gluing rule before drawing conclusions about boundary, orientation, routes, or whether an apparent edge remains an edge.",
     "do_not_claim": "Do not call the unglued drawing the final surface. It is a code for a surface that exists only after the identifications are made.",
-    "reviewer_question": "Does the explanation say which points become identical, how a path crosses the glued edge afterward, and which boundary or orientation claim would be false if the flat square were read literally?",
+    "reviewer_question": "Evidence check: say which points become identical, how a path crosses the glued edge afterward, and which boundary or orientation claim would be false if the flat square were read literally.",
     "concepts": [
       "quotient-space",
       "boundary-orientation",
@@ -57,7 +57,7 @@
     "safe_claim": "The supported claim is that surface classification is about durable evidence after legal rearrangement: handles preserve route choices, boundary pieces preserve edge behavior, and orientability records whether side choices can agree globally.",
     "repair_move": "If a paragraph lists surface types, add the test that tells them apart: what happens to loops, sides, handles, or boundary under legal changes.",
     "do_not_claim": "Do not imply every visual difference creates a new surface type. Classification earns its force because many drawings represent the same underlying surface once the surviving features have been checked.",
-    "reviewer_question": "Can the reader name the surviving feature after the cuts and gluings, explain how a different drawing would still carry it, and avoid treating a surface name as the proof?",
+    "reviewer_question": "Evidence check: name the surviving feature after the cuts and gluings, explain how a different drawing would still carry it, and do not treat a surface name as the proof.",
     "concepts": [
       "surgery",
       "manifold",
@@ -70,7 +70,7 @@
     "safe_claim": "The supported claim is that the lecture uses dimension and ordinary position to separate accidental contact from evidence: after a legal nudge, some meetings disappear, while clean remaining meetings can be inspected.",
     "repair_move": "When a sentence mentions generic position, add the ordinary picture it creates: clean meetings, separated events, and counts or signs that can be assigned after the legal nudge.",
     "do_not_claim": "Do not treat every visible meeting as forced. The page must distinguish a removable accident from a meeting protected by the setup after the objects have been placed in ordinary position.",
-    "reviewer_question": "Does the explanation identify the accident removed by the small nudge, the meeting pattern that remains, and the reason the nudge preserves the original placement question?",
+    "reviewer_question": "Evidence check: identify the accident removed by the small nudge, the meeting pattern that remains, and the reason the nudge preserves the original placement question.",
     "concepts": [
       "generic-position",
       "intersection-number",
@@ -83,7 +83,7 @@
     "safe_claim": "The supported claim is that the balance demonstration gives a first existence argument: a continuously changing quantity cannot pass from one side of the required condition to the other without meeting it.",
     "repair_move": "If a paragraph stays with balance intuition, add the quantity being watched, the two sides of the comparison, and the special equality that no-jump motion forces.",
     "do_not_claim": "Do not say the physical demonstration proves every later theorem. It supplies the shared pattern of continuous motion, comparison, and forced meeting; each later theorem still needs its own object and assumptions.",
-    "reviewer_question": "Can the reader identify the changing quantity, the condition it cannot skip, and the exact claim limit: existence of a special state rather than a computation of its location?",
+    "reviewer_question": "Evidence check: identify the changing quantity, the condition it cannot skip, and the exact claim limit: existence of a special state rather than a computation of its location.",
     "concepts": [
       "fixed-points",
       "intersection-number",
@@ -96,7 +96,7 @@
     "safe_claim": "The supported claim is that the lecture repairs raw crossing counts by giving clean meetings signs, so the pair events created or removed during legal motion contribute no net change.",
     "repair_move": "When a page uses plus and minus intersections, add the shared orientation or local direction rule, then show one birth event where the two signs cancel.",
     "do_not_claim": "Do not call the raw number of crossings invariant. The protected candidate is the signed total after the page has explained clean meetings, orientation, and pair cancellation.",
-    "reviewer_question": "Does the explanation show where the signs come from, why a newly born pair contributes opposite signs, and what legal motion leaves the signed total unchanged?",
+    "reviewer_question": "Evidence check: show where the signs come from, why a newly born pair contributes opposite signs, and what legal motion leaves the signed total unchanged.",
     "concepts": [
       "intersection-number",
       "boundary-orientation",
@@ -109,7 +109,7 @@
     "safe_claim": "The supported claim is the graph-diagonal translation: a rule becomes its graph, the diagonal records self-agreement, and a meeting between them is a fixed point, while the missing-caption gap limits stronger claims.",
     "repair_move": "If a sentence depends on the absent middle caption, weaken it to the recovered structure: map, graph, diagonal, self-agreement, and controlled intersection language.",
     "do_not_claim": "Do not present the missing section as transcript-verified. Mark it as course-arc inference unless a human check of the video supplies stronger evidence.",
-    "reviewer_question": "Can the claim be justified from recovered captions and visible lecture structure, and does it stay at graph, diagonal, and self-agreement unless a human check supplies the missing middle evidence?",
+    "reviewer_question": "Evidence check: justify the claim from recovered captions and visible lecture structure, and keep it at graph, diagonal, and self-agreement unless a human check supplies the missing middle evidence.",
     "concepts": [
       "fixed-points",
       "brouwer-fixed-point",
@@ -122,7 +122,7 @@
     "safe_claim": "The supported claim is Brouwer's fixed-point contract in plain terms: a continuous rule from a closed filled ball back into itself cannot move every point away from itself.",
     "repair_move": "When Brouwer is named, add the four checks: closed ball, map back into itself, continuity, and fixed-point conclusion without claiming a location, uniqueness, or solved motion path.",
     "do_not_claim": "Do not use Brouwer as a general statement that every motion has a fixed point. The object and rule are part of the theorem.",
-    "reviewer_question": "Does the explanation name the closed filled space, the self-map rule, the no-jump condition, and the conclusion limit: at least one fixed point, not its location or uniqueness?",
+    "reviewer_question": "Evidence check: name the closed filled space, the self-map rule, the no-jump condition, and the conclusion limit: at least one fixed point, not its location or uniqueness.",
     "concepts": [
       "brouwer-fixed-point",
       "fixed-points",
@@ -135,7 +135,7 @@
     "safe_claim": "The supported claim is that vector fields let the course study motion by reading an arrow pattern: where arrows vanish, how nearby arrows turn, and what can be learned before trajectories are solved.",
     "repair_move": "If a paragraph says the system has an equilibrium, add how the arrow field behaves nearby and what question remains after the point is found.",
     "do_not_claim": "Do not treat an equilibrium as the same object as a fixed point of a map unless the map or motion law has been named.",
-    "reviewer_question": "Can the reader point to the field, isolate the vanishing point, walk around it in nearby arrows, and keep that local evidence separate from a fixed point of an unnamed map?",
+    "reviewer_question": "Evidence check: point to the field, isolate the vanishing point, walk around it in nearby arrows, and keep that local evidence separate from a fixed point of an unnamed map.",
     "concepts": [
       "vector-field-index",
       "equilibrium",
@@ -148,7 +148,7 @@
     "safe_claim": "The supported claim is that isolated vector-field defects carry local signed evidence, and only the total over all defects on the same surface is ready to be compared with the surface account.",
     "repair_move": "When a page adds indices, add the scope of the sum: every isolated defect on the same surface must be included, and the boundary or cleanup assumptions must be named.",
     "do_not_claim": "Do not compare one local index directly with Euler characteristic as if it were the whole theorem; the comparison belongs to the completed same-surface ledger.",
-    "reviewer_question": "Does the explanation distinguish one defect's local turning from the complete same-surface index sum, then name the surface number that total is allowed to meet?",
+    "reviewer_question": "Evidence check: distinguish one defect's local turning from the complete same-surface index sum, then name the surface number that total is allowed to meet.",
     "concepts": [
       "vector-field-index",
       "euler-characteristic",
@@ -161,7 +161,7 @@
     "safe_claim": "The supported claim is the Poincare-Hopf ledger: after all isolated defects of a vector field on the same surface are counted with local index, their total is tied to that surface's Euler characteristic.",
     "repair_move": "If a sentence says topology predicts motion, add the mechanism: list defects, assign local indices, add them over the same surface, and compare that complete total with the surface invariant.",
     "do_not_claim": "Do not say the theorem solves the differential equation. It constrains possible defects and equilibria before exact solution paths are known, and only after the theorem's surface and defect conditions are in place.",
-    "reviewer_question": "Can the reader name the surface, list the complete defect account, state how local indices are assigned, and say what stronger motion claim the theorem does not provide?",
+    "reviewer_question": "Evidence check: name the surface, list the complete defect account, state how local indices are assigned, and say what stronger motion claim the theorem does not provide.",
     "concepts": [
       "poincare-hopf",
       "vector-field-index",
@@ -174,7 +174,7 @@
     "safe_claim": "The supported claim is that applications reuse the earlier method only after translation: build the state space, remove forbidden states, interpret paths as legal motions, and read the constraint inside that model.",
     "repair_move": "When an application appears, add the model behind it: what one point of the state space represents and what movement inside that space means.",
     "do_not_claim": "Do not treat a physical example as automatically solved by topology. The topological claim only applies after the model matches the allowed states, forbidden states, freedoms, and boundary conditions.",
-    "reviewer_question": "Can the reader say what one state records, which physical impossibilities were removed, how a path in the model becomes a real motion, and which claim would overreach the model?",
+    "reviewer_question": "Evidence check: say what one state records, which physical impossibilities were removed, how a path in the model becomes a real motion, and which claim would overreach the model.",
     "concepts": [
       "configuration-space",
       "product-space",
@@ -187,7 +187,7 @@
     "safe_claim": "The supported claim is that the final lecture gathers a reusable proof habit: make the object visible, state the allowed and forbidden moves, protect the evidence, then draw only the conclusion that evidence can carry.",
     "repair_move": "If a conclusion says pictorial thinking matters, add the proof contract a picture must satisfy: object, allowed move, forbidden move, protected fact, and failure test.",
     "do_not_claim": "Do not reduce the course to visual intuition. The pictures expose constraints that can be audited: route order, gluing rules, signed counts, fixed-point meetings, and defect totals.",
-    "reviewer_question": "Can the reader use the final summary to audit an earlier page by naming its object, legal move, protected fact, failure condition, and claim boundary?",
+    "reviewer_question": "Evidence check: use the final summary on an earlier lecture by naming its object, legal move, protected fact, failure condition, and claim boundary.",
     "concepts": [
       "deformation",
       "intersection-number",

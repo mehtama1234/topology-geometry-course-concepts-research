@@ -75,6 +75,6 @@
       "course-anchor": "quality rubric course-anchor test, references page, source audit",
       "plain-language-replacement": "quality rubric plain-language-replacement test, reader checks, formula reader"
     },
-    "reader_test": "Can a reviewer use the companion itself to identify a thin paragraph and name the missing repair without inventing a new standard?"
+    "reader_test": "Can the companion itself identify a thin paragraph, name the missing object, legal move, protected fact, failure condition, or source boundary, and point to the page layer where that repair belongs without inventing a new standard?"
   }
 ]
