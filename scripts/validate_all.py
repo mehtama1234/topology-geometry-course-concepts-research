@@ -178,7 +178,7 @@ def main():
             fail(f"theme {theme['id']} essay too thin")
         first_principles_essay = theme.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 55:
+            if len(words(first_principles_essay.get(field))) < 95:
                 fail(f"theme {theme['id']} first-principles essay {field} too thin")
         lens = theme.get("lens") or {}
         for field in ["notices", "ignores", "changes_problem", "reader_test"]:
@@ -186,7 +186,7 @@ def main():
                 fail(f"theme {theme['id']} lens {field} too thin")
         application = theme.get("application") or {}
         for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]:
-            if len(words(application.get(field))) < 65:
+            if len(words(application.get(field))) < 105:
                 fail(f"theme {theme['id']} application {field} too thin")
         answer_guide = theme.get("answer_guide") or {}
         for field in ["notice_answer", "ignore_answer", "transfer_answer", "test_answer"]:
@@ -209,7 +209,7 @@ def main():
             fail(f"subtheme {subtheme['id']} essay too thin")
         first_principles_essay = subtheme.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 55:
+            if len(words(first_principles_essay.get(field))) < 95:
                 fail(f"subtheme {subtheme['id']} first-principles essay {field} too thin")
         routine = subtheme.get("routine") or {}
         for field in ["look_for", "ask", "use", "mistake"]:
@@ -221,7 +221,7 @@ def main():
                 fail(f"subtheme {subtheme['id']} bridge {field} too thin")
         application = subtheme.get("application") or {}
         for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]:
-            if len(words(application.get(field))) < 70:
+            if len(words(application.get(field))) < 120:
                 fail(f"subtheme {subtheme['id']} application {field} too thin")
         answer_guide = subtheme.get("answer_guide") or {}
         for field in ["look_answer", "ask_answer", "use_answer", "mistake_answer"]:
