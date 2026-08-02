@@ -201,7 +201,7 @@ def main():
         if len(depth.get("lectures") or []) < 4:
             fail(f"theme {theme['id']} needs lecture thread")
         theme_essay_words = sum(len(words(p)) for p in theme.get("essay") or [])
-        if theme_essay_words < 300:
+        if theme_essay_words < 950:
             fail(f"theme {theme['id']} essay too thin")
         first_principles_essay = theme.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
@@ -232,7 +232,7 @@ def main():
             if len(words(depth.get(field))) < 40:
                 fail(f"subtheme {subtheme['id']} depth {field} too thin")
         subtheme_essay_words = sum(len(words(p)) for p in subtheme.get("essay") or [])
-        if subtheme_essay_words < 260:
+        if subtheme_essay_words < 1100:
             fail(f"subtheme {subtheme['id']} essay too thin")
         first_principles_essay = subtheme.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
