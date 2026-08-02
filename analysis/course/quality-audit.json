@@ -23,7 +23,7 @@
     },
     {
       "requirement": "Lecture-to-source bridge",
-      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 7046 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 7564 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
       "status": "met"
     },
     {
@@ -168,12 +168,12 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2053 source-reader words keep paper reading tied to first-principles course questions.",
+      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 3470 source-reader words keep paper reading tied to first-principles course questions.",
       "status": "met"
     },
     {
       "requirement": "Paper family ledger",
-      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2153 words make the paper layer usable without letting it drown the course explanation.",
+      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2167 words make the paper layer usable without letting it drown the course explanation.",
       "status": "met"
     }
   ],
@@ -195,7 +195,7 @@
     "lecture_caption_nuance_words": 4462,
     "lecture_source_faithfulness_words": 2462,
     "lecture_application_bridge_words": 8137,
-    "lecture_source_bridge_words": 7046,
+    "lecture_source_bridge_words": 7564,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
     "lecture_reconstruction_words": 14084,
@@ -259,9 +259,9 @@
     "term_translations": 16,
     "term_translation_words": 5974,
     "source_readers": 7,
-    "source_reader_words": 2053,
+    "source_reader_words": 3470,
     "paper_family_ledger_rows": 7,
-    "paper_family_ledger_words": 2153,
+    "paper_family_ledger_words": 2167,
     "references": 7,
     "reference_words": 753,
     "quality_rubric_items": 6,

@@ -716,7 +716,7 @@ def main():
         fail("source reader references do not match reference ids")
     for row in source_readers:
         for field in ["reader_problem", "object_to_watch", "first_principles_bridge", "how_to_read", "do_not_overread", "reader_question"]:
-            if len(words(row.get(field))) < 35:
+            if len(words(row.get(field))) < 65:
                 fail(f"source reader {row.get('reference')} {field} too thin")
         if len(words(row.get("family"))) < 2:
             fail(f"source reader {row.get('reference')} family too thin")

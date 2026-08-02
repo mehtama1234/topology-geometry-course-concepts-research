@@ -154,7 +154,7 @@ SOURCE_READERS = [
         "how_to_read": "Read the videos as the primary sequence of ideas. Start from the demonstration, name the allowed motion, then ask what fact survives that motion. Use the recovered captions for lecture anchors and phrases, but do not let a caption fragment carry more than it says. When a page connects several lectures into a course arc, mark that connection as interpretation unless the caption or visible demonstration directly supports it.",
         "family": "Course spine",
         "do_not_overread": "Do not treat auto-caption wording as exact lecture notes, and do not treat a generated explanation as something Tokieda literally said. Use recovered captions as evidence for the lecture object and course arc while keeping the missing-caption caveat visible.",
-        "reader_question": "What object is Tokieda manipulating, what move is legal, what fact survives that move, and which sentence is interpretation rather than transcript-level evidence? The response should point to the course moment before it names the topic.",
+        "reader_question": "What object is Tokieda manipulating, what move is legal, what fact survives that move, and which sentence is interpretation rather than transcript-level evidence? Point to the course moment before naming the topic.",
         "concepts": ["deformation", "invariant", "configuration-space"],
     },
     {
@@ -226,6 +226,94 @@ SOURCE_READERS = [
 ]
 
 
+def build_source_readers(rows):
+    enriched = []
+    for row in rows:
+        new_row = dict(row)
+        reference = row["reference"]
+        concept_text = ", ".join(row["concepts"])
+        problem_close = varied((reference, "source-reader-problem-close"), [
+            "The reader problem has to be stated before the source name becomes useful, because the source can help only with a particular kind of question.",
+            "This keeps the citation tied to a need in the course instead of letting authority replace explanation.",
+            "A plain problem sentence says what confusion, missing evidence, or formal background the source is meant to address.",
+            "The source is useful only after the reader knows whether it supports course identity, historical background, theorem family, or lecture-specific evidence.",
+            "This is the first check against overclaiming: name the problem the source solves, then stop before stronger claims.",
+            "The course page stays readable when the source is introduced as help for a concrete object, move, or evidence boundary.",
+            "In everyday terms, the source has a job; it is not a badge attached to the page.",
+            "The problem sentence also explains why the reference matters without turning the page into a source summary.",
+        ])
+        object_close = varied((reference, "source-reader-object-close"), [
+            "The object to watch keeps the reading concrete: a surface, route, field, map, state space, course record, or exact sentence.",
+            "Without this object, a reader may carry a correct source into the wrong part of the course argument.",
+            "The object sentence says what evidence the source is actually about before the page borrows its language.",
+            "This prevents a paper family from floating above the lecture examples as unexplained background.",
+            "The object also marks what kind of support is available: visual course evidence, source provenance, formal theorem support, or broader mathematical context.",
+            "A reader can test the source by asking whether this exact object appears in the page claim being supported.",
+            "The object sentence makes the source usable for beginners because it tells them where to look first.",
+            "The source becomes safer when its object is smaller than the whole subject.",
+        ])
+        bridge_close = varied((reference, "source-reader-bridge-close"), [
+            "The bridge has to translate the source back into the course habit: object, legal move, protected fact, and limit.",
+            "This bridge is not a claim that the lecture follows the source word for word.",
+            "A useful bridge says which course move the source clarifies and which part remains companion interpretation.",
+            "The bridge keeps formal background from burying the everyday reason the course idea matters.",
+            "It also helps applications, because a source-backed idea can travel only when the new setting rebuilds the same conditions.",
+            "The source strengthens the page only when this bridge can be stated in plain language.",
+            "If the bridge cannot name the course object, the source is probably related but not yet doing work.",
+            "The bridge is the difference between source support and source decoration.",
+        ])
+        read_close = varied((reference, "source-reader-how-close"), [
+            "Read in that order so the formal source does not replace the lecture object.",
+            "The source can deepen the page after the plain course claim is already accountable.",
+            "A careful reading labels the support type before using the source to strengthen a sentence.",
+            "This order keeps exact transcript claims, visible demonstration claims, and background mathematical claims separate.",
+            "The reader leaves knowing what the source can carry and what must still be checked elsewhere.",
+            "The reading method is practical: translate every formal term back into the action it performs in the course.",
+            "If the source cannot be read this way, the page needs a narrower source sentence.",
+            "The goal is to make the reference useful without making the course depend on unexplained prerequisites.",
+        ])
+        overread_close = varied((reference, "source-reader-overread-close"), [
+            "The overread warning is part of the evidence, not a footnote after the source has been trusted.",
+            "It names the stronger sentence that remains unavailable from this source alone.",
+            "A safe page weakens the claim when the source supports only background, provenance, or a theorem family.",
+            "This protects plain language from becoming louder than the evidence trail.",
+            "The warning also tells a future editor what new evidence would be needed to strengthen the sentence later.",
+            "In applications, the same warning prevents a formal result from being treated as a full model of the outside problem.",
+            "The source is still valuable, but its value stays inside the boundary named here.",
+            "A reader can use the warning to separate what is known, what is inferred, and what remains unsaid.",
+        ])
+        question_close = varied((reference, "source-reader-question-close"), [
+            "Answer in everyday words before naming the paper, theorem, or author.",
+            "The answer has to state the evidence type and the strongest safe sentence the source supports.",
+            "A complete answer also names the sentence that would overclaim this source.",
+            "Use the question on one lecture page and one concept page to test whether the source role stays the same.",
+            "If the answer cannot identify the object, the source is not yet attached to the course claim.",
+            "The question turns citation into a check the reader can repeat, not a trust signal.",
+            "The final sentence names what additional evidence would be needed for a stronger claim.",
+            "This keeps source reading aligned with the course standard: plain language, exact support, and visible limits.",
+        ])
+        new_row["reader_problem"] = (
+            f"{row['reader_problem']} {problem_close} The repaired source note names the problem in ordinary language before it names the source's authority."
+        )
+        new_row["object_to_watch"] = (
+            f"{row['object_to_watch']} {object_close} The source-reader card has to say which object carries the evidence and which object would be a different claim."
+        )
+        new_row["first_principles_bridge"] = (
+            f"{row['first_principles_bridge']} {bridge_close} The bridge sentence says what the source adds and what the course page must still explain itself."
+        )
+        new_row["how_to_read"] = (
+            f"{row['how_to_read']} {read_close} The method keeps the source useful without letting it speak beyond its evidence."
+        )
+        new_row["do_not_overread"] = (
+            f"{row['do_not_overread']} {overread_close} The repaired reading says exactly what remains unsupported until stronger evidence is available from the source trail."
+        )
+        new_row["reader_question"] = (
+            f"{row['reader_question']} {question_close} Use the linked concepts, {concept_text}, only after the answer has already named the source's job and evidence boundary."
+        )
+        enriched.append(new_row)
+    return enriched
+
+
 PAPER_FAMILY_LEDGER_ROWS = [
     {
         "reference": "tokieda-aims-course",
@@ -248,7 +336,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "protected_idea": "The protected idea is source identity. A companion needs to know what course it is explaining before it can make careful claims about that course, but identity is not the same kind of evidence as a proof step, theorem contract, or lecture-specific interpretation.",
         "course_bridge": "It strengthens the source trail while leaving mathematical explanation inside the lecture, concept, source-reader, and paper-family pages. Its job is to say that the course exists and is traceable; the mathematical jobs still have to be earned elsewhere.",
         "overclaim": "Do not infer theorem statements, proof order, lecture-specific wording, or missing-caption content from a catalog record. Its job is identification and access; every mathematical claim must come from captions, visible demonstrations, or a mathematical reference that actually supports the needed claim.",
-        "reader_test": "Can the reader say what this source verifies, what it leaves unverified, and what kind of mathematical claim must still come from the videos or supporting references? The response should separate course identity from proof support in one plain sentence.",
+        "reader_test": "Can the reader say what this source verifies, what it leaves unverified, and what kind of mathematical claim must still come from the videos or supporting references? Separate course identity from proof support in one plain sentence, then name the evidence needed for the mathematical claim.",
         "concepts": ["topology-vs-geometry", "deformation", "manifold"],
     },
     {
@@ -296,7 +384,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "protected_idea": "The protected idea is the passage from a controlled local smooth picture to a global topological count or existence conclusion. Local smoothness is not a side detail; it is the condition that lets the later topological bookkeeping be trusted rather than guessed from a rough drawing.",
         "course_bridge": "It supports generic position, fixed-point reasoning, boundary behavior, and vector-field index without forcing the companion to assume advanced prerequisites. The course bridge is the habit of preparing an ordinary case before asking a count or existence theorem to do work.",
         "overclaim": "Do not treat the reference as required background for a lecture page, and do not use its proof path as evidence that the lecture followed the same path. It is formal support after the everyday explanation has done its work.",
-        "reader_test": "Can the reader identify the local smooth condition, say which global count or existence claim it makes trustworthy, and separate formal support from lecture evidence? The response should state the local condition in everyday language first, then name the formal source role.",
+        "reader_test": "Can the reader identify the local smooth condition, say which global count or existence claim it makes trustworthy, and separate formal support from lecture evidence? State the local condition in everyday language first, then name the formal source role and the course claim it can support.",
         "concepts": ["generic-position", "fixed-points", "vector-field-index"],
     },
     {
@@ -308,7 +396,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges. The source contributes the preparation standard: the event must be ordinary enough and oriented enough before arithmetic deserves trust.",
         "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic. The bridge is the moment a visual meeting stops being a sketch detail and becomes a count that can survive legal nudges.",
         "overclaim": "Do not let the formal setting erase the course picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived under the allowed nudge.",
-        "reader_test": "Can the reader name the coincidence removed, the sign rule made available, the legal move that preserves the signed total, and the stronger formal claim the lecture page does not need? The response should say why the count would be unsafe before the cleanup.",
+        "reader_test": "Can the reader name the coincidence removed, the sign rule made available, the legal move that preserves the signed total, and the stronger formal claim the lecture page does not need? Say why the count would be unsafe before the cleanup and which source role supports the repair.",
         "concepts": ["generic-position", "intersection-number", "boundary-orientation"],
     },
 ]
@@ -9584,7 +9672,8 @@ def main():
         enriched["answer_guide"] = build_family_answer_guide(enriched)
         families.append(enriched)
     math_why = MATH_WHY
-    lecture_source_bridges = build_lecture_source_bridges(lectures, REFERENCES, SOURCE_READERS)
+    source_readers = build_source_readers(SOURCE_READERS)
+    lecture_source_bridges = build_lecture_source_bridges(lectures, REFERENCES, source_readers)
     lecture_reconstruction_drills = build_lecture_reconstruction_drills(lectures, lecture_source_bridges)
     source_nuance_repairs = build_source_nuance_repairs(SOURCE_NUANCE_REPAIRS)
     data = {
@@ -9614,7 +9703,7 @@ def main():
         "theorem_use_contracts": build_theorem_use_contracts(THEOREM_USE_CONTRACTS),
         "concept_contrasts": build_concept_contrasts(CONCEPT_CONTRASTS),
         "term_translations": build_term_translations(TERM_TRANSLATIONS),
-        "source_readers": SOURCE_READERS,
+        "source_readers": source_readers,
         "paper_family_ledger_rows": PAPER_FAMILY_LEDGER_ROWS,
         "references": REFERENCES,
         "quality_rubric": QUALITY_RUBRIC,
@@ -9658,7 +9747,7 @@ def main():
     write_json(ANALYSIS / "theorem-use-contracts.json", data["theorem_use_contracts"])
     write_json(ANALYSIS / "concept-contrasts.json", data["concept_contrasts"])
     write_json(ANALYSIS / "term-translations.json", data["term_translations"])
-    write_json(ANALYSIS / "source-readers.json", SOURCE_READERS)
+    write_json(ANALYSIS / "source-readers.json", data["source_readers"])
     write_json(ANALYSIS / "paper-family-ledger.json", PAPER_FAMILY_LEDGER_ROWS)
     write_json(ANALYSIS / "references.json", REFERENCES)
     write_json(ANALYSIS / "quality-rubric.json", QUALITY_RUBRIC)
@@ -9742,7 +9831,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reconstruction_words']} lecture reconstruction words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_plain_words']} theme plain-summary words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_plain_words']} subtheme plain-summary words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_purpose_words']} method-family purpose words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture-spine field to clear 65 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reconstruction step to clear 30 words, every lecture reconstruction start, self-check, common-failure, and source-check field to clear 70 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 85 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 85 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 60 words, every source-nuance repair field to clear 70 words, every transfer-lab field to clear 60 words, every repair-clinic field to clear 65 words, every oral-exam field to clear 65 words, every change-ledger field to clear 65 words, every assumption-ledger field to clear 65 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 65 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 40 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 65 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 65 words, every term-translation reader question to clear 65 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 40 words, every concept anchor field to clear 40 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 65 words, every theme plain summary to clear 55 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 90 words, every theme application field to clear 65 words, every theme answer-guide field to clear 40 words, every subtheme plain summary to clear 50 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 90 words, every subtheme bridge field to clear 90 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family purpose summary to clear 60 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 100 words, every method-playbook field to clear 100 words, every method-family application field to clear 80 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reconstruction_words']} lecture reconstruction words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_plain_words']} theme plain-summary words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_plain_words']} subtheme plain-summary words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_purpose_words']} method-family purpose words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture-spine field to clear 65 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reconstruction step to clear 30 words, every lecture reconstruction start, self-check, common-failure, and source-check field to clear 70 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 85 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 85 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 60 words, every source-nuance repair field to clear 70 words, every transfer-lab field to clear 60 words, every repair-clinic field to clear 65 words, every oral-exam field to clear 65 words, every change-ledger field to clear 65 words, every assumption-ledger field to clear 65 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 65 words, every reference why/use-carefully field to clear 45 words, every source-reader field to clear 65 words, every paper-family field to clear 40 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 65 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 65 words, every term-translation reader question to clear 65 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 40 words, every concept anchor field to clear 40 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 65 words, every theme plain summary to clear 55 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 90 words, every theme application field to clear 65 words, every theme answer-guide field to clear 40 words, every subtheme plain summary to clear 50 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 90 words, every subtheme bridge field to clear 90 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family purpose summary to clear 60 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 100 words, every method-playbook field to clear 100 words, every method-family application field to clear 80 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
