@@ -44,7 +44,7 @@
     "title": "Replace formal words with everyday sentences",
     "test": "The page must be readable by someone who has not studied topology. Formal words may appear, but each important word needs a plain sentence saying what job it performs. The plain sentence should explain the work of the idea, not merely swap in another formal synonym.",
     "strong_answer": "A complete explanation can be read twice: first as everyday reasoning about shapes and motion, then as the formal mathematical term that names that reasoning. The job comes before the label: keeping track, blocking escape, recording a turn, carrying signs, or listing possible states.",
-    "failure": "The writing fails when it hides the reason inside words such as invariant, manifold, index, orientation, generic position, or configuration space. It also fails when the replacement sentence is vague, for example saying an idea is powerful or important without saying what it lets the proof do.",
+    "failure": "The writing fails when it hides the reason inside words such as invariant, manifold, index, orientation, generic position, or configuration space. It also fails when the replacement sentence is vague, for example saying an idea matters without saying what it lets the proof do.",
     "repair": "After each important word, add a sentence beginning with the job it performs: it keeps track, blocks an escape, records a turn, carries signs, or lists possible states. Then test that sentence by removing the formal word; the paragraph should still explain the mathematical move."
   }
 ]

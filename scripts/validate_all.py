@@ -24,7 +24,10 @@ FORBIDDEN = [
     "trick",
     "tricks",
     "interesting",
+    "natural",
+    "powerful",
     "pretty",
+    "simply",
     "zoo",
 ]
 
