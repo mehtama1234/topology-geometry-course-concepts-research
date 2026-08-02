@@ -178,7 +178,7 @@ def main():
             fail(f"theme {theme['id']} essay too thin")
         first_principles_essay = theme.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 95:
+            if len(words(first_principles_essay.get(field))) < 120:
                 fail(f"theme {theme['id']} first-principles essay {field} too thin")
         lens = theme.get("lens") or {}
         for field in ["notices", "ignores", "changes_problem", "reader_test"]:
