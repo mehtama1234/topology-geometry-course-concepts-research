@@ -5295,12 +5295,50 @@ def build_family_answer_guide(family):
         f"Reject the method when this condition appears: {failure} That matches the playbook failure: {playbook['failure']} {failure_close}",
         f"End by naming what would make the argument fail: {failure} The method page describes that failure as: {playbook['failure']} {failure_close}",
     ])
+    family_intros = {
+        "deformation-family": {
+            "input": "Start with the hard picture and the rule that keeps it the same problem.",
+            "action": "The method is the legal journey from the hard picture to the easier one.",
+            "evidence": "The proof works only if the protected fact rides through every step.",
+            "output": "The final picture speaks only because the whole route back to the original is legal.",
+            "failure": "The bad use is the illegal shortcut that makes the clean picture irrelevant.",
+        },
+        "counting-family": {
+            "input": "Start with a picture whose visible events are too easy to create or erase.",
+            "action": "The method designs a count around the harmless local changes.",
+            "evidence": "The protected evidence is the total that legal redrawings fail to change.",
+            "output": "The result is a count strong enough to block, force, or compare outcomes.",
+            "failure": "The bad use appears when the count changes under a move the problem allows.",
+        },
+        "surface-family": {
+            "input": "Start with the whole surface, not one ordinary-looking patch.",
+            "action": "The method cuts, tracks, and reglues while keeping the surface account honest.",
+            "evidence": "The protected evidence is the global account that survives local bookkeeping.",
+            "output": "The result is a whole-surface constraint that local inspection could not supply.",
+            "failure": "The bad use treats local freedom as if it automatically glued into global freedom.",
+        },
+        "embedding-family": {
+            "input": "Start with the object to be placed and the room it is allowed to occupy.",
+            "action": "The method separates a poor drawing from a genuine placement obstruction.",
+            "evidence": "The protected evidence is the route or relation every legal placement must respect.",
+            "output": "The result is either a legal placement or a reason every legal placement fails.",
+            "failure": "The bad use mistakes one failed sketch for an impossibility proof.",
+        },
+        "motion-family": {
+            "input": "Start by translating the physical or dynamical situation into possible states.",
+            "action": "The method turns motion into paths or rules inside that state space.",
+            "evidence": "The protected evidence is the shape of possibility after forbidden states are removed.",
+            "output": "The result returns as a constraint on the original motion.",
+            "failure": "The bad use starts with a state space that lies about the real freedoms.",
+        },
+    }
+    intro = family_intros[fid]
     return {
-        "input_answer": f"For {title}, the method starts with the situation it is allowed to act on. {input_prompt}",
-        "action_answer": f"For {title}, the method has to become a concrete operation before the title carries any weight. {action_prompt}",
-        "evidence_answer": f"For {title}, the protected evidence is the reason the operation speaks for the starting problem. {evidence_prompt}",
-        "output_answer": f"For {title}, the result has to return to the original problem. {output_prompt}",
-        "failure_answer": f"For {title}, the bad use shows exactly where the method stops applying. {failure_prompt}",
+        "input_answer": f"{intro['input']} {input_prompt}",
+        "action_answer": f"{intro['action']} {action_prompt}",
+        "evidence_answer": f"{intro['evidence']} {evidence_prompt}",
+        "output_answer": f"{intro['output']} {output_prompt}",
+        "failure_answer": f"{intro['failure']} {failure_prompt}",
     }
 
 

@@ -992,6 +992,11 @@ def main():
         "name the distracting detail the theme refuses to let carry the proof",
         "connect early and late lectures through the same proof work",
         "make the theme earn its place on the page",
+        "the method starts with the situation it is allowed to act on",
+        "the method has to become a concrete operation before the title carries any weight",
+        "the protected evidence is the reason the operation speaks for the starting problem",
+        "the result has to return to the original problem",
+        "the bad use shows exactly where the method stops applying",
     ]
     for phrase in stale_rubric_phrases:
         if phrase in corpus:
