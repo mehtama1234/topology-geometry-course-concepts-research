@@ -518,7 +518,7 @@ def main():
         fail("counterexample gallery rows do not match required case set")
     for row in counterexample_gallery_rows:
         for field in ["tempting_claim", "missing_condition", "failure_scene", "why_it_breaks", "repair"]:
-            if len(words(row.get(field))) < 14:
+            if len(words(row.get(field))) < 30:
                 fail(f"counterexample gallery {row.get('title')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"counterexample gallery {row.get('title')} needs concept links")

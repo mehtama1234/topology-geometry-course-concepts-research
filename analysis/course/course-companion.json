@@ -7007,11 +7007,11 @@
   "counterexample_gallery_rows": [
     {
       "title": "Flattening a twist loses the surface",
-      "tempting_claim": "The strip can be flattened into an ordinary band, so the two strip pictures should answer the same question.",
+      "tempting_claim": "The strip can be pressed flat until it looks like an ordinary band, so the two pictures seem to answer the same question even though the end-gluing rule has quietly been lost.",
       "missing_condition": "The flattening forgot the end-gluing rule. A legal simplification must preserve which edge points are identified and how a route returns after one trip. The surface is not the rectangular strip of paper alone; it is the strip plus the rule that says what happens at the ends.",
       "failure_scene": "A local drawing of a twisted strip and an untwisted band may look like the same rectangle, but walking around the finished strip records different side information. On one band a local side choice returns as itself; on the other it returns reversed. That full-trip test sees what the flat drawing hides.",
       "why_it_breaks": "The simplified picture changed the whole object. It did not merely move the object; it replaced the gluing rule that carries the global fact. Once the rule changes, the new picture may answer a nearby question, but it no longer answers the original strip question.",
-      "repair": "State the gluing rule before drawing. Then any simplification has to preserve that rule, not only the visible rectangular shape. A repaired sentence should say that two drawings may be compared only after the same identifications and full-trip side behavior are still present.",
+      "repair": "State the gluing rule before drawing. Then any simplification has to preserve that rule, not only the visible rectangular shape. A repaired sentence says that two drawings may be compared only after the same identifications and full-trip side behavior are still present.",
       "concepts": [
         "quotient-space",
         "topology-vs-geometry",
@@ -7020,11 +7020,11 @@
     },
     {
       "title": "Moving an endpoint removes the obstruction",
-      "tempting_claim": "Two routes can be uncrossed by sliding one endpoint around the boundary, so the crossing was never forced.",
+      "tempting_claim": "Two routes can be uncrossed by sliding one endpoint around the boundary, so the crossing looks optional even though the original problem treated the marked boundary positions as part of the object.",
       "missing_condition": "The boundary data are part of the problem. Endpoint order, marked points, or boundary labels must stay fixed during the deformation. If the endpoints are allowed to trade places, the route problem has been rewritten before the crossing question is answered.",
       "failure_scene": "If an endpoint can move freely around the boundary, a route obstruction may vanish, but that motion answers a different route problem. The visible paths may look uncrossed at the end, yet the proof paid for that picture by changing the boundary order the original claim was testing.",
       "why_it_breaks": "The argument changed the rulebook at the boundary. The original obstruction lived in the boundary order that was silently rearranged. A deformation proof cannot protect a route relation while moving the marked data that define the relation.",
-      "repair": "Mark the endpoints and keep them fixed while simplifying the interior. Then test whether a crossing remains forced under that restricted motion. A repaired explanation should say exactly which boundary points are fixed and which interior motion is still allowed.",
+      "repair": "Mark the endpoints and keep them fixed while simplifying the interior. Then test whether a crossing remains forced under that restricted motion. A repaired explanation names exactly which boundary points are fixed and which interior motion is still allowed.",
       "concepts": [
         "boundary-orientation",
         "graph-planarity",
@@ -7033,7 +7033,7 @@
     },
     {
       "title": "Counting raw crossings overreads the picture",
-      "tempting_claim": "The drawing has two crossings, so the mathematical evidence should be the visible number two before any deformation or sign rule is checked.",
+      "tempting_claim": "The drawing has two crossings, so the visible number two looks like the mathematical evidence before the reader has checked whether crossings survive deformation, cancel in pairs, or need signs.",
       "missing_condition": "The count needs a survival rule. Raw crossings can appear or disappear under legal motion unless signs, parity, or another protected account is being used. Counting what the eye sees once is not the same as counting what every legal drawing must respect.",
       "failure_scene": "A small legal nudge can create a pair of crossings or remove a pair without changing the problem being studied. The visible number changes, but the route relation or signed total may remain the same if the new crossings come with opposite contributions.",
       "why_it_breaks": "The raw number measured an accident of the drawing. It did not name the part of the count that survives the allowed changes. Without the survival rule, the count follows the sketch too closely to prove a topological claim.",
@@ -7046,11 +7046,11 @@
     },
     {
       "title": "Using signs without orientation",
-      "tempting_claim": "The plus crossings and minus crossings cancel, so the signed total proves the same conclusion even if the sign rule has not been justified.",
+      "tempting_claim": "The plus crossings and minus crossings cancel on the page, so the signed total looks convincing even though no shared orientation rule has explained why those signs belong to one account.",
       "missing_condition": "The signs need a shared direction rule. Orientation or boundary orientation must make plus and minus comparable across the object. A plus sign at one meeting and a minus sign at another are evidence only if the same convention tells both signs what they mean.",
       "failure_scene": "If each local sign is chosen independently, the symbols may cancel on paper while failing to describe one consistent mathematical account. The arithmetic may look balanced, but the balance belongs to the writer's labels rather than to the surface, curve, or field.",
       "why_it_breaks": "The addition used labels that did not belong to the same rulebook. A signed total has meaning only when the sign convention can be carried consistently. Without that condition, cancellation is decoration rather than protected evidence.",
-      "repair": "Name the orientation source first. If the object cannot support the required direction rule, do not use signed cancellation as evidence. A repaired sentence should say where the sign convention comes from and what local event it lets the proof count.",
+      "repair": "Name the orientation source first. If the object cannot support the required direction rule, do not use signed cancellation as evidence. A repaired sentence says where the sign convention comes from and what local event it lets the proof count.",
       "concepts": [
         "boundary-orientation",
         "intersection-number",
@@ -7059,7 +7059,7 @@
     },
     {
       "title": "Applying Brouwer outside its contract",
-      "tempting_claim": "A continuous rule has a fixed point because Brouwer says continuous maps have fixed points, regardless of the space, boundary, or target.",
+      "tempting_claim": "A continuous rule has a fixed point because Brouwer is nearby, so the theorem is treated as if every continuous formula has self-agreement regardless of the space, boundary, or target.",
       "missing_condition": "The rule must map the right kind of space back into itself and satisfy the theorem's setup. The domain, target, boundary, and continuity conditions matter. Brouwer is not a statement about every continuous formula; it is a statement about a self-map of a filled ball-type space under the right conditions.",
       "failure_scene": "A rule from an interval into a larger line can move every point outside the interval, so the diagonal comparison inside the original interval no longer applies. The graph may never meet the diagonal in the domain because the outputs have escaped the space where self-agreement was supposed to be tested.",
       "why_it_breaks": "The theorem was asked to speak about the wrong object. Self-agreement is a statement inside one space, not a reward for any continuous formula. If the rule does not return to the same allowed space, the fixed-point question has changed.",
@@ -7072,11 +7072,11 @@
     },
     {
       "title": "Leaving out one vector-field defect",
-      "tempting_claim": "The visible equilibria have total index zero, so the surface allows a defect-free field elsewhere without checking the complete surface account.",
+      "tempting_claim": "The visible equilibria have total index zero, so the surface seems to allow a defect-free field elsewhere even though the proof has not checked the complete same-surface defect account.",
       "missing_condition": "Every isolated defect on the relevant surface must be counted, and the field must satisfy the theorem's surface or boundary conditions. The theorem compares a complete defect ledger with the whole surface, not the defects that happened to be visible in one patch.",
       "failure_scene": "A drawing can hide a defect outside the pictured patch or at the boundary, making the visible total smaller than the true whole-surface account. The local picture may look balanced while the completed surface still demands another contribution.",
       "why_it_breaks": "Poincare-Hopf compares the complete local total with the whole surface. A partial list is not the theorem's local side. Leaving out one defect is like leaving out a face or edge in Euler characteristic: the arithmetic may be neat, but it is not the account the theorem uses.",
-      "repair": "Name the surface, inspect all defects, state boundary behavior, and only then compare the total index with Euler characteristic. A repaired claim should say whether the list of defects is complete and whether each local index belongs to the same surface.",
+      "repair": "Name the surface, inspect all defects, state boundary behavior, and only then compare the total index with Euler characteristic. A repaired claim says whether the list of defects is complete and whether each local index belongs to the same surface.",
       "concepts": [
         "poincare-hopf",
         "vector-field-index",
@@ -7085,7 +7085,7 @@
     },
     {
       "title": "Modeling motion with missing forbidden states",
-      "tempting_claim": "A path exists in the drawn state diagram, so the physical system can move that way even before forbidden states are removed.",
+      "tempting_claim": "A path exists in the drawn state diagram, so the physical system seems able to move that way even before collision states, missing freedoms, and forbidden positions have been removed.",
       "missing_condition": "The configuration space must remove every forbidden state and record every freedom needed to describe one complete physical state. A state diagram is honest only if one point means one allowed physical situation.",
       "failure_scene": "If collision states remain in the diagram, a path may pass through a physical impossibility while looking continuous in the model. If a real rotation or contact choice is forgotten, the diagram may also create a false wall that blocks a motion the system can actually perform.",
       "why_it_breaks": "The topology was applied to the wrong state space. Paths in the model no longer correspond to legal motions of the original system. A theorem about that model may be mathematically correct and still say the wrong thing about the physical setup.",
@@ -7098,11 +7098,11 @@
     },
     {
       "title": "Changing the surface during a cell count",
-      "tempting_claim": "The Euler characteristic changed after redrawing the cells, so the surface number itself changed rather than the cell account being wrong.",
+      "tempting_claim": "The Euler characteristic changed after redrawing the cells, so the surface number itself seems to have changed even though the more likely failure is a bad cell account or changed gluing rule.",
       "missing_condition": "Both cell accounts must describe the same surface. Refining or redrawing cells is allowed; changing the gluing, boundary, or surface type is not. Euler characteristic survives honest bookkeeping changes, not changes to the object being booked.",
       "failure_scene": "A careless diagram can drop a boundary edge or double-count a glued edge, producing a new number that belongs to the bookkeeping error. The page may look as though the surface number changed, but the actual change was in the ledger or in the surface rule.",
       "why_it_breaks": "The alternating count only survives valid changes in the cell account. It does not protect mistakes that change the surface being counted. If the gluing rule, boundary status, or surface type changes, the new count no longer has to match the old one.",
-      "repair": "Check the surface first, then check vertices, edges, and faces. The count is evidence only when the cell account still describes the same object. A repaired explanation should say which cells were refined and which surface data stayed fixed.",
+      "repair": "Check the surface first, then check vertices, edges, and faces. The count is evidence only when the cell account still describes the same object. A repaired explanation says which cells were refined and which surface data stayed fixed.",
       "concepts": [
         "euler-characteristic",
         "triangulation",
@@ -7111,11 +7111,11 @@
     },
     {
       "title": "Reading a source as stronger than it is",
-      "tempting_claim": "The reference is listed, so it proves the exact sentence on the lecture page, including wording the lecture evidence may not support.",
+      "tempting_claim": "The reference is listed, so it appears to prove the exact sentence on the lecture page, including wording, emphasis, and interpretation that the lecture evidence may not actually support by itself.",
       "missing_condition": "A source supports only the claim its evidence can actually carry: course identity, background family, formal theorem, visible lecture move, or recovered caption wording. Those support types are different, and a careful page must not blend them into one broad appeal to authority.",
       "failure_scene": "A background text may support vector-field index as a mathematical family without proving that Tokieda stated one exact sentence in one lecture. A recovered caption may support a phrase without supporting a full interpretive paragraph. A course record may prove provenance without proving a theorem step.",
       "why_it_breaks": "The citation was used as authority without naming the claim it supports. That turns a source trail into overclaiming. The reader can no longer tell whether the sentence rests on captions, visible demonstration, source-family background, or companion inference.",
-      "repair": "Name the sentence, name the source evidence, and weaken the sentence if the evidence supports only a background family or course-arc inference. A repaired claim should say exactly what the source supports and what stronger wording remains unsaid.",
+      "repair": "Name the sentence, name the source evidence, and weaken the sentence if the evidence supports only a background family or course-arc inference. A repaired claim says exactly what the source supports and what stronger wording remains unsaid.",
       "concepts": [
         "topology-vs-geometry",
         "poincare-hopf",
@@ -7124,11 +7124,11 @@
     },
     {
       "title": "Treating a theorem as a procedure",
-      "tempting_claim": "The theorem proves existence, so it also tells us how to find the object or path and compute the missing details.",
+      "tempting_claim": "The theorem proves existence, so it is treated as if it also tells us how to find the object, build the path, compute the answer, or fill in the missing details.",
       "missing_condition": "The theorem's conclusion must be read exactly. Some results force existence, parity, obstruction, or total count without giving a construction or location. A theorem may be strong enough to rule something out and still not tell the reader how to build the object.",
       "failure_scene": "A fixed-point theorem may prove that some point exists while giving no recipe for finding it, and Poincare-Hopf may constrain defects without solving trajectories. Treating either theorem as an algorithm asks it for a different kind of answer than the one it gives.",
       "why_it_breaks": "The answer asked the theorem for more than its contract provides. Existence, location, construction, and computation are different kinds of conclusions. When those conclusion types are blurred, a correct theorem use turns into an overclaim.",
-      "repair": "State the conclusion type: existence, obstruction, equality, parity, or count. Then say what stronger conclusion remains unproved. A repaired theorem sentence should make the limited payoff visible before the reader expects a recipe.",
+      "repair": "State the conclusion type: existence, obstruction, equality, parity, or count. Then say what stronger conclusion remains unproved. A repaired theorem sentence makes the limited payoff visible before the reader expects a recipe.",
       "concepts": [
         "brouwer-fixed-point",
         "poincare-hopf",
@@ -8531,7 +8531,7 @@
       },
       {
         "requirement": "Counterexample gallery",
-        "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 1921 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
+        "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 2012 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
         "status": "met"
       },
       {
@@ -8638,7 +8638,7 @@
       "assumption_ledger_rows": 10,
       "assumption_ledger_words": 1835,
       "counterexample_gallery_rows": 10,
-      "counterexample_gallery_words": 1921,
+      "counterexample_gallery_words": 2012,
       "weak_claim_repair_rows": 10,
       "weak_claim_repair_words": 1767,
       "proof_moves": 5,

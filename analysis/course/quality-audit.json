@@ -118,7 +118,7 @@
     },
     {
       "requirement": "Counterexample gallery",
-      "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 1921 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
+      "evidence": "10 counterexample cases show how a tempting sentence fails when a condition is missing. The 2012 words make failure scenes visible, then repair the claim so the reader sees the boundary of the idea.",
       "status": "met"
     },
     {
@@ -225,7 +225,7 @@
     "assumption_ledger_rows": 10,
     "assumption_ledger_words": 1835,
     "counterexample_gallery_rows": 10,
-    "counterexample_gallery_words": 1921,
+    "counterexample_gallery_words": 2012,
     "weak_claim_repair_rows": 10,
     "weak_claim_repair_words": 1767,
     "proof_moves": 5,
