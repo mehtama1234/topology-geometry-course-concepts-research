@@ -244,7 +244,7 @@ def main():
             fail(f"family {family['id']} essay too thin")
         first_principles_essay = family.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 105:
+            if len(words(first_principles_essay.get(field))) < 130:
                 fail(f"family {family['id']} first-principles essay {field} too thin")
         contract = family.get("contract") or {}
         for field in ["input", "action", "evidence", "output", "failure_test"]:
