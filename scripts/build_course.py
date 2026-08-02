@@ -4985,12 +4985,14 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             f"Close the repair by showing what later argument now has the evidence it needs: {spine['why_later']}",
         ])
         overread_join = varied((number, "drill-overread-join"), [
-            f"The bridge layer gives the same boundary in sharper form: {bridge['overread_warning']}",
-            f"The bridge warning makes the overreach concrete: {bridge['overread_warning']}",
-            f"That source caution matches this bridge warning: {bridge['overread_warning']}",
-            f"The overread guard is: {bridge['overread_warning']}",
-            f"Keep this bridge warning attached to the drill: {bridge['overread_warning']}",
-            f"The source claim should stop at this boundary: {bridge['overread_warning']}",
+            f"The same boundary appears in the bridge layer as a concrete overread test: {bridge['overread_warning']}",
+            f"The bridge turns that source risk into a sentence-level warning: {bridge['overread_warning']}",
+            f"This is the bridge warning to compare against the rebuilt explanation: {bridge['overread_warning']}",
+            f"The source limit becomes visible in this bridge guard: {bridge['overread_warning']}",
+            f"Use the bridge warning to keep the drill from borrowing more than the source gives: {bridge['overread_warning']}",
+            f"The claim has to stop where this bridge boundary stops it: {bridge['overread_warning']}",
+            f"The source bridge names the exact overreach the reconstruction must avoid: {bridge['overread_warning']}",
+            f"Check the rebuilt sentence against this boundary from the bridge page: {bridge['overread_warning']}",
         ])
         start_close = varied((number, "drill-start-close"), [
             "This is the object that must be rebuilt before any source bridge can be trusted.",
@@ -5021,12 +5023,14 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             f"The bad version sounds plausible because it misses this working detail:",
         ])
         source_open = varied((number, "drill-source-open"), [
-            f"Source discipline for \"{title}\" begins with this check:",
-            f"Before citing support for \"{title}\", ask this:",
-            f"The source boundary in \"{title}\" is tested here:",
-            f"Keep the source claim for \"{title}\" inside this evidence line:",
-            f"The source trail for \"{title}\" should be read through this guard:",
-            f"Use this source check before strengthening \"{title}\":",
+            f"Before \"{title}\" borrows authority from a source, make this check:",
+            f"The source claim for \"{title}\" has to pass through this evidence test:",
+            f"Use this boundary to keep \"{title}\" tied to the lecture evidence:",
+            f"Any source-backed version of \"{title}\" should answer this first:",
+            f"The citation is doing honest work for \"{title}\" only after this check:",
+            f"Strengthen \"{title}\" only after this source boundary is visible:",
+            f"To keep \"{title}\" from overclaiming, start with this source test:",
+            f"The source trail for \"{title}\" stays useful only if this limit is named:",
         ])
         drills.append({
             "lecture": number,
