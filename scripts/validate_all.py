@@ -632,7 +632,7 @@ def main():
         if len(row.get("steps") or []) < 5:
             fail(f"proof move needs five steps: {row.get('name')}")
         for field in ["problem", "why", "failure", "example"]:
-            if len(words(row.get(field))) < 40:
+            if len(words(row.get(field))) < 70:
                 fail(f"proof move {row.get('name')} {field} too thin")
 
     theorem_contracts = data.get("theorem_use_contracts") or []
