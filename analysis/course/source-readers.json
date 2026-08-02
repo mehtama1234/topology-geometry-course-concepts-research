@@ -46,7 +46,7 @@
   },
   {
     "reference": "hopf-vektorfelder",
-    "reader_problem": "Hopf's paper family answers a motion question: how can local failures of an arrow field be forced by the shape carrying the arrows? The beginner version is: if arrows live on a surface, can the surface demand that some arrows must fail to point smoothly everywhere?",
+    "reader_problem": "Hopf's paper family answers a motion question: how can local failures of an arrow field be forced by the shape carrying the arrows? The first-pass version is: if arrows live on a surface, can the surface demand that some arrows must fail to point smoothly everywhere?",
     "object_to_watch": "Watch an arrow field on a surface and the isolated places where the field breaks down. The local object is a small loop around a defect; the global object is the entire surface. The loop asks how the arrows turn nearby, while the surface asks how all local turning must add up.",
     "first_principles_bridge": "The course reaches this family after teaching signed counts and Euler characteristic. A source, sink, or saddle is not only a picture; it has an index, and the indices must be compared with the surface's own count. The principle is that local failures are not free-floating accidents once the whole surface has a bookkeeping law.",
     "how_to_read": "Read it through the lecture picture first: walk around each defect, count how arrows turn, add the local counts, then compare the sum with the surface. The paper family supports that theorem family; it does not by itself verify any one caption sentence or compute a motion path. Keep the claim modest: it can force existence or a total count under the right setup, not solve the differential equation.",

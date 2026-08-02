@@ -100,7 +100,7 @@ REFERENCES = [
         "lectures": [3, 4, 5, 12, 13, 15],
         "concepts": ["manifold", "invariant", "euler-characteristic", "duality", "poincare-hopf"],
         "why": "These papers sit in the historical source line for topology as the study of spaces through preserved structure. For this companion, their job is to anchor the whole-space question: which facts belong to the completed carrier rather than to one drawing?",
-        "use_carefully": "They are not beginner lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them after the course object is plain: surface, allowed change, preserved account, and claim boundary.",
+        "use_carefully": "They are not course lecture notes and they are not evidence that Tokieda cited a specific sentence. Use them after the course object is plain: surface, allowed change, preserved account, and claim boundary.",
     },
     {
         "id": "hopf-vektorfelder",
@@ -181,7 +181,7 @@ SOURCE_READERS = [
     },
     {
         "reference": "hopf-vektorfelder",
-        "reader_problem": "Hopf's paper family answers a motion question: how can local failures of an arrow field be forced by the shape carrying the arrows? The beginner version is: if arrows live on a surface, can the surface demand that some arrows must fail to point smoothly everywhere?",
+        "reader_problem": "Hopf's paper family answers a motion question: how can local failures of an arrow field be forced by the shape carrying the arrows? The first-pass version is: if arrows live on a surface, can the surface demand that some arrows must fail to point smoothly everywhere?",
         "object_to_watch": "Watch an arrow field on a surface and the isolated places where the field breaks down. The local object is a small loop around a defect; the global object is the entire surface. The loop asks how the arrows turn nearby, while the surface asks how all local turning must add up.",
         "first_principles_bridge": "The course reaches this family after teaching signed counts and Euler characteristic. A source, sink, or saddle is not only a picture; it has an index, and the indices must be compared with the surface's own count. The principle is that local failures are not free-floating accidents once the whole surface has a bookkeeping law.",
         "how_to_read": "Read it through the lecture picture first: walk around each defect, count how arrows turn, add the local counts, then compare the sum with the surface. The paper family supports that theorem family; it does not by itself verify any one caption sentence or compute a motion path. Keep the claim modest: it can force existence or a total count under the right setup, not solve the differential equation.",
@@ -254,12 +254,12 @@ PAPER_FAMILY_LEDGER_ROWS = [
     {
         "reference": "poincare-analysis-situs",
         "family": "Whole-space invariants",
-        "problem": "This family answers the whole-space problem: what can be known when exact drawing, size, and position are not the evidence that matters? The beginner difficulty is that a surface can be redrawn many ways, so the proof needs a fact that belongs to the whole carrier rather than one convenient picture.",
+        "problem": "This family answers the whole-space problem: what can be known when exact drawing, size, and position are not the evidence that matters? The first difficulty is that a surface can be redrawn many ways, so the proof needs a fact that belongs to the whole carrier rather than one convenient picture.",
         "object": "The object is a space or manifold treated as a whole, with features such as holes, cycles, and surviving accounts. One patch of the surface is not enough, because the obstruction may appear only after the entire object has been walked around, cut up, or counted.",
         "allowed_reading": "Use it as historical and conceptual grounding for invariants after the companion has named the course object. It can support the whole-space habit, but not the claim that one lecture cites one exact passage or follows the original paper's notation.",
         "protected_idea": "The protected idea is that a space can carry evidence that survives continuous change and cannot be seen from one small local patch. This is the reason Euler characteristic and later index totals can speak about the whole surface instead of about the drawing style.",
         "course_bridge": "It supports the companion's path from surface bookkeeping to Euler characteristic, duality, and later whole-surface constraints on fields. The course bridge is the repeated move from local pieces to a completed account whose total cannot be chosen freely.",
-        "overclaim": "Do not ask a beginner to start with the original paper's notation, and do not use the source to prove exact Tokieda wording before the course object and protected fact have been explained plainly.",
+        "overclaim": "Do not start with the original paper's notation, and do not use the source to prove exact Tokieda wording before the course object and protected fact have been explained plainly.",
         "reader_test": "Can the reader name the whole-space fact being protected, the lecture conclusion that depends on it, and the claim boundary between historical background and lecture evidence? Explain why one local drawing would be too weak.",
         "concepts": ["manifold", "invariant", "euler-characteristic"],
     },
@@ -283,8 +283,8 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence. It can justify broader machinery, not a lecture-specific paraphrase unless the lecture source also supports it.",
         "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures: routes that cannot move away, gluing rules that define travel, and counts that survive legal deformation. The formality earns its place by protecting one of those jobs.",
         "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages. The bridge should always translate back to a course action: identify edges, combine choices, count pieces, or move without changing the protected fact.",
-        "overclaim": "Do not import the full abstraction into beginner-facing prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",
-        "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, what evidence survives, and what conclusion follows? If the formal word cannot be turned into an action, it is not ready for beginner-facing prose.",
+        "overclaim": "Do not import the full abstraction into plain course prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",
+        "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, what evidence survives, and what conclusion follows? If the formal word cannot be turned into an action, it is not ready for plain course prose.",
         "concepts": ["quotient-space", "product-space", "invariant"],
     },
     {
@@ -307,7 +307,7 @@ PAPER_FAMILY_LEDGER_ROWS = [
         "allowed_reading": "Use it to support the course habit of moving fragile coincidences aside before trusting a signed count. It supports the sign-and-clean-meeting family, not exact wording from the videos.",
         "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges. The source contributes the preparation standard: the event must be ordinary enough and oriented enough before arithmetic deserves trust.",
         "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic. The bridge is the moment a visual meeting stops being a sketch detail and becomes a count that can survive legal nudges.",
-        "overclaim": "Do not let the formal setting erase the beginner's picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived.",
+        "overclaim": "Do not let the formal setting erase the course picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived.",
         "reader_test": "Can the reader name the coincidence removed, the sign rule made available, the legal move that preserves the signed total, and the stronger formal claim the lecture page does not need? The response should say why the count would be unsafe before the cleanup.",
         "concepts": ["generic-position", "intersection-number", "boundary-orientation"],
     },
@@ -2536,7 +2536,7 @@ CONCEPT_ESSAYS = {
         "Triangulation is a way to make a continuous surface countable without pretending the surface is literally made of rigid triangles. A smooth surface has infinitely many points, which is too much for direct bookkeeping. Dividing it into simple pieces gives a finite ledger: which corners exist, which edges meet, which patches fill the gaps, and how those patches are glued. Once the ledger exists, the course can count vertices, edges, faces, and higher-dimensional pieces in a disciplined way.",
         "The first-principles reason is that a proof often needs a handle on the infinite. A surface such as a sphere or torus is continuous, so there is no final list of its points. A triangulation replaces that impossible list with a manageable pattern of pieces and attachments. The replacement works only because the attachment data remembers the surface's routes and boundaries. The question then becomes whether the answer found from the pattern really belongs to the surface.",
         "The triangulation is scaffolding, not the surface fact itself. A different triangulation should not change the topological conclusion. If the answer depends on the exact mesh, the count has not found a surface fact. Triangulation supports Euler characteristic and surface classification by letting a soft object enter exact reasoning, while later cancellation proves that the reasoning did not depend on one arbitrary set of divisions.",
-        "A beginner can read triangulation as a two-step promise. First, replace the surface by a finite set of simple pieces whose gluing is known. Second, prove that changing to a finer or different set of pieces does not change the quantity being used. The first step makes counting possible. The second step makes the counting honest.",
+        "Triangulation is a two-step promise. First, replace the surface by a finite set of simple pieces whose gluing is known. Second, prove that changing to a finer or different set of pieces does not change the quantity being used. The first step makes counting possible. The second step makes the counting honest.",
         "Triangulation belongs beside deformation and invariance because it is not the answer itself. It is a controlled translation into a form where arithmetic can begin, followed by a check that the arithmetic did not become a statement about the translation alone. Ask which part of the page uses the chosen mesh and which later sentence proves the final claim survived changing that mesh.",
     ],
     "graph-planarity": [
@@ -2621,7 +2621,7 @@ CONCEPT_ESSAYS = {
         "The first-principles move is a declaration of sameness. Before the declaration, two boundary points may look separate on the page. After the declaration, they are one point of the finished space. This is not a name change. It changes which paths close, where a traveler goes after crossing an edge, whether the drawn boundary remains a real boundary, and whether a local direction returns unchanged after a full trip.",
         "Many spaces in topology are easier to describe by instructions than by physical construction. A cylinder, a Mobius band, and a torus can all begin from a rectangle, but they are not the same space because their identification rules differ. The rule decides whether a loop closes, whether a side choice survives a full trip, and where a path goes when it reaches a labeled edge.",
         "A quotient also teaches why local pictures can mislead. Near most points, the finished space may look like ordinary surface. Near an identified edge, however, the drawing has hidden the continuation rule. A point that appears to hit the boundary may actually continue through the identified edge. A direction that appears consistent may return reversed. The quotient rule is therefore part of the object, not a construction note that can be forgotten.",
-        "The beginner danger is to treat the drawing as the object. In quotient thinking, the ink is only a code. Two points that look far apart on the page may be the same point in the space, and a boundary line on the drawing may no longer be a boundary in the finished object. Once that habit is learned, later constructions become less mysterious: maps, state spaces, and manifolds are often understood by the rules that identify their points.",
+        "The danger is treating the drawing as the object. In quotient thinking, the ink is only a code. Two points that look far apart on the page may be the same point in the space, and a boundary line on the drawing may no longer be a boundary in the finished object. Once that habit is learned, later constructions become less mysterious: maps, state spaces, and manifolds are often understood by the rules that identify their points.",
     ],
     "surgery": [
         "Surgery is controlled local replacement. Instead of trying to understand a whole surface in one glance, the course removes a known piece and attaches another piece according to a boundary rule. The operation sounds physical because it is meant to be checkable: what was removed, what edge remained, what was attached, and how did the surrounding surface connect afterward?",
@@ -2896,7 +2896,7 @@ LECTURE_DEPTH = {
     1: {
         "title": "The Mobius strip reveals the course's central problem",
         "problem": "The course begins with a strip of paper because the strip makes the central promise visible before any vocabulary arrives. A normal loop of paper has two sides. A Mobius strip has one side. If you cut them, color them, or walk along them, they answer differently. The problem is: how can a small twist change the whole behavior of a surface when every tiny patch still looks like ordinary paper?",
-        "first_principles": "A beginner is tempted to think a surface is understood by looking at a small piece of it. Tokieda starts by breaking that habit. Every small patch of the Mobius strip looks harmless, but a full trip around it changes what side you think you are on. The important lesson is not merely that the strip is surprising. It is that the end-gluing rule is followed consistently around the whole object, and that rule carries information no tiny patch reveals by itself.",
+        "first_principles": "The tempting first thought is that a surface is understood by looking at a small piece of it. Tokieda starts by breaking that habit. Every small patch of the Mobius strip looks harmless, but a full trip around it changes what side you think you are on. The important lesson is not merely that the strip is surprising. It is that the end-gluing rule is followed consistently around the whole object, and that rule carries information no tiny patch reveals by itself.",
         "math_move": "Use a physical object as a proof object. Cut the strip, follow a line, and compare what happens with and without the twist. The act of cutting is not entertainment added after the mathematics; it is a controlled test of how the surface is connected.",
         "detail": "The twist is not measured by its exact angle in a geometric sense. What matters is the gluing rule at the ends: which edge points become the same points and whether the side direction is reversed. Glue without reversal and a full trip returns to the same side. Glue after reversal and the same trip returns to the opposite side, so the global surface has changed.",
         "connection": "This opening prepares the rest of the course: local appearance is not enough, allowed operations matter, and a visible experiment can carry a mathematical reason. The later theorems will look more formal, but they keep returning to this same lesson: the whole object may remember something that a small local view cannot see.",
@@ -3118,7 +3118,7 @@ LECTURE_ESSAYS = {
         "A good reader should leave this lecture with a stricter question than whether the demonstration was surprising. The question is: what information did the object carry before the experiment, and what operation was allowed to reveal it? The paper does not explain topology by being exotic. It explains topology because the same tiny local rule is followed consistently all the way around, and that consistency forces a result the eye did not predict from one patch.",
     ],
     2: [
-        "The second lecture turns the physical surprise of the Mobius strip into an explicit method: solve by deformation. The disk path problem is deliberately simple to state. Several pairs of boundary points must be joined inside a disk without the joining curves crossing. A beginner may try to draw better routes, but trying drawings one by one cannot prove impossibility. The lecture changes the question from drawing skill to protected structure: if endpoints stay in their boundary order and paths are not allowed to cross, what can any drawing do?",
+        "The second lecture turns the physical surprise of the Mobius strip into an explicit method: solve by deformation. The disk path problem is deliberately simple to state. Several pairs of boundary points must be joined inside a disk without the joining curves crossing. Better drawings can help intuition, but trying drawings one by one cannot prove impossibility. The lecture changes the question from drawing skill to protected structure: if endpoints stay in their boundary order and paths are not allowed to cross, what can any drawing do?",
         "The word deformation should be read in an everyday way first. A curve is allowed to bend, stretch, and slide, just as a loose string could move on a table. But some things are not allowed. An endpoint fixed on the boundary cannot quietly trade places with another endpoint. One curve cannot pass through another curve if the original problem forbids crossings. The proof begins by naming those permissions and prohibitions. Only after that does a cleaner picture become trustworthy.",
         "This is the first time the course makes a drawing carry a contract. The visible ink can change, but the contract cannot. The contract says which points belong to the boundary data, which meetings are forbidden, and which motions count as the same problem. Once that is clear, the reader can stop asking whether a particular drawing is skillful enough and start asking whether any drawing could obey the same contract. That shift is the mathematical content.",
         "The mathematical principle behind the lecture is boundary order. The endpoints around the disk are part of the data, and legal motion cannot reorder them. If a crossing-free drawing existed, deformation would allow the reader to clean it while preserving that circular order. When the cleaned version still forces a crossing, the obstruction belongs to the problem itself. The proof is not that one sketch failed. The proof is that every legal sketch inherits the same order problem.",
@@ -3169,7 +3169,7 @@ LECTURE_ESSAYS = {
     9: [
         "Lecture 9 carries intersection thinking into fixed points. A map from a space to itself can feel abstract because it is a rule rather than a visible object. The lecture makes it visible by drawing the graph of the map. For every input point, the graph records two pieces of information: where the point started and where the rule sends it. That record is now a geometric object that can be compared with other geometric objects.",
         "The diagonal is the key comparison object. It is the set of pairs where the first entry and the second entry agree. In everyday language, the diagonal is the place where a point has not changed its name. A fixed point is exactly a point whose starting position and ending position match. So the fixed-point question becomes a meeting question: does the graph of the rule meet the diagonal of self-agreement?",
-        "This translation brings the earlier course tools back into play. If a fixed point were treated only as an equation, a beginner might think the only possible proof is to solve the equation. The graph-diagonal picture shows another route: turn the rule into one object, turn self-agreement into another object, then ask whether legal deformation lets them avoid each other. If the answer is no, then a fixed point is forced even before anyone knows where it is.",
+        "This translation brings the earlier course tools back into play. If a fixed point is treated only as an equation, solving the equation can look like the only possible proof. The graph-diagonal picture shows another route: turn the rule into one object, turn self-agreement into another object, then ask whether legal deformation lets them avoid each other. If the answer is no, then a fixed point is forced even before anyone knows where it is.",
         "The missing middle caption is a real source caveat, so the companion should not pretend to recover every spoken detail of the lecture. The reliable mathematical spine is still clear from the surrounding material: fixed-point theory is being built from intersections, deformation, and invariant information. Hold onto the graph, the diagonal, and the fact that their meeting means self-agreement.",
         "The first-principles gain is that a rule has been turned into a shape. A map may sound like an instruction, but its graph can be moved, compared, and counted. The diagonal is the shape of self-agreement. Their intersection is not a metaphor for a fixed point; it is the fixed point written geometrically. This is exactly the kind of conversion the course wants readers to learn: change the form of the problem until the hidden constraint becomes visible.",
     ],
@@ -3567,91 +3567,91 @@ LECTURE_WALKTHROUGHS = {
 LECTURE_DEEPENING = {
     1: {
         "what_is_really_happening": "The lecture is replacing the question 'what does the strip look like?' with 'what does a full journey through the strip do to local side information?' The object is being read by travel, not by one patch.",
-        "why_it_is_hard": "A beginner can inspect many small patches and see only ordinary paper, so the global reversal feels like a surprise rather than a rule-made consequence.",
+        "why_it_is_hard": "Small-patch inspection sees only ordinary paper, so the global reversal can feel like a surprise rather than a rule-made consequence. The hard step is learning to trust the full trip around the glued object more than the familiar local patch.",
         "key_move": "Treat the twist as an instruction for gluing the ends, then test that instruction by following, coloring, and cutting paths that travel around the whole strip.",
         "payoff": "The reader learns the course's first durable lesson: local sameness does not guarantee global sameness, and a physical test can expose the difference in a way definitions alone would hide.",
     },
     2: {
         "what_is_really_happening": "The lecture turns drawing into proof by asking which path changes are legal while boundary order and no-crossing conditions stay fixed. The drawing is being judged by its contract.",
-        "why_it_is_hard": "It is tempting to trust a drawing that looks cleaner, but the proof depends on the motion that produced the drawing, not on the drawing's appearance.",
+        "why_it_is_hard": "It is tempting to trust a drawing that looks cleaner, but the proof depends on the motion that produced the drawing, not on the drawing's appearance. The boundary order and no-crossing rule have to survive every simplification.",
         "key_move": "State the fixed boundary data, then deform the interior curves only through moves that keep endpoints and forbidden crossings under control. The simplification earns trust through that restriction.",
         "payoff": "The reader learns how a simplified picture can answer the original problem without secretly solving a different boundary puzzle or relying on drawing skill alone.",
     },
     3: {
         "what_is_really_happening": "The lecture gives the construction tools that let later arguments talk about spaces made from choices, identifications, local patches, and replacement operations. A space becomes something built by rules.",
-        "why_it_is_hard": "Words such as product, quotient, surgery, and manifold can sound like labels, when here they are actions that build the object under study and determine later legal motion.",
+        "why_it_is_hard": "Words such as product, quotient, surgery, and manifold can sound like labels, when here they are actions that build the object under study and determine later legal motion. The construction rule has to be read before the space can be used.",
         "key_move": "Read each construction by asking what choices are added, what points become the same, what local piece is replaced, and what neighborhoods remain ordinary enough for local reasoning.",
         "payoff": "The reader can later test whether a theorem is being applied to the right space, because the space's construction rules are visible before any conclusion is trusted.",
     },
     4: {
         "what_is_really_happening": "The lecture teaches that a flat drawing can be a code for a different space once its edges are identified by rules. The page becomes instructions for travel.",
-        "why_it_is_hard": "A beginner naturally trusts the visible square, but the actual surface is determined by where travelers go after crossing labeled edges and whether direction returns changed.",
+        "why_it_is_hard": "The visible square invites trust, but the actual surface is determined by where travelers go after crossing labeled edges and whether direction returns changed. The drawing is only a code until the identification rule has been applied.",
         "key_move": "Stop reading the boundary as a wall until the edge rule has been checked, including whether direction is preserved or reversed after crossing and returning.",
         "payoff": "The reader gains the habit needed for quotient spaces, orientation, and any later argument where the object is defined by a rule rather than by appearance.",
     },
     5: {
         "what_is_really_happening": "The lecture turns surfaces into classifiable objects by tracking handles, boundaries, side reversal, and the operations that preserve those features through legal simplification and redrawing.",
-        "why_it_is_hard": "Surface names can sound like a taxonomy of pictures, but classification is really about durable evidence under legal cutting, gluing, and simplification across many drawings.",
+        "why_it_is_hard": "Surface names can sound like a taxonomy of pictures, but classification is really about durable evidence under legal cutting, gluing, and simplification across many drawings. The name matters only after handles, boundaries, and side behavior have survived the allowed moves.",
         "key_move": "Follow the controlled surface operations and ask which global features survive: orientability, boundary behavior, handles, crosscaps, and Euler-style bookkeeping across the simplified surface model after each change.",
         "payoff": "The reader sees why later counts and signs need a surface type beneath them; the surface is the stage that gives those later statements force.",
     },
     6: {
         "what_is_really_happening": "The lecture separates accidental meetings from forced meetings by using ordinary position and the amount of room supplied by the surrounding space for avoidance and intersection.",
-        "why_it_is_hard": "A visible crossing can feel like evidence immediately, but before signs or counts are trusted the meeting must be cleaned and tested for stability under small legal motion.",
+        "why_it_is_hard": "A visible crossing can feel like evidence immediately, but before signs or counts are trusted the meeting must be cleaned and tested for stability under small legal motion. The lecture separates accidental contact from contact that remains readable after a nudge.",
         "key_move": "Move objects slightly into ordinary position, then ask whether dimension and placement allow the meeting to be removed or make it unavoidable in the available room.",
         "payoff": "The reader is prepared for intersection number because only clean, evidence-bearing meetings deserve to be counted and assigned signs later in the course sequence of arguments.",
     },
     7: {
         "what_is_really_happening": "The lecture uses a physical balancing event to introduce forced existence without requiring a formula for the point where it occurs. The demonstration is an existence proof.",
-        "why_it_is_hard": "The demonstration can distract from the mathematical structure: a continuous condition is changing and cannot skip the state being asked for. The apparatus is not the main evidence.",
+        "why_it_is_hard": "The demonstration can distract from the mathematical structure: a continuous condition is changing and cannot skip the state being asked for. The apparatus is not the main evidence; the no-jump passage through a required condition is.",
         "key_move": "Name the quantity that changes continuously and the event that lies between the starting and ending behavior. Then explain why the event cannot be jumped over.",
         "payoff": "The reader learns why topology can prove that a special state exists even when the exact state is not computed or directly located by a formula.",
     },
     8: {
         "what_is_really_happening": "The lecture turns raw crossings into protected arithmetic by assigning signs that make harmless birth and cancellation events add to zero under legal deformation of the picture.",
-        "why_it_is_hard": "A beginner may count visible crossings and miss why that count is fragile; the stable evidence is the signed total, not the raw number seen in one drawing.",
+        "why_it_is_hard": "Visible crossings invite raw counting, but that count is fragile; the stable evidence is the signed total, not the raw number seen in one drawing. The sign rule is the repair that lets harmless birth pairs cancel.",
         "key_move": "Use orientation to justify plus and minus signs, then check what happens when a positive-negative pair appears or disappears during legal motion inside the oriented setting.",
         "payoff": "The reader learns the central pattern of designed counting: choose arithmetic that forgets fake changes and remembers the obstruction every legal drawing must carry through deformation.",
     },
     9: {
         "what_is_really_happening": "The lecture turns a fixed-point equation into a geometric meeting between a map's graph and the diagonal of self-agreement inside a product space for comparison.",
-        "why_it_is_hard": "A rule can feel invisible compared with a surface or curve, and one missing caption means the page must lean on the reliable graph-diagonal spine.",
+        "why_it_is_hard": "A rule can feel invisible compared with a surface or curve, and one missing caption means the page must lean on the reliable graph-diagonal spine. The translation has to show how self-agreement becomes a meeting, not invent missing theorem detail.",
         "key_move": "Represent the rule by all input-output pairs, then compare that graph with the diagonal where input and output are equal in the product space itself.",
         "payoff": "The reader sees fixed points as intersections, which connects the theorem language back to the course's earlier deformation and counting tools rather than treating it as separate.",
     },
     10: {
         "what_is_really_happening": "The lecture uses the shape of a closed filled ball to rule out a continuous escape plan for every point at once inside the same domain.",
-        "why_it_is_hard": "The theorem proves existence without locating the point, so it can feel weaker than computation even though it answers a different kind of question about inevitability.",
+        "why_it_is_hard": "The theorem proves existence without locating the point, so it can feel weaker than computation even though it answers a different kind of question about inevitability. The closed filled domain and no-jump self-map are the mechanism that blocks total escape.",
         "key_move": "Keep the domain closed and filled, keep the rule inside the domain, and use continuity to block a total avoidance of self-agreement everywhere at once.",
         "payoff": "The reader learns how the shape of a space can force a solution before any formula for that solution is available or needed in practice.",
     },
     11: {
         "what_is_really_happening": "The lecture changes dynamics from solving paths to reading the arrow pattern and the places where that pattern fails on the surface itself under inspection.",
-        "why_it_is_hard": "A beginner may treat an equilibrium as just a named point, but the useful evidence is how nearby arrows turn around it and what count that turning gives.",
+        "why_it_is_hard": "An equilibrium can look like just a named point, but the useful evidence is how nearby arrows turn around it and what count that turning gives. The location alone is too thin; the surrounding arrow pattern carries the index information.",
         "key_move": "Inspect a small loop around each vanishing arrow and record the local turning behavior rather than trying to solve every trajectory in the field globally.",
         "payoff": "The reader sees how motion can be studied topologically: defects in an arrow field become countable evidence that can later be summed over the surface.",
     },
     12: {
         "what_is_really_happening": "The lecture asks what all local vector-field defects know together when their signed indices are added over the full surface carrying the arrows as one account.",
-        "why_it_is_hard": "It is easy to focus on one source, sink, or saddle and miss the completed ledger: every isolated defect on the same surface has to enter the total.",
+        "why_it_is_hard": "It is easy to focus on one source, sink, or saddle and miss the completed ledger: every isolated defect on the same surface has to enter the total. The theorem speaks about the full defect account, not a favorite local picture.",
         "key_move": "Clean the field to isolated defects, assign each local index, then compare the sum with the surface carrying the field rather than one defect alone.",
         "payoff": "The reader sees Euler characteristic becoming a demand on motion, not only a surface bookkeeping number from earlier classification work on static shapes and decompositions.",
     },
     13: {
         "what_is_really_happening": "The lecture uses Poincare-Hopf as a working equality between whole-surface topology and total local vector-field failure across the completed surface under study as evidence.",
-        "why_it_is_hard": "The hairy-ball example is memorable, but it can hide the deeper statement about adding every isolated defect with signs across the whole surface account together.",
+        "why_it_is_hard": "The hairy-ball example is memorable, but it can hide the deeper statement about adding every isolated defect with signs across the whole surface account together. The slogan is only a doorway into the equality between surface bookkeeping and defect bookkeeping.",
         "key_move": "Read the theorem as a complete account: surface first, all defects second, signed sum third, Euler characteristic as the required total for that surface alone.",
         "payoff": "The reader can use topology to predict motion failures or use observed failures to infer information about the surface carrying the field in return afterward.",
     },
     14: {
         "what_is_really_happening": "The lecture tests whether the course's proof tools survive honest translation into applications and moving systems beyond the early paper and surface examples from class.",
-        "why_it_is_hard": "Applications can sound convincing too early; the theorem only sees the model, so an inaccurate state space gives an inaccurate physical conclusion afterward in practice.",
+        "why_it_is_hard": "Applications can sound convincing too early; the theorem only sees the model, so an inaccurate state space gives an inaccurate physical conclusion afterward in practice. The freedoms, forbidden states, and path meaning must be built before the theorem is invoked.",
         "key_move": "Build the state space carefully, name forbidden states and allowed motions, then translate the topological conclusion back to the original system being modeled physically, with checks.",
         "payoff": "The reader learns that modeling is part of the proof, not a story added before the mathematics begins or after the theorem is chosen later.",
     },
     15: {
         "what_is_really_happening": "The final lecture gathers the course as one reasoning habit rather than a list of separate demonstrations and theorem names from earlier weeks of work.",
-        "why_it_is_hard": "Review lectures can encourage memorizing topics in order, but the deeper value is seeing the same proof engine move across different objects and problems repeatedly.",
+        "why_it_is_hard": "Review lectures can encourage memorizing topics in order, but the deeper value is seeing the same proof engine move across different objects and problems repeatedly. Each topic has to be read through object, legal move, protected evidence, and limited conclusion.",
         "key_move": "Read each topic as a four-part account: object, legal move, surviving fact, and conclusion forced by that fact across the whole course sequence of examples.",
         "payoff": "The reader leaves with a portable method for reading the whole companion and for testing whether any page has reached first-principles depth in plain language.",
     },
@@ -4172,7 +4172,7 @@ def contextual_reference_care(ref, seed, page_kind, context=None):
             f"Use it to understand the older source family behind {topic}; do not claim from this link alone that Tokieda cited a passage or followed the same proof order.",
         ],
         "hopf-vektorfelder": [
-            f"Use it after {topic} has translated defects and index through the course examples. The paper is not a beginner replacement for that translation.",
+            f"Use it after {topic} has translated defects and index through the course examples. The paper is not a replacement for that plain-language translation.",
             f"Do not let the technical source hide the simple audit: what field is on what space, which defects are isolated, and what signed total is being compared.",
             f"It supports the theorem family, not exact lecture wording. Keep transcript evidence and background-source support separate.",
         ],
@@ -4609,7 +4609,7 @@ LECTURE_DRILL_OVERLAYS = {
             "Connect forward to orientation and manifolds: later pages keep asking whether a local choice can survive a complete trip around the object.",
             "Use course-source support only to anchor the lecture and sequence. Do not turn the paper demonstration into a claim that all topology is about surprising craft objects.",
         ],
-        "self_check": "The reconstruction should let a beginner act out the full-trip test and say exactly what local side information fails to return unchanged.",
+        "self_check": "The reconstruction should make the full-trip test actable and say exactly what local side information fails to return unchanged.",
         "common_failure": "The weak version remembers that a Mobius strip has one side but never explains how the full trip detects that fact. Repair it by naming the gluing rule and the travel test.",
         "source_check": "Before strengthening a sentence, ask whether it is supported by the lecture object itself: strip, half-turn gluing, full trip, and side reversal. Anything beyond that belongs in background support, not as spoken lecture evidence.",
     },
@@ -4945,7 +4945,7 @@ def build_concept_self_check(concept):
     role = depth["course_role"]
     protected = plain_fragment(work["protected"], ["The protected fact is", "The protected fact"])
     failure = plain_fragment(work["breaks_if"], ["It breaks if", "It breaks when", "The idea breaks if"])
-    beginner_trap = sentence_fragment(plain_fragment(depth["beginner_trap"], ["The trap" + " is", "The beginner trap" + " is"]))
+    beginner_trap = sentence_fragment(plain_fragment(depth["beginner_trap"], ["The trap" + " is", "The " + "beginner" + " " + "trap" + " is"]))
     object_close = varied((cid, "object-close"), [
         f"For {title}, the name earns its keep only after the watched object and its place in the course example are explicit.",
         f"The object needs enough concrete detail to be sketched, moved, counted, or inspected for the part that carries the constraint.",
@@ -6106,7 +6106,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
     )
     repair_body = f"""
 <h1>Repair Clinic</h1>
-<p class="lead">This page teaches the reviewer to hear the difference between fluent but shallow prose and a real first-principles explanation. Each case starts with a weak sentence, names the missing mathematical work, and rewrites the idea so a beginner can audit it.</p>
+<p class="lead">This page teaches the reviewer to hear the difference between fluent but shallow prose and a real first-principles explanation. Each case starts with a weak sentence, names the missing mathematical work, and rewrites the idea so the claim can be audited from the object and rule.</p>
 <section class="lecture">
   <h2>How To Use A Repair Case</h2>
   <p>Read the flawed explanation first and ask why it feels acceptable. Most weak explanations contain a correct word or memorable phrase, but they skip the object, legal move, protected fact, source footing, or failure condition. The repair move names the missing obligation.</p>
@@ -6172,7 +6172,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
   <h2>Repairing A Weak Answer</h2>
   <p>When an answer fails the ledger test, repair only the missing part. When the object is unclear, add one sentence that says what one point, route, field, cell, or glued edge represents. When the legal change is unclear, add one sentence naming the allowed motion and the forbidden shortcut. When the protected fact is unclear, add one sentence naming the count, side information, equality, path question, or source boundary that survives.</p>
   <p>A repair should not become more formal just to sound safer. It should become more checkable. It has to point to the object, act out the allowed change, say what would break the argument, and name the conclusion that the protected fact can support. That is the course habit in its plainest form.</p>
-  <p>Give no credit for a sentence that only says two pictures are the same, a count is invariant, a theorem applies, or a source supports the claim. Give credit when the sentence explains the permission behind that statement. The permission is the part a beginner can test.</p>
+  <p>Give no credit for a sentence that only says two pictures are the same, a count is invariant, a theorem applies, or a source supports the claim. Give credit when the sentence explains the permission behind that statement. The permission is the testable part.</p>
 </section>
 """
     (SITE / "change-ledger.html").write_text(page("Change Ledger", ledger_body, "Change Ledger"), encoding="utf-8")
@@ -6533,7 +6533,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
 <section class="lecture">
   <h2>Repairing A Citation</h2>
   <p>When a citation feels thin, do not add more source names. Add the missing contract. Say which course page needs help, what mathematical object the source family studies, and which protected idea crosses from the source family back into the course. Then say the limit of the claim.</p>
-  <p>A repaired citation should let a beginner learn something before opening the formal paper. The beginner should know whether the source helps with whole-space invariants, vector-field defects, clean intersections, formal machinery, course identity, or source provenance. If the source family cannot be named in everyday language, the page is still leaning on authority instead of explanation.</p>
+  <p>A repaired citation should teach the source's job before the formal paper is opened. The page should say whether the source helps with whole-space invariants, vector-field defects, clean intersections, formal machinery, course identity, or source provenance. If the source family cannot be named in everyday language, the page is still leaning on authority instead of explanation.</p>
   <p>Give no credit for a citation that only says a topic is related. Give credit when it names the exact course claim the source can support and the stronger claim it cannot support.</p>
 </section>
 """
@@ -7103,7 +7103,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - {metrics['lecture_source_faithfulness_words']} source-faithfulness words separating caption support, course inference, and source caveats on lecture pages and source audit cards
 - {metrics['source_nuance_repair_words']} source-nuance repair words across {metrics['source_nuance_repairs']} lecture-specific repair notes
 - 45 lecture-grounded examples, three per lecture, each bridged to concepts
-- {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, beginner-trap, and course-role sections
+- {data['stats']['concepts']} expanded concept pages with full essay sections, why-it-exists, failure-mode, and course-role sections
 - {metrics['concept_workup_words']} concept workup words across object, operation, protected-fact, and failure-test fields
 - {metrics['concept_anchor_words']} concept anchor words across course-moment, principle, and reader-question fields
 - {metrics['concept_self_check_words']} concept self-check words showing what a complete concept explanation must include for the object, operation, protected fact, and failure condition

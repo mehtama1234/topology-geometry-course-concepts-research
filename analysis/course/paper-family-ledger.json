@@ -34,12 +34,12 @@
   {
     "reference": "poincare-analysis-situs",
     "family": "Whole-space invariants",
-    "problem": "This family answers the whole-space problem: what can be known when exact drawing, size, and position are not the evidence that matters? The beginner difficulty is that a surface can be redrawn many ways, so the proof needs a fact that belongs to the whole carrier rather than one convenient picture.",
+    "problem": "This family answers the whole-space problem: what can be known when exact drawing, size, and position are not the evidence that matters? The first difficulty is that a surface can be redrawn many ways, so the proof needs a fact that belongs to the whole carrier rather than one convenient picture.",
     "object": "The object is a space or manifold treated as a whole, with features such as holes, cycles, and surviving accounts. One patch of the surface is not enough, because the obstruction may appear only after the entire object has been walked around, cut up, or counted.",
     "allowed_reading": "Use it as historical and conceptual grounding for invariants after the companion has named the course object. It can support the whole-space habit, but not the claim that one lecture cites one exact passage or follows the original paper's notation.",
     "protected_idea": "The protected idea is that a space can carry evidence that survives continuous change and cannot be seen from one small local patch. This is the reason Euler characteristic and later index totals can speak about the whole surface instead of about the drawing style.",
     "course_bridge": "It supports the companion's path from surface bookkeeping to Euler characteristic, duality, and later whole-surface constraints on fields. The course bridge is the repeated move from local pieces to a completed account whose total cannot be chosen freely.",
-    "overclaim": "Do not ask a beginner to start with the original paper's notation, and do not use the source to prove exact Tokieda wording before the course object and protected fact have been explained plainly.",
+    "overclaim": "Do not start with the original paper's notation, and do not use the source to prove exact Tokieda wording before the course object and protected fact have been explained plainly.",
     "reader_test": "Can the reader name the whole-space fact being protected, the lecture conclusion that depends on it, and the claim boundary between historical background and lecture evidence? Explain why one local drawing would be too weak.",
     "concepts": [
       "manifold",
@@ -71,8 +71,8 @@
     "allowed_reading": "Use it after the course page is clear, translating formal machinery back into object, legal move, and protected evidence. It can justify broader machinery, not a lecture-specific paraphrase unless the lecture source also supports it.",
     "protected_idea": "The protected idea is that formal constructions organize the same surviving shape information that the course first shows with pictures: routes that cannot move away, gluing rules that define travel, and counts that survive legal deformation. The formality earns its place by protecting one of those jobs.",
     "course_bridge": "It supports quotient spaces, products, cell counts, homotopy-style movement, and the broader invariant language behind many concept pages. The bridge should always translate back to a course action: identify edges, combine choices, count pieces, or move without changing the protected fact.",
-    "overclaim": "Do not import the full abstraction into beginner-facing prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",
-    "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, what evidence survives, and what conclusion follows? If the formal word cannot be turned into an action, it is not ready for beginner-facing prose.",
+    "overclaim": "Do not import the full abstraction into plain course prose before the concrete route, gluing rule, or count has been named, and do not imply the course follows the text's formal order.",
+    "reader_test": "Can the reader translate a formal construction into the course question: what moves, what stays, what evidence survives, and what conclusion follows? If the formal word cannot be turned into an action, it is not ready for plain course prose.",
     "concepts": [
       "quotient-space",
       "product-space",
@@ -103,7 +103,7 @@
     "allowed_reading": "Use it to support the course habit of moving fragile coincidences aside before trusting a signed count. It supports the sign-and-clean-meeting family, not exact wording from the videos.",
     "protected_idea": "The protected idea is that clean meetings plus consistent signs turn a visual crossing story into evidence that survives legal nudges. The source contributes the preparation standard: the event must be ordinary enough and oriented enough before arithmetic deserves trust.",
     "course_bridge": "It supports generic position, boundary orientation, intersection number, and the course's repeated move from pictures to signed arithmetic. The bridge is the moment a visual meeting stops being a sketch detail and becomes a count that can survive legal nudges.",
-    "overclaim": "Do not let the formal setting erase the beginner's picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived.",
+    "overclaim": "Do not let the formal setting erase the course picture, and do not cite the text as proof that a specific classroom sentence was said; the page should still begin with what moved and why the count survived.",
     "reader_test": "Can the reader name the coincidence removed, the sign rule made available, the legal move that preserves the signed total, and the stronger formal claim the lecture page does not need? The response should say why the count would be unsafe before the cleanup.",
     "concepts": [
       "generic-position",

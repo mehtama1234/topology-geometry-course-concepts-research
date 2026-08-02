@@ -23,7 +23,7 @@
     },
     {
       "requirement": "Lecture-to-source bridge",
-      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 5856 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 5858 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
       "status": "met"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "requirement": "Lecture reconstruction practice",
-      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7278 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
+      "evidence": "15 reconstruction drills ask the reader to rebuild a lecture from example to object, legal move, surviving fact, later use, and source check. The 7275 reconstruction words test whether the lecture can be explained from its working parts rather than remembered as a title.",
       "status": "met"
     },
     {
@@ -163,12 +163,12 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2014 source-reader words keep paper reading tied to first-principles course questions.",
+      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 2015 source-reader words keep paper reading tied to first-principles course questions.",
       "status": "met"
     },
     {
       "requirement": "Paper family ledger",
-      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2020 words make the paper layer usable without letting it drown the course explanation.",
+      "evidence": "7 paper-family contracts state the problem, object, allowed reading, protected idea, course bridge, overclaim boundary, and reader test for each source family. The 2016 words make the paper layer usable without letting it drown the course explanation.",
       "status": "met"
     }
   ],
@@ -181,22 +181,22 @@
     ],
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
-    "lecture_essay_words": 5499,
-    "lecture_deepening_words": 1595,
+    "lecture_essay_words": 5493,
+    "lecture_deepening_words": 1795,
     "lecture_walkthrough_words": 1955,
     "lecture_source_lens_words": 1638,
     "lecture_source_checkpoint_words": 1532,
     "lecture_caption_nuance_words": 1498,
     "lecture_source_faithfulness_words": 2462,
-    "lecture_source_bridge_words": 5856,
+    "lecture_source_bridge_words": 5858,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
-    "lecture_reconstruction_words": 7278,
+    "lecture_reconstruction_words": 7275,
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 2183,
     "lecture_reader_test_words": 2747,
     "lecture_answer_guide_words": 3511,
-    "concept_essay_words": 7901,
+    "concept_essay_words": 7895,
     "concept_workup_words": 2773,
     "concept_anchor_words": 1969,
     "concept_self_check_words": 9624,
@@ -237,9 +237,9 @@
     "term_translations": 16,
     "term_translation_words": 1968,
     "source_readers": 7,
-    "source_reader_words": 2014,
+    "source_reader_words": 2015,
     "paper_family_ledger_rows": 7,
-    "paper_family_ledger_words": 2020,
+    "paper_family_ledger_words": 2016,
     "references": 7,
     "quality_rubric_items": 6,
     "rubric_coverage_layers": 6,
