@@ -275,6 +275,10 @@ def main():
         concept_essay_words = sum(len(words(p)) for p in concept.get("essay") or [])
         if concept_essay_words < 290:
             fail(f"concept {concept['id']} essay too thin")
+        first_principles_essay = concept.get("first_principles_essay") or {}
+        for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
+            if len(words(first_principles_essay.get(field))) < 50:
+                fail(f"concept {concept['id']} first-principles essay {field} too thin")
         workup = concept.get("workup") or {}
         for field in ["object", "operation", "protected", "breaks_if"]:
             if len(words(workup.get(field))) < 25:
@@ -1009,7 +1013,7 @@ def main():
         if concept_name not in names:
             fail(f"missing concept page {concept['id']}")
         concept_html = (SITE / concept_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Anchor Example", "Course moment:", "Principle:", "Reader question:", "Work It From Scratch", "Object:", "Operation:", "Protected fact:", "Breaks if:", "Where This Matters Outside Topology", "Outside problem:", "Topological use:", "Other fields:", "Why it matters:", "Honest limit:", "Can You Use It?", "Object check:", "Operation check:", "Protected fact check:", "Failure check:"]:
+        for phrase in ["First-Principles Long Essay", "Ordinary problem:", "Object on the page:", "Allowed change:", "Protected fact:", "Topology payoff:", "Outside use:", "Wrong use:", "Anchor Example", "Course moment:", "Principle:", "Reader question:", "Work It From Scratch", "Object:", "Operation:", "Protected fact:", "Breaks if:", "Where This Matters Outside Topology", "Outside problem:", "Topological use:", "Other fields:", "Why it matters:", "Honest limit:", "Can You Use It?", "Object check:", "Operation check:", "Protected fact check:", "Failure check:"]:
             if phrase not in concept_html:
                 fail(f"concept page missing concept phrase {phrase}: {concept_name}")
         for phrase in ["Further Source Trail", "Why it belongs:", "Use carefully:"]:
