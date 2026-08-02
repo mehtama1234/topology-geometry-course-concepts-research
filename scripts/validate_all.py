@@ -248,8 +248,13 @@ def main():
         if len(words(concept["math_principle"])) < 18:
             fail(f"concept math_principle too thin: {concept['id']}")
         depth = concept.get("depth") or {}
-        for field in ["why_it_exists", "beginner_trap", "course_role"]:
-            if len(words(depth.get(field))) < 35:
+        concept_depth_min_words = {
+            "why_it_exists": 35,
+            "beginner_trap": 35,
+            "course_role": 45,
+        }
+        for field, minimum in concept_depth_min_words.items():
+            if len(words(depth.get(field))) < minimum:
                 fail(f"concept {concept['id']} depth {field} too thin")
         concept_essay_words = sum(len(words(p)) for p in concept.get("essay") or [])
         if concept_essay_words < 290:
