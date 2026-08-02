@@ -5076,10 +5076,10 @@ def build_theme_answer_guide(theme):
         f"Turn the theme into a reader test: {lens['reader_test']} The answer has to preserve this detail: {depth['important_detail']} {test_close}",
     ])
     return {
-        "notice_answer": notice_prompt,
-        "ignore_answer": ignore_prompt,
-        "transfer_answer": transfer_prompt,
-        "test_answer": test_prompt,
+        "notice_answer": f"For {title}, begin with the kind of evidence this theme trains the reader to see. {notice_prompt}",
+        "ignore_answer": f"For {title}, name the distracting detail the theme refuses to let carry the proof. {ignore_prompt}",
+        "transfer_answer": f"For {title}, connect early and late lectures through the same proof work. {transfer_prompt}",
+        "test_answer": f"For {title}, make the theme earn its place on the page. {test_prompt}",
     }
 
 
@@ -5154,10 +5154,10 @@ def build_subtheme_answer_guide(subtheme):
         f"End with the failure mode: {mistake} The check on that failure is: {bridge['reader_test']} {mistake_close}",
     ])
     return {
-        "look_answer": look_prompt,
-        "ask_answer": ask_prompt,
-        "use_answer": use_prompt,
-        "mistake_answer": mistake_prompt,
+        "look_answer": f"For {title}, begin with the live feature the page must expose. {look_prompt}",
+        "ask_answer": f"For {title}, turn that feature into the question the proof has to answer. {ask_prompt}",
+        "use_answer": f"For {title}, use the routine only where it changes the reader's inspection task. {use_prompt}",
+        "mistake_answer": f"For {title}, make the false shortcut explicit before accepting the page's conclusion. {mistake_prompt}",
     }
 
 
@@ -5233,11 +5233,11 @@ def build_family_answer_guide(family):
         f"End by naming what would make the argument fail: {failure} The method page describes that failure as: {playbook['failure']} {failure_close}",
     ])
     return {
-        "input_answer": input_prompt,
-        "action_answer": action_prompt,
-        "evidence_answer": evidence_prompt,
-        "output_answer": output_prompt,
-        "failure_answer": failure_prompt,
+        "input_answer": f"For {title}, the method starts with the situation it is allowed to act on. {input_prompt}",
+        "action_answer": f"For {title}, the method has to become a concrete operation before the title carries any weight. {action_prompt}",
+        "evidence_answer": f"For {title}, the protected evidence is the reason the operation speaks for the starting problem. {evidence_prompt}",
+        "output_answer": f"For {title}, the result has to return to the original problem. {output_prompt}",
+        "failure_answer": f"For {title}, the bad use shows exactly where the method stops applying. {failure_prompt}",
     }
 
 
