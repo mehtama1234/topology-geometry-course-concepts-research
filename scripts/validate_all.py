@@ -32,6 +32,29 @@ def words(s):
     return re.findall(r"[A-Za-z0-9']+", s or "")
 
 
+def sentence_starts(text, size=6):
+    starts = []
+    for sentence in re.split(r"(?<=[.!?])\s+", text or ""):
+        start = words(sentence)[:size]
+        if len(start) >= 4:
+            starts.append(" ".join(start).lower())
+    return starts
+
+
+def fail_repeated_sentence_starts(layer, rows, max_allowed=3):
+    counts = {}
+    examples = {}
+    for row_id, fields in rows:
+        for field, text in fields.items():
+            for start in sentence_starts(text):
+                counts[start] = counts.get(start, 0) + 1
+                examples.setdefault(start, f"{row_id}.{field}")
+    repeated = sorted((count, start) for start, count in counts.items() if count > max_allowed)
+    if repeated:
+        count, start = repeated[-1]
+        fail(f"{layer} answer guides repeat sentence start {count} times: {start} at {examples[start]}")
+
+
 def fail(msg):
     raise SystemExit(f"validation failed: {msg}")
 
@@ -153,6 +176,10 @@ def main():
         for field in ["notice_answer", "ignore_answer", "transfer_answer", "test_answer"]:
             if len(words(answer_guide.get(field))) < 40:
                 fail(f"theme {theme['id']} answer guide {field} too thin")
+    fail_repeated_sentence_starts(
+        "theme",
+        [(theme["id"], theme.get("answer_guide") or {}) for theme in data["themes"]],
+    )
 
     for subtheme in data["subthemes"]:
         depth = subtheme.get("depth") or {}
@@ -174,6 +201,10 @@ def main():
         for field in ["look_answer", "ask_answer", "use_answer", "mistake_answer"]:
             if len(words(answer_guide.get(field))) < 40:
                 fail(f"subtheme {subtheme['id']} answer guide {field} too thin")
+    fail_repeated_sentence_starts(
+        "subtheme",
+        [(subtheme["id"], subtheme.get("answer_guide") or {}) for subtheme in data["subthemes"]],
+    )
 
     for family in data["families"]:
         depth = family.get("depth") or {}
@@ -195,6 +226,10 @@ def main():
         for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]:
             if len(words(answer_guide.get(field))) < 40:
                 fail(f"family {family['id']} answer guide {field} too thin")
+    fail_repeated_sentence_starts(
+        "family",
+        [(family["id"], family.get("answer_guide") or {}) for family in data["families"]],
+    )
 
     theme_ids = {theme["id"] for theme in data["themes"]}
     subtheme_ids = {subtheme["id"] for subtheme in data["subthemes"]}
@@ -240,6 +275,10 @@ def main():
                 fail(f"concept {concept['id']} appearance references unknown lecture")
             if len(words(appearance.get("summary"))) < 25:
                 fail(f"concept {concept['id']} appearance summary too thin")
+    fail_repeated_sentence_starts(
+        "concept",
+        [(concept["id"], concept.get("self_check") or {}) for concept in data["concepts"]],
+    )
 
     for lecture in data["lectures"]:
         if not lecture["missing_caption_ids"] and lecture["transcript_words"] < 1000:
@@ -302,6 +341,10 @@ def main():
             missing = [cid for cid in example.get("concepts", []) if cid not in concept_ids]
             if missing:
                 fail(f"lecture {lecture['lecture']} example has unknown concept ids: {missing}")
+    fail_repeated_sentence_starts(
+        "lecture",
+        [(str(lecture["lecture"]), ((lecture.get("deep") or {}).get("answer_guide") or {})) for lecture in data["lectures"]],
+    )
 
     for family in data["families"]:
         missing = sorted(set(family.get("concepts") or []) - concept_ids)
