@@ -209,7 +209,7 @@ def main():
             fail(f"subtheme {subtheme['id']} essay too thin")
         first_principles_essay = subtheme.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 95:
+            if len(words(first_principles_essay.get(field))) < 120:
                 fail(f"subtheme {subtheme['id']} first-principles essay {field} too thin")
         routine = subtheme.get("routine") or {}
         for field in ["look_for", "ask", "use", "mistake"]:
