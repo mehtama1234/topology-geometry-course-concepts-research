@@ -3269,7 +3269,7 @@ LECTURE_SOURCE_LENS = {
     ],
     13: [
         "Read Poincare-Hopf, index sum, Euler characteristic, hairy ball, and equilibria as a two-way exchange. The lecture uses topology to predict defects, and it can also use observed defects to say something about the surface. The source words link two ledgers: surface bookkeeping and arrow-field bookkeeping.",
-        "The hairy-ball anchor should be read as the plain case, not the whole theorem. The deeper source point is the total over all isolated defects. A local arrow choice may look possible, but the completed surface can forbid all choices from agreeing. That is the course's local-to-global theme in its dynamics form.",
+        "The hairy-ball anchor is the plain case, not the whole theorem. The deeper source point is the total over all isolated defects. A local arrow choice may look possible, but the completed surface can forbid all choices from agreeing. That is the course's local-to-global theme in its dynamics form.",
     ],
     14: [
         "Read applications, rotations in space, Poincare-Hopf, and dynamical systems as a modeling lecture. The source material is testing whether earlier proof families can be carried into physical or moving systems without losing the real constraints. The mathematical object is the state space built from the problem, not the physical story by itself.",
@@ -4286,7 +4286,7 @@ def build_lecture_reader_test(lecture, spine_row):
     ])
     conclusion_close = varied((number, "reader-conclusion-close"), [
         "Explain how that fact reaches the lecture's payoff without relying on a slogan.",
-        "Use that fact to reach the payoff in ordinary words, not by repeating a theorem label.",
+        "Use that fact to reach the payoff directly, not by repeating a theorem label.",
         "Show how the protected evidence makes the conclusion unavoidable or limited.",
         "Carry the surviving fact all the way to the payoff so the final claim has a reason.",
     ])
@@ -4344,7 +4344,7 @@ def build_lecture_answer_guide(lecture, spine_row):
         "Use the anchor to keep the explanation tied to a real course moment instead of a memorized term.",
         "The object has to do work before the concept title appears.",
         "This keeps the reader focused on the carrier of the reasoning, not only the name of the topic.",
-        "The concrete anchor should show what the object records and why the lecture needed it.",
+        "The concrete anchor shows what the object records and why the lecture needed it.",
     ])
     illegal_shortcut = varied((number, "answer-illegal-shortcut"), [
         "Name an illegal shortcut: dropping boundary data, changing the carrier space, inventing extra room, removing a required sign rule, or forgetting the source caveat.",
@@ -4373,7 +4373,7 @@ def build_lecture_answer_guide(lecture, spine_row):
     surviving_fact = spine_row["surviving_fact"].rstrip(".")
     why_strong_close = varied((number, "answer-why-close"), [
         f"In this lecture, '{examples[1]['title']}' is the pressure test: it shows which shortcut would break the setup before the conclusion is trusted.",
-        f"The anchor '{examples[2]['title']}' should make the later use feel earned, not announced.",
+        f"The anchor '{examples[2]['title']}' makes the later use earned, not announced.",
         f"The concrete moment '{examples[0]['title']}' keeps the answer grounded in the course instead of drifting into a general textbook summary.",
         f"The answer must end with a limit as well as a payoff. The surviving fact is: {surviving_fact}. It tells the reader what is forced, not every extra thing one might wish to know.",
     ])
@@ -4892,7 +4892,7 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             f"The first concrete thing is: {spine['object']}",
         ])
         move_join = varied((number, "drill-move-join"), [
-            f"It must also state the allowed move in ordinary words: {spine['legal_move']}",
+            f"It must also state the allowed move directly: {spine['legal_move']}",
             f"The legal move has to be explicit: {spine['legal_move']}",
             f"Then the reader has to say what motion or construction is permitted: {spine['legal_move']}",
             f"The move is part of the proof, so it has to be named: {spine['legal_move']}",
@@ -4947,14 +4947,14 @@ def build_concept_self_check(concept):
     failure = plain_fragment(work["breaks_if"], ["It breaks if", "It breaks when", "The idea breaks if"])
     beginner_trap = sentence_fragment(plain_fragment(depth["beginner_trap"], ["The trap" + " is", "The beginner trap" + " is"]))
     object_close = varied((cid, "object-close"), [
-        f"For {title}, the name earns its keep only after the reader can say what thing is being watched and where it sits in the course example.",
-        f"The object should be concrete enough that another reader could sketch it, move it, count on it, or say what part of it carries the constraint.",
+        f"For {title}, the name earns its keep only after the watched object and its place in the course example are explicit.",
+        f"The object needs enough concrete detail to be sketched, moved, counted, or inspected for the part that carries the constraint.",
         f"Do not let the formal name hide the carrier of the idea; the page must first show the surface, route, field, map, count, or state space doing the work.",
-        f"The course moment should feel like a test case for {title}, not a caption placed beside a definition.",
+        f"The course moment is the test case for {title}, not a caption placed beside a definition.",
         f"The object has to be visible before any theorem name appears, because the later conclusion has to belong to that object.",
-        f"The object statement should already contain the needed rule or setting: boundary, gluing, forbidden crossing, orientation, field, map, or possible-state description.",
-        f"For this concept, understanding begins when the reader can say what would be drawn or acted out before any symbolic shortcut appears.",
-        f"The course example should make the object visible enough that the reader can tell whether a later source is talking about the same kind of thing.",
+        f"The object statement already needs the rule or setting: boundary, gluing, forbidden crossing, orientation, field, map, or possible-state description.",
+        f"For this concept, understanding begins with what would be drawn or acted out before any symbolic shortcut appears.",
+        f"The course example has to make the object visible enough to test whether a later source is talking about the same kind of thing.",
     ])
     operation_close = varied((cid, "operation-close"), [
         f"The test is whether the operation leaves the same {title} problem in place or quietly swaps in an easier one.",
@@ -4962,9 +4962,9 @@ def build_concept_self_check(concept):
         f"For {title}, the forbidden shortcut is as important as the permitted move, because the shortcut is exactly what can erase the evidence.",
         "The move has to be actable on the example, with the illegal shortcut named beside it.",
         "A clean picture supports the proof only if the route to that picture respects the original boundary, crossing, gluing, field, or state rule.",
-        f"The operation should explain what changes and what is kept fixed while {title} is being used.",
-        "The move should sound like something that can be checked on the course example, not like a permission imported from a definition.",
-        "If a nearby shortcut would change the answer, the check should name that shortcut in ordinary words.",
+        f"The operation has to explain what changes and what stays fixed while {title} is being used.",
+        "The move has to be checkable on the course example, not imported as permission from a definition.",
+        "If a nearby shortcut would change the answer, the check has to name that shortcut directly.",
     ])
     legal_check = varied((cid, "legal-check"), [
         "Say which part of the setup gives permission for this move.",
@@ -4981,42 +4981,42 @@ def build_concept_self_check(concept):
         "The conclusion is only as strong as the evidence that survives the permitted change.",
         "Separate this surviving fact from details such as neatness, length, position, or one convenient drawing.",
         f"This is the part of {title} that travels forward into the course role: {role}",
-        "The protected fact should explain why the final picture still speaks about the first picture.",
+        "The protected fact explains why the final picture still speaks about the first picture.",
         "Name the evidence that remains after the allowed move, then say what conclusion that evidence can and cannot carry.",
         f"For this concept, the protected fact is the bridge from the course moment to the later use, not an extra sentence after the definition.",
         "If the same fact would not survive the legal change, the concept has only been named, not used.",
     ])
     failure_close = varied((cid, "failure-close"), [
         f"The failure case is part of {title}: it identifies the changed assumption that destroys the claim.",
-        "The limit should be concrete enough to expose the same false move in a new example.",
+        "The limit has to be concrete enough to expose the same false move in a new example.",
         "Naming the break point keeps the concept tied to its rulebook instead of letting it make claims beyond its conditions.",
         "The warning belongs inside the explanation because changing the rule often changes the answer.",
-        "The explanation should name both where the idea works and which tempting nearby use would be false.",
+        "The explanation has to name both where the idea works and which nearby use would be false.",
         f"For {title}, the failure mode names the detail that carries the concept's force.",
-        "The break point should make the hypothesis feel like working machinery, not ceremony.",
+        "The break point turns the hypothesis into working machinery, not ceremony.",
         "If the failure condition is missing, the explanation may sound clear while quietly claiming too much.",
     ])
     object_prompt = varied((cid, "object-check-prompt"), [
         f"Start with the thing {title} is about: {work['object']} Then test it against the course moment: {anchor['course_moment']} {object_close}",
-        f"Before naming {title}, say the object in ordinary words: {work['object']} The course moment should then make that object visible: {anchor['course_moment']} {object_close}",
+        f"Before naming {title}, say the object directly: {work['object']} The course moment makes that object visible: {anchor['course_moment']} {object_close}",
         f"Ask what the page is really studying: {work['object']} Now attach that answer to the lecture evidence: {anchor['course_moment']} {object_close}",
         f"Put the carrier of the idea into the reader's hands: {work['object']} The course moment tests that carrier in use: {anchor['course_moment']} {object_close}",
         f"Begin with the thing a reader could inspect before the term appears: {work['object']} Then ground that object in the course scene: {anchor['course_moment']} {object_close}",
-        f"Put the object on the table before using the concept name: {work['object']} The lecture anchor should show that object doing work: {anchor['course_moment']} {object_close}",
+        f"Put the object on the table before using the concept name: {work['object']} The lecture anchor shows that object doing work: {anchor['course_moment']} {object_close}",
         f"Name the carrier, not the label: {work['object']} Then use the course moment to show where that carrier appears: {anchor['course_moment']} {object_close}",
         f"Let the example define the stage first: {work['object']} The anchor gives the reader a place to see that stage in use: {anchor['course_moment']} {object_close}",
         f"Say what kind of thing the claim belongs to: {work['object']} Then check that the course moment is the same kind of thing: {anchor['course_moment']} {object_close}",
-        f"Make the starting material explicit: {work['object']} The course moment should reveal why that material, and not only the term {title}, matters: {anchor['course_moment']} {object_close}",
+        f"Make the starting material explicit: {work['object']} The course moment reveals why that material, and not only the term {title}, matters: {anchor['course_moment']} {object_close}",
         f"Describe what would be drawn, moved, counted, or modeled: {work['object']} Then attach that description to the lecture evidence: {anchor['course_moment']} {object_close}",
-        f"Start from the concrete carrier of the question: {work['object']} The anchor should let the reader locate that carrier in the course: {anchor['course_moment']} {object_close}",
+        f"Start from the concrete carrier of the question: {work['object']} The anchor locates that carrier in the course: {anchor['course_moment']} {object_close}",
     ])
     operation_prompt = varied((cid, "operation-check-prompt"), [
         f"Now say what is done to that object: {work['operation']} {legal_check} {operation_close}",
-        f"Describe the permitted operation without hiding behind terminology: {work['operation']} {legal_check} {operation_close}",
+        f"Describe the permitted operation without relying on terminology: {work['operation']} {legal_check} {operation_close}",
         f"Check the operation as a rule-governed action: {work['operation']} {legal_check} {operation_close}",
         f"Describe what changes in the picture, model, count, or field: {work['operation']} {legal_check} {operation_close}",
         f"Spell out the action before naming the method: {work['operation']} {legal_check} {operation_close}",
-        f"Describe the permitted manipulation in ordinary words: {work['operation']} {legal_check} {operation_close}",
+        f"Describe the permitted manipulation directly: {work['operation']} {legal_check} {operation_close}",
         f"Turn the method name into an action the reader can audit: {work['operation']} {legal_check} {operation_close}",
         f"State the move and the rule that licenses it: {work['operation']} {legal_check} {operation_close}",
         f"Say how the object is changed, cleaned, counted, or modeled: {work['operation']} {legal_check} {operation_close}",
@@ -5218,7 +5218,7 @@ def build_subtheme_answer_guide(subtheme):
         f"Point to the exact feature that changes the argument, not only the subtheme name.",
         f"That keeps {title} tied to evidence the lecture actually supplies: a boundary, sign, route, count, failure point, or state-space rule.",
         f"The boundary, sign, route, count, defect, or state-space rule has to appear before the subtheme name can carry weight.",
-        f"The named detail has to carry work: it should protect a count, license a move, mark a boundary, or expose the point where the claim could fail.",
+        f"The named detail has to carry work: protect a count, license a move, mark a boundary, or expose the point where the claim could fail.",
     ])
     ask_close = varied((sid, "ask-close"), [
         f"The subtheme becomes an inspection of the proof itself.",
@@ -5227,10 +5227,10 @@ def build_subtheme_answer_guide(subtheme):
         f"Expose the hidden rule or evidence that makes {title} necessary on this page.",
     ])
     use_close = varied((sid, "use-close"), [
-        f"The explanation should name the specific problem {title} helps solve in the argument.",
-        f"The routine should change the reader's account of the argument: what is now ruled out, forced, protected, or modeled.",
+        f"The explanation has to name the specific problem {title} helps solve in the argument.",
+        f"The routine changes the account of the argument: what is now ruled out, forced, protected, or modeled.",
         f"If the routine does not change what the reader checks on the page, the subtheme is only a label.",
-        f"{title} is doing real work only when it turns the live claim into something a reader can check in ordinary words.",
+        f"{title} is doing real work only when it turns the live claim into a checkable object, move, protected fact, or model condition.",
     ])
     mistake_close = varied((sid, "mistake-close"), [
         f"The repair must return to the missing object, move, count, sign rule, boundary condition, or model.",
@@ -5250,12 +5250,12 @@ def build_subtheme_answer_guide(subtheme):
     ])
     ask_prompt = varied((sid, "ask-answer-prompt"), [
         f"Ask the {title} question in plain words: {ask} The thinking shift is this: {bridge['thinking_shift']} {ask_close}",
-        f"Once the feature is found, ask what it changes: {ask} That question should produce this shift: {bridge['thinking_shift']} {ask_close}",
+        f"Once the feature is found, ask what it changes: {ask} That question produces this shift: {bridge['thinking_shift']} {ask_close}",
         f"Turn the feature into a question, not a label: {ask} The point of the question is: {bridge['thinking_shift']} {ask_close}",
-        f"Use the question to test the argument: {ask} It should move the reader this way: {bridge['thinking_shift']} {ask_close}",
+        f"Use the question to test the argument: {ask} It moves the explanation this way: {bridge['thinking_shift']} {ask_close}",
         f"Ask what the located feature changes in the proof: {ask} The thinking shift is: {bridge['thinking_shift']} {ask_close}",
-        f"Make the reader answer the working question: {ask} That answer should create this shift: {bridge['thinking_shift']} {ask_close}",
-        f"Convert the subtheme into a checkable question: {ask} The shift it should produce is: {bridge['thinking_shift']} {ask_close}",
+        f"Answer the working question: {ask} That answer creates this shift: {bridge['thinking_shift']} {ask_close}",
+        f"Convert the subtheme into a checkable question: {ask} The resulting shift is: {bridge['thinking_shift']} {ask_close}",
         f"Use the question to expose the proof obligation: {ask} Move toward this shift: {bridge['thinking_shift']} {ask_close}",
     ])
     use_prompt = varied((sid, "use-answer-prompt"), [
@@ -5288,7 +5288,7 @@ def build_subtheme_answer_guide(subtheme):
     ])
     use_intro = varied((sid, "use-answer-intro"), [
         f"Use {title} only where it changes the reading task.",
-        f"{title} earns its place when it changes what the reader checks.",
+        f"{title} earns its place when it changes what gets checked.",
         f"The routine belongs where {title} does work.",
         f"Bring in {title} when the argument needs this exact repair.",
     ])
@@ -5355,7 +5355,7 @@ def build_family_answer_guide(family):
     ])
     action_prompt = varied((fid, "family-action-answer-prompt"), [
         f"Now say what {title} does to that input: {contract['action']} The playbook version is: {playbook['move']} {action_close}",
-        f"Describe the move in ordinary words: {contract['action']} On the page, that move appears as: {playbook['move']} {action_close}",
+        f"Describe the move directly: {contract['action']} On the page, that move appears as: {playbook['move']} {action_close}",
         f"Use {title} as an action, not a label: {contract['action']} The playbook move makes the action checkable: {playbook['move']} {action_close}",
         f"State the operation the family performs: {contract['action']} Then compare it with the playbook move: {playbook['move']} {action_close}",
     ])
