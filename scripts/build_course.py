@@ -160,7 +160,7 @@ SOURCE_READERS = [
     {
         "reference": "tib-av-portal-course",
         "reader_problem": "The mirror source answers a source-control problem: how do we know the playlist belongs to a real course series rather than only to a loose upload list? Without that check, a companion can drift into a generic topology syllabus instead of staying tied to this course, this speaker, and this sequence of lectures.",
-        "object_to_watch": "The object here is the course record itself: title, speaker, institution, sequence, and series identity. Unlike a theorem source, this object does not contain the proof move. It tells the reader what course is being explained and where the source trail begins.",
+        "object_to_watch": "The object here is the course record itself: title, speaker, institution, sequence, and series identity. Unlike a theorem source, this object does not contain the proof move. It tells the reader what course is being explained and where the evidence map begins.",
         "first_principles_bridge": "A source-backed companion needs more than mathematical background. It needs a stable course identity so the generated lecture sequence stays tied to the actual teaching source rather than drifting into a standard list of topology topics. Provenance protects the boundary between this course and the larger subject.",
         "how_to_read": "Use the mirror to verify the course as a series, then return to the lecture pages for the mathematical reading. It is a provenance source, so it can answer who, what course, and what sequence. It cannot answer why a particular proof works, what exact mathematical claim a lecture makes, or how a missing caption should be filled.",
         "family": "Course provenance",
@@ -4099,7 +4099,7 @@ def source_trail_intro(seed, page_kind, context=None):
         protected = without_leading_label(context.get("workup", {}).get("protected", ""), "The protected fact is")
         principle = context.get("math_principle", "")
         return varied((seed, "source-trail-intro"), [
-            f"The source trail for {topic} starts only after the course object is plain: {object_text} The references below deepen the family behind that object without replacing the lecture evidence.",
+            f"For {topic}, start from the course object before opening a reference: {object_text} The references below deepen the family behind that object without replacing the lecture evidence.",
             f"Read these sources as a second pass on {topic}. First hold onto the course's protected fact: {protected} Then use the sources to see how that kind of evidence is handled in the wider literature.",
             f"{topic} is grounded above in course moments and self-checks. The sources below check the same principle in a more formal setting: {principle}",
             f"Use the cards below to widen {topic}, not to make a background source sound like lecture evidence. The course examples remain the proof of how this companion is using the idea.",
@@ -4108,7 +4108,7 @@ def source_trail_intro(seed, page_kind, context=None):
         "Use this trail only after the course example is clear. The references widen the mathematical family; they do not replace the lecture evidence.",
         "The concept is grounded above in course moments. The cards below show where the same kind of object, move, or protected fact appears in broader sources.",
         "Read the cards below as background support for the concept, not as proof that one lecture used a particular source sentence.",
-        "The references are a second layer: first understand what the course made visible, then use the source trail to see the formal setting around it.",
+            "The references are a second layer: first understand what the course made visible, then use them to see the formal setting around it.",
     ])
 
 
@@ -4233,7 +4233,7 @@ def build_source_faithfulness(lecture):
             f"Source support for \"{title}\" begins with the recovered anchors {anchors}, then with visible course moments such as {examples}.",
             f"\"{title}\" is grounded by caption anchors including {anchors}, plus concrete course moments such as {examples}.",
             f"Treat {anchors} as caption-level support for \"{title}\", and use {examples} as the demonstration-level support.",
-            f"The source trail for \"{title}\" is strongest where the anchors {anchors} line up with course moments such as {examples}.",
+            f"Source support for \"{title}\" is strongest where the anchors {anchors} line up with course moments such as {examples}.",
         ])
         support = f"{support_open} {support_tail}"
     return {
@@ -4253,9 +4253,9 @@ def build_source_summary(lecture_record):
         f"\"{title}\" is backed by recovered auto-captions; use them for lecture anchors, visible examples, and rough phrasing rather than official transcript wording.",
         f"The source base for \"{title}\" is recovered captions plus visible demonstrations. The page can use them for course evidence, but exact wording still needs video-level checking.",
         f"Recovered captions support \"{title}\" as a lecture group. They ground objects, examples, and sequence while leaving exact phrasing below transcript certainty.",
-        f"For \"{title}\", caption recovery supplies the working source trail. The explanation should still separate caption evidence from broader course synthesis.",
+        f"For \"{title}\", caption recovery supplies the working lecture evidence. The explanation should still separate caption evidence from broader course synthesis.",
         f"\"{title}\" has caption-level support for its main course moments. Use that support to anchor the page, not to overstate every synthesized connection as spoken wording.",
-        f"The source trail for \"{title}\" begins with recovered auto-captions and visible course action. That is enough for the companion's reading, but not a license to invent exact lecture language.",
+        f"Recovered auto-captions and visible course action anchor \"{title}\". That is enough for the companion's reading, but not a license to invent exact lecture language.",
     ])
 
 
@@ -4455,77 +4455,77 @@ def build_lecture_answer_guide(lecture, spine_row):
 
 LECTURE_SOURCE_BRIDGE_NOTES = {
     1: {
-        "source_extension": "The source trail should keep the Mobius strip as a test of gluing, not as a novelty object. The course source supplies the half-turn band, the full trip, and the side-reversal observation; later references only help name the wider local-versus-whole pattern after that test is visible.",
+        "source_extension": "The Mobius strip bridge begins with gluing, not novelty. The course source supplies the half-turn band, the full trip, and the side-reversal observation; later references only help name the wider local-versus-whole pattern after that test is visible.",
         "claim_boundary": "A source-backed sentence overreaches if it turns the paper model into a general claim that topology ignores measurement or celebrates strange shapes. The supported claim is narrower: this made object exposes whole-surface side behavior that no small patch can settle.",
         "reader_question": "Can the reader point to the half-turn gluing, act out one full trip, say what side information changed, and then separate that lecture evidence from later terminology about orientation or manifolds?",
     },
     2: {
-        "source_extension": "The source trail should read the disk puzzle as boundary-order evidence. Wider topology language can explain deformation, but the lecture bridge starts with paired boundary points, fixed order, and paths that are not allowed to cross during cleanup.",
+        "source_extension": "The disk puzzle bridge reads the demonstration as boundary-order evidence. Wider topology language can explain deformation, but the lecture bridge starts with paired boundary points, fixed order, and paths that are not allowed to cross during cleanup.",
         "claim_boundary": "The crowded sketch is not enough by itself, and a redraw that lets endpoints slide through one another has changed the problem. The course claim remains tied to the boundary data and to the legal redraw that preserves the no-crossing problem.",
         "reader_question": "Can the reader name the boundary points and their order, describe a legal path motion, identify the illegal crossing shortcut, and say what a source may add after those facts are already stated?",
     },
     3: {
-        "source_extension": "The source trail should turn construction words into actions. Product means combined choices, quotient means declared sameness, manifold means locally ordinary patches, and surgery means replacing a piece under a boundary rule; formal references help only after those actions are plain.",
+        "source_extension": "The construction bridge turns formal nouns into actions. Product means combined choices, quotient means declared sameness, manifold means locally ordinary patches, and surgery means replacing a piece under a boundary rule; formal references help only after those actions are plain.",
         "claim_boundary": "A source-backed sentence overreaches if it lists product, quotient, surgery, or manifold as labels without saying how the space was made. The lecture evidence is the construction rule, not the later vocabulary.",
         "reader_question": "Can the reader rebuild the space from choices, identifications, patches, or cut-and-glue replacement before using a formal source name, and can they say what routes or boundaries changed?",
     },
     4: {
-        "source_extension": "The source trail should treat the square as a code for a finished surface. Whole-space invariant sources become relevant only after the edge arrows have been read as travel rules that change routes, boundaries, and orientation behavior.",
+        "source_extension": "The square is a code for a finished surface. Whole-space invariant sources become relevant only after the edge arrows have been read as travel rules that change routes, boundaries, and orientation behavior.",
         "claim_boundary": "A source-backed sentence overreaches if it reasons from the unglued square as though its drawn edges were automatically real boundaries. The claim must pass through the identification rule first.",
         "reader_question": "Can the reader say which edge points become identical, where a traveler reappears after crossing an edge, and which boundary or side claim would be false before the gluing rule is applied?",
     },
     5: {
-        "source_extension": "The source trail should connect classification to durable surface features, not to naming. Whole-space invariant sources help explain why handles, boundary components, and orientability survive rearrangement, but the lecture must first show what feature is being tracked.",
+        "source_extension": "Classification connects to durable surface features, not to naming. Whole-space invariant sources help explain why handles, boundary components, and orientability survive rearrangement, but the lecture must first show what feature is being tracked.",
         "claim_boundary": "A source-backed sentence overreaches if it lets a surface name replace the survival test. Classification is supported only after the page says what legal cutting, gluing, or simplification preserved.",
         "reader_question": "Can the reader name the handle, boundary, or side behavior that survives the surface moves, explain how a different drawing would still carry it, and then state what a reference is allowed to generalize?",
     },
     6: {
-        "source_extension": "The source trail should explain ordinary position as preparation for evidence. Differentiable-topology references can justify clean meetings and dimension counts, but the lecture bridge begins with which contact disappeared under a legal nudge and which meeting remained readable.",
+        "source_extension": "Ordinary position is preparation for evidence. Differentiable-topology references can justify clean meetings and dimension counts, but the lecture bridge begins with which contact disappeared under a legal nudge and which meeting remained readable.",
         "claim_boundary": "A source-backed sentence overreaches if it counts a messy contact before separating accidents from forced meetings. The formal source cannot skip the lecture's cleanup step.",
         "reader_question": "Can the reader identify the objects being nudged, the accident removed, the clean meeting left behind, and the reason this nudge still answers the same placement problem?",
     },
     7: {
-        "source_extension": "The source trail should keep the balance demonstration as a continuity argument. The course source shows a changing quantity crossing a required condition; later fixed-point or intersection language can widen the pattern only after the no-jump event is named.",
+        "source_extension": "The balance demonstration stays a continuity argument. The course source shows a changing quantity crossing a required condition; later fixed-point or intersection language can widen the pattern only after the no-jump event is named.",
         "claim_boundary": "A source-backed sentence overreaches if it says the demonstration proves later theorems or computes the special point. The supported claim is existence of a forced state under continuous change.",
         "reader_question": "Can the reader say what quantity changes, what condition it cannot jump past, what event is forced, and what later source language would be interpretation rather than lecture proof?",
     },
     8: {
-        "source_extension": "The source trail should make signed intersection a repaired count. Algebraic-topology sources may place the idea in a larger invariant family, but the lecture bridge has to show clean meetings, orientation, and opposite-signed pair cancellation.",
+        "source_extension": "Signed intersection is a repaired count. Algebraic-topology sources may place the idea in a larger invariant family, but the lecture bridge has to show clean meetings, orientation, and opposite-signed pair cancellation.",
         "claim_boundary": "A source-backed sentence overreaches if it calls the raw crossing count invariant or assigns plus and minus without a direction rule. The arithmetic counts only after the signs have earned their meaning.",
         "reader_question": "Can the reader explain where the sign rule comes from, why a birth pair contributes zero net change, and which legal deformation leaves the signed total available as evidence?",
     },
     9: {
-        "source_extension": "The source trail should preserve the missing-caption caveat while explaining the reliable graph-diagonal translation. Algebraic-topology background can widen fixed-point language, but the lecture support is graph, diagonal, self-agreement, and controlled meeting.",
+        "source_extension": "The fixed-point bridge preserves the missing-caption caveat while explaining the reliable graph-diagonal translation. Algebraic-topology background can widen fixed-point language, but the lecture support is graph, diagonal, self-agreement, and controlled meeting.",
         "claim_boundary": "A source-backed sentence overreaches if it fills the unavailable middle caption with hidden theorem details. The bridge may explain the supported conversion, not invent transcript-level evidence.",
         "reader_question": "Can the reader justify the fixed-point claim from graph and diagonal alone, state which assumptions would be needed for a theorem, and mark any missing-caption inference as weaker evidence?",
     },
     10: {
-        "source_extension": "The source trail should treat Brouwer as a contract on a particular space and rule. Formal background can explain the theorem family, but the lecture bridge must keep closed filled ball, self-map, continuity, and existence conclusion in one account.",
+        "source_extension": "Brouwer enters as a contract on a particular space and rule. Formal background can explain the theorem family, but the lecture bridge must keep closed filled ball, self-map, continuity, and existence conclusion in one account.",
         "claim_boundary": "Brouwer should not become a promise for every motion, every space, or a computed location. Change the domain, let outputs leave, or allow jumps, and the claim changes.",
         "reader_question": "Can the reader name the closed filled domain, the rule back into that same domain, the no-jump condition, and the exact conclusion without claiming location or uniqueness?",
     },
     11: {
-        "source_extension": "The source trail should shift motion from solved trajectories to arrow-pattern evidence. Differentiable-topology references help after the lecture has named the field, the vanishing place, and the surrounding arrows that carry local turning information.",
+        "source_extension": "The dynamics bridge shifts motion from solved trajectories to arrow-pattern evidence. Differentiable-topology references help after the lecture has named the field, the vanishing place, and the surrounding arrows that carry local turning information.",
         "claim_boundary": "An equilibrium is not a complete dynamics solution, and it is not automatically a fixed point of an unnamed map. The local arrow pattern is the evidence being bridged.",
         "reader_question": "Can the reader point to the vector field, isolate the defect, describe the nearby arrow turning, and say what remains unknown about actual motion paths?",
     },
     12: {
-        "source_extension": "The source trail should make index addition a same-surface ledger. Differentiable-topology sources can justify the local counts, but the lecture bridge must include every isolated defect before comparing the total with Euler characteristic.",
+        "source_extension": "Index addition is a same-surface ledger. Differentiable-topology sources can justify the local counts, but the lecture bridge must include every isolated defect before comparing the total with Euler characteristic.",
         "claim_boundary": "A source-backed sentence overreaches if it compares one defect directly with Euler characteristic or forgets a boundary or isolation condition. The theorem speaks only after the completed defect account is assembled.",
         "reader_question": "Can the reader separate one local index from the sum over all defects, name the surface carrying the field, and say why omitting a defect changes the source claim?",
     },
     13: {
-        "source_extension": "The source trail should keep Poincare-Hopf as an equality between two ledgers: surface bookkeeping and defect bookkeeping. Whole-space invariant sources help explain the surface side, but the lecture must keep all isolated indices in the same account.",
+        "source_extension": "Poincare-Hopf is an equality between two ledgers: surface bookkeeping and defect bookkeeping. Whole-space invariant sources help explain the surface side, but the lecture must keep all isolated indices in the same account.",
         "claim_boundary": "A source-backed sentence overreaches if it reduces the theorem to the hairy-ball slogan or says it solves the differential equation. The source supports a constraint on defects, not a full motion path.",
         "reader_question": "Can the reader name the surface, the field, all isolated defects, the local index rule, and the stronger trajectory claim that Poincare-Hopf does not provide?",
     },
     14: {
-        "source_extension": "The source trail should treat applications as model-building tests. Earlier topology can speak only after one point of the state space records a complete state, forbidden states are removed, and paths in the model translate back to legal physical motion.",
+        "source_extension": "Applications are model-building tests. Earlier topology can speak only after one point of the state space records a complete state, forbidden states are removed, and paths in the model translate back to legal physical motion.",
         "claim_boundary": "A source-backed sentence overreaches if it pastes a theorem onto a physical story before checking freedoms, blocked states, and boundary conditions. The model is the mathematical object, not the anecdote.",
         "reader_question": "Can the reader say what one state records, what states were removed, how a path means real motion, and which conclusion would fail if the model forgot a real freedom?",
     },
     15: {
-        "source_extension": "The source trail should read the final lecture as a dependency map. The course source gathers the same habit across strips, paths, surfaces, maps, fields, and states: make the object, state legal moves, protect evidence, and limit the conclusion.",
+        "source_extension": "The final lecture works as a dependency map. The course source gathers the same habit across strips, paths, surfaces, maps, fields, and states: make the object, state legal moves, protect evidence, and limit the conclusion.",
         "claim_boundary": "Pictorial thinking should not become taste or memory. The final review is evidence only when each picture carries a rule, count, meeting, obstruction, or state-space constraint.",
         "reader_question": "Can the reader audit any earlier page from the final review by naming its object, legal move, protected fact, failure condition, later use, and source boundary?",
     },
@@ -6628,7 +6628,7 @@ window.addEventListener('resize',sync);document.addEventListener('input',sync);s
         )
     references_body = f"""
 <h1>References</h1>
-<p class="lead">This page is a paper and source trail for the companion. It separates the actual course source from background papers and standard references, so a reader can see what supports the course, what supports the broader mathematics, and where not to overclaim.</p>
+<p class="lead">This page is the companion's paper and source map. It separates the actual course source from background papers and standard references, so the support for course claims, broader mathematics, and overclaim boundaries stays visible.</p>
 <section class="panel warn">
   <h2>Source Caveat</h2>
   <p>The lecture videos remain the source for what Tokieda teaches in this course. The primary papers and textbooks below support the mathematical family behind the ideas; they are not claims that a specific lecture cited a specific paper.</p>

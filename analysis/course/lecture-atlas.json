@@ -113,7 +113,7 @@
         "verify_question": "Can the explanation state the gluing rule, say what is being followed around the strip, and then explain why the result could not be seen from one small patch?"
       },
       "source_faithfulness": {
-        "caption_support": "The source trail for \"The Mobius strip reveals the course's central problem\" is strongest where the anchors Mobius strip, twist and glue, cutting along the center, one side versus two sides line up with course moments such as Cutting an ordinary band versus a Mobius band; One side is a global fact; Off-center cuts create linked pieces. That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
+        "caption_support": "Source support for \"The Mobius strip reveals the course's central problem\" is strongest where the anchors Mobius strip, twist and glue, cutting along the center, one side versus two sides line up with course moments such as Cutting an ordinary band versus a Mobius band; One side is a global fact; Off-center cuts create linked pieces. That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
         "course_inference": "Use the position of \"The Mobius strip reveals the course's central problem\" in the sequence to explain why the idea matters later. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
         "caveat": "Treat source support for \"The Mobius strip reveals the course's central problem\" as layered: caption wording, visible demonstration, course-arc synthesis, and background reference are different kinds of evidence. Do not upgrade one layer into another when sharpening a claim."
       },
@@ -275,7 +275,7 @@
         "why_strong": "The disk-path answer works only when the boundary contract stays visible. The anchor 'Endpoint order carries the obstruction' should make the later use feel earned, not announced."
       }
     },
-    "source_summary": "The source trail for \"Deformation as a way to solve, not decorate\" begins with recovered auto-captions and visible course action. That is enough for the companion's reading, but not a license to invent exact lecture language."
+    "source_summary": "Recovered auto-captions and visible course action anchor \"Deformation as a way to solve, not decorate\". That is enough for the companion's reading, but not a license to invent exact lecture language."
   },
   {
     "lecture": 3,
@@ -833,7 +833,7 @@
         "why_strong": "The generic-position answer works only when cleanup reveals countable events. The anchor 'Dimension measures available escape room' should make the later use feel earned, not announced."
       }
     },
-    "source_summary": "For \"Moving subspaces and meeting only when dimension forces it\", caption recovery supplies the working source trail. The explanation should still separate caption evidence from broader course synthesis."
+    "source_summary": "For \"Moving subspaces and meeting only when dimension forces it\", caption recovery supplies the working lecture evidence. The explanation should still separate caption evidence from broader course synthesis."
   },
   {
     "lecture": 7,
@@ -951,7 +951,7 @@
         "verify_question": "Can the explanation name what changes continuously, what two sides of the condition are being crossed, and what event cannot be skipped during that motion?"
       },
       "source_faithfulness": {
-        "caption_support": "The source trail for \"Center of gravity and the birth of intersection thinking\" is strongest where the anchors center of gravity, continuous motion, intersection, existence line up with course moments such as The center-of-gravity demonstration; Existence without a formula; A physical motion becomes an intersection question. Those anchors justify the page's reading of the lecture object, the allowed move, the protected fact, and the later use. They do not turn the cleaned transcript into official notes.",
+        "caption_support": "Source support for \"Center of gravity and the birth of intersection thinking\" is strongest where the anchors center of gravity, continuous motion, intersection, existence line up with course moments such as The center-of-gravity demonstration; Existence without a formula; A physical motion becomes an intersection question. Those anchors justify the page's reading of the lecture object, the allowed move, the protected fact, and the later use. They do not turn the cleaned transcript into official notes.",
         "course_inference": "Use the position of \"Center of gravity and the birth of intersection thinking\" in the sequence to explain why the idea matters later. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
         "caveat": "Treat source support for \"Center of gravity and the birth of intersection thinking\" as layered: caption wording, visible demonstration, course-arc synthesis, and background reference are different kinds of evidence. Do not upgrade one layer into another when sharpening a claim."
       },
@@ -1103,7 +1103,7 @@
         "why_strong": "The signed-count answer works only when orientation explains cancellation. The answer must end with a limit as well as a payoff. The surviving fact is: Opposite-signed pairs can be born or die without changing the signed total. It tells the reader what is forced, not every extra thing one might wish to know."
       }
     },
-    "source_summary": "The source trail for \"Intersection number is a count with memory\" begins with recovered auto-captions and visible course action. That is enough for the companion's reading, but not a license to invent exact lecture language."
+    "source_summary": "Recovered auto-captions and visible course action anchor \"Intersection number is a count with memory\". That is enough for the companion's reading, but not a license to invent exact lecture language."
   },
   {
     "lecture": 9,
@@ -1372,7 +1372,7 @@
         "verify_question": "Can the explanation state the domain, the self-map condition, and continuity assumptions before claiming a fixed point, then say why those assumptions matter to the escape argument?"
       },
       "source_faithfulness": {
-        "caption_support": "The source trail for \"Brouwer fixed point theorem: shape forces a point to stay\" is strongest where the anchors Brouwer fixed-point theorem, closed ball, boundary, continuous map line up with course moments such as Brouwer on the closed ball; Boundary changes the theorem; No global escape from self-agreement. That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
+        "caption_support": "Source support for \"Brouwer fixed point theorem: shape forces a point to stay\" is strongest where the anchors Brouwer fixed-point theorem, closed ball, boundary, continuous map line up with course moments such as Brouwer on the closed ball; Boundary changes the theorem; No global escape from self-agreement. That evidence is enough to ground the companion's explanation of what the lecture is doing. It is not enough to quote the lecture exactly or to strengthen a claim beyond the recovered source.",
         "course_inference": "Use the position of \"Brouwer fixed point theorem: shape forces a point to stay\" in the sequence to explain why the idea matters later. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
         "caveat": "Treat source support for \"Brouwer fixed point theorem: shape forces a point to stay\" as layered: caption wording, visible demonstration, course-arc synthesis, and background reference are different kinds of evidence. Do not upgrade one layer into another when sharpening a claim."
       },
@@ -1537,7 +1537,7 @@
         "why_strong": "The vector-field answer works only when arrows near the defect carry evidence. The anchor 'Local arrow patterns can be counted' should make the later use feel earned, not announced."
       }
     },
-    "source_summary": "The source trail for \"Vector fields: learning without solving the equations\" begins with recovered auto-captions and visible course action. That is enough for the companion's reading, but not a license to invent exact lecture language."
+    "source_summary": "Recovered auto-captions and visible course action anchor \"Vector fields: learning without solving the equations\". That is enough for the companion's reading, but not a license to invent exact lecture language."
   },
   {
     "lecture": 12,
@@ -2094,6 +2094,6 @@
         "why_strong": "The final-review answer works only when the course reads as one reusable habit. The anchor 'The final strip demonstration returns to linking' should make the later use feel earned, not announced."
       }
     },
-    "source_summary": "For \"The course as pictorial thinking\", caption recovery supplies the working source trail. The explanation should still separate caption evidence from broader course synthesis."
+    "source_summary": "For \"The course as pictorial thinking\", caption recovery supplies the working lecture evidence. The explanation should still separate caption evidence from broader course synthesis."
   }
 ]
