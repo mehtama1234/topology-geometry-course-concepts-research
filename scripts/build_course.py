@@ -592,7 +592,7 @@ def build_term_translations(rows):
             "This makes the term usable because the reader knows how to catch a false use in a new problem.",
             "The failure is practical: it shows how a model, drawing, count, theorem, or source can answer the wrong question.",
             "The reader leaves knowing which detail to inspect before trusting the term again.",
-            "The course uses these failures to make broad ideas exact by naming the condition, evidence, and limit.",
+            "The course uses these failures to make course-wide ideas exact by naming the condition, evidence, and limit.",
             "In another field, the matching failure appears when the object, allowed change, or protected evidence has not been rebuilt.",
             "The repaired version says exactly what remains supported and what stronger sentence must stay unsaid.",
         ])
@@ -984,7 +984,7 @@ def build_concept_contrasts(rows):
             "This lets the course show connection without turning neighboring ideas into one vague idea.",
             "The bridge sentence is also where outside applications become safer, because it names what has to be rebuilt before transfer.",
             "A reader can use the bridge to move from one page to another without losing the condition that made the first page true.",
-            "The bridge leaves behind a smaller, checkable sentence rather than a broad claim about related topics.",
+            "The bridge leaves behind a smaller, checkable sentence rather than a loose claim about related topics.",
             "The safest bridge names the shared object and then says which evidence belongs to each side.",
             "This is how a contrast becomes a first-principles lesson instead of a vocabulary comparison.",
         ])
@@ -1946,7 +1946,7 @@ def build_change_ledger_rows(rows):
             "The reader also has to say what stronger claim remains unearned: location, uniqueness, full motion, exact source wording, or a general rule for every case.",
             "This turns the ledger into a habit for reading new problems, not only a record of solved course examples.",
             "The same test applies outside topology when a model, picture, count, or source is being changed for convenience.",
-            "The test protects the broad claim by forcing it to pass through one inspectable object and one named condition.",
+            "The test protects the exact claim by forcing it to pass through one inspectable object and one named condition.",
             "If the test cannot be answered, the page needs a narrower claim before the method is used.",
         ])
         new_row["object"] = (
@@ -2863,7 +2863,7 @@ def build_theme_lens(theme, lens):
     depth = theme["depth"]
     tid = theme["id"]
     object_close = varied((tid, "theme-lens-object-close"), [
-        "That gives the reader an object or situation to inspect before the theme becomes a broad claim.",
+        "That gives the reader an object or situation to inspect before the theme becomes a course-wide claim.",
         "The reader gets a concrete situation first, so the theme has work to do before any summary arrives.",
         "This makes the theme answerable on the page instead of leaving it as a title.",
         "The point is to keep a visible problem in front of the reader before the general lesson is named.",
@@ -7496,7 +7496,7 @@ def build_concept_anchor(concept):
     principle_finish = varied((cid, "anchor-principle-finish"), [
         f"Put in everyday words, the principle says what the course wants the reader to keep. It is the lesson that survives after the original picture changes, and that is why it can guide later topology and outside applications.",
         f"The principle matters because it turns one lecture scene into a reusable habit. It does not say every problem is the same; it says which part of the reasoning can be carried into a new setting.",
-        f"This is the broad claim in its careful form. It names the durable idea without pretending that the details disappear. That balance is what lets the concept help in other fields without becoming a vague comparison.",
+        f"This is the exact claim in its careful form. It names the durable idea without pretending that the details disappear. That balance is what lets the concept help in other fields without becoming a vague comparison.",
         f"The principle is the reader's portable tool. It gives a way to ask, in plain language, what stays the same, what can be ignored, and what would make the transfer false.",
         f"This keeps the course from becoming a list of special cases. The principle explains why a move from one lecture can matter again later, even when the drawing, source, or outside example looks different.",
         f"The plain value is that the principle tells the reader what to look for next time. In topology and elsewhere, understanding begins when the same underlying job can be seen under different surface details.",
@@ -8060,7 +8060,7 @@ def build_theme_plain(theme):
         f"Outside topology, {title} matters when a model, route, count, or physical setup needs the same check: what structure remains reliable after the easy details change?",
         f"Read {title} as a course reading rule, not a heading. It helps the reader see why a drawing, theorem, source, or application is being used at that point.",
         f"For {title}, the plain boundary is part of the meaning: the theme can guide attention only as far as the object, allowed move, and surviving evidence remain visible.",
-        f"The course uses {title} to keep the broad idea concrete: each later page has to show the carrier, the legal change, the protected fact, and the claim limit.",
+        f"The course uses {title} to keep the course-wide idea concrete: each later page has to show the carrier, the legal change, the protected fact, and the claim limit.",
     ])
     return f"{theme['plain']} Theme role for {title}: {depth['course_arc']} {close}"
 
@@ -8095,7 +8095,7 @@ def build_theme_application(theme):
         "A clear application names the limited answer topology can give before it hands the remaining work back to the outside setting.",
     ])
     limit_close = varied((theme["id"], "theme-application-limit-close"), [
-        "The limit belongs in the same paragraph as the payoff, because a broad theme can easily sound stronger than the evidence that supports it.",
+        "The limit belongs in the same paragraph as the payoff, because a theme-level claim can easily sound stronger than the evidence that supports it.",
         "A careful transfer ends by saying what still needs data, experiment, numerical work, source evidence, or a more detailed model.",
         "This keeps the page useful for other fields without pretending that a shape argument solves every part of the outside problem.",
         "The theme stays honest when the reader knows the exact sentence it can support and the stronger sentence it leaves unsupported.",
@@ -8146,7 +8146,7 @@ def build_theme_first_principles_essay(theme):
         f"This prevents {title} from becoming abstract too early. The theme can be general only because the page keeps returning to concrete carriers that can be drawn, moved, counted, compared, or modeled.",
         f"In outside use, the same object check matters because a field cannot borrow the topological habit until it names the thing whose structure, route, boundary, or possible state space is being judged.",
         f"The reader can test the theme by asking whether each lecture in the thread has the same kind of carrier or only shares a surface resemblance with the others.",
-        f"For {title}, naming the object keeps the broad claim honest. It tells the reader what must remain present when the course moves from one example to another.",
+        f"For {title}, naming the object keeps the exact claim honest. It tells the reader what must remain present when the course moves from one example to another.",
         f"The theme object is the bridge between local examples and course-wide meaning. Without it, the theme would connect words rather than evidence.",
     ])
     allowed_close = varied((tid, "theme-fp-allowed-close"), [
@@ -8183,9 +8183,9 @@ def build_theme_first_principles_essay(theme):
     ])
     wrong_close = varied((tid, "theme-fp-wrong-close"), [
         f"The repair is to return from the slogan to the contract: name the object, the permitted move, the protected fact, and the exact conclusion that follows.",
-        f"This wrong use matters because broad themes are easy to overread. A theme can guide attention, but it cannot prove a claim after the evidence or condition has disappeared.",
+        f"This wrong use matters because theme-level claims are easy to overread. A theme can guide attention, but it cannot prove a claim after the evidence or condition has disappeared.",
         f"For {title}, the nearby false version is part of the lesson. It shows which condition was doing the work and which stronger sentence has to remain unsaid.",
-        f"The course needs this boundary so the broad theme stays useful. Without the boundary, the theme may sound meaningful while no longer telling the reader what to check.",
+        f"The course needs this boundary so the theme-level claim stays useful. Without the boundary, the theme may sound meaningful while no longer telling the reader what to check.",
         f"The same warning applies outside topology: a model can look like the course example while missing the route, boundary, count, or state-space condition that carried the original conclusion.",
         f"A plain explanation of {title} therefore ends with a limit, because knowing where the habit stops is part of knowing why it matters.",
     ])
@@ -8255,7 +8255,7 @@ def build_subtheme_plain(subtheme):
     depth = subtheme["depth"]
     close = varied((sid, "subtheme-plain-close"), [
         f"Plain use of {title}: find the working detail, ask what rule protects it, and say what false shortcut would appear if that detail were ignored.",
-        f"The everyday value of {title} is that it gives the reader a small repeatable check before a broad theme, theorem, or application is trusted.",
+        f"The everyday value of {title} is that it gives the reader a small repeatable check before a theme-level claim, theorem, or application is trusted.",
         f"Outside topology, {title} matters when a model, drawing, route, count, or mechanism depends on the same hidden condition staying in place.",
         f"Read {title} as a repair tool. It tells the reader how to turn a vague sentence into a checkable claim about an object, move, evidence, and limit.",
         f"For {title}, the plain boundary is part of the lesson: the routine helps only when the page can show the detail it protects.",

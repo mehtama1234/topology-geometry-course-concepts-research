@@ -33,6 +33,12 @@ FORBIDDEN = [
     "big-picture",
     "course habit",
     "course habits",
+    "broad claim",
+    "broad claims",
+    "broad idea",
+    "broad ideas",
+    "broad theme",
+    "broad themes",
 ]
 
 
