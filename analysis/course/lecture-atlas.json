@@ -84,8 +84,8 @@
       "deepening": {
         "what_is_really_happening": "The lecture is replacing the question 'what does the strip look like?' with 'what does a full journey through the strip do to local side information?' The object is being read by travel, not by one patch.",
         "why_it_is_hard": "Small-patch inspection sees only ordinary paper, so the global reversal can feel like a surprise rather than a rule-made consequence. The hard step is learning to trust the full trip around the glued object more than the familiar local patch.",
-        "key_move": "Treat the twist as an instruction for gluing the ends, then test that instruction by following, coloring, and cutting paths that travel around the whole strip.",
-        "payoff": "Local sameness no longer counts as global evidence by itself. The paper test exposes the full-surface rule that definitions alone would hide at the start of the course."
+        "key_move": "Treat the twist as an instruction for gluing the ends, then test that instruction by following, coloring, and cutting paths that travel around the whole strip. The point is to let the full journey, not one local view, decide the surface rule.",
+        "payoff": "Local sameness no longer counts as global evidence by itself. The paper test exposes the full-surface rule that definitions alone would hide at the start of the course, giving later orientation questions their first concrete model."
       },
       "source_lens": [
         "Read the Mobius-strip words as evidence about a gluing rule. The source move is not paper surprise; it is the following, coloring, or cutting test that asks whether a local side choice survives one full trip around the surface. That makes the paper model a first-principles experiment about local information meeting a whole-object constraint.",
@@ -230,8 +230,8 @@
       "deepening": {
         "what_is_really_happening": "The lecture turns drawing into proof by asking which path changes are legal while boundary order and no-crossing conditions stay fixed. The drawing is being judged by its contract.",
         "why_it_is_hard": "It is tempting to trust a drawing that looks cleaner, but the proof depends on the motion that produced the drawing, not on the drawing's appearance. The boundary order and no-crossing rule have to survive every simplification.",
-        "key_move": "State the fixed boundary data, then deform the interior curves only through moves that keep endpoints and forbidden crossings under control. The simplification earns trust through that restriction.",
-        "payoff": "A simplified picture can answer the original problem only when the boundary contract survives. The proof stops depending on drawing skill and starts depending on protected structure."
+        "key_move": "State the fixed boundary data, then deform the interior curves only through moves that keep endpoints and forbidden crossings under control. The simplification earns trust through that restriction, because every intermediate drawing still has to answer the same boundary problem.",
+        "payoff": "A simplified picture can answer the original problem only when the boundary contract survives. The proof stops depending on drawing skill and starts depending on protected structure: endpoint order, no-crossing rules, and legal motion carry the conclusion."
       },
       "source_lens": [
         "Read the disk-path lecture as a proof about boundary order. The source language around deformation and curves that do not intersect fixes the contract before any drawing is simplified. The proof is not that one sketch looks impossible; it is that every legal sketch inherits the same boundary order problem.",
@@ -378,9 +378,9 @@
         "A drawing becomes an instruction manual. Later, when fixed points are graphs meeting diagonals or when vector fields live on manifolds, the reader needs to remember that the space itself was made by rules. The construction recipe controls what motion, boundary, and sameness mean. The first-principles detail is therefore not the vocabulary of product, quotient, surgery, or manifold. It is the simpler question beneath all of them: what choices are allowed, what points have been declared identical, and what local piece has been replaced?"
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture gives the construction tools that let later arguments talk about spaces made from choices, identifications, local patches, and replacement operations. A space becomes something built by rules.",
+        "what_is_really_happening": "The lecture gives the construction tools that let later arguments talk about spaces made from choices, identifications, local patches, and replacement operations. A space becomes something built by rules, and those rules decide the later topology.",
         "why_it_is_hard": "Words such as product, quotient, surgery, and manifold can sound like labels, when here they are actions that build the object under study and determine later legal motion. The construction rule has to be read before the space can be used.",
-        "key_move": "Read each construction by asking what choices are added, what points become the same, what local piece is replaced, and what neighborhoods remain ordinary enough for local reasoning.",
+        "key_move": "Read each construction by asking what choices are added, what points become the same, what local piece is replaced, and what neighborhoods remain ordinary enough for local reasoning. That checklist turns each technical word into an action the reader can audit.",
         "payoff": "Later theorem use becomes auditable because the space's construction rules are visible before any conclusion is trusted. The object is built, not assumed, and its routes, boundaries, and identifications control what later claims can mean."
       },
       "source_lens": [
@@ -514,9 +514,9 @@
         "The first-principles point is that sameness is created by the rule, not by visual resemblance. If two exits of a drawn square are declared to be the same passage, then a path leaving one side has not ended; it has re-entered the world somewhere else. That habit becomes essential later when maps, diagonals, and vector fields are also treated as objects whose behavior depends on the space carrying them. The rule is part of the object."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture teaches that a flat drawing can be a code for a different space once its edges are identified by rules. The page becomes instructions for travel.",
+        "what_is_really_happening": "The lecture teaches that a flat drawing can be a code for a different space once its edges are identified by rules. The page becomes instructions for travel, so the actual object is the drawn square plus the rule for leaving and re-entering.",
         "why_it_is_hard": "The visible square invites trust, but the actual surface is determined by where travelers go after crossing labeled edges and whether direction returns changed. The drawing is only a code until the identification rule has been applied.",
-        "key_move": "Stop reading the boundary as a wall until the edge rule has been checked, including whether direction is preserved or reversed after crossing and returning.",
+        "key_move": "Stop reading the boundary as a wall until the edge rule has been checked, including whether direction is preserved or reversed after crossing and returning. The edge label decides whether the line is an edge, doorway, or side-reversing instruction.",
         "payoff": "Quotient spaces, orientation, and later rule-made objects now have a shared test: read the identification rule before trusting the visible drawing. A path, side choice, or boundary claim is valid only after the travel rule has been applied."
       },
       "source_lens": [
@@ -650,9 +650,9 @@
         "Classification gives the course economy without hiding evidence. Without it, every surface would have to be argued about from scratch. With it, a reader can reduce a complicated surface to a controlled list of durable features, then know which later tools are allowed to apply. The lecture therefore turns visual variety into a smaller set of cases: how many handles, how many one-sided pieces, whether there is boundary, and whether a consistent side choice survives."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture turns surfaces into classifiable objects by tracking handles, boundaries, side reversal, and the operations that preserve those features through legal simplification and redrawing.",
+        "what_is_really_happening": "The lecture turns surfaces into classifiable objects by tracking handles, boundaries, side reversal, and the operations that preserve those features through legal simplification and redrawing. Classification becomes a question about durable surface evidence, not resemblance between sketches.",
         "why_it_is_hard": "Surface names can sound like a taxonomy of pictures, but classification is really about durable evidence under legal cutting, gluing, and simplification across many drawings. The name matters only after handles, boundaries, and side behavior have survived the allowed moves.",
-        "key_move": "Follow the controlled surface operations and ask which global features survive: orientability, boundary behavior, handles, crosscaps, and Euler-style bookkeeping across the simplified surface model after each change.",
+        "key_move": "Follow the controlled surface operations and ask which global features survive: orientability, boundary behavior, handles, crosscaps, and Euler-style bookkeeping across the simplified surface model after each change. The operation matters only through the ledger it leaves behind.",
         "payoff": "Later counts and signs acquire a surface type beneath them. The surface is the stage that gives those later statements force, because handles, boundaries, and orientability decide which bookkeeping rules are available."
       },
       "source_lens": [
@@ -786,9 +786,9 @@
         "The detail that protects the argument is cleanliness. A messy contact can hide several simpler events: a tangency, a triple meeting, or a whole interval of overlap. The lecture asks the reader to move the objects until ordinary meetings happen one at a time, because only then can the later arithmetic see what happened. Clean position is not polish. It is the condition that lets a local event be counted without confusing it with a stack of unresolved events."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture separates accidental meetings from forced meetings by using ordinary position and the amount of room supplied by the surrounding space for avoidance and intersection.",
+        "what_is_really_happening": "The lecture separates accidental meetings from forced meetings by using ordinary position and the amount of room supplied by the surrounding space for avoidance and intersection. The goal is to make each meeting clean enough to test, not merely visible.",
         "why_it_is_hard": "A visible crossing can feel like evidence immediately, but before signs or counts are trusted the meeting must be cleaned and tested for stability under small legal motion. The lecture separates accidental contact from contact that remains readable after a nudge.",
-        "key_move": "Move objects slightly into ordinary position, then ask whether dimension and placement allow the meeting to be removed or make it unavoidable in the available room.",
+        "key_move": "Move objects slightly into ordinary position, then ask whether dimension and placement allow the meeting to be removed or make it unavoidable in the available room. This turns a messy overlap into separate events that can later receive signs or disappear as accidents.",
         "payoff": "Intersection number becomes possible only after clean, evidence-bearing meetings have been separated from accidental contacts. Signs need prepared meetings, not raw crossings, because the count must survive the legal nudges that change the picture."
       },
       "source_lens": [
@@ -920,10 +920,10 @@
         "The first-principles test is to name the two sides of the forced event. Before the meeting, one hand is carrying more of the relevant load; after the roles change, the imbalance has crossed through equality. If the change happened without jumps, equality could not be skipped. This is the everyday core behind many later statements: a continuous path through possible states must pass through the separating condition when it moves from one side to the other."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture uses a physical balancing event to introduce forced existence without requiring a formula for the point where it occurs. The demonstration is an existence proof.",
+        "what_is_really_happening": "The lecture uses a physical balancing event to introduce forced existence without requiring a formula for the point where it occurs. The demonstration is an existence proof: the continuous change must pass through the required state.",
         "why_it_is_hard": "The demonstration can distract from the mathematical structure: a continuous condition is changing and cannot skip the state being asked for. The apparatus is not the main evidence; the no-jump passage through a required condition is.",
-        "key_move": "Name the quantity that changes continuously and the event that lies between the starting and ending behavior. Then explain why the event cannot be jumped over.",
-        "payoff": "Topology can prove that a special state exists even when no formula locates it. Continuity supplies inevitability without computation, turning a physical balancing event into a reusable existence argument."
+        "key_move": "Name the quantity that changes continuously and the event that lies between the starting and ending behavior. Then explain why the event cannot be jumped over. The no-jump condition is the evidence, not the physical setup by itself.",
+        "payoff": "Topology can prove that a special state exists even when no formula locates it. Continuity supplies inevitability without computation, turning a physical balancing event into a reusable existence argument for later fixed-point and equilibrium claims."
       },
       "source_lens": [
         "Read center of gravity and continuous motion as the physical entrance to forced existence. The lecture is not only about balance; it is about a changing condition that cannot jump past the special state. The source evidence is the no-jump behavior of the process, not the exact location of the balance point.",
@@ -1056,9 +1056,9 @@
         "This is also where the word count becomes more precise. The course is not counting because numbers are automatically better than pictures. It is counting because a carefully chosen number can ignore harmless picture changes while remembering the obstruction. A raw count of crossings fails that test. A signed count passes it in the situations the lecture prepares. Ask why this number, not merely what number."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture turns raw crossings into protected arithmetic by assigning signs that make harmless birth and cancellation events add to zero under legal deformation of the picture.",
+        "what_is_really_happening": "The lecture turns raw crossings into protected arithmetic by assigning signs that make harmless birth and cancellation events add to zero under legal deformation of the picture. The count is designed around how crossings can legally change.",
         "why_it_is_hard": "Visible crossings invite raw counting, but that count is fragile; the stable evidence is the signed total, not the raw number seen in one drawing. The sign rule is the repair that lets harmless birth pairs cancel.",
-        "key_move": "Use orientation to justify plus and minus signs, then check what happens when a positive-negative pair appears or disappears during legal motion inside the oriented setting.",
+        "key_move": "Use orientation to justify plus and minus signs, then check what happens when a positive-negative pair appears or disappears during legal motion inside the oriented setting. The sign rule must explain cancellation before the total becomes evidence.",
         "payoff": "Designed counting becomes the central pattern: choose arithmetic that forgets fake changes and remembers the obstruction every legal drawing must carry through deformation. The signed total becomes evidence for the whole legal family of drawings."
       },
       "source_lens": [
@@ -1206,10 +1206,10 @@
         "The first-principles gain is that a rule has been turned into a shape. A map may sound like an instruction, but its graph can be moved, compared, and counted. The diagonal is the shape of self-agreement. Their intersection is not a metaphor for a fixed point; it is the fixed point written geometrically. This is exactly the kind of conversion the course wants readers to learn: change the form of the problem until the hidden constraint becomes visible."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture turns a fixed-point equation into a geometric meeting between a map's graph and the diagonal of self-agreement inside a product space for comparison.",
+        "what_is_really_happening": "The lecture turns a fixed-point equation into a geometric meeting between a map's graph and the diagonal of self-agreement inside a product space for comparison. Equality becomes visible as a place where two geometric objects meet.",
         "why_it_is_hard": "A rule can feel invisible compared with a surface or curve, and one missing caption means the page must lean on the reliable graph-diagonal spine. The translation has to show how self-agreement becomes a meeting, not invent missing theorem detail.",
-        "key_move": "Represent the rule by all input-output pairs, then compare that graph with the diagonal where input and output are equal in the product space itself.",
-        "payoff": "Fixed points become intersections, connecting theorem language back to the course's earlier deformation and counting tools instead of treating fixed-point theory as a separate topic."
+        "key_move": "Represent the rule by all input-output pairs, then compare that graph with the diagonal where input and output are equal in the product space itself. This keeps the original equation intact while changing it into a spatial meeting problem.",
+        "payoff": "Fixed points become intersections, connecting theorem language back to the course's earlier deformation and counting tools instead of treating fixed-point theory as a separate topic. The map is now something the course's picture-and-count habits can inspect."
       },
       "source_lens": [
         "Read graph of a mapping, diagonal, and fixed points as the translation of a rule into a meeting problem. Because one middle caption is missing, the source lens must stay modest and lean on the available surrounding lecture parts. The safe claim is the conversion itself, not every theorem detail that may have appeared in the missing segment.",
@@ -1341,10 +1341,10 @@
         "Brouwer turns fixed points from special coincidences into forced consequences. A map may move every visible point in a confusing way, but the whole filled shape limits the escape plan. That is the same pattern already seen in strips, surfaces, and intersections: local freedom exists, but the completed object blocks some global arrangements. The theorem is a clean form of that pattern."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture uses the shape of a closed filled ball to rule out a continuous escape plan for every point at once inside the same domain.",
+        "what_is_really_happening": "The lecture uses the shape of a closed filled ball to rule out a continuous escape plan for every point at once inside the same domain. The space itself supplies the obstruction to total self-avoidance.",
         "why_it_is_hard": "The theorem proves existence without locating the point, so it can feel weaker than computation even though it answers a different kind of question about inevitability. The closed filled domain and no-jump self-map are the mechanism that blocks total escape.",
-        "key_move": "Keep the domain closed and filled, keep the rule inside the domain, and use continuity to block a total avoidance of self-agreement everywhere at once.",
-        "payoff": "The shape of a space can force a solution before any formula for that solution is available or needed. Brouwer is existence by blocked escape."
+        "key_move": "Keep the domain closed and filled, keep the rule inside the domain, and use continuity to block a total avoidance of self-agreement everywhere at once. Each hypothesis is a working part of the blocked-escape argument.",
+        "payoff": "The shape of a space can force a solution before any formula for that solution is available or needed. Brouwer is existence by blocked escape, with the conclusion earned by the filled domain, self-map rule, and no-jump condition."
       },
       "source_lens": [
         "Read Brouwer, closed ball, boundary, and continuous map as a statement about no global escape. The source arc is existence without computation: a filled shape can force at least one point to stay put. The theorem is a precise form of the course's larger habit: the whole space can block a locally plausible avoidance plan.",
@@ -1490,10 +1490,10 @@
         "Be careful about the word failure. An equilibrium is not a mistake in the system. It is a place where the arrow field cannot give a nonzero direction, and the surrounding arrows may record how that place sits inside the motion. The index turns that local record into arithmetic. Once the course has that arithmetic, it can compare several equilibria without solving every path between them. The working test is concrete: walk around the small loop, watch how arrows turn, and ask whether that local turning can survive a legal cleanup of the field."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture changes dynamics from solving paths to reading the arrow pattern and the places where that pattern fails on the surface itself under inspection.",
+        "what_is_really_happening": "The lecture changes dynamics from solving paths to reading the arrow pattern and the places where that pattern fails on the surface itself under inspection. The stopped point is useful because the surrounding arrows give it countable structure.",
         "why_it_is_hard": "An equilibrium can look like just a named point, but the useful evidence is how nearby arrows turn around it and what count that turning gives. The location alone is too thin; the surrounding arrow pattern carries the index information.",
-        "key_move": "Inspect a small loop around each vanishing arrow and record the local turning behavior rather than trying to solve every trajectory in the field globally.",
-        "payoff": "Motion becomes topological when defects in an arrow field become countable evidence that can later be summed over the surface. The lecture makes dynamics readable before trajectories are solved."
+        "key_move": "Inspect a small loop around each vanishing arrow and record the local turning behavior rather than trying to solve every trajectory in the field globally. The loop turns a local failure of motion into evidence that can be compared and later summed.",
+        "payoff": "Motion becomes topological when defects in an arrow field become countable evidence that can later be summed over the surface. The lecture makes dynamics readable before trajectories are solved, because the arrow failure carries local structure."
       },
       "source_lens": [
         "Read vector field, differential equations, equilibria, and index as a change in what counts as understanding motion. The lecture does not solve paths one by one; it asks what the arrow pattern must contain. The source words are moving the reader from exact trajectories to structural constraints on the whole field.",
@@ -1626,9 +1626,9 @@
         "For the reader, this lecture is the moment when Euler characteristic stops being only a surface label. It becomes a demand placed on motion. The same number obtained from cutting a surface into pieces now says how arrow-field defects must add up on that surface. That is the big conceptual turn: a number first learned from shape can later constrain every continuous choice of arrows on that shape."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture asks what all local vector-field defects know together when their signed indices are added over the full surface carrying the arrows as one account.",
+        "what_is_really_happening": "The lecture asks what all local vector-field defects know together when their signed indices are added over the full surface carrying the arrows as one account. The surface, not one favorite defect, decides what the total is allowed to be.",
         "why_it_is_hard": "It is easy to focus on one source, sink, or saddle and miss the completed ledger: every isolated defect on the same surface has to enter the total. The theorem speaks about the full defect account, not a favorite local picture.",
-        "key_move": "Clean the field to isolated defects, assign each local index, then compare the sum with the surface carrying the field rather than one defect alone.",
+        "key_move": "Clean the field to isolated defects, assign each local index, then compare the sum with the surface carrying the field rather than one defect alone. The cleanup makes the local failures countable before the whole-surface comparison is trusted.",
         "payoff": "Euler characteristic becomes a demand on motion, not only a surface bookkeeping number from earlier classification work on static shapes and decompositions. Surface accounting and arrow-defect accounting begin to speak the same language."
       },
       "source_lens": [
@@ -1763,9 +1763,9 @@
         "This lecture also explains why the earlier examples were worth carrying. Euler characteristic learned from surface decomposition now appears on the same line as indices learned from vector fields. The equality is a translation between two kinds of bookkeeping: one made from pieces of a surface, the other made from local turning of arrows. When the hypotheses are met, those accounts must agree. A weak reading stops at a memorable example; a strong reading names the surface, the complete list of isolated defects, the local index rule, and the total the surface requires."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture uses Poincare-Hopf as a working equality between whole-surface topology and total local vector-field failure across the completed surface under study as evidence.",
+        "what_is_really_happening": "The lecture uses Poincare-Hopf as a working equality between whole-surface topology and total local vector-field failure across the completed surface under study as evidence. It is a translation between two ledgers, not a slogan attached to one example.",
         "why_it_is_hard": "The hairy-ball example is memorable, but it can hide the deeper statement about adding every isolated defect with signs across the whole surface account together. The slogan is only a doorway into the equality between surface bookkeeping and defect bookkeeping.",
-        "key_move": "Read the theorem as a complete account: surface first, all defects second, signed sum third, Euler characteristic as the required total for that surface alone.",
+        "key_move": "Read the theorem as a complete account: surface first, all defects second, signed sum third, Euler characteristic as the required total for that surface alone. The order prevents the reader from treating one memorable defect as the theorem.",
         "payoff": "Topology can predict motion failures, and observed failures can reveal information about the surface carrying the field. The theorem works in both directions because both sides are complete ledgers on the same surface."
       },
       "source_lens": [
@@ -1896,9 +1896,9 @@
         "Model first, theorem second. The shape used in the proof must be the shape of the actual possibilities. If the model omits a freedom, adds a false barrier, or forgets a boundary condition, the conclusion may no longer describe the physical system. When the translation is honest, topology can explain why a behavior is unavoidable even when the physical system itself looks messy."
       ],
       "deepening": {
-        "what_is_really_happening": "The lecture tests whether the course's proof tools survive honest translation into applications and moving systems beyond the early paper and surface examples from class.",
+        "what_is_really_happening": "The lecture tests whether the course's proof tools survive honest translation into applications and moving systems beyond the early paper and surface examples from class. The central question is whether the model preserves the freedoms and exclusions of the real system.",
         "why_it_is_hard": "Applications can sound convincing too early; the theorem only sees the model, so an inaccurate state space gives an inaccurate physical conclusion afterward in practice. The freedoms, forbidden states, and path meaning must be built before the theorem is invoked.",
-        "key_move": "Build the state space carefully, name forbidden states and allowed motions, then translate the topological conclusion back to the original system being modeled physically, with checks.",
+        "key_move": "Build the state space carefully, name forbidden states and allowed motions, then translate the topological conclusion back to the original system being modeled physically, with checks. A path in the model must mean a legal motion in the system.",
         "payoff": "Modeling becomes part of the proof, not a story added before the mathematics begins or after the theorem is chosen. The state space decides which topological conclusion can honestly return to the physical system."
       },
       "source_lens": [
@@ -2047,9 +2047,9 @@
         "The mathematical center of the course is the relation between permission and consequence. Once a problem states what changes are legal, the answer is often no longer a matter of guessing the right picture. The object may carry a side reversal, an endpoint order, a signed count, a fixed point, or an index total that cannot be escaped. The final lecture asks the reader to recognize that same structure even when the surface details change. The final reader test is whether a new example can be placed into that pattern without hiding the hard part behind a theorem name."
       ],
       "deepening": {
-        "what_is_really_happening": "The final lecture gathers the course as one reasoning habit rather than a list of separate demonstrations and theorem names from earlier weeks of work.",
+        "what_is_really_happening": "The final lecture gathers the course as one reasoning habit rather than a list of separate demonstrations and theorem names from earlier weeks of work. Each topic is being re-read as an object, legal move, protected fact, and earned conclusion.",
         "why_it_is_hard": "Review lectures can encourage memorizing topics in order, but the deeper value is seeing the same proof engine move across different objects and problems repeatedly. Each topic has to be read through object, legal move, protected evidence, and limited conclusion.",
-        "key_move": "Read each topic as a four-part account: object, legal move, surviving fact, and conclusion forced by that fact across the whole course sequence of examples.",
+        "key_move": "Read each topic as a four-part account: object, legal move, surviving fact, and conclusion forced by that fact across the whole course sequence of examples. The review is successful only when the same account can be rebuilt in a new example.",
         "payoff": "The whole companion now has a portable test for depth: object, legal move, protected evidence, and limited conclusion must all be visible. The final lecture turns that test into the course's reusable reading method."
       },
       "source_lens": [
