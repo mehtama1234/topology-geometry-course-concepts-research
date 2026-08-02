@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 28705 first-principles essay words; theme and subtheme pages add 25389 first-principles essay words and 11317 application words. Method-family pages add 9215 first-principles essay words and 3804 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 20829 words, and concept applications add 16184 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 28705 first-principles essay words; theme and subtheme pages add 25389 first-principles essay words and 11317 application words. Method-family pages add 9412 first-principles essay words and 4209 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 20829 words, and concept applications add 16184 words.",
       "status": "met"
     },
     {
@@ -225,10 +225,10 @@
     "subtheme_answer_guide_words": 9738,
     "family_purpose_words": 326,
     "family_essay_words": 1634,
-    "family_first_principles_essay_words": 9215,
+    "family_first_principles_essay_words": 9412,
     "family_contract_words": 3075,
     "family_playbook_words": 3031,
-    "family_application_words": 3804,
+    "family_application_words": 4209,
     "family_answer_guide_words": 6458,
     "playground_widgets": 4,
     "synthesis_sections": 9,

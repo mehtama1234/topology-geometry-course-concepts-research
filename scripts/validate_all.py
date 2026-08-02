@@ -244,7 +244,7 @@ def main():
             fail(f"family {family['id']} essay too thin")
         first_principles_essay = family.get("first_principles_essay") or {}
         for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
-            if len(words(first_principles_essay.get(field))) < 60:
+            if len(words(first_principles_essay.get(field))) < 105:
                 fail(f"family {family['id']} first-principles essay {field} too thin")
         contract = family.get("contract") or {}
         for field in ["input", "action", "evidence", "output", "failure_test"]:
@@ -256,7 +256,7 @@ def main():
                 fail(f"family {family['id']} playbook {field} too thin")
         application = family.get("application") or {}
         for field in ["outside_problem", "method_transfer", "where_it_matters", "honest_limit"]:
-            if len(words(application.get(field))) < 80:
+            if len(words(application.get(field))) < 125:
                 fail(f"family {family['id']} application {field} too thin")
         answer_guide = family.get("answer_guide") or {}
         for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]:
