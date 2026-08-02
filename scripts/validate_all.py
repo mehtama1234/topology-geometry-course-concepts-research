@@ -982,6 +982,12 @@ def main():
         "in everyday language, explain",
         "name the allowed move",
         "the recovered captions support",
+        "begin with the live feature the page must expose",
+        "turn that feature into the question the proof has to answer",
+        "make the false shortcut explicit before accepting the page's conclusion",
+        "the correction names what the page must check",
+        "that question turns the subtheme into an inspection",
+        "apply this routine only when it changes what the reader checks",
     ]
     for phrase in stale_rubric_phrases:
         if phrase in corpus:

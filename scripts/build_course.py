@@ -5094,13 +5094,13 @@ def build_subtheme_answer_guide(subtheme):
     use = plain_fragment(routine["use"], ["Use this routine whenever", "Use this routine before", "Use this routine when", "Use singular moments as", "Use"])
     mistake = sentence_fragment(plain_fragment(routine["mistake"], ["The mistake is", "The common wrong turn is"]))
     look_close = varied((sid, "look-close"), [
-        f"For {title}, point to the exact feature that changes the argument, not only the subtheme name.",
+        f"Point to the exact feature that changes the argument, not only the subtheme name.",
         f"That keeps {title} tied to evidence the lecture actually supplies: a boundary, sign, route, count, failure point, or state-space rule.",
-        f"The check is whether the reader can find the boundary, sign, route, count, defect, or state-space rule before using the subtheme name.",
+        f"The boundary, sign, route, count, defect, or state-space rule has to appear before the subtheme name can carry weight.",
         f"The named detail has to carry work: it should protect a count, license a move, mark a boundary, or expose the point where the claim could fail.",
     ])
     ask_close = varied((sid, "ask-close"), [
-        f"That question turns the subtheme into an inspection of the proof itself.",
+        f"The subtheme becomes an inspection of the proof itself.",
         f"The question sends the reader back to the object, move, protected fact, or model instead of letting the title stand in for understanding.",
         f"This is where the page has to settle the uncertainty: what is allowed, what survives, what is counted, or what is modeled.",
         f"Expose the hidden rule or evidence that makes {title} necessary on this page.",
@@ -5108,14 +5108,14 @@ def build_subtheme_answer_guide(subtheme):
     use_close = varied((sid, "use-close"), [
         f"The explanation should name the specific problem {title} helps solve in the argument.",
         f"The payoff is a better reading of the argument: what is now ruled out, forced, protected, or modeled.",
-        f"Apply this routine only when it changes what the reader checks on the page.",
+        f"If the routine does not change what the reader checks on the page, the subtheme is only a label.",
         f"{title} is doing real work only when it turns the live claim into something a reader can check in ordinary words.",
     ])
     mistake_close = varied((sid, "mistake-close"), [
         f"The repair must return to the missing object, move, count, sign rule, boundary condition, or model.",
         f"The correction is practical: return to the object, move, evidence, or model that the {title} mistake skipped.",
         f"The reader test has to expose the false shortcut and the exact condition it skipped.",
-        f"The correction names what the page must check before {title} can support the conclusion.",
+        f"Repair the explanation by naming the condition {title} needs before it can support the conclusion.",
     ])
     look_prompt = varied((sid, "look-answer-prompt"), [
         f"Start with the feature the page must make visible: {look} The course moment makes the search concrete: {bridge['course_moment']} {look_close}",
@@ -5153,11 +5153,35 @@ def build_subtheme_answer_guide(subtheme):
         f"Say what bad reading {title} prevents: {mistake} Then use the reader test: {bridge['reader_test']} {mistake_close}",
         f"End with the failure mode: {mistake} The check on that failure is: {bridge['reader_test']} {mistake_close}",
     ])
+    look_intro = varied((sid, "look-answer-intro"), [
+        f"{title} starts with a visible job.",
+        f"Start {title} from the evidence on the page.",
+        f"The first move for {title} is inspection.",
+        f"{title} has to attach to a concrete feature.",
+    ])
+    ask_intro = varied((sid, "ask-answer-intro"), [
+        f"The question behind {title} is practical.",
+        f"{title} becomes useful when it asks a testable question.",
+        f"Turn {title} into a proof obligation.",
+        f"The page has to make {title} answer a live uncertainty.",
+    ])
+    use_intro = varied((sid, "use-answer-intro"), [
+        f"Use {title} only where it changes the reading task.",
+        f"{title} earns its place when it changes what the reader checks.",
+        f"The routine belongs where {title} does work.",
+        f"Bring in {title} when the argument needs this exact repair.",
+    ])
+    mistake_intro = varied((sid, "mistake-answer-intro"), [
+        f"{title} has a false shortcut that must be exposed first.",
+        f"The mistake test keeps {title} from becoming a label.",
+        f"{title} repair starts by naming the bad reading.",
+        f"The failure mode shows what {title} must protect.",
+    ])
     return {
-        "look_answer": f"For {title}, begin with the live feature the page must expose. {look_prompt}",
-        "ask_answer": f"For {title}, turn that feature into the question the proof has to answer. {ask_prompt}",
-        "use_answer": f"For {title}, use the routine only where it changes the reader's inspection task. {use_prompt}",
-        "mistake_answer": f"For {title}, make the false shortcut explicit before accepting the page's conclusion. {mistake_prompt}",
+        "look_answer": f"{look_intro} {look_prompt}",
+        "ask_answer": f"{ask_intro} {ask_prompt}",
+        "use_answer": f"{use_intro} {use_prompt}",
+        "mistake_answer": f"{mistake_intro} {mistake_prompt}",
     }
 
 
