@@ -234,6 +234,10 @@ def main():
         for field in ["setup", "move", "payoff", "failure", "reader_test"]:
             if len(words(playbook.get(field))) < 25:
                 fail(f"family {family['id']} playbook {field} too thin")
+        application = family.get("application") or {}
+        for field in ["outside_problem", "method_transfer", "where_it_matters", "honest_limit"]:
+            if len(words(application.get(field))) < 40:
+                fail(f"family {family['id']} application {field} too thin")
         answer_guide = family.get("answer_guide") or {}
         for field in ["input_answer", "action_answer", "evidence_answer", "output_answer", "failure_answer"]:
             if len(words(answer_guide.get(field))) < 40:
@@ -1066,7 +1070,7 @@ def main():
         if family_name not in names:
             fail(f"missing family page {family['id']}")
         family_html = (SITE / family_name).read_text(encoding="utf-8", errors="ignore")
-        for phrase in ["Method Playbook", "Setup:", "Move:", "Payoff:", "Failure:", "Reader test:", "Method Contract", "Input:", "Action:", "Protected evidence:", "Output:", "Failure test:", "Can You Use This Method?", "Input answer:", "Action answer:", "Evidence answer:", "Output answer:", "Failure answer:"]:
+        for phrase in ["Method Playbook", "Setup:", "Move:", "Payoff:", "Failure:", "Reader test:", "Method Contract", "Input:", "Action:", "Protected evidence:", "Output:", "Failure test:", "Why This Method Matters Beyond The Course", "Outside problem:", "Method transfer:", "Where it matters:", "Honest limit:", "Can You Use This Method?", "Input answer:", "Action answer:", "Evidence answer:", "Output answer:", "Failure answer:"]:
             if phrase not in family_html:
                 fail(f"family page missing family phrase {phrase}: {family_name}")
 
