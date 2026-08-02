@@ -362,7 +362,7 @@ def main():
                 fail(f"lecture {lecture['lecture']} walkthrough {field} too thin")
         application_bridge = deep.get("application_bridge") or {}
         for field in ["outside_problem", "topology_bridge", "protected_fact", "where_it_matters", "honest_limit"]:
-            if len(words(application_bridge.get(field))) < 40:
+            if len(words(application_bridge.get(field))) < 65:
                 fail(f"lecture {lecture['lecture']} application bridge {field} too thin")
         reader_test = deep.get("reader_test") or {}
         for field in ["explain_object", "test_allowed_move", "protect_conclusion"]:

@@ -4589,12 +4589,77 @@ def plain_fragment(text, prefixes):
     return cleaned
 
 
+LECTURE_APPLICATION_CONTEXTS = {
+    1: {
+        "places": "material strips, belt routing, one-sided surface models, and any design where a local patch looks ordinary while a full trip around the object changes the side information",
+        "outside_check": "the outside problem must follow the object all the way around instead of trusting one small view",
+    },
+    2: {
+        "places": "route planning, cable layout, map drawing, and path scheduling where endpoints or forbidden crossings make a clean-looking drawing impossible",
+        "outside_check": "the outside problem must keep the same endpoints, boundary order, and no-crossing rule during the whole redraw",
+    },
+    3: {
+        "places": "mesh models, finite element setups, graphics surfaces, and scanned shapes where a continuous object has to be broken into countable pieces",
+        "outside_check": "the outside problem must show that the pieces still describe the same object and that the count is not an artifact of the chosen subdivision",
+    },
+    4: {
+        "places": "periodic simulations, wrapped maps, repeated patterns, game worlds, and models where different boundary points represent the same state",
+        "outside_check": "the outside problem must state the identification rule before reasoning from the picture",
+    },
+    5: {
+        "places": "surface modeling, shell design, material sheets, and classification tasks where handles, boundaries, or one-sided behavior decide the family of the object",
+        "outside_check": "the outside problem must inspect the completed surface, not only one local patch or one convenient cut",
+    },
+    6: {
+        "places": "collision checks, robot motion, high-dimensional data constraints, and geometry problems where two moving objects may or may not have enough room to avoid meeting",
+        "outside_check": "the outside problem must name the ambient room and the dimensions or freedoms of the objects being moved",
+    },
+    7: {
+        "places": "balance problems, fair-division models, center-of-mass arguments, and physical systems where a continuous change forces some matching or crossing state",
+        "outside_check": "the outside problem must say what is varying continuously and what equality or meeting is being forced",
+    },
+    8: {
+        "places": "oriented crossings, collision ledgers, field diagrams, and path-obstacle problems where meetings can appear in canceling pairs",
+        "outside_check": "the outside problem must supply a sign rule before a crossing count can become evidence",
+    },
+    9: {
+        "places": "feedback maps, matching systems, iterative rules, and state updates where a graph meeting the diagonal means input and output agree",
+        "outside_check": "the outside problem must keep input, output, and equality in the same state space",
+    },
+    10: {
+        "places": "equilibrium existence checks, self-consistency models, feedback systems, and rules that send every allowed state back inside a filled region",
+        "outside_check": "the outside problem must prove the region is closed and filled, the rule stays inside it, and the rule has no jumps",
+    },
+    11: {
+        "places": "flow fields, direction fields on surfaces, mechanical motion laws, and simulations where solving the full equation is harder than locating still or failed states",
+        "outside_check": "the outside problem must distinguish a vanishing arrow from a full solution path",
+    },
+    12: {
+        "places": "field defects, texture direction fields, flow singularities, and local failure accounts where each isolated defect contributes a signed amount",
+        "outside_check": "the outside problem must isolate each defect and record the surrounding turning before adding local records",
+    },
+    13: {
+        "places": "flow on surfaces, equilibria on curved state spaces, vector-field design, and physical systems where the carrier shape restricts possible defects",
+        "outside_check": "the outside problem must compare all defects on the same completed surface with the right whole-surface count",
+    },
+    14: {
+        "places": "robotics, mechanisms, rotating systems, physical modeling, and applied state-space questions where topology helps only after the model is honest",
+        "outside_check": "the outside problem must say what one state means, which states are forbidden, and what conclusion the model can support",
+    },
+    15: {
+        "places": "technical explanation, diagram-heavy modeling, design review, and cross-field teaching where pictures must carry rules rather than decoration",
+        "outside_check": "the outside problem must make the object, allowed move, protected fact, and failure condition visible in the picture",
+    },
+}
+
+
 def build_lecture_application_bridge(lecture, spine_row):
     number = lecture["lecture"]
     title = lecture["deep"]["title"]
     deepening = lecture["deep"]["deepening"]
     examples = lecture["deep"]["examples"]
     example_titles = ", ".join(example["title"] for example in examples[:3])
+    context = LECTURE_APPLICATION_CONTEXTS[number]
     return {
         "outside_problem": (
             f"Outside this lecture, the same problem appears whenever a real situation has too many visible details to test one by one. "
@@ -4613,8 +4678,8 @@ def build_lecture_application_bridge(lecture, spine_row):
             f"In a physical, engineering, network, or modeling problem, the matching question is which fact survives the allowed changes well enough to support a conclusion."
         ),
         "where_it_matters": (
-            f"This lecture can matter beyond topology in design, motion, measurement, and modeling problems where a shape, route, count, field, or state space constrains what can happen. "
-            f"The point is not that the outside problem uses the same classroom object. The point is that the outside problem may have the same structure: name the carrier, name the allowed change, protect the right evidence, and read the limited payoff."
+            f"This lecture can matter beyond topology in {context['places']}. "
+            f"The point is not that the outside problem uses the same classroom object. The point is that the outside problem may have the same structure: name the carrier, name the allowed change, protect the right evidence, and read the limited payoff. For Lecture {number:02d}, the extra application check is this: {context['outside_check']}."
         ),
         "honest_limit": (
             f"The honest limit is that Lecture {number:02d} does not solve every outside problem that resembles it. "
@@ -6740,7 +6805,7 @@ def quality_metric_cards(metrics):
         {
             "title": "Source And Paper Trail",
             "meta": "reference discipline",
-            "text": f"There are {metrics['references']} references, {metrics['source_readers']} source-reader entries, {metrics['paper_family_ledger_rows']} paper-family ledger rows, {metrics['lecture_source_bridges']} lecture-source bridges, and {metrics['source_nuance_repairs']} source-nuance repair notes. This layer separates course evidence, background source support, and overclaim boundaries so citations do not become decorative authority.",
+            "text": f"There are {metrics['references']} references, {metrics['source_readers']} source-reader entries, {metrics['paper_family_ledger_rows']} paper-family ledger rows, {metrics['lecture_source_bridges']} lecture-source bridges, and {metrics['source_nuance_repairs']} source-nuance repair notes. This layer separates course evidence, background source support, and overclaim boundaries so citations do not become unearned authority.",
         },
         {
             "title": "Rubric And Tools",
@@ -8137,7 +8202,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 40 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 25 words, every theme application field to clear 40 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, every method-family application field to clear 40 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 25 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 25 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 30 words, every source-nuance repair field to clear 30 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 14 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 14 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 25 words, every concept anchor field to clear 25 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 14 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 25 words, every theme application field to clear 40 words, every theme answer-guide field to clear 40 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, every method-family application field to clear 40 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
