@@ -38,7 +38,7 @@
     },
     {
       "requirement": "Source-nuance repair layer",
-      "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, evidence checks, and concept links. The 2775 repair words make source caution usable on actual lecture sentences.",
+      "evidence": "15 source-nuance repair notes name caption hazards, safe claims, repair moves, do-not-claim guards, evidence checks, and concept links. The 6424 repair words make source caution usable on actual lecture sentences.",
       "status": "met"
     },
     {
@@ -201,7 +201,7 @@
     "lecture_reconstruction_words": 14084,
     "math_why_words": 628,
     "source_nuance_repairs": 15,
-    "source_nuance_repair_words": 2775,
+    "source_nuance_repair_words": 6424,
     "lecture_reader_test_words": 4408,
     "lecture_answer_guide_words": 4857,
     "concept_essay_words": 7895,

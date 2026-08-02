@@ -478,7 +478,7 @@ def main():
         "Mobius strip as a visual surprise",
         "Invariant as any number that stays useful",
         "Quotient space as a square with arrows",
-        "Generic position as making the drawing nicer",
+        "Generic position as visual cleanup",
         "Fixed point as a point that does not move",
         "Index as the number of equilibria",
         "Configuration space as a diagram of the machine",
@@ -788,7 +788,7 @@ def main():
         fail("source nuance repairs do not match lecture numbers")
     for row in source_nuance_repairs:
         for field in ["caption_hazard", "safe_claim", "repair_move", "do_not_claim", "reviewer_question"]:
-            if len(words(row.get(field))) < 30:
+            if len(words(row.get(field))) < 70:
                 fail(f"source nuance repair {row.get('lecture')} {field} too thin")
         unknown_concepts = sorted(set(row.get("concepts") or []) - concept_ids)
         if unknown_concepts:

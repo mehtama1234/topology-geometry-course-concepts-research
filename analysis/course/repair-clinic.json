@@ -39,9 +39,9 @@
     ]
   },
   {
-    "title": "Generic position as making the drawing nicer",
-    "flawed_explanation": "Generic position means we move the picture slightly so it looks nicer and avoids special cases, as though visual cleanliness were the reason the later count can be trusted by itself.",
-    "why_it_fails": "This treats generic position as visual cleanup. The course uses the small move to create ordinary events that can be counted, signed, or isolated without hidden coincidences. Calling the picture nicer hides the permission question: the nudge must be legal and must preserve the feature the proof cares about.",
+    "title": "Generic position as visual cleanup",
+    "flawed_explanation": "Generic position means we move the picture slightly so it looks cleaner and avoids special cases, as though visual cleanliness were the reason the later count can be trusted by itself.",
+    "why_it_fails": "This treats generic position as visual cleanup. The course uses the small move to create ordinary events that can be counted, signed, or isolated without hidden coincidences. Calling the picture cleaner hides the permission question: the nudge must be legal and must preserve the feature the proof cares about.",
     "repair_move": "Say what accident is removed and what evidence becomes available afterward: clean crossings, separated events, isolated defects, or a defined sign rule. Then say why the nudge did not change the protected question.",
     "strong_version": "Generic position is a way to replace a fragile exact accident with an ordinary case that can carry evidence. After a tiny legal nudge, crossings can be separated, defects can be isolated, and signs or counts can be assigned. The cleaner picture earns trust only when its events can be audited and the nudge keeps the same object and the same question.",
     "reviewer_test": "Evidence test: identify the removed accident, the count or sign rule that becomes possible, and the reason the small move was legal for the original problem rather than a changed one.",
