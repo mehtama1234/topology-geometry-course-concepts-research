@@ -4058,10 +4058,14 @@ def compact_course_reference_card(refs, seed, page_kind, context=None):
         " The TIB record confirms the course setting without adding claims about a particular proof step.",
     ]) if mirror else ""
     why = varied((seed, "course-reference-why"), [
-        f"The course videos are the authority for this treatment of {topic}: which object is put in front of the reader, what change is allowed, and what fact is kept alive through that change.{mirror_text}",
+        f"The course videos decide how {topic} is used here: the starting object, the allowed change, and the fact that survives the change all come from the lecture route.{mirror_text}",
         f"{topic_start} is anchored in Tokieda's course rather than in a standard list of topology topics. The videos supply the teaching order, the physical demonstration, and the point at which a plain picture becomes a mathematical claim.{mirror_text}",
         f"The companion starts from the course source because the mathematical point depends on the lecture route: build the object, change it under stated rules, then read the piece of evidence that survives.{mirror_text}",
-        f"The course source keeps {topic} tied to the classroom route. Outside sources may deepen the formal family, but the first job is still to preserve what the lecture actually makes visible.{mirror_text}",
+        f"The course source keeps {topic} tied to what the lecture actually makes visible before any paper or textbook widens the formal family.{mirror_text}",
+        f"Use the course source as the first guardrail for {topic}: it fixes the example, the permitted move, and the level of claim the page is allowed to make.{mirror_text}",
+        f"This card belongs because {topic} is being explained through the course's own sequence of demonstrations, not through a free-standing textbook order.{mirror_text}",
+        f"The videos provide the primary evidence for {topic}'s role in the companion. Background sources can sharpen the family around it only after that evidence is visible.{mirror_text}",
+        f"For {topic}, the course source answers a practical question first: what did the lecture put in front of the viewer, and what conclusion did that object earn?{mirror_text}",
     ])
     careful = varied((seed, "course-reference-careful"), [
         "Captions are recovered rather than official notes, so exact wording should be checked against the video before any claim is sharpened.",
@@ -4099,10 +4103,14 @@ def source_trail_intro(seed, page_kind, context=None):
         protected = without_leading_label(context.get("workup", {}).get("protected", ""), "The protected fact is")
         principle = context.get("math_principle", "")
         return varied((seed, "source-trail-intro"), [
-            f"For {topic}, start from the course object before opening a reference: {object_text} The references below deepen the family behind that object without replacing the lecture evidence.",
-            f"Read these sources as a second pass on {topic}. First hold onto the course's protected fact: {protected} Then use the sources to see how that kind of evidence is handled in the wider literature.",
-            f"{topic} is grounded above in course moments and self-checks. The sources below check the same principle in a more formal setting: {principle}",
+            f"For {topic}, the references come after the course object is already in view: {object_text} They widen the family behind that object without replacing the lecture evidence.",
+            f"Read this trail only after the protected fact for {topic} is clear: {protected} The sources show how that kind of evidence is handled beyond the course.",
+            f"{topic} is grounded above in course moments and self-checks. The sources below test the same principle in a more formal setting: {principle}",
             f"Use the cards below to widen {topic}, not to make a background source sound like lecture evidence. The course examples remain the proof of how this companion is using the idea.",
+            f"The source trail for {topic} should answer a narrow question: how do formal references handle the same object, move, or protected fact the course has already named?",
+            f"Before a reference speaks for {topic}, keep this course evidence in hand: {protected} That evidence sets the boundary for every source card below.",
+            f"These sources are a later layer for {topic}. The page first has to explain the course object and the fact it protects; only then should the formal family enter.",
+            f"Treat the cards below as ways to deepen {topic}'s source family after the reader can already say the plain course principle: {principle}",
         ])
     return varied((seed, "source-trail-intro"), [
         "Use this trail only after the course example is clear. The references widen the mathematical family; they do not replace the lecture evidence.",
@@ -4130,32 +4138,43 @@ def contextual_reference_cards(refs, seed, page_kind, context=None):
 def contextual_reference_why(ref, seed, page_kind, context=None):
     context = context or {}
     topic = context.get("title", f"this {page_kind}")
+    topic_start = sentence_start(topic)
     rid = ref["id"]
     options = {
         "poincare-analysis-situs": [
-            f"For {topic}, use Poincare's source line as background for whole-space evidence: facts that survive change and then speak about the entire surface or space.",
+            f"For {topic}, Poincare's source line is useful background for whole-space evidence: facts that survive change and then speak about the entire surface or space.",
             f"This source belongs here because {topic} uses the course's invariant habit, where local pictures are read as evidence about a whole space.",
             f"It supports the historical family behind manifolds, Euler characteristic, duality, and Poincare-Hopf: a space can carry information no single patch reveals.",
+            f"Use this source to place {topic} inside the older question of what a completed space knows beyond one drawing.",
+            f"It gives {topic} a source family for durable whole-space facts, not a replacement for the course example.",
         ],
         "hopf-vektorfelder": [
-            f"{topic} reaches the vector-field-index thread: local arrow failures are assigned signed evidence and compared with the surface carrying them.",
+            f"{topic_start} reaches the vector-field-index thread: local arrow failures are assigned signed evidence and compared with the surface carrying them.",
             f"Hopf's paper belongs as background when {topic} turns isolated defects of a field into a whole-surface count.",
             f"It supports the source family where a field's local singularities are not separate accidents; their signed total is constrained by the manifold.",
+            f"Use it when {topic} needs the broader setting for adding local field defects into one surface-level account.",
+            f"The paper gives {topic} a formal source line for the idea that local failures can be forced by the whole carrier.",
         ],
         "hatcher-algebraic-topology": [
             f"Hatcher is useful after {topic}'s plain object and move are clear, because it gives the formal machinery behind quotient spaces, homotopy, homology, and invariants.",
             f"This source backs the broader algebraic-topology family behind {topic}: turning spaces and allowed changes into durable structure.",
             f"It belongs as a next reference for readers who want the formal route behind the companion's everyday account of spaces, maps, and protected counts.",
+            f"Use Hatcher to see how {topic}'s plain object-and-move account becomes part of a reusable formal toolkit.",
+            f"This source is useful when {topic} needs the larger language of spaces, maps, quotients, and invariants after the course example is clear.",
         ],
         "milnor-differentiable-viewpoint": [
             f"Milnor supports {topic}'s bridge from pictures to smooth objects, degree-style reasoning, fixed points, and vector-field index.",
             f"This source belongs when {topic} needs a compact formal backup for manifolds, boundaries, maps, and local-to-global smooth reasoning.",
             f"It gives background for the differentiable-topology route behind the page, after the reader has already named the object and the allowed move plainly.",
+            f"Use Milnor when {topic} needs a concise source family for smooth local data producing whole-space conclusions.",
+            f"This reference helps connect {topic}'s course picture to manifolds, maps, degree, and index without changing the course route.",
         ],
         "guillemin-pollack-differential-topology": [
             f"This source supports {topic}'s clean-meeting discipline: prepare ordinary intersections before signs, counts, or local conclusions are trusted.",
             f"It belongs as background for generic position, transversality-style preparation, oriented intersections, and the local conditions that make counting honest.",
             f"Use it to see why the course's small nudges matter: the goal is not a nicer drawing, but events clean enough to carry signs and counts.",
+            f"For {topic}, this source is useful when the course has to turn a messy contact into a meeting clean enough to count.",
+            f"It gives {topic} a formal background for the cleanup step: remove accidental mess before asking a local event to carry evidence.",
         ],
     }
     return varied((seed, rid, "context-why"), options.get(rid, [ref["why"]]))
