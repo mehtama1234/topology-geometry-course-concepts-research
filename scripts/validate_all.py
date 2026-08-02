@@ -373,11 +373,11 @@ def main():
                 fail(f"lecture {lecture['lecture']} application bridge {field} too thin")
         reader_test = deep.get("reader_test") or {}
         for field in ["explain_object", "test_allowed_move", "protect_conclusion"]:
-            if len(words(reader_test.get(field))) < 45:
+            if len(words(reader_test.get(field))) < 95:
                 fail(f"lecture {lecture['lecture']} reader test {field} too thin")
         answer_guide = deep.get("answer_guide") or {}
         for field in ["object_answer", "move_answer", "conclusion_answer"]:
-            if len(words(answer_guide.get(field))) < 50:
+            if len(words(answer_guide.get(field))) < 85:
                 fail(f"lecture {lecture['lecture']} answer guide {field} too thin")
         essay_words = sum(len(words(p)) for p in deep.get("essay") or [])
         if essay_words < 300:
