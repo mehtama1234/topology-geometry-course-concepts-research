@@ -4994,11 +4994,35 @@ def build_concept_self_check(concept):
         f"Make the break point visible: {failure} Then use the trap to explain what detail the reader must protect: {beginner_trap} {failure_close}",
         f"End with the limit of the claim: {failure} The beginner trap shows what happens when that limit is ignored: {beginner_trap} {failure_close}",
     ])
+    object_intro = varied((cid, "concept-object-intro"), [
+        f"{title} starts with its carrier, not its name.",
+        f"The first check for {title} is the object it studies.",
+        f"Make {title} concrete before asking it to explain anything.",
+        f"{title} has to begin with something the reader can inspect.",
+    ])
+    operation_intro = varied((cid, "concept-operation-intro"), [
+        f"{title}: name the action it performs on the example.",
+        f"The operation check turns {title} into something auditable.",
+        f"Use {title} by naming the permitted move first.",
+        f"The page has to show what {title} lets the reader do.",
+    ])
+    protected_intro = varied((cid, "concept-protected-intro"), [
+        f"{title} needs surviving evidence before it earns a conclusion.",
+        f"{title}: name the protected fact at the working core.",
+        f"{title}: keep the durable evidence in front.",
+        f"{title} carries force only through the fact that survives.",
+    ])
+    failure_intro = varied((cid, "concept-failure-intro"), [
+        f"{title} also needs a visible failure case.",
+        f"The bad use of {title} shows which condition was doing work.",
+        f"Test {title} at the nearest place it can break.",
+        f"{title}: name the tempting false use.",
+    ])
     return {
-        "object_check": f"For {title}, start from its own carrier before the name does any work. {object_prompt}",
-        "operation_check": f"For {title}, turn the idea into a permitted action on the course example. {operation_prompt}",
-        "protected_check": f"For {title}, keep the surviving evidence in front of the conclusion. {protected_prompt}",
-        "failure_check": f"For {title}, make the nearest bad use visible. {failure_prompt}",
+        "object_check": f"{object_intro} {object_prompt}",
+        "operation_check": f"{operation_intro} {operation_prompt}",
+        "protected_check": f"{protected_intro} {protected_prompt}",
+        "failure_check": f"{failure_intro} {failure_prompt}",
     }
 
 

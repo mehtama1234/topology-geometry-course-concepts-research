@@ -997,6 +997,10 @@ def main():
         "the protected evidence is the reason the operation speaks for the starting problem",
         "the result has to return to the original problem",
         "the bad use shows exactly where the method stops applying",
+        "start from its own carrier before the name does any work",
+        "turn the idea into a permitted action on the course example",
+        "keep the surviving evidence in front of the conclusion",
+        "make the nearest bad use visible",
     ]
     for phrase in stale_rubric_phrases:
         if phrase in corpus:
