@@ -1001,6 +1001,12 @@ def main():
         "turn the idea into a permitted action on the course example",
         "keep the surviving evidence in front of the conclusion",
         "make the nearest bad use visible",
+        "say what has to be pictured first",
+        "put the allowed change in plain words",
+        "the guide is not a longer list of topics",
+        "name the fact that survives the legal move",
+        "state the evidence that comes through unchanged",
+        "say what remains available after the action",
     ]
     for phrase in stale_rubric_phrases:
         if phrase in corpus:

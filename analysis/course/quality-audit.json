@@ -28,7 +28,7 @@
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, and then compare against an answer guide. The 2752 reader-test words and 3552 answer-guide words turn lecture understanding into an auditable task.",
+      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, and then compare against an answer guide. The 2752 reader-test words and 3533 answer-guide words turn lecture understanding into an auditable task.",
       "status": "met"
     },
     {
@@ -195,7 +195,7 @@
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 2188,
     "lecture_reader_test_words": 2752,
-    "lecture_answer_guide_words": 3552,
+    "lecture_answer_guide_words": 3533,
     "concept_essay_words": 7968,
     "concept_workup_words": 2746,
     "concept_anchor_words": 1965,
