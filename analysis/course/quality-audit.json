@@ -229,6 +229,7 @@
     "weak_claim_repair_rows": 10,
     "weak_claim_repair_words": 1767,
     "proof_moves": 5,
+    "proof_move_words": 1536,
     "theorem_use_contracts": 8,
     "theorem_contract_words": 2679,
     "concept_contrasts": 10,

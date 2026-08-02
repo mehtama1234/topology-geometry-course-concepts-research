@@ -560,8 +560,8 @@ def main():
             fail(f"proof move references unknown family id: {row.get('family')}")
         if len(row.get("steps") or []) < 5:
             fail(f"proof move needs five steps: {row.get('name')}")
-        for field in ["name", "problem", "why", "failure", "example"]:
-            if len(words(row.get(field))) < 8:
+        for field in ["problem", "why", "failure", "example"]:
+            if len(words(row.get(field))) < 40:
                 fail(f"proof move {row.get('name')} {field} too thin")
 
     theorem_contracts = data.get("theorem_use_contracts") or []

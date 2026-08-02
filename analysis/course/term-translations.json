@@ -42,7 +42,7 @@
     "term": "Deformation",
     "everyday_sentence": "A deformation is a slow legal change of the object, like bending without cutting, jumping, or passing through a forbidden place. The important part is the whole path of change, because each step has to preserve the problem being answered.",
     "job_in_argument": "Its job is to replace a hard picture with an easier one while preserving the question. The path of change is evidence only because every step obeys the same restrictions as the original problem.",
-    "not_a_definition": "It is not visual simplification by taste. It is a controlled motion whose allowed and forbidden actions must be named. A nicer final picture proves nothing unless the route to that picture respected the original endpoints, barriers, gluing rules, or state constraints.",
+    "not_a_definition": "It is not visual simplification by taste. It is a controlled motion whose allowed and forbidden actions must be named. A cleaner final picture proves nothing unless the route to that picture respected the original endpoints, barriers, gluing rules, or state constraints.",
     "failure_if_misread": "If the deformation secretly cuts, crosses, moves a fixed boundary, or changes the state space, the easier picture may no longer answer the original question. The failure is not cosmetic: the proof has changed the object whose conclusion it is trying to borrow.",
     "concepts": [
       "deformation",

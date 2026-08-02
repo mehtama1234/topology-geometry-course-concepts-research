@@ -7272,7 +7272,7 @@
     {
       "name": "Deform a picture without changing the original question",
       "family": "deformation-family",
-      "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing answers the original problem only if the path to it respects the original rules.",
+      "problem": "The first drawing may be too tangled to reason from directly, but a cleaner drawing answers the original problem only if the path to it respects the original rules. The human temptation is to jump to the easier picture; the mathematical move is to prove that every step of the jump was legal.",
       "steps": [
         "Name the object that is allowed to move and the data attached to it, such as endpoints, boundary order, glued edges, or obstacles.",
         "Name the forbidden moves: passing through, breaking, gluing, moving endpoints, or dropping a boundary.",
@@ -7280,14 +7280,14 @@
         "State the fact that survived the whole motion and say why it still belongs to the original object.",
         "Use the simpler final picture to answer the original question, while naming the conclusion that the motion is strong enough to support."
       ],
-      "why": "The proof works because each legal step preserves the question. The final picture speaks for the starting picture because the journey to it was honest and the protected feature can be carried back.",
-      "failure": "The usual failure is simplifying first and justifying later. If endpoints move, a path crosses an obstacle, or a gluing rule changes before the motion is checked, the proof may have solved a different problem.",
-      "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction. The cleaner drawing matters only because those boundary data stayed fixed during the motion."
+      "why": "The proof works because each legal step preserves the question. The final picture speaks for the starting picture because the journey to it was honest and the protected feature can be carried back. This is why the in-between motion is part of the proof, not an animation after the proof has already happened.",
+      "failure": "The usual failure is simplifying first and justifying later. If endpoints move, a path crosses an obstacle, or a gluing rule changes before the motion is checked, the proof may have solved a different problem. The error can be subtle because the final picture may look clearer while no longer carrying the original boundary data.",
+      "example": "The disk path puzzle uses deformation to show that endpoint order and no-crossing rules can force an obstruction. The cleaner drawing matters only because those boundary data stayed fixed during the motion. The same habit reappears when knots, strips, or glued edges are redrawn: the route to the simpler picture has to preserve the object."
     },
     {
       "name": "Build a count that survives legal redrawings by cancellation",
       "family": "counting-family",
-      "problem": "The visible number of pieces, crossings, or defects can change when the picture is cleaned up, so the proof needs a count designed to ignore harmless changes.",
+      "problem": "The visible number of pieces, crossings, or defects can change when the picture is cleaned up, so the proof needs a count designed to ignore harmless changes. The first count the eye sees is often too fragile; the useful count is built around the local events that threaten it.",
       "steps": [
         "Decide which local events matter and which visible events are only artifacts of one drawing.",
         "Watch how those events can appear or disappear under legal motion.",
@@ -7295,14 +7295,14 @@
         "Check the account on a simple version of the object and explain why the simplification did not change the object being counted.",
         "Use the protected total to force existence or impossibility, while stating what the count does not classify or locate."
       ],
-      "why": "A protected count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because local bookkeeping changes either cancel, arrive in pairs, or preserve a signed total.",
-      "failure": "The raw count is often the wrong count. If the proof does not explain what legal event threatens the number and why the chosen account survives it, the number is only a measurement of one drawing.",
-      "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero. Euler characteristic does a similar job for cell refinements by making added pieces cancel in the alternating ledger."
+      "why": "A protected count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because local bookkeeping changes either cancel, arrive in pairs, or preserve a signed total. The point is not that numbers are impressive; the point is that the chosen number was built to survive exactly the redraws the problem permits.",
+      "failure": "The raw count is often the wrong count. If the proof does not explain what legal event threatens the number and why the chosen account survives it, the number is only a measurement of one drawing. The page must show the repair: alternating entries, pair parity, or signs that make harmless local changes contribute no net evidence.",
+      "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero. Euler characteristic does a similar job for cell refinements by making added pieces cancel in the alternating ledger. Both examples teach the same first-principles point: count only after saying which changes the count was designed to survive."
     },
     {
       "name": "Translate an invisible rule into a comparable shape",
       "family": "motion-family",
-      "problem": "A map or motion law can feel invisible because it is an instruction rather than a drawn object, so the proof first turns the rule into something comparable.",
+      "problem": "A map or motion law can feel invisible because it is an instruction rather than a drawn object, so the proof first turns the rule into something comparable. The reader needs a visible record of input, output, and self-agreement before an existence theorem or intersection count can speak.",
       "steps": [
         "List the input space and output space, and check whether the rule really sends points back into the space the conclusion needs.",
         "Draw or describe the graph that records input and output together, so the rule becomes a geometric object rather than only a formula.",
@@ -7310,14 +7310,14 @@
         "Turn the desired conclusion into a meeting or avoidance question and state why that meeting means the original rule has the desired property.",
         "Apply the earlier count, obstruction, or fixed-point idea only after the graph and comparison object still represent the original problem."
       ],
-      "why": "The proof works because the rule becomes an object that can be moved, compared, and counted. A fixed point is no longer hidden inside notation; it is a meeting with the diagonal inside the product space where input and output are recorded together.",
-      "failure": "The translation fails if the graph no longer represents the original rule, if outputs land in the wrong space, or if the diagonal no longer represents the desired self-agreement.",
-      "example": "Fixed-point lectures turn f(x) = x into the graph of f meeting the diagonal. The graph records what the rule does, the diagonal records self-agreement, and their intersection is the fixed point claim."
+      "why": "The proof works because the rule becomes an object that can be moved, compared, and counted. A fixed point is no longer hidden inside notation; it is a meeting with the diagonal inside the product space where input and output are recorded together. The translation earns trust only when every graph point still means one input and its actual output.",
+      "failure": "The translation fails if the graph no longer represents the original rule, if outputs land in the wrong space, or if the diagonal no longer represents the desired self-agreement. Then the drawing may still contain an intersection, but that intersection answers a different question from the one the map asked.",
+      "example": "Fixed-point lectures turn f(x) = x into the graph of f meeting the diagonal. The graph records what the rule does, the diagonal records self-agreement, and their intersection is the fixed point claim. Brouwer-style reasoning enters only after the graph and diagonal still represent the same space and the same rule."
     },
     {
       "name": "Read local defects as evidence about the whole surface",
       "family": "surface-family",
-      "problem": "A vector field may have several local failures, and each one can look adjustable in isolation, but the surface may constrain their total account.",
+      "problem": "A vector field may have several local failures, and each one can look adjustable in isolation, but the surface may constrain their total account. The hard part is not spotting one bad point; it is entering every isolated defect into the same surface ledger before drawing a global conclusion.",
       "steps": [
         "Clean the field so the defects are isolated and the surrounding arrows can be read one defect at a time.",
         "Walk around each defect with a small loop that contains that defect and no other defect.",
@@ -7325,14 +7325,14 @@
         "Add the signed local indices over the complete list of defects on the same surface.",
         "Compare the total with the surface's Euler characteristic and state the conclusion as a constraint on defects, not as a solved motion path."
       ],
-      "why": "The proof works because isolated local defects can move, split, or cancel in controlled ways, but their signed total is tied to the surface that carries the field. The whole surface limits what the local arrow failures can add up to.",
-      "failure": "The theorem is misread when one equilibrium is treated as the whole story, when one defect is omitted, or when the theorem is taken to solve trajectories. Poincare-Hopf is about the total over the complete surface.",
-      "example": "The hairy-ball idea is the plain case: a sphere cannot carry a continuous nonzero tangent arrow field everywhere. The reason is not a single bad point; it is the surface-wide defect total required by the sphere."
+      "why": "The proof works because isolated local defects can move, split, or cancel in controlled ways, but their signed total is tied to the surface that carries the field. The whole surface limits what the local arrow failures can add up to. This turns a local motion problem into a bookkeeping problem over the complete carrier.",
+      "failure": "The theorem is misread when one equilibrium is treated as the whole story, when one defect is omitted, or when the theorem is taken to solve trajectories. Poincare-Hopf is about the total over the complete surface. A single defect can illustrate the idea, but it cannot replace the complete defect list.",
+      "example": "The hairy-ball idea is the plain case: a sphere cannot carry a continuous nonzero tangent arrow field everywhere. The reason is not a single bad point; it is the surface-wide defect total required by the sphere. The recipe asks the reader to add every local index before claiming the whole-surface constraint."
     },
     {
       "name": "Model physical motion as a space of possible states",
       "family": "motion-family",
-      "problem": "A physical setup has too many details to track directly over time, so the proof must first decide what counts as one complete allowed state.",
+      "problem": "A physical setup has too many details to track directly over time, so the proof must first decide what counts as one complete allowed state. The model is the mathematical object: if it forgets a real freedom or permits an impossible state, the later theorem speaks about the wrong world.",
       "steps": [
         "Say what information describes one complete state, including positions, angles, contacts, or choices the question cares about.",
         "Treat every possible state as a point in a new space, but only after the state description is complete enough for the problem.",
@@ -7340,9 +7340,9 @@
         "Translate motion into paths or rules on that state space, checking that every modeled path is a real gradual motion.",
         "Use holes, barriers, fixed points, or indices to constrain the original system, while stating the limit of what the model proves."
       ],
-      "why": "The proof works only if the state space carries the real freedoms and real exclusions of the physical problem. Topology then reasons about the shape of possibility: paths, holes, walls, separated regions, and forced self-agreement.",
-      "failure": "A careless state space can prove a true theorem about the wrong model. If a freedom is omitted or a forbidden state remains, the physical conclusion is only as good as the mistaken translation.",
-      "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory. The useful claim is about allowed routes or forced states in the model, not every detail of the physical motion."
+      "why": "The proof works only if the state space carries the real freedoms and real exclusions of the physical problem. Topology then reasons about the shape of possibility: paths, holes, walls, separated regions, and forced self-agreement. The equations can be postponed because the space already records which motions are even possible.",
+      "failure": "A careless state space can prove a true theorem about the wrong model. If a freedom is omitted or a forbidden state remains, the physical conclusion is only as good as the mistaken translation. The failure is especially dangerous because the theorem may be used correctly after the modeling step has already broken faith with the system.",
+      "example": "The late applications use state spaces and protected obstructions to reason about motion without solving every trajectory. The useful claim is about allowed routes or forced states in the model, not every detail of the physical motion. A good explanation names one complete state, the forbidden states, and the reason paths in the model match real motion."
     }
   ],
   "theorem_use_contracts": [
@@ -7673,7 +7673,7 @@
       "term": "Deformation",
       "everyday_sentence": "A deformation is a slow legal change of the object, like bending without cutting, jumping, or passing through a forbidden place. The important part is the whole path of change, because each step has to preserve the problem being answered.",
       "job_in_argument": "Its job is to replace a hard picture with an easier one while preserving the question. The path of change is evidence only because every step obeys the same restrictions as the original problem.",
-      "not_a_definition": "It is not visual simplification by taste. It is a controlled motion whose allowed and forbidden actions must be named. A nicer final picture proves nothing unless the route to that picture respected the original endpoints, barriers, gluing rules, or state constraints.",
+      "not_a_definition": "It is not visual simplification by taste. It is a controlled motion whose allowed and forbidden actions must be named. A cleaner final picture proves nothing unless the route to that picture respected the original endpoints, barriers, gluing rules, or state constraints.",
       "failure_if_misread": "If the deformation secretly cuts, crosses, moves a fixed boundary, or changes the state space, the easier picture may no longer answer the original question. The failure is not cosmetic: the proof has changed the object whose conclusion it is trying to borrow.",
       "concepts": [
         "deformation",
@@ -8642,6 +8642,7 @@
       "weak_claim_repair_rows": 10,
       "weak_claim_repair_words": 1767,
       "proof_moves": 5,
+      "proof_move_words": 1536,
       "theorem_use_contracts": 8,
       "theorem_contract_words": 2679,
       "concept_contrasts": 10,
