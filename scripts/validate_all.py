@@ -214,7 +214,7 @@ def main():
                 fail(f"subtheme {subtheme['id']} bridge {field} too thin")
         application = subtheme.get("application") or {}
         for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]:
-            if len(words(application.get(field))) < 40:
+            if len(words(application.get(field))) < 70:
                 fail(f"subtheme {subtheme['id']} application {field} too thin")
         answer_guide = subtheme.get("answer_guide") or {}
         for field in ["look_answer", "ask_answer", "use_answer", "mistake_answer"]:
