@@ -170,6 +170,10 @@ def main():
         theme_essay_words = sum(len(words(p)) for p in theme.get("essay") or [])
         if theme_essay_words < 300:
             fail(f"theme {theme['id']} essay too thin")
+        first_principles_essay = theme.get("first_principles_essay") or {}
+        for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
+            if len(words(first_principles_essay.get(field))) < 55:
+                fail(f"theme {theme['id']} first-principles essay {field} too thin")
         lens = theme.get("lens") or {}
         for field in ["notices", "ignores", "changes_problem", "reader_test"]:
             if len(words(lens.get(field))) < 25:
@@ -195,6 +199,10 @@ def main():
         subtheme_essay_words = sum(len(words(p)) for p in subtheme.get("essay") or [])
         if subtheme_essay_words < 260:
             fail(f"subtheme {subtheme['id']} essay too thin")
+        first_principles_essay = subtheme.get("first_principles_essay") or {}
+        for field in ["ordinary_problem", "object_on_page", "allowed_change", "protected_fact", "topology_payoff", "outside_use", "wrong_use"]:
+            if len(words(first_principles_essay.get(field))) < 55:
+                fail(f"subtheme {subtheme['id']} first-principles essay {field} too thin")
         routine = subtheme.get("routine") or {}
         for field in ["look_for", "ask", "use", "mistake"]:
             if len(words(routine.get(field))) < 25:
@@ -1065,6 +1073,9 @@ def main():
         if theme_name not in names:
             fail(f"missing theme page {theme['id']}")
         theme_html = (SITE / theme_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["First-Principles Long Essay", "Ordinary problem:", "Object on the page:", "Allowed change:", "Protected fact:", "Topology payoff:", "Outside use:", "Wrong use:"]:
+            if phrase not in theme_html:
+                fail(f"theme page missing first-principles essay phrase {phrase}: {theme_name}")
         for phrase in ["Theme Lens", "Notices:", "Ignores:", "Changes the problem:", "Reader test:", "Why This Theme Matters Beyond The Course", "Outside problem:", "Course habit:", "Where it matters:", "Honest limit:", "Can You Carry The Theme?", "Notice answer:", "Ignore answer:", "Transfer answer:", "Test answer:"]:
             if phrase not in theme_html:
                 fail(f"theme page missing lens phrase {phrase}: {theme_name}")
@@ -1073,6 +1084,9 @@ def main():
         if subtheme_name not in names:
             fail(f"missing subtheme page {subtheme['id']}")
         subtheme_html = (SITE / subtheme_name).read_text(encoding="utf-8", errors="ignore")
+        for phrase in ["First-Principles Long Essay", "Ordinary problem:", "Object on the page:", "Allowed change:", "Protected fact:", "Topology payoff:", "Outside use:", "Wrong use:"]:
+            if phrase not in subtheme_html:
+                fail(f"subtheme page missing first-principles essay phrase {phrase}: {subtheme_name}")
         for phrase in ["First-Principles Bridge", "Course moment:", "Thinking shift:", "Reader test:", "Reading Routine", "Look for:", "Ask:", "Use:", "Mistake:", "Why This Subtheme Matters Beyond The Course", "Outside problem:", "Course habit:", "Where it matters:", "Honest limit:", "Can You Apply The Routine?", "Look answer:", "Ask answer:", "Use answer:", "Mistake answer:"]:
             if phrase not in subtheme_html:
                 fail(f"subtheme page missing subtheme phrase {phrase}: {subtheme_name}")
