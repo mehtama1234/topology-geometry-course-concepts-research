@@ -163,6 +163,8 @@ def main():
         for field in ["problem", "habit", "course_arc", "important_detail"]:
             if len(words(depth.get(field))) < 40:
                 fail(f"theme {theme['id']} depth {field} too thin")
+        if len(words(theme.get("why_math_matters"))) < 40:
+            fail(f"theme {theme['id']} why_math_matters too thin")
         if len(depth.get("lectures") or []) < 4:
             fail(f"theme {theme['id']} needs lecture thread")
         theme_essay_words = sum(len(words(p)) for p in theme.get("essay") or [])
@@ -184,7 +186,7 @@ def main():
     for subtheme in data["subthemes"]:
         depth = subtheme.get("depth") or {}
         for field in ["problem", "first_principles", "course_role"]:
-            if len(words(depth.get(field))) < 30:
+            if len(words(depth.get(field))) < 40:
                 fail(f"subtheme {subtheme['id']} depth {field} too thin")
         subtheme_essay_words = sum(len(words(p)) for p in subtheme.get("essay") or [])
         if subtheme_essay_words < 260:

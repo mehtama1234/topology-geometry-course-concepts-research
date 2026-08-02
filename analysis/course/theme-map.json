@@ -80,7 +80,7 @@
     "id": "local-to-global",
     "title": "Use small facts to force whole-shape facts",
     "plain": "A surface may look harmless when seen in tiny neighborhoods. The surprise is that many small local rules add up to a global demand on the whole object.",
-    "why_math_matters": "The bookkeeping happens across a whole shape. Local turns, curvatures, or signs are not isolated facts; their total can be fixed by the way the object is connected.",
+    "why_math_matters": "The bookkeeping happens across a whole shape. Local turns, curvatures, or signs are not isolated facts; their total can be fixed by the way the object is connected. That is why a small patch can look free while the completed surface still forces a side reversal, a count, or a defect.",
     "depth": {
       "problem": "A surface, loop, or arrow field can look ordinary in every small neighborhood while still being impossible to organize consistently over the whole object. This theme asks how small local facts add up to a whole-shape demand that no single patch reveals.",
       "habit": "The habit is to distrust purely local inspection. One small patch of a Mobius strip looks like an ordinary strip. One small patch of a sphere can carry a tangent arrow. The question is whether those local choices can be made compatible after traveling around the whole space.",
@@ -119,7 +119,7 @@
     "id": "generic-before-exception",
     "title": "Understand the ordinary case first",
     "plain": "The course often moves away from special coincidences: tangencies, perfect alignments, double accidents, or delicate symmetries. The ordinary case is easier to reason about because accidents have been removed.",
-    "why_math_matters": "The ordinary case gives a stable picture. Exceptional cases are then handled by gently moving them aside or by seeing them as moments where a stable count changes in a controlled pair.",
+    "why_math_matters": "The ordinary case gives a stable picture. Exceptional cases are then handled by gently moving them aside or by seeing them as moments where a stable count changes in a controlled pair. This matters because the course wants evidence that survives small nudges, not conclusions that depend on a perfect accidental alignment.",
     "depth": {
       "problem": "Real drawings often contain accidents: tangencies, triple meetings, perfect alignments, or non-isolated equilibria. These special cases can hide the stable structure. The course needs a way to reason without being trapped by coincidences that vanish under a tiny change.",
       "habit": "The habit is to gently move the picture into an ordinary position, solve the stable case, and then understand special cases as limits of stable behavior. This is how crossings can be born or die in controlled pairs rather than as mysterious exceptions.",
@@ -157,7 +157,7 @@
     "id": "pictures-to-proofs",
     "title": "Make pictures carry reasons",
     "plain": "The lectures use drawings heavily, but not as decoration. A drawing carries proof only when it shows the allowed moves, the forbidden moves, and the quantity being protected.",
-    "why_math_matters": "A proof can be a disciplined picture: the picture tells you what is allowed to move, what must stay fixed, and why no hidden step smuggles in a new assumption.",
+    "why_math_matters": "A proof can be a disciplined picture: the picture tells you what is allowed to move, what must stay fixed, and why no hidden step smuggles in a new assumption. The mathematics matters because the drawing becomes a public contract, not a private visual hunch.",
     "depth": {
       "problem": "The course uses pictures constantly, but a picture by itself is not proof. This theme asks what makes a drawing mathematical evidence rather than a visual suggestion or a memory aid for something proved elsewhere by words alone in another form.",
       "habit": "The habit is to make every drawing state its rules. The drawing should show allowed motion, forbidden motion, signs, boundaries, identifications, and the quantity being protected. A good picture removes ambiguity instead of adding charm or hiding the difficult step.",
@@ -197,7 +197,7 @@
     "id": "shape-as-machine",
     "title": "Treat shape as a machine",
     "plain": "A shape can force motion, block a motion, or make an outcome unavoidable. Topology and geometry reach into mechanisms, knots, surfaces, and physical puzzles because they can describe the shape of possible behavior before every detail is solved.",
-    "why_math_matters": "The central idea is constraint. If the shape leaves only certain paths open, then the mathematics can predict behavior without solving every tiny physical detail.",
+    "why_math_matters": "The central idea is constraint. If the shape leaves only certain paths open, then the mathematics can predict behavior without solving every tiny physical detail. This is how fixed points, equilibria, blocked motions, and configuration-space arguments share one plain idea: the space of possibilities can leave no legal escape.",
     "depth": {
       "problem": "The course repeatedly shows that shape can force behavior. A disk can force a fixed point, a sphere can force a vector-field defect, and a space of possible states can block or require a motion before equations are solved.",
       "habit": "The habit is to treat a shape as a system of constraints. Instead of asking only what the object looks like, ask what routes it allows, what choices it forbids, and what event any continuous rule must encounter while moving through it.",
