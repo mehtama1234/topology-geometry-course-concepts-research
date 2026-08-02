@@ -55,6 +55,7 @@ FORBIDDEN = [
     "useful when",
     "stays useful",
     "becomes useful",
+    "useful conclusion",
 ]
 
 

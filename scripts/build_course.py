@@ -5401,7 +5401,7 @@ def build_lecture_deepening(row, spine_row):
         "That limit is part of the value because it tells the reader exactly what the lecture has earned.",
         "This is why the lecture belongs in the course chain: the payoff becomes evidence a later page can reuse.",
         "The same payoff can matter outside topology only when the outside model protects the same kind of fact.",
-        "A plain payoff sentence names both the useful conclusion and the reason it does not overreach.",
+        "A plain payoff sentence names both the earned conclusion and the reason it does not overreach.",
         "This keeps the course-wide reason detailed without turning the lecture into a slogan.",
     ])
     new_row["what_is_really_happening"] = (
@@ -5453,7 +5453,7 @@ def build_lecture_walkthrough(row, spine_row):
         f"{row['payoff']} The legal move behind that payoff is: {spine_row['legal_move']} {payoff_close} The payoff stays tied to the action that kept the original question intact."
     )
     new_row["reader_check"] = (
-        f"{row['reader_check']} The check returns to the surviving fact: {spine_row['surviving_fact']} {check_close} The final answer has to name the limit as well as the useful conclusion."
+        f"{row['reader_check']} The check returns to the surviving fact: {spine_row['surviving_fact']} {check_close} The final answer has to name the limit as well as the earned conclusion."
     )
     return new_row
 
@@ -6353,7 +6353,7 @@ def build_lecture_application_bridge(lecture, spine_row):
         "This supplies the structural check many outside problems need before exact numbers, timing, or design choices are available.",
         "Beyond topology, the lecture earns use when it prevents a false shortcut or reveals the constraint that every later method has to respect.",
         "Other fields still add their own data, but the topological check says what kind of conclusion the shape of the problem can support.",
-        "The application is strongest when it names both the useful conclusion and the evidence that keeps the conclusion narrow.",
+        "The application is strongest when it names both the earned conclusion and the evidence that keeps the conclusion narrow.",
         "In everyday terms, the lecture gives a way to ask whether the important part survives when the unimportant part is changed.",
     ])
     limit_close = varied((number, "lecture-application-limit-close"), [
