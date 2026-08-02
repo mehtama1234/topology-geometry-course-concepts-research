@@ -118,7 +118,7 @@
     },
     {
       "requirement": "Assumption ledger",
-      "evidence": "10 assumption-ledger cases expose the quiet conditions behind course claims. The 2014 words name the assumption, why it is needed, how to check it plainly, and where the argument breaks if the condition is missing.",
+      "evidence": "10 assumption-ledger cases expose the quiet conditions behind course claims. The 4480 words name the assumption, why it is needed, how to check it plainly, and where the argument breaks if the condition is missing.",
       "status": "met"
     },
     {
@@ -244,7 +244,7 @@
     "change_ledger_rows": 10,
     "change_ledger_words": 2081,
     "assumption_ledger_rows": 10,
-    "assumption_ledger_words": 2014,
+    "assumption_ledger_words": 4480,
     "counterexample_gallery_rows": 10,
     "counterexample_gallery_words": 2013,
     "weak_claim_repair_rows": 10,

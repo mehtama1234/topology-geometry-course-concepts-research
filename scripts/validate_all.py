@@ -564,7 +564,7 @@ def main():
         fail("assumption ledger rows do not match required case set")
     for row in assumption_ledger_rows:
         for field in ["claim", "assumption", "why_needed", "plain_check", "breaks_if", "course_place"]:
-            if len(words(row.get(field))) < 30:
+            if len(words(row.get(field))) < 65:
                 fail(f"assumption ledger {row.get('title')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"assumption ledger {row.get('title')} needs concept links")
