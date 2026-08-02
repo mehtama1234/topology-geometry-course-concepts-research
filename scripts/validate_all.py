@@ -543,7 +543,7 @@ def main():
         fail("weak claim repair rows do not match required case set")
     for row in weak_claim_repair_rows:
         for field in ["weak_claim", "why_weak", "first_principles_repair", "detail_to_check", "where_to_use"]:
-            if len(words(row.get(field))) < 14:
+            if len(words(row.get(field))) < 30:
                 fail(f"weak claim repair {row.get('title')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"weak claim repair {row.get('title')} needs concept links")

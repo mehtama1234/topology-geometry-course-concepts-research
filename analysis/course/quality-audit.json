@@ -123,7 +123,7 @@
     },
     {
       "requirement": "Weak-claim repair layer",
-      "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1767 repair words show the missing detail, where the stronger sentence belongs, and what must be checked before accepting it.",
+      "evidence": "10 weak course sentences are diagnosed and rewritten into first-principles versions. The 1934 repair words show the missing detail, where the stronger sentence belongs, and what must be checked before accepting it.",
       "status": "met"
     },
     {
@@ -227,7 +227,7 @@
     "counterexample_gallery_rows": 10,
     "counterexample_gallery_words": 2012,
     "weak_claim_repair_rows": 10,
-    "weak_claim_repair_words": 1767,
+    "weak_claim_repair_words": 1934,
     "proof_moves": 5,
     "proof_move_words": 1536,
     "theorem_use_contracts": 8,
