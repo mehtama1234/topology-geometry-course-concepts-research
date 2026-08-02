@@ -677,7 +677,7 @@ def main():
         fail("concept contrasts do not match required contrast set")
     for row in concept_contrasts:
         for field in ["confusion", "left_job", "right_job", "bridge", "failure_test", "reader_question"]:
-            if len(words(row.get(field))) < 30:
+            if len(words(row.get(field))) < 65:
                 fail(f"concept contrast {row.get('title')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"concept contrast {row.get('title')} needs concept links")
