@@ -74,7 +74,7 @@
     "object": "The object is a rule that sends each point of a chosen space to an output point, together with the comparison between that rule and the same point staying put. The story is not about motion in general; it is about one rule on one space.",
     "legal_change": "The rule may be studied through a graph-and-diagonal comparison when continuity is preserved and every output still lands inside the same target space. The domain, target, and no-jump condition are part of the evidence.",
     "protected_fact": "The protected fact is forced self-agreement: a meeting between the graph and the diagonal means at least one point is sent to itself. The claim is existence, not a formula for where the point is.",
-    "why_matters": "Shape can force an agreement even when calculation does not find it. That is why the course can prove that some self-match must occur after checking the rule's contract.",
+    "why_matters": "Shape can force an agreement even when calculation does not find it. After the rule's contract is checked, the course can prove that some self-match must occur without locating it.",
     "false_move": "The false move is to announce a fixed point before checking that the rule is continuous and maps the space back into itself, or to claim the theorem locates the point when it only forces existence.",
     "reader_test": "Can the reader identify the space, the rule, the diagonal of self-agreement, the same-space condition, and the exact conclusion that is earned?",
     "concepts": [

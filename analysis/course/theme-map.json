@@ -196,8 +196,8 @@
   {
     "id": "shape-as-machine",
     "title": "Treat shape as a machine",
-    "plain": "A shape can force motion, block a motion, or make an outcome unavoidable. This is why topology and geometry reach into mechanisms, knots, surfaces, and physical puzzles.",
-    "why_math_matters": "The key idea is constraint. If the shape leaves only certain paths open, then the mathematics can predict behavior without solving every tiny physical detail.",
+    "plain": "A shape can force motion, block a motion, or make an outcome unavoidable. Topology and geometry reach into mechanisms, knots, surfaces, and physical puzzles because they can describe the shape of possible behavior before every detail is solved.",
+    "why_math_matters": "The central idea is constraint. If the shape leaves only certain paths open, then the mathematics can predict behavior without solving every tiny physical detail.",
     "depth": {
       "problem": "The course repeatedly shows that shape can force behavior. A disk can force a fixed point, a sphere can force a vector-field defect, and a space of possible states can block or require a motion before equations are solved.",
       "habit": "The habit is to treat a shape as a system of constraints. Instead of asking only what the object looks like, ask what routes it allows, what choices it forbids, and what event any continuous rule must encounter while moving through it.",
