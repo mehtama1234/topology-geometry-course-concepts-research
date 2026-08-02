@@ -4973,25 +4973,57 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             f"The fix is to return to the course chain, not to add topic names: object, legal move, surviving fact, later use: {spine['why_later']}",
             f"Bring the answer back to the lecture's working order: object first, legal move second, surviving fact third, later use last: {spine['why_later']}",
             f"A fuller reconstruction should reconnect the failed sentence to the later role: {spine['why_later']}",
-            f"The repaired version has to explain why this lecture is needed later: {spine['why_later']}",
-            f"Use the later role as a check on the repair: {spine['why_later']}",
+            f"The repair should show the later job this lecture makes possible: {spine['why_later']}",
+            f"Use the later role to test whether the repair really restored the missing reasoning: {spine['why_later']}",
         ])
         overread_join = varied((number, "drill-overread-join"), [
             f"The bridge layer gives the same boundary in sharper form: {bridge['overread_warning']}",
-            f"The bridge warning names the overreach to avoid: {bridge['overread_warning']}",
+            f"The bridge warning makes the overreach concrete: {bridge['overread_warning']}",
             f"That source caution matches this bridge warning: {bridge['overread_warning']}",
             f"The overread guard is: {bridge['overread_warning']}",
             f"Keep this bridge warning attached to the drill: {bridge['overread_warning']}",
             f"The source claim should stop at this boundary: {bridge['overread_warning']}",
         ])
+        start_close = varied((number, "drill-start-close"), [
+            "This is the object that must be rebuilt before any source bridge can be trusted.",
+            "Hold that object fixed before bringing in a source trail or theorem family.",
+            "A source can help only after this carrier of the lecture claim is visible.",
+            "The reconstruction should make this object visible before it asks outside support to do any work.",
+            "Until this object is explicit, the source bridge has no honest place to attach.",
+            "This keeps the drill tied to the lecture demonstration before it becomes a source exercise.",
+        ])
+        self_open = varied((number, "drill-self-open"), [
+            f"The rebuild of \"{title}\" passes only when it can do this:",
+            f"Use this as the completion test for \"{title}\":",
+            f"Do not accept the reconstruction of \"{title}\" until this standard is met:",
+            f"The answer for \"{title}\" is ready when it satisfies this check:",
+            f"Treat this as the working test for \"{title}\":",
+            f"The drill for \"{title}\" should end with this proof of understanding:",
+        ])
+        failure_open = varied((number, "drill-failure-open"), [
+            f"The common weak version of \"{title}\" fails in this specific way:",
+            f"Watch for this shallow reconstruction of \"{title}\":",
+            f"The easiest bad answer to \"{title}\" makes this mistake:",
+            f"\"{title}\" becomes thin when the answer does this:",
+            f"The false shortcut in \"{title}\" usually looks like this:",
+            f"Reject the reconstruction of \"{title}\" when it has this gap:",
+        ])
+        source_open = varied((number, "drill-source-open"), [
+            f"Source discipline for \"{title}\" begins with this check:",
+            f"Before citing support for \"{title}\", ask this:",
+            f"The source boundary in \"{title}\" is tested here:",
+            f"Keep the source claim for \"{title}\" inside this evidence line:",
+            f"The source trail for \"{title}\" should be read through this guard:",
+            f"Use this source check before strengthening \"{title}\":",
+        ])
         drills.append({
             "lecture": number,
             "title": title,
-            "start_from": f"{start_from} {object_join} Before the source bridge for \"{title}\" can be read honestly, that object has to be visible.",
+            "start_from": f"{start_from} {object_join} {start_close}",
             "rebuild_steps": overlay["rebuild_steps"],
-            "self_check": f"A rebuild of \"{title}\" is ready only after this test passes: {self_check} {move_join} {survival_join}",
-            "common_failure": f"A shallow rebuild of \"{title}\" fails here: {common_failure} {repair_join}",
-            "source_check": f"The source boundary for \"{title}\" starts here: {source_check} {overread_join}",
+            "self_check": f"{self_open} {self_check} {move_join} {survival_join}",
+            "common_failure": f"{failure_open} {common_failure} {repair_join}",
+            "source_check": f"{source_open} {source_check} {overread_join}",
             "concepts": concept_ids[:6],
         })
     return drills
