@@ -39,6 +39,7 @@ FORBIDDEN = [
     "broad ideas",
     "broad theme",
     "broad themes",
+    "decorative",
 ]
 
 

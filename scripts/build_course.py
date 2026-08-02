@@ -1458,7 +1458,7 @@ def build_transfer_lab_cases(rows):
             "This task turns the transfer into practice: rebuild the model, inspect the rule, and stop at the earned conclusion.",
             "The response has to show why the example matters, not only which course concept it resembles.",
             "The reader leaves with an action they can repeat: find the model, test the move, name what survives.",
-            "That final check makes the outside application careful rather than decorative.",
+            "That final check makes the outside application name the evidence instead of only attaching a course term.",
             "The task finishes by saying what stronger conclusion remains unavailable without more evidence.",
         ])
         new_row["situation"] = (
@@ -1927,7 +1927,7 @@ def build_change_ledger_rows(rows):
             "The course is not asking the reader to admire change; it is asking the reader to audit what survived the change.",
             "A clear why sentence prevents the method from becoming a slogan about flexibility or shape.",
             "The reader sees why the method is important only when the changed picture still answers the original question.",
-            "This makes the mathematical idea feel necessary rather than decorative: without the preserved fact, the conclusion would have no support.",
+            "This makes the mathematical idea necessary to the proof: without the preserved fact, the conclusion would have no support.",
         ])
         false_close = varied((title, "change-false-close"), [
             "The false move matters because it produces a sentence that sounds close to the course idea while losing the condition that made the idea true.",
@@ -5385,7 +5385,7 @@ def build_lecture_deepening(row, spine_row):
         "A beginner-friendly explanation has to name that temptation, because the mistake usually comes from trusting the first visible picture too quickly.",
         "This section matters because it tells the reader why the lecture needed a method instead of a faster label.",
         "The hard part is not fancy vocabulary; it is keeping the right condition visible while the picture, count, or model changes.",
-        "Naming the difficulty makes the later repair feel necessary rather than decorative.",
+        "Naming the difficulty makes the later repair part of the proof instead of an added comment.",
         "The same difficulty appears in applications when a model seems clear but has dropped the rule that made the conclusion true.",
     ])
     move_close = varied((lecture, "deepening-move-close"), [
@@ -6330,7 +6330,7 @@ def build_lecture_application_bridge(lecture, spine_row):
         "A reader can test the application by naming the outside carrier before naming any theorem, count, or course concept.",
         "The practical point is that topology helps only after the outside situation has been turned into a shape, route, field, rule, or possible-state question.",
         "The first application check is simple: say what would count as the same situation and what would count as changing the problem.",
-        "That everyday setup makes the later mathematical claim accountable instead of decorative.",
+        "That everyday setup makes the later mathematical claim accountable because it names what evidence the claim uses.",
     ])
     bridge_close = varied((number, "lecture-application-bridge-close"), [
         "The bridge is valid only when the outside setting allows the same kind of change without losing the original question.",
@@ -7398,7 +7398,7 @@ def build_concept_workup(concept):
         f"A reader can use this as a plain sorting test: before asking whether the idea applies, point to the object that will carry the evidence. If that object is vague, the later claim has nowhere to stand in topology or in any practical use.",
         f"Object order for {title}: first name the thing, then ask what can be done to it, because that order matters when studying surfaces, maps, routes, constraints, measurements, or changing systems.",
         f"Object handle for {title}: the object is what the rest of the explanation holds; without the {title} carrier, a theorem, picture, or source can be attached to the wrong problem, while a named carrier lets the reader compare topology with uses in motion, networks, materials, and choice spaces.",
-        f"This makes the concept usable rather than decorative. The page is saying: here is the thing whose shape, relation, count, or allowed change matters. That same discipline prevents confusion when a similar idea is used outside the course.",
+        f"This makes the concept usable because the page names the thing whose shape, relation, count, or allowed change matters. That same discipline prevents confusion when a similar idea is used outside the course.",
         f"The first-principles question is concrete: what thing would change if the claim were false? Naming that thing keeps topology grounded, and it also makes the idea transferable to settings where the object is a design space, a path, a signal, or a model.",
     ])
     object_floor = f"Plain use of {title}: the concept matters only when that carrier remains clear enough to compare with another lecture, source, theorem, or outside model."
