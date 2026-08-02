@@ -40,6 +40,16 @@ FORBIDDEN = [
     "broad theme",
     "broad themes",
     "decorative",
+    "the idea matters",
+    "why the idea matters",
+    "the concept matters",
+    "why the concept matters",
+    "the theme matters",
+    "why the theme matters",
+    "the lecture matters",
+    "why the lecture matters",
+    "the method matters",
+    "why the method matters",
 ]
 
 

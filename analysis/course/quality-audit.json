@@ -13,12 +13,12 @@
     },
     {
       "requirement": "Hand-written lecture depth",
-      "evidence": "15 lecture explainers with full essay sections, 25137 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+      "evidence": "15 lecture explainers with full essay sections, 25140 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
       "status": "met"
     },
     {
       "requirement": "Lecture source-faithfulness audit",
-      "evidence": "Each lecture separates caption support from course-arc inference and caveat. That keeps a reader from mistaking a useful interpretation for a direct transcript claim, with 2462 words devoted to source-faithfulness checks.",
+      "evidence": "Each lecture separates caption support from course-arc inference and caveat. That keeps a reader from mistaking a useful interpretation for a direct transcript claim, with 2477 words devoted to source-faithfulness checks.",
       "status": "met"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 5144 reader-test words, 10676 lecture-application words, and 6136 answer-guide words turn lecture understanding into an auditable task.",
+      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 5144 reader-test words, 10679 lecture-application words, and 6136 answer-guide words turn lecture understanding into an auditable task.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40665 first-principles essay words; theme and subtheme pages add 30416 first-principles essay words and 12143 application words. Method-family pages add 10380 first-principles essay words and 4211 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21656 words, and concept applications add 20694 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40679 first-principles essay words; theme and subtheme pages add 30422 first-principles essay words and 12149 application words. Method-family pages add 10380 first-principles essay words and 4211 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21656 words, and concept applications add 20726 words.",
       "status": "met"
     },
     {
@@ -158,7 +158,7 @@
     },
     {
       "requirement": "Plain-language term translation",
-      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 5987 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
+      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 5993 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
       "status": "met"
     },
     {
@@ -187,14 +187,14 @@
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
     "lecture_essay_words": 5491,
-    "lecture_first_principles_essay_words": 25137,
+    "lecture_first_principles_essay_words": 25140,
     "lecture_deepening_words": 6625,
     "lecture_walkthrough_words": 5191,
     "lecture_source_lens_words": 1643,
     "lecture_source_checkpoint_words": 4482,
     "lecture_caption_nuance_words": 4462,
-    "lecture_source_faithfulness_words": 2462,
-    "lecture_application_bridge_words": 10676,
+    "lecture_source_faithfulness_words": 2477,
+    "lecture_application_bridge_words": 10679,
     "lecture_source_bridge_words": 7564,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
@@ -205,16 +205,16 @@
     "lecture_reader_test_words": 5144,
     "lecture_answer_guide_words": 6136,
     "concept_essay_words": 7895,
-    "concept_first_principles_essay_words": 40665,
-    "concept_workup_words": 10494,
-    "concept_anchor_words": 7073,
-    "concept_application_words": 20694,
-    "concept_self_check_words": 20643,
+    "concept_first_principles_essay_words": 40679,
+    "concept_workup_words": 10524,
+    "concept_anchor_words": 7088,
+    "concept_application_words": 20726,
+    "concept_self_check_words": 20673,
     "theme_plain_words": 875,
     "theme_essay_words": 1963,
-    "theme_first_principles_essay_words": 9227,
+    "theme_first_principles_essay_words": 9233,
     "theme_lens_words": 2656,
-    "theme_application_words": 3580,
+    "theme_application_words": 3586,
     "theme_answer_guide_words": 4635,
     "subtheme_plain_words": 1360,
     "subtheme_essay_words": 3022,
@@ -257,7 +257,7 @@
     "concept_contrast_words": 4451,
     "reader_checks": 11,
     "term_translations": 16,
-    "term_translation_words": 5987,
+    "term_translation_words": 5993,
     "source_readers": 7,
     "source_reader_words": 3470,
     "paper_family_ledger_rows": 7,

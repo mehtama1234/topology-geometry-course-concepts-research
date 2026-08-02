@@ -513,7 +513,7 @@ TERM_TRANSLATIONS = [
     },
     {
         "term": "Fixed point",
-        "everyday_sentence": "A fixed point is a place that a rule sends back to itself, so input and output agree at that place. The idea matters when a rule seems able to move everything, but the shape and continuity of the situation block total escape.",
+        "everyday_sentence": "A fixed point is a place that a rule sends back to itself, so input and output agree at that place. The proof work is blocked escape: a rule may seem able to move everything, but the shape and continuity of the situation force at least one self-agreement.",
         "job_in_argument": "Its job is to express forced self-agreement. The course often turns a rule into a shape, compares it with the diagonal of self-agreement, and uses topology to show that avoiding the diagonal is impossible.",
         "not_a_definition": "It is not a request to compute the point. Many fixed-point arguments prove that some point must exist before they know where it is. Existence, location, uniqueness, and an algorithm for finding the point are different claims.",
         "failure_if_misread": "If the domain, boundary, or continuity condition is changed, the guarantee can disappear even though the phrase fixed point still sounds applicable. The theorem needs the rule, the space, and the no-jump condition to keep the escape argument closed.",
@@ -4285,7 +4285,7 @@ def build_family_contract(family, contract):
     ])
     evidence_close = varied((fid, "family-contract-evidence-close"), [
         "The protected evidence is what lets one cleaned-up picture, count, surface, placement, or state model speak for the original problem.",
-        "This evidence is the reason the method matters in topology: it survives the legal changes and still has force.",
+        "This evidence is the reason the method can support a topological claim: it survives the legal changes and still has force.",
         "The reader has to be able to point to this evidence before accepting the conclusion.",
         "That evidence is the bridge from a visible course example to a broader use in another problem.",
         "Without this protected piece, the method would be only a description of what happened in one drawing.",
@@ -4398,7 +4398,7 @@ def build_family_playbook(family, playbook):
     reader_close = varied((fid, "family-playbook-reader-close"), [
         "A complete answer then names the object, legal move, protected evidence, conclusion, and failure limit in plain language.",
         "The test passes only when the reader can rebuild the method without leaning on the family title.",
-        "The answer shows why the method matters in this course and how the same habit can transfer carefully elsewhere.",
+        "The answer shows what the method proves in this course and how the same rule can transfer carefully elsewhere.",
         "The reader test is meant to prove understanding by making the whole contract visible.",
         "The field stays useful when it asks for the method's working parts, not only its name.",
     ])
@@ -5170,7 +5170,7 @@ def build_lecture_spine(rows):
             "A later theorem, count, or model can use this lecture only if this fact remains visible.",
         ])
         later_finish = varied((lecture, "spine-later-finish"), [
-            "That forward link explains why the lecture matters for topology and why the same habit can travel outside the course.",
+            "That forward link explains what the lecture contributes to topology and why the same rule can travel outside the course.",
             "The later sentence keeps the course chain simple: one lecture earns a piece of evidence another lecture will need.",
             "It also names the application boundary, because the later use must rebuild the same checks in its own setting.",
             "This makes the whole course read as a chain of ordinary questions, not as a stack of specialized terms.",
@@ -5190,7 +5190,7 @@ def build_lecture_spine(rows):
             f"{row['surviving_fact']} {fact_close} {fact_finish} The repaired row says what the fact can support, why that support matters, and what stronger sentence remains unproved for this lecture. That is the evidence the next page can borrow."
         )
         new_row["why_later"] = (
-            f"{row['why_later']} {later_close} {later_finish} The reader can follow the course as one chain of reasons rather than a sequence of labels. That chain explains why the idea matters after the lecture ends."
+            f"{row['why_later']} {later_close} {later_finish} The reader can follow the course as one chain of reasons rather than a sequence of labels. That chain names what the idea lets later pages prove, block, or inspect after the lecture ends."
         )
         enriched.append(new_row)
     return enriched
@@ -6076,7 +6076,7 @@ def build_source_faithfulness(lecture):
         inference = varied((number, "faith-inference"), [
             f"For \"{title}\", the course-chain reading says which earlier proof habit the lecture uses and which later lecture depends on it. That placement is interpretation, so it must stay tied to the examples and not become a claim that Tokieda literally used the companion's wording.",
             f"The broader reading for \"{title}\" is about dependency: how this lecture receives earlier habits and prepares later ones. That connection comes from sequence, examples, and repeated method, not from one transcript sentence.",
-            f"Use the position of \"{title}\" in the sequence to explain why the idea matters later. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
+            f"Use the position of \"{title}\" in the sequence to name what the idea lets later pages prove, block, or inspect. The bridge is fair only while it remains visibly connected to named course moments and does not borrow transcript authority for words the transcript does not supply.",
             f"Some sentences on \"{title}\" explain course structure rather than a single caption line. Read them as forward connections among object, legal move, and surviving fact, not as Tokieda's exact formulation.",
             f"The course arc around \"{title}\" is evidence of role, not exact wording. It can say how the lecture fits the larger method only after the caption anchors and demonstrations have been named.",
             f"Treat the later-use claims for \"{title}\" as synthesis. They are built from lecture order, recurring proof work, and the named examples, so they should remain weaker than direct caption evidence and should not sound like recovered wording.",
@@ -6351,7 +6351,7 @@ def build_lecture_application_bridge(lecture, spine_row):
     matters_close = varied((number, "lecture-application-matters-close"), [
         "The outside payoff may be a blocked route, a forced meeting, a stable count, a valid model, or a warning that the first picture cannot be trusted.",
         "This is useful because many outside problems need a structural check before exact numbers, timing, or design choices are available.",
-        "The lecture matters beyond topology when it prevents a false shortcut or reveals the constraint that every later method has to respect.",
+        "Beyond topology, the lecture earns use when it prevents a false shortcut or reveals the constraint that every later method has to respect.",
         "Other fields still add their own data, but the topological check says what kind of conclusion the shape of the problem can support.",
         "The application is strongest when it names both the useful conclusion and the evidence that keeps the conclusion narrow.",
         "In everyday terms, the lecture gives a way to ask whether the important part survives when the unimportant part is changed.",
@@ -7304,7 +7304,7 @@ def build_concept_application(concept):
         "This kind of guarantee matters in topology and outside it because it says which conclusions survive a change of picture or material.",
         "The result may be modest, but it is useful because it names the part of the problem that cannot be wished away.",
         "The course trains this habit so the reader can ask for evidence before trusting a drawing, formula, source, or model.",
-        "In everyday terms, the idea matters when it stops a false shortcut or reveals a forced feature hidden by the first view.",
+        "In everyday terms, the idea does work when it stops a false shortcut or reveals a forced feature hidden by the first view.",
         "The explanation is complete only when the reader can say what became known and why the evidence was strong enough.",
     ])
     limit_close = varied((cid, "concept-application-limit-close"), [
@@ -7401,7 +7401,7 @@ def build_concept_workup(concept):
         f"This makes the concept usable because the page names the thing whose shape, relation, count, or allowed change matters. That same discipline prevents confusion when a similar idea is used outside the course.",
         f"The first-principles question is concrete: what thing would change if the claim were false? Naming that thing keeps topology grounded, and it also makes the idea transferable to settings where the object is a design space, a path, a signal, or a model.",
     ])
-    object_floor = f"Plain use of {title}: the concept matters only when that carrier remains clear enough to compare with another lecture, source, theorem, or outside model."
+    object_floor = f"Plain use of {title}: the concept can work only when that carrier remains clear enough to compare with another lecture, source, theorem, or outside model."
     operation_finish = varied((cid, "workup-operation-finish"), [
         f"In everyday language, this is the difference between cleaning up a problem and replacing it with another one. Topology often allows bending, moving, or rephrasing, but the original question must remain the same kind of question after the move.",
         f"The useful lesson is that not every shortcut is honest. A legal move saves the part of the problem that matters; an illegal move erases it. The same rule matters when simplifying a physical model, a diagram, a data set, or a plan.",
@@ -7416,7 +7416,7 @@ def build_concept_workup(concept):
         f"Protected evidence for {title}: the protected fact is the reason the argument has force; in topology it may be a count, boundary, fixed point, crossing, or relation that survives change, while outside topology it is the part of the model that still justifies the decision.",
         f"This is the plain evidence test: after the picture is changed, what fact is still true? If the answer is unclear, the concept has not explained anything yet. If the fact is clear, it can carry the idea into other fields.",
         f"The course keeps this separate from the move because the move alone proves nothing. The protected fact is what lets a simpler picture speak for the original one, the way a preserved constraint or measurement can speak for a larger practical system.",
-        f"This field answers why the concept matters after the drawing, formula, or source has been simplified. Something important remains. That remaining thing is what blocks false answers, supports correct ones, and lets the same reasoning travel to other settings.",
+        f"This field names what the concept can use after the drawing, formula, or source has been simplified. A protected detail remains. That remaining thing is what blocks false answers, supports correct ones, and lets the same reasoning travel to other settings.",
         f"In first-principles terms, the protected fact is the part that the argument refuses to lose. That refusal is central in topology and also in applications, where changing a model is useful only if the needed evidence survives the change.",
         f"This is the evidence a reader can check without trusting the label alone. It says what survives and why survival matters. That makes the concept useful for topology problems and for outside problems where a stable feature guides a decision.",
         f"The protected fact is the payoff of being careful. Once it is named, the reader can see what the concept can prove and what it cannot prove. That boundary is what keeps applications honest in other subjects too.",
@@ -7508,7 +7508,7 @@ def build_concept_anchor(concept):
         f"This question asks for more than recall. It asks whether the reader can keep the everyday problem, the topology use, and the outside use in view without turning the concept into a slogan.",
         f"The useful answer is concrete: say what is being studied, what changes are legal, what evidence remains, and why that evidence matters. That pattern is the same across the course and across applications.",
         f"The question is a transfer test. If the reader can answer it plainly, the concept can be recognized in another lecture, another theorem, or another field without losing the condition that made it work.",
-        f"This is where the course checks whether the idea has become usable knowledge. The reader has to explain why the concept matters, not only repeat its name or point to a familiar picture.",
+        f"This is where the course checks whether the idea has become usable knowledge. The reader has to explain what the concept helps prove, block, protect, or inspect, not only repeat its name or point to a familiar picture.",
         f"The answer has to stay close to evidence. That means no grand wording, no hidden assumptions, and no claim stronger than the object, move, and protected fact can support.",
         f"The question also protects beginners from a common false shortcut: using a concept because it sounds related. A careful answer shows the specific reason the concept applies here.",
         f"This final prompt keeps the anchor active. It asks the reader to rebuild the idea from the course moment and then carry it outward only as far as the evidence allows.",
@@ -7576,7 +7576,7 @@ def build_concept_first_principles_essay(concept):
         f"The concept helps explain why the course is important: it teaches how to trust structure when a first drawing, first count, or first name would be too weak.",
         f"This payoff also prepares applications. Other fields can borrow the structural check when they need to know what must stay true before measuring or computing the remaining details.",
     ])
-    payoff_floor = f"Plain payoff for {title}: the idea matters because it turns visible structure into a limited claim the reader can defend."
+    payoff_floor = f"Plain payoff for {title}: the idea turns visible structure into a limited claim the reader can defend."
     outside_close = varied((cid, "concept-fp-outside-close"), [
         f"The outside transfer is honest only when the new setting rebuilds the same pieces: object, allowed change, protected fact, conclusion, and failure condition.",
         f"This matters because applications often fail by borrowing the concept name while dropping the condition that made the course use valid.",
@@ -7621,7 +7621,7 @@ def build_concept_first_principles_essay(concept):
         ),
         "outside_use": (
             f"Outside topology, the same habit matters when another field faces the same kind of problem in different material. "
-            f"The concept application says: {application['other_fields']} It also says why the idea matters: {application['why_it_matters']} "
+            f"The concept application says: {application['other_fields']} It also states the work the idea can do: {application['why_it_matters']} "
             f"The transfer is not a claim that topology solves the whole outside problem. It is a way to ask which object is being modeled, which changes are harmless, and which fact must survive. {outside_close}"
         ),
         "wrong_use": (
@@ -8076,7 +8076,7 @@ def build_theme_application(theme):
         "The reader can retell the outside case without using the theme name: what object is hard to read, what change is allowed, and what answer is needed.",
         "That ordinary setup matters because topology helps only after the outside problem has been turned into a shape, route, count, field, or state-space question.",
         "The field may be different, but the first check stays the same: name the thing being studied before naming the method.",
-        "A plain outside problem also shows why the theme matters: it gives the reader a way to sort real constraints from distracting detail.",
+        "A plain outside problem also states the theme's job: it gives the reader a way to sort real constraints from distracting detail.",
     ])
     habit_close = varied((theme["id"], "theme-application-habit-close"), [
         "The habit is useful because it can be repeated: find the carrier, name the allowed change, protect the evidence, and state the limit.",
@@ -8091,7 +8091,7 @@ def build_theme_application(theme):
         "That is often the useful first answer: not the exact number, speed, force, or design, but whether the structure permits the conclusion at all.",
         "This gives the theme practical value without exaggerating it; the topological part says what survives, and the outside field supplies the remaining measurements.",
         "The reader can test the transfer by asking whether the same evidence would survive a harmless redraw, small motion, cleanup, or change of model.",
-        "The theme matters when it prevents a false shortcut or makes a hidden constraint visible enough for another field to use.",
+        "The theme earns outside use when it prevents a false shortcut or makes a hidden constraint visible enough for another field to use.",
         "A clear application names the limited answer topology can give before it hands the remaining work back to the outside setting.",
     ])
     limit_close = varied((theme["id"], "theme-application-limit-close"), [
