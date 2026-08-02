@@ -163,6 +163,8 @@ def main():
             fail(f"quality audit evidence too thin: {item.get('requirement')}")
 
     for theme in data["themes"]:
+        if len(words(theme.get("plain"))) < 55:
+            fail(f"theme {theme['id']} plain summary too thin")
         depth = theme.get("depth") or {}
         for field in ["problem", "habit", "course_arc", "important_detail"]:
             if len(words(depth.get(field))) < 40:
@@ -196,6 +198,8 @@ def main():
     )
 
     for subtheme in data["subthemes"]:
+        if len(words(subtheme.get("plain"))) < 50:
+            fail(f"subtheme {subtheme['id']} plain summary too thin")
         depth = subtheme.get("depth") or {}
         for field in ["problem", "first_principles", "course_role"]:
             if len(words(depth.get(field))) < 40:
