@@ -248,11 +248,11 @@ def main():
                 fail(f"family {family['id']} first-principles essay {field} too thin")
         contract = family.get("contract") or {}
         for field in ["input", "action", "evidence", "output", "failure_test"]:
-            if len(words(contract.get(field))) < 25:
+            if len(words(contract.get(field))) < 100:
                 fail(f"family {family['id']} contract {field} too thin")
         playbook = family.get("playbook") or {}
         for field in ["setup", "move", "payoff", "failure", "reader_test"]:
-            if len(words(playbook.get(field))) < 25:
+            if len(words(playbook.get(field))) < 100:
                 fail(f"family {family['id']} playbook {field} too thin")
         application = family.get("application") or {}
         for field in ["outside_problem", "method_transfer", "where_it_matters", "honest_limit"]:

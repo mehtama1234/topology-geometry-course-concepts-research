@@ -3410,6 +3410,202 @@ FAMILY_PLAYBOOKS = {
 }
 
 
+def build_family_contract(family, contract):
+    new_contract = dict(contract)
+    depth = family["depth"]
+    fid = family["id"]
+    title = family["title"]
+    input_close = varied((fid, "family-contract-input-close"), [
+        "The reader sees the ordinary difficulty before the method name appears.",
+        "That keeps the method attached to a concrete problem rather than a proof-family label.",
+        "The method starts as a practical need: something must be made checkable before it can be proved.",
+        "That opening makes the family usable for a new example, because the input is visible in everyday terms.",
+        "The contract begins there so the reader knows what kind of situation calls for this method.",
+    ])
+    action_close = varied((fid, "family-contract-action-close"), [
+        "The action is valid only when those first-principles conditions stay visible during the work.",
+        "That plain rule tells the reader what the method may change and what it must protect.",
+        "The family earns trust by making that action checkable step by step.",
+        "The action reads like something the reader can audit, not like a jump to a theorem name.",
+        "That is the rulebook for using the method without changing the problem.",
+    ])
+    evidence_close = varied((fid, "family-contract-evidence-close"), [
+        "The protected evidence is what lets one cleaned-up picture, count, surface, placement, or state model speak for the original problem.",
+        "This evidence is the reason the method matters in topology: it survives the legal changes and still has force.",
+        "The reader has to be able to point to this evidence before accepting the conclusion.",
+        "That evidence is the bridge from a visible course example to a broader use in another problem.",
+        "Without this protected piece, the method would be only a description of what happened in one drawing.",
+    ])
+    output_close = varied((fid, "family-contract-output-close"), [
+        "The output matters beyond the course when the same kind of protected evidence can limit a model, route, mechanism, or drawing.",
+        "That conclusion is useful only inside the contract that produced it, so the reader must know exactly what has been proved.",
+        "The method gives a controlled answer, not every answer a person might want from the situation.",
+        "This is how the family turns first-principles checking into a concrete payoff.",
+        "The conclusion stays narrow enough that the input, action, and evidence still justify it.",
+    ])
+    failure_close = varied((fid, "family-contract-failure-close"), [
+        "That failure condition is part of the method, because it tells the reader when the same words would stop proving the same claim.",
+        "The limit protects the family from becoming a catch-all explanation for every similar-looking problem.",
+        "A careful use names this break point before the reader carries the method into another field.",
+        "This is the everyday warning: if the object, rule, evidence, or model changes, the conclusion may change too.",
+        "The family stays honest only when this failure test is as visible as the successful move.",
+    ])
+    input_intro = varied((fid, "family-contract-input-intro"), [
+        f"For \"{title},\" the human problem is:",
+        f"The contract starts from this human problem for \"{title}\":",
+        f"The input makes sense after this ordinary problem is visible:",
+        f"Use \"{title}\" when this practical difficulty is present:",
+        f"The family begins with this situation:",
+    ])
+    action_intro = varied((fid, "family-contract-action-intro"), [
+        "The first-principles rule is:",
+        "The action follows this plain rule:",
+        "The method's rulebook is:",
+        "The allowed work begins from this principle:",
+        "The action becomes trustworthy through this rule:",
+    ])
+    evidence_intro = varied((fid, "family-contract-evidence-intro"), [
+        "The method works this way in the course:",
+        "The course use explains the evidence:",
+        "The evidence becomes usable through this working pattern:",
+        "The family protects evidence by doing this:",
+        "The proof mechanism is:",
+    ])
+    output_intro = varied((fid, "family-contract-output-intro"), [
+        "Course examples show the payoff in ordinary settings:",
+        "The output is grounded by these course examples:",
+        "The payoff appears in the course this way:",
+        "The course examples keep the output concrete:",
+        "The conclusion earns its meaning through these examples:",
+    ])
+    failure_intro = varied((fid, "family-contract-failure-intro"), [
+        "The main failure mode is:",
+        "The contract breaks at this point:",
+        "The unsafe version of the family is:",
+        "The failure boundary is:",
+        "The method stops working when this happens:",
+    ])
+    new_contract["input"] = (
+        f"{contract['input']} {input_intro} {depth['human_problem']} "
+        f"{input_close}"
+    )
+    new_contract["action"] = (
+        f"{contract['action']} {action_intro} {depth['first_principles']} "
+        f"{action_close}"
+    )
+    new_contract["evidence"] = (
+        f"{contract['evidence']} {evidence_intro} {depth['how_it_works']} "
+        f"{evidence_close}"
+    )
+    new_contract["output"] = (
+        f"{contract['output']} {output_intro} {depth['course_examples']} "
+        f"{output_close}"
+    )
+    new_contract["failure_test"] = (
+        f"{contract['failure_test']} {failure_intro} {depth['failure_mode']} "
+        f"{failure_close}"
+    )
+    return new_contract
+
+
+def build_family_playbook(family, playbook):
+    new_playbook = dict(playbook)
+    depth = family["depth"]
+    fid = family["id"]
+    title = family["title"]
+    setup_close = varied((fid, "family-playbook-setup-close"), [
+        "That setup gives the reader the object and the reason for using this method before any formal move begins.",
+        "The setup is complete only when the reader knows what must be preserved while the method runs.",
+        "This opening keeps the family from sounding like a recipe detached from the problem.",
+        "The reader can now tell why this proof family is needed instead of another one.",
+        "A usable setup names the situation, the danger, and the detail that must not be lost.",
+    ])
+    move_close = varied((fid, "family-playbook-move-close"), [
+        "The move has to be described in everyday words so a reader can check each step against the contract.",
+        "That makes the method teachable: the reader can see what changes, what stays fixed, and why the change is legal.",
+        "The move exposes the permission rule rather than hiding it inside technical shorthand.",
+        "This turns the method into a sequence of checks a reader can repeat on a new problem.",
+        "The action matters because it protects the question while making the evidence easier to see.",
+    ])
+    payoff_close = varied((fid, "family-playbook-payoff-close"), [
+        "The payoff is the reason topology matters here: a controlled shape, count, route, or model can force a conclusion before every detail is solved.",
+        "That payoff also explains the outside use, where a model or diagram has to support a claim without pretending to solve everything.",
+        "The reader leaves knowing what kind of conclusion this family can force and what it cannot supply.",
+        "This is the practical value of the method: it turns a hard situation into a bounded, checkable claim.",
+        "The payoff stays honest because it names the exact evidence doing the work.",
+    ])
+    failure_close = varied((fid, "family-playbook-failure-close"), [
+        "A good playbook includes this failure because it is the fastest way to spot a false transfer.",
+        "The failure test tells the reader when a similar-looking problem has left the family behind.",
+        "That warning is what keeps the method useful outside topology without making it too broad.",
+        "The reader needs this stopping point before carrying the method into a physical, engineering, or modeling setting.",
+        "The failure is not an afterthought; it is the boundary that makes the successful use trustworthy.",
+    ])
+    reader_close = varied((fid, "family-playbook-reader-close"), [
+        "A complete answer then names the object, legal move, protected evidence, conclusion, and failure limit in plain language.",
+        "The test passes only when the reader can rebuild the method without leaning on the family title.",
+        "The answer shows why the method matters in this course and how the same habit can transfer carefully elsewhere.",
+        "The reader test is meant to prove understanding by making the whole contract visible.",
+        "The field stays useful when it asks for the method's working parts, not only its name.",
+    ])
+    setup_intro = varied((fid, "family-playbook-setup-intro"), [
+        "The setup begins from this human problem:",
+        "Start the setup from the ordinary difficulty:",
+        "The first setup question is:",
+        "The practical reason for the setup is:",
+        "The setup has to expose this problem:",
+    ])
+    move_intro = varied((fid, "family-playbook-move-intro"), [
+        "Use the method through this first-principles rule:",
+        "Run the move through this plain rule:",
+        "The action is governed by this first-principles account:",
+        "The method's move starts from this rule:",
+        "The legal work follows this principle:",
+    ])
+    payoff_intro = varied((fid, "family-playbook-payoff-intro"), [
+        "The course shows the payoff here:",
+        "The payoff becomes visible in these course examples:",
+        "The lectures show why the payoff matters:",
+        "The course examples make the payoff concrete:",
+        "The method earns its payoff through these examples:",
+    ])
+    failure_intro = varied((fid, "family-playbook-failure-intro"), [
+        "The common failure is:",
+        "The method breaks in this way:",
+        "The main false move is:",
+        "The failure boundary is:",
+        "The unsafe version looks like this:",
+    ])
+    reader_intro = varied((fid, "family-playbook-reader-intro"), [
+        "Also explain how the method works:",
+        "The reader test also needs the working mechanism:",
+        "Complete the test by naming the mechanism:",
+        "The answer has to include this account of the method:",
+        "The final check is how the method works:",
+    ])
+    new_playbook["setup"] = (
+        f"{playbook['setup']} {setup_intro} {depth['human_problem']} "
+        f"{setup_close}"
+    )
+    new_playbook["move"] = (
+        f"{playbook['move']} {move_intro} {depth['first_principles']} "
+        f"{move_close}"
+    )
+    new_playbook["payoff"] = (
+        f"{playbook['payoff']} {payoff_intro} {depth['course_examples']} "
+        f"{payoff_close}"
+    )
+    new_playbook["failure"] = (
+        f"{playbook['failure']} {failure_intro} {depth['failure_mode']} "
+        f"{failure_close}"
+    )
+    new_playbook["reader_test"] = (
+        f"{playbook['reader_test']} {reader_intro} {depth['how_it_works']} "
+        f"{reader_close}"
+    )
+    return new_playbook
+
+
 MATH_WHY = {
     "big_picture": "The mathematical heart of the course is the search for facts that survive honest change. Exact length, exact angle, and exact placement often change too easily for the question being asked. Tokieda's course asks for a better handle: a gluing rule, boundary order, hole, signed meeting, fixed point, state-space path, or total index. Those handles let a person prove something when direct measurement or direct solving is the wrong tool. This matters because many real problems are too large, too moving, or too constrained to solve by drawing every detail. Topology asks which detail still matters after the harmless details have moved away.",
     "first_principles": "Start with an object or motion that is too complicated to inspect directly. Name the object before naming the technique: a strip is a strip with an end-gluing rule, a map is a rule from one space back into that same space, and a mechanism is a space of allowed states. Then decide which changes leave the real question unchanged. Move the object only under that contract, track the feature that did not change, and let the simplified picture answer the original question. The first-principles habit is ordinary: say what thing is being studied, what freedom it has, what it is forbidden to do, and what fact remains after the allowed change.",
@@ -8541,8 +8737,8 @@ def main():
         enriched = dict(family)
         enriched["depth"] = FAMILY_DEPTH[family["id"]]
         enriched["essay"] = FAMILY_ESSAYS[family["id"]]
-        enriched["contract"] = FAMILY_CONTRACTS[family["id"]]
-        enriched["playbook"] = FAMILY_PLAYBOOKS[family["id"]]
+        enriched["contract"] = build_family_contract(enriched, FAMILY_CONTRACTS[family["id"]])
+        enriched["playbook"] = build_family_playbook(enriched, FAMILY_PLAYBOOKS[family["id"]])
         enriched["application"] = build_family_application(enriched)
         enriched["first_principles_essay"] = build_family_first_principles_essay(enriched)
         enriched["answer_guide"] = build_family_answer_guide(enriched)
@@ -8706,7 +8902,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reconstruction_words']} lecture reconstruction words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_plain_words']} theme plain-summary words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_plain_words']} subtheme plain-summary words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_purpose_words']} method-family purpose words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reconstruction step to clear 30 words, every lecture reconstruction start, self-check, common-failure, and source-check field to clear 70 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 85 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 85 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 60 words, every source-nuance repair field to clear 70 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 35 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 40 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 40 words, every concept anchor field to clear 40 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 30 words, every theme plain summary to clear 55 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 90 words, every theme application field to clear 65 words, every theme answer-guide field to clear 40 words, every subtheme plain summary to clear 50 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 90 words, every subtheme bridge field to clear 90 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family purpose summary to clear 60 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, every method-family application field to clear 80 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reconstruction_words']} lecture reconstruction words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_plain_words']} theme plain-summary words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_plain_words']} subtheme plain-summary words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_purpose_words']} method-family purpose words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reconstruction step to clear 30 words, every lecture reconstruction start, self-check, common-failure, and source-check field to clear 70 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 85 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 85 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 60 words, every source-nuance repair field to clear 70 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 35 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 40 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 40 words, every concept anchor field to clear 40 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 30 words, every theme plain summary to clear 55 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 90 words, every theme application field to clear 65 words, every theme answer-guide field to clear 40 words, every subtheme plain summary to clear 50 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 90 words, every subtheme bridge field to clear 90 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family purpose summary to clear 60 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 100 words, every method-playbook field to clear 100 words, every method-family application field to clear 80 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")
