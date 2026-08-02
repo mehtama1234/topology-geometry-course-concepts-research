@@ -325,7 +325,7 @@ def main():
                 fail(f"lecture {lecture['lecture']} caption nuance {field} too thin")
         walkthrough = deep.get("walkthrough") or {}
         for field in ["start_here", "payoff", "reader_check"]:
-            if len(words(walkthrough.get(field))) < 35:
+            if len(words(walkthrough.get(field))) < 40:
                 fail(f"lecture {lecture['lecture']} walkthrough {field} too thin")
         reader_test = deep.get("reader_test") or {}
         for field in ["explain_object", "test_allowed_move", "protect_conclusion"]:

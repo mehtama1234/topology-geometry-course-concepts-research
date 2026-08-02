@@ -244,8 +244,8 @@
       },
       "walkthrough": {
         "start_here": "Start with curves in a disk and boundary points that are not free to wander. The curves may look messy, but the proof does not care about their exact wiggles. It cares about whether the curves can be redrawn under legal motion while the endpoints and no-crossing rule stay fixed.",
-        "payoff": "A picture can be simplified without losing its force only when the question is protected during the motion. This is the first time the course turns visual cleanup into proof rather than a preference for a neater drawing.",
-        "reader_check": "Before accepting any deformation argument, ask what stayed fixed. Were endpoints preserved? Were forbidden crossings avoided? Was a boundary condition quietly changed? If the answer is not explicit, the drawing may have changed the problem instead of solving it."
+        "payoff": "A picture can be simplified without losing its force only when the question is protected during the motion. This is the first time the course turns visual cleanup into proof rather than a preference for a neater drawing, because the legal path from messy to simple carries the evidence.",
+        "reader_check": "Before accepting any deformation argument, ask what stayed fixed. Were endpoints preserved? Were forbidden crossings avoided? Was a boundary condition quietly changed? If the answer is not explicit, the drawing may have changed the problem instead of solving it. The check should mention the rule, not only the final picture."
       },
       "caption_nuance": {
         "terms": [
@@ -1222,8 +1222,8 @@
       },
       "walkthrough": {
         "start_here": "Start with a rule that sends each input somewhere. The equation for a fixed point can look invisible because it lives inside the rule. The lecture makes it visible by drawing the graph of the rule and comparing it with the diagonal, the set of input-output pairs where both entries agree.",
-        "payoff": "A fixed point becomes an intersection problem, so earlier ideas about clean meetings and protected counts become relevant. One middle caption is missing, so the source caveat stays visible while the graph-diagonal conversion remains the reliable spine.",
-        "reader_check": "Ask what point in the graph means and what point on the diagonal means. Their meeting is not a loose picture for self-agreement; it is exactly the statement that the rule sends some input back to itself."
+        "payoff": "A fixed point becomes an intersection problem, so earlier ideas about clean meetings and protected counts become relevant. One middle caption is missing, so the source caveat stays visible while the graph-diagonal conversion remains the reliable spine. The safe claim is the translation from self-agreement to meeting.",
+        "reader_check": "Ask what point in the graph means and what point on the diagonal means. Their meeting is not a loose picture for self-agreement; it is exactly the statement that the rule sends some input back to itself. If that translation is unclear, the fixed-point claim has no visible evidence."
       },
       "caption_nuance": {
         "terms": [
@@ -1643,7 +1643,7 @@
       "walkthrough": {
         "start_here": "Start by isolating the defects of a vector field. Each defect has nearby arrows circling it in some pattern, and that pattern receives a signed index. The lecture then asks what happens when all those local signed counts are added over the whole surface.",
         "payoff": "Local dynamics becomes global bookkeeping. Individual defects can move, split, or cancel under controlled changes, but the total signed index is not free. It is constrained by the surface that carries the arrows, so every defect has to be counted inside one whole-surface account.",
-        "reader_check": "Ask whether the defects are isolated and whether the total, not one favorite defect, is being counted. If the argument focuses only on a single equilibrium, it has missed the whole-surface nature of the theorem being prepared."
+        "reader_check": "Ask whether the defects are isolated and whether the total, not one favorite defect, is being counted. If the argument focuses only on a single equilibrium, it has missed the whole-surface nature of the theorem being prepared. Name the carrier surface and every defect entering the sum."
       },
       "caption_nuance": {
         "terms": [
@@ -1780,7 +1780,7 @@
       "walkthrough": {
         "start_here": "Start with Poincare-Hopf as a balance sheet. On one side are all the local indices of isolated vector-field defects. On the other side is Euler characteristic, a number belonging to the surface. The theorem says these two accounts must match.",
         "payoff": "Topology can predict something about motion before the differential equation is solved. A sphere demands a different total defect from a torus. The hairy-ball idea is a visible case, but the deeper point is the enforced equality between local failures and whole-surface shape.",
-        "reader_check": "Ask what surface carries the field and whether every defect has been included in the sum. Poincare-Hopf is not about admiring one dramatic singularity. It is about the total account forced by the complete surface."
+        "reader_check": "Ask what surface carries the field and whether every defect has been included in the sum. Poincare-Hopf is not about admiring one dramatic singularity. It is about the total account forced by the complete surface. The check should include both ledgers: local indices and Euler characteristic."
       },
       "caption_nuance": {
         "terms": [
@@ -2064,7 +2064,7 @@
       "walkthrough": {
         "start_here": "Start by reading the final lecture as a map of habits, not a list of topics. The same pattern has appeared repeatedly: build the right object, specify legal motion, identify protected evidence, and use that evidence to force a conclusion that the original picture hid.",
         "payoff": "The course leaves the reader with a portable way to think. Mobius strips, surface classification, intersections, fixed points, vector fields, and applications are different settings for the same discipline. Pictorial thinking is deep here because the pictures carry rules and preserved facts.",
-        "reader_check": "For any page in the companion, ask four questions: what object was made, what move was legal, what fact survived, and what conclusion became forced? If a page cannot answer those, it is not yet at the course's standard."
+        "reader_check": "For any page in the companion, ask four questions: what object was made, what move was legal, what fact survived, and what conclusion became forced? If a page cannot answer those, it is not yet at the course's standard. The same test should work on a paper strip, a surface, a map, or a motion model."
       },
       "caption_nuance": {
         "terms": [
