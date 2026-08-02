@@ -236,7 +236,7 @@ def build_source_readers(rows):
             "The reader problem has to be stated before the source name becomes useful, because the source can help only with a particular kind of question.",
             "This keeps the citation tied to a need in the course instead of letting authority replace explanation.",
             "A plain problem sentence says what confusion, missing evidence, or formal background the source is meant to address.",
-            "The source is useful only after the reader knows whether it supports course identity, historical background, theorem family, or lecture-specific evidence.",
+            "The source can be used only after the reader knows whether it supports course identity, historical background, theorem family, or lecture-specific evidence.",
             "This is the first check against overclaiming: name the problem the source solves, then stop before stronger claims.",
             "The course page stays readable when the source is introduced as help for a concrete object, move, or evidence boundary.",
             "In everyday terms, the source has a job; it is not a badge attached to the page.",
@@ -423,7 +423,7 @@ TERM_TRANSLATIONS = [
     },
     {
         "term": "Invariant",
-        "everyday_sentence": "An invariant is a fact chosen because it stays the same while the allowed changes in this problem are made. It is useful only after the allowed changes have been named and the survival of the fact has been checked.",
+        "everyday_sentence": "An invariant is a fact chosen because it stays the same while the allowed changes in this problem are made. It has force only after the allowed changes have been named and the survival of the fact has been checked.",
         "job_in_argument": "Its job is to give the proof a receipt. If the invariant differs between two situations, no chain of legal moves can connect them; if it survives every legal move, it can carry the conclusion across a simplified picture.",
         "not_a_definition": "It is not a complete description of the object. It is a deliberately chosen fact that survives the moves relevant to one question. The same object can have many facts, but only the ones that survive the legal moves can carry this argument.",
         "failure_if_misread": "If a reader treats any stable-looking number as an invariant, they may use a count that changes under a legal redraw and then trust evidence that has already leaked away. The survival check is what turns a number into proof evidence.",
@@ -561,7 +561,7 @@ def build_term_translations(rows):
             "This keeps the term from becoming a password: the reader can say what is present, what changes, and what has to stay true.",
             "The plain version matters because the course uses words as names for actions, not as substitutes for actions.",
             "A reader who has never studied the subject still needs to know what the term lets the proof inspect.",
-            "The term becomes useful only after it points to a thing the reader can move, count, compare, glue, or test.",
+            "The term can carry the claim only after it points to a thing the reader can move, count, compare, glue, or test.",
             "This is the first check against jargon: remove the term, and the sentence still has to explain the work.",
             "The plain meaning also prepares applications, because another field needs its own object and rule before borrowing the word.",
             "The course reading rule is to make the ordinary job visible first, then let the formal name shorten later sentences.",
@@ -953,7 +953,7 @@ def build_concept_contrasts(rows):
             "The repair starts by naming the object each side studies before deciding whether the same sentence can use both words.",
             "A plain contrast tells the reader what would be checked differently if the left term were replaced by the right term.",
             "This prevents a broad course summary from hiding the exact job that makes the argument work.",
-            "The contrast is useful only when it changes how the reader audits a real example.",
+            "The contrast earns its place only when it changes how the reader audits a real example.",
             "The everyday test is to remove both formal names and ask what action, count, rule, or source boundary remains.",
             "This is where simple language has to become exact: the two sides may be related, but they do not carry the same claim.",
             "The mistake often appears in applications when a borrowed course word is used without rebuilding the matching object and rule.",
@@ -1474,7 +1474,7 @@ def build_transfer_lab_cases(rows):
             f"{row['protected_fact']} {protected_close} The protected-fact check asks which detail can still support the conclusion after harmless changes have been made."
         )
         new_row["course_bridge"] = (
-            f"{row['course_bridge']} {bridge_close} The bridge is useful only when the outside case repeats the same kind of reasoning job, not merely the same word."
+            f"{row['course_bridge']} {bridge_close} The bridge works only when the outside case repeats the same kind of reasoning job, not merely the same word."
         )
         new_row["wrong_transfer"] = (
             f"{row['wrong_transfer']} {wrong_close} The wrong-transfer check asks which condition was skipped and what weaker sentence remains true after that condition is restored."
@@ -1600,7 +1600,7 @@ def build_repair_clinic_cases(rows):
         ])
         strong_close = varied((title, "repair-clinic-strong-close"), [
             f"The related concepts are {concept_text}, but the strong version has to make their jobs plain before using their names.",
-            f"The concepts {concept_text} become useful only after the sentence says what each one helps inspect.",
+            f"The concepts {concept_text} can be used only after the sentence says what each one helps inspect.",
             f"The course link to {concept_text} is safe because the repaired claim now names the evidence it depends on.",
             f"Use {concept_text} as a map of the repair, not as proof that the repaired claim is automatically true.",
             f"The strong version can now travel to another field only if that field rebuilds the same object, move, and evidence.",
@@ -4081,7 +4081,7 @@ FAMILIES = [
         "id": "counting-family",
         "title": "Surviving-count arguments",
         "purpose": "Build a number, sign total, or parity check that ignores harmless local changes but keeps the obstruction that every legal version of the picture must still obey. The everyday problem is that raw counts change whenever the drawing is cleaned up, so the course has to design a count where fake changes cancel and the forced information remains visible. The count earns trust only after that cancellation is explained.",
-        "first_principles": "This family turns shape into accounting. It counts pieces, holes, crossings, turns, or defects in a way that cancels fake changes and keeps the real obstruction. The count is useful only after the allowed local changes have been tested against it.",
+        "first_principles": "This family turns shape into accounting. It counts pieces, holes, crossings, turns, or defects in a way that cancels fake changes and keeps the real obstruction. The count has force only after the allowed local changes have been tested against it.",
         "concepts": ["euler-characteristic", "triangulation", "winding-linking", "parity", "intersection-number", "poincare-hopf"],
     },
     {
@@ -4292,7 +4292,7 @@ def build_family_contract(family, contract):
     ])
     output_close = varied((fid, "family-contract-output-close"), [
         "The output matters beyond the course when the same kind of protected evidence can limit a model, route, mechanism, or drawing.",
-        "That conclusion is useful only inside the contract that produced it, so the reader must know exactly what has been proved.",
+        "That conclusion holds only inside the contract that produced it, so the reader must know exactly what has been proved.",
         "The method gives a controlled answer, not every answer a person might want from the situation.",
         "This is how the family turns first-principles checking into a concrete payoff.",
         "The conclusion stays narrow enough that the input, action, and evidence still justify it.",
@@ -6144,7 +6144,7 @@ def build_lecture_reader_test(lecture, spine_row):
         "Treat the picture as a record of rules and data, and say which part of that record later becomes evidence.",
         "Separate the object from the chalk drawing used to show it, then translate the drawing back into the object, rule, or state being studied.",
         "Read the picture as instructions plus evidence, not as the object itself, and say what instruction a later proof must preserve.",
-        "The drawing is useful only after its rule, route, field, or state meaning is named and tied to the lecture's concrete example.",
+        "The drawing can support a claim only after its rule, route, field, or state meaning is named and tied to the lecture's concrete example.",
         "Keep the visual aid from replacing the mathematical carrier, and make the carrier concrete enough that its allowed moves can be checked.",
     ])
     move_close = varied((number, "reader-move-close"), [
@@ -6170,7 +6170,7 @@ def build_lecture_reader_test(lecture, spine_row):
     move_guard = varied((number, "reader-move-guard"), [
         "The move must stay tied to the original lecture problem, so the reader can tell what was changed and what was protected.",
         "Without that check, the cleaner picture may answer a different question while looking like progress on the original one.",
-        "The move is useful only because the watched data remain in place and can still support the same conclusion afterward.",
+        "The move works only because the watched data remain in place and can still support the same conclusion afterward.",
         "This is where a visual simplification becomes a mathematical argument: the legal move carries the question instead of replacing it.",
         "The permission for the move is part of the proof, not a side note, because it decides whether the conclusion still belongs to the starting object.",
         "The original question survives only if this rule survives every step and the proof can point to that survival explicitly.",
@@ -7231,7 +7231,7 @@ def build_lecture_reconstruction_drills(lectures, lecture_source_bridges):
             f"The citation is doing honest work for \"{title}\" only after this check:",
             f"Strengthen \"{title}\" only after this source boundary is visible:",
             f"To keep \"{title}\" from overclaiming, start with this source test:",
-            f"The source trail for \"{title}\" stays useful only if this limit is named:",
+            f"The source trail stays trustworthy for \"{title}\" only if this limit is named:",
         ])
         rebuild_step_additions = [
             f"This first step keeps the discussion attached to the actual object of the lecture: {spine['object']}",
@@ -7417,7 +7417,7 @@ def build_concept_workup(concept):
         f"This is the plain evidence test: after the picture is changed, what fact is still true? If the answer is unclear, the concept has not explained anything yet. If the fact is clear, it can carry the idea into other fields.",
         f"The course keeps this separate from the move because the move alone proves nothing. The protected fact is what lets a simpler picture speak for the original one, the way a preserved constraint or measurement can speak for a larger practical system.",
         f"This field names what the concept can use after the drawing, formula, or source has been simplified. A protected detail remains. That remaining thing is what blocks false answers, supports correct ones, and lets the same reasoning travel to other settings.",
-        f"In first-principles terms, the protected fact is the part that the argument refuses to lose. That refusal is central in topology and also in applications, where changing a model is useful only if the needed evidence survives the change.",
+        f"In first-principles terms, the protected fact is the part that the argument refuses to lose. That refusal is central in topology and also in applications, where changing a model is allowed only if the needed evidence survives the change.",
         f"This is the evidence a reader can check without trusting the label alone. It says what survives and why survival matters. That makes the concept useful for topology problems and for outside problems where a stable feature guides a decision.",
         f"The protected fact is the payoff of being careful. Once it is named, the reader can see what the concept can prove and what it cannot prove. That boundary is what keeps applications honest in other subjects too.",
         f"Protected habit for {title}: if you rearrange a problem, keep track of the fact that still matters, because the habit itself belongs anywhere people simplify without wanting to lose truth.",
@@ -7602,7 +7602,7 @@ def build_concept_first_principles_essay(concept):
         "object_on_page": (
             f"The object comes next. For {title}, the reader has to know what is being watched, moved, counted, compared, glued, or modeled. "
             f"The concept page states the object as: {work['object']} The course anchor makes that object visible here: {anchor['course_moment']} "
-            f"This keeps the explanation from floating above the mathematics. A term is useful only after the reader can point to the thing that carries the question. {object_close}"
+            f"This keeps the explanation from floating above the mathematics. A term can carry the claim only after the reader can point to the thing that carries the question. {object_close}"
         ),
         "allowed_change": (
             f"After the object is visible, the explanation has to name the allowed change. For {title}, the action is: {work['operation']} "
@@ -7970,7 +7970,7 @@ def build_theme_answer_guide(theme):
 
 SUBTHEME_APPLICATION_CONTEXTS = {
     "allowed-moves": {
-        "outside_setting": "In robot motion, a path is useful only if the arm never passes through a wall or asks a joint to bend past its limit. In a drawn map, a reroute is honest only if roads, rivers, and forbidden zones keep the same role. In a material test, a proposed deformation is meaningful only if it respects the cuts, seams, clamps, or fixed edges in the actual object.",
+        "outside_setting": "In robot motion, a path is allowed only if the arm never passes through a wall or asks a joint to bend past its limit. In a drawn map, a reroute is honest only if roads, rivers, and forbidden zones keep the same role. In a material test, a proposed deformation is meaningful only if it respects the cuts, seams, clamps, or fixed edges in the actual object.",
         "where": "robot planning, route design, folding problems, and material deformation checks where a clean final position can be reached only through legal intermediate positions",
         "limit": "It cannot approve a result after the fact. The whole path has to obey the rule, not only the starting and ending pictures.",
     },
@@ -8200,7 +8200,7 @@ def build_theme_first_principles_essay(theme):
         ),
         "allowed_change": (
             f"The allowed change for {title} is the course-wide shift named by the theme lens: {lens['changes_problem']} "
-            f"That shift matters because a theme is useful only when it changes what the reader pays attention to without changing the mathematical question. It tells which visual details may move, which account may be redesigned, or which model may replace the original situation. {allowed_close}"
+            f"That shift matters because a theme works only when it changes what the reader pays attention to without changing the mathematical question. It tells which visual details may move, which account may be redesigned, or which model may replace the original situation. {allowed_close}"
         ),
         "protected_fact": (
             f"The protected fact is the thing the theme trains the reader to notice. For {title}, the lens says it notices: {lens['notices']} "
@@ -8387,7 +8387,7 @@ def build_subtheme_answer_guide(subtheme):
         f"The question should leave behind a checkable condition, not a slogan about the topic.",
     ])
     use_close = varied((sid, "use-close"), [
-        f"{title} is useful only when the explanation names the specific problem it helps solve.",
+        f"{title} works only when the explanation names the specific problem it helps solve.",
         f"The account has to say what the routine now rules out, forces, preserves, or turns into a model.",
         f"If nothing in the argument changes, the subtheme has only renamed the page.",
         f"{title} matters when it turns the live claim into a condition someone can inspect.",
@@ -8640,7 +8640,7 @@ def build_family_application(family):
         "A reader can test the transfer by naming the thing being changed, counted, placed, or modeled before the method name appears.",
         "This keeps the outside problem concrete: what is hard to inspect directly, what must remain fixed, and what kind of answer is needed.",
         "The outside setting may be physical, computational, visual, or design-based, but the first step is still to name the object carrying the constraint.",
-        "The method becomes useful only after the outside problem says what would count as the same situation and what would count as a different one.",
+        "The method can be used only after the outside problem says what would count as the same situation and what would count as a different one.",
         "That ordinary setup protects the page from making a broad analogy where the evidence has not been rebuilt.",
     ])
     transfer_close = varied((fid, "family-application-transfer-close"), [
@@ -8742,7 +8742,7 @@ def build_family_first_principles_essay(family):
     return {
         "ordinary_problem": (
             f"The ordinary problem behind {title} is that a reader can recognize a proof style by name and still not know what work it is doing. "
-            f"The human problem is: {depth['human_problem']} A method family is useful only when it names the repeated need, the kind of situation it accepts, and the reason that situation cannot be handled by a loose topic label. {ordinary_close}"
+            f"The human problem is: {depth['human_problem']} A method family works only when it names the repeated need, the kind of situation it accepts, and the reason that situation cannot be handled by a loose topic label. {ordinary_close}"
         ),
         "object_on_page": (
             f"The object for {title} is the input named by the method contract: {contract['input']} "

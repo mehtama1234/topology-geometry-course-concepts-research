@@ -51,6 +51,7 @@ FORBIDDEN = [
     "the method matters",
     "why the method matters",
     "useful because",
+    "useful only",
 ]
 
 

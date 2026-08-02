@@ -23,12 +23,12 @@
     },
     {
       "requirement": "Lecture-to-source bridge",
-      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 7552 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
+      "evidence": "15 lecture-source bridges explain how a concrete course demonstration connects to a wider source family without pretending the lecture cited that source word for word. The bridge layer has 7555 words across demonstration, mathematical bridge, source extension, overread warning, and reader-question fields.",
       "status": "met"
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 5144 reader-test words, 10673 lecture-application words, and 6136 answer-guide words turn lecture understanding into an auditable task.",
+      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 5146 reader-test words, 10673 lecture-application words, and 6136 answer-guide words turn lecture understanding into an auditable task.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40675 first-principles essay words; theme and subtheme pages add 30419 first-principles essay words and 12149 application words. Method-family pages add 10376 first-principles essay words and 4207 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21653 words, and concept applications add 20734 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40723 first-principles essay words; theme and subtheme pages add 30413 first-principles essay words and 12149 application words. Method-family pages add 10371 first-principles essay words and 4207 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21649 words, and concept applications add 20734 words.",
       "status": "met"
     },
     {
@@ -98,12 +98,12 @@
     },
     {
       "requirement": "First-principles transfer lab",
-      "evidence": "8 transfer cases ask the reader to move the course reading rule into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 4208 transfer words test whether the mathematics has become a usable way to think.",
+      "evidence": "8 transfer cases ask the reader to move the course reading rule into everyday situations by naming the object, allowed move, protected fact, wrong transfer, and reader task. The 4200 transfer words test whether the mathematics has become a usable way to think.",
       "status": "met"
     },
     {
       "requirement": "Explanation repair clinic",
-      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 3513 repair-clinic words make the no-filler standard concrete.",
+      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 3514 repair-clinic words make the no-filler standard concrete.",
       "status": "met"
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "requirement": "Concept contrast reading",
-      "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 4451 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
+      "evidence": "10 contrast pairs separate neighboring ideas that readers often blur. The 4455 words name the confusion, the left job, the right job, the bridge between them, and the failure test that catches a merged explanation.",
       "status": "met"
     },
     {
@@ -158,7 +158,7 @@
     },
     {
       "requirement": "Plain-language term translation",
-      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 5993 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
+      "evidence": "16 formal course words are translated into everyday sentences only after their job in an argument is named. The 5999 term-translation words include non-definition warnings, failure conditions, reader questions, and concept links so vocabulary does not replace understanding.",
       "status": "met"
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "requirement": "First-principles paper and source reading",
-      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 3470 source-reader words keep paper reading tied to first-principles course questions.",
+      "evidence": "7 source-reader entries explain what problem each source helps with, what object to watch, how it bridges to the course, and what would overread it. The 3472 source-reader words keep paper reading tied to first-principles course questions.",
       "status": "met"
     },
     {
@@ -195,24 +195,24 @@
     "lecture_caption_nuance_words": 4462,
     "lecture_source_faithfulness_words": 2477,
     "lecture_application_bridge_words": 10673,
-    "lecture_source_bridge_words": 7552,
+    "lecture_source_bridge_words": 7555,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
     "lecture_reconstruction_words": 14084,
     "math_why_words": 628,
     "source_nuance_repairs": 15,
     "source_nuance_repair_words": 6424,
-    "lecture_reader_test_words": 5144,
+    "lecture_reader_test_words": 5146,
     "lecture_answer_guide_words": 6136,
     "concept_essay_words": 7895,
-    "concept_first_principles_essay_words": 40675,
+    "concept_first_principles_essay_words": 40723,
     "concept_workup_words": 10524,
     "concept_anchor_words": 7088,
     "concept_application_words": 20734,
     "concept_self_check_words": 20673,
     "theme_plain_words": 875,
     "theme_essay_words": 1963,
-    "theme_first_principles_essay_words": 9233,
+    "theme_first_principles_essay_words": 9227,
     "theme_lens_words": 2656,
     "theme_application_words": 3586,
     "theme_answer_guide_words": 4635,
@@ -222,10 +222,10 @@
     "subtheme_routine_words": 5184,
     "subtheme_bridge_words": 3392,
     "subtheme_application_words": 8563,
-    "subtheme_answer_guide_words": 10560,
+    "subtheme_answer_guide_words": 10556,
     "family_purpose_words": 326,
     "family_essay_words": 1634,
-    "family_first_principles_essay_words": 10376,
+    "family_first_principles_essay_words": 10371,
     "family_contract_words": 3075,
     "family_playbook_words": 3031,
     "family_application_words": 4207,
@@ -236,9 +236,9 @@
     "application_spine_rows": 6,
     "application_spine_words": 2224,
     "transfer_lab_cases": 8,
-    "transfer_lab_words": 4208,
+    "transfer_lab_words": 4200,
     "repair_clinic_cases": 8,
-    "repair_clinic_words": 3513,
+    "repair_clinic_words": 3514,
     "oral_exam_prompts": 7,
     "oral_exam_words": 3167,
     "change_ledger_rows": 10,
@@ -254,12 +254,12 @@
     "theorem_use_contracts": 8,
     "theorem_contract_words": 5587,
     "concept_contrasts": 10,
-    "concept_contrast_words": 4451,
+    "concept_contrast_words": 4455,
     "reader_checks": 11,
     "term_translations": 16,
-    "term_translation_words": 5993,
+    "term_translation_words": 5999,
     "source_readers": 7,
-    "source_reader_words": 3470,
+    "source_reader_words": 3472,
     "paper_family_ledger_rows": 7,
     "paper_family_ledger_words": 2169,
     "references": 7,
