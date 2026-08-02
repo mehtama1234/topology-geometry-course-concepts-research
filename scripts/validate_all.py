@@ -208,8 +208,10 @@ def main():
 
     for family in data["families"]:
         depth = family.get("depth") or {}
+        if len(words(family.get("purpose"))) < 25:
+            fail(f"family {family['id']} purpose too thin")
         for field in ["human_problem", "first_principles", "how_it_works", "course_examples", "failure_mode"]:
-            if len(words(depth.get(field))) < 35:
+            if len(words(depth.get(field))) < 45:
                 fail(f"family {family['id']} depth {field} too thin")
         family_essay_words = sum(len(words(p)) for p in family.get("essay") or [])
         if family_essay_words < 285:
