@@ -301,11 +301,11 @@ def main():
                 fail(f"concept {concept['id']} first-principles essay {field} too thin")
         workup = concept.get("workup") or {}
         for field in ["object", "operation", "protected", "breaks_if"]:
-            if len(words(workup.get(field))) < 40:
+            if len(words(workup.get(field))) < 75:
                 fail(f"concept {concept['id']} workup {field} too thin")
         anchor = concept.get("anchor") or {}
         for field in ["course_moment", "principle", "reader_question"]:
-            if len(words(anchor.get(field))) < 40:
+            if len(words(anchor.get(field))) < 75:
                 fail(f"concept {concept['id']} anchor {field} too thin")
         application = concept.get("application") or {}
         for field in ["outside_problem", "topology_application", "other_fields", "why_it_matters", "honest_limit"]:
