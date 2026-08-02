@@ -25,7 +25,7 @@
       "Check the account on a simple version of the object and explain why the simplification did not change the object being counted.",
       "Use the protected total to force existence or impossibility, while stating what the count does not classify or locate."
     ],
-    "why": "A useful count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because local bookkeeping changes either cancel, arrive in pairs, or preserve a signed total.",
+    "why": "A protected count is designed around its allowed changes. Euler characteristic, parity, intersection number, and index all work because local bookkeeping changes either cancel, arrive in pairs, or preserve a signed total.",
     "failure": "The raw count is often the wrong count. If the proof does not explain what legal event threatens the number and why the chosen account survives it, the number is only a measurement of one drawing.",
     "example": "Signed intersection number counts plus and minus meetings so pairs born during deformation add to zero. Euler characteristic does a similar job for cell refinements by making added pieces cancel in the alternating ledger."
   },
