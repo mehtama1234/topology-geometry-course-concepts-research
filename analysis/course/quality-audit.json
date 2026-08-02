@@ -98,7 +98,7 @@
     },
     {
       "requirement": "Explanation repair clinic",
-      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1637 repair-clinic words make the no-filler standard concrete.",
+      "evidence": "8 repair-clinic cases start with explanations that read smoothly but fail technically, then repair them by naming the missing object, move, protected evidence, or limit. The 1791 repair-clinic words make the no-filler standard concrete.",
       "status": "met"
     },
     {
@@ -218,7 +218,7 @@
     "transfer_lab_cases": 8,
     "transfer_lab_words": 2022,
     "repair_clinic_cases": 8,
-    "repair_clinic_words": 1637,
+    "repair_clinic_words": 1791,
     "oral_exam_prompts": 7,
     "oral_exam_words": 1551,
     "change_ledger_rows": 10,
