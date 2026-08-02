@@ -234,7 +234,7 @@ def main():
 
     for family in data["families"]:
         depth = family.get("depth") or {}
-        if len(words(family.get("purpose"))) < 25:
+        if len(words(family.get("purpose"))) < 60:
             fail(f"family {family['id']} purpose too thin")
         for field in ["human_problem", "first_principles", "how_it_works", "course_examples", "failure_mode"]:
             if len(words(depth.get(field))) < 45:

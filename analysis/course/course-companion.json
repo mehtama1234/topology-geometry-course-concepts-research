@@ -5848,7 +5848,7 @@
     {
       "id": "deformation-family",
       "title": "Deformation arguments",
-      "purpose": "Replace a difficult object by an easier one only after the allowed motion, fixed data, and protected question have been named clearly enough for the reader to audit every step.",
+      "purpose": "Replace a difficult object by an easier one only after the allowed motion, fixed data, and protected question have been named clearly enough for the reader to audit every step. The everyday problem is that a simpler picture is tempting, but it can lie if the route to it cuts, jumps, moves an endpoint, crosses forbidden material, or changes the fact being tested.",
       "first_principles": "This family begins by deciding what moves are legal and what data must stay fixed. Then it moves the picture until the answer is easier to see. The proof lives in the guarantee that the motion did not cut, jump, cross forbidden matter, or change the feature being asked about.",
       "concepts": [
         "generic-position",
@@ -5911,7 +5911,7 @@
     {
       "id": "counting-family",
       "title": "Surviving-count arguments",
-      "purpose": "Build a number, sign total, or parity check that ignores harmless local changes but keeps the obstruction that every legal version of the picture must still obey.",
+      "purpose": "Build a number, sign total, or parity check that ignores harmless local changes but keeps the obstruction that every legal version of the picture must still obey. The everyday problem is that raw counts change whenever the drawing is cleaned up, so the course has to design a count where fake changes cancel and the forced information remains visible. The count earns trust only after that cancellation is explained.",
       "first_principles": "This family turns shape into accounting. It counts pieces, holes, crossings, turns, or defects in a way that cancels fake changes and keeps the real obstruction. The count is useful only after the allowed local changes have been tested against it.",
       "concepts": [
         "euler-characteristic",
@@ -5975,7 +5975,7 @@
     {
       "id": "surface-family",
       "title": "Surface bookkeeping",
-      "purpose": "Connect small patches, boundary behavior, holes, handles, side choices, and gluing rules to conclusions that belong to the completed surface rather than one local drawing.",
+      "purpose": "Connect small patches, boundary behavior, holes, handles, side choices, and gluing rules to conclusions that belong to the completed surface rather than one local drawing. The everyday problem is that each patch may look ordinary by itself, while the whole surface still forces a count, side reversal, boundary term, or defect that appears only after all pieces are joined. The full surface is the evidence carrier.",
       "first_principles": "This family treats a surface as a connected ledger. Local behavior can be drawn patch by patch, but the patches must agree when glued back together. The whole surface may force a count, side reversal, boundary term, or defect that no single patch reveals by itself.",
       "concepts": [
         "boundary-orientation",
@@ -6040,7 +6040,7 @@
     {
       "id": "embedding-family",
       "title": "Drawing and embedding arguments",
-      "purpose": "Ask whether required connections, loops, or strands can live in the chosen surrounding space without forbidden crossings, lost over-under data, or illegal pass-through moves.",
+      "purpose": "Ask whether required connections, loops, or strands can live in the chosen surrounding space without forbidden crossings, lost over-under data, or illegal pass-through moves. The everyday problem is not whether a drawing looks crowded, but whether the surrounding space gives enough legal room for every required route while preserving the data the problem says cannot change. The room rule decides the claim.",
       "first_principles": "This family studies room. A page, sphere, torus, or other surface gives routes and limitations. The answer may be decided before a perfect drawing is found, because the real issue is whether every legal placement faces the same route constraint.",
       "concepts": [
         "graph-planarity",
@@ -6104,7 +6104,7 @@
     {
       "id": "motion-family",
       "title": "Motion through possible states",
-      "purpose": "Turn mechanical or physical questions into questions about complete states, legal paths, forbidden regions, fixed points, equilibria, and barriers in the space of all possibilities.",
+      "purpose": "Turn mechanical or physical questions into questions about complete states, legal paths, forbidden regions, fixed points, equilibria, and barriers in the space of all possibilities. The everyday problem is that watching one motion can hide the real constraint, while the state space can show blocked routes, forced special states, or missing escapes before exact equations are solved. The model must record every needed freedom.",
       "first_principles": "This family replaces the object in motion with the space of all its possible positions. Holes and walls in that space explain blocked motions, unavoidable coincidences, and forced positions. The translation must record every freedom and every forbidden state, or the topological answer may describe the model instead of the real motion.",
       "concepts": [
         "configuration-space",
@@ -9661,6 +9661,7 @@
       "subtheme_bridge_words": 1287,
       "subtheme_application_words": 4959,
       "subtheme_answer_guide_words": 4698,
+      "family_purpose_words": 326,
       "family_essay_words": 1634,
       "family_first_principles_essay_words": 5670,
       "family_contract_words": 1133,
