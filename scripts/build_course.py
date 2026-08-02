@@ -2004,6 +2004,291 @@ SUBTHEME_BRIDGES = {
 }
 
 
+def build_theme_lens(theme, lens):
+    new_lens = dict(lens)
+    depth = theme["depth"]
+    tid = theme["id"]
+    object_close = varied((tid, "theme-lens-object-close"), [
+        "That gives the reader an object or situation to inspect before the theme becomes a broad claim.",
+        "The reader gets a concrete situation first, so the theme has work to do before any summary arrives.",
+        "This makes the theme answerable on the page instead of leaving it as a title.",
+        "The point is to keep a visible problem in front of the reader before the general lesson is named.",
+        "That opening keeps the habit tied to a task the reader can check.",
+        "The theme becomes easier to trust when the starting problem is visible in ordinary language.",
+    ])
+    ignore_close = varied((tid, "theme-lens-ignore-close"), [
+        "That limit keeps topology from sounding like it rejects measurement.",
+        "This boundary makes clear that measurement matters when the question actually needs it.",
+        "The reader can then see the difference between ignoring noise and ignoring evidence.",
+        "That distinction keeps the theme from flattening geometry into a throwaway detail.",
+        "The ignored feature remains named, so the page does not pretend it never mattered.",
+        "The theme stays honest because it says which detail is outside this claim, not outside mathematics.",
+    ])
+    transfer_close = varied((tid, "theme-lens-transfer-close"), [
+        "The same habit matters in other fields whenever a model, drawing, or measurement changes while the reason must stay traceable.",
+        "Outside topology, this is the check a person uses when a diagram changes but the claim still needs a stable reason.",
+        "The wider use appears when a physical model, engineering drawing, or data picture is changed without losing the evidence it was meant to carry.",
+        "That is the transfer point: a changed representation can still teach only if the protected reason is named.",
+        "The idea travels beyond the course whenever a model must change shape without changing the claim it supports.",
+        "Other fields use the same discipline when they simplify a picture or model and still need to know what survived.",
+    ])
+    failure_close = varied((tid, "theme-lens-failure-close"), [
+        "That check tells the reader when the theme stops helping and when a stronger claim would need more evidence from the object, the move, or the protected fact.",
+        "This is the limit that keeps the theme useful without letting it promise more than it proves from the current diagram, model, count, or surface.",
+        "The reader can use that failure point to reject an attractive but unsupported summary before it turns a helpful theme into a claim with no evidence.",
+        "That final boundary says where the method works and where the page must slow down to name a missing condition, source limit, or model failure.",
+        "The repair starts there whenever the theme is used too broadly and has to be tied back to what the course actually made visible.",
+        "This condition marks the difference between a real proof habit and a loose course summary that never says what would make the argument fail.",
+    ])
+    problem_intro = varied((tid, "theme-lens-problem-intro"), [
+        f"In the theme \"{theme['title']},\" the first plain step is this problem:",
+        f"For \"{theme['title']},\" the reader starts from this ordinary problem:",
+        f"Use \"{theme['title']}\" only after this problem is visible:",
+        f"The plain entry into \"{theme['title']}\" is:",
+        f"Before the theme name helps, the page has to expose this problem:",
+        f"The inspection task behind \"{theme['title']}\" begins here:",
+    ])
+    ignore_intro = varied((tid, "theme-lens-ignore-intro"), [
+        "The ignored details are not worthless; they are set aside only when this habit says they are outside the current question:",
+        "Set-aside details still matter in other questions; here they are outside the job named by this habit:",
+        "The page may leave some details alone only after the habit states why they are not carrying this claim:",
+        "A detail can be ignored here only because the theme has named the work it is trying to protect:",
+        "This lens does not discard measurement; it narrows attention according to the current habit:",
+        "The ignored feature is safe to set aside only inside this rule:",
+    ])
+    arc_intro = varied((tid, "theme-lens-arc-intro"), [
+        "The course arc shows why the change matters in topology:",
+        "The topology need becomes visible across this course arc:",
+        "The course uses the change repeatedly in this path:",
+        "This is where the theme keeps returning in topology:",
+        "The cross-lecture reason is:",
+        "The theme earns its course-wide role through this arc:",
+    ])
+    failure_intro = varied((tid, "theme-lens-failure-intro"), [
+        "The answer also needs the failure check in everyday words:",
+        "The reader still needs this break point:",
+        "The ordinary-language limit is:",
+        "The theme has to carry this condition with it:",
+        "The claim becomes testable when this detail is named:",
+        "The final check is the condition that would break the use:",
+    ])
+    new_lens["notices"] = (
+        f"{lens['notices']} {problem_intro} {depth['problem']} "
+        f"{object_close}"
+    )
+    new_lens["ignores"] = (
+        f"{lens['ignores']} {ignore_intro} {depth['habit']} "
+        f"{ignore_close}"
+    )
+    new_lens["changes_problem"] = (
+        f"{lens['changes_problem']} {arc_intro} {depth['course_arc']} "
+        f"{transfer_close}"
+    )
+    new_lens["reader_test"] = (
+        f"{lens['reader_test']} {failure_intro} {depth['important_detail']} "
+        f"{failure_close}"
+    )
+    return new_lens
+
+
+def build_subtheme_routine(subtheme, routine):
+    new_routine = dict(routine)
+    depth = subtheme["depth"]
+    sid = subtheme["id"]
+    look_close = varied((sid, "subtheme-routine-look-close"), [
+        "This keeps the routine attached to a real task instead of a list of terms.",
+        "The routine starts with a problem the reader can inspect, not with a vocabulary item.",
+        "That opening makes the subtheme answer a human question before it names a method.",
+        "The reader gets a concrete task first, so the later term has something to explain.",
+        "This keeps the subtheme grounded in the work the course asks the reader to do.",
+        "The field stays plain because it begins with what has to be checked on the page.",
+        "That problem gives the routine a visible job before any technical name appears.",
+        "The first step is practical: find the situation where the habit is needed.",
+        "This makes the routine useful as a reading tool, not only as a summary heading.",
+        "The reader can now ask where this problem appears in a lecture or outside model.",
+    ])
+    ask_intro = varied((sid, "subtheme-routine-ask-intro"), [
+        "Ask it from first principles:",
+        "Put the question in everyday terms:",
+        "Translate the check into this plain account:",
+        "The ordinary version of the question is:",
+        "A reader can ask:",
+        "The first-principles check is:",
+        "The page has to answer this plain sentence:",
+        "Start the question from this basic idea:",
+        "The usable question is:",
+        "Make the check concrete through this principle:",
+    ])
+    ask_close = varied((sid, "subtheme-routine-ask-close"), [
+        "The question is successful only when the reader can say what object, move, or rule is doing the work.",
+        "The check passes only after the working object, allowed move, or rule has been named.",
+        "A reader has the idea only when the sentence can point to the thing doing the proof work.",
+        "That turns the subtheme into an inspection task rather than a phrase to remember.",
+        "The proof job has to be visible before the routine can support a conclusion.",
+        "The answer must show where the work happens on the object, route, count, model, or surface.",
+        "The habit is clear only when the page says what is being moved, counted, blocked, or protected.",
+        "That makes the routine useful for checking a new example, not only for recalling this course.",
+        "The reader needs the rule on the page before the subtheme can carry evidence.",
+        "The point is to make the hidden condition visible in ordinary words.",
+    ])
+    use_intro = varied((sid, "subtheme-routine-use-intro"), [
+        "The course role explains the topology payoff:",
+        "The topology payoff appears in this course role:",
+        "The lectures use the routine this way:",
+        "This is the job the routine performs in the course:",
+        "The subtheme earns its place through this course role:",
+        "The course-wide use is:",
+        "The payoff inside topology is visible here:",
+        "The routine returns across the course in this form:",
+        "This role shows why the subtheme is not isolated:",
+        "The course connection is:",
+    ])
+    use_close = varied((sid, "subtheme-routine-use-close"), [
+        "Outside the course, use the same routine when a diagram, model, route, or count must keep its meaning while the surface details change.",
+        "The same habit transfers to other fields when a model is simplified and the evidence still has to survive the simplification.",
+        "Beyond topology, this helps whenever a physical diagram or state model changes but one rule must stay true.",
+        "The outside use is careful transfer: change the representation, then check what evidence came along.",
+        "This is why the subtheme can help with mechanisms, maps, data pictures, and physical models as well as surfaces.",
+        "Other fields need the same discipline when a cleaned-up model is supposed to answer the original problem.",
+        "The transfer works only when the new field can name its object, legal change, and protected fact just as plainly.",
+        "That is the practical use: simplify a situation without losing the reason the original situation mattered.",
+        "The habit travels whenever a person has to separate a real constraint from a distracting detail.",
+        "The routine remains honest outside topology only when it keeps the model's actual limits visible.",
+    ])
+    mistake_intro = varied((sid, "subtheme-routine-mistake-intro"), [
+        "The repair is to go back to the plain summary:",
+        "Repair the mistake by returning to the subtheme's plain job:",
+        "The fix starts with the plain summary:",
+        "A weak use improves when it returns to this ordinary account:",
+        "The correction is to restate the everyday task:",
+        "Bring the page back to this plain version:",
+        "The safest repair is to rebuild from the summary:",
+        "To repair the error, start here:",
+        "The explanation becomes stronger when it reuses this plain account:",
+        "The missing step is usually visible in the summary:",
+    ])
+    mistake_close = varied((sid, "subtheme-routine-mistake-close"), [
+        "If the page cannot name the protected fact or the rule that protects it, the explanation is still too thin.",
+        "A page that cannot name the protected fact or its rule has not yet explained the subtheme.",
+        "The routine fails when the protected evidence remains hidden behind the label.",
+        "The reader needs the rule and the surviving fact before trusting the claimed use.",
+        "Without that repair, the paragraph may sound fluent while answering no checkable question.",
+        "The mistake remains until the page says what survives and why it survives.",
+        "That is the test for depth: the rule and protected fact must be visible.",
+        "The summary has done its job only when the reader can reject the wrong use.",
+        "The explanation is not ready if it cannot say what would break the claim.",
+        "A repaired paragraph ends with the rule, the surviving fact, and the limit on the claim.",
+    ])
+    new_routine["look_for"] = (
+        f"{routine['look_for']} For \"{subtheme['title']},\" start from the ordinary problem: {depth['problem']} "
+        f"{look_close}"
+    )
+    new_routine["ask"] = (
+        f"{routine['ask']} {ask_intro} {depth['first_principles']} "
+        f"{ask_close}"
+    )
+    new_routine["use"] = (
+        f"{routine['use']} {use_intro} {depth['course_role']} "
+        f"{use_close}"
+    )
+    new_routine["mistake"] = (
+        f"{routine['mistake']} {mistake_intro} {subtheme['plain']} "
+        f"{mistake_close}"
+    )
+    return new_routine
+
+
+def build_subtheme_bridge(subtheme, bridge):
+    new_bridge = dict(bridge)
+    depth = subtheme["depth"]
+    sid = subtheme["id"]
+    moment_intro = varied((sid, "subtheme-bridge-moment-intro"), [
+        "The bridge belongs to this course because it answers the subtheme problem in a concrete setting:",
+        "This course moment matters because it gives the subtheme problem a visible place to happen:",
+        "The course anchor works when it brings the reader back to this problem:",
+        "This is the problem that makes the course moment more than a topic reference:",
+        "The lecture connection starts from this concrete task:",
+        "The bridge stays course-specific by returning to this problem:",
+        "This moment earns its place by showing the subtheme problem directly:",
+        "The page can use the course moment after it names this problem:",
+        "The anchor is useful because the reader can inspect this problem in it:",
+        "The course example becomes evidence when it answers this problem:",
+    ])
+    moment_close = varied((sid, "subtheme-bridge-moment-close"), [
+        "That course moment prevents the page from drifting into a generic topic summary.",
+        "This keeps the bridge tied to Tokieda's sequence instead of to a detached glossary entry.",
+        "The anchor gives the reader a place to check the subtheme rather than only remember it.",
+        "The page stays honest because the lecture example has to carry the claim.",
+        "That detail keeps the bridge tied to evidence from the course.",
+        "The course moment makes the subtheme testable instead of merely familiar.",
+        "This prevents the bridge from becoming a summary that could belong anywhere.",
+        "The reader can trace the claim back to a demonstrated object, move, or count.",
+        "The bridge remains useful because it has a visible course home.",
+        "That is how the subtheme stays connected to the actual lecture path.",
+    ])
+    shift_intro = varied((sid, "subtheme-bridge-shift-intro"), [
+        "The deeper shift is this first-principles sentence:",
+        "The first-principles change in thinking is:",
+        "The reader's mental move can be stated this way:",
+        "The plain shift underneath the bridge is:",
+        "The habit changes the reader's question through this principle:",
+        "The bridge teaches this basic move:",
+        "The everyday version of the thinking shift is:",
+        "The underlying change is:",
+        "The reasoning shift starts here:",
+        "The subtheme becomes usable through this plain idea:",
+    ])
+    shift_close = varied((sid, "subtheme-bridge-shift-close"), [
+        "The reader is learning a habit of inspection, not memorizing a label, and the habit has to say what evidence would still be present after the picture changes.",
+        "That makes the subtheme a way to inspect a problem, not a name to collect, because the page must show which rule or count would survive a new example.",
+        "The point is to change what the reader checks on the page, especially the object, legal move, surviving evidence, and exact limit on the claim.",
+        "This keeps the bridge centered on work the reader can do with a new example: name the setup, test the allowed change, and find what remains.",
+        "The habit matters because it tells the reader what to inspect next and how to tell a supported conclusion from a sentence that only sounds related.",
+        "That shift turns the subtheme into a reusable question about what changes, what stays fixed, what fails, and why the answer matters beyond one drawing.",
+        "The result is a reading habit rather than a stored definition, because the reader can use it to check a new model, route, count, or surface.",
+        "The reader gets a way to test a claim, not only a phrase for the claim, by asking what the proof would lose if the condition changed.",
+        "This is the part that makes the subtheme portable across examples: it tells the reader which evidence must be rebuilt before the conclusion travels.",
+        "The bridge works when it changes the reader's inspection pattern from naming the subject to checking the rule, the evidence, and the stopping point.",
+    ])
+    test_intro = varied((sid, "subtheme-bridge-test-intro"), [
+        "A complete answer then explains the course role:",
+        "The final answer has to connect back to the course role:",
+        "Close the test by naming the course role:",
+        "The reader test is complete only after this role is clear:",
+        "The answer earns depth by adding this course role:",
+        "End the test with this role in the course:",
+        "The course role gives the test its larger meaning:",
+        "The final link is the role this subtheme plays in the course:",
+        "The check becomes course-wide when it names this role:",
+        "The answer stays grounded when it returns to this role:",
+    ])
+    test_close = varied((sid, "subtheme-bridge-test-close"), [
+        "That final link says why the subtheme matters later in topology and why the same careful reading helps in fields that use models or diagrams.",
+        "This explains both the topology use and the transfer use in fields where models, routes, or diagrams carry evidence.",
+        "The reader can then see why the habit matters in later lectures and in other model-based problems.",
+        "That connection makes the subtheme useful beyond one page without losing its course source.",
+        "The transfer is honest because it keeps the same object, move, evidence, and limit visible.",
+        "This gives the reader a reason to reuse the subtheme in topology and in outside modeling work.",
+        "The final sentence shows why the same careful check matters when another field uses a diagram or model.",
+        "The course role keeps the outside application from becoming a loose analogy.",
+        "That is where the bridge explains importance rather than only listing appearances.",
+        "The larger use remains plain: carry the same check into any field that changes a model while protecting a claim.",
+    ])
+    new_bridge["course_moment"] = (
+        f"{bridge['course_moment']} {moment_intro} {depth['problem']} "
+        f"{moment_close}"
+    )
+    new_bridge["thinking_shift"] = (
+        f"{bridge['thinking_shift']} {shift_intro} For \"{subtheme['title']},\" change the question from naming the topic to finding the object, rule, protected fact, and failure point that make the topic useful in an argument. "
+        f"{shift_close}"
+    )
+    new_bridge["reader_test"] = (
+        f"{bridge['reader_test']} {test_intro} {depth['course_role']} "
+        f"{test_close}"
+    )
+    return new_bridge
+
+
 CONCEPTS = [
     {
         "id": "generic-position",
@@ -8214,14 +8499,16 @@ def main():
         enriched = dict(theme)
         enriched["depth"] = THEME_DEPTH[theme["id"]]
         enriched["essay"] = THEME_ESSAYS[theme["id"]]
-        enriched["lens"] = THEME_LENSES[theme["id"]]
+        enriched["lens"] = build_theme_lens(enriched, THEME_LENSES[theme["id"]])
         enriched["application"] = build_theme_application(enriched)
         enriched["first_principles_essay"] = build_theme_first_principles_essay(enriched)
         enriched["answer_guide"] = build_theme_answer_guide(enriched)
         themes.append(enriched)
     subthemes = []
     for i, t, p in SUBTHEMES:
-        subtheme = {"id": i, "title": t, "plain": p, "depth": SUBTHEME_DEPTH[i], "essay": SUBTHEME_ESSAYS[i], "routine": SUBTHEME_ROUTINES[i], "bridge": SUBTHEME_BRIDGES[i]}
+        subtheme = {"id": i, "title": t, "plain": p, "depth": SUBTHEME_DEPTH[i], "essay": SUBTHEME_ESSAYS[i]}
+        subtheme["routine"] = build_subtheme_routine(subtheme, SUBTHEME_ROUTINES[i])
+        subtheme["bridge"] = build_subtheme_bridge(subtheme, SUBTHEME_BRIDGES[i])
         subtheme["application"] = build_subtheme_application(subtheme)
         subtheme["first_principles_essay"] = build_subtheme_first_principles_essay(subtheme)
         subtheme["answer_guide"] = build_subtheme_answer_guide(subtheme)
@@ -8419,7 +8706,7 @@ This repo now has a transcript-backed depth pass across the lecture, concept, th
 - rubric-coverage.html with {metrics['rubric_coverage_layers']} layer maps showing where those tests are satisfied
 - explicit source coverage, missing-caption audit, per-lecture caption-nuance cards, and source-faithfulness audits
 
-Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reconstruction_words']} lecture reconstruction words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_plain_words']} theme plain-summary words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_plain_words']} subtheme plain-summary words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_purpose_words']} method-family purpose words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reconstruction step to clear 30 words, every lecture reconstruction start, self-check, common-failure, and source-check field to clear 70 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 85 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 85 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 60 words, every source-nuance repair field to clear 70 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 35 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 40 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 40 words, every concept anchor field to clear 40 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 30 words, every theme plain summary to clear 55 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 25 words, every theme application field to clear 65 words, every theme answer-guide field to clear 40 words, every subtheme plain summary to clear 50 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 25 words, every subtheme bridge field to clear 25 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family purpose summary to clear 60 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, every method-family application field to clear 80 words, and every method-family answer-guide field to clear 40 words.
+Current enforced essay totals: {metrics['lecture_essay_words']} lecture essay words, {metrics['lecture_first_principles_essay_words']} lecture first-principles long-essay words, {metrics['lecture_deepening_words']} lecture deepening words, {metrics['lecture_walkthrough_words']} lecture walkthrough words, {metrics['lecture_application_bridge_words']} lecture application-bridge words, {metrics['lecture_reconstruction_words']} lecture reconstruction words, {metrics['lecture_reader_test_words']} lecture reader-test words, {metrics['lecture_answer_guide_words']} lecture answer-guide words, {metrics['lecture_caption_nuance_words']} caption-nuance words, {metrics['lecture_source_lens_words']} source-lens words, {metrics['lecture_source_checkpoint_words']} source-checkpoint words, {metrics['lecture_source_faithfulness_words']} source-faithfulness words, {metrics['math_why_words']} math-why words, {metrics['application_spine_words']} application-spine words, {metrics['source_nuance_repair_words']} source-nuance repair words, {metrics['transfer_lab_words']} transfer-lab words, {metrics['repair_clinic_words']} repair-clinic words, {metrics['oral_exam_words']} oral-exam words, {metrics['change_ledger_words']} change-ledger words, {metrics['assumption_ledger_words']} assumption-ledger words, {metrics['counterexample_gallery_words']} counterexample words, {metrics['weak_claim_repair_words']} weak-claim repair words, {metrics['reference_words']} reference words, {metrics['paper_family_ledger_words']} paper-family words, {metrics['proof_move_words']} proof-move words, {metrics['theorem_contract_words']} theorem-contract words, {metrics['quality_rubric_words']} quality-rubric words, {metrics['term_translation_words']} term-translation words, {metrics['concept_essay_words']} concept essay words, {metrics['concept_first_principles_essay_words']} concept first-principles essay words, {metrics['concept_workup_words']} concept workup words, {metrics['concept_anchor_words']} concept anchor words, {metrics['concept_application_words']} concept application words, {metrics['concept_self_check_words']} concept self-check words, {metrics['concept_contrast_words']} concept-contrast words, {metrics['theme_plain_words']} theme plain-summary words, {metrics['theme_essay_words']} theme essay words, {metrics['theme_first_principles_essay_words']} theme first-principles long-essay words, {metrics['theme_lens_words']} theme lens words, {metrics['theme_application_words']} theme application words, {metrics['theme_answer_guide_words']} theme answer-guide words, {metrics['subtheme_plain_words']} subtheme plain-summary words, {metrics['subtheme_essay_words']} subtheme essay words, {metrics['subtheme_first_principles_essay_words']} subtheme first-principles long-essay words, {metrics['subtheme_routine_words']} subtheme routine words, {metrics['subtheme_bridge_words']} subtheme bridge words, {metrics['subtheme_application_words']} subtheme application words, {metrics['subtheme_answer_guide_words']} subtheme answer-guide words, {metrics['family_purpose_words']} method-family purpose words, {metrics['family_essay_words']} method-family essay words, {metrics['family_first_principles_essay_words']} method-family first-principles long-essay words, {metrics['family_contract_words']} method-contract words, {metrics['family_playbook_words']} method-playbook words, {metrics['family_application_words']} method-family application words, and {metrics['family_answer_guide_words']} method-family answer-guide words. The validator requires every lecture essay to clear 300 words, every lecture first-principles long-essay field to clear 60 words, every lecture deepening field to clear 30 words, every lecture walkthrough field to clear 40 words, every lecture application-bridge field to clear 65 words, every lecture reconstruction step to clear 30 words, every lecture reconstruction start, self-check, common-failure, and source-check field to clear 70 words, every lecture reader-test field to clear 45 words, every lecture answer-guide field to clear 50 words, every lecture caption-nuance field to clear 85 words, every lecture source lens to clear 100 words, every lecture source-checkpoint field to clear 85 words, every lecture source-faithfulness field to clear 35 words, every math-why field to clear 90 words, every application-spine field to clear 60 words, every source-nuance repair field to clear 70 words, every transfer-lab field to clear 30 words, every repair-clinic field to clear 30 words, every oral-exam field to clear 35 words, every change-ledger field to clear 30 words, every assumption-ledger field to clear 30 words, every counterexample field to clear 30 words, every weak-claim repair field to clear 30 words, every reference why/use-carefully field to clear 45 words, every paper-family field to clear 40 words, every proof-move problem, why, failure, and example field to clear 40 words, every theorem-contract field to clear 35 words, every quality-rubric field to clear 30 words, every term-translation explanatory field to clear 30 words, every term-translation reader question to clear 25 words, every concept essay to clear 290 words, every concept first-principles essay field to clear 50 words, every concept workup field to clear 40 words, every concept anchor field to clear 40 words, every concept application field to clear 65 words, every concept self-check field to clear 40 words, every concept contrast field to clear 30 words, every theme plain summary to clear 55 words, every theme essay to clear 300 words, every theme first-principles long-essay field to clear 55 words, every theme lens field to clear 90 words, every theme application field to clear 65 words, every theme answer-guide field to clear 40 words, every subtheme plain summary to clear 50 words, every subtheme essay to clear 260 words, every subtheme first-principles long-essay field to clear 55 words, every subtheme routine field to clear 90 words, every subtheme bridge field to clear 90 words, every subtheme application field to clear 70 words, every subtheme answer-guide field to clear 40 words, every method-family purpose summary to clear 60 words, every method-family essay to clear 285 words, every method-family first-principles long-essay field to clear 60 words, every method-contract field to clear 25 words, every method-playbook field to clear 25 words, every method-family application field to clear 80 words, and every method-family answer-guide field to clear 40 words.
 
 The remaining depth gap is qualitative rather than structural: future work should do periodic human-read passes against the original captions and improve any page whose explanation feels compressed, under-specific, or too far from a concrete lecture moment. The validator now checks that concept themes, concept subthemes, and method-family concept ids point to real objects, and every lecture must carry at least three concrete examples.
 """, encoding="utf-8")

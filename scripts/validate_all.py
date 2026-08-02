@@ -182,7 +182,7 @@ def main():
                 fail(f"theme {theme['id']} first-principles essay {field} too thin")
         lens = theme.get("lens") or {}
         for field in ["notices", "ignores", "changes_problem", "reader_test"]:
-            if len(words(lens.get(field))) < 25:
+            if len(words(lens.get(field))) < 90:
                 fail(f"theme {theme['id']} lens {field} too thin")
         application = theme.get("application") or {}
         for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]:
@@ -213,11 +213,11 @@ def main():
                 fail(f"subtheme {subtheme['id']} first-principles essay {field} too thin")
         routine = subtheme.get("routine") or {}
         for field in ["look_for", "ask", "use", "mistake"]:
-            if len(words(routine.get(field))) < 25:
+            if len(words(routine.get(field))) < 90:
                 fail(f"subtheme {subtheme['id']} routine {field} too thin")
         bridge = subtheme.get("bridge") or {}
         for field in ["course_moment", "thinking_shift", "reader_test"]:
-            if len(words(bridge.get(field))) < 25:
+            if len(words(bridge.get(field))) < 90:
                 fail(f"subtheme {subtheme['id']} bridge {field} too thin")
         application = subtheme.get("application") or {}
         for field in ["outside_problem", "course_habit", "where_it_matters", "honest_limit"]:
