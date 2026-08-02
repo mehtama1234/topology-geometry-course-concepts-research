@@ -302,7 +302,7 @@ def main():
                 fail(f"concept {concept['id']} anchor {field} too thin")
         application = concept.get("application") or {}
         for field in ["outside_problem", "topology_application", "other_fields", "why_it_matters", "honest_limit"]:
-            if len(words(application.get(field))) < 30:
+            if len(words(application.get(field))) < 65:
                 fail(f"concept {concept['id']} application {field} too thin")
         self_check = concept.get("self_check") or {}
         for field in ["object_check", "operation_check", "protected_check", "failure_check"]:
