@@ -440,7 +440,7 @@ def main():
         fail("application spine rows do not match required domain set")
     for row in application_spine_rows:
         for field in ["plain_problem", "topology_move", "outside_application", "why_it_matters", "wrong_reading", "reader_test"]:
-            if len(words(row.get(field))) < 30:
+            if len(words(row.get(field))) < 60:
                 fail(f"application spine {row.get('domain')} {field} too thin")
         if len(row.get("concepts") or []) < 3:
             fail(f"application spine {row.get('domain')} needs concept links")

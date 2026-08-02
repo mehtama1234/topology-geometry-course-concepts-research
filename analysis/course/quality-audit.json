@@ -93,7 +93,7 @@
     },
     {
       "requirement": "Application spine beyond topology",
-      "evidence": "6 application-spine rows explain why topology matters in outside fields by naming the plain problem, topological move, outside use, honest payoff, wrong reading, and reader test. The 2184 application words keep applications tied to first principles rather than loose comparisons.",
+      "evidence": "6 application-spine rows explain why topology matters in outside fields by naming the plain problem, topological move, outside use, honest payoff, wrong reading, and reader test. The 2224 application words keep applications tied to first principles rather than loose comparisons.",
       "status": "met"
     },
     {
@@ -231,7 +231,7 @@
     "synthesis_sections": 9,
     "dependency_paths": 8,
     "application_spine_rows": 6,
-    "application_spine_words": 2184,
+    "application_spine_words": 2224,
     "transfer_lab_cases": 8,
     "transfer_lab_words": 2023,
     "repair_clinic_cases": 8,
