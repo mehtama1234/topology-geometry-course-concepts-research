@@ -10690,6 +10690,23 @@ def main():
 
     write_json(RAW / "video-index.json", videos)
     write_json(ANALYSIS / "lecture-atlas.json", lectures)
+
+    # Editorial overrides: hand/AI-authored plain-language rewrites win over generated
+    # prose. Keyed by concept id. Nested dict fields (e.g. first_principles_essay) are
+    # deep-merged so overriding one sub-field leaves its siblings intact.
+    overrides_path = ANALYSIS / "editorial-overrides" / "concepts.json"
+    if overrides_path.exists():
+        concept_overrides = json.loads(overrides_path.read_text(encoding="utf-8"))
+        for concept in concepts:
+            override = concept_overrides.get(concept["id"])
+            if not override:
+                continue
+            for key, value in override.items():
+                if isinstance(value, dict) and isinstance(concept.get(key), dict):
+                    concept[key].update(value)
+                else:
+                    concept[key] = value
+
     write_json(ANALYSIS / "concept-atlas.json", concepts)
     write_json(ANALYSIS / "theme-map.json", themes)
     write_json(ANALYSIS / "subtheme-map.json", subthemes)
