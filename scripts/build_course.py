@@ -10,6 +10,22 @@ RAW = ROOT / "raw-material" / "youtube"
 CAPTIONS = RAW / "captions"
 TEXT = RAW / "transcripts"
 ANALYSIS = ROOT / "analysis" / "course"
+
+_LECTURE_TRANSFER = None
+
+
+def _lecture_transfer(number: int) -> str:
+    # Per-lecture concrete "how this transfers to an outside field" sentence, keyed by
+    # lecture number. Replaces a generic method restatement that was identical across
+    # every lecture. Falls back to a short plain prompt if a lecture is missing.
+    global _LECTURE_TRANSFER
+    if _LECTURE_TRANSFER is None:
+        path = ROOT / "analysis" / "course" / "editorial-overrides" / "lecture_transfer.json"
+        _LECTURE_TRANSFER = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    return _LECTURE_TRANSFER.get(str(number)) or (
+        "The same shape can appear outside topology when a different problem carries the same object, "
+        "allows the same change, and must protect the same fact."
+    )
 AUDITS = ROOT / "analysis" / "audits"
 SITE = ROOT / "site"
 
@@ -5468,17 +5484,49 @@ def build_lecture_deepening(row, spine_row):
         "A plain payoff sentence names both the earned conclusion and the reason it does not overreach.",
         "This keeps the course-wide reason detailed without turning the lecture into a slogan.",
     ])
+    happening_tail = varied((lecture, "deepening-happening-tail"), [
+        "It also fixes what to keep watching as the object is bent or reshaped.",
+        "The point is to see the object clearly before any name or symbol is attached to it.",
+        "What matters is the thing and its rule, not the vocabulary that arrives later.",
+        "Naming the object first stops the explanation from starting with a term and ending in a slogan.",
+        "A careful reader can point at the object and say what it records.",
+        "Seeing the object plainly is what lets the later move act on something real.",
+    ])
+    hard_tail = varied((lecture, "deepening-hard-tail"), [
+        "Stating the obstacle this plainly is what makes it specific enough to work on.",
+        "The difficulty is not vague; it is exactly this question with no easy shortcut.",
+        "A named obstacle can be repaired; an unnamed one only produces hand-waving.",
+        "The hardness comes from the question itself, not from missing background knowledge.",
+        "Once the obstacle is this concrete, the reader can see why the ordinary tool fails.",
+        "This is the exact gap the lecture's move is built to cross.",
+    ])
+    move_tail = varied((lecture, "deepening-move-tail"), [
+        "Naming the legal move separates the allowed step from a shortcut that would change the question.",
+        "The move is permitted precisely because it leaves the original object and its question intact.",
+        "What makes it a real proof step is that nothing essential is quietly altered.",
+        "The reader can now tell the honest operation apart from one that redefines the problem.",
+        "Keeping the move legal is what lets its conclusion still speak about the starting object.",
+        "The discipline is to change only what is allowed and to say what stayed fixed.",
+    ])
+    payoff_tail = varied((lecture, "deepening-payoff-tail"), [
+        "The value is the fact that survived the change, not a stronger claim the proof never earned.",
+        "It names the earned conclusion and stops there, without overreaching the evidence.",
+        "The payoff is trustworthy because it says what is known and what remains unproved.",
+        "What the reader keeps is the protected fact, not a slogan about the method.",
+        "The conclusion is exactly as strong as the surviving fact allows, and no stronger.",
+        "This is what the lecture leaves behind: a fact that later results can borrow.",
+    ])
     new_row["what_is_really_happening"] = (
-        f"{row['what_is_really_happening']} The spine object is: {spine_row['object']} {happening_close} The sentence also names what the reader must watch before the lecture can support a claim."
+        f"{row['what_is_really_happening']} The spine object is: {spine_row['object']} {happening_close} {happening_tail}"
     )
     new_row["why_it_is_hard"] = (
-        f"{row['why_it_is_hard']} The plain question creating the difficulty is: {spine_row['plain_question']} {hard_close} This makes the obstacle specific enough for the reader to repair it."
+        f"{row['why_it_is_hard']} The plain question creating the difficulty is: {spine_row['plain_question']} {hard_close} {hard_tail}"
     )
     new_row["key_move"] = (
-        f"{row['key_move']} The spine names the legal move this way: {spine_row['legal_move']} {move_close} The reader can now separate the permitted action from the shortcut that would change the problem."
+        f"{row['key_move']} The spine names the legal move this way: {spine_row['legal_move']} {move_close} {move_tail}"
     )
     new_row["payoff"] = (
-        f"{row['payoff']} The surviving fact is: {spine_row['surviving_fact']} {payoff_close} That evidence explains the lecture's importance without making the conclusion stronger than the proof."
+        f"{row['payoff']} The surviving fact is: {spine_row['surviving_fact']} {payoff_close} {payoff_tail}"
     )
     return new_row
 
@@ -5510,14 +5558,38 @@ def build_lecture_walkthrough(row, spine_row):
         "The answer must show what evidence the lecture protects and what stronger conclusion remains outside the proof.",
         "This makes the walkthrough a rehearsal for using the idea in topology and in another field.",
     ])
+    start_tail = varied((lecture, "walkthrough-start-tail"), [
+        "This gives the reader a concrete starting point before any formal name is used.",
+        "The reader begins with a thing they can picture, not a definition to memorize.",
+        "Seeing the object first is what makes the later step feel necessary rather than arbitrary.",
+        "The opening is the object itself, so the method has something real to act on.",
+        "Starting here keeps the walkthrough honest about what is being reasoned over.",
+        "The reader can hold the object in mind before the argument moves at all.",
+    ])
+    wpayoff_tail = varied((lecture, "walkthrough-payoff-tail"), [
+        "The payoff stays tied to the action that kept the original question intact.",
+        "It earns its conclusion only because the allowed move left the object unchanged.",
+        "The reader sees why the simpler result still speaks about the thing they started with.",
+        "The value here is a fact that survived the change, not a claim about how surprising the method was.",
+        "The step is trustworthy because nothing essential was quietly redefined along the way.",
+        "This is where the picture turns into a conclusion the reader can actually rely on.",
+    ])
+    check_tail = varied((lecture, "walkthrough-check-tail"), [
+        "The final answer has to name the limit as well as the earned conclusion.",
+        "A passing check states both what is now known and what remains unproved.",
+        "The reader must be able to say the object, the move, the surviving fact, and the limit.",
+        "The check is a rehearsal for using the idea on a new example, not just a recap.",
+        "It should name the first overclaim to avoid before carrying the idea elsewhere.",
+        "The honest ending says what the lecture protects and what it deliberately leaves open.",
+    ])
     new_row["start_here"] = (
-        f"{row['start_here']} The spine object says: {spine_row['object']} {start_close} This gives the reader a concrete starting point before any formal name is used."
+        f"{row['start_here']} The spine object says: {spine_row['object']} {start_close} {start_tail}"
     )
     new_row["payoff"] = (
-        f"{row['payoff']} The legal move behind that payoff is: {spine_row['legal_move']} {payoff_close} The payoff stays tied to the action that kept the original question intact."
+        f"{row['payoff']} The legal move behind that payoff is: {spine_row['legal_move']} {payoff_close} {wpayoff_tail}"
     )
     new_row["reader_check"] = (
-        f"{row['reader_check']} The check returns to the surviving fact: {spine_row['surviving_fact']} {check_close} The final answer has to name the limit as well as the earned conclusion."
+        f"{row['reader_check']} The check returns to the surviving fact: {spine_row['surviving_fact']} {check_close} {check_tail}"
     )
     return new_row
 
@@ -6450,7 +6522,7 @@ def build_lecture_application_bridge(lecture, spine_row):
         ),
         "where_it_matters": (
             f"This lecture can matter beyond topology in {context['places']}. "
-            f"The point is not that the outside problem uses the same classroom object. The point is that the outside problem may have the same structure: name the carrier, name the allowed change, protect the right evidence, and read the limited payoff. For Lecture {number:02d}, the extra application check is this: {context['outside_check']}."
+            f"{_lecture_transfer(number)} For Lecture {number:02d}, the extra application check is this: {context['outside_check']}."
             f" {matters_close}"
         ),
         "honest_limit": (
