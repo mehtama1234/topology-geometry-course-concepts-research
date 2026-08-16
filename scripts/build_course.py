@@ -1338,37 +1338,79 @@ def build_source_nuance_repairs(rows):
     return enriched
 
 
-def build_lecture_source_checkpoint(row, spine):
+def build_lecture_source_checkpoint(row, spine, number=0):
     new_row = dict(row)
     new_row["trust"] = (
         f"{row['trust']} Source trust starts with the lecture object, not the topic name: {spine['object']} "
-        f"That keeps the evidence tied to a thing the reader can inspect before any outside theorem or later vocabulary is allowed to help."
+        + varied((number, "topo-sc-trust"), [
+            "You need to see the object itself before you can rely on it\u2014no outside theories or fancy words are allowed to take over.",
+            "The evidence stays visible to the reader first. Once you name it clearly, you can bring in later ideas and vocabulary.",
+            "Keep the thing in front of you so you can check it yourself. Do not let borrowed vocabulary cover up what you see.",
+            "The reader must have the object to look at. No theorem from outside, no fresh term can come in first.",
+            "Before any idea from a later chapter or any new terminology shows up, the concrete thing has to be there.",
+            "Make sure the reader sees what the proof uses. Lock that down before introducing any tools from somewhere else.",
+        ])
     )
     new_row["do_not_overread"] = (
         f"{row['do_not_overread']} The overread test is the allowed move: {spine['legal_move']} "
-        f"If a sentence changes that move, it may still sound related, but it no longer proves the same claim from this lecture."
+        + varied((number, "topo-sc-over"), [
+            "Change one step of the proof, and the sentence might still sound related. But now it does not prove what the lecture showed.",
+            "When you alter one move in the argument, the wording might feel connected to the original claim\u2014yet it stops proving the same point.",
+            "Shift the proof and the explanation sounds like it belongs, but the evidence that backed the lecture is gone.",
+            "If you swap out one piece of the proof, the words can still seem to fit. The proof of the claim from class breaks.",
+            "Move one step, and the sentence will read as if it fits. Yet the actual proof from this lecture no longer holds.",
+            "One small change to the proof makes the words sound right. But you no longer have the real support for the lecture's claim.",
+        ])
     )
     new_row["math_question"] = (
         f"{row['math_question']} The larger habit is to ask what survives after the allowed change: {spine['surviving_fact']} "
-        f"That same question matters outside topology whenever a model, diagram, or measurement changes while one piece of evidence must remain dependable."
+        + varied((number, "topo-sc-math"), [
+            "This same issue comes up outside topology too: whenever something in your model shifts, you need one piece of data to stay put.",
+            "Any field that uses models, drawings, or measurements faces the same problem: one fact has to hold steady when things change.",
+            "In any subject using diagrams or measurements, this matters just as much: one solid piece of evidence has to survive the shift.",
+            "Anywhere you build a model or change how you measure something, you face the same puzzle: one part has to be locked down.",
+            "Not just in topology\u2014in any work with pictures or numbers, you must keep one thing fixed when everything else shifts.",
+            "Every model, every diagram, every measurement system hits this: one truth has to stay untouched while others move.",
+        ])
     )
     return new_row
 
 
-def build_lecture_caption_nuance(row, spine):
+def build_lecture_caption_nuance(row, spine, number=0):
     new_row = dict(row)
     new_row["terms"] = list(row["terms"])
     new_row["risk"] = (
         f"{row['risk']} Caption risk is highest when a familiar word hides the actual object: {spine['object']} "
-        f"The reader needs that object in view before turning a caption phrase into a mathematical claim."
+        + varied((number, "topo-cap-risk"), [
+            "You have to see the object on the page before you can turn a caption phrase into a mathematical statement.",
+            "Before converting a caption into a math claim, keep the object visible. See it first, then name it.",
+            "Do not let a caption turn into math until the reader has seen the picture. The object comes before the label.",
+            "Show the object first. Only after the reader sees it can a caption phrase become a proof statement.",
+            "The thing itself has to be there to look at. Then a caption can become part of a mathematical argument.",
+            "Let the reader inspect the object. After that, a caption can work as a math claim.",
+        ])
     )
     new_row["safe_reading"] = (
         f"{row['safe_reading']} A safe reading names the legal action in everyday words: {spine['legal_move']} "
-        f"That action is the bridge from the visible lecture moment to the later idea, so it cannot be replaced by a loose topic label."
+        + varied((number, "topo-cap-safe"), [
+            "This move bridges what you see on the page to what comes later. You cannot swap it out for a loose topic name.",
+            "That step links the visible part of the lecture to ideas that follow. No vague heading can replace it.",
+            "It connects what is shown here to later thoughts. A broad label cannot do the same job.",
+            "This action is the tie from what the reader sees to future material. You need the real step, not a fuzzy topic.",
+            "The step starts at what is on screen and reaches toward the next section. A loose label will not reach that far.",
+            "That move tethers the lecture's moment to what unfolds next. Only the actual step does this\u2014not a topic word.",
+        ])
     )
     new_row["verify_question"] = (
         f"{row['verify_question']} Also ask what fact is still present after the explanation changes the picture or model: {spine['surviving_fact']} "
-        f"This is why the point matters in topology and in other fields that reason from diagrams, models, or controlled changes."
+        + varied((number, "topo-cap-verify"), [
+            "In topology and in any field that works from diagrams or models, this point holds weight and calls for proof.",
+            "Anywhere that reasoning leans on pictures, models, or test cases, you find this point at work and worth learning.",
+            "This matters in topology. It also matters in every field where you reason using drawings, models, or deliberate changes.",
+            "Topology uses it. So does any subject where you build arguments from pictures, models, or held-steady conditions.",
+            "When a field bases arguments on diagrams or models, this point stays crucial. Topology is one case\u2014but not the only one.",
+            "In topology and across all disciplines that test claims through images, models, or controlled shifts, this is what matters.",
+        ])
     )
     return new_row
 
@@ -6510,12 +6552,12 @@ def build_lecture_application_bridge(lecture, spine_row):
         ),
         "topology_bridge": (
             f"The bridge from the lecture to an application is the legal move: {spine_row['legal_move']} "
-            f"The lecture examples, including {example_titles}, make that move tangible before it becomes terminology. "
+            f"{varied((number, 'topo-mid-examples'), ["These sample situations show the move in action before it turns into a name; you can see it happen in cases like:", "These concrete examples make the action concrete before it becomes a term; you can spot it in instances like:", "The sample problems here show the move in motion before terminology takes over; you can watch it in situations like:", "These worked cases display the step in reality before it gains a name; you can follow it in examples like:", "These course samples put the move on display before it turns into formal language; you can observe it in cases like:", "These practice examples show the action in operation before it becomes a title; you can see it unfold in situations like:"])} {example_titles}. "
             f"{varied((number, 'topo-v02'), ["An approach works only when the same kind of change remains valid in the new situation and still operates on an equivalent object.", "You can only adapt the method if the same action stays legal in your new setting and acts on a matching kind of object.", "An honest transfer happens when the same operation is still allowed where you are going and still works on the same category of object.", "Moving a method only works if the same shift is legal in the new context and still affects the same type of thing.", "You can trust a method transfer when the permitted action stays legal in the other setting and still targets a matching object.", "The approach holds only if the allowed action remains valid in the new domain and continues to work on that object type."])}"
             f" {bridge_close}"
         ),
         "protected_fact": (
-            f"What travels from the lecture into other fields is not the board picture itself. It is this protected fact: {spine_row['surviving_fact']} "
+            f"{varied((number, 'topo-mid-travel'), ["What moves from this topic into other fields is not the drawing itself. It is this protected fact:", "What transfers from this topic into adjacent fields is not the sketch. It is this guarded truth:", "What spreads from this topic to other areas is not the picture. It is this shielded result:", "What migrates from this topic into related fields is not the board drawing. It is this durable fact:", "What goes from this topic into other places is not the diagram. It is this proven truth:", "What passes from this topic to other fields is not the visual. It is this held fact:"])} {spine_row['surviving_fact']} "
             f"The deepening payoff says why that fact matters here: {deepening['payoff']} "
             f"{varied((number, 'topo-v03'), ["In engineering, science, network, or modeling work, the key question is: which fact stays solid enough under the allowed shifts to ground a conclusion?", "For physical systems, circuits, networks, or simulations, you need to ask: which piece of information holds through the allowed changes well enough to prove something?", "When dealing with machines, structures, flow networks, or models, the central question is which fact remains unchanged enough to support a claim.", "In practice, engineering, systems, or simulation problems, you have to find which fact survives the permitted steps strongly enough to justify a result.", "For real-world systems, networks, and models, ask yourself: which information persists through the allowed shifts strongly enough to reach a conclusion?", "In applied work with machines, pipelines, networks, or scaled models, the critical question becomes which fact endures the allowed actions to back up a claim."])}"
             f" {protected_close}"
@@ -6599,39 +6641,39 @@ def build_lecture_first_principles_essay(lecture, spine_row):
     ])
     return {
         "ordinary_problem": (
-            f"The ordinary problem in Lecture {number:02d}, \"{title}\", is not a vocabulary problem. It is the problem of seeing what the lecture is trying to control before any formal name is trusted. "
+            f"{varied((number, 'topo-mid-ordinary'), ["The real difficulty is not learning words. It is being able to spot what the lecture is managing before anyone assigns it a formal term.", "This is not a vocabulary issue. The challenge is recognizing what the lecture tries to hold onto before any name gets pinned on it.", "Words are not the obstacle here. You need to see what the lecture keeps constant before any official name is attached.", "The struggle is not about terminology. It is seeing what the lecture controls before formal language labels it.", "This has nothing to do with knowing the right words. You must recognize what the lecture is keeping stable before any name applies.", "Not a matter of vocabulary at all. You have to spot what the lecture preserves before any formal word becomes meaningful."])} "
             f"The lecture asks: {spine_row['plain_question']} The course page states the problem this way: {deep['problem']} "
-            f"Read these sentences as the entrance to the lecture. They tell the reader what is hard, what has to be watched, and why a board picture alone is not enough. {ordinary_close}"
+            f"{varied((number, 'topo-mid-entrance'), ["These sentences are your door into the topic. They warn what is hard, what you need to watch closely, and why a sketch on paper is not enough.", "Start here to enter the topic. They tell you what is hard, what to look out for, and why a picture alone does not tell the full story.", "This is the threshold to the topic. They show what is risky, what to track, and why drawing it out is not enough to understand it.", "These opening words let you in. They say what is tough, what you must watch, and why a diagram by itself falls short.", "Use these as your entry point. They explain what is difficult, what to monitor, and why a visual alone cannot capture it.", "These are the opening signals. They point out what is hard, what needs watching, and why a single sketch cannot convey it."])} {ordinary_close}"
         ),
         "object_on_page": (
-            f"The object on the page is the first thing to name. In this lecture, the object is: {spine_row['object']} "
-            f"The concrete course moments include {examples}, so the reader has places to see the object before the explanation becomes general. "
-            f"This matters because the object carries the data of the argument: route, side, boundary, sign, surface, field, rule, or possible state. Without that carrier, the lecture title cannot explain anything. {object_close}"
+            f"{varied((number, 'topo-mid-objectis'), ["The first thing to name is what sits on the page. In this topic, it is:", "Start by naming what you see. Here, the thing itself is:", "First, point out what is drawn. For this topic, it is:", "The opening task is labeling what appears. In this case, it is:", "Begin by naming the visual. Here, the object is:", "What you name first is what is there. In this topic, it is:"])} {spine_row['object']} "
+            f"{varied((number, 'topo-mid-moments'), ["Real places in the course let you see the object before the text gets general, at points like:", "Specific course spots show you the thing before talk turns broad, at times like:", "Actual course places let you grasp the object before explanation widens, at stages like:", "Real course instances show the object before the lecture gets wide, at points like:", "Concrete course locations show you the thing before writing gets general, at junctures like:", "Specific course instances show the object before the account broadens, at moments like:"])} {examples}. "
+            f"{varied((number, 'topo-mid-object-carries'), ["This is crucial because the object holds the information of the argument: route, side, boundary, sign, surface, field, rule, or possible state. Without that thing to carry it, the topic title explains nothing. Naming the object first is the honesty check: it fixes what the later reasoning is allowed to be about, so a reader can point back to one visible carrier and test whether the conclusion still fits it.", "It counts because the object keeps the argument's data: route, side, boundary, sign, surface, field, rule, or possible state. The topic name is useless without this container. So the first move is to state the object in plain view, because every later claim has to answer to it, and a reader who loses track of the object has no way to tell a real result from a nice-sounding phrase.", "The object is the vessel that holds the argument's content: route, side, boundary, sign, surface, field, rule, or possible state. Drop the object and the title becomes empty. That is why the lecture names it before anything else: the object gives the reader a fixed thing to inspect, redraw, and follow through the allowed move, so the reasoning stays tied to something real instead of drifting into words.", "What makes this matter is that the object stores everything the argument needs: route, side, boundary, sign, surface, field, rule, or possible state. The topic cannot make sense without it. Once the object is on the table, the reader has a target to check each step against, and any claim that no longer speaks about that same object has quietly changed the question and can be set aside.", "The object must exist to carry the argument's parts: route, side, boundary, sign, surface, field, rule, or possible state. The name alone does nothing. Stating the object first keeps the page honest, because the reader can always return to it and ask whether the current sentence still describes the same thing, or whether the picture has slipped into a different problem wearing the same title.", "The object is essential because it holds the proof's pieces: route, side, boundary, sign, surface, field, rule, or possible state. Without it the topic has no meaning. Naming it at the start gives the reader an anchor: a concrete thing to look at, change under the allowed move, and measure every later conclusion against, so the argument never floats free of what it is really about."])} {object_close}"
         ),
         "allowed_change": (
-            f"After the object is visible, the lecture has to say what can be changed without changing the question. The allowed move is: {spine_row['legal_move']} "
+            f"{varied((number, 'topo-mid-allowedis'), ["Once you can see the thing, the topic must say what shifts without shifting the core question. What you are allowed to do is:", "After the object is clear, you need to know what can move without altering the main query. The legal change is:", "When the object is visible, the topic has to tell you what you can alter without losing the question. What is permitted is:", "After you see what is there, the topic must say what can differ without changing the core issue. What you can shift is:", "Once the thing is in view, the topic has to state what moves without moving the question. The allowed step is:", "After identifying what is drawn, the topic must name what can change without changing the question. What shifts without harm is:"])} {spine_row['legal_move']} "
             f"The deepening key move says the same work in lecture language: {deepening['key_move']} "
-            f"This is the point where intuition becomes a proof habit. A cleaned drawing, easier model, signed count, or theorem use is valid only when the move keeps the same problem alive. {allowed_close}"
+            f"{varied((number, 'topo-mid-proofhabit'), ["Here is where gut feeling grows into how you verify things. A cleaner drawing, a simpler setup, a counted tally, or using a known result is right only when your move keeps the original question in play.", "This is the moment intuition hardens into a checking routine. A nicer picture, an easier form, a careful count, or applying a fact works only if the change does not lose the core question.", "At this point, instinct becomes a verification practice. A tidier sketch, a lighter model, a careful tally, or drawing on a theorem is valid if and only if the action keeps the root problem alive.", "Here intuition turns into proof practice. A refined picture, a basic model, a signed total, or using a known claim is good only when the step holds onto the original issue.", "This is where hunch becomes a checking habit. A polished drawing, a basic setup, a signed sum, or employing a result is legitimate only if the move preserves the main question.", "At this juncture, intuition becomes a proof habit. A better sketch, a simpler system, a count with signs, or using a theorem holds only if the action keeps the original problem standing."])} {allowed_close}"
         ),
         "protected_fact": (
-            f"The lecture earns its conclusion by protecting a fact through the allowed move. The surviving fact is: {spine_row['surviving_fact']} "
+            f"{varied((number, 'topo-mid-survivingis'), ["The topic proves its point by keeping something true through the allowed shift. What stays put is:", "The topic shows its worth by preserving a fact through the legal change. What endures is:", "The topic earns its result by shielding a truth through the permitted move. The fact that lasts is:", "The topic justifies itself by maintaining a fact through the allowed step. What remains is:", "The topic builds its argument by holding a truth through the legal shift. The persistent fact is:", "The topic grounds itself by keeping something true through the permitted change. What survives is:"])} {spine_row['surviving_fact']} "
             f"The deepening section explains what is really happening: {deepening['what_is_really_happening']} "
-            f"Treat this as the center of the lecture. The point is not that the picture looks convincing. The point is that this fact remains available after the permitted change. {protected_close}"
+            f"{varied((number, 'topo-mid-center'), ["Put this at the heart of the lecture. What matters is not that the picture seems right. What matters is that this truth holds up after you make the allowed shift.", "Think of this as the core. The picture does not have to look compelling. The thing that counts is whether this fact persists through the permitted change.", "Treat this as the crux. It is not about whether the drawing looks convincing. It is about whether this fact survives the allowed move.", "See this as the focal point. The sketch does not need to be persuasive. The real point is that this fact endures after the allowed alteration.", "Place this at the center. The picture does not have to look right. The payoff is that this fact remains true after the permitted shift.", "Make this the hub. Whether the drawing looks nice does not matter. What counts is that this truth stays put through the allowed change."])} {protected_close}"
         ),
         "topology_payoff": (
             f"{varied((number, 'topo-v05'), ["The benefit of this way of thinking is that you can draw conclusions about the whole form before calculating every point, timing, or direction.", "The payoff is getting answers about the overall shape before you have to work out all the exact measurements, positions, or routes.", "This approach lets you conclude something about the full structure even when every single measurement or path is not yet finished.", "The gain is reaching conclusions about the complete form before you map out all the positions, schedules, or paths involved.", "The advantage is being able to say something about the total picture before computing every last measurement, location, or path.", "You get to answer questions about the overall form without having to figure out every precise location, timing, or trajectory."])}"
             f"For Lecture {number:02d}, the payoff is: {deepening['payoff']} The later course role is: {spine_row['why_later']} "
-            f"This is why the lecture belongs in the course. It teaches a way to reason from object, move, and surviving evidence to a limited but durable conclusion. {payoff_close}"
+            f"{varied((number, 'topo-mid-belongs'), ["This is why the topic fits into the course. It shows a path to think from the thing itself, the step you take, and what stays constant through it all, to a conclusion that is limited yet holds up.", "That is why this belongs in the course. It trains you to reason from the object, what you do, and surviving proof to reach a solid but focused conclusion.", "That is how this earns its place. It teaches reasoning from the object, the move, and what persists, arriving at a narrow but reliable result.", "Here is why it belongs. It coaches the thought path from the object, your action, and protected facts to a bounded yet durable answer.", "This is why it stays in the course. It trains reasoning from the item, the permitted step, and what lasts, yielding a tight but strong claim.", "That explains its place in the course. It builds reasoning from object, motion, and what survives to a confined yet sturdy conclusion."])} {payoff_close}"
         ),
         "outside_use": (
             f"{varied((number, 'topo-v06'), ["Outside lectures, the same principle applies when any problem in another area has to tell the difference between small changes and hard constraints.", "In other fields, you run into this same need whenever you must separate trivial shifts from actual limits on what can happen.", "Other areas face this exact issue when a problem requires separating minor variations from genuine restrictions.", "Outside the course setting, you hit the same challenge when you need to split harmless adjustments from real boundaries.", "In applied work elsewhere, you face this identical pattern when telling apart minor tweaks from actual blockers.", "Other disciplines meet this same demand when distinguishing between small movements and genuine limits on behavior or structure."])}"
             f"The application bridge says: {application['where_it_matters']} It also names the outside problem: {application['outside_problem']} "
-            f"The transfer is plain: find the carrier, state the allowed change, protect the evidence, and stop at the conclusion the evidence supports. {outside_close}"
+            f"{varied((number, 'topo-mid-transfer'), ["The pattern is straightforward: identify what holds the data, describe what is allowed to shift, guard what proves true, and stop where proof ends.", "The method is simple: find what carries it, say what can change, keep the proof safe, and halt at what the proof covers.", "Here is how to do it: spot the carrier, name the permitted shift, protect the evidence, and quit at the conclusion the evidence justifies.", "The recipe is clear: pick out the container, spell out the allowed change, shield the proof, and end where proof is solid.", "The way forward is plain: locate the holder, state what shifts are okay, lock in the evidence, and stop at what it shows.", "The move is straightforward: label the carrier, declare the legal change, shield the facts, and conclude where facts support."])} {outside_close}"
         ),
         "wrong_use": (
-            f"The wrong use of Lecture {number:02d} is to keep the topic name while dropping the rule that made the lecture honest. "
+            f"{varied((number, 'topo-mid-wronguse'), ["The mistake is keeping the name while throwing out the constraint that kept the lecture true.", "The error is using the label while erasing the condition that made the lecture honest.", "The problem is holding the term while discarding the rule that protected the lecture.", "The trap is hanging onto the name while dropping the requirement that made the lecture sound.", "The pitfall is preserving the word while shedding the control that kept the lecture straight.", "The fault is keeping the label while losing the rule that made the lecture right."])} "
             f"The lecture says why the situation is hard: {deepening['why_it_is_hard']} The application limit says: {application['honest_limit']} "
-            f"A repaired explanation names the shortcut that would change the problem, then states exactly what remains unproved after the lecture's real payoff has been used. {wrong_close}"
+            f"{varied((number, 'topo-mid-repaired'), ["A corrected version identifies the step that would shift what the problem asks, then says exactly which part remains without proof after the lecture's main point is done.", "A fixed account points out the shortcut that would alter the question, then spells out what stays unproven after the real work is finished.", "A better explanation marks the jump that would change what is being asked, then shows exactly what has no proof once the payoff is used.", "A revision notes the gap that would reframe the question, then tells precisely what remains unshown after the lecture delivers its result.", "A corrected form notes the step that would reshape what we are asking, then states exactly what is unproven once the key payoff is done.", "An improved version flags the shortcut that would shift the problem, then specifies precisely what has no proof after the lecture's core result."])} {wrong_close}"
         ),
     }
 
@@ -10632,9 +10674,9 @@ def main():
         deep["essay"] = LECTURE_ESSAYS[number]
         deep["deepening"] = build_lecture_deepening(LECTURE_DEEPENING[number], spine_by_lecture[number])
         deep["source_lens"] = LECTURE_SOURCE_LENS[number]
-        deep["source_checkpoint"] = build_lecture_source_checkpoint(LECTURE_SOURCE_CHECKPOINTS[number], spine_by_lecture[number])
+        deep["source_checkpoint"] = build_lecture_source_checkpoint(LECTURE_SOURCE_CHECKPOINTS[number], spine_by_lecture[number], number)
         deep["walkthrough"] = build_lecture_walkthrough(LECTURE_WALKTHROUGHS[number], spine_by_lecture[number])
-        deep["caption_nuance"] = build_lecture_caption_nuance(LECTURE_CAPTION_NUANCE[number], spine_by_lecture[number])
+        deep["caption_nuance"] = build_lecture_caption_nuance(LECTURE_CAPTION_NUANCE[number], spine_by_lecture[number], number)
         lecture_record = {
             "lecture": number,
             "videos": [v for v, _ in items],
