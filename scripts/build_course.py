@@ -6502,22 +6502,22 @@ def build_lecture_application_bridge(lecture, spine_row):
     ])
     return {
         "outside_problem": (
-            f"Outside this lecture, the same problem appears whenever a real situation has too many visible details to test one by one. "
+            f"{varied((number, 'topo-v00'), ["You see this same issue in real life whenever something has so many details that you cannot check them all separately.", "Whenever a practical problem involves too many moving parts to examine individually, you are facing this exact situation.", "Real-world situations often hit this wall: there are too many specifics to verify one at a time.", "Any problem with too much data to test piece by piece, outside a classroom setting, runs into this same obstacle.", "This shows up everywhere a situation has enough components that testing each one would be impossible.", "Practical work hits this wall when there is too much to check off one item at a time."])}"
             f"Lecture {number:02d}, \"{title}\", starts from this object: {spine_row['object']} "
             f"It asks this plain question: {spine_row['plain_question']} "
-            f"In an outside field, the reader first has to find the object that carries the same kind of information before borrowing the course idea."
+            f"{varied((number, 'topo-v01'), ["When you go to another field, you first have to locate the corresponding object that holds the same kind of data.", "Moving to a new field requires finding an object that carries the equivalent information before you can adapt the course method.", "To apply the idea elsewhere, find what object in that domain stores the same information the course idea depends on.", "Before using the course approach in a new area, you must identify which object there holds matching information.", "Taking the idea outside the course means first finding what in that field holds the same type of information.", "The first step in a new field is to spot what object can stand in for the one the course method uses."])}"
             f" {outside_close}"
         ),
         "topology_bridge": (
             f"The bridge from the lecture to an application is the legal move: {spine_row['legal_move']} "
             f"The lecture examples, including {example_titles}, make that move tangible before it becomes terminology. "
-            f"An application is honest only when the same sort of move is still legal in the new setting and still acts on the same kind of object."
+            f"{varied((number, 'topo-v02'), ["An approach works only when the same kind of change remains valid in the new situation and still operates on an equivalent object.", "You can only adapt the method if the same action stays legal in your new setting and acts on a matching kind of object.", "An honest transfer happens when the same operation is still allowed where you are going and still works on the same category of object.", "Moving a method only works if the same shift is legal in the new context and still affects the same type of thing.", "You can trust a method transfer when the permitted action stays legal in the other setting and still targets a matching object.", "The approach holds only if the allowed action remains valid in the new domain and continues to work on that object type."])}"
             f" {bridge_close}"
         ),
         "protected_fact": (
             f"What travels from the lecture into other fields is not the board picture itself. It is this protected fact: {spine_row['surviving_fact']} "
             f"The deepening payoff says why that fact matters here: {deepening['payoff']} "
-            f"In a physical, engineering, network, or modeling problem, the matching question is which fact survives the allowed changes well enough to support a conclusion."
+            f"{varied((number, 'topo-v03'), ["In engineering, science, network, or modeling work, the key question is: which fact stays solid enough under the allowed shifts to ground a conclusion?", "For physical systems, circuits, networks, or simulations, you need to ask: which piece of information holds through the allowed changes well enough to prove something?", "When dealing with machines, structures, flow networks, or models, the central question is which fact remains unchanged enough to support a claim.", "In practice, engineering, systems, or simulation problems, you have to find which fact survives the permitted steps strongly enough to justify a result.", "For real-world systems, networks, and models, ask yourself: which information persists through the allowed shifts strongly enough to reach a conclusion?", "In applied work with machines, pipelines, networks, or scaled models, the critical question becomes which fact endures the allowed actions to back up a claim."])}"
             f" {protected_close}"
         ),
         "where_it_matters": (
@@ -6528,7 +6528,7 @@ def build_lecture_application_bridge(lecture, spine_row):
         "honest_limit": (
             f"The honest limit is that Lecture {number:02d} does not solve every outside problem that resembles it. "
             f"It gives a first-principles test for using the idea: keep the object explicit, preserve the legal move, and stop at the conclusion supported by {spine_row['surviving_fact']} "
-            f"Exact locations, timings, sizes, costs, material behavior, or full motion paths may still require later mathematics or domain-specific evidence."
+            f"{varied((number, 'topo-v04'), ["Precision about where things are, when they occur, how big they are, what they cost, how materials act, or exactly how they move may still call for additional math or specialized knowledge.", "You might still need advanced mathematics or field-specific training to determine exact positions, timings, magnitudes, expenses, material properties, or full movement patterns.", "Getting the specific coordinates, time values, measurements, costs, material responses, or complete paths often requires extra computation or subject-matter expertise.", "Additional specialized mathematics or domain knowledge may still be required for pinpointing locations, moments, scales, budgets, material response, or motion details.", "Working out the exact placements, times, dimensions, expenses, how materials behave, or the full paths typically needs other math or expert knowledge.", "Fine details like exact spots, time moments, physical size, costs, how something is made, or complete paths still may require different methods or specialized input."])}"
             f" {limit_close}"
         ),
     }
@@ -6619,12 +6619,12 @@ def build_lecture_first_principles_essay(lecture, spine_row):
             f"Treat this as the center of the lecture. The point is not that the picture looks convincing. The point is that this fact remains available after the permitted change. {protected_close}"
         ),
         "topology_payoff": (
-            f"The topology payoff is that a whole-shape conclusion can follow before every measurement, location, or path is computed. "
+            f"{varied((number, 'topo-v05'), ["The benefit of this way of thinking is that you can draw conclusions about the whole form before calculating every point, timing, or direction.", "The payoff is getting answers about the overall shape before you have to work out all the exact measurements, positions, or routes.", "This approach lets you conclude something about the full structure even when every single measurement or path is not yet finished.", "The gain is reaching conclusions about the complete form before you map out all the positions, schedules, or paths involved.", "The advantage is being able to say something about the total picture before computing every last measurement, location, or path.", "You get to answer questions about the overall form without having to figure out every precise location, timing, or trajectory."])}"
             f"For Lecture {number:02d}, the payoff is: {deepening['payoff']} The later course role is: {spine_row['why_later']} "
             f"This is why the lecture belongs in the course. It teaches a way to reason from object, move, and surviving evidence to a limited but durable conclusion. {payoff_close}"
         ),
         "outside_use": (
-            f"Outside the lecture, the same habit matters when a problem in another field has to separate harmless change from a real constraint. "
+            f"{varied((number, 'topo-v06'), ["Outside lectures, the same principle applies when any problem in another area has to tell the difference between small changes and hard constraints.", "In other fields, you run into this same need whenever you must separate trivial shifts from actual limits on what can happen.", "Other areas face this exact issue when a problem requires separating minor variations from genuine restrictions.", "Outside the course setting, you hit the same challenge when you need to split harmless adjustments from real boundaries.", "In applied work elsewhere, you face this identical pattern when telling apart minor tweaks from actual blockers.", "Other disciplines meet this same demand when distinguishing between small movements and genuine limits on behavior or structure."])}"
             f"The application bridge says: {application['where_it_matters']} It also names the outside problem: {application['outside_problem']} "
             f"The transfer is plain: find the carrier, state the allowed change, protect the evidence, and stop at the conclusion the evidence supports. {outside_close}"
         ),
@@ -7471,12 +7471,12 @@ def build_concept_application(concept):
         ),
         "why_it_matters": (
             f"This matters because {title} can give a guarantee before every detail is computed. The protected fact is {protected}. "
-            f"When that fact is truly protected, the reader can know that some route is blocked, some event is forced, some count survives, or some model has enough structure to support the claim."
+            f"{varied((cid, 'topo-v07'), ["If that information stays intact, then you can be sure that some path gets cut off, some event must happen, some tally holds firm, or some system has enough depth to back the claim.", "When that information remains true, you know for certain that some route is closed, an event will occur, a count does not change, or a structure is solid enough to support it.", "As long as that fact holds, you can declare that some opening is shut, something will happen, a number stays the same, or the setup is sturdy enough for the argument.", "If that piece stays protected, then you can confirm that some way is blocked, some result occurs, some total remains fixed, or some architecture holds up the conclusion.", "When that core fact stands, you can assure yourself that some direction is barred, an outcome is guaranteed, a value stays constant, or the whole thing has enough backbone to prove it.", "So long as that information does not break, you know that some passage closes, an event is forced, a figure holds, or the system is strong enough to justify the answer."])}"
             f" {matters_close}"
         ),
         "honest_limit": (
             f"The limit is just as important as the payoff. {failure}. So {title} does not solve the whole outside problem by itself. "
-            f"It supports only the conclusion earned by the object, allowed move, protected fact, and failure check; speed, exact location, cost, material behavior, or numerical design may still need other methods."
+            f"{varied((cid, 'topo-v08'), ["It covers only what the object, allowed action, protected fact, and check for failure can reach; other factors like speed, exact spot, money, what things are made of, or numbers might call for different math.", "The limits are set by the object, the move allowed, the fact that persists, and the failure test; other concerns like timing, location, cost, materials, or calculations need other approaches.", "What it can tell you comes from the object, the permitted shift, the surviving fact, and testing what breaks; anything else like velocity, address, expense, substance, or fine numbers wants other methods.", "The scope depends on the object, action permitted, protected data, and failure point; issues like rate, position, price, composition, or measurement specifics will still need other tools.", "It handles only what flows from the object, the allowed operation, the held fact, and the break point; further needs like velocity, place, budget, medium, or exact figures demand alternative paths.", "The range covers just the object, the legal action, the safe fact, and what fails; everything else—rate, location, cost, the material itself, or numerical specifics—requires something different."])}"
             f" {limit_close}"
         ),
     }
@@ -7503,9 +7503,9 @@ def build_concept_essay_tail(concept):
     ])
     return (
         f"In plain terms, {title} matters because it answers a very specific worry: {depth['why_it_exists']} "
-        f"The idea is not important because it sounds abstract. It is important because it tells the reader what can still be known after the permitted changes have been made. "
+        f"{varied((cid, 'topo-v09'), ["This idea earns its place not because it sounds removed from reality, but because it says what you can still trust once the allowed moves are finished.", "It is not valued for being abstract-sounding; its value comes from telling you what holds after the permitted steps are complete.", "The worth is not in the abstract language; what counts is that it names what remains true after the allowed shifts finish.", "Do not judge it by how abstract it sounds; its actual value is that it spells out what you can still rely on after the allowed changes end.", "It is not important for its abstract tone; the real importance is that it tells you what survives after the legal moves finish.", "Its value does not stem from abstract framing; it comes from showing what remains knowable after the permitted transformations are done."])}"
         f"For this concept, the working principle is {principle}. The protected evidence is {protected}. "
-        f"In topology, that evidence may block a route, force a meeting, keep a count steady, or show that two pictures cannot be the same under the stated rules. "
+        f"{varied((cid, 'topo-v10'), ["In this field of study, that information might close off a pathway, demand a contact, hold a tally steady, or prove two shapes cannot match under the conditions set.", "From this perspective, the fact might shut a route, cause a connection to happen, keep a sum unchanged, or show two figures are not equivalent under the rules.", "Applied here, that piece might block a direction, require an intersection, preserve a count, or demonstrate two forms cannot be identical given the constraints.", "In this framework, the evidence might seal a passage, force a crossing, maintain a number, or display that two configurations are not the same given the stated boundaries.", "This way, the fact might stop a route, necessitate a joining, secure a quantity, or reveal two outlines are not alike given the rules in play.", "From here, the information might cut off a path, require a merge, guard a total, or establish that two shapes do not match given the terms."])}"
         f"Outside topology, the same thinking applies only after the other field states its own object and allowed change; {application['other_fields']} "
         f"The limit is also part of the lesson: {failure}. {close}"
     )
@@ -7771,7 +7771,7 @@ def build_concept_first_principles_essay(concept):
         ),
         "allowed_change": (
             f"After the object is visible, the explanation has to name the allowed change. For {title}, the action is: {work['operation']} "
-            f"This is the part of the concept that turns a hard picture into a usable one. The change may be a motion, a cleanup, a count, a comparison, a gluing, or a modeling step. "
+            f"{varied((cid, 'topo-v11'), ["This is where the thinking shifts a hard diagram into something you can actually work with. The shift might be motion, repair, counting, sizing up, joining, or building a model.", "This piece takes a tangled picture and turns it into something practical. What changes might be movement, cleanup, accounting, comparison, combining, or simulation.", "Here is where the idea makes a difficult drawing into a tool you can use. That transformation could be sliding things, fixing gaps, recording sums, matching sizes, binding pieces, or planning out.", "This is how the method converts a complicated image into something workable. The move involved might be repositioning, organizing, tallying, weighing options, cementing things, or setting up a scenario.", "This point is where the reasoning converts a knotty form into something actionable. The conversion might involve shifting, reorganizing, totaling, assessing, connecting, or simulating a setup.", "This is the part that takes a resistant picture and makes it usable. The underlying work might be rearranging, clearing, summing, comparing, fusing, or modeling circumstances."])}"
             f"It is allowed only when it keeps the original question intact rather than quietly replacing it with an easier question. {allowed_close}"
         ),
         "protected_fact": (
@@ -7785,7 +7785,7 @@ def build_concept_first_principles_essay(concept):
             f"The page states the mathematical principle this way: {concept['math_principle']} {payoff_close} {payoff_floor}"
         ),
         "outside_use": (
-            f"Outside topology, the same habit matters when another field faces the same kind of problem in different material. "
+            f"{varied((cid, 'topo-v12'), ["Outside this academic area, the same approach works when another discipline confronts the same kind of challenge using different stuff.", "In other academic or professional areas, this identical process shows up when the problem looks the same but the material is different.", "Beyond this course, you will see the same strategy wherever another field faces an equivalent question in its own terms.", "In other professional areas, this same reasoning applies when another domain faces this category of question in its own elements.", "Outside this specific study, you run across this identical pattern whenever another field has to handle this type of problem in other resources.", "In other fields of work or study, this exact same thinking works when the question appears again but expressed in different materials."])}"
             f"The concept application says: {application['other_fields']} It also states the work the idea can do: {application['why_it_matters']} "
             f"The transfer is not a claim that topology solves the whole outside problem. It is a way to ask which object is being modeled, which changes are harmless, and which fact must survive. {outside_close}"
         ),

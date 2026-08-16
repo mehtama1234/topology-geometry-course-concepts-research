@@ -13,7 +13,7 @@
     },
     {
       "requirement": "Hand-written lecture depth",
-      "evidence": "15 lecture explainers with full essay sections, 25147 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
+      "evidence": "15 lecture explainers with full essay sections, 25089 first-principles long-essay words, lecture-deepening fields, slow walkthroughs, caption-nuance notes, problem, first principles, mathematical move, important detail, connection, transcript anchors, source-lens paragraphs, and examples.",
       "status": "met"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "requirement": "Lecture reader testing",
-      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 5146 reader-test words, 10687 lecture-application words, and 6136 answer-guide words turn lecture understanding into an auditable task.",
+      "evidence": "Each lecture asks the reader to explain the object, check the allowed move, protect the conclusion, connect the lecture to outside use, and then compare against an answer guide. The 5146 reader-test words, 10578 lecture-application words, and 6136 answer-guide words turn lecture understanding into an auditable task.",
       "status": "met"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "requirement": "Hand-written concepts, themes, subthemes, and method families",
-      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40728 first-principles essay words; theme and subtheme pages add 30413 first-principles essay words and 12149 application words. Method-family pages add 10371 first-principles essay words and 4207 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21650 words, and concept applications add 20734 words.",
+      "evidence": "24 concepts, 6 themes, 10 subthemes, and 5 method families have essays plus first-principles fields. Concept pages add 40622 first-principles essay words; theme and subtheme pages add 30413 first-principles essay words and 12149 application words. Method-family pages add 10371 first-principles essay words and 4207 application words. These sections tie each idea to ordinary problem, object, allowed change, protected fact, topology payoff, outside use, and wrong use. These cross-course answer guides add 21650 words, and concept applications add 20726 words.",
       "status": "met"
     },
     {
@@ -187,14 +187,14 @@
     "lecture_examples": 45,
     "lecture_spine_entries": 15,
     "lecture_essay_words": 5491,
-    "lecture_first_principles_essay_words": 25147,
+    "lecture_first_principles_essay_words": 25089,
     "lecture_deepening_words": 6618,
     "lecture_walkthrough_words": 5230,
     "lecture_source_lens_words": 1643,
     "lecture_source_checkpoint_words": 4482,
     "lecture_caption_nuance_words": 4462,
     "lecture_source_faithfulness_words": 2477,
-    "lecture_application_bridge_words": 10687,
+    "lecture_application_bridge_words": 10578,
     "lecture_source_bridge_words": 7559,
     "lecture_source_bridges": 15,
     "lecture_reconstruction_drills": 15,
@@ -204,11 +204,11 @@
     "source_nuance_repair_words": 6424,
     "lecture_reader_test_words": 5146,
     "lecture_answer_guide_words": 6136,
-    "concept_essay_words": 20715,
-    "concept_first_principles_essay_words": 40728,
+    "concept_essay_words": 20553,
+    "concept_first_principles_essay_words": 40622,
     "concept_workup_words": 10524,
     "concept_anchor_words": 7088,
-    "concept_application_words": 20734,
+    "concept_application_words": 20726,
     "concept_self_check_words": 20673,
     "theme_plain_words": 875,
     "theme_essay_words": 6033,
