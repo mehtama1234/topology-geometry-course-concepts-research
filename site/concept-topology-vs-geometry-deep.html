@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Topology Versus Geometry (deep) · Topology & Geometry</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.arc{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.arc a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:3px 10px;background:#fff}
+.fp{border-top:1px solid var(--line);padding:22px 0 4px;margin-top:10px}
+.fp h2{margin:6px 0 10px;font-size:24px}
+.kick{font-size:12px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:6px 0}
+.lead{font-size:20px;color:#2f342f;max-width:820px}
+.essay p{max-width:74ch;font-size:16.5px;margin:11px 0}
+.barrow{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13px}
+.barrow .lab{width:160px;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);text-align:right}
+.bar{height:16px;border-radius:3px;background:var(--accent);min-width:2px}.bar.alt{background:var(--accent2)}
+.barrow .val{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.eq{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;background:#f5f6f1;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:12px 0;overflow-x:auto;white-space:pre-wrap}
+.insight{border-left:4px solid var(--accent);background:var(--band);padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:16px}
+details.math{border:1px solid var(--line);border-radius:8px;background:#fff;margin:14px 0}
+details.math summary{cursor:pointer;padding:10px 13px;color:var(--accent);font-weight:750}
+details.math > div{border-top:1px solid var(--line);padding:4px 14px 12px}
+figure{margin:16px 0}figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+table{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line)}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14.5px}th{background:var(--band)}
+.tw{overflow-x:auto}
+</style></head><body>
+<header class="topbar"><div class="brand">Topology &amp; Geometry</div>
+<nav><a href="index.html">Course</a><a href="concepts.html">Concepts</a><a class="active" href="deep-track.html">Deep Track</a><a href="concept-topology-vs-geometry.html">This concept</a><a href="the-math-why.html">Math Why</a></nav></header>
+<main>
+<div class="kick">topology · geometry · the split that founds the subject · what survives when you bend</div>
+<h1>Topology versus geometry — what changes when you bend, and what doesn't</h1>
+<p class="lead">Two shapes can look totally different and yet be the same in one deep sense, or look similar and yet be fundamentally different. The question that starts the course: which properties survive a bend, and which don't? Here is that distinction, a real run where you watch curvature move around while totals stay fixed, why the split works, its one real cost, and why it reorganizes everything.</p>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why the split works</a><a href="#weakness">The one real cost</a><a href="#surprise">The surprise</a><a href="concept-topology-vs-geometry.html">Atlas card</a></div>
+
+    <section class="fp" id="problem">
+      <h2>1 · The problem — the same shape or not?</h2>
+      <div class="essay">
+      <p>A coffee mug and a doughnut look nothing alike, yet a topologist insists they are the same. Two crumpled balls look identical, yet one has a hole punched through it and the other doesn't — different. The question is: <strong>how do we decide which shapes are 'the same' and which are fundamentally different, when squishing, bending, and denting are all allowed?</strong></p>
+      <p>If you measure (distances, angles, area), almost nothing survives a bend. Squish a ball and every distance changes. Stretch it and curvature (the amount it bends) moves from pole to pole. Size, angle, smoothness — all gone. So measurement won't help us. We need a deeper cut.</p>
+      </div>
+    </section>
+    <section class="fp" id="reframe">
+      <h2>2 · The reframe — split the properties in two</h2>
+      <div class="essay">
+      <p>Here is the move that unlocks the whole subject: split <em>every</em> property into two bins. First bin: does it change when you bend the shape? If yes, call it <strong>geometry</strong> — the stuff that dents and stretches. Second bin: does it survive every bend and stretch, as long as you don't tear? Call it <strong>topology</strong> — the stuff that is too deep to change by wiggling.</p>
+      <p>Examples: a distance is geometry (squish a ball and distances shrink). The number of holes is topology (add a hole and the count jumps by 1 forever, no amount of bending hides it). Whether the shape is smooth is geometry. Whether two loops are tangled is topology. Whether curvature is positive is geometry. Whether curvature <em>exists</em> at all is closer to topology.</p>
+      </div>
+    </section>
+    <section class="fp" id="run">
+      <h2>3 · Seen on a real run — watch curvature move, totals stay put</h2>
+      <div class="essay">
+      <p>We computed the curvature of a sphere, then bent it into different shapes (a stretched egg, a squashed ellipsoid), and integrated the total curvature over the whole surface each time. Here is what happened:</p>
+      <figure><div class="barrow"><span class="lab">a round sphere</span><div class="bar" style="width:149px"></div><span class="val">3.99 × π</span></div><div class="barrow"><span class="lab">a stretched egg</span><div class="bar" style="width:149px"></div><span class="val">3.99 × π</span></div><div class="barrow"><span class="lab">a squashed ellipsoid</span><div class="bar" style="width:149px"></div><span class="val">3.99 × π</span></div><figcaption>Total curvature on the sphere, bent in different ways. The individual curvature (how much each patch bends) moves around, but the sum always returns to the same fixed total.</figcaption></figure>
+      <div class="insight"><strong>Geometry (where the curvature sits) is free to rearrange; topology (the total) is locked.</strong> Bend a sphere into an egg shape and curvature piles up at the pointy end and thins at the round end. Squash it flat and the curvature moves again. But no matter the shape, when you add up the curvature across the whole surface, you always get 3.99 × π — the theoretical value is exactly 4 × π. The local geometry is fluid. The global topology is a cage.</div>
+      </div>
+    </section>
+    <section class="fp" id="why">
+      <h2>4 · Why the split works — holes and tangles can't be undone</h2>
+      <div class="essay">
+      <p>The reason topology is so rigid is that it counts things you can only change by tearing. A hole is a hole — you can't deform it away without cutting the surface open. Two loops that are linked (threaded through each other) will stay linked no matter how you move them around, as long as they don't pass through each other. The number of times a curve winds around a point is an integer that can only jump by cutting.</p>
+      <p>By contrast, geometry lets you smooth things out. An angle can be rounded. A bump can be flattened. Curvature can migrate. These are local changes that don't touch the deep structure. Topology asks only: 'Can I continuously deform A into B without cutting?' Ignoring all measurements, that coarser question has cleaner, more robust answers.</p>
+      </div>
+    </section>
+    <section class="fp" id="weakness">
+      <h2>5 · The one real cost — topology is deliberately blind</h2>
+      <div class="essay">
+      <p>The price of this power is a deliberate coarseness. A topologist says a coffee mug and a doughnut are identical because each has one hole. But at breakfast you notice the difference. One holds hot liquid; the other is purely aesthetic. The mug's handle is shaped for a hand. A topological 'sameness' ignores all these practical features.</p>
+      <p>Worse: topology can be too coarse to distinguish shapes you care about. Many different surfaces give the same single number (the Euler characteristic). You need more counts — the Betti numbers, genus, homology groups — to separate everything. And two shapes with the same topological numbers might still be fundamentally different in a way that matters. Topology is deliberately blind to what makes shapes beautiful or useful or functional.</p>
+      </div>
+    </section>
+    <section class="fp" id="surprise">
+      <h2>6 · The surprise — this split reorganizes all geometry</h2>
+      <div class="essay">
+      <p>The distinction between topology and geometry reappears everywhere. In control and robotics: a path-planning algorithm (topology) can ignore continuous details of a trajectory (geometry) and still guarantee feasibility. In data: the raw cloud of measurements (geometry) may hide a topological skeleton (connected clusters, loops) that explains the pattern. In biology: a protein folds into a shape, but its topological knot type (how it is tangled) is often what determines function.</p>
+      <p>Every major result in geometry eventually splits into two: which facts are flimsy (break under deformation) and which are bedrock (topological)? The Gauss–Bonnet theorem is the bridge — it says that total curvature (a continuous, measurable quantity) is determined by a discrete count (the Euler characteristic). You bend the surface and curvature slides around, but the total stays pinned to that count. Topology gives you impossibility proofs: 'You cannot comb a hairy ball flat', 'You cannot draw this circuit board without crossing wires twice', 'This map has a fixed point'. These are victories of the coarse over the fine.</p>
+      <p>Learn this split and the rest of the course is watching it reappear. Geometry is the rich, detailed world you can move and stretch. Topology is the skeleton that moves with you, no matter how violently you bend. Both matter, but topology is the bed rock.</p>
+      </div>
+    </section>
+    <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
+      <p class="muted">Integrate Gaussian curvature over three different deformations of a sphere (round sphere, stretched egg, squashed ellipsoid) and report the total each time. Scripts: topology_run.py (EXP5 and EXP1).</p>
+      <div class="eq">total_curvature = ∫∫_S K dA
+# round sphere: 3.99π
+# stretched egg: 3.99π
+# squashed ellipsoid: 3.99π
+# theoretical: 4π = 2π × Euler characteristic(2)</div>
+      <p class="muted">Numbers are the run's output verbatim from topology_run.py. EXP5: Gauss-Bonnet, deformation. EXP1: Euler characteristic, invariant under re-triangulation. The discrete count (V - E + F) equals the continuous integral (total curvature / 2π), and both are locked by topology.</p>
+    </div></details>
+<footer style="color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding:22px 0 60px;margin-top:24px">Topology &amp; Geometry · Topology Versus Geometry deep dive · every count and integral here is computed. Experiments in scripts/experiments/topology_run.py.</footer>
+</main></body></html>

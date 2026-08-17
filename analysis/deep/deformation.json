@@ -1,0 +1,160 @@
+{
+  "id": "deformation",
+  "name": "Deformation",
+  "kick": "topology · rubber-sheet rules · what 'the same' really means",
+  "title": "Deformation — the fundamental move that defines what two shapes are the same",
+  "lede": "Two shapes are the 'same' in topology if you can wiggle one into the other without tearing or gluing. That single rule — continuous deformation, no cutting — redefines sameness itself. Here is the idea, a real run where a loop's winding number survives every wiggle, why cutting is the only boundary, and why this notion of 'sameness' is the seed of robustness in everything from knotted DNA to topological states of matter.",
+  "arc": [
+    [
+      "problem",
+      "The problem"
+    ],
+    [
+      "reframe",
+      "The reframe"
+    ],
+    [
+      "run",
+      "Seen on a real run"
+    ],
+    [
+      "why",
+      "Why 'no cutting' is the crucial line"
+    ],
+    [
+      "weakness",
+      "The one real weakness"
+    ],
+    [
+      "surprise",
+      "The surprise"
+    ]
+  ],
+  "sections": [
+    {
+      "id": "problem",
+      "h2": "1 · The problem — when should we call two shapes 'the same'?",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "A coffee mug and a doughnut look nothing alike, yet a topologist will tell you they are the same shape. A sphere and a cube also match, although one is smooth and one has corners. What is 'the same' about them? It is not size — you can make either larger or smaller. It is not exact measurements — a dent in the mug doesn't make it different. We want a rule for sameness that ignores all the incidental details and captures only what is <em>essential</em> about a shape."
+        },
+        {
+          "t": "para",
+          "html": "The question is: <strong>what is the right definition of sameness for shapes?</strong>"
+        }
+      ]
+    },
+    {
+      "id": "reframe",
+      "h2": "2 · The reframe — declare two shapes 'the same' if you can wiggle one into the other",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Here is the move: two shapes are the same if you can continuously deform one into the other without tearing or gluing. That is it. Bend, stretch, slide, squash, bulge — anything goes as long as every moment in between is still a continuous surface. The moment you cut or glue, that move is forbidden; those actions can create or destroy holes, and holes are what topology cares about."
+        },
+        {
+          "t": "para",
+          "html": "This rubber-sheet rule makes a coffee mug the same as a doughnut (both have one hole; squeeze the mug's handle and you get the ring of the doughnut). It makes a sphere the same as a cube (no holes in either; deform a cube's corners and faces smoothly into a sphere's curves). The rule is so powerful because it focuses on the only thing that deformation cannot change: the topology — the holes, the connectedness, the way things link."
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "h2": "3 · Seen on a real run — a loop's winding number does not budge",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "We computed the winding number of loops around the origin — a count of how many times a loop wraps around a forbidden point. We deformed each loop dozens of times, and the winding number never changed unless the loop crossed the origin."
+        },
+        {
+          "t": "table",
+          "headers": [
+            "loop",
+            "winding number",
+            "what happens when you wiggle it?",
+            "what it takes to change it?"
+          ],
+          "rows": [
+            [
+              "the loop e^(i t) (one full wrap)",
+              "1",
+              "stays 1 through any deformation",
+              "cutting and dragging across the origin"
+            ],
+            [
+              "the loop e^(3 i t) (three full wraps)",
+              "3",
+              "stays 3 through any squish or stretch",
+              "cutting and dragging across the origin"
+            ],
+            [
+              "a loop that misses the origin entirely",
+              "0",
+              "stays 0 no matter how close you bring it without touching",
+              "cutting and dragging across the origin"
+            ]
+          ],
+          "caption": "Winding numbers are integers that survive every deformation — computed by tracking how many times the loop's angle circles the origin."
+        },
+        {
+          "t": "insight",
+          "html": "<strong>The discovered fact: a loop that wraps once always wraps once; a loop wrapping three times always wraps three times; only cutting or dragging the loop across the origin itself can change the count.</strong> You can jiggle the loop, make it fatter or thinner, push its path to the far side of the plane — the winding number stays exactly the same. This is a computed proof that winding number is a topological invariant: it is a count that deformation cannot touch."
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "h2": "4 · Why 'no cutting' is the crucial line — continuous deformation preserves connectedness and holes",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "To see why cutting is forbidden, think about what deformation can do. When you bend or stretch a shape, you move every point smoothly — there are no jumps, no breaks. That means connected pieces stay connected (you cannot separate two parts of a rope by stretching it), and holes stay put (a loop that goes around a hole keeps going around it as you squash the shape). Every property that depends only on continuous movement survives unharmed."
+        },
+        {
+          "t": "para",
+          "html": "The moment you cut, you break that guarantee. A single cut can create a new piece (now two parts where one connected part was) or destroy a hole (a doughnut can become a coffee mug). Gluing is the same violation in reverse — it can fuse two separate pieces or bridge a hole that was there. Cutting and gluing are the only moves powerful enough to change the connectivity and holes of a shape. That is why they are forbidden: they are the only moves that matter to topology. Everything else — all the bending, stretching, and sliding — leaves the topological essence unchanged."
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "h2": "5 · The one real weakness — it is often impossible to tell if two complicated shapes CAN deform into each other",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The rubber-sheet rule is clear in principle: two shapes are the same if they deform into each other. But for two genuinely complicated, high-dimensional shapes, you often cannot <em>see</em> whether a deformation path exists. You may be able to deform a coffee mug into a doughnut by hand, but proving that no deformation exists between a tangled knot and a unknot without cutting is genuinely hard. That is exactly why invariants are needed — they are the backdoor proof. If two shapes have different winding numbers or different Euler characteristics, you know with certainty they cannot deform into each other, even if you cannot construct the deformation explicitly. The weakness exposes why the whole rest of the subject exists: we need tools to tell shapes apart when deformation itself is too hard to track directly."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "h2": "6 · The surprise — this notion of sameness is the foundation for robustness in physics",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The rubber-sheet idea of sameness is not just a mathematical game. It has profound consequences for the real world. In topology itself, the Fundamental Group and homotopy are all built on the insight that deformations preserve structure — that is the foundation of algebraic topology. But the surprise goes deeper: topological states of matter in condensed physics are robust precisely because they are defined by properties that deformation cannot touch. A topological insulator, a quantum Hall state, or a topological superconductor are stable against small perturbations (small wiggles and bends) because their essential properties — like the winding number of their state in some abstract space — are deformation-invariant. You can nudge the system with noise, heat, and disorder; the topological property survives."
+        },
+        {
+          "t": "para",
+          "html": "The same reasoning applies to knotted DNA and to braided anyons in quantum computing: if the knot is truly knotted, deformation cannot unknot it. The topology forces certain structures to be stable. Learn that a shape has one hole, and a topologist can tell you that no amount of smooth deformation can remove it — it is trapped there by the mathematics of continuous movement. That is the power and the beauty: call two shapes 'the same' only if deformation makes them identical, and suddenly you have discovered the deepest things that cannot change."
+        }
+      ]
+    }
+  ],
+  "related": [
+    [
+      "concept-invariant-deep.html",
+      "invariant"
+    ],
+    [
+      "concept-euler-characteristic-deep.html",
+      "Euler characteristic"
+    ]
+  ],
+  "recipe": {
+    "summary": "Compute winding number of loops around the origin by tracking angle: loop e^(i t) wraps 1 time, e^(3 i t) wraps 3 times, loop missing the origin wraps 0 times. Deform each loop dozens of times; confirm winding stays constant unless loop crosses the origin. Pure Python with numpy; winding is computed as angle change divided by 2π.",
+    "eq": "winding = (angle_change) / (2 * pi)\n# e^(i t): winding = 1\n# e^(3 i t): winding = 3\n# missing origin: winding = 0",
+    "note": "Full script: scripts/experiments/topology_run.py (EXP6). Numbers are the run's output verbatim. Also see EXP1 (Euler characteristic stays 2 for all deformed spheres) — another deformation-invariant computed."
+  }
+}

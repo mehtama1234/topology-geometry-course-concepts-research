@@ -1,0 +1,189 @@
+{
+  "id": "triangulation",
+  "name": "Triangulation",
+  "kick": "topology · first principles · cutting a surface into flat pieces so you can compute with it",
+  "title": "Triangulation — why the answer doesn't depend on how you cut",
+  "lede": "A smooth surface is continuous and curvy, which makes it hard to compute with directly. The trick is to chop it into flat triangular patches — a triangulation. Here is why that works, a real run showing five wildly different ways to cut a ball give the same answer, the algebra behind independence-from-the-mesh, one honest flaw, and why computers use this exact move for geometry, physics, and graphics.",
+  "arc": [
+    [
+      "problem",
+      "The problem"
+    ],
+    [
+      "reframe",
+      "The reframe"
+    ],
+    [
+      "run",
+      "Seen on a real run"
+    ],
+    [
+      "why",
+      "Why the cut doesn't matter"
+    ],
+    [
+      "weakness",
+      "The one real weakness"
+    ],
+    [
+      "surprise",
+      "The surprise"
+    ]
+  ],
+  "sections": [
+    {
+      "id": "problem",
+      "h2": "1 · The problem — how do you compute with a curved surface?",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Imagine you have a rubber ball, a wine glass, or the surface of the Earth. It is smooth and curvy and continuous. But if you want a computer to compute with it — to measure something, to simulate a process, to render it on a screen — you need something discrete: numbers, counts, lists of patches. A smooth surface gives you neither. It is infinitely detailed; you cannot list all its points."
+        },
+        {
+          "t": "para",
+          "html": "So the question is: <strong>how do you replace a smooth curvy surface with something you can actually compute on?</strong>"
+        }
+      ]
+    },
+    {
+      "id": "reframe",
+      "h2": "2 · The reframe — chop it into flat pieces",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Here is the move: forget the smooth surface for a moment. Cover it with a net of flat patches. Like a soccer ball's pentagons and hexagons, or a globe stitched from gores. Each patch is a flat piece — a triangle is simplest. Each has corners (called vertices), edges between them, and interior (called a face). This is a <strong>triangulation</strong>: a discrete mesh that sits on the surface and replaces the smooth thing with something you can hold in a list and compute with."
+        },
+        {
+          "t": "para",
+          "html": "Now here is the magical part: suppose you computed some quantity on this mesh — say, a count or an arithmetic sum over the vertices and edges and faces. If you now re-cut the surface with a different mesh, will you get a different answer? Or will it stay the same? The deeper question is: does the answer belong to the surface, or does it depend on how you sliced it?"
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "h2": "3 · Seen on a real run — the same count, five wildly different meshes",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "We computed vertices minus edges plus faces (the Euler characteristic) for five dramatically different triangulations of the same ball surface. Every number here is counted by the program."
+        },
+        {
+          "t": "table",
+          "headers": [
+            "shape (how it's paneled)",
+            "vertices",
+            "edges",
+            "faces",
+            "V − E + F"
+          ],
+          "rows": [
+            [
+              "ball as a tetrahedron",
+              "4",
+              "6",
+              "4",
+              "2"
+            ],
+            [
+              "ball as a cube",
+              "8",
+              "12",
+              "6",
+              "2"
+            ],
+            [
+              "ball as an octahedron",
+              "6",
+              "12",
+              "8",
+              "2"
+            ],
+            [
+              "ball as a dodecahedron",
+              "20",
+              "30",
+              "12",
+              "2"
+            ],
+            [
+              "ball as an icosahedron",
+              "12",
+              "30",
+              "20",
+              "2"
+            ],
+            [
+              "doughnut (torus)",
+              "7",
+              "21",
+              "14",
+              "0"
+            ]
+          ],
+          "caption": "Five completely different ways to cut a ball — coarse, fine, symmetric, all giving the same V − E + F = 2. Same shape, different mesh, same answer."
+        },
+        {
+          "t": "insight",
+          "html": "<strong>Every way of triangulating a ball gives 2; the torus gives 0.</strong> A tetrahedron has 4 corners and 6 edges. An icosahedron has 12 corners and 30 edges. They are nothing alike as meshes. Yet corners minus edges plus faces lands on 2 for each one. The doughnut, cut the same way, gives 0. That stability proves the count comes from the shape of the surface, not from the cutting."
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "h2": "4 · Why the cut doesn't matter — offsetting pairs",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Here is how triangulation earns independence from the mesh. Suppose you take one face (a triangle) and draw a line across it, splitting it into two triangles. What changes? You add one new edge (the line you drew) and you add one new face (the second triangle). In the sum V − E + F, you gain 1 from the new face and lose 1 from the new edge. They cancel. The total stays put."
+        },
+        {
+          "t": "para",
+          "html": "Or suppose you place a new vertex (corner) in the middle of an existing edge. You add 1 vertex, but you split 1 edge into 2 — so you add 1 edge-pair but lose 1 edge-pair. They cancel. Every legal refinement — every way to make the mesh finer or to shift corners around — changes the pieces in offsetting pairs. The signs in the formula (plus for vertices and faces, minus for edges) are chosen precisely to guarantee cancellation. That is why the count is independent of the mesh: it belongs to the surface itself."
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "h2": "5 · The one real weakness — you must triangulate honestly",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Triangulation assumes you are cutting a true surface — something smooth and continuous with no tears or self-intersections. If you write down a mesh that doesn't actually sit on a real surface — corners that don't connect, faces that crease at a hard right angle instead of following the smooth shape — then the arithmetic may give you nonsense. A degenerate or dishonest mesh can lie."
+        },
+        {
+          "t": "para",
+          "html": "There is also a practical cost: to get an accurate answer, you must sometimes refine the mesh very finely (adding millions of triangles), which costs time and memory. And for some purposes, you need more than a triangulation; you need to know which way faces point or how far apart corners are, which a triangulation alone doesn't guarantee. You need a <em>good</em> triangulation."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "h2": "6 · The surprise — this is how computers actually do geometry",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "That idea — replace the smooth surface with a mesh, compute on the mesh, and hope that the mesh converges to the truth — is not a theoretical trick. It is the <strong>entire foundation</strong> of how computers handle continuous shapes. Finite element analysis for physics simulations: you cut a material into tetrahedra, then solve equations on each little piece. Computer graphics and rendering: every 3D object in a game or a film is a mesh of triangles. Mesh generation algorithms are a major branch of computational geometry."
+        },
+        {
+          "t": "para",
+          "html": "The same goes for curves and surfaces in the abstract. Whenever you need a computer to work with something smooth and continuous, you first triangulate (or divide into elements), then compute. The core move — discrete approximation to a continuous object — runs through all of applied mathematics, and triangulation is its simplest and most geometric form. Learn to cut a surface into flat pieces and trust that the answer won't depend on the cut, and you have just learned the method that powers simulations, graphics, and every other shape-based computation."
+        }
+      ]
+    }
+  ],
+  "related": [
+    [
+      "concept-euler-characteristic-deep.html",
+      "Euler characteristic"
+    ],
+    [
+      "concept-gauss-bonnet-deep.html",
+      "Gauss–Bonnet"
+    ]
+  ],
+  "recipe": {
+    "summary": "Triangulate the ball surface in five ways (tetrahedron, cube, octahedron, dodecahedron, icosahedron) and a torus; count vertices (V), edges (E), faces (F) for each; report V − E + F. Arithmetic on the mesh counts; output is just integers.",
+    "eq": "# For each triangulation:\n# chi = V - E + F\n# Ball (all five): chi = 2\n# Torus: chi = 0",
+    "note": "Full script: scripts/experiments/topology_run.py (EXP1). Numbers are the run's output verbatim; every count is computed from the mesh."
+  }
+}

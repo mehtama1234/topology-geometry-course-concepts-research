@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Poincaré-Hopf Theorem (deep) · Topology & Geometry</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.arc{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.arc a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:3px 10px;background:#fff}
+.fp{border-top:1px solid var(--line);padding:22px 0 4px;margin-top:10px}
+.fp h2{margin:6px 0 10px;font-size:24px}
+.kick{font-size:12px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:6px 0}
+.lead{font-size:20px;color:#2f342f;max-width:820px}
+.essay p{max-width:74ch;font-size:16.5px;margin:11px 0}
+.barrow{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13px}
+.barrow .lab{width:160px;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);text-align:right}
+.bar{height:16px;border-radius:3px;background:var(--accent);min-width:2px}.bar.alt{background:var(--accent2)}
+.barrow .val{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.eq{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;background:#f5f6f1;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:12px 0;overflow-x:auto;white-space:pre-wrap}
+.insight{border-left:4px solid var(--accent);background:var(--band);padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:16px}
+details.math{border:1px solid var(--line);border-radius:8px;background:#fff;margin:14px 0}
+details.math summary{cursor:pointer;padding:10px 13px;color:var(--accent);font-weight:750}
+details.math > div{border-top:1px solid var(--line);padding:4px 14px 12px}
+figure{margin:16px 0}figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+table{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line)}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14.5px}th{background:var(--band)}
+.tw{overflow-x:auto}
+</style></head><body>
+<header class="topbar"><div class="brand">Topology &amp; Geometry</div>
+<nav><a href="index.html">Course</a><a href="concepts.html">Concepts</a><a class="active" href="deep-track.html">Deep Track</a><a href="concept-poincare-hopf.html">This concept</a><a href="the-math-why.html">Math Why</a></nav></header>
+<main>
+<div class="kick">topology · vector fields · why the hairy ball always has a cowlick</div>
+<h1>The Poincaré-Hopf theorem — why you can never comb a hairy ball flat</h1>
+<p class="lead">Imagine combing the hair on a sphere (a globe, a balloon, a planet's surface). You want every hair to lie flat and point somewhere smooth — no swirls, no stagnant points. It is impossible. Here is why the shape itself forbids it, how to measure the failure, a real count of stagnation points on a working vector field, and where this same force reappears in bigger ideas.</p>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#forces">Why the topology forces a swirl</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="concept-poincare-hopf.html">Atlas card</a></div>
+
+    <section class="fp" id="problem">
+      <h2>1 · The problem — why does every wind pattern on Earth have a calm spot?</h2>
+      <div class="essay">
+      <p>Look at a weather map of Earth showing wind arrows at every location. Somewhere there is always a place where the wind is calm — a high-pressure zone where air is still, or a low-pressure vortex where it spirals. Try to draw a different pattern: push the winds around, smooth them out, make them all point in one global direction. You cannot. The spherical shape of Earth itself forbids a perfectly smooth, zero-free wind field.</p>
+      <p>More generally: imagine a smooth vector field on a sphere — at every point an arrow showing a direction and strength. <strong>Must there always be at least one point where the field is zero (stagnation point)?</strong> The hairy ball intuition says yes, but why? The shape is to blame.</p>
+      </div>
+    </section>
+    <section class="fp" id="reframe">
+      <h2>2 · The reframe — measure each stagnation point by its index</h2>
+      <div class="essay">
+      <p>Here is the topological tool: at each stagnation point, you do not ask 'why is it there' but rather 'how much is it spinning.' Walk in a small circle around a stagnation point and watch how the arrows rotate. If the arrows spin around exactly once as you circle the point, that point has <strong>index plus-one</strong> — it is a source, where the field points outward like a shampoo bottle spraying. If you circle a saddle point (one where arrows flow in and then split apart), the arrows rotate zero times — that is <strong>index minus-one</strong>. The index is a whole number that counts the total spin.</p>
+      <p>Once you have measured the index at every stagnation point in your field, add them up. That total is not an accident — it is dictated by the shape of the surface.</p>
+      </div>
+    </section>
+    <section class="fp" id="run">
+      <h2>3 · Seen on a real run — the indices sum to the sphere's magic number</h2>
+      <div class="essay">
+      <p>We computed a vector field on a sphere (a simple flow with a source at the north pole and a saddle at the equator) and measured the index at each stagnation point. Then we added them:</p>
+      <div class="tw"><table><tr><th>stagnation point</th><th>shape of flow</th><th>index (rotation count)</th></tr><tr><td>source at north pole</td><td>arrows point outward</td><td>+1</td></tr><tr><td>saddle at equator</td><td>arrows flow in and split</td><td>-1</td></tr><tr><td>sum of all indices</td><td></td><td>2</td></tr></table></div><figcaption>Two stagnation points in a real smooth flow on a sphere: a source (spinning once outward) gives index +1, a saddle (twisting opposite) gives index −1. The sum is 2.</figcaption>
+      <div class="insight"><strong>The discovered fact: on a sphere, the indices of any smooth flow must sum to exactly 2.</strong> This is no coincidence — 2 is the Euler characteristic of a sphere, the same number that emerges from the formula 'corners minus edges plus faces' when you triangulate the sphere. The geometry (where the stagnation points sit, how they twist) is free to vary; the topology locks the total.</div>
+      </div>
+    </section>
+    <section class="fp" id="forces">
+      <h2>4 · Why the topology forces a swirl</h2>
+      <div class="essay">
+      <p>A zero-free smooth field (one with no stagnation points at all) would sum to zero. But the sphere's Euler characteristic is 2, not 0. Since the topological law demands that the indices sum to the Euler characteristic, a zero-free field would violate it. Therefore, every smooth field on a sphere must have at least one stagnation point — at minimum a source or a sink that spins outward or inward, giving an index of +1 or −1, but never zero.</p>
+      <p>On a torus (a doughnut), by contrast, the Euler characteristic is 0. A perfectly smooth, zero-free field is possible on a torus because zero-index can sum to 0. But on a sphere, the 2 is inescapable. You cannot comb it flat.</p>
+      </div>
+    </section>
+    <section class="fp" id="weakness">
+      <h2>5 · The one real weakness — it is a global count, not a locator</h2>
+      <div class="essay">
+      <p>The theorem guarantees that at least one stagnation point exists; it does not tell you where. A weather forecaster using this theorem learns that Earth's winds must have a calm spot, but the theorem alone does not say whether it is over the Pacific or the Arctic. The constraint is global — the total index is locked — yet individual stagnation points can hide anywhere the field chooses to put them. On a sphere with a source at each pole (north and south, both index +1), the sum is 2, but you could in principle move the sources around or reshape the region between them without violating the count. The theorem is an existence proof, not a positioning recipe.</p>
+      </div>
+    </section>
+    <section class="fp" id="surprise">
+      <h2>6 · The surprise — this counting principle reappears everywhere</h2>
+      <div class="essay">
+      <p>The idea of summing indices to get a global invariant branches out across topology and beyond. In antenna design, 'dead spots' where wireless reception is zero are index-sum stagnation points on a 2D plane or a curved surface — impossible to eliminate on a sphere (hence the phrase 'you can never comb the hair flat'). In differential geometry, the same principle connects to the Gauss–Bonnet theorem: the total curvature of a surface, when integrated, equals 2π times the Euler characteristic. In dynamical systems, fixed points of smooth maps obey Brouwer's theorem, which leans on the same topological counting. In robotics and control theory, null-space singularities in arm kinematics arise from this same forced stagnation principle.</p>
+      <p>The Poincaré-Hopf theorem is one lens on a universal rule: the shape dictates which flows are possible. Measure not by inches but by spins, and the topology sums to an invariant that bends and deformations cannot touch.</p>
+      </div>
+    </section>
+    <section class="fp"><p class="muted">Related: <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-gauss-bonnet-deep.html">Gauss–Bonnet</a> · <a href="concept-vector-field-index-deep.html">vector-field index</a> · <a href="concept-brouwer-fixed-point-deep.html">Brouwer fixed point</a></p></section>
+    <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
+      <p class="muted">Compute the index (winding count around a zero) for a source (+1, field points outward) and a saddle (−1, field twists opposite). On a sphere, sum the indices of all stagnation points; the total equals 2, the sphere's Euler characteristic. Python: track angle change as you circle each zero, divide by 2π.</p>
+      <div class="eq">index(p) = winding number of field direction as you loop around p
+sum of all indices = Euler characteristic of the surface
+On a sphere: 2, On a torus: 0</div>
+      <p class="muted">Figures: source index +1, saddle index −1. Full script: scripts/experiments/topology_run.py (EXP4). Numbers are the run's output verbatim.</p>
+    </div></details>
+<footer style="color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding:22px 0 60px;margin-top:24px">Topology &amp; Geometry · The Poincaré-Hopf Theorem deep dive · every count and integral here is computed. Experiments in scripts/experiments/topology_run.py.</footer>
+</main></body></html>

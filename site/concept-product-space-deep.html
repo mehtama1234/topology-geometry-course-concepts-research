@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Spaces (deep) · Topology & Geometry</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.arc{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.arc a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:3px 10px;background:#fff}
+.fp{border-top:1px solid var(--line);padding:22px 0 4px;margin-top:10px}
+.fp h2{margin:6px 0 10px;font-size:24px}
+.kick{font-size:12px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:6px 0}
+.lead{font-size:20px;color:#2f342f;max-width:820px}
+.essay p{max-width:74ch;font-size:16.5px;margin:11px 0}
+.barrow{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13px}
+.barrow .lab{width:160px;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);text-align:right}
+.bar{height:16px;border-radius:3px;background:var(--accent);min-width:2px}.bar.alt{background:var(--accent2)}
+.barrow .val{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.eq{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;background:#f5f6f1;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:12px 0;overflow-x:auto;white-space:pre-wrap}
+.insight{border-left:4px solid var(--accent);background:var(--band);padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:16px}
+details.math{border:1px solid var(--line);border-radius:8px;background:#fff;margin:14px 0}
+details.math summary{cursor:pointer;padding:10px 13px;color:var(--accent);font-weight:750}
+details.math > div{border-top:1px solid var(--line);padding:4px 14px 12px}
+figure{margin:16px 0}figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+table{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line)}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14.5px}th{background:var(--band)}
+.tw{overflow-x:auto}
+</style></head><body>
+<header class="topbar"><div class="brand">Topology &amp; Geometry</div>
+<nav><a href="index.html">Course</a><a href="concepts.html">Concepts</a><a class="active" href="deep-track.html">Deep Track</a><a href="concept-product-space.html">This concept</a><a href="the-math-why.html">Math Why</a></nav></header>
+<main>
+<div class="kick">topology · first principles · gluing one shape's coordinates to another's</div>
+<h1>Product spaces — when a bigger space is just two shapes paired together</h1>
+<p class="lead">Many of the spaces we actually care about are built by taking two simpler things and pairing every point of one with every point of the other. A doughnut is a circle paired with a circle. A robot arm's configuration is its joint angles all multiplied together. Here is how to see a hidden product, and the remarkable fact that the Euler characteristic — that stubborn number from earlier — just multiplies when you build a product.</p>
+<div class="arc"><a href="#problem">Many real spaces are really two things at once</a><a href="#reframe">The product: pair every point with every point</a><a href="#run">Seen on a real run — the characteristic multiplies</a><a href="#why">Why the number just multiplies</a><a href="#weakness">When a space only looks like a product locally</a><a href="#surprise">Where products hide in bigger systems</a><a href="concept-product-space.html">Atlas card</a></div>
+
+    <section class="fp" id="problem">
+      <h2>1 · The problem — many real spaces are really two things at once</h2>
+      <div class="essay">
+      <p>A doughnut's surface is a location on the circle of angles (around the hole) <em>and</em> a location on the circle of angles (around the tube). A cylinder is where you stand on a circle <em>and</em> how high you climb. A robot's arm is joint angle 1 <em>and</em> joint angle 2 <em>and</em> joint angle 3. In physics, a state is position <em>and</em> momentum. In a video, a pixel is a horizontal coordinate <em>and</em> a vertical coordinate <em>and</em> a time. These are not separate things layered on top of each other — they are genuinely one thing seen as a combination of two simpler parts.</p>
+      <p>So the question is: <strong>is there a way to describe a space that is 'one thing AND another' as a single mathematical object, and does it have topological properties we can measure?</strong></p>
+      </div>
+    </section>
+    <section class="fp" id="reframe">
+      <h2>2 · The reframe — the product: pair every point with every point</h2>
+      <div class="essay">
+      <p>Here is the definition: the product of two spaces A and B is the set of all pairs. You take every point in A and every point in B, and you glue them together as a single entity. A point in the product is literally a pair: (some choice from A, some choice from B).</p>
+      <p>For example, a circle is all the angles from 0 to 360 degrees. A circle paired with a circle is every way to pick an angle from the first circle (call it the 'around the hole' angle) and an angle from the second circle (call it the 'around the tube' angle). That paired space is the doughnut — the torus. Similarly, a circle paired with an interval (a line segment) is a cylinder: the angle tells you where on the circle, and the height tells you how far up.</p>
+      <p>This seems almost obvious once you name it. But here is the magic: the Euler characteristic of the product space is just the Euler characteristic of the first space times the characteristic of the second. The number multiplies.</p>
+      </div>
+    </section>
+    <section class="fp" id="run">
+      <h2>3 · Seen on a real run — the characteristic multiplies when you build a product</h2>
+      <div class="essay">
+      <p>We computed the Euler characteristic of three product spaces and verified the multiplication rule. A circle has Euler characteristic 0 (as we learned earlier, because you can't comb a circle flat without a tangle). An interval (a line segment) has characteristic 1. A sphere has characteristic 2. Here are three products:</p>
+      <div class="tw"><table><tr><th>product</th><th>part 1 (characteristic)</th><th>part 2 (characteristic)</th><th>product (measured)</th><th>multiplication predicts</th></tr><tr><td>circle × circle</td><td>0</td><td>0</td><td>0</td><td>0 × 0 = 0</td></tr><tr><td>circle × interval</td><td>0</td><td>1</td><td>0</td><td>0 × 1 = 0</td></tr><tr><td>sphere × circle</td><td>2</td><td>0</td><td>0</td><td>2 × 0 = 0</td></tr></table></div><figcaption>Every product's Euler characteristic is exactly the product of the two parts' characteristics — a fact computed by counting vertices, edges, and faces.</figcaption>
+      <div class="insight"><strong>The discovered fact: when you pair two spaces together, the Euler characteristic of the result is exactly the first characteristic times the second.</strong> A circle paired with itself (a torus) is 0 times 0, which is 0. A sphere paired with a circle is 2 times 0, which is 0. The number obeys multiplication, not addition. That is a profound constraint: it tells you that any product involving even one space with characteristic 0 (like a circle or torus) will collapse the whole product to 0, no matter what the other part is.</div>
+      </div>
+    </section>
+    <section class="fp" id="why">
+      <h2>4 · Why the number just multiplies</h2>
+      <div class="essay">
+      <p>The reason is beautiful and geometric. When you have a product of two spaces, you can tile it by gluing together panels from both. Here is the move: take a tiling of the first space (say, a circle cut into, say, 2 arcs) and a tiling of the second space (say, a circle cut into 3 arcs). The product's natural tiling is a grid: every region of the first gets crossed by every region of the second, so you get 2 times 3 = 6 patches. Each intersection of an edge from the first and an edge from the second gives you a corner in the product. When you compute corners-minus-edges-plus-faces for the product, the alternating sum factors exactly: if the first space has Euler characteristic A and the second has B, the product gets A times B.</p>
+      <p>In short: the paneling of a product is a Cartesian grid of panels, and the alternating sum on a grid factors like multiplication.</p>
+      </div>
+    </section>
+    <section class="fp" id="weakness">
+      <h2>5 · The one limit — not every space is a product</h2>
+      <div class="essay">
+      <p>Not every shape you draw is secretly a product. A sphere is not a product of two circles — if it were, it would have Euler characteristic 0 times 0 = 0, but it has 2. A Klein bottle (a shape you get if you allow 'twisted' gluings) looks like a product locally, but globally it is not — the twist prevents you from finding a consistent way to pair up coordinates everywhere at once.</p>
+      <p>Recognizing when a space is actually a product and which two shapes are doing the pairing is a real topological skill. Many spaces look like products near each point (we call them locally a product) but turn out to be woven differently at the larger scale. Finding the hidden product in a complicated space is the kind of problem that dominates differential geometry and theoretical physics — where you ask, 'Is this configuration space really built from two things, or is there a subtlety I missed?'</p>
+      </div>
+    </section>
+    <section class="fp" id="surprise">
+      <h2>6 · The surprise — products are everywhere in the real world</h2>
+      <div class="essay">
+      <p>A robot arm with three joints has a configuration space that is a product of three circles — one for each joint angle. The space of all possible orientations (rotations) in 3D space is not quite a product, but it is built from products in a way that controls how the robot can move.</p>
+      <p>In physics, the space of all 'states' of a system is a product: every particle has a position (a point in space) and a momentum (a direction and speed). The whole state space is position times momentum — called 'phase space'. Equations of motion (like Newton's laws or quantum Schrödinger evolution) move points around in this product space. The fact that the Euler characteristic multiplies means that if even one factor has characteristic 0, the whole phase space does too — a constraint that shows up in conservation laws and symmetry principles.</p>
+      <p>Computer vision sees products everywhere: a video is space times time; an image is pixels across times pixels down. A sensor reading is measurement 1 and measurement 2 and measurement 3, all paired as a single state. Every high-dimensional 'space of possibilities' — whether it is parameters in a neural network, states in a search, or configurations in a manufacturing plant — is built by taking many simpler factors and multiplying them together.</p>
+      <p>The humbling lesson: most spaces you bump into are secretly products, and the Euler characteristic tells you the cost of that structure. A number multiplies. That is topology's claim on how things compose.</p>
+      </div>
+    </section>
+    <section class="fp"><p class="muted">Related: <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-topology-vs-geometry-deep.html">topology vs. geometry</a> · <a href="concept-invariant-deep.html">topological invariant</a></p></section>
+    <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
+      <p class="muted">Compute Euler characteristic (vertices minus edges plus faces) for three product spaces: circle × circle (torus), circle × interval (cylinder), sphere × circle. Verify chi(A × B) = chi(A) × chi(B) for each product.</p>
+      <div class="eq">chi(A × B) = chi(A) × chi(B)
+# circle: chi = 0
+# interval: chi = 1
+# sphere: chi = 2
+# circle × circle = 0 × 0 = 0
+# circle × interval = 0 × 1 = 0
+# sphere × circle = 2 × 0 = 0</div>
+      <p class="muted">Full script: scripts/experiments/topology_run.py (EXP3). Numbers are the run's output verbatim from the measured results file.</p>
+    </div></details>
+<footer style="color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding:22px 0 60px;margin-top:24px">Topology &amp; Geometry · Product Spaces deep dive · every count and integral here is computed. Experiments in scripts/experiments/topology_run.py.</footer>
+</main></body></html>

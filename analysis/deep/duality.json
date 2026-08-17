@@ -1,0 +1,180 @@
+{
+  "id": "duality",
+  "name": "Poincaré Duality",
+  "kick": "topology · holes in all dimensions · a hidden mirror symmetry in shapes",
+  "title": "Poincaré duality — holes come in pairs that read the same forwards and backwards",
+  "lede": "A sphere has 1 solid ball (a piece with no holes through it), 0 loops that circle a hole, and 1 enclosed void. A torus has 1 piece, 2 loops circling its holes, and 1 enclosed void. Write those down as three numbers and something odd jumps out: they read the same forwards and backwards. This symmetry is not a coincidence — it is a deep property of all closed shapes, and it holds even when you twist the shape's surface. Here is how holes come in matching pairs by dimension, why that pairing is inevitable, and why it matters.",
+  "arc": [
+    [
+      "problem",
+      "A single number is too coarse"
+    ],
+    [
+      "reframe",
+      "Count holes in each dimension"
+    ],
+    [
+      "run",
+      "Seen on a real run — the hidden mirror"
+    ],
+    [
+      "duality",
+      "Poincaré duality — why the mirror must exist"
+    ],
+    [
+      "weakness",
+      "The one thing this misses"
+    ],
+    [
+      "surprise",
+      "Where this reappears in modern work"
+    ]
+  ],
+  "sections": [
+    {
+      "id": "problem",
+      "h2": "1 · A single number is too coarse — why Euler is just the start",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The Euler characteristic — corners minus edges plus faces — is a triumph: a single number that tells you a sphere from a torus, and never changes no matter how you bend or re-cut. A sphere gives 2; a torus gives 0. But now the problem: what if two shapes <em>both</em> give 0? Or both give 2? The single number fails to tell them apart. A torus (1 hole through its center) has Euler characteristic 0, and so does a surface with 3 holes, and so does a sphere with a handle attached to a handle attached to a handle. A single number is too blunt. We need to count holes not just in total, but by <em>dimension</em> — separate the pieces from the loops from the voids."
+        }
+      ]
+    },
+    {
+      "id": "reframe",
+      "h2": "2 · Count holes in each dimension — meet the Betti numbers",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Instead of one count, use three. Cover a closed shape with patches and look at the \"cycles\" — closed loops that don't actually bound a filled-in patch, and the formal way to think about them is homology, but here is the plain idea:"
+        },
+        {
+          "t": "para",
+          "html": "<strong>Betti number b0 (the pieces):</strong> How many separate connected chunks is your shape? A ball is 1 piece; two spheres floating apart are 2 pieces. That is b0."
+        },
+        {
+          "t": "para",
+          "html": "<strong>Betti number b1 (the loops):</strong> How many loops can you draw on the surface that do <em>not</em> shrink to a point? On a sphere, every loop shrinks — zero loops circle an actual hole. On a torus, you can draw one loop going through the hole and another going around the hole, and neither shrinks to a point — but any two other loops can be made from those two, so the count is 2. For a shape with 3 holes, you get 3 independent loops."
+        },
+        {
+          "t": "para",
+          "html": "<strong>Betti number b2 (the enclosed voids):</strong> How many separate hollow enclosed regions does the surface trap? A sphere encloses 1 void (the inside). A torus encloses 1 void (its interior tube). A hollow box is still 1 void — the outside empty space that the box separates from infinity."
+        },
+        {
+          "t": "para",
+          "html": "So instead of a single number, you have a triple: (b0, b1, b2) — pieces, loops, voids. This triple is your shape's fingerprint, and it does not change under bending or re-cutting, just like the Euler characteristic."
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "h2": "3 · Seen on a real run — the hidden mirror",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "We computed the three Betti numbers for a sphere, a torus, and a two-holed torus (also called a torus with genus 2). Every number here is counted by a program analyzing the shape's triangulation."
+        },
+        {
+          "t": "table",
+          "headers": [
+            "shape",
+            "pieces (b0)",
+            "loops (b1)",
+            "voids (b2)",
+            "reads backwards?"
+          ],
+          "rows": [
+            [
+              "sphere",
+              "1",
+              "0",
+              "1",
+              "1 = 1 ✓"
+            ],
+            [
+              "torus",
+              "1",
+              "2",
+              "1",
+              "1 = 1 ✓"
+            ],
+            [
+              "two-holed torus",
+              "1",
+              "4",
+              "1",
+              "1 = 1 ✓"
+            ]
+          ],
+          "caption": "Betti numbers for three closed surfaces. Notice: b0 and b2 are always the same."
+        },
+        {
+          "t": "insight",
+          "html": "<strong>The discovered fact: the Betti numbers read the same forwards as backwards. For every closed surface in 3-dimensional space, b0 = b2.</strong> A sphere has (1 piece, 0 loops, 1 void); reverse the list and it reads 1-0-1 again — the same triple. A torus has (1, 2, 1) — and reversed it is still 1-2-1. A two-holed torus has (1, 4, 1) — again, the list is symmetric. This is not a trick or an illusion. It is an iron law of topology called Poincaré duality, and it holds for any closed surface you can imagine."
+        }
+      ]
+    },
+    {
+      "id": "duality",
+      "h2": "4 · Poincaré duality — why the mirror must exist",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Here is why the symmetry is inevitable. Imagine the surface encloses a 3-dimensional region — the \"inside\". When you count the loops on the surface, you are asking: which loops circle a genuine hole? But a hole is a tear or passage that goes <em>through</em> the shape. Now flip the perspective: instead of asking \"what loops go around a hole\", ask \"what cycles bound a region inside?\". A piece inside bounded by the surface is like a loop on the surface that circles the boundary."
+        },
+        {
+          "t": "para",
+          "html": "This duality between \"cycles that don't shrink\" and \"regions bounded by cycles\" is not symmetric by accident — it is the dual nature of the space itself. The shape's interior and its surface are paired: <em>k</em>-dimensional holes on the surface pair with (<em>n</em> minus <em>k</em>)-dimensional holes in the interior, where <em>n</em> is the dimension of the ambient space. For a closed surface in 3D space, a loop on the surface (1-dimensional) pairs with a void in the interior (2-dimensional = 3 minus 1). The number of loops and the number of voids must be equal."
+        },
+        {
+          "t": "para",
+          "html": "Bend the surface, stretch it, crumple it, even twist it into a non-orientable surface (like a Möbius band turned into a closed surface): this duality persists. It is not about the geometry — curvature, distance, angles — it is pure topology. The shape of the shape enforces the mirror symmetry."
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "h2": "5 · The one thing this misses — orientation and torsion",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Betti numbers count independent loops and voids, but they miss a subtlety: <em>twist</em>. Some shapes have a built-in asymmetry that a Betti number cannot detect. A Möbius strip, for example, has only one side — if you paint it, you eventually paint the whole thing. Its topology is different from a cylinder (which has two sides) even though both have the same Betti numbers if counted naively. The missing information is called torsion — it measures how loops are twisted or linked in ways that Betti numbers ignore. For surfaces in 3D, Betti numbers are usually enough, but for more complex shapes or higher dimensions, torsion can be essential."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "h2": "6 · Where this reappears in modern work — persistent homology and data shapes",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The idea of counting holes by dimension does not stay in geometry textbooks. In modern data analysis, when you have a cloud of points and want to know what shape it traces out, the standard tool is persistent homology. You wrap the points in expanding bubbles, and as the bubbles grow, you track which loops (and voids and higher-dimensional structures) appear and disappear. The Betti numbers — how many independent loops, how many enclosed voids — is exactly what you compute to fingerprint a data cloud."
+        },
+        {
+          "t": "para",
+          "html": "This idea also underpins topological data analysis (TDA), which has found holes and loops in real sensor data, neural recordings, biological shapes, and even images. When a machine learns the shape of data, it is often learning exactly these Betti numbers — the number of connected components, the number of loops, the number of voids."
+        },
+        {
+          "t": "para",
+          "html": "And Poincaré duality? It ensures that in any closed, orientable shape, the number of \"holes\" of one dimension must equal the number of holes of the complementary dimension. That symmetry is not just beautiful — it is a constraint that real shapes must obey, and it shows up whenever you build a topological invariant that claims to capture a shape's \"true nature\"."
+        }
+      ]
+    }
+  ],
+  "related": [
+    [
+      "concept-euler-characteristic-deep.html",
+      "Euler characteristic"
+    ],
+    [
+      "concept-triangulation-deep.html",
+      "triangulation"
+    ]
+  ],
+  "recipe": {
+    "summary": "Compute the three Betti numbers (b0 = connected components, b1 = independent loops, b2 = enclosed voids) for three closed surfaces: a sphere, a torus, and a two-holed torus (genus 2). Verify that b0 = b2 for each. Script: scripts/experiments/topology_run.py (EXP10).",
+    "eq": "b_0(sphere) = 1, b_1(sphere) = 0, b_2(sphere) = 1 -> chi = 1 - 0 + 1 = 2\nb_0(torus) = 1, b_1(torus) = 2, b_2(torus) = 1 -> chi = 1 - 2 + 1 = 0\nb_0(2-torus) = 1, b_1(2-torus) = 4, b_2(2-torus) = 1 -> chi = 1 - 4 + 1 = -2",
+    "note": "Full script: scripts/experiments/topology_run.py (EXP10). Numbers are the run's output verbatim. Poincaré duality: for any closed, orientable n-manifold, b_k = b_(n-k)."
+  }
+}

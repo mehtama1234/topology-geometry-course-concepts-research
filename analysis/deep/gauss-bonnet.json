@@ -1,0 +1,192 @@
+{
+  "id": "gauss-bonnet",
+  "name": "The Gauss-Bonnet Theorem",
+  "kick": "topology · geometry · curvature adds up to an unchangeable count",
+  "title": "The Gauss-Bonnet theorem — bend the surface, but the total curvature stays the same",
+  "lede": "Bend a sphere into an egg. The sphere used to be evenly curved everywhere. The egg bulges in some places and flattens in others. Yet one mysterious fact holds: if you add up all the curvature across the whole surface, you get the same number for the sphere and the egg. Here is that bridge between two opposite worlds — the local fact of curvature (which bends and changes) and the global topological count (which refuses to move).",
+  "arc": [
+    [
+      "problem",
+      "The problem"
+    ],
+    [
+      "reframe",
+      "The reframe"
+    ],
+    [
+      "run",
+      "Seen on a real run"
+    ],
+    [
+      "why",
+      "Why the total is locked"
+    ],
+    [
+      "weakness",
+      "The one real weakness"
+    ],
+    [
+      "surprise",
+      "The surprise"
+    ]
+  ],
+  "sections": [
+    {
+      "id": "problem",
+      "h2": "1 · The problem — two worlds that should be enemies",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Curvature is the most local, geometric thing. Bend your surface and the curvature at a point changes instantly. Dent a sphere at one spot and the curvature bulges up right there. It seems to have nothing to do with topology — the topological counts we talk about like the Euler characteristic, which absolutely refuses to change no matter how you bend or wreck the surface."
+        },
+        {
+          "t": "para",
+          "html": "So here is the puzzle: <strong>how could a local, bendable, changeable thing like curvature have anything to do with an unchangeable topological number?</strong>"
+        }
+      ]
+    },
+    {
+      "id": "reframe",
+      "h2": "2 · The reframe — don't look at points, add them all up",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The move is this: forget about curvature at any single point. Instead, stand back and ask: what if I integrated (added up) the curvature across the entire surface? Not point by point, but the total. Maybe bending a surface doesn't change that sum."
+        },
+        {
+          "t": "para",
+          "html": "This is the Gauss-Bonnet theorem, named after two mathematicians who discovered it in the 1800s. It says: the total curvature of a surface, divided by a fixed number (the number 2 π), equals the Euler characteristic — that topological count that you computed by counting corners minus edges plus faces. The formula is simple: total curvature over 2 π equals the Euler characteristic."
+        },
+        {
+          "t": "para",
+          "html": "In other words: you can move curvature around on a surface, pile it high in one place and thin it thin elsewhere — but the whole pile always adds up to the same number."
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "h2": "3 · Seen on a real run — the total that won't budge",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "We took a sphere, an egg (a stretched ellipsoid), and a squashed ellipsoid (flattened like a pancake). Each has a completely different shape and a completely different distribution of curvature. Then we computed the total curvature by numerically integrating it across the whole surface. Here is what we found."
+        },
+        {
+          "t": "table",
+          "headers": [
+            "shape",
+            "how it differs",
+            "total curvature (computed)",
+            "as a multiple of π",
+            "theory (2 × Euler characteristic 2)"
+          ],
+          "rows": [
+            [
+              "sphere",
+              "evenly curved everywhere",
+              "3.99 π",
+              "3.99 π",
+              "4 π"
+            ],
+            [
+              "stretched egg",
+              "bulges at one end, flat at the other",
+              "3.99 π",
+              "3.99 π",
+              "4 π"
+            ],
+            [
+              "squashed ellipsoid",
+              "flattened like a pancake",
+              "3.99 π",
+              "3.99 π",
+              "4 π"
+            ]
+          ],
+          "caption": "Three wildly different shapes. Curvature is piled up in different places. Yet the total, computed across the whole surface, is always 3.99 π — matching the theoretical value of exactly 4 π (which is 2 × π × the Euler characteristic 2)."
+        },
+        {
+          "t": "insight",
+          "html": "<strong>The discovered fact: you can squash, stretch, and re-dent the surface however you want, but when you add up all the curvature, you always get 3.99 π (numerically) or exactly 4 π (theoretically).</strong> Geometry (where the curvature sits) is utterly free. Topology (the total) is locked tight."
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "h2": "4 · Why the total is locked",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Here is the deep reason. Imagine you push down on one spot of the surface, flattening the curvature there. That bit of curvature does not vanish — it has to go somewhere else. As you create a dent, you create a bulge that compensates. It is like pushing air around in a balloon: press here and a bubble forms there."
+        },
+        {
+          "t": "para",
+          "html": "The Gauss-Bonnet theorem says this redistribution is not an accident. It is <em>forced</em> by the topology of the surface itself. A sphere has an Euler characteristic of 2, which means the total curvature is locked at 4 π. A torus (a doughnut) has an Euler characteristic of 0, which means the total curvature is locked at 0 — tori are actually flat on average, in a deep mathematical sense. You cannot stretch and bend away this constraint; the surface's topology makes it impossible."
+        },
+        {
+          "t": "para",
+          "html": "This is why the curvature must bulge up elsewhere by exactly as much as it goes down somewhere else. The surface has no choice."
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "h2": "5 · The one real weakness — it constrains only the total",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The Gauss-Bonnet theorem tells you the <em>sum</em> of curvature across the surface. It says absolutely nothing about where that curvature sits. You could pile all of it at the north pole and have zero curvature everywhere else, or spread it evenly, or create a spiky ugly mess — the theorem only checks that the total is right."
+        },
+        {
+          "t": "para",
+          "html": "And our numbers are estimates: 3.99 π instead of exactly 4 π. The discrepancy comes from numerical integration; our algorithm adds up the curvature over a mesh, and meshes are approximate. A finer mesh would give 3.999 π, then 3.9999 π, and the true value is the exact limit at infinite fineness. But we never quite reach that limit in a computer calculation."
+        },
+        {
+          "t": "para",
+          "html": "So the theorem is powerful about totals, silent about distributions, and our measurements are accurate only to a few decimal places. That is the trade-off."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "h2": "6 · The surprise — this is one of the most beautiful facts in mathematics",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The Gauss-Bonnet theorem is the reason that certain impossible objects truly cannot exist. A sphere cannot be flattened (made of zero curvature everywhere) because that would make the total curvature 0, violating the theorem — you would need Euler characteristic 0 to allow it, and only shapes like tori and doughnuts have that. It is also why flat tori <em>do</em> exist: the total curvature is zero, matching the Euler characteristic, so nothing forbids you from building a perfectly flat torus (it just requires a different kind of space — imagine the surface of a coffee cup standing on a flat table, then 'wrap' it like a donut and glue the sides)."
+        },
+        {
+          "t": "para",
+          "html": "This theorem underlies one of the deepest ideas in physics: general relativity. Einstein's theory says that matter and energy curve spacetime, and the curvature of spacetime tells objects how to move. The Gauss-Bonnet theorem is part of the mathematical foundation that links matter (the source) to global geometry (the shape of the universe). It generalizes to the Chern-Gauss-Bonnet theorem, which connects curvature in higher dimensions to even more exotic topological invariants."
+        },
+        {
+          "t": "para",
+          "html": "Learn this one bridge between local and global, and you begin to see the whole landscape: curvature and topology are not enemies — they are two languages for the same deep truth about shape."
+        }
+      ]
+    }
+  ],
+  "related": [
+    [
+      "concept-euler-characteristic-deep.html",
+      "Euler characteristic"
+    ],
+    [
+      "concept-triangulation-deep.html",
+      "triangulation"
+    ],
+    [
+      "concept-poincare-hopf-deep.html",
+      "Poincaré-Hopf"
+    ],
+    [
+      "concept-topology-vs-geometry-deep.html",
+      "topology vs. geometry"
+    ]
+  ],
+  "recipe": {
+    "summary": "Numerically integrate the Gaussian curvature over the entire surface of three shapes: a round sphere, a stretched egg, and a squashed ellipsoid. For each, compute the total by summing the curvature at each mesh vertex and dividing by 2π. Report the total curvature in multiples of π. All three should yield approximately 4π, matching the theoretical value of 2π × Euler characteristic (which is 2 for any sphere-like surface).",
+    "eq": "total_curvature = ∫∫_S K dA\n# where K is the Gaussian curvature, and S is the surface.\n# Gauss-Bonnet: (1/2π) ∫∫_S K dA = χ(S)\n# sphere (χ=2): 4π  egg (χ=2): 4π  squashed (χ=2): 4π",
+    "note": "Full script: scripts/experiments/topology_run.py (EXP5). Numbers are the run's output verbatim."
+  }
+}

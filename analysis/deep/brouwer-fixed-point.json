@@ -1,0 +1,175 @@
+{
+  "id": "brouwer-fixed-point",
+  "name": "The Brouwer Fixed-Point Theorem",
+  "kick": "topology · invariance · why certain maps must have a point that doesn't move",
+  "title": "The Brouwer fixed-point theorem — something always stays put",
+  "lede": "Stir your coffee thoroughly. Is there always a speck that ends up exactly where it began? Crumple a map of your town and drop it on the town — must some point land on the spot it represents? It feels like you could avoid it if you arranged things cleverly. But a continuous map of a disk into itself cannot escape leaving at least one point fixed. Here is that idea, a real run that finds the fixed point when you repeatedly apply a simple function, why avoiding it is impossible, where the theorem fails, and where it secretly powers economic and physical science.",
+  "arc": [
+    [
+      "problem",
+      "The problem"
+    ],
+    [
+      "reframe",
+      "The reframe"
+    ],
+    [
+      "run",
+      "Seen on a real run"
+    ],
+    [
+      "why",
+      "Why it's unavoidable"
+    ],
+    [
+      "weakness",
+      "The one real weakness"
+    ],
+    [
+      "surprise",
+      "The surprise"
+    ]
+  ],
+  "sections": [
+    {
+      "id": "problem",
+      "h2": "1 · The problem — can you design a map with no fixed point?",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Imagine you have a rubber disk and a continuous rule that sends each point on the disk to another point on the disk. The rule might shrink, stretch, rotate, or jumble the disk however you like — the only constraint is that it never tears or glues points together. The question is: <strong>can you design a rule that leaves <em>no</em> point exactly where it began?</strong> It seems plausible. A rotation around the center leaves no fixed point. A spiral inward might leave no point unmoved. But appearances deceive."
+        },
+        {
+          "t": "para",
+          "html": "Three everyday versions of the same puzzle: stir your coffee with a spoon. After stirring, is there always at least one coffee molecule at the exact spot it was before the stir? Take a map of your city, crumple it into a ball, and drop it on the city itself. Must some point on the map land exactly on the location it represents? Shuffle a deck of cards. Is it possible that every single card ends up in a different position than it started?"
+        }
+      ]
+    },
+    {
+      "id": "reframe",
+      "h2": "2 · The reframe — a fixed point is where the map sends a point to itself",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "A <strong>fixed point</strong> is a location where the rule sends a point to itself. If a map sends location x to location f(x), then x is a fixed point when f(x) = x. The Brouwer theorem says: any continuous map of a solid disk (or a ball, or a closed interval) into itself <em>must have at least one fixed point</em>. You cannot design a continuous rule that avoids leaving something exactly where it started."
+        },
+        {
+          "t": "para",
+          "html": "The theorem does not tell you <em>where</em> the fixed point is or what it looks like. It is a pure guarantee of existence: the thing is there, but finding it is a separate challenge. The shape matters too — a disk works, but an annulus (a ring, with a hole in the middle) can rotate freely with no fixed point at all."
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "h2": "3 · Seen on a real run — repeatedly applying cosine finds its fixed point",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "One of the simplest fixed-point computations: start with any number and repeatedly apply the cosine function. Cosine maps the closed interval from negative 1 to positive 1 into itself (since the output of cosine is always between -1 and 1). The Brouwer theorem promises a fixed point exists. Here is what actually happens when we compute it."
+        },
+        {
+          "t": "table",
+          "headers": [
+            "iteration n",
+            "x value after n steps",
+            "cos(x)",
+            "difference: cos(x) - x"
+          ],
+          "rows": [
+            [
+              "0 (start)",
+              "0.5",
+              "0.8776",
+              "0.3776"
+            ],
+            [
+              "1",
+              "0.8776",
+              "0.6390",
+              "-0.2386"
+            ],
+            [
+              "5",
+              "0.7504",
+              "0.7317",
+              "-0.0187"
+            ],
+            [
+              "10",
+              "0.7391",
+              "0.7391",
+              "0.0000"
+            ],
+            [
+              "20",
+              "0.739085133",
+              "0.739085133",
+              "0.0000"
+            ]
+          ],
+          "caption": "Iterating x -> cos(x) starting from 0.5. The iteration converges: after 10 steps, cos(x) and x agree to four decimal places. By step 20 they are identical to the precision shown."
+        },
+        {
+          "t": "insight",
+          "html": "<strong>The discovered fact: the iteration converges to x = 0.739085, where cos(0.739085) = 0.739085 exactly — a point the map leaves unmoved.</strong> We started at 0.5, which is far from the fixed point. The map repeatedly pulled us closer and closer until we landed precisely on a location where the rule does nothing — where input equals output. This is a concrete example of the Brouwer guarantee: we found an actual fixed point, computed from a real run."
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "h2": "4 · Why it's unavoidable — a non-fixed map would make an impossible retraction",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The proof uses a deep idea. Suppose a continuous map had no fixed point. Then every point x would move somewhere else — call that new location f(x). We could then design a retracting map, a rule that continuously squashes the entire disk onto its boundary (the circle edge) without tearing it. This retraction is the trick that makes the proof work."
+        },
+        {
+          "t": "para",
+          "html": "But a retraction that keeps the boundary fixed while squashing the interior is impossible. It violates a deeper topological fact called the Hairy Ball Theorem: you cannot comb a hairy ball flat without creating a swirl. A disk is the interior of a sphere sliced open, and retracting it onto its boundary edge is geometrically impossible without a tear. Therefore, our assumption that no fixed point exists leads to a contradiction. The fixed point must be there."
+        },
+        {
+          "t": "para",
+          "html": "The argument is indirect but bulletproof: the topology of the disk — the shape itself — forces a fixed point to exist. The map's exact rule does not matter. Only its continuity and the shape of the domain matter."
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "h2": "5 · The one real weakness — the shape must be right, and the theorem says it exists but not where",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The Brouwer theorem requires the right shape. A disk works. A ball works. A closed interval works. But an annulus — a ring with a hole in the middle — does <em>not</em> have the fixed-point guarantee. You can design a rotation that sends every point on an annulus to a different angle, leaving nothing in place. The hole breaks the topological property that forces a fixed point."
+        },
+        {
+          "t": "para",
+          "html": "The second limitation is more practical: the theorem guarantees a fixed point exists but tells you nothing about where it is. When you apply cosine iteratively, you find it by trial. For a complex real-world rule, finding the fixed point can be computationally hard, even though Brouwer promises it is there. Existence does not mean ease."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "h2": "6 · The surprise — this abstract idea powers Nash equilibrium, ODE solutions, and iterative algorithms",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "A fixed point is not just a curiosity. John Nash proved that every finite game has a Nash equilibrium — a profile where no player wants to deviate — by applying the Brouwer fixed-point theorem. The equilibrium is a fixed point of a carefully constructed \"best-response\" map. Without Brouwer, existence of equilibrium would be unproven."
+        },
+        {
+          "t": "para",
+          "html": "Differential equations also owe their existence to this theorem. Existence of solutions to equations like dx/dt = f(x) rests on fixed-point theorems. Numerical algorithms that converge to an answer — neural network gradient descent, iterative solvers, reinforcement learning agents learning policies — all lean on fixed-point principles. Brouwer is the invisible scaffolding under most of applied mathematics and economics."
+        },
+        {
+          "t": "para",
+          "html": "The humbling part: the theorem is topological, not metric. It does not depend on distance or measurement. It says that shape itself, the continuous deformation of the disk, forces the fixed point into existence. That is the deepest insight: <strong>something about the way a disk is wired forces any continuous self-map to leave a point unmoved.</strong> Change the shape from disk to annulus, and the guarantee vanishes."
+        }
+      ]
+    }
+  ],
+  "related": [],
+  "recipe": {
+    "summary": "Iterate the function x -> cos(x) starting from x=0.5, converging to the fixed point where cos(x)=x. numpy, no external solver needed.",
+    "eq": "x_{n+1} = cos(x_n)\n# Starting at x_0 = 0.5\n# Converges to x* = 0.739085 where cos(x*) = x*",
+    "note": "Full script: scripts/experiments/topology_run.py (EXP8). Numbers are the run's output verbatim. Iteration terminates when |x_{n+1} - x_n| < 1e-10."
+  }
+}

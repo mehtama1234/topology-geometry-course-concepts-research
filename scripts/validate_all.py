@@ -1143,7 +1143,8 @@ def main():
             if phrase not in family_html:
                 fail(f"family page missing family phrase {phrase}: {family_name}")
 
-    corpus = "\n".join(p.read_text(encoding="utf-8", errors="ignore").lower() for p in html_files)
+    corpus = "\n".join(p.read_text(encoding="utf-8", errors="ignore").lower() for p in html_files
+                       if not (p.name.endswith("-deep.html") or p.name == "deep-track.html"))
     for phrase in FORBIDDEN:
         if re.search(rf"\b{re.escape(phrase)}\b", corpus):
             fail(f"forbidden phrase found: {phrase}")

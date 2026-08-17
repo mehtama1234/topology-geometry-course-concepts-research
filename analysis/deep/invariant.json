@@ -1,0 +1,234 @@
+{
+  "id": "invariant",
+  "name": "Topological Invariant",
+  "kick": "topology · first principles · a quantity that survives every wiggle",
+  "title": "Topological invariant — the one number that bending cannot erase",
+  "lede": "You can bend a shape, stretch it, tie it in knots — but some quantities stay exactly the same. Those unchanging numbers are topological invariants, and they are the engine of topology: they prove two shapes are fundamentally different no matter how hard you try to morph one into the other. Here is what makes a quantity an invariant, why invariants can prove difference (but not sameness), a real run showing five different invariants on actual shapes, and where this idea reappears in data, matter, and machine learning.",
+  "arc": [
+    [
+      "problem",
+      "The problem"
+    ],
+    [
+      "reframe",
+      "The reframe"
+    ],
+    [
+      "run",
+      "Seen on a real run"
+    ],
+    [
+      "why",
+      "Why invariants can't move"
+    ],
+    [
+      "weakness",
+      "The one direction limit"
+    ],
+    [
+      "surprise",
+      "The surprise"
+    ]
+  ],
+  "sections": [
+    {
+      "id": "problem",
+      "h2": "1 · The problem — deformation erases everything we know",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "When you have a rubber blob, you can pull it, squish it, dent it, tie it into a pretzel shape. Every property you measure — its width, its angle, its color, its area — changes with every deformation. So how do you say anything true about a shape that a wiggle cannot undo? How do you know a sphere and a doughnut are different if you can bend either one into countless forms?"
+        },
+        {
+          "t": "para",
+          "html": "The insight that founds topology is radical: stop measuring and start looking for <strong>quantities that do not change under bending</strong>. Those are your only honest statements about the shape itself. Everything else — the particular pose, the dents, the exact size — is noise."
+        }
+      ]
+    },
+    {
+      "id": "reframe",
+      "h2": "2 · The reframe — measure nothing; count what refuses to move",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "A topological invariant is a number you compute from a shape with a simple recipe, such that no amount of bending, stretching, or re-cutting can change it. The recipe has to be <em>intrinsic</em> — it must work on the shape itself, not depend on how you drew it or which coordinate system you chose. If two shapes have different invariants, they are provably different. They cannot be deformed into each other."
+        },
+        {
+          "t": "para",
+          "html": "The magic is that invariants come in infinite varieties. Count corners minus edges plus faces — that is one. Wind a loop around a point and count how many times it wraps — that is another. Color-code a knot diagram — another. Each one is tailored to catch a different kind of true property, and all of them obey one iron law: deformation leaves them alone."
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "h2": "3 · Seen on a real run — five different invariants prove five different truths",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "We ran five separate computations on real shapes, each using a different invariant. Every number below was computed by a program; none are invented. Notice how each one separates shapes in its own way — and all stay unchanged under bending."
+        },
+        {
+          "t": "table",
+          "headers": [
+            "invariant",
+            "shape",
+            "computed value",
+            "what it counts"
+          ],
+          "rows": [
+            [
+              "Euler characteristic (V − E + F)",
+              "any sphere",
+              "2",
+              "alternating sum of corners, edges, faces"
+            ],
+            [
+              "Euler characteristic (V − E + F)",
+              "any torus",
+              "0",
+              "same count, different shape"
+            ],
+            [
+              "winding number",
+              "e^(i t) loop",
+              "1",
+              "times loop wraps origin"
+            ],
+            [
+              "winding number",
+              "e^(3 i t) loop",
+              "3",
+              "tighter wrap, different count"
+            ],
+            [
+              "unknot 3-coloring",
+              "plain loop",
+              "3",
+              "valid colorings of crossing-free loop"
+            ],
+            [
+              "trefoil 3-coloring",
+              "trefoil knot",
+              "9",
+              "valid colorings of trefoil diagram"
+            ],
+            [
+              "vector field index",
+              "source (flow)",
+              "+1",
+              "arrow circulation at stagnation"
+            ],
+            [
+              "vector field index",
+              "saddle (flow)",
+              "−1",
+              "opposite circulation"
+            ],
+            [
+              "curvature integral",
+              "round sphere",
+              "4π",
+              "total curvature on surface"
+            ],
+            [
+              "curvature integral",
+              "stretched egg",
+              "4π",
+              "same total, bent differently"
+            ]
+          ],
+          "caption": "Five different invariants, each computed on a shape: every one stays the same under deformation, yet different shapes yield different values."
+        },
+        {
+          "t": "insight",
+          "html": "<strong>The discovered fact: every invariant is a whole number or simple quantity that cannot change no matter how you bend the shape. Different invariants catch different properties — some count cycles (Euler characteristic), some count wraps (winding number), some count colorings (knots) — yet all stay locked in place.</strong> A sphere always has Euler characteristic 2. A torus always has 0. A plain loop always winds 0 times around any point it misses. A trefoil always has 9 valid 3-colorings. The invariant is the shape's hidden fingerprint."
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "h2": "4 · Why invariants can't move — the recipe is built to survive",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Every invariant is built with a <em>compensation mechanism</em>. Take the Euler characteristic: when you refine a paneling of a surface by splitting one face into two with a new edge, you add 1 face and 1 edge. The recipe is (corners − edges + faces), so you add −1 for the edge and +1 for the face — they cancel. No matter how finely or coarsely you re-cut the surface, the alternating sum never moves."
+        },
+        {
+          "t": "para",
+          "html": "Winding number: as you trace a loop, you watch the angle to the point change continuously. The total change is 2π times the winding. If you wiggle the loop, the angle might shift at many places, but the total turn is conserved — it is the only integer multiple of 2π that the loop can hit without crossing the center."
+        },
+        {
+          "t": "para",
+          "html": "Knot coloring: if two strands are colored and meet at a crossing, the coloring rule says where the third strand must go. The remarkable fact is that when you perform a Reidemeister move (a wiggle that preserves knottedness), the coloring rule is so built that the total count of valid colorings survives intact. The recipe is intrinsic to the knot itself, not the diagram."
+        },
+        {
+          "t": "para",
+          "html": "In each case, the design of the recipe absorbs all the noise from deformation. That is what makes a quantity topological: it is engineered to be deaf to the shape's pose."
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "h2": "5 · The one direction limit — different values prove difference, but equal values do not prove sameness",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Here is the hard truth: if two shapes have different invariants, they are 100% certain to be different. A sphere (invariant 2) cannot be deformed into a torus (invariant 0) — the Euler characteristic forbids it."
+        },
+        {
+          "t": "para",
+          "html": "But the reverse is not true. A sphere, a cube, and a wine glass are all topologically identical (you can bend any into the others), and they all have Euler characteristic 2. So equal invariants do <em>not</em> prove two shapes are the same. Two quite different-looking things can share one invariant. You need more evidence."
+        },
+        {
+          "t": "para",
+          "html": "This is why invariants are never the final word: they are coarse filters that catch some differences but miss others. A sphere and a plane (topologically infinite) have the same Euler characteristic if you count carefully. Higher-dimensional shapes need a whole collection of numbers (Betti numbers: pieces, loops, voids) to pin them down. A single invariant is a proof of difference, never a proof of sameness."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "h2": "6 · The surprise — invariants reappear everywhere",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The Euler characteristic is not just a counting game on surfaces. It equals the total curvature divided by 2π (Gauss–Bonnet theorem), so curvature is glued to topological count. Bend a sphere and curvature piles up here, thins there, but the total stays at 4π. Geometry moves freely; topology locks it in place."
+        },
+        {
+          "t": "para",
+          "html": "The same number governs stagnation points in flowing systems (Poincaré–Hopf): on a sphere, any smooth flow must have at least one place where arrows swirl in place — a source, a sink, or a saddle — because the indices at those points must sum to the sphere's Euler characteristic. You cannot comb a hairy ball. The topology forces a swirl."
+        },
+        {
+          "t": "para",
+          "html": "Knot invariants (winding numbers, colorings, polynomials) are the modern tools of machine learning on structured data: persistent homology tracks invariant holes in point clouds (data topologies) to find clusters and structure. Link invariants appear in quantum field theory and statistical mechanics — the Hopf link's linking number predicts phase transitions. Winding numbers govern the physics of topological insulators: a 2D electron crystal's invariants determine whether electrons flow on the edge or stay buried in the bulk."
+        },
+        {
+          "t": "para",
+          "html": "The core idea is always the same: find a quantity that survives all the noise and tells the truth. That is not just topology. That is the foundation of data science, symmetry, and physics. The whole subject is learning to recognize when you can throw away the details and what cannot move even if you try."
+        }
+      ]
+    }
+  ],
+  "related": [
+    [
+      "concept-euler-characteristic-deep.html",
+      "Euler characteristic"
+    ],
+    [
+      "concept-triangulation-deep.html",
+      "triangulation"
+    ],
+    [
+      "concept-gauss-bonnet-deep.html",
+      "Gauss–Bonnet"
+    ],
+    [
+      "concept-poincare-hopf-deep.html",
+      "Poincaré–Hopf"
+    ]
+  ],
+  "recipe": {
+    "summary": "Compute five independent invariants: (1) Euler characteristic V−E+F on a sphere (yields 2) and torus (yields 0); (2) winding number for loops wrapping the origin (1, 3, 0); (3) knot-coloring counts for unknot (3) and trefoil (9); (4) vector-field indices at sources and saddles (±1); (5) total surface curvature on round and stretched spheres (both 4π). Each invariant is computed by a separate short program that counts, integrates, or traces.",
+    "eq": "// Five invariants:\n// (1) chi = V - E + F; sphere: (V,E,F)=(4,6,4) or (8,12,6) or... -> chi=2; torus: (7,21,14) -> chi=0\n// (2) winding number = (total angle change) / (2π); e^(it) -> 1; e^(3it) -> 3; misses -> 0\n// (3) knot coloring: unknot 3 valid colorings, trefoil 9\n// (4) vector-field index: source +1, saddle -1; sphere: +1 + 1 = 2 (sum = chi)\n// (5) curvature integral: sphere (round or stretched) -> 4π",
+    "note": "Full scripts: scripts/experiments/topology_run.py (EXP1: Euler characteristic), (EXP6: winding/linking), (EXP7: knot colorings), (EXP4: vector-field index), (EXP5: curvature integral). Numbers are the run's output verbatim from topology.md verified results."
+  }
+}
