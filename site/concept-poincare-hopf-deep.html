@@ -30,19 +30,19 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · vector fields · why the hairy ball always has a cowlick</div>
 <h1>The Poincaré-Hopf theorem — why you can never comb a hairy ball flat</h1>
 <p class="lead">Imagine combing the hair on a sphere (a globe, a balloon, a planet's surface). You want every hair to lie flat and point somewhere smooth — no swirls, no stagnant points. It is impossible. Here is why the shape itself forbids it, how to measure the failure, a real count of stagnation points on a working vector field, and where this same force reappears in bigger ideas.</p>
-<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#forces">Why the topology forces a swirl</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="concept-poincare-hopf.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#forces">Why the topology forces a swirl</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-poincare-hopf.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — why does every wind pattern on Earth have a calm spot?</h2>
       <div class="essay">
       <p>Look at a weather map of Earth showing wind arrows at every location. Somewhere there is always a place where the wind is calm — a high-pressure zone where air is still, or a low-pressure vortex where it spirals. Try to draw a different pattern: push the winds around, smooth them out, make them all point in one global direction. You cannot. The spherical shape of Earth itself forbids a perfectly smooth, zero-free wind field.</p>
-      <p>More generally: imagine a smooth vector field on a sphere — at every point an arrow showing a direction and strength. <strong>Must there always be at least one point where the field is zero (stagnation point)?</strong> The hairy ball intuition says yes, but why? The shape is to blame.</p>
+      <p>More generally: consider a smooth vector field on a sphere — at every point an arrow showing a direction and strength. <strong>Must there always be at least one point where the field is zero (stagnation point)?</strong> The hairy ball intuition says yes, but why? The shape is to blame.</p>
       </div>
     </section>
     <section class="fp" id="reframe">
       <h2>2 · The reframe — measure each stagnation point by its index</h2>
       <div class="essay">
-      <p>Here is the topological tool: at each stagnation point, you do not ask 'why is it there' but rather 'how much is it spinning.' Walk in a small circle around a stagnation point and watch how the arrows rotate. If the arrows spin around exactly once as you circle the point, that point has <strong>index plus-one</strong> — it is a source, where the field points outward like a shampoo bottle spraying. If you circle a saddle point (one where arrows flow in and then split apart), the arrows rotate zero times — that is <strong>index minus-one</strong>. The index is a whole number that counts the total spin.</p>
+      <p>The topological tool: at each stagnation point, you do not ask 'why is it there' but rather 'how much is it spinning.' Walk in a small circle around a stagnation point and watch how the arrows rotate. If the arrows spin around exactly once as you circle the point, that point has <strong>index plus-one</strong> — it is a source, where the field points outward like a shampoo bottle spraying. If you circle a saddle point (one where arrows flow in and then split apart), the arrows rotate zero times — that is <strong>index minus-one</strong>. The index is a whole number that counts the total spin.</p>
       <p>Once you have measured the index at every stagnation point in your field, add them up. That total is not an accident — it is dictated by the shape of the surface.</p>
       </div>
     </section>
@@ -74,6 +74,15 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <p>The Poincaré-Hopf theorem is one lens on a universal rule: the shape dictates which flows are possible. Measure not by inches but by spins, and the topology sums to an invariant that bends and deformations cannot touch.</p>
       </div>
     </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Why the sphere forces a calm spot</h2>
+      <div class="essay">
+      <p>Weather systems on Earth always have a still point — a high or low-pressure zone where wind vanishes. Antenna engineers cannot design a wireless system without dead spots where reception fails. Fluid dynamics sees stagnation points in every flow: pipes, ocean currents, air around aircraft. These are not bugs; they are topological facts the shape enforces.</p>
+      <p>The method: mark every stagnation point and assign it a spin index (plus-one for outward, minus-one for mixed inward-outward). Add all the indices up. For a sphere, they always sum to exactly two. This total is not accidental—it is locked by the sphere's shape. No smooth flow can avoid it, and no bending hides it. Engineers use this principle to predict that stillness must occur somewhere and to classify flow types.</p>
+      <div class="insight">The sphere's shape dictates which flows are allowed; measure by spins, and the topology fixes the count.</div>
+      </div>
+    </section>
+    <section class="fp" id="connects"><h2>Where this connects — geometry &rarr; gravity</h2><p class="muted">This idea is one stage of a larger machine: the geometry of shapes becomes the geometry of spacetime. These links open the connected concept.</p><ul style="list-style:none;padding:14px 16px;margin:12px 0;border:1px solid var(--line,#d7ddd9);border-radius:10px;background:#fff"><li style="margin:9px 0;padding-left:14px;border-left:3px solid #8b3f18"><a href="https://mehtama1234.github.io/gravity-light-course-concepts-research/concepts/riemann-curvature-commutator-deep.html" style="font-weight:700">Riemann curvature</a> <span class="muted" style="font-size:13px">· Gravity · general relativity</span><div style="font-size:14.5px;margin-top:3px">The index-sum-equals-Euler-characteristic theorem is a cousin of the curvature-integral theorems GR lives on.</div></li></ul></section>
     <section class="fp"><p class="muted">Related: <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-gauss-bonnet-deep.html">Gauss–Bonnet</a> · <a href="concept-vector-field-index-deep.html">vector-field index</a> · <a href="concept-brouwer-fixed-point-deep.html">Brouwer fixed point</a></p></section>
     <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
       <p class="muted">Compute the index (winding count around a zero) for a source (+1, field points outward) and a saddle (−1, field twists opposite). On a sphere, sum the indices of all stagnation points; the total equals 2, the sphere's Euler characteristic. Python: track angle change as you circle each zero, divide by 2π.</p>

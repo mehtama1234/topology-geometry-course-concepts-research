@@ -30,7 +30,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · holes in all dimensions · a hidden mirror symmetry in shapes</div>
 <h1>Poincaré duality — holes come in pairs that read the same forwards and backwards</h1>
 <p class="lead">A sphere has 1 solid ball (a piece with no holes through it), 0 loops that circle a hole, and 1 enclosed void. A torus has 1 piece, 2 loops circling its holes, and 1 enclosed void. Write those down as three numbers and something odd jumps out: they read the same forwards and backwards. This symmetry is not a coincidence — it is a deep property of all closed shapes, and it holds even when you twist the shape's surface. Here is how holes come in matching pairs by dimension, why that pairing is inevitable, and why it matters.</p>
-<div class="arc"><a href="#problem">A single number is too coarse</a><a href="#reframe">Count holes in each dimension</a><a href="#run">Seen on a real run — the hidden mirror</a><a href="#duality">Poincaré duality — why the mirror must exist</a><a href="#weakness">The one thing this misses</a><a href="#surprise">Where this reappears in modern work</a><a href="concept-duality.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">A single number is too coarse</a><a href="#reframe">Count holes in each dimension</a><a href="#run">Seen on a real run — the hidden mirror</a><a href="#duality">Poincaré duality — why the mirror must exist</a><a href="#weakness">The one thing this misses</a><a href="#surprise">Where this reappears in modern work</a><a href="#practice">In practice</a><a href="concept-duality.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · A single number is too coarse — why Euler is just the start</h2>
@@ -41,11 +41,12 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="reframe">
       <h2>2 · Count holes in each dimension — meet the Betti numbers</h2>
       <div class="essay">
-      <p>Instead of one count, use three. Cover a closed shape with patches and look at the "cycles" — closed loops that don't actually bound a filled-in patch, and the formal way to think about them is homology, but here is the plain idea:</p>
+      <p>Instead of one count, use three. Cover a closed shape with patches and look at the "cycles" — closed loops that don't actually bound a filled-in patch, and the formal way to think about them is homology, but The plain idea:</p>
       <p><strong>Betti number b0 (the pieces):</strong> How many separate connected chunks is your shape? A ball is 1 piece; two spheres floating apart are 2 pieces. That is b0.</p>
       <p><strong>Betti number b1 (the loops):</strong> How many loops can you draw on the surface that do <em>not</em> shrink to a point? On a sphere, every loop shrinks — zero loops circle an actual hole. On a torus, you can draw one loop going through the hole and another going around the hole, and neither shrinks to a point — but any two other loops can be made from those two, so the count is 2. For a shape with 3 holes, you get 3 independent loops.</p>
       <p><strong>Betti number b2 (the enclosed voids):</strong> How many separate hollow enclosed regions does the surface trap? A sphere encloses 1 void (the inside). A torus encloses 1 void (its interior tube). A hollow box is still 1 void — the outside empty space that the box separates from infinity.</p>
       <p>So instead of a single number, you have a triple: (b0, b1, b2) — pieces, loops, voids. This triple is your shape's fingerprint, and it does not change under bending or re-cutting, just like the Euler characteristic.</p>
+      <p>The hidden quantity is a pairing between features of complementary dimension &mdash; each hole of one dimension is matched to one of the complementary dimension, so counting one side counts the other.</p>
       </div>
     </section>
     <section class="fp" id="run">
@@ -59,7 +60,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="duality">
       <h2>4 · Poincaré duality — why the mirror must exist</h2>
       <div class="essay">
-      <p>Here is why the symmetry is inevitable. Imagine the surface encloses a 3-dimensional region — the "inside". When you count the loops on the surface, you are asking: which loops circle a genuine hole? But a hole is a tear or passage that goes <em>through</em> the shape. Now flip the perspective: instead of asking "what loops go around a hole", ask "what cycles bound a region inside?". A piece inside bounded by the surface is like a loop on the surface that circles the boundary.</p>
+      <p>Here is why the symmetry is inevitable. Consider the surface encloses a 3-dimensional region — the "inside". When you count the loops on the surface, you are asking: which loops circle a genuine hole? But a hole is a tear or passage that goes <em>through</em> the shape. Now flip the perspective: instead of asking "what loops go around a hole", ask "what cycles bound a region inside?". A piece inside bounded by the surface is like a loop on the surface that circles the boundary.</p>
       <p>This duality between "cycles that don't shrink" and "regions bounded by cycles" is not symmetric by accident — it is the dual nature of the space itself. The shape's interior and its surface are paired: <em>k</em>-dimensional holes on the surface pair with (<em>n</em> minus <em>k</em>)-dimensional holes in the interior, where <em>n</em> is the dimension of the ambient space. For a closed surface in 3D space, a loop on the surface (1-dimensional) pairs with a void in the interior (2-dimensional = 3 minus 1). The number of loops and the number of voids must be equal.</p>
       <p>Bend the surface, stretch it, crumple it, even twist it into a non-orientable surface (like a Möbius band turned into a closed surface): this duality persists. It is not about the geometry — curvature, distance, angles — it is pure topology. The shape of the shape enforces the mirror symmetry.</p>
       </div>
@@ -76,6 +77,14 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <p>The idea of counting holes by dimension does not stay in geometry textbooks. In modern data analysis, when you have a cloud of points and want to know what shape it traces out, the standard tool is persistent homology. You wrap the points in expanding bubbles, and as the bubbles grow, you track which loops (and voids and higher-dimensional structures) appear and disappear. The Betti numbers — how many independent loops, how many enclosed voids — is exactly what you compute to fingerprint a data cloud.</p>
       <p>This idea also underpins topological data analysis (TDA), which has found holes and loops in real sensor data, neural recordings, biological shapes, and even images. When a machine learns the shape of data, it is often learning exactly these Betti numbers — the number of connected components, the number of loops, the number of voids.</p>
       <p>And Poincaré duality? It ensures that in any closed, orientable shape, the number of "holes" of one dimension must equal the number of holes of the complementary dimension. That symmetry is not just beautiful — it is a constraint that real shapes must obey, and it shows up whenever you build a topological invariant that claims to capture a shape's "true nature".</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Understanding holes come in pairs by dimension</h2>
+      <div class="essay">
+      <p>Sensor network design uses duality to count coverage gaps: holes in the sensing domain correspond to uncovered regions in complementary space. Persistent homology in data analysis computes Betti numbers (pieces, loops, voids) to reveal structure: analyzing brain imaging or molecular dynamics, it finds loops in neural activity patterns and voids in conformational ensembles that signal phase transitions. Circuit board design and chip routing exploit duality between wire paths and enclosed regions.</p>
+      <p>Duality pairs the holes in a structure (loops around missing regions) with voids it encloses (hollow interior spaces). In sensor networks, a gap in coverage is a hole; by duality, it creates a paired void in the adjacent region. In persistent homology, the detected loops and enclosed voids tell the data analyst what gaps and pockets exist. The dual relationship forces a symmetry that algorithms can exploit to prune search or verify completeness.</p>
+      <div class="insight">Duality reveals that counting holes in one way automatically counts them in another—a built-in redundancy that algorithms use to verify correctness.</div>
       </div>
     </section>
     <section class="fp"><p class="muted">Related: <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-triangulation-deep.html">triangulation</a></p></section>

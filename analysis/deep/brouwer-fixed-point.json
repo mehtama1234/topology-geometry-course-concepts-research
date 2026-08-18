@@ -28,6 +28,10 @@
     [
       "surprise",
       "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -37,7 +41,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Imagine you have a rubber disk and a continuous rule that sends each point on the disk to another point on the disk. The rule might shrink, stretch, rotate, or jumble the disk however you like — the only constraint is that it never tears or glues points together. The question is: <strong>can you design a rule that leaves <em>no</em> point exactly where it began?</strong> It seems plausible. A rotation around the center leaves no fixed point. A spiral inward might leave no point unmoved. But appearances deceive."
+          "html": "Consider you have a rubber disk and a continuous rule that sends each point on the disk to another point on the disk. The rule might shrink, stretch, rotate, or jumble the disk however you like — the only constraint is that it never tears or glues points together. The question is: <strong>can you design a rule that leaves <em>no</em> point exactly where it began?</strong> It seems plausible. A rotation around the center leaves no fixed point. A spiral inward might leave no point unmoved. But appearances deceive."
         },
         {
           "t": "para",
@@ -130,6 +134,10 @@
         {
           "t": "para",
           "html": "The argument is indirect but bulletproof: the topology of the disk — the shape itself — forces a fixed point to exist. The map's exact rule does not matter. Only its continuity and the shape of the domain matter."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is a topological obstruction: a fixed-point-free continuous map on a disk could be turned into an impossible &lsquo;retraction&rsquo; of the disk onto its edge, and the edge&rsquo;s winding cannot be undone &mdash; so no such map exists."
         }
       ]
     },
@@ -162,6 +170,24 @@
         {
           "t": "para",
           "html": "The humbling part: the theorem is topological, not metric. It does not depend on distance or measurement. It says that shape itself, the continuous deformation of the disk, forces the fixed point into existence. That is the deepest insight: <strong>something about the way a disk is wired forces any continuous self-map to leave a point unmoved.</strong> Change the shape from disk to annulus, and the guarantee vanishes."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — Proving an equilibrium or solution must exist",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Fixed-point theorems guarantee that iterative algorithms converge. Game theory relies on Brouwer to prove every finite game has a Nash equilibrium where players stop wanting to change strategy. Gradient descent in machine learning, numerical solvers for differential equations, and reinforcement-learning policy updates all rest on the existence of fixed points that iterative methods converge toward."
+        },
+        {
+          "t": "para",
+          "html": "The theorem serves as the existence proof that an equilibrium or solution exists, even when you don't know where it is or how to find it. In economics, the equilibrium is modeled as a fixed point of a best-response map. In neural networks, the fixed point is the stable weight configuration that training settles into. The space is the configuration or strategy space; the map is the rule that generates the next iterate."
+        },
+        {
+          "t": "insight",
+          "html": "The theorem is invisible scaffolding: it proves a solution must be there, but finding it often requires separate numerical work."
         }
       ]
     }

@@ -30,21 +30,22 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · dynamics · the winding number of arrows around a still point</div>
 <h1>Vector-field index — a number that tells what kind of swirl gets stuck</h1>
 <p class="lead">When a flow — water swirling, arrows pointing everywhere, a crowd moving — gets stuck at a point, you might wonder: what kind of stuck point is this? Is it a source pushing everything away? A saddle dragging in from one direction and out another? A spiral? There is a simple way to tell: draw a tiny loop around the stuck point and count how many full rotations the arrows make as you walk the loop. That count is the index, and it is the same whole number no matter how you wiggle the loop or redraw it. Here is that idea, a real run where we measure the index for two different stuck points, why the count must be a whole number, what happens when the count fails to distinguish two flows, and why this single idea is the hidden force behind the hairy-ball theorem.</p>
-<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why it must be whole</a><a href="#weakness">The one limit</a><a href="#surprise">The surprise</a><a href="concept-vector-field-index.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why it must be whole</a><a href="#weakness">The one limit</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-vector-field-index.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — how many ways can a flow get stuck?</h2>
       <div class="essay">
-      <p>Imagine a breeze blowing across a landscape, or water flowing around rocks. Everywhere except at one spot, there is clear motion in a direction you can measure. But at certain points — a source of wind, a drain, a stagnation point where flows split — the arrows point in every direction at once, or nowhere. The flow is stuck.</p>
-      <p>Now here is the puzzle: there are many <em>ways</em> to be stuck. A source pushes everything straight outward. A saddle sucks inward along one axis and pumps outward along another. A spiral twists as it pulls in or pushes out. To an eye looking just at that one frozen point, all three stuck patterns look the same — motion is zero. But they are deeply different, and they behave differently over time.</p>
+      <p>Consider a breeze blowing across a landscape, or water flowing around rocks. Everywhere except at one spot, there is clear motion in a direction you can measure. But at certain points — a source of wind, a drain, a stagnation point where flows split — the arrows point in every direction at once, or nowhere. The flow is stuck.</p>
+      <p>Now The puzzle: there are many <em>ways</em> to be stuck. A source pushes everything straight outward. A saddle sucks inward along one axis and pumps outward along another. A spiral twists as it pulls in or pushes out. To an eye looking just at that one frozen point, all three stuck patterns look the same — motion is zero. But they are deeply different, and they behave differently over time.</p>
       <p><strong>Is there a single number you can compute that tells you what KIND of stuck point you are looking at, in a way that survives small wiggles and redrawings?</strong></p>
       </div>
     </section>
     <section class="fp" id="reframe">
       <h2>2 · The reframe — let the arrows turn as you circle the point</h2>
       <div class="essay">
-      <p>Here is the move that works: ignore what is happening exactly at the stuck point. Instead, draw an imaginary tiny circle around it and walk around that circle. As you step along the circle, look at the arrows — they point in a direction all around you. After one full loop around the circle, you come back to where you started. But the arrows have rotated.</p>
+      <p>The move that works: ignore what is happening exactly at the stuck point. Instead, draw an imaginary tiny circle around it and walk around that circle. As you step along the circle, look at the arrows — they point in a direction all around you. After one full loop around the circle, you come back to where you started. But the arrows have rotated.</p>
       <p>The key question: how many complete full rotations do the arrows make as you circle once? If you mark a reference arrow and watch how many times it spins clockwise before you return to the start, that integer count is the <em>index</em>. A source has index +1 because all arrows point outward, completing one full outward sweep as you circle. A saddle has index -1 because the arrows point partly in and partly out, so they flip direction as you circle, crossing the loop in a way that sums to minus one full turn.</p>
+      <p>The hidden quantity is the index of a zero &mdash; how many net turns the field&rsquo;s arrows make as you circle once around it; a source and a saddle carry different, fixed indices.</p>
       </div>
     </section>
     <section class="fp" id="run">
@@ -58,7 +59,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="why">
       <h2>4 · Why it must be whole</h2>
       <div class="essay">
-      <p>Here is the mathematical truth that makes this work: as you walk one complete loop around the circle, you return to exactly where you started. The arrows at your starting point must point in exactly the same direction as when you left, because the flow is continuous — it cannot jump. That means the total rotation you watched must add up to a complete number of full spins. You cannot end up 0.3 of a spin from where you started; you can only end up 0, 1, 2, or negative whole numbers. That is why the index must be an integer.</p>
+      <p>The mathematical truth that makes this work: as you walk one complete loop around the circle, you return to exactly where you started. The arrows at your starting point must point in exactly the same direction as when you left, because the flow is continuous — it cannot jump. That means the total rotation you watched must add up to a complete number of full spins. You cannot end up 0.3 of a spin from where you started; you can only end up 0, 1, 2, or negative whole numbers. That is why the index must be an integer.</p>
       </div>
     </section>
     <section class="fp" id="weakness">
@@ -70,9 +71,17 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="surprise">
       <h2>6 · The surprise — this integer is the hidden force in the hairy-ball theorem</h2>
       <div class="essay">
-      <p>Here is where this humble winding count reappears in something profound. Imagine you are trying to comb a hairy ball flat — drawing arrows on the sphere so every hair points in some smooth direction, with no cowlicks or stuck points. There is a topological theorem that says you <em>cannot</em> do it. No matter how you try, at least one swirl will form.</p>
+      <p>Here is where this humble winding count reappears in something profound. Consider you are trying to comb a hairy ball flat — drawing arrows on the sphere so every hair points in some smooth direction, with no cowlicks or stuck points. There is a topological theorem that says you <em>cannot</em> do it. No matter how you try, at least one swirl will form.</p>
       <p>The reason is precisely the index. The sphere is a shape with Euler characteristic 2 — a number that comes from counting its geometry. If you draw a smooth flow on the sphere, the indices of all the stuck points must add up to exactly 2. That means you cannot draw a flow with zero stuck points (which would sum to zero). You are forced to have stuck points, and their indices must sum to that topological target of 2. So every smooth flow on a sphere must have at least one stuck point. The index — that winding count around a single point — is the building block of a global impossibility.</p>
       <p>This idea reappears everywhere flows and topology meet. It classifies equilibria in dynamical systems as stable or unstable. It underlies phase transitions in physics where order breaks somewhere. It counts defects in materials and fields. Learn this one winding count and you have learned the seed of a major principle: local swirling, measured by winding, builds up to global topological constraints that no deformation can escape.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Classifying stuck points by their spin</h2>
+      <div class="essay">
+      <p>Equilibria in dynamical systems (where velocity is zero) come in types: sources push outward, saddles mix inward and outward, spirals twist. Antenna null-spots vary by how the wave pattern fails. Defects in ordered materials (crystal dislocations, liquid-crystal point charges) are classified by their winding. Phase transitions force a defect to appear somewhere because the global topology demands it.</p>
+      <p>Draw a tiny circle around the stuck point and watch the arrows as you walk the loop. Count complete rotations: a source spins outward once (index plus-one), a saddle flips opposite (index minus-one). This winding count is rigid—reshape the flow slightly and the index stays the same. It is the simplest invariant that distinguishes flow types. One number captures the class of singularity without measuring intensity or stability.</p>
+      <div class="insight">The winding count around a single stuck point is a whole number that classifies its type forever.</div>
       </div>
     </section>
     <section class="fp"><p class="muted">Related: <a href="concept-poincare-hopf-deep.html">Poincaré–Hopf</a> · <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-winding-linking-deep.html">winding number</a></p></section>

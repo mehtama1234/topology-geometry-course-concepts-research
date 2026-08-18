@@ -28,6 +28,10 @@
     [
       "surprise",
       "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -55,7 +59,11 @@
         },
         {
           "t": "para",
-          "html": "The magic is that invariants come in infinite varieties. Count corners minus edges plus faces — that is one. Wind a loop around a point and count how many times it wraps — that is another. Color-code a knot diagram — another. Each one is tailored to catch a different kind of true property, and all of them obey one iron law: deformation leaves them alone."
+          "html": "The key is that invariants come in infinite varieties. Count corners minus edges plus faces — that is one. Wind a loop around a point and count how many times it wraps — that is another. Color-code a knot diagram — another. Each one is tailored to catch a different kind of true property, and all of them obey one iron law: deformation leaves them alone."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is the invariant itself &mdash; a value computed from the object that never changes under any allowed deformation, so two objects with different invariants can never be the same shape."
         }
       ]
     },
@@ -173,7 +181,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is the hard truth: if two shapes have different invariants, they are 100% certain to be different. A sphere (invariant 2) cannot be deformed into a torus (invariant 0) — the Euler characteristic forbids it."
+          "html": "The hard truth: if two shapes have different invariants, they are 100% certain to be different. A sphere (invariant 2) cannot be deformed into a torus (invariant 0) — the Euler characteristic forbids it."
         },
         {
           "t": "para",
@@ -206,6 +214,24 @@
           "html": "The core idea is always the same: find a quantity that survives all the noise and tells the truth. That is not just topology. That is the foundation of data science, symmetry, and physics. The whole subject is learning to recognize when you can throw away the details and what cannot move even if you try."
         }
       ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — A quantity that proves two things are genuinely different",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Persistent homology in machine learning computes invariants (connected components, loops, voids) from point clouds to cluster data and detect anomalies without specifying cluster geometry. DNA topology uses linking numbers (an invariant) to verify enzyme action: if the invariant changes after an enzyme cut-and-rejoin, the enzyme failed or created a different link. Topological insulators in condensed matter are robust because their electronic structure's Chern number (an invariant) cannot change under small perturbations."
+        },
+        {
+          "t": "para",
+          "html": "Invariants are computed properties that deformation cannot touch, so they become fingerprints. In machine learning, persistent homology tracks how many loops and voids appear at each scale; their lifetimes are invariants that identify structure. In biology, the linking number of DNA strands is a topological invariant; changing it requires cutting. In condensed matter, the Chern number of a band structure is an integer that survives disorder and thermal noise because it is an invariant."
+        },
+        {
+          "t": "insight",
+          "html": "An invariant is the only honest statement about a shape or system: everything else changes with noise, but an invariant is locked in place by mathematics."
+        }
+      ]
     }
   ],
   "related": [
@@ -230,5 +256,13 @@
     "summary": "Compute five independent invariants: (1) Euler characteristic V−E+F on a sphere (yields 2) and torus (yields 0); (2) winding number for loops wrapping the origin (1, 3, 0); (3) knot-coloring counts for unknot (3) and trefoil (9); (4) vector-field indices at sources and saddles (±1); (5) total surface curvature on round and stretched spheres (both 4π). Each invariant is computed by a separate short program that counts, integrates, or traces.",
     "eq": "// Five invariants:\n// (1) chi = V - E + F; sphere: (V,E,F)=(4,6,4) or (8,12,6) or... -> chi=2; torus: (7,21,14) -> chi=0\n// (2) winding number = (total angle change) / (2π); e^(it) -> 1; e^(3it) -> 3; misses -> 0\n// (3) knot coloring: unknot 3 valid colorings, trefoil 9\n// (4) vector-field index: source +1, saddle -1; sphere: +1 + 1 = 2 (sum = chi)\n// (5) curvature integral: sphere (round or stretched) -> 4π",
     "note": "Full scripts: scripts/experiments/topology_run.py (EXP1: Euler characteristic), (EXP6: winding/linking), (EXP7: knot colorings), (EXP4: vector-field index), (EXP5: curvature integral). Numbers are the run's output verbatim from topology.md verified results."
-  }
+  },
+  "connects": [
+    {
+      "course": "gravity",
+      "id": "metric-measurement",
+      "label": "the metric",
+      "note": "GR's coordinate-free measurement is the same instinct as a topological invariant: a quantity that does not depend on how you describe the object."
+    }
+  ]
 }

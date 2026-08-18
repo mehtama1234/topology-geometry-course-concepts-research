@@ -28,6 +28,10 @@
     [
       "surprise",
       "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -51,11 +55,15 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is the move: two shapes are the same if you can continuously deform one into the other without tearing or gluing. That is it. Bend, stretch, slide, squash, bulge — anything goes as long as every moment in between is still a continuous surface. The moment you cut or glue, that move is forbidden; those actions can create or destroy holes, and holes are what topology cares about."
+          "html": "The move: two shapes are the same if you can continuously deform one into the other without tearing or gluing. That is it. Bend, stretch, slide, squash, bulge — anything goes as long as every moment in between is still a continuous surface. The moment you cut or glue, that move is forbidden; those actions can create or destroy holes, and holes are what topology cares about."
         },
         {
           "t": "para",
           "html": "This rubber-sheet rule makes a coffee mug the same as a doughnut (both have one hole; squeeze the mug's handle and you get the ring of the doughnut). It makes a sphere the same as a cube (no holes in either; deform a cube's corners and faces smoothly into a sphere's curves). The rule is so powerful because it focuses on the only thing that deformation cannot change: the topology — the holes, the connectedness, the way things link."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is which features survive continuous deformation &mdash; the properties that never change as you stretch and bend without cutting; those, and only those, are topological."
         }
       ]
     },
@@ -138,6 +146,24 @@
         {
           "t": "para",
           "html": "The same reasoning applies to knotted DNA and to braided anyons in quantum computing: if the knot is truly knotted, deformation cannot unknot it. The topology forces certain structures to be stable. Learn that a shape has one hole, and a topologist can tell you that no amount of smooth deformation can remove it — it is trapped there by the mathematics of continuous movement. That is the power and the beauty: call two shapes 'the same' only if deformation makes them identical, and suddenly you have discovered the deepest things that cannot change."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — Capturing what is truly essential about a shape",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Robot motion planning uses deformation to check if a path is feasible: can the robot's configuration deform continuously from start to goal without hitting an obstacle? Knotted DNA and protein folding rely on deformation-invariance: if two DNA configurations have different knot types, no continuous wiggle can transform one into the other without cutting the backbone. Topological data analysis clusters sensor data by the holes that survive deformation—clusters and voids in point clouds that persist under small perturbations."
+        },
+        {
+          "t": "para",
+          "html": "Deformation defines a notion of sameness where only cutting or gluing can change the essence. In robot planning, the configuration space itself is the shape; a path is a deformation of the robot's pose. In protein structures, the fold's topology (what crosses through what) is what cannot change under normal thermal wiggling. In TDA, data points are continuous deformations of each other; the topology that survives the deformation is the true structure."
+        },
+        {
+          "t": "insight",
+          "html": "Deformation-invariance is how nature protects complex structures: if it took cutting to break, small perturbations cannot break it."
         }
       ]
     }

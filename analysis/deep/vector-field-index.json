@@ -28,6 +28,10 @@
     [
       "surprise",
       "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -37,11 +41,11 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Imagine a breeze blowing across a landscape, or water flowing around rocks. Everywhere except at one spot, there is clear motion in a direction you can measure. But at certain points — a source of wind, a drain, a stagnation point where flows split — the arrows point in every direction at once, or nowhere. The flow is stuck."
+          "html": "Consider a breeze blowing across a landscape, or water flowing around rocks. Everywhere except at one spot, there is clear motion in a direction you can measure. But at certain points — a source of wind, a drain, a stagnation point where flows split — the arrows point in every direction at once, or nowhere. The flow is stuck."
         },
         {
           "t": "para",
-          "html": "Now here is the puzzle: there are many <em>ways</em> to be stuck. A source pushes everything straight outward. A saddle sucks inward along one axis and pumps outward along another. A spiral twists as it pulls in or pushes out. To an eye looking just at that one frozen point, all three stuck patterns look the same — motion is zero. But they are deeply different, and they behave differently over time."
+          "html": "Now The puzzle: there are many <em>ways</em> to be stuck. A source pushes everything straight outward. A saddle sucks inward along one axis and pumps outward along another. A spiral twists as it pulls in or pushes out. To an eye looking just at that one frozen point, all three stuck patterns look the same — motion is zero. But they are deeply different, and they behave differently over time."
         },
         {
           "t": "para",
@@ -55,11 +59,15 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is the move that works: ignore what is happening exactly at the stuck point. Instead, draw an imaginary tiny circle around it and walk around that circle. As you step along the circle, look at the arrows — they point in a direction all around you. After one full loop around the circle, you come back to where you started. But the arrows have rotated."
+          "html": "The move that works: ignore what is happening exactly at the stuck point. Instead, draw an imaginary tiny circle around it and walk around that circle. As you step along the circle, look at the arrows — they point in a direction all around you. After one full loop around the circle, you come back to where you started. But the arrows have rotated."
         },
         {
           "t": "para",
           "html": "The key question: how many complete full rotations do the arrows make as you circle once? If you mark a reference arrow and watch how many times it spins clockwise before you return to the start, that integer count is the <em>index</em>. A source has index +1 because all arrows point outward, completing one full outward sweep as you circle. A saddle has index -1 because the arrows point partly in and partly out, so they flip direction as you circle, crossing the loop in a way that sums to minus one full turn."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is the index of a zero &mdash; how many net turns the field&rsquo;s arrows make as you circle once around it; a source and a saddle carry different, fixed indices."
         }
       ]
     },
@@ -107,7 +115,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is the mathematical truth that makes this work: as you walk one complete loop around the circle, you return to exactly where you started. The arrows at your starting point must point in exactly the same direction as when you left, because the flow is continuous — it cannot jump. That means the total rotation you watched must add up to a complete number of full spins. You cannot end up 0.3 of a spin from where you started; you can only end up 0, 1, 2, or negative whole numbers. That is why the index must be an integer."
+          "html": "The mathematical truth that makes this work: as you walk one complete loop around the circle, you return to exactly where you started. The arrows at your starting point must point in exactly the same direction as when you left, because the flow is continuous — it cannot jump. That means the total rotation you watched must add up to a complete number of full spins. You cannot end up 0.3 of a spin from where you started; you can only end up 0, 1, 2, or negative whole numbers. That is why the index must be an integer."
         }
       ]
     },
@@ -127,7 +135,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is where this humble winding count reappears in something profound. Imagine you are trying to comb a hairy ball flat — drawing arrows on the sphere so every hair points in some smooth direction, with no cowlicks or stuck points. There is a topological theorem that says you <em>cannot</em> do it. No matter how you try, at least one swirl will form."
+          "html": "Here is where this humble winding count reappears in something profound. Consider you are trying to comb a hairy ball flat — drawing arrows on the sphere so every hair points in some smooth direction, with no cowlicks or stuck points. There is a topological theorem that says you <em>cannot</em> do it. No matter how you try, at least one swirl will form."
         },
         {
           "t": "para",
@@ -136,6 +144,24 @@
         {
           "t": "para",
           "html": "This idea reappears everywhere flows and topology meet. It classifies equilibria in dynamical systems as stable or unstable. It underlies phase transitions in physics where order breaks somewhere. It counts defects in materials and fields. Learn this one winding count and you have learned the seed of a major principle: local swirling, measured by winding, builds up to global topological constraints that no deformation can escape."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — Classifying stuck points by their spin",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Equilibria in dynamical systems (where velocity is zero) come in types: sources push outward, saddles mix inward and outward, spirals twist. Antenna null-spots vary by how the wave pattern fails. Defects in ordered materials (crystal dislocations, liquid-crystal point charges) are classified by their winding. Phase transitions force a defect to appear somewhere because the global topology demands it."
+        },
+        {
+          "t": "para",
+          "html": "Draw a tiny circle around the stuck point and watch the arrows as you walk the loop. Count complete rotations: a source spins outward once (index plus-one), a saddle flips opposite (index minus-one). This winding count is rigid—reshape the flow slightly and the index stays the same. It is the simplest invariant that distinguishes flow types. One number captures the class of singularity without measuring intensity or stability."
+        },
+        {
+          "t": "insight",
+          "html": "The winding count around a single stuck point is a whole number that classifies its type forever."
         }
       ]
     }

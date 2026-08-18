@@ -4,41 +4,225 @@
   "kick": "topology · first principles · whole numbers that measure tangledness",
   "title": "Winding and linking numbers — the integers that survive a wiggle",
   "lede": "Take a loop around a point, or two loops hooked through each other. Track how tangled they are with a single whole number: how many times does the loop wind around the point, or how many times do the two loops thread through each other? That number refuses to change no matter how you bend or jiggle the loops — only cutting them can change it. Here is how to count, what you get in a real run, why the count is always an integer, where it breaks down, and how it measures tangles in DNA, magnetic fields, and control systems.",
-  "arc": [["problem","The problem"],["reframe","The reframe"],["run","Seen on a real run"],["why","Why it stays a whole number"],["weakness","The one limit"],["surprise","The surprise"]],
-  "sections": [
-    {"id":"problem","h2":"1 · The problem — how do you measure tangledness?","blocks":[
-      {"t":"para","html":"A loop drawn in the plane might circle a point, or it might miss entirely. A pair of loops might be linked like a chain, or sit completely apart. But 'how many times' are they connected? You can't measure it with a ruler or an angle — those change when you wiggle the curves. Yet a person and a computer both understand what 'hooked through once' means, and they agree on whether two loops are linked or not. You want a <strong>number that both you and a program can count, that won't drift as the curves bend, and that truly captures how tangled the loops are</strong>."}
-    ]},
-    {"id":"reframe","h2":"2 · The reframe — count complete turns","blocks":[
-      {"t":"para","html":"Here is the idea: for a loop around a point, <strong>track the angle</strong> as you walk around the loop. Every time you spin a full revolution (360 degrees, or 2π radians), increment a counter. At the end, you have walked once around the loop and are back where you started. The counter tells you how many complete turns the loop made around the point — that is the winding number."},
-      {"t":"para","html":"For two loops, the approach is similar but counts something different: <strong>count signed threadings</strong>. Imagine one loop as a fixed wire and the other as a rope passing through space. Each place the rope passes through the disk 'spanned' by the wire counts as a linking — with a sign that depends on whether the rope crosses left-to-right or right-to-left. Add up all the threadings (with signs), and you get the linking number."},
-      {"t":"para","html":"Both numbers are whole — you can't have half a revolution or 0.7 of a threading — and that whole-ness is what makes them topological invariants, numbers that survive deformation."}
-    ]},
-    {"id":"run","h2":"3 · Seen on a real run — winding 1, 3, 0; linking 1 or 0","blocks":[
-      {"t":"para","html":"We computed winding numbers by tracking angle on loops in the complex plane, and linking numbers by counting signed threadings of pairs of circles. Every number is counted by the program, from the curve itself."},
-      {"t":"table","headers":["curve or pair of loops","winding number (or linking number)","what it means"],"rows":[["loop e^(i t) around the origin","1","one complete turn around the point"],["loop e^(3 i t) around the origin","3","three complete turns around the point"],["loop that misses the origin entirely","0","no turns at all — loop stays on one side"],["two circles hooked like a chain (Hopf link)","linking: 1","the loops thread through each other once"],["two circles that don't touch (unlinked)","linking: 0","the loops are separate — no threading"]],"caption":"Winding numbers measure how many times a single loop wraps a point; linking numbers measure how two loops thread through each other. All are whole numbers."},
-      {"t":"insight","html":"<strong>The discovered fact: winding numbers and linking numbers are whole numbers, and they stay the same no matter how you bend or slide the curves — only cutting breaks the count.</strong> A loop e^(i t) winds once, e^(3 i t) winds three times (you see three full spins as you traverse it), and a loop that misses the origin winds zero times. Two circles hooked through each other link once; two separate circles link zero. The individual curves may dent, stretch, or twist, but the count of complete windings or threadings does not change."}
-    ]},
-    {"id":"why","h2":"4 · Why it stays a whole number","blocks":[
-      {"t":"para","html":"The key is closure. When you walk once around a loop, you return to where you started — your position is the same, so the angle you accumulated must be a whole multiple of a full turn (360 degrees). You cannot end up at 1.5 turns because you are back at the start. The winding number is therefore always an integer."},
-      {"t":"para","html":"For linking, the same closure argument applies. Imagine shrinking one loop to a tiny loop and counting how many times the other loop crosses the disk it spans. Each crossing adds or subtracts a signed count. At the end, your crossing count must also be a whole number — a crossing is a discrete event, not a fractional thing. Bend the loops, and a crossing might move but it does not split or merge partway. The total threading count cannot change to a non-integer."},
-      {"t":"para","html":"This is the foundation of why these numbers survive wiggling: the whole-ness comes from the geometry closing on itself, and no continuous deformation can change a whole number to a fraction. It would have to jump, which would mean tearing the loop or cutting it — not allowed."}
-    ]},
-    {"id":"weakness","h2":"5 · The one limit — linking zero does not mean unlinked","blocks":[
-      {"t":"para","html":"Linking numbers are powerful but incomplete. Two loops can have a linking number of zero yet still be genuinely tangled in a way that is hard or impossible to pull apart without cutting. The linking number counts only the 'algebraic' threadings — how many times one loop passes through the surface of the other, counted with signs. But some knots are intertwined in ways that the signs cancel out."},
-      {"t":"para","html":"The winding number is robust — it fully captures whether a loop goes around a point — but linking numbers are weaker. They are a strong signal (if linking is nonzero, the loops are definitely linked), but zero linking does not guarantee the loops are unlinked geometrically. You need additional invariants to fully pin down the topology of two tangled curves. For a complete picture, topologists measure other integers: higher-order linking coefficients, the Maslov index, or knot-polynomial invariants like the Jones polynomial."}
-    ]},
-    {"id":"surprise","h2":"6 · The surprise — winding and linking count everywhere","blocks":[
-      {"t":"para","html":"These integer counts show up in engineering, physics, and geometry in surprising places. In <strong>control theory</strong>, the Nyquist stability criterion uses a winding number: the response of a control system (a curve in the complex plane) must wind the critical point a specific number of times for the system to be stable. The number of windings tells an engineer whether their feedback loop will blow up or settle."},
-      {"t":"para","html":"In <strong>biology</strong>, the linking number of DNA strands in a double helix is a topological invariant that does not change unless an enzyme cuts and reseals the backbone. The enzyme can increase or decrease the linking number in steps (by unwinding and rewinding), and the linking number is involved in gene regulation and DNA replication — the cell uses topology as a regulatory signal."},
-      {"t":"para","html":"In <strong>physics</strong>, the winding number of a field configuration measures the number of times the field 'wraps' a space, and this integer is conserved by topology. It shows up in magnetic helicity (how twisted a magnetic field is), in the classification of topological defects (vortices, monopoles, skyrmions), and in the structure of Yang–Mills gauge fields. These integer 'charges' are the reason some defects cannot annihilate — they are protected by topology."},
-      {"t":"para","html":"Learn to count windings and linkings and you have learned to read the simplest invariants in the whole subject. Everything heavier — knot invariants, homology, homotopy groups — rests on the idea that a discrete count captures something continuous about the shape, and that count is indestructible under wiggling."}
-    ]}
+  "arc": [
+    [
+      "problem",
+      "The problem"
+    ],
+    [
+      "reframe",
+      "The reframe"
+    ],
+    [
+      "run",
+      "Seen on a real run"
+    ],
+    [
+      "why",
+      "Why it stays a whole number"
+    ],
+    [
+      "weakness",
+      "The one limit"
+    ],
+    [
+      "surprise",
+      "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
+    ]
   ],
-  "related": [["concept-invariant-deep.html","invariant"],["concept-deformation-deep.html","deformation"],["concept-knots-and-links-deep.html","knots and links"],["concept-poincare-hopf-deep.html","Poincaré–Hopf"],["concept-triangulation-deep.html","triangulation"]],
+  "sections": [
+    {
+      "id": "problem",
+      "h2": "1 · The problem — how do you measure tangledness?",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "A loop drawn in the plane might circle a point, or it might miss entirely. A pair of loops might be linked like a chain, or sit completely apart. But 'how many times' are they connected? You can't measure it with a ruler or an angle — those change when you wiggle the curves. Yet a person and a computer both understand what 'hooked through once' means, and they agree on whether two loops are linked or not. You want a <strong>number that both you and a program can count, that won't drift as the curves bend, and that truly captures how tangled the loops are</strong>."
+        }
+      ]
+    },
+    {
+      "id": "reframe",
+      "h2": "2 · The reframe — count complete turns",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The idea: for a loop around a point, <strong>track the angle</strong> as you walk around the loop. Every time you spin a full revolution (360 degrees, or 2π radians), increment a counter. At the end, you have walked once around the loop and are back where you started. The counter tells you how many complete turns the loop made around the point — that is the winding number."
+        },
+        {
+          "t": "para",
+          "html": "For two loops, the approach is similar but counts something different: <strong>count signed threadings</strong>. Consider one loop as a fixed wire and the other as a rope passing through space. Each place the rope passes through the disk 'spanned' by the wire counts as a linking — with a sign that depends on whether the rope crosses left-to-right or right-to-left. Add up all the threadings (with signs), and you get the linking number."
+        },
+        {
+          "t": "para",
+          "html": "Both numbers are whole — you can't have half a revolution or 0.7 of a threading — and that whole-ness is what makes them topological invariants, numbers that survive deformation."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is the winding number &mdash; how many net times a path circles a point, or one loop threads another &mdash; a whole number that no continuous deformation can change."
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "h2": "3 · Seen on a real run — winding 1, 3, 0; linking 1 or 0",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "We computed winding numbers by tracking angle on loops in the complex plane, and linking numbers by counting signed threadings of pairs of circles. Every number is counted by the program, from the curve itself."
+        },
+        {
+          "t": "table",
+          "headers": [
+            "curve or pair of loops",
+            "winding number (or linking number)",
+            "what it means"
+          ],
+          "rows": [
+            [
+              "loop e^(i t) around the origin",
+              "1",
+              "one complete turn around the point"
+            ],
+            [
+              "loop e^(3 i t) around the origin",
+              "3",
+              "three complete turns around the point"
+            ],
+            [
+              "loop that misses the origin entirely",
+              "0",
+              "no turns at all — loop stays on one side"
+            ],
+            [
+              "two circles hooked like a chain (Hopf link)",
+              "linking: 1",
+              "the loops thread through each other once"
+            ],
+            [
+              "two circles that don't touch (unlinked)",
+              "linking: 0",
+              "the loops are separate — no threading"
+            ]
+          ],
+          "caption": "Winding numbers measure how many times a single loop wraps a point; linking numbers measure how two loops thread through each other. All are whole numbers."
+        },
+        {
+          "t": "insight",
+          "html": "<strong>The discovered fact: winding numbers and linking numbers are whole numbers, and they stay the same no matter how you bend or slide the curves — only cutting breaks the count.</strong> A loop e^(i t) winds once, e^(3 i t) winds three times (you see three full spins as you traverse it), and a loop that misses the origin winds zero times. Two circles hooked through each other link once; two separate circles link zero. The individual curves may dent, stretch, or twist, but the count of complete windings or threadings does not change."
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "h2": "4 · Why it stays a whole number",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The key is closure. When you walk once around a loop, you return to where you started — your position is the same, so the angle you accumulated must be a whole multiple of a full turn (360 degrees). You cannot end up at 1.5 turns because you are back at the start. The winding number is therefore always an integer."
+        },
+        {
+          "t": "para",
+          "html": "For linking, the same closure argument applies. Consider shrinking one loop to a tiny loop and counting how many times the other loop crosses the disk it spans. Each crossing adds or subtracts a signed count. At the end, your crossing count must also be a whole number — a crossing is a discrete event, not a fractional thing. Bend the loops, and a crossing might move but it does not split or merge partway. The total threading count cannot change to a non-integer."
+        },
+        {
+          "t": "para",
+          "html": "This is the foundation of why these numbers survive wiggling: the whole-ness comes from the geometry closing on itself, and no continuous deformation can change a whole number to a fraction. It would have to jump, which would mean tearing the loop or cutting it — not allowed."
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "h2": "5 · The one limit — linking zero does not mean unlinked",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Linking numbers are powerful but incomplete. Two loops can have a linking number of zero yet still be genuinely tangled in a way that is hard or impossible to pull apart without cutting. The linking number counts only the 'algebraic' threadings — how many times one loop passes through the surface of the other, counted with signs. But some knots are intertwined in ways that the signs cancel out."
+        },
+        {
+          "t": "para",
+          "html": "The winding number is robust — it fully captures whether a loop goes around a point — but linking numbers are weaker. They are a strong signal (if linking is nonzero, the loops are definitely linked), but zero linking does not guarantee the loops are unlinked geometrically. You need additional invariants to fully pin down the topology of two tangled curves. For a complete picture, topologists measure other integers: higher-order linking coefficients, the Maslov index, or knot-polynomial invariants like the Jones polynomial."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "h2": "6 · The surprise — winding and linking count everywhere",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "These integer counts show up in engineering, physics, and geometry in surprising places. In <strong>control theory</strong>, the Nyquist stability criterion uses a winding number: the response of a control system (a curve in the complex plane) must wind the critical point a specific number of times for the system to be stable. The number of windings tells an engineer whether their feedback loop will blow up or settle."
+        },
+        {
+          "t": "para",
+          "html": "In <strong>biology</strong>, the linking number of DNA strands in a double helix is a topological invariant that does not change unless an enzyme cuts and reseals the backbone. The enzyme can increase or decrease the linking number in steps (by unwinding and rewinding), and the linking number is involved in gene regulation and DNA replication — the cell uses topology as a regulatory signal."
+        },
+        {
+          "t": "para",
+          "html": "In <strong>physics</strong>, the winding number of a field configuration measures the number of times the field 'wraps' a space, and this integer is conserved by topology. It shows up in magnetic helicity (how twisted a magnetic field is), in the classification of topological defects (vortices, monopoles, skyrmions), and in the structure of Yang–Mills gauge fields. These integer 'charges' are the reason some defects cannot annihilate — they are protected by topology."
+        },
+        {
+          "t": "para",
+          "html": "Learn to count windings and linkings and you have learned to read the simplest invariants in the whole subject. Everything heavier — knot invariants, homology, homotopy groups — rests on the idea that a discrete count captures something continuous about the shape, and that count is indestructible under wiggling."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — Whole numbers that count tangles and don't break",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "DNA linking number is a topological invariant: enzymes change it only by cutting and resealing the backbone, and the cell uses it to regulate genes. Control theory uses the Nyquist winding number: a feedback loop is stable if a certain curve winds the origin a required number of times. Magnetic fields have winding numbers (helicity) that measure twist; topological defects (vortices, monopoles) carry winding charges that cannot annihilate without a partner."
+        },
+        {
+          "t": "para",
+          "html": "For one loop around a point, count full rotations as you walk the loop: the winding number. For two loops threading each other, count signed crossings through the spanning surface: the linking number. Both must be whole numbers because the curves close on themselves—you cannot end up at half a turn. Bend, slide, deform the curves: the number is immune. Only tearing or cutting changes it."
+        },
+        {
+          "t": "insight",
+          "html": "Winding and linking numbers are discrete counts that survive every wiggle and capture tangledness exactly."
+        }
+      ]
+    }
+  ],
+  "related": [
+    [
+      "concept-invariant-deep.html",
+      "invariant"
+    ],
+    [
+      "concept-deformation-deep.html",
+      "deformation"
+    ],
+    [
+      "concept-knots-and-links-deep.html",
+      "knots and links"
+    ],
+    [
+      "concept-poincare-hopf-deep.html",
+      "Poincaré–Hopf"
+    ],
+    [
+      "concept-triangulation-deep.html",
+      "triangulation"
+    ]
+  ],
   "recipe": {
     "summary": "Compute winding numbers by tracking angle on parameterized loops in the complex plane: e^(i t), e^(3 i t), and a loop that misses the origin. Compute linking numbers by counting signed threadings of two circles. Count each pass through the spanning surface and sum with signs. numpy, no custom topology library.",
     "eq": "# winding number: count full revolutions of angle as parameter t goes from 0 to 2π\n# linking number: sum signed threadings (each pass through spanning surface, +/- by orientation)\n# e^(i t) winds 1; e^(3 i t) winds 3; loop missing origin winds 0\n# Hopf link (two hooked circles) link 1; unlinked circles link 0",
     "note": "Full script: scripts/experiments/topology_run.py (EXP6). Numbers are the run's output verbatim."
-  }
+  },
+  "connects": [
+    {
+      "course": "gravity",
+      "id": "parallel-transport-loop-test",
+      "label": "parallel transport",
+      "note": "A loop that returns a vector rotated is the winding idea made physical: curvature measured by carrying a vector around a loop."
+    }
+  ]
 }

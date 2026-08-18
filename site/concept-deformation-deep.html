@@ -30,7 +30,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · rubber-sheet rules · what 'the same' really means</div>
 <h1>Deformation — the fundamental move that defines what two shapes are the same</h1>
 <p class="lead">Two shapes are the 'same' in topology if you can wiggle one into the other without tearing or gluing. That single rule — continuous deformation, no cutting — redefines sameness itself. Here is the idea, a real run where a loop's winding number survives every wiggle, why cutting is the only boundary, and why this notion of 'sameness' is the seed of robustness in everything from knotted DNA to topological states of matter.</p>
-<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why 'no cutting' is the crucial line</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="concept-deformation.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why 'no cutting' is the crucial line</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-deformation.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — when should we call two shapes 'the same'?</h2>
@@ -42,8 +42,9 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="reframe">
       <h2>2 · The reframe — declare two shapes 'the same' if you can wiggle one into the other</h2>
       <div class="essay">
-      <p>Here is the move: two shapes are the same if you can continuously deform one into the other without tearing or gluing. That is it. Bend, stretch, slide, squash, bulge — anything goes as long as every moment in between is still a continuous surface. The moment you cut or glue, that move is forbidden; those actions can create or destroy holes, and holes are what topology cares about.</p>
+      <p>The move: two shapes are the same if you can continuously deform one into the other without tearing or gluing. That is it. Bend, stretch, slide, squash, bulge — anything goes as long as every moment in between is still a continuous surface. The moment you cut or glue, that move is forbidden; those actions can create or destroy holes, and holes are what topology cares about.</p>
       <p>This rubber-sheet rule makes a coffee mug the same as a doughnut (both have one hole; squeeze the mug's handle and you get the ring of the doughnut). It makes a sphere the same as a cube (no holes in either; deform a cube's corners and faces smoothly into a sphere's curves). The rule is so powerful because it focuses on the only thing that deformation cannot change: the topology — the holes, the connectedness, the way things link.</p>
+      <p>The hidden quantity is which features survive continuous deformation &mdash; the properties that never change as you stretch and bend without cutting; those, and only those, are topological.</p>
       </div>
     </section>
     <section class="fp" id="run">
@@ -72,6 +73,14 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <div class="essay">
       <p>The rubber-sheet idea of sameness is not just a mathematical game. It has profound consequences for the real world. In topology itself, the Fundamental Group and homotopy are all built on the insight that deformations preserve structure — that is the foundation of algebraic topology. But the surprise goes deeper: topological states of matter in condensed physics are robust precisely because they are defined by properties that deformation cannot touch. A topological insulator, a quantum Hall state, or a topological superconductor are stable against small perturbations (small wiggles and bends) because their essential properties — like the winding number of their state in some abstract space — are deformation-invariant. You can nudge the system with noise, heat, and disorder; the topological property survives.</p>
       <p>The same reasoning applies to knotted DNA and to braided anyons in quantum computing: if the knot is truly knotted, deformation cannot unknot it. The topology forces certain structures to be stable. Learn that a shape has one hole, and a topologist can tell you that no amount of smooth deformation can remove it — it is trapped there by the mathematics of continuous movement. That is the power and the beauty: call two shapes 'the same' only if deformation makes them identical, and suddenly you have discovered the deepest things that cannot change.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Capturing what is truly essential about a shape</h2>
+      <div class="essay">
+      <p>Robot motion planning uses deformation to check if a path is feasible: can the robot's configuration deform continuously from start to goal without hitting an obstacle? Knotted DNA and protein folding rely on deformation-invariance: if two DNA configurations have different knot types, no continuous wiggle can transform one into the other without cutting the backbone. Topological data analysis clusters sensor data by the holes that survive deformation—clusters and voids in point clouds that persist under small perturbations.</p>
+      <p>Deformation defines a notion of sameness where only cutting or gluing can change the essence. In robot planning, the configuration space itself is the shape; a path is a deformation of the robot's pose. In protein structures, the fold's topology (what crosses through what) is what cannot change under normal thermal wiggling. In TDA, data points are continuous deformations of each other; the topology that survives the deformation is the true structure.</p>
+      <div class="insight">Deformation-invariance is how nature protects complex structures: if it took cutting to break, small perturbations cannot break it.</div>
       </div>
     </section>
     <section class="fp"><p class="muted">Related: <a href="concept-invariant-deep.html">invariant</a> · <a href="concept-euler-characteristic-deep.html">Euler characteristic</a></p></section>

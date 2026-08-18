@@ -30,7 +30,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · first principles · whole numbers that measure tangledness</div>
 <h1>Winding and linking numbers — the integers that survive a wiggle</h1>
 <p class="lead">Take a loop around a point, or two loops hooked through each other. Track how tangled they are with a single whole number: how many times does the loop wind around the point, or how many times do the two loops thread through each other? That number refuses to change no matter how you bend or jiggle the loops — only cutting them can change it. Here is how to count, what you get in a real run, why the count is always an integer, where it breaks down, and how it measures tangles in DNA, magnetic fields, and control systems.</p>
-<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why it stays a whole number</a><a href="#weakness">The one limit</a><a href="#surprise">The surprise</a><a href="concept-winding-linking.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why it stays a whole number</a><a href="#weakness">The one limit</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-winding-linking.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — how do you measure tangledness?</h2>
@@ -41,9 +41,10 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="reframe">
       <h2>2 · The reframe — count complete turns</h2>
       <div class="essay">
-      <p>Here is the idea: for a loop around a point, <strong>track the angle</strong> as you walk around the loop. Every time you spin a full revolution (360 degrees, or 2π radians), increment a counter. At the end, you have walked once around the loop and are back where you started. The counter tells you how many complete turns the loop made around the point — that is the winding number.</p>
-      <p>For two loops, the approach is similar but counts something different: <strong>count signed threadings</strong>. Imagine one loop as a fixed wire and the other as a rope passing through space. Each place the rope passes through the disk 'spanned' by the wire counts as a linking — with a sign that depends on whether the rope crosses left-to-right or right-to-left. Add up all the threadings (with signs), and you get the linking number.</p>
+      <p>The idea: for a loop around a point, <strong>track the angle</strong> as you walk around the loop. Every time you spin a full revolution (360 degrees, or 2π radians), increment a counter. At the end, you have walked once around the loop and are back where you started. The counter tells you how many complete turns the loop made around the point — that is the winding number.</p>
+      <p>For two loops, the approach is similar but counts something different: <strong>count signed threadings</strong>. Consider one loop as a fixed wire and the other as a rope passing through space. Each place the rope passes through the disk 'spanned' by the wire counts as a linking — with a sign that depends on whether the rope crosses left-to-right or right-to-left. Add up all the threadings (with signs), and you get the linking number.</p>
       <p>Both numbers are whole — you can't have half a revolution or 0.7 of a threading — and that whole-ness is what makes them topological invariants, numbers that survive deformation.</p>
+      <p>The hidden quantity is the winding number &mdash; how many net times a path circles a point, or one loop threads another &mdash; a whole number that no continuous deformation can change.</p>
       </div>
     </section>
     <section class="fp" id="run">
@@ -58,7 +59,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <h2>4 · Why it stays a whole number</h2>
       <div class="essay">
       <p>The key is closure. When you walk once around a loop, you return to where you started — your position is the same, so the angle you accumulated must be a whole multiple of a full turn (360 degrees). You cannot end up at 1.5 turns because you are back at the start. The winding number is therefore always an integer.</p>
-      <p>For linking, the same closure argument applies. Imagine shrinking one loop to a tiny loop and counting how many times the other loop crosses the disk it spans. Each crossing adds or subtracts a signed count. At the end, your crossing count must also be a whole number — a crossing is a discrete event, not a fractional thing. Bend the loops, and a crossing might move but it does not split or merge partway. The total threading count cannot change to a non-integer.</p>
+      <p>For linking, the same closure argument applies. Consider shrinking one loop to a tiny loop and counting how many times the other loop crosses the disk it spans. Each crossing adds or subtracts a signed count. At the end, your crossing count must also be a whole number — a crossing is a discrete event, not a fractional thing. Bend the loops, and a crossing might move but it does not split or merge partway. The total threading count cannot change to a non-integer.</p>
       <p>This is the foundation of why these numbers survive wiggling: the whole-ness comes from the geometry closing on itself, and no continuous deformation can change a whole number to a fraction. It would have to jump, which would mean tearing the loop or cutting it — not allowed.</p>
       </div>
     </section>
@@ -78,6 +79,15 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <p>Learn to count windings and linkings and you have learned to read the simplest invariants in the whole subject. Everything heavier — knot invariants, homology, homotopy groups — rests on the idea that a discrete count captures something continuous about the shape, and that count is indestructible under wiggling.</p>
       </div>
     </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Whole numbers that count tangles and don't break</h2>
+      <div class="essay">
+      <p>DNA linking number is a topological invariant: enzymes change it only by cutting and resealing the backbone, and the cell uses it to regulate genes. Control theory uses the Nyquist winding number: a feedback loop is stable if a certain curve winds the origin a required number of times. Magnetic fields have winding numbers (helicity) that measure twist; topological defects (vortices, monopoles) carry winding charges that cannot annihilate without a partner.</p>
+      <p>For one loop around a point, count full rotations as you walk the loop: the winding number. For two loops threading each other, count signed crossings through the spanning surface: the linking number. Both must be whole numbers because the curves close on themselves—you cannot end up at half a turn. Bend, slide, deform the curves: the number is immune. Only tearing or cutting changes it.</p>
+      <div class="insight">Winding and linking numbers are discrete counts that survive every wiggle and capture tangledness exactly.</div>
+      </div>
+    </section>
+    <section class="fp" id="connects"><h2>Where this connects — geometry &rarr; gravity</h2><p class="muted">This idea is one stage of a larger machine: the geometry of shapes becomes the geometry of spacetime. These links open the connected concept.</p><ul style="list-style:none;padding:14px 16px;margin:12px 0;border:1px solid var(--line,#d7ddd9);border-radius:10px;background:#fff"><li style="margin:9px 0;padding-left:14px;border-left:3px solid #8b3f18"><a href="https://mehtama1234.github.io/gravity-light-course-concepts-research/concepts/parallel-transport-loop-test-deep.html" style="font-weight:700">parallel transport</a> <span class="muted" style="font-size:13px">· Gravity · general relativity</span><div style="font-size:14.5px;margin-top:3px">A loop that returns a vector rotated is the winding idea made physical: curvature measured by carrying a vector around a loop.</div></li></ul></section>
     <section class="fp"><p class="muted">Related: <a href="concept-invariant-deep.html">invariant</a> · <a href="concept-deformation-deep.html">deformation</a> · <a href="concept-knots-and-links-deep.html">knots and links</a> · <a href="concept-poincare-hopf-deep.html">Poincaré–Hopf</a> · <a href="concept-triangulation-deep.html">triangulation</a></p></section>
     <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
       <p class="muted">Compute winding numbers by tracking angle on parameterized loops in the complex plane: e^(i t), e^(3 i t), and a loop that misses the origin. Compute linking numbers by counting signed threadings of two circles. Count each pass through the spanning surface and sum with signs. numpy, no custom topology library.</p>

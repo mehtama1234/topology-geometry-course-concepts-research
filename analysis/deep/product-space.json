@@ -28,6 +28,10 @@
     [
       "surprise",
       "Where products hide in bigger systems"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -51,7 +55,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is the definition: the product of two spaces A and B is the set of all pairs. You take every point in A and every point in B, and you glue them together as a single entity. A point in the product is literally a pair: (some choice from A, some choice from B)."
+          "html": "The definition: the product of two spaces A and B is the set of all pairs. You take every point in A and every point in B, and you glue them together as a single entity. A point in the product is literally a pair: (some choice from A, some choice from B)."
         },
         {
           "t": "para",
@@ -59,7 +63,7 @@
         },
         {
           "t": "para",
-          "html": "This seems almost obvious once you name it. But here is the magic: the Euler characteristic of the product space is just the Euler characteristic of the first space times the characteristic of the second. The number multiplies."
+          "html": "This seems almost obvious once you name it. But The key: the Euler characteristic of the product space is just the Euler characteristic of the first space times the characteristic of the second. The number multiplies."
         }
       ]
     },
@@ -117,11 +121,15 @@
       "blocks": [
         {
           "t": "para",
-          "html": "The reason is beautiful and geometric. When you have a product of two spaces, you can tile it by gluing together panels from both. Here is the move: take a tiling of the first space (say, a circle cut into, say, 2 arcs) and a tiling of the second space (say, a circle cut into 3 arcs). The product's natural tiling is a grid: every region of the first gets crossed by every region of the second, so you get 2 times 3 = 6 patches. Each intersection of an edge from the first and an edge from the second gives you a corner in the product. When you compute corners-minus-edges-plus-faces for the product, the alternating sum factors exactly: if the first space has Euler characteristic A and the second has B, the product gets A times B."
+          "html": "The reason is beautiful and geometric. When you have a product of two spaces, you can tile it by gluing together panels from both. The move: take a tiling of the first space (say, a circle cut into, say, 2 arcs) and a tiling of the second space (say, a circle cut into 3 arcs). The product's natural tiling is a grid: every region of the first gets crossed by every region of the second, so you get 2 times 3 = 6 patches. Each intersection of an edge from the first and an edge from the second gives you a corner in the product. When you compute corners-minus-edges-plus-faces for the product, the alternating sum factors exactly: if the first space has Euler characteristic A and the second has B, the product gets A times B."
         },
         {
           "t": "para",
           "html": "In short: the paneling of a product is a Cartesian grid of panels, and the alternating sum on a grid factors like multiplication."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is how invariants combine: tiling a product of two spaces factorises, so the Euler characteristic of the product is the product of the two separate Euler characteristics."
         }
       ]
     },
@@ -158,6 +166,24 @@
         {
           "t": "para",
           "html": "The humbling lesson: most spaces you bump into are secretly products, and the Euler characteristic tells you the cost of that structure. A number multiplies. That is topology's claim on how things compose."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — When one shape is really two shapes paired",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "A robot arm's control space is each joint angle paired with every other joint angle. A video is horizontal position paired with vertical position paired with time. A system's state is its location paired with its momentum. DNA transcription uses configuration space where one degree of freedom pairs with another. Phase space in physics pairs position with velocity for every particle."
+        },
+        {
+          "t": "para",
+          "html": "Instead of thinking of the whole space as one messy thing, factor it: 'This is circle-times-circle' or 'interval-times-circle.' Once you see the product structure, the topology multiplies: the Euler count of the product is just the count of one space times the count of the other. This multiplication is rigid—if either space has count zero, the product collapses to zero too. Robots and physicists use this to prove constraints on what motion is possible."
+        },
+        {
+          "t": "insight",
+          "html": "Most complex spaces split into paired factors, and the Euler number obeys multiplication, not addition."
         }
       ]
     }

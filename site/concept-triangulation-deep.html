@@ -30,20 +30,21 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · first principles · cutting a surface into flat pieces so you can compute with it</div>
 <h1>Triangulation — why the answer doesn't depend on how you cut</h1>
 <p class="lead">A smooth surface is continuous and curvy, which makes it hard to compute with directly. The trick is to chop it into flat triangular patches — a triangulation. Here is why that works, a real run showing five wildly different ways to cut a ball give the same answer, the algebra behind independence-from-the-mesh, one honest flaw, and why computers use this exact move for geometry, physics, and graphics.</p>
-<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why the cut doesn't matter</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="concept-triangulation.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why the cut doesn't matter</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-triangulation.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — how do you compute with a curved surface?</h2>
       <div class="essay">
-      <p>Imagine you have a rubber ball, a wine glass, or the surface of the Earth. It is smooth and curvy and continuous. But if you want a computer to compute with it — to measure something, to simulate a process, to render it on a screen — you need something discrete: numbers, counts, lists of patches. A smooth surface gives you neither. It is infinitely detailed; you cannot list all its points.</p>
+      <p>Consider you have a rubber ball, a wine glass, or the surface of the Earth. It is smooth and curvy and continuous. But if you want a computer to compute with it — to measure something, to simulate a process, to render it on a screen — you need something discrete: numbers, counts, lists of patches. A smooth surface gives you neither. It is infinitely detailed; you cannot list all its points.</p>
       <p>So the question is: <strong>how do you replace a smooth curvy surface with something you can actually compute on?</strong></p>
       </div>
     </section>
     <section class="fp" id="reframe">
       <h2>2 · The reframe — chop it into flat pieces</h2>
       <div class="essay">
-      <p>Here is the move: forget the smooth surface for a moment. Cover it with a net of flat patches. Like a soccer ball's pentagons and hexagons, or a globe stitched from gores. Each patch is a flat piece — a triangle is simplest. Each has corners (called vertices), edges between them, and interior (called a face). This is a <strong>triangulation</strong>: a discrete mesh that sits on the surface and replaces the smooth thing with something you can hold in a list and compute with.</p>
-      <p>Now here is the magical part: suppose you computed some quantity on this mesh — say, a count or an arithmetic sum over the vertices and edges and faces. If you now re-cut the surface with a different mesh, will you get a different answer? Or will it stay the same? The deeper question is: does the answer belong to the surface, or does it depend on how you sliced it?</p>
+      <p>The move: forget the smooth surface for a moment. Cover it with a net of flat patches. Like a soccer ball's pentagons and hexagons, or a globe stitched from gores. Each patch is a flat piece — a triangle is simplest. Each has corners (called vertices), edges between them, and interior (called a face). This is a <strong>triangulation</strong>: a discrete mesh that sits on the surface and replaces the smooth thing with something you can hold in a list and compute with.</p>
+      <p>Now The keyal part: suppose you computed some quantity on this mesh — say, a count or an arithmetic sum over the vertices and edges and faces. If you now re-cut the surface with a different mesh, will you get a different answer? Or will it stay the same? The deeper question is: does the answer belong to the surface, or does it depend on how you sliced it?</p>
+      <p>The hidden quantity is a count that survives every refinement of the mesh &mdash; corners minus edges plus faces stays fixed, proving the number is a property of the surface, not of the particular triangulation.</p>
       </div>
     </section>
     <section class="fp" id="run">
@@ -57,7 +58,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="why">
       <h2>4 · Why the cut doesn't matter — offsetting pairs</h2>
       <div class="essay">
-      <p>Here is how triangulation earns independence from the mesh. Suppose you take one face (a triangle) and draw a line across it, splitting it into two triangles. What changes? You add one new edge (the line you drew) and you add one new face (the second triangle). In the sum V − E + F, you gain 1 from the new face and lose 1 from the new edge. They cancel. The total stays put.</p>
+      <p>This is how triangulation earns independence from the mesh. Suppose you take one face (a triangle) and draw a line across it, splitting it into two triangles. What changes? You add one new edge (the line you drew) and you add one new face (the second triangle). In the sum V − E + F, you gain 1 from the new face and lose 1 from the new edge. They cancel. The total stays put.</p>
       <p>Or suppose you place a new vertex (corner) in the middle of an existing edge. You add 1 vertex, but you split 1 edge into 2 — so you add 1 edge-pair but lose 1 edge-pair. They cancel. Every legal refinement — every way to make the mesh finer or to shift corners around — changes the pieces in offsetting pairs. The signs in the formula (plus for vertices and faces, minus for edges) are chosen precisely to guarantee cancellation. That is why the count is independent of the mesh: it belongs to the surface itself.</p>
       </div>
     </section>
@@ -73,6 +74,14 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <div class="essay">
       <p>That idea — replace the smooth surface with a mesh, compute on the mesh, and hope that the mesh converges to the truth — is not a theoretical trick. It is the <strong>entire foundation</strong> of how computers handle continuous shapes. Finite element analysis for physics simulations: you cut a material into tetrahedra, then solve equations on each little piece. Computer graphics and rendering: every 3D object in a game or a film is a mesh of triangles. Mesh generation algorithms are a major branch of computational geometry.</p>
       <p>The same goes for curves and surfaces in the abstract. Whenever you need a computer to work with something smooth and continuous, you first triangulate (or divide into elements), then compute. The core move — discrete approximation to a continuous object — runs through all of applied mathematics, and triangulation is its simplest and most geometric form. Learn to cut a surface into flat pieces and trust that the answer won't depend on the cut, and you have just learned the method that powers simulations, graphics, and every other shape-based computation.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Cutting surfaces into flat pieces for computation</h2>
+      <div class="essay">
+      <p>Finite element analysis cuts a material into tetrahedra to simulate physics by solving equations on each piece. Computer graphics triangulates every 3D model—games, films, renders—cutting surfaces into flat patches. Mesh generation is a major field in computational geometry. Topological data analysis triangulates point clouds to extract hidden structure from measurements.</p>
+      <p>Choose how to cut a sphere: make a tetrahedron, an icosahedron, or refine arbitrarily fine. Count corners minus edges plus faces each time. Every cut gives the same number—two. This independence-from-the-mesh proves the count belongs to the surface, not the slicing. Computers use this: refine the mesh until the answer stabilizes, knowing that the truth is mesh-independent. The cut is a tool, not the answer.</p>
+      <div class="insight">Mesh the surface however you like; the Euler count stays put because it lives in the topology.</div>
       </div>
     </section>
     <section class="fp"><p class="muted">Related: <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-gauss-bonnet-deep.html">Gauss–Bonnet</a></p></section>

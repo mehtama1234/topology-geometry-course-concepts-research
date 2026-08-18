@@ -30,12 +30,12 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · invariance · why certain maps must have a point that doesn't move</div>
 <h1>The Brouwer fixed-point theorem — something always stays put</h1>
 <p class="lead">Stir your coffee thoroughly. Is there always a speck that ends up exactly where it began? Crumple a map of your town and drop it on the town — must some point land on the spot it represents? It feels like you could avoid it if you arranged things cleverly. But a continuous map of a disk into itself cannot escape leaving at least one point fixed. Here is that idea, a real run that finds the fixed point when you repeatedly apply a simple function, why avoiding it is impossible, where the theorem fails, and where it secretly powers economic and physical science.</p>
-<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why it's unavoidable</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="concept-brouwer-fixed-point.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why it's unavoidable</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-brouwer-fixed-point.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — can you design a map with no fixed point?</h2>
       <div class="essay">
-      <p>Imagine you have a rubber disk and a continuous rule that sends each point on the disk to another point on the disk. The rule might shrink, stretch, rotate, or jumble the disk however you like — the only constraint is that it never tears or glues points together. The question is: <strong>can you design a rule that leaves <em>no</em> point exactly where it began?</strong> It seems plausible. A rotation around the center leaves no fixed point. A spiral inward might leave no point unmoved. But appearances deceive.</p>
+      <p>Consider you have a rubber disk and a continuous rule that sends each point on the disk to another point on the disk. The rule might shrink, stretch, rotate, or jumble the disk however you like — the only constraint is that it never tears or glues points together. The question is: <strong>can you design a rule that leaves <em>no</em> point exactly where it began?</strong> It seems plausible. A rotation around the center leaves no fixed point. A spiral inward might leave no point unmoved. But appearances deceive.</p>
       <p>Three everyday versions of the same puzzle: stir your coffee with a spoon. After stirring, is there always at least one coffee molecule at the exact spot it was before the stir? Take a map of your city, crumple it into a ball, and drop it on the city itself. Must some point on the map land exactly on the location it represents? Shuffle a deck of cards. Is it possible that every single card ends up in a different position than it started?</p>
       </div>
     </section>
@@ -60,6 +60,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <p>The proof uses a deep idea. Suppose a continuous map had no fixed point. Then every point x would move somewhere else — call that new location f(x). We could then design a retracting map, a rule that continuously squashes the entire disk onto its boundary (the circle edge) without tearing it. This retraction is the trick that makes the proof work.</p>
       <p>But a retraction that keeps the boundary fixed while squashing the interior is impossible. It violates a deeper topological fact called the Hairy Ball Theorem: you cannot comb a hairy ball flat without creating a swirl. A disk is the interior of a sphere sliced open, and retracting it onto its boundary edge is geometrically impossible without a tear. Therefore, our assumption that no fixed point exists leads to a contradiction. The fixed point must be there.</p>
       <p>The argument is indirect but bulletproof: the topology of the disk — the shape itself — forces a fixed point to exist. The map's exact rule does not matter. Only its continuity and the shape of the domain matter.</p>
+      <p>The hidden quantity is a topological obstruction: a fixed-point-free continuous map on a disk could be turned into an impossible &lsquo;retraction&rsquo; of the disk onto its edge, and the edge&rsquo;s winding cannot be undone &mdash; so no such map exists.</p>
       </div>
     </section>
     <section class="fp" id="weakness">
@@ -75,6 +76,14 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <p>A fixed point is not just a curiosity. John Nash proved that every finite game has a Nash equilibrium — a profile where no player wants to deviate — by applying the Brouwer fixed-point theorem. The equilibrium is a fixed point of a carefully constructed "best-response" map. Without Brouwer, existence of equilibrium would be unproven.</p>
       <p>Differential equations also owe their existence to this theorem. Existence of solutions to equations like dx/dt = f(x) rests on fixed-point theorems. Numerical algorithms that converge to an answer — neural network gradient descent, iterative solvers, reinforcement learning agents learning policies — all lean on fixed-point principles. Brouwer is the invisible scaffolding under most of applied mathematics and economics.</p>
       <p>The humbling part: the theorem is topological, not metric. It does not depend on distance or measurement. It says that shape itself, the continuous deformation of the disk, forces the fixed point into existence. That is the deepest insight: <strong>something about the way a disk is wired forces any continuous self-map to leave a point unmoved.</strong> Change the shape from disk to annulus, and the guarantee vanishes.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Proving an equilibrium or solution must exist</h2>
+      <div class="essay">
+      <p>Fixed-point theorems guarantee that iterative algorithms converge. Game theory relies on Brouwer to prove every finite game has a Nash equilibrium where players stop wanting to change strategy. Gradient descent in machine learning, numerical solvers for differential equations, and reinforcement-learning policy updates all rest on the existence of fixed points that iterative methods converge toward.</p>
+      <p>The theorem serves as the existence proof that an equilibrium or solution exists, even when you don't know where it is or how to find it. In economics, the equilibrium is modeled as a fixed point of a best-response map. In neural networks, the fixed point is the stable weight configuration that training settles into. The space is the configuration or strategy space; the map is the rule that generates the next iterate.</p>
+      <div class="insight">The theorem is invisible scaffolding: it proves a solution must be there, but finding it often requires separate numerical work.</div>
       </div>
     </section>
     <details class="math"><summary>the run recipe — reproduce every number above</summary><div>

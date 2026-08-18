@@ -30,7 +30,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · building surfaces · cut, glue, count the handles</div>
 <h1>Surgery — building every closed surface from a sphere by adding handles</h1>
 <p class="lead">Start with a ball. Cut two disk-shaped holes in it and glue in a tube connecting them — you have just made a surface with one handle (the torus). Do it again and you get two handles (a surface with two holes). This operation — cutting and gluing — is called surgery, and it is how you build every closed surface from scratch. Here is that idea, a real run showing exactly how many handles each surface has by measuring one number, why that number drops by exactly 2 each time you add a handle, the shapes surgery does not cleanly handle, and where this cut-and-glue method reappears in far larger mathematics.</p>
-<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why each handle subtracts 2</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="concept-surgery.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why each handle subtracts 2</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-surgery.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — there are infinitely many surfaces; how do you build them all?</h2>
@@ -41,8 +41,8 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="reframe">
       <h2>2 · The reframe — surgery builds surfaces by controlled cutting and gluing</h2>
       <div class="essay">
-      <p>Here is the central move: start with a sphere (the simplest closed surface). Now perform <em>surgery</em>. Cut out two small disk-shaped holes and glue in a tube (topologically a hollow cylinder bent into a loop) that connects them. You have now added one <strong>handle</strong> to the sphere. Do this surgery again — cut two more holes, glue in another tube — and you have two handles. Repeat as many times as you like.</p>
-      <p>This simple operation — cutting out disks and gluing in tubes — turns out to be <strong>the only way to build closed orientable surfaces</strong>. Every closed surface you can imagine is either a sphere (zero handles) or a sphere plus some finite number of handles. The number of handles is called the <em>genus</em> of the surface. A sphere has genus 0. A torus (doughnut) has genus 1. A pretzel with two holes has genus 2.</p>
+      <p>The central move: start with a sphere (the simplest closed surface). Now perform <em>surgery</em>. Cut out two small disk-shaped holes and glue in a tube (topologically a hollow cylinder bent into a loop) that connects them. You have now added one <strong>handle</strong> to the sphere. Do this surgery again — cut two more holes, glue in another tube — and you have two handles. Repeat as many times as you like.</p>
+      <p>This simple operation — cutting out disks and gluing in tubes — turns out to be <strong>the only way to build closed orientable surfaces</strong>. Every closed surface you can consider is either a sphere (zero handles) or a sphere plus some finite number of handles. The number of handles is called the <em>genus</em> of the surface. A sphere has genus 0. A torus (doughnut) has genus 1. A pretzel with two holes has genus 2.</p>
       </div>
     </section>
     <section class="fp" id="run">
@@ -58,21 +58,30 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <div class="essay">
       <p>Surgery works by cutting and gluing in a very precise way. When you perform surgery on a sphere, you remove two disks. Each disk was made of corners (vertices), edges, and one interior face. Removing two disks removes the two interior faces, removes some edges and vertices along the boundaries. Then you glue in a tube (a thin hollow cylinder) to connect the holes. The tube is itself made of vertices, edges, and faces in a fixed pattern.</p>
       <p>The beauty: the vertices and edges you lose from cutting plus the vertices and edges you gain from gluing always net to exactly minus 2 in the alternating sum. No matter what size or shape the disks are, no matter how fine or coarse the mesh near them, the balance is always the same. That is why the Euler characteristic <em>always</em> drops by 2. The algebra is invisible, but the topology is absolute: surgery on a sphere subtracts 2, every time.</p>
+      <p>The hidden quantity is how an invariant changes under a cut-and-glue: adding a handle lowers the Euler characteristic by exactly two, which is why genus and Euler characteristic track each other.</p>
       </div>
     </section>
     <section class="fp" id="weakness">
       <h2>5 · The one real weakness — non-orientable surfaces and higher dimensions</h2>
       <div class="essay">
-      <p>Surgery works beautifully to build closed orientable surfaces — those you can consistently label as having an inside and an outside. A sphere, torus, and pretzel all have this property. But topology contains <em>non-orientable</em> surfaces that cannot be so labeled: the Klein bottle (imagine a bottle that passes through itself in 4D; on a 2D surface, this writhes without a boundary or clear inside/outside) and the real projective plane. Surgery still describes them, but the story gets tangled: you have to allow both handles and a separate twist operation, and the genus formula no longer applies cleanly.</p>
+      <p>Surgery works beautifully to build closed orientable surfaces — those you can consistently label as having an inside and an outside. A sphere, torus, and pretzel all have this property. But topology contains <em>non-orientable</em> surfaces that cannot be so labeled: the Klein bottle (consider a bottle that passes through itself in 4D; on a 2D surface, this writhes without a boundary or clear inside/outside) and the real projective plane. Surgery still describes them, but the story gets tangled: you have to allow both handles and a separate twist operation, and the genus formula no longer applies cleanly.</p>
       <p>Surgery is also a two-dimensional idea. In higher dimensions, the method generalizes, but the algebra becomes formidable, and the spaces you build are harder to visualize or describe in simple words.</p>
       </div>
     </section>
     <section class="fp" id="surprise">
       <h2>6 · The surprise — surgery classifies all surfaces and reappears everywhere</h2>
       <div class="essay">
-      <p>Here is the shocking payoff: <strong>every closed orientable surface is a sphere with handles, full stop</strong>. There are no other families hiding. Surgery is not just one way to build surfaces — it is the <em>only</em> way, and it assigns each surface a single integer (its genus) that identifies it completely. A torus is always genus 1, a coffee mug with three holes is always genus 3, no matter how you twist or deform it.</p>
+      <p>The shocking payoff: <strong>every closed orientable surface is a sphere with handles, full stop</strong>. There are no other families hiding. Surgery is not just one way to build surfaces — it is the <em>only</em> way, and it assigns each surface a single integer (its genus) that identifies it completely. A torus is always genus 1, a coffee mug with three holes is always genus 3, no matter how you twist or deform it.</p>
       <p>But surgery appears far beyond topology. In string theory, the two-dimensional worldsheet — the surface traced out by a vibrating string through spacetime — can undergo topology-changing processes that look exactly like surgery: two winding modes can join (two handles merge into one, or create a new hole). In three-dimensional topology and knot theory, surgery on 3D spaces is how you build and classify three-manifolds. In algebraic topology, surgery theory connects to K-theory and extends to a framework for understanding manifolds of any dimension. And in modern quantum field theory, topology-changing processes are fundamental to understanding phase transitions and vacuum states.</p>
       <p>The core idea — a shape can be built by starting with a simple piece and performing controlled operations — transcends topology itself. It is a template for organized complexity that appears in physics, algebra, and far beyond.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Building surfaces by cutting and gluing tubes</h2>
+      <div class="essay">
+      <p>Any closed surface is a sphere with some number of handles. Surgery—cutting holes and gluing in tubes—constructs them all. A coffee mug with one handle is a sphere with genus one. A pretzel with two holes is genus two. String theory uses surgery on worldsheets (the 2D surface traced by a vibrating string) to describe topology-changing scattering events. Three-dimensional topology uses surgery to build and classify all three-manifolds.</p>
+      <p>Start with a sphere (Euler count two). Each time you perform surgery—remove two disk-shaped holes and glue a tube between them—the count drops by exactly two. Genus one gives count zero; genus two gives count minus two. This formula (count equals two minus twice the genus) is rigid and exact. Physicists use it to track which topology-changing processes are possible in quantum systems.</p>
+      <div class="insight">Every closed surface is a sphere plus handles; each handle subtracts two from the count, always.</div>
       </div>
     </section>
     <section class="fp"><p class="muted">Related: <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-triangulation-deep.html">triangulation</a></p></section>

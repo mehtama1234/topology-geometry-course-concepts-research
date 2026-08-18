@@ -30,7 +30,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · geometry · the split that founds the subject · what survives when you bend</div>
 <h1>Topology versus geometry — what changes when you bend, and what doesn't</h1>
 <p class="lead">Two shapes can look totally different and yet be the same in one deep sense, or look similar and yet be fundamentally different. The question that starts the course: which properties survive a bend, and which don't? Here is that distinction, a real run where you watch curvature move around while totals stay fixed, why the split works, its one real cost, and why it reorganizes everything.</p>
-<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why the split works</a><a href="#weakness">The one real cost</a><a href="#surprise">The surprise</a><a href="concept-topology-vs-geometry.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why the split works</a><a href="#weakness">The one real cost</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-topology-vs-geometry.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — the same shape or not?</h2>
@@ -42,8 +42,9 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="reframe">
       <h2>2 · The reframe — split the properties in two</h2>
       <div class="essay">
-      <p>Here is the move that unlocks the whole subject: split <em>every</em> property into two bins. First bin: does it change when you bend the shape? If yes, call it <strong>geometry</strong> — the stuff that dents and stretches. Second bin: does it survive every bend and stretch, as long as you don't tear? Call it <strong>topology</strong> — the stuff that is too deep to change by wiggling.</p>
+      <p>The move that unlocks the whole subject: split <em>every</em> property into two bins. First bin: does it change when you bend the shape? If yes, call it <strong>geometry</strong> — the stuff that dents and stretches. Second bin: does it survive every bend and stretch, as long as you don't tear? Call it <strong>topology</strong> — the stuff that is too deep to change by wiggling.</p>
       <p>Examples: a distance is geometry (squish a ball and distances shrink). The number of holes is topology (add a hole and the count jumps by 1 forever, no amount of bending hides it). Whether the shape is smooth is geometry. Whether two loops are tangled is topology. Whether curvature is positive is geometry. Whether curvature <em>exists</em> at all is closer to topology.</p>
+      <p>The hidden quantity is which measurements are geometric (they change when you bend the shape) versus topological (they do not); curvature at a point is geometry, but its total over the surface is a topological invariant.</p>
       </div>
     </section>
     <section class="fp" id="run">
@@ -76,6 +77,15 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <p>Learn this split and the rest of the course is watching it reappear. Geometry is the rich, detailed world you can move and stretch. Topology is the skeleton that moves with you, no matter how violently you bend. Both matter, but topology is the bed rock.</p>
       </div>
     </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — What survives bending, what doesn't</h2>
+      <div class="essay">
+      <p>A protein's functional knot type (how its backbone tangles) persists through folding—knot type is topology. The distances and angles in the protein flip and change—those are geometry. Path planning in robotics ignores continuous trajectory details (geometry) and guarantees feasible routes (topology). Sensor networks care about how data flows through the network graph (topology), not exact location coordinates (geometry).</p>
+      <p>The split works because holes, tangles, and loop-counts cannot change without tearing. Geometry—distance, angle, curvature—can flow and rearrange during bending. Topology is the skeleton that moves with you. In every domain, the geometric details are free to vary; the topological count is the cage. Engineers build on topology because it is the hard constraint.</p>
+      <div class="insight">Geometry is rich and fluid; topology is the bedrock that bending cannot touch.</div>
+      </div>
+    </section>
+    <section class="fp" id="connects"><h2>Where this connects — geometry &rarr; gravity</h2><p class="muted">This idea is one stage of a larger machine: the geometry of shapes becomes the geometry of spacetime. These links open the connected concept.</p><ul style="list-style:none;padding:14px 16px;margin:12px 0;border:1px solid var(--line,#d7ddd9);border-radius:10px;background:#fff"><li style="margin:9px 0;padding-left:14px;border-left:3px solid #8b3f18"><a href="https://mehtama1234.github.io/gravity-light-course-concepts-research/concepts/manifolds-local-flatness-deep.html" style="font-weight:700">local flatness of a manifold</a> <span class="muted" style="font-size:13px">· Gravity · general relativity</span><div style="font-size:14.5px;margin-top:3px">The bend-vs-invariant split becomes spacetime that is flat up close but curved overall &mdash; a manifold.</div></li></ul></section>
     <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
       <p class="muted">Integrate Gaussian curvature over three different deformations of a sphere (round sphere, stretched egg, squashed ellipsoid) and report the total each time. Scripts: topology_run.py (EXP5 and EXP1).</p>
       <div class="eq">total_curvature = ∫∫_S K dA

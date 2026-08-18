@@ -30,7 +30,7 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
 <div class="kick">topology · first principles · gluing one shape's coordinates to another's</div>
 <h1>Product spaces — when a bigger space is just two shapes paired together</h1>
 <p class="lead">Many of the spaces we actually care about are built by taking two simpler things and pairing every point of one with every point of the other. A doughnut is a circle paired with a circle. A robot arm's configuration is its joint angles all multiplied together. Here is how to see a hidden product, and the remarkable fact that the Euler characteristic — that stubborn number from earlier — just multiplies when you build a product.</p>
-<div class="arc"><a href="#problem">Many real spaces are really two things at once</a><a href="#reframe">The product: pair every point with every point</a><a href="#run">Seen on a real run — the characteristic multiplies</a><a href="#why">Why the number just multiplies</a><a href="#weakness">When a space only looks like a product locally</a><a href="#surprise">Where products hide in bigger systems</a><a href="concept-product-space.html">Atlas card</a></div>
+<div class="arc"><a href="#problem">Many real spaces are really two things at once</a><a href="#reframe">The product: pair every point with every point</a><a href="#run">Seen on a real run — the characteristic multiplies</a><a href="#why">Why the number just multiplies</a><a href="#weakness">When a space only looks like a product locally</a><a href="#surprise">Where products hide in bigger systems</a><a href="#practice">In practice</a><a href="concept-product-space.html">Atlas card</a></div>
 
     <section class="fp" id="problem">
       <h2>1 · The problem — many real spaces are really two things at once</h2>
@@ -42,9 +42,9 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="reframe">
       <h2>2 · The reframe — the product: pair every point with every point</h2>
       <div class="essay">
-      <p>Here is the definition: the product of two spaces A and B is the set of all pairs. You take every point in A and every point in B, and you glue them together as a single entity. A point in the product is literally a pair: (some choice from A, some choice from B).</p>
+      <p>The definition: the product of two spaces A and B is the set of all pairs. You take every point in A and every point in B, and you glue them together as a single entity. A point in the product is literally a pair: (some choice from A, some choice from B).</p>
       <p>For example, a circle is all the angles from 0 to 360 degrees. A circle paired with a circle is every way to pick an angle from the first circle (call it the 'around the hole' angle) and an angle from the second circle (call it the 'around the tube' angle). That paired space is the doughnut — the torus. Similarly, a circle paired with an interval (a line segment) is a cylinder: the angle tells you where on the circle, and the height tells you how far up.</p>
-      <p>This seems almost obvious once you name it. But here is the magic: the Euler characteristic of the product space is just the Euler characteristic of the first space times the characteristic of the second. The number multiplies.</p>
+      <p>This seems almost obvious once you name it. But The key: the Euler characteristic of the product space is just the Euler characteristic of the first space times the characteristic of the second. The number multiplies.</p>
       </div>
     </section>
     <section class="fp" id="run">
@@ -58,8 +58,9 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
     <section class="fp" id="why">
       <h2>4 · Why the number just multiplies</h2>
       <div class="essay">
-      <p>The reason is beautiful and geometric. When you have a product of two spaces, you can tile it by gluing together panels from both. Here is the move: take a tiling of the first space (say, a circle cut into, say, 2 arcs) and a tiling of the second space (say, a circle cut into 3 arcs). The product's natural tiling is a grid: every region of the first gets crossed by every region of the second, so you get 2 times 3 = 6 patches. Each intersection of an edge from the first and an edge from the second gives you a corner in the product. When you compute corners-minus-edges-plus-faces for the product, the alternating sum factors exactly: if the first space has Euler characteristic A and the second has B, the product gets A times B.</p>
+      <p>The reason is beautiful and geometric. When you have a product of two spaces, you can tile it by gluing together panels from both. The move: take a tiling of the first space (say, a circle cut into, say, 2 arcs) and a tiling of the second space (say, a circle cut into 3 arcs). The product's natural tiling is a grid: every region of the first gets crossed by every region of the second, so you get 2 times 3 = 6 patches. Each intersection of an edge from the first and an edge from the second gives you a corner in the product. When you compute corners-minus-edges-plus-faces for the product, the alternating sum factors exactly: if the first space has Euler characteristic A and the second has B, the product gets A times B.</p>
       <p>In short: the paneling of a product is a Cartesian grid of panels, and the alternating sum on a grid factors like multiplication.</p>
+      <p>The hidden quantity is how invariants combine: tiling a product of two spaces factorises, so the Euler characteristic of the product is the product of the two separate Euler characteristics.</p>
       </div>
     </section>
     <section class="fp" id="weakness">
@@ -76,6 +77,14 @@ th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14
       <p>In physics, the space of all 'states' of a system is a product: every particle has a position (a point in space) and a momentum (a direction and speed). The whole state space is position times momentum — called 'phase space'. Equations of motion (like Newton's laws or quantum Schrödinger evolution) move points around in this product space. The fact that the Euler characteristic multiplies means that if even one factor has characteristic 0, the whole phase space does too — a constraint that shows up in conservation laws and symmetry principles.</p>
       <p>Computer vision sees products everywhere: a video is space times time; an image is pixels across times pixels down. A sensor reading is measurement 1 and measurement 2 and measurement 3, all paired as a single state. Every high-dimensional 'space of possibilities' — whether it is parameters in a neural network, states in a search, or configurations in a manufacturing plant — is built by taking many simpler factors and multiplying them together.</p>
       <p>The humbling lesson: most spaces you bump into are secretly products, and the Euler characteristic tells you the cost of that structure. A number multiplies. That is topology's claim on how things compose.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — When one shape is really two shapes paired</h2>
+      <div class="essay">
+      <p>A robot arm's control space is each joint angle paired with every other joint angle. A video is horizontal position paired with vertical position paired with time. A system's state is its location paired with its momentum. DNA transcription uses configuration space where one degree of freedom pairs with another. Phase space in physics pairs position with velocity for every particle.</p>
+      <p>Instead of thinking of the whole space as one messy thing, factor it: 'This is circle-times-circle' or 'interval-times-circle.' Once you see the product structure, the topology multiplies: the Euler count of the product is just the count of one space times the count of the other. This multiplication is rigid—if either space has count zero, the product collapses to zero too. Robots and physicists use this to prove constraints on what motion is possible.</p>
+      <div class="insight">Most complex spaces split into paired factors, and the Euler number obeys multiplication, not addition.</div>
       </div>
     </section>
     <section class="fp"><p class="muted">Related: <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-topology-vs-geometry-deep.html">topology vs. geometry</a> · <a href="concept-invariant-deep.html">topological invariant</a></p></section>

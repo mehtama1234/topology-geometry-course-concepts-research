@@ -28,6 +28,10 @@
     [
       "surprise",
       "Where this reappears in modern work"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -47,7 +51,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Instead of one count, use three. Cover a closed shape with patches and look at the \"cycles\" — closed loops that don't actually bound a filled-in patch, and the formal way to think about them is homology, but here is the plain idea:"
+          "html": "Instead of one count, use three. Cover a closed shape with patches and look at the \"cycles\" — closed loops that don't actually bound a filled-in patch, and the formal way to think about them is homology, but The plain idea:"
         },
         {
           "t": "para",
@@ -64,6 +68,10 @@
         {
           "t": "para",
           "html": "So instead of a single number, you have a triple: (b0, b1, b2) — pieces, loops, voids. This triple is your shape's fingerprint, and it does not change under bending or re-cutting, just like the Euler characteristic."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is a pairing between features of complementary dimension &mdash; each hole of one dimension is matched to one of the complementary dimension, so counting one side counts the other."
         }
       ]
     },
@@ -121,7 +129,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is why the symmetry is inevitable. Imagine the surface encloses a 3-dimensional region — the \"inside\". When you count the loops on the surface, you are asking: which loops circle a genuine hole? But a hole is a tear or passage that goes <em>through</em> the shape. Now flip the perspective: instead of asking \"what loops go around a hole\", ask \"what cycles bound a region inside?\". A piece inside bounded by the surface is like a loop on the surface that circles the boundary."
+          "html": "Here is why the symmetry is inevitable. Consider the surface encloses a 3-dimensional region — the \"inside\". When you count the loops on the surface, you are asking: which loops circle a genuine hole? But a hole is a tear or passage that goes <em>through</em> the shape. Now flip the perspective: instead of asking \"what loops go around a hole\", ask \"what cycles bound a region inside?\". A piece inside bounded by the surface is like a loop on the surface that circles the boundary."
         },
         {
           "t": "para",
@@ -158,6 +166,24 @@
         {
           "t": "para",
           "html": "And Poincaré duality? It ensures that in any closed, orientable shape, the number of \"holes\" of one dimension must equal the number of holes of the complementary dimension. That symmetry is not just beautiful — it is a constraint that real shapes must obey, and it shows up whenever you build a topological invariant that claims to capture a shape's \"true nature\"."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — Understanding holes come in pairs by dimension",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Sensor network design uses duality to count coverage gaps: holes in the sensing domain correspond to uncovered regions in complementary space. Persistent homology in data analysis computes Betti numbers (pieces, loops, voids) to reveal structure: analyzing brain imaging or molecular dynamics, it finds loops in neural activity patterns and voids in conformational ensembles that signal phase transitions. Circuit board design and chip routing exploit duality between wire paths and enclosed regions."
+        },
+        {
+          "t": "para",
+          "html": "Duality pairs the holes in a structure (loops around missing regions) with voids it encloses (hollow interior spaces). In sensor networks, a gap in coverage is a hole; by duality, it creates a paired void in the adjacent region. In persistent homology, the detected loops and enclosed voids tell the data analyst what gaps and pockets exist. The dual relationship forces a symmetry that algorithms can exploit to prune search or verify completeness."
+        },
+        {
+          "t": "insight",
+          "html": "Duality reveals that counting holes in one way automatically counts them in another—a built-in redundancy that algorithms use to verify correctness."
         }
       ]
     }

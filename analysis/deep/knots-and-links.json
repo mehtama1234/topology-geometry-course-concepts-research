@@ -28,6 +28,10 @@
     [
       "surprise",
       "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -51,11 +55,15 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is the shift: stop trying to visualize 3-dimensional wiggles and start computing. Take your flat knot diagram (the one showing which strands go over and under), mark each separate piece of strand with a color, and obey one simple rule: at every crossing where two strands meet, the three colors involved (the two strands crossing plus the one they cross over) must not all be the same. That is it. No strands are the same color on both sides of the crossing, and all three colors at a crossing can't be identical."
+          "html": "The shift: stop trying to visualize 3-dimensional wiggles and start computing. Take your flat knot diagram (the one showing which strands go over and under), mark each separate piece of strand with a color, and obey one simple rule: at every crossing where two strands meet, the three colors involved (the two strands crossing plus the one they cross over) must not all be the same. That is it. No strands are the same color on both sides of the crossing, and all three colors at a crossing can't be identical."
         },
         {
           "t": "para",
           "html": "Now count how many ways you can color all the strands without breaking the rule. You get a number. The miracle is this: if you redraw the same knot's diagram (a legal wiggle), <strong>the count stays exactly the same.</strong> The number belongs to the knot itself, not to your particular drawing of it."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is a knot invariant &mdash; a value (such as a colouring count) read off a diagram that is unchanged by the moves which don&rsquo;t really alter the knot, so different values prove two knots are genuinely different."
         }
       ]
     },
@@ -134,6 +142,24 @@
         {
           "t": "para",
           "html": "The 3-coloring count is a small, computable invariant, but it connects to a massive web of ideas: the Jones polynomial and its quantum origins, knot homology, and deep links to physics via topological field theories. The notion that <strong>you can capture an essential fact about a 3D tangle in a single number</strong> — and that the number survives every legal manipulation — is the same principle that powers these much deeper applications."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — Distinguishing tangles that cannot be untangled without cutting",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "DNA enzymes use knot invariants to verify they cut and rejoin correctly: a topoisomerase that unknots DNA should change the crossing number, and this change is detected by computing the knot's invariant before and after. Protein structure validation checks if disulfide bonds form knotted loops that would trap the protein in a misfolded state. Topological quantum computing encodes quantum information in knots of quantum vortices; the linking number (an invariant) stores data that noise cannot erase."
+        },
+        {
+          "t": "para",
+          "html": "Knot invariants are numbers computed from a knot's diagram that remain unchanged through any legal wiggle. In DNA, the linking number tells you how many times two strands wind around each other; cutting changes it. In proteins, detecting a knotted disulfide loop is invariant to the protein's thermal motion. In quantum computing, vortex links store information as an invariant integer; computational errors that wiggle the system without cutting cannot corrupt it."
+        },
+        {
+          "t": "insight",
+          "html": "A knot's invariant proves it is truly tangled: only cutting can change it, so it is stable against noise and reversible operation."
         }
       ]
     }

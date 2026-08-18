@@ -28,6 +28,10 @@
     [
       "surprise",
       "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -37,7 +41,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Imagine you have a rubber ball, a wine glass, or the surface of the Earth. It is smooth and curvy and continuous. But if you want a computer to compute with it — to measure something, to simulate a process, to render it on a screen — you need something discrete: numbers, counts, lists of patches. A smooth surface gives you neither. It is infinitely detailed; you cannot list all its points."
+          "html": "Consider you have a rubber ball, a wine glass, or the surface of the Earth. It is smooth and curvy and continuous. But if you want a computer to compute with it — to measure something, to simulate a process, to render it on a screen — you need something discrete: numbers, counts, lists of patches. A smooth surface gives you neither. It is infinitely detailed; you cannot list all its points."
         },
         {
           "t": "para",
@@ -51,11 +55,15 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is the move: forget the smooth surface for a moment. Cover it with a net of flat patches. Like a soccer ball's pentagons and hexagons, or a globe stitched from gores. Each patch is a flat piece — a triangle is simplest. Each has corners (called vertices), edges between them, and interior (called a face). This is a <strong>triangulation</strong>: a discrete mesh that sits on the surface and replaces the smooth thing with something you can hold in a list and compute with."
+          "html": "The move: forget the smooth surface for a moment. Cover it with a net of flat patches. Like a soccer ball's pentagons and hexagons, or a globe stitched from gores. Each patch is a flat piece — a triangle is simplest. Each has corners (called vertices), edges between them, and interior (called a face). This is a <strong>triangulation</strong>: a discrete mesh that sits on the surface and replaces the smooth thing with something you can hold in a list and compute with."
         },
         {
           "t": "para",
-          "html": "Now here is the magical part: suppose you computed some quantity on this mesh — say, a count or an arithmetic sum over the vertices and edges and faces. If you now re-cut the surface with a different mesh, will you get a different answer? Or will it stay the same? The deeper question is: does the answer belong to the surface, or does it depend on how you sliced it?"
+          "html": "Now The keyal part: suppose you computed some quantity on this mesh — say, a count or an arithmetic sum over the vertices and edges and faces. If you now re-cut the surface with a different mesh, will you get a different answer? Or will it stay the same? The deeper question is: does the answer belong to the surface, or does it depend on how you sliced it?"
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is a count that survives every refinement of the mesh &mdash; corners minus edges plus faces stays fixed, proving the number is a property of the surface, not of the particular triangulation."
         }
       ]
     },
@@ -134,7 +142,7 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is how triangulation earns independence from the mesh. Suppose you take one face (a triangle) and draw a line across it, splitting it into two triangles. What changes? You add one new edge (the line you drew) and you add one new face (the second triangle). In the sum V − E + F, you gain 1 from the new face and lose 1 from the new edge. They cancel. The total stays put."
+          "html": "This is how triangulation earns independence from the mesh. Suppose you take one face (a triangle) and draw a line across it, splitting it into two triangles. What changes? You add one new edge (the line you drew) and you add one new face (the second triangle). In the sum V − E + F, you gain 1 from the new face and lose 1 from the new edge. They cancel. The total stays put."
         },
         {
           "t": "para",
@@ -167,6 +175,24 @@
         {
           "t": "para",
           "html": "The same goes for curves and surfaces in the abstract. Whenever you need a computer to work with something smooth and continuous, you first triangulate (or divide into elements), then compute. The core move — discrete approximation to a continuous object — runs through all of applied mathematics, and triangulation is its simplest and most geometric form. Learn to cut a surface into flat pieces and trust that the answer won't depend on the cut, and you have just learned the method that powers simulations, graphics, and every other shape-based computation."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — Cutting surfaces into flat pieces for computation",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Finite element analysis cuts a material into tetrahedra to simulate physics by solving equations on each piece. Computer graphics triangulates every 3D model—games, films, renders—cutting surfaces into flat patches. Mesh generation is a major field in computational geometry. Topological data analysis triangulates point clouds to extract hidden structure from measurements."
+        },
+        {
+          "t": "para",
+          "html": "Choose how to cut a sphere: make a tetrahedron, an icosahedron, or refine arbitrarily fine. Count corners minus edges plus faces each time. Every cut gives the same number—two. This independence-from-the-mesh proves the count belongs to the surface, not the slicing. Computers use this: refine the mesh until the answer stabilizes, knowing that the truth is mesh-independent. The cut is a tool, not the answer."
+        },
+        {
+          "t": "insight",
+          "html": "Mesh the surface however you like; the Euler count stays put because it lives in the topology."
         }
       ]
     }

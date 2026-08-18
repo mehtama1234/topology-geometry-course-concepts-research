@@ -4,35 +4,216 @@
   "kick": "topology · first principles · one number that ignores the shape's details",
   "title": "The Euler characteristic — a number that survives every dent and re-cut",
   "lede": "Take any blob, cut it into patches, and do one small piece of arithmetic on the counts. You get a number that refuses to change no matter how you dent the blob or re-cut it. Here is that idea, a real run across shapes where the number stays put, why it can't move, where it finally does change, and why it is the seed of the whole subject.",
-  "arc": [["problem","The problem"],["reframe","The reframe"],["run","Seen on a real run"],["why","Why it can't move"],["weakness","The one limit"],["surprise","The surprise"]],
-  "sections": [
-    {"id":"problem","h2":"1 · The problem — how do you tell two shapes apart?","blocks":[
-      {"t":"para","html":"A ball and a doughnut are obviously different, but <em>why</em>, precisely? You can dent a ball, stretch it, cover it in bumps — it is still &lsquo;a ball&rsquo; in some deep sense. Measuring it (length, angle, area) won't help, because all of those change the moment you squish it. We want a property that captures the <strong>shape</strong> of a shape while ignoring its size and its dents entirely."},
-      {"t":"para","html":"So the question is: <strong>is there a single number you can compute for a surface that stays exactly the same under any bending or re-cutting, and yet is different for a ball and a doughnut?</strong>"}
-    ]},
-    {"id":"reframe","h2":"2 · The reframe — stop measuring, start counting","blocks":[
-      {"t":"para","html":"Here is the move that founds topology: give up on measuring and just <em>count</em>. Cover the surface in patches — like a soccer ball's panels — which gives you corners (vertices), edges between them, and faces. Now do one odd little sum: the number of corners, minus the number of edges, plus the number of faces. Call it the Euler characteristic. It sounds arbitrary, but that particular alternating combination is built so that the extra bits you add when you cut a patch finer always cancel out. It counts something about the shape, not about your cutting."}
-    ]},
-    {"id":"run","h2":"3 · Seen on a real run — the number that won't budge","blocks":[
-      {"t":"para","html":"We computed corners minus edges plus faces for five very different ways of paneling a ball's surface, and for a doughnut. Every number here is counted by the program."},
-      {"t":"table","headers":["shape (how it's paneled)","corners","edges","faces","corners − edges + faces"],"rows":[["ball as a tetrahedron","4","6","4","2"],["ball as a cube","8","12","6","2"],["ball as an octahedron","6","12","8","2"],["ball as a dodecahedron","20","30","12","2"],["ball as an icosahedron","12","30","20","2"],["doughnut (torus)","7","21","14","0"]],"caption":"Wildly different counts of corners, edges, and faces — but for every paneling of the ball the alternating sum lands on the same 2."},
-      {"t":"insight","html":"<strong>The discovered fact: every way of paneling a ball gives 2; the doughnut gives 0.</strong> The individual counts are all over the place — 4 corners here, 20 there — yet corners minus edges plus faces is <em>always</em> 2 for the ball, no matter how coarse or fine or lopsided the paneling. The doughnut stubbornly gives 0. That gap, 2 versus 0, is a computed proof that a ball and a doughnut are genuinely different shapes."}
-    ]},
-    {"id":"why","h2":"4 · Why it can't move","blocks":[
-      {"t":"para","html":"Watch what happens when you cut one face in two by adding an edge across it: you add 1 edge and 1 face. In the sum, minus-one-edge and plus-one-face cancel, so the total is unchanged. Add a new corner in the middle of an edge: you gain 1 corner but split 1 edge into 2, so plus-one-corner and minus-one-edge cancel. Every legal way to refine the paneling changes the pieces in offsetting pairs. That is the whole trick — the alternating signs are chosen precisely so refinement leaves the total alone. The number therefore belongs to the surface, not to any particular cut."}
-    ]},
-    {"id":"weakness","h2":"5 · The one limit — it is deliberately blurry","blocks":[
-      {"t":"para","html":"The Euler characteristic is a coarse fingerprint on purpose, and coarse fingerprints collide. Many different-looking objects share one — a ball, a cube, and a wine glass all give 2, because to a topologist they <em>are</em> the same (each can be deformed into the others). And a single number can't tell apart shapes that differ in subtler ways; a sphere and a plane with a point sent to infinity can agree, and higher-dimensional shapes need more numbers (the Betti numbers) to pin them down. It says two shapes are different if their numbers differ, but equal numbers do not prove sameness."}
-    ]},
-    {"id":"surprise","h2":"6 · The surprise — this one number is everywhere","blocks":[
-      {"t":"para","html":"That humble corners-minus-edges-plus-faces turns out to be the same quantity that governs a startling range of facts. It equals the total curvature of a surface divided by 2π, so bending the surface can move curvature around but never change the total (Gauss–Bonnet). It equals the number of unavoidable stagnation points when you try to comb a hairy ball (Poincaré–Hopf). It forbids certain networks from being drawn without crossings (why some circuits need two layers). It even sets how many holes a surface has."},
-      {"t":"para","html":"Learn this one number and the rest of the course is watching it reappear in disguise — as curvature, as fixed points, as holes, as impossibility proofs. It is the first and cleanest example of the whole topological idea: throw away the measurements, keep what survives."}
-    ]}
+  "arc": [
+    [
+      "problem",
+      "The problem"
+    ],
+    [
+      "reframe",
+      "The reframe"
+    ],
+    [
+      "run",
+      "Seen on a real run"
+    ],
+    [
+      "why",
+      "Why it can't move"
+    ],
+    [
+      "weakness",
+      "The one limit"
+    ],
+    [
+      "surprise",
+      "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
+    ]
   ],
-  "related": [["concept-triangulation-deep.html","triangulation"],["concept-gauss-bonnet-deep.html","Gauss–Bonnet"],["concept-poincare-hopf-deep.html","Poincaré–Hopf"],["concept-invariant-deep.html","invariant"]],
+  "sections": [
+    {
+      "id": "problem",
+      "h2": "1 · The problem — how do you tell two shapes apart?",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "A ball and a doughnut are obviously different, but <em>why</em>, precisely? You can dent a ball, stretch it, cover it in bumps — it is still &lsquo;a ball&rsquo; in some deep sense. Measuring it (length, angle, area) won't help, because all of those change the moment you squish it. We want a property that captures the <strong>shape</strong> of a shape while ignoring its size and its dents entirely."
+        },
+        {
+          "t": "para",
+          "html": "So the question is: <strong>is there a single number you can compute for a surface that stays exactly the same under any bending or re-cutting, and yet is different for a ball and a doughnut?</strong>"
+        }
+      ]
+    },
+    {
+      "id": "reframe",
+      "h2": "2 · The reframe — stop measuring, start counting",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The move that founds topology: give up on measuring and just <em>count</em>. Cover the surface in patches — like a soccer ball's panels — which gives you corners (vertices), edges between them, and faces. Now do one odd little sum: the number of corners, minus the number of edges, plus the number of faces. Call it the Euler characteristic. It sounds arbitrary, but that particular alternating combination is built so that the extra bits you add when you cut a patch finer always cancel out. It counts something about the shape, not about your cutting."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is the Euler characteristic &mdash; corners minus edges plus faces &mdash; a whole number that stays the same under every retiling and so belongs to the surface itself, not the mesh."
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "h2": "3 · Seen on a real run — the number that won't budge",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "We computed corners minus edges plus faces for five very different ways of paneling a ball's surface, and for a doughnut. Every number here is counted by the program."
+        },
+        {
+          "t": "table",
+          "headers": [
+            "shape (how it's paneled)",
+            "corners",
+            "edges",
+            "faces",
+            "corners − edges + faces"
+          ],
+          "rows": [
+            [
+              "ball as a tetrahedron",
+              "4",
+              "6",
+              "4",
+              "2"
+            ],
+            [
+              "ball as a cube",
+              "8",
+              "12",
+              "6",
+              "2"
+            ],
+            [
+              "ball as an octahedron",
+              "6",
+              "12",
+              "8",
+              "2"
+            ],
+            [
+              "ball as a dodecahedron",
+              "20",
+              "30",
+              "12",
+              "2"
+            ],
+            [
+              "ball as an icosahedron",
+              "12",
+              "30",
+              "20",
+              "2"
+            ],
+            [
+              "doughnut (torus)",
+              "7",
+              "21",
+              "14",
+              "0"
+            ]
+          ],
+          "caption": "Wildly different counts of corners, edges, and faces — but for every paneling of the ball the alternating sum lands on the same 2."
+        },
+        {
+          "t": "insight",
+          "html": "<strong>The discovered fact: every way of paneling a ball gives 2; the doughnut gives 0.</strong> The individual counts are all over the place — 4 corners here, 20 there — yet corners minus edges plus faces is <em>always</em> 2 for the ball, no matter how coarse or fine or lopsided the paneling. The doughnut stubbornly gives 0. That gap, 2 versus 0, is a computed proof that a ball and a doughnut are genuinely different shapes."
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "h2": "4 · Why it can't move",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Watch what happens when you cut one face in two by adding an edge across it: you add 1 edge and 1 face. In the sum, minus-one-edge and plus-one-face cancel, so the total is unchanged. Add a new corner in the middle of an edge: you gain 1 corner but split 1 edge into 2, so plus-one-corner and minus-one-edge cancel. Every legal way to refine the paneling changes the pieces in offsetting pairs. That is the whole trick — the alternating signs are chosen precisely so refinement leaves the total alone. The number therefore belongs to the surface, not to any particular cut."
+        }
+      ]
+    },
+    {
+      "id": "weakness",
+      "h2": "5 · The one limit — it is deliberately blurry",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "The Euler characteristic is a coarse fingerprint on purpose, and coarse fingerprints collide. Many different-looking objects share one — a ball, a cube, and a wine glass all give 2, because to a topologist they <em>are</em> the same (each can be deformed into the others). And a single number can't tell apart shapes that differ in subtler ways; a sphere and a plane with a point sent to infinity can agree, and higher-dimensional shapes need more numbers (the Betti numbers) to pin them down. It says two shapes are different if their numbers differ, but equal numbers do not prove sameness."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "h2": "6 · The surprise — this one number is everywhere",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "That humble corners-minus-edges-plus-faces turns out to be the same quantity that governs a startling range of facts. It equals the total curvature of a surface divided by 2π, so bending the surface can move curvature around but never change the total (Gauss–Bonnet). It equals the number of unavoidable stagnation points when you try to comb a hairy ball (Poincaré–Hopf). It forbids certain networks from being drawn without crossings (why some circuits need two layers). It even sets how many holes a surface has."
+        },
+        {
+          "t": "para",
+          "html": "Learn this one number and the rest of the course is watching it reappear in disguise — as curvature, as fixed points, as holes, as impossibility proofs. It is the first and cleanest example of the whole topological idea: throw away the measurements, keep what survives."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — A single number that captures global shape despite local deformation",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "Circuit board design uses Euler's formula to determine if routing is possible on a single layer: if nodes and edges violate the planarity bound, multiple layers are required. Mesh processing in computer graphics computes the Euler characteristic to validate a 3D model's topology before rendering or simulation. Network reliability engineering checks the characteristic to understand how many redundant connections must fail before the network fragments."
+        },
+        {
+          "t": "para",
+          "html": "The Euler characteristic plays the role of a topological invariant that survives local deformation but changes when you cut or glue. In circuit design, it determines the genus (number of necessary layers): a planar graph has characteristic allowing a single layer; crossing graphs require more. In mesh processing, it checks if the 3D model is valid (a sphere should give two; wrong models give wrong values). In network design, it bounds how many node failures cause disconnection."
+        },
+        {
+          "t": "insight",
+          "html": "This one number is the same whether you count coarsely or finely, letting you verify global properties without exhaustive local inspection."
+        }
+      ]
+    }
+  ],
+  "related": [
+    [
+      "concept-triangulation-deep.html",
+      "triangulation"
+    ],
+    [
+      "concept-gauss-bonnet-deep.html",
+      "Gauss–Bonnet"
+    ],
+    [
+      "concept-poincare-hopf-deep.html",
+      "Poincaré–Hopf"
+    ],
+    [
+      "concept-invariant-deep.html",
+      "invariant"
+    ]
+  ],
   "recipe": {
     "summary": "Count vertices (V), edges (E), faces (F) of the five Platonic solids (all topological spheres) and of a 7-vertex torus triangulation; report V - E + F. numpy, but really just arithmetic on the counts.",
     "eq": "chi = V - E + F\n# tetra(4,6,4)=2  cube(8,12,6)=2  octa(6,12,8)=2  dodeca(20,30,12)=2  icosa(12,30,20)=2\n# torus(7,21,14)=0",
     "note": "Full script: scripts/experiments/topology_run.py (EXP1). Numbers are the run's output verbatim."
-  }
+  },
+  "connects": [
+    {
+      "course": "gravity",
+      "id": "black-holes-horizons",
+      "label": "black-hole horizons",
+      "note": "The topology of a closed surface constrains physics: a black-hole horizon must have the Euler characteristic of a sphere."
+    }
+  ]
 }

@@ -28,6 +28,10 @@
     [
       "surprise",
       "The surprise"
+    ],
+    [
+      "practice",
+      "In practice"
     ]
   ],
   "sections": [
@@ -51,11 +55,15 @@
       "blocks": [
         {
           "t": "para",
-          "html": "Here is the move that unlocks the whole subject: split <em>every</em> property into two bins. First bin: does it change when you bend the shape? If yes, call it <strong>geometry</strong> — the stuff that dents and stretches. Second bin: does it survive every bend and stretch, as long as you don't tear? Call it <strong>topology</strong> — the stuff that is too deep to change by wiggling."
+          "html": "The move that unlocks the whole subject: split <em>every</em> property into two bins. First bin: does it change when you bend the shape? If yes, call it <strong>geometry</strong> — the stuff that dents and stretches. Second bin: does it survive every bend and stretch, as long as you don't tear? Call it <strong>topology</strong> — the stuff that is too deep to change by wiggling."
         },
         {
           "t": "para",
           "html": "Examples: a distance is geometry (squish a ball and distances shrink). The number of holes is topology (add a hole and the count jumps by 1 forever, no amount of bending hides it). Whether the shape is smooth is geometry. Whether two loops are tangled is topology. Whether curvature is positive is geometry. Whether curvature <em>exists</em> at all is closer to topology."
+        },
+        {
+          "t": "para",
+          "html": "The hidden quantity is which measurements are geometric (they change when you bend the shape) versus topological (they do not); curvature at a point is geometry, but its total over the surface is a topological invariant."
         }
       ]
     },
@@ -139,6 +147,24 @@
           "html": "Learn this split and the rest of the course is watching it reappear. Geometry is the rich, detailed world you can move and stretch. Topology is the skeleton that moves with you, no matter how violently you bend. Both matter, but topology is the bed rock."
         }
       ]
+    },
+    {
+      "id": "practice",
+      "h2": "7 · Where it is used in practice — What survives bending, what doesn't",
+      "blocks": [
+        {
+          "t": "para",
+          "html": "A protein's functional knot type (how its backbone tangles) persists through folding—knot type is topology. The distances and angles in the protein flip and change—those are geometry. Path planning in robotics ignores continuous trajectory details (geometry) and guarantees feasible routes (topology). Sensor networks care about how data flows through the network graph (topology), not exact location coordinates (geometry)."
+        },
+        {
+          "t": "para",
+          "html": "The split works because holes, tangles, and loop-counts cannot change without tearing. Geometry—distance, angle, curvature—can flow and rearrange during bending. Topology is the skeleton that moves with you. In every domain, the geometric details are free to vary; the topological count is the cage. Engineers build on topology because it is the hard constraint."
+        },
+        {
+          "t": "insight",
+          "html": "Geometry is rich and fluid; topology is the bedrock that bending cannot touch."
+        }
+      ]
     }
   ],
   "related": [],
@@ -146,5 +172,13 @@
     "summary": "Integrate Gaussian curvature over three different deformations of a sphere (round sphere, stretched egg, squashed ellipsoid) and report the total each time. Scripts: topology_run.py (EXP5 and EXP1).",
     "eq": "total_curvature = ∫∫_S K dA\n# round sphere: 3.99π\n# stretched egg: 3.99π\n# squashed ellipsoid: 3.99π\n# theoretical: 4π = 2π × Euler characteristic(2)",
     "note": "Numbers are the run's output verbatim from topology_run.py. EXP5: Gauss-Bonnet, deformation. EXP1: Euler characteristic, invariant under re-triangulation. The discrete count (V - E + F) equals the continuous integral (total curvature / 2π), and both are locked by topology."
-  }
+  },
+  "connects": [
+    {
+      "course": "gravity",
+      "id": "manifolds-local-flatness",
+      "label": "local flatness of a manifold",
+      "note": "The bend-vs-invariant split becomes spacetime that is flat up close but curved overall &mdash; a manifold."
+    }
+  ]
 }

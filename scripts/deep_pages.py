@@ -101,6 +101,22 @@ def render(spec: dict) -> str:
             out.append(render_block(b))
         out.append("      </div>")
         out.append("    </section>")
+    if spec.get("connects"):
+        BASES = {"geometry": "https://mehtama1234.github.io/topology-geometry-course-concepts-research/", "gravity": "https://mehtama1234.github.io/gravity-light-course-concepts-research/concepts/"}
+        PREFIX = {"geometry": "concept-", "gravity": ""}
+        CLABEL = {"geometry": "Geometry · topology", "gravity": "Gravity · general relativity"}
+        items = ""
+        for c in spec["connects"]:
+            course = c.get("course", "gravity")
+            href = BASES[course] + PREFIX[course] + esc(c["id"]) + "-deep.html"
+            items += (f'<li style="margin:9px 0;padding-left:14px;border-left:3px solid #8b3f18">'
+                      f'<a href="{href}" style="font-weight:700">{esc(c["label"])}</a>'
+                      f' <span class="muted" style="font-size:13px">· {esc(CLABEL[course])}</span>'
+                      f'<div style="font-size:14.5px;margin-top:3px">{c["note"]}</div></li>')
+        out.append(
+            '    <section class="fp" id="connects"><h2>Where this connects — geometry &rarr; gravity</h2>'
+            '<p class="muted">This idea is one stage of a larger machine: the geometry of shapes becomes the geometry of spacetime. These links open the connected concept.</p>'
+            f'<ul style="list-style:none;padding:14px 16px;margin:12px 0;border:1px solid var(--line,#d7ddd9);border-radius:10px;background:#fff">{items}</ul></section>')
     if spec.get("related"):
         rel = " · ".join(f'<a href="{esc(h)}">{esc(l)}</a>' for h, l in spec["related"])
         out.append(f'    <section class="fp"><p class="muted">Related: {rel}</p></section>')
