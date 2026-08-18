@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knots and Links (deep) · Topology & Geometry</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.arc{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.arc a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:3px 10px;background:#fff}
+.fp{border-top:1px solid var(--line);padding:22px 0 4px;margin-top:10px}
+.fp h2{margin:6px 0 10px;font-size:24px}
+.kick{font-size:12px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:6px 0}
+.lead{font-size:20px;color:#2f342f;max-width:820px}
+.essay p{max-width:74ch;font-size:16.5px;margin:11px 0}
+.barrow{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13px}
+.barrow .lab{width:160px;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);text-align:right}
+.bar{height:16px;border-radius:3px;background:var(--accent);min-width:2px}.bar.alt{background:var(--accent2)}
+.barrow .val{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.eq{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;background:#f5f6f1;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:12px 0;overflow-x:auto;white-space:pre-wrap}
+.insight{border-left:4px solid var(--accent);background:var(--band);padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:16px}
+details.math{border:1px solid var(--line);border-radius:8px;background:#fff;margin:14px 0}
+details.math summary{cursor:pointer;padding:10px 13px;color:var(--accent);font-weight:750}
+details.math > div{border-top:1px solid var(--line);padding:4px 14px 12px}
+figure{margin:16px 0}figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+table{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line)}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14.5px}th{background:var(--band)}
+.tw{overflow-x:auto}
+</style></head><body>
+<header class="topbar"><div class="brand">Topology &amp; Geometry</div>
+<nav><a href="index.html">Course</a><a href="concepts.html">Concepts</a><a class="active" href="deep-track.html">Deep Track</a><a href="concept-knots-and-links.html">This concept</a><a href="the-math-why.html">Math Why</a></nav></header>
+<main>
+<div class="kick">topology · closed loops · a count that proves difference</div>
+<h1>Knots and links — how to prove a tangled loop cannot be untangled</h1>
+<p class="lead">Take a knotted loop of string and jiggle it. Can you undo it without cutting? Two tangles can look different yet be the same loop, or look alike yet be utterly different. Here is how to tell them apart by computing a single number from a flat diagram — a number that no wiggle can change.</p>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why the count is trustworthy</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-knots-and-links.html">Atlas card</a></div>
+
+    <section class="fp" id="problem">
+      <h2>1 · The problem — when is a knot really a knot?</h2>
+      <div class="essay">
+      <p>Take a loop of string and tie it into a knot. Now jiggle it, stretch it, twist it however you like — without cutting. The question is simple and stubborn: <strong>is this knot truly knotted, or could you undo it through patient wiggling?</strong> Two tangles can look wildly different yet be the same loop in disguise. Two others can look almost identical yet be locked apart. If you trust only what your eyes see in a drawing, you will be fooled constantly.</p>
+      <p>The problem is that a flat diagram of a knot is just a drawing — it shows how the strands cross over and under each other, but the diagram itself can be re-drawn in many ways. Wiggling the real 3-dimensional knot, you can redraw its diagram without limit. So you need something that does not depend on the particular picture you drew, something that <strong>survives every legal doodle of the same knot.</strong></p>
+      </div>
+    </section>
+    <section class="fp" id="reframe">
+      <h2>2 · The reframe — count the colorings, not the crossings</h2>
+      <div class="essay">
+      <p>The shift: stop trying to visualize 3-dimensional wiggles and start computing. Take your flat knot diagram (the one showing which strands go over and under), mark each separate piece of strand with a color, and obey one simple rule: at every crossing where two strands meet, the three colors involved (the two strands crossing plus the one they cross over) must not all be the same. That is it. No strands are the same color on both sides of the crossing, and all three colors at a crossing can't be identical.</p>
+      <p>Now count how many ways you can color all the strands without breaking the rule. You get a number. The miracle is this: if you redraw the same knot's diagram (a legal wiggle), <strong>the count stays exactly the same.</strong> The number belongs to the knot itself, not to your particular drawing of it.</p>
+      <p>The hidden quantity is a knot invariant &mdash; a value (such as a colouring count) read off a diagram that is unchanged by the moves which don&rsquo;t really alter the knot, so different values prove two knots are genuinely different.</p>
+      </div>
+    </section>
+    <section class="fp" id="run">
+      <h2>3 · Seen on a real run — the unknot, the trefoil, and the figure-eight</h2>
+      <div class="essay">
+      <p>We computed the valid 3-colorings for three famous knots. Every number here is counted by the program from its diagram.</p>
+      <div class="tw"><table><tr><th>knot</th><th>valid 3-colorings</th></tr><tr><td>plain loop (unknot)</td><td>3</td></tr><tr><td>trefoil knot</td><td>9</td></tr><tr><td>figure-eight knot</td><td>3</td></tr></table></div><figcaption>Counting the ways to color each knot's diagram with three colors, obeying the crossing rule.</figcaption>
+      <div class="insight"><strong>The discovered fact: the plain loop has 3 colorings; the trefoil has 9; the figure-eight has 3. The trefoil's 9 is proof it is not a plain loop.</strong> A plain loop of string is trivial to wiggle flat — it has only 3 valid colorings because, well, you have only 3 colors to pick from and no strands actually cross anything. The trefoil, no matter how you draw it, always gives 9. That gap — 3 versus 9 — is a computed proof from the diagram itself that these two knots are genuinely, irreversibly different. No amount of patient wiggling of the real 3-dimensional string can turn one into the other.</div>
+      </div>
+    </section>
+    <section class="fp" id="why">
+      <h2>4 · Why the count is trustworthy</h2>
+      <div class="essay">
+      <p>The key is that the three legal knot-wiggle moves — each one a real-3D maneuver that changes how the diagram looks — <strong>always preserve the count of valid colorings.</strong> One move (called Reidemeister I) adds a twist then removes it; this changes the diagram but the crossing rule's logic is built so that the number of solutions stays put. The other two moves (II and III) slide strands over each other and untangle small tangles; again, the crossing rule's math guarantees the count does not budge. Since all three moves preserve the number, it does not matter which diagram you draw of your knot — the count will always emerge the same.</p>
+      <p>This is why the count is called an <em>invariant.</em> It is a property of the knot alone, not of any drawing of it. You have lifted something about the knot out of the tangled 3D world and pinned it to a number that algorithms can check.</p>
+      </div>
+    </section>
+    <section class="fp" id="weakness">
+      <h2>5 · The one real weakness — the count is not perfect</h2>
+      <div class="essay">
+      <p>The 3-coloring count is strong enough to prove two knots are different when their numbers differ, but <strong>equal numbers do not prove sameness.</strong> The unknot and the figure-eight both give 3 colorings. If you compute 3 for an unknown knot's diagram, you cannot conclude it is a plain loop — it might be a figure-eight. You need a stronger invariant, one that distinguishes more pairs. The Jones polynomial, for example, is a more intricate function of a knot that tells apart more knots that the 3-coloring count would confuse. And for the very hardest tangles, even the Jones polynomial is not enough; you need an arsenal of invariants to pin down exactly what you have.</p>
+      <p>In short, if you find that two knots have the same 3-coloring count, you have not solved the problem — you have only run out of this particular tool.</p>
+      </div>
+    </section>
+    <section class="fp" id="surprise">
+      <h2>6 · The surprise — this idea reappears in biology and quantum physics</h2>
+      <div class="essay">
+      <p>The idea of a knot invariant was born from pure mathematics, but it has erupted across science. DNA strands inside a cell are occasionally tangled into knots and braids. When an enzyme cuts and re-ties them, the knot's invariant tells you whether the enzyme succeeded or created a different tangle by mistake. In topological quantum computing, the goal is to store quantum information in knots of quantum states — states that are protected from noise precisely because you cannot change a knot's invariant by small errors. A crossed pair of quantum vortices forms a link, and the linking number (an integer that cannot change) is the quantum information that survives.</p>
+      <p>The 3-coloring count is a small, computable invariant, but it connects to a massive web of ideas: the Jones polynomial and its quantum origins, knot homology, and deep links to physics via topological field theories. The notion that <strong>you can capture an essential fact about a 3D tangle in a single number</strong> — and that the number survives every legal manipulation — is the same principle that powers these much deeper applications.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Distinguishing tangles that cannot be untangled without cutting</h2>
+      <div class="essay">
+      <p>DNA enzymes use knot invariants to verify they cut and rejoin correctly: a topoisomerase that unknots DNA should change the crossing number, and this change is detected by computing the knot's invariant before and after. Protein structure validation checks if disulfide bonds form knotted loops that would trap the protein in a misfolded state. Topological quantum computing encodes quantum information in knots of quantum vortices; the linking number (an invariant) stores data that noise cannot erase.</p>
+      <p>Knot invariants are numbers computed from a knot's diagram that remain unchanged through any legal wiggle. In DNA, the linking number tells you how many times two strands wind around each other; cutting changes it. In proteins, detecting a knotted disulfide loop is invariant to the protein's thermal motion. In quantum computing, vortex links store information as an invariant integer; computational errors that wiggle the system without cutting cannot corrupt it.</p>
+      <div class="insight">A knot's invariant proves it is truly tangled: only cutting can change it, so it is stable against noise and reversible operation.</div>
+      </div>
+    </section>
+    <section class="fp"><p class="muted">Related: <a href="concept-invariant-deep.html">invariant</a> · <a href="concept-winding-linking-deep.html">winding and linking numbers</a> · <a href="concept-triangulation-deep.html">triangulation</a></p></section>
+    <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
+      <p class="muted">Count valid 3-colorings for three knot diagrams (unknot, trefoil, figure-eight), obeying the crossing rule: no two crossing strands have the same color, and not all three strands at a crossing are the same color. Script counts all valid colorings by brute force.</p>
+      <div class="eq">For each knot diagram, iterate over all 3^n colorings of n strands.
+At each crossing, check: (color_over ≠ color_under) AND NOT (all three colors identical).
+Count solutions.
+# unknot=3  trefoil=9  figure-eight=3</div>
+      <p class="muted">Full script: scripts/experiments/topology_run.py (EXP7). Numbers are the run's output verbatim.</p>
+    </div></details>
+<footer style="color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding:22px 0 60px;margin-top:24px">Topology &amp; Geometry · Knots and Links deep dive · every count and integral here is computed. Experiments in scripts/experiments/topology_run.py.</footer>
+</main></body></html>

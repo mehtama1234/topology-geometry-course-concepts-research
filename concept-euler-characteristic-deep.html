@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Euler Characteristic (deep) · Topology & Geometry</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.arc{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.arc a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:3px 10px;background:#fff}
+.fp{border-top:1px solid var(--line);padding:22px 0 4px;margin-top:10px}
+.fp h2{margin:6px 0 10px;font-size:24px}
+.kick{font-size:12px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:6px 0}
+.lead{font-size:20px;color:#2f342f;max-width:820px}
+.essay p{max-width:74ch;font-size:16.5px;margin:11px 0}
+.barrow{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13px}
+.barrow .lab{width:160px;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);text-align:right}
+.bar{height:16px;border-radius:3px;background:var(--accent);min-width:2px}.bar.alt{background:var(--accent2)}
+.barrow .val{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.eq{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;background:#f5f6f1;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:12px 0;overflow-x:auto;white-space:pre-wrap}
+.insight{border-left:4px solid var(--accent);background:var(--band);padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:16px}
+details.math{border:1px solid var(--line);border-radius:8px;background:#fff;margin:14px 0}
+details.math summary{cursor:pointer;padding:10px 13px;color:var(--accent);font-weight:750}
+details.math > div{border-top:1px solid var(--line);padding:4px 14px 12px}
+figure{margin:16px 0}figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+table{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line)}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14.5px}th{background:var(--band)}
+.tw{overflow-x:auto}
+</style></head><body>
+<header class="topbar"><div class="brand">Topology &amp; Geometry</div>
+<nav><a href="index.html">Course</a><a href="concepts.html">Concepts</a><a class="active" href="deep-track.html">Deep Track</a><a href="concept-euler-characteristic.html">This concept</a><a href="the-math-why.html">Math Why</a></nav></header>
+<main>
+<div class="kick">topology · first principles · one number that ignores the shape's details</div>
+<h1>The Euler characteristic — a number that survives every dent and re-cut</h1>
+<p class="lead">Take any blob, cut it into patches, and do one small piece of arithmetic on the counts. You get a number that refuses to change no matter how you dent the blob or re-cut it. Here is that idea, a real run across shapes where the number stays put, why it can't move, where it finally does change, and why it is the seed of the whole subject.</p>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why it can't move</a><a href="#weakness">The one limit</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-euler-characteristic.html">Atlas card</a></div>
+
+    <section class="fp" id="problem">
+      <h2>1 · The problem — how do you tell two shapes apart?</h2>
+      <div class="essay">
+      <p>A ball and a doughnut are obviously different, but <em>why</em>, precisely? You can dent a ball, stretch it, cover it in bumps — it is still &lsquo;a ball&rsquo; in some deep sense. Measuring it (length, angle, area) won't help, because all of those change the moment you squish it. We want a property that captures the <strong>shape</strong> of a shape while ignoring its size and its dents entirely.</p>
+      <p>So the question is: <strong>is there a single number you can compute for a surface that stays exactly the same under any bending or re-cutting, and yet is different for a ball and a doughnut?</strong></p>
+      </div>
+    </section>
+    <section class="fp" id="reframe">
+      <h2>2 · The reframe — stop measuring, start counting</h2>
+      <div class="essay">
+      <p>The move that founds topology: give up on measuring and just <em>count</em>. Cover the surface in patches — like a soccer ball's panels — which gives you corners (vertices), edges between them, and faces. Now do one odd little sum: the number of corners, minus the number of edges, plus the number of faces. Call it the Euler characteristic. It sounds arbitrary, but that particular alternating combination is built so that the extra bits you add when you cut a patch finer always cancel out. It counts something about the shape, not about your cutting.</p>
+      <p>The hidden quantity is the Euler characteristic &mdash; corners minus edges plus faces &mdash; a whole number that stays the same under every retiling and so belongs to the surface itself, not the mesh.</p>
+      </div>
+    </section>
+    <section class="fp" id="run">
+      <h2>3 · Seen on a real run — the number that won't budge</h2>
+      <div class="essay">
+      <p>We computed corners minus edges plus faces for five very different ways of paneling a ball's surface, and for a doughnut. Every number here is counted by the program.</p>
+      <div class="tw"><table><tr><th>shape (how it's paneled)</th><th>corners</th><th>edges</th><th>faces</th><th>corners − edges + faces</th></tr><tr><td>ball as a tetrahedron</td><td>4</td><td>6</td><td>4</td><td>2</td></tr><tr><td>ball as a cube</td><td>8</td><td>12</td><td>6</td><td>2</td></tr><tr><td>ball as an octahedron</td><td>6</td><td>12</td><td>8</td><td>2</td></tr><tr><td>ball as a dodecahedron</td><td>20</td><td>30</td><td>12</td><td>2</td></tr><tr><td>ball as an icosahedron</td><td>12</td><td>30</td><td>20</td><td>2</td></tr><tr><td>doughnut (torus)</td><td>7</td><td>21</td><td>14</td><td>0</td></tr></table></div><figcaption>Wildly different counts of corners, edges, and faces — but for every paneling of the ball the alternating sum lands on the same 2.</figcaption>
+      <div class="insight"><strong>The discovered fact: every way of paneling a ball gives 2; the doughnut gives 0.</strong> The individual counts are all over the place — 4 corners here, 20 there — yet corners minus edges plus faces is <em>always</em> 2 for the ball, no matter how coarse or fine or lopsided the paneling. The doughnut stubbornly gives 0. That gap, 2 versus 0, is a computed proof that a ball and a doughnut are genuinely different shapes.</div>
+      </div>
+    </section>
+    <section class="fp" id="why">
+      <h2>4 · Why it can't move</h2>
+      <div class="essay">
+      <p>Watch what happens when you cut one face in two by adding an edge across it: you add 1 edge and 1 face. In the sum, minus-one-edge and plus-one-face cancel, so the total is unchanged. Add a new corner in the middle of an edge: you gain 1 corner but split 1 edge into 2, so plus-one-corner and minus-one-edge cancel. Every legal way to refine the paneling changes the pieces in offsetting pairs. That is the whole trick — the alternating signs are chosen precisely so refinement leaves the total alone. The number therefore belongs to the surface, not to any particular cut.</p>
+      </div>
+    </section>
+    <section class="fp" id="weakness">
+      <h2>5 · The one limit — it is deliberately blurry</h2>
+      <div class="essay">
+      <p>The Euler characteristic is a coarse fingerprint on purpose, and coarse fingerprints collide. Many different-looking objects share one — a ball, a cube, and a wine glass all give 2, because to a topologist they <em>are</em> the same (each can be deformed into the others). And a single number can't tell apart shapes that differ in subtler ways; a sphere and a plane with a point sent to infinity can agree, and higher-dimensional shapes need more numbers (the Betti numbers) to pin them down. It says two shapes are different if their numbers differ, but equal numbers do not prove sameness.</p>
+      </div>
+    </section>
+    <section class="fp" id="surprise">
+      <h2>6 · The surprise — this one number is everywhere</h2>
+      <div class="essay">
+      <p>That humble corners-minus-edges-plus-faces turns out to be the same quantity that governs a startling range of facts. It equals the total curvature of a surface divided by 2π, so bending the surface can move curvature around but never change the total (Gauss–Bonnet). It equals the number of unavoidable stagnation points when you try to comb a hairy ball (Poincaré–Hopf). It forbids certain networks from being drawn without crossings (why some circuits need two layers). It even sets how many holes a surface has.</p>
+      <p>Learn this one number and the rest of the course is watching it reappear in disguise — as curvature, as fixed points, as holes, as impossibility proofs. It is the first and cleanest example of the whole topological idea: throw away the measurements, keep what survives.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — A single number that captures global shape despite local deformation</h2>
+      <div class="essay">
+      <p>Circuit board design uses Euler's formula to determine if routing is possible on a single layer: if nodes and edges violate the planarity bound, multiple layers are required. Mesh processing in computer graphics computes the Euler characteristic to validate a 3D model's topology before rendering or simulation. Network reliability engineering checks the characteristic to understand how many redundant connections must fail before the network fragments.</p>
+      <p>The Euler characteristic plays the role of a topological invariant that survives local deformation but changes when you cut or glue. In circuit design, it determines the genus (number of necessary layers): a planar graph has characteristic allowing a single layer; crossing graphs require more. In mesh processing, it checks if the 3D model is valid (a sphere should give two; wrong models give wrong values). In network design, it bounds how many node failures cause disconnection.</p>
+      <div class="insight">This one number is the same whether you count coarsely or finely, letting you verify global properties without exhaustive local inspection.</div>
+      </div>
+    </section>
+    <section class="fp" id="connects"><h2>Where this connects — geometry &rarr; gravity</h2><p class="muted">This idea is one stage of a larger machine: the geometry of shapes becomes the geometry of spacetime. These links open the connected concept.</p><ul style="list-style:none;padding:14px 16px;margin:12px 0;border:1px solid var(--line,#d7ddd9);border-radius:10px;background:#fff"><li style="margin:9px 0;padding-left:14px;border-left:3px solid #8b3f18"><a href="https://mehtama1234.github.io/gravity-light-course-concepts-research/concepts/black-holes-horizons-deep.html" style="font-weight:700">black-hole horizons</a> <span class="muted" style="font-size:13px">· Gravity · general relativity</span><div style="font-size:14.5px;margin-top:3px">The topology of a closed surface constrains physics: a black-hole horizon must have the Euler characteristic of a sphere.</div></li></ul></section>
+    <section class="fp"><p class="muted">Related: <a href="concept-triangulation-deep.html">triangulation</a> · <a href="concept-gauss-bonnet-deep.html">Gauss–Bonnet</a> · <a href="concept-poincare-hopf-deep.html">Poincaré–Hopf</a> · <a href="concept-invariant-deep.html">invariant</a></p></section>
+    <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
+      <p class="muted">Count vertices (V), edges (E), faces (F) of the five Platonic solids (all topological spheres) and of a 7-vertex torus triangulation; report V - E + F. numpy, but really just arithmetic on the counts.</p>
+      <div class="eq">chi = V - E + F
+# tetra(4,6,4)=2  cube(8,12,6)=2  octa(6,12,8)=2  dodeca(20,30,12)=2  icosa(12,30,20)=2
+# torus(7,21,14)=0</div>
+      <p class="muted">Full script: scripts/experiments/topology_run.py (EXP1). Numbers are the run's output verbatim.</p>
+    </div></details>
+<footer style="color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding:22px 0 60px;margin-top:24px">Topology &amp; Geometry · The Euler Characteristic deep dive · every count and integral here is computed. Experiments in scripts/experiments/topology_run.py.</footer>
+</main></body></html>

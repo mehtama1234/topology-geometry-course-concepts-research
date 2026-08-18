@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triangulation (deep) · Topology & Geometry</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.arc{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.arc a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:3px 10px;background:#fff}
+.fp{border-top:1px solid var(--line);padding:22px 0 4px;margin-top:10px}
+.fp h2{margin:6px 0 10px;font-size:24px}
+.kick{font-size:12px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:6px 0}
+.lead{font-size:20px;color:#2f342f;max-width:820px}
+.essay p{max-width:74ch;font-size:16.5px;margin:11px 0}
+.barrow{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13px}
+.barrow .lab{width:160px;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);text-align:right}
+.bar{height:16px;border-radius:3px;background:var(--accent);min-width:2px}.bar.alt{background:var(--accent2)}
+.barrow .val{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.eq{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;background:#f5f6f1;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:12px 0;overflow-x:auto;white-space:pre-wrap}
+.insight{border-left:4px solid var(--accent);background:var(--band);padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:16px}
+details.math{border:1px solid var(--line);border-radius:8px;background:#fff;margin:14px 0}
+details.math summary{cursor:pointer;padding:10px 13px;color:var(--accent);font-weight:750}
+details.math > div{border-top:1px solid var(--line);padding:4px 14px 12px}
+figure{margin:16px 0}figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+table{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line)}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;font-size:14.5px}th{background:var(--band)}
+.tw{overflow-x:auto}
+</style></head><body>
+<header class="topbar"><div class="brand">Topology &amp; Geometry</div>
+<nav><a href="index.html">Course</a><a href="concepts.html">Concepts</a><a class="active" href="deep-track.html">Deep Track</a><a href="concept-triangulation.html">This concept</a><a href="the-math-why.html">Math Why</a></nav></header>
+<main>
+<div class="kick">topology · first principles · cutting a surface into flat pieces so you can compute with it</div>
+<h1>Triangulation — why the answer doesn't depend on how you cut</h1>
+<p class="lead">A smooth surface is continuous and curvy, which makes it hard to compute with directly. The trick is to chop it into flat triangular patches — a triangulation. Here is why that works, a real run showing five wildly different ways to cut a ball give the same answer, the algebra behind independence-from-the-mesh, one honest flaw, and why computers use this exact move for geometry, physics, and graphics.</p>
+<div class="arc"><a href="#problem">The problem</a><a href="#reframe">The reframe</a><a href="#run">Seen on a real run</a><a href="#why">Why the cut doesn't matter</a><a href="#weakness">The one real weakness</a><a href="#surprise">The surprise</a><a href="#practice">In practice</a><a href="concept-triangulation.html">Atlas card</a></div>
+
+    <section class="fp" id="problem">
+      <h2>1 · The problem — how do you compute with a curved surface?</h2>
+      <div class="essay">
+      <p>Consider you have a rubber ball, a wine glass, or the surface of the Earth. It is smooth and curvy and continuous. But if you want a computer to compute with it — to measure something, to simulate a process, to render it on a screen — you need something discrete: numbers, counts, lists of patches. A smooth surface gives you neither. It is infinitely detailed; you cannot list all its points.</p>
+      <p>So the question is: <strong>how do you replace a smooth curvy surface with something you can actually compute on?</strong></p>
+      </div>
+    </section>
+    <section class="fp" id="reframe">
+      <h2>2 · The reframe — chop it into flat pieces</h2>
+      <div class="essay">
+      <p>The move: forget the smooth surface for a moment. Cover it with a net of flat patches. Like a soccer ball's pentagons and hexagons, or a globe stitched from gores. Each patch is a flat piece — a triangle is simplest. Each has corners (called vertices), edges between them, and interior (called a face). This is a <strong>triangulation</strong>: a discrete mesh that sits on the surface and replaces the smooth thing with something you can hold in a list and compute with.</p>
+      <p>Now The keyal part: suppose you computed some quantity on this mesh — say, a count or an arithmetic sum over the vertices and edges and faces. If you now re-cut the surface with a different mesh, will you get a different answer? Or will it stay the same? The deeper question is: does the answer belong to the surface, or does it depend on how you sliced it?</p>
+      <p>The hidden quantity is a count that survives every refinement of the mesh &mdash; corners minus edges plus faces stays fixed, proving the number is a property of the surface, not of the particular triangulation.</p>
+      </div>
+    </section>
+    <section class="fp" id="run">
+      <h2>3 · Seen on a real run — the same count, five wildly different meshes</h2>
+      <div class="essay">
+      <p>We computed vertices minus edges plus faces (the Euler characteristic) for five dramatically different triangulations of the same ball surface. Every number here is counted by the program.</p>
+      <div class="tw"><table><tr><th>shape (how it's paneled)</th><th>vertices</th><th>edges</th><th>faces</th><th>V − E + F</th></tr><tr><td>ball as a tetrahedron</td><td>4</td><td>6</td><td>4</td><td>2</td></tr><tr><td>ball as a cube</td><td>8</td><td>12</td><td>6</td><td>2</td></tr><tr><td>ball as an octahedron</td><td>6</td><td>12</td><td>8</td><td>2</td></tr><tr><td>ball as a dodecahedron</td><td>20</td><td>30</td><td>12</td><td>2</td></tr><tr><td>ball as an icosahedron</td><td>12</td><td>30</td><td>20</td><td>2</td></tr><tr><td>doughnut (torus)</td><td>7</td><td>21</td><td>14</td><td>0</td></tr></table></div><figcaption>Five completely different ways to cut a ball — coarse, fine, symmetric, all giving the same V − E + F = 2. Same shape, different mesh, same answer.</figcaption>
+      <div class="insight"><strong>Every way of triangulating a ball gives 2; the torus gives 0.</strong> A tetrahedron has 4 corners and 6 edges. An icosahedron has 12 corners and 30 edges. They are nothing alike as meshes. Yet corners minus edges plus faces lands on 2 for each one. The doughnut, cut the same way, gives 0. That stability proves the count comes from the shape of the surface, not from the cutting.</div>
+      </div>
+    </section>
+    <section class="fp" id="why">
+      <h2>4 · Why the cut doesn't matter — offsetting pairs</h2>
+      <div class="essay">
+      <p>This is how triangulation earns independence from the mesh. Suppose you take one face (a triangle) and draw a line across it, splitting it into two triangles. What changes? You add one new edge (the line you drew) and you add one new face (the second triangle). In the sum V − E + F, you gain 1 from the new face and lose 1 from the new edge. They cancel. The total stays put.</p>
+      <p>Or suppose you place a new vertex (corner) in the middle of an existing edge. You add 1 vertex, but you split 1 edge into 2 — so you add 1 edge-pair but lose 1 edge-pair. They cancel. Every legal refinement — every way to make the mesh finer or to shift corners around — changes the pieces in offsetting pairs. The signs in the formula (plus for vertices and faces, minus for edges) are chosen precisely to guarantee cancellation. That is why the count is independent of the mesh: it belongs to the surface itself.</p>
+      </div>
+    </section>
+    <section class="fp" id="weakness">
+      <h2>5 · The one real weakness — you must triangulate honestly</h2>
+      <div class="essay">
+      <p>Triangulation assumes you are cutting a true surface — something smooth and continuous with no tears or self-intersections. If you write down a mesh that doesn't actually sit on a real surface — corners that don't connect, faces that crease at a hard right angle instead of following the smooth shape — then the arithmetic may give you nonsense. A degenerate or dishonest mesh can lie.</p>
+      <p>There is also a practical cost: to get an accurate answer, you must sometimes refine the mesh very finely (adding millions of triangles), which costs time and memory. And for some purposes, you need more than a triangulation; you need to know which way faces point or how far apart corners are, which a triangulation alone doesn't guarantee. You need a <em>good</em> triangulation.</p>
+      </div>
+    </section>
+    <section class="fp" id="surprise">
+      <h2>6 · The surprise — this is how computers actually do geometry</h2>
+      <div class="essay">
+      <p>That idea — replace the smooth surface with a mesh, compute on the mesh, and hope that the mesh converges to the truth — is not a theoretical trick. It is the <strong>entire foundation</strong> of how computers handle continuous shapes. Finite element analysis for physics simulations: you cut a material into tetrahedra, then solve equations on each little piece. Computer graphics and rendering: every 3D object in a game or a film is a mesh of triangles. Mesh generation algorithms are a major branch of computational geometry.</p>
+      <p>The same goes for curves and surfaces in the abstract. Whenever you need a computer to work with something smooth and continuous, you first triangulate (or divide into elements), then compute. The core move — discrete approximation to a continuous object — runs through all of applied mathematics, and triangulation is its simplest and most geometric form. Learn to cut a surface into flat pieces and trust that the answer won't depend on the cut, and you have just learned the method that powers simulations, graphics, and every other shape-based computation.</p>
+      </div>
+    </section>
+    <section class="fp" id="practice">
+      <h2>7 · Where it is used in practice — Cutting surfaces into flat pieces for computation</h2>
+      <div class="essay">
+      <p>Finite element analysis cuts a material into tetrahedra to simulate physics by solving equations on each piece. Computer graphics triangulates every 3D model—games, films, renders—cutting surfaces into flat patches. Mesh generation is a major field in computational geometry. Topological data analysis triangulates point clouds to extract hidden structure from measurements.</p>
+      <p>Choose how to cut a sphere: make a tetrahedron, an icosahedron, or refine arbitrarily fine. Count corners minus edges plus faces each time. Every cut gives the same number—two. This independence-from-the-mesh proves the count belongs to the surface, not the slicing. Computers use this: refine the mesh until the answer stabilizes, knowing that the truth is mesh-independent. The cut is a tool, not the answer.</p>
+      <div class="insight">Mesh the surface however you like; the Euler count stays put because it lives in the topology.</div>
+      </div>
+    </section>
+    <section class="fp"><p class="muted">Related: <a href="concept-euler-characteristic-deep.html">Euler characteristic</a> · <a href="concept-gauss-bonnet-deep.html">Gauss–Bonnet</a></p></section>
+    <details class="math"><summary>the run recipe — reproduce every number above</summary><div>
+      <p class="muted">Triangulate the ball surface in five ways (tetrahedron, cube, octahedron, dodecahedron, icosahedron) and a torus; count vertices (V), edges (E), faces (F) for each; report V − E + F. Arithmetic on the mesh counts; output is just integers.</p>
+      <div class="eq"># For each triangulation:
+# chi = V - E + F
+# Ball (all five): chi = 2
+# Torus: chi = 0</div>
+      <p class="muted">Full script: scripts/experiments/topology_run.py (EXP1). Numbers are the run's output verbatim; every count is computed from the mesh.</p>
+    </div></details>
+<footer style="color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding:22px 0 60px;margin-top:24px">Topology &amp; Geometry · Triangulation deep dive · every count and integral here is computed. Experiments in scripts/experiments/topology_run.py.</footer>
+</main></body></html>
